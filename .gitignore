@@ -25,13 +25,6 @@ fixtures/listening/
 fixtures/reading/
 fixtures/writing/
 
-# Copyrighted source media stays on the owner's machine; publish metadata only.
-听力/*
-!听力/README.md
-!听力/manifest.csv
-教材/*
-!教材/README.md
-!教材/manifest.csv
 
 # Local conversion data and one-off diagnostics.
 scripts/__pycache__/
