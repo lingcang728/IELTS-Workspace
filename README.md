@@ -86,12 +86,12 @@
 
 ### 方式一：直接下载安装包（推荐）
 
-前往 [GitHub Releases 最新发布页](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载对应版本：
+前往 [GitHub Releases 最新发布页](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载，或直接在仓库的 [`release/`](./release) 目录中获取：
 
 | 版本类型 | 文件名 | 说明 |
 | :--- | :--- | :--- |
-| **📦 Windows 安装版** | `IELTS_Workspace_1.0.0_x64_setup.exe` | 推荐普通用户使用，一键安装并自动创建桌面快捷方式 |
-| **🚀 Windows 便携绿色版** | `IELTS_Workspace_1.0.0_windows_x64_portable.zip` | 解压即用，适合放在 U 盘或移动硬盘中随身携带 |
+| **📦 Windows 安装版** | [`IELTS_Workspace_1.0.0_x64_setup.exe`](./release/IELTS_Workspace_1.0.0_x64_setup.exe) | 推荐普通用户使用，一键安装并自动创建桌面快捷方式 |
+| **🚀 Windows 单文件版** | [`IELTS_Workspace.exe`](./release/IELTS_Workspace.exe) | 独立绿色版，双击直接运行 |
 
 > **支持系统**：Windows 10 / Windows 11 (64-bit)
 
@@ -134,7 +134,7 @@ npm run tauri dev
 ### 打包构建 Release
 
 ```powershell
-# 构建 Windows NSIS 安装包
+# 构建 Windows NSIS 安装包与二进制
 npm run tauri build
 ```
 构建完成后的安装包将输出在 `src-tauri/target/release/bundle/nsis/` 目录下。
@@ -145,6 +145,7 @@ npm run tauri build
 
 ```
 IELTS-Workspace/
+├── release/              # 编译发布产物 (Windows 安装包与独立可执行程序)
 ├── src/                  # 前端 UI 与业务交互层 (React 18 + TypeScript + TailwindCSS)
 │   ├── components/       # 核心组件库（考场计时器、底部导航栏、高亮便签、分屏滚动等）
 │   ├── pages/            # 页面视图（练习中心、考场 Runtime、成绩分析、设置）
