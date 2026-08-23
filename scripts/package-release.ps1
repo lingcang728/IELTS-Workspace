@@ -96,8 +96,12 @@ try {
   $latestPath = Join-Path $output 'latest.json'
   Write-Utf8NoBom $latestPath ($latest | ConvertTo-Json -Depth 6)
 
-  & (Join-Path $PSScriptRoot 'package-portable.ps1') -SkipBuild
-  if ($LASTEXITCODE -ne 0) { throw '本机 IELTS Workspace 同步失败。' }
+  if ($env:GITHUB_ACTIONS -ne 'true') {
+    & (Join-Path $PSScriptRoot 'package-portable.ps1') -SkipBuild
+    if ($LASTEXITCODE -ne 0) { throw '本机 IELTS Workspace 同步失败。' }
+  } else {
+    Write-Host 'GitHub Actions 环境：跳过本机安装目录同步。'
+  }
 
   Get-ChildItem -LiteralPath $output -File | Select-Object Name,Length,LastWriteTime,@{n='SHA256';e={Get-Sha256 $_.FullName}}
 } finally {
