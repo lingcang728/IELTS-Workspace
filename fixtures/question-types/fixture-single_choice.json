@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-single_choice",
+  "title": "Renderer fixture — single_choice",
+  "module": "reading",
+  "source": {
+    "kind": "generated_practice",
+    "note": "Tiny original item; not copyrighted official text."
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 600000
+    },
+    "timeWarningsMs": [
+      120000
+    ]
+  },
+  "sections": [
+    {
+      "id": "s",
+      "title": "Fixture passage",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "The museum opened in 1842 beside the river. Staff later added a glass roof."
+      },
+      "questionGroups": [
+        {
+          "instruction": "Choose the correct letter A-C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "f1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "When did the museum open?",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "1742"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "1842"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "1942"
+                }
+              ],
+              "acceptedAnswers": [
+                "B"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

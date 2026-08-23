@@ -1,0 +1,83 @@
+:root {
+  --ink: #e8eef4;
+  --ink-soft: #c9d3dc;
+  --muted: #8d9aa7;
+  --muted-2: #667480;
+  --bg: #07111a;
+  --bg-deep: #050d14;
+  --bg-2: #0b1720;
+  --panel: #111f29;
+  --panel-2: #172630;
+  --panel-hover: #1b2b36;
+  --line: rgba(132, 158, 177, .17);
+  --line-strong: rgba(141, 170, 191, .28);
+  --accent: #78b6fb;
+  --blue: #4f9cff;
+  --blue-soft: rgba(79, 156, 255, .14);
+  --green: #69c878;
+  --green-soft: rgba(105, 200, 120, .13);
+  --yellow: #e9b541;
+  --yellow-soft: rgba(233, 181, 65, .13);
+  --danger: #dd6c62;
+  --shadow: 0 16px 48px rgba(0, 0, 0, .22);
+  --font-sans: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+  --font-mono: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
+  --radius: 7px;
+  color-scheme: dark;
+}
+
+[data-ui="light"] {
+  --ink: #1d2b36;
+  --ink-soft: #354856;
+  --muted: #647482;
+  --muted-2: #84919b;
+  --bg: #edf2f5;
+  --bg-deep: #e4eaee;
+  --bg-2: #f7f9fa;
+  --panel: #ffffff;
+  --panel-2: #f3f6f8;
+  --panel-hover: #eef3f6;
+  --line: rgba(61, 86, 104, .16);
+  --line-strong: rgba(61, 86, 104, .28);
+  --accent: #276fbb;
+  --blue: #2779cf;
+  --blue-soft: rgba(39, 121, 207, .1);
+  --green: #3d9652;
+  --green-soft: rgba(61, 150, 82, .1);
+  --yellow: #b57908;
+  --yellow-soft: rgba(181, 121, 8, .1);
+  --danger: #bd4c42;
+  --shadow: 0 12px 32px rgba(39, 58, 73, .1);
+  color-scheme: light;
+}
+
+[data-theme="exam"] {
+  --exam-bg: #08121a;
+  --exam-panel: #111f2a;
+  --exam-panel-2: #172733;
+  --exam-ink: #e8eef4;
+  --exam-muted: #92a1ae;
+  --exam-line: rgba(132, 162, 182, .22);
+  --exam-current: #4f9cff;
+  --exam-answered: #69c878;
+  --exam-nav: #0a151e;
+  --exam-nav-btn: #1b2b36;
+  --exam-warn: #c76050;
+  --exam-hl: rgba(233, 181, 65, .44);
+  --exam-note: #d99638;
+  --exam-instr: #172733;
+}
+
+[data-theme="exam"][data-scheme="high_contrast"] { --exam-bg: #000; --exam-panel: #000; --exam-panel-2: #080808; --exam-ink: #ffff00; --exam-muted: #ffff99; --exam-line: #ffff00; --exam-nav: #000; --exam-nav-btn: #000; --exam-hl: #00ffff; }
+[data-theme="exam"][data-scheme="cream"] { --exam-bg: #e7dac5; --exam-panel: #f6efe3; --exam-panel-2: #eee2d0; --exam-ink: #1b150d; --exam-muted: #665b4c; --exam-line: rgba(67, 54, 39, .35); }
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body { overflow: hidden; font-family: var(--font-sans); background: var(--bg); color: var(--ink); text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+img { max-width: 100%; }
+::selection { background: rgba(79, 156, 255, .32); color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

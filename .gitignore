@@ -1,0 +1,42 @@
+node_modules/
+dist/
+src-tauri/target/
+data/
+data-dev/
+_raw/
+.codex-verify/
+portable/
+plan.md
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+G:\build_cache/
+.env
+.env.local
+*.tmp
+sessions-debug/
+
+# Local licensed study corpus. Only the original renderer fixtures are public.
+fixtures/assets/
+fixtures/cambridge/
+fixtures/listening/
+fixtures/reading/
+fixtures/writing/
+
+# Copyrighted source media stays on the owner's machine; publish metadata only.
+听力/*
+!听力/README.md
+!听力/manifest.csv
+教材/*
+!教材/README.md
+!教材/manifest.csv
+
+# Local conversion data and one-off diagnostics.
+scripts/__pycache__/
+scripts/_*
+scripts/build_cambridge.py
+scripts/build_cambridge_mineru.py
+scripts/build_content.py
+scripts/cambridge_keys.py

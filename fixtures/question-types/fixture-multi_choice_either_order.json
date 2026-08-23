@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-multi_choice_either_order",
+  "title": "Renderer fixture — multi_choice_either_order",
+  "module": "reading",
+  "source": {
+    "kind": "generated_practice",
+    "note": "Tiny original item; not copyrighted official text."
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 600000
+    },
+    "timeWarningsMs": [
+      120000
+    ]
+  },
+  "sections": [
+    {
+      "id": "s",
+      "title": "Fixture passage",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "The museum opened in 1842 beside the river. Staff later added a glass roof."
+      },
+      "questionGroups": [
+        {
+          "instruction": "Choose TWO letters.",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "river"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "desert"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "glass roof"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "airport"
+            }
+          ],
+          "questions": [
+            {
+              "id": "f2",
+              "number": 1,
+              "type": "multi_choice",
+              "prompt": "First",
+              "acceptedAnswers": [
+                "A",
+                "C"
+              ]
+            },
+            {
+              "id": "f3",
+              "number": 2,
+              "type": "multi_choice",
+              "prompt": "Second",
+              "acceptedAnswers": [
+                "A",
+                "C"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
