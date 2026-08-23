@@ -1,9 +1,13 @@
+param([switch]$SkipBuild)
+
 $ErrorActionPreference = 'Stop'
 Set-Location (Split-Path $PSScriptRoot -Parent)
 $tauri = Join-Path (Get-Location) 'node_modules\.bin\tauri.cmd'
 if (-not (Test-Path -LiteralPath $tauri)) { throw "local Tauri CLI missing: $tauri" }
-& $tauri build --bundles nsis
-if ($LASTEXITCODE -ne 0) { throw "Tauri build failed with exit code $LASTEXITCODE" }
+if (-not $SkipBuild) {
+  & $tauri build --bundles nsis
+  if ($LASTEXITCODE -ne 0) { throw "Tauri build failed with exit code $LASTEXITCODE" }
+}
 $exeName = 'IELTS Workspace.exe'
 $candidates = @(
   'G:\build_cache\cargo-target\release\IELTS Workspace.exe',

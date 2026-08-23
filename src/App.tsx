@@ -5,6 +5,8 @@ import type { AnalyticsReport, Bootstrap, Exam, ExamSummary, ScoreReport, Sessio
 import { allQuestions } from "./lib/types";
 import { ExamApp } from "./exam/ExamApp";
 import { BrandMark, Icon, type IconName, ModuleIcon, runWindowAction, WindowControls } from "./components/Ui";
+import { UpdatePanel } from "./components/UpdatePanel";
+import { checkForDesktopUpdate } from "./lib/updateService";
 
 type View = "home" | "practice" | "mock" | "analytics" | "history" | "settings" | "import" | "results" | "exam";
 type UiTheme = "light" | "dark";
@@ -33,6 +35,10 @@ function Sidebar({ view, setView }: { view: View; setView: (v: View) => void }) 
     <div className="sidebar-brand"><BrandMark size={56} className="sidebar-mark" /><div><strong>IELTS</strong><span>Workspace</span></div></div>
     <nav className="side-nav" aria-label="主导航">{primary.map(nav)}</nav>
     <div className="sidebar-spacer" />
+    <nav className="side-nav" aria-label="辅助导航">
+      {nav({ view: "history", icon: "history", label: "历史记录" })}
+      {nav({ view: "settings", icon: "settings", label: "设置" })}
+    </nav>
   </aside>;
 }
 
@@ -68,6 +74,7 @@ export function App() {
   useEffect(() => {
     applyUi("dark");
     void reload().catch((e) => setError(String(e)));
+    void checkForDesktopUpdate(false);
   }, []);
 
   useEffect(() => {
@@ -260,7 +267,7 @@ function ImportPage({ value, onChange, onImport }: { value: string; onChange: (s
 }
 
 function Settings({ theme, onTheme, onImport }: { theme: UiTheme; onTheme: (t: UiTheme) => void; onImport: () => void }) {
-  return <div className="page-stack"><PageHeading title="设置" subtitle="管理外观与试卷导入" /><section className="settings-grid"><div className="workspace-card"><Icon name="eye" size={28} /><h2>外观</h2><p className="meta">正式版默认使用参考图的深色桌面主题。</p><div className="button-row"><button type="button" className={theme === "dark" ? "primary-button" : "secondary-button"} onClick={() => onTheme("dark")}>深色</button><button type="button" className={theme === "light" ? "primary-button" : "secondary-button"} onClick={() => onTheme("light")}>浅色</button></div></div><div className="workspace-card"><Icon name="folder" size={28} /><h2>导入试卷</h2><p className="meta">添加符合 Schema v1 的本地题目。</p><button type="button" className="secondary-button" onClick={onImport}>打开导入</button></div></section></div>;
+  return <div className="page-stack"><PageHeading title="设置" subtitle="管理外观、试卷导入与软件更新" /><section className="settings-grid"><div className="workspace-card"><Icon name="eye" size={28} /><h2>外观</h2><p className="meta">正式版默认使用参考图的深色桌面主题。</p><div className="button-row"><button type="button" className={theme === "dark" ? "primary-button" : "secondary-button"} onClick={() => onTheme("dark")}>深色</button><button type="button" className={theme === "light" ? "primary-button" : "secondary-button"} onClick={() => onTheme("light")}>浅色</button></div></div><div className="workspace-card"><Icon name="folder" size={28} /><h2>导入试卷</h2><p className="meta">添加符合 Schema v1 的本地题目。</p><button type="button" className="secondary-button" onClick={onImport}>打开导入</button></div><UpdatePanel /></section></div>;
 }
 
 function Results({ session, report, exam, onCopy, onHome }: { session: Session; report: ScoreReport | null; exam: Exam | null; onCopy: () => void; onHome: () => void }) {

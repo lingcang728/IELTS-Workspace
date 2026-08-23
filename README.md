@@ -86,12 +86,12 @@
 
 ### 方式一：直接下载安装包（推荐）
 
-前往 [GitHub Releases 最新发布页](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载，或直接在仓库的 [`release/`](./release) 目录中获取：
+前往 [GitHub Releases 最新发布页](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载：
 
 | 版本类型 | 文件名 | 说明 |
 | :--- | :--- | :--- |
-| **📦 Windows 安装版** | [`IELTS_Workspace_1.0.0_x64_setup.exe`](./release/IELTS_Workspace_1.0.0_x64_setup.exe) | 推荐普通用户使用，一键安装并自动创建桌面快捷方式 |
-| **🚀 Windows 单文件版** | [`IELTS_Workspace.exe`](./release/IELTS_Workspace.exe) | 独立绿色版，双击直接运行 |
+| **📦 Windows 安装版** | `IELTS_Workspace_1.1.0_x64-setup.exe` | 推荐普通用户使用；支持应用内检查、下载、安装并重启更新 |
+| **🚀 Windows 单文件版** | `IELTS_Workspace_1.1.0_x64.exe` | 独立绿色版，双击直接运行；更新时自动迁移到安装版 |
 
 > **支持系统**：Windows 10 / Windows 11 (64-bit)
 
@@ -134,10 +134,10 @@ npm run tauri dev
 ### 打包构建 Release
 
 ```powershell
-# 构建 Windows NSIS 安装包与二进制
-npm run tauri build
+# 验证并构建签名的 NSIS、便携版及 latest.json
+npm run package:release
 ```
-构建完成后的安装包将输出在 `src-tauri/target/release/bundle/nsis/` 目录下。
+构建完成后的发布资产输出在 `output/release/`；GitHub Tag 工作流会使用相同流程生成 Release。
 
 ---
 

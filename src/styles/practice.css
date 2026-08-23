@@ -117,3 +117,22 @@
 .accuracy-row { margin-top: 16px; font-size: 14px; line-height: 1.35; }
 .accuracy-row strong { font-size: 13px; }
 .settings-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.settings-grid .update-card { grid-column: 1 / -1; min-height: 0; }
+.update-card-head, .update-release, .update-confirm { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 18px; }
+.update-card-head > div { min-width: 0; }
+.update-card-head h2 { margin: 10px 0 4px; }
+.update-card-head .meta { margin: 0; }
+.update-card-head button, .update-release button, .update-confirm button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; }
+.update-state { display: grid; grid-template-columns: 8px minmax(0, 1fr); align-items: center; gap: 12px; margin-top: 18px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 5px; background: rgba(111,140,160,.055); }
+.update-state i { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.update-available .update-state i, .update-upToDate .update-state i { background: var(--green); }
+.update-checking .update-state i, .update-downloading .update-state i, .update-installing .update-state i { background: var(--yellow); }
+.update-failed .update-state i { background: var(--danger); }
+.update-state strong { color: var(--ink-soft); font-size: 12px; }
+.update-state p, .update-release p, .update-confirm p { margin: 3px 0 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.update-card progress { width: 100%; height: 6px; margin-top: 10px; accent-color: var(--green); }
+.update-release, .update-confirm { margin-top: 12px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 5px; background: rgba(111,140,160,.055); }
+.update-release strong, .update-confirm strong { color: var(--ink-soft); font-size: 12px; }
+.update-confirm { grid-template-columns: minmax(0, 1fr) auto auto; }
+@media (max-width: 760px) { .update-card-head, .update-release, .update-confirm { grid-template-columns: 1fr; } }

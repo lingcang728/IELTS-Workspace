@@ -1,7 +1,7 @@
 {
   "name": "ielts-workspace",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Local portable IELTS Academic computer-test workspace",
   "type": "module",
   "scripts": {
@@ -9,11 +9,15 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
+    "tauri:build": "tauri build",
+    "package:release": "pwsh -NoProfile -File scripts/package-release.ps1",
     "test": "vitest run",
     "verify": "vitest run && cargo test --manifest-path src-tauri/Cargo.toml"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.8.0"
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-process": "^2.3.1",
+    "@tauri-apps/plugin-updater": "^2.10.1"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2.8.0",
