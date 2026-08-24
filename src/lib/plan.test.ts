@@ -45,9 +45,18 @@ describe("generatePlan", () => {
   });
 
   it("gives the requested number of study days per week", () => {
-    const plan = generatePlan({ ...base, daysPerWeek: 3, examDate: "2026-08-31" });
-    const studyDays = plan.days.filter((day) => day.mock).length;
-    expect(studyDays).toBe(3);
+    for (const perWeek of [1, 3, 5, 7]) {
+      const plan = generatePlan({ ...base, daysPerWeek: perWeek, examDate: "2026-08-31" });
+      const studyDays = plan.days.filter((day) => day.mock || day.mistakeTarget > 0).length;
+      expect(studyDays, `${perWeek} days a week`).toBe(perWeek);
+    }
+  });
+
+  it("always makes today a study day", () => {
+    for (const perWeek of [1, 2, 3, 4, 5, 6, 7]) {
+      const plan = generatePlan({ ...base, daysPerWeek: perWeek });
+      expect(plan.days[0].mistakeTarget, `${perWeek} days a week`).toBeGreaterThan(0);
+    }
   });
 
   it("never schedules an exam that was already submitted", () => {

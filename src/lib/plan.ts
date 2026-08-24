@@ -67,9 +67,10 @@ export function generatePlan(input: PlanInputs): StudyPlan {
   for (let offset = 0; offset < horizon; offset += 1) {
     const date = addDays(today, offset);
     // Spread the rest days evenly rather than resting on fixed weekdays: the
-    // learner told us how many days a week, not which ones.
-    const isStudyDay = Math.floor(((offset % 7) + 1) * perWeek / 7) >
-                       Math.floor((offset % 7) * perWeek / 7);
+    // learner told us how many days a week, not which ones. Bresenham-style,
+    // and phased so that day 0 is always a study day — a plan whose first
+    // instruction is "rest today" is not a plan anyone will trust.
+    const isStudyDay = ((offset % 7) * perWeek) % 7 < perWeek;
     if (!isStudyDay) {
       days.push({ date: isoDay(date), vocabTarget: 0, mistakeTarget: 0, mock: null, intensive: null });
       continue;

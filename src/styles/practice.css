@@ -264,7 +264,10 @@
 
 .mistake-list { display: grid; gap: 10px; padding-bottom: 24px; }
 .mistake-row { padding: 16px 18px; }
-.mistake-row header { display: grid; gap: 4px; margin-bottom: 10px; }
+.mistake-row header { display: grid; gap: 4px; margin-bottom: 10px; justify-items: start; }
+/* The type chip is a label, not a bar: without this the grid stretches it
+   across the whole row and it reads as a coloured heading. */
+.mistake-row header .mode-label { justify-self: start; margin-right: 0; }
 .mistake-row header h3 { margin: 0; font-size: 14px; }
 .mistake-row header small { color: var(--muted); font-size: 10px; }
 .mistake-prompt { margin: 0 0 10px; color: var(--ink); font-size: 14px; line-height: 1.55; }

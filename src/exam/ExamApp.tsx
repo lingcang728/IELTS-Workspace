@@ -540,16 +540,22 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
                 </div>
               ) : (
                 <div
-                  ref={passageRef}
                   className="passage"
                   onContextMenu={(e) => {
                     e.preventDefault();
                     setMenu({ x: e.clientX, y: e.clientY });
                   }}
-                  dangerouslySetInnerHTML={{
-                    __html: `<h4>${currentSection?.title ?? ""}</h4>${passageHtml}`,
-                  }}
-                />
+                >
+                  {/*
+                    The heading is deliberately OUTSIDE `passageRef`. Offsets are
+                    measured by walking the ref'd element's text, but they index
+                    into `section.content.text`, which has no heading — so a
+                    heading inside the ref shifted every highlight by its own
+                    length (17 characters for "Reading Passage 1").
+                  */}
+                  <h4>{currentSection?.title ?? ""}</h4>
+                  <div ref={passageRef} dangerouslySetInnerHTML={{ __html: passageHtml }} />
+                </div>
               )}
               {exam.module === "reading" && (
                 <div className="toolbar" style={{ marginTop: 12 }}>
