@@ -68,7 +68,17 @@ try {
   }
 
   New-Item -ItemType Directory -Force -Path $output | Out-Null
+  # 发布目录只放可分发产物。便携版是「exe 旁边就是 data」的设计，所以只要有人
+  # 直接在这里双击它，就会当场长出一个 data\ —— 用户数据和发布产物混在同一个
+  # 文件夹里，下次发布时谁也说不清哪个该删。这里把非产物目录清掉，但绝不静默
+  # 删除有真实文件的 data\：那说明有人把它当安装目录在用，应当由人来决定。
   Get-ChildItem -LiteralPath $output -File -ErrorAction SilentlyContinue | Remove-Item -Force
+  foreach ($stray in @(Get-ChildItem -LiteralPath $output -Directory -ErrorAction SilentlyContinue)) {
+    if (Get-ChildItem -LiteralPath $stray.FullName -File -Recurse -ErrorAction SilentlyContinue) {
+      throw "发布目录里有带数据的子目录：$($stray.FullName)。便携版请复制到别处再运行，确认后手动删除该目录。"
+    }
+    Remove-Item -LiteralPath $stray.FullName -Recurse -Force
+  }
   $portable = Join-Path $output "IELTS_Workspace_${version}_x64.exe"
   $installer = Join-Path $output "IELTS_Workspace_${version}_x64-setup.exe"
   Copy-Item -LiteralPath $binary -Destination $portable -Force

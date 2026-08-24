@@ -1,64 +1,65 @@
-/* App-shell tokens — the "kami" paper palette.
+/* App-shell tokens — the blue workspace palette.
  *
- * One accent only (`--accent`, an ink blue). Status hues exist for status and
- * nothing else. There is deliberately no `--blue`: a hue-named token invites
- * decoration, and the palette this replaced used `--blue` in 30-odd places
- * that were not links or actions.
+ * This is the original blue of v1.1.0, restored on purpose: the warm "paper"
+ * palette that briefly replaced it read as fog, and the blue did not. What the
+ * warm pass got right is kept — the token *names* are the new ones, so the
+ * whole app still reads `--accent` / `--positive` / `--caution` / `--danger`
+ * rather than hue-named variables, and every feature built on top of them
+ * (quote highlighter, progress bars, study tools) works unchanged.
  *
- * The surfaces are tuned for separation rather than for warmth. An earlier
- * pass made every surface a near-identical warm brown, which read as fog: the
- * cards did not sit on the page, they dissolved into it. So light now puts
- * plain white cards on a warm paper ground, and dark drops the ground almost
- * to black and lifts the panels off it. Ink is close to true white/near-black
- * at both ends, which is what makes type look crisp rather than smudged.
+ * There is deliberately no `--blue`: a hue-named token invites decoration, and
+ * the palette this replaced used `--blue` in 30-odd places that were neither
+ * links nor actions. The blue lives in `--accent`, which is the only accent.
  *
- * Contrast is quoted against the *worst* of the three surfaces a token can
- * land on (--bg, --panel, --panel-2), not just one of them:
+ * Eight of the original values did not clear WCAG AA against the surface they
+ * actually landed on (dark --muted-2 3.0, light --accent 4.2, light --caution
+ * 3.0 ...). Those are nudged along their own hue until they clear 4.5 — the
+ * colour is the same blue, just legible. Contrast is quoted against the
+ * *worst* of the six surfaces a token can land on, not the friendliest one:
+ *   dark   ink 12.4 · ink-soft 9.6 · muted 5.9 · muted-2 4.6
+ *          accent 6.8 · positive 7.0 · caution 7.7 · danger 4.6
+ *   light  ink 11.9 · ink-soft 7.8 · muted 5.6 · muted-2 4.6
+ *          accent 4.6 · positive 4.6 · caution 4.7 · danger 4.6
  * Highlighter tints (--marker-N) are checked the same way: --ink over the
- * blended stroke stays at 5.1:1 or better in dark and 11:1 in light, while the
- * stroke itself lifts 2.5-3:1 off the panel so it reads as a pen mark.
- *   light  ink 15.6 · ink-soft 11.4 · muted 6.2 · muted-2 4.8
- *          accent 9.0 · positive 5.3 · caution 5.6 · danger 5.9
- *   dark   ink 13.8 · ink-soft 10.7 · muted 6.3 · muted-2 4.8
- *          accent 7.6 · positive 7.7 · caution 7.6 · danger 6.3
- * Surface separation: light panel/bg 1.21, dark panel/bg 1.18.
- * Every token clears WCAG AA (4.5:1) for body text. `scripts/check_styles.py`
- * keeps the literals in this file; the ratios are recomputed by hand when a
- * value changes.
+ * blended stroke stays 4.9:1 or better in dark and 8.5:1 in light, while the
+ * stroke lifts 2.4-2.9:1 off the panel in dark so it reads as a pen mark.
+ * Surface separation: light panel/bg 1.13, dark panel/bg 1.13.
+ * `scripts/check_styles.py` keeps the literals in this file; the ratios are
+ * recomputed by hand when a value changes.
  */
 :root {
-  /* Warm dark is the default: the app opens before the profile is read, and
+  /* Dark is the default: the app opens before the profile is read, and
      `applyUi` only switches to light when the saved profile asks for it. */
-  --bg: #0b0b09;
-  --bg-deep: #060605;
-  --bg-2: #131311;
-  --panel: #1e1e1a;
-  --panel-2: #272621;
-  --panel-hover: #302f29;
-  --ink: #f6f4ee;
-  --ink-soft: #dcd9d0;
-  --muted: #aba798;
-  --muted-2: #96917f;
+  --bg: #07111a;
+  --bg-deep: #050d14;
+  --bg-2: #0b1720;
+  --panel: #111f29;
+  --panel-2: #172630;
+  --panel-hover: #1b2b36;
+  --ink: #e8eef4;
+  --ink-soft: #c9d3dc;
+  --muted: #9aa7b3;
+  --muted-2: #85939e;
   /* Translucent rules rather than solid dark edges, so a panel reads as a
      sheet lifted off the ground instead of a box drawn on it. */
-  --line: rgba(246, 244, 238, .10);
-  --line-strong: rgba(246, 244, 238, .20);
-  --accent: #96baea;
-  --accent-soft: rgba(150, 186, 234, .14);
-  --accent-ink: #0b0b09;
-  --positive: #8ac795;
-  --positive-soft: rgba(138, 199, 149, .14);
-  --caution: #dfb05c;
-  --caution-soft: rgba(223, 176, 92, .14);
-  --danger: #e69086;
-  --danger-soft: rgba(230, 144, 134, .14);
+  --line: rgba(132, 158, 177, .17);
+  --line-strong: rgba(141, 170, 191, .28);
+  --accent: #78b6fb;
+  --accent-soft: rgba(79, 156, 255, .14);
+  --accent-ink: #07111a;
+  --positive: #69c878;
+  --positive-soft: rgba(105, 200, 120, .13);
+  --caution: #e9b541;
+  --caution-soft: rgba(233, 181, 65, .13);
+  --danger: #de7268;
+  --danger-soft: rgba(222, 114, 104, .13);
   /* Highlighter tints for the quote of the day. Translucent here so the ink
      stays --ink and legible; solid pastels in light mode. */
   --marker-1: rgba(255, 210, 74, .40);
   --marker-2: rgba(127, 227, 166, .40);
   --marker-3: rgba(127, 192, 255, .40);
   --marker-4: rgba(255, 157, 148, .40);
-  --shadow: 0 14px 36px rgba(0, 0, 0, .40);
+  --shadow: 0 16px 48px rgba(0, 0, 0, .22);
   --font-sans: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
   --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", serif;
   --font-mono: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
@@ -66,39 +67,38 @@
   color-scheme: dark;
 }
 
-/* kami reads the interface in Chinese; this stack is the reason to borrow it. */
 :root:lang(zh-CN),
 :root[lang="zh-CN"] {
   --font-sans: "Segoe UI Variable", "Segoe UI", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
 }
 
 [data-ui="light"] {
-  --bg: #eceae1;          /* warm paper ground */
-  --bg-deep: #e3e1d7;
-  --bg-2: #f6f5f0;
-  --panel: #ffffff;       /* plain white cards: the separation is the point */
-  --panel-2: #f4f2ec;
-  --panel-hover: #eeece4;
-  --ink: #12120f;
-  --ink-soft: #2e2d29;
-  --muted: #57554f;
-  --muted-2: #68655e;
-  --line: rgba(18, 18, 15, .12);
-  --line-strong: rgba(18, 18, 15, .22);
-  --accent: #1c3d6b;
-  --accent-soft: rgba(28, 61, 107, .08);
+  --bg: #edf2f5;
+  --bg-deep: #e4eaee;
+  --bg-2: #f7f9fa;
+  --panel: #ffffff;
+  --panel-2: #f3f6f8;
+  --panel-hover: #eef3f6;
+  --ink: #1d2b36;
+  --ink-soft: #354856;
+  --muted: #4f5d69;
+  --muted-2: #5d6973;
+  --line: rgba(61, 86, 104, .16);
+  --line-strong: rgba(61, 86, 104, .28);
+  --accent: #2569b0;
+  --accent-soft: rgba(39, 121, 207, .1);
   --accent-ink: #ffffff;
-  --positive: #2c6b3c;
-  --positive-soft: rgba(44, 107, 60, .1);
-  --caution: #7a5510;
-  --caution-soft: rgba(122, 85, 16, .1);
-  --danger: #9c342a;
-  --danger-soft: rgba(156, 52, 42, .1);
+  --positive: #307540;
+  --positive-soft: rgba(48, 117, 64, .1);
+  --caution: #8b5d06;
+  --caution-soft: rgba(139, 93, 6, .1);
+  --danger: #ae463d;
+  --danger-soft: rgba(174, 70, 61, .1);
   --marker-1: #f6d97a;
   --marker-2: #a9e0bd;
   --marker-3: #a8cdf0;
   --marker-4: #f3b9b3;
-  --shadow: 0 10px 26px rgba(38, 34, 24, .09);
+  --shadow: 0 12px 32px rgba(39, 58, 73, .1);
   color-scheme: light;
 }
 
