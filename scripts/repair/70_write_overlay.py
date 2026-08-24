@@ -109,7 +109,8 @@ def heading_numbers(headings: list[str]) -> set[int]:
     return covered
 
 
-def check_prompt(prompt: str, current: str, qtype: str, where: str, errors: list[str]) -> None:
+def check_prompt(prompt: str, current: str, qtype: str, where: str, errors: list[str],
+                 allow_unchanged: bool = False) -> None:
     if not isinstance(prompt, str) or not prompt.strip():
         fail(errors, where, "prompt is empty")
         return
@@ -125,8 +126,12 @@ def check_prompt(prompt: str, current: str, qtype: str, where: str, errors: list
         fail(errors, where, "prompt is still placeholder text")
     if INSTRUCTION_ONLY_RE.match(text):
         fail(errors, where, f"prompt is the group instruction, not a question: {text[:50]!r}")
-    if current and text == current.strip():
-        fail(errors, where, "prompt is unchanged from the broken original")
+    # A question flagged only for a broken answer key keeps its correct prompt.
+    # That is exactly what  means, so the unchanged check is skipped
+    # for it -- but it still has to pass every other rule.
+    if current and text == current.strip() and not allow_unchanged:
+        fail(errors, where, "prompt is unchanged from the broken original; if the prompt on "
+                           "the page really is this text, use status 'approved' instead")
     if text[0] in ",.;:!?)]}":
         fail(errors, where, "prompt starts on punctuation (transcript fragment)")
     if text[0].islower():
@@ -303,7 +308,8 @@ def validate(task: dict[str, Any], answer: dict[str, Any]) -> tuple[dict[str, An
 
         options = check_options(entry.get("options"), qtype, where, errors)
         prompt = str(entry.get("prompt") or "").strip()
-        check_prompt(prompt, str(source.get("currentPrompt") or ""), qtype, where, errors)
+        check_prompt(prompt, str(source.get("currentPrompt") or ""), qtype, where, errors,
+                     allow_unchanged=(status == "approved"))
 
         answers = entry.get("acceptedAnswers")
         if answers is None:

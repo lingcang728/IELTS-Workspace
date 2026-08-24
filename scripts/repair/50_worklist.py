@@ -43,6 +43,14 @@ RENDER_QUALITY = 72
 # One task may not span more pages than this; a reader that is handed six pages
 # at once starts skimming.
 MAX_PAGES_PER_TASK = 3
+# Pages added around the predicted window. Measured against the independent OCR
+# pass on C4/C9/C10/C14 (220 question groups): the window alone contains the
+# printed "Questions a-b" heading 84% of the time, and the misses are lopsided
+# -- 23 of 35 sit exactly one page AFTER the window, only a handful before. So
+# pad forward only: 95% coverage for one extra page per task, where symmetric
+# padding would cost two for 97%. `--expand` covers the rest.
+PAGE_PAD_BEFORE = 0
+PAGE_PAD_AFTER = 1
 
 
 def load_damage(report_path: Path) -> dict[str, dict[int, list[str]]]:
@@ -151,7 +159,8 @@ def build_book(book: int, page_map: dict[str, Any], damage: dict[str, dict[int, 
         questions = load_exam_questions(exam_id)
         done = overlay_done(exam_id)
         for cluster in group_by_pages(entry["questionPages"], damaged, questions):
-            pages = list(range(cluster["lo"], cluster["hi"] + 1))
+            pages = list(range(max(0, cluster["lo"] - PAGE_PAD_BEFORE),
+                               cluster["hi"] + PAGE_PAD_AFTER + 1))
             task_id = f"{exam_id}-p{cluster['lo']:04d}"
             payload = {
                 "schemaVersion": 1,
