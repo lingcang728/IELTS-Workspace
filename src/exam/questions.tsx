@@ -8,9 +8,15 @@ interface Props {
   onChange: (questionId: string, value: string | string[] | null) => void;
   disabled?: boolean;
   skin?: ExamMode;
+  /**
+   * False when the group above this one printed the same rubric. The importer
+   * split many printed groups into one group per question, so without this the
+   * exam sheet repeats "Do the following statements agree ..." forty times.
+   */
+  showInstruction?: boolean;
 }
 
-export function QuestionGroupView({ group, values, onChange, disabled, skin = "mock" }: Props) {
+export function QuestionGroupView({ group, values, onChange, disabled, skin = "mock", showInstruction = true }: Props) {
   const practice = skin === "practice";
   const layoutQuestionIds = group.layoutHtml
     ? new Set(
@@ -21,12 +27,15 @@ export function QuestionGroupView({ group, values, onChange, disabled, skin = "m
     : new Set<string>();
   if (practice && group.questionType === "matching") {
     return (
-      <MatchingBoard group={group} values={values} onChange={onChange} disabled={disabled} />
+      <MatchingBoard group={group} values={values} onChange={onChange} disabled={disabled}
+                     showInstruction={showInstruction} />
     );
   }
   return (
     <section className={`q-group ${practice ? "q-group-practice" : ""}`}>
-      <div className="instr" dangerouslySetInnerHTML={{ __html: escapeKeepBreaks(group.instruction) }} />
+      {showInstruction && (
+        <div className="instr" dangerouslySetInnerHTML={{ __html: escapeKeepBreaks(group.instruction) }} />
+      )}
       {group.wordBank && group.wordBank.length > 0 && (
         <p className="bank">{group.wordBank.join(" · ")}</p>
       )}
@@ -466,7 +475,9 @@ function MatchingBoard({
   values,
   onChange,
   disabled,
+  showInstruction = true,
 }: {
+  showInstruction?: boolean;
   group: QuestionGroup;
   values: Record<string, string | string[] | null | undefined>;
   onChange: (questionId: string, value: string | string[] | null) => void;
@@ -485,7 +496,9 @@ function MatchingBoard({
 
   return (
     <section className="q-group q-group-practice matching-board">
-      <div className="instr" dangerouslySetInnerHTML={{ __html: escapeKeepBreaks(group.instruction) }} />
+      {showInstruction && (
+        <div className="instr" dangerouslySetInnerHTML={{ __html: escapeKeepBreaks(group.instruction) }} />
+      )}
       <p className="match-hint">把右侧标签拖到题目上，或先点标签再点空位。键盘可用下拉。</p>
       <div className="match-pool" role="list">
         {options.map((opt) => (

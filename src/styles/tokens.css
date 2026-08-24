@@ -1,53 +1,86 @@
+/* App-shell tokens — the "kami" paper palette.
+ *
+ * One accent only (`--accent`, an ink blue). Status hues exist for status and
+ * nothing else. There is deliberately no `--blue`: a hue-named token invites
+ * decoration, and the palette this replaced used `--blue` in 30-odd places
+ * that were not links or actions.
+ *
+ * Dark is derived rather than borrowed: kami itself ships light-only, so the
+ * dark ramp keeps the same warm hue family instead of flipping to the cool
+ * slate the previous palette used.
+ *
+ * Contrast is quoted against the *worst* of the three surfaces a token can
+ * land on (--bg, --panel, --panel-2), not just one of them:
+ *   light  ink 16.1:1 · ink-soft 11.2:1 · muted 7.3:1 · muted-2 4.6:1
+ *          accent 10.6:1 · positive 5.6:1 · caution 5.5:1 · danger 6.0:1
+ *   dark   ink 12.1:1 · ink-soft 9.5:1 · muted 5.3:1 · muted-2 4.9:1
+ *          accent 6.8:1 · positive 7.0:1 · caution 6.9:1 · danger 5.8:1
+ * Every one clears WCAG AA (4.5:1) for body text. `scripts/check_styles.py`
+ * keeps the literals in this file; the ratios are recomputed by hand when a
+ * value changes.
+ */
 :root {
-  --ink: #e8eef4;
-  --ink-soft: #c9d3dc;
-  --muted: #8d9aa7;
-  --muted-2: #667480;
-  --bg: #07111a;
-  --bg-deep: #050d14;
-  --bg-2: #0b1720;
-  --panel: #111f29;
-  --panel-2: #172630;
-  --panel-hover: #1b2b36;
-  --line: rgba(132, 158, 177, .17);
-  --line-strong: rgba(141, 170, 191, .28);
-  --accent: #78b6fb;
-  --blue: #4f9cff;
-  --blue-soft: rgba(79, 156, 255, .14);
-  --green: #69c878;
-  --green-soft: rgba(105, 200, 120, .13);
-  --yellow: #e9b541;
-  --yellow-soft: rgba(233, 181, 65, .13);
-  --danger: #dd6c62;
-  --shadow: 0 16px 48px rgba(0, 0, 0, .22);
+  /* Warm dark is the default: the app opens before the profile is read, and
+     `applyUi` only switches to light when the saved profile asks for it. */
+  --bg: #131209;
+  --bg-deep: #0d0c06;
+  --bg-2: #1a1912;
+  --panel: #23211a;
+  --panel-2: #2a2820;
+  --panel-hover: #302d24;
+  --ink: #ece8dc;
+  --ink-soft: #d4cfc0;
+  --muted: #a09a8a;
+  --muted-2: #9a9487;
+  /* Translucent rules rather than solid dark edges, so a panel reads as a
+     sheet lifted off the ground instead of a box drawn on it. */
+  --line: rgba(236, 232, 220, .12);
+  --line-strong: rgba(236, 232, 220, .22);
+  --accent: #8fb3e0;
+  --accent-soft: rgba(143, 179, 224, .14);
+  --accent-ink: #131209;
+  --positive: #87c091;
+  --positive-soft: rgba(135, 192, 145, .14);
+  --caution: #d9aa57;
+  --caution-soft: rgba(217, 170, 87, .14);
+  --danger: #e08b80;
+  --danger-soft: rgba(224, 139, 128, .14);
+  --shadow: 0 14px 36px rgba(0, 0, 0, .32);
   --font-sans: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
   --font-mono: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
   --radius: 7px;
   color-scheme: dark;
 }
 
+/* kami reads the interface in Chinese; this stack is the reason to borrow it. */
+:root:lang(zh-CN),
+:root[lang="zh-CN"] {
+  --font-sans: "Segoe UI Variable", "Segoe UI", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+}
+
 [data-ui="light"] {
-  --ink: #1d2b36;
-  --ink-soft: #354856;
-  --muted: #647482;
-  --muted-2: #84919b;
-  --bg: #edf2f5;
-  --bg-deep: #e4eaee;
-  --bg-2: #f7f9fa;
-  --panel: #ffffff;
-  --panel-2: #f3f6f8;
-  --panel-hover: #eef3f6;
-  --line: rgba(61, 86, 104, .16);
-  --line-strong: rgba(61, 86, 104, .28);
-  --accent: #276fbb;
-  --blue: #2779cf;
-  --blue-soft: rgba(39, 121, 207, .1);
-  --green: #3d9652;
-  --green-soft: rgba(61, 150, 82, .1);
-  --yellow: #b57908;
-  --yellow-soft: rgba(181, 121, 8, .1);
-  --danger: #bd4c42;
-  --shadow: 0 12px 32px rgba(39, 58, 73, .1);
+  --bg: #f1f0e7;          /* parchment */
+  --bg-deep: #e9e8dd;
+  --bg-2: #f7f6f1;
+  --panel: #fbfaf7;       /* ivory */
+  --panel-2: #f4f3ec;
+  --panel-hover: #edece4;
+  --ink: #141413;
+  --ink-soft: #33322e;
+  --muted: #504e49;
+  --muted-2: #6f6c64;
+  --line: rgba(20, 20, 19, .13);
+  --line-strong: rgba(20, 20, 19, .22);
+  --accent: #1b365d;
+  --accent-soft: rgba(27, 54, 93, .09);
+  --accent-ink: #fbfaf7;
+  --positive: #2f6b3f;
+  --positive-soft: rgba(47, 107, 63, .1);
+  --caution: #7d5a12;
+  --caution-soft: rgba(125, 90, 18, .1);
+  --danger: #9c3b30;
+  --danger-soft: rgba(156, 59, 48, .1);
+  --shadow: 0 12px 30px rgba(38, 34, 24, .1);
   color-scheme: light;
 }
 
@@ -121,6 +154,6 @@ button, input, textarea, select { font: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: default; }
 img { max-width: 100%; }
-::selection { background: rgba(79, 156, 255, .32); color: inherit; }
+::selection { background: var(--accent-soft); color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

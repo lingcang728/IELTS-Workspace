@@ -1,48 +1,31 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { analyticsReport, bootstrap, importExam, loadExam, loadSession, saveProfile, saveSession, scoreExam } from "./lib/api";
 import { buildReviewPrompt } from "./lib/reviewPrompt";
-import { rawNeededForBand, rawToBand } from "./lib/band";
-import type { AnalyticsPoint, AnalyticsReport, Bootstrap, Exam, ExamSummary, ModuleKind, Profile, ScoreReport, Session, SessionSummary } from "./lib/types";
+import type { AnalyticsReport, Bootstrap, Exam, ExamSummary, Profile, ScoreReport, Session, SessionSummary } from "./lib/types";
 import { allQuestions } from "./lib/types";
+import type { UiTheme, View } from "./lib/view";
 import { ExamApp } from "./exam/ExamApp";
-import { BrandMark, Icon, type IconName, ModuleIcon, runWindowAction, WindowControls } from "./components/Ui";
-import { UpdatePanel } from "./components/UpdatePanel";
+import { BrandMark, Icon, runWindowAction } from "./components/Ui";
+import { DesktopTitlebar, Sidebar } from "./components/Shell";
+import { Workbench } from "./pages/Workbench";
+import { PracticeCenter } from "./pages/PracticeCenter";
+import { MockCenter } from "./pages/MockCenter";
+import { AnalyticsPage } from "./pages/Analytics";
+import { History } from "./pages/History";
+import { ImportPage } from "./pages/ImportPage";
+import { Settings } from "./pages/Settings";
+import { Results } from "./pages/Results";
 import { checkForDesktopUpdate } from "./lib/updateService";
-
-type View = "home" | "practice" | "mock" | "analytics" | "history" | "settings" | "import" | "results" | "exam";
-type UiTheme = "light" | "dark";
-type CatalogModule = "all" | "reading" | "listening" | "writing";
 
 function applyUi(theme: UiTheme) {
   document.documentElement.dataset.ui = theme;
 }
 
-function DesktopTitlebar() {
-  return <header className="window-bar" data-tauri-drag-region>
-    <div className="window-brand" data-tauri-drag-region><BrandMark size={18} className="titlebar-mark" /><span>IELTS Workspace</span></div>
-    <WindowControls />
-  </header>;
-}
-
-function Sidebar({ view, setView }: { view: View; setView: (v: View) => void }) {
-  const primary: { view: View; icon: IconName; label: string }[] = [
-    { view: "home", icon: "grid", label: "工作台" },
-    { view: "practice", icon: "pen", label: "练习" },
-    { view: "mock", icon: "clock", label: "模考" },
-    { view: "analytics", icon: "chart", label: "分析报告" },
-  ];
-  const nav = (item: { view: View; icon: IconName; label: string }) => <button key={item.view} type="button" className={view === item.view ? "selected" : ""} onClick={() => setView(item.view)}><Icon name={item.icon} size={21} /><span>{item.label}</span></button>;
-  return <aside className="sidebar">
-    <div className="sidebar-brand"><BrandMark size={56} className="sidebar-mark" /><div><strong>IELTS</strong><span>Workspace</span></div></div>
-    <nav className="side-nav" aria-label="主导航">{primary.map(nav)}</nav>
-    <div className="sidebar-spacer" />
-    <nav className="side-nav" aria-label="辅助导航">
-      {nav({ view: "history", icon: "history", label: "历史记录" })}
-      {nav({ view: "settings", icon: "settings", label: "设置" })}
-    </nav>
-  </aside>;
-}
-
+/**
+ * The shell: global state, the IPC calls that mutate it, and the view switch.
+ * Every screen lives in `src/pages/`; anything drawn by more than one of them
+ * lives in `src/components/`. Keep rendering out of this file.
+ */
 export function App() {
   const [boot, setBoot] = useState<Bootstrap | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -205,217 +188,3 @@ export function App() {
     {busy && <div className="busy-indicator" role="status"><i /><span>正在准备试卷…</span></div>}
   </div>;
 }
-
-function PageHeading({ eyebrow, title, subtitle, aside }: { eyebrow?: string; title: React.ReactNode; subtitle?: React.ReactNode; aside?: React.ReactNode }) {
-  return <div className="page-heading"><div>{eyebrow && <span className="eyebrow">{eyebrow}</span>}<h1>{title}</h1>{subtitle && <p>{subtitle}</p>}</div>{aside}</div>;
-}
-
-function ModuleCard({ module, exam, onStart, disabled }: { module: "reading" | "listening" | "writing"; exam?: ExamSummary; onStart: () => void; disabled?: boolean }) {
-  const meta = { reading: ["Reading", "学术类阅读", "60 分钟 · 3 篇文章 · 40 题"], listening: ["Listening", "学术类听力", "约 30 分钟 · 4 部分 · 40 题"], writing: ["Writing", "学术类写作", "60 分钟 · Task 1 & Task 2"] }[module];
-  return <article className={`module-card ${module}`}><div className="module-card-main"><span className="module-icon-shell"><ModuleIcon module={module} size={56} /></span><div><h3>{meta[0]}</h3><span>{meta[1]}</span></div></div><small>{meta[2]}</small><button type="button" disabled={disabled || !exam} onClick={onStart}>开始练习</button></article>;
-}
-
-function Workbench({ boot, analytics, busy, onStart, onView, rangeDays }: { boot: Bootstrap; analytics: AnalyticsReport | null; busy: boolean; onStart: (e: ExamSummary, mode: "mock" | "practice") => void; onView: (v: View) => void; rangeDays: number }) {
-  const first = (module: ExamSummary["module"]) => boot.exams.find((e) => e.module === module);
-  const recent = boot.sessions.filter((s) => s.status === "submitted").slice(0, 4);
-  const avg = analytics?.overallAverage;
-  const countdown = daysUntil(boot.profile?.examDate);
-  return <div className="dashboard-page page-stack"><PageHeading title={<>欢迎回来！ <span className="wave-mark">👋</span></>} subtitle={<>在这里开始你的 <em>IELTS Academic</em> 练习与模考</>} aside={countdown == null
-      ? <blockquote>Success is the sum of small efforts,<br />repeated day in and day out.<cite>— Robert Collier</cite></blockquote>
-      : <div className="exam-countdown"><small>距考试还有</small><strong>{countdown > 0 ? countdown : 0}</strong><span>{countdown > 0 ? "天" : countdown === 0 ? "天 · 就是今天" : "天 · 考试日已过"}</span><b>{boot.profile?.examDate}</b></div>} />
-    <div className="dashboard-grid top-grid"><section className="workspace-card quick-start"><div className="card-heading"><div><h2>快速开始</h2><p>选择题型，立即开始练习或模考</p></div></div><div className="module-grid">{(["reading", "listening", "writing"] as const).map((m) => { const ex = first(m); return <ModuleCard key={m} module={m} exam={ex} disabled={busy} onStart={() => ex && onStart(ex, "practice")} />; })}</div></section><section className="workspace-card recent-use"><div className="card-heading"><h2>官方样题 / 最近使用</h2><button type="button" className="link-button" onClick={() => onView("mock")}>查看全部 <Icon name="arrow" size={15} /></button></div>{boot.exams.slice(0, 1).map((e) => <ExamRow key={e.id} exam={e} action="开始模考" onClick={() => onStart(e, "mock")} />)}{boot.sessions[0] ? <SessionRow session={boot.sessions[0]} action="继续练习" onClick={() => onView("history")} /> : <p className="empty-inline">完成练习后，这里会保留最近进度。</p>}</section></div>
-    <div className="dashboard-grid bottom-grid"><section className="workspace-card recent-records"><div className="card-heading"><h2>最近模考记录</h2><button type="button" className="link-button" onClick={() => onView("history")}>查看全部 <Icon name="arrow" size={15} /></button></div><RecordTable sessions={recent} /></section><section className="workspace-card analytics-overview"><div className="card-heading"><h2>分析概览</h2><button type="button" className="link-button" onClick={() => onView("analytics")}>{rangeLabel(rangeDays)} <Icon name="arrow" size={14} /></button></div><div className="analytics-summary"><div className="average-score"><span>平均估算 Band</span><strong>{avg == null ? "—" : avg.toFixed(1)}</strong><small>{avg == null ? "提交考试后显示真实数据" : "非官方估算，来自已提交的真实会话"}</small></div><MiniTrend points={analytics?.timeTrend ?? []} /></div></section></div>
-  </div>;
-}
-
-function PracticeCenter({ exams, sessions, busy, onStart, onContinue, onView }: { exams: ExamSummary[]; sessions: SessionSummary[]; busy: boolean; onStart: (e: ExamSummary, mode: "mock" | "practice") => void; onContinue: (id: string) => void; onView: (v: View) => void }) {
-  const [module, setModule] = useState<CatalogModule>("all"); const [query, setQuery] = useState(""); const [page, setPage] = useState(0);
-  const filtered = useMemo(() => exams.filter((e) => (module === "all" || e.module === module) && `${e.title} ${sourceLabel(e)}`.toLowerCase().includes(query.trim().toLowerCase())), [exams, module, query]);
-  const pageSize = 6; const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize)); const visible = filtered.slice(page * pageSize, (page + 1) * pageSize);
-  const practiceSessions = sessions.filter((s) => s.mode === "practice"); const unfinished = practiceSessions.find((s) => s.status !== "submitted");
-  // 本周 = 本地时区的周一 00:00 起。之前这一块统计的是全部历史会话。
-  const weekStart = useMemo(() => startOfWeek(new Date()), []);
-  const weekly = practiceSessions.filter((s) => Date.parse(s.startedAt) >= weekStart);
-  const weeklyDone = weekly.filter((s) => s.status === "submitted").length;
-  const weeklyOpen = weekly.filter((s) => s.status !== "submitted").length;
-  useEffect(() => setPage(0), [module, query]);
-  return <div className="practice-page page-stack"><PageHeading title="练习中心" subtitle="自由选择模块与题目，按自己的节奏暂停、重听和复盘" />
-    <div className="practice-features"><div><Icon name="target" /><span><strong>自由选题</strong><small>按模块和关键词快速定位</small></span></div><div><Icon name="pause" /><span><strong>可暂停重听</strong><small>练习模式不会强制交卷</small></span></div><div><Icon name="eye" /><span><strong>练后看解析</strong><small>提交后逐题核对答案</small></span></div></div>
-    <div className="practice-layout"><section className="workspace-card catalog-card"><CatalogToolbar module={module} setModule={setModule} query={query} setQuery={setQuery} /><div className="catalog-heading"><h2>可用练习</h2><span>{filtered.length} 套</span></div><div className="catalog-list">{visible.map((e) => <ExamCatalogRow key={e.id} exam={e} mode="practice" action="开始练习" busy={busy} onClick={() => onStart(e, "practice")} />)}{visible.length === 0 && <div className="empty-state compact"><Icon name="search" /><p>没有找到符合条件的练习。</p></div>}</div><Pagination page={page} pageCount={pageCount} setPage={setPage} /></section>
-      <aside className="practice-aside"><section className="workspace-card continue-card"><div className="card-heading"><h2>继续上次练习</h2><button type="button" className="link-button" onClick={() => onView("history")}>查看全部 <Icon name="arrow" size={14} /></button></div>{unfinished ? <><SessionRow session={unfinished} action="继续练习" onClick={() => onContinue(unfinished.id)} /><small>进度会随作答自动保存</small></> : <p className="empty-inline">当前没有未完成练习。</p>}</section><section className="workspace-card weekly-card"><div className="card-heading"><h2>本周练习</h2><span className="meta">本机记录 · {formatDay(new Date(weekStart))} 起</span></div><WeeklyStat icon="clock" label="练习会话" value={`${weekly.length} 次`} /><WeeklyStat icon="check" label="已完成" value={`${weeklyDone} 套`} ratio={weekly.length ? Math.round((weeklyDone / weekly.length) * 100) : undefined} hint={weekly.length ? `完成率 ${Math.round((weeklyDone / weekly.length) * 100)}%` : undefined} /><WeeklyStat icon="rotate" label="可恢复" value={`${weeklyOpen} 套`} /><small className="weekly-total">全部历史：{practiceSessions.length} 次练习</small></section></aside>
-    </div></div>;
-}
-
-function MockCenter({ exams, sessions, recovery, busy, onStart, onContinue, onView }: { exams: ExamSummary[]; sessions: SessionSummary[]; recovery: SessionSummary[]; busy: boolean; onStart: (e: ExamSummary, mode: "mock" | "practice") => void; onContinue: (id: string) => void; onView: (v: View) => void }) {
-  const [module, setModule] = useState<CatalogModule>("all"); const [query, setQuery] = useState(""); const [page, setPage] = useState(0);
-  const filtered = useMemo(() => exams.filter((e) => (module === "all" || e.module === module) && `${e.title} ${sourceLabel(e)}`.toLowerCase().includes(query.trim().toLowerCase())), [exams, module, query]);
-  const pageSize = 6; const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize)); const visible = filtered.slice(page * pageSize, (page + 1) * pageSize); const completed = sessions.filter((s) => s.mode === "mock" && s.status === "submitted");
-  useEffect(() => setPage(0), [module, query]);
-  return <div className="mock-page page-stack"><PageHeading title="模考中心" subtitle="官方样题与全真模考，严格按真实考试流程，提升应试能力与时间管理" />
-    <div className="mock-layout"><div className="mock-main">{recovery.length > 0 && <section className="workspace-card resume-card"><div><h2>继续未完成模考</h2></div>{recovery.slice(0, 1).map((s) => <SessionRow key={s.id} session={s} action="继续模考" onClick={() => onContinue(s.id)} />)}</section>}<section className="workspace-card catalog-card mock-catalog"><CatalogToolbar module={module} setModule={setModule} query={query} setQuery={setQuery} /><div className="catalog-heading"><h2>可用模考</h2><span>{filtered.length} 套</span></div><div className="catalog-list">{visible.map((e) => <ExamCatalogRow key={e.id} exam={e} mode="mock" action="开始模考" busy={busy} onClick={() => onStart(e, "mock")} />)}</div><Pagination page={page} pageCount={pageCount} setPage={setPage} /></section></div>
-      <aside className="mock-aside"><section className="workspace-card recent-mock-card"><div className="card-heading"><h2>最近模考成绩</h2><button type="button" className="link-button" onClick={() => onView("history")}>查看全部 <Icon name="arrow" size={14} /></button></div><RecentMockList sessions={completed.slice(0, 2)} /></section></aside>
-    </div></div>;
-}
-
-function CatalogToolbar({ module, setModule, query, setQuery }: { module: CatalogModule; setModule: (m: CatalogModule) => void; query: string; setQuery: (q: string) => void }) {
-  return <div className="catalog-toolbar"><div className="filter-tabs">{(["all", "reading", "listening", "writing"] as const).map((m) => <button key={m} type="button" className={module === m ? "active" : ""} onClick={() => setModule(m)}>{m === "all" ? "全部" : m[0].toUpperCase() + m.slice(1)}</button>)}</div><label className="catalog-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="搜索题目" /></label></div>;
-}
-
-function Pagination({ page, pageCount, setPage }: { page: number; pageCount: number; setPage: (p: number) => void }) {
-  if (pageCount <= 1) return null;
-  return <div className="pagination"><button type="button" disabled={page === 0} onClick={() => setPage(page - 1)}>上一页</button><span>{page + 1} / {pageCount}</span><button type="button" disabled={page + 1 >= pageCount} onClick={() => setPage(page + 1)}>下一页</button></div>;
-}
-
-/** `ratio` is only ever a real measured percentage; omit it rather than invent one. */
-function WeeklyStat({ icon, label, value, ratio, hint }: { icon: IconName; label: string; value: string; ratio?: number; hint?: string }) {
-  return <div className="weekly-stat"><div><span className="stat-icon"><Icon name={icon} /></span><strong>{label}</strong><b>{value}</b></div>{ratio == null ? null : <i><span style={{ width: `${Math.max(0, Math.min(100, ratio))}%` }} /></i>}{hint && <em>{hint}</em>}</div>;
-}
-
-function AnalyticsPage({ report, rangeDays, onRangeDays }: { report: AnalyticsReport | null; rangeDays: number; onRangeDays: (d: number) => void }) {
-  const [questionType, setQuestionType] = useState("all");
-  const objective = report?.moduleAverages;
-  const sessionCount = Object.values(report?.moduleCounts ?? {}).reduce((sum, n) => sum + (n ?? 0), 0);
-  const unbanded = Object.values(report?.unbandedCounts ?? {}).reduce((sum, n) => sum + (n ?? 0), 0);
-  const types = useMemo(() => Array.from(new Set((report?.questionTypeAccuracy ?? []).map((row) => row.questionType))).sort(), [report]);
-  const accuracyRows = (report?.questionTypeAccuracy ?? []).filter((row) => questionType === "all" || row.questionType === questionType);
-  useEffect(() => { if (questionType !== "all" && !types.includes(questionType)) setQuestionType("all"); }, [types, questionType]);
-  const toolbar = <div className="analytics-toolbar">
-    <label className="select-field"><span className="sr-only">时间范围</span><select value={rangeDays} onChange={(e) => onRangeDays(Number(e.target.value))}>
-      <option value={7}>过去 7 天</option><option value={30}>过去 30 天</option><option value={90}>过去 90 天</option><option value={365}>过去一年</option><option value={0}>全部记录</option>
-    </select></label>
-    <label className="select-field"><span className="sr-only">题型</span><select value={questionType} onChange={(e) => setQuestionType(e.target.value)}>
-      <option value="all">所有题型</option>{types.map((tp) => <option key={tp} value={tp}>{tp.replaceAll("_", " ")}</option>)}
-    </select></label>
-  </div>;
-  return <div className="analytics-page page-stack"><PageHeading title="分析报告" subtitle="基于你的练习与模考数据，全面分析学习表现，识别优势与薄弱环节。" aside={toolbar} />
-    {!report || sessionCount === 0
-      ? <div className="workspace-card empty-state"><Icon name="chart" size={42} /><h2>{rangeDays === 0 ? "还没有可分析的真实会话" : `${rangeLabel(rangeDays)}内没有已提交的会话`}</h2><p>完成并提交 Listening 或 Reading 后，这里会显示估算 Band 趋势和题型正确率。Writing 只统计完成次数，不产生 Band。{rangeDays !== 0 && "把时间范围切换到「全部记录」可以看到更早的会话。"}</p></div>
-      : <>
-        <div className="analytics-grid">
-          <section className="workspace-card trend-card"><div className="card-heading"><h2>估算 Band 趋势</h2><span className="meta">按提交时间 · {rangeLabel(rangeDays)}</span></div><MiniTrend points={report.timeTrend} large /></section>
-          <section className="workspace-card module-score-card"><h2>各单项平均估算 Band</h2><div className="score-rings">{(["listening", "reading", "writing"] as const).map((m) => <div key={m} className={`score-ring ${m}`}><strong>{m === "writing" ? "—" : objective?.[m]?.toFixed(1) ?? "—"}</strong><span>{m === "listening" ? "听力" : m === "reading" ? "阅读" : "写作"}</span><small>{report.moduleCounts[m] ?? 0} 次</small></div>)}<div className="score-ring speaking"><strong>—</strong><span>口语</span><small>未启用</small></div></div><small className="ring-note">写作与口语不产生客观 Band，故显示 —。</small></section>
-          <section className="workspace-card overall-card"><h2>总体表现</h2><strong>{report.overallAverage?.toFixed(1) ?? "—"}</strong><p>{rangeLabel(rangeDays)}内 {sessionCount} 次已提交会话</p><small>非官方估算，按 schema/band-conversion.json 换算；口语未启用，不进入总分。{unbanded > 0 && ` 另有 ${unbanded} 次原始分低于换算表，未计入平均。`}</small></section>
-        </div>
-        <div className="analytics-grid lower">
-          <section className="workspace-card accuracy-card"><div className="card-heading"><h2>题型正确率分析</h2>{questionType !== "all" && <span className="meta">已筛选：{questionType.replaceAll("_", " ")}</span>}</div>{accuracyRows.length === 0 && <p className="meta">暂无题型数据</p>}{accuracyRows.slice(0, 12).map((row) => <div className="accuracy-row" key={`${row.module}-${row.questionType}`}><span>{row.questionType.replaceAll("_", " ")}</span><i><b style={{ width: `${Math.round(row.accuracy * 100)}%` }} /></i><strong>{Math.round(row.accuracy * 100)}%</strong></div>)}</section>
-          <section className="workspace-card time-card"><h2>Listening & Reading 表现</h2><MiniTrend points={report.timeTrend} /></section>
-        </div>
-      </>}
-  </div>;
-}
-
-function History({ sessions, onOpen }: { sessions: SessionSummary[]; onOpen: (id: string) => void }) {
-  return <div className="history-page page-stack"><PageHeading title="历史记录" subtitle="查看已完成考试，或恢复安全保存的未完成会话" /><div className="history-list">{sessions.map((s) => <article className="workspace-card history-row" key={s.id}><ModuleIcon module={s.module} size={46} /><div className="history-info"><h3>{s.title || s.examId}</h3><span><b className={`mode-label ${s.mode}`}>{s.mode === "mock" ? "Mock" : "Practice"}</b>{s.module} · {statusLabel(s.status)} · {s.integrity === "clean" ? "完整" : "中断"}</span><small>{formatDate(s.updatedAt)}</small></div><button type="button" className="secondary-button" onClick={() => onOpen(s.id)}>{s.status === "submitted" ? "查看结果" : "继续"}</button></article>)}{sessions.length === 0 && <div className="workspace-card empty-state"><Icon name="history" size={42} /><h2>还没有记录</h2><p>从工作台开始一次练习或模考。</p></div>}</div></div>;
-}
-
-function ImportPage({ value, onChange, onImport }: { value: string; onChange: (s: string) => void; onImport: () => void }) {
-  return <div className="page-stack"><PageHeading title="导入试卷" subtitle="导入 Schema v1 JSON，不覆盖已有题库与会话" /><section className="workspace-card import-card"><textarea rows={18} value={value} onChange={(e) => onChange(e.target.value)} placeholder="在这里粘贴 Schema v1 Exam JSON…" /><button type="button" className="primary-button" onClick={onImport}>确认导入</button></section></div>;
-}
-
-function Settings({ profile, theme, onProfile, onImport }: { profile: Profile | null; theme: UiTheme; onProfile: (patch: Partial<Profile>) => void; onImport: () => void }) {
-  const targets = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9];
-  return <div className="page-stack"><PageHeading title="设置" subtitle="管理备考目标、外观、试卷导入与软件更新" />
-    <section className="settings-grid">
-      <div className="workspace-card"><Icon name="target" size={28} /><h2>备考目标</h2><p className="meta">填写后，成绩页会算出「距目标还差几题」，工作台会显示考试倒计时。</p>
-        <label className="field"><span>目标总分（Band）</span><select value={profile?.targetBand ?? ""} onChange={(e) => onProfile({ targetBand: e.target.value === "" ? undefined : Number(e.target.value) })}><option value="">未设置</option>{targets.map((b) => <option key={b} value={b}>{b.toFixed(1)}</option>)}</select></label>
-        <label className="field"><span>考试日期</span><input type="date" value={profile?.examDate ?? ""} onChange={(e) => onProfile({ examDate: e.target.value || undefined })} /></label>
-      </div>
-      <div className="workspace-card"><Icon name="eye" size={28} /><h2>外观</h2><p className="meta">只影响工作台外壳；考场界面固定使用浅色官方配色。</p><div className="button-row"><button type="button" className={theme === "dark" ? "primary-button" : "secondary-button"} onClick={() => onProfile({ theme: "dark" })}>深色</button><button type="button" className={theme === "light" ? "primary-button" : "secondary-button"} onClick={() => onProfile({ theme: "light" })}>浅色</button></div></div>
-      <div className="workspace-card"><Icon name="folder" size={28} /><h2>导入试卷</h2><p className="meta">添加符合 Schema v1 的本地题目。</p><button type="button" className="secondary-button" onClick={onImport}>打开导入</button></div>
-      <UpdatePanel />
-    </section></div>;
-}
-
-function Results({ session, report, exam, profile, onCopy, onHome }: { session: Session; report: ScoreReport | null; exam: Exam | null; profile: Profile | null; onCopy: () => void; onHome: () => void }) {
-  return <div className="results-page page-stack"><PageHeading eyebrow={session.mode === "practice" ? "PRACTICE REVIEW" : "MOCK SUBMITTED"} title={exam?.module === "writing" ? "作文已安全保存" : "本次成绩"} subtitle={exam?.title} />{report ? <div className="result-headline"><div className="result-score"><strong>{report.rawCorrect}</strong><span>/ {report.rawTotal}</span><small>Raw score</small></div><BandEstimate module={exam?.module ?? session.module} raw={report.rawCorrect} total={report.rawTotal} target={profile?.targetBand} /></div> : <div className="workspace-card"><p>Writing 不生成客观分数。这里保留字数、时长和完成状态，可复制 Prompt 到外部模型批改。</p></div>}{session.integrity === "interrupted" && <div className="notice-strip warning"><Icon name="info" />本次会话曾中断，因此不会作为完整 Mock 记录。</div>}{report && <div className="review-list">{report.questions.map((q) => <details key={q.questionId} className={`review-item ${q.correct ? "ok" : "bad"}`} open={!q.correct && session.mode === "practice"}><summary>Q{q.number} · {q.correct ? "正确" : "错误"} · 你的答案：{formatAns(q.userAnswer)}</summary><p>可接受答案：{q.acceptedAnswers.join(" / ") || "—"}</p></details>)}</div>}{session.writing && Object.entries(session.writing).map(([id, text]) => <article className="workspace-card writing-result" key={id}><h3>{id}</h3><span>{text.trim() ? text.trim().split(/\s+/).length : 0} words</span><pre>{text}</pre></article>)}<div className="button-row"><button type="button" className="primary-button" onClick={onCopy}>复制批改 Prompt</button><button type="button" className="secondary-button" onClick={onHome}>返回工作台</button></div></div>;
-}
-
-function ExamRow({ exam, action, onClick }: { exam: ExamSummary; action: string; onClick: () => void }) {
-  return <article className="exam-row"><ModuleIcon module={exam.module} size={44} /><div className="exam-row-copy"><span className="tag">{sourceLabel(exam)}</span><h3>{exam.title}</h3><p>{moduleLabel(exam.module)} · {exam.questionCount} 题</p></div><button type="button" className="secondary-button" onClick={onClick}>{action}</button></article>;
-}
-
-function ExamCatalogRow({ exam, mode, action, busy, onClick }: { exam: ExamSummary; mode: "mock" | "practice"; action: string; busy: boolean; onClick: () => void }) {
-  return <article className={`catalog-row ${exam.module}`}><ModuleIcon module={exam.module} size={42} /><div className="catalog-title"><h3>{exam.title}</h3><small>{sourceLabel(exam)}</small></div><span><small>模块</small>{moduleLabel(exam.module)}</span><span><small>时长</small>{durationLabel(exam)}</span><span><small>题量</small>{exam.questionCount || "—"} {exam.module === "writing" ? "任务" : "题"}</span><button type="button" className={mode === "mock" ? "strict-button" : "module-button"} disabled={busy} onClick={onClick}>{action}</button></article>;
-}
-
-function SessionRow({ session, action, onClick }: { session: SessionSummary; action: string; onClick: () => void }) {
-  return <article className="exam-row session-row"><span className="session-icon"><Icon name={session.status === "submitted" ? "check" : "clock"} size={22} /></span><div className="exam-row-copy"><h3>{session.title || session.examId}</h3><p>{session.mode === "mock" ? "模考" : "练习"} · {formatDate(session.updatedAt)}</p></div><button type="button" className="secondary-button" onClick={onClick}>{action}</button></article>;
-}
-
-function RecordTable({ sessions }: { sessions: SessionSummary[] }) {
-  if (!sessions.length) return <p className="empty-inline">完成一次模考后，记录会显示在这里。</p>;
-  return <div className="record-table"><div className="record-head"><span>模考名称</span><span>完成时间</span><span>模块</span><span>状态</span></div>{sessions.map((s) => <div className="record-line" key={s.id}><strong>{s.title || s.examId}</strong><span>{formatDate(s.updatedAt)}</span><span>{moduleLabel(s.module)}</span><b>{statusLabel(s.status)}</b></div>)}</div>;
-}
-
-function RecentMockList({ sessions }: { sessions: SessionSummary[] }) {
-  if (!sessions.length) return <p className="empty-inline">完成一次模考后，成绩会显示在这里。</p>;
-  return <div className="recent-mock-list">{sessions.map((session) => <article key={session.id}><ModuleIcon module={session.module} size={42} /><span><strong>{session.title || session.examId}</strong><small>完成时间：{formatDate(session.updatedAt)}</small></span><b>{statusLabel(session.status)}</b></article>)}</div>;
-}
-
-/**
- * Plots estimated bands. Points whose raw score falls below the conversion
- * table carry `band: null` and are skipped — never back-filled with a formula.
- */
-function MiniTrend({ points, large = false }: { points: AnalyticsPoint[]; large?: boolean }) {
-  const values = points.map((p) => p.band ?? (p.module && p.rawCorrect != null ? rawToBand(p.module, p.rawCorrect) : null)).filter((v): v is number => typeof v === "number" && Number.isFinite(v));
-  if (!values.length) return <div className={`trend-empty ${large ? "large" : ""}`}>完成考试后显示真实趋势</div>;
-  const min = Math.min(...values, 4); const max = Math.max(...values, 9); const width = 360; const height = large ? 150 : 86;
-  const coords = values.map((v, i) => ({ x: (i / Math.max(1, values.length - 1)) * width, y: height - ((v - min) / Math.max(1, max - min)) * (height - 14) - 7 })); const path = coords.map(({ x, y }) => `${x},${y}`).join(" ");
-  return <svg className={`mini-trend ${large ? "large" : ""}`} viewBox={`0 0 ${width} ${height}`} role="img" aria-label="真实成绩趋势"><defs><linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="var(--blue)" stopOpacity=".22"/><stop offset="1" stopColor="var(--blue)" stopOpacity="0"/></linearGradient></defs><polygon points={`0,${height} ${path} ${width},${height}`} fill="url(#trendFill)"/><polyline points={path} fill="none" stroke="var(--blue)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />{coords.map(({ x, y }, i) => <circle key={i} cx={x} cy={y} r="3.5" fill="var(--panel)" stroke="var(--blue)" strokeWidth="2" />)}</svg>;
-}
-
-/** Estimated band beside the raw score, always with the "not official" caveat. */
-function BandEstimate({ module, raw, total, target }: { module: ModuleKind; raw: number; total: number; target?: number }) {
-  const band = rawToBand(module, raw);
-  const needed = target == null ? null : rawNeededForBand(module, target);
-  const gap = needed == null ? null : needed - raw;
-  return <div className="band-estimate">
-    <div className="band-value"><small>Estimated band</small><strong>{band == null ? "—" : band.toFixed(1)}</strong></div>
-    <p className="band-caveat">非官方成绩。按 <code>schema/band-conversion.json</code> 的近似换算表估算，真实考试以官方评分为准。{band == null && " 本次原始分低于换算表下限，无法给出估算。"}</p>
-    {target != null && (needed == null
-      ? <p className="band-gap">目标 {target.toFixed(1)} 分不在本模块的换算表范围内。</p>
-      : gap != null && gap <= 0
-        ? <p className="band-gap ok"><Icon name="check" size={15} />已达到目标 {target.toFixed(1)} 分。</p>
-        : <p className="band-gap">距目标 {target.toFixed(1)} 分还差 <strong>{gap}</strong> 题（需答对 {needed}/{total}）。</p>)}
-  </div>;
-}
-
-function rangeLabel(rangeDays: number) {
-  if (rangeDays === 0) return "全部记录";
-  if (rangeDays === 365) return "过去一年";
-  return `过去 ${rangeDays} 天`;
-}
-
-/** Local Monday 00:00 of the week containing `now`, as epoch milliseconds. */
-function startOfWeek(now: Date) {
-  const d = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const weekday = (d.getDay() + 6) % 7; // Monday = 0
-  d.setDate(d.getDate() - weekday);
-  return d.getTime();
-}
-
-/** Whole days from today to `date` (YYYY-MM-DD); negative once it has passed. */
-function daysUntil(date?: string) {
-  if (!date) return null;
-  const target = Date.parse(`${date}T00:00:00`);
-  if (!Number.isFinite(target)) return null;
-  const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
-  return Math.round((target - today) / 86400000);
-}
-
-function formatDay(value: Date) {
-  return `${value.getMonth() + 1} 月 ${value.getDate()} 日`;
-}
-
-function sourceLabel(exam: ExamSummary) {
-  if (exam.source?.kind === "official_sample") return "IELTS Official";
-  if (exam.source?.kind === "cambridge_book") return exam.source.title || exam.source.publisher || "Cambridge IELTS";
-  if (exam.source?.kind === "imported_document") return exam.source.title || "本地导入";
-  return exam.source?.title || "本地题库";
-}
-function moduleLabel(module: ExamSummary["module"]) { return module[0].toUpperCase() + module.slice(1); }
-function durationLabel(exam: ExamSummary) { if (exam.durationMs) return `${Math.round(exam.durationMs / 60000)} 分钟`; if (exam.module === "listening") return "约 30 分钟"; return exam.module === "writing" || exam.module === "reading" ? "60 分钟" : "—"; }
-function statusLabel(status: SessionSummary["status"]) { return ({ submitted: "已完成", in_progress: "进行中", interrupted: "已中断", created: "已创建", aborted: "已终止" } as const)[status]; }
-function formatDate(value: string) { return value.replace("T", " ").slice(0, 16); }
-function formatAns(value: unknown): string { if (value == null || value === "") return "—"; return Array.isArray(value) ? value.join(", ") : String(value); }

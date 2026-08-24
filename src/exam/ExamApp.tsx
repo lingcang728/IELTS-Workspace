@@ -566,7 +566,7 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
           {exam.module === "writing" ? (
             <WritingPane exam={exam} session={session} patch={patch} sectionId={currentSection?.id} />
           ) : (
-            currentSection?.questionGroups.map((g) => (
+            currentSection?.questionGroups.map((g, index) => (
               <QuestionGroupView
                 key={g.id || `${g.questionType}-${g.instruction.slice(0, 24)}`}
                 group={g}
@@ -574,6 +574,10 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
                 values={values}
                 onChange={setAnswer}
                 skin={session.mode}
+                showInstruction={
+                  g.instruction.trim() !==
+                  (currentSection.questionGroups[index - 1]?.instruction ?? "").trim()
+                }
               />
             ))
           )}

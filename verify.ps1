@@ -7,6 +7,9 @@ if (Test-Path -LiteralPath 'fixtures\cambridge') {
 } else {
   Write-Host '== Local licensed Cambridge content: skipped (not distributed) =='
 }
+Write-Host '== styles (token discipline + exam domain) =='
+python scripts/check_styles.py
+if ($LASTEXITCODE -ne 0) { throw "Style check failed with exit code $LASTEXITCODE" }
 Write-Host '== vitest =='
 npm test
 if ($LASTEXITCODE -ne 0) { throw "Vitest failed with exit code $LASTEXITCODE" }
