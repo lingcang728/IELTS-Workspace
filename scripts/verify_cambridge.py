@@ -62,6 +62,9 @@ TRANSCRIPT_SLICE_RE = re.compile(r"^[a-z,.;:!?)\]}]")
 # A group needs a real rubric ("Write ONE WORD ONLY", "Choose TWO letters"):
 # without it the test-taker cannot know the word limit or how many to pick.
 PLACEHOLDER_INSTRUCTIONS = PLACEHOLDER_PROMPTS | {"", "instruction", "instructions"}
+# A listening rubric never sends the test-taker to a reading passage.
+CROSS_MODULE_RUBRIC_RE = re.compile(r"reading passage|from the passage|"
+                                    r"which paragraph|on your answer sheet", re.I)
 # A reading passage this short is not a passage. The shortest genuine Cambridge
 # Academic passage in the corpus is a little over 2000 characters.
 MIN_PASSAGE_CHARS = 1200
@@ -198,6 +201,13 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
             if instruction.lower().rstrip(".") in {p.rstrip(".") for p in PLACEHOLDER_INSTRUCTIONS}:
                 gap(f"group {gid}", f"has a placeholder instruction {instruction[:48]!r} — "
                                     f"the test-taker cannot know the word limit or how many to choose")
+            elif module == "listening" and CROSS_MODULE_RUBRIC_RE.search(instruction):
+                # The importer gave many single-question groups whatever rubric
+                # was lexically adjacent, so listening papers ended up telling
+                # the test-taker to consult a reading passage. A wrong rubric is
+                # worse than a missing one: it reads as authoritative.
+                gap(f"group {gid}", f"is in a listening paper but its instruction cites a reading "
+                                    f"passage: {instruction[:60]!r}")
             shared = group.get("sharedOptions") or []
             if shared and sum(1 for o in shared if str(o.get("text") or "").strip()) < 2:
                 gap(f"group {gid}", f"carries {len(shared)} option labels with no text — "
