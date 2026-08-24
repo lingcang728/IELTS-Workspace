@@ -38,6 +38,8 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
   const [menu, setMenu] = useState<{ x: number; y: number } | null>(null);
   const [noteOpen, setNoteOpen] = useState<string | null>(null);
   const [confirm, setConfirm] = useState(false);
+  // The bottom navigator can be collapsed, as in the official runtime.
+  const [navOpen, setNavOpen] = useState(true);
   const [imgSrc, setImgSrc] = useState<string | null>(null);
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
   const passageRef = useRef<HTMLDivElement>(null);
@@ -577,27 +579,38 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
           )}
        </div>
         </div>
-        {exam.module !== "writing" && (
-          <aside className="exam-right-nav">
-            <h3>Question Navigator</h3>
-            <div className="nav-legend"><span className="current-dot" />Current <span className="answered-dot" />Answered <span className="review-dot" />Review</div>
-            <div className="right-question-grid">{questions.map((q) => { const a = session.answers[q.id]; const answered = a && a.value !== null && a.value !== "" && !(Array.isArray(a.value) && a.value.length === 0); return <button key={q.id} type="button" className={`${q.id === currentId ? "current" : ""} ${answered ? "answered" : ""} ${a?.flagged ? "flagged" : ""}`} onClick={() => go(q.id)}>{q.number}</button>; })}</div>
-            <div className="right-section-progress"><span>Section {Math.max(1, exam.sections.findIndex((s) => s.id === currentSection?.id) + 1)} of {exam.sections.length}</span><i><b style={{ width: `${Math.max(8, ((exam.sections.findIndex((s) => s.id === currentSection?.id) + 1) / exam.sections.length) * 100)}%` }} /></i></div>
-          </aside>
-        )}
       </div>
 
       <nav className="exam-nav">
+        {exam.module !== "writing" && (
+          <div className={`nav-strip ${navOpen ? "" : "collapsed"}`}>
+            <button type="button" className="nav-collapse" aria-expanded={navOpen} onClick={() => setNavOpen((open) => !open)}>
+              <Icon name="chevron" size={13} className={navOpen ? "" : "flip"} />{navOpen ? "Hide" : "Show"} questions
+            </button>
+            {navOpen ? (
+              <div className="question-strip" role="group" aria-label="Question navigator">
+                {questions.map((q) => {
+                  const a = session.answers[q.id];
+                  const answered = a && a.value !== null && a.value !== "" && !(Array.isArray(a.value) && a.value.length === 0);
+                  return <button key={q.id} type="button" aria-current={q.id === currentId ? "true" : undefined} aria-label={`Question ${q.number}${answered ? ", answered" : ""}${a?.flagged ? ", flagged for review" : ""}`} className={`${q.id === currentId ? "current" : ""} ${answered ? "answered" : ""} ${a?.flagged ? "flagged" : ""}`} onClick={() => go(q.id)}>{q.number}</button>;
+                })}
+              </div>
+            ) : <span />}
+            <div className="nav-legend"><span className="current-dot" />Current <span className="answered-dot" />Answered <span className="review-dot" />Review</div>
+          </div>
+        )}
+        <div className="exam-nav-row">
         <div className="exam-nav-tools">
           {exam.module !== "writing" && <label className="review-toggle"><input type="checkbox" checked={!!session.answers[currentId]?.flagged} onChange={toggleFlag} /><Icon name="bookmark" size={17} />Review later</label>}
           {exam.module === "reading" && <span className="tool-hint"><Icon name="pen" size={16} />Select text to highlight or add a note</span>}
           {practice && <span className="practice-hint"><Icon name="rotate" size={16} />Pause and revisit any question</span>}
         </div>
-        <div className="exam-progress-copy">{exam.module === "writing" ? <>Task <strong>{Math.max(1, exam.sections.findIndex((section) => section.id === currentSection?.id) + 1)}</strong> of {exam.sections.length}</> : <>Question <strong>{current?.number ?? 1}</strong> of {questions.length}</>}</div>
+        <div className="exam-progress-copy">{exam.module === "writing" ? <>Task <strong>{Math.max(1, exam.sections.findIndex((section) => section.id === currentSection?.id) + 1)}</strong> of {exam.sections.length}</> : <>Question <strong>{current?.number ?? 1}</strong> of {questions.length} · Section <strong>{Math.max(1, exam.sections.findIndex((section) => section.id === currentSection?.id) + 1)}</strong> of {exam.sections.length}</>}</div>
         <div className="nav-arrows">
           <button type="button" className="previous-button" disabled={exam.module === "writing" ? exam.sections.findIndex((section) => section.id === currentSection?.id) <= 0 : navIndex <= 0} onClick={() => exam.module === "writing" ? setWritingSectionId(exam.sections[Math.max(0, exam.sections.findIndex((section) => section.id === currentSection?.id) - 1)]?.id ?? writingSectionId) : go(questions[Math.max(0, navIndex - 1)]?.id)}><Icon name="chevron" className="flip" size={16} />Previous</button>
           <button type="button" className="next-button" disabled={exam.module === "writing" ? exam.sections.findIndex((section) => section.id === currentSection?.id) >= exam.sections.length - 1 : navIndex >= questions.length - 1} onClick={() => exam.module === "writing" ? setWritingSectionId(exam.sections[Math.min(exam.sections.length - 1, exam.sections.findIndex((section) => section.id === currentSection?.id) + 1)]?.id ?? writingSectionId) : go(questions[Math.min(questions.length - 1, navIndex + 1)]?.id)}>Next<Icon name="chevron" size={16} /></button>
           <button type="button" className={practice ? "finish-button" : "submit-button"} onClick={() => setConfirm(true)}>{practice ? "Finish practice" : "Submit test"}</button>
+        </div>
         </div>
       </nav>
 

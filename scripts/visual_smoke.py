@@ -73,7 +73,18 @@ with sync_playwright() as playwright:
       bodyScrollHeight: document.body.scrollHeight,
       mode: document.querySelector('.exam')?.className,
       module: document.querySelector('.exam-header .left strong')?.textContent,
-      navigatorButtons: document.querySelectorAll('.right-question-grid button').length,
+      navigatorButtons: document.querySelectorAll('.exam-nav .question-strip button').length,
+      navigatorBottom: (() => {
+        const strip = document.querySelector('.exam-nav .question-strip');
+        const body = document.querySelector('.exam-body');
+        return strip && body ? strip.getBoundingClientRect().top >= body.getBoundingClientRect().bottom - 1 : null;
+      })(),
+      rightRailRemoved: document.querySelectorAll('.exam-right-nav').length === 0,
+      examChromeIsLight: getComputedStyle(document.querySelector('.exam')).backgroundColor,
     })""")
+    # docs/ui-reference.md: the 40-question navigator sits along the BOTTOM.
+    assert metrics["navigatorButtons"] == 40, metrics
+    assert metrics["navigatorBottom"] is True, metrics
+    assert metrics["rightRailRemoved"] is True, metrics
     print({"home": home, "accuracyFontPx": accuracy_font, "exam": metrics})
     browser.close()

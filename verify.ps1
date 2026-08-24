@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 Set-Location $PSScriptRoot
 if (Test-Path -LiteralPath 'fixtures\cambridge') {
   Write-Host '== Local licensed Cambridge content =='
-  python scripts/verify_cambridge.py
+  python scripts/verify_cambridge.py --baseline --health
   if ($LASTEXITCODE -ne 0) { throw "Cambridge verification failed with exit code $LASTEXITCODE" }
 } else {
   Write-Host '== Local licensed Cambridge content: skipped (not distributed) =='

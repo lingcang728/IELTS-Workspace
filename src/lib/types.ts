@@ -201,7 +201,9 @@ export interface ScoreReport {
 
 export interface AnalyticsPoint {
   date: string;
-  score?: number;
+  module?: ModuleKind;
+  /** Estimated band from schema/band-conversion.json; null below the table. */
+  band?: number | null;
   rawCorrect?: number;
   rawTotal?: number;
   durationMs?: number;
@@ -214,6 +216,8 @@ export interface AnalyticsReport {
   overallAverage?: number;
   moduleAverages: Partial<Record<ModuleKind, number>>;
   moduleCounts: Partial<Record<ModuleKind, number>>;
+  /** Submitted sessions whose raw score falls below the band table. */
+  unbandedCounts: Partial<Record<ModuleKind, number>>;
   scoreTrend: Partial<Record<ModuleKind, AnalyticsPoint[]>>;
   questionTypeAccuracy: { module: "reading" | "listening"; questionType: string; correct: number; total: number; accuracy: number }[];
   timeTrend: AnalyticsPoint[];
@@ -253,6 +257,10 @@ export interface ProbeResult {
 
 export interface Profile {
   theme?: "light" | "dark";
+  /** Target overall band, 4.0-9.0 in 0.5 steps. Drives "距目标还差 N 题". */
+  targetBand?: number;
+  /** Exam date as YYYY-MM-DD. Drives the countdown on the workbench. */
+  examDate?: string;
 }
 
 export interface Bootstrap {

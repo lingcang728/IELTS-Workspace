@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "note": "Content damage ratchet. Phase 1 lowers this; it must never rise.",
+  "damagedQuestions": 3107,
+  "byBook": {
+    "4": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 66,
+        "suspect": 0,
+        "healthy": 94,
+        "healthPct": 58.8
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 72,
+        "suspect": 0,
+        "healthy": 88,
+        "healthPct": 55.0
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "5": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 101,
+        "suspect": 0,
+        "healthy": 59,
+        "healthPct": 36.9
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 63,
+        "suspect": 0,
+        "healthy": 97,
+        "healthPct": 60.6
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "6": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 84,
+        "suspect": 0,
+        "healthy": 76,
+        "healthPct": 47.5
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 139,
+        "suspect": 0,
+        "healthy": 21,
+        "healthPct": 13.1
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "7": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 58,
+        "suspect": 0,
+        "healthy": 102,
+        "healthPct": 63.7
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 104,
+        "suspect": 0,
+        "healthy": 56,
+        "healthPct": 35.0
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "8": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 86,
+        "suspect": 0,
+        "healthy": 74,
+        "healthPct": 46.2
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 54,
+        "suspect": 0,
+        "healthy": 106,
+        "healthPct": 66.2
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "9": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 96,
+        "suspect": 0,
+        "healthy": 64,
+        "healthPct": 40.0
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 71,
+        "suspect": 0,
+        "healthy": 89,
+        "healthPct": 55.6
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "10": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 94,
+        "suspect": 0,
+        "healthy": 66,
+        "healthPct": 41.2
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 58,
+        "suspect": 0,
+        "healthy": 102,
+        "healthPct": 63.7
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "11": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 101,
+        "suspect": 0,
+        "healthy": 59,
+        "healthPct": 36.9
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 69,
+        "suspect": 0,
+        "healthy": 91,
+        "healthPct": 56.9
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "12": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 108,
+        "suspect": 0,
+        "healthy": 52,
+        "healthPct": 32.5
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 64,
+        "suspect": 0,
+        "healthy": 96,
+        "healthPct": 60.0
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "13": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 130,
+        "suspect": 0,
+        "healthy": 30,
+        "healthPct": 18.8
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 82,
+        "suspect": 0,
+        "healthy": 78,
+        "healthPct": 48.8
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "14": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 100,
+        "suspect": 0,
+        "healthy": 60,
+        "healthPct": 37.5
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 80,
+        "suspect": 0,
+        "healthy": 80,
+        "healthPct": 50.0
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "15": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 118,
+        "suspect": 0,
+        "healthy": 42,
+        "healthPct": 26.2
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 96,
+        "suspect": 0,
+        "healthy": 64,
+        "healthPct": 40.0
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "16": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 97,
+        "suspect": 0,
+        "healthy": 63,
+        "healthPct": 39.4
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 77,
+        "suspect": 0,
+        "healthy": 83,
+        "healthPct": 51.9
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "17": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 113,
+        "suspect": 0,
+        "healthy": 47,
+        "healthPct": 29.4
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 118,
+        "suspect": 0,
+        "healthy": 42,
+        "healthPct": 26.2
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "18": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 77,
+        "suspect": 0,
+        "healthy": 83,
+        "healthPct": 51.9
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 80,
+        "suspect": 0,
+        "healthy": 80,
+        "healthPct": 50.0
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "19": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 91,
+        "suspect": 0,
+        "healthy": 69,
+        "healthPct": 43.1
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 85,
+        "suspect": 0,
+        "healthy": 75,
+        "healthPct": 46.9
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "20": {
+      "listening": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 88,
+        "suspect": 0,
+        "healthy": 72,
+        "healthPct": 45.0
+      },
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 102,
+        "suspect": 0,
+        "healthy": 58,
+        "healthPct": 36.2
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    },
+    "21": {
+      "reading": {
+        "exams": 4,
+        "questions": 160,
+        "damaged": 85,
+        "suspect": 0,
+        "healthy": 75,
+        "healthPct": 46.9
+      },
+      "writing": {
+        "exams": 4,
+        "questions": 0,
+        "damaged": 0,
+        "suspect": 0,
+        "healthy": 0,
+        "healthPct": null
+      }
+    }
+  }
+}

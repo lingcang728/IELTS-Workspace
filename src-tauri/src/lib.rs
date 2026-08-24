@@ -1,3 +1,4 @@
+mod band;
 mod commands;
 mod error;
 mod library;

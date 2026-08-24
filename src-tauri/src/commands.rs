@@ -88,12 +88,25 @@ pub fn save_profile(json: String) -> Result<(), AppError> {
 
 /// Build analytics strictly from submitted local sessions and the current
 /// answer keys. No placeholder or estimated Speaking values are generated.
+///
+/// `range_days` is honoured: sessions updated more than that many days ago are
+/// excluded entirely. `range_days == 0` means "all time".
+///
+/// Module averages are **estimated bands** from `schema/band-conversion.json`,
+/// never `raw / total * 9`. Sessions whose raw score falls below the published
+/// table contribute to `moduleCounts` but not to the averages, and are counted
+/// in `unbandedCounts` so the UI can say so instead of silently dropping them.
 #[tauri::command]
 pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
     use std::collections::BTreeMap;
-    let _ = range_days; // Session timestamps are retained verbatim for the UI.
+    let cutoff_day = if range_days == 0 {
+        None
+    } else {
+        Some(today_epoch_day().saturating_sub(i64::from(range_days)))
+    };
     let mut module_scores: BTreeMap<String, Vec<f64>> = BTreeMap::new();
     let mut module_counts: BTreeMap<String, u32> = BTreeMap::new();
+    let mut unbanded_counts: BTreeMap<String, u32> = BTreeMap::new();
     let mut trend: BTreeMap<String, Vec<Value>> = BTreeMap::new();
     let mut type_totals: BTreeMap<(String, String), (u32, u32)> = BTreeMap::new();
     let mut time_trend: Vec<Value> = Vec::new();
@@ -107,6 +120,13 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
             if session.get("status").and_then(Value::as_str) != Some("submitted") { continue; }
             let module = session.get("module").and_then(Value::as_str).unwrap_or("writing").to_string();
             let updated = session.get("updatedAt").and_then(Value::as_str).unwrap_or("").to_string();
+            if let Some(cutoff) = cutoff_day {
+                // Undated sessions are kept: dropping them would silently
+                // shrink the corpus the user is reasoning about.
+                if let Some(day) = iso_epoch_day(&updated) {
+                    if day < cutoff { continue; }
+                }
+            }
             if module == "writing" {
                 *module_counts.entry(module).or_default() += 1;
                 continue;
@@ -115,17 +135,22 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
             let Ok(exam) = crate::library::load_exam(exam_id) else { continue };
             let answers = session.get("answers").cloned().unwrap_or_else(|| serde_json::json!({}));
             let Ok(score) = crate::scoring::score_exam(&exam, &answers) else { continue };
-            let normalized = if score.raw_total == 0 { 0.0 } else { (score.raw_correct as f64 / score.raw_total as f64) * 9.0 };
-            module_scores.entry(module.clone()).or_default().push(normalized);
+            let band = crate::band::raw_to_band(&module, score.raw_correct);
+            match band {
+                Some(value) => module_scores.entry(module.clone()).or_default().push(value),
+                None => *unbanded_counts.entry(module.clone()).or_default() += 1,
+            }
             *module_counts.entry(module.clone()).or_default() += 1;
             trend.entry(module.clone()).or_default().push(serde_json::json!({
                 "date": updated,
-                "score": normalized,
+                "band": band,
                 "rawCorrect": score.raw_correct,
                 "rawTotal": score.raw_total,
             }));
             time_trend.push(serde_json::json!({
                 "date": updated,
+                "module": module.clone(),
+                "band": band,
                 "rawCorrect": score.raw_correct,
                 "rawTotal": score.raw_total,
             }));
@@ -157,11 +182,42 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
         "overallAverage": if overall_count == 0 { Value::Null } else { serde_json::json!(overall_sum / overall_count as f64) },
         "moduleAverages": averages,
         "moduleCounts": module_counts,
+        "unbandedCounts": unbanded_counts,
         "scoreTrend": trend,
         "questionTypeAccuracy": accuracy,
         "timeTrend": time_trend,
         "speakingEnabled": false,
     }))
+}
+
+/// Days since 1970-01-01 for the `YYYY-MM-DD` prefix of an ISO 8601 string.
+fn iso_epoch_day(value: &str) -> Option<i64> {
+    let bytes = value.as_bytes();
+    if bytes.len() < 10 || bytes[4] != b'-' || bytes[7] != b'-' { return None; }
+    let year: i64 = value.get(0..4)?.parse().ok()?;
+    let month: u32 = value.get(5..7)?.parse().ok()?;
+    let day: u32 = value.get(8..10)?.parse().ok()?;
+    if !(1..=12).contains(&month) || !(1..=31).contains(&day) { return None; }
+    Some(days_from_civil(year, month, day))
+}
+
+/// Howard Hinnant's `days_from_civil`; proleptic Gregorian, no dependencies.
+fn days_from_civil(year: i64, month: u32, day: u32) -> i64 {
+    let y = if month <= 2 { year - 1 } else { year };
+    let era = if y >= 0 { y } else { y - 399 } / 400;
+    let yoe = y - era * 400;
+    let m = month as i64;
+    let doy = (153 * (if m > 2 { m - 3 } else { m + 9 }) + 2) / 5 + day as i64 - 1;
+    let doe = yoe * 365 + yoe / 4 - yoe / 100 + doy;
+    era * 146_097 + doe - 719_468
+}
+
+fn today_epoch_day() -> i64 {
+    use std::time::{SystemTime, UNIX_EPOCH};
+    SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .map(|d| (d.as_secs() / 86_400) as i64)
+        .unwrap_or_default()
 }
 
 fn chrono_like_now() -> String {
@@ -170,4 +226,27 @@ fn chrono_like_now() -> String {
     use std::time::{SystemTime, UNIX_EPOCH};
     let millis = SystemTime::now().duration_since(UNIX_EPOCH).map(|d| d.as_millis()).unwrap_or_default();
     millis.to_string()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{days_from_civil, iso_epoch_day};
+
+    #[test]
+    fn epoch_day_anchors() {
+        assert_eq!(days_from_civil(1970, 1, 1), 0);
+        assert_eq!(days_from_civil(2026, 8, 24), 20_689);
+        assert_eq!(iso_epoch_day("2026-08-24T10:12:00Z"), Some(20_689));
+        assert_eq!(
+            iso_epoch_day("2026-08-25T00:00:00Z").unwrap() - iso_epoch_day("2026-08-24T23:59:00Z").unwrap(),
+            1
+        );
+    }
+
+    #[test]
+    fn epoch_day_rejects_junk() {
+        assert_eq!(iso_epoch_day(""), None);
+        assert_eq!(iso_epoch_day("not-a-date"), None);
+        assert_eq!(iso_epoch_day("2026-13-01T00:00:00Z"), None);
+    }
 }
