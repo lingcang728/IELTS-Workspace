@@ -119,6 +119,9 @@ def plain_text(markdown: str) -> str:
     text = re.sub(r"<table>.*?</table>", table_to_text, markdown, flags=re.S | re.I)
     text = html.unescape(TAG_RE.sub(" ", text))
     text = re.sub(r"^#{1,6}\s*", "", text, flags=re.M)
+    # MinerU escapes markdown punctuation, so a note-completion gap arrives as
+    # "\_\_\_\_\_" and a stem keeps stray backslashes unless they are undone.
+    text = re.sub(r"\\([\\`*_{}\[\]()#+.!-])", r"\1", text)
     return text
 
 
@@ -230,6 +233,8 @@ def score_question(question: dict[str, Any], stem: str, options: list[dict[str, 
         return LOW, ["question number not found in the section text"]
     if not stem:
         return LOW, ["no stem text after the question number"]
+    if not re.search(r"[A-Za-z]{3}", stem):
+        return LOW, [f"stem has no readable words: {stem[:40]!r}"]
     if wants_options:
         labels = {o["id"].upper() for o in options} | {o["id"] for o in options}
         if not options:

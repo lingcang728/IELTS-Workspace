@@ -43,7 +43,10 @@ PLACEHOLDER_PROMPTS = {
 GAP_MARKER_RE = re.compile(r"_{2,}|\.{3,}|…{1,}|\{\{\s*q\s*:|\[\s*\d+\s*\]|\bblank\b", re.I)
 COMPLETION_TYPES = {"completion", "short_answer"}
 # A bare capital letter is an option label, not a word to type into a gap.
-CJK_RE = re.compile(r"[　-〿一-鿿＀-￯]")
+# An English IELTS answer is never CJK text, a tick/cross, or a box glyph.
+# All of these turned up in acceptedAnswers: the scanned answer page's
+# watermark, table rules, and check marks were OCR'd as answers.
+BAD_ANSWER_RE = re.compile(r"[　-〿一-鿿＀-￯✓✗√×□○☐]")
 SINGLE_LETTER_RE = re.compile(r"^[A-J]$")
 OPTIONED_TYPES = {"single_choice", "multi_choice", "matching", "labelling"}
 # Audio transcript sliced mid-word: a stem never starts lowercase or on
@@ -189,12 +192,12 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
             if not isinstance(accepted, list) or not any(str(x).strip() for x in accepted):
                 broken("has no accepted answer")
             # The answer key was assumed trustworthy until the repair pipeline's
-            # calibration batch turned up answers like "张听力录音光盘" and "口 2 ×":
-            # OCR of the scanned answer page picked up watermark and table
-            # glyphs. An English IELTS answer is never CJK.
+            # calibration batch turned up answers like "张听力录音光盘", "口 2 ×"
+            # and "✓ ✗": OCR of the scanned answer page picked up watermark,
+            # table rules and tick marks and stored them as answers.
             for value in accepted:
-                if CJK_RE.search(str(value)):
-                    broken(f"has CJK text in acceptedAnswers: {str(value)[:24]!r}")
+                if BAD_ANSWER_RE.search(str(value)):
+                    broken(f"has OCR junk in acceptedAnswers: {str(value)[:24]!r}")
                     break
         if qtype in CHOICE_TYPES:
             if len(options) < 2:
