@@ -637,9 +637,140 @@ python scripts/repair/80_audit.py --all
 
 ---
 
+## 14A. 第二轮：组级校对（题目说明 + 选项文字）
+
+第一轮修的是**题干和答案**。第二轮修的是学生在屏幕上同样会看到、
+但第一轮完全没碰的两样东西：
+
+| 缺什么 | 后果 | 数量 |
+|---|---|---|
+| 组说明（rubric） | 学生不知道字数上限、不知道要选几个 | 477 组 |
+| 选项/词库文字 | 屏幕上只有一排空按钮 A/B/C，没法作答 | 830 组 + 324 题 |
+
+其中 2653 条说明已经由 `60_recover_rubrics.py` **自动补好了**，不需要你做。
+它把 OCR 行匹配到脚本里的规范模板再输出规范文本，所以
+`anSwer` / `woRD` / `lertter` / `ChooseTWO` 这类 OCR 噪声是被修好，不是被沿用。
+匹配不上的一律不猜，才落到你手上。
+
+### 14A.1 命令
+
+```bash
+# 自动那一半（整个项目只跑一次，已经跑过就跳过）
+python scripts/repair/60_recover_rubrics.py --clean-existing --apply
+
+# 排组级工单（和第一轮一样支持 --status / --next / 断点续跑）
+python scripts/repair/62_group_worklist.py --book 8
+python scripts/repair/62_group_worklist.py --book 8 --next 1
+
+# 读图 → 写 <taskId>.answer.json → 自检 → 写入
+python scripts/repair/72_write_group_overlay.py --task <taskId> --check-only
+python scripts/repair/72_write_group_overlay.py --task <taskId>
+
+# 收尾同第一轮
+python scripts/repair/40_apply.py --books 8
+python scripts/verify_cambridge.py --baseline --health
+```
+
+工单文件在 `data-dev/repair/group-tasks/C08/`，任务 id 形如
+`cambridge-8-test-1-listening-g0008`（第一轮是 `-p0008`，注意区别）。
+
+### 14A.2 提交格式
+
+```json
+{
+  "taskId": "cambridge-8-test-1-listening-g0008",
+  "printedPageNumber": 11,
+  "questionsHeadingSeen": ["SECTION 1 Questions 1-10", "Questions 3-10"],
+  "groups": [
+    {
+      "groupId": "c8t1l-g3",
+      "status": "corrected",
+      "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+    },
+    {
+      "groupId": "c8t1l-g11",
+      "status": "corrected",
+      "options": [
+        { "label": "A", "text": "the gym" },
+        { "label": "B", "text": "the tracks" },
+        { "label": "C", "text": "the indoor pool" },
+        { "label": "D", "text": "the outdoor pool" },
+        { "label": "E", "text": "the sports training for children" }
+      ]
+    }
+  ]
+}
+```
+
+`printedPageNumber` 与 `questionsHeadingSeen` 的规则和第一轮完全一样，
+校验也一样严：整单接受或整单拒绝，页码要对得上本册已标定的偏移，
+标题必须覆盖本单全部题号。
+
+### 14A.3 三条组级专属规则
+
+1. **`instruction` 只写印在页面上的那一两句说明。**
+   超过 220 字符会被拒——那说明你把题目正文一起抄进来了。
+   听力卷的说明里出现 `Reading Passage` / `on your answer sheet` 一律拒收：
+   那是导入器从隔壁抄错的，不是页面上印的。
+
+2. **`options` 必须覆盖答案键用到的每一个字母。**
+   脚本知道这一组的答案是 `['D']` 还是 `['A','E']`，
+   你交的选项列表里没有那个字母就会被拒——说明你读错了框。
+   每个选项都必须有文字，空文字正是要修的毛病。
+
+3. **页面上根本没有选项框时，用 `flagged` 并写清楚。**
+   这不是偷懒，是正确答案。真实例子（剑8 Test1 听力 q9）：
+
+   > 页面上没有选项列表。Questions 3-10 全是表格填空，第 9 题是
+   > 23 June 那一行的 "No. of tickets" 格。fixture 里的 single_choice、
+   > 8 个空选项、答案键 'D' 三者都是错的，需要的是题干级修复而不是选项转写。
+
+   这类会转回第一轮的题干工单处理。
+
+### 14A.4 工作量
+
+| 项 | 数量 |
+|---|---|
+| 待修组 | 1210 |
+| 工单数 | 298 |
+| 需要读的页面 | 573（大部分第一轮已经渲染过） |
+
+---
+
+## 14B. 已知不在这两轮范围内的问题
+
+下面这些**不要动**，它们需要的是重新切分而不是读页面转写，
+由主会话另行处理。看到了就跳过：
+
+- 6 份阅读卷文章区完全空白（剑6 T1/T2/T3、剑7 T2/T3、剑20 T1）
+- 6 份阅读卷三篇文章是同一坨未切分文本（剑5 T3/T4、剑6 T4、剑9 T4、剑17 T2、剑20 T2）
+- 6 份写作卷题干只有占位符（剑5 T4、剑6 T1–T4、剑9 T1）
+- 剑21 没有听力（`听力/` 只到剑20，缺音频源）
+- 剑4 缺 4 份听力原文（markdown 被截断）
+
+---
+
+## 14C. 一个必须知道的事实：门禁会漏
+
+随机抽 4 道门禁判定为"健康"的题去比对原书，2 道题面完全取错了行
+（剑6 T1 听力 35 的题面是别处的句子；剑12 T3 听力 4 的题面抄成了第 5 题那一行），
+另外 2 道有 OCR 错字。**答案是对的，题面是错的**，而且读起来像正常英文，
+所以任何自动规则都抓不到。
+
+这意味着：
+
+- `verify_cambridge.py` 报的健康度是**上限，不是真相**。
+- 只要你手上这一页恰好印着别的题，**顺手核对同页其它题**，
+  发现题面对不上就照第一轮流程提交修正——哪怕门禁没把它列为损坏。
+- 不要因为"门禁说它是好的"就跳过明显不对的题。
+
+---
+
 ## 15. 完成的定义
 
 全部满足才算这件事做完：
+
+**第一轮（题干 + 答案）**
 
 - [ ] 18 册 `80_audit.py --all` 全部 PASS
 - [ ] `verify_cambridge.py --health` 显示健康度 ≥ 95%
@@ -647,3 +778,11 @@ python scripts/repair/80_audit.py --all
 - [ ] `.\verify.ps1` 全绿
 - [ ] `fixtures/cambridge-health-baseline.json` 已更新并提交
 - [ ] 抽查任意 20 道修过的题，题面与原书一致
+
+**第二轮（组说明 + 选项文字）**
+
+- [ ] `62_group_worklist.py --status` 显示 1210/1210 组已处理
+- [ ] `verify_cambridge.py` 的 `contentGaps` 从 1673 降到 ≤ 60
+      （余下的是 14B 那批不在本轮范围内的）
+- [ ] 抽查任意 10 组，说明与选项文字与原书一致
+- [ ] 抽查任意 5 道带字母答案的题，在应用里能真正选得动
