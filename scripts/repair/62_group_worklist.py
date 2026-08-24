@@ -189,6 +189,35 @@ def build_book(book: int, page_map: dict[str, Any], gaps: dict[str, dict[str, li
     return tasks
 
 
+def expand_task(task_id: str, by: int) -> int:
+    """Widen one group task's page window and re-render.
+
+    The page estimate lands on the right page ~95% of the time. For the rest
+    the printed "Questions a-b" heading sits just outside the window and the
+    stage-11 heading check correctly refuses the submission. This is the only
+    sanctioned way out: widen and look again. Never a reason to guess.
+    """
+    hits = list(TASKS.glob(f"*/{task_id}.task.json"))
+    if not hits:
+        print(f"no group task named {task_id!r}", file=sys.stderr)
+        return 2
+    path = hits[0]
+    task = read_json(path)
+    low = max(0, min(task["pdfPagesZeroBased"]) - by)
+    high = max(task["pdfPagesZeroBased"]) + by
+    pages = list(range(low, high + 1))
+    task["pdfPagesZeroBased"] = pages
+    task["pdfPageNumbers"] = [p + 1 for p in pages]
+    task["expandedBy"] = task.get("expandedBy", 0) + by
+    task["images"] = stage50.render_pages(ROOT / task["pdf"], pages,
+                                          stage50.RENDERS / f"C{task['book']:02d}")
+    write_json(path, task)
+    print(json.dumps({"ok": True, "taskId": task_id, "pdfPageNumbers": task["pdfPageNumbers"],
+                      "images": task["images"], "expandedBy": task["expandedBy"]},
+                     ensure_ascii=False))
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--book", type=int)
@@ -199,7 +228,13 @@ def main() -> int:
     parser.add_argument("--status", action="store_true")
     parser.add_argument("--next", type=int, default=0)
     parser.add_argument("--no-render", action="store_true")
+    parser.add_argument("--expand", type=str, default="",
+                        help="widen one task's page window and re-render, e.g. --expand <taskId>")
+    parser.add_argument("--by", type=int, default=2, help="pages to add on each side of --expand")
     args = parser.parse_args()
+
+    if args.expand:
+        return expand_task(args.expand, max(1, args.by))
 
     books = [args.book] if args.book else \
         [int(b) for b in args.books.split(",") if b.strip()] or list(BOOKS)
