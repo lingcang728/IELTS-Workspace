@@ -21,6 +21,8 @@ sessions-debug/
 # Local licensed study corpus. Only the original renderer fixtures are public.
 fixtures/assets/
 fixtures/cambridge/
+fixtures/transcripts/
+fixtures/overlays/
 fixtures/listening/
 fixtures/reading/
 fixtures/writing/
@@ -28,6 +30,7 @@ fixtures/writing/
 
 # Local conversion data and one-off diagnostics.
 scripts/__pycache__/
+scripts/repair/__pycache__/
 scripts/_*
 scripts/build_cambridge.py
 scripts/build_cambridge_mineru.py
