@@ -21,7 +21,12 @@ function clock(ms: number) {
 }
 
 export function Intensive({ exams }: { exams: ExamSummary[] }) {
-  const listening = useMemo(() => exams.filter((e) => e.module === "listening"), [exams]);
+  // Only papers that actually have a transcript: without one there is nothing
+  // to dictate against, and an entry that opens blank is worse than no entry.
+  const listening = useMemo(
+    () => exams.filter((e) => e.module === "listening" && e.hasTranscript !== false),
+    [exams],
+  );
   const [examId, setExamId] = useState<string>(listening[0]?.id ?? "");
   const [exam, setExam] = useState<Exam | null>(null);
   const [transcript, setTranscript] = useState<Transcript | null>(null);

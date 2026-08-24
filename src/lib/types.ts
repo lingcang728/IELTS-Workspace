@@ -240,6 +240,11 @@ export interface ExamSummary {
   path: string;
   durationMs?: number;
   questionCount: number;
+  /**
+   * Listening only: whether a transcript exists for this paper. Cambridge 4 has
+   * audio and questions but no extracted transcript, so 精听 would open blank.
+   */
+  hasTranscript?: boolean;
 }
 
 export interface SessionSummary {
