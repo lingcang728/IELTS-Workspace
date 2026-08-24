@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "note": "Content damage ratchet. Phase 1 lowers this; it must never rise.",
-  "damagedQuestions": 1161,
+  "damagedQuestions": 958,
   "byBook": {
     "4": {
       "listening": {
@@ -319,18 +319,18 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 85,
+        "damaged": 0,
         "suspect": 0,
-        "healthy": 75,
-        "healthPct": 46.9
+        "healthy": 160,
+        "healthPct": 100.0
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 139,
+        "damaged": 21,
         "suspect": 0,
-        "healthy": 21,
-        "healthPct": 13.1
+        "healthy": 139,
+        "healthPct": 86.9
       },
       "writing": {
         "exams": 4,
