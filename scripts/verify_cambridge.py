@@ -82,6 +82,11 @@ STEM_GLUED_WORDS_RE = re.compile(r"[a-z]{2}[A-Z][a-z]{2}")
 # A reading passage this short is not a passage. The shortest genuine Cambridge
 # Academic passage in the corpus is a little over 2000 characters.
 MIN_PASSAGE_CHARS = 1200
+# The longest genuine Academic passage in the corpus is a little over 10 000
+# characters; past this the section holds more than one passage.
+MAX_PASSAGE_CHARS = 12000
+# A listening part heading has no business inside a reading passage.
+LISTENING_MARKER_RE = re.compile(r"^\s*SECTION\s*[1-4]\b", re.M | re.I)
 MIN_WRITING_PROMPT_CHARS = 120
 WATERMARKS = (
     "沪江", "学习交流", "建议购买正版", "仅供学习", "扫描二维码", "www.hjenglish.com",
@@ -320,6 +325,16 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
             if len(text) < MIN_PASSAGE_CHARS:
                 gap(f"section {section.get('id')}", f"has {len(text)} characters of passage text; "
                                                     f"a reading passage needs at least {MIN_PASSAGE_CHARS}")
+            elif len(text) > MAX_PASSAGE_CHARS:
+                # Without this, an unsplit blob passes: it is not too short, so
+                # the check above says nothing, and the three sections are no
+                # longer identical once one of them is repaired.
+                gap(f"section {section.get('id')}", f"has {len(text)} characters; a Cambridge "
+                                                    f"passage is under {MAX_PASSAGE_CHARS} — this "
+                                                    f"is an unsplit blob, not one passage")
+            elif LISTENING_MARKER_RE.search(text):
+                gap(f"section {section.get('id')}", "contains a listening SECTION heading — "
+                                                    "this is the wrong paper's text")
         if len(section_texts) > 1 and len(set(section_texts)) == 1 and section_texts[0]:
             gap("sections", "all three passages hold the identical text blob — "
                             "the paper was never split into Passage 1/2/3")
