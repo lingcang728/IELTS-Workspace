@@ -54,6 +54,44 @@ def load_overlay(examid: str) -> dict[str, Any]:
             if (entry or {}).get("status") in ACCEPTED_STATUSES}
 
 
+def load_group_overlay(examid: str) -> dict[str, Any]:
+    """Group-level repairs (rubric, option list) written by stage 11."""
+    path = OVERLAYS / f"{examid}.json"
+    if not path.exists():
+        return {}
+    groups = read_json(path).get("groups") or {}
+    return {gid: entry for gid, entry in groups.items()
+            if (entry or {}).get("status") in ACCEPTED_STATUSES}
+
+
+def apply_group(group: dict[str, Any], overlay: dict[str, Any] | None) -> list[str]:
+    """Mutate one group in place; return a list of human-readable changes.
+
+    Only the two fields a reader is asked to transcribe are touched. The
+    option list is written to `sharedOptions` -- the questions in the group all
+    choose from the same printed box, and `questions.tsx` already falls back to
+    it when a question carries no options of its own.
+    """
+    changes: list[str] = []
+    if not overlay:
+        return changes
+    instruction = overlay.get("instruction")
+    if instruction and instruction != group.get("instruction"):
+        group["instruction"] = instruction
+        changes.append("instruction ← overlay")
+    options = overlay.get("options")
+    if options:
+        group["sharedOptions"] = options
+        for question in group.get("questions") or []:
+            if question.get("options"):
+                question["options"] = options
+        changes.append(f"options ← overlay (+{len(options)})")
+    if changes:
+        group["repairSource"] = {"kind": "overlay", "status": overlay.get("status"),
+                                 "reviewedAt": overlay.get("reviewedAt")}
+    return changes
+
+
 DAMAGE_LINE_RE = re.compile(r"([A-Za-z0-9-]+)\.json:\s*question\s+(\d{1,2})\b")
 
 
@@ -148,10 +186,14 @@ def apply_exam(book: int, test: int, module: str, offsets: dict[str, Any],
         for record in read_json(parsed_path).get("questions") or []:
             parsed_by_id[record["questionId"]] = record
     overlay = load_overlay(examid)
+    group_overlay = load_group_overlay(examid)
 
     changes: list[str] = []
     for section in exam.get("sections") or []:
         for group in section.get("questionGroups") or []:
+            gid = str(group.get("id"))
+            for change in apply_group(group, group_overlay.get(gid)):
+                changes.append(f"{gid}: {change}")
             for question in group.get("questions") or []:
                 qid = question.get("id")
                 applied = apply_question(question, group, parsed_by_id.get(qid),

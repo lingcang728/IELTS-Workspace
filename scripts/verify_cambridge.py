@@ -65,6 +65,20 @@ PLACEHOLDER_INSTRUCTIONS = PLACEHOLDER_PROMPTS | {"", "instruction", "instructio
 # A listening rubric never sends the test-taker to a reading passage.
 CROSS_MODULE_RUBRIC_RE = re.compile(r"reading passage|from the passage|"
                                     r"which paragraph|on your answer sheet", re.I)
+# Three shapes a question stem can never legitimately have. Each was found in
+# the corpus *after* the gate had declared it 99.4% healthy, which is why they
+# are here: every rule above tests what a stem says, and none tested what it
+# obviously is not.
+#   1. the stem is the group's rubric, scooped up instead of the question
+#   2. the stem still has the row separators of the table it was cut from
+#   3. OCR ran two words together ("theMary Rose", "carvedmonument")
+STEM_IS_RUBRIC_RE = re.compile(
+    r"^\s*(?:complete the (?:notes|table|form|summary|sentences|flow[- ]?chart|diagram|plan|map)"
+    r"|choose the correct (?:letter|heading)|do the following statements agree"
+    r"|which (?:paragraph|section) contains|write (?:no more than )?(?:one|two|three) words?"
+    r"|label the (?:map|plan|diagram))\b", re.I)
+STEM_TABLE_PIPE_RE = re.compile(r"\|")
+STEM_GLUED_WORDS_RE = re.compile(r"[a-z]{2}[A-Z][a-z]{2}")
 # A reading passage this short is not a passage. The shortest genuine Cambridge
 # Academic passage in the corpus is a little over 2000 characters.
 MIN_PASSAGE_CHARS = 1200
@@ -240,6 +254,16 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
             #     information items and note-completion sub-bullets.
             if TRANSCRIPT_SLICE_RE.match(prompt) and not proofread:
                 broken(f"prompt starts mid-sentence (transcript slice?): {prompt[:60]!r}")
+            # (6) The stem is not a stem at all. Unlike (3) these hold even for
+            #     a proofread question: no printed stem contains a table pipe,
+            #     and no reader should have transcribed the rubric as the stem.
+            if STEM_IS_RUBRIC_RE.match(prompt):
+                broken(f"prompt is the group's rubric, not a question: {prompt[:60]!r}")
+            elif STEM_TABLE_PIPE_RE.search(prompt):
+                broken(f"prompt still contains the table row separators it was cut from: "
+                       f"{prompt[:60]!r}")
+            elif STEM_GLUED_WORDS_RE.search(prompt):
+                broken(f"prompt has words run together by OCR: {prompt[:60]!r}")
 
         for watermark in WATERMARKS:
             if watermark.lower() in lowered:
