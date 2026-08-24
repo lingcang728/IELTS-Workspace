@@ -95,6 +95,14 @@ export interface ExamSection {
   content?: { format: "plain" | "html"; text: string };
   audioAsset?: string;
   imageAsset?: string;
+  /**
+   * Where this part starts inside the concatenated per-test MP3, and how long
+   * it runs. Measured with ffprobe from the original per-part files by
+   * `scripts/repair/30_part_offsets.py`; this is what makes Part-level seeking
+   * possible without any audio alignment.
+   */
+  audioStartMs?: number;
+  audioDurationMs?: number;
   questionGroups: QuestionGroup[];
 }
 
@@ -288,4 +296,123 @@ export function sectionForQuestion(exam: Exam, questionId: string): ExamSection 
     if (s.questionGroups.some((g) => g.questions.some((q) => q.id === questionId))) return s;
   }
   return undefined;
+}
+
+/* ------------------------------------------------------------------ Phase 3
+ * Study features. These shapes are the contract with `src-tauri/src/study.rs`,
+ * which returns opaque `serde_json::Value` — nothing checks them at the border,
+ * so the two must be edited together.
+ */
+
+/** One question missed in a submitted session, kept for re-doing later. */
+export interface Mistake {
+  id: string;
+  examId: string;
+  examTitle?: string;
+  questionId: string;
+  number: number;
+  module: ModuleKind;
+  questionType: string;
+  prompt: string;
+  /** The passage or transcript line the answer comes from, when known. */
+  sourceExcerpt?: string;
+  userAnswer: string | string[] | null;
+  acceptedAnswers: string[];
+  addedAt: string;
+  updatedAt: string;
+  /** Consecutive correct re-dos; 3 archives the entry. */
+  streak: number;
+  timesWrong: number;
+  status: "open" | "mastered";
+}
+
+/** Where a word was met. A card always carries its context, never a bare gloss. */
+export interface VocabSighting {
+  examId?: string;
+  examTitle?: string;
+  /** The sentence the word appeared in — the front of the card. */
+  sentence: string;
+  /** Character offsets of the term inside `sentence`, for the cloze. */
+  start?: number;
+  end?: number;
+  /** For an imported subtitle line. */
+  subtitleAt?: string;
+  source?: "exam" | "subtitle" | "manual";
+}
+
+export interface VocabCard {
+  id: string;
+  term: string;
+  note?: string;
+  sightings: VocabSighting[];
+  addedAt: string;
+  updatedAt: string;
+  reps: number;
+  lapses: number;
+  /** FSRS state; absent until the first review. */
+  stability?: number;
+  difficulty?: number;
+  intervalDays?: number;
+  lastReviewOn?: string;
+  dueOn?: string;
+}
+
+export type VocabGrade = 1 | 2 | 3 | 4;
+
+export interface PlanDay {
+  /** YYYY-MM-DD. */
+  date: string;
+  mock?: { examId: string; title: string; module: ModuleKind } | null;
+  intensive?: { examId: string; title: string; part: number } | null;
+  vocabTarget: number;
+  mistakeTarget: number;
+  done?: boolean;
+}
+
+export interface StudyPlan {
+  id: "current";
+  updatedAt: string;
+  targetBand?: number;
+  examDate?: string;
+  /** Days per week the learner intends to study. */
+  daysPerWeek: number;
+  days: PlanDay[];
+}
+
+export type PromptTemplate = "writing" | "explain" | "speaking" | "listening";
+
+export interface SavedFeedback {
+  id: string;
+  template: PromptTemplate;
+  title: string;
+  examId?: string;
+  /** The prompt that was copied out. */
+  prompt: string;
+  /** What the external model replied, pasted back by hand. */
+  reply: string;
+  savedAt: string;
+}
+
+export interface TranscriptLine {
+  speaker?: string;
+  text: string;
+  /** Question numbers whose answer is carried by this line. */
+  answers?: number[] | string;
+}
+
+export interface TranscriptSection {
+  index: number;
+  sectionId: string;
+  lines: TranscriptLine[];
+  charCount?: number;
+  missing?: boolean;
+}
+
+export interface Transcript {
+  schemaVersion: number;
+  examId: string;
+  note?: string;
+  answerMarkers?: number[];
+  missingMarkers?: number[];
+  sections: TranscriptSection[];
 }

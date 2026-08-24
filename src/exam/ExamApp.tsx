@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { assetSrc, saveSession, scoreExam } from "../lib/api";
+import { assetSrc, saveSession, scoreExam, vocabAdd } from "../lib/api";
 import { BrandMark, Icon, WindowControls } from "../components/Ui";
 import { applyMarks, makeHighlight, rangeToUtf16, recoverHighlight } from "../lib/highlight";
 import { toNfc } from "../lib/unicode";
@@ -299,6 +299,44 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
     };
     patch({ notes: [...sessionRef.current.notes, note] });
     setNoteOpen(note.id);
+  }
+
+  /**
+   * Selection -> vocabulary card.
+   *
+   * `makeHighlight` already computes the excerpt and the text either side of
+   * it, which is exactly the card's front: the word in the sentence it was met
+   * in. So capturing a word costs nothing extra and never produces a bare
+   * headword with no context.
+   */
+  async function addToVocab() {
+    const root = passageRef.current;
+    if (!root || !currentSection?.content) return;
+    const r = sel ?? rangeToUtf16(root);
+    if (!r) return;
+    const hl = await makeHighlight({
+      targetId: currentSection.id,
+      sourceText: currentSection.content.text,
+      startUtf16: r.start,
+      endUtf16: r.end,
+    });
+    const term = hl.excerpt.trim();
+    if (!term || term.length > 40) { setMenu(null); return; }
+    const sentence = `${hl.contextBefore}${hl.excerpt}${hl.contextAfter}`.replace(/\s+/g, " ").trim();
+    await vocabAdd({
+      term,
+      sighting: {
+        examId: exam.id,
+        examTitle: exam.title,
+        sentence,
+        start: hl.contextBefore.replace(/\s+/g, " ").length,
+        end: hl.contextBefore.replace(/\s+/g, " ").length + term.length,
+        source: "exam",
+      },
+    }).catch(() => undefined);
+    setMenu(null);
+    setSel(null);
+    window.getSelection()?.removeAllRanges();
   }
 
   function deleteHighlight() {
@@ -625,6 +663,9 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
           </button>
           <button type="button" onClick={() => void addNote()}>
             Note
+          </button>
+          <button type="button" onClick={() => void addToVocab()}>
+            加入生词本
           </button>
           <button type="button" onClick={deleteHighlight}>
             Delete Highlight

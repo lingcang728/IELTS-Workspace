@@ -15,12 +15,20 @@ export function Sidebar({ view, setView }: { view: View; setView: (v: View) => v
     { view: "home", icon: "grid", label: "工作台" },
     { view: "practice", icon: "pen", label: "练习" },
     { view: "mock", icon: "clock", label: "模考" },
+    { view: "intensive", icon: "headphones", label: "精听" },
+  ];
+  const study: { view: View; icon: IconName; label: string }[] = [
+    { view: "mistakes", icon: "rotate", label: "错题本" },
+    { view: "vocab", icon: "bookmark", label: "生词本" },
+    { view: "studio", icon: "document", label: "Prompt Studio" },
     { view: "analytics", icon: "chart", label: "分析报告" },
   ];
   const nav = (item: { view: View; icon: IconName; label: string }) => <button key={item.view} type="button" className={view === item.view ? "selected" : ""} onClick={() => setView(item.view)}><Icon name={item.icon} size={21} /><span>{item.label}</span></button>;
   return <aside className="sidebar">
     <div className="sidebar-brand"><BrandMark size={56} className="sidebar-mark" /><div><strong>IELTS</strong><span>Workspace</span></div></div>
     <nav className="side-nav" aria-label="主导航">{primary.map(nav)}</nav>
+    <div className="side-nav-rule" />
+    <nav className="side-nav" aria-label="学习工具">{study.map(nav)}</nav>
     <div className="sidebar-spacer" />
     <nav className="side-nav" aria-label="辅助导航">
       {nav({ view: "history", icon: "history", label: "历史记录" })}

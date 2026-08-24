@@ -236,3 +236,117 @@
    "no data yet". Muting it keeps the slot visible without asserting a value. */
 .average-score strong.no-data,
 .overall-card > strong.no-data { color: var(--muted-2); }
+
+/* ============================================================== Phase 3
+ * 今天做什么 / 错题本 / 生词本 / 精听 / Prompt Studio.
+ * Same discipline as everything above: tokens only, hue for identity and
+ * status, --accent for the one primary action on the screen.
+ */
+
+/* -------------------------------------------------------------- 今天做什么 */
+.today-card { flex: 0 0 auto; padding: 18px 20px; }
+.today-tasks { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-top: 14px; }
+.today-task { min-width: 0; display: grid; gap: 3px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel-2); text-align: left; }
+.today-task:hover:not(.muted):not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
+.today-task.muted { opacity: .62; }
+.today-kind { color: var(--muted); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.today-task strong { overflow: hidden; color: var(--ink); font-size: 14px; font-weight: 580; text-overflow: ellipsis; white-space: nowrap; }
+.today-task small { color: var(--muted); font-size: 10px; }
+
+/* ---------------------------------------------------------------- 错题本 */
+.weakness-card { padding: 18px 20px; }
+.weakness-list { display: grid; gap: 6px; margin-top: 12px; }
+.weakness-row { display: grid; grid-template-columns: minmax(140px, 1fr) minmax(80px, 1.4fr) 62px 16px; align-items: center; gap: 12px; padding: 9px 10px; border: 1px solid transparent; border-radius: 5px; background: transparent; color: var(--ink-soft); font-size: 13px; text-align: left; }
+.weakness-row:hover { border-color: var(--line); background: var(--panel-2); color: var(--ink); }
+.weakness-row > i { height: 5px; overflow: hidden; border-radius: 3px; background: var(--panel-2); }
+.weakness-row > i b { display: block; height: 100%; background: var(--caution); }
+.weakness-row strong { color: var(--ink); font-size: 12px; text-align: right; }
+
+.mistake-list { display: grid; gap: 10px; padding-bottom: 24px; }
+.mistake-row { padding: 16px 18px; }
+.mistake-row header { display: grid; gap: 4px; margin-bottom: 10px; }
+.mistake-row header h3 { margin: 0; font-size: 14px; }
+.mistake-row header small { color: var(--muted); font-size: 10px; }
+.mistake-prompt { margin: 0 0 10px; color: var(--ink); font-size: 14px; line-height: 1.55; }
+.mistake-source { margin: 0 0 12px; padding: 9px 12px; border-left: 3px solid var(--accent); background: var(--panel-2); color: var(--ink-soft); font-size: 12px; line-height: 1.6; }
+.mistake-answers { display: flex; flex-wrap: wrap; gap: 22px; margin-bottom: 12px; }
+.mistake-answers span { display: grid; gap: 2px; }
+.mistake-answers small { color: var(--muted); font-size: 10px; }
+.mistake-answers b { color: var(--positive); font-size: 13px; font-weight: 600; }
+.mistake-answers b.wrong { color: var(--danger); }
+.mistake-redo { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+.mistake-redo input { min-width: 220px; flex: 1 1 220px; min-height: 34px; padding: 6px 11px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); color: var(--ink); font-size: 13px; }
+.verdict { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; }
+.verdict.ok { color: var(--positive); }
+.verdict.bad { color: var(--danger); }
+
+/* ---------------------------------------------------------------- 生词本 */
+.flashcard { display: grid; gap: 16px; padding: 26px; }
+.flashcard-context { display: grid; gap: 8px; }
+.flashcard-context small { color: var(--muted); font-size: 11px; }
+.flashcard-context p { margin: 0; color: var(--ink); font-size: 19px; line-height: 1.7; }
+.flashcard-flip { justify-self: start; }
+.flashcard-answer { padding-top: 14px; border-top: 1px solid var(--line); }
+.flashcard-answer strong { color: var(--accent); font-size: 26px; }
+.flashcard-answer p { margin: 6px 0 0; color: var(--ink-soft); font-size: 13px; }
+.vocab-map { margin: 10px 0 0; padding-left: 18px; color: var(--muted); font-size: 11px; }
+.flashcard-grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; }
+.flashcard-grades button { display: grid; gap: 2px; padding: 11px 10px; border: 1px solid var(--line-strong); border-radius: 6px; background: transparent; }
+.flashcard-grades button:hover { border-color: var(--accent); background: var(--accent-soft); }
+.flashcard-grades strong { color: var(--ink); font-size: 13px; }
+.flashcard-grades small { color: var(--muted); font-size: 10px; }
+.flashcard-meta { color: var(--muted-2); font-size: 10px; }
+.vocab-add { padding: 16px 18px; }
+.vocab-add-row { display: grid; grid-template-columns: minmax(120px, .5fr) minmax(200px, 1fr) auto; gap: 9px; margin-top: 12px; }
+.vocab-add-row input { min-height: 34px; padding: 6px 11px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); color: var(--ink); font-size: 13px; }
+.vocab-list { display: grid; gap: 8px; padding-bottom: 24px; }
+.vocab-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 14px; padding: 14px 16px; }
+.vocab-row h3 { margin: 0 0 3px; font-size: 15px; }
+.vocab-row small { color: var(--muted); font-size: 10px; }
+.vocab-sentence { margin: 8px 0 0; color: var(--ink-soft); font-size: 12px; line-height: 1.6; }
+
+/* ------------------------------------------------------------------ 精听 */
+.intensive-player { display: grid; gap: 12px; padding: 16px 18px; }
+.part-tabs { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.part-tabs button { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); color: var(--ink-soft); font-size: 13px; text-align: left; }
+.part-tabs button.active { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+.part-tabs small { color: var(--muted); font: 10px var(--font-mono); }
+.intensive-player audio { width: 100%; }
+.intensive-progress { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 12px; color: var(--muted); font: 11px var(--font-mono); }
+.intensive-progress i { height: 4px; overflow: hidden; border-radius: 3px; background: var(--panel-2); }
+.intensive-progress i b { display: block; height: 100%; background: var(--accent); }
+.intensive-grid { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 13px; flex: 1; }
+.dictation-card, .transcript-card { min-height: 0; display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; }
+.dictation-card textarea { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); color: var(--ink); font: 13px/1.7 var(--font-sans); resize: vertical; }
+.dictation-diff { padding: 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); font-size: 13px; line-height: 1.9; }
+.dictation-diff .run.same { color: var(--ink); }
+.dictation-diff .run.missing { padding: 1px 3px; border-radius: 3px; background: var(--caution-soft); color: var(--caution); }
+.dictation-diff .run.extra { color: var(--muted-2); text-decoration: line-through; }
+.transcript-lines { min-height: 0; overflow-y: auto; padding-right: 6px; }
+.transcript-lines p { margin: 0 0 10px; color: var(--ink-soft); font-size: 13px; line-height: 1.75; }
+.transcript-lines p.carries-answer { padding: 8px 10px; border-left: 3px solid var(--positive); border-radius: 0 4px 4px 0; background: var(--positive-soft); color: var(--ink); }
+.transcript-lines b { color: var(--muted); }
+.answer-flag { margin-left: 8px; padding: 1px 6px; border-radius: 3px; background: var(--positive); color: var(--accent-ink); font-size: 10px; white-space: nowrap; }
+
+/* ---------------------------------------------------------- Prompt Studio */
+.template-picker { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; padding: 14px 16px; }
+.template-card { display: grid; gap: 3px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel-2); text-align: left; }
+.template-card:hover { border-color: var(--line-strong); }
+.template-card.active { border-color: var(--accent); background: var(--accent-soft); }
+.template-card strong { color: var(--ink); font-size: 14px; }
+.template-card small { color: var(--muted); font-size: 11px; }
+.studio-grid { min-height: 0; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 13px; }
+.studio-input, .studio-output { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; }
+.studio-input textarea, .studio-output textarea { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); color: var(--ink); font: 12px/1.65 var(--font-mono); resize: vertical; }
+.studio-input .field { margin-top: 4px; }
+.feedback-list { display: grid; gap: 6px; margin-top: 12px; }
+.feedback-row { padding: 10px 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); font-size: 12px; }
+.feedback-row summary { color: var(--ink-soft); cursor: pointer; }
+.feedback-row pre { margin: 10px 0; overflow-x: auto; color: var(--ink); font: 12px/1.7 var(--font-sans); white-space: pre-wrap; }
+
+.side-nav-rule { height: 1px; margin: 10px 21px; background: var(--line); }
+
+@media (max-width: 1220px) {
+  .intensive-grid, .studio-grid { grid-template-columns: 1fr; }
+  .flashcard-grades { grid-template-columns: repeat(2, 1fr); }
+}

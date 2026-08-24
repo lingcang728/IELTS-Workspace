@@ -228,6 +228,34 @@ fn chrono_like_now() -> String {
     millis.to_string()
 }
 
+
+/// The audioscript for a listening paper, when one was extracted.
+///
+/// Transcripts live beside the exams in `fixtures/transcripts` rather than
+/// inside the exam JSON: they are large, only the intensive-listening view
+/// needs them, and loading an exam for a mock should not pay for them.
+#[tauri::command]
+pub fn load_transcript(exam_id: String) -> Result<Value, AppError> {
+    if exam_id.is_empty()
+        || exam_id.contains("..")
+        || exam_id.contains('/')
+        || exam_id.contains('\\')
+    {
+        return Err(AppError::from("非法的试卷 id"));
+    }
+    for root in [
+        paths::fixtures_root()?.join("transcripts"),
+        paths::ensure_data_layout()?.join("transcripts"),
+    ] {
+        let path = root.join(format!("{exam_id}.json"));
+        if path.exists() {
+            let text = fs::read_to_string(&path)?;
+            return Ok(serde_json::from_str(&text)?);
+        }
+    }
+    Ok(Value::Null)
+}
+
 #[cfg(test)]
 mod tests {
     use super::{days_from_civil, iso_epoch_day};
@@ -250,3 +278,4 @@ mod tests {
         assert_eq!(iso_epoch_day("2026-13-01T00:00:00Z"), None);
     }
 }
+

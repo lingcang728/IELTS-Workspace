@@ -1,5 +1,8 @@
 import { convertFileSrc, invoke } from "@tauri-apps/api/core";
-import type { AnalyticsReport, Bootstrap, Exam, ScoreReport, Session, SessionSummary } from "./types";
+import type {
+  AnalyticsReport, Bootstrap, Exam, Mistake, SavedFeedback, ScoreReport, Session,
+  SessionSummary, StudyPlan, Transcript, VocabCard, VocabGrade,
+} from "./types";
 
 export async function bootstrap(): Promise<Bootstrap> {
   return invoke("bootstrap");
@@ -49,4 +52,66 @@ export async function analyticsReport(rangeDays = 30): Promise<AnalyticsReport> 
 export async function assetSrc(rel: string): Promise<string> {
   const abs = await invoke<string>("resolve_asset", { rel });
   return convertFileSrc(abs);
+}
+
+/* ------------------------------------------------------------------ Phase 3 */
+
+export async function mistakeAdd(entries: unknown[]): Promise<{ added: number; refreshed: number }> {
+  return invoke("mistake_add", { entriesJson: JSON.stringify(entries) });
+}
+
+export async function mistakeList(): Promise<Mistake[]> {
+  return invoke("mistake_list");
+}
+
+export async function mistakeResolve(id: string, correct: boolean): Promise<Mistake> {
+  return invoke("mistake_resolve", { id, correct });
+}
+
+export async function mistakeDelete(id: string): Promise<void> {
+  return invoke("mistake_delete", { id });
+}
+
+export async function vocabAdd(entry: unknown): Promise<VocabCard> {
+  return invoke("vocab_add", { entryJson: JSON.stringify(entry) });
+}
+
+export async function vocabList(): Promise<VocabCard[]> {
+  return invoke("vocab_list");
+}
+
+export async function vocabDue(limit?: number): Promise<VocabCard[]> {
+  return invoke("vocab_due", { limit });
+}
+
+export async function vocabReview(id: string, grade: VocabGrade, retention?: number): Promise<VocabCard> {
+  return invoke("vocab_review", { id, grade, retention });
+}
+
+export async function vocabDelete(id: string): Promise<void> {
+  return invoke("vocab_delete", { id });
+}
+
+export async function planGet(): Promise<StudyPlan | null> {
+  return invoke("plan_get");
+}
+
+export async function planSave(plan: unknown): Promise<StudyPlan> {
+  return invoke("plan_save", { planJson: JSON.stringify(plan) });
+}
+
+export async function feedbackSave(entry: unknown): Promise<SavedFeedback> {
+  return invoke("feedback_save", { entryJson: JSON.stringify(entry) });
+}
+
+export async function feedbackList(): Promise<SavedFeedback[]> {
+  return invoke("feedback_list");
+}
+
+export async function feedbackDelete(id: string): Promise<void> {
+  return invoke("feedback_delete", { id });
+}
+
+export async function loadTranscript(examId: string): Promise<Transcript | null> {
+  return invoke("load_transcript", { examId });
 }

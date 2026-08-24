@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
-import { analyticsReport, bootstrap, importExam, loadExam, loadSession, saveProfile, saveSession, scoreExam } from "./lib/api";
+import {
+  analyticsReport, bootstrap, importExam, loadExam, loadSession, mistakeAdd, mistakeList,
+  planGet, planSave, saveProfile, saveSession, scoreExam, vocabDue, vocabList,
+} from "./lib/api";
 import { buildReviewPrompt } from "./lib/reviewPrompt";
-import type { AnalyticsReport, Bootstrap, Exam, ExamSummary, Profile, ScoreReport, Session, SessionSummary } from "./lib/types";
+import type {
+  AnalyticsReport, Bootstrap, Exam, ExamSummary, Profile, ScoreReport, Session,
+  SessionSummary, StudyPlan, VocabCard,
+} from "./lib/types";
 import { allQuestions } from "./lib/types";
 import type { UiTheme, View } from "./lib/view";
 import { ExamApp } from "./exam/ExamApp";
@@ -15,6 +21,12 @@ import { History } from "./pages/History";
 import { ImportPage } from "./pages/ImportPage";
 import { Settings } from "./pages/Settings";
 import { Results } from "./pages/Results";
+import { Mistakes } from "./pages/Mistakes";
+import { Vocab } from "./pages/Vocab";
+import { Intensive } from "./pages/Intensive";
+import { PromptStudio } from "./pages/PromptStudio";
+import { mistakesFromReport } from "./lib/mistakes";
+import { generatePlan } from "./lib/plan";
 import { checkForDesktopUpdate } from "./lib/updateService";
 
 function applyUi(theme: UiTheme) {
@@ -39,6 +51,10 @@ export function App() {
   const [importText, setImportText] = useState("");
   const [recovery, setRecovery] = useState<SessionSummary[]>([]);
   const [toast, setToast] = useState<string | null>(null);
+  const [plan, setPlan] = useState<StudyPlan | null>(null);
+  const [vocab, setVocab] = useState<VocabCard[]>([]);
+  const [openMistakes, setOpenMistakes] = useState(0);
+  const [dueVocab, setDueVocab] = useState(0);
 
   function flash(message: string) {
     setToast(message);
@@ -67,6 +83,24 @@ export function App() {
     if (!boot) return;
     void analyticsReport(rangeDays).then(setAnalytics).catch(() => setAnalytics(null));
   }, [boot, rangeDays]);
+
+  // The study-tool counters feed the workbench's "what to do today" panel, so
+  // they are loaded once at the shell level rather than by each page.
+  useEffect(() => {
+    if (!boot) return;
+    void (async () => {
+      const [mistakes, cards, due, saved] = await Promise.all([
+        mistakeList().catch(() => []),
+        vocabList().catch(() => []),
+        vocabDue().catch(() => []),
+        planGet().catch(() => null),
+      ]);
+      setOpenMistakes(mistakes.filter((row) => row.status === "open").length);
+      setVocab(cards);
+      setDueVocab(due.length);
+      setPlan(saved);
+    })();
+  }, [boot]);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -153,6 +187,21 @@ export function App() {
     else setView("results");
   }
 
+  async function rebuildPlan() {
+    if (!boot) return;
+    const next = generatePlan({
+      exams: boot.exams,
+      sessions: boot.sessions,
+      targetBand: boot.profile?.targetBand,
+      examDate: boot.profile?.examDate,
+      daysPerWeek: plan?.daysPerWeek ?? 5,
+      openMistakes,
+      dueVocab,
+    });
+    setPlan(await planSave(next).catch(() => next));
+    flash("学习计划已更新");
+  }
+
   async function copyPrompt() {
     if (!exam || !session) return;
     try {
@@ -166,7 +215,25 @@ export function App() {
   if (!boot.probe.ok) return <div className="boot-screen"><div className="error-panel"><h1>无法安全启动</h1><p>{boot.probe.error || "当前目录不可写，无法安全保存考试数据。"}</p><small>程序：{boot.probe.appRoot}<br />数据：{boot.probe.dataRoot}</small></div></div>;
   const theme: UiTheme = boot.profile?.theme === "light" ? "light" : "dark";
 
-  if (view === "exam" && exam && session) return <ExamApp exam={exam} session={session} onSession={setSession} onExit={(s, r) => { setSession(s); setReport(r ?? null); setView("results"); void reload(); }} />;
+  if (view === "exam" && exam && session) {
+    return <ExamApp
+      exam={exam}
+      session={session}
+      onSession={setSession}
+      onExit={(s, r) => {
+        setSession(s);
+        setReport(r ?? null);
+        setView("results");
+        void reload();
+        // Collected here rather than inside ExamApp: the exam runtime stays
+        // free of study-tool concerns, and the backend keys entries by
+        // exam+question so a re-do updates the row instead of adding a second.
+        if (r) {
+          const entries = mistakesFromReport(exam, r);
+          if (entries.length) void mistakeAdd(entries).catch(() => undefined);
+        }
+      }} />;
+  }
 
   return <div className="app-shell">
     <DesktopTitlebar />
@@ -174,13 +241,17 @@ export function App() {
       <Sidebar view={view} setView={setView} />
       <main className="workspace-main">
         {boot.probe.warning && <div className="notice-strip"><Icon name="info" size={16} />{boot.probe.warning}</div>}
-        {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} />}
+        {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} />}
         {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onContinue={continueSession} onView={setView} />}
         {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onContinue={continueSession} onView={setView} />}
         {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
         {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} />}
         {view === "import" && <ImportPage value={importText} onChange={setImportText} onImport={() => importExam(importText).then(reload).then(() => setView("home")).catch((e) => setError(String(e)))} />}
         {view === "settings" && <Settings profile={boot.profile} theme={theme} onProfile={(patch) => void updateProfile(patch)} onImport={() => setView("import")} />}
+        {view === "mistakes" && <Mistakes onPractise={() => setView("practice")} />}
+        {view === "vocab" && <Vocab />}
+        {view === "intensive" && <Intensive exams={boot.exams} />}
+        {view === "studio" && <PromptStudio vocab={vocab} />}
         {view === "results" && session && <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} />}
       </main>
     </div>

@@ -5,6 +5,8 @@ use std::path::{Path, PathBuf};
 
 const DATA_SUBDIRS: &[&str] = &[
     "sources", "library", "assets", "sessions", "profile", "notes", "cache", "temp",
+    // Phase 3 study features; see `store::KINDS`, which must stay in step.
+    "mistakes", "vocab", "plans", "feedback",
 ];
 
 pub fn is_dev() -> bool {

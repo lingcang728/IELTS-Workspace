@@ -3,17 +3,56 @@ import { PageHeading } from "../components/Shell";
 import { ExamRow, ModuleCard, RecordTable, SessionRow } from "../components/ExamRows";
 import { MiniTrend } from "../components/Charts";
 import { daysUntil, rangeLabel } from "../lib/format";
-import type { AnalyticsReport, Bootstrap, ExamSummary } from "../lib/types";
+import { todayEntry } from "../lib/plan";
+import type { AnalyticsReport, Bootstrap, ExamSummary, StudyPlan } from "../lib/types";
 import type { View } from "../lib/view";
 
-export function Workbench({ boot, analytics, busy, onStart, onView, rangeDays }: { boot: Bootstrap; analytics: AnalyticsReport | null; busy: boolean; onStart: (e: ExamSummary, mode: "mock" | "practice") => void; onView: (v: View) => void; rangeDays: number }) {
+export function Workbench({ boot, analytics, busy, onStart, onView, rangeDays, plan, openMistakes, dueVocab, onRebuildPlan }: { boot: Bootstrap; analytics: AnalyticsReport | null; busy: boolean; onStart: (e: ExamSummary, mode: "mock" | "practice") => void; onView: (v: View) => void; rangeDays: number; plan: StudyPlan | null; openMistakes: number; dueVocab: number; onRebuildPlan: () => void }) {
   const first = (module: ExamSummary["module"]) => boot.exams.find((e) => e.module === module);
   const recent = boot.sessions.filter((s) => s.status === "submitted").slice(0, 4);
   const avg = analytics?.overallAverage;
   const countdown = daysUntil(boot.profile?.examDate);
+  const today = todayEntry(plan);
+  const todaysExam = today?.mock ? boot.exams.find((e) => e.id === today.mock?.examId) : undefined;
   return <div className="dashboard-page page-stack"><PageHeading title={<>欢迎回来！ <span className="wave-mark">👋</span></>} subtitle={<>在这里开始你的 <em>IELTS Academic</em> 练习与模考</>} aside={countdown == null
       ? <blockquote>Success is the sum of small efforts,<br />repeated day in and day out.<cite>— Robert Collier</cite></blockquote>
       : <div className="exam-countdown"><small>距考试还有</small><strong>{countdown > 0 ? countdown : 0}</strong><span>{countdown > 0 ? "天" : countdown === 0 ? "天 · 就是今天" : "天 · 考试日已过"}</span><b>{boot.profile?.examDate}</b></div>} />
+    <section className="workspace-card today-card">
+      <div className="card-heading">
+        <div><h2>今天做什么</h2><p>{plan
+          ? `按你的计划，每周 ${plan.daysPerWeek} 天`
+          : "还没有学习计划。生成一份，工作台首屏就会直接告诉你今天该干什么。"}</p></div>
+        <button type="button" className="link-button" onClick={onRebuildPlan}>
+          {plan ? "重新生成" : "生成计划"} <Icon name="rotate" size={14} /></button>
+      </div>
+      {plan && !today && <p className="empty-inline">计划没有覆盖到今天，重新生成一份。</p>}
+      {today && <div className="today-tasks">
+        {todaysExam
+          ? <button type="button" className="today-task" disabled={busy}
+                    onClick={() => onStart(todaysExam, "mock")}>
+              <span className="today-kind">模考</span>
+              <strong>{todaysExam.title}</strong>
+              <small>{today.mock?.module}</small>
+            </button>
+          : <div className="today-task muted"><span className="today-kind">模考</span>
+              <strong>今天休息</strong><small>计划里的休息日</small></div>}
+        {today.intensive && <button type="button" className="today-task" onClick={() => onView("intensive")}>
+          <span className="today-kind">精听</span>
+          <strong>{today.intensive.title}</strong>
+          <small>Part {today.intensive.part}</small>
+        </button>}
+        <button type="button" className="today-task" onClick={() => onView("mistakes")}>
+          <span className="today-kind">错题</span>
+          <strong>{Math.min(openMistakes, today.mistakeTarget)} / {today.mistakeTarget} 题</strong>
+          <small>待攻克 {openMistakes} 道</small>
+        </button>
+        <button type="button" className="today-task" onClick={() => onView("vocab")}>
+          <span className="today-kind">生词</span>
+          <strong>{Math.min(dueVocab, today.vocabTarget)} / {today.vocabTarget} 个</strong>
+          <small>今日到期 {dueVocab} 个</small>
+        </button>
+      </div>}
+    </section>
     <div className="dashboard-grid top-grid"><section className="workspace-card quick-start"><div className="card-heading"><div><h2>快速开始</h2><p>选择题型，立即开始练习或模考</p></div></div><div className="module-grid">{(["reading", "listening", "writing"] as const).map((m) => { const ex = first(m); return <ModuleCard key={m} module={m} exam={ex} disabled={busy} onStart={() => ex && onStart(ex, "practice")} />; })}</div></section><section className="workspace-card recent-use"><div className="card-heading"><h2>官方样题 / 最近使用</h2><button type="button" className="link-button" onClick={() => onView("mock")}>查看全部 <Icon name="arrow" size={15} /></button></div>{boot.exams.slice(0, 1).map((e) => <ExamRow key={e.id} exam={e} action="开始模考" onClick={() => onStart(e, "mock")} />)}{boot.sessions[0] ? <SessionRow session={boot.sessions[0]} action="继续练习" onClick={() => onView("history")} /> : <p className="empty-inline">完成练习后，这里会保留最近进度。</p>}</section></div>
     <div className="dashboard-grid bottom-grid"><section className="workspace-card recent-records"><div className="card-heading"><h2>最近模考记录</h2><button type="button" className="link-button" onClick={() => onView("history")}>查看全部 <Icon name="arrow" size={15} /></button></div><RecordTable sessions={recent} /></section><section className="workspace-card analytics-overview"><div className="card-heading"><h2>分析概览</h2><button type="button" className="link-button" onClick={() => onView("analytics")}>{rangeLabel(rangeDays)} <Icon name="arrow" size={14} /></button></div><div className="analytics-summary"><div className="average-score"><span>平均估算 Band</span><strong className={avg == null ? "no-data" : undefined}>{avg == null ? "—" : avg.toFixed(1)}</strong><small>{avg == null ? "提交考试后显示真实数据" : "非官方估算，来自已提交的真实会话"}</small></div><MiniTrend points={analytics?.timeTrend ?? []} /></div></section></div>
   </div>;

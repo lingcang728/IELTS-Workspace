@@ -9,7 +9,11 @@ export type View =
   | "settings"
   | "import"
   | "results"
-  | "exam";
+  | "exam"
+  | "mistakes"
+  | "vocab"
+  | "intensive"
+  | "studio";
 
 /** Only the app shell has a light/dark choice; the exam runtime is fixed light. */
 export type UiTheme = "light" | "dark";

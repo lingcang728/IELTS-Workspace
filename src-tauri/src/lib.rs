@@ -5,6 +5,9 @@ mod library;
 mod paths;
 mod scoring;
 mod session;
+mod srs;
+mod store;
+mod study;
 mod updates;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
@@ -25,6 +28,21 @@ pub fn run() {
             commands::score_exam,
             commands::save_profile,
             commands::analytics_report,
+            commands::load_transcript,
+            study::mistake_add,
+            study::mistake_list,
+            study::mistake_resolve,
+            study::mistake_delete,
+            study::vocab_add,
+            study::vocab_list,
+            study::vocab_due,
+            study::vocab_review,
+            study::vocab_delete,
+            study::plan_get,
+            study::plan_save,
+            study::feedback_save,
+            study::feedback_list,
+            study::feedback_delete,
             updates::is_portable_update,
             updates::launch_migrated_install,
         ])
