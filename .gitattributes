@@ -1,3 +1,9 @@
+# Git LFS — 大体积二进制资产
+#
+# 听力音频与教材 PDF 共约 2.78 GB。GitHub Free/Pro 的 LFS 配额是
+# 10 GiB 存储 + 10 GiB/月流量，装得下；约束在流量，所以日常开发用
+#   GIT_LFS_SKIP_SMUDGE=1 git clone <url>
+# 跳过下载。新增大体积类型时先改这里再提交（见 AGENTS.md 第 5 条）。
 *.mp3 filter=lfs diff=lfs merge=lfs -text
 *.m4a filter=lfs diff=lfs merge=lfs -text
 *.wav filter=lfs diff=lfs merge=lfs -text
