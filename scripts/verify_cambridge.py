@@ -51,7 +51,21 @@ SINGLE_LETTER_RE = re.compile(r"^[A-J]$")
 OPTIONED_TYPES = {"single_choice", "multi_choice", "matching", "labelling"}
 # Audio transcript sliced mid-word: a stem never starts lowercase or on
 # punctuation. `'` is allowed for quoted stems like "'Green' technology ...".
+#
+# This heuristic is only sound for machine-extracted stems. Cambridge really
+# does print lowercase openers for matching-information items ("a reference to
+# the damaging effects of anxiety") and for note-completion sub-bullets ("how
+# it's affected by laws regarding all aspects of ..."), so it is suppressed for
+# any question a human has proofread against the printed page -- see
+# `repairSource.kind == "overlay"` below.
 TRANSCRIPT_SLICE_RE = re.compile(r"^[a-z,.;:!?)\]}]")
+# A group needs a real rubric ("Write ONE WORD ONLY", "Choose TWO letters"):
+# without it the test-taker cannot know the word limit or how many to pick.
+PLACEHOLDER_INSTRUCTIONS = PLACEHOLDER_PROMPTS | {"", "instruction", "instructions"}
+# A reading passage this short is not a passage. The shortest genuine Cambridge
+# Academic passage in the corpus is a little over 2000 characters.
+MIN_PASSAGE_CHARS = 1200
+MIN_WRITING_PROMPT_CHARS = 120
 WATERMARKS = (
     "沪江", "学习交流", "建议购买正版", "仅供学习", "扫描二维码", "www.hjenglish.com",
     "www.", "更多资料", "版权所有", "未经许可",
@@ -97,7 +111,7 @@ def iter_questions(exam: dict[str, Any]):
                 yield section, group, question
 
 
-def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], warnings: list[str], seen_ids: dict[str, str]) -> dict[str, Any] | None:
+def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], warnings: list[str], seen_ids: dict[str, str], gaps: list[str] | None = None) -> dict[str, Any] | None:
     try:
         exam = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
@@ -138,6 +152,20 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
     damaged: set[int] = set()
     suspect: set[int] = set()
     prompt_owners: dict[str, int] = {}
+    # Content gaps are the defects that are *not* per-question stem damage:
+    # a missing passage, a lost rubric, a word bank whose words were dropped.
+    # They are counted separately because their repair unit is a section or a
+    # group, and because the per-question ratchet would otherwise hide them.
+    if gaps is None:
+        gaps = []
+    gap_count = 0
+
+    def gap(where: str, message: str) -> None:
+        nonlocal gap_count
+        gap_count += 1
+        add(gaps, path, f"{where} {message}")
+
+    seen_groups: set[int] = set()
     for section, group, question in questions:
         qid = str(question.get("id") or "")
         if not qid:
@@ -159,6 +187,21 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
         options = question.get("options") or group.get("sharedOptions") or []
         accepted = question.get("acceptedAnswers") or []
         slot = number if isinstance(number, int) else -1
+        # A question whose stem was read off the printed page by a person and
+        # written through `scripts/repair/70_write_overlay.py`.
+        proofread = str((question.get("repairSource") or {}).get("kind") or "") == "overlay"
+
+        if module in ("reading", "listening") and id(group) not in seen_groups:
+            seen_groups.add(id(group))
+            gid = group.get("id") or f"group@{number}"
+            instruction = str(group.get("instruction") or "").strip()
+            if instruction.lower().rstrip(".") in {p.rstrip(".") for p in PLACEHOLDER_INSTRUCTIONS}:
+                gap(f"group {gid}", f"has a placeholder instruction {instruction[:48]!r} — "
+                                    f"the test-taker cannot know the word limit or how many to choose")
+            shared = group.get("sharedOptions") or []
+            if shared and sum(1 for o in shared if str(o.get("text") or "").strip()) < 2:
+                gap(f"group {gid}", f"carries {len(shared)} option labels with no text — "
+                                    f"the heading list / word bank was lost in extraction")
 
         def broken(message: str) -> None:
             add(damage, path, f"question {number} {message}")
@@ -182,7 +225,10 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
             else:
                 prompt_owners[prompt] = number
             # (3) Stems sliced out of the audio transcript start mid-sentence.
-            if TRANSCRIPT_SLICE_RE.match(prompt):
+            #     Trust a stem a human transcribed from the printed page: the
+            #     book genuinely prints lowercase openers for matching-
+            #     information items and note-completion sub-bullets.
+            if TRANSCRIPT_SLICE_RE.match(prompt) and not proofread:
                 broken(f"prompt starts mid-sentence (transcript slice?): {prompt[:60]!r}")
 
         for watermark in WATERMARKS:
@@ -211,6 +257,10 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
                 broken(f"answers with option letters {letters} but is typed {qtype!r}")
             elif len(options) < 2:
                 broken(f"answers with option letters {letters} but carries no options")
+            elif sum(1 for o in options if str(o.get("text") or "").strip()) < 2:
+                # The labels survived extraction but the words next to them did
+                # not, so the app renders A/B/C/... with nothing to choose from.
+                gap(f"question {number}", f"answer is option {letters} but every option is blank")
         # (5) Completion stems must show the gap, unless the placeholder lives
         #     in the group's table/flow-chart layout instead.
         if qtype in COMPLETION_TYPES and prompt and not GAP_MARKER_RE.search(prompt):
@@ -227,6 +277,23 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
         add(errors, path, f"question numbers are not 1..40; missing {missing}")
     if module == "writing" and len(sections) != 2:
         add(errors, path, "writing must contain Task 1 and Task 2")
+    # A reading passage is the only thing on screen during a reading test, and
+    # nothing above looks at it: every check so far reads `question.prompt`.
+    # These two gaps are what an empty pane and a triplicated blob look like.
+    section_texts = [str((s.get("content") or {}).get("text") or "").strip() for s in sections]
+    if module == "reading":
+        for section, text in zip(sections, section_texts):
+            if len(text) < MIN_PASSAGE_CHARS:
+                gap(f"section {section.get('id')}", f"has {len(text)} characters of passage text; "
+                                                    f"a reading passage needs at least {MIN_PASSAGE_CHARS}")
+        if len(section_texts) > 1 and len(set(section_texts)) == 1 and section_texts[0]:
+            gap("sections", "all three passages hold the identical text blob — "
+                            "the paper was never split into Passage 1/2/3")
+    if module == "writing":
+        for section, text in zip(sections, section_texts):
+            if len(text) < MIN_WRITING_PROMPT_CHARS:
+                gap(f"section {section.get('id')}", f"has {len(text)} characters of task prompt; "
+                                                    f"a writing task needs at least {MIN_WRITING_PROMPT_CHARS}")
     for section in sections:
         text = str((section.get("content") or {}).get("text") or "")
         for watermark in WATERMARKS:
@@ -244,6 +311,7 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
         "questions": len(questions),
         "damaged": len(damaged),
         "suspect": len(suspect - damaged),
+        "gaps": gap_count,
         "healthy": max(0, len(questions) - len(damaged)),
         "sha256": sha256(path),
         "provenance": source.get("provenance"),
@@ -258,10 +326,11 @@ def build_health(exam_reports: list[dict[str, Any]]) -> dict[str, Any]:
         if not match:
             continue
         key = (int(match.group(1)), str(report.get("module")))
-        row = rows.setdefault(key, {"questions": 0, "damaged": 0, "suspect": 0, "exams": 0})
+        row = rows.setdefault(key, {"questions": 0, "damaged": 0, "suspect": 0, "gaps": 0, "exams": 0})
         row["questions"] += int(report.get("questions") or 0)
         row["damaged"] += int(report.get("damaged") or 0)
         row["suspect"] += int(report.get("suspect") or 0)
+        row["gaps"] += int(report.get("gaps") or 0)
         row["exams"] += 1
     books = {}
     for (book, module), row in sorted(rows.items()):
@@ -271,18 +340,21 @@ def build_health(exam_reports: list[dict[str, Any]]) -> dict[str, Any]:
             "questions": row["questions"],
             "damaged": row["damaged"],
             "suspect": row["suspect"],
+            "gaps": row["gaps"],
             "healthy": healthy,
             "healthPct": round(healthy / row["questions"] * 100, 1) if row["questions"] else None,
         }
     total_q = sum(r["questions"] for r in rows.values())
     total_d = sum(r["damaged"] for r in rows.values())
     total_s = sum(r["suspect"] for r in rows.values())
+    total_g = sum(r["gaps"] for r in rows.values())
     return {
         "books": books,
         "totals": {
             "questions": total_q,
             "damaged": total_d,
             "suspect": total_s,
+            "gaps": total_g,
             "healthy": total_q - total_d,
             "healthPct": round((total_q - total_d) / total_q * 100, 1) if total_q else None,
         },
@@ -309,6 +381,8 @@ def print_health(health: dict[str, Any]) -> None:
     print("-" * width)
     print(f"ALL   {totals['healthy']}/{totals['questions']} healthy ({totals['healthPct']}%) · "
           f"{totals['damaged']} must be repaired · {totals['suspect']} more to review")
+    print(f"      {totals.get('gaps', 0)} content gaps (missing passage / rubric / option text) — "
+          f"counted separately, see `gaps` in the report")
     print("")
 
 
@@ -376,13 +450,14 @@ def main() -> int:
     errors: list[str] = []
     damage: list[str] = []
     warnings: list[str] = []
+    gaps: list[str] = []
     seen_ids: dict[str, str] = {}
     exam_reports: list[dict[str, Any]] = []
     files = sorted(exam_root.glob("*.json")) if exam_root.exists() else []
     if not args.partial and len(files) != EXPECTED_EXAMS:
         add(errors, exam_root, f"expected {EXPECTED_EXAMS} exam JSON files, got {len(files)}")
     for path in files:
-        result = validate_exam(path, root, errors, damage, warnings, seen_ids)
+        result = validate_exam(path, root, errors, damage, warnings, seen_ids, gaps)
         if result:
             exam_reports.append(result)
     key = set()
@@ -405,8 +480,10 @@ def main() -> int:
         audio_report = validate_audio(asset_root, errors, args.partial)
     health = build_health(exam_reports)
     damaged_now = health["totals"]["damaged"]
+    gaps_now = health["totals"]["gaps"]
     baseline_path = (root / args.baseline).resolve() if args.baseline and not args.baseline.is_absolute() else args.baseline
     baseline = None
+    gap_baseline = None
     if baseline_path is not None:
         if args.update_baseline:
             baseline_path.parent.mkdir(parents=True, exist_ok=True)
@@ -414,12 +491,17 @@ def main() -> int:
                 "schemaVersion": 1,
                 "note": "Content damage ratchet. Phase 1 lowers this; it must never rise.",
                 "damagedQuestions": damaged_now,
+                "contentGaps": gaps_now,
                 "byBook": health["books"],
             }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            baseline = damaged_now
+            baseline, gap_baseline = damaged_now, gaps_now
         elif baseline_path.exists():
             try:
-                baseline = int(json.loads(baseline_path.read_text(encoding="utf-8"))["damagedQuestions"])
+                recorded = json.loads(baseline_path.read_text(encoding="utf-8"))
+                baseline = int(recorded["damagedQuestions"])
+                # An older baseline predates the gap ratchet; treat the current
+                # count as the ceiling rather than failing on a missing key.
+                gap_baseline = int(recorded.get("contentGaps", gaps_now))
             except (OSError, ValueError, KeyError, TypeError):
                 add(errors, baseline_path, "baseline file is unreadable")
         else:
@@ -427,8 +509,12 @@ def main() -> int:
     # Without a baseline every content problem is fatal, as the gate intends.
     if baseline is None:
         errors.extend(damage)
-    elif damaged_now > baseline:
-        add(errors, exam_root, f"content damage grew from {baseline} to {damaged_now} damaged questions")
+        errors.extend(gaps)
+    else:
+        if damaged_now > baseline:
+            add(errors, exam_root, f"content damage grew from {baseline} to {damaged_now} damaged questions")
+        if gap_baseline is not None and gaps_now > gap_baseline:
+            add(errors, exam_root, f"content gaps grew from {gap_baseline} to {gaps_now}")
     report = {
         "schemaVersion": 1,
         "ok": not errors,
@@ -442,8 +528,10 @@ def main() -> int:
         "actual": {"examJson": len(files), "reports": exam_reports, "audio": audio_report},
         "health": health,
         "baseline": baseline,
+        "gapBaseline": gap_baseline,
         "errors": errors,
         "damage": damage,
+        "gaps": gaps,
         "warnings": warnings,
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
@@ -455,6 +543,7 @@ def main() -> int:
         "warnings": len(warnings),
         "baseline": baseline,
         "damagedQuestions": damaged_now,
+        "contentGaps": gaps_now,
         "suspectQuestions": health["totals"]["suspect"],
         "healthPct": health["totals"]["healthPct"],
         "report": str(report_path),
