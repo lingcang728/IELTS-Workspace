@@ -252,6 +252,13 @@ export interface SessionSummary {
   startedAt: string;
   updatedAt: string;
   title?: string;
+  /**
+   * How much of the paper was actually attempted. Computed by
+   * `session::answered_counts`, because "submitted" is not "finished": a paper
+   * abandoned after two questions is still a submission.
+   */
+  answered?: number;
+  total?: number;
 }
 
 export interface ProbeResult {

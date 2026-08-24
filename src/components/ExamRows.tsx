@@ -1,5 +1,5 @@
 import { Icon, ModuleIcon } from "./Ui";
-import { durationLabel, formatDate, moduleLabel, sourceLabel, statusLabel } from "../lib/format";
+import { completion, durationLabel, formatDate, isFinished, moduleLabel, sourceLabel, statusLabel } from "../lib/format";
 import type { ExamSummary, SessionSummary } from "../lib/types";
 
 export function ModuleCard({ module, exam, onStart, disabled }: { module: "reading" | "listening" | "writing"; exam?: ExamSummary; onStart: () => void; disabled?: boolean }) {
@@ -16,12 +16,29 @@ export function ExamCatalogRow({ exam, mode, action, busy, onClick }: { exam: Ex
 }
 
 export function SessionRow({ session, action, onClick }: { session: SessionSummary; action: string; onClick: () => void }) {
-  return <article className="exam-row session-row"><span className="session-icon"><Icon name={session.status === "submitted" ? "check" : "clock"} size={22} /></span><div className="exam-row-copy"><h3>{session.title || session.examId}</h3><p>{session.mode === "mock" ? "模考" : "练习"} · {formatDate(session.updatedAt)}</p></div><button type="button" className="secondary-button" onClick={onClick}>{action}</button></article>;
+  return <article className="exam-row session-row"><span className="session-icon"><Icon name={session.status === "submitted" ? "check" : "clock"} size={22} /></span><div className="exam-row-copy"><h3>{session.title || session.examId}</h3><p>{session.mode === "mock" ? "模考" : "练习"} · {formatDate(session.updatedAt)}</p><ProgressBar session={session} /></div><button type="button" className="secondary-button" onClick={onClick}>{action}</button></article>;
+}
+
+/**
+ * How much of the paper was attempted.
+ *
+ * Shown wherever a session is listed, because the count of "finished" papers is
+ * only trustworthy if the learner can see what it is counting.
+ */
+export function ProgressBar({ session }: { session: SessionSummary }) {
+  const ratio = completion(session);
+  if (ratio === null) return null;
+  const percent = Math.round(ratio * 100);
+  const state = isFinished(session) ? "done" : session.status === "submitted" ? "partial" : "open";
+  return <span className={`progress-line ${state}`} title={`${session.answered}/${session.total} 题`}>
+    <i><b style={{ width: `${percent}%` }} /></i>
+    <small>{session.answered}/{session.total}</small>
+  </span>;
 }
 
 export function RecordTable({ sessions }: { sessions: SessionSummary[] }) {
   if (!sessions.length) return <p className="empty-inline">完成一次模考后，记录会显示在这里。</p>;
-  return <div className="record-table"><div className="record-head"><span>模考名称</span><span>完成时间</span><span>模块</span><span>状态</span></div>{sessions.map((s) => <div className="record-line" key={s.id}><strong>{s.title || s.examId}</strong><span>{formatDate(s.updatedAt)}</span><span>{moduleLabel(s.module)}</span><b>{statusLabel(s.status)}</b></div>)}</div>;
+  return <div className="record-table"><div className="record-head"><span>模考名称</span><span>完成时间</span><span>模块</span><span>完成度</span></div>{sessions.map((s) => <div className="record-line" key={s.id}><strong>{s.title || s.examId}</strong><span>{formatDate(s.updatedAt)}</span><span>{moduleLabel(s.module)}</span><b className={isFinished(s) ? "" : "partial"}>{completion(s) === null ? statusLabel(s.status) : `${Math.round((completion(s) ?? 0) * 100)}%`}</b></div>)}</div>;
 }
 
 export function RecentMockList({ sessions }: { sessions: SessionSummary[] }) {

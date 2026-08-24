@@ -2,8 +2,9 @@ import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
 import { ExamRow, ModuleCard, RecordTable, SessionRow } from "../components/ExamRows";
 import { MiniTrend } from "../components/Charts";
-import { daysUntil, rangeLabel } from "../lib/format";
+import { daysUntil, isFinished, rangeLabel } from "../lib/format";
 import { todayEntry } from "../lib/plan";
+import { quoteOfTheDay } from "../lib/quotes";
 import type { AnalyticsReport, Bootstrap, ExamSummary, StudyPlan } from "../lib/types";
 import type { View } from "../lib/view";
 
@@ -14,9 +15,23 @@ export function Workbench({ boot, analytics, busy, onStart, onView, rangeDays, p
   const countdown = daysUntil(boot.profile?.examDate);
   const today = todayEntry(plan);
   const todaysExam = today?.mock ? boot.exams.find((e) => e.id === today.mock?.examId) : undefined;
-  return <div className="dashboard-page page-stack"><PageHeading title={<>欢迎回来！ <span className="wave-mark">👋</span></>} subtitle={<>在这里开始你的 <em>IELTS Academic</em> 练习与模考</>} aside={countdown == null
-      ? <blockquote>Success is the sum of small efforts,<br />repeated day in and day out.<cite>— Robert Collier</cite></blockquote>
+  const quote = quoteOfTheDay();
+  const finished = boot.sessions.filter(isFinished).length;
+  return <div className="dashboard-page page-stack"><PageHeading title={<>欢迎回来！ <span className="wave-mark">👋</span></>} subtitle={<>在这里开始你的 <em>IELTS Academic</em> 练习与模考</>} aside={countdown == null ? null
       : <div className="exam-countdown"><small>距考试还有</small><strong>{countdown > 0 ? countdown : 0}</strong><span>{countdown > 0 ? "天" : countdown === 0 ? "天 · 就是今天" : "天 · 考试日已过"}</span><b>{boot.profile?.examDate}</b></div>} />
+    <section className={`quote-card marker-${quote.marker}`}>
+      <span className="quote-open" aria-hidden="true">&ldquo;</span>
+      <blockquote>
+        {quote.before}<mark>{quote.mark}</mark>{quote.after}
+        <cite>— {quote.author}</cite>
+      </blockquote>
+      <div className="quote-tally">
+        {finished > 0 && <span><strong>{finished}</strong> 套完整做完</span>}
+        {dueVocab > 0 && <span><strong>{dueVocab}</strong> 个生词等你</span>}
+        {openMistakes > 0 && <span><strong>{openMistakes}</strong> 道错题待攻克</span>}
+        {finished === 0 && dueVocab === 0 && openMistakes === 0 && <span>今天是个不错的开始。</span>}
+      </div>
+    </section>
     <section className="workspace-card today-card">
       <div className="card-heading">
         <div><h2>今天做什么</h2><p>{plan

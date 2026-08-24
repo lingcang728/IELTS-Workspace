@@ -58,3 +58,30 @@ export function daysUntil(date?: string) {
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
   return Math.round((target - today) / 86400000);
 }
+
+/**
+ * How far through a paper a session got, 0-1, or null when the summary
+ * predates the answered/total fields.
+ */
+export function completion(session: SessionSummary): number | null {
+  if (typeof session.answered !== "number" || typeof session.total !== "number") return null;
+  if (session.total <= 0) return null;
+  return Math.min(1, session.answered / session.total);
+}
+
+/**
+ * Whether a session counts as a finished paper.
+ *
+ * Submitting is not finishing. The bar is deliberately "attempted essentially
+ * all of it" rather than a soft percentage: a learner who left half the paper
+ * blank has not done that paper, and telling them otherwise makes the weekly
+ * count useless. Sessions with no progress data recorded fall back to their
+ * status so old records do not silently vanish from the count.
+ */
+export const FINISHED_RATIO = 0.9;
+
+export function isFinished(session: SessionSummary): boolean {
+  if (session.status !== "submitted") return false;
+  const ratio = completion(session);
+  return ratio === null ? true : ratio >= FINISHED_RATIO;
+}

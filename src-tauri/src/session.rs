@@ -113,6 +113,49 @@ fn read_with_fallback(path: &Path) -> Result<String, AppError> {
     }
 }
 
+/// How much of a paper was actually attempted: (answered, total).
+///
+/// "Submitted" is not the same as "finished". A session submitted after two
+/// questions was still submitted, so counting submissions as completions told
+/// the learner they had done four papers this week when they had walked out of
+/// most of them. The summary therefore carries the real numbers and lets the
+/// UI decide what to call finished.
+///
+/// A question counts as answered when its value is neither null nor empty —
+/// for a multi-select that means at least one option chosen. Writing sessions
+/// have no per-question answers, so their progress comes from `writing`, where
+/// a task counts once it has any text in it.
+fn answered_counts(session: &Value) -> (u64, u64) {
+    if let Some(answers) = session.get("answers").and_then(Value::as_object) {
+        if !answers.is_empty() {
+            let answered = answers
+                .values()
+                .filter(|entry| {
+                    let value = entry.get("value").unwrap_or(&Value::Null);
+                    match value {
+                        Value::Null => false,
+                        Value::String(text) => !text.trim().is_empty(),
+                        Value::Array(items) => items.iter().any(|item| {
+                            item.as_str().map(|t| !t.trim().is_empty()).unwrap_or(true)
+                        }),
+                        _ => true,
+                    }
+                })
+                .count() as u64;
+            return (answered, answers.len() as u64);
+        }
+    }
+    if let Some(writing) = session.get("writing").and_then(Value::as_object) {
+        let written = writing
+            .values()
+            .filter(|text| text.as_str().map(|t| !t.trim().is_empty()).unwrap_or(false))
+            .count() as u64;
+        // A writing paper is always two tasks, even when only one was opened.
+        return (written, writing.len().max(2) as u64);
+    }
+    (0, 0)
+}
+
 pub fn list_session_summaries() -> Result<Vec<Value>, AppError> {
     let dir = paths::sessions_dir()?;
     let mut out = Vec::new();
@@ -127,6 +170,7 @@ pub fn list_session_summaries() -> Result<Vec<Value>, AppError> {
         }
         let Ok(text) = fs::read_to_string(&path) else { continue };
         let Ok(v) = serde_json::from_str::<Value>(&text) else { continue };
+        let (answered, total) = answered_counts(&v);
         out.push(serde_json::json!({
             "id": v.get("id"),
             "examId": v.get("examId"),
@@ -137,6 +181,8 @@ pub fn list_session_summaries() -> Result<Vec<Value>, AppError> {
             "startedAt": v.get("startedAt"),
             "updatedAt": v.get("updatedAt"),
             "title": v.get("examTitle"),
+            "answered": answered,
+            "total": total,
         }));
     }
     Ok(out)
@@ -168,6 +214,39 @@ pub fn archive_session(id: &str) -> Result<(), AppError> {
 mod tests {
     use super::*;
     use std::env;
+
+    #[test]
+    fn counts_only_questions_that_were_actually_answered() {
+        let session = serde_json::json!({"answers": {
+            "q1": {"value": "Gujarat"},
+            "q2": {"value": null},
+            "q3": {"value": "   "},
+            "q4": {"value": ["B", "D"]},
+            "q5": {"value": []},
+        }});
+        assert_eq!(answered_counts(&session), (2, 5));
+    }
+
+    #[test]
+    fn an_untouched_paper_counts_as_zero_not_as_finished() {
+        let session = serde_json::json!({"answers": {
+            "q1": {"value": null}, "q2": {"value": null},
+        }});
+        assert_eq!(answered_counts(&session), (0, 2));
+    }
+
+    #[test]
+    fn writing_progress_comes_from_the_essays() {
+        let session = serde_json::json!({"writing": {
+            "task1": "Some words here.", "task2": "",
+        }});
+        assert_eq!(answered_counts(&session), (1, 2));
+    }
+
+    #[test]
+    fn a_session_with_neither_answers_nor_essays_is_zero_of_zero() {
+        assert_eq!(answered_counts(&serde_json::json!({})), (0, 0));
+    }
 
     #[test]
     fn atomic_write_roundtrip() {

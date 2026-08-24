@@ -353,3 +353,43 @@
   .intensive-grid, .studio-grid { grid-template-columns: 1fr; }
   .flashcard-grades { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ------------------------------------------------------- 今日一句 (quote card)
+ * The colour on this screen. The phrase worth taking away sits under a
+ * highlighter — the app's own gesture, turned on the encouragement — and the
+ * pen colour rotates with the quote. Everything else on the card stays ink.
+ */
+.quote-card { position: relative; flex: 0 0 auto; display: grid; gap: 0; padding: 24px 26px 0 60px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); overflow: hidden; }
+.quote-card::before { position: absolute; top: 0; bottom: 0; left: 0; width: 5px; background: var(--quote-pen); content: ""; }
+.quote-open { position: absolute; top: 6px; left: 20px; color: var(--quote-pen); font: 600 66px/1 var(--font-serif); user-select: none; }
+.quote-card blockquote { margin: 0; color: var(--ink); font: italic 400 clamp(19px, 1.7vw, 25px)/1.5 var(--font-serif); }
+/* The highlighter. `box-decoration-break: clone` keeps the stroke intact when
+   the phrase wraps, so it reads as a pen mark rather than two half-boxes. */
+.quote-card mark { padding: 2px 5px; border-radius: 4px; background: var(--quote-pen); box-decoration-break: clone; -webkit-box-decoration-break: clone; color: var(--ink); font-style: inherit; }
+.quote-card cite { display: block; margin-top: 12px; color: var(--muted); font: 400 12px/1 var(--font-sans); font-style: normal; letter-spacing: .02em; }
+.quote-tally { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 18px; padding: 12px 0 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.quote-tally strong { margin-right: 4px; color: var(--ink); font: 600 15px var(--font-mono); }
+
+.quote-card.marker-1 { --quote-pen: var(--marker-1); }
+.quote-card.marker-2 { --quote-pen: var(--marker-2); }
+.quote-card.marker-3 { --quote-pen: var(--marker-3); }
+.quote-card.marker-4 { --quote-pen: var(--marker-4); }
+
+/* ------------------------------------------------------ session progress bar */
+/* In the narrow right-hand asides a session row has no room for icon, title,
+   progress and button on one line, so the action drops to its own row rather
+   than squeezing the title down to "Cambridg…". */
+.practice-aside .exam-row, .mock-aside .exam-row { grid-template-columns: auto minmax(0, 1fr); row-gap: 10px; }
+.practice-aside .exam-row > button, .mock-aside .exam-row > button { grid-column: 1 / -1; justify-self: start; }
+.practice-aside .progress-line i, .mock-aside .progress-line i { width: clamp(60px, 30vw, 120px); }
+
+.progress-line { display: inline-flex; align-items: center; gap: 8px; margin-top: 7px; }
+/* The track has to be visible at 0%, otherwise a paper nobody started shows
+   a bare "0/40" with nothing to read it against. */
+.progress-line i { width: clamp(70px, 14vw, 140px); height: 5px; overflow: hidden; border-radius: 3px; background: var(--line); }
+.progress-line i b { display: block; height: 100%; border-radius: inherit; background: var(--muted-2); }
+.progress-line small { color: var(--muted); font: 10px var(--font-mono); }
+.progress-line.done i b { background: var(--positive); }
+.progress-line.partial i b { background: var(--caution); }
+.record-line b.partial { color: var(--caution); }
+.history-info .progress-line { margin-top: 6px; }

@@ -5,48 +5,62 @@
  * decoration, and the palette this replaced used `--blue` in 30-odd places
  * that were not links or actions.
  *
- * Dark is derived rather than borrowed: kami itself ships light-only, so the
- * dark ramp keeps the same warm hue family instead of flipping to the cool
- * slate the previous palette used.
+ * The surfaces are tuned for separation rather than for warmth. An earlier
+ * pass made every surface a near-identical warm brown, which read as fog: the
+ * cards did not sit on the page, they dissolved into it. So light now puts
+ * plain white cards on a warm paper ground, and dark drops the ground almost
+ * to black and lifts the panels off it. Ink is close to true white/near-black
+ * at both ends, which is what makes type look crisp rather than smudged.
  *
  * Contrast is quoted against the *worst* of the three surfaces a token can
  * land on (--bg, --panel, --panel-2), not just one of them:
- *   light  ink 16.1:1 · ink-soft 11.2:1 · muted 7.3:1 · muted-2 4.6:1
- *          accent 10.6:1 · positive 5.6:1 · caution 5.5:1 · danger 6.0:1
- *   dark   ink 12.1:1 · ink-soft 9.5:1 · muted 5.3:1 · muted-2 4.9:1
- *          accent 6.8:1 · positive 7.0:1 · caution 6.9:1 · danger 5.8:1
- * Every one clears WCAG AA (4.5:1) for body text. `scripts/check_styles.py`
+ * Highlighter tints (--marker-N) are checked the same way: --ink over the
+ * blended stroke stays at 5.1:1 or better in dark and 11:1 in light, while the
+ * stroke itself lifts 2.5-3:1 off the panel so it reads as a pen mark.
+ *   light  ink 15.6 · ink-soft 11.4 · muted 6.2 · muted-2 4.8
+ *          accent 9.0 · positive 5.3 · caution 5.6 · danger 5.9
+ *   dark   ink 13.8 · ink-soft 10.7 · muted 6.3 · muted-2 4.8
+ *          accent 7.6 · positive 7.7 · caution 7.6 · danger 6.3
+ * Surface separation: light panel/bg 1.21, dark panel/bg 1.18.
+ * Every token clears WCAG AA (4.5:1) for body text. `scripts/check_styles.py`
  * keeps the literals in this file; the ratios are recomputed by hand when a
  * value changes.
  */
 :root {
   /* Warm dark is the default: the app opens before the profile is read, and
      `applyUi` only switches to light when the saved profile asks for it. */
-  --bg: #131209;
-  --bg-deep: #0d0c06;
-  --bg-2: #1a1912;
-  --panel: #23211a;
-  --panel-2: #2a2820;
-  --panel-hover: #302d24;
-  --ink: #ece8dc;
-  --ink-soft: #d4cfc0;
-  --muted: #a09a8a;
-  --muted-2: #9a9487;
+  --bg: #0b0b09;
+  --bg-deep: #060605;
+  --bg-2: #131311;
+  --panel: #1e1e1a;
+  --panel-2: #272621;
+  --panel-hover: #302f29;
+  --ink: #f6f4ee;
+  --ink-soft: #dcd9d0;
+  --muted: #aba798;
+  --muted-2: #96917f;
   /* Translucent rules rather than solid dark edges, so a panel reads as a
      sheet lifted off the ground instead of a box drawn on it. */
-  --line: rgba(236, 232, 220, .12);
-  --line-strong: rgba(236, 232, 220, .22);
-  --accent: #8fb3e0;
-  --accent-soft: rgba(143, 179, 224, .14);
-  --accent-ink: #131209;
-  --positive: #87c091;
-  --positive-soft: rgba(135, 192, 145, .14);
-  --caution: #d9aa57;
-  --caution-soft: rgba(217, 170, 87, .14);
-  --danger: #e08b80;
-  --danger-soft: rgba(224, 139, 128, .14);
-  --shadow: 0 14px 36px rgba(0, 0, 0, .32);
+  --line: rgba(246, 244, 238, .10);
+  --line-strong: rgba(246, 244, 238, .20);
+  --accent: #96baea;
+  --accent-soft: rgba(150, 186, 234, .14);
+  --accent-ink: #0b0b09;
+  --positive: #8ac795;
+  --positive-soft: rgba(138, 199, 149, .14);
+  --caution: #dfb05c;
+  --caution-soft: rgba(223, 176, 92, .14);
+  --danger: #e69086;
+  --danger-soft: rgba(230, 144, 134, .14);
+  /* Highlighter tints for the quote of the day. Translucent here so the ink
+     stays --ink and legible; solid pastels in light mode. */
+  --marker-1: rgba(255, 210, 74, .40);
+  --marker-2: rgba(127, 227, 166, .40);
+  --marker-3: rgba(127, 192, 255, .40);
+  --marker-4: rgba(255, 157, 148, .40);
+  --shadow: 0 14px 36px rgba(0, 0, 0, .40);
   --font-sans: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", serif;
   --font-mono: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
   --radius: 7px;
   color-scheme: dark;
@@ -59,28 +73,32 @@
 }
 
 [data-ui="light"] {
-  --bg: #f1f0e7;          /* parchment */
-  --bg-deep: #e9e8dd;
-  --bg-2: #f7f6f1;
-  --panel: #fbfaf7;       /* ivory */
-  --panel-2: #f4f3ec;
-  --panel-hover: #edece4;
-  --ink: #141413;
-  --ink-soft: #33322e;
-  --muted: #504e49;
-  --muted-2: #6f6c64;
-  --line: rgba(20, 20, 19, .13);
-  --line-strong: rgba(20, 20, 19, .22);
-  --accent: #1b365d;
-  --accent-soft: rgba(27, 54, 93, .09);
-  --accent-ink: #fbfaf7;
-  --positive: #2f6b3f;
-  --positive-soft: rgba(47, 107, 63, .1);
-  --caution: #7d5a12;
-  --caution-soft: rgba(125, 90, 18, .1);
-  --danger: #9c3b30;
-  --danger-soft: rgba(156, 59, 48, .1);
-  --shadow: 0 12px 30px rgba(38, 34, 24, .1);
+  --bg: #eceae1;          /* warm paper ground */
+  --bg-deep: #e3e1d7;
+  --bg-2: #f6f5f0;
+  --panel: #ffffff;       /* plain white cards: the separation is the point */
+  --panel-2: #f4f2ec;
+  --panel-hover: #eeece4;
+  --ink: #12120f;
+  --ink-soft: #2e2d29;
+  --muted: #57554f;
+  --muted-2: #68655e;
+  --line: rgba(18, 18, 15, .12);
+  --line-strong: rgba(18, 18, 15, .22);
+  --accent: #1c3d6b;
+  --accent-soft: rgba(28, 61, 107, .08);
+  --accent-ink: #ffffff;
+  --positive: #2c6b3c;
+  --positive-soft: rgba(44, 107, 60, .1);
+  --caution: #7a5510;
+  --caution-soft: rgba(122, 85, 16, .1);
+  --danger: #9c342a;
+  --danger-soft: rgba(156, 52, 42, .1);
+  --marker-1: #f6d97a;
+  --marker-2: #a9e0bd;
+  --marker-3: #a8cdf0;
+  --marker-4: #f3b9b3;
+  --shadow: 0 10px 26px rgba(38, 34, 24, .09);
   color-scheme: light;
 }
 

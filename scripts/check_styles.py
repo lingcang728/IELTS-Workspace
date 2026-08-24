@@ -54,7 +54,12 @@ def main() -> int:
                     failures.append(f"{path.name}:{line_no}: literal colour — use a token from "
                                     f"tokens.css instead: {line.strip()[:90]}")
         used = set(VAR_RE.findall(text))
-        missing = sorted(u for u in used if u not in declared and u != "--font-scale")
+        # A rule file may define its own local variable — `.quote-card.marker-2
+        # { --quote-pen: var(--marker-2) }` — to switch a whole component on one
+        # class. That is not a missing token, so long as the file declares it.
+        local = set(DECL_RE.findall(text))
+        missing = sorted(u for u in used
+                         if u not in declared and u not in local and u != "--font-scale")
         for token in missing:
             failures.append(f"{path.name}: reads {token}, which tokens.css does not declare")
         if path.name == "exam.css":
