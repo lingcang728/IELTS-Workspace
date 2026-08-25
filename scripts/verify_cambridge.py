@@ -252,7 +252,18 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
                 gap(f"group {gid}", f"is in a listening paper but its instruction cites a reading "
                                     f"passage: {instruction[:60]!r}")
             shared = group.get("sharedOptions") or []
-            if shared and sum(1 for o in shared if str(o.get("text") or "").strip()) < 2:
+            # A group-level option list only matters when the questions rely on
+            # it. The importer left an empty `sharedOptions` shell on 139 groups
+            # whose questions each carry their own complete, texted options —
+            # multiple-choice and matching-to-paragraph questions, where nothing
+            # is actually missing. Reporting those sent the reader hunting for a
+            # word bank the page never printed.
+            questions_self_sufficient = bool(group.get("questions")) and all(
+                sum(1 for o in (q.get("options") or []) if str(o.get("text") or "").strip()) >= 2
+                for q in group.get("questions") or []
+            )
+            if shared and not questions_self_sufficient and \
+                    sum(1 for o in shared if str(o.get("text") or "").strip()) < 2:
                 gap(f"group {gid}", f"carries {len(shared)} option labels with no text — "
                                     f"the heading list / word bank was lost in extraction")
             # A map/plan/diagram question is the picture. Its options are bare
