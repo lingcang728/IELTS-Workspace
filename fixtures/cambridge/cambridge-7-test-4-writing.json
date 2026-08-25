@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-4-writing",
+  "title": "Cambridge IELTS 7 Academic Test 4 Writing",
+  "module": "writing",
+  "contentRevision": "wsplit-e-7-test-4-writing",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nLast month you had a holiday overseas where you stayed with some friends. \nThey have just sent you some photos of your holiday.\n\nWrite a letter to your friends. In your letter\n\n• thank them for the photos and for the holiday\n\n• explain why you didn't write earlier\n\n• invite them to come and stay with you\n\nWrite at least 150 words.\n\nYou do NOT need to write any addresses.\n\nBegin your letter as follows\n\nDear ,"
+      },
+      "questionGroups": []
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome people think that universities should provide graduates with the knowledge and skills needed in the workplace. Others think that the true function of a university should be to give access to knowledge for its own sake, regardless of whether the course is useful to an employer.\n\nWhat, in your opinion, should be the main function of a university?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

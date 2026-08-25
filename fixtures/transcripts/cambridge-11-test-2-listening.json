@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-11-test-2-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 11,
+    "test": 2
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    13,
+    15,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    31,
+    32,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "missingMarkers": [
+    3,
+    4,
+    10,
+    11,
+    12,
+    14,
+    16,
+    28,
+    30,
+    33
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "RogER: Oh, hello, I'm interested in standing for election to the Youth Council, and I was told to give you a call.",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "Well, that's a bit complicated. At the moment I'm looking for a flat to rent here, so I'm in a hostel from Monday to Friday. I go back to my parents' place at the weekend.",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "cARoLinE: OK, so where's the best place to sendyou some information about the Council? ROGER: Oh, to my parents' address, please. That's 17, Buckleigh Street - B-U-C-K-L-E-I- G-H Street, Stamford, Lincolnshire, though you don't really need the county.",
+          "answers": [
+            2
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "cARoLiNE:Oh, I know Stamford - it's a lovely town. And what's the postcode? ROGER: PE9 7QT",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "RogER: I started studying at the university a couple of weeks ago, and I've got a part-time job for a few hours a week.",
+          "answers": []
+        },
+        {
+          "speaker": "CAROLINE",
+          "text": "What do you do? ROGER: Well, I've done several different things. I've just finished a short-term contract as a courier, and now l'm working as a waiter in one of the big hotels.",
+          "answers": []
+        },
+        {
+          "speaker": "CAROLINE",
+          "text": "What are you studying? ROGER: My ambition is to go into parliament eventually, so my major subject is politics. That's partly why I think the Youth Council is important and want to be a part of it.",
+          "answers": [
+            5
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "cARoLiNE: And I suppose you're also taking a minor subject, aren't you? I know a lot of people study economics too.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "RoGER: I chose history. To be honest, I'm not finding it as interesting as I expected!",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "cARoLiNE: OK, so with your studying and your part-time job, do you have time for any other interests or hobbies?",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "Well, I spend quite a lot of time cycling – both around town to get to university and to work, and also long-distance, from here to London, for instance.",
+          "answers": [
+            6
+          ]
+        },
+        {
+          "speaker": "CAROLINE",
+          "text": "That's pretty impressive! Anything else?",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "For relaxation I'm also keen on the cinema – I used to go at least once a week, but I can't manage to go so often now.",
+          "answers": [
+            7
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "cARoLiNE: Right. Are you sure you'll have enough time for the Youth Council?",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "Yes, I've worked out that I can afford to reduce my hours at work, and that will make the time.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "cARoLiNE: So is there any particular aspect of the Youth Council's work that appeals to you, Roger?",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "Well, my sister is blind, so I'm particularly interested in working with disabled young people, to try and improve the quality of their lives.",
+          "answers": [
+            8
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "cARoLiNE: That's great. Well, the best way to get involved is to be nominated by some people who you know.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "RogER:Right. Can you tell me how to set about organising that?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "CARoLiNE: You should talk to Jeffrey, our Elections Officer. I can arrange a meeting in the council office with him, if you like.",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "Yes, please.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "CARoLINE: He'll be here next Monday, if that suits you.",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "That's the14th, isn't it?",
+          "answers": []
+        },
+        {
+          "speaker": "CAROLINE",
+          "text": "Yes.",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "I can manage late afternoon.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "CARoLiNE: Would you like to suggest a time? He generally leaves around 5.30.",
+          "answers": []
+        },
+        {
+          "speaker": "ROGER",
+          "text": "Well, would 4.30 be OK? My last class finishes at 4, so I'd have plenty of time to get to your office.",
+          "answers": [
+            9
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "cARoLinE: Right, that's fine. Oh, and could I have a phone number we can contact you on? ROGER:Yes, my mobile number's 07788 136711.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "cARoLinE: Thank you. Well, we'll look forward to seeing you next week.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "RoGER:Thanks very much. Goodbye.",
+          "answers": []
+        },
+        {
+          "speaker": "CAROLINE",
+          "text": "Bye.",
+          "answers": []
+        }
+      ],
+      "charCount": 2992,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Hi. Great to see you! I'm Jody, and I'll be looking after both of you for the first month you're working here at the Amersham Theatre. I'll tell you something about the theatre now, then take you to meet two of the other staff.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "It's an old building, and it's been modernised several times. In fact, as you can see, we're carrying out a major refurbishment at the moment. The interior has just been repainted, and we're about to start on the exterior of the building – that'll be a big job. The work's running over budget, so we've had to postpone installing an elevator. I hope you're happy running up and down stairs! When the theatre was built, people were generally slimmer and shorter than now, and the seats were very close together. We've replaced them with larger seats, with more legroom. This means fewer seats in total, but we've taken the opportunity to install seats that can easily be moved, to create different acting spaces. We've also turned a few",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "storerooms over to other purposes, like using them for meetings.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "We try hard to involve members of the public in the theatre. One way is by organising &14 backstage tours, so people can be shown round the building and learn how a theatre operates. These are proving very popular. What we're finding is that people want to have lunch or a cup of coffee while they're here, so we're looking into the possibility of opening a café in due course. We have a bookshop, which specialises in books about drama, and & 14 that attracts plenty of customers. Then there are two large rooms that will be decorated next month, and they'll be available for hire, for conferences and private functions, such as parties. We're also considering hiring out costumes to amateur drama clubs.",
+          "answers": [
+            13
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now I want to tell you about our workshops. We recently started a programme of workshops that anyone can join. Eventually we intend to run courses in acting, but we're waiting until we've got the right people in place as trainers. That's proving more difficult than we'd expected! There's a big demand to learn about the technical side of putting on a production, and our lighting workshop has already started, with great success. We're going to start one &16 on sound next month. A number of people have enquired about workshops on make-up, and that's something we're considering for the future. A surprise success is the workshop on &16 making puppets - we happen to have someone working here who does it as a hobby, and she offered to run a workshop. It was so popular we're now running them every month!",
+          "answers": [
+            15
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now, a word about the layout of the building. The auditorium, stage and dressing rooms for the actors are all below ground level. Here on the ground floor we have most of the rooms that the public doesn't see. The majority are internal, so they have windows in the roof to light them.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Standing here in the foyer, you're probably wondering why the box office isn't here, where the public would expect to find it. Well, you might have noticed it on your way in - although it's part of this building, it's next door, with a separate entrance from the road.",
+          "answers": [
+            17
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "For the theatre manager's office, you go across the foyer and through the double doors, turn right, and it's the room at the end of the corridor. with the door on the left.",
+          "answers": [
+            18
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "The lighting box is where the computerised stage lighting is operated, and it's at the back of the building. When you're through the double doors, turn left, turn right at the water cooler. and right again at the end. It's the second room along that corridor. The lighting box has a window into the auditorium, which of course is below us.",
+          "answers": [
+            19
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "The artistic director's office is through the double doors, turn right, and it's the first room you come to on the right-hand side. And finally, for the moment, the room where I'll take you next - the relaxation room.So if you'd like to come with me...",
+          "answers": [
+            20
+          ]
+        }
+      ],
+      "charCount": 3853,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "HELEn: I've brought my notes on our Biology Field Trip to Rocky Bay, Colin, so we can work on our report on the research we did together.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "colin: OK. I've got mine too. Let's look at the aims of the trip first.",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "Right. What did you have?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "colin: I just put something about getting experience of the different sorts of procedures used on a field trip. But we need something about what causes different organisms to choose particular habitats.",
+          "answers": [
+            21
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "HElEn: Iagree. And something about finding out how to protect organisms in danger of dying out?",
+          "answers": []
+        },
+        {
+          "speaker": "COLIN",
+          "text": "In our aims? But we weren't really looking at that. I suppose not. OK, now there's the list of equipment we all had to bring on the field",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "COLIN: trip. What did they tell us to bring a ruler for? It was something about measuring the slope of the shore, but of course we didn't",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "need it because we were measuring wind direction, and we'd brought the compass for that ... But not the piece of string to hold up in the air! Didn't Mr Blake make a fuss about us",
+          "answers": [
+            22
+          ]
+        },
+        {
+          "speaker": "HELEN",
+          "text": "COLIN: leaving that behind. Yeah. He does go on. Anyway it was easy to get one from another of the students.",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "Now, the next section's the procedure. I sent you the draft of that. Yeah. It was clear, but I don't think we need all these details of what time we left and",
+          "answers": [
+            23
+          ]
+        },
+        {
+          "speaker": "COLIN",
+          "text": "what time we got back and how we divided up the different research tasks. OK. I'll look at that again.",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "COLIN: Then we have to describe our method of investigation in detail. So let's begin with how we measured wave speed. I was surprised how straightforward that was.",
+          "answers": [
+            24
+          ]
+        },
+        {
+          "speaker": "HELEN",
+          "text": "I'd expected us to have some sort of high-tech device, not just stand there and count the number of waves per minute. Not very precise, but I suppose it was good",
+          "answers": []
+        },
+        {
+          "speaker": "COLIN",
+          "text": "enough. But the way we measured the amount of salt was interesting. In the water from the rock pools? Yeah, oh, I wanted to check the chemicals we used in the lab when we analysed",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "COLIN: those samples - was it potassium chromate and silver nitrate? That's right. OK. And we need the map of the seashore. You just left that to me. And I had to do",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "it while the tide was low, well that was OK, but the place I started it from was down on the beach, then I realised I should have gone up higher to get better visibility, so I had to start all over again. But at least I'd got the squared paper or I'd have had problems drawing it all to scale.",
+          "answers": [
+            25
+          ]
+        },
+        {
+          "speaker": "COLIN",
+          "text": "Yes. It looks good. We could get a map of the region off the internet and see if we need to make any changes. I had a look but I couldn't find anything. But you took some pictures, didn't you?",
+          "answers": []
+        },
+        {
+          "speaker": "COLIN",
+          "text": "HELEN: Yeah. I'll email you them if you want. OK.I'll make my amendments using those, then I can scan it into our report. Great.",
+          "answers": [
+            26
+          ]
+        },
+        {
+          "speaker": "HELEN",
+          "text": "Now when we get to our findings I thought we could divide them up into the different zones we identified on the shore and the problems organisms face in each zone. So",
+          "answers": []
+        },
+        {
+          "speaker": "COLIN",
+          "text": "for the highest area ... ... the splash zone?",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "Yeah, we found mostly those tiny shellfish that have strong hard shells that act as protection. But not from other organisms that might eat them, predators?",
+          "answers": []
+        },
+        {
+          "speaker": "COLIN",
+          "text": "HELEN: No, that's not the main danger for them. But the shells prevent them from drying out & 28",
+          "answers": [
+            27
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "because they're in the open air for most of the time.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Right. And since they're exposed, they need to be able to find some sort of shelter, or",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "cover themselves up, so they don't get too hot. Then in the middle and lower zones, & 28",
+          "answers": [
+            27
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "nearer the sea, we need to discuss the effects of wave action ..",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "Yes, and how organisms develop structures to prevent themselves from being swept",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "away, or even destroyed by being smashed against the rocks.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "I haven't done anything on the geological changes. I don't know what to put for that.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "No, we weren't concentrating on that. Maybe we need to find some websites",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Good idea. I've got the lecture notes from Mr Blake's geology course, but they're",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "too general. But we could ask him which books on our Reading List might be most",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "Right. OK, now I did a draft of the section of sources of possible error in our research, but I don't know if you agree. For example, the size of the sample, and whether it's big enough to make any general conclusions from. But I thought actually we did have quite a big sample.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "coLin: We did. And our general method of observation seemed quite reliable. But we might not be all that accurate as far as the actual numbers go.",
+          "answers": []
+        },
+        {
+          "speaker": "HELEN",
+          "text": "Yeah, we might have missed some organisms - if they were hiding under a rock, for & 30 example. I wasn't sure about the way we described their habitats. I decided it was probably OK.",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": "COLIN",
+          "text": "Yeah, and the descriptions we gave of the smaller organisms, they weren't very detailed, but they were adequate in this context. I'm not sure we identified all the & 30 species correctly though.",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "HELEn: OK, we'd better mention that. Now, how ...",
+          "answers": []
+        }
+      ],
+      "charCount": 4693,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "We've been discussing the factors the architect has to consider when designing domestic buildings. I'm going to move on now to consider the design of public buildings, and I'll illustrate this by referring to the new Taylor Concert Hall that's recently been completed here in the city.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "So, as with a domestic building, when designing a public building, an architect needs to consider the function of the building – for example, is it to be used primarily for entertainment, or for education, or for administration? The second thing the architect needs to think about is the context of the building, this includes its physical location, obviously, but it also includes the social meaning of the building, how it relates to the people it's built for. And finally,for important public buildings, the architect may also be looking for a central symbolic idea on which to base the design, a sort of metaphor for the building and the way in which it is used.",
+          "answers": [
+            31
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Let's look at the new Taylor Concert Hall in relation to these ideas. The location chosen was a site in a run-down district that has been ignored in previous redevelopment plans. It was occupied by a factory that had been empty for some years. The whole area was some distance from the high-rise office blocks of the central business district and shopping centre, but it was only one kilometre from the ring road. The site itself was bordered to the north by aQ33 canal which had once been used by boats bringing in raw materials when the area was used for manufacturing.",
+          "answers": [
+            32
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "The architect chosen for the project was Tom Harrison. He found the main design challenge was the location of the site in an area that had no neighbouring buildings of any importance. To reflect the fact that the significance of the building in this quite run-down location was as yet unknown, he decided to create a building centred around the idea of a mystery – something whose meaning still has to be discovered.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "So how was this reflected in the design of the building? Well, Harrison decided to create pedestrian access to the building and to make use of the presence of water on the site. As people approach the entrance, they therefore have to cross over a bridge. He wanted to give people a feeling of suspense as they see the building first from a distance, and then close-up, and the initial impression he wanted to create from the shape of the building as a whole was that of a box. The first side that people see, the southern wall, is just a high, flat wall uninterrupted by any windows. This might sound off-putting, but it supports Harrison's concept of the building – that the person approaching is intrigued and wonders what will be inside. And this flat wall also has another purpose. At night-time, projectors are switched on and it functions as a huge screen, onto which images are projected",
+          "answers": [
+            34,
+            35,
+            36
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "The auditorium itself seats 1500 people. The floor's supported by ten massive pads. These are constructed from rubber, and so are able to absorb any vibrations from outside and prevent them from affecting the auditorium. The walls are made of several layers of honey-coloured wood, all sourced from local beech trees. In order to improve the acoustic properties of the auditorium and to amplify the sound, they are not straight, they are curved. The acoustics are also adjustable according to the size of orchestra and the type of music being played. In order to achieve this, there are nine movable panels in the ceiling above the orchestra which are all individually motorized, and the walls also have curtains which can be opened or closed to change the acoustics.",
+          "answers": [
+            37,
+            38,
+            39
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "The reaction of the public to the new building has generally been positive. However, the evaluation of some critics has been less enthusiastic. In spite of Harrison's efforts to use local materials, they criticise the style of the design as being international rather than local, and say it doesn't reflect features of the landscape or society for which it is built.",
+          "answers": [
+            40
+          ]
+        }
+      ],
+      "charCount": 3965,
+      "missing": false
+    }
+  ]
+}

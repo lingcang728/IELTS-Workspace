@@ -1,0 +1,2261 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-20-test-1-reading",
+  "title": "Cambridge IELTS 20 Academic Test 1 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0024-9407f6e2",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 20",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题20-官方扫描.pdf",
+        "sha256": "d22841253438f6e92c52c4de6e639b25db532457a06e2954b05070a7eb4645f1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C20\\剑桥雅思真题20-官方扫描\\auto\\剑桥雅思真题20-官方扫描.md",
+        "sha256": "cfb64fd8009021e8658f57d19f13864c2a78efab8f97bec384823eea86b8501e",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=2, reading=0; legacy fallback used where available."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "The kākāpō",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "The        r ng   pale ow-like ace. Up to 64 m in length, it has preominanly yellowgreen feathers, forward-facing eyes, a large grey beak,large blue feet, and relatively short wings and tail. tis the world's only lihtless parrot, nd is also possibly one o the worl's longestliving birds, with a reported lifespan of up to 100 years.\n\nKākāpō are solitary birds and tend to occupy the same home range for many years. They forage on the ground and climb high into trees. They often leap from trees and flap their wings, but at best manage a controlled descent to the ground. They are entirely vegetarian, with their diet including the leaves, roots and bark of trees as well as bulbs, and fern fronds.\n\nKākāpō breed in summer and autumn, but only in years when food is plentiful, Males play no part in incubation or chick-rearing – females alone incubate eggs and feed the chicks. The 1-4 eggs are laid in soil, which is repeatedly turned over before and during incubation. The female kāakāpō has to spend long periods away from the nest searching for food, which leaves the unattended eggs and chicks particularly vulnerable to predators.\n\nofrat were alsointroduced.Thekakapo werin serious trouble.\n\nIn 1894, the New Zealand government launched its fist attempt to save the kkapo.   \n\nto life in the most isolated parts of New Zealand.\n\nFrom 1949 to 1973, the newly formed New Zealand Wildlife Service made over 60 expeditions to find kakapo, focusing mainly on Fiordland. Six were caught, but there were no females amongst them and ll but one died within a few months of captivity. In 1974, a new initiative was launched, and by 1977, 18 more kākāpō were found in Fiordland. However, there were stillno females. In 1977, a large population of males was spotted in Rakiura - a large island free from stoats, ferrets and weasels. There were about 200 individuals, and in 1980 it was confirmed females were also present. These birds have been the foundation of all subsequent work in managing the species.\n\nUnfortunately, predation by feral cats on Rakiura Island led to a rapid decline in kākāpō numbers. As a result, during 1980–97, the surviving population was evacuated to three island sanctuaries: Codfish Island, Maud Island and Little Barrier Island. However, breeding success was hard to achieve. Rats were found to be a major predator of kākāpō chicks and an insufficient number of chicks survived to offset adult mortality. By 1995, although at least 12 chicks had been produced on the islands, only three had survived. The kākāpō population had dropped to 51 birds. The critical situation prompted an urgent review of kākāpō management in New Zealand.\n\nIn 1996, a new Recovery Plan was launched, together with a specialist advisory group called the Kākāpō Scientific and Technical Advisory Committee and a higher amount of funding. Renewed steps were taken to control predators on the three islands. Cats were eradicated from Little Barrier Island in 1980, and possums were eradicated from Codfish Island by 1986. However, the population did not start to increase until rats were removed from all three islands, and the birds were more intensively managed. This involved moving the birds between islands, supplementary feeding of adults and rescuing and hand-raising any failing chicks.\n\nAfter the first five years of the Recovery Plan, the population was on target. By 2000, five new females had been produced, and the total population had grown to 62 birds. For the first time, there was cautious optimism for the future of kākāpō and by June 2020, a total of 210 birds was recorded. ākānō Recovery Plan. Its\n\nToday, kākāpō management continues to be guided by the kākāpō Recovery Plan. Its key goals are: minimise the loss of genetic diversity in the kākāpō population, restore or maintain sufficient habitat to accommodate the expected increase in the kākāpō population, and ensure stakeholders continue to be fully engaged in the preservation of the species."
+      },
+      "questionGroups": [
+        {
+          "id": "c20t1r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "There are other parrots that share the kākāpō's inability to fly.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:50.576693+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Adult kākāpō produce chicks every year.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:50.576693+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Adult male kākāpō bring food back to nesting females.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:50.577221+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "The Polynesian rat was a greater threat to the kākāpō than Polynesian settlers.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:50.577221+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "Kākāpō were transferred from Rakiura Island to other locations because they were at ri",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:50.577221+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "One Recovery Plan initiative that helped increase the kākāpō population size was",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:50.577221+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g7",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The diet consists of fern fronds, various parts of a tree and ___",
+              "acceptedAnswers": [
+                "bulbs"
+              ],
+              "gapText": "The diet consists of fern fronds, various parts of a tree and 7 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:12:15+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD ANDORA NUMBe roete pasae fo a answer."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g8",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The nests are created in ___ where eggs are laid",
+              "acceptedAnswers": [
+                "soil"
+              ],
+              "gapText": "The nests are created in 8 ___ where eggs are laid",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:12:15+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD ANDORA NUMBe roete pasae fo a answer."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g9",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "The ___ of the kākāpō were used to make clothes",
+              "acceptedAnswers": [
+                "feathers"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              },
+              "gapText": "The 9 ___ of the kākāpō were used to make clothes"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD ANDORA NUMBe roete pasae fo a answer."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g10",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "___ were an animal which they introduced that ate the kākāpō's food sources",
+              "acceptedAnswers": [
+                "deer"
+              ],
+              "gapText": "10 ___ were an animal which they introduced that ate the kākāpō's food sources",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:12:15+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD ANDORA NUMBe roete pasae fo a answer."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g11",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "A definite sighting of female kākāpō on Rakiura Island was reported in the year ___",
+              "acceptedAnswers": [
+                "1980"
+              ],
+              "gapText": "A definite sighting of female kākāpō on Rakiura Island was reported in the year 11 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD ANDORA NUMBe roete pasae fo a answer."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g12",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "The Recovery Plan included an increase in ___",
+              "acceptedAnswers": [
+                "funding"
+              ],
+              "gapText": "The Recovery Plan included an increase in 12 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD ANDORA NUMBe roete pasae fo a answer."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g13",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "A current goal of the Recovery Plan is to maintain the involvement of ___ in kākāpō protection",
+              "acceptedAnswers": [
+                "stakeholders"
+              ],
+              "gapText": "A current goal of the Recovery Plan is to maintain the involvement of 13 ___ in kākāpō protection",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD ANDORA NUMBe roete pasae fo a answer."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "etsh landawas largel forgtenve, heres w hee m may be rentrodud to the countryside of central and southern England. Any reintroduction willstrt from a very low base. The impact of the disease is difficult to picture if you hadn' een what was there before,' says Matt Elliot of the Woodland Trust. 'You look at old photographs from the 1960s and it's only then that you realise the impact [elms had ... They were significant, large trees ... then they were gone.'\n\nThe disease is caused by a fungus that blocks the elms' vascular (water, nutrient and food transport) system, causing branches to wilt and die. A first epidemic, which occurred in the 1920s, gradually died down, but in the '70s a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building and its intact bark was perfect for the elm bark beetles that spread the deadly fungus. This time, the beetles carried a much more virulent strain that destroyed the vast majority of British elms.\n\nC Today, elms still exist in the southern English countryside but mostly only in low hedgerows between fields. 'We have millions of small elms in hedgerows but they get targeted by the beetle as soon as they reach a certain size,' says Karen Russell, co-author of the report 'Where we are with elm'. Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for te fungus to take hold. Yet mature specimens have been identified, in counties sucCamdgeshire,thatareundred o ars old,andaemsteriousy escaped the epidemic.\n\nThe e Ru s,   e  nd   trs hat hve vve and work reasons for their survival ask Russl Avoidance,tolerance,resistance? We don't to luck.' For centuries n t see how it can be entirely down\n\nForenu    o    e    o  ritain landscape. Not only was\n\nwoodlands. The use of elm is thought to go back to the Bronze Age, when it was widely used for tools. Elm was also the preferred material for shields and early swords. In the 18th century, it was planted more widely and its wood was used for items such as storage crates and flooring. It was also suitable for items that experienced high levels of impact and was used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment.\n\nGiven how ingrained elm is in British culture, it's unsurprising the tree has many advocates. Amongst them is Peter Bourne of the National Elm Collection in Brighton. 'I saw Dutch elm disease unfold as a small boy, he says. 'The elm seemed to be part of rural England, but I remember watching trees just lose their leaves and that really stayed with me.' Today, the city of Brighton's elms total about 17,000. Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack this coastal city's elm population. However, the situation is precarious. 'The beetles can just march in if we're not careful, as the threat is right on our doorstep,' says Bourne.\n\nAny prospect of the elm returning relies heavily on trees being either resistant to, or tolerant of, the disease. This means a widespread reintroduction would involve existing or new hybrid strains derived from resistant, generally non-native elm species. A new generation of seedlings have been bred and tested to see if they can withstand the fungus by cutting a small slit on the bark and injecting a tiny amount of the pathogen. 'The effects are very quick,’ says Russell. 'You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.'\n\nAll of this raises questions of social acceptance, acknowledges Russell. If we're putting elm back into the landscape, a small element of it is not native – are we bothered about that?' For her, the environmental case for reintroducing elm is strong. They will host wildlife, which is a good thing.' Others are more wary. On the face of it, it seems like a good idea,' says Elliot. The problem, he suggests, is that, 'You're replacing a native species with a horticultural analogue\\*. You're effectively cloning.' There's also the risk of introducing new diseases. Rather than plant new elms, the Woodland Trust emphasises providing space to those elms that have survived independently. ‘Sometimes the best thing you can do is just give nature time to recover .. over time, you might get resistance,' says Elliot.\n\n## Test 1"
+      },
+      "questionGroups": [
+        {
+          "id": "c20t1r-g14",
+          "instruction": "Reading Passage 2 has seven sections, A-G. Which section contains the following information? Write the correct letter, A-G, in boxes 14-18 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "Reference to the research problems that arise from there being only a few surviving large elms",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g15",
+          "instruction": "Reading Passage 2 has seven sections, A-G. Which section contains the following information? Write the correct letter, A-G, in boxes 14-18 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Details of a difference of opinion about the value of reintroducing elms to Britain",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g16",
+          "instruction": "Reading Passage 2 has seven sections, A-G. Which section contains the following information? Write the correct letter, A-G, in boxes 14-18 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "Reference to how Dutch elm disease was brought into Britain",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g17",
+          "instruction": "Reading Passage 2 has seven sections, A-G. Which section contains the following information? Write the correct letter, A-G, in boxes 14-18 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "A description of the conditions that have enabled a location in Britain to escape Dutch elm disease",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g18",
+          "instruction": "Reading Passage has seven sections. Which section contains the following information? Write the correct letter, A-G, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Reference to the stage at which young elms become vulnerable to Dutch elm disease",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c20t1r-g19",
+          "instruction": "Look at the following statements (Questions 19-23) and the list of people below. Match each statement with the correct person, A, B, or C. Write the correct letter, A, B, or C, in boxes 19-23 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Matt Elliot"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Karen Russell"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Peter Bourne"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Matt Elliot"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Karen Russell"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Peter Bourne"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g20",
+          "instruction": "Look at the following statements (Questions 19-23) and the list of people below. Match each statement with the correct person, A, B, or C. Write the correct letter, A, B, or C, in boxes 19-23 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "It may be better to wait and see if the mature elms that have survived continue to flourish.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Matt Elliot"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Karen Russell"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Peter Bourne"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Matt Elliot"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Karen Russell"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Peter Bourne"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g21",
+          "instruction": "Look at the following statements (Questions 19-23) and the list of people below. Match each statement with the correct person, A, B, or C. Write the correct letter, A, B, or C, in boxes 19-23 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "There must be an explanation for the survival of some mature elms.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Matt Elliot"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Karen Russell"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Peter Bourne"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Matt Elliot"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Karen Russell"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Peter Bourne"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g22",
+          "instruction": "Look at the following statements (Questions 19-23) and the list of people below. Match each statement with the correct person, A, B, or C. Write the correct letter, A, B, or C, in boxes 19-23 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "We need to be aware that insects carrying Dutch elm disease are not very far away. monl baruntan",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Matt Elliot"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Karen Russell"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Peter Bourne"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Matt Elliot"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Karen Russell"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Peter Bourne"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:28.027917+00:00"
+          }
+        },
+        {
+          "id": "c20t1r-g23",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "You understand the effect Dutch elm disease has had when you see evidence of how prominent the tree once",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Matt Elliot"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Karen Russell"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Peter Bourne"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.151056+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g24",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "For hundreds of years, the only tree that was more popular in Britain than elm was ___.",
+              "acceptedAnswers": [
+                "oak"
+              ],
+              "options": [],
+              "gapText": "For hundreds of years, the only tree that was more popular in Britain than elm was 24 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:12:15+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 24–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g25",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Due to its strength, elm was often used for mining equipment and the C6utty Sark's 6 was also constructed from elm.",
+              "acceptedAnswers": [
+                "flooring"
+              ],
+              "options": [],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 24–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c20t1r-g26",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Due to its strength, elm was often used for mining equipment and the Cutty Sark's ___ was also constructed from elm.",
+              "acceptedAnswers": [
+                "keel"
+              ],
+              "options": [],
+              "gapText": "Due to its strength, elm was often used for mining equipment and the Cutty Sark's 26 ___ was also constructed from elm.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:12:15+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 24–26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "My colleague and I, both neuroscientists, wanted to investigate how the mind operates under stress, so we visited some local fire stations. Firefighters' workdays vary quite a bit. Some are pretty relaxed; they'll spend their time washing the truck, cleaning equipment, cooking meals and reading. Other days can be hectic, with numerous life-threatening incidents to attend to; they'll enter burning homes to rescue trapped residents, and assist with medical emergencies. These ups and downs presented the perfect setting for an experiment on how people's ability to use information changes when they feel under pressure.\n\nWe found that perceived threat acted as a trigger for a stress reaction that made the task of processing information easier for the firefighters – but only as long as it conveyed bad news.\n\nThis is how we arrived at these results. We asked the firefighters to estimate their likelihood of experiencing 40 different adverse events in their life, such as being involved in an accident or becoming a victim of card fraud. We then gave them either good news (that their likelihood of experiencing these events was lower than they'd thought) or bad news (that it was higher) and asked them to provide new estimates.\n\nPeople are normally quite optimistic – they will ignore bad news and embrace the good. This is what happened when the firefighters were relaxed; but when they were under stress, a different pattern emerged. Under these conditions, they became hyper-vigilant to bad news, even when it had nothing to do with their job (such as learning that the likelihood of card fraud was higher than they'd thought), and altered their beliefs in response. In contrast, stress didn't change how they responded to good news (such as learning that the likelihood of card fraud was lower than they'd thought).\n\nBack in our lab, we observed the same pattern in students who were told they had to give a surprise public speech, which would be judged by a panel, recorded and posted online. Sure enough, their cortisol levels spiked, their heart rates went up and they suddenly became better at processing unrelated, yet alarming, information about rates of disease and violence.\n\nto unexpected warning signs, such as faces expressing fear.\n\naway from a state in which they absorb all the negative messages around them.\n\nIt is also important to realise that stress travels rapidly from one person to the next. If a co-worker is stressed, we are more likely to tense up and feel stressed ourselves. We don't even need to be in the same room with someone for their emotions to influence our behaviour. Studies show that if we observe positive feeds on social media, such as images of a pink sunset, we are more likely to post uplifting messages ourselves. If we observe negative posts, such as complaints about a long queue at the coffee shop, we will in turn create more negative posts.\n\nIn some ways, many of us now live as if we are in danger, constantly ready to tackle demanding emails and text messages, and respond to news alerts and comments on social media. Repeatedly checking your phone, according to a survey conducted by the American Psychological Association, is related to stress. In other words, a pre-programmed physiological reaction, which evolution has equipped us with to help us avoid famished predators, is now being triggered by an online post. Social media posting, according to one study, raises your pulse, makes you sweat, and enlarges your pupils more than most daily activities.\n\nThe fact that stress increases the likelihood that we will focus more on alarming messages, together wit the fact that it spread extremely raidly, can crete collective fear that is not always uidAter astrsul ublic ,sucas aural saster omao nncial indviduals beome very are f But tat has the effect of eaggeratin eisting danger. e disaster took place The good news, however, is that power\n\nmessages more effectively and become conscientious agents of change. 26"
+      },
+      "questionGroups": [
+        {
+          "id": "c20t1r-g27",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "I he rt prarap he wrt r intrue the pi he ext by A defining some com",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "defining some commonly used terms."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "questioning a widely held assumption."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "mentioning a challenge faced by everyone."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "specifying a situation which makes us most anxious."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.235602+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g28",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "What point does the writer make about firefighters in the second paragraph?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The regular changes of stress levels in their working lives make them ideal study subjects."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The strategies they use to handle stress are of particular interest to researchers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The stressful nature of their job is typical of many public service professions."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Their personalities make them especially well-suited to working under stress."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The regular changes of stress levels in their working lives make them ideal study subjects."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The strategies they use to handle stress are of particular interest to researchers."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The stressful nature of their job is typical of many public service professions."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Their personalities make them especially well-suited to working under stress."
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g29",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "What is the writer doing in the fourth paragraph?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "explaining their findings"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "justifying their approach"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "setting out their objectives"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "describing their methodology"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.235602+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g30",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "In the seventh paragraph, the writer describes a mechanism in the brain which",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "enables people to respond more quickly to stressful situations."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "results in increased ability to control our levels of anxiety."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "produces heightened sensitivity to indications of external threats."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "is activated when there is a need to communicate a sense of danger."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.235602+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g31",
+          "instruction": "Complete each sentence with the correct ending, A-G, below",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "At times when they were r hen the firefighters were stressed, they",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "made them feel optimistic."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "took relatively little notice of bad news."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "responded to negative and positive information in the same way."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "were feeling under stress."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "put them in a stressful situation."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "behaved in a similar manner, regardless of the circumstances."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thought it more likely that they would experience something bad."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.235602+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g32",
+          "instruction": "Complete each sentence with the correct ending, A-G, below",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q32",
+              "number": 32,
+              "type": "matching",
+              "prompt": "The researchers no When the firefighters were told good news, they always",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "made them feel optimistic."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "took relatively little notice of bad news."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "responded to negative and positive information in the same way."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "were feeling under stress."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "put them in a stressful situation."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "behaved in a similar manner, regardless of the circumstances."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thought it more likely that they would experience something bad."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.235602+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g33",
+          "instruction": "Complete each sentence with the correct ending, A-G, below",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q33",
+              "number": 33,
+              "type": "matching",
+              "prompt": "When the firefignte",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "made them feel optimistic."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "took relatively little notice of bad news."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "responded to negative and positive information in the same way."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "were feeling under stress."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "put them in a stressful situation."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "behaved in a similar manner, regardless of the circumstances."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thought it more likely that they would experience something bad."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.235602+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g34",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "The students' cortisol levels and heart rates were affected when the researchers",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "made them feel optimistic."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "took relatively little notice of bad news."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "responded to negative and positive information in the same way."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "were feeling under stress."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "put them in a stressful situation."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "behaved in a similar manner, regardless of the circumstances."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thought it more likely that they would experience something bad."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "made them feel optimistic."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "took relatively little notice of bad news."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "responded to negative and positive information in the same way."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "were feeling under stress."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "put them in a stressful situation."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "behaved in a similar manner, regardless of the circumstances."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "thought it more likely that they would experience something bad."
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g35",
+          "instruction": "Complete each sentence with the correct ending, A-G, below",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q35",
+              "number": 35,
+              "type": "matching",
+              "prompt": "In both experiments, negative information was processed better when the subjects",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "made them feel optimistic."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "took relatively little notice of bad news."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "responded to negative and positive information in the same way."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "were feeling under stress."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "put them in a stressful situation."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "behaved in a similar manner, regardless of the circumstances."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thought it more likely that they would experience something bad."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.235602+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c20t1r-g36",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q36",
+              "number": 36,
+              "type": "yes_no_ng",
+              "prompt": "The tone of the content we post on social media tend to eflect the nature of the",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "options": [],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c20t1r-g37",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q37",
+              "number": 37,
+              "type": "true_false_ng",
+              "prompt": "Phones have a greater impact on our stress levels than other electronic media",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c20t1r-g38",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q38",
+              "number": 38,
+              "type": "yes_no_ng",
+              "prompt": "The more w rea au trsfu ubli event o oia edi the es ablewe",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c20t1r-g39",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q39",
+              "number": 39,
+              "type": "yes_no_ng",
+              "prompt": "Stress created by social media posts can lead us to take unnecessary precautions.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c20t1r-g40",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c20t1r-q40",
+              "number": 40,
+              "type": "yes_no_ng",
+              "prompt": "Our tendency t be aected by ter people's mds can e used i positive way.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-6-test-1-writing",
+  "title": "Cambridge IELTS 6 Academic Test 1 Writing",
+  "module": "writing",
+  "contentRevision": "wsplit-e-6-test-1-writing",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 6",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题6.pdf",
+        "sha256": "a5d4812f970087a7c6dcd7333450c875ed9a401b294a6237c1071ff2629dfc6f"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C06\\剑桥雅思真题6\\auto\\剑桥雅思真题6.md",
+        "sha256": "f9efeec2692e4e1d331e8d209b5a03fe8975a68d9e32cf4d65afda5674868e4f",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe graph and table below give information about water use worldwide and water consumption in two different countries.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words."
+      },
+      "questionGroups": []
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nToday, the high sales of popular consumer goods reflect the power of advertising and not the real needs of the society in which they are sold.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

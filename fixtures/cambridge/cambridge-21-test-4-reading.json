@@ -1,0 +1,2100 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-21-test-4-reading",
+  "title": "Cambridge IELTS 21 Academic Test 4 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0023-f63f4ad9",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 21",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题21.pdf",
+        "sha256": "d14430f7593de2988f3adafc520d8f6777f4eeb78b87e79e5427a9a0588a218f"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C21\\剑桥雅思真题21\\hybrid_auto\\剑桥雅思真题21.md",
+        "sha256": "9ab0d76cc20596056d27d1c4dfe2facbdca2399f87c765f5236c29e7bebd2f9d",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=4, reading=0; legacy fallback used where available."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "# The problems and benefits created by the spread of the water hyacinth in Kenya\n\nWater hyacinth (Eichhornia crassipes), an aquatic plant native to South America, first appeared in countries in Africa in the early 1900s. Scientists there called it the 'world's worst aquatic weed', after it spread from the southernmost tip of Africa in the early 1900s and started obstructing major dams and rivers.\n\nIn east Africa the plant arrived with Belgian colonists in Rwanda, who liked the look of its glossy leaves and delicate purple flowers floating in their ponds. But by the 1980s, it had 'escaped' out of the country via the Kagera river and made its way downstream to Lake Victoria. There, with no natural predators and perfect temperature conditions, the plant began spreading in the open water, blocking fishing routes and providing a new habitat for disease-carrying mosquitoes.\n\nFor the women who smoke fish from the lake to sell it has meant declining income, as the boats that once brought the fish to shore by the hundreds struggle to navigate through the mass of plants. But water hyacinth isn't their only headache. In order to smoke the fish that they buy, they must gather huge quantities of firewood, sometimes walking as far as 10km each way to collect enough to complete their work. And each day as they cook, they breathe in the thick, grey smoke. About three out of four families in Kenya depend on wood or charcoal to cook their daily meals, and the rate is even higher in rural areas, Kenya's latest demographic and health survey shows. Using solid fuels like these for cooking increases indoor pollution. The World Health Organization estimates that about 14,300 Kenyans die annually as a result of indoor air pollution – most of which is caused by cooking and heating sources.\n\nSome years ago, on the shores of Lake Victoria, huge piles of water hyacinth that villagers had taken out of the water in an attempt to clear it were a common sight. But buried in those decaying waxy leaves was a renewable energy gold mine. It turns out the floating plant isn't just good at spreading – its foliage also contains a high ratio of carbon to nitrogen. It's a magic combination that has captivated researchers' imaginations since as early as the 1980s when, across the world, they began to explore its potential as a biofuel. Just about 4kg of the dried plant would be enough to cater for a large family's daily energy needs, early research predicted.\n\nIn 2014, Nigerian academics announced they had got better yields of biofuel gas when they mixed the plant with chicken manure. A few years later, Kenyan scientists confirmed what their Nigerian peers and others had already found: manure worked to improve the process of converting the weed into gas.\n\nIn 2018, the technology came to a village on the shore of Lake Victoria, called Dunga. The project promised a two-for-one solution to the dual menaces of the water hyacinth and dependence on firewood. The community received a pair of donated biogas digesters – machines that would transform a mix of water hyacinth and cow dung into biogas for cooking.\n\nThe digesters work a bit like a stomach. The mixture goes in one end – think of it as a mouth – and over the next 20 to 30 days, it goes through a fermentation process and breaks down, giving off gas that comes out the other end. From there, the clean-burning gas is passed through pipes to the point of use, just like traditional domestic gas. In Dunga, the machines produce enough gas to serve about 60% of the village's population. It is used in domestic stoves and for other household tasks such as purifying water and incubating chicks.\n\nThe project is testing whether biogas can provide an effective alternative to firewood and charcoal in rural Kenyan communities. Results indicate that the programme seems to be working. The women who smoke the lake fish are already getting sick less often. Besides, they don't have to devote a lot of time every day to gathering firewood, which is a great relief. As a result, they're able to make more money for their families from other enterprises.\n\nKanyiva Muindi is an epidemiologist and air pollution research fellow at the African Population and Health Research Centre in Nairobi. She says families who switch to the smokeless cooking method could expect fewer respiratory diseases. Women, young girls and children are particularly vulnerable because they are the ones who cook in the kitchen or outside over fires.\n\nHow much better the biogas stoves will be for the community's health still needs more research, says Dominic Kahumbu Wanjihia, Biogas International's chief executive. But unless the price of the machines drops, it's pretty clear that most communities will never be able to afford any, since they sell for about \\$750.\n\nKanyiva says affordability is a challenge worth addressing, given the huge health and environmental dangers posed by 'dirty' fuels such as wood, charcoal and kerosene. If biogas could become affordable on a large scale, she says it 'would be life-changing for millions on the African continent and beyond'."
+      },
+      "questionGroups": [
+        {
+          "id": "c21t4r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Water hyacinth was introduced as a decorative plant in east Africa",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Fishermen took some water hyacinth plants to Lake Victoria",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "It is now difficult to force boats through the thick water hyacinth on Lake Victoria",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Chemicals produced by the water hyacinth plants are affecting the numbers of fish in Lake Victoria",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "Cooking with charcoal has been proved to be even worse for people's health than cooking with wood",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "People found it impossible to remove much water hyacinth from Lake Victoria",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "Scientists started investigating the possibility of using water hyacinth to generate biogas in the last century",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g8",
+          "instruction": "Complete the flow-chart below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Complete the flow-chart below.",
+              "acceptedAnswers": [
+                "cow dung"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–10 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g9",
+          "instruction": "Complete the flow-chart below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Leave the mixture until the ___ is completed",
+              "acceptedAnswers": [
+                "fermentation (process)"
+              ],
+              "gapText": "Leave the mixture until the 9 ___ is completed",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–10 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g10",
+          "instruction": "Complete the flow-chart below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Capture the gas emitted by the digester and use ___ to transport it to individual homes",
+              "acceptedAnswers": [
+                "pipes"
+              ],
+              "gapText": "Capture the gas emitted by the digester and use 10 ___ to transport it to individual homes",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–10 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g11",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "-year-old schoolchildren in rural and urban areas, collects data on whether the schoolchildren live in slum* or non-slum areas. Many of the children have moved from remote, rural areas to urban areas. They are so poor they have to live in slums and, as a result of migration, they may speak languages that are different from the regional language.",
+              "acceptedAnswers": [
+                "time"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 11–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g12",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "They can focus on different tasks that bring in ___",
+              "acceptedAnswers": [
+                "money"
+              ],
+              "gapText": "they can focus on different tasks that bring in 12 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 11–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g13",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "The ___ of the digesters is beyond the reach of most villages",
+              "acceptedAnswers": [
+                "price"
+              ],
+              "gapText": "the 13 ___ of the digesters is beyond the reach of most villages",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 11–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## How could multilingualism benefit India's poorest schoolchildren?\n\nThe crowded and bustling streets of Delhi teem with life. Stop to listen and, above the din of rickshaws and buses, you'll hear a multitude of languages, as more than 20 million people go about their daily lives. Many were born and raised here, and many millions more have recently made India's capital their home, having moved from surrounding neighbourhoods, cities and states or across the country, often in the hope of gaining better jobs and a better life. Some arrive speaking fluent Hindi, the dominant language in Delhi (and the official language of government), but many arrive speaking any number of India's 22 officially recognised languages, let alone the hundreds of regional languages in a country of more than 1.3 billion people.\n\nA team of researchers led by Professor Ianthi Tsimpli of Cambridge University is currently working on a project collecting data on 1,000 primary-age children in Delhi and the cities of Hyderabad and Bihar. The overriding aim of the four-year project, called ‘Multilingualism and Multiliteracy’, is to find out why in a country where multilingualism is so common (more than 255 million people in India speak at least two languages, and nearly 90 million speak three or more languages), the many benefits of speaking more than one language, observed in schools in Europe for instance, do not apply to many of India’s schoolchildren.\n\n'Each year across India, 600,000 children are tested, and year after year over 50% of children in Standard 5 [ten-year-olds] cannot read a Standard 2 [seven-year-olds] task fluently, and just under 50% of them cannot solve a Standard 2 subtraction task,' says Tsimpli. She explains that low educational achievement can lead to many of these students dropping out of school – a problem disproportionately affecting female students.\n\nTsimpli and her colleagues are investigating whether these low learning outcomes could be caused by an Indian school system where the language that children are taught in often differs from the language used at home. The research project, which focuses on 8 to 11-year-old schoolchildren in rural and urban areas, collects data on whether the schoolchildren live in slum\\* or non-slum areas. Many of the children have moved from remote, rural areas to urban areas. They are so poor they have to live in slums and, as a result of migration, they may speak languages that are different from the regional language.\n\nHaving already tested 1,000 children, the researchers will now embark on retesting them. They intend to look not only at test results, but also at variables such as the standard of schooling, the environment and the teaching practices themselves. It's possible that one of the causes of low performance is the lack of pupil-centred teaching methods; in many Indian primary schools the teacher dominates and there is little room for independent learning.\n\nAlthough the findings are at a preliminary stage, Tsimpli and her team have found that the medium of instruction used in schools, especially English, may hold back those children who have little familiarity with, or exposure to, the language before starting school and outside of school life. According to Tsimpli, most of the evidence from this and other projects shows that English instruction for children from low socio-economic areas might not be the best way for them to learn, at least in the first three years of primary education.\n\n‘What we would recommend for everyone, not just low socio-economic status children, would be to start learning in the language they feel comfortable learning in … English can still be used, but perhaps not as the medium of instruction in primary schools. It could, for example, be one of the subjects that are being taught alongside other subjects. We are not suggesting that English be withdrawn – that ship has sailed – but we perhaps have to think more about learner needs. There is perhaps too much uniformity in teaching and less tailoring to the children’s language abilities and needs,’ says Tsimpli.\n\nWhile the preliminary results show there is no difference in general intelligence among boys and girls from slum areas versus those from urban poor backgrounds, an unanticipated finding has been that children from slum backgrounds do not seem to lag behind children from other urban poor backgrounds – and in some cases outperform them (e.g. in numeracy and literacy tasks). According to the researchers, this unexpected finding may be down to the life experiences of children growing up in slums. They are likely to mature faster and come into closer contact with the numeracy skills essential for day-to-day survival.\n\nThe project has already caught the attention of government ministers, who are keen to use the findings of the study to inform and adjust school policy in Delhi and the wider state. 'They are as keen as us to understand how the challenging context of deprivation can be attenuated when focusing on the languages children learn and use while at school. Our findings don't mean you're doomed if you're poor. It may be that these low learning outcomes are because of the way education is provided in India, with a huge focus on Hindi and English as the mediums of instruction, to the potential detriment of children unfamiliar with those languages,' explains Tsimpli.\n\n'Language is central to the way knowledge is transferred – so the medium of instruction is obviously hugely influential. We hope to … show that problem solving, numeracy and literacy can and do improve in children who are educated in a language of instruction they know. The trick may be to bridge school skills with life skills and make use of the richness of a child's life experience to help them learn in the most effective ways possible,' says Tsimpli.\n\nA basic outlook\n\nB employment opportunities\n\nC wealthy visitors\n\nD distant country\n\nE primary objective\n\nF similar advantages\n\nG thriving economy\n\nH nearby district\n\nI dense population\n\nJ new immigrants\n\nQuestions 14–19\n\nComplete the summary using the list of words, A–J, below.\n\nWrite the correct letter, A-J, in boxes 14–19 on your answer sheet.\n\n## Multilingualism in Delhi\n\nThe city of Delhi has a 14.... and as you walk through its streets you hear people speaking a variety of languages. Some of them have spent their entire life in Delhi, while others are 15.... . Whether they have come from a 16.... or have travelled from the other side of India, they have all come in search of things such as improved 17.... .\n\nA team of researchers led by Professor Ianthi Tsimpli of Cambridge University is collecting data on primary-age schoolchildren in Delhi and other Indian cities. The 18.... of the research is to discover why multilingual Indian schoolchildren do not experience 19.... to those that multilingual schoolchildren in Europe experience."
+      },
+      "questionGroups": [
+        {
+          "id": "c21t4r-g14",
+          "instruction": "Complete the summary using the list of words, A-J, below. Write the correct letter, A-J, in boxes 14-19 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Complete the summary using the list of words, A–J, below.",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "basic outlook"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment opportunities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "wealthy visitors"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "distant country"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "primary objective"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "similar advantages"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thriving economy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "nearby district"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "dense population"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "new immigrants"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "basic outlook"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "employment opportunities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "wealthy visitors"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "distant country"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "primary objective"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "similar advantages"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "thriving economy"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "nearby district"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "dense population"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "new immigrants"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:02:06.335600+00:00"
+          }
+        },
+        {
+          "id": "c21t4r-g15",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Some of them have spent their entire life in Delhi, while others are ___",
+              "acceptedAnswers": [
+                "J"
+              ],
+              "gapText": "Some of them have spent their entire life in Delhi, while others are 15 ___",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "basic outlook"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment opportunities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "wealthy visitors"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "distant country"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "primary objective"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "similar advantages"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thriving economy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "nearby district"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "dense population"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "new immigrants"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g16",
+          "instruction": "Complete the summary using the list of words, A-J, below. Write the correct letter, A-J, in boxes 14-19 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Whether they have come from a ___ or have travelled from the other side of India",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "basic outlook"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment opportunities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "wealthy visitors"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "distant country"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "primary objective"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "similar advantages"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thriving economy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "nearby district"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "dense population"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "new immigrants"
+                }
+              ],
+              "gapText": "Whether they have come from a 16 ___ or have travelled from the other side of India",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "basic outlook"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "employment opportunities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "wealthy visitors"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "distant country"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "primary objective"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "similar advantages"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "thriving economy"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "nearby district"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "dense population"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "new immigrants"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:02:06.335600+00:00"
+          }
+        },
+        {
+          "id": "c21t4r-g17",
+          "instruction": "Complete the summary using the list of words, A-J, below. Write the correct letter, A-J, in boxes 14-19 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "They have all come in search of things such as improved ___",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "basic outlook"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment opportunities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "wealthy visitors"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "distant country"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "primary objective"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "similar advantages"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thriving economy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "nearby district"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "dense population"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "new immigrants"
+                }
+              ],
+              "gapText": "they have all come in search of things such as improved 17 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "basic outlook"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "employment opportunities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "wealthy visitors"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "distant country"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "primary objective"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "similar advantages"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "thriving economy"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "nearby district"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "dense population"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "new immigrants"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:02:06.335600+00:00"
+          }
+        },
+        {
+          "id": "c21t4r-g18",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "The ___ of the research is to discover why multilingual Indian schoolchildren do not experience",
+              "acceptedAnswers": [
+                "primary objective"
+              ],
+              "gapText": "The 18 ___ of the research is to discover why multilingual Indian schoolchildren do not experience",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.218250+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "basic outlook"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment opportunities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "wealthy visitors"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "distant country"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "primary objective"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "similar advantages"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thriving economy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "nearby district"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "dense population"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "new immigrants"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g19",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "The research seeks to discover why multilingual Indian schoolchildren do not experience ___ to those that multilingual schoolchildren in Europe experience",
+              "acceptedAnswers": [
+                "similar advantages"
+              ],
+              "gapText": "The research seeks to discover why multilingual Indian schoolchildren do not experience 19 ___ to those that multilingual schoolchildren in Europe experience.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.218250+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "basic outlook"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment opportunities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "wealthy visitors"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "distant country"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "primary objective"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "similar advantages"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "thriving economy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "nearby district"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "dense population"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "new immigrants"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g20",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q20",
+              "number": 20,
+              "type": "yes_no_ng",
+              "prompt": "Ten-year-old Indian schoolchildren tend to perform better in literacy tests than in numeracy tests.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g21",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q21",
+              "number": 21,
+              "type": "yes_no_ng",
+              "prompt": "Tsimpli had problems convincing some female students to take part in the study.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g22",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q22",
+              "number": 22,
+              "type": "yes_no_ng",
+              "prompt": "Tsimpli and her team wanted to know if there is a connection between poor academic performance and being taught in an unfamiliar language.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g23",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q23",
+              "number": 23,
+              "type": "yes_no_ng",
+              "prompt": "The researchers have decided against investigating the impact teaching methodology may have on learning outcomes.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g24",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "What point does the writer make about primary schools in India in the sixth paragraph?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Exposure to English outside of school is of limited benefit."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Children learn English more easily when they are well motivated."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Poor children may be disadvantaged further by being instructed in English."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "There is little consistency across schools with regard to instruction in English."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 24–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g25",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "What is Tsimpli suggesting when she uses the phrase 'that ship has sailed'?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The findings of the report may be of little help to some Indian schoolchildren."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Instruction in English could be better adapted to the needs of schoolchildren."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Schools have had limited success in teaching English as a separate subject."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is too late to remove English completely as a language of instruction in schools."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 24–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g26",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "In the eighth paragraph, what do we learn has surprised researchers?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Boys and girls from low socio-economic groups have similar general intelligence levels."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The age at which children move into a slum does not affect their academic performance."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Slum children and children from other urban poor backgrounds have similar life experiences."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The literacy and numeracy skills of slum children are not lower than those of children from other urban poor backgrounds."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 24–26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\n# The problems and benefits created by the spread of the water hyacinth in Kenya\n\nWater hyacinth (Eichhornia crassipes), an aquatic plant native to South America, first appeared in countries in Africa in the early 1900s. Scientists there called it the 'world's worst aquatic weed', after it spread from the southernmost tip of Africa in the early 1900s and started obstructing major dams and rivers.\n\nIn east Africa the plant arrived with Belgian colonists in Rwanda, who liked the look of its glossy leaves and delicate purple flowers floating in their ponds. But by the 1980s, it had 'escaped' out of the country via the Kagera river and made its way downstream to Lake Victoria. There, with no natural predators and perfect temperature conditions, the plant began spreading in the open water, blocking fishing routes and providing a new habitat for disease-carrying mosquitoes.\n\nFor the women who smoke fish from the lake to sell it has meant declining income, as the boats that once brought the fish to shore by the hundreds struggle to navigate through the mass of plants. But water hyacinth isn't their only headache. In order to smoke the fish that they buy, they must gather huge quantities of firewood, sometimes walking as far as 10km each way to collect enough to complete their work. And each day as they cook, they breathe in the thick, grey smoke. About three out of four families in Kenya depend on wood or charcoal to cook their daily meals, and the rate is even higher in rural areas, Kenya's latest demographic and health survey shows. Using solid fuels like these for cooking increases indoor pollution. The World Health Organization estimates that about 14,300 Kenyans die annually as a result of indoor air pollution – most of which is caused by cooking and heating sources.\n\nSome years ago, on the shores of Lake Victoria, huge piles of water hyacinth that villagers had taken out of the water in an attempt to clear it were a common sight. But buried in those decaying waxy leaves was a renewable energy gold mine. It turns out the floating plant isn't just good at spreading – its foliage also contains a high ratio of carbon to nitrogen. It's a magic combination that has captivated researchers' imaginations since as early as the 1980s when, across the world, they began to explore its potential as a biofuel. Just about 4kg of the dried plant would be enough to cater for a large family's daily energy needs, early research predicted.\n\nIn 2014, Nigerian academics announced they had got better yields of biofuel gas when they mixed the plant with chicken manure. A few years later, Kenyan scientists confirmed what their Nigerian peers and others had already found: manure worked to improve the process of converting the weed into gas.\n\nIn 2018, the technology came to a village on the shore of Lake Victoria, called Dunga. The project promised a two-for-one solution to the dual menaces of the water hyacinth and dependence on firewood. The community received a pair of donated biogas digesters – machines that would transform a mix of water hyacinth and cow dung into biogas for cooking.\n\nThe digesters work a bit like a stomach. The mixture goes in one end – think of it as a mouth – and over the next 20 to 30 days, it goes through a fermentation process and breaks down, giving off gas that comes out the other end. From there, the clean-burning gas is passed through pipes to the point of use, just like traditional domestic gas. In Dunga, the machines produce enough gas to serve about 60% of the village's population. It is used in domestic stoves and for other household tasks such as purifying water and incubating chicks.\n\nThe project is testing whether biogas can provide an effective alternative to firewood and charcoal in rural Kenyan communities. Results indicate that the programme seems to be working. The women who smoke the lake fish are already getting sick less often. Besides, they don't have to devote a lot of time every day to gathering firewood, which is a great relief. As a result, they're able to make more money for their families from other enterprises.\n\nKanyiva Muindi is an epidemiologist and air pollution research fellow at the African Population and Health Research Centre in Nairobi. She says families who switch to the smokeless cooking method could expect fewer respiratory diseases. Women, young girls and children are particularly vulnerable because they are the ones who cook in the kitchen or outside over fires.\n\nHow much better the biogas stoves will be for the community's health still needs more research, says Dominic Kahumbu Wanjihia, Biogas International's chief executive. But unless the price of the machines drops, it's pretty clear that most communities will never be able to afford any, since they sell for about \\$750.\n\nKanyiva says affordability is a challenge worth addressing, given the huge health and environmental dangers posed by 'dirty' fuels such as wood, charcoal and kerosene. If biogas could become affordable on a large scale, she says it 'would be life-changing for millions on the African continent and beyond'.\n\n## Questions 1–7\n\nDo the following statements agree with the information given in Reading Passage 1?\n\nIn boxes 1–7 on your answer sheet, write\n\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this\n\n1 Water hyacinth was introduced as a decorative plant in east Africa.\n\n2 Fishermen took some water hyacinth plants to Lake Victoria.\n\n3 It is now difficult to force boats through the thick water hyacinth on Lake Victoria.\n\n4 Chemicals produced by the water hyacinth plants are affecting the numbers of fish in Lake Victoria.\n\n5 Cooking with charcoal has been proved to be even worse for people's health than cooking with wood.\n\n6 People found it impossible to remove much water hyacinth from Lake Victoria.\n\n7 Scientists started investigating the possibility of using water hyacinth to generate biogas in the last century.\n\n## Test 4\n\nQuestions 8–10\n\nComplete the flow-chart below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\n\nWrite your answers in boxes 8–10 on your answer sheet.\n\n## Generating biogas for domestic use in Dunga\n\n[]\n\nQuestions 11–13\n\nComplete the notes below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 11–13 on your answer sheet.\n\n## Cooking with biogas in Dunga\n\nBenefits for the women in the village of cooking with biogas\n\n• no need for them to spend so much 11 .... collecting fuel\n\n• they can focus on different tasks that bring in 12 \\_\\_\\_\\_\n\n• they are less likely to experience certain diseases connected to burning wood\n\nDrawbacks of changing to biogas\n\n• the 13 \\_\\_\\_\\_ of the digesters is beyond the reach of most villages\n\n## READING PASSAGE 2"
+      },
+      "questionGroups": [
+        {
+          "id": "c21t4r-g27",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "Peter Bellerby’s plan to give his father a globe for his birthday was an unexpectedly ___ for which he had to overcome ___.",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "Peter Bellerby’s plan to give his father a globe for his birthday was an unexpectedly 27 ___ for which he had to overcome 28 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "educational use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rare materials"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "inferior makes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "product exchange markets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "necessary skills"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "international"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "challenging task"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "memorable object"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "internet purchase"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "numerous problems"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g28",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Peter Bellerby’s plan to give his father a globe for his birthday was an unexpectedly challenging task for which he had to overcome ___.",
+              "acceptedAnswers": [
+                "J"
+              ],
+              "gapText": "Peter Bellerby’s plan to give his father a globe for his birthday was an unexpectedly 27 ___ for which he had to overcome 28 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "educational use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rare materials"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "inferior makes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "product exchange markets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "necessary skills"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "international"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "challenging task"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "memorable object"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "internet purchase"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "numerous problems"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g29",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "He soon learnt that a straightforward ___ would not be possible.",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "gapText": "He soon learnt that a straightforward 29 ___ would not be possible.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "educational use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rare materials"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "inferior makes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "product exchange markets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "necessary skills"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "international"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "challenging task"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "memorable object"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "internet purchase"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "numerous problems"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g30",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Some ___ that had been intended for ___ were available, but these were beyond his budget.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "Some 30 ___ that had been intended for 31 ___ were available, as were some expensive antique globes, but these were beyond his budget.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "educational use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rare materials"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "inferior makes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "product exchange markets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "necessary skills"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "international"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "challenging task"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "memorable object"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "internet purchase"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "numerous problems"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g31",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "Some inferior makes that had been intended for ___ were available, but these were beyond his budget.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "Some 30 ___ that had been intended for 31 ___ were available, as were some expensive antique globes, but these were beyond his budget.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "educational use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rare materials"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "inferior makes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "product exchange markets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "necessary skills"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "international"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "challenging task"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "memorable object"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "internet purchase"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "numerous problems"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g32",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q32",
+              "number": 32,
+              "type": "matching",
+              "prompt": "He even travelled to places where people might still have the ___, but Bellerby could not find what he wanted.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "He even travelled to places where people might still have the 32 ___, but Bellerby could not find what he wanted.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "educational use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rare materials"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "inferior makes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "product exchange markets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "necessary skills"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "international"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "challenging task"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "memorable object"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "internet purchase"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "numerous problems"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c21t4r-g33",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q33",
+              "number": 33,
+              "type": "yes_no_ng",
+              "prompt": "The assumption today that people in the past knew very little about geography is correct.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g34",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q34",
+              "number": 34,
+              "type": "true_false_ng",
+              "prompt": "Plato was criticised for saying the world was shaped like a leather ball.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g35",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q35",
+              "number": 35,
+              "type": "true_false_ng",
+              "prompt": "The globe made by Crates of Mallus was an accurate representation of the known world.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:20:37+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g36",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q36",
+              "number": 36,
+              "type": "yes_no_ng",
+              "prompt": "Bellerby assumed he would have few problems locating a well-made globe.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c21t4r-g37",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q37",
+              "number": 37,
+              "type": "single_choice",
+              "prompt": "When Bellerby had to attach the gores to the globe surface,",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he decided it was best to work quickly."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "he became aware of an unexpected issue."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "he was worried about the quality of his materials."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "he nearly gave up the whole project."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g38",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q38",
+              "number": 38,
+              "type": "single_choice",
+              "prompt": "The reviewer mentions other globe makers of the past because",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Bellerby was particularly inspired by them."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "their achievements are not widely known."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Bellerby had something in common with each of them."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "their difficulties could have been avoided."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g39",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q39",
+              "number": 39,
+              "type": "single_choice",
+              "prompt": "What point is made about Bellerby in the seventh paragraph?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He had long working relationships with numerous craftsmen."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He understands the lack of interest in traditional crafts."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He appreciates the importance of careful planning."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "He regrets the loss of many globe-making skills."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c21t4r-g40",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c21t4r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "What does the reviewer say about Bellerby's book in the final paragraph?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It does not tell you how to create a profitable business."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It overlooks some important globemakers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It fails to discuss the future of globe-making."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It does not give enough details about individual customers."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 37–40 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

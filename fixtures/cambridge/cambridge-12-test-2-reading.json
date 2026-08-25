@@ -1,0 +1,2631 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-12-test-2-reading",
+  "title": "Cambridge IELTS 12 Academic Test 2 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0023-4f116e54",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 12",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题12.pdf",
+        "sha256": "c9b61939ce31049dd9552020dbaf3deb979cbb6244b4cac0ac64f13b3ce049c6"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C12\\剑桥雅思真题12\\auto\\剑桥雅思真题12.md",
+        "sha256": "7a2c612d2c8d56d7c069234ee770a1aa17fccf10cecc1497b4f05fa686bc807a",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-12-reading-test-5-6-7-8-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The risks agriculture faces in developing countries\n\n## Synthesis of an online debate\\*\n\nA Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, one political, the other natural, make food production highly vulnerable and different from any other business. At the same time, cultural values are highly entrenched in food and agricultural systems worldwide.\n\nB Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with adverse environments, both natural, in terms of soil quality, rainfall, etc., and human, in terms of infrastructure, financial systems, markets, knowledge and technology. Counter-intuitively, hunger is prevalent among many smallholder farmers in the developing world.\n\nC Participants in the online debate argued that our biggest challenge is to address the underlying causes of the agricultural system's inability to ensure sufficient food for all, and they identified as drivers of this problem our dependency on fossil fuels and unsupportive government policies.\n\nD On the question of mitigating the risks farmers face, most essayists called for greater state intervention. In his essay, Kanayo F. Nwanze, President of the International Fund for Agricultural Development, argued that governments can significantly reduce risks for farmers by providing basic services like roads to get produce more efficiently to markets, or water and food storage facilities to reduce losses. Sophia Murphy, senior advisor to the Institute for Agriculture and Trade Policy, suggested that the procurement and holding of stocks by governments can also help mitigate wild swings in food prices by alleviating uncertainties about market supply.\n\nShenggen Fan, Director General of the International Food Policy Research Institute, held up social safety nets and publicwelfare programmes in Ethiopia, Brazil and Mexico as valuable ways to address poverty among farming families and reduce their vulnerability to agriculture shocks. However, some commentators responded that cash transfers to poor families do not necessarily translate into increased food security, as these programmes do not always strengthen food production or raise incomes. Regarding state subsidies for agriculture, Rokeya Kabir, ExecutiveDirector of Bangladesh Nari Progati Sangha, commented in her essay that these 'have not compensated for the stranglehold exercised by private traders. In fact, studies show that sixty percent of beneficiaries of subsidies are not poor, but rich landowners and non-farmer traders.'\n\nF Nwanze, Murphy and Fan argued that private risk management tools, like private insurance, commodity futures markets, and rural finance can help small-scale producers mitigate risk and allow for investment in improvements. Kabir warned that financial support schemes often encourage the adoption of high-input agricultural practices, which in the medium term may raise production costs beyond the value of their harvests. Murphy notedthat when futures markets become excessively financialised they can contribute to short-term price volatility, which increases farmers' food insecurity. Many participants and commentators emphasised that greater transparency in markets is needed to mitigate the impact of volatility, and make evident whether adequate stocks and supplies are available. Others contended that agribusiness companies should be held responsible for paying for negative side effects.\n\nMany essayists mentioned climate change and its consequences for small-scale agriculture. Fan explained that ‘in addition to reducing crop yields, climate change increases the magnitude and the frequency of extreme weather events, which increase smallholder vulnerability.' The growing unpredictability of weather patterns increases farmers' difficulty in managing weather-related risks. According to this author, one solution would be to develop crop varieties that are more resilient to new climate trends and extreme weather patterns. Accordingly, Pat Mooney, co-founder and executive director of the ETC Group, suggested that ‘if we are to survive climate change, we must adopt policies that let peasants diversify the plant and animal species and varieties/breeds that make up our menus.'\n\nH Some participating authors and commentators argued in favour of communitybased and autonomous risk management strategies through collective action groups, co-operatives or producers' groups. Such groups enhance market opportunities for small-scale producers, reduce marketing costs and synchronise buying and selling with seasonal price conditions. According to Murphy, collective action offers an important way for farmers to strengthen their political and economic bargaining power, and to reduce their business risks.' One commentator, Giel Ton, warned that collective action does not come as a free good. It takes time, effort and money to organise, build trust and to experiment. Others, like Marcel Vernooij and Marcel Beukeboom, suggested that in order to apply what we already know', all stakeholders, including business, government, scientists and civil society, must work together, starting at the beginning of the value chain.\n\nSome participants explained that market price volatility is often worsened by the presence of intermediary purchasers who, taking advantage of farmers' vulnerability, dictate prices. One commentator suggested farmers can gain greater control over prices and minimise price volatility by selling directly to consumers. Similarly,Sonali Bisht, founder and advisor to the Institute of Himalayan Environmental Research and Education (INHERE), India, wrote that community-supported agriculture, where consumers invest in local farmers by subscription and guarantee producers a fair price, is a risk-sharing model worth more attention. Direct food distribution systems not only encourage small-scale agriculture but also give consumers more control over the food they consume, she wrote."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t2r-g1",
+          "instruction": "Reading Passage 1 has nine paragraphs, A-I. Which paragraph contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q1",
+              "number": 1,
+              "type": "matching",
+              "prompt": "a reference to characteristics that only apply to food production",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:50:54.816466+00:00"
+          }
+        },
+        {
+          "id": "c12t2r-g2",
+          "instruction": "Reading Passage 1 has nine paragraphs, A-I. Which paragraph contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q2",
+              "number": 2,
+              "type": "matching",
+              "prompt": "a reference to challenges faced only by farmers in certain parts of the world",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:50:54.816466+00:00"
+          }
+        },
+        {
+          "id": "c12t2r-g3",
+          "instruction": "Reading Passage 1 has nine paragraphs, A-I. Which paragraph contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q3",
+              "number": 3,
+              "type": "matching",
+              "prompt": "a reference to difficulties in bringing about co-operation between farmers",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:50:54.816466+00:00"
+          }
+        },
+        {
+          "id": "c12t2r-g4",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q4",
+              "number": 4,
+              "type": "matching",
+              "prompt": "Financial assistance from the government does not always go to the farmers who most need it.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Kanayo F. Nwanze"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Sophia Murphy"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Shenggen Fan"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Rokeya Kabir"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Pat Mooney"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Giel Ton"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Sonali Bisht"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g5",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q5",
+              "number": 5,
+              "type": "matching",
+              "prompt": "Farmers can benefit from collaborating as a group",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Kanayo F. Nwanze"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Sophia Murphy"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Shenggen Fan"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Rokeya Kabir"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Pat Mooney"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Giel Ton"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Sonali Bisht"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Kanayo F. Nwanze"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Sophia Murphy"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Shenggen Fan"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Rokeya Kabir"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Pat Mooney"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Giel Ton"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Sonali Bisht"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g6",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q6",
+              "number": 6,
+              "type": "matching",
+              "prompt": "Financial assistance from the government can improve the standard of living of farmers",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Kanayo F. Nwanze"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Sophia Murphy"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Shenggen Fan"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Rokeya Kabir"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Pat Mooney"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Giel Ton"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Sonali Bisht"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Kanayo F. Nwanze"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Sophia Murphy"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Shenggen Fan"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Rokeya Kabir"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Pat Mooney"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Giel Ton"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Sonali Bisht"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g7",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q7",
+              "number": 7,
+              "type": "matching",
+              "prompt": "Farmers may be helped if there is financial input by the same individuals who buy from them",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Kanayo F. Nwanze"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Sophia Murphy"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Shenggen Fan"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Rokeya Kabir"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Pat Mooney"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Giel Ton"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Sonali Bisht"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Kanayo F. Nwanze"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Sophia Murphy"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Shenggen Fan"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Rokeya Kabir"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Pat Mooney"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Giel Ton"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Sonali Bisht"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g8",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q8",
+              "number": 8,
+              "type": "matching",
+              "prompt": "Governments can help to reduce variation in prices",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Kanayo F. Nwanze"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Sophia Murphy"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Shenggen Fan"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Rokeya Kabir"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Pat Mooney"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Giel Ton"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Sonali Bisht"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Kanayo F. Nwanze"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Sophia Murphy"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Shenggen Fan"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Rokeya Kabir"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Pat Mooney"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Giel Ton"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Sonali Bisht"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g9",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q9",
+              "number": 9,
+              "type": "matching",
+              "prompt": "Improvements to infrastructure can have a major impact on risk for farmers. List of People A Kanayo F. Nwanze B Sophia Murphy C Shenggen Fan D Rokeya Kabir E Pat Mooney F Giel Ton G Sonali Bisht",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Kanayo F. Nwanze"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Sophia Murphy"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Shenggen Fan"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Rokeya Kabir"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Pat Mooney"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Giel Ton"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Sonali Bisht"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Kanayo F. Nwanze"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Sophia Murphy"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Shenggen Fan"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Rokeya Kabir"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Pat Mooney"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Giel Ton"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Sonali Bisht"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g10",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q10",
+              "number": 10,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO problems are mentioned which affect farmers with small farms in developing countries?",
+              "acceptedAnswers": [
+                "D",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lack of demand for locally produced food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "lack of irrigation programmes"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "being unable to get insurance"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the effects of changing weather patterns"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "having to sell their goods to intermediary buyers"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              11
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 10 and 11 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g11",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q11",
+              "number": 11,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO problems are mentioned which affect farmers with small farms in developing countries?",
+              "acceptedAnswers": [
+                "D",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lack of demand for locally produced food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "lack of irrigation programmes"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "being unable to get insurance"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the effects of changing weather patterns"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "having to sell their goods to intermediary buyers"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              11
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 10 and 11 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g12",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q12",
+              "number": 12,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO actions are recommended for improving conditions for farmers?",
+              "acceptedAnswers": [
+                "C",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "reducing the size of food stocks"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "attempting to ensure that prices rise at certain times of the year"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "organising co-operation between a wide range of interested parties"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "encouraging consumers to take a financial stake in farming"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "making customers aware of the reasons for changing food prices"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              12,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 12 and 13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g13",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q13",
+              "number": 13,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO actions are recommended for improving conditions for farmers?",
+              "acceptedAnswers": [
+                "C",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "reducing the size of food stocks"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "attempting to ensure that prices rise at certain times of the year"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "organising co-operation between a wide range of interested parties"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "encouraging consumers to take a financial stake in farming"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "making customers aware of the reasons for changing food prices"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              12,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 12 and 13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Questions14–20\n\nReading Passage 2 has seven paragraphs, A-G.\n\nChoose the correct heading for each paragraph from the list of headings below.\n\nWrite the correct number, i-viii, in boxes 14–20 on your answer sheet.\n\n## List of Headings\n\ni Different accounts of the same journey\n\nii Bingham gains support\n\niii A common belief\n\niv The aim of the trip\n\nv A dramatic description\n\nvi A new route\n\nvii Bingham publishes his theory\n\nviii Bingham's lack of enthusiasm\n\n14 Paragraph A\n\n15 Paragraph B\n\n16 Paragraph C\n\n17 Paragraph D\n\n18 Paragraph E\n\n19 Paragraph F\n\n20 Paragraph G\n\n## The Lost City\n\nAn explorer's encounter with the ruined city of Machu Picchu, the most famous icon of the Inca civilisation\n\nWhen the US explorer and academic Hiram Bingham arrived in South America in 1911, he was ready for what was to be the greatest achievement of his life: the exploration of the remote hinterland to the west of Cusco, the old capital of the Inca empire in the Andes mountains of Peru. His goal was to locate the remains of a city called Vitcos, the last capital of the Inca civilisation. Cusco lies on a high plateau at an elevation of more than 3,000 metres, and Bingham's plan was to descend from this plateau along the valley of the Urubamba river, which takes a circuitous route down to the Amazon and passes through an area of dramatic canyons and mountain ranges.\n\nB When Bingham and his team set off down the Urubamba in late July, they had an advantage over travellers who had preceded them: a track had recently been blasted down the valley canyon to enable rubber to be brought up by mules from the jungle. Almost all previous travellers had left the river at Ollantaytambo and taken a high pass across the mountains to rejoin the river lower down, thereby cutting a substantial corner, but also therefore never passing through the area around Machu Picchu.\n\nC On 24 July they were a few days into their descent of the valley. The day began slowly, with Bingham trying to arrange sufficient mules for the next stage of the trek. His companions showed no interest in accompanying him up the nearby hill to see some ruins that a local farmer, Melchor Arteaga, had told them about the night before. The morning was dull and damp, and Bingham also seems to have been less than keen on the prospect of climbing the hill. In his book Lost City of the Incas, he relates that he made the ascent without having the least expectation that he would find anything at the top.\n\nD Bingham writes about the approach in vivid style in his book. First, as he climbs up the hill, he describes the ever-present possibility of deadly snakes, capable of making considerable springs when in pursuit of their prey'; not that he sees any. Then there's a sense of mounting discovery as he comes across great sweeps of terraces, then a mausoleum, followed by monumental staircases and, finally, the grand ceremonial buildings of Machu Picchu. It seemed like an unbelievable dream ... the sight held me spellbound ...' he wrote.\n\nE We should remember, however, that Lost City of the Incas is a work of hindsight, not written until 1948, many years after his journey. His journal entries of the time reveal a much more gradual appreciation of his achievement. He spent the afternoon at the ruins noting down the dimensions of some of the buildings, then descended and rejoined his companions, to whom he seems to have said little about his discovery. At this stage, Bingham didn't realise the extent or the importance of the site, nor did he realise what use he could make of the discovery.\n\nF However, soon after returning it occurred to him that he could make a name for himself from this discovery. When he came to write the National Geographic magazine article that broke the story to the world in April 1913, he knew he had to produce a big idea. He wondered whether it could have been the birthplace of the very first Inca, Manco the Great, and whether it could also have been what chroniclers described as the last city of the Incas'. This term refers to Vilcabamba, the settlement where the Incas had fled from Spanish invaders in the 1530s. Bingham made desperate attempts to prove this belief for nearly 40 years. Sadly, his vision of the site as both the beginning and end of the Inca civilisation, while a magnificent one, is inaccurate. We now know that Vilcabamba actually lies 65 kilometres away in the depths of the jungle.\n\nG One question that has perplexed visitors, historians and archaeologists alike ever since Bingham, is why the site seemsto have been abandoned before the Spanish Conguest. There are no references to it by any of the Spanish chroniclers – and if they had known of its existence so close to Cusco they would certainly have come in search of gold. An idea which has gained wide acceptance over the past few vears is that Machu Picchu was a moya, a country estate built by an Inca emperor to escape the cold winters of Cusco, where the elite could enjoy monumental architecture and spectacular views. Furthermore, the particular architecture of Machu Picchu suggests that it was constructed at the time of the greatest of all the Incas, the emperor Pachacuti (c. 1438–71).By custom, Pachacuti's descendants built other similar estates for their own use, and so Machu Picchu would have been abandoned after his death, some 50 years before the Spanish Conquest."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t2r-g14",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Paragraph A",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:29.065255+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Different accounts of the same journey"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Bingham gains support"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A common belief"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The aim of the trip"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "A dramatic description"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A new route"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Bingham publishes his theory"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Bingham's lack of enthusiasm"
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g15",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Paragraph B",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:29.065255+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Different accounts of the same journey"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Bingham gains support"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A common belief"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The aim of the trip"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "A dramatic description"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A new route"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Bingham publishes his theory"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Bingham's lack of enthusiasm"
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g16",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:29.065255+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Different accounts of the same journey"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Bingham gains support"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A common belief"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The aim of the trip"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "A dramatic description"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A new route"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Bingham publishes his theory"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Bingham's lack of enthusiasm"
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g17",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Different accounts of the same journey"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Bingham gains support"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "A common belief"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The aim of the trip"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "A dramatic description"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "A new route"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Bingham publishes his theory"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Bingham's lack of enthusiasm"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:29.065255+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Different accounts of the same journey"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Bingham gains support"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A common belief"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The aim of the trip"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "A dramatic description"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A new route"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Bingham publishes his theory"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Bingham's lack of enthusiasm"
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g18",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Paragraph E",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Different accounts of the same journey"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Bingham gains support"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "A common belief"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The aim of the trip"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "A dramatic description"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "A new route"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Bingham publishes his theory"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Bingham's lack of enthusiasm"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Different accounts of the same journey"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Bingham gains support"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A common belief"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The aim of the trip"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "A dramatic description"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A new route"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Bingham publishes his theory"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Bingham's lack of enthusiasm"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:29.065255+00:00"
+          }
+        },
+        {
+          "id": "c12t2r-g19",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Paragraph F",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:29.065255+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Different accounts of the same journey"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Bingham gains support"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A common belief"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The aim of the trip"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "A dramatic description"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A new route"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Bingham publishes his theory"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Bingham's lack of enthusiasm"
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g20",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Paragraph G",
+              "acceptedAnswers": [
+                "iii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:29.065255+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Different accounts of the same journey"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Bingham gains support"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A common belief"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The aim of the trip"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "A dramatic description"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A new route"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Bingham publishes his theory"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Bingham's lack of enthusiasm"
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g21",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q21",
+              "number": 21,
+              "type": "true_false_ng",
+              "prompt": "Bingham went to South America in search of an Inca city",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g22",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q22",
+              "number": 22,
+              "type": "true_false_ng",
+              "prompt": "Bingham chose a particular route down the Urubamba valley because it was the most common route used by travellers",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g23",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q23",
+              "number": 23,
+              "type": "true_false_ng",
+              "prompt": "Bingham understood the significance of Machu Picchu as soon as he saw it",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g24",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q24",
+              "number": 24,
+              "type": "true_false_ng",
+              "prompt": "Bingham returned to Machu Picchu in order to find evidence to support his theory. Questions25–26 Complete the sentences below. Choose ONE woRD ONLY from the passage for each answer. Write your answers in boxes 25–26 on your answer sheet",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g25",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "The track that took Bingham down the Urubamba valley had been created for the transportation of",
+              "acceptedAnswers": [
+                "rubber"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 25–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g26",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Bingham found out about ne ruins of Machu Pichu from a n the Urubamba valley",
+              "acceptedAnswers": [
+                "farmer"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 25–26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The Benefits of Being Bilingual\n\nA According to the latest figures, the majority of the world's population is now bilingual or multilingual, having grown up speaking two or more languages. In the past, such children were considered to be at a disadvantage compared with their monolingual peers. Over the past few decades, however, technological advances have allowed researchers to look more deeply at how bilingualism interacts with and changes the cognitive and neurological systems, thereby identifying several clear benefits of being bilingual.\n\nB Research shows that when a bilingual person uses one language, the other is active at the same time. When we hear a word, we don't hear the entire word all at once: the sounds arrive in sequential order. Long before the word is finished, the brain's language system begins to guess what that word might be. If you hear can’, you will likely activate words likecandy' and candle' as well, at least during the earlier stages of word recognition. For bilingual people, this activation is not limited to a single language; auditory input activates corresponding words regardless of the language to which they belong. Some of the most compelling evidence for this phenomenon, called language co-activation', comes from studying eye movements. A Russian-English bilingual asked to pick up a marker' from a set of objects would look more at a stamp than someone who doesn't know Russian, because the Russian word for stamp', marka, sounds like the English word he or she heard, marker'. In cases like this, language co-activation occurs because what the listener hears could map onto words in either language.\n\nHaving to deal with this persistent linguistic competition can result in difficulties, however. For instance, knowing more than one language can cause speakers to name pictures more slowly, and can increase 'tip-of-the-tongue states', when you can almost, but not quite, bring a word to mind. As a result, the constant juggling of two languages creates a need to control how much a person accesses a language at any given time. For this reason, bilingual people often perform better on tasks that require conflict management. In the classic Stroop Task, people see a word and are asked to name the colour of the word's font. When the colour and the word match (i.e., the word red' printed in red), people correctly name the colour more quickly than when the colour and the word don't match (i.e., the word red' printed in blue). This occurs because the worditself (red’) andits font colour (blue) conflict. Bilingual people often excel at tasks such as this, which tap into the ability to ignore competing perceptual information and focus on the relevantaspects of the input. Bilinguals are also better at switching between two tasks; for example, when bilinguals have to switch from categorizing objects by colour (red or green)\n\nto categorizing them by shape (circle or triangle), they do so more quickly than monolingual people, reflecting better cognitive control when having to make rapid changes of strategy.\n\nIt also seems that the neurological roots of the bilingual advantage extend to brain areas more traditionally associated with sensory processing. When monolingual and bilingual adolescents listen to simple speech sounds without any intervening background noise, they show highly similar brain stem responses. When researchers play the same sound to both groups in the presence of background noise, however, the bilingual listeners' neural response is considerably larger, reflecting better encoding of the sound's fundamental frequency, a feature of sound closely related to pitch perception.\n\nE Such improvements in cognitive and sensory processing may help a bilingual person to process information in the environment, and help explain why bilingual adults acquire a third language better than monolingual adults master a second language. This advantage may be rooted in the skill of focussing on information about the new language while reducing interference from the languages they already know.\n\nF Research also indicates that bilingual experience may help to keep the cognitive mechanisms sharp by recruiting alternate brain networks to compensate for those that become damaged during aging. Older bilinguals enjoy improved memory relative to monolingual people, which can lead to real-world health benefits. In a study of over 200patients with Alzheimer's disease, a degenerative brain disease, bilingual patients reported showing initial symptoms of the disease an average of five years later than monolingual patients. In a follow-up study, researchers compared the brains of bilingual and monolingual patients matched on the severity of Alzheimer's symptoms. Surprisingly, the bilinguals' brains had more physical signs of disease than their monolingual counterparts, even though their outward behaviour and abilities were the same. If the brain is an engine, bilingualism may help it to go farther on the same amount of fuel.\n\nG Furthermore, the benefits associated with bilingual experience seem to start very early. In one study, researchers taught seven-month-old babies growing up in monolingual or bilingual homes that when they heard a tinkling sound, a puppet appeared on one side of a screen. Halfway through the study, the puppet began appearing on the opposite side of the screen. In order to get a reward, the infants had to adjust the rule they'd learned; only the bilingual babies were able to successfully learn the new rule. This suggests that for very young children, as well as for older people, navigating a multilingual environment imparts advantages that transfer far beyond language.\n\n## Test 6\n\nQuestions27-31\n\nComplete the table below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\n\nWrite your answers in boxes 27–31 on your answer sheet.\n\nTest\n\nFindings\n\nObserving the 27 of Russian-English bilingual people when asked toselect certain objects\n\nBilingual people engage both languagessimultaneously: a mechanism known as28\n\nA test called the 29 , focusingon naming colours\n\nBilingual people are more able to handletasks involving a skill called 30.\n\nA test involving switching between tasks\n\nWhen changing strategies, bilingualpeople have superior 31 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t2r-g27",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Observing the",
+              "acceptedAnswers": [
+                "eye movements"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 27–31 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g28",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Bilingual people engage both languagessimultaneously: a mechanism known as",
+              "acceptedAnswers": [
+                "language co-activation"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 27–31 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g29",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "A test called the ___, focusing on naming colours",
+              "acceptedAnswers": [
+                "Stroop Task"
+              ],
+              "gapText": "A test called the ___, focusing on naming colours",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 27–31 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g30",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "A test involving switching between tasks | When changing strategies, bilingual people have superior",
+              "acceptedAnswers": [
+                "conflict management"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 27–31 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g31",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "When changing strategies, bilingual people have superior",
+              "acceptedAnswers": [
+                "cognitive control"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 27–31 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c12t2r-g32",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q32",
+              "number": 32,
+              "type": "yes_no_ng",
+              "prompt": "Attitudes towards bilingualism have changed in recent years",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g33",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q33",
+              "number": 33,
+              "type": "true_false_ng",
+              "prompt": "Bilingual people are better than monolingual people at guessing correctly what words are before they are finished",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g34",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q34",
+              "number": 34,
+              "type": "yes_no_ng",
+              "prompt": "Bilingual people consistently name images faster than monolingual people",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g35",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q35",
+              "number": 35,
+              "type": "yes_no_ng",
+              "prompt": "Bilingual people's brains process single sounds more efficiently than monolingual people in all situations",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g36",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q36",
+              "number": 36,
+              "type": "true_false_ng",
+              "prompt": "Fewer bilingual people than monolingual people suffer from brain disease in old age",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c12t2r-g37",
+          "instruction": "Reading Passage has seven paragraphs. Which paragraph contains the following information? Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "an example of how bilingual and monolingual people's brains respond differently to a certain type of non-verbal auditory input",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g38",
+          "instruction": "Reading Passage has seven paragraphs. Which paragraph contains the following information? Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q38",
+              "number": 38,
+              "type": "matching",
+              "prompt": "a demonstration of how a bilingual upbringing has benefits even before we learn to speak",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g39",
+          "instruction": "Reading Passage has seven paragraphs. Which paragraph contains the following information? Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q39",
+              "number": 39,
+              "type": "matching",
+              "prompt": "a description of the process by which people identify words that they hear",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2r-g40",
+          "instruction": "Reading Passage has seven paragraphs. Which paragraph contains the following information? Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2r-q40",
+              "number": 40,
+              "type": "matching",
+              "prompt": "reference to some negative consequences of being bilingual",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    }
+  ]
+}

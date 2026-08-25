@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-14-test-1-writing",
+  "title": "Cambridge IELTS 14 Academic Test 1 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-922bb365c0a6",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 14",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题14.pdf",
+        "sha256": "f0f0d86e7cf93b37154696851b2e61be4f1194b05bd1651c1711e221720018ba"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C14\\剑桥雅思真题14\\auto\\剑桥雅思真题14.md",
+        "sha256": "922bb365c0a65fe38e3625473ed796ac216275ad75839f452a8d20a7435ef431",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe charts below show the average percentages in typical meals of three types of nutrients, all of which may be unhealthy if eaten too much.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\nAverage percentages of sodium, saturated fats and added sugars in typical meals consumed in the USA\n\n[]\n\n[]"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c14-t1-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome people believe that it is best to accept a bad situation, such as an unsatisfactory job or shortage of money. Others argue that it is better to try and improve such situations.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

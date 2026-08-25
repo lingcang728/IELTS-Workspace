@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-9-test-1-writing",
+  "title": "Cambridge IELTS 9 Academic Test 1 Writing",
+  "module": "writing",
+  "contentRevision": "wsplit-e-9-test-1-writing",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 9",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题9.pdf",
+        "sha256": "c3fbc2d06b1b60fe8e7d27936150a09c38714e4bd23e6351a09b93c9555ee890"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C09\\剑桥雅思真题9\\auto\\剑桥雅思真题9.md",
+        "sha256": "0fff67454e2c0209145ec163b53e0d8a4366227a4e4853f03d4cac2187f6196e",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\n## Write at least 150 words.\n\n[]\n\nWRITING TASK 2\n\nYou should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome experts believe that it is better for children to begin learning a foreign\n\nlanguage at primary school rather than secondary school.\n\nDo the advantages of this outweigh the disadvantages?\n\nGive reasons for your answer and include any relevant examples from your own\n\nknowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c09-t1-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome experts believe that it is better for children to begin learning a foreign\n\nlanguage at primary school rather than secondary school.\n\nDo the advantages of this outweigh the disadvantages?\n\nGive reasons for your answer and include any relevant examples from your own\n\nknowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

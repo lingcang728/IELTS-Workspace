@@ -1,0 +1,1918 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-8-test-2-listening",
+  "title": "Cambridge IELTS 8 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0015-d7dbcb7f",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 8",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题8.pdf",
+        "sha256": "2f3cdf0c049ecac93bafafd034c2316ac7ed66b0694bea8a2a7c152042923e23"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C08\\剑桥雅思真题8\\auto\\剑桥雅思真题8.md",
+        "sha256": "9bc5a6c2dc6b80f2e6667849856a7af88f0f5e7102900ecf2906d8c2b913a8ca",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-8-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\nQuestions 1-3\n\nComplete the form below.\n\nWrite NO MORE THAN THREE WORDS ANDIOR A NUMBER for each anSwer.\n\nTOTAL INSURANCE INCIDENT REPORT\n\nExample Answer Name Michael Alexander\n\nAddress 24 Manly Street, 1 . .…., Sydney\n\nShipping agent 2.\n\nPlace of origin China\n\nDate of arrival 3.\n\nReference number 601 ACK\n\n本资料仅用于参考，。\n\nQuestions 4-10\n\nComplete the table below.\n\nWrite ONE WORD ANDIOR A NUMBER for each answer.\n\nItem\n\nDamage\n\nCost to repair/replace\n\nTelevision\n\nThe 4.needs to be replaced\n\nnot known\n\nThe 5.cabinet\n\nThe 6. ofthe cabinet is damaged\n\n7$\n\nDining room table\n\nA8. .. issplit\n\n$200\n\nSet of china\n\nSix 9.were broken\n\nabout10 $. in total"
+      },
+      "questionGroups": [
+        {
+          "id": "c8t2l-g1",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Complete the form below.",
+              "acceptedAnswers": [
+                "Milperra"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g2",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "What is the shipping agent's name?",
+              "acceptedAnswers": [
+                "First Class Movers"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g3",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Reference number 601 ACK",
+              "acceptedAnswers": [
+                "28 November"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g4",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "The television damage: the item that needs to be replaced is the",
+              "acceptedAnswers": [
+                "screen"
+              ],
+              "gapText": "The 4 ______ needs to be replaced",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g5",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "The damaged cabinet item is the",
+              "acceptedAnswers": [
+                "bathroom"
+              ],
+              "gapText": "The 5 ______ cabinet",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g6",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "The damaged part of the cabinet is the",
+              "acceptedAnswers": [
+                "door"
+              ],
+              "gapText": "The 6 ______ of the cabinet is damaged",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g7",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "$ Dining room table A8. .. issplit $200 Set of china Six 9.were broken about10 $. in total",
+              "acceptedAnswers": [
+                "140"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g8",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The dining room table is split at the",
+              "acceptedAnswers": [
+                "leg"
+              ],
+              "gapText": "A 8 ______ is split",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g9",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Six items from the set of china were broken: six",
+              "acceptedAnswers": [
+                "plates"
+              ],
+              "options": [],
+              "gapText": "Six 9 ______ were broken",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g10",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "The total cost for the broken china was about",
+              "acceptedAnswers": [
+                "60"
+              ],
+              "options": [],
+              "gapText": "about 10 $ ______ in total",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 479459
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\nQuestion 11\n\nChoose the correct letter, A, B or C.\n\n11 According to the speaker, the main purposes of the park are\n\nA education and entertainment.\n\nB research and education.\n\nC research and entertainment.\n\nQuestions 12-14\n\nLabel the plan below.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\n[]\n\n本资料仅用于参考，。\n\n## Test 2\n\n## Questions 15-20\n\nChoose the correct letter, A, B or C.\n\n15 When are the experimental areas closed to the public?\n\n16 How can you move around the park? A by tram, walking or bicycle B by solar car or bicycle C by bicycle, walking or bus\n\n18 What is the main purpose of having the Rare Breeds Section? A to save unusual animals B to keep a variety of breeds C to educate the public\n\n19 What can you see in the park at the present time?\n\n20 The shop contains books about\n\nA animals.\n\nB local traditions.\n\nC the history of the park."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t2l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "According to the speaker, the main purposes of the park are A education and entertainment. B research and education. C research and entertainment",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "education and entertainment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "research and education"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "research and entertainment"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "education and entertainment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "research and education"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "research and entertainment"
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g12",
+          "instruction": "Label the plan below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "Label the plan below.",
+              "acceptedAnswers": [
+                "(the) Forest"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "education and entertainment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "research and education"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "research and entertainment"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "education and entertainment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "research and education"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "research and entertainment"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              12,
+              14
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c08-t2-listening-p0033.jpg"
+        },
+        {
+          "id": "c8t2l-g13",
+          "instruction": "Label the plan below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "The area marked 13 on the Agricultural Park plan is the",
+              "acceptedAnswers": [
+                "Fish Farm",
+                "Fish Farms"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "education and entertainment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "research and education"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "research and entertainment"
+                }
+              ],
+              "gapText": "The 13 ______",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "education and entertainment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "research and education"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "research and entertainment"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              12,
+              14
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c08-t2-listening-p0033.jpg"
+        },
+        {
+          "id": "c8t2l-g14",
+          "instruction": "Label the plan below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "The area marked 14 on the Agricultural Park plan is the",
+              "acceptedAnswers": [
+                "Market Garden"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "education and entertainment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "research and education"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "research and entertainment"
+                }
+              ],
+              "gapText": "14 ______ Area",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "education and entertainment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "research and education"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "research and entertainment"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              12,
+              14
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c08-t2-listening-p0033.jpg"
+        },
+        {
+          "id": "c8t2l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "When are the experimental areas closed to the public?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.457361+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all the year round"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "almost all the year"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a short time every year"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "How can you move around the park? A by tram, walking or bicycle B by solar car or bicycle C by bicycle, walking or bus",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "by tram, walking or bicycle"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "by solar car or bicycle"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "by bicycle, walking or bus"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.457361+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g17",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "The rare breed animals kept in the park include",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "hens and horses."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "goats and cows."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "goats and hens."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g18",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "What is the main purpose of having the Rare Breeds Section? A to save unusual animals B to keep a variety of breeds C to educate the public",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to save unusual animals"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to keep a variety of breeds"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to educate the public"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.457361+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g19",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "What can you see in the park at the present time?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.457361+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the arrival of wild birds"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "fruit tree blossom"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a demonstration of fishing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g20",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "The shop contains books about",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.457361+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "animals."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "local traditions."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the history of the park."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 479459,
+      "audioDurationMs": 388370
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions 21–24\n\nChoose the correct letter, A, B or C.\n\n## Honey Bees in Australia\n\n21 Where in Australia have Asian honey bees been found in the past? A Queensland B New South Wales C several states\n\n22 A problem with Asian honey bees is that they A attack native bees. B carry parasites. C damage crops.\n\n23 What point is made about Australian bees? A Their honey varies in quality. B Their size stops them from pollinating some flowers. C They are sold to customers abroad.\n\n24Grant Freeman says that if Asian honey bees got into Australia,\n\nA the country's economy would be affected. \nB they could be used in the study of allergies. \nC certain areas of agriculture would benefit.\n\n本资料仅用于参考，。\n\n## Test 2\n\nQuestions 25–30\n\nComplete the summary below.\n\nWrite ONE WORD ONLY for each answer.\n\n## Looking for Asian honey bees\n\nBirds called Rainbow ee Eaters eat only 25. and cough up small bits of skeleton and other products in a pellet.\n\nResearchers go to the locations the bee eaters like to use for 26 .. They collect the pellets and take them to a 27 ... .... for analysis. Here 28....s used to soften them, and the researchers look for the 29 . of Asian bees in the pelets. 六\n\nThe benefit of this research is that the result is more 30..than searching for live Asian bees."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t2l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Where in Australia have Asian honey bees been found in the past? A Queensland B New South Wales C several states",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Queensland"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "New South Wales"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "several states"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.531559+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "A problem with Asian honey bees is that they A attack native bees. B carry parasites. C damage crops",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "attack native bees."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "carry parasites."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "damage crops."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.531559+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "What point is made about Australian bees? A Their honey varies in quality. B Their size stops them from pollinating some flowers. C They are sold to customers abroad",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Their honey varies in quality."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Their size stops them from pollinating some flowers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They are sold to customers abroad."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.531559+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q24",
+              "number": 24,
+              "type": "matching",
+              "prompt": "Grant Freeman says that if Asian honey bees got into Australia,",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.531559+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the country's economy would be affected."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they could be used in the study of allergies."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "certain areas of agriculture would benefit."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g25",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "and cough up small bits of skeleton and other products in a pellet.",
+              "acceptedAnswers": [
+                "insects"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g26",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "They collect the pellets and take them to a",
+              "acceptedAnswers": [
+                "feeding",
+                "eating"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g27",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "The pellets are taken to a laboratory for analysis.",
+              "acceptedAnswers": [
+                "laboratory"
+              ],
+              "gapText": "They collect the pellets and take them to a 27 ______ for analysis.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g28",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "The material used to soften the pellets is",
+              "acceptedAnswers": [
+                "water"
+              ],
+              "gapText": "Here 28 ______ is used to soften them",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g29",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "The researchers look for the ______ of Asian bees in the pellets.",
+              "acceptedAnswers": [
+                "wings"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              },
+              "gapText": "the 29 ______ of Asian bees in the pellets"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g30",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "The research result is more reliable or accurate than searching for live Asian bees.",
+              "acceptedAnswers": [
+                "reliable",
+                "accurate"
+              ],
+              "gapText": "The benefit of this research is that the result is more 30 ______ than searching for live Asian bees.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 867830,
+      "audioDurationMs": 407988
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31–40\n\nQuestions 31-36\n\nChoose the correct letter, A, B or C.\n\n## Research on questions about doctors\n\n31 In order to set up her research programme, Shona got\n\nA advice from personal friends in other countries.\n\nB help from students in other countries.\n\nC information from her tutor's contacts in other countries.\n\n32 What types of people were included in the research?\n\nAyoung people in their first job B men who were working C women who were unemployed\n\n33 Shona says that in her questionnaire her aim was\n\nAto get a wide range of data. \nB to limit people's responses. \nCto guide people through interviews.\n\n34 What do Shona's initial results show about medical services in Britain?\n\nA Current concerns are misrepresented by the press.\n\nB Financial issues are critical to the government.\n\nC Reforms within hospitals have been unsuccessful.\n\n35 Shona needs to do further research in order to\n\nA present the government with her findings.\n\nB decide the level of extra funding needed.\n\nC identify the preferences of the public.\n\n36 Shona has learnt from the research project that\n\nA it is important to plan projects carefully.\n\nB people do not like answering questions.\n\nCcolleagues do not always agree.\n\n## Test 2\n\nQuestions 37-40\n\nWhich statement applies to each of the following people who were interviewed by Shona?\n\nChoose FOuR answers from the box and write the correct letter, A-F, next to questions 37-40.\n\nA gave false data\n\nB decided to stop participating\n\nC refused to tell Shona about their job\n\nD kept changing their mind about participating\n\nE became very angry with Shona\n\nF was worried about confidentiality\n\n## People interviewed by Shona\n\n37 a person interviewed in the street\n\n38 an undergraduate at the university …\n\n39 a colleague in her department\n\n40 a tutor in a foreign university"
+      },
+      "questionGroups": [
+        {
+          "id": "c8t2l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "In order to set up her research programme, Shona got",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.625741+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advice from personal friends in other countries."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "help from students in other countries."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "information from her tutor's contacts in other countries."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "What types of people were included in the research? Ayoung people in their first job B men who were working C women who were unemployed",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advice from personal friends in other countries"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "help from students in other countries"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "information from her tutor's contacts in other countries"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "advice from personal friends in other countries"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "help from students in other countries"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "information from her tutor's contacts in other countries"
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "Shona says that in her questionnaire her aim was Ato get a wide range of data. B to limit people's responses. Cto guide people through interviews",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advice from personal friends in other countries"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "help from students in other countries"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "information from her tutor's contacts in other countries"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "advice from personal friends in other countries"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "help from students in other countries"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "information from her tutor's contacts in other countries"
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "What do Shona's initial results show about medical services in Britain? A Current concerns are misrepresented by the press. B Financial issues are critical to the government. C Reforms within hospitals have been unsuccessful",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to limit people's responses"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Current concerns are misrepresented by the press"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Reforms within hospitals have been unsuccessful"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to limit people's responses"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Current concerns are misrepresented by the press"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Reforms within hospitals have been unsuccessful"
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g35",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "Shona needs to do further research in order to A present the government with her findings. B decide the level of extra funding needed. C identify the preferences of the public",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Current concerns are misrepresented by the press"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Financial issues are critical to the government"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Reforms within hospitals have been unsuccessful"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "kept changing their mind about participating"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "became very angry with Shona"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "was worried about confidentiality"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Current concerns are misrepresented by the press"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Financial issues are critical to the government"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Reforms within hospitals have been unsuccessful"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "kept changing their mind about participating"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "became very angry with Shona"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "was worried about confidentiality"
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g36",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "Shona has learnt from the research project that A it is important to plan projects carefully. B people do not like answering questions. Ccolleagues do not always agree",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Financial issues are critical to the government"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Reforms within hospitals have been unsuccessful"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "present the government with her findings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "kept changing their mind about participating"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "became very angry with Shona"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "was worried about confidentiality"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Financial issues are critical to the government"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Reforms within hospitals have been unsuccessful"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "present the government with her findings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "kept changing their mind about participating"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "became very angry with Shona"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "was worried about confidentiality"
+            }
+          ]
+        },
+        {
+          "id": "c8t2l-g37",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 37-40.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "Which statement applies to a person interviewed in the street?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "gave false data"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "decided to stop participating"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "refused to tell Shona about their job"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "kept changing their mind about participating"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "became very angry with Shona"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "was worried about confidentiality"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "gave false data"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "decided to stop participating"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "refused to tell Shona about their job"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "kept changing their mind about participating"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "became very angry with Shona"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "was worried about confidentiality"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g38",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 37-40.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q38",
+              "number": 38,
+              "type": "matching",
+              "prompt": "Which statement applies to an undergraduate at the university?",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "gave false data"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "decided to stop participating"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "refused to tell Shona about their job"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "kept changing their mind about participating"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "became very angry with Shona"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "was worried about confidentiality"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "gave false data"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "decided to stop participating"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "refused to tell Shona about their job"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "kept changing their mind about participating"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "became very angry with Shona"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "was worried about confidentiality"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g39",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 37-40.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q39",
+              "number": 39,
+              "type": "matching",
+              "prompt": "Which statement applies to a colleague in her department?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "gave false data"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "decided to stop participating"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "refused to tell Shona about their job"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "kept changing their mind about participating"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "became very angry with Shona"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "was worried about confidentiality"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t2l-g40",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 37-40.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2l-q40",
+              "number": 40,
+              "type": "matching",
+              "prompt": "Which statement applies to a tutor in a foreign university?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "gave false data"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "decided to stop participating"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "refused to tell Shona about their job"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "kept changing their mind about participating"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "became very angry with Shona"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "was worried about confidentiality"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1275818,
+      "audioDurationMs": 417889
+    }
+  ]
+}

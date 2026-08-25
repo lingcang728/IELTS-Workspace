@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-10-test-2-writing",
+  "title": "Cambridge IELTS 10 Academic Test 2 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-779bed817fd5",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 10",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题10.pdf",
+        "sha256": "924bf69326e33aacf54dff62009ff5badf01d17d41340c3e242f86d278b6420d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C10\\剑桥雅思真题10\\auto\\剑桥雅思真题10.md",
+        "sha256": "779bed817fd5e0c62ba6cda955f8bc236f88c4e87afa75b288b862fc8fad9048",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe tables below give information about sales of Fairtrade\\*-labelled coffee and bananas in 1999 and 2004 in five European countries.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\nSales of Fairtrade-labelled coffee and bananas (1999 & 2004)\n\nCoffee\n\n1999(millions of euros)\n\n2004(millions of euros)\n\nUK\n\n1.5\n\n20\n\nSwitzerland\n\n3\n\n6\n\nDenmark\n\n1.8\n\n2\n\nBelgium\n\n1\n\n1.7\n\nSweden\n\n0.8\n\n1\n\nBananas\n\n1999(millions of euros)\n\n2004(millions of euros)\n\nSwitzerland\n\n15\n\n47\n\nUK\n\n1\n\n5.5\n\nBelgium\n\n0.6\n\n4\n\nSweden\n\n1.8\n\n1\n\nDenmark\n\n2\n\n0.9\n\n\\* Fairtrade: a category of products for which farmers from developing countries have been paid an officially agreed fair price."
+      },
+      "questionGroups": []
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome people think that all university students should study whatever they like. Others believe that they should only be allowed to study subjects that will be useful in the future, such as those related to science and technology.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own owledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

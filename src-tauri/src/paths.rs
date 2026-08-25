@@ -5,9 +5,10 @@ use std::path::{Path, PathBuf};
 
 const DATA_SUBDIRS: &[&str] = &[
     "sources", "library", "assets", "sessions", "profile", "notes", "cache", "temp",
-    // Phase 3 study features; see `store::KINDS`, which must stay in step.
-    "mistakes", "vocab", "plans", "feedback",
+    "mistakes", "vocab", "plans", "feedback", "audio", "content",
 ];
+
+pub const CONTENT_VERSION: &str = "1.3.0";
 
 pub fn is_dev() -> bool {
     cfg!(debug_assertions)
@@ -33,16 +34,74 @@ pub fn app_root() -> Result<PathBuf, AppError> {
     }
 }
 
-pub fn data_root() -> Result<PathBuf, AppError> {
+/// Installed layout is "exe next to uninstall.exe". Portable has no uninstaller.
+pub fn is_portable_layout() -> bool {
     if is_dev() {
-        Ok(app_root()?.join("data-dev"))
-    } else {
-        Ok(app_root()?.join("data"))
+        return false;
+    }
+    match app_root() {
+        Ok(root) => !root.join("uninstall.exe").is_file(),
+        Err(_) => true,
     }
 }
 
+pub fn installed_data_root() -> Result<PathBuf, AppError> {
+    let local = std::env::var_os("LOCALAPPDATA")
+        .ok_or_else(|| AppError::from("Windows LOCALAPPDATA 路径不可用"))?;
+    Ok(PathBuf::from(local).join("IELTS Workspace").join("data"))
+}
+
+pub fn sidecar_data_root() -> Result<PathBuf, AppError> {
+    Ok(app_root()?.join("data"))
+}
+
+pub fn data_root() -> Result<PathBuf, AppError> {
+    if is_dev() {
+        Ok(app_root()?.join("data-dev"))
+    } else if is_portable_layout() {
+        sidecar_data_root()
+    } else {
+        installed_data_root()
+    }
+}
+
+/// Exam JSON / images / transcripts. Dev reads the repo; release reads the
+/// extracted content pack under the data directory.
 pub fn fixtures_root() -> Result<PathBuf, AppError> {
-    Ok(app_root()?.join("fixtures"))
+    if is_dev() {
+        Ok(app_root()?.join("fixtures"))
+    } else {
+        Ok(content_dir()?)
+    }
+}
+
+pub fn content_dir() -> Result<PathBuf, AppError> {
+    let root = data_root()?.join("content");
+    let marker = root.join("CURRENT");
+    if let Ok(ver) = fs::read_to_string(&marker) {
+        let ver = ver.trim();
+        if !ver.is_empty() {
+            let current = root.join(ver);
+            if current.is_dir() {
+                return Ok(current);
+            }
+        }
+    }
+    Ok(root.join(CONTENT_VERSION))
+}
+
+pub fn audio_dir() -> Result<PathBuf, AppError> {
+    Ok(ensure_data_layout()?.join("audio"))
+}
+
+pub fn audio_files_dir() -> Result<PathBuf, AppError> {
+    let dir = audio_dir()?.join("files");
+    fs::create_dir_all(&dir)?;
+    Ok(dir)
+}
+
+pub fn audio_bindings_path() -> Result<PathBuf, AppError> {
+    Ok(audio_dir()?.join("bindings.json"))
 }
 
 pub fn ensure_data_layout() -> Result<PathBuf, AppError> {
@@ -50,6 +109,7 @@ pub fn ensure_data_layout() -> Result<PathBuf, AppError> {
     for sub in DATA_SUBDIRS {
         fs::create_dir_all(root.join(sub))?;
     }
+    fs::create_dir_all(root.join("audio").join("files"))?;
     Ok(root)
 }
 
@@ -60,6 +120,7 @@ pub struct ProbeResult {
     pub data_root: String,
     pub app_root: String,
     pub dev: bool,
+    pub portable: bool,
     pub warning: Option<String>,
     pub error: Option<String>,
 }
@@ -76,6 +137,7 @@ pub fn probe_writable() -> ProbeResult {
                 .map(|p| p.display().to_string())
                 .unwrap_or_default(),
             dev: is_dev(),
+            portable: is_portable_layout(),
             warning: None,
             error: Some(err.to_string()),
         },
@@ -95,6 +157,7 @@ fn probe_writable_inner() -> Result<ProbeResult, AppError> {
             data_root: root.display().to_string(),
             app_root: app.display().to_string(),
             dev: is_dev(),
+            portable: is_portable_layout(),
             warning: None,
             error: Some(
                 "当前目录不可写，IELTS Workspace 无法安全保存考试数据。请将整个程序文件夹移动到可写目录后重新启动。"
@@ -109,6 +172,7 @@ fn probe_writable_inner() -> Result<ProbeResult, AppError> {
         data_root: root.display().to_string(),
         app_root: app.display().to_string(),
         dev: is_dev(),
+        portable: is_portable_layout(),
         warning,
         error: None,
     })
@@ -137,4 +201,16 @@ pub fn assets_dir() -> Result<PathBuf, AppError> {
 
 pub fn profile_path() -> Result<PathBuf, AppError> {
     Ok(ensure_data_layout()?.join("profile").join("profile.json"))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::onedrive_warning;
+    use std::path::Path;
+
+    #[test]
+    fn onedrive_is_only_a_warning() {
+        assert!(onedrive_warning(Path::new(r"C:\Users\a\OneDrive\data")).is_some());
+        assert!(onedrive_warning(Path::new(r"C:\Users\a\Documents")).is_none());
+    }
 }

@@ -1,0 +1,1630 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-5-test-1-listening",
+  "title": "Cambridge IELTS 5 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0012-e7b5b0cc",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 5",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题5.pdf",
+        "sha256": "7df6a474e84e69a622dd48fc009e69dd7fd711a64b713671bdf492311f5f58cc"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C05\\剑桥雅思真题5\\auto\\剑桥雅思真题5.md",
+        "sha256": "f824a696e954976360e36d9a1615a7da3cbfefff2c6511ed3f1e04f97d5a6c21",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-5-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This module consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section a monologue.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/form/table/summary/flow-chart completion, labelling a diagram/plan/map, classification, matching.\n\nCandidates hear the recording once only and answer the questions as they listen. Ten minutes are allowed at the end for candidates to transfer their answers to the answer sheet.\n\n## Academic Reading\n\nThis module consists of three sections with 40 questions. There are three reading passages, which are taken from magazines, journals, books and newspapers. The passages are on topics of general interest. At least one passage contains detailed logical argument.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/summary/flow-chart/table completion, labelling a diagram, classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims - yes, no, not given – or identification of information in the passage – true, false, not given.\n\n## General Training Reading\n\nThis module consists of three sections with 40 questions. The texts are taken from notices, advertisements, leaflets, newspapers, instruction manuals, books and magazines. The first section contains texts relevant to basic linguistic survival in English, with tasks mainly concerned with providing factual information. The second section focuses on the training context and involves texts of more complex language. The third section involves reading more extended texts, with a more complex structure, but with the emphasis on descriptive and instructive rather than argumentative texts.\n\nA variety of question types is used, including: multiple choice, short-answer qucstions, sentence completion, notes/summary/flow-chart/table compietion, labelling a diagram. classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims yes, no, not given – identification of information in the text – true, false, not given.\n\n## Academic Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task 2, which requires them to write at least 250) words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nTask 1 requires candidates to look at a diagram or some data (graph, table or chart) and to present the information in their own words. They are assessed on their ability to organise, present and possibly compare data, describe the stages of a process, describe an object or event, or explain how something works.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to present a solution to the problem, present and justify an opinion, compare and contrast evidence and opinions, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also assessed on their ability to write in an appropriate style.\n\n## General Training Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task2, which requires them to write at least 250 words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nIn Task 1 candidates are asked to respond to a given problem with a letter requesting information or explaining a situation. They are assessed on their ability to engage in personal correspondence, elicit and provide general factual information, express needs, wants, likes and dislikes, express opinions, complaints, etc.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to provide general factual information, outline a problem and present a solution, present and justify an opinion, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also judged on their ability to write in an appropriate style"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t1l-g1",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Maximum group size",
+              "acceptedAnswers": [
+                "by minibus",
+                "a minibus"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g2",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Next tour date",
+              "acceptedAnswers": [
+                "15",
+                "15 people"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g3",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Hotel name",
+              "acceptedAnswers": [
+                "April (the) 18th"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g4",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Hotel name: The ___",
+              "acceptedAnswers": [
+                "Pallisades"
+              ],
+              "gapText": "Hotel name: The ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g5",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q5",
+              "number": 5,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO things are included in the price of the tour?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "fishing trip"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "guided bushwalk"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "reptile park entry"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "table tennis"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "tennis"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g6",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q6",
+              "number": 6,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO things are included in the price of the tour?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "fishing trip"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "guided bushwalk"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "reptile park entry"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "table tennis"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "tennis"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g7",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The tour costs \\$.",
+              "acceptedAnswers": [
+                "280"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g8",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Bookings must be made no later than ___ days in advance.",
+              "acceptedAnswers": [
+                "14"
+              ],
+              "gapText": "Bookings must be made no later than ___ days in advance.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g9",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "A deposit is required.",
+              "acceptedAnswers": [
+                "20%"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g10",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "The customer's reference number is",
+              "acceptedAnswers": [
+                "39745T"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 495616
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This module consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section a monologue.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/form/table/summary/flow-chart completion, labelling a diagram/plan/map, classification, matching.\n\nCandidates hear the recording once only and answer the questions as they listen. Ten minutes are allowed at the end for candidates to transfer their answers to the answer sheet.\n\n## Academic Reading\n\nThis module consists of three sections with 40 questions. There are three reading passages, which are taken from magazines, journals, books and newspapers. The passages are on topics of general interest. At least one passage contains detailed logical argument.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/summary/flow-chart/table completion, labelling a diagram, classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims - yes, no, not given – or identification of information in the passage – true, false, not given.\n\n## General Training Reading\n\nThis module consists of three sections with 40 questions. The texts are taken from notices, advertisements, leaflets, newspapers, instruction manuals, books and magazines. The first section contains texts relevant to basic linguistic survival in English, with tasks mainly concerned with providing factual information. The second section focuses on the training context and involves texts of more complex language. The third section involves reading more extended texts, with a more complex structure, but with the emphasis on descriptive and instructive rather than argumentative texts.\n\nA variety of question types is used, including: multiple choice, short-answer qucstions, sentence completion, notes/summary/flow-chart/table compietion, labelling a diagram. classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims yes, no, not given – identification of information in the text – true, false, not given.\n\n## Academic Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task 2, which requires them to write at least 250) words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nTask 1 requires candidates to look at a diagram or some data (graph, table or chart) and to present the information in their own words. They are assessed on their ability to organise, present and possibly compare data, describe the stages of a process, describe an object or event, or explain how something works.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to present a solution to the problem, present and justify an opinion, compare and contrast evidence and opinions, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also assessed on their ability to write in an appropriate style.\n\n## General Training Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task2, which requires them to write at least 250 words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nIn Task 1 candidates are asked to respond to a given problem with a letter requesting information or explaining a situation. They are assessed on their ability to engage in personal correspondence, elicit and provide general factual information, express needs, wants, likes and dislikes, express opinions, complaints, etc.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to provide general factual information, outline a problem and present a solution, present and justify an opinion, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also judged on their ability to write in an appropriate style"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t1l-g11",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "• Did not have any",
+              "acceptedAnswers": [
+                "move around",
+                "move about"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g12",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "• Babies could traptheir",
+              "acceptedAnswers": [
+                "brakes"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g13",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "Babies could trap their ___ in the side bar",
+              "acceptedAnswers": [
+                "fingers"
+              ],
+              "gapText": "Babies could trap their ___ in the side bar",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g14",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Baby Safe verdict: ___",
+              "acceptedAnswers": [
+                "satisfactory"
+              ],
+              "gapText": "Baby Safe verdict: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g15",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "• Side did notdrop down• Spaces between thebars were",
+              "acceptedAnswers": [
+                "put (it) together"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g16",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Choice Cots: Spaces between the bars were ___",
+              "acceptedAnswers": [
+                "too wide"
+              ],
+              "gapText": "Choice Cots: Spaces between the bars were ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g17",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Mother's Choice | Base of cot could bemoved | Did not have any",
+              "acceptedAnswers": [
+                "dangerous"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g18",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Pictures could beremoved easily",
+              "acceptedAnswers": [
+                "wheels"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g19",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Mother's Choice verdict: ___",
+              "acceptedAnswers": [
+                "(the) best",
+                "(the) best buy",
+                "safe"
+              ],
+              "gapText": "Mother's Choice verdict: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              19
+            ],
+            "canonicalOf": [
+              "Write ONE WORD ONLY for the answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g20",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for the answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Edges of cot should not be ___",
+              "acceptedAnswers": [
+                "sharp"
+              ],
+              "gapText": "Edges of cot should not be ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.093429+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 495616,
+      "audioDurationMs": 289374
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This module consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section a monologue.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/form/table/summary/flow-chart completion, labelling a diagram/plan/map, classification, matching.\n\nCandidates hear the recording once only and answer the questions as they listen. Ten minutes are allowed at the end for candidates to transfer their answers to the answer sheet.\n\n## Academic Reading\n\nThis module consists of three sections with 40 questions. There are three reading passages, which are taken from magazines, journals, books and newspapers. The passages are on topics of general interest. At least one passage contains detailed logical argument.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/summary/flow-chart/table completion, labelling a diagram, classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims - yes, no, not given – or identification of information in the passage – true, false, not given.\n\n## General Training Reading\n\nThis module consists of three sections with 40 questions. The texts are taken from notices, advertisements, leaflets, newspapers, instruction manuals, books and magazines. The first section contains texts relevant to basic linguistic survival in English, with tasks mainly concerned with providing factual information. The second section focuses on the training context and involves texts of more complex language. The third section involves reading more extended texts, with a more complex structure, but with the emphasis on descriptive and instructive rather than argumentative texts.\n\nA variety of question types is used, including: multiple choice, short-answer qucstions, sentence completion, notes/summary/flow-chart/table compietion, labelling a diagram. classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims yes, no, not given – identification of information in the text – true, false, not given.\n\n## Academic Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task 2, which requires them to write at least 250) words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nTask 1 requires candidates to look at a diagram or some data (graph, table or chart) and to present the information in their own words. They are assessed on their ability to organise, present and possibly compare data, describe the stages of a process, describe an object or event, or explain how something works.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to present a solution to the problem, present and justify an opinion, compare and contrast evidence and opinions, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also assessed on their ability to write in an appropriate style.\n\n## General Training Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task2, which requires them to write at least 250 words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nIn Task 1 candidates are asked to respond to a given problem with a letter requesting information or explaining a situation. They are assessed on their ability to engage in personal correspondence, elicit and provide general factual information, express needs, wants, likes and dislikes, express opinions, complaints, etc.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to provide general factual information, outline a problem and present a solution, present and justify an opinion, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also judged on their ability to write in an appropriate style"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t1l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Andrew has worked at the hospital for",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "two years."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "three years."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "five years."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "two years."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "three years."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "five years."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:15.753034+00:00"
+          }
+        },
+        {
+          "id": "c5t1l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "During the course Andrew's employers will pay",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "his fees."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "his living costs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "his salary."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "his fees."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "his living costs."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "his salary."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:15.753034+00:00"
+          }
+        },
+        {
+          "id": "c5t1l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "The part-time course lasts for",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "one whole year."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "18 months."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "two years."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "one whole year."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "18 months."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "two years."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:15.753034+00:00"
+          }
+        },
+        {
+          "id": "c5t1l-g24",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q24",
+              "number": 24,
+              "type": "multi_choice",
+              "prompt": "First answer: What TWO types of coursework are required each month on the part-time course?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a case study"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an essay"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a survey"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a short report"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a study diary"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a case study"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an essay"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a survey"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a short report"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a study diary"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:15.753034+00:00"
+          }
+        },
+        {
+          "id": "c5t1l-g25",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "Second answer: What TWO types of coursework are required each month on the part-time course?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a case study"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an essay"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a survey"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a short report"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a study diary"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a case study"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an essay"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a survey"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a short report"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a study diary"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:15.753034+00:00"
+          }
+        },
+        {
+          "id": "c5t1l-g26",
+          "instruction": "Complete the summary below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Students study ___ during each module.",
+              "acceptedAnswers": [
+                "full-time"
+              ],
+              "gapText": "Students study ___ during each module.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g27",
+          "instruction": "Complete the summary below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "A module takes ___",
+              "acceptedAnswers": [
+                "a term",
+                "one term"
+              ],
+              "gapText": "A module takes ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g28",
+          "instruction": "Complete the summary below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "To get a Diploma each student has to study",
+              "acceptedAnswers": [
+                "intensive"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g29",
+          "instruction": "Complete the summary below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "To get a Diploma each student has to study ___",
+              "acceptedAnswers": [
+                "two modules",
+                "(for) two terms"
+              ],
+              "gapText": "To get a Diploma each student has to study ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g30",
+          "instruction": "Complete the summary below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "And then work on ___ in depth.",
+              "acceptedAnswers": [
+                "a topic",
+                "one topic"
+              ],
+              "gapText": "And then work on ___ in depth.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 784990,
+      "audioDurationMs": 382473
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This module consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section a monologue.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/form/table/summary/flow-chart completion, labelling a diagram/plan/map, classification, matching.\n\nCandidates hear the recording once only and answer the questions as they listen. Ten minutes are allowed at the end for candidates to transfer their answers to the answer sheet.\n\n## Academic Reading\n\nThis module consists of three sections with 40 questions. There are three reading passages, which are taken from magazines, journals, books and newspapers. The passages are on topics of general interest. At least one passage contains detailed logical argument.\n\nA variety of question types is used, including: multiple choice, short-answer questions, sentence completion, notes/summary/flow-chart/table completion, labelling a diagram, classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims - yes, no, not given – or identification of information in the passage – true, false, not given.\n\n## General Training Reading\n\nThis module consists of three sections with 40 questions. The texts are taken from notices, advertisements, leaflets, newspapers, instruction manuals, books and magazines. The first section contains texts relevant to basic linguistic survival in English, with tasks mainly concerned with providing factual information. The second section focuses on the training context and involves texts of more complex language. The third section involves reading more extended texts, with a more complex structure, but with the emphasis on descriptive and instructive rather than argumentative texts.\n\nA variety of question types is used, including: multiple choice, short-answer qucstions, sentence completion, notes/summary/flow-chart/table compietion, labelling a diagram. classification, matching, choosing suitable paragraph headings from a list, identification of writer's views/claims yes, no, not given – identification of information in the text – true, false, not given.\n\n## Academic Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task 2, which requires them to write at least 250) words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nTask 1 requires candidates to look at a diagram or some data (graph, table or chart) and to present the information in their own words. They are assessed on their ability to organise, present and possibly compare data, describe the stages of a process, describe an object or event, or explain how something works.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to present a solution to the problem, present and justify an opinion, compare and contrast evidence and opinions, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also assessed on their ability to write in an appropriate style.\n\n## General Training Writing\n\nThis module consists of two tasks. It is suggested that candidates spend about 20 minutes on Task 1, which requires them to write at least 150 words, and 40 minutes on Task2, which requires them to write at least 250 words. The assessment of Task 2 carries more weight in marking than Task 1.\n\nIn Task 1 candidates are asked to respond to a given problem with a letter requesting information or explaining a situation. They are assessed on their ability to engage in personal correspondence, elicit and provide general factual information, express needs, wants, likes and dislikes, express opinions, complaints, etc.\n\nIn Task 2 candidates are presented with a point of view, argument or problem. They are assessed on their ability to provide general factual information, outline a problem and present a solution, present and justify an opinion, and evaluate and challenge ideas, evidence or arguments.\n\nCandidates are also judged on their ability to write in an appropriate style"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t1l-g31",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "According to George ernard Shaw, men are supposed to understand., economics and finance.",
+              "acceptedAnswers": [
+                "politics"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g32",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "However, women are more prepared to. .. about them.",
+              "acceptedAnswers": [
+                "learn"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g33",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Women tend to save for ___ and a house.",
+              "acceptedAnswers": [
+                "children's education",
+                "their children's education"
+              ],
+              "gapText": "Women tend to save for ___ and a house.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g34",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Men tend to save for ___ and for retirement.",
+              "acceptedAnswers": [
+                "a car"
+              ],
+              "gapText": "Men tend to save for ___ and for retirement.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g35",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Women who are left alone may have to pay for ___ when they are old.",
+              "acceptedAnswers": [
+                "nursing care"
+              ],
+              "gapText": "Women who are left alone may have to pay for ___ when they are old.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1l-g36",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Women only think about their financial future when a ___ occurs.",
+              "acceptedAnswers": [
+                "crisis"
+              ],
+              "gapText": "Women only think about their financial future when a ___ occurs.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Complete the summmary below."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g37",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "It is best for women to start thinking about pensions when they are in their ___.",
+              "acceptedAnswers": [
+                "early twenties"
+              ],
+              "gapText": "It is best for women to start thinking about pensions when they are in their ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Complete the summmary below."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g38",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "A good way for women to develop their ___ in dealing with financial affairs would be to attend classes.",
+              "acceptedAnswers": [
+                "confidence"
+              ],
+              "gapText": "A good way for women to develop their ___ in dealing with financial affairs would be to attend classes.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Complete the summmary below."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g39",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "When investing in stocks and shares, it is suggested that women should put a high proportion of their savings in",
+              "acceptedAnswers": [
+                "money management"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Complete the summmary below."
+            ]
+          }
+        },
+        {
+          "id": "c5t1l-g40",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "In such ways, women can have a comfortable, independent retirement.",
+              "acceptedAnswers": [
+                "low-risk investments"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Complete the summmary below."
+            ]
+          }
+        }
+      ],
+      "audioStartMs": 1167463,
+      "audioDurationMs": 396149
+    }
+  ]
+}

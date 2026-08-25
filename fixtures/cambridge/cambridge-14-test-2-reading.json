@@ -1,0 +1,2030 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-14-test-2-reading",
+  "title": "Cambridge IELTS 14 Academic Test 2 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0020-a4deff7b",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 14",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题14.pdf",
+        "sha256": "f0f0d86e7cf93b37154696851b2e61be4f1194b05bd1651c1711e221720018ba"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C14\\剑桥雅思真题14\\auto\\剑桥雅思真题14.md",
+        "sha256": "922bb365c0a65fe38e3625473ed796ac216275ad75839f452a8d20a7435ef431",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=20, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-14-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Alexander Henderson (1831-1913)\n\nBorn in Scotland, Henderson emigrated to Canada in 1855 and became a well-known landscape photographer\n\nAlexander Henderson was born in Scotland in 1831 and was the son of a successful merchant His grandfather, also called Alexander, had founded the family business, and later became the first chairman of the National Bank of Scotland. The family had extensive landholdings in Scotland. Besides its residence in Edinburgh, it owned Press Estate, 650 acres of farmland about 35 miles southeast of the city. The family often stayed at Press Castle, the large mansion on the northern edge of the property, and Alexander spent much of his childhood in the area, playing on the beach near Eyemouth or fishing in the streams nearby.\n\nEven after he went to school at Murcheston Academy on the outskirts of Edinburgh, Henderson returned to Press at weekends. In 1849 he began a three-year apprenticeship to become an accountant. Although he never liked the prospect of a business career, he stayed with it to please his family. In October 1855, however, he emigrated to Canada with his wife Agnes Elder Robertson and they settled in Montreal.\n\nHenderson learned photography in Montreal around the year 1857 and quickly took it up as a serious amateur. He became a personal friend and colleague of the Scottish-Canadian photographer William Notman. The two men made a photographic excursion to Niagara Falls in 1860 and they cooperated on experiments with magnesium flares as a source of artificial light in 1865. They belonged to the same societies and were among the founding members of the Art Association of Montreal. Henderson acted as chairman of the association's first meeting, which was held in Notman's studio on 11 January 1860.\n\nIn spite of their friendship, their styles of photography were quite different. While Notman's landscapes were noted for their bold realism, Henderson for the first 20 years of his career produced romantic images, showing the strong influence of the British landscape tradition. His artistic and technical progress was rapid and in 1865 he published his first major collection of landscape photographs. The publication had limited circulation (only seven copies have ever been found), and was called Canadian Views and Studies. The contents of each copy vary significantly and have proved a useful source for evaluating Henderson's early work.\n\nIn 1866, he gave up his business to open a photographic studio, advertising himself as a portrait and landscape photographer. From about 1870 he dropped portraiture to specialize in landscape photography and other views. His numerous photographs of city life revealed in street scenes, houses, and markets are alive with human activity, and although his favourite subject was landscape he usually composed his scenes around such human pursuits as farming the land cutting ice on a river, or sailing down a woodland stream. There was sufficient demand for these types of scenes and others he took depicting the lumber trade, steamboats and waterfalls to enable him to make a living. There was little competing hobby or amateur photography before the late 1880s because of the time-consuming techniques involved and the weight of the equipment. People wanted to buy photographs as souvenirs of a trip or as gifts, and catering to this market, Henderson had stock photographs on display at his studio for mounting, framing, or inclusion in albums.\n\nHenderson frequently exhibited his photographs in Montreal and abroad, in London, Edinburgh, Dublin, Paris, New York, and Philadelphia. He met with greater success in 1877 and 1878 in New York when he won first prizes in the exhibition held by E and H T Anthony and Company for landscapes using the Lambertype process. In 1878 his work won second prize at the world exhibition in Paris.\n\nIn the 1870s and 1880s Henderson travelled widely throughout Quebec and Ontario, in Canada, documenting the major cities of the two provinces and many of the villages in Quebec. He was especially fond of the wilderness and often travelled by canoe on the Blanche, du Lièvre, and other noted eastern rivers. He went on several occasions to the Maritimes and in 1872 he sailed by yacht along the lower north shore of the St Lawrence River. That same year, while in the lower St Lawrence River region, he took some photographs of the construction of the Intercolonial Railway. This undertaking led in 1875 to a commission from the railway to record the principal structures along the almost-completed line connecting Montreal to Halifax. Commissions from other railways followed. In 1876 he photographed bridges on the Quebec, Montreal, Ottawa and Occidental Railway between Montreal and Ottawa. In 1885 he went west along the Canadian Pacific Railway (CPR) as far as Rogers Pass in British Columbia, where he took photographs of the mountains and the progress of construction.\n\nIn 1892 Henderson accepted a full-time position with the CPR as manager of a photographic department which he was to set up and administer. His duties included spending four months in the field each year. That summer he made his second trip west, photographing extensively along the railway line as far as Victoria. He continued in this post until 1897, when he retired completely from photography.\n\nWhen Henderson died in 1913, his huge collection of glass negatives was stored in the basement of his house. Today collections of his work are held at the National Archives of Canada, Ottawa, and the McCord Museum of Canadian History, Montreal.\n\n## Test 2"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t2r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Henderson rarely visited the area around Press estate when he was younger",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Henderson pursued a business career because it was what his family wanted",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Henderson and Notman were surprised by the results of their 1865 experiment",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "There were many similarities between Henderson's early landscapes and those of Notman",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "The studio that Henderson opened in 1866 was close to his home",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "Henderson gave up portraiture so that he could focus on taking photographs of scenery",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "When Henderson began work for the Intercolonial Railway, the Montreal to Halifax line had been finished",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Henderson's last work as a photographer was with the Canadian Pacific Railway",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g9",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Alexander Henderson was born in Scotland in 1831 – father was a ___",
+              "acceptedAnswers": [
+                "merchant"
+              ],
+              "gapText": "Alexander Henderson was born in Scotland in 1831 – father was a 9 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c14t2r-g10",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "People bought Henderson’s photos because photography took up considerable time and the ___ was heavy",
+              "acceptedAnswers": [
+                "equipment"
+              ],
+              "gapText": "People bought Henderson’s photos because photography took up considerable time and the 10 ___ was heavy",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c14t2r-g11",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "The photographs Henderson sold were ___ or souvenirs",
+              "acceptedAnswers": [
+                "gifts"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              },
+              "gapText": "The photographs Henderson sold were 11 ___ or souvenirs"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c14t2r-g12",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Henderson took many trips along eastern rivers in a ___",
+              "acceptedAnswers": [
+                "canoe"
+              ],
+              "gapText": "Henderson took many trips along eastern rivers in a 12 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c14t2r-g13",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "He worked for CPR in 1885 and photographed the ___ and the railway at Rogers Pass",
+              "acceptedAnswers": [
+                "mountains"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              },
+              "gapText": "He worked for CPR in 1885 and photographed the 13 ___ and the railway at Rogers Pass"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Back to the future of skyscraper design\n\nAnswers to the problem of excessive electricity use by skyscrapers and large public buildings can be found in ingenious but forgotten architectural designs of the 19th and early-20th centuries\n\nA The Recovery of Natural Environments in Architecture by Professor Alan Short is the culmination of 30 years of research and award-winning green building design by Short and colleagues in Architecture, Engineering, Applied Maths and Earth Sciences at the University of Cambridge.\n\n'The crisis in building design is already here,' said Short. 'Policy makers think you can solve energy and building problems with gadgets. You can't. As global temperatures continue to rise, we are going to continue to squander more and more energy on keeping our buildings mechanically cool until we have run out of capacity.'\n\nB Short is calling for a sweeping reinvention of how skyscrapers and major public buildings are designed — to end the reliance on sealed buildings which exist solely via the 'life support' system of vast air conditioning units.\n\nInstead, he shows it is entirely possible to accommodate natural ventilation and cooling in large buildings by looking into the past, before the widespread introduction of air conditioning systems, which were relentlessly and aggressively marketed' by their inventors.\n\nShort points out that to make most contemporary buildings habitable, they have to be sealed and air conditioned. The energy use and carbon emissions this generates is spectacular and largely unnecessary. Buildings in the West account for 40-50% of electricity usage, generating substantial carbon emissions, and the rest of the world is catching up at a frightening rate. Short regards glass, steel and air-conditioned skyscrapers as symbols of status, rather than practical ways of meeting our requirements\n\nD Short's book highlights a developing and sophisticated art and science of ventilating buildings through the 19th and earlier-20th centuries, including the design of ingeniously ventilated hospitals. Of particular interest were those built to the designs of John Shaw Billings, including the first Johns Hopkins Hospital in the US city of Baltimore (1873–1889).\n\n'We spent three years digitally modelling Billings' final designs,' says Short. 'We put pathogens\\* in the airstreams, modelled for someone with tuberculosis (TB) coughing in the wards and we found the ventilation systems in the room would have kept other patients safe from harm.\n\nE 'We discovered that 19th-century hospital wards could generate up to 24 air changes an hour - that's similar to the performance of a modern-day, computer-controlled operating theatre. We believe you could build wards based on these principles now.\n\nSingle rooms are not appropriate for all patients. Communal wards appropriate for certain patients - older people with dementia, for example - would work just as well in today's hospitals, at a fraction of the energy cost.\n\nProfessor Short contends the mindset and skill-sets behind these designs have been completely lost, lamenting the disappearance of expertly designed theatres, opera houses, and other buildings where up to half the volume of the building was given over to ensuring everyone got fresh air\n\nF Much of the ingenuity present in 19th-century hospital and building design was driven by a panicked public clamouring for buildings that could protect against what was thought to be the lethal threat of miasmas - toxic air that spread disease. Miasmas were feared as the principal agents of disease and epidemics for centuries, and were used to explain the spread of infection from the Middle Ages right through to the cholera outbreaks in London and Paris during the 1850s. Foul air, rather than germs, was believed to be the main driver of 'hospital fever', leading to disease and freguent death. The prosperous steered clear of hospitals\n\nWhile miasma theory has been long since disproved, Short has for the last 30 years advocated a return to some of the building design principles produced in its wake.\n\nG Today, huge amounts of a building's space and construction cost are given over to air conditioning. But I have designed and built a series of buildings over the past three decades which have tried to reinvent some of these ideas and then measure what happens.\n\n'To go forward into our new low-energy, low-carbon future, we would be well advised to look back at design before our high-energy, high-carbon present appeared. What is surprising is what a rich legacy we have abandoned.\n\nH Successful examples of Short's approach include the Queen's Building at De Montfort University in Leicester. Containing as many as 2,000 staff and students the entire building is naturally ventilated, passively cooled and naturally lit, including the two largest auditoria, each seating more than 150 people. The award-winning building uses a fraction of the electricity of comparable buildings in the UK.\n\nShort contends that glass skyscrapers in London and around the world will become a liability over the next 20 or 30 years if climate modelling predictions and energy price rises come to pass as expected.\n\nHe is convinced that sufficiently cooled skyscrapers using the natural environment can be produced in almost any climate. He and his team have worked on hybrid buildings in the harsh climates of Beijing and Chicago – built with natural ventilation assisted by back-up air conditioning – which, surprisingly perhaps, can be switched off more than half the time on milder days and during the spring and autumn.\n\nShort looks at how we might reimagine the cities, offices and homes of the future. Maybe it's time we changed our outlook\n\nQuestions 14-18\n\nReading Passage 2 has nine sections, A-I.\n\nWhich section contains the following information?\n\nWrite the correct letter, A-I, in boxes 14–18 on your answer sheet.\n\n14 why some people avoided hospitals in the 19th century\n\n15 a suggestion that the popularity of tall buildings is linked to prestige\n\n16 a comparison between the circulation of air in a 19th-century building and modern standards\n\n17 how Short tested the circulation of air in a 19th-century building\n\n18 an implication that advertising led to the large increase in the use of air conditioning\n\nQuestions 19-26 \nComplete the summary below. \nChoose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 19–26 on your answer sheet.\n\n## Ventilation in 19th-century hospital wards\n\nProfessor Alan Short examined the work of John Shaw Billings, who influenced the architectural 19 of hospitals to ensure they had good ventilation. He calculated that 20 . in the air coming from patients suffering from 21 would not have harmed other patients. He also found that the air in 22 in hospitals could change as often as in a modern operating theatre. He suggests that energy use could be reduced by locating more patients in 23 areas.\n\nA major reason for improving ventilation in 19th-century hospitals was the demand from the 24. for protection against bad air, known as 25 ... These were blamed for the spread of disease for hundreds of years, including epidemics of 26. in London and Paris in the middle of the 19th century.\n\nList of Headings\n\nComplaints about the impact of a certain approach\n\niiFundamental beliefs that are in fact incorrect\n\niii Early recommendations concerning business activities\n\niv Organisations that put a new approach into practice\n\nV Companies that have suffered from changing their approach\n\nvi What people are increasingly expected to do\n\nvii How to achieve outcomes that are currently impossible\n\nviii Neither approach guarantees continuous improvement\n\nix Evidence that a certain approach can have more\n\ndisadvantages than advantages"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t2r-g14",
+          "instruction": "Which section contains the following information? Write the correct letter, A-I.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "why some people avoided hospitals in the 19th century",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Section I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:05.815487+00:00"
+          }
+        },
+        {
+          "id": "c14t2r-g15",
+          "instruction": "Which section contains the following information? Write the correct letter, A-I.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "a suggestion that the popularity of tall buildings is linked to prestige",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Section I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:05.815487+00:00"
+          }
+        },
+        {
+          "id": "c14t2r-g16",
+          "instruction": "Which section contains the following information? Write the correct letter, A-I.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "a comparison between the circulation of air in a 19th-century building and modern standards",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Section I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:05.815487+00:00"
+          }
+        },
+        {
+          "id": "c14t2r-g17",
+          "instruction": "Which section contains the following information? Write the correct letter, A-I.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "how Short tested the circulation of air in a 19th-century building",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Section I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:05.815487+00:00"
+          }
+        },
+        {
+          "id": "c14t2r-g18",
+          "instruction": "Reading Passage has nine sections. Which section contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "an implication that advertising led to the large increase in the use of air conditioning",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Section I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g19",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q19",
+              "number": 19,
+              "type": "true_false_ng",
+              "prompt": "Complete the summary below.",
+              "acceptedAnswers": [
+                "design(s)"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g20",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "He calculated that ______ in the air coming from patients suffering from",
+              "acceptedAnswers": [
+                "pathogens"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              },
+              "gapText": "He calculated that 20 ______ in the air coming from patients suffering from 21 ______ would not have harmed other patients."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g21",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Patients suffering from ______ would not have harmed other patients.",
+              "acceptedAnswers": [
+                "tuberculosis"
+              ],
+              "gapText": "He calculated that 20 ______ in the air coming from patients suffering from 21 ______ would not have harmed other patients.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g22",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "The air in ______ in hospitals could change as often as in a modern operating theatre.",
+              "acceptedAnswers": [
+                "wards"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              },
+              "gapText": "He also found that the air in 22 ______ in hospitals could change as often as in a modern operating theatre."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g23",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Energy use could be reduced by locating more patients in ______ areas.",
+              "acceptedAnswers": [
+                "communal"
+              ],
+              "gapText": "He suggests that energy use could be reduced by locating more patients in 23 ______ areas.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g24",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "A major reason for improving ventilation was the demand from the ______ for protection against bad air, known as",
+              "acceptedAnswers": [
+                "public"
+              ],
+              "gapText": "A major reason for improving ventilation in 19th-century hospitals was the demand from the 24 ______ for protection against bad air, known as 25 ______.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g25",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "These were blamed for the spread of disease for hundreds of years, including epidemics of",
+              "acceptedAnswers": [
+                "miasmas"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t2r-g26",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Epidemics of ______ in London and Paris in the middle of the 19th century.",
+              "acceptedAnswers": [
+                "cholera"
+              ],
+              "gapText": "These were blamed for the spread of disease for hundreds of years, including epidemics of 26 ______ in London and Paris in the middle of the 19th century.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              26
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 on pages 47 and 48.\n\nQuestions 27–34\n\nReading Passage 3 has eight sections, A-H.\n\nChoose the correct heading for each section from the list of headings below.\n\nWrite the correct number, i-ix, in boxes 27–34 on your answer sheet\n\n31 Section E\n\n32 Section F\n\n33 Section G\n\n34 Section H\n\n## Why companies should welcome disorder\n\nA Organisation is big business. Whether it is of our lives – all those inboxes and calendars — or how companies are structured, a multi-billion dollar industry helps to meet this need.\n\nWe have more strategies for time management, project management and self-organisation than at any other time in human history. We are told that we ought to organise our company, our home life, our week, our day and even our sleep, all as a means to becoming more productive. Every week, countless seminars and workshops take place around the world to tell a paying public that they ought to structure their lives in order to achieve this.\n\nThis rhetoric has also crept into the thinking of business leaders and entrepreneurs, much to the delight of self-proclaimed perfectionists with the need to get everything right. The number of business schools and graduates has massively increased over the past 50 years, essentially teaching people how to organise well.\n\nB Ironically, however, the number of businesses that fail has also steadily increased. Work-related stress has increased. A large proportion of workers from all demographics claim to be dissatisfied with the way their work is structured and the way they are managed.\n\nThis begs the question: what has gone wrong? Why is it that on paper the drive for organisation seems a sure shot for increasing productivity, but in reality falls well short of what is expected?\n\nC This has been a problem for a while now. Frederick Taylor was one of the forefathers of scientific management. Writing in the first half of the 20th century, he designed a number of principles to improve the efficiency of the work process, which have since become widespread in modern companies. So the approach has been around for a while.\n\nD New research suggests that this obsession with efficiency is misguided. The problem is not necessarily the management theories or strategies we use to organise our work; it's the basic assumptions we hold in approaching how we work. Here it's the assumption that order is a necessary condition for productivity. This assumption has also fostered the idea that disorder must be detrimental to organisational productivity. The result is that businesses and people spend time and money organising themselves for the sake of organising, rather than actually looking at the end goal and usefulness of such an effort.\n\nE What's more, recent studies show that order actually has diminishing returns. Order does increase productivity to a certain extent, but eventually the usefulness of the process of organisation, and the benefit it yields, reduce until the point where any further increase in order reduces productivity. Some argue that in a business, if the cost of formally structuring something outweighs the benefit of doing it, then that thing ought not to be formally structured. Instead, the resources involved can be better used elsewhere.\n\nF In fact, research shows that, when innovating, the best approach is to create an environment devoid of structure and hierarchy and enable everyone involved to engage as one organic group. These environments can lead to new solutions that, under conventionally structured environments (filled with bottlenecks in terms of information flow, power structures, rules, and routines) would never be reached.\n\nG In recent times companies have slowly started to embrace this disorganisation. Many of them embrace it in terms of perception (embracing the idea of disorder, as opposed to fearing it) and in terms of process (putting mechanisms in place to reduce structure).\n\nFor example, Oticon, a large Danish manufacturer of hearing aids, used what it called a ‘spaghetti' structure in order to reduce the organisation's rigid hierarchies. This involved scrapping formal job titles and giving staff huge amounts of ownership over their own time and projects. This approach proved to be highly successful initially, with clear improvements in worker productivity in all facets of the business.\n\nIn similar fashion, the former chairman of General Electric embraced disorganisation, putting forward the idea of the ‘boundaryless' organisation. Again, it involves breaking down the barriers between different parts of a company and encouraging virtual collaboration and flexible working. Google and a number of other tech companies have embraced (at least in part) these kinds of flexible structures, facilitated by technology and strong company values which glue people together.\n\nH A word of warning to others thinking of jumping on this bandwagon: the evidence so far suggests disorder, much like order, also seems to have diminishing utility, and can also have detrimental effects on performance if overused. Like order, disorder should be embraced only so far as it is useful. But we should not fear it – nor venerate one over the other. This research also shows that we should continually question whether or not our existing assumptions work\n\nQuestions 35-37\n\nComplete the sentences below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 35–37 on your answer sheet.\n\n35 Numerous training sessions are aimed at people who feel they are not ..enough..\n\n36 Being organised appeals to people who regard themselves as\n\n37 Many people feel .with aspects of their work\n\nQuestions 38-40\n\nDo the following statements agree with the information given in Reading Passage 3?\n\nIn boxes 38–40 on your answer sheet, write\n\nTRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVEN if there is no information on this\n\n38 Both businesses and people aim at order without really considering its value.\n\n39 Innovation is most successful if the people involved have distinct roles.\n\n40 Google was inspired to adopt flexibility by the success of General Electric."
+      },
+      "questionGroups": [
+        {
+          "id": "c14t2r-g27",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Choose the correct heading for each section from the list of headings below.",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g28",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Section B",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Complaints about the impact of a certain approach"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Fundamental beliefs that are in fact incorrect"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Early recommendations concerning business activities"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Organisations that put a new approach into practice"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Companies that have suffered from changing their approach"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "What people are increasingly expected to do"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "How to achieve outcomes that are currently impossible"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Neither approach guarantees continuous improvement"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Evidence that a certain approach can have more disadvantages than advantages"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g29",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Section C",
+              "acceptedAnswers": [
+                "iii"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Complaints about the impact of a certain approach"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Fundamental beliefs that are in fact incorrect"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Early recommendations concerning business activities"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Organisations that put a new approach into practice"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Companies that have suffered from changing their approach"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "What people are increasingly expected to do"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "How to achieve outcomes that are currently impossible"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Neither approach guarantees continuous improvement"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Evidence that a certain approach can have more disadvantages than advantages"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g30",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Section D",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Complaints about the impact of a certain approach"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Fundamental beliefs that are in fact incorrect"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Early recommendations concerning business activities"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Organisations that put a new approach into practice"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Companies that have suffered from changing their approach"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "What people are increasingly expected to do"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "How to achieve outcomes that are currently impossible"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Neither approach guarantees continuous improvement"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Evidence that a certain approach can have more disadvantages than advantages"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g31",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q31",
+              "number": 31,
+              "type": "true_false_ng",
+              "prompt": "Section E",
+              "acceptedAnswers": [
+                "ix"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g32",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q32",
+              "number": 32,
+              "type": "true_false_ng",
+              "prompt": "Section F",
+              "acceptedAnswers": [
+                "vii"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g33",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q33",
+              "number": 33,
+              "type": "true_false_ng",
+              "prompt": "Section G",
+              "acceptedAnswers": [
+                "iv"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g34",
+          "instruction": "Reading Passage has eight sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Section H",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:15.243959+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Complaints about the impact of a certain approach"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Fundamental beliefs that are in fact incorrect"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Early recommendations concerning business activities"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Organisations that put a new approach into practice"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Companies that have suffered from changing their approach"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "What people are increasingly expected to do"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "How to achieve outcomes that are currently impossible"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Neither approach guarantees continuous improvement"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Evidence that a certain approach can have more disadvantages than advantages"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g35",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Numerous training sessions are aimed at people who feel they are not ..enough",
+              "acceptedAnswers": [
+                "productive"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 35–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c14t2r-g36",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Being organised appeals to people who regard themselves as",
+              "acceptedAnswers": [
+                "perfectionists"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 35–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c14t2r-g37",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Many people feel .with aspects of their work",
+              "acceptedAnswers": [
+                "dissatisfied"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 35–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c14t2r-g38",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q38",
+              "number": 38,
+              "type": "true_false_ng",
+              "prompt": "Both businesses and people aim at order without really considering its value",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g39",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q39",
+              "number": 39,
+              "type": "true_false_ng",
+              "prompt": "Innovation is most successful if the people involved have distinct roles",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c14t2r-g40",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t2r-q40",
+              "number": 40,
+              "type": "true_false_ng",
+              "prompt": "Google was inspired to adopt flexibility by the success of General Electric",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "options": []
+            }
+          ],
+          "sharedOptions": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1935 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-8-test-1-listening",
+  "title": "Cambridge IELTS 8 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0014-9c16436a",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 8",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题8.pdf",
+        "sha256": "2f3cdf0c049ecac93bafafd034c2316ac7ed66b0694bea8a2a7c152042923e23"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C08\\剑桥雅思真题8\\auto\\剑桥雅思真题8.md",
+        "sha256": "9bc5a6c2dc6b80f2e6667849856a7af88f0f5e7102900ecf2906d8c2b913a8ca",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-8-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nQuestions 1 and 2\n\nChoose the correct letter, A, B or C.\n\nExample\n\nIn the library George found\n\nA a book.\n\nB a brochure.\n\nC a newspaper.\n\n1 In the lobby of the library George saw\n\nA a group playing music.\n\nB a display of instruments.\n\nC a video about the festival.\n\n## 2George wants to sit at the back so they can\n\nA see well. \nB hear clearly. \nC pay less.\n\nComplete the form below.\n\nWrite NO MORE THAN TWO WORDS ANDIOR A NUMBER for each anSwer.\n\nSUMMER MUSIC FESTIVALBOOKING FORM\n\nNAME: George O'NeillADDRESS: WestseaPOSTCODE: 4TELEPHONE: 5.\n\nDate\n\nEvent\n\nPrice per ticket\n\nNo. of tickets\n\n5 June\n\nInstrumental group-Guitarrini\n\n£7.50\n\n2\n\n17 June\n\nSinger (priceincludes6 ...... inthe garden)\n\n£6\n\n2\n\n22 June\n\n(Anna Ventura)\n\n£7.00\n\n1\n\n23 June\n\nSpanish Dance &Guitar Concert\n\n8£.\n\n9.\n\nNB Children / Students / Senior Citizens have 10 ... .. discount on alltickets."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t1l-g1",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q1",
+              "number": 1,
+              "type": "matching",
+              "prompt": "In the lobby of the library George saw",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.223109+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a group playing music."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a display of instruments."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a video about the festival."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              2
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q2",
+              "number": 2,
+              "type": "single_choice",
+              "prompt": "George wants to sit at the back so they can",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T02:15:56+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "see well."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "hear clearly."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "pay less."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              2
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g3",
+          "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "ADDRESS: ___, Westsea",
+              "acceptedAnswers": [
+                "48 North Avenue"
+              ],
+              "gapText": "ADDRESS: ___, Westsea",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:06:36+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T08:27:29.546370+00:00"
+          }
+        },
+        {
+          "id": "c8t1l-g4",
+          "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "POSTCODE: ___",
+              "acceptedAnswers": [
+                "WS6 2YH"
+              ],
+              "gapText": "POSTCODE: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:06:36+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T08:27:29.546370+00:00"
+          }
+        },
+        {
+          "id": "c8t1l-g5",
+          "instruction": "Write NO MORE THAN TWO WORDS ANDIOR A NUMBER for each anSwer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "June Instrumental group-Guitarrini £7.50",
+              "acceptedAnswers": [
+                "01674 553242"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t1l-g6",
+          "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "Singer (priceincludes",
+              "acceptedAnswers": [
+                "(free) drink(s)",
+                "refreshment(s)"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T08:27:29.546370+00:00"
+          }
+        },
+        {
+          "id": "c8t1l-g7",
+          "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "00 | 1 23 June | Spanish Dance &Guitar Concert |",
+              "acceptedAnswers": [
+                "(the",
+                "a) pianist",
+                "piano player"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T08:27:29.546370+00:00"
+          }
+        },
+        {
+          "id": "c8t1l-g8",
+          "instruction": "Write NO MORE THAN TWO WORDS ANDIOR A NUMBER for each anSwer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Write NO MORE THAN TWO WORDS ANDIOR A NUMBER for each anSwer.",
+              "acceptedAnswers": [
+                "10.50"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t1l-g9",
+          "instruction": "Write NO MORE THAN TWO WORDS ANDIOR A NUMBER for each anSwer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "NB Children / Students / Senior Citizens have 10 ... .. discount on alltickets",
+              "acceptedAnswers": [
+                "4"
+              ],
+              "options": []
+            }
+          ],
+          "sharedOptions": []
+        },
+        {
+          "id": "c8t1l-g10",
+          "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q10",
+              "number": 10,
+              "type": "single_choice",
+              "prompt": "NB Children / Students / Senior Citizens have",
+              "acceptedAnswers": [
+                "50%"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a book"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a brochure"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a newspaper"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a book"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a brochure"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a newspaper"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T08:27:29.546370+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 425412
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\nQuestions 11-15\n\nComplete the sentences below.\n\nWrite NO MORE THAN TWO WORDS ANDIOR A NUMBER for each anSWer.\n\n## The Dinosaur Museum\n\n11 The museum closes at ..p.m. on Mondays.\n\n12 The museum is not open on ...\n\n13 School groups are met by tour guides in te. .\n\n14 The whole visit akes 90 minutes, includin..minutes for the guided tour.\n\n15 There are.behind the museum where students can have lunch.\n\nQuestions 16-18\n\nChoose THREE letters, A-G.\n\nWhich THREE things can students have with them in the museum?\n\nA food \nB water \nC cameras \nD books \nE bags \nF pens \nG worksheets\n\nQuestions 19 and 20\n\nChoose TWO letters, A-E.\n\nWhich TWO activities can students do after the tour at present?\n\nA build model dinosaurs\n\nB watch films\n\nC draw dinosaurs\n\nD find dinosaur eggs\n\nE play computer games"
+      },
+      "questionGroups": [
+        {
+          "id": "c8t1l-g11",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "The museum closes at ..p.m. on Mondays",
+              "acceptedAnswers": [
+                "1.30"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "water"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cameras"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "books"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "bags"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "pens"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "worksheets"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "food"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "water"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cameras"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "books"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "bags"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "pens"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "worksheets"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g12",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "The museum is not open on",
+              "acceptedAnswers": [
+                "25 December",
+                "Christmas Day"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "water"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cameras"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "books"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "bags"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "pens"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "worksheets"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "food"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "water"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cameras"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "books"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "bags"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "pens"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "worksheets"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g13",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "School groups are met by tour guides in te",
+              "acceptedAnswers": [
+                "car-park",
+                "parking lot"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "water"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cameras"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "books"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "bags"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "pens"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "worksheets"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "food"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "water"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cameras"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "books"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "bags"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "pens"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "worksheets"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g14",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "The whole visit akes 90 minutes, includin..minutes for the guided tour",
+              "acceptedAnswers": [
+                "45"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "water"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cameras"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "books"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "bags"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "pens"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "worksheets"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "food"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "water"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cameras"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "books"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "bags"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "pens"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "worksheets"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g15",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "There are.behind the museum where students can have lunch",
+              "acceptedAnswers": [
+                "(some) tables"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g16",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Choose THREE letters, A-G.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "water"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cameras"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "books"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "bags"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "pens"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "worksheets"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.303937+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g17",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q17",
+              "number": 17,
+              "type": "multi_choice",
+              "prompt": "Which THREE things can students have with them in the museum? (Question 17)",
+              "acceptedAnswers": [
+                "C",
+                "F",
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "water"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cameras"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "books"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "bags"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "pens"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "worksheets"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g18",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q18",
+              "number": 18,
+              "type": "multi_choice",
+              "prompt": "Which THREE things can students have with them in the museum? (Question 18)",
+              "acceptedAnswers": [
+                "C",
+                "F",
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "water"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cameras"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "books"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "bags"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "pens"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "worksheets"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g19",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Choose TWO letters, A-E.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "build model dinosaurs"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "watch films"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "draw dinosaurs"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "find dinosaur eggs"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "play computer games"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.303937+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g20",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q20",
+              "number": 20,
+              "type": "multi_choice",
+              "prompt": "Which TWO activities can students do after the tour at present?",
+              "acceptedAnswers": [
+                "B",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "build model dinosaurs"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "watch films"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "draw dinosaurs"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "find dinosaur eggs"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "play computer games"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 425412,
+      "audioDurationMs": 361961
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions 21-24\n\nChoose the correct letter, A, B or C.\n\n## Field Trip Proposal\n\n21 The tutor thinks that Sandra's proposal A should be re-ordered in some parts. B needs a contents page. C ought to include more information.\n\n22The proposal would be easier to follow if Sandra A inserted subheadings. B used more paragraphs. C shortened her sentences.\n\n23 What was the problem with the formatting on Sandra's proposal? A Separate points were not clearly identified. B The headings were not always clear. C Page numbering was not used in an appropriate way.\n\n24 Sandra became interested in visiting the Navajo National Park through A articles she read. BC movies she saw as a child. photographs she found on the internet.\n\nQuestions 25–27\n\nChoose THREE letters, A-G.\n\nWhich THREE topics does Sandra agree to include in the proposal?\n\nA climate change\n\nB field trip activities\n\nC geographical features\n\nD impact of tourism\n\nE myths and legends\n\nF plant and animal life\n\nG social history\n\nQuestions 28–30\n\nComplete the sentences below.\n\nWrite ONE WORD ANDIOR A NUMBER for each answer.\n\n28 The tribal park covers hectares.\n\n29Sandra sugests hat they share the..fr transport.\n\n30 She says they could also explore the local...."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t1l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "The tutor thinks that Sandra's proposal A should be re-ordered in some parts. B needs a contents page. C ought to include more information",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "should be re-ordered in some parts."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "needs a contents page."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ought to include more information."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.378917+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t1l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "The proposal would be easier to follow if Sandra A inserted subheadings. B used more paragraphs. C shortened her sentences",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "inserted subheadings."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "used more paragraphs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "shortened her sentences."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.378917+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t1l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "What was the problem with the formatting on Sandra's proposal? A Separate points were not clearly identified. B The headings were not always clear. C Page numbering was not used in an appropriate way",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Separate points were not clearly identified."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The headings were not always clear."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Page numbering was not used in an appropriate way."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.378917+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t1l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q24",
+              "number": 24,
+              "type": "matching",
+              "prompt": "Sandra became interested in visiting the Navajo National Park through A articles she read. BC movies she saw as a child. photographs she found on the internet.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.378917+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "articles she read."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "movies she saw as a child."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "photographs she found on the internet."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t1l-g25",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "Which THREE topics does Sandra agree to include in the proposal? (Question 25)",
+              "acceptedAnswers": [
+                "B",
+                "C",
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climate change"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "field trip activities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "geographical features"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "impact of tourism"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "myths and legends"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "plant and animal life"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "social history"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g26",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q26",
+              "number": 26,
+              "type": "multi_choice",
+              "prompt": "Which THREE topics does Sandra agree to include in the proposal? (Question 26)",
+              "acceptedAnswers": [
+                "B",
+                "C",
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climate change"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "field trip activities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "geographical features"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "impact of tourism"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "myths and legends"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "plant and animal life"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "social history"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g27",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q27",
+              "number": 27,
+              "type": "multi_choice",
+              "prompt": "Which THREE topics does Sandra agree to include in the proposal? (Question 27)",
+              "acceptedAnswers": [
+                "B",
+                "C",
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climate change"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "field trip activities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "geographical features"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "impact of tourism"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "myths and legends"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "plant and animal life"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "social history"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g28",
+          "instruction": "Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q28",
+              "number": 28,
+              "type": "true_false_ng",
+              "prompt": "The tribal park covers hectares",
+              "acceptedAnswers": [
+                "12,000"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g29",
+          "instruction": "Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q29",
+              "number": 29,
+              "type": "true_false_ng",
+              "prompt": "Sandra sugests hat they share the..fr transport",
+              "acceptedAnswers": [
+                "horses"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g30",
+          "instruction": "Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q30",
+              "number": 30,
+              "type": "true_false_ng",
+              "prompt": "She says they could also explore the local",
+              "acceptedAnswers": [
+                "caves"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 787373,
+      "audioDurationMs": 497406
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31–40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## Geography\n\nStudying geography helps us to understand:\n\n• the effects of dierent processes on the 31.of the Earth\n\n• the dynamic between 32 . and population\n\n## Two main branches of study:\n\n• physical features\n\n• human lifestyles and their 3..\n\nSpecific study areas: biophysical, topographic, political, social, economic, historical and 34.geography, and also cartography\n\nKey point: geography helps us to understand our surroundings and the associated 35...\n\n## What do geographers do?\n\nfind data - e.g. conduct censuses, collect information in the form of 36 . using computer and satelite technology\n\n• analyse data - identify 37 e.g. cause and effect\n\n## • publish findings in form of:\n\n\\- can show physical features of large and small areas\n\n\\- BUT a two-dimensional map will always have some 8....\n\n– can show vegetatíon probíems, 39..density, ocean for etc.\n\nc) Landsat pictures sent to receiving stations\n\n— used for monitoring 40...conditions etc."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t1l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "surface"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "The dynamic between ___ and population",
+              "acceptedAnswers": [
+                "environment"
+              ],
+              "options": [],
+              "gapText": "The dynamic between ___ and population",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Human lifestyles and their ___",
+              "acceptedAnswers": [
+                "impacts",
+                "effects"
+              ],
+              "options": [],
+              "gapText": "Human lifestyles and their ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Specific study areas: biophysical, topographic, political, social, economic, historical and ___ geography, and also cartography",
+              "acceptedAnswers": [
+                "urban"
+              ],
+              "options": [],
+              "gapText": "Specific study areas: biophysical, topographic, political, social, economic, historical and ___ geography, and also cartography",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Key point: geography helps us to understand our surroundings and the associated ___",
+              "acceptedAnswers": [
+                "problems"
+              ],
+              "options": [],
+              "gapText": "Key point: geography helps us to understand our surroundings and the associated ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Collect information in the form of ___ using computer and satellite technology",
+              "acceptedAnswers": [
+                "images"
+              ],
+              "options": [],
+              "gapText": "Collect information in the form of ___ using computer and satellite technology",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Analyse data - identify ___, e.g. cause and effect",
+              "acceptedAnswers": [
+                "patterns"
+              ],
+              "options": [],
+              "gapText": "Analyse data - identify ___, e.g. cause and effect",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "A two-dimensional map will always have some ___",
+              "acceptedAnswers": [
+                "distortion",
+                "distortions"
+              ],
+              "options": [],
+              "gapText": "A two-dimensional map will always have some ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Aerial photos can show vegetation problems, ___ density, ocean floor etc.",
+              "acceptedAnswers": [
+                "traffic"
+              ],
+              "gapText": "Aerial photos can show vegetation problems, ___ density, ocean floor etc.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t1l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Landsat pictures are used for monitoring ___ conditions etc.",
+              "acceptedAnswers": [
+                "weather"
+              ],
+              "gapText": "Landsat pictures are used for monitoring ___ conditions etc.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1284778,
+      "audioDurationMs": 444508
+    }
+  ]
+}

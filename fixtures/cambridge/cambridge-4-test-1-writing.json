@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-1-writing",
+  "title": "Cambridge IELTS 4 Academic Test 1 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-71b289d2c3dd",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe table below shows the proportion of different categories of families living in poverty in Australia in 1999.\n\nSummarize the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\nFamily type\n\nProportion of people from each household type living in poverty\n\nsingle aged person\n\n6% (54,000)\n\naged couple\n\n4% (48,000)\n\nsingle, no children\n\n19% (359,000)\n\ncouple, no children\n\n7% (211,000)\n\nsole parent\n\n21% (232,000)\n\ncouple with children\n\n12% (933,000)\n\nall households\n\n11% (1,837,000)"
+      },
+      "questionGroups": []
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nCompare the advantages and disadvantages of three of the following as media for communicating information. State which you consider to be the most effective.\n\n· comics\n\n· books\n\n· radio\n\n· television\n\n· film\n\n· theatre\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

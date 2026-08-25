@@ -1,0 +1,1874 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-12-test-1-listening",
+  "title": "Cambridge IELTS 12 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0016-0ece0446",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 12",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题12.pdf",
+        "sha256": "c9b61939ce31049dd9552020dbaf3deb979cbb6244b4cac0ac64f13b3ce049c6"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C12\\剑桥雅思真题12\\auto\\剑桥雅思真题12.md",
+        "sha256": "7a2c612d2c8d56d7c069234ee770a1aa17fccf10cecc1497b4f05fa686bc807a",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-12-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This test consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section is a monologue.\n\nA variety of question types is used, including: multiple choice, matching, plan/map/ diagram labelling, form completion, notecompletion, table completion, flow-chart completion, summary completion, sentence completion and short-answer questions.\n\nCandidates hear the recording once only and answerthe questions as they listen.Ten minutes are allowed at the end for candidates to transfer their answersto the answer sheet."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t1l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Non User– Essentially has no ability to use the language beyond possibly a few isolated words.",
+              "acceptedAnswers": [
+                "mountains"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Visitors can walk in the farm's",
+              "acceptedAnswers": [
+                "horse"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Visitors can walk in the farm's ___ by the lake",
+              "acceptedAnswers": [
+                "garden(s)"
+              ],
+              "gapText": "Visitors can walk in the farm's 3 ___ by the lake",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "___ is available at extra cost",
+              "acceptedAnswers": [
+                "lunch"
+              ],
+              "gapText": "4 ___ is available at extra cost",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "A ___ is provided",
+              "acceptedAnswers": [
+                "map"
+              ],
+              "gapText": "A 5 ___ is provided",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Bikes can be hired from",
+              "acceptedAnswers": [
+                "experience"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "(near the Cruise Ship",
+              "acceptedAnswers": [
+                "Ratchesons"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "A ___ can be hired",
+              "acceptedAnswers": [
+                "helmet"
+              ],
+              "gapText": "A 8 ___ (can be hired)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "There are no ___ or accommodation in the area",
+              "acceptedAnswers": [
+                "shops"
+              ],
+              "gapText": "There are no 9 ___ or accommodation in the area",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Total cost for whole family of cruise and farm visit: $ ___",
+              "acceptedAnswers": [
+                "267"
+              ],
+              "gapText": "Total cost for whole family of cruise and farm visit: 10 $ ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:56.749681+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 500441
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This test consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section is a monologue.\n\nA variety of question types is used, including: multiple choice, matching, plan/map/ diagram labelling, form completion, notecompletion, table completion, flow-chart completion, summary completion, sentence completion and short-answer questions.\n\nCandidates hear the recording once only and answerthe questions as they listen.Ten minutes are allowed at the end for candidates to transfer their answersto the answer sheet."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t1l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "According to the manager, what do most people like about the job of kitchen assistant? the variety of work the friendly atmosphere C the opportunities for promotion",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the variety of work"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the friendly atmosphere"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the opportunities for promotion"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the variety of work"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the friendly atmosphere"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the opportunities for promotion"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:31.228545+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "The manager is concerned about some of the new staff's",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "jewellery."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "hair styles."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "shoes."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "jewellery."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "hair styles."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "shoes."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "The manager says that the day islikely to be busy for kitchen staff because",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it is a public holiday."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the head chef is absent."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the restaurant is almost fully booked."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it is a public holiday."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the head chef is absent."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the restaurant is almost fully booked."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:31.228545+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Only kitchen staff who are 18 or older are allowed to use",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the waste disposal unit."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the electric mixer."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the meat slicer."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the waste disposal unit."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the electric mixer."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the meat slicer."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:31.228545+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g15",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q15",
+              "number": 15,
+              "type": "multi_choice",
+              "prompt": "According to the manager, which TWO things can make the job of kitchen assistant stressful? (Question 15)",
+              "acceptedAnswers": [
+                "A",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They have to follow orders immediately."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The kitchen gets very hot."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They may not be able to take a break."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They have to do overtime."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The work is physically demanding."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They have to follow orders immediately."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The kitchen gets very hot."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They may not be able to take a break."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They have to do overtime."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The work is physically demanding."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:50:54.557558+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g16",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q16",
+              "number": 16,
+              "type": "multi_choice",
+              "prompt": "According to the manager, which TWO things can make the job of kitchen assistant stressful? (Question 16)",
+              "acceptedAnswers": [
+                "A",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They have to follow orders immediately."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The kitchen gets very hot."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They may not be able to take a break."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They have to do overtime."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The work is physically demanding."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They have to follow orders immediately."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The kitchen gets very hot."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They may not be able to take a break."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They have to do overtime."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The work is physically demanding."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:50:54.557558+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g17",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "Joy Parkins",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "training courses"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "food stocks"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "first aid"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "breakages"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "staff discounts"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "timetables"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "training courses"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "food stocks"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "first aid"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "breakages"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "staff discounts"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "timetables"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:47.802156+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g18",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "David Field",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "training courses"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "food stocks"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "first aid"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "breakages"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "staff discounts"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "timetables"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "training courses"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "food stocks"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "first aid"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "breakages"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "staff discounts"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "timetables"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:47.802156+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g19",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Dexter Wills",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "training courses"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "food stocks"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "first aid"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "breakages"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "staff discounts"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "timetables"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "training courses"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "food stocks"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "first aid"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "breakages"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "staff discounts"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "timetables"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:47.802156+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g20",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "Mike Smith",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "training courses"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "food stocks"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "first aid"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "breakages"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "staff discounts"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "timetables"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "training courses"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "food stocks"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "first aid"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "breakages"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "staff discounts"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "timetables"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:50:47.802156+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 500441,
+      "audioDurationMs": 408202
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This test consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section is a monologue.\n\nA variety of question types is used, including: multiple choice, matching, plan/map/ diagram labelling, form completion, notecompletion, table completion, flow-chart completion, summary completion, sentence completion and short-answer questions.\n\nCandidates hear the recording once only and answerthe questions as they listen.Ten minutes are allowed at the end for candidates to transfer their answersto the answer sheet."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t1l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "What will be the main topic of Trudie and Stewart's paper?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "how public library services are organised in different countries"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how changes in society are reflected in public libraries"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how the funding of public libraries has changed"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "how public library services are organised in different countries"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how changes in society are reflected in public libraries"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how the funding of public libraries has changed"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:51:00.351812+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "They agree that one disadvantage of free digitalised books is that",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they may take a long time to read."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they can be difficult to read."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they are generally old."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they may take a long time to read."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they can be difficult to read."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they are generally old."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:51:00.351812+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "Stewart expects that in the futurelibraries will",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "maintain their traditional function."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "become centres for local communities."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "no longer contain any books."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "maintain their traditional function."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "become centres for local communities."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "no longer contain any books."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:51:00.351812+00:00"
+          }
+        },
+        {
+          "id": "c12t1l-g24",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Whether it has a ___ of its own",
+              "acceptedAnswers": [
+                "budget"
+              ],
+              "gapText": "Whether it has a 24 ___ of its own",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g25",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "how it's affected by laws regarding all aspects of ___",
+              "acceptedAnswers": [
+                "employment"
+              ],
+              "gapText": "how it's affected by laws regarding all aspects of 25 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g26",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "how the design needs to take the ___ of customers into account",
+              "acceptedAnswers": [
+                "safety"
+              ],
+              "gapText": "how the design needs to take the 26 ___ of customers into account",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g27",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "what ___ is required in case of accidents",
+              "acceptedAnswers": [
+                "insurance"
+              ],
+              "gapText": "what 27 ___ is required in case of accidents",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g28",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "why a famous person's ___ is located in the library",
+              "acceptedAnswers": [
+                "diary"
+              ],
+              "gapText": "why a famous person's 28 ___ is located in the library",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g29",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Whether it has a ___ of local organisations",
+              "acceptedAnswers": [
+                "database"
+              ],
+              "gapText": "Whether it has a 29 ___ of local organisations",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g30",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "how it's different from a library in a ___",
+              "acceptedAnswers": [
+                "museum"
+              ],
+              "gapText": "how it's different from a library in a 30 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 908643,
+      "audioDurationMs": 398041
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "This test consists of four sections, each with ten questions. The first two sections are concerned with social needs. The first section is a conversation between two speakers and the second section is a monologue. The final two sections are concerned with situations related to educational or training contexts. The third section is a conversation between up to four people and the fourth section is a monologue.\n\nA variety of question types is used, including: multiple choice, matching, plan/map/ diagram labelling, form completion, notecompletion, table completion, flow-chart completion, summary completion, sentence completion and short-answer questions.\n\nCandidates hear the recording once only and answerthe questions as they listen.Ten minutes are allowed at the end for candidates to transfer their answersto the answer sheet."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t1l-g31",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Senior managers need to understand and deal with the potential",
+              "acceptedAnswers": [
+                "damage"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g32",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Senior managers need to understand and deal with the potential ___ that may result.",
+              "acceptedAnswers": [
+                "side effects"
+              ],
+              "gapText": "Senior managers need to understand and deal with the potential 32 ___ that may result.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g33",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Other teams experienced",
+              "acceptedAnswers": [
+                "bridge"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g34",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "from trying to collaborate. The speaker's team won because they reduced collaboration. Sales of a",
+              "acceptedAnswers": [
+                "confusion"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g35",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "were poor because of collaboration. Industriousness Hard work may be a bad use of various company",
+              "acceptedAnswers": [
+                "smartphone"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g36",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "The word 'lazy' in this context refers to people who avoid doing tasks that are",
+              "acceptedAnswers": [
+                "resources"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g37",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Creativity An advertising campaign for a",
+              "acceptedAnswers": [
+                "unnecessary",
+                "not necessary"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g38",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "An advertising campaign for a ___ was memorable but failed to boost sales.",
+              "acceptedAnswers": [
+                "chocolate bar"
+              ],
+              "gapText": "An advertising campaign for a 38 ___ was memorable but failed to boost sales.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g39",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Excellence According to one study, on average, pioneers hada",
+              "acceptedAnswers": [
+                "problem"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t1l-g40",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "According to one study, on average, pioneers had a ___ that was far higher than that of followers.",
+              "acceptedAnswers": [
+                "market share"
+              ],
+              "gapText": "According to one study, on average, pioneers had a 40 ___ that was far higher than that of followers.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1306684,
+      "audioDurationMs": 528052
+    }
+  ]
+}

@@ -1,0 +1,2257 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-10-test-3-listening",
+  "title": "Cambridge IELTS 10 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0015-132ce441",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 10",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题10.pdf",
+        "sha256": "924bf69326e33aacf54dff62009ff5badf01d17d41340c3e242f86d278b6420d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C10\\剑桥雅思真题10\\auto\\剑桥雅思真题10.md",
+        "sha256": "779bed817fd5e0c62ba6cda955f8bc236f88c4e87afa75b288b862fc8fad9048",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-10-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the form below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nEarly Learning Childcare Centre Enrolment Form\n\nExample Parent or guardian: Carol .Smith..\n\nPersonal Details Child's name: Kate Age: 1.... Address: 2 ... ..Road,Woodside,4032 Phone: 3345 9865 Childcare Information Days enrolled for: Monday and 3 .... Start time: 4...\n\nam Childcare group: the 5.. ... group Which meal/s are required each day? 6.... Medical conditions: needs 7....\n\nEmergency contact: Jenny 8.... .Phone:346 75223 Relationship to child: 9...\n\nSECTION 2Questions 11-20\n\nQuestions 11 and 12\n\nChoose TWO letters, A-E.\n\nWhich TWo things does Alice say about the Dolphin ConservationTrust?\n\nA Children make up most of the membership.\n\nBIt's the country's largest conservation organisation.\n\nC It helps finance campaigns for changes in fishing practices.\n\nD It employs several dolphin experts full-time.\n\nE Volunteers help in various ways.\n\nQuestions 13-15\n\nChoose the correct letter, A, B, or C.\n\n13 Why is Alice so pleased the Trust has won the Charity Commission award?\n\nA It has brought in extra money.\n\nB It made the work of the trust better known.\n\nC It has attracted more members.\n\n14 Alice says oil exploration causes problems to dolphins because of\n\nA noise.\n\nB oil leaks.\n\nC movement of ships.\n\n15 Alice became interested in dolphins when\n\nA she saw one swimming near her home.\n\nB she heard a speaker at her school.\n\nC she read a book about them.\n\nQuestions 16-20\n\nWhich dolphin does Alice make each of the following comments about?\n\nrite the correct letter, A, B, C or D, next to questions 16–20.\n\nDolphins A Moondancer\n\nB Echo C Kiwi\n\nComments\n\n16 It has not been seen this year.\n\n17 lt is photographed more han the others.\n\n13 It is always very energetic.\n\n19 It is the newest one in the scheme.\n\n20 It has an unusual shape."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t3l-g1",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Personal Details Child's name: Kate Age",
+              "acceptedAnswers": [
+                "4"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g2",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Address",
+              "acceptedAnswers": [
+                "46 Wombat"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g3",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Road,Woodside,4032 Phone: 3345 9865 Childcare Information Days enrolled for: Monday and",
+              "acceptedAnswers": [
+                "Thursday"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g4",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Start time",
+              "acceptedAnswers": [
+                "8.30"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g5",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Childcare group: the ___ group",
+              "acceptedAnswers": [
+                "red"
+              ],
+              "gapText": "Childcare group: the 5 ___ group",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g6",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Medical conditions: needs",
+              "acceptedAnswers": [
+                "lunch"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g7",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Medical conditions: needs ___",
+              "acceptedAnswers": [
+                "glasses"
+              ],
+              "gapText": "Medical conditions: needs 7 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g8",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Emergency contact: Jenny",
+              "acceptedAnswers": [
+                "BALL"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g9",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Phone:346 75223 Relationship to child",
+              "acceptedAnswers": [
+                "aunt"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g10",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Complete the form below.",
+              "acceptedAnswers": [
+                "month"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 503223
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "SECTION 1 Questions 1-10\n\nComplete the form below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nEarly Learning Childcare Centre Enrolment Form\n\nExample Parent or guardian: Carol .Smith..\n\nPersonal Details Child's name: Kate Age: 1.... Address: 2 ... ..Road,Woodside,4032 Phone: 3345 9865 Childcare Information Days enrolled for: Monday and 3 .... Start time: 4...\n\nam Childcare group: the 5.. ... group Which meal/s are required each day? 6.... Medical conditions: needs 7....\n\nEmergency contact: Jenny 8.... .Phone:346 75223 Relationship to child: 9...\n\nSECTION 2Questions 11-20\n\nQuestions 11 and 12\n\nChoose TWO letters, A-E.\n\nWhich TWo things does Alice say about the Dolphin ConservationTrust?\n\nA Children make up most of the membership.\n\nBIt's the country's largest conservation organisation.\n\nC It helps finance campaigns for changes in fishing practices.\n\nD It employs several dolphin experts full-time.\n\nE Volunteers help in various ways.\n\nQuestions 13-15\n\nChoose the correct letter, A, B, or C.\n\n13 Why is Alice so pleased the Trust has won the Charity Commission award?\n\nA It has brought in extra money.\n\nB It made the work of the trust better known.\n\nC It has attracted more members.\n\n14 Alice says oil exploration causes problems to dolphins because of\n\nA noise.\n\nB oil leaks.\n\nC movement of ships.\n\n15 Alice became interested in dolphins when\n\nA she saw one swimming near her home.\n\nB she heard a speaker at her school.\n\nC she read a book about them.\n\nQuestions 16-20\n\nWhich dolphin does Alice make each of the following comments about?\n\nrite the correct letter, A, B, C or D, next to questions 16–20.\n\nDolphins A Moondancer\n\nB Echo C Kiwi\n\nComments\n\n16 It has not been seen this year.\n\n17 lt is photographed more han the others.\n\n13 It is always very energetic.\n\n19 It is the newest one in the scheme.\n\n20 It has an unusual shape.\n\nSECTION 3 Questions 21-30\n\nQuestions 21-25\n\nChoose the correct letter, A, B or C.\n\nTheatre Studies Course\n\n21 What helped Rob to prepare to play the character of a doctor?\n\nA the stories his grandfather told him\n\nB the times when he watched his grandfather working\n\nC the way he imagined his grandfather at work\n\n22 In the play's first scene, the boredom of village life was suggested by\n\nA repetition of words and phrases.\n\nB scenery painted in dull colours.\n\nC long pauses within conversations.\n\n23 What has Rob learned about himself through working in a group?\n\nA He likes to have clear guidelines.\n\nB He copes well with stress.\n\nC He thinks he is a good leader.\n\n24 To support the production, research material was used which described\n\nA political developments.\n\nB changing social attitudes.\n\nC economic transformations.\n\n25 What problem did the students overcome in the final rehearsal?\n\nA one person forgetting their words\n\nB an equipment failure\n\nC the injury of one character\n\nQuestions 26-30\n\nhat action is needed for the following stages in doing the ‘year abroad' option?\n\nChoose FIVE answers from the box and write the correct letter, A-G, next to questions 26–30.\n\nAction\n\nA be on time\n\nB get a letter of recommendation\n\nC plan for the final year\n\nD make sure the institution's focus is relevant\n\nE show ability in Theatre Studies\n\nF make travel arrangements and bookings\n\nG ask for help\n\nStages in doing the ‘year abroad' option\n\n26 in the second year of the course\n\n27 when first choosing where to go\n\n28 when sending in your choices\n\n29 when writing your personal statement .\n\n30 when doing the year abroad\n\nSECTION 4Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n'Self-regulatory focus theory' and leadership\n\nSelf-regulatory focus theory\n\nPeople's focus is to approach pleasure or avoid pain\n\nPromotion goals focus on 31\n\nPrevention goals emphasise avoiding punishment\n\nFactors that affect people's focus\n\nThe Chronic Factor\n\ncomes from one's 32\n\nThe 33 Factor\n\n• we are more likely to focus on promotion goals when with a 34.\n\n• we are more likely to focus on prevention goals with our boss\n\nHow people's focus affects them\n\nPromotion Focus: People think about an ideal version of themselves, their 35 and their gains.\n\nPrevention Focus: People think about their 'ought' self and their obligations\n\nLeaders\n\nLeadership behaviour and 6 fects people's focus \nTransformational Leaders: \npay special attention to the 37... ..of their followers \npassionately communicate a clear 38.. \ninspire promotion focus in followers \nTransactional Leaders: \ncreate 39...... ....o make expectations clear \nemphasise the results of a mistake \ninspire prevention focus in followers \nConclusion \nPromotion Focus is good for jobs requiring 40... \nPrevention Focus is good for work such as a surgeon \nLeaders' actions affect which focus people use"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t3l-g11",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Choose TWO letters, A-E.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g12",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q12",
+              "number": 12,
+              "type": "multi_choice",
+              "prompt": "Which TWO things does Alice say about the Dolphin Conservation Trust?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It's the country's largest conservation organisation."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Why is Alice so pleased the Trust has won the Charity Commission award? A It has brought in extra money. B It made the work of the trust better known. C It has attracted more members",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It has brought in extra money"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It made the work of the trust better known"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has brought in extra money"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It made the work of the trust better known"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Alice says oil exploration causes problems to dolphins because of A noise. B oil leaks. C movement of ships",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It has brought in extra money"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It made the work of the trust better known"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It has attracted more members"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has brought in extra money"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It made the work of the trust better known"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It has attracted more members"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Alice became interested in dolphins when",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.688702+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "she saw one swimming near her home."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "she heard a speaker at her school."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "she read a book about them."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g16",
+          "instruction": "Which dolphin does Alice make each of the following comments about?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "It has not been seen this year.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.688702+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Moondancer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Echo"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Kiwi"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Samson"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g17",
+          "instruction": "Which dolphin does Alice make each of the following comments about?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "It is photographed more than the others.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Moondancer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Echo"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Kiwi"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Samson"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g18",
+          "instruction": "Write the correct letter, A, B, C or D, next to questions 16–20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Which dolphin does Alice make each of the following comments about?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Moondancer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Echo"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Kiwi"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Samson"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.688702+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:23.718965+00:00"
+          }
+        },
+        {
+          "id": "c10t3l-g19",
+          "instruction": "Which dolphin does Alice make each of the following comments about?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "It is the newest one in the scheme.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.688702+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Moondancer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Echo"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Kiwi"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Samson"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g20",
+          "instruction": "Which dolphin does Alice make each of the following comments about?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "It has an unusual shape.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.688702+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Moondancer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Echo"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Kiwi"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Samson"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 503223,
+      "audioDurationMs": 397565
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\nQuestions 21-25\n\nChoose the correct letter, A, B or C.\n\nTheatre Studies Course\n\n21 What helped Rob to prepare to play the character of a doctor?\n\nA the stories his grandfather told him\n\nB the times when he watched his grandfather working\n\nC the way he imagined his grandfather at work\n\n22 In the play's first scene, the boredom of village life was suggested by\n\nA repetition of words and phrases.\n\nB scenery painted in dull colours.\n\nC long pauses within conversations.\n\n23 What has Rob learned about himself through working in a group?\n\nA He likes to have clear guidelines.\n\nB He copes well with stress.\n\nC He thinks he is a good leader.\n\n24 To support the production, research material was used which described\n\nA political developments.\n\nB changing social attitudes.\n\nC economic transformations.\n\n25 What problem did the students overcome in the final rehearsal?\n\nA one person forgetting their words\n\nB an equipment failure\n\nC the injury of one character\n\nQuestions 26-30\n\nhat action is needed for the following stages in doing the ‘year abroad' option?\n\nChoose FIVE answers from the box and write the correct letter, A-G, next to questions 26–30.\n\nAction\n\nA be on time\n\nB get a letter of recommendation\n\nC plan for the final year\n\nD make sure the institution's focus is relevant\n\nE show ability in Theatre Studies\n\nF make travel arrangements and bookings\n\nG ask for help\n\nStages in doing the ‘year abroad' option\n\n26 in the second year of the course\n\n27 when first choosing where to go\n\n28 when sending in your choices\n\n29 when writing your personal statement .\n\n30 when doing the year abroad\n\nSECTION 4Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n'Self-regulatory focus theory' and leadership\n\nSelf-regulatory focus theory\n\nPeople's focus is to approach pleasure or avoid pain\n\nPromotion goals focus on 31\n\nPrevention goals emphasise avoiding punishment\n\nFactors that affect people's focus\n\nThe Chronic Factor\n\ncomes from one's 32\n\nThe 33 Factor\n\n• we are more likely to focus on promotion goals when with a 34.\n\n• we are more likely to focus on prevention goals with our boss\n\nHow people's focus affects them\n\nPromotion Focus: People think about an ideal version of themselves, their 35 and their gains.\n\nPrevention Focus: People think about their 'ought' self and their obligations\n\nLeaders\n\nLeadership behaviour and 6 fects people's focus \nTransformational Leaders: \npay special attention to the 37... ..of their followers \npassionately communicate a clear 38.. \ninspire promotion focus in followers \nTransactional Leaders: \ncreate 39...... ....o make expectations clear \nemphasise the results of a mistake \ninspire prevention focus in followers \nConclusion \nPromotion Focus is good for jobs requiring 40... \nPrevention Focus is good for work such as a surgeon \nLeaders' actions affect which focus people use"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t3l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "What helped Rob to prepare to play the character of a doctor? A the stories his grandfather told him B the times when he watched his grandfather working C the way he imagined his grandfather at work",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the stories his grandfather told him"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the times when he watched his grandfather working"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the way he imagined his grandfather at work"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the stories his grandfather told him"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the times when he watched his grandfather working"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the way he imagined his grandfather at work"
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "In the play's first scene, the boredom of village life was suggested by",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.763220+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "repetition of words and phrases."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "scenery painted in dull colours."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "long pauses within conversations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "What has Rob learned about himself through working in a group?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.763220+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He likes to have clear guidelines."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He copes well with stress."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He thinks he is a good leader."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q24",
+              "number": 24,
+              "type": "matching",
+              "prompt": "To support the production, research material was used which described",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.763220+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "political developments."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "changing social attitudes."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "economic transformations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "What problem did the students overcome in the final rehearsal? A one person forgetting their words B an equipment failure C the injury of one character",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He likes to have clear guidelines"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He copes well with stress"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He thinks he is a good leader"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make sure the institution's focus is relevant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "show ability in Theatre Studies"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "make travel arrangements and bookings"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "ask for help"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He likes to have clear guidelines"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He copes well with stress"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He thinks he is a good leader"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "make sure the institution's focus is relevant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "show ability in Theatre Studies"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "make travel arrangements and bookings"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "ask for help"
+            }
+          ]
+        },
+        {
+          "id": "c10t3l-g26",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "In the second year of the course",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "be on time"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "get a letter of recommendation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "plan for the final year"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make sure the institution's focus is relevant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "show ability in Theatre Studies"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "make travel arrangements and bookings"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "ask for help"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g27",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "When first choosing where to go",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "be on time"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "get a letter of recommendation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "plan for the final year"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make sure the institution's focus is relevant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "show ability in Theatre Studies"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "make travel arrangements and bookings"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "ask for help"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "be on time"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "get a letter of recommendation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "plan for the final year"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "make sure the institution's focus is relevant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "show ability in Theatre Studies"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "make travel arrangements and bookings"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "ask for help"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g28",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "When sending in your choices",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "be on time"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "get a letter of recommendation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "plan for the final year"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make sure the institution's focus is relevant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "show ability in Theatre Studies"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "make travel arrangements and bookings"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "ask for help"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g29",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "When writing your personal statement",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "be on time"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "get a letter of recommendation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "plan for the final year"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make sure the institution's focus is relevant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "show ability in Theatre Studies"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "make travel arrangements and bookings"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "ask for help"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g30",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "When doing the year abroad",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "be on time"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "get a letter of recommendation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "plan for the final year"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make sure the institution's focus is relevant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "show ability in Theatre Studies"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "make travel arrangements and bookings"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "ask for help"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 900788,
+      "audioDurationMs": 422559
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "SECTION 1 Questions 1-10\n\nComplete the form below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nEarly Learning Childcare Centre Enrolment Form\n\nExample Parent or guardian: Carol .Smith..\n\nPersonal Details Child's name: Kate Age: 1.... Address: 2 ... ..Road,Woodside,4032 Phone: 3345 9865 Childcare Information Days enrolled for: Monday and 3 .... Start time: 4...\n\nam Childcare group: the 5.. ... group Which meal/s are required each day? 6.... Medical conditions: needs 7....\n\nEmergency contact: Jenny 8.... .Phone:346 75223 Relationship to child: 9...\n\nSECTION 2Questions 11-20\n\nQuestions 11 and 12\n\nChoose TWO letters, A-E.\n\nWhich TWo things does Alice say about the Dolphin ConservationTrust?\n\nA Children make up most of the membership.\n\nBIt's the country's largest conservation organisation.\n\nC It helps finance campaigns for changes in fishing practices.\n\nD It employs several dolphin experts full-time.\n\nE Volunteers help in various ways.\n\nQuestions 13-15\n\nChoose the correct letter, A, B, or C.\n\n13 Why is Alice so pleased the Trust has won the Charity Commission award?\n\nA It has brought in extra money.\n\nB It made the work of the trust better known.\n\nC It has attracted more members.\n\n14 Alice says oil exploration causes problems to dolphins because of\n\nA noise.\n\nB oil leaks.\n\nC movement of ships.\n\n15 Alice became interested in dolphins when\n\nA she saw one swimming near her home.\n\nB she heard a speaker at her school.\n\nC she read a book about them.\n\nQuestions 16-20\n\nWhich dolphin does Alice make each of the following comments about?\n\nrite the correct letter, A, B, C or D, next to questions 16–20.\n\nDolphins A Moondancer\n\nB Echo C Kiwi\n\nComments\n\n16 It has not been seen this year.\n\n17 lt is photographed more han the others.\n\n13 It is always very energetic.\n\n19 It is the newest one in the scheme.\n\n20 It has an unusual shape.\n\nSECTION 3 Questions 21-30\n\nQuestions 21-25\n\nChoose the correct letter, A, B or C.\n\nTheatre Studies Course\n\n21 What helped Rob to prepare to play the character of a doctor?\n\nA the stories his grandfather told him\n\nB the times when he watched his grandfather working\n\nC the way he imagined his grandfather at work\n\n22 In the play's first scene, the boredom of village life was suggested by\n\nA repetition of words and phrases.\n\nB scenery painted in dull colours.\n\nC long pauses within conversations.\n\n23 What has Rob learned about himself through working in a group?\n\nA He likes to have clear guidelines.\n\nB He copes well with stress.\n\nC He thinks he is a good leader.\n\n24 To support the production, research material was used which described\n\nA political developments.\n\nB changing social attitudes.\n\nC economic transformations.\n\n25 What problem did the students overcome in the final rehearsal?\n\nA one person forgetting their words\n\nB an equipment failure\n\nC the injury of one character\n\nQuestions 26-30\n\nhat action is needed for the following stages in doing the ‘year abroad' option?\n\nChoose FIVE answers from the box and write the correct letter, A-G, next to questions 26–30.\n\nAction\n\nA be on time\n\nB get a letter of recommendation\n\nC plan for the final year\n\nD make sure the institution's focus is relevant\n\nE show ability in Theatre Studies\n\nF make travel arrangements and bookings\n\nG ask for help\n\nStages in doing the ‘year abroad' option\n\n26 in the second year of the course\n\n27 when first choosing where to go\n\n28 when sending in your choices\n\n29 when writing your personal statement .\n\n30 when doing the year abroad\n\nSECTION 4Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n'Self-regulatory focus theory' and leadership\n\nSelf-regulatory focus theory\n\nPeople's focus is to approach pleasure or avoid pain\n\nPromotion goals focus on 31\n\nPrevention goals emphasise avoiding punishment\n\nFactors that affect people's focus\n\nThe Chronic Factor\n\ncomes from one's 32\n\nThe 33 Factor\n\n• we are more likely to focus on promotion goals when with a 34.\n\n• we are more likely to focus on prevention goals with our boss\n\nHow people's focus affects them\n\nPromotion Focus: People think about an ideal version of themselves, their 35 and their gains.\n\nPrevention Focus: People think about their 'ought' self and their obligations\n\nLeaders\n\nLeadership behaviour and 6 fects people's focus \nTransformational Leaders: \npay special attention to the 37... ..of their followers \npassionately communicate a clear 38.. \ninspire promotion focus in followers \nTransactional Leaders: \ncreate 39...... ....o make expectations clear \nemphasise the results of a mistake \ninspire prevention focus in followers \nConclusion \nPromotion Focus is good for jobs requiring 40... \nPrevention Focus is good for work such as a surgeon \nLeaders' actions affect which focus people use"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t3l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Promotion goals focus on ___",
+              "acceptedAnswers": [
+                "achievement",
+                "achievements"
+              ],
+              "gapText": "Promotion goals focus on 31 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "The Chronic Factor comes from one's ___",
+              "acceptedAnswers": [
+                "personality",
+                "character"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "The Chronic Factor — comes from one's 32 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "The ___ Factor",
+              "acceptedAnswers": [
+                "situational"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "The 33 ___ Factor",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "We are more likely to focus on promotion goals when with a ___",
+              "acceptedAnswers": [
+                "friend"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "We are more likely to focus on promotion goals when with a 34 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Promotion Focus: People think about an ideal version of themselves, their ___ and their gains.",
+              "acceptedAnswers": [
+                "aspirations",
+                "ambitions"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "Promotion Focus: People think about an ideal version of themselves, their 35 ___ and their gains.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Leadership behaviour and ___ affects people's focus",
+              "acceptedAnswers": [
+                "style"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "Leadership behaviour and 36 ___ affects people's focus",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Transformational leaders pay special attention to the ___ of their followers",
+              "acceptedAnswers": [
+                "development"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "Transformational leaders — pay special attention to the 37 ___ of their followers",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Transformational leaders passionately communicate a clear ___",
+              "acceptedAnswers": [
+                "vision"
+              ],
+              "gapText": "Transformational leaders — passionately communicate a clear 38 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Transactional leaders create ___ to make expectations clear",
+              "acceptedAnswers": [
+                "structures"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "Transactional leaders — create 39 ___ to make expectations clear",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Promotion Focus is good for jobs requiring ___",
+              "acceptedAnswers": [
+                "innovation",
+                "innovations"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Children make up most of the membership"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It helps finance campaigns for changes in fishing practices"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It employs several dolphin experts full-time"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Volunteers help in various ways"
+                }
+              ],
+              "gapText": "Promotion Focus is good for jobs requiring 40 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children make up most of the membership"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It helps finance campaigns for changes in fishing practices"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It employs several dolphin experts full-time"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Volunteers help in various ways"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1323347,
+      "audioDurationMs": 488289
+    }
+  ]
+}

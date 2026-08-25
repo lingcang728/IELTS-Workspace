@@ -1,0 +1,1942 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-10-test-4-listening",
+  "title": "Cambridge IELTS 10 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0011-b870a1e3",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 10",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题10.pdf",
+        "sha256": "924bf69326e33aacf54dff62009ff5badf01d17d41340c3e242f86d278b6420d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C10\\剑桥雅思真题10\\auto\\剑桥雅思真题10.md",
+        "sha256": "779bed817fd5e0c62ba6cda955f8bc236f88c4e87afa75b288b862fc8fad9048",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=1, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-10-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nQuestions 1-6\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer\n\nTHORNDYKE'S BUILDERS\n\nExample Customer heard about Thorndykea's from ... friend\n\nName: Edith 1...... Address: Flat'4, … Park Flats (Behind the 3)\n\nmplete the table below.\n\nte ONE WORD ONLY for each answer.\n\nArea\n\nWork to be done\n\nNotes\n\nKitchen\n\nReplace the 7.... ……in the door\n\nFix tomorrow\n\nPaint wall abovethe 8 \n\nStrip paint and plasterapproximately one9 .in advance\n\nGarden\n\nOne 10 needsreplacing (end of garden)\n\nSECTION 2Questions 11-20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\nMANHAM PORT\n\n11Why did a port originally develop at Manham? \nA It was safe from enemy attack. \nB It was convenient for river transport. \nC It had a good position on the sea coast. \n12What caused Manham's sudden expansion during the Industrial Revolution? \nAthe improvement in mining techniques \nB the increase in demand for metals \nC the discovery of tin in the area \n13Why did rocks have to be sent away from Manham to be processed? \nA shortage of fuel \nBpoor transport systems \nlack of skills among local people \n14What happened when the port declined in the twentieth century? \nA The workers went away. \nB Traditional skills were lost. \nC Buildings were used for new purposes. \n15What did the Manham Trust hope to do? \nAdiscover the location of the original port \nB provide jobs for the unemployed \nC rebuild the port complex\n\nQuestions 16-20\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS for each anSwer.\n\nTourist attractions in Manham\n\nPlace\n\nFeatures and activities\n\nAdvice\n\ncopper mine\n\nspecially adapted miners'16...take visitors intothe mountain\n\nthe mine is 17and enclosed – unsuitablefor children and animals\n\nvillage school\n\nclassrooms and a specialexhibition of 18....\n\na 19recommended\n\n'The George'(old sailing ship)\n\nthe ship's wheel (was lost buthas now been restored)\n\nchildren shouldn't use the20..\n\nSECTION 3Questions 21-30\n\nQuestions 21 and 22\n\nChoose TWO letters, A-E.\n\nWhich Two skills did Laura improve as a result of her work placement?\n\nA communication\n\nB design\n\nC IT\n\nD marketing\n\nE organisation\n\nQuestions 23 and 24\n\nChoose TWO letters, A-E.\n\nWhich TWo immediate benefits did the company get from Laura's work placement?\n\nA updates for its software\n\nB cost savings\n\nC an improved image\n\nD new clients\n\nE a growth in sales\n\nuestions 25-30\n\nhat source of information should Tim use at each of the following stages of the work acement?\n\noose SIX answers from the box and write the correct letter, A-G, next to questions 5-30.\n\nSources of information\n\nA company manager\n\nB company's personnel department\n\nC personal tutor\n\nD psychology department\n\nE mentor\n\nF university careers officer\n\nG internet\n\nStages of the work placement procedure\n\n5 obtaining booklet\n\n26discussing options\n\n27 getting updates\n\n23 responding to invitation for interview .\n\n29informing about outcome of interview\n\n0requesting a reference …"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t4l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Name: Edith",
+              "acceptedAnswers": [
+                "Pargetter"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "East"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Park Flats are behind which landmark",
+              "acceptedAnswers": [
+                "library"
+              ],
+              "gapText": "Park Flats are behind which landmark: 3 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Best time to contact the customer",
+              "acceptedAnswers": [
+                "morning",
+                "mornings"
+              ],
+              "gapText": "Best time to contact customer: during the 4 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Where to park opposite the entrance",
+              "acceptedAnswers": [
+                "postbox"
+              ],
+              "gapText": "Where to park: opposite entrance next to the 5 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Full quote should show jobs and prices",
+              "acceptedAnswers": [
+                "prices"
+              ],
+              "gapText": "Needs full quote showing all the jobs and the 6 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g7",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "Replace the",
+              "acceptedAnswers": [
+                "glass"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:27.561491+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g8",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Paint wall abovethe",
+              "acceptedAnswers": [
+                "cooker"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:27.561491+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g9",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Painting work requires approximately one ___ in advance",
+              "acceptedAnswers": [
+                "week"
+              ],
+              "gapText": "Strip paint and plaster approximately one 9 ___ in advance",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:27.561491+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g10",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "One",
+              "acceptedAnswers": [
+                "fence"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:27.561491+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 429883
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "SECTION 1 Questions 1-10\n\nQuestions 1-6\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer\n\nTHORNDYKE'S BUILDERS\n\nExample Customer heard about Thorndykea's from ... friend\n\nName: Edith 1...... Address: Flat'4, … Park Flats (Behind the 3)\n\nmplete the table below.\n\nte ONE WORD ONLY for each answer.\n\nArea\n\nWork to be done\n\nNotes\n\nKitchen\n\nReplace the 7.... ……in the door\n\nFix tomorrow\n\nPaint wall abovethe 8 \n\nStrip paint and plasterapproximately one9 .in advance\n\nGarden\n\nOne 10 needsreplacing (end of garden)\n\nSECTION 2Questions 11-20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\nMANHAM PORT\n\n11Why did a port originally develop at Manham? \nA It was safe from enemy attack. \nB It was convenient for river transport. \nC It had a good position on the sea coast. \n12What caused Manham's sudden expansion during the Industrial Revolution? \nAthe improvement in mining techniques \nB the increase in demand for metals \nC the discovery of tin in the area \n13Why did rocks have to be sent away from Manham to be processed? \nA shortage of fuel \nBpoor transport systems \nlack of skills among local people \n14What happened when the port declined in the twentieth century? \nA The workers went away. \nB Traditional skills were lost. \nC Buildings were used for new purposes. \n15What did the Manham Trust hope to do? \nAdiscover the location of the original port \nB provide jobs for the unemployed \nC rebuild the port complex\n\nQuestions 16-20\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS for each anSwer.\n\nTourist attractions in Manham\n\nPlace\n\nFeatures and activities\n\nAdvice\n\ncopper mine\n\nspecially adapted miners'16...take visitors intothe mountain\n\nthe mine is 17and enclosed – unsuitablefor children and animals\n\nvillage school\n\nclassrooms and a specialexhibition of 18....\n\na 19recommended\n\n'The George'(old sailing ship)\n\nthe ship's wheel (was lost buthas now been restored)\n\nchildren shouldn't use the20..\n\nSECTION 3Questions 21-30\n\nQuestions 21 and 22\n\nChoose TWO letters, A-E.\n\nWhich Two skills did Laura improve as a result of her work placement?\n\nA communication\n\nB design\n\nC IT\n\nD marketing\n\nE organisation\n\nQuestions 23 and 24\n\nChoose TWO letters, A-E.\n\nWhich TWo immediate benefits did the company get from Laura's work placement?\n\nA updates for its software\n\nB cost savings\n\nC an improved image\n\nD new clients\n\nE a growth in sales\n\nuestions 25-30\n\nhat source of information should Tim use at each of the following stages of the work acement?\n\noose SIX answers from the box and write the correct letter, A-G, next to questions 5-30.\n\nSources of information\n\nA company manager\n\nB company's personnel department\n\nC personal tutor\n\nD psychology department\n\nE mentor\n\nF university careers officer\n\nG internet\n\nStages of the work placement procedure\n\n5 obtaining booklet\n\n26discussing options\n\n27 getting updates\n\n23 responding to invitation for interview .\n\n29informing about outcome of interview\n\n0requesting a reference …\n\nSECTION 4 Questions 31-40\n\nQuestions 31-33\n\nChoose the correct letter, A, B or C.\n\nNanotechnology: technology on a small scale\n\n31 The speaker says that one problem with nanotechnology is that\n\nA it could threaten our way of life.\n\nBit could be used to spy on people.\n\nC it is misunderstood by the public.\n\n32 According to the speaker, some scientists believe that nano-particles\n\nA should be restricted to secure environments.\n\nB should be used with more caution.\n\nC should only be developed for essential products.\n\n33 In the speaker's opinion, research into nanotechnology\n\nAhas yet to win popular support.\n\nB could be seen as unethical.\n\nC ought to be continued.\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nUses of Nanotechnology\n\nTransport\n\n• Nanotechnology could allow the development of stronger 34\n\n• Planes would be much lighter in weight.\n\n35 . travel will be made available to the masses.\n\nTechnology\n\n• Computers will be even smaller, faster, and will have a greater\n\n37 ergy will become more affordable.\n\nThe Environment\n\n• Nano-robots could rebuild the ozone layer.\n\nPollutants such as 38.. could be removed from water more easily.\n\nThere will be no 39 . from manufacturing.\n\nHealth and Medicine\n\n• New methods of food production could eradicate famine.\n\nAnalysis of medical 40 will e speeded up.\n\n• Life expectancy could be increased."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t4l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Why did a port originally develop at Manham? A It was safe from enemy attack. B It was convenient for river transport. C It had a good position on the sea coast",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It was safe from enemy attack"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was convenient for river transport"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It had a good position on the sea coast"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "What caused Manham's sudden expansion during the Industrial Revolution? Athe improvement in mining techniques B the increase in demand for metals C the discovery of tin in the area",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It was safe from enemy attack"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was convenient for river transport"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It had a good position on the sea coast"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Why did rocks have to be sent away from Manham to be processed? A shortage of fuel Bpoor transport systems lack of skills among local people",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It was safe from enemy attack"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was convenient for river transport"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It had a good position on the sea coast"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "What happened when the port declined in the twentieth century? A The workers went away. B Traditional skills were lost. C Buildings were used for new purposes",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It was safe from enemy attack"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was convenient for river transport"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It had a good position on the sea coast"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "What did the Manham Trust hope to do? Adiscover the location of the original port B provide jobs for the unemployed C rebuild the port complex",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.837140+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "discover the location of the original port"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "provide jobs for the unemployed"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "rebuild the port complex"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g16",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Copper mine uses specially adapted miners' ___",
+              "acceptedAnswers": [
+                "trains"
+              ],
+              "gapText": "Specially adapted miners' 16 ___ take visitors into the mountain",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g17",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Advice: the copper mine is ___ and enclosed",
+              "acceptedAnswers": [
+                "dark"
+              ],
+              "gapText": "Advice: the mine is 17 ___ and enclosed",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g18",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Village school exhibition of ___",
+              "acceptedAnswers": [
+                "games"
+              ],
+              "gapText": "Classrooms and a special exhibition of 18 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g19",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Complete the table below.",
+              "acceptedAnswers": [
+                "guided tour"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g20",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Children should not use the ___ on the ship",
+              "acceptedAnswers": [
+                "ladder",
+                "ladders"
+              ],
+              "gapText": "Children shouldn't use the 20 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 429883,
+      "audioDurationMs": 390398
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "SECTION 1 Questions 1-10\n\nQuestions 1-6\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer\n\nTHORNDYKE'S BUILDERS\n\nExample Customer heard about Thorndykea's from ... friend\n\nName: Edith 1...... Address: Flat'4, … Park Flats (Behind the 3)\n\nmplete the table below.\n\nte ONE WORD ONLY for each answer.\n\nArea\n\nWork to be done\n\nNotes\n\nKitchen\n\nReplace the 7.... ……in the door\n\nFix tomorrow\n\nPaint wall abovethe 8 \n\nStrip paint and plasterapproximately one9 .in advance\n\nGarden\n\nOne 10 needsreplacing (end of garden)\n\nSECTION 2Questions 11-20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\nMANHAM PORT\n\n11Why did a port originally develop at Manham? \nA It was safe from enemy attack. \nB It was convenient for river transport. \nC It had a good position on the sea coast. \n12What caused Manham's sudden expansion during the Industrial Revolution? \nAthe improvement in mining techniques \nB the increase in demand for metals \nC the discovery of tin in the area \n13Why did rocks have to be sent away from Manham to be processed? \nA shortage of fuel \nBpoor transport systems \nlack of skills among local people \n14What happened when the port declined in the twentieth century? \nA The workers went away. \nB Traditional skills were lost. \nC Buildings were used for new purposes. \n15What did the Manham Trust hope to do? \nAdiscover the location of the original port \nB provide jobs for the unemployed \nC rebuild the port complex\n\nQuestions 16-20\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS for each anSwer.\n\nTourist attractions in Manham\n\nPlace\n\nFeatures and activities\n\nAdvice\n\ncopper mine\n\nspecially adapted miners'16...take visitors intothe mountain\n\nthe mine is 17and enclosed – unsuitablefor children and animals\n\nvillage school\n\nclassrooms and a specialexhibition of 18....\n\na 19recommended\n\n'The George'(old sailing ship)\n\nthe ship's wheel (was lost buthas now been restored)\n\nchildren shouldn't use the20..\n\nSECTION 3Questions 21-30\n\nQuestions 21 and 22\n\nChoose TWO letters, A-E.\n\nWhich Two skills did Laura improve as a result of her work placement?\n\nA communication\n\nB design\n\nC IT\n\nD marketing\n\nE organisation\n\nQuestions 23 and 24\n\nChoose TWO letters, A-E.\n\nWhich TWo immediate benefits did the company get from Laura's work placement?\n\nA updates for its software\n\nB cost savings\n\nC an improved image\n\nD new clients\n\nE a growth in sales\n\nuestions 25-30\n\nhat source of information should Tim use at each of the following stages of the work acement?\n\noose SIX answers from the box and write the correct letter, A-G, next to questions 5-30.\n\nSources of information\n\nA company manager\n\nB company's personnel department\n\nC personal tutor\n\nD psychology department\n\nE mentor\n\nF university careers officer\n\nG internet\n\nStages of the work placement procedure\n\n5 obtaining booklet\n\n26discussing options\n\n27 getting updates\n\n23 responding to invitation for interview .\n\n29informing about outcome of interview\n\n0requesting a reference …\n\nSECTION 4 Questions 31-40\n\nQuestions 31-33\n\nChoose the correct letter, A, B or C.\n\nNanotechnology: technology on a small scale\n\n31 The speaker says that one problem with nanotechnology is that\n\nA it could threaten our way of life.\n\nBit could be used to spy on people.\n\nC it is misunderstood by the public.\n\n32 According to the speaker, some scientists believe that nano-particles\n\nA should be restricted to secure environments.\n\nB should be used with more caution.\n\nC should only be developed for essential products.\n\n33 In the speaker's opinion, research into nanotechnology\n\nAhas yet to win popular support.\n\nB could be seen as unethical.\n\nC ought to be continued.\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nUses of Nanotechnology\n\nTransport\n\n• Nanotechnology could allow the development of stronger 34\n\n• Planes would be much lighter in weight.\n\n35 . travel will be made available to the masses.\n\nTechnology\n\n• Computers will be even smaller, faster, and will have a greater\n\n37 ergy will become more affordable.\n\nThe Environment\n\n• Nano-robots could rebuild the ozone layer.\n\nPollutants such as 38.. could be removed from water more easily.\n\nThere will be no 39 . from manufacturing.\n\nHealth and Medicine\n\n• New methods of food production could eradicate famine.\n\nAnalysis of medical 40 will e speeded up.\n\n• Life expectancy could be increased."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t4l-g21",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Choose TWO letters, A-E.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It was safe from enemy attack"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was convenient for river transport"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It had a good position on the sea coast"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g22",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q22",
+              "number": 22,
+              "type": "multi_choice",
+              "prompt": "Which TWO skills did Laura improve through the work placement",
+              "acceptedAnswers": [
+                "A",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "communication"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "design"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "IT"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "marketing"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "organisation"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g23",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q23",
+              "number": 23,
+              "type": "multi_choice",
+              "prompt": "Question 23: which immediate benefits did the company get",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "updates for its software"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "cost savings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an improved image"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "new clients"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a growth in sales"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g24",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q24",
+              "number": 24,
+              "type": "multi_choice",
+              "prompt": "Question 24: which other immediate benefit did the company get",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "updates for its software"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "cost savings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an improved image"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "new clients"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a growth in sales"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4l-g25",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "Source for obtaining the placement booklet",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "company manager"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "company's personnel department"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "personal tutor"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "psychology department"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mentor"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "university careers officer"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "internet"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:36.642960+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g26",
+          "instruction": "Which TWo immediate benefits did the company get from Laura's work placement?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "Source for discussing placement options",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "company manager"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "company's personnel department"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "personal tutor"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "psychology department"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mentor"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "university careers officer"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "internet"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g27",
+          "instruction": "Which TWo immediate benefits did the company get from Laura's work placement?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "Source for getting placement updates",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "company manager"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "company's personnel department"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "personal tutor"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "psychology department"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mentor"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "university careers officer"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "internet"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "company manager"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "company's personnel department"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "personal tutor"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "psychology department"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "mentor"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "university careers officer"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "internet"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g28",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to questions 25-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Source for responding to an interview invitation",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "company manager"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "company's personnel department"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "personal tutor"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "psychology department"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mentor"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "university careers officer"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "internet"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:36.642960+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g29",
+          "instruction": "Which TWo immediate benefits did the company get from Laura's work placement?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Source for informing about the interview outcome",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "company manager"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "company's personnel department"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "personal tutor"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "psychology department"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mentor"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "university careers officer"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "internet"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g30",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to questions 25-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Source for requesting a placement reference",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "company manager"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "company's personnel department"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "personal tutor"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "psychology department"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mentor"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "university careers officer"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "internet"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:36.642960+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 820281,
+      "audioDurationMs": 432072
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\nQuestions 31-33\n\nChoose the correct letter, A, B or C.\n\nNanotechnology: technology on a small scale\n\n31 The speaker says that one problem with nanotechnology is that\n\nA it could threaten our way of life.\n\nBit could be used to spy on people.\n\nC it is misunderstood by the public.\n\n32 According to the speaker, some scientists believe that nano-particles\n\nA should be restricted to secure environments.\n\nB should be used with more caution.\n\nC should only be developed for essential products.\n\n33 In the speaker's opinion, research into nanotechnology\n\nAhas yet to win popular support.\n\nB could be seen as unethical.\n\nC ought to be continued.\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nUses of Nanotechnology\n\nTransport\n\n• Nanotechnology could allow the development of stronger 34\n\n• Planes would be much lighter in weight.\n\n35 . travel will be made available to the masses.\n\nTechnology\n\n• Computers will be even smaller, faster, and will have a greater\n\n37 ergy will become more affordable.\n\nThe Environment\n\n• Nano-robots could rebuild the ozone layer.\n\nPollutants such as 38.. could be removed from water more easily.\n\nThere will be no 39 . from manufacturing.\n\nHealth and Medicine\n\n• New methods of food production could eradicate famine.\n\nAnalysis of medical 40 will e speeded up.\n\n• Life expectancy could be increased."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t4l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "The speaker says that one problem with nanotechnology is that",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.915759+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it could threaten our way of life."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it could be used to spy on people."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is misunderstood by the public."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "According to the speaker, some scientists believe that nano-particles A should be restricted to secure environments. B should be used with more caution. C should only be developed for essential products",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it could threaten our way of life"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is misunderstood by the public"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "should be used with more caution"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it could threaten our way of life"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it is misunderstood by the public"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "should be used with more caution"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "In the speaker's opinion, research into nanotechnology Ahas yet to win popular support. B could be seen as unethical. C ought to be continued. Complete the notes below. Write ONE WORD ONLY for each answer. Uses of Nanotechnology Transport • Nanotechnology could allow the development of stronger 34 • Planes would be much lighter in weight",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is misunderstood by the public"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "should be restricted to secure environments"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "should be used with more caution"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it is misunderstood by the public"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "should be restricted to secure environments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "should be used with more caution"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Nanotechnology could allow development of stronger ___",
+              "acceptedAnswers": [
+                "metal",
+                "metals"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it could threaten our way of life"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is misunderstood by the public"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "should be used with more caution"
+                }
+              ],
+              "gapText": "Nanotechnology could allow the development of stronger 34 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it could threaten our way of life"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it is misunderstood by the public"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "should be used with more caution"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:42.840070+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g35",
+          "instruction": "Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "___ travel will be made available to the masses",
+              "acceptedAnswers": [
+                "space"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "could be seen as unethical"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ought to be continued"
+                }
+              ],
+              "gapText": "35 ___ travel will be made available to the masses",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "could be seen as unethical"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "ought to be continued"
+            }
+          ]
+        },
+        {
+          "id": "c10t4l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Computers will have a greater ___",
+              "acceptedAnswers": [
+                "memory"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it could threaten our way of life"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is misunderstood by the public"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "should be used with more caution"
+                }
+              ],
+              "gapText": "Computers will be even smaller, faster, and will have a greater 36 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it could threaten our way of life"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it is misunderstood by the public"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "should be used with more caution"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:42.840070+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g37",
+          "instruction": "Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "___ energy will become more affordable",
+              "acceptedAnswers": [
+                "solar"
+              ],
+              "options": [],
+              "gapText": "37 ___ energy will become more affordable",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "sharedOptions": []
+        },
+        {
+          "id": "c10t4l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Nanotechnology could remove ___ from contaminated water",
+              "acceptedAnswers": [
+                "oil"
+              ],
+              "gapText": "Pollutants such as 38 ___ could be removed from water more easily",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:42.840070+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "There will be no ___ from manufacturing",
+              "acceptedAnswers": [
+                "waste"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it could threaten our way of life"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is misunderstood by the public"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "should be used with more caution"
+                }
+              ],
+              "gapText": "There will be no 39 ___ from manufacturing",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it could threaten our way of life"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it is misunderstood by the public"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "should be used with more caution"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:42.840070+00:00"
+          }
+        },
+        {
+          "id": "c10t4l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Analysis of medical ___ will be speeded up",
+              "acceptedAnswers": [
+                "tests"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it could threaten our way of life"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is misunderstood by the public"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "should be used with more caution"
+                }
+              ],
+              "gapText": "Analysis of medical 40 ___ will be speeded up",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it could threaten our way of life"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it is misunderstood by the public"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "should be used with more caution"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:42.840070+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1252353,
+      "audioDurationMs": 445520
+    }
+  ]
+}

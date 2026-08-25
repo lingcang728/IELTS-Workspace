@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-3-writing",
+  "title": "Cambridge IELTS 7 Academic Test 3 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-c83601c8d4c8",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task\n\nThe chart below shows information about changes in average house prices in five different cities between 1990 and 2002 compared with the average house prices in 1989.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant\n\nWrite at least 150 words.\n\nPercentage change in average house prices in five cities 1990–2002 compared with 1989 \n[]\n\n本资料仅用于参考，。"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c07-t3-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nAs most people spend a major part of their adult life at work, job satisfaction is an important element of individual wellbeing\n\nWhat factors contribute to job satisfaction?\n\nHow realistic is the expectation of job satisfaction for all workers?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words"
+      },
+      "questionGroups": []
+    }
+  ]
+}

@@ -1,0 +1,2290 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-16-test-1-reading",
+  "title": "Cambridge IELTS 16 Academic Test 1 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0025-fb0f7683",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 16",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题16.pdf",
+        "sha256": "11675fa3dcb124e93afbf44371c174f676a78a260b01ebc190aae5f5fed3912e"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C16\\剑桥雅思真题16\\auto\\剑桥雅思真题16.md",
+        "sha256": "37e2b02fa11efa3ffea598a90df90c46ff0869335bca7ce4d74970bd09c97e48",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=15, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Extremes",
+        "url": "https://ieltsextremes.com/cambridge-16-reading-test-4-answers/",
+        "note": "Independent C16 Reading Test 4 key used for the incomplete scanned answer page."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Why we need to protect polar bears\n\nPolar bears are being increasingly threatened by the effects of climate change, but their disappearance could have far-reaching consequences. They are uniquely adapted to the extreme conditions of the Arctic Circle, where temperatures can reach $- 4 0 ^ { \\circ } \\mathrm { C } .$ One reason for this is that they have up to 11 centimetres of fat underneath their skin. Humans with comparative levels of adipose tissue would be considered obese and would be likely to suffer from diabetes and heart disease. Yet the polar bear experiences no such consequences.\n\nA 2014 study by Shi Ping Liu and colleagues sheds light on this mystery. They compared the genetic structure of polar bears with that of their closest relatives from a warmer climate, the brown bears. This allowed them to determine the genes that have allowed polar bears to survive in one of the toughest environments on Earth. Liu and his colleagues found the polar bears had a gene known as APoB, which reduces levels of low-density lipoproteins (LDLs) - a form of ‘bad' cholesterol. In humans, mutations of this gene are associated with increased risk of heart disease. Polar bears may therefore be an important study model to understand heart disease in humans.\n\nThe genome of the polar bear may also provide the solution for another condition, one that particularly affects our older generation: osteoporosis. This is a disease where bones show reduced density, usually caused by insufficient exercise, reduced calcium intake or food starvation. Bone tissue is constantly being remodelled, meaning that bone is added or removed, depending on nutrient availability and the stress that the bone is under. Female polar bears, however, undergo extreme conditions during every pregnancy. Once autumn comes around, these females will dig maternity dens in the snow and will remain there throughout the winter, both before and after the birth of their cubs. This process results in about six months of fasting, where the female bears have to keep themselves and their cubs alive, depleting their own calcium and calorie reserves. Despite this, their bones remain strong and dense.\n\nPhysiologists Alanda Lennox and Allen Goodship found an explanation for this paradox in 2008. They discovered that pregnant bears were able to increase the density of their bones before they started to build their dens. In addition, six months later, when they finally emerged from the den with their cubs, there was no evidence of significant loss of bone density. Hibernating brown bears do not have this capacity and must therefore resort to major bone reformation in the following spring. If the mechanism of bone remodelling in polar bears can be understood, many bedridden humans, and even astronauts, could potentially benefit\n\nThe medical benefits of the polar bear for humanity certainly have their importance in our conservation efforts, but these should not be the only factors taken into consideration. We tend to want to protect animals we think are intelligent and possess emotions, such as elephants and primates. Bears, on the other hand, seem to be perceived as stupid and in many cases violent. And yet anecdotal evidence from the field challenges those assumptions, suggesting for example that polar bears have good problem-solving abilities. A male bear called GoGo in Tennoji Zoo, Osaka, has even been observed making use of a tool to manipulate his environment. The bear used a tree branch on multiple occasions to dislodge a piece of meat hung out of his reach. Problem-solving ability has also been witnessed in wild polar bears, although not as obviously as with GoGo. A calculated move by a male bear involved running and jumping onto barrels in an attempt to get to a photographer standing on a platform four metres high.\n\nIn other studies, such as one by Alison Ames in 2008, polar bears showed deliberate and focussed manipulation. For example, Ames observed bears putting objects in piles and then knocking them over in what appeared to be a game. The study demonstrates that bears are capable of agile and thought-out behaviours. These examples suggest bears have greater creativity and problem-solving abilities than previously thought.\n\nAs for emotions, while the evidence is once again anecdotal, many bears have been seen to hit out at ice and snow - seemingly out of frustration – when they have just missed out on a kill. Moreover, polar bears can form unusual relationships with other species, including playing with the dogs used to pull sleds in the Arctic. Remarkably, one hand-raised polar bear called Agee has formed a close relationship with her owner Mark Dumas to the point where they even swim together. This is even more astonishing since polar bears are known to actively hunt humans in the wild.\n\nIf climate change were to lead to their extinction, this would mean not only the loss of potential breakthroughs in human medicine, but more importantly, the disappearance of an intelligent, majestic animal.\n\nQuestions 1-7\n\nDo the following statements agree with the information given in Reading Passage 1?\n\nIn boxes 1–7on your answer sheet, write\n\nTRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVENif there is no information on this\n\n1 Polar bears suffer from various health problems due to the build-up of fat under their skin.\n\n2 The study done by Liu and his colleagues compared different groups of polar bears.\n\n3 Liu and colleagues were the first researchers to compare polar bears and brown bears genetically.\n\n4 Polar bears are able to control their levels of bad' cholesterol by genetic means.\n\n5 Female polar bears are able to survive for about six months without food.\n\n6 It was found that the bones of female polar bears were very weak when they came out of their dens in spring.\n\n7 The polar bear's mechanism for increasing bone density could also be used by people one day.\n\nQuestions8-13\n\nComplete the table below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 8–13 on your answer sheet.\n\n## Reasons why polar bears should be protected\n\nPeople think of bears as unintelligent and 8 .\n\nHowever, this may not be correct. For example:\n\nIn Tennoji Zoo, a bear has been seen using a branch as a 9 .. \nThis allowed him to knock down some 10.\n\nA wild polar bear worked out a method of reaching a platform where a was located.\n\nPolar bears have displayed behaviour such as conscious manipulation of objects and activity similar to a 12.\n\nBears may also display emotions. For example:\n\nThey may make movements suggesting13... ..f disappointed when hunting.\n\nThey may form relationships with other species."
+      },
+      "questionGroups": [
+        {
+          "id": "c16t1r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Polar bears suffer from various health problems due to the build-up of fat under their skin",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "The study done by Liu and his colleagues compared different groups of polar bears.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Liu and colleagues were the first researchers to compare polar bears and brown bears genetically.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Polar bears are able to control their levels of ‘bad’ cholesterol by genetic means.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "Female polar bears are able to survive for about six months without food.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "It was found that the bones of female polar bears were very weak when they came out of their dens in spring.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "The polar bear’s mechanism for increasing bone density could also be used by people one day.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g8",
+          "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "People think of bears as unintelligent and ___.",
+              "acceptedAnswers": [
+                "violent"
+              ],
+              "gapText": "People think of bears as unintelligent and 8 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g9",
+          "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "In Tennoji Zoo, a bear has been seen using a branch as a ___.",
+              "acceptedAnswers": [
+                "tool"
+              ],
+              "gapText": "In Tennoji Zoo, a bear has been seen using a branch as a 9 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g10",
+          "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "This allowed him to knock down some ___.",
+              "acceptedAnswers": [
+                "meat"
+              ],
+              "gapText": "This allowed him to knock down some 10 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g11",
+          "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "A wild polar bear worked out a method of reaching a platform where a ___ was located.",
+              "acceptedAnswers": [
+                "photographer"
+              ],
+              "gapText": "A wild polar bear worked out a method of reaching a platform where a 11 ___ was located.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g12",
+          "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Polar bears have displayed behaviour such as conscious manipulation of objects and activity similar to a ___.",
+              "acceptedAnswers": [
+                "game"
+              ],
+              "gapText": "Polar bears have displayed behaviour such as conscious manipulation of objects and activity similar to a 12 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g13",
+          "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "They may make movements suggesting ___ if disappointed when hunting.",
+              "acceptedAnswers": [
+                "frustration"
+              ],
+              "gapText": "They may make movements suggesting 13 ___ if disappointed when hunting.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 on pages21 and22.\n\nQuestions14-20\n\nReadingPassage 2 has seven paragraphs, A-G.\n\nChoose the correct heading for each paragraph from the list of headings below.\n\nWrite the correct number, i-ix, in boxes 14–20 on your answer sheet.\n\n## List of Headings\n\ni The areas and artefacts within the pyramid itself\n\nii A difficult task for those involved\n\niii A king who saved his people\n\niv A single certainty among other less definite facts\n\nv An overview of the external buildings and areas\n\nvi A pyramid design that others copied\n\nvii An idea for changing the design of burial structures\n\nviii An incredible experience despite the few remains\n\nix The answers to some unexpected questions\n\n14 Paragraph A\n\n15 Paragraph B\n\n16 Paragraph C\n\n17 Paragraph D\n\n18 Paragraph E\n\n19 Paragraph F\n\n20 Paragraph G\n\n# The Step Pyramid of Djoser\n\nThe pyramids are the most famous monuments of ancient Egypt and still hold enormous interest for people in the present day. These grand, impressive tributes to the memory of the Egyptian kings have become linked with the country even though other cultures, such as the Chinese and Mayan, also built pyramids. The evolution of the pyramid form has been written and argued about for centuries. However, there is no question that, as far as Egypt is concerned, it began with one monument to one king designed by one brilliant architect: the Step Pyramid of Djoser at Saqqara.\n\nB Djoser was the first king of the Third Dynasty of Egypt and the first to build in stone. Prior to Djoser's reign, tombs were rectangular monuments made of dried clay brick, which covered underground passages where the deceased person was buried. For reasons which remain unclear, Djoser's main official, whose name was Imhotep, conceived of building a taller, more impressive tomb for his king by stacking stone slabs on top of one another, progressively making them smaller, to form the shape now known as the Step Pyramid. Djoser is thought to have reigned for 19 years, but some historians and scholars attribute a much longer time for his rule, owing to the number and size of the monuments he built.\n\nC TheStep Pyramid has been thoroughly examined and investigated over the last century, and it is now known that the building process went through many different stages. Historian Marc Van de Mieroop comments on this, writing Much experimentation was involved, which is especially clear in the construction of the pyramid in the center of the complex. It had several plans ... before it became the first Step Pyramid in history, piling six levels on top of one another ... The weight of the enormous mass was a challenge for the builders, who placed the stones at an inward incline in order to prevent the monument breaking up.\n\nD When finally completed, the Step Pyramid rose 62 meters high and was the tallest structure of its time. The complex in which it was built was the size of a city in ancient Egypt and included a temple, courtyards, shrines, and living quarters for the priests. It covered a region of 16 hectares and was surrounded by a wall 10.5meters high.The wall had 13 false doors cut into it with only one true entrance cut into the south-east corner; the entire wall was then ringed by a trench 750 meters long and 40 meters wide. The false doors and the trench were incorporated into the complex to discourage unwanted visitors. If someone wished to enter, he or she would have needed to know in advance how to find the location of the true opening in the wall Djoser was so proud of his accomplishment that he broke the tradition of having only his own name on the monument and had Imhotep's name carved on it as well.\n\nE The burial chamber of the tomb, where the king's body was laid to rest, was dug beneath the base of the pyramid, surrounded by a vast maze of long tunnels that had rooms off them to discourage robbers. One of the most mysterious discoveries found inside the pyramid was a large number of stone vessels. Over 40,000 of these vessels, of various forms and shapes, were discovered in storerooms off the pyramid's underground passages. They are inscribed with the names of rulers from the First and Second Dynasties of Egypt and made from different kinds of stone. There is no agreement among scholars and archaeologists on why the vessels were placed in the tomb of Djoser or what they were supposed to represent. The archaeologist Jean-Philippe Lauer, who excavated most of the pyramid and complex, believes they were originally stored and then given a proper burial' by Djoser in his pyramid to honor his predecessors. There are other historians, however, who claim the vessels were dumped into the shafts as yet another attempt to prevent grave robbers from getting to the king's burial chamber.\n\nF Unfortunately, all of the precautions and intricate design of the underground network did not prevent ancient robbers from finding a way in. Djoser's grave goods, and even his body, were stolen at some point in the past and all archaeologists found were a small number of his valuables overlooked by the thieves. There was enough left throughout the pyramid and its complex, however, to astonish and amaze the archaeologists who excavated it.\n\nG Egyptologist Miroslav Verner writes, Few monuments hold a place in human history as significant as that of the Step Pyramid in Saqqara ... It can be said without exaggeration that this pyramid complex constitutes a milestone in the evolution of monumental stone architecture in Egypt and in the world as a whole.\" The Step Pyramid was a revolutionary advance in architecture and became the archetype which all the other great pyramid builders of Egypt would follow.\n\nQuestions21-24\n\nComplete the notes below.\n\nChoose ONE WORD ONLY from the passage for each answer.\n\nWrite your answers in boxes 21–24 on your answer sheet.\n\n## The Step Pyramid of Djoser\n\nThe complex that includes the Step Pyramid and its surroundings is considered to be as big as an Egyptian 21.. . of the past. The area outside the pyramid included accommodation that was occupied by 22.. …., along with many other buildings and features.\n\nA wall ran around the outside of the complex and a number of false entrances were built into this. Inaddition, a long 23.. encircled the wall. As a result. any visitors who had not been invited were cleverly prevented from entering the pyramid grounds unless they knew the 24.. of the real entrance.\n\nQuestions 25-26\n\nChoose TWO letters, A-E.\n\nWrite the correct letters in boxes 25 and 26 on your answer sheet.\n\nWhich TWo of the following points does the writer make about King Djoser?\n\nA Initially he had to be persuaded to build in stone rather than clay.\n\nB There is disagreement concerning the length of his reign.\n\nC He failed to appreciate Imhotep's part in the design of the Step Pyramid.\n\nDA few of his possessions were still in his tomb when archaeologists found it.\n\nEHe criticised the design and construction of other pyramids in Egypt"
+      },
+      "questionGroups": [
+        {
+          "id": "c16t1r-g14",
+          "instruction": "Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Paragraph A",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "single certainty among other less definite facts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Djoser was the first king of the Third Dynasty of Egypt and the first to build in"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "single certainty among other less definite facts"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Djoser was the first king of the Third Dynasty of Egypt and the first to build in"
+            }
+          ]
+        },
+        {
+          "id": "c16t1r-g15",
+          "instruction": "Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Paragraph B",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The areas and artefacts within the pyramid itself"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "A difficult task for those involved"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "A king who saved his people"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "A single certainty among other less definite facts"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "An overview of the external buildings and areas"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "A pyramid design that others copied"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "An idea for changing the design of burial structures"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "An incredible experience despite the few remains"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "The answers to some unexpected questions"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The areas and artefacts within the pyramid itself"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "A difficult task for those involved"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A king who saved his people"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A single certainty among other less definite facts"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An overview of the external buildings and areas"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A pyramid design that others copied"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "An idea for changing the design of burial structures"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "An incredible experience despite the few remains"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The answers to some unexpected questions"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:08.485477+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g16",
+          "instruction": "Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The areas and artefacts within the pyramid itself"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "A difficult task for those involved"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "A king who saved his people"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "A single certainty among other less definite facts"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "An overview of the external buildings and areas"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "A pyramid design that others copied"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "An idea for changing the design of burial structures"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "An incredible experience despite the few remains"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "The answers to some unexpected questions"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The areas and artefacts within the pyramid itself"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "A difficult task for those involved"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A king who saved his people"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A single certainty among other less definite facts"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An overview of the external buildings and areas"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A pyramid design that others copied"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "An idea for changing the design of burial structures"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "An incredible experience despite the few remains"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The answers to some unexpected questions"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:08.485477+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g17",
+          "instruction": "Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The areas and artefacts within the pyramid itself"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "A difficult task for those involved"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A king who saved his people"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A single certainty among other less definite facts"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An overview of the external buildings and areas"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A pyramid design that others copied"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "An idea for changing the design of burial structures"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "An incredible experience despite the few remains"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The answers to some unexpected questions"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:08.485477+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g18",
+          "instruction": "Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Paragraph E",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The areas and artefacts within the pyramid itself"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "A difficult task for those involved"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "A king who saved his people"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "A single certainty among other less definite facts"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "An overview of the external buildings and areas"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "A pyramid design that others copied"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "An idea for changing the design of burial structures"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "An incredible experience despite the few remains"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "The answers to some unexpected questions"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The areas and artefacts within the pyramid itself"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "A difficult task for those involved"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A king who saved his people"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A single certainty among other less definite facts"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An overview of the external buildings and areas"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A pyramid design that others copied"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "An idea for changing the design of burial structures"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "An incredible experience despite the few remains"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The answers to some unexpected questions"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:08.485477+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g19",
+          "instruction": "Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Paragraph F",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The areas and artefacts within the pyramid itself"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "A difficult task for those involved"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A king who saved his people"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A single certainty among other less definite facts"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An overview of the external buildings and areas"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A pyramid design that others copied"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "An idea for changing the design of burial structures"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "An incredible experience despite the few remains"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The answers to some unexpected questions"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:08.485477+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g20",
+          "instruction": "Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Paragraph G # The Step Pyramid of Djoser The pyramids are the most famous monuments of ancient Egypt and still hold enormous interest for people in the present day. These grand, impressive tributes to the memory of the Egyptian kings have become linked with the country even though other cultures, such as the Chinese and Mayan, also built pyramids. The evolution of the pyramid form has been written and argued about for centuries. However, there is no question that, as far as Egypt is concerned, it began with one monument to one king designed by one brilliant architect: the Step Pyramid of Djose",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The areas and artefacts within the pyramid itself"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "A difficult task for those involved"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "A king who saved his people"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A single certainty among other less definite facts"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An overview of the external buildings and areas"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A pyramid design that others copied"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "An idea for changing the design of burial structures"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "An incredible experience despite the few remains"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The answers to some unexpected questions"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:08.485477+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g21",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "The complex that includes the Step Pyramid and its surroundings is considered to be as big as an Egyptian ___ of the past.",
+              "acceptedAnswers": [
+                "city"
+              ],
+              "gapText": "The complex that includes the Step Pyramid and its surroundings is considered to be as big as an Egyptian 21 ___ of the past.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g22",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "The area outside the pyramid included accommodation that was occupied by ___, along with many other buildings and features.",
+              "acceptedAnswers": [
+                "priests"
+              ],
+              "gapText": "The area outside the pyramid included accommodation that was occupied by 22 ___, along with many other buildings and features.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g23",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "A wall ran around the outside of the complex and a number of false entrances were built into this. In addition, a long ___ encircled the wall.",
+              "acceptedAnswers": [
+                "trench"
+              ],
+              "gapText": "In addition, a long 23 ___ encircled the wall.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g24",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Any visitors who had not been invited were cleverly prevented from entering the pyramid grounds unless they knew the ___ of the real entrance.",
+              "acceptedAnswers": [
+                "location"
+              ],
+              "gapText": "Unless they knew the 24 ___ of the real entrance.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g25",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO of the following points does the writer make about King Djoser?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Initially he had to be persuaded to build in stone rather than clay."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "There is disagreement concerning the length of his reign."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He failed to appreciate Imhotep’s part in the design of the Step Pyramid."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "A few of his possessions were still in his tomb when archaeologists found it."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "He criticised the design and construction of other pyramids in Egypt."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 25 and 26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g26",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q26",
+              "number": 26,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO of the following points does the writer make about King Djoser?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Initially he had to be persuaded to build in stone rather than clay."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "There is disagreement concerning the length of his reign."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He failed to appreciate Imhotep’s part in the design of the Step Pyramid."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "A few of his possessions were still in his tomb when archaeologists found it."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "He criticised the design and construction of other pyramids in Egypt."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 25 and 26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The future of work\n\nAccording to a leading business consultancy, 3-14% of the global workforce will need to switch to a different occupation within the next 10–15 years, and all workers will need to adapt as their occupations evolve alongside increasingly capable machines. Automation - or embodied artificial intelligence' (AI) – is one aspect of the disruptive effects of technology on the labour market. 'Disembodied AI', like the algorithms running in our smartphones, is another.\n\nDr Stella Pachidi from Cambridge Judge Business School believes that some of the most fundamental changes are happening as a result of the algorithmication' of jobs that are dependent on data rather than on production - the so-called knowledge economy. Algorithms are capable of learning from data to undertake tasks that previously needed human judgement, such as reading legal contracts, analysing medical scans and gathering market intelligence.\n\n'In many cases, they can outperform humans,'says Pachidi. 'Organisations are attracted to using algorithms because they want to make choices based on what they consider is \"perfect information\", as well as to reduce costs and enhance productivity.\n\n‘'But these enhancements are not without consequences,'says Pachidi. 'If routine cognitive tasks are taken over by AI, how do professions develop their future experts?'she asks. One way of learning about a job is \"legitimate peripheral participation\"- a novice stands next to experts and learns by observation. If this isn't happening, then you need to find new ways to learn.'\n\nAnother issue is the extent to which the technology influences or even controls the workforce. For over two years, Pachidi monitored a telecommunications company. The way telecoms salespeople work is through personal and frequent contact with clients, using the benefit of experience to assess a situation and reach a decision. However, the company had started using a[n] ... algorithm that defined when account managers should contact certain customers about which kinds of campaigns and what to offer them.'\n\nThe algorithm – usually built by external designers – often becomes the keeper of knowledge, she explains. In cases like this, Pachidi believes, a short-sighted view begins to creep into working practices whereby workers learn through the algorithm's eyes' and become dependent on its instructions. Alternative explorations – where experimentation and human instinct lead to progress and new ideas – are effectively discouraged.\n\nPachidi and colleagues even observed people developing strategies to make the algorithm work to their own advantage.We are seeing cases where workers feed the algorithm with false data to reach their targets,' she reports.\n\nIt's scenarios like these that many researchers are working to avoid. Their objective is to make AI technologies more trustworthy and transparent, so that organisations and individuals understand how AI decisions are made. In the meantime, says Pachidi, 'We need to make sure we fully understand the dilemmas that this new world raises regarding expertise, occupational boundaries and control.'\n\nEconomist Professor Hamish Low believes that the future of work will involve major transitions across the whole life course for everyone: The traditional trajectory of full-time education followed by full-time work followed by a pensioned retirement is a thing of the past,' says Low. Instead, he envisages a multistage employment life: one where retraining happens across the life course, and where multiple jobs and no job happen by choice at different stages.\n\nOn the subject of job losses, Low believes the predictions are founded on a fallacy: It assumes that the number of jobs is fixed. If in 30 years, half of 100 jobs are being carried out by robots, that doesn't mean we are left with just 50 jobs for humans. The number of jobs will increase: we would expect there to be 150 jobs.\n\nDr Ewan McGaughey, at Cambridge's Centre for Business Research and King's College London, agrees thatapocalyptic' views about the future of work are misguided. 'It's the laws that restrict the supply of capital to the job market, not the advent of new technologies that causes unemployment.\n\nHis recently published research answers the question of whether automation, AI and robotics will mean a jobless future' by looking at the causes of unemployment. History is clear that change can mean redundancies. But social policies can tackle this through retraining and redeployment.\"\n\nHe adds: If there is going to be change to jobs as a result of AI and robotics then I'd like to see governments seizing the opportunity to improve policy to enforce good job security. We can \"reprogramme\" the law to prepare for a fairer future of work and leisure.' McGaughey's findings are a call to arms to leaders of organisations, governments and banks to pre-empt the coming changes with bold new policies that guarantee full employment, fair incomes and a thriving economic democracy.\n\nThe promises of these new technologies are astounding. They deliver humankind the capacity to live in a way that nobody could have once imagined,' he adds. Just as the industrial revolution brought people past subsistence agriculture, and the corporate revolution enabled mass production, a third revolution has been pronounced. But it will not only be one of technology. The next revolution will be social.\n\n## Test 1\n\n## Questions27-30\n\nChoose the correct letter, A, B, C or D.\n\nWrite the correct letter in boxes 27–30 on your answer sheet.\n\n## 27The first paragraph tells us about\n\nA the kinds of jobs that will be most affected by the growth of Al.\n\nBthe extent to which Al will alter the nature of the work that people do.\n\nC the proportion of the world's labour force who will have jobs in Al in the future.\n\nD the difference between ways that embodied and disembodied Al will impact on workers.\n\n## 28According to the second paragraph, what is Stella Pachidi's view of the knowledge economy'?\n\nA It is having an influence on the number of jobs available.\n\nBIt is changing people's attitudes towards their occupations.\n\nC It is the main reason why the production sector is declining.\n\nD It is a key factor driving current developments in the workplace.\n\n## 29What did Pachidi observe at the telecommunications company?\n\nA staff disagreeing with the recommendations of Al\n\nB staff feeling resentful about the intrusion of Al in their work\n\nCstaff making sure that Al produces the results that they want\n\nDstaff allowing Al to carry out tasks they ought to do themselves\n\n## 30 In his recently published research, Ewan McGaughey\n\nA challenges the idea that redundancy is a negative thing.\n\nBshows the profound effect of mass unemployment on society.\n\nC highlights some differences between past and future job losses.\n\nDillustrates how changes in the job market can be successfully handled.\n\nQuestions 31-34 Complete the summary using the list of words, A-G, below. Write the correct letter, A-G, in boxes 31–34 on your answer sheet.\n\n## The 'algorithmication' of jobs\n\nStella Pachidi of Cambridge Judge Business School has been focusing on the algorithmication' of jobs which rely not on production but on 31..\n\nWhile monitoring a telecommunications company, Pachidi observed a growing 32... ... on the recommendations made by Al, as workers begin to learn through the algorithm's eyes'. Meanwhile, staff are deterred from experimenting and using their own 33.. .., and are therefore prevented from achieving innovation.\n\nTo avoid the kind of situations which Pachidi observed, researchers are trying to make Al's decision-making process easier to comprehend, and to increase users' 34... ..with regard two the technology.\n\nB\n\nsatisfaction\n\nC\n\nintuition\n\nA D\n\npressure\n\nE\n\nreliance\n\nF\n\nconfidence\n\nG\n\npromotion information\n\n## Test 1\n\nQuestions35-40\n\nLook at the following statements (Questions 35-40) and the list of people below.\n\nMatch each statement with the correct person, A, B or C.\n\nWritethe correct letter, A, B orC, in boxes35-40 on your answer sheet.\n\nNB You may use any letter more than once.\n\n35Greater levels of automation will not result in lower employment\n\n36 There are several reasons why Alis appealing to businesses.\n\n37 Al's potential to transform people's lives has parallels with major cultural shifts which occurred in previous eras.\n\n38 It is important to be aware of the range of problems that Al causes.\n\n39 People are going to follow a less conventional career path than in the past.\n\n40 Authorities should take measures to ensure that there will be adequately paidwork for everyone.\n\nList of people\n\nA Stella Pachidi\n\nB Hamish Low\n\nC Ewan McGaughey\n\nWashing machine-Refrigerator-0-Vacuum cleaner"
+      },
+      "questionGroups": [
+        {
+          "id": "c16t1r-g27",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "The first paragraph tells us about",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the kinds of jobs that will be most affected by the growth of AI."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the extent to which AI will alter the nature of the work that people do."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the proportion of the world’s labour force who will have jobs in AI in the future."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the difference between ways that embodied and disembodied AI will impact on workers."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g28",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "According to the second paragraph, what is Stella Pachidi's view of the knowledge economy'?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is having an influence on the number of jobs available."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is changing people’s attitudes towards their occupations."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It is the main reason why the production sector is declining."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is a key factor driving current developments in the workplace."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g29",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "What did Pachidi observe at the telecommunications company?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "staff disagreeing with the recommendations of AI"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "staff feeling resentful about the intrusion of AI in their work"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "staff making sure that AI produces the results that they want"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "staff allowing AI to carry out tasks they ought to do themselves"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g30",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "In his recently published research, Ewan McGaughey",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "challenges the idea that redundancy is a negative thing."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "shows the profound effect of mass unemployment on society."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "highlights some differences between past and future job losses."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "illustrates how changes in the job market can be successfully handled."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g31",
+          "instruction": "Complete the summary using the list of words, A–G, below. Write the correct letter, A–G, in boxes 31–34 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "Stella Pachidi of Cambridge Judge Business School has been focusing on the ‘algorithmication’ of jobs which rely not on production but on ___.",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "Jobs which rely not on production but on 31 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "pressure"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "satisfaction"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intuition"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "promotion"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reliance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "confidence"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "information"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "pressure"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "satisfaction"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intuition"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "promotion"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "reliance"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "confidence"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "information"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:28.426759+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g32",
+          "instruction": "Complete the summary using the list of words, A–G, below. Write the correct letter, A–G, in boxes 31–34 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q32",
+              "number": 32,
+              "type": "matching",
+              "prompt": "While monitoring a telecommunications company, Pachidi observed a growing ___ on the recommendations made by AI, as workers begin to learn through the ‘algorithm’s eyes’.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "Pachidi observed a growing 32 ___ on the recommendations made by AI.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "pressure"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "satisfaction"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intuition"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "promotion"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reliance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "confidence"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "information"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "pressure"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "satisfaction"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intuition"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "promotion"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "reliance"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "confidence"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "information"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:28.426759+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g33",
+          "instruction": "Complete the summary using the list of words, A–G, below. Write the correct letter, A–G, in boxes 31–34 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q33",
+              "number": 33,
+              "type": "matching",
+              "prompt": "Meanwhile, staff are deterred from experimenting and using their own ___, and are therefore prevented from achieving innovation.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "Staff are deterred from experimenting and using their own 33 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "pressure"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "satisfaction"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intuition"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "promotion"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reliance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "confidence"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "information"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "pressure"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "satisfaction"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intuition"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "promotion"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "reliance"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "confidence"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "information"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:28.426759+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g34",
+          "instruction": "Complete the summary using the list of words, A–G, below. Write the correct letter, A–G, in boxes 31–34 on your answer sheet.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q34",
+              "number": 34,
+              "type": "matching",
+              "prompt": "To avoid the kind of situations which Pachidi observed, researchers are trying to make AI’s decision-making process easier to comprehend, and to increase users’ ___ with regard to the technology.",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "To increase users’ 34 ___ with regard to the technology.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "pressure"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "satisfaction"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intuition"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "promotion"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reliance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "confidence"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "information"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "pressure"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "satisfaction"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intuition"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "promotion"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "reliance"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "confidence"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "information"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:28.426759+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g35",
+          "instruction": "Look at the following statements (Questions 35-40) and the list of people below. Match each statement with the correct person, A, B or C.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q35",
+              "number": 35,
+              "type": "matching",
+              "prompt": "Greater levels of automation will not result in lower employment",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Stella Pachidi"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hamish Low"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Ewan McGaughey"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Stella Pachidi"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Hamish Low"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Ewan McGaughey"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:14.417053+00:00"
+          }
+        },
+        {
+          "id": "c16t1r-g36",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A, B or C.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q36",
+              "number": 36,
+              "type": "matching",
+              "prompt": "There are several reasons why Alis appealing to businesses.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:59.760135+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Stella Pachidi"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hamish Low"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Ewan McGaughey"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": [
+              "Writethe correct letter, A, B orC, in boxes35-40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g37",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A, B or C.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "AI's potential to transform people's lives has parallels with major cultural shifts which occurred in previous eras.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Stella Pachidi"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hamish Low"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Ewan McGaughey"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Stella Pachidi"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Hamish Low"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Ewan McGaughey"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": [
+              "Writethe correct letter, A, B orC, in boxes35-40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g38",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A, B or C.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q38",
+              "number": 38,
+              "type": "matching",
+              "prompt": "It is important to be aware of the range of problems that AI causes.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Stella Pachidi"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hamish Low"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Ewan McGaughey"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Stella Pachidi"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Hamish Low"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Ewan McGaughey"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": [
+              "Writethe correct letter, A, B orC, in boxes35-40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g39",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A, B or C.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q39",
+              "number": 39,
+              "type": "matching",
+              "prompt": "People are going to follow a less conventional career path than in the past.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Stella Pachidi"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hamish Low"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Ewan McGaughey"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Stella Pachidi"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Hamish Low"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Ewan McGaughey"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": [
+              "Writethe correct letter, A, B orC, in boxes35-40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t1r-g40",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A, B or C.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t1r-q40",
+              "number": 40,
+              "type": "matching",
+              "prompt": "Authorities should take measures to ensure that there will be adequately paidwork for everyone.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:59.760135+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Stella Pachidi"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hamish Low"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Ewan McGaughey"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": [
+              "Writethe correct letter, A, B orC, in boxes35-40 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

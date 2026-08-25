@@ -1,0 +1,2211 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-10-test-2-listening",
+  "title": "Cambridge IELTS 10 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0017-6d6200a4",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 10",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题10.pdf",
+        "sha256": "924bf69326e33aacf54dff62009ff5badf01d17d41340c3e242f86d278b6420d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C10\\剑桥雅思真题10\\auto\\剑桥雅思真题10.md",
+        "sha256": "779bed817fd5e0c62ba6cda955f8bc236f88c4e87afa75b288b862fc8fad9048",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-10-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the notes below.\n\nite ONE WORD AND/OR A NUMBER for each answer.\n\nTransport Survey \nExample \nTravelled to town today: by bus \nName: Luisa 1.. \nAddress: 2 .... hite Stone Rd \nArea: Bradfield \nPostcode: 3.... \nOccupation: 4. \nReason for visit to town: to go to the 5.. \nSuggestions for improvement: \nbetter 6 .. \nhave more footpaths \nmore frequent 7... \nThings that would encourage cycling to work: \nhaving 8 .arking places for bicycles \nbeing able to use a 9 at work \nthe opportunity to have cycling 10 .on busy roads"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t2l-g1",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "Hardie"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g2",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Address: ___ White Stone Rd",
+              "acceptedAnswers": [
+                "19"
+              ],
+              "gapText": "Address: ___ White Stone Rd",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g3",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Postcode: ___",
+              "acceptedAnswers": [
+                "GT82LC"
+              ],
+              "gapText": "Postcode: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g4",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Reason for visit to town: to go to the",
+              "acceptedAnswers": [
+                "hairdresser"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g5",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "Suggestions for improvement: better",
+              "acceptedAnswers": [
+                "dentist",
+                "dentist's"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g6",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Suggestions for improvement: better ___",
+              "acceptedAnswers": [
+                "lighting"
+              ],
+              "gapText": "Suggestions for improvement: better ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g7",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "Things that would encourage cycling to work: having",
+              "acceptedAnswers": [
+                "trains"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g8",
+          "instruction": "Complete the notes below.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Having ___ parking places for bicycles",
+              "acceptedAnswers": [
+                "safe"
+              ],
+              "gapText": "Having ___ parking places for bicycles",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g9",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Being able to use a ___ at work",
+              "acceptedAnswers": [
+                "shower"
+              ],
+              "gapText": "Being able to use a ___ at work",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g10",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "The opportunity to have cycling ___ on busy roads",
+              "acceptedAnswers": [
+                "training"
+              ],
+              "gapText": "The opportunity to have cycling ___ on busy roads",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 394881
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\nQuestions 11-14\n\nChoose the correct letter, A, B or C.\n\nNew city developments\n\nThe idea for the two new developments in the city came from local people. \nB the City Council. \nC the SWRDC. \nWhat is unusual about Brackenside pool? \nA its architectural style \nB its heating system \nC its method of water treatment\n\n3 Local newspapers have raised worries about\n\nABC the late opening date. the cost of the project. the size of the facilities.\n\nWhat decision has not yet been made about the pool?\n\nA whose statue will be at the door\n\nB the exact opening times\n\nC who will open it\n\nQuestions 15-20\n\nWhich feature is related to each of the following areas of the world represented in the playground?\n\nChoose SIX answers from the box and write the correct letter, A-I, next to questions 15-20.\n\nAreas of the world\n\n15 Asia \n16 Antarctica \n17 South America \n18 North America \n19 Europe \n20 Africa"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t2l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Choose the correct letter, A, B or C.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "What is unusual about Brackenside pool?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "its heating system"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "its method of water treatment"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Local newspapers have raised worries about",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the late opening date."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the cost of the project."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the size of the facilities."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "What decision has not yet been made about the pool?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "whose statue will be at the door"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the exact opening times"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "who will open it"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g15",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Asia",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ancient forts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "waterways"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ice and snow"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "jewels"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "local animals"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "mountains"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "music and film"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "space travel"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "volcanoes"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.525308+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g16",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "Antarctica",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.525308+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ancient forts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "waterways"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ice and snow"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "jewels"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "local animals"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "mountains"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "music and film"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "space travel"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "volcanoes"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g17",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "South America",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.525308+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ancient forts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "waterways"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ice and snow"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "jewels"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "local animals"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "mountains"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "music and film"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "space travel"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "volcanoes"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g18",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "North America",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.525308+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ancient forts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "waterways"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ice and snow"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "jewels"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "local animals"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "mountains"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "music and film"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "space travel"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "volcanoes"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g19",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Europe",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ancient forts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "waterways"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ice and snow"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "jewels"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "local animals"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "mountains"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "music and film"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "space travel"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "volcanoes"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.525308+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2l-g20",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "Africa",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ancient forts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "waterways"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ice and snow"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "jewels"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "local animals"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "mountains"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "music and film"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "space travel"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "volcanoes"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.525308+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 394881,
+      "audioDurationMs": 361156
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\nestions 21 and 22\n\noose TWO letters, A-E.\n\nch TWo hobbies was Thor Heyerdahl very interested in as a youth?\n\nA camping\n\nB climbing\n\nC collecting\n\nD hunting\n\nE reading\n\nestions 23 and 24\n\noose TWO letters, A-E.\n\nch do the speakers say are the Two reasons why Heyerdahl went to live on island?\n\nA to examine ancient carvings\n\nB to experience an isolated place\n\nC to formulate a new theory\n\nD to learn survival skills\n\nE to study the impact of an extreme environment\n\nQuestions 25-30\n\nChoose the correct letter, A, B or C.\n\nThe later life of Thor Heyerdahl\n\n25 According to Victor and Olivia, academics thought that Polynesian migration from \nthe east was impossible due to \nA the fact that Eastern countries were far away. \nB the lack of materials for boat building. \nC the direction of the winds and currents. \n26 Which do the speakers agree was the main reason for Heyerdahl's raft journey? \nA to overcome a research setback \nB to demonstrate a personal quality \nC to test a new theory \n27 What was most important to Heyerdahl about his raft journey? \nA the fact that he was the first person to do it \nB the speed of crossing the Pacific \nC the use of authentic construction methods \n28 Why did Heyerdahl go to Easter Island? \nA to build a stone statue \nB to sail a reed boat \nC to learn the local language \n29 In Olivia's opinion, Heyerdahl's greatest influence was on \nA theories about Polynesian origins. \nB the development of archaeological methodology. \nC establishing archaeology as an academic subject. \n30 Which criticism do the speakers make of William Oliver's textbook? \nA Its style is out of date. \nB Its content is over-simplified. \nC Its methodology is flawed.\n\nTHE FUTURE OF MANAGEMENT\n\nBusiness markets \ngreater 31 among companies \nincrease in power of large 32 .companies \nrising 3.in certain countries \nExternal influences on businesses \nmore discussion with .efore making business decisions \nenvironmental concerns which may lead to more 35.. \nBusiness structures \nmore teams will be formed to work on a particular 36... \nbusinesses may need to ofer hours that are 37 or the \nchance to work remotely \nManagement styles \nincreasing need for managers to provide good 3.... \nchanges influenced by 39.taking senior roles"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t2l-g21",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q21",
+              "number": 21,
+              "type": "multi_choice",
+              "prompt": "Which TWO hobbies was Thor Heyerdahl very interested in as a youth? (Question 21)",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "camping"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "climbing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "collecting"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "hunting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reading"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "camping"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "climbing"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "collecting"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "hunting"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "reading"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:08.707862+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g22",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q22",
+              "number": 22,
+              "type": "multi_choice",
+              "prompt": "Which TWO hobbies was Thor Heyerdahl very interested in as a youth? (Question 22)",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "camping"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "climbing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "collecting"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "hunting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reading"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:35:05.292340+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g23",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q23",
+              "number": 23,
+              "type": "multi_choice",
+              "prompt": "Which do the speakers say are the TWO reasons why Heyerdahl went to live on an island? (Question 23)",
+              "acceptedAnswers": [
+                "B",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to examine ancient carvings"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to experience an isolated place"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to formulate a new theory"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to learn survival skills"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to study the impact of an extreme environment"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:08.707862+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g24",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q24",
+              "number": 24,
+              "type": "multi_choice",
+              "prompt": "Which do the speakers say are the TWO reasons why Heyerdahl went to live on an island? (Question 24)",
+              "acceptedAnswers": [
+                "B",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to examine ancient carvings"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to experience an isolated place"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to formulate a new theory"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to learn survival skills"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to study the impact of an extreme environment"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:35:05.292340+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "According to Victor and Olivia, academics thought that Polynesian migration from the east was impossible due to A the fact that Eastern countries were far away. B the lack of materials for boat building. C the direction of the winds and currents",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to examine ancient carvings"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to experience an isolated place"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to formulate a new theory"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to learn survival skills"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to study the impact of an extreme environment"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to examine ancient carvings"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to experience an isolated place"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to formulate a new theory"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "to learn survival skills"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "to study the impact of an extreme environment"
+            }
+          ]
+        },
+        {
+          "id": "c10t2l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Which do the speakers agree was the main reason for Heyerdahl's raft journey? A to overcome a research setback B to demonstrate a personal quality C to test a new theory",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to overcome a research setback"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to demonstrate a personal quality"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to test a new theory"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.610591+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c10t2l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "What was most important to Heyerdahl about his raft journey? A the fact that he was the first person to do it B the speed of crossing the Pacific C the use of authentic construction methods",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the lack of materials for boat building"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the direction of the winds and currents"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to overcome a research setback"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the lack of materials for boat building"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the direction of the winds and currents"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to overcome a research setback"
+            }
+          ]
+        },
+        {
+          "id": "c10t2l-g28",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Why did Heyerdahl go to Easter Island? A to build a stone statue B to sail a reed boat C to learn the local language",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to build a stone statue"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to sail a reed boat"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to learn the local language"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.610591+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c10t2l-g29",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "In Olivia's opinion, Heyerdahl's greatest influence was on A theories about Polynesian origins. B the development of archaeological methodology. C establishing archaeology as an academic subject",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "theories about Polynesian origins."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the development of archaeological methodology."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "establishing archaeology as an academic subject."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.610591+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c10t2l-g30",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Which criticism do the speakers make of William Oliver's textbook? A Its style is out of date. B Its content is over-simplified. C Its methodology is flawed. THE FUTURE OF MANAGEMENT Business markets greater 31 among companies increase in power of large 32 .companies rising 3.in certain countries External influences on businesses more discussion with .efore making business decisions environmental concerns which may lead to more 35.. Business structures more teams will be formed to work on a particular 36... businesses may need to ofer hours that are 37 or the chance to work remotely Management",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Its style is out of date."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Its content is over-simplified."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Its methodology is flawed."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.610591+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 756037,
+      "audioDurationMs": 447918
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c10-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "SECTION 1 Questions 1-10\n\nComplete the notes below.\n\nite ONE WORD AND/OR A NUMBER for each answer.\n\nTransport Survey \nExample \nTravelled to town today: by bus \nName: Luisa 1.. \nAddress: 2 .... hite Stone Rd \nArea: Bradfield \nPostcode: 3.... \nOccupation: 4. \nReason for visit to town: to go to the 5.. \nSuggestions for improvement: \nbetter 6 .. \nhave more footpaths \nmore frequent 7... \nThings that would encourage cycling to work: \nhaving 8 .arking places for bicycles \nbeing able to use a 9 at work \nthe opportunity to have cycling 10 .on busy roads\n\nSECTION 2 Questions 11-20\n\nQuestions 11-14\n\nChoose the correct letter, A, B or C.\n\nNew city developments\n\nThe idea for the two new developments in the city came from local people. \nB the City Council. \nC the SWRDC. \nWhat is unusual about Brackenside pool? \nA its architectural style \nB its heating system \nC its method of water treatment\n\n3 Local newspapers have raised worries about\n\nABC the late opening date. the cost of the project. the size of the facilities.\n\nWhat decision has not yet been made about the pool?\n\nA whose statue will be at the door\n\nB the exact opening times\n\nC who will open it\n\nQuestions 15-20\n\nWhich feature is related to each of the following areas of the world represented in the playground?\n\nChoose SIX answers from the box and write the correct letter, A-I, next to questions 15-20.\n\nAreas of the world\n\n15 Asia \n16 Antarctica \n17 South America \n18 North America \n19 Europe \n20 Africa\n\nSECTION 3 Questions 21-30\n\nestions 21 and 22\n\noose TWO letters, A-E.\n\nch TWo hobbies was Thor Heyerdahl very interested in as a youth?\n\nA camping\n\nB climbing\n\nC collecting\n\nD hunting\n\nE reading\n\nestions 23 and 24\n\noose TWO letters, A-E.\n\nch do the speakers say are the Two reasons why Heyerdahl went to live on island?\n\nA to examine ancient carvings\n\nB to experience an isolated place\n\nC to formulate a new theory\n\nD to learn survival skills\n\nE to study the impact of an extreme environment\n\nQuestions 25-30\n\nChoose the correct letter, A, B or C.\n\nThe later life of Thor Heyerdahl\n\n25 According to Victor and Olivia, academics thought that Polynesian migration from \nthe east was impossible due to \nA the fact that Eastern countries were far away. \nB the lack of materials for boat building. \nC the direction of the winds and currents. \n26 Which do the speakers agree was the main reason for Heyerdahl's raft journey? \nA to overcome a research setback \nB to demonstrate a personal quality \nC to test a new theory \n27 What was most important to Heyerdahl about his raft journey? \nA the fact that he was the first person to do it \nB the speed of crossing the Pacific \nC the use of authentic construction methods \n28 Why did Heyerdahl go to Easter Island? \nA to build a stone statue \nB to sail a reed boat \nC to learn the local language \n29 In Olivia's opinion, Heyerdahl's greatest influence was on \nA theories about Polynesian origins. \nB the development of archaeological methodology. \nC establishing archaeology as an academic subject. \n30 Which criticism do the speakers make of William Oliver's textbook? \nA Its style is out of date. \nB Its content is over-simplified. \nC Its methodology is flawed.\n\nTHE FUTURE OF MANAGEMENT\n\nBusiness markets \ngreater 31 among companies \nincrease in power of large 32 .companies \nrising 3.in certain countries \nExternal influences on businesses \nmore discussion with .efore making business decisions \nenvironmental concerns which may lead to more 35.. \nBusiness structures \nmore teams will be formed to work on a particular 36... \nbusinesses may need to ofer hours that are 37 or the \nchance to work remotely \nManagement styles \nincreasing need for managers to provide good 3.... \nchanges influenced by 39.taking senior roles"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t2l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Greater ___ among companies",
+              "acceptedAnswers": [
+                "competition"
+              ],
+              "gapText": "Greater ___ among companies",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:19.764593+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Increase in power of large ___ companies",
+              "acceptedAnswers": [
+                "global"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "Increase in power of large ___ companies",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Rising ___ in certain countries",
+              "acceptedAnswers": [
+                "demand"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "Rising ___ in certain countries",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "More discussion with ___ before making business decisions",
+              "acceptedAnswers": [
+                "customers"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "More discussion with ___ before making business decisions",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Environmental concerns which may lead to more ___",
+              "acceptedAnswers": [
+                "regulation"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "Environmental concerns which may lead to more ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "More teams will be formed to work on a particular ___",
+              "acceptedAnswers": [
+                "project"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "More teams will be formed to work on a particular ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Businesses may need to offer hours that are ___, or the chance to work remotely",
+              "acceptedAnswers": [
+                "flexible"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "Businesses may need to offer hours that are ___, or the chance to work remotely",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Increasing need for managers to provide good ___",
+              "acceptedAnswers": [
+                "leadership"
+              ],
+              "gapText": "Increasing need for managers to provide good ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:19.764593+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Changes influenced by ___ taking senior roles",
+              "acceptedAnswers": [
+                "women"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "Changes influenced by ___ taking senior roles",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        },
+        {
+          "id": "c10t2l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "More and more ___ workers",
+              "acceptedAnswers": [
+                "self-employed"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the City Council"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the SWRDC"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its architectural style"
+                }
+              ],
+              "gapText": "More and more ___ workers",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the City Council"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the SWRDC"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its architectural style"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:36:36.360222+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1203955,
+      "audioDurationMs": 410154
+    }
+  ]
+}

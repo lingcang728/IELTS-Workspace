@@ -1,0 +1,3012 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-10-test-2-reading",
+  "title": "Cambridge IELTS 10 Academic Test 2 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0028-7a0ede06",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 10",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题10.pdf",
+        "sha256": "924bf69326e33aacf54dff62009ff5badf01d17d41340c3e242f86d278b6420d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C10\\剑桥雅思真题10\\auto\\剑桥雅思真题10.md",
+        "sha256": "779bed817fd5e0c62ba6cda955f8bc236f88c4e87afa75b288b862fc8fad9048",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-10-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Tea and the Industrial Revolution\n\nA Cambridge professor says that a change in drinking habits was the reason for the Industrial Revolution in Britain. Anjana Ahuja reports\n\nA Alan Macfarlane, professor of anthropological science at King's College, Cambridge, has, like other historians, spent decades wrestling with the enigma of the Industrial Revolution. Why did this particular Big Bang – the world-changing birth of industry – happen in Britain? And why did it strike at the end of the 18th century?\n\nB Macfarlane compares the puzzle to a combination lock.There are about 20 different factors and all of them need to be present before the revolution can happen,' he says. For industry to take off, there needs to be the technology and power to drive factories, large urban populations to provide cheap labour, easy transport to move goods around, an affluent middle-class willing to buy mass-produced objects, a market-driven economy and a political system that allows this to happen. While this was the case for England, other nations, such as Japan, the Netherlands and France also met some of these criteria but were not industrialising. All these factors must have been necessary but not sufficient to cause the revolution,' says Macfarlane. After all, Holland had everything except coal, while China also had many of these factors. Most historians are convinced there are one or two missing factors that you need to open the lock.\n\nThe missing factors, he proposes, are to be found in almost every kitchen cupboard. Tea and beer, two of the nation's favourite drinks, fuelled the revolution. The antiseptic properties of tannin, the active ingredient in tea, and of hops in beer - plus the fact that both are made with boiled water – allowed urban communities to flourish at close quarters without succumbing to water-borne diseases such as dysentery. The theory sounds eccentric but once he starts to explain the detective work that went into his deduction, the scepticism gives way to wary admiration. Macfarlane's case has been strengthened by support from notable quarters – Roy Porter, the distinguished medical historian, recently wrote a favourable appraisal of his research.\n\nMacfarlane had wondered for a long time how the Industrial Revolution came about. Historians had alighted on one interesting factor around the mid-18th century that required explanation. Between about 1650 and 1740, the population in Britain was static. But then there was a burst in population growth. Macfarlane says: The infant mortality rate halved in the space of 20 years, and this happened in both rural areas and cities, and across all classes. People suggested four possible causes. Was there a sudden change in the viruses and bacteria around? Unlikely. Was there a revolution in medical science? But this was a century before Lister's revolution\\*. Was there a change in environmental conditions? There were improvements in agriculture that wiped out malaria, but these were small gains. Sanitation did not become widespread until the 19th century. The only option left is food. But the height and weight statistics show a decline.So the food must have got worse. Efforts to explain this sudden reduction in child deaths appeared to draw a blank.\n\nThis population burst seemed to happen at just the right time to provide labour for the Industrial Revolution. 'When you start moving towards an industrial revolution, it is economically efficient to have people living close together,' says Macfarlane. But then you get disease, particularly from human waste.' Some digging around in historical records revealed that there was a change in the incidence of water-borne disease at that time, especially dysentery. Macfarlane deduced that whatever the British were drinking must have been important in regulating disease. He says, 'We drank beer. For a long time, the English were protected by the strong antibacterial agent in hops, which were added to help preserve the beer. But in the late 17th century a tax was introduced on malt, the basic ingredient of beer. The poor turned to water and gin and in the 1720s the mortality rate began to rise again. Then it suddenly dropped again. What caused this?\n\nMacfarlane looked to Japan, which was also developing large cities about the same time, and also had no sanitation. Water-borne diseases had a much looser grip on the Japanese population than those in Britain. Could it be the prevalence of tea in their culture? Macfarlane then noted that the history of tea in Britain provided an extraordinary coincidence of dates. Tea was relatively expensive until Britain started a direct clipper trade with China in the early 18th century. By the 1740s, about the time that infant mortality was dipping, the drink was common. Macfarlane guessed that the fact that water had to be boiled, together with the stomach-purifying properties of tea meant that the breast milk provided by mothers was healthier than it had ever been. No other European nation sipped tea like the British, which, by Macfarlane's logic, pushed these other countries out of contention for the revolution.\n\nBut, if tea is a factor in the combination lock, why didn't Japan forge ahead in a tea-soaked industrial revolution of its own? Macfarlane notes that even though 17th-century Japan had large cities, high literacy rates, even a futures market, it had turned its back on the essence of any work-based revolution by giving up labour-saving devices such as animals, afraid that they would put people out of work. So, the nation that we now think of as one of the most technologically advanced entered the 19th century having abandoned the wheel'"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t2r-g1",
+          "instruction": "Reading Passage 1 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q1",
+              "number": 1,
+              "type": "matching",
+              "prompt": "Paragraph A",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The search for the reasons for an increase in population"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Industrialisation and the fear of unemployment"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The development of cities in Japan"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The time and place of the Industrial Revolution"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The cases of Holland, France and China"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Changes in drinking habits in Britain"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Two keys to Britain's industrial revolution"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conditions required for industrialisation"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Comparisons with Japan lead to the answer"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.568837+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The search for the reasons for an increase in population"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Industrialisation and the fear of unemployment"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The development of cities in Japan"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The time and place of the Industrial Revolution"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The cases of Holland, France and China"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Changes in drinking habits in Britain"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Two keys to Britain's industrial revolution"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conditions required for industrialisation"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Comparisons with Japan lead to the answer"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g2",
+          "instruction": "Reading Passage 1 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q2",
+              "number": 2,
+              "type": "matching",
+              "prompt": "Paragraph B",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The search for the reasons for an increase in population"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Industrialisation and the fear of unemployment"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The development of cities in Japan"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The time and place of the Industrial Revolution"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The cases of Holland, France and China"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Changes in drinking habits in Britain"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Two keys to Britain's industrial revolution"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conditions required for industrialisation"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Comparisons with Japan lead to the answer"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.568837+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The search for the reasons for an increase in population"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Industrialisation and the fear of unemployment"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The development of cities in Japan"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The time and place of the Industrial Revolution"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The cases of Holland, France and China"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Changes in drinking habits in Britain"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Two keys to Britain's industrial revolution"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conditions required for industrialisation"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Comparisons with Japan lead to the answer"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g3",
+          "instruction": "Reading Passage 1 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q3",
+              "number": 3,
+              "type": "matching",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The search for the reasons for an increase in population"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Industrialisation and the fear of unemployment"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The development of cities in Japan"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The time and place of the Industrial Revolution"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The cases of Holland, France and China"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Changes in drinking habits in Britain"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Two keys to Britain's industrial revolution"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conditions required for industrialisation"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Comparisons with Japan lead to the answer"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.568837+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The search for the reasons for an increase in population"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Industrialisation and the fear of unemployment"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The development of cities in Japan"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The time and place of the Industrial Revolution"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The cases of Holland, France and China"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Changes in drinking habits in Britain"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Two keys to Britain's industrial revolution"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conditions required for industrialisation"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Comparisons with Japan lead to the answer"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g4",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q4",
+              "number": 4,
+              "type": "matching",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The search for the reasons for an increase in population"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Industrialisation and the fear of unemployment"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The development of cities in Japan"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The time and place of the Industrial Revolution"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The cases of Holland, France and China"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Changes in drinking habits in Britain"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Two keys to Britain's industrial revolution"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conditions required for industrialisation"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Comparisons with Japan lead to the answer"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The search for the reasons for an increase in population"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Industrialisation and the fear of unemployment"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The development of cities in Japan"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The time and place of the Industrial Revolution"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The cases of Holland, France and China"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Changes in drinking habits in Britain"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Two keys to Britain's industrial revolution"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conditions required for industrialisation"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Comparisons with Japan lead to the answer"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g5",
+          "instruction": "Reading Passage 1 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q5",
+              "number": 5,
+              "type": "matching",
+              "prompt": "Paragraph E",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The search for the reasons for an increase in population"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Industrialisation and the fear of unemployment"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The development of cities in Japan"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The time and place of the Industrial Revolution"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The cases of Holland, France and China"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Changes in drinking habits in Britain"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Two keys to Britain's industrial revolution"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conditions required for industrialisation"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Comparisons with Japan lead to the answer"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.568837+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The search for the reasons for an increase in population"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Industrialisation and the fear of unemployment"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The development of cities in Japan"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The time and place of the Industrial Revolution"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The cases of Holland, France and China"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Changes in drinking habits in Britain"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Two keys to Britain's industrial revolution"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conditions required for industrialisation"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Comparisons with Japan lead to the answer"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g6",
+          "instruction": "Reading Passage 1 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q6",
+              "number": 6,
+              "type": "matching",
+              "prompt": "Paragraph F",
+              "acceptedAnswers": [
+                "ix"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The search for the reasons for an increase in population"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Industrialisation and the fear of unemployment"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The development of cities in Japan"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The time and place of the Industrial Revolution"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The cases of Holland, France and China"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Changes in drinking habits in Britain"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Two keys to Britain's industrial revolution"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conditions required for industrialisation"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Comparisons with Japan lead to the answer"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.568837+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The search for the reasons for an increase in population"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Industrialisation and the fear of unemployment"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The development of cities in Japan"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The time and place of the Industrial Revolution"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The cases of Holland, France and China"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Changes in drinking habits in Britain"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Two keys to Britain's industrial revolution"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conditions required for industrialisation"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Comparisons with Japan lead to the answer"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g7",
+          "instruction": "Reading Passage 1 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q7",
+              "number": 7,
+              "type": "matching",
+              "prompt": "Paragraph G",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The search for the reasons for an increase in population"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Industrialisation and the fear of unemployment"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The development of cities in Japan"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The time and place of the Industrial Revolution"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The cases of Holland, France and China"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Changes in drinking habits in Britain"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Two keys to Britain's industrial revolution"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conditions required for industrialisation"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Comparisons with Japan lead to the answer"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.568837+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The search for the reasons for an increase in population"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Industrialisation and the fear of unemployment"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The development of cities in Japan"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The time and place of the Industrial Revolution"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The cases of Holland, France and China"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Changes in drinking habits in Britain"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Two keys to Britain's industrial revolution"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conditions required for industrialisation"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Comparisons with Japan lead to the answer"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Do the following statements agree with the information given in Reading Passage 1?",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2r-g9",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q9",
+              "number": 9,
+              "type": "true_false_ng",
+              "prompt": "Tea and beer both helped to prevent dysentery in Britain",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g10",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q10",
+              "number": 10,
+              "type": "true_false_ng",
+              "prompt": "Roy Porter disagrees with Professor Macfarlane's findings",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g11",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q11",
+              "number": 11,
+              "type": "true_false_ng",
+              "prompt": "After 1740, there was a reduction in population in Britain",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g12",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q12",
+              "number": 12,
+              "type": "true_false_ng",
+              "prompt": "People in Britain used to make beer at home",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g13",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q13",
+              "number": 13,
+              "type": "true_false_ng",
+              "prompt": "The tax on malt indirectly caused a rise in the death rate. ou should spend about 20 minutes on",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Gifted children and learning\n\nInternationally, 'giftedness' is most frequently determined by a score on a general intelligence test, known as an lQ test,which is above a chosen cutoff point, usually at around the top 2–5%. Children's educational environment contributes to the lQ score and the way intelligence is used. For example, a very close positive relationship was found when children's lQ scores were compared with their home educational provision (Freeman, 2010). The higher the children's IQ scores, especially over IQ 130, the better the quality of their educational backup, measured in terms of reported verbal interactions with parents, number of books and activities in their home etc. Because lQ tests are decidedly influenced by what the child has learned, they are to some extent measures of current achievement based on age-norms; that is, how well the children have learned to manipulate their knowledge and know-how within the terms of the test. The vocabulary aspect, for example, is dependent on having heard those words.But IQ tests can neither identify the processes of learning and thinking nor predict creativity.\n\nExcellence does not emerge without appropriate help. To reach an exceptionally high standard in any area very able children need the means to learn, which includes material to work with and focused challenging tuition –and the encouragement to follow their dream. There appears to be a qualitative difference in the way the intellectually highly able think, compared with more average-ability or older pupils, for whom external regulation by the teacher often compensates for lack of internal regulation. To be at their most effective in their self-regulation, all children can be helped to identify their own ways of learning – metacognition – which will include strategies of planning, monitoring, evaluation, andchoice of what to learn. Emotional awareness is also part of metacognition, so children should be helped to be aware of their feelings around the area to be learned, feelings of curiosity or confidence, for example.\n\nHigh achievers have been found to use self-regulatory learning strategies more often and more effectively than lower achievers, and are better able to transfer these strategies to deal with unfamiliar tasks. This happens to such a high degree in some children that they appear to be demonstrating talent in particular areas. Overviewing research on the thinking process of highly able children, (Shore and Kanevsky, 1993) put the instructor's problem succinctly: 'If they [the gifted] merely think more quickly, then we need only teach more quickly. If they merely make fewer errors, then we can shorten the practice'. But of course, this is not entirely the case; adjustments have to be made in methods of learning and teaching, to take account of the many ways individuals think.\n\nD Yet in order to learn by themselves, the gifted do need some support from their teachers. Conversely, teachers who have a tendency to 'overdirect' can diminish their gifted pupils' learning autonomy. Although 'spoon-feeding' can produce extremely high examination results, these are not always followed by equally impressive life successes. Too much dependence on the teacher risks loss of autonomy and motivation to discover. However, when teachers help pupils to reflect on their own learning and thinking activities, they increase their pupils self-regulation. For a young child, it may be just the simple question 'What have you learned today?' which helps them to recognise what they are doing. Given that a fundamental goal of education is to transfer the control of learning from teachers to pupils, improving pupils' learning to learn techniques should be a major outcome of the school experience, especially for the highly competent. There are quite a number of new methods which can help, such as childinitiated learning, ability-peer tutoring, etc. Such practices have been found to be particularly useful for bright children from deprived areas.\n\nE But scientific progress is not all theoretical, knowledge is also vital to outstanding performance: individuals who know a great deal about a specific domain will achieve at a higher level than those who do not (Elshout, 1995). Research with creative scientists by Simonton (1988) brought him to the conclusion that above a certain high level, characteristics such as independence seemed to contribute more to reaching the highest levels of expertise than intellectual skills, due to the great demands of effort and time needed for learning and practice. Creativity in all forms can be seen as expertise mixed with a high level of motivation (Weisberg, 1993).\n\nF To sum up, learning is affected by emotions of both the individual and significant others. Positive emotions facilitate the creative aspects of learning and negative emotions inhibit it. Fear, for example, can limit the development of curiosity, which is a strong force in scientific advance, because it motivates problem-solving behaviour. In Boekaerts' (1991) review of emotion in the learning of very high IQ and highly achieving children, she found emotional forces in harness. They were not only curious, but often had a strong desire to control their environment, improve their learning efficiency, and increase their own learning resources."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t2r-g14",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "a reference to the influence of the domestic background on the gifted child",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2r-g15",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "reference to what can be lost if learners are given too much guidance",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2r-g16",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "a reference to the damaging effects of anxiety",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2r-g17",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "examples of classroom techniques which favour socially-disadvantaged children",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Freeman"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Shore and Kanevsky"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Elshout"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Simonton"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Bo"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2r-g18",
+          "instruction": "Look at the following statements (Questions 18-22) and the list of people below. Match each statement with the correct person or people, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Less time can be spent on exercises with gifted pupils who produce accurate work.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Freeman"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Shore and Kanevsky"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Elshout"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Simonton"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Boekaerts"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Freeman"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Shore and Kanevsky"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Elshout"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Simonton"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Boekaerts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:10.986076+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g19",
+          "instruction": "Look at the following statements. Write the correct letter, A-E, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Self-reliance is a valuable tool that helps gifted students reach their goals. Gifted children know how to channel their feelings to assist their learning",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Freeman"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Shore and Kanevsky"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Elshout"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Simonton"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Boekaerts"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Freeman"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Shore and Kanevsky"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Elshout"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Simonton"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Boekaerts"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2r-g20",
+          "instruction": "Look at the following statements (Questions 18-22) and the list of people below. Match each statement with the correct person or people, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "Gifted children know how to channel their feelings to assist their learning.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Freeman"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Shore and Kanevsky"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Elshout"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Simonton"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Boekaerts"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Freeman"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Shore and Kanevsky"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Elshout"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Simonton"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Boekaerts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:10.986614+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g21",
+          "instruction": "Look at the following statements. Write the correct letter, A-E, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "The very gifted child benefits from appropriate support from close relatives. Realiy successful students have learnt a considerable amount about their subject. List of People A Freeman B Shore and Kanevsky C Elshout D Simonton E Boekaerts",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Freeman"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Shore and Kanevsky"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Elshout"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Simonton"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Boekaerts"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Freeman"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Shore and Kanevsky"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Elshout"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Simonton"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Boekaerts"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t2r-g22",
+          "instruction": "Look at the following statements (Questions 18-22) and the list of people below. Match each statement with the correct person or people, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "Really successful students have learnt a considerable amount about their subject.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Freeman"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Shore and Kanevsky"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Elshout"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Simonton"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Boekaerts"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Freeman"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Shore and Kanevsky"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Elshout"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Simonton"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Boekaerts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:10.986614+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g23",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "One study found a strong connection between children's IQ and the availability of and at home",
+              "acceptedAnswers": [
+                "books (and) activities"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t2r-g24",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Children of average ability seem to need more direction from teachers because they do not have",
+              "acceptedAnswers": [
+                "internal regulation",
+                "self-regulation"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t2r-g25",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Metacognition involves children understanding their own learning strategies, as well as developing",
+              "acceptedAnswers": [
+                "emotional awareness"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t2r-g26",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Teachers who rely on what is known sten produce sets sf impressive grades in class tests",
+              "acceptedAnswers": [
+                "spoon-feeding"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23–26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Museums of fine art and their public\n\nThe fact that people go to the Louvre museum in Paris to see the original painting Mona Lisa when they can see a reproduction anywhere leads us to question some assumptions about the role of museums of fine art in today's world\n\nOne of the most famous works of art in e world is Leonardo da Vinci's Mona sa. Nearly everyone who goes to see the ginal will already be familiar with it from productions, but they accept that fine art more rewardingly viewed in its original rm.\n\nHowever, if Mona Lisa was a famous vel, few people would bother to to a museum to read the writer's tual manuscript rather than a printed production. This might be explained by e fact that the novel has evolved precisely ecause of technological developments t made it possible to print out huge mbers of texts, whereas oil paintings have ays been produced as unique objects. In dition, it could be argued that the practice interpreting or 'reading' each medium lows different conventions. With novels, reader attends mainly to the meaning of ds rather than the way they are printed the page, whereas the 'reader' of a nting must attend just as closely to the terial form of marks and shapes in the cture as to any ideas they may signify. Yet it has always been possible to make accurate facsimiles of pretty well any art work. The seven surviving versions Mona Lisa bear witness to the fact that the 16th century, artists seemed perfectly\n\n[]\n\ncontent to assign the reproduction of their creations to their workshop apprentices as\n\nregular 'bread and butter' work. And today the task of reproducing pictures is incomparably more simple and reliable, with reprographic techniques that allow the production of high-quality prints made exactly to the original scale, with faithful colour values, and even with duplication of the surface relief of the painting.\n\nBut despite an implicit recognition that the spread of good reproductions can be culturally valuable, museums continue to promote the special status of original work.\n\nUnfortunately, this seems to place severe limitations on the kind of experience offered to visitors.\n\nOne limitation is related to the way the museum presents its exhibits. As repositories of unique historical objects, art museums are often called 'treasure houses'. We are reminded of this even before we view a collection by the presence of security guards, attendants, ropes and display cases to keep us away from the exhibits. In many cases, the architectural style of the building further reinforces that notion. In addition, a major collection like that of London's\n\nNational Gallery is housed in numerous rooms, each with dozens of works, any one of which is likely to be worth more than all the average visitor possesses. In a society that judges the personal status of the individual so much by their material worth, it is therefore difficult not to be impressed by one's own relative 'worthlessness' in such an environment.\n\nFurthermore, consideration of the 'value' of the original work in its treasure house setting impresses upon the viewer that, since these works were originally produced they have been assigned a huge monetary value by some person or institution more powerful than themselves. Evidently, nothing the viewer thinks about the work is going to alter that value, and so today's viewer is deterred from trying to extend that spontaneous, immediate, self-reliant kind of reading which would originally have met the work.\n\nThe visitor may then be struck by the strangeness of seeing such diverse paintings, drawings and sculptures brought together in an environment for which they were not originally created. This 'displacement effect' is further heightened by the sheer volume of exhibits. In the case of a major collection, there are probably more works on display than we could realistically view in weeks or even months.\n\nThis is particularly distressing because time seems to be a vital factor in the appreciation of all art forms. A fundamental difference between paintings and other art forms is that there is no prescribed time over which a painting is viewed. By contrast, the audience encounters an opera or a play over a specific time, which is the duration of the performance. Similarly, novels and poems are read in a prescribed temporal sequence, whereas a picture has no clear place at which to start viewing, or at which to finish. Thusart works themselves encourage us to view them superficially, without appreciating the richness of detail and labour that is involved.\n\nConsequently, the dominant critical approach becomes that of the art historian, a specialised academic approach devoted to discovering the meaning' of art within the cultural context of its time. This is in perfect harmony with the museum's function, since the approach is dedicated to seeking out and conserving 'authentic', 'original' readings of the exhibits. Again, this seems to put paid to that spontaneous, participatory criticism which can be found in abundance in criticism of classic works of literature, but is absent from most art history.\n\nThe displays of art museums serve as a warning of what critical practices can emerge when spontaneous criticism is suppressed. The museum public, like any other audience, experience art more rewardingly when given the confidence to express their views. If appropriate works of fine art could be rendered permanently accessible to the public by means of high-fidelity reproductions, as literature and music already are, the public may feel somewhat less in awe of them. Unfortunately, that may be too much to ask from those who seek to maintain and control the art establishment.\n\nComplete the summary using the list of words, A-L, below.\n\nrite the correct letter, A-L, in boxes 27–31 on your answer sheet.\n\nThe value attached to original works of art\n\nFeople go to art museums because they accept the value of seeing an original work of art. Eut they do not go to museums to read original manuscripts of novels, perhaps because the vailability of novels has depended on 27..or so long, and also because with novels, the 28.. are the most important thing.\n\nHowever, in historical times artists such as Leonardo were happy to instruct 29.. produce copies of their work and these days new methods of reproduction allow excellent eplication of surface relief features as well as colour and 30\n\nIt is regrettable that museums still promote the superiority of original works of art, since his may not be in the interests of the 31..\n\nA institution\n\nB\n\nmass production\n\nC\n\nmechanical processes\n\npublic D\n\nE\n\npaints\n\nF\n\nartist\n\nG size\n\nH\n\nunderlying ideas\n\nI\n\nbasic technology\n\nJ readers\n\nK\n\npicture frames\n\nL\n\nassistants"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t2r-g27",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "The availability of novels has depended on ______ for so long.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "institution"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mass production"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "mechanical processes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "public"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "paints"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "artist"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "size"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "underlying ideas"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "basic technology"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "readers"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "picture frames"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "assistants"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "institution"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "mass production"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "mechanical processes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "public"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "paints"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "artist"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "size"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "underlying ideas"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "basic technology"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "readers"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "picture frames"
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": "assistants"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g28",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "With novels, the ______ are the most important thing.",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "institution"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mass production"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "mechanical processes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "public"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "paints"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "artist"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "size"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "underlying ideas"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "basic technology"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "readers"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "picture frames"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "assistants"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "institution"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "mass production"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "mechanical processes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "public"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "paints"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "artist"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "size"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "underlying ideas"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "basic technology"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "readers"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "picture frames"
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": "assistants"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g29",
+          "instruction": "Complete the summary using the list of words, A–L, below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Artists such as Leonardo were happy to instruct ______ to produce copies of their work.",
+              "acceptedAnswers": [
+                "L"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "institution"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mass production"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "mechanical processes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "public"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "paints"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "artist"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "size"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "underlying ideas"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "basic technology"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "readers"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "picture frames"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "assistants"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:42.078069+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g30",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "New methods of reproduction allow replication of surface relief features as well as colour and ______.",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "institution"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mass production"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "mechanical processes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "public"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "paints"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "artist"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "size"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "underlying ideas"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "basic technology"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "readers"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "picture frames"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "assistants"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "institution"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "mass production"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "mechanical processes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "public"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "paints"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "artist"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "size"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "underlying ideas"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "basic technology"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "readers"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "picture frames"
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": "assistants"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g31",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "The superiority of original works of art may not be in the interests of the ______.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "institution"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mass production"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "mechanical processes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "public"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "paints"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "artist"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "size"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "underlying ideas"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "basic technology"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "readers"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "picture frames"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "assistants"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "institution"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "mass production"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "mechanical processes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "public"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "paints"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "artist"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "size"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "underlying ideas"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "basic technology"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "readers"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "picture frames"
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": "assistants"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g32",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "The writer mentions London's National Gallery to illustrate A the undesirable cost to a nation of maintaining a huge collection of art. B the conflict that may arise in society between financial and artistic values. C the negative effect a museum can have on visitors' opinions of themselves. D the need to put individual well-being above large-scale artistic schemes",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mass production"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "mechanical processes"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "paints"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "artist"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "size"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "underlying ideas"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the undesirable cost to a nation of maintaining a huge collection of art"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the need to put individual well-being above large-scale artistic schemes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "mass production"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "mechanical processes"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "paints"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "artist"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "size"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "underlying ideas"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the undesirable cost to a nation of maintaining a huge collection of art"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the need to put individual well-being above large-scale artistic schemes"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g33",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "The writer says that today, viewers may be unwilling to criticise a work because A they lack the knowledge needed to support an opinion. Bthey fear it may have financial implications. C they have no real concept of the work's value. D they feel their personal reaction is of no significance",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the conflict that may arise in society between financial and artistic values"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the negative effect a museum can have on visitors' opinions of themselves"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the need to put individual well-being above large-scale artistic schemes"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they lack the knowledge needed to support an opinion"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the conflict that may arise in society between financial and artistic values"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the negative effect a museum can have on visitors' opinions of themselves"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the need to put individual well-being above large-scale artistic schemes"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they lack the knowledge needed to support an opinion"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g34",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "According to the writer, the ‘displacement effect' on the visitor is caused by Athe variety of works on display and the way they are arranged. Bthe impossibility of viewing particular works of art over a long period. C the similar nature of the paintings and the lack of great works. D the inappropriate nature of the individual works selected for exhibition",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they lack the knowledge needed to support an opinion"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they have no real concept of the work's value"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "they feel their personal reaction is of no significance"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they lack the knowledge needed to support an opinion"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they have no real concept of the work's value"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they feel their personal reaction is of no significance"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g35",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "The writer says that unlike other forms of art, a painting does not A involve direct contact with an audience. Brequire a specific location for a performance. C need the involvement of other professionals. D have a specific beginning or end. estions 36-40 the following statements agree with the views of the writer in Reading Passage 3? boxes 36–40 on your answer sheet, write YES if the statement agrees with the views of the writer NO if the statement contradicts the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this Art history should focus on discoverin",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the similar nature of the paintings and the lack of great works"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the inappropriate nature of the individual works selected for exhibition"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "involve direct contact with an audience"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the similar nature of the paintings and the lack of great works"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the inappropriate nature of the individual works selected for exhibition"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "involve direct contact with an audience"
+            }
+          ]
+        },
+        {
+          "id": "c10t2r-g36",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q36",
+              "number": 36,
+              "type": "yes_no_ng",
+              "prompt": "Art history should focus on discovering the meaning of art using a range of media.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:42.079590+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g37",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q37",
+              "number": 37,
+              "type": "yes_no_ng",
+              "prompt": "The approach of art historians conflicts with that of art museums.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:42.079590+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g38",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q38",
+              "number": 38,
+              "type": "yes_no_ng",
+              "prompt": "People should be encouraged to give their opinions openly on works of art.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:42.079590+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g39",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q39",
+              "number": 39,
+              "type": "yes_no_ng",
+              "prompt": "Reproductions of fine art should only be sold to the public if they are of high quality.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:42.079590+00:00"
+          }
+        },
+        {
+          "id": "c10t2r-g40",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t2r-q40",
+              "number": 40,
+              "type": "yes_no_ng",
+              "prompt": "In the future, those with power are likely to encourage more people to enjoy art.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:31+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:53:42.079590+00:00"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1668 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-9-test-4-listening",
+  "title": "Cambridge IELTS 9 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0009-2475dce1",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 9",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题9.pdf",
+        "sha256": "c3fbc2d06b1b60fe8e7d27936150a09c38714e4bd23e6351a09b93c9555ee890"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C09\\剑桥雅思真题9\\auto\\剑桥雅思真题9.md",
+        "sha256": "0fff67454e2c0209145ec163b53e0d8a4366227a4e4853f03d4cac2187f6196e",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-9-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions1-10\n\nQuestions 1-4\n\nComplete the table below.\n\n## Write ONE WORD ONLY for each answer.\n\nHealth Centres\n\nName of centre\n\nDoctor's name\n\nAdvantage\n\nThe Harvey Clinic\n\nExample DrGreen...\n\nespecially good with 1...\n\nThe 2HealthPractice\n\nDr Fuller\n\noffers 3.appointments\n\nThe Shore Lane HealthCentre\n\nDr 4...\n\nQuestions 5—6\n\nChoose TWO letters, A—E.\n\nWhich TWO of the following are offered free of charge at Shore Lane Health Centre?\n\nA acupuncture\n\nB employment medicals\n\nC sports injury therapy]\n\nD travel advice\n\nE vaccinations]\n\nQuestions 7-10\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each anSwer.\n\nTalks for patients at Shore Lane Health Centre\n\nSubject of talk\n\nDate/Time\n\nLocation\n\nNotes\n\nGiving upsmoking\n\n25th February at7pm\n\nroom4\n\nuseful for peoplewith asthma or7problems\n\nHealth eating\n\n1st March at5pm\n\nthe 8..(Shore Lane)\n\nanyone welcome\n\nAvoiding injuresduring exercise\n\n9thMarch at9\n\nroom6\n\nfor all 10."
+      },
+      "questionGroups": [
+        {
+          "id": "c9t4l-g1",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "The Harvey Clinic is especially good with ___",
+              "acceptedAnswers": [
+                "babies"
+              ],
+              "gapText": "The Harvey Clinic is especially good with 1 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g2",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q2",
+              "number": 2,
+              "type": "single_choice",
+              "prompt": "The",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g3",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Complete the table below.",
+              "acceptedAnswers": [
+                "c2"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g4",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "The Shore Lane Health Centre — Doctor's name: Dr ___",
+              "acceptedAnswers": [
+                "Gormley"
+              ],
+              "gapText": "The Shore Lane Health Centre — Doctor's name: Dr 4 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g5",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q5",
+              "number": 5,
+              "type": "multi_choice",
+              "prompt": "Which TWO of the following are offered free of charge at Shore Lane Health Centre?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "acupuncture"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment medicals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sports injury therapy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "travel advice"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "vaccinations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g6",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q6",
+              "number": 6,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO of the following are offered free of charge at Shore Lane Health Centre?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "acupuncture"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment medicals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sports injury therapy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "travel advice"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "vaccinations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g7",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The talk on giving up smoking is useful for people with asthma or ___ problems",
+              "acceptedAnswers": [
+                "heart"
+              ],
+              "gapText": "The talk on giving up smoking is useful for people with asthma or 7 ___ problems",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g8",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The health-eating talk will be held at the ___ (Shore Lane)",
+              "acceptedAnswers": [
+                "primary school"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "acupuncture"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment medicals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sports injury therapy]"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "travel advice"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "vaccinations]"
+                }
+              ],
+              "gapText": "The health-eating talk will be held at the 8 ___ (Shore Lane)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "acupuncture"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "employment medicals"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sports injury therapy]"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "travel advice"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "vaccinations]"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g9",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "The avoiding-injuries-during-exercise talk is on 9th March at ___",
+              "acceptedAnswers": [
+                "4.30"
+              ],
+              "gapText": "The avoiding-injuries-during-exercise talk is on 9th March at 9 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g10",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "The avoiding-injuries-during-exercise talk is for all ___",
+              "acceptedAnswers": [
+                "ages"
+              ],
+              "gapText": "The avoiding-injuries-during-exercise talk is for all 10 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 437054
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\nQuestions 11-13\n\nLabel the diagram below.\n\nChoose THREE answers from the box and write the correct letter, A-E, next to\n\nquestions 11-13.\n\nA electricity indicator\n\nB on/off switch\n\nC reset button\n\nD time control\n\nE warning indicator\n\nWater Heater \n[]\n\nQuestions 14—18\n\nWhere can each of the following items be found?\n\nChoose FIVE answers from the box and write the correct letter, A—G, next to\n\nquestions 14—18.\n\n## Locations\n\nA in box on washing machine \nB in cupboard on landing \nC in chest of drawers \nD next to window in living room \nE on shelf by back door \nF on top of television \nG under kitchen sink \n14 pillows \n15 washing powder \n16 key \n17 light bulbs \n18 map\n\nQuestions 19 and 20\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nThe best place to park in town-next to the station\n\nPhone number for takeaway pizzas-19.\n\nRailway museum closed on 20.\n\n本资料仅用于参考，。"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t4l-g11",
+          "instruction": "Label the diagram below. Choose THREE answers from the box and write the correct letter, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "Label the diagram below.",
+              "acceptedAnswers": [
+                "é t: e2"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c09-t4-listening-p0085.jpg"
+        },
+        {
+          "id": "c9t4l-g12",
+          "instruction": "Label the diagram below. Choose THREE answers from the box and write the correct letter, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q12",
+              "number": 12,
+              "type": "labelling",
+              "prompt": "Water Heater diagram: label 12",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "electricity indicator"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "on/off switch"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "reset button"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "time control"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warning indicator"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c09-t4-listening-p0085.jpg"
+        },
+        {
+          "id": "c9t4l-g13",
+          "instruction": "Label the diagram below. Choose THREE answers from the box and write the correct letter, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q13",
+              "number": 13,
+              "type": "labelling",
+              "prompt": "Water Heater diagram: label 13",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "electricity indicator"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "on/off switch"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "reset button"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "time control"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warning indicator"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c09-t4-listening-p0085.jpg"
+        },
+        {
+          "id": "c9t4l-g14",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "Where can the pillows be found?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in box on washing machine"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "in cupboard on landing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in chest of drawers"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "next to window in living room"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "on shelf by back door"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "on top of television"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "under kitchen sink"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g15",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Where can the washing powder be found?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in box on washing machine"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "in cupboard on landing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in chest of drawers"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "next to window in living room"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "on shelf by back door"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "on top of television"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "under kitchen sink"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g16",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "Where can the key be found?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in box on washing machine"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "in cupboard on landing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in chest of drawers"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "next to window in living room"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "on shelf by back door"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "on top of television"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "under kitchen sink"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g17",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Where can the light bulbs be found?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in box on washing machine"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "in cupboard on landing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in chest of drawers"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "next to window in living room"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "on shelf by back door"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "on top of television"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "under kitchen sink"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g18",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Where can the map be found?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in box on washing machine"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "in cupboard on landing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in chest of drawers"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "next to window in living room"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "on shelf by back door"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "on top of television"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "under kitchen sink"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g19",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g20",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "The railway museum is closed on ___",
+              "acceptedAnswers": [
+                "Thursday",
+                "Thursdays"
+              ],
+              "gapText": "The railway museum is closed on 20 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 437054,
+      "audioDurationMs": 409051
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\nQuestions21 and 22\n\nChoose the correct letter, A ,B or C\n\n21. In her home country ,Kira had A completed a course. B done two years of a course. C found her course difficult.\n\n22. To succeed with assignments ,Kira had to A read faster B write faster. C change her way of thinking\n\nQuestions 23—25\n\nComplete the sentences below.\n\nWrite ONE WORD ONLY for each answer.\n\n23. Kira says that lectures are easier to..than those in her home countr.,\n\n24. Paul suggests that Kira may be more .than when she was studying before.\n\n25. Kira says that students want to discuss things that worry them or that them very much.\n\nQuestions 26-30\n\nAnswer the questions below.\n\n27. In the second semester how often did Kria work in a hospital?\n\n28. How much full-time work did Kira do during the year?\n\n29. Having completed the year, how does Kira feel?\n\n30. In addition to the language , what do overseas students need to become familiar with?\n\nSECTION 4 Questions 31-40\n\nQuestions31-36\n\nChoose the correct letter, A ,B or C\n\n## Wildlife in city gardens\n\n31. What led the group to choose their topic?\n\nA They were concerned about the decline of one species.\n\nB They were interested in the effects of city growth.\n\nC They wanted to investigate a recent phenomenon.\n\n32. The exact proportion of land devoted to private gardens was confirmed by A consulting some official documents. B taking large-scale photos. C discussions with town surveyors.\n\n33. The group asked garden owners to\n\nA take part in formal interviews.\n\nB keep a record of animals they saw.\n\nC get in contact when they saw a rare species.\n\n34. The group made their observations in gardens\n\nA which had a large number of animal species.\n\nB which they considered to be representative.\n\nC which had stable populations of rare animals.\n\n本资料仅用于参考，。\n\n35. The group did extensive reading on\n\nA wildlife problems in rural areas.\n\nB urban animal populations.\n\nC current gardening practices.\n\n36. The speaker focuses on three animal species because\n\nA a lot of data has been obtained about them.\n\nB the group were most interested in them.\n\nC they best indicated general trends.\n\nQuestions 37-40\n\nComplete the table below.\n\nWrite ONE WORD ONLY for each answer.\n\nAnimals\n\nReason for populationincrease in gardens\n\nComments\n\n37\n\nsuitable stretches ofwater\n\nmassive increase inurban population\n\nHedgehogs\n\nsafer from 38when I cities\n\neasy to 39... themaccurately\n\nSong thrushes\n\n- a variety of 40..... toeat- more nesting placesavailable\n\nlarge survey startingsoon\n\n留学CLUB社团\n\n打算申请出国留学？正在备考雅思托福？来和大家一起吧\\~快乐加倍！效率加倍！"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t4l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "In her home country ,Kira had A completed a course. B done two years of a course. C found her course difficult",
+              "acceptedAnswers": [
+                "X42"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "To succeed with assignments ,Kira had to A read faster B write faster. C change her way of thinking",
+              "acceptedAnswers": [
+                "x c"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g23",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Kira says that lectures are easier to..than those in her home countr.,",
+              "acceptedAnswers": [
+                "X2"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g24",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Paul suggests that Kira may be more .than when she was studying before",
+              "acceptedAnswers": [
+                "xC"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g25",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Kira says that students want to discuss things that worry them or that them very much",
+              "acceptedAnswers": [
+                "time"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g26",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Choose the correct letter, A ,B or C",
+              "acceptedAnswers": [
+                "es"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g27",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "In the second semester how often did Kria work in a hospital?",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g28",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "How much full-time work did Kira do during the year?",
+              "acceptedAnswers": [
+                "x23"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g29",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Having completed the year, how does Kira feel?",
+              "acceptedAnswers": [
+                "confident"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g30",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "In addition to the language , what do overseas students need to become familiar with?",
+              "acceptedAnswers": [
+                ")N6"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 846105,
+      "audioDurationMs": 381048
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION1 Questions1-10\n\nQuestions 1-4\n\nComplete the table below.\n\n## Write ONE WORD ONLY for each answer.\n\nHealth Centres\n\nName of centre\n\nDoctor's name\n\nAdvantage\n\nThe Harvey Clinic\n\nExample DrGreen...\n\nespecially good with 1...\n\nThe 2HealthPractice\n\nDr Fuller\n\noffers 3.appointments\n\nThe Shore Lane HealthCentre\n\nDr 4...\n\nQuestions 5—6\n\nChoose TWO letters, A—E.\n\nWhich TWO of the following are offered free of charge at Shore Lane Health Centre?\n\nA acupuncture\n\nB employment medicals\n\nC sports injury therapy]\n\nD travel advice\n\nE vaccinations]\n\nQuestions 7-10\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each anSwer.\n\nTalks for patients at Shore Lane Health Centre\n\nSubject of talk\n\nDate/Time\n\nLocation\n\nNotes\n\nGiving upsmoking\n\n25th February at7pm\n\nroom4\n\nuseful for peoplewith asthma or7problems\n\nHealth eating\n\n1st March at5pm\n\nthe 8..(Shore Lane)\n\nanyone welcome\n\nAvoiding injuresduring exercise\n\n9thMarch at9\n\nroom6\n\nfor all 10.\n\n## Section2 Questions 11-20\n\nQuestions 11-13\n\nLabel the diagram below.\n\nChoose THREE answers from the box and write the correct letter, A-E, next to\n\nquestions 11-13.\n\nA electricity indicator\n\nB on/off switch\n\nC reset button\n\nD time control\n\nE warning indicator\n\nWater Heater \n[]\n\nQuestions 14—18\n\nWhere can each of the following items be found?\n\nChoose FIVE answers from the box and write the correct letter, A—G, next to\n\nquestions 14—18.\n\n## Locations\n\nA in box on washing machine \nB in cupboard on landing \nC in chest of drawers \nD next to window in living room \nE on shelf by back door \nF on top of television \nG under kitchen sink \n14 pillows \n15 washing powder \n16 key \n17 light bulbs \n18 map\n\nQuestions 19 and 20\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nThe best place to park in town-next to the station\n\nPhone number for takeaway pizzas-19.\n\nRailway museum closed on 20.\n\n本资料仅用于参考，。\n\n## SECTION 3 Questions 21-30\n\nQuestions21 and 22\n\nChoose the correct letter, A ,B or C\n\n21. In her home country ,Kira had A completed a course. B done two years of a course. C found her course difficult.\n\n22. To succeed with assignments ,Kira had to A read faster B write faster. C change her way of thinking\n\nQuestions 23—25\n\nComplete the sentences below.\n\nWrite ONE WORD ONLY for each answer.\n\n23. Kira says that lectures are easier to..than those in her home countr.,\n\n24. Paul suggests that Kira may be more .than when she was studying before.\n\n25. Kira says that students want to discuss things that worry them or that them very much.\n\nQuestions 26-30\n\nAnswer the questions below.\n\n27. In the second semester how often did Kria work in a hospital?\n\n28. How much full-time work did Kira do during the year?\n\n29. Having completed the year, how does Kira feel?\n\n30. In addition to the language , what do overseas students need to become familiar with?\n\nSECTION 4 Questions 31-40\n\nQuestions31-36\n\nChoose the correct letter, A ,B or C\n\n## Wildlife in city gardens\n\n31. What led the group to choose their topic?\n\nA They were concerned about the decline of one species.\n\nB They were interested in the effects of city growth.\n\nC They wanted to investigate a recent phenomenon.\n\n32. The exact proportion of land devoted to private gardens was confirmed by A consulting some official documents. B taking large-scale photos. C discussions with town surveyors.\n\n33. The group asked garden owners to\n\nA take part in formal interviews.\n\nB keep a record of animals they saw.\n\nC get in contact when they saw a rare species.\n\n34. The group made their observations in gardens\n\nA which had a large number of animal species.\n\nB which they considered to be representative.\n\nC which had stable populations of rare animals.\n\n本资料仅用于参考，。\n\n35. The group did extensive reading on\n\nA wildlife problems in rural areas.\n\nB urban animal populations.\n\nC current gardening practices.\n\n36. The speaker focuses on three animal species because\n\nA a lot of data has been obtained about them.\n\nB the group were most interested in them.\n\nC they best indicated general trends.\n\nQuestions 37-40\n\nComplete the table below.\n\nWrite ONE WORD ONLY for each answer.\n\nAnimals\n\nReason for populationincrease in gardens\n\nComments\n\n37\n\nsuitable stretches ofwater\n\nmassive increase inurban population\n\nHedgehogs\n\nsafer from 38when I cities\n\neasy to 39... themaccurately\n\nSong thrushes\n\n- a variety of 40..... toeat- more nesting placesavailable\n\nlarge survey startingsoon\n\n留学CLUB社团\n\n打算申请出国留学？正在备考雅思托福？来和大家一起吧\\~快乐加倍！效率加倍！"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t4l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "What led the group to choose their topic? A They were concerned about the decline of one species. B They were interested in the effects of city growth. C They wanted to investigate a recent phenomenon",
+              "acceptedAnswers": [
+                "r 31 es"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "The exact proportion of land devoted to private gardens was confirmed by A consulting some official documents. B taking large-scale photos. C discussions with town surveyors",
+              "acceptedAnswers": [
+                "Xe"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "The group asked garden owners to A take part in formal interviews. B keep a record of animals they saw. C get in contact when they saw a rare species",
+              "acceptedAnswers": [
+                "g2"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "The group made their observations in gardens A which had a large number of animal species. B which they considered to be representative. C which had stable populations of rare animals. 本资料仅用于参考，。",
+              "acceptedAnswers": [
+                "xc"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g35",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "The group did extensive reading on A wildlife problems in rural areas. B urban animal populations. C current gardening practices",
+              "acceptedAnswers": [
+                "xca"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g36",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "The speaker focuses on three animal species because A a lot of data has been obtained about them. B the group were most interested in them. C they best indicated general trends",
+              "acceptedAnswers": [
+                "xe"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t4l-g37",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Animal with suitable stretches of water and a massive increase in urban population: ___",
+              "acceptedAnswers": [
+                "frog",
+                "frogs"
+              ],
+              "gapText": "37 ___ — suitable stretches of water; massive increase in urban population",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c9t4l-g38",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Hedgehogs are safer from ___ when in cities",
+              "acceptedAnswers": [
+                "predators"
+              ],
+              "gapText": "Hedgehogs — safer from 38 ___ when in cities",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c9t4l-g39",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "In cities, it is easy to ___ hedgehogs accurately",
+              "acceptedAnswers": [
+                "count"
+              ],
+              "gapText": "Hedgehogs — easy to 39 ___ them accurately",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c9t4l-g40",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t4l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Song thrushes have a variety of ___ to eat",
+              "acceptedAnswers": [
+                "seed",
+                "seeds"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "acupuncture"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "employment medicals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sports injury therapy]"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "travel advice"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "vaccinations]"
+                }
+              ],
+              "gapText": "Song thrushes — a variety of 40 ___ to eat",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "acupuncture"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "employment medicals"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sports injury therapy]"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "travel advice"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "vaccinations]"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        }
+      ],
+      "audioStartMs": 1227152,
+      "audioDurationMs": 350216
+    }
+  ]
+}

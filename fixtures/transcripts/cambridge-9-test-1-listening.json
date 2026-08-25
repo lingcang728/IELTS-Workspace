@@ -1,0 +1,626 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-9-test-1-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 9,
+    "test": 1
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    30,
+    35,
+    39,
+    40
+  ],
+  "missingMarkers": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    28,
+    29,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    38
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "SECTION 1",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAM",
+          "text": "Good evening. King's Restaurant.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Example",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Good evening. I'm ringing about the job I understand you have vacant.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh yes.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I'd like to find out a few more details, if I may.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes, of course. Can I take your name?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "It's Peter Chin.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Okay Peter. Well, if you want to ask about the job and then if we're both",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "still interested, we could arrange for you to come for an interview.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Great, thanks. I'm afraid I missed the advert for the job but heard about it",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "from a friend.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "That's no problem at all. What would you like to know?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Well, um, what sort of work is it - washing up?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "It's answering the phone.",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Oh right, fine.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "And not waiting at table.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "That'd be good. And how many nights a week would it be?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, we're really only busy at the weekend.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "So two nights?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Three actually, so it would work out at twelve hours a week.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "That'd be fine. It wouldn't interfere with my studies.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Are you at the university?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes. First year Physics student.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, right.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Um, and because I'm not an EU national would I need a work permit?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes you would. Just get your tutor to sign it.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "That wouldn't be a problem, if I were to get the job. Um, where exactly is",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "the restaurant?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, we have two branches - the one we're recruiting for is in Hillsdunne",
+          "answers": [
+            2
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Road.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I don't know that. How do you spell it please?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "It's H-I-double L-S-D-U-double N-E Road.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Got that. Thanks. Is it near a bus stop?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes. The nearest one would probably be just beside the Library.",
+          "answers": [
+            3
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Oh yes, I know it. That'd be fine for me. And could I ask about the pay?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "We're offering £4.45 an hour.",
+          "answers": [
+            4
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "That's very good. My last job was £3.95 an hour.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "We feel it's pretty good and we also offer some good fringe benefits.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Really?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, we give you a free dinner, so you eat well.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Right, better than hostel food!",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "We certainly hope so! And we also offer extra pay for working on national",
+          "answers": [
+            5
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "holidays.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Oh, that's a really good perk, isn't it?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes, we think so. And then because of the difficulties of getting public",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "transport, if you're working after 11 o'clock we drive you home",
+          "answers": [
+            6
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Oh, that's good to know.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, we'd certainly be interested in inviting you for an interview, if you're still interested?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Oh yes, certainly. Could I just also ask what qualities you're looking for?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, for this particular job we want a clear voice, which you obviously do have!",
+          "answers": [
+            7
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Thanks.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "And you must be able to think quickly, you know.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Well, I hope I'd ..",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "So, when could you come in for an interview? We're actually quite quiet tonight?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Sorry, I couldn't come tonight. Or tomorrow, I'm afraid. Thursday's okay - that'd be 22nd of October.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Fine, after 5 p.m.?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes, fine. Would 6 o'clock be okay?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Perfect. And could you bring along the names of two referees?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes, that's fine, no problem.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Good. I look forward to seeing you.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Oh, by the way, who should I ask for?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh yes, of course, sorry. My name is Samira Manuja.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Can you spell that, please?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "M-A-N-U-J-A.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Okay, I've got that. Thanks very much.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Look forward to seeing you ..",
+          "answers": []
+        }
+      ],
+      "charCount": 2854,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": "ANDREW",
+          "text": "NOW we go to Jane who is going to tell us about what's happening in town this weekend.",
+          "answers": []
+        },
+        {
+          "speaker": "JANE",
+          "text": "Right, thanks Andrew, and now on to what's new, and do we really need yet another sports shop in Bradcaster? Well, most of you probably know Sports World - the branch of a Danish sports goods company that opened a few years ago - it's attracted a lot of custom, and so the company has now decided to open another branch in the area. It's going to be in the shopping centre to the west of Bradcaster, so that will be good news for all of you who've found the original shop in the north of the town hard to get to.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "I was invited to a special preview and I can promise you, this is the ultimate in sports retailing. The whole place has been given a new minimalist look with the company's signature colours of black and red. The first three floors have a huge range of sports clothing as well as equipment, and on the top floor there's a cafe and a book and DVD section. You'll find all the well-known names as well as some less wellknown ones. If they haven't got exactly what you want in stock they promise to get it for you in ten days. Unlike the other store, where it can take up to fourteen days. They cover all the major sports, including football, tennis and swimming, but they particularly focus on running, and they claim to have the widest range of equipment in the country. As well as that, a whole section of the third floor is devoted to sports bags, including the latest designs from the States - if you can't find what you want here, it doesn't exist!",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The shop will be open from 9.00 am this Saturday and if you go along to the opening then you'll have the chance to meet the national 400 metres running champion Paul King, who's coming along to open the shop, and he will be staying around until about midday to chat to any fans who want to meet him and sign autographs.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Then there will be a whole range of special attractions all weekend. There will be free tickets for local sporting events for the first 50 customers, and also a special competition open to all. Just answer fifteen out of twenty sports questions correctly to win a signed copy of Paul King's DVD 'Spring Tips', while the first person to get all the questions correct gets a year's free membership of the Bradcaster Gym. All entrants will receive a special Sports calendar with details of all Bradcaster fixtures in the coming year.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "One of the special opening offers is a fitness test - a complete review of your cardiac fitness and muscle tone, actually done in the shop by qualified staff. This would normally cost £30.00 but is available at half price for this month only. There are only a limited number of places available for this, so to make a booking phone 560341. In addition, if you open an account you get lots more special offers including the chance to try out equipment at special open evenings ...",
+          "answers": []
+        }
+      ],
+      "charCount": 2876,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": "TEACHER",
+          "text": "Before we start, Spiros and Hiroko, thanks for coming in today to talk about your recent study experiences and congratulations to you both in doing so well in your first semester exams! I'd like to discuss with you the value of the English for Academic Purposes course you did here last year before starting your university course. Spiros, if I could start with you, what parts of the programme have now proved to be particularly valuable to you?",
+          "answers": []
+        },
+        {
+          "speaker": "SPIROS",
+          "text": "I think that having to do a seminar presentation really helped me. For example, a couple of weeks ago in our marketing subject, when it was my turn to give a presentation I felt quite confident. Of course, I was still nervous but because I had done one before, I knew what to expect. Also, better at dealing with vocabulary than I used to be.",
+          "answers": []
+        },
+        {
+          "speaker": "HIROKO",
+          "text": "I know I was well-prepared and I had practised my timing. In fact, I think that in relation to some of the other people in my group, I did quite a good job because my overall style was quite professional. What about you, Hiroko? Mmm, that's interesting. In my group, I was really surprised by the way the students did their presentations - they just read their notes aloud!",
+          "answers": []
+        },
+        {
+          "speaker": "TEACHER",
+          "text": "HIROKO: Can you believe that? They didn't worry about their presentation style or keeping eye contact with their audience - and I remember that these things were really stressed to us in the course here. So, how did you approach your presentation, Hiroko? Well, to speak frankly, I read my notes too! At the time, it was a relief to do",
+          "answers": [
+            22
+          ]
+        },
+        {
+          "speaker": "SPIROS",
+          "text": "it this way, but actually when I had finished, I didn't feel any real sense of satisfaction. I didn't feel positive about the experience at all. That's a pity. You know, although I was pleased with my presentation, I am not so pleased with my actual performance right now in the",
+          "answers": [
+            23,
+            24
+          ]
+        },
+        {
+          "speaker": "HIROKO",
+          "text": "SPIROS: tutorials - during the whole semester I've not said anything in our tutorial discussions. Not a word. Really, Spiros? Why's that? Do the other students talk too much? It's partly that, but it's mostly because I have had no confidence to speak out. Their style of speaking is so different - it's not the style we were used",
+          "answers": []
+        },
+        {
+          "speaker": "HIROKO",
+          "text": "polite and sometimes there seems to be no order in their discussion. Also, they are very familiar with each other, so because they know each other's habits, they can let each other into the discussion. You're right, Spiros, I've experienced that too.",
+          "answers": [
+            25
+          ]
+        },
+        {
+          "speaker": "HIROKO",
+          "text": "For most of this semester, I've said absolutely nothing in tutorials. But recently, I've been trying to speak up more and I just jump in, and I've noticed an interesting thing, I've noticed that if they thought my point was interesting or new, then the next time they actually asked for my opinion, and then it was much easier for me to be part of the discussion.",
+          "answers": [
+            26
+          ]
+        },
+        {
+          "speaker": "SPIROS",
+          "text": "these ideas? HIROKO: That's great, Hiroko! I hope that happens for me next semester - I'll have to work hard to find some interesting points. What helped you to find I think that one thing that helped me with this was the reading. I've had to do so much reading this semester just to help me make sense of the lectures. At first I couldn't understand what the lecturers were talking",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "use in the tutorials. SPIROS: But I did so much reading anyway - I don't think there's any time left over about, so I had to turn to the books and journals. Every night I read for hours, using the lists of references that were given, and I made pages of notes. At breakfast, I read and read my notes again. This habit has helped me to follow the ideas in the lectures, and it's also given me some ideas to",
+          "answers": [
+            27
+          ]
+        },
+        {
+          "speaker": "TEACHER",
+          "text": "What else do you think we could add to the course program to help with this reading problem?",
+          "answers": []
+        },
+        {
+          "speaker": "SPIROS",
+          "text": "There's not really anything because it's my problem. I remember we were given long articles to read. We didn't like that but now I realise that reading those long articles was good preparation for the things I need to read now. Also, in class we regularly had speed-reading tasks to do, and we kept a record of our reading speed, so the teachers were encouraging us to work on that.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "HIROkO:That's true Spiros, but what we read could have been different. Sometimes in the English class I felt frustrated when I had to read articles about the environment or health or education, because I wanted to concentrate on my own field but we didn't read anything about engineering. So, I think I wasted some time learning vocabulary I didn't need.",
+          "answers": []
+        },
+        {
+          "speaker": "TEACHER",
+          "text": "But surely the strategies you were taught for dealing with that vocabulary were helpful.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "HIROkO: Yes, but psychologically speaking, I would have felt much better working on reading from my own field. What do you think Spiros?",
+          "answers": [
+            30
+          ]
+        },
+        {
+          "speaker": "SPIROS",
+          "text": "I agree; that would have helped my confidence too and I would have been more motivated. It was good though that we could work on our own topics when we wrote the research assignments.",
+          "answers": []
+        },
+        {
+          "speaker": "TEACHER",
+          "text": "Okay, let's move on to writing now ...",
+          "answers": []
+        }
+      ],
+      "charCount": 4776,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Good afternoon everyone. Well, with some of you about to go out on field work it's timely that in this afternoon's session I'll be sharing some ideas about the reasons why groups of whales and dolphins sometimes swim ashore from the sea right onto the beach and, most often, die in what are known as 'mass strandings'.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Unfortunately, this type of event is a frequent occurrence in some of the locations that you'll be travelling to, where sometimes the tide goes out suddenly, confusing the animals. However, there are many other theories about the causes of mass strandings.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The first is that the behaviour is linked to parasites. It's often found that stranded animals were infested with large numbers of parasites. For instance, a type of worm is commonly found in the ears of dead whales. Since marine animals rely heavily on their hearing to navigate, this type of infestation has the potential to be very harmful.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Another theory is related to toxins, or poisons. These have also been found to contribute to the death of many marine animals. Many toxins, as I'm sure you're aware, originate from plants, or animals. The whale ingests these toxins in its normal feeding behaviour but whether these poisons directly or indirectly lead to stranding and death, seems to depend upon the toxin involved.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "In 1988, for example, fourteen humpback whales examined after stranding along the beaches of Cape Cod were found to have been poisoned after eating tuna that contained saxitoxin, the same toxin that can be fatal in humans.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Alternatively, it has also been suggested that some animals strand accidentally by following their prey ashore in the confusion of the chase. In 1995 David Thurston monitored pilot whales that beached after following squid ashore. However, this idea does not seem to hold true for the majority of mass strandings because examination of the animals' stomach contents reveal that most had not been feeding as they stranded.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "There are also some new theories which link strandings to humans. A growing concern is that loud noises in the ocean cause strandings.Noises such as those caused by military exercises are of particular concern and have been pinpointed as the cause of some strandings of late.",
+          "answers": [
+            35
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "One of these, a mass stranding of whales in 2000 in the Bahamas coincided closely with experiments using a new submarine detection system. There were several factors that made this stranding stand out as different from previous strandings. This led researchers to look for a new cause. For one, all the stranded animals were healthy.In addition, the animals were spread out along 38 kilometres of coast, whereas it's more common for the animals to be found in a group when mass strandings occur.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "A final theory is related to group behaviour, and suggests that sea mammals cannot distinguish between sick and healthy leaders and will follow sick leaders, even to an inevitable death. This is a particularly interesting theory since the whales that are thought to be most social - the toothed whales - are the group that strand the most frequently",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The theory is also supported by evidence from a dolphin stranding in 1994. Examination of the dead animals revealed that apart from the leader, all the others had been healthy at the time of their death.",
+          "answers": [
+            39
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Without one consistent theory however it is very hard for us to do anything about this phenomenon except to assist animals where and when we can. Stranding networks have been established around the world to aid in rescuing animals and collecting samples from those that could not be helped. I recommend John Connor's Marine Mammals Ashore as an excellent starting point if you're interested in finding out more about these networks, or establishing one yourself.",
+          "answers": [
+            40
+          ]
+        }
+      ],
+      "charCount": 3726,
+      "missing": false
+    }
+  ]
+}

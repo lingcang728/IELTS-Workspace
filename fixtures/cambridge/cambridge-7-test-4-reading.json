@@ -1,0 +1,2501 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-4-reading",
+  "title": "Cambridge IELTS 7 Academic Test 4 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0017-907d6372",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-7-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "# Pulling strings to build pyramids\n\n[]\n\nNo one knows exactly how the pyramids were built. Marcus Chown reckons the answer could be 'hanging in the air'.\n\nThe pyramids of Egypt were built more than three thousand years ago, and no one knows how. The conventional picture is that tens of thousands of slaves dragged stones on sledges. But there is no evidence to back this up. Now a Čalifornian software consultant called Maureen Clemmons has suggested that kites might have been involved. While perusing a book on the monuments of Egypt, she noticed a hieroglyph that showed a row of men standing in odd postures. They were holding what looked like ropes that led, via some kind of mechanical system, to a giant bird in the sky. She wondered if perhaps the bird was actually a giant kite, and the men were using it to lift a heavy object,\n\nIntrigued, Clemmons contacted Morteza Gharib, aeronautics professor at the California Institute of Technology. He was fascinated by the idea. 'Coming from Iran, I have a keen interest in Middle Eastern science,'he says. He too was puzzled by the picture that had sparked Clemmons's interest. The object in the sky apparently had wings far too short and wide for a bird. 'The possibility certainly existed that it was a kite,'he says. And since he needed a summer project for his student Emilio Graff, investigating the possibility of using kites as heavy lifters seemed like a good idea.\n\nGharib and Graff set themselves the task of raising a 4.5-metre stone column from horizontal to vertical, using no source of energy except the wind. Their initial calculations and scale-model wind-tunnel experiments convinced them they wouldn't need a strong wind to lift the 33.5-tonne column. Even a modest force, if sustained over a long time, would do. The key was to use a pulley system that would magnify the applied force. So they rigged up a tent-shaped scaffold directly above the tip of the horizontal column, with pulleys suspended from the scaffold's apex. The idea was that as one end of the column rose, the base would roll across the ground on a trolley\n\nEarlier this year, the team put Clemmons's unlikely theory to the test, using a 40-squaremetre rectangular nylon sail. The kite lifted the column clean off the ground. We were absolutely stunned,'Gharib says. 'The instant the sail opened into the wind, a huge force was generated and the column was raised to the vertical in a mere 40 seconds.\n\nThe wind was blowing at a gentle 16 to 20 kilometres an hour, little more than half what they thought would be needed. What they had failed to reckon with was what happened when the kite was opened. 'There was a huge initial force – five times larger than the steady state force,'Gharib says. This jerk meant that kites could lift huge weights, Gharib realised. Even a 300-tonne column could have been lifted to the vertical with 40 or so men and four or five sails. So Clemmons was right: the pyramid builders could have used kites to lift massive stones into place. 'Whether they actually did is another matter,'Gharib says. There are no pictures showing the construction of the pyramids, so there is no way to tell what really happened. 'The evidence for using kites to move large stones is no better or worse than the evidence for the brute force method,'Gharib says.\n\nIndeed, the experiments have left many specialists unconvinced. 'The evidence for kitelifting is non-existent,'says Willeke Wendrich, an associate professor of Egyptology at the University of California, Los Angeles\n\nOthers feel there is more of a case for the theory. Harnessing the wind would not have been a problem for accomplished sailors like the Egyptians. And they are known to have used wooden pulleys, which could have been made strong enough to bear the weight of massive blocks of stone. In addition, there is some physical evidence that the ancient Egyptians were interested in flight. A wooden artefact found on the step pyramid at Saggara looks uncannily like a modern glider. Although it dates from several hundred years after the building of the pyramids, its sophistication suggests that the Egyptians might have been developing ideas of flight for a long time. And other ancient civilisations certainly knew about kites; as early as 1250 BC, the Chinese were using them to deliver messages and dump flaming debris on their foes.\n\nThe experiments might even have practical uses nowadays. There are plenty of places around the globe where people have no access to heavy machinery, but do know how to deal with wind, sailing and basic mechanical principles. Gharib has already been contacted by a civil engineer in Nicaragua, who wants to put up buildings with adobe roofs supported by concrete arches on a site that heavy equipment can't reach. His idea is to build the arches horizontally, then lift them into place using kites. 'We've given him some design hints,'says Gharib. We're just waiting for him to report back.'So whether they were actually used to build the pyramids or not, it seems that kites may make sensible construction tools in the 21 st century AD."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t4r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "It is generally believed that large numbers of people were needed to build the pyramids",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Clemmons found a strange hieroglyph on the wall of an Egyptian monument",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Gharib had previously done experiments on bird flight",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Gharib and Graff tested their theory before applying it",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "The success of the actual experiment was due to the high speed of the wind",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "They found that, as the kite flew higher, the wind force got stronger",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "The team decided that it was possible to use kites to raise very heavy stones",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g8",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The Egyptians had ___, which could lift large pieces of",
+              "acceptedAnswers": [
+                "(wooden) pulleys"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g9",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "The Egyptians had ___, which could lift large pieces of ___, and they knew how to use the energy of the wind from their skill as",
+              "acceptedAnswers": [
+                "stone"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g10",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "The discovery on one pyramid of an object which resembled a",
+              "acceptedAnswers": [
+                "(ACCOMPLISHED) SAILORS"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g11",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "The discovery on one pyramid of an object which resembled a ___ suggests they may have experimented with",
+              "acceptedAnswers": [
+                "(modern) glider"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g12",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "In addition, over two thousand years ago kites were used in China as weapons, as well as for sending",
+              "acceptedAnswers": [
+                "FLIGHT"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g13",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "In addition, over two thousand years ago kites were used in China as weapons, as well as for sending ___.",
+              "acceptedAnswers": [
+                "messages"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "# EFFECTS OF NOISE\n\nIn general, it is plausible to suppose that we should prefer peace and quiet to noise. And yet most of us have had the experience of having to adjust to sleeping in the mountains or the countryside because it was initially too quiet', an experience that suggests that humans are capable of adapting to a wide range of noise levels. Research supports this view. For example, Glass and Singer (1972) exposed people to short bursts of very loud noise and then measured their ability to work out problems and their physiological reactions to the noise. The noise was quite disruptive at first, but after about four minutes the subjects were doing just as well on their tasks as control subjects who were not exposed to noise. Their physiological arousal also declined quickly to the same levels as those of the control subjects.\n\nBut there are limits to adaptation and loud noise becomes more troublesome if the person is required to concentrate on more than one task. For example, high noise levels interfered with the performance of subjects who were required to monitor three dials at a time, a task not unlike that of an aeroplane pilot or an air-traffic controller (Broadbent, 1957). Similarly, noise did not affect a subject's ability to track a moving line with a steering wheel, but it did interfere with the subject's ability to repeat numbers while tracking (Finkelman and Glass, 1970)\n\nProbably the most significant finding from research on noise is that its predictability is more important than how loud it is. We are much more able to tune out' chronic background noise, even if it is quite loud, than to work under circumstances with unexpected intrusions of noise. In the Glass and Singer study, in which subjects were exposed to bursts of noise as they worked on a task, some subjects heard loud bursts and others heard soft bursts. For some subjects, the bursts were spaced exactly one minute apart (predictable noise); others heard the same amount of noise overall, but the bursts\n\nUnpredictable Noise\n\nPredictable Noise\n\nAverage\n\nLoud noise\n\n40.1\n\n31.8\n\n35.9\n\nSoft noise\n\n36.7\n\n27.4\n\n32.1\n\nAverage\n\n38.4\n\n29.6\n\nTable 1: Proofreading Errors and Noise\n\n留学CLUB社团 occurred at random intervals (unpredictable noise). Subjects reported finding the predictable and unpredictable noise equally annoying, and all subjects performed at about the same level during the noise portion of the experiment. But the different noise conditions had quite different after-effects when the subjects were required to proofread written material under conditions of no noise. As shown in Table 1 the unpredictable noise produced more errors in the later proofreading task than predictable noise; and soft unpredictable noise actually produced slightly more errors on this task than the loud, predictable noise\n\nApparently, unpredictable noise produces more fatigue than predictable noise, but it takes a while for this fatigue to take its toll on performance.\n\nPredictability is not the only variable that reduces or eliminates the negative effects of noise. Another is control. If the individual knows that he or she can control the noise, this seems to eliminate both its negative effects at the time and its after-effects. This is true even if the individual never actually exercises his or her option to turn the noise off (Glass and Singer, 1972). Just the knowledge that one has control is sufficient.\n\nThe studies discussed so far exposed people to noise for only short periods and only transient effects were studied. But the major worry about noisy environments is that living day after day with chronic noise may produce serious, lasting effects. One study, suggesting that this worry is a realistic one, compared elementary school pupils who attended schools near Los Angeles's busiest airport with students who attended schools in quiet neighbourhoods (Cohen et al., 1980). It was found that children from the noisy schools had higher blood pressure and were more easily distracted than those who attended the quiet schools. Moreover, there was no evidence of adaptability to the noise. In fact, the longer the children had attended the noisy schools, the more distractible they became. The effects also seem to be long lasting. A follow-up study showed that children who were moved to less noisy classrooms still showed greater distractibility one year later than students who had always been in the quiet schools (Cohen et al, 1981). It should be noted that the two groups of children had been carefully matched by the investigators so that they were comparable in age, ethnicity, race, and social class.\n\n本资料仅用于参考，。"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t4r-g14",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q14",
+              "number": 14,
+              "type": "true_false_ng",
+              "prompt": "The inhabitants of the Aleutian islands renamed their islands Aleyska'",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g15",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q15",
+              "number": 15,
+              "type": "true_false_ng",
+              "prompt": "Alaska's fisheries are owned by some of the world's largest companies",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g16",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q16",
+              "number": 16,
+              "type": "true_false_ng",
+              "prompt": "Life in Alaska is dependent on salmon",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g17",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q17",
+              "number": 17,
+              "type": "true_false_ng",
+              "prompt": "Ninety per cent of all Pacific salmon caught are sockeye or pink salmon",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g18",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q18",
+              "number": 18,
+              "type": "true_false_ng",
+              "prompt": "More than 320,000 tonnes of salmon were caught in Alaska in 2000",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g19",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q19",
+              "number": 19,
+              "type": "true_false_ng",
+              "prompt": "Between 1940 and 1959, there was a sharp decrease in Alaska's salmon population",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g20",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q20",
+              "number": 20,
+              "type": "true_false_ng",
+              "prompt": "During the 1990s, the average number of salmon caught each year was 100 million. 本资料仅用于参考，。",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t4r-g21",
+          "instruction": "Complete each sentence with the correct ending, A-K, below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "In Alaska, biologists keep a check on adult fish",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to recognise fisheries that care for the environment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to be successful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to stop fish from spawning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to set up environmental protection laws"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to stop people fishing for sport"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "to label their products using the MSC logo"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "to ensure that fish numbers are sufficient to permit fishing"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "to assist the subsistence communities in the region"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to recognise fisheries that care for the environment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to be successful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to stop fish from spawning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "to set up environmental protection laws"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "to stop people fishing for sport"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "to label their products using the MSC logo"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "to ensure that fish numbers are sufficient to permit fishing"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "to assist the subsistence communities in the region"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t4r-g22",
+          "instruction": "Complete each sentence with the correct ending, A-K, below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Biologists have the authority",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to recognise fisheries that care for the environment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to be successful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to stop fish from spawning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to set up environmental protection laws"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to stop people fishing for sport"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "to label their products using the MSC logo"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "to ensure that fish numbers are sufficient to permit fishing"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "to assist the subsistence communities in the region"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to recognise fisheries that care for the environment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to be successful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to stop fish from spawning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "to set up environmental protection laws"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "to stop people fishing for sport"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "to label their products using the MSC logo"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "to ensure that fish numbers are sufficient to permit fishing"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "to assist the subsistence communities in the region"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t4r-g23",
+          "instruction": "Complete each sentence with the correct ending, A-K, below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "In-Season Abundance-Based Management has allowed the Alaska salmon fisheries",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to recognise fisheries that care for the environment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to be successful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to stop fish from spawning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to set up environmental protection laws"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to stop people fishing for sport"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "to label their products using the MSC logo"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "to ensure that fish numbers are sufficient to permit fishing"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "to assist the subsistence communities in the region"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to recognise fisheries that care for the environment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to be successful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to stop fish from spawning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "to set up environmental protection laws"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "to stop people fishing for sport"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "to label their products using the MSC logo"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "to ensure that fish numbers are sufficient to permit fishing"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "to assist the subsistence communities in the region"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t4r-g24",
+          "instruction": "Complete each sentence with the correct ending, A-K, below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "The Marine Stewardship Council (MSC) was established",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to recognise fisheries that care for the environment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to be successful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to stop fish from spawning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to set up environmental protection laws"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to stop people fishing for sport"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "to label their products using the MSC logo"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "to ensure that fish numbers are sufficient to permit fishing"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "to assist the subsistence communities in the region"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to recognise fisheries that care for the environment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to be successful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to stop fish from spawning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "to set up environmental protection laws"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "to stop people fishing for sport"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "to label their products using the MSC logo"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "to ensure that fish numbers are sufficient to permit fishing"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "to assist the subsistence communities in the region"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t4r-g25",
+          "instruction": "Complete each sentence with the correct ending, A-K, below. Write the correct letter, A-K, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "As a result of the collapse of the salmon runs in 1999, the state decided",
+              "acceptedAnswers": [
+                "K"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.065310+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to recognise fisheries that care for the environment."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to be successful."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to stop fish from spawning."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to set up environmental protection laws."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to stop people fishing for sport."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "to label their products using the MSC logo."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "to ensure that fish numbers are sufficient to permit fishing."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "to assist the subsistence communities in the region."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "to freeze a huge number of salmon eggs."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "to deny certification to the Alaska fisheries."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "to close down all fisheries."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t4r-g26",
+          "instruction": "Complete each sentence with the correct ending, A-K, below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "In September 2000, the MSC allowed seven Alaska salmon companies A to recognise fisheries that care for the environment. B to be successful. C to stop fish from spawning. D to set up environmental protection laws. E to stop people fishing for sport. F to label their products using the MSC logo G to ensure that fish numbers are sufficient to permit fishing. H to assist the subsistence communities in the region. I to freeze a huge number of salmon eggs. J to deny certification to the Alaska fisheries K to close down all fisheries",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to recognise fisheries that care for the environment"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to be successful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to stop fish from spawning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to set up environmental protection laws"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to stop people fishing for sport"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "to label their products using the MSC logo"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "to ensure that fish numbers are sufficient to permit fishing"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "to assist the subsistence communities in the region"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to recognise fisheries that care for the environment"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to be successful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to stop fish from spawning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "to set up environmental protection laws"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "to stop people fishing for sport"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "to label their products using the MSC logo"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "to ensure that fish numbers are sufficient to permit fishing"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "to assist the subsistence communities in the region"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\n# Pulling strings to build pyramids\n\n[]\n\nNo one knows exactly how the pyramids were built. Marcus Chown reckons the answer could be 'hanging in the air'.\n\nThe pyramids of Egypt were built more than three thousand years ago, and no one knows how. The conventional picture is that tens of thousands of slaves dragged stones on sledges. But there is no evidence to back this up. Now a Čalifornian software consultant called Maureen Clemmons has suggested that kites might have been involved. While perusing a book on the monuments of Egypt, she noticed a hieroglyph that showed a row of men standing in odd postures. They were holding what looked like ropes that led, via some kind of mechanical system, to a giant bird in the sky. She wondered if perhaps the bird was actually a giant kite, and the men were using it to lift a heavy object,\n\nIntrigued, Clemmons contacted Morteza Gharib, aeronautics professor at the California Institute of Technology. He was fascinated by the idea. 'Coming from Iran, I have a keen interest in Middle Eastern science,'he says. He too was puzzled by the picture that had sparked Clemmons's interest. The object in the sky apparently had wings far too short and wide for a bird. 'The possibility certainly existed that it was a kite,'he says. And since he needed a summer project for his student Emilio Graff, investigating the possibility of using kites as heavy lifters seemed like a good idea.\n\nGharib and Graff set themselves the task of raising a 4.5-metre stone column from horizontal to vertical, using no source of energy except the wind. Their initial calculations and scale-model wind-tunnel experiments convinced them they wouldn't need a strong wind to lift the 33.5-tonne column. Even a modest force, if sustained over a long time, would do. The key was to use a pulley system that would magnify the applied force. So they rigged up a tent-shaped scaffold directly above the tip of the horizontal column, with pulleys suspended from the scaffold's apex. The idea was that as one end of the column rose, the base would roll across the ground on a trolley\n\nEarlier this year, the team put Clemmons's unlikely theory to the test, using a 40-squaremetre rectangular nylon sail. The kite lifted the column clean off the ground. We were absolutely stunned,'Gharib says. 'The instant the sail opened into the wind, a huge force was generated and the column was raised to the vertical in a mere 40 seconds.\n\nThe wind was blowing at a gentle 16 to 20 kilometres an hour, little more than half what they thought would be needed. What they had failed to reckon with was what happened when the kite was opened. 'There was a huge initial force – five times larger than the steady state force,'Gharib says. This jerk meant that kites could lift huge weights, Gharib realised. Even a 300-tonne column could have been lifted to the vertical with 40 or so men and four or five sails. So Clemmons was right: the pyramid builders could have used kites to lift massive stones into place. 'Whether they actually did is another matter,'Gharib says. There are no pictures showing the construction of the pyramids, so there is no way to tell what really happened. 'The evidence for using kites to move large stones is no better or worse than the evidence for the brute force method,'Gharib says.\n\nIndeed, the experiments have left many specialists unconvinced. 'The evidence for kitelifting is non-existent,'says Willeke Wendrich, an associate professor of Egyptology at the University of California, Los Angeles\n\nOthers feel there is more of a case for the theory. Harnessing the wind would not have been a problem for accomplished sailors like the Egyptians. And they are known to have used wooden pulleys, which could have been made strong enough to bear the weight of massive blocks of stone. In addition, there is some physical evidence that the ancient Egyptians were interested in flight. A wooden artefact found on the step pyramid at Saggara looks uncannily like a modern glider. Although it dates from several hundred years after the building of the pyramids, its sophistication suggests that the Egyptians might have been developing ideas of flight for a long time. And other ancient civilisations certainly knew about kites; as early as 1250 BC, the Chinese were using them to deliver messages and dump flaming debris on their foes.\n\nThe experiments might even have practical uses nowadays. There are plenty of places around the globe where people have no access to heavy machinery, but do know how to deal with wind, sailing and basic mechanical principles. Gharib has already been contacted by a civil engineer in Nicaragua, who wants to put up buildings with adobe roofs supported by concrete arches on a site that heavy equipment can't reach. His idea is to build the arches horizontally, then lift them into place using kites. 'We've given him some design hints,'says Gharib. We're just waiting for him to report back.'So whether they were actually used to build the pyramids or not, it seems that kites may make sensible construction tools in the 21 st century AD.\n\n## Questions 1-7\n\nDo the following statements agree with the information given in Reading Passage 1?\n\nIn boxes 1–7 on your answer sheet, write\n\nTRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVEN if there is no information on this\n\n1 It is generally believed that large numbers of people were needed to build the pyramids \n2 Clemmons found a strange hieroglyph on the wall of an Egyptian monument. \n3 Gharib had previously done experiments on bird flight. \n4 Gharib and Graff tested their theory before applying it. \n5 The success of the actual experiment was due to the high speed of the wind. \n6 They found that, as the kite flew higher, the wind force got stronger. \n7 The team decided that it was possible to use kites to raise very heavy stones.\n\n## Questions 8–13\n\nComplete the summary below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer\n\nWrite your answers in boxes 8–13 on your answer sheet.\n\n## Additional evidence for theory of kite-lifting\n\nThe Egyptians had 8 . , which could lift large pieces of 9 . and they knew how to use the energy of the wind from their skill as 10 . The discovery on one pyramid of an object which resembled a 11 suggests they may have experimented with 12 . . In addition, over two thousand years ago kites were used in China as weapons, as well as for sending 13 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t4r-g27",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Complete each sentence with the correct ending, A-K, below",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "humans do not prefer peace and quiet to noise."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they may be exposed to short bursts of very strange sounds."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "humans prefer to hear a certain amount of noise while they sleep."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "they may have adapted to a higher noise level in the city."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.143298+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              29
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–29 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g28",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "In noise experiments, Glass and Singer found that",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "problem-solving is much easier under quiet conditions."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "physiological arousal prevents the ability to work."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "bursts of noise do not seriously disrupt problem-solving in the long term."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the physiological arousal of control subjects declined quickly."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.143298+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              29
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–29 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g29",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "6 Table 1: Proofreading Errors and Noise 留学CLUB社团 occurred at random intervals (unpredictable noise). Subjects reported finding the predictable and unpredictable noise equally annoying, and all subjects performed at about the same level during the noise portion of the experiment. But the different noise conditions had quite different after-effects when the subjects were required to proofread written material under conditions of no noise. As shown in Table 1 the unpredictable noise produced more errors in the later proofreading task than predictable noise; and soft unpredictable noise actually ",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "successful performance of a single task."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "tasks of pilots or air traffic controllers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ability to repeat numbers while tracking moving lines."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "ability to monitor three dials at once."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.143298+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              29
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–29 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g30",
+          "instruction": "Complete the summary using the list of words and phrases, A-J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Glass and Singer (1972) showed that situations in which there is intense noise have less effect on performance than circumstances in which ___ noise occurs.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "no control over"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "unexpected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intense"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the same amount of"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "performed better than"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "performed at about the same level as"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "no"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "showed more irritation than"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "made more mistakes than"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "different types of"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "no control over"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "unexpected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intense"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the same amount of"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "performed better than"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "performed at about the same level as"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "no"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "showed more irritation than"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "made more mistakes than"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "different types of"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.781104+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g31",
+          "instruction": "Complete the summary using the list of words and phrases, A-J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "All groups were exposed to ___ noise.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "no control over"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "unexpected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intense"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the same amount of"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "performed better than"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "performed at about the same level as"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "no"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "showed more irritation than"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "made more mistakes than"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "different types of"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "no control over"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "unexpected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intense"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the same amount of"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "performed better than"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "performed at about the same level as"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "no"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "showed more irritation than"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "made more mistakes than"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "different types of"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.781628+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g32",
+          "instruction": "Complete the summary using the list of words and phrases, A-J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "1 Average",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "no control over"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "unexpected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intense"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the same amount of"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "performed better than"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "performed at about the same level as"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "no"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "showed more irritation than"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "made more mistakes than"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "different types of"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "no control over"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "unexpected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intense"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the same amount of"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "performed better than"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "performed at about the same level as"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "no"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "showed more irritation than"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "made more mistakes than"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "different types of"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.781628+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g33",
+          "instruction": "Complete the summary using the list of words and phrases, A-J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "The group which had been exposed to unpredictable noise ___ the group which had been exposed to predictable noise.",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "no control over"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "unexpected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intense"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the same amount of"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "performed better than"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "performed at about the same level as"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "no"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "showed more irritation than"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "made more mistakes than"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "different types of"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "no control over"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "unexpected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intense"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the same amount of"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "performed better than"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "performed at about the same level as"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "no"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "showed more irritation than"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "made more mistakes than"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "different types of"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.781628+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g34",
+          "instruction": "Complete the summary using the list of words and phrases, A-J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "The results suggest that ___ noise produces fatigue but that this manifests itself later.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "no control over"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "unexpected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "intense"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the same amount of"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "performed better than"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "performed at about the same level as"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "no"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "showed more irritation than"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "made more mistakes than"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "different types of"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "no control over"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "unexpected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "intense"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the same amount of"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "performed better than"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "performed at about the same level as"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "no"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "showed more irritation than"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "made more mistakes than"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "different types of"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.781628+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g35",
+          "instruction": "Match each statement with the correct researcher(s), A-E. Write the correct letter, A-E, in boxes 35-40 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q35",
+              "number": 35,
+              "type": "matching",
+              "prompt": "Subjects exposed to noise find it difficult at first to concentrate on problem-solving tasks",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Glass and Singer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Broadbent"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Finkelman and Glass"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Cohen et al."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "None of the above"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Glass and Singer"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Broadbent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Finkelman and Glass"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Cohen et al."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "None of the above"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:32.340567+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g36",
+          "instruction": "Match each statement with the correct researcher(s), A-E. Write the correct letter, A-E, in boxes 35-40 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q36",
+              "number": 36,
+              "type": "matching",
+              "prompt": "Long-term exposure to noise can produce changes in behaviour which can still be observed a year later",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Glass and Singer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Broadbent"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Finkelman and Glass"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Cohen et al."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "None of the above"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Glass and Singer"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Broadbent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Finkelman and Glass"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Cohen et al."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "None of the above"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:32.341077+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g37",
+          "instruction": "Look at the following statements. Write the correct letter, A-E, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "The problems associated with exposure to noise do not arise if the subject knows they can make it stop",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Glass and Singer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Broadbent"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Finkelman and Glass"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Cohen et al"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "None of the above"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Glass and Singer"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Broadbent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Finkelman and Glass"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Cohen et al"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "None of the above"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": [
+              "Match each statement with the correct researcher(s), A-E"
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g38",
+          "instruction": "Match each statement with the correct researcher(s), A-E. Write the correct letter, A-E, in boxes 35-40 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q38",
+              "number": 38,
+              "type": "matching",
+              "prompt": "Exposure to high-pitched noise results in more errors than exposure to low-pitched noise",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Glass and Singer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Broadbent"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Finkelman and Glass"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Cohen et al."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "None of the above"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Glass and Singer"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Broadbent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Finkelman and Glass"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Cohen et al."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "None of the above"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:32.341077+00:00"
+          }
+        },
+        {
+          "id": "c7t4r-g39",
+          "instruction": "Look at the following statements. Write the correct letter, A-E, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q39",
+              "number": 39,
+              "type": "matching",
+              "prompt": "Subjects find it difficult to perform three tasks at the same time when exposed to noise",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Glass and Singer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Broadbent"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Finkelman and Glass"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Cohen et al"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "None of the above"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Glass and Singer"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Broadbent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Finkelman and Glass"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Cohen et al"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "None of the above"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": [
+              "Match each statement with the correct researcher(s), A-E"
+            ]
+          }
+        },
+        {
+          "id": "c7t4r-g40",
+          "instruction": "Match each statement with the correct researcher(s), A-E. Write the correct letter, A-E, in boxes 35-40 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t4r-q40",
+              "number": 40,
+              "type": "matching",
+              "prompt": "Noise affects a subject's capacity to repeat numbers while carrying out another task. List of Researchers A Glass and Singer B Broadbent C Finkelman and Glass D Cohen et al. E None of the above [] Units of electricity by fuel source in Australia",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Glass and Singer"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Broadbent"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Finkelman and Glass"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Cohen et al."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "None of the above"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Glass and Singer"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Broadbent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Finkelman and Glass"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Cohen et al."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "None of the above"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:32.341077+00:00"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1477 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-5-test-2-listening",
+  "title": "Cambridge IELTS 5 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0004-70521cd2",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 5",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题5.pdf",
+        "sha256": "7df6a474e84e69a622dd48fc009e69dd7fd711a64b713671bdf492311f5f58cc"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C05\\剑桥雅思真题5\\auto\\剑桥雅思真题5.md",
+        "sha256": "f824a696e954976360e36d9a1615a7da3cbfefff2c6511ed3f1e04f97d5a6c21",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-5-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\nQuestions 1-10\n\nComplete the form below.\n\n## Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer\n\nMINTONS CAR MART\n\nCustomer Enquiry\n\nExample\n\nAnswer\n\nMake:\n\nLida\n\nEngine size:\n\n1.\n\nModel:\n\nMax\n\nType of gears:\n\n2 ...\n\nPreferred colour:\n\n…. blue\n\nFINANCE\n\nCustomer wishes to arrange\n\nPart exchange?\n\nyes\n\nPERSONAL DETAILS\n\nName:\n\nWendy 5 ....\n\nTitle:\n\n6...\n\nAddress:\n\n20, Green Banks\n\nHampshire\n\nPostcode:\n\nGU8 9EW\n\nContact number:\n\n8 (for .... ... only) 0798 257643\n\nCURRENT CAR\n\nMake:\n\nConti\n\nModel:\n\nName: 9 ..\n\nYear:1994\n\nMileage:\n\nmaximum 70,000\n\nColour:\n\nmetallic grey\n\nCondition:\n\n10 ..."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t2l-g1",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Model: Max Type of gears:",
+              "acceptedAnswers": [
+                "(passport) photos",
+                "(passport) photographs"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g2",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Preferred colour: …. blue FINANCE Customer wishes to arrange Part exchange? yes PERSONAL DETAILS Name: Wendy 5 .... Title:",
+              "acceptedAnswers": [
+                "(a) bank statement"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g3",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Complete the form below.",
+              "acceptedAnswers": [
+                "125 (per year)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.844901+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g4",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Number of items allowed: (members of public) ___",
+              "acceptedAnswers": [
+                "8"
+              ],
+              "gapText": "Number of items allowed: (members of public) 4 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.844901+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g5",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Wendy",
+              "acceptedAnswers": [
+                "1.50"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.844901+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g6",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Address:",
+              "acceptedAnswers": [
+                "48"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g7",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Library holds most national papers, all ___, and magazines",
+              "acceptedAnswers": [
+                "local papers",
+                "local newspapers"
+              ],
+              "gapText": "Library holds most national papers, all 7 ___, and magazines",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.844901+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g8",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "(for .... ... only) 0798 257643 CURRENT CAR Make: Conti Model: Name: 9 .. Year:1994 Mileage: maximum 70,000 Colour: metallic grey Condition:",
+              "acceptedAnswers": [
+                "(a) card",
+                "cards"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g9",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "GU8",
+              "acceptedAnswers": [
+                "Grantingham"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.844901+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g10",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Creative Writing class: held on ___ evenings",
+              "acceptedAnswers": [
+                "Friday"
+              ],
+              "gapText": "Creative Writing class: held on 10 ___ evenings",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 476041
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\n## Questions 11 and 12\n\n## ChooseTWO letters A-E.\n\nWhat TWO advantages does the speaker say Rexford University has for the students he is speaking to?\n\nA higher than average results in examinations\n\nB good transport links with central London\n\nC near London Airport\n\nD special government funding\n\nE good links with local industry\n\n## Questions 13–15\n\nComplete the notes below.\n\n## Write NO MORE THAN ONE WORD for each answer.\n\n• When application is received, confirmation will be sent\n\n• Application processing may be slowed down by\n\n– postal problems\n\n– delays in sending 13.\n\nUniversity tries to put international applicants in touch with a student from the same 14who can give information and advice on\n\n\\- academic atmosphere\n\n– leisure facilities\n\n– English 15 and food\n\n\\- what to pack\n\n## Questions 16–20\n\nChoose the correct letter, A, B or C.\n\n16 The speaker says international students at UK universities will be\n\nA offered accommodation with local families.\n\nB given special help by their lecturers.\n\nC expected to work independently.\n\n17 What does the speaker say about university accommodation on campus?\n\nA Most places are given to undergraduates.\n\nBNo places are available for postgraduates with families.\n\nC A limited number of places are available for new postgraduates.\n\n18 Students wishing to live off-campus should apply\n\nA several months in advance.\n\nB two or three weeks in advance.\n\nC at the beginning of term.\n\n19 The university accommodation officer will\n\nA send a list of agents for students to contact.\n\nB contact accommodation agencies for students.\n\nC ensure that students have suitable accommodation.\n\n20 With regard to their English, the speaker advises the students to\n\nA tell their lecturers if they have problems understanding.\n\nBhave private English lessons when they arrive.\n\nC practise their spoken English before they arrive."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t2l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "What TWO advantages does the speaker say Rexford University has for the students he is speaking to?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "higher than average results in examinations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "good transport links with central London"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "near London Airport"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "special government funding"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "good links with local industry"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "higher than average results in examinations"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "good transport links with central London"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "near London Airport"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "special government funding"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "good links with local industry"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t2l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "Dan's neighbour was successful in business because he A employed carpenters from the area. B was the most skilled craftsman in the town. C found it easy to reach customers.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "higher than average results in examinations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "good transport links with central London"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "near London Airport"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "special government funding"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "good links with local industry"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "higher than average results in examinations"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "good transport links with central London"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "near London Airport"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "special government funding"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "good links with local industry"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t2l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Dan says the charity relies on A getting enough bicycles to send regularly. B finding new areas which need the bicycles. C charging for the bicycles it sends abroad.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "higher than average results in examinations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "good transport links with central London"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "near London Airport"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "special government funding"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "good links with local industry"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "higher than average results in examinations"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "good transport links with central London"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "near London Airport"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "special government funding"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "good links with local industry"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t2l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "What does Dan say about the town of Rivas? A It has received the greatest number of bikes. B It has almost as many bikes as Amsterdam. C Its economy has been totally transformed.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "higher than average results in examinations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "good transport links with central London"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "near London Airport"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "special government funding"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "good links with local industry"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "higher than average results in examinations"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "good transport links with central London"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "near London Airport"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "special government funding"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "good links with local industry"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t2l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "What problem did the charity face in August 2000? A It couldn't meet its overheads B It had to delay sending the bikes. C It was criticised in the British media.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "higher than average results in examinations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "good transport links with central London"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "near London Airport"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "special government funding"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "good links with local industry"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "higher than average results in examinations"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "good transport links with central London"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "near London Airport"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "special government funding"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "good links with local industry"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t2l-g16",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "The speaker says international students at UK universities will be A offered accommodation with local families. B given special help by their lecturers. C expected to work independently",
+              "acceptedAnswers": [
+                "£75,000"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              17
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN ONE WORD OR A NUMBER for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t2l-g17",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "What does the speaker say about university accommodation on campus? A Most places are given to undergraduates. BNo places are available for postgraduates with families. C A limited number of places are available for new postgraduates",
+              "acceptedAnswers": [
+                "computers"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              17
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN ONE WORD OR A NUMBER for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t2l-g18",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Students wishing to live off-campus should apply A several months in advance. B two or three weeks in advance. C at the beginning of term",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "organise a bicycle collection"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "repair the donated bikes"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "donate their unwanted tools"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "do voluntary work in its office"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "hold an event to raise money"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "identify areas that need bikes"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "write to the government"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.298442+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t2l-g19",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "The university accommodation officer will A send a list of agents for students to contact. B contact accommodation agencies for students. C ensure that students have suitable accommodation",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "organise a bicycle collection"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "repair the donated bikes"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "donate their unwanted tools"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "do voluntary work in its office"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "hold an event to raise money"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "identify areas that need bikes"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "write to the government"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.298442+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t2l-g20",
+          "instruction": "Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "With regard to their English, the speaker advises the students to A tell their lecturers if they have problems understanding. Bhave private English lessons when they arrive. C practise their spoken English before they arrive",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "organise a bicycle collection"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "repair the donated bikes"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "donate their unwanted tools"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "do voluntary work in its office"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "hold an event to raise money"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "identify areas that need bikes"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "write to the government"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.298442+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 476041,
+      "audioDurationMs": 411548
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nComplete the form below.\n\n## Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\n## Feedback Form\n\nCourse:Communication in Business\n\nCourse code: CB162\n\nDates:From 21 …… to 22…\n\nPlease give your comments on the following aspects of the course:\n\nGood Points\n\nSuggestions forImprovement\n\nCourse organisation\n\n• 23.useful to have24 .....at beginning of course\n\n• too much work in25 ...of the course – could bemore evenly balanced\n\nCourse delivery\n\n• good 26\n\nsome 27.sessions went on toolong\n\nMaterials and equipment\n\n• good 28\n\n• not enough copies ofkey texts available• need more computers\n\nTesting and evaluation\n\nquick feedbackfrom oral presentationsmarking criteria fororal presentations knownin advance\n\n• too much 29• can we know criteria formarking final exams?\n\nOther comments\n\n• excellent 30\n\nSECTION 4 Questions 31–40 \nQuestions 31-35 \nComplete the sentences below. \nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for euch answer. \nHOUSEHOLD WASTE RECYCLING \n31 By 2008, carbon dioxide emissions need to be ............ lower than in 1990. \n32 Recycling saves energy and reduces emissions from landfill sites and .. \n33 People say that one problem is a lack of .....' sites for household waste. \nAt the ‘bring banks', househoid waste is sorted and unsuitable items removed. \n34 Glass designed to be utiliscd for.. cannot be recycled with other types of \nglass. \n35 In the U, tons of gla s recycled each year.\n\n## Questions 36-40\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\nCompanies working with recycled materials\n\nMaterial\n\nCompany\n\nProduct that the companymanufactures\n\nglass\n\nCLF Aggregates\n\nmaterial used for making36....\n\npaper\n\nMartin's\n\noffice stationery\n\nPapersave\n\nplastic\n\nPacrite\n\n38. . for collecting waste\n\nWaterford\n\n39\n\nJohnson & Jones\n\n40\n\nYou should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\n# Early Childhood Education\n\nNew Zealand's National Party spokesman on education, Dr Lockwood Smith, recently visited the US and Britain. Here he reports on the findings of his trip and what they could mean for New Zealand's education policy\n\n## A\n\n'Education To Be More' was published last August. It was the report of the New Zealand Government's Early Childhood Care and Education Working Group. The report argued for enhanced equity of access and better funding for childcare and early childhood education institutions. Unquestionably, thaľ's a real need; but since parents don’t normally send children to pre-schools until the age of three, are we missing out on the most important years of all?\n\n## B\n\nA 13-year study of early childhood development at Harvard University has shown that, by the age of three, most children have the potential to understand about 1000 words – most of the language they will use in ordinary conversation for the rest of their lives.\n\nFurthermore, research has shown that while every child is born with a natural curiosity, it can be suppressed dramatically during the second and third years of life. Researchers claim thaf the human personalily is formed during the first two years of life, and during the first three years children learn the basic skills they will use in all their later learning both at home and at school. Once over the age of three, children continue to expand on existing knowledge of the world.\n\n## C\n\nIt is generally acknowledged that young people from poorer socio-economic backgrounds tend to do less well in our education system. That's observed not just in New Zealand, but also in Australia, Britain and America. In an attempt to overcome that educational under-achievemenf, a nationwide programme called 'Headstarť was launched in the United Stafes in 1965. A lot of money was poured into it. It took children into pre-school institutions at the age of three and was supposed to help the children of poorer families succeed in school.\n\nDespite substantial funding, results have been disappointing. It is thought that there are two explanations for this. First, the programme began too late. Many children who entered it at the age of three were already behind their peers in language and measurable intelligence. Second, the parents were not involved. Af the end of each day, 'Headstart’ children returned to the same disadvantaged home environment.\n\n## D\n\nAs a result of the growing research evidence of the importance of the first three years of a child’s life and the disappointing results from 'Headstarł, a piloł programme was launched in Missouri in the US that focused on parents as the child's first teachers. The 'Missouri' programme was predicated on research showing that working with the family, rather than bypassing the parents, is the most effective way of helping children get off to the best possible start in life. The four-year pilot study included 380 families who were about to have their first child and who represented a cross-section of socio-econòmic stalus, age and family configurations. They included single-parent and two-parent families, families in which both parents worked, and families with either the mother or father at home.\n\nThe programme involved trained parenteducators visiting the parents' home and working with the parent, or parents, and the child. Information on child development, and guidance on things to look for and expect as the child grows were provided, plus guidance in fostering the child's intellectual, language, social and motor-skill development. Periodic check-ups of the child's educational and sensory development (hearing and vision) were made to detect possible handicaps that interfere with growth and development. Medical problems were referred to professionals.\n\nParent-educators made personal visits to homes and monthly group meetings were held with other new parents to share experience and discuss topics of interest. Parent resource centres, located in school buildings, offered learning materials for families and facilitators for child care.\n\n## E\n\nAt the age of three, the children who had been involved in the 'Missouri' programme were evaluated alongside a cross-section of children selected from the same range of socio-economic backgrounds and family situations, and also a random sample of children that age. The results were phenomenal. By the age of three, the children in the programme were significantly more advanced in language development than their peers, had made greater strides in problem solving and other intellectual skills, and were\n\nfurther along in social development. In fact, the average child on the programme was performing at the level of the top 15 to 20 per cent of their peers in such things as auditory comprehension, verbal ability and language ability.\n\nMost important of all, the traditional measures of ’risk’, such as parents’ age and education, or whether they were a single parent, bore liffle or no relationship to the measures of achievement and language development. Children in the programme performed equally well regardless of socio-economic disadvantages. Child abuse was virtually eliminated. The one factor that was found to affect the child's development was family stress leading to a poor quality of parent-child interaction. That interaction was not necessarily bad in poorer families.\n\n##\n\nThese research findings are exciting. There is growing evidence in New Zealand that children from poorer socio-economic backgrounds are arriving at school less well developed and that our school system tends to perpetuale that disadvantage. The initiative outlined above could break that cycle of disadvantage. The concept of working with parents in their homes, or at their place of work, contrasts quite markedly with the report of the Early Childhood Care and Education Working Group. Their focus is on getting children and mothers access to childcare and institutionalised early childhood education. Education from the age of three to five is undoubtedly vital, but without a similar focus on parent education and on the vital importance of the first three years, some evidence indicates that it will not be enough to overcome educational inequity.\n\n## Questions 1–4\n\nReading Passage 1 has six sections, A-F.\n\nWhich paragraph contains the following information?\n\nWrite the correct letter A–F in boxes 1–4 on your answer sheet.\n\n1 details of the range of family types involved in an education programme\n\n2 reasons why a child's early years are so important\n\n3 reasons why an education programme failed\n\n4 a description of the positive outcomes of an education programme\n\n## Questions 5–10\n\nClassify the following features as characterising\n\nAthe 'Headstart' programme\n\nB the 'Missouri' programme\n\nC both the 'Headstart' and the 'Missouri' programmes\n\nD neither the 'Headstart' nor the 'Missouri' programme\n\nWrite the correct letter A, B, C or D in boxes 5–10 on your answer sheet.\n\n5 was administered to a variety of poor and wealthy families\n\n6 continued with follow-up assistance in elementary schools\n\n7 did not succeed in its aim\n\n8 supplied many forms of support and training to parents\n\n9 received insufficient funding\n\n10was designed to improve pre-schoolers’ educational development\n\n## Questions 11–13\n\nDo the following statements agree with the information given in Reading Passage !?\n\nIn boxes 11-13 on your answer sheet, write\n\nTRUE\n\nif the statement agrees with the information\n\nFALSE\n\nif the statement contradicts the information\n\nNOT GIVEN\n\nif there is no information on this\n\n11 Most ‘Missouri' programme three-year-olds scored highly in areas such as listening, speaking, reasoning and interacting with others.\n\n12 ‘Missouri’ programme children of young, uneducated, single parents scored less highly on the tests.\n\n13 The richer families in the Missouri’ programme had higher stress levels."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t2l-g21",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "contact with students doingother courses (has asked someto",
+              "acceptedAnswers": [
+                "home",
+                "student's home"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g22",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Contact with students doing other courses (has asked some to ___ with him)",
+              "acceptedAnswers": [
+                "(have) dinner",
+                "come to dinner",
+                "go to dinner"
+              ],
+              "gapText": "Contact with students doing other courses (has asked some to 22 ___ with him)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g23",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Learning ___ vocabulary",
+              "acceptedAnswers": [
+                "technical"
+              ],
+              "gapText": "Learning 23 ___ vocabulary",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g24",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "• 23.useful to have",
+              "acceptedAnswers": [
+                "slang"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g25",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "• too much work in",
+              "acceptedAnswers": [
+                "cooperating",
+                "cooperation"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g26",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "• good",
+              "acceptedAnswers": [
+                "persuading"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g27",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Things to dodifferently infuture: | • decide when to",
+              "acceptedAnswers": [
+                "editing"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g28",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Decide when to ___ each stage at the beginning",
+              "acceptedAnswers": [
+                "complete"
+              ],
+              "gapText": "Decide when to 28 ___ each stage at the beginning",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g29",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Make more effort to ___ with the camera",
+              "acceptedAnswers": [
+                "experiment"
+              ],
+              "gapText": "Make more effort to 29 ___ with the camera",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g30",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "• excellent",
+              "acceptedAnswers": [
+                "long"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:19.996792+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 887589,
+      "audioDurationMs": 376104
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION 1 Questions 1–10\n\nQuestions 1-10\n\nComplete the form below.\n\n## Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer\n\nMINTONS CAR MART\n\nCustomer Enquiry\n\nExample\n\nAnswer\n\nMake:\n\nLida\n\nEngine size:\n\n1.\n\nModel:\n\nMax\n\nType of gears:\n\n2 ...\n\nPreferred colour:\n\n…. blue\n\nFINANCE\n\nCustomer wishes to arrange\n\nPart exchange?\n\nyes\n\nPERSONAL DETAILS\n\nName:\n\nWendy 5 ....\n\nTitle:\n\n6...\n\nAddress:\n\n20, Green Banks\n\nHampshire\n\nPostcode:\n\nGU8 9EW\n\nContact number:\n\n8 (for .... ... only) 0798 257643\n\nCURRENT CAR\n\nMake:\n\nConti\n\nModel:\n\nName: 9 ..\n\nYear:1994\n\nMileage:\n\nmaximum 70,000\n\nColour:\n\nmetallic grey\n\nCondition:\n\n10 ...\n\n## SECTION 2 Questions 11–20\n\n## Questions 11 and 12\n\n## ChooseTWO letters A-E.\n\nWhat TWO advantages does the speaker say Rexford University has for the students he is speaking to?\n\nA higher than average results in examinations\n\nB good transport links with central London\n\nC near London Airport\n\nD special government funding\n\nE good links with local industry\n\n## Questions 13–15\n\nComplete the notes below.\n\n## Write NO MORE THAN ONE WORD for each answer.\n\n• When application is received, confirmation will be sent\n\n• Application processing may be slowed down by\n\n– postal problems\n\n– delays in sending 13.\n\nUniversity tries to put international applicants in touch with a student from the same 14who can give information and advice on\n\n\\- academic atmosphere\n\n– leisure facilities\n\n– English 15 and food\n\n\\- what to pack\n\n## Questions 16–20\n\nChoose the correct letter, A, B or C.\n\n16 The speaker says international students at UK universities will be\n\nA offered accommodation with local families.\n\nB given special help by their lecturers.\n\nC expected to work independently.\n\n17 What does the speaker say about university accommodation on campus?\n\nA Most places are given to undergraduates.\n\nBNo places are available for postgraduates with families.\n\nC A limited number of places are available for new postgraduates.\n\n18 Students wishing to live off-campus should apply\n\nA several months in advance.\n\nB two or three weeks in advance.\n\nC at the beginning of term.\n\n19 The university accommodation officer will\n\nA send a list of agents for students to contact.\n\nB contact accommodation agencies for students.\n\nC ensure that students have suitable accommodation.\n\n20 With regard to their English, the speaker advises the students to\n\nA tell their lecturers if they have problems understanding.\n\nBhave private English lessons when they arrive.\n\nC practise their spoken English before they arrive.\n\n# SECTION 3 Questions 21–30\n\nComplete the form below.\n\n## Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\n## Feedback Form\n\nCourse:Communication in Business\n\nCourse code: CB162\n\nDates:From 21 …… to 22…\n\nPlease give your comments on the following aspects of the course:\n\nGood Points\n\nSuggestions forImprovement\n\nCourse organisation\n\n• 23.useful to have24 .....at beginning of course\n\n• too much work in25 ...of the course – could bemore evenly balanced\n\nCourse delivery\n\n• good 26\n\nsome 27.sessions went on toolong\n\nMaterials and equipment\n\n• good 28\n\n• not enough copies ofkey texts available• need more computers\n\nTesting and evaluation\n\nquick feedbackfrom oral presentationsmarking criteria fororal presentations knownin advance\n\n• too much 29• can we know criteria formarking final exams?\n\nOther comments\n\n• excellent 30\n\nSECTION 4 Questions 31–40 \nQuestions 31-35 \nComplete the sentences below. \nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for euch answer. \nHOUSEHOLD WASTE RECYCLING \n31 By 2008, carbon dioxide emissions need to be ............ lower than in 1990. \n32 Recycling saves energy and reduces emissions from landfill sites and .. \n33 People say that one problem is a lack of .....' sites for household waste. \nAt the ‘bring banks', househoid waste is sorted and unsuitable items removed. \n34 Glass designed to be utiliscd for.. cannot be recycled with other types of \nglass. \n35 In the U, tons of gla s recycled each year.\n\n## Questions 36-40\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\nCompanies working with recycled materials\n\nMaterial\n\nCompany\n\nProduct that the companymanufactures\n\nglass\n\nCLF Aggregates\n\nmaterial used for making36....\n\npaper\n\nMartin's\n\noffice stationery\n\nPapersave\n\nplastic\n\nPacrite\n\n38. . for collecting waste\n\nWaterford\n\n39\n\nJohnson & Jones\n\n40\n\nYou should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\n# Early Childhood Education\n\nNew Zealand's National Party spokesman on education, Dr Lockwood Smith, recently visited the US and Britain. Here he reports on the findings of his trip and what they could mean for New Zealand's education policy\n\n## A\n\n'Education To Be More' was published last August. It was the report of the New Zealand Government's Early Childhood Care and Education Working Group. The report argued for enhanced equity of access and better funding for childcare and early childhood education institutions. Unquestionably, thaľ's a real need; but since parents don’t normally send children to pre-schools until the age of three, are we missing out on the most important years of all?\n\n## B\n\nA 13-year study of early childhood development at Harvard University has shown that, by the age of three, most children have the potential to understand about 1000 words – most of the language they will use in ordinary conversation for the rest of their lives.\n\nFurthermore, research has shown that while every child is born with a natural curiosity, it can be suppressed dramatically during the second and third years of life. Researchers claim thaf the human personalily is formed during the first two years of life, and during the first three years children learn the basic skills they will use in all their later learning both at home and at school. Once over the age of three, children continue to expand on existing knowledge of the world.\n\n## C\n\nIt is generally acknowledged that young people from poorer socio-economic backgrounds tend to do less well in our education system. That's observed not just in New Zealand, but also in Australia, Britain and America. In an attempt to overcome that educational under-achievemenf, a nationwide programme called 'Headstarť was launched in the United Stafes in 1965. A lot of money was poured into it. It took children into pre-school institutions at the age of three and was supposed to help the children of poorer families succeed in school.\n\nDespite substantial funding, results have been disappointing. It is thought that there are two explanations for this. First, the programme began too late. Many children who entered it at the age of three were already behind their peers in language and measurable intelligence. Second, the parents were not involved. Af the end of each day, 'Headstart’ children returned to the same disadvantaged home environment.\n\n## D\n\nAs a result of the growing research evidence of the importance of the first three years of a child’s life and the disappointing results from 'Headstarł, a piloł programme was launched in Missouri in the US that focused on parents as the child's first teachers. The 'Missouri' programme was predicated on research showing that working with the family, rather than bypassing the parents, is the most effective way of helping children get off to the best possible start in life. The four-year pilot study included 380 families who were about to have their first child and who represented a cross-section of socio-econòmic stalus, age and family configurations. They included single-parent and two-parent families, families in which both parents worked, and families with either the mother or father at home.\n\nThe programme involved trained parenteducators visiting the parents' home and working with the parent, or parents, and the child. Information on child development, and guidance on things to look for and expect as the child grows were provided, plus guidance in fostering the child's intellectual, language, social and motor-skill development. Periodic check-ups of the child's educational and sensory development (hearing and vision) were made to detect possible handicaps that interfere with growth and development. Medical problems were referred to professionals.\n\nParent-educators made personal visits to homes and monthly group meetings were held with other new parents to share experience and discuss topics of interest. Parent resource centres, located in school buildings, offered learning materials for families and facilitators for child care.\n\n## E\n\nAt the age of three, the children who had been involved in the 'Missouri' programme were evaluated alongside a cross-section of children selected from the same range of socio-economic backgrounds and family situations, and also a random sample of children that age. The results were phenomenal. By the age of three, the children in the programme were significantly more advanced in language development than their peers, had made greater strides in problem solving and other intellectual skills, and were\n\nfurther along in social development. In fact, the average child on the programme was performing at the level of the top 15 to 20 per cent of their peers in such things as auditory comprehension, verbal ability and language ability.\n\nMost important of all, the traditional measures of ’risk’, such as parents’ age and education, or whether they were a single parent, bore liffle or no relationship to the measures of achievement and language development. Children in the programme performed equally well regardless of socio-economic disadvantages. Child abuse was virtually eliminated. The one factor that was found to affect the child's development was family stress leading to a poor quality of parent-child interaction. That interaction was not necessarily bad in poorer families.\n\n##\n\nThese research findings are exciting. There is growing evidence in New Zealand that children from poorer socio-economic backgrounds are arriving at school less well developed and that our school system tends to perpetuale that disadvantage. The initiative outlined above could break that cycle of disadvantage. The concept of working with parents in their homes, or at their place of work, contrasts quite markedly with the report of the Early Childhood Care and Education Working Group. Their focus is on getting children and mothers access to childcare and institutionalised early childhood education. Education from the age of three to five is undoubtedly vital, but without a similar focus on parent education and on the vital importance of the first three years, some evidence indicates that it will not be enough to overcome educational inequity.\n\n## Questions 1–4\n\nReading Passage 1 has six sections, A-F.\n\nWhich paragraph contains the following information?\n\nWrite the correct letter A–F in boxes 1–4 on your answer sheet.\n\n1 details of the range of family types involved in an education programme\n\n2 reasons why a child's early years are so important\n\n3 reasons why an education programme failed\n\n4 a description of the positive outcomes of an education programme\n\n## Questions 5–10\n\nClassify the following features as characterising\n\nAthe 'Headstart' programme\n\nB the 'Missouri' programme\n\nC both the 'Headstart' and the 'Missouri' programmes\n\nD neither the 'Headstart' nor the 'Missouri' programme\n\nWrite the correct letter A, B, C or D in boxes 5–10 on your answer sheet.\n\n5 was administered to a variety of poor and wealthy families\n\n6 continued with follow-up assistance in elementary schools\n\n7 did not succeed in its aim\n\n8 supplied many forms of support and training to parents\n\n9 received insufficient funding\n\n10was designed to improve pre-schoolers’ educational development\n\n## Questions 11–13\n\nDo the following statements agree with the information given in Reading Passage !?\n\nIn boxes 11-13 on your answer sheet, write\n\nTRUE\n\nif the statement agrees with the information\n\nFALSE\n\nif the statement contradicts the information\n\nNOT GIVEN\n\nif there is no information on this\n\n11 Most ‘Missouri' programme three-year-olds scored highly in areas such as listening, speaking, reasoning and interacting with others.\n\n12 ‘Missouri’ programme children of young, uneducated, single parents scored less highly on the tests.\n\n13 The richer families in the Missouri’ programme had higher stress levels."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t2l-g31",
+          "instruction": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for euch answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "By 2008, carbon dioxide emissions need to be ............ lower than in 1990",
+              "acceptedAnswers": [
+                "58"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g32",
+          "instruction": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for euch answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Recycling saves energy and reduces emissions from landfill sites and",
+              "acceptedAnswers": [
+                "desert"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g33",
+          "instruction": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for euch answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "People say that one problem is a lack of .....' sites for household waste. At the ‘bring banks', househoid waste is sorted and unsuitable items removed",
+              "acceptedAnswers": [
+                "science"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g34",
+          "instruction": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for euch answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Glass designed to be utiliscd for.. cannot be recycled with other types of glass",
+              "acceptedAnswers": [
+                "hospital",
+                "small hospital"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g35",
+          "instruction": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for euch answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "In the U, tons of gla s recycled each year",
+              "acceptedAnswers": [
+                "ship"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g36",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Problem of snow build-ups solved by building stations on ___ with adjustable legs",
+              "acceptedAnswers": [
+                "platforms"
+              ],
+              "gapText": "Problem of snow build-ups solved by building stations on 36 ___ with adjustable legs",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.142192+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g37",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Average daily requirement for an adult in Antarctica is approximately ___ kilocalories",
+              "acceptedAnswers": [
+                "3,500"
+              ],
+              "gapText": "Average daily requirement for an adult in Antarctica is approximately 37 ___ kilocalories",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.142192+00:00"
+          }
+        },
+        {
+          "id": "c5t2l-g38",
+          "instruction": "Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Measuring changes in the ice-cap (because of effects on sea levels and ___)",
+              "acceptedAnswers": [
+                "currents",
+                "ocean currents"
+              ],
+              "gapText": "Measuring changes in the ice-cap (because of effects on sea levels and 38 ___)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g39",
+          "instruction": "Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Johnson & Jones",
+              "acceptedAnswers": [
+                "(the) pollution"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c5t2l-g40",
+          "instruction": "Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t2l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "You should spend about 20 minutes on",
+              "acceptedAnswers": [
+                "young"
+              ],
+              "gapText": "____"
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 1263693,
+      "audioDurationMs": 469020
+    }
+  ]
+}

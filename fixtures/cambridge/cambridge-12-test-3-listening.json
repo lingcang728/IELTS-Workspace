@@ -1,0 +1,2246 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-12-test-3-listening",
+  "title": "Cambridge IELTS 12 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0027-7de7c66e",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 12",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题12.pdf",
+        "sha256": "c9b61939ce31049dd9552020dbaf3deb979cbb6244b4cac0ac64f13b3ce049c6"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C12\\剑桥雅思真题12\\auto\\剑桥雅思真题12.md",
+        "sha256": "7a2c612d2c8d56d7c069234ee770a1aa17fccf10cecc1497b4f05fa686bc807a",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-12-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The effects of environmental change on birds\n\nMercury (Hg) \nHighly toxic \nReleased into the atmosphere from coal \nIn water it may be consumed by fish \nIt has also recently been found to affect birds which feed on 31 .. \nResearch on effects of mercury on birds \nClaire Varian-Ramos is investigating: \nthe effects on birds' 32... or mental processes, e.g. memory \nthe effects on bird song (usualy learned from a bird's 3..) \nFindings: \nsongs learned by birds exposed to mercury are less 34.... \nthis may have a negative effect on birds' 35 .. \nLab-based studies: \nallow more 36 ... . for the experimenter \nImplications for humans \nMigrating birds such as 37... . containing mercury may be eaten by \nhumans \nMercury also causes problems in learning 38. \nMercury in a mother's body from 39.. ... may affect the unborn child \nNew regulations for mercury emissions will affect everyone's energy \n40."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t3l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "An expanded section for books on ___",
+              "acceptedAnswers": [
+                "travel",
+                "travel(l)ing"
+              ],
+              "gapText": "An expanded section for books on ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "A new section on local ___",
+              "acceptedAnswers": [
+                "history"
+              ],
+              "gapText": "A new section on local ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "A community room for meetings (also possible to ___ there)",
+              "acceptedAnswers": [
+                "study"
+              ],
+              "gapText": "A community room for meetings (also possible to ___ there)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "For younger children the next Science Club meeting: experiments using things from your",
+              "acceptedAnswers": [
+                "teenagers"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "The next Science Club meeting: experiments using things from your ___",
+              "acceptedAnswers": [
+                "kitchen"
+              ],
+              "gapText": "The next Science Club meeting: experiments using things from your ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "IT support is available on Tuesdays – no",
+              "acceptedAnswers": [
+                "crime"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "IT support is available on Tuesdays – no ___ is necessary",
+              "acceptedAnswers": [
+                "appointment",
+                "booking"
+              ],
+              "gapText": "IT support is available on Tuesdays – no ___ is necessary",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "· and cholesterol levels(over 60s only) Other information the library shop sells wall-charts, cards and",
+              "acceptedAnswers": [
+                "sugar"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "The library shop sells wall-charts, cards and ___",
+              "acceptedAnswers": [
+                "stamps"
+              ],
+              "gapText": "The library shop sells wall-charts, cards and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Evenings and weekends: free ___ is available",
+              "acceptedAnswers": [
+                "parking"
+              ],
+              "gapText": "Evenings and weekends: free ___ is available",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 546939
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The effects of environmental change on birds\n\nMercury (Hg) \nHighly toxic \nReleased into the atmosphere from coal \nIn water it may be consumed by fish \nIt has also recently been found to affect birds which feed on 31 .. \nResearch on effects of mercury on birds \nClaire Varian-Ramos is investigating: \nthe effects on birds' 32... or mental processes, e.g. memory \nthe effects on bird song (usualy learned from a bird's 3..) \nFindings: \nsongs learned by birds exposed to mercury are less 34.... \nthis may have a negative effect on birds' 35 .. \nLab-based studies: \nallow more 36 ... . for the experimenter \nImplications for humans \nMigrating birds such as 37... . containing mercury may be eaten by \nhumans \nMercury also causes problems in learning 38. \nMercury in a mother's body from 39.. ... may affect the unborn child \nNew regulations for mercury emissions will affect everyone's energy \n40."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t3l-g11",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q11",
+              "number": 11,
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which TWO age groups are taking increasing numbers of holidays with BC Travel?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "16–30 years"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "31–42 years"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "43–54 years"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "55–64 years"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "over 65 years"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "16–30 years"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "31–42 years"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "43–54 years"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "55–64 years"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "over 65 years"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g12",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q12",
+              "number": 12,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO age groups are taking increasing numbers of holidays with BC Travel?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "16–30 years"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "31–42 years"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "43–54 years"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "55–64 years"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "over 65 years"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "16–30 years"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "31–42 years"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "43–54 years"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "55–64 years"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "over 65 years"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g13",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q13",
+              "number": 13,
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which TWO are the main reasons given for the popularity of activity holidays?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Clients make new friends."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Clients learn a useful skill."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Clients learn about a different culture."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Clients are excited by the risk involved."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Clients find them good value for money."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Clients make new friends."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Clients learn a useful skill."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Clients learn about a different culture."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Clients are excited by the risk involved."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Clients find them good value for money."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g14",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q14",
+              "number": 14,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO are the main reasons given for the popularity of activity holidays?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Clients make new friends."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Clients learn a useful skill."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Clients learn about a different culture."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Clients are excited by the risk involved."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Clients find them good value for money."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Clients make new friends."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Clients learn a useful skill."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Clients learn about a different culture."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Clients are excited by the risk involved."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Clients find them good value for money."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "How does BC Travel plan to expand the painting holidays?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "by adding to the number of locations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "by increasing the range of levels"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "by employing more teachers"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "by adding to the number of locations"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "by increasing the range of levels"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "by employing more teachers"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:33.266688+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Why are BC Travel's cooking holidays unusual?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They only use organic foods."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They have an international focus."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They mainly involve vegetarian dishes."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They only use organic foods."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They have an international focus."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They mainly involve vegetarian dishes."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:33.266688+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g17",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "What does the speaker say about the photography holidays?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Clients receive individual tuition."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The tutors are also trained guides."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Advice is given on selling photographs."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Clients receive individual tuition."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The tutors are also trained guides."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Advice is given on selling photographs."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:33.266688+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g18",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Greece",
+              "acceptedAnswers": [
+                "stress"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g19",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Greece: ___ control",
+              "acceptedAnswers": [
+                "weight"
+              ],
+              "gapText": "Greece: ___ control",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g20",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "One holiday in Morocco is specially designed for ___",
+              "acceptedAnswers": [
+                "families"
+              ],
+              "gapText": "One holiday in Morocco is specially designed for ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 546939,
+      "audioDurationMs": 435187
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The effects of environmental change on birds\n\nMercury (Hg) \nHighly toxic \nReleased into the atmosphere from coal \nIn water it may be consumed by fish \nIt has also recently been found to affect birds which feed on 31 .. \nResearch on effects of mercury on birds \nClaire Varian-Ramos is investigating: \nthe effects on birds' 32... or mental processes, e.g. memory \nthe effects on bird song (usualy learned from a bird's 3..) \nFindings: \nsongs learned by birds exposed to mercury are less 34.... \nthis may have a negative effect on birds' 35 .. \nLab-based studies: \nallow more 36 ... . for the experimenter \nImplications for humans \nMigrating birds such as 37... . containing mercury may be eaten by \nhumans \nMercury also causes problems in learning 38. \nMercury in a mother's body from 39.. ... may affect the unborn child \nNew regulations for mercury emissions will affect everyone's energy \n40."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t3l-g21",
+          "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A-H, next to Questions 21-26.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "Locate and read relevant articles, noting key information and also ___",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "patterns"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "names"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sources"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "questions"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "employees"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "solutions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "headings"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "officials"
+                }
+              ],
+              "gapText": "Locate and read relevant articles, noting key information and also ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "patterns"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "names"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sources"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "questions"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "employees"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "solutions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "headings"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "officials"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:58.058907+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g22",
+          "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A-H, next to Questions 21-26.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "Select interviewees – these may be site ___",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "patterns"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "names"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sources"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "questions"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "employees"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "solutions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "headings"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "officials"
+                }
+              ],
+              "gapText": "Select interviewees – these may be site ___, visitors or city ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "patterns"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "names"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sources"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "questions"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "employees"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "solutions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "headings"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "officials"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:58.058907+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g23",
+          "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A-H, next to Questions 21-26.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "Select interviewees – these may be city ___",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "patterns"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "names"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sources"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "questions"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "employees"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "solutions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "headings"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "officials"
+                }
+              ],
+              "gapText": "Select interviewees – these may be site ___, visitors or city ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "patterns"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "names"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sources"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "questions"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "employees"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "solutions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "headings"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "officials"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:58.058907+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g24",
+          "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A-H, next to Questions 21-26.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q24",
+              "number": 24,
+              "type": "matching",
+              "prompt": "Check whether ___ of interviewees can be used",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "patterns"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "names"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sources"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "questions"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "employees"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "solutions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "headings"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "officials"
+                }
+              ],
+              "gapText": "Check whether ___ of interviewees can be used",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "patterns"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "names"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sources"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "questions"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "employees"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "solutions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "headings"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "officials"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:58.058907+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g25",
+          "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A-H, next to Questions 21-26.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "Select relevant information and try to identify ___",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "patterns"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "names"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sources"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "questions"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "employees"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "solutions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "headings"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "officials"
+                }
+              ],
+              "gapText": "Select relevant information and try to identify ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "patterns"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "names"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sources"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "questions"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "employees"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "solutions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "headings"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "officials"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:58.058907+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g26",
+          "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A-H, next to Questions 21-26.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "Do NOT end with ___",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "patterns"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "names"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "sources"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "questions"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "employees"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "solutions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "headings"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "officials"
+                }
+              ],
+              "gapText": "Do NOT end with ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "patterns"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "names"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sources"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "questions"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "employees"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "solutions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "headings"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "officials"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:58.058907+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Natalie and Dave agree one reason why so few people visit Horton Castle is that",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the publicity is poor."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it is difficult to get to."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "there is little there of interest."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the publicity is poor."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "it is difficult to get to."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "there is little there of interest."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:50.821797+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g28",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Natalie and Dave agree that the greatest problem with a visitor centre could be",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "covering the investment costs."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "finding a big enough space for it."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "dealing with planning restrictions."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "covering the investment costs."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "finding a big enough space for it."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "dealing with planning restrictions."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:50.821797+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g29",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "What does Dave say about conditions in the town of Horton?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a lot of unemployment."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "There are few people of working age."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "There are opportunities for skilled workers."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a lot of unemployment."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "There are few people of working age."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "There are opportunities for skilled workers."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:50.821797+00:00"
+          }
+        },
+        {
+          "id": "c12t3l-g30",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "According to Natalie, one way to prevent damage to the castle site would be to",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "insist visitors have a guide."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "make visitors keep to the paths."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "limit visitor numbers."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "insist visitors have a guide."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "make visitors keep to the paths."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "limit visitor numbers."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:50.821797+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 982126,
+      "audioDurationMs": 509558
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The effects of environmental change on birds\n\nMercury (Hg) \nHighly toxic \nReleased into the atmosphere from coal \nIn water it may be consumed by fish \nIt has also recently been found to affect birds which feed on 31 .. \nResearch on effects of mercury on birds \nClaire Varian-Ramos is investigating: \nthe effects on birds' 32... or mental processes, e.g. memory \nthe effects on bird song (usualy learned from a bird's 3..) \nFindings: \nsongs learned by birds exposed to mercury are less 34.... \nthis may have a negative effect on birds' 35 .. \nLab-based studies: \nallow more 36 ... . for the experimenter \nImplications for humans \nMigrating birds such as 37... . containing mercury may be eaten by \nhumans \nMercury also causes problems in learning 38. \nMercury in a mother's body from 39.. ... may affect the unborn child \nNew regulations for mercury emissions will affect everyone's energy \n40."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t3l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Research on effects of mercury on birds Claire Varian-Ramos is investigating: the effects on birds'",
+              "acceptedAnswers": [
+                "insects"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "The effects on birds ___ or mental processes, e.g. memory",
+              "acceptedAnswers": [
+                "behaviour",
+                "behavior"
+              ],
+              "gapText": "The effects on birds ___ or mental processes, e.g. memory",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "The effects on bird song (usually learned from a bird's ___)",
+              "acceptedAnswers": [
+                "father"
+              ],
+              "gapText": "The effects on bird song (usually learned from a bird's ___)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Songs learned by birds exposed to mercury are less ___",
+              "acceptedAnswers": [
+                "complex",
+                "complicated"
+              ],
+              "gapText": "Songs learned by birds exposed to mercury are less ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Lab-based studies: allow more",
+              "acceptedAnswers": [
+                "reproduction",
+                "breeding"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Lab-based studies allow more ___ for the experimenter",
+              "acceptedAnswers": [
+                "control"
+              ],
+              "gapText": "Lab-based studies allow more ___ for the experimenter",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Migrating birds such as ___ containing mercury may be eaten by humans",
+              "acceptedAnswers": [
+                "duck(s)"
+              ],
+              "gapText": "Migrating birds such as ___ containing mercury may be eaten by humans",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Mercury in a mother's body from",
+              "acceptedAnswers": [
+                "language"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Mercury in a mother's body from ___ may affect the unborn child",
+              "acceptedAnswers": [
+                "food"
+              ],
+              "gapText": "Mercury in a mother's body from ___ may affect the unborn child",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Write ONE WORD ONLY for each answer.",
+              "acceptedAnswers": [
+                "cost(s)",
+                "price(s)",
+                "bill(s)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1491683,
+      "audioDurationMs": 490880
+    }
+  ]
+}

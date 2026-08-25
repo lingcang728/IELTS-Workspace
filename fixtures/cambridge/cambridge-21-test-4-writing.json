@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-21-test-4-writing",
+  "title": "Cambridge IELTS 21 Academic Test 4 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-9ab0d76cc205",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 21",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题21.pdf",
+        "sha256": "d14430f7593de2988f3adafc520d8f6777f4eeb78b87e79e5427a9a0588a218f"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C21\\剑桥雅思真题21\\hybrid_auto\\剑桥雅思真题21.md",
+        "sha256": "9ab0d76cc20596056d27d1c4dfe2facbdca2399f87c765f5236c29e7bebd2f9d",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe chart and table below show the results of a survey of library users at a university.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\n[]\n\nLibrary user satisfaction (%)\n\nVery satisfied\n\nFairly satisfied\n\nNot satisfied\n\nLibrary opening hours\n\n65\n\n35\n\n0\n\nHelpfulness of staff\n\n95\n\n5\n\n0\n\nAvailability of books\n\n50\n\n40\n\n10\n\nAvailability of journals\n\n45\n\n35\n\n20\n\nReliability of wi-fi\n\n48\n\n33\n\n19"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c21-t4-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome people argue that primary schools focus too much on formal learning.\n\nTo what extent do you agree with this opinion?\n\nHow important do you think it is for children to play as well as learn in the primary school classroom?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

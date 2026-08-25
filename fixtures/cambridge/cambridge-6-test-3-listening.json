@@ -1,0 +1,1843 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-6-test-3-listening",
+  "title": "Cambridge IELTS 6 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0010-ec3acba1",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 6",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题6.pdf",
+        "sha256": "a5d4812f970087a7c6dcd7333450c875ed9a401b294a6237c1071ff2629dfc6f"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C06\\剑桥雅思真题6\\auto\\剑桥雅思真题6.md",
+        "sha256": "f9efeec2692e4e1d331e8d209b5a03fe8975a68d9e32cf4d65afda5674868e4f",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-6-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 1-10\n\n1 (a) keep-fit (studio) \n23 swimming \nyoga (classes) \n4 (a) salad bar \n5 500 \n6 1 \n7 10 (am), 4.30 (pm) \n8 180 \n9 assessment \n10 Kynchley"
+      },
+      "questionGroups": [
+        {
+          "id": "c6t3l-g1",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "(a) keep-fit (studio)",
+              "acceptedAnswers": [
+                "Select"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g2",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Joint account holder(s): | No Current address: |",
+              "acceptedAnswers": [
+                "27.01.1973"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g3",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Current address: ___ Exeter",
+              "acceptedAnswers": [
+                "15 Riverside"
+              ],
+              "gapText": "Current address: ___ Exeter",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g4",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "(a) salad bar",
+              "acceptedAnswers": [
+                "2 weeks"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g5",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "500",
+              "acceptedAnswers": [
+                "616295"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g6",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Occupation: ___",
+              "acceptedAnswers": [
+                "engineer"
+              ],
+              "gapText": "Occupation: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g7",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "10 (am), 4.30 (pm)",
+              "acceptedAnswers": [
+                "mother"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g8",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "180",
+              "acceptedAnswers": [
+                "2,000"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g9",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Statements: Every ___",
+              "acceptedAnswers": [
+                "month"
+              ],
+              "gapText": "Statements: Every ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g10",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Kynchley",
+              "acceptedAnswers": [
+                "internet"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 405084
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 11–20\n\n11 B \n12 G \n13 C \n14 A \n15 E \n16 D \n17 (October (the)) 19th \n18 7 \n19 Monday, Thursday \n20 18"
+      },
+      "questionGroups": [
+        {
+          "id": "c6t3l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "When the writer Sebastian George first saw Rosewood House, he",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "thought he might rent it."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "felt it was too expensive for him."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "was unsure whether to buy it."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "thought he might rent it."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "felt it was too expensive for him."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "was unsure whether to buy it."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:55:35.304758+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "Before buying the house, George had",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "experienced severe family problems."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "struggled to become a successful author."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "suffered a serious illness."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "experienced severe family problems."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "struggled to become a successful author."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "suffered a serious illness."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:55:35.304758+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "According to the speaker, George viewed Rosewood House as",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a rich source of material for his books."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a way to escape from his work."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a typical building of the region."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rich source of material for his books."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a way to escape from his work."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a typical building of the region."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:55:35.304758+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g14",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q14",
+              "number": 14,
+              "type": "labelling",
+              "prompt": "Map feature: Pear Alley",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "J"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "J"
+            }
+          ],
+          "imageAsset": "assets/cambridge/c06-t3-listening-p0058.jpg"
+        },
+        {
+          "id": "c6t3l-g15",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q15",
+              "number": 15,
+              "type": "labelling",
+              "prompt": "Map feature: Mulberry Garden",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "J"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "J"
+            }
+          ],
+          "imageAsset": "assets/cambridge/c06-t3-listening-p0058.jpg"
+        },
+        {
+          "id": "c6t3l-g16",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q16",
+              "number": 16,
+              "type": "labelling",
+              "prompt": "Map feature: Shop",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "J"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "J"
+            }
+          ],
+          "imageAsset": "assets/cambridge/c06-t3-listening-p0058.jpg"
+        },
+        {
+          "id": "c6t3l-g17",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q17",
+              "number": 17,
+              "type": "labelling",
+              "prompt": "(October (the)) 19th",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "J"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "J"
+            }
+          ],
+          "imageAsset": "assets/cambridge/c06-t3-listening-p0058.jpg"
+        },
+        {
+          "id": "c6t3l-g18",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "You can walk through the.........that goes along the river bank.",
+              "acceptedAnswers": [
+                "field"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g19",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Monday, Thursday",
+              "acceptedAnswers": [
+                "footbridge"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g20",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "On your way back, you could also go up to the ...",
+              "acceptedAnswers": [
+                "viewpoint"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 405084,
+      "audioDurationMs": 403764
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 21–30\n\n21 A \n22 in advance \n23 nursery \n24 annual fee \n25 tutor\n\n26&27 IN EITHER ORDER laptops printers \n28 report writing \n29 marketing \n30 Individual"
+      },
+      "questionGroups": [
+        {
+          "id": "c6t3l-g21",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "For their assignment, the students must investigate one part of the ...",
+              "acceptedAnswers": [
+                "entertainment industry"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g22",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "The method the students must use to collect data i. ...",
+              "acceptedAnswers": [
+                "telephone interviews"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g23",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "In total, the students must interview ... people.",
+              "acceptedAnswers": [
+                "30",
+                "thirty"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g24",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer. Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Jack thinks the music preferences of... listeners are similar.",
+              "acceptedAnswers": [
+                "male and female"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t3l-g25",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Music preferences: Pop, ___, Folk",
+              "acceptedAnswers": [
+                "jazz"
+              ],
+              "gapText": "Music preferences: Pop, ___, Folk",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.209918+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g26",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "&27 IN EITHER ORDER laptops printers",
+              "acceptedAnswers": [
+                "classical"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.209918+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g27",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Medium for listening to music: Radio, CD, TV, ___",
+              "acceptedAnswers": [
+                "concerts"
+              ],
+              "gapText": "Medium for listening to music: Radio, CD, TV, ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.209918+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g28",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Source of music: Music shops, ___, Internet",
+              "acceptedAnswers": [
+                "department stores"
+              ],
+              "gapText": "Source of music: Music shops, ___, Internet",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.209918+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g29",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Places for listening to music: Disco, Pub, ___, Concert hall",
+              "acceptedAnswers": [
+                "club"
+              ],
+              "gapText": "Places for listening to music: Disco, Pub, ___, Concert hall",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:10+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.209918+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g30",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "Individual",
+              "acceptedAnswers": [
+                "opera house"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.209918+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 808847,
+      "audioDurationMs": 340084
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 31–40\n\n31 feed \n32 IN EITHER ORDER metal leather \n33 restrictions \n34 ships \n35 England \n36 built \n37 poverty \n38-40 IN ANY ORDER C E F\n\n## If you score . ..\n\n0-12\n\n13-26\n\n27-40\n\nyou are unlikely to getan acceptable score underexamination conditions and werecommend that you spend alot of time improving yourEnglish before you take IELTS.\n\nyou may get an acceptablescore under examinationconditions but we recommendthat you think about havingmore practice or lessons beforeyou take IELTS.\n\nyou are likely to get anacceptable score underexamination conditions butremember that differentinstitutions will find differentscores acceptable."
+      },
+      "questionGroups": [
+        {
+          "id": "c6t3l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "According to the speaker, it is not clear",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "when the farming economy was introduced to Ireland."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "why people began to farm in Ireland."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "where the early Irish farmers came from."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "when the farming economy was introduced to Ireland."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "why people began to farm in Ireland."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "where the early Irish farmers came from."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:56:25.314583+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "IN EITHER ORDER metal leather",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Their numbers must have been above a certain level."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They were under threat from wild animals."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Some species died out during this period."
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Their numbers must have been above a certain level."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They were under threat from wild animals."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Some species died out during this period."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:56:25.314583+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "What does the speaker say about the transportation of animals?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Livestock would have limited the distance the farmers could sail."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Neolithic boats were too primitive to have been used."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Probably only a few breeding animals were imported."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Livestock would have limited the distance the farmers could sail."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Neolithic boats were too primitive to have been used."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Probably only a few breeding animals were imported."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:56:25.314583+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "What is the main evidence for cereal crops in Neolithic Ireland?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the remains of burnt grain in pots"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the marks left on pots by grains"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the patterns painted on the surface of pots"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the remains of burnt grain in pots"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the marks left on pots by grains"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the patterns painted on the surface of pots"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:56:25.314583+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g35",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "England",
+              "acceptedAnswers": [
+                "people"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.362343+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g36",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "In the final stages of axe-making, and were necessary for grinding and polishing.",
+              "acceptedAnswers": [
+                "water",
+                "sand"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.362343+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g37",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Irish axes were exported from Ireland to..... and England.",
+              "acceptedAnswers": [
+                "Scotland"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.362343+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g38",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "-40 IN ANY ORDER C E F",
+              "acceptedAnswers": [
+                "outside"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.362343+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g39",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Clay from... areas was generally used.",
+              "acceptedAnswers": [
+                "local"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.362343+00:00"
+          }
+        },
+        {
+          "id": "c6t3l-g40",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Decoration was only put around the...of the carliest pots.",
+              "acceptedAnswers": [
+                "tops"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:13:53.362343+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1148930,
+      "audioDurationMs": 457236
+    }
+  ]
+}

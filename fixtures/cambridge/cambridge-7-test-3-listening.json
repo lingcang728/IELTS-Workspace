@@ -1,0 +1,1609 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-3-listening",
+  "title": "Cambridge IELTS 7 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0014-6abc4dc1",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-7-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\n## Questions 1 and 2\n\nComplete the notes below.\n\n## Write NO MORE THAN THREE WORDS ANDIOR A NUMBER for each answer.\n\nExample\n\nAnswer\n\nType of job required:\n\nPart-time\n\nStudent is studying 1\n\nStudent is in the 2 year of the course.\n\n## Questions 3-5\n\nComplete the table below.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\nPosition Available\n\nWhere\n\nProblem\n\nReceptionist\n\nin the 3 ..\n\nevening lectures\n\n4.\n\nin the Child Care Centre\n\ntoo early\n\nClerical Assistant\n\nin the 5 ..\n\nevening lectures\n\n本资料仅用于参考，。\n\n## Questions 6-10\n\nComplete the form below.\n\nWrite NO MORE THAN THREE WORDS ANDIOR A NUMBER for each answer\n\nSTUDENT DETAILS\n\nName:\n\nAnita Newman\n\nAddress:\n\n6..Room No. 7 .\n\nOther skills:\n\nSpeaks some Japanese\n\nPosition available:\n\n8.. ..... at the EnglishLanguage Centre\n\nDuties:\n\nRespond to enquiries and9\n\nTime of interview:\n\nFriday at 10 ."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t3l-g1",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "business"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              2
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g2",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Student is in the ___ year of the course.",
+              "acceptedAnswers": [
+                "third"
+              ],
+              "gapText": "Student is in the ___ year of the course.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              2
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g3",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Receptionist: in the ___ (problem: evening lectures)",
+              "acceptedAnswers": [
+                "Sports Centre",
+                "Sport Centre"
+              ],
+              "gapText": "Receptionist: in the ___ (problem: evening lectures)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              3,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g4",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Position available: ___ in the Child Care Centre (problem: too early)",
+              "acceptedAnswers": [
+                "cleaner"
+              ],
+              "gapText": "Position available: ___ in the Child Care Centre (problem: too early)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              3,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g5",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Clerical Assistant: in the ___ (problem: evening lectures)",
+              "acceptedAnswers": [
+                "Library"
+              ],
+              "options": [],
+              "gapText": "Clerical Assistant: in the ___ (problem: evening lectures)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              3,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g6",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Address: ___; room number 7",
+              "acceptedAnswers": [
+                "International House"
+              ],
+              "gapText": "Address: ___; room number 7",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g7",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Room No. 7: ___",
+              "acceptedAnswers": [
+                "B659"
+              ],
+              "gapText": "Room No. 7: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g8",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Position available: ___ at the English Language Centre",
+              "acceptedAnswers": [
+                "an office assistant",
+                "office assistant"
+              ],
+              "gapText": "Position available: ___ at the English Language Centre",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g9",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Time of interview: | Friday at",
+              "acceptedAnswers": [
+                "answer (the) phone"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g10",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Time of interview: Friday at ___ a.m.",
+              "acceptedAnswers": [
+                "11.30"
+              ],
+              "gapText": "Time of interview: Friday at ___ a.m.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 458307
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\n## Questions 11-16\n\nChoose the correct letter, A, B or C.\n\n## SPONSORED WALKING HOLIDAY\n\n11 On the holiday, you will be walking for A 6 days. B 8 days. C 10 days.\n\n12 What proportion of the sponsorship money goes to charity?\n\n[]\n\nA\n\n[]\n\nB\n\n[]\n\nMoney going to charity\n\nC\n\n13 Each walker's sponsorship money goes to one A student. B teacher. C school.\n\n14 When you start the trek you must be A interested in getting fit. B already quite fit. C already very fit.\n\n15 As you walk you will carry A all of your belongings. B some of your belongings. C none of your belongings\n\n16 The Semira Region has a long tradition of A making carpets. B weaving blankets. C carving wood.\n\n本资料仅用于参考，。\n\n## Questions 17-20\n\nComplete the form below.\n\nWrite ONE WORD ONLY for each answer.\n\nITINERARY\n\nDay 1\n\narrive in Kishba\n\nDay 2\n\nrest day\n\nDay 3\n\nspend all day in a17..\n\nDay 4\n\nvisit a school\n\nDay 5\n\nrest day\n\nDay 6\n\nsee a 18. …with oldcarvings\n\nDay 7\n\nrest day\n\nDay 8\n\nswim in a 19.\n\nDay 9\n\nvisit a 20\n\nDay 10\n\ndepart from Kishba"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t3l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "On the holiday, you will be walking for",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "6 days."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "8 days."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "10 days."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c7t3l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "What proportion of the sponsorship money goes to charity?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "c7t3l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Each walker's sponsorship money goes to one",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "student."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "teacher."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "school."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c7t3l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "When you start the trek you must be",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "interested in getting fit."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "already quite fit."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "already very fit."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c7t3l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "As you walk you will carry",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all of your belongings."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "some of your belongings."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "none of your belongings."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c7t3l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "The Semira Region has a long tradition of",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "making carpets."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "weaving blankets."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "carving wood."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c7t3l-g17",
+          "instruction": "Complete the form below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Day 3: spend all day in a ___",
+              "acceptedAnswers": [
+                "forest"
+              ],
+              "gapText": "Day 3: spend all day in a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g18",
+          "instruction": "Complete the form below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Day 6: see a ___ with old carvings",
+              "acceptedAnswers": [
+                "temple"
+              ],
+              "gapText": "Day 6: see a ___ with old carvings",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g19",
+          "instruction": "Complete the form below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Day 8: swim in a ___",
+              "acceptedAnswers": [
+                "waterfall"
+              ],
+              "gapText": "Day 8: swim in a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g20",
+          "instruction": "Complete the form below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Day 9: visit a ___",
+              "acceptedAnswers": [
+                "village"
+              ],
+              "gapText": "Day 9: visit a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 458307,
+      "audioDurationMs": 386000
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions 21 and 22\n\nComplete the notes below.\n\nWrite ONE WORD ANDIOR A NUMBER for each answer\n\n## OCEAN RESEARCH\n\nThe Robotic Float Project\n\n• Float is shaped like a 21\n\n• Scientists rom .have worked on th project so far\n\nQuestions 23-25\n\nComplete the diagram below.\n\n## Write ONE WORD ANDIOR A NUMBER for each answer.\n\nTHE OPERATIONAL CYCLE \n[]\n\n## Questions 26–30\n\nIn what time period can data from the float projects help with the following things?\n\nWrite the correct letter, A, B or C, next to questions 26–30\n\nA At present\n\nB In the near future\n\nC In the long-term future\n\n26 understanding of El Niño\n\n27 understanding of climate change\n\n28 naval rescues\n\n29 sustainable fishing practices\n\n30 crop selection"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t3l-g21",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "The robotic float is shaped like a ___",
+              "acceptedAnswers": [
+                "cigar"
+              ],
+              "gapText": "The robotic float is shaped like a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g22",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Scientists from ___ have worked on the project so far",
+              "acceptedAnswers": [
+                "13 different countries",
+                "13 countries",
+                "13"
+              ],
+              "gapText": "Scientists from ___ have worked on the project so far",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              22
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g23",
+          "instruction": "Complete the diagram below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "The float is dropped into the ocean and ___ by satellite",
+              "acceptedAnswers": [
+                "activated"
+              ],
+              "gapText": "The float is dropped into the ocean and ___ by satellite",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g24",
+          "instruction": "Complete the diagram below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Average distance travelled: ___",
+              "acceptedAnswers": [
+                "50 km",
+                "50 kilometres",
+                "50 kilometers"
+              ],
+              "gapText": "Average distance travelled: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g25",
+          "instruction": "Complete the diagram below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "The float records changes in salinity and ___",
+              "acceptedAnswers": [
+                "temperature"
+              ],
+              "gapText": "The float records changes in salinity and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g26",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "Data from float projects can help with understanding of El Niño",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "At present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "In the near future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "In the long-term future"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g27",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "Data from float projects can help with understanding of climate change",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "At present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "In the near future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "In the long-term future"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g28",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Data from float projects can help with naval rescues",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "At present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "In the near future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "In the long-term future"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g29",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Data from float projects can help with sustainable fishing practices",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "At present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "In the near future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "In the long-term future"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g30",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Data from float projects can help with crop selection",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "At present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "In the near future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "In the long-term future"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 844307,
+      "audioDurationMs": 383613
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\n## Questions 31-34\n\nChoose the correct letter, A, B or C\n\n## Hotels and the tourist industry\n\n31 According to the speaker, how might a guest feel when staying in a luxury hotel? A impressed with the facilities B depressed by the experience C concerned at the high costs\n\n32 According to recent research, luxury hotels overlook the need to\n\nA provide for the demands of important guests. \nB create a comfortable environment. \nC offer an individual and personal welcome.\n\n33 The company focused their research on A a wide variety of hotels B large, luxury hotel chains. C exotic holiday hotels.\n\n34 What is the impact of the outside environment on a hotel guest?\n\nA It has a considerable effect.\n\nB It has a very limited effect.\n\nC It has no effect whatsoever.\n\n## Questions 35-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nA company providing luxury serviced apartments aims to:\n\n• cater specifically for 35 travellers\n\n• provide a stylish 36for guests to use\n\n• set a trend throughout the 37.which becomes permanent\n\nTraditional holiday hotels attract people by\n\n• offering the chance to 38heir ordinary routine life\n\n• making sure that they are cared for in all respects – like a 39.\n\n• leaving small treats in their rooms – e.g. cosmetics or 40.\n\nYou should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\n## Ant Intelligence\n\nWhen we think of intelligent members of the animal kingdom, the creatures that spring immediately to mind are apes and monkeys. But in fact the social lives of some members of the insect kingdom are sufficiently complex to suggest more than a hint of intelligence.\n\n[]\n\nAmong these, the world of the ant has come in for considerable scrutiny lately, and the idea that ants demonstrate sparks of cognition has certainly not been rejected by those involved in these investigations.\n\nAnts store food, repel attackers and use chemical signals to contact one another in case of attack. Such chemical communication can be compared to the human use of visual and auditory channels (as in religious chants, advertising images and jingles, political slogans and martial music) to arouse and propagate moods and attitudes. The biologist Lewis Thomas wrote, 'Ants are so much like human beings as to be an embarrassment. They farm fungi, raise aphids\\* as livestock, launch armies to war, use chemical sprays to alarm and confuse enemies, capture slaves, engage in child labour, exchange information ceaselessly. They do everything but watch television.'\n\nHowever, in ants there is no cultural transmission — everything must be encoded in the genes – whereas in humans the opposite is true. Only basic instincts are carried in the genes of a newborn baby, other skills being learned from others in the community as the child\n\ngrows up. It may seem that this cultural continuity gives us a huge advantage over ants. They have never mastered fire nor progressed. Their fungus farming and aphid herding crafts are sophisticated when compared to the agricultural skills of humans five thousand years ago but have been totally overtaken by modern human agribusiness.\n\nOr have they? The farming methods of ants are at least sustainable. They do not ruin environments or use enormous amounts of energy. Moreover, recent evidence suggests that the crop farming of ants may be more sophisticated and adaptable than was thought.\n\nAnts were farmers fifty million years before humans were. Ants can't digest the cellulose in leaves – but some fungi can. The ants therefore cultivate these fungi in their nests, bringing them leaves to feed on, and then\n\nuse them as a source of food. Farmer ants secrete antibiotics to control other fungi that might act as 'weeds', and spread waste to fertilise the crop.\n\nIt was once thought that the fungus that ants cultivate was a single type that they had propagated, essentially unchanged from the distant past. Not so. Ulrich Mueller of Maryland and his colleagues genetically screened 862 different types of fungi taken from ants' nests. These turned out to be highly diverse: it seems that ants are continually domesticating new species. Even more impressively, DNA analysis of the fungi suggests that the ants improve or modify the fungi by regularly swapping and sharing strains with neighbouring ant colonies.\n\nWhereas prehistoric man had no exposure to urban lifestyles – the forcing house of intelligence – the evidence suggests that ants have lived in urban settings for close on a hundred million years, developing and maintaining underground cities of specialised chambers and tunnels.\n\nWhen we survey Mexico City, Tokyo, Los Angeles, we are amazed at what has been accomplished by humans. Yet Hoelldobler and Wilson's magnificent work for ant lovers, The Ants, describes a supercolony of the ant Formica yessensis on the Ishikari Coast of Hokkaido. This 'megalopolis' was reported to be composed of 360 million workers and a million queens living in 4,500 interconnected nests across a territory of 2.7 square kilometres.\n\nSuch enduring and intricately meshed levels of technical achievement outstrip by far anything achieved by our distant ancestors. We hail as masterpieces the cave paintings in southern France and elsewhere, dating back some 20,000 years. Ant societies\n\nexisted in something like their present form more than seventy million years ago. Beside this, prehistoric man looks technologically primitive. Is this then some kind of intelligence, albeit of a different kind?\n\nResearch conducted at Oxford, Sussex and Zürich Universities has shown that when desert ants return from a foraging trip, they navigate by integrating bearings and distances, which they continuously update in their heads. They combine the evidence of visual landmarks with a mental library of local directions, all within a framework which is consulted and updated. So ants can learn too.\n\nAnd in a twelve-year programme of work, Ryabko and Reznikova have found evidence that ants can transmit very complex messages. Scouts who had located food in a maze returned to mobilise their foraging teams. They engaged in contact sessions, at the end of which the scout was removed in order to observe what her team might do. Often the foragers proceeded to the exact spot in the maze where the food had been. Elaborate precautions were taken to prevent the foraging team using odour clues. Discussion now centres on whether the route through the maze is communicated as a ‘leftright' sequence of turns or as a compass bearing and distance' message.\n\nDuring the course of this exhaustive study, Reznikova has grown so attached to her laboratory ants that she feels she knows them as individuals – even without the paint spots used to mark them. It's no surprise that Edward Wilson, in his essay, 'In the company of ants', advises readers who ask what to do with the ants in their kitchen to: 'Watch where you step. Be careful of little lives.'\n\n本资料仅用于参考，。\n\n## Questions 1–6\n\nDo the following statements agree with the information given in Reading Passage 1?\n\nIn boxes 1—6 on your answer sheet, write\n\nTRUE if the statement agrees with the information\n\nFALSE if the statement contradicts the information\n\nNOT GIVEN if there is no information on this\n\n1 Ants use the same channels of communication as humans do.\n\n2 City life is one factor that encourages the development of intelligence.\n\n3 Ants can build large cities more quickly than humans do.\n\n4 Some ants can find their way by making calculations based on distance and position.\n\n5 In one experiment, foraging teams were able to use their sense of smell to find food,\n\n6 The essay, In the company of ants', explores ant communication.\n\n## Questions 7-13\n\nComplete the summary using the list of words, A-O, below.\n\nWrite the correct letter, A-O, in boxes 7–13 on your answer sheet.\n\n## Ants as farmers\n\nAnts have sophisticated methods of farming, including herding livestock and growing crops, which are in many ways similar to those used in human agriculture. The ants cultivate a large number of different species of edible fungi which convert 7 into a form which they can digest. They use their own natural 8.. . as weed-killers and also use unwanted materials as 9 ... Genetic analysis shows they constantly upgrade these fungi by developing new species and by 10 . ... species with neighbouring ant colonies. In fact, the farming methods of ants could be said to be more advanced than human agribusiness, since they use 11. methods, they do not affect the 12 .. . and do not waste 13\n\nA aphids\n\nB\n\nagricultural\n\nC\n\ncellulose\n\nD\n\nexchanging\n\nE energy\n\nF fertilizers\n\nG\n\nfood\n\nH\n\nfungi\n\n1\n\ngrowing\n\nJ interbreeding\n\nK\n\nnatural\n\nL\n\nother species\n\nM\n\nsecretions N\n\nsustainable\n\n0\n\nenvironment"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t3l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "According to the speaker, how might a guest feel when staying in a luxury hotel? A impressed with the facilities B depressed by the experience C concerned at the high costs",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "impressed with the facilities"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "depressed by the experience"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "concerned at the high costs"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.624864+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "According to recent research, luxury hotels overlook the need to",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "provide for the demands of important guests."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "create a comfortable environment."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "offer an individual and personal welcome."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "The company focused their research on",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a wide variety of hotels."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "large, luxury hotel chains."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "exotic holiday hotels."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q34",
+              "number": 34,
+              "type": "matching",
+              "prompt": "What is the impact of the outside environment on a hotel guest?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.624864+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It has a considerable effect."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It has a very limited effect."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It has no effect whatsoever."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Serviced apartments cater specifically for ___ travellers",
+              "acceptedAnswers": [
+                "business"
+              ],
+              "gapText": "Serviced apartments cater specifically for ___ travellers",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Serviced apartments provide a stylish ___ for guests to use",
+              "acceptedAnswers": [
+                "kitchen"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "provide for the demands of important guests"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "create a comfortable environment"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "offer an individual and personal welcome"
+                }
+              ],
+              "gapText": "Serviced apartments provide a stylish ___ for guests to use",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "provide for the demands of important guests"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "create a comfortable environment"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "offer an individual and personal welcome"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Serviced apartments set a trend throughout the ___ which becomes permanent",
+              "acceptedAnswers": [
+                "world"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "provide for the demands of important guests"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "create a comfortable environment"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "offer an individual and personal welcome"
+                }
+              ],
+              "gapText": "Serviced apartments set a trend throughout the ___ which becomes permanent",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "provide for the demands of important guests"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "create a comfortable environment"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "offer an individual and personal welcome"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Traditional holiday hotels offer the chance to ___ their ordinary routine life",
+              "acceptedAnswers": [
+                "escape"
+              ],
+              "gapText": "Traditional holiday hotels offer the chance to ___ their ordinary routine life",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Traditional holiday hotels care for guests in all respects like a ___",
+              "acceptedAnswers": [
+                "baby"
+              ],
+              "gapText": "Traditional holiday hotels care for guests in all respects like a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Traditional holiday hotels leave small treats in rooms, such as cosmetics or ___",
+              "acceptedAnswers": [
+                "chocolate"
+              ],
+              "gapText": "Traditional holiday hotels leave small treats in rooms, such as cosmetics or ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1227920,
+      "audioDurationMs": 396907
+    }
+  ]
+}

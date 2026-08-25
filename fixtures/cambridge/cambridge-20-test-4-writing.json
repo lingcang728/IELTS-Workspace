@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-20-test-4-writing",
+  "title": "Cambridge IELTS 20 Academic Test 4 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-cfb64fd80090",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 20",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题20-官方扫描.pdf",
+        "sha256": "d22841253438f6e92c52c4de6e639b25db532457a06e2954b05070a7eb4645f1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C20\\剑桥雅思真题20-官方扫描\\auto\\剑桥雅思真题20-官方扫描.md",
+        "sha256": "cfb64fd8009021e8658f57d19f13864c2a78efab8f97bec384823eea86b8501e",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe diagram below shows how fabric is manufactured from bamboo.\n\nSummarise the iformation by ecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\nHow bamboo fabric is made\n\n[]"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c20-t4-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "Write about the following topic:\n\nMany aspects of the way people dress today are influenced by global fashion tre\n\nHow has global fashion become such a strong influence on people's lives?\n\nDo you think this i positive or negative evelopment?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

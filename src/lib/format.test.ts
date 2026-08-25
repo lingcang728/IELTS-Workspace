@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { completion, isFinished } from "./format";
+import { completion, isFinished, sourceLabel } from "./format";
+import type { ExamSummary } from "./types";
 import type { SessionSummary } from "./types";
 
 function session(patch: Partial<SessionSummary>): SessionSummary {
@@ -25,6 +26,20 @@ describe("completion", () => {
   it("is null when the summary carries no progress", () => {
     expect(completion(session({}))).toBeNull();
     expect(completion(session({ answered: 3, total: 0 }))).toBeNull();
+  });
+});
+
+describe("sourceLabel", () => {
+  it("names Cambridge papers as project-prepared books", () => {
+    const exam = {
+      id: "cambridge-18-test-1-listening",
+      title: "Cambridge IELTS 18 Academic Test 1 Listening",
+      module: "listening",
+      source: { kind: "cambridge_book", title: "Cambridge IELTS 18" },
+      path: "",
+      questionCount: 40,
+    } as ExamSummary;
+    expect(sourceLabel(exam)).toBe("剑桥雅思 18 · 本项目整理");
   });
 });
 

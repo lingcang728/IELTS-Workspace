@@ -1,0 +1,2357 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-15-test-3-reading",
+  "title": "Cambridge IELTS 15 Academic Test 3 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0020-7eb21689",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 15",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题15.pdf",
+        "sha256": "8d632033a6576c06ed86732a51b8ca361a7bdc7735c0aebac2ca1806c52f6fed"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C15\\剑桥雅思真题15\\auto\\剑桥雅思真题15.md",
+        "sha256": "e9f6c0fc7c5a88740c3d024db01c38c0d615c62ee66ab15b8bd51f8d3d2810e4",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=1; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-15-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Henry Moore (1898–1986)\n\n## The British sculptor Henry Moore was a leading figure in the 20th-century art world\n\nHenry Moore was born in Castleford, a small town near Leeds in the north of England. He was the seventh child of Raymond Moore and his wife Mary Baker. He studied at Castleford Grammar School from 1909 to 1915, where his early interest in art was encouraged by his teacher Alice Gostick. After leaving school, Moore hoped to become a sculptor, but instead he complied with his father's wish that he train as a schoolteacher. He had to abandon his training in 1917 when he was sent to France to fight in the First World War.\n\nAfter the war, Moore enrolled at the Leeds School of Art, where he studied for two years. In his first year, he spent most of his time drawing. Although he wanted to study sculpture, no teacher was appointed until his second year. At the end of that year, he passed the sculpture examination and was awarded a scholarship to the Royal College of Art in London. In September 1921, he moved to London and began three years of advanced study in sculpture.\n\nAlongside the instruction he received at the Royal College, Moore visited many of the London museums, particularly the British Museum, which had a wide-ranging collection of ancient sculpture. During these visits, he discovered the power and beauty of ancient Egyptian and African sculpture. As he became increasingly interested in these primitive' forms of art, he turned away from European sculptural traditions.\n\nAfter graduating, Moore spent the first six months of 1925 travelling in France. When he visited the Trocadero Museum in Paris, he was impressed by a cast of a Mayan\\* sculpture of the rain spirit. It was a male reclining figure with its knees drawn up together, and its head at a right angle to its body. Moore became fascinated with this stone sculpture, which he thought had a power and originality that no other stone sculpture possessed. He himself started carving a variety of subjects in stone, including depictions of reclining women, mother-and-child groups, and masks.\n\nMoore's exceptional talent soon gained recognition, and in 1926 he started work as a sculpture instructor at the Royal College. In 1933, he became a member of a group of young artists called Unit One. The aim of the group was to convince the English public of the merits of the emerging international movement in modern art and architecture.\n\nAround this time, Moore moved away from the human figure to experiment with abstract shapes. In 1931, he held an exhibition at the Leicester Galleries in London. His work was enthusiastically welcomed by fellow sculptors, but the reviews in the press were extremely negative and turned Moore into a notorious figure. There were calls for his resignation from the Royal College, and the following year, when his contract expired, he left to start a sculpture department at the Chelsea School of Art in London.\n\nThroughout the 1930s, Moore did not show any inclination to please the British public. He became interested in the paintings of the Spanish artist Pablo Picasso, whose work inspired him to distort the human body in a radical way. At times, he seemed to abandon the human figure altogether. The pages of his sketchbooks from this period show his ideas for abstract sculptures that bore little resemblance to the human form.\n\nIn 1940, during the Second World War, Moore stopped teaching at the Chelsea School and moved to a farmhouse about 20 miles north of London. A shortage of materials forced him to focus on drawing. He did numerous small sketches of Londoners, later turning these ideas into large coloured drawings in his studio. In 1942, he returned to Castleford to make a series of sketches of the miners who worked there.\n\nIn 1944, Harlow, a town near London, offered Moore a commission for a sculpture depicting a family. The resulting work signifies a dramatic change in Moore's style, away from the experimentation of the 1930s towards a more natural and humanistic subject matter. He did dozens of studies in clay for the sculpture, and these were cast in bronze and issued in editions of seven to nine copies each. In this way, Moore's work became available to collectors all over the world. The boost to his income enabled him to take on ambitious projects and start working on the scale he felt his sculpture demanded.\n\nCritics who had begun to think that Moore had become less revolutionary were proven wrong by the appearance, in 1950, of the first of Moore's series of standing figures in bronze, with their harsh and angular pierced forms and distinct impression of menace. Moore also varied his subject matter in the 1950s with such works as Warrior with Shield and Falling Warrior. These were rare examples of Moore's use of the male figure and owe something to his visit to Greece in 1951, when he had the opportunity to study ancient works of art\n\nIn his final years, Moore created the Henry Moore Foundation to promote art appreciation and to display his work. Moore was the first modern English sculptor to achieve international critical acclaim and he is still regarded as one of the most important sculptors of the 20th century."
+      },
+      "questionGroups": [
+        {
+          "id": "c15t3r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "On leaving school, Moore did what his father wanted him to do",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Moore began studying sculpture in his first term at the Leeds School of Art",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "When Moore started at the Royal College of Art, its reputation for teaching sculpture was excellent",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Moore became aware of ancient sculpture as a result of visiting London museums",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "The Trocadero Museum's Mayan sculpture attracted a lot of public interest",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "Moore thought the Mayan sculpture was similar in certain respects to other stone sculptures",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "The artists who belonged to Unit One wanted to make modern art and architecture more popular",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g8",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Moore is urged to offer his ___ and leave the Royal College",
+              "acceptedAnswers": [
+                "resignation"
+              ],
+              "gapText": "Moore is urged to offer his 8 ___ and leave the Royal College",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g9",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Moore turns to drawing because ___ for sculpting are not readily available",
+              "acceptedAnswers": [
+                "materials"
+              ],
+              "gapText": "Moore turns to drawing because 9 ___ for sculpting are not readily available",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g10",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Moore is employed to produce a sculpture of a 11",
+              "acceptedAnswers": [
+                "miners"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g11",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "Moore is employed to produce a sculpture of a ___",
+              "acceptedAnswers": [
+                "family"
+              ],
+              "gapText": "Moore is employed to produce a sculpture of a 11 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g12",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "___ start to buy Moore's work",
+              "acceptedAnswers": [
+                "collectors"
+              ],
+              "gapText": "12 ___ start to buy Moore's work",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g13",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "Moore's increased ___ makes it possible for him to do more ambitious sculptures",
+              "acceptedAnswers": [
+                "income"
+              ],
+              "gapText": "Moore's increased 13 ___ makes it possible for him to do more ambitious sculptures",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 8–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 on pages 63 and 64.\n\nQuestions 14–20\n\nReading Passage 2 has seven sections, A-G.\n\nChoose the correct heading for each section from the list of headings below.\n\nWrite the correct number, i-x, in boxes 14–20 on your answer sheet.\n\n## List of Headings\n\ni Getting the finance for production\n\nii An unexpected benefit\n\niii From initial inspiration to new product\n\niv The range of potential customers for the device\n\nvWhat makes the device different from alternatives\n\nvi Cleaning water from a range of sources\n\nvii Overcoming production difficulties\n\nviii Profit not the primary goal\n\nix A warm welcome for the device\n\nx The number of people affected by water shortages\n\n14 Section A\n\n15 Section B\n\n16 Section C\n\n17 Section D\n\n18 Section E\n\n19 Section F\n\n20 Section G\n\n## The Desolenator: producing clean water\n\nA Travelling around Thailand in the 1990s, William Janssen was impressed with the basic rooftop solar heating systems that were on many homes, where energy from the sun was absorbed by a plate and then used to heat water for domestic use. Two decades later Janssen developed that basic idea he saw in Southeast Asia into a portable device that uses the power from the sun to purify water.\n\nB The Desolenator operates as a mobile desalination unit that can take water from different places, such as the sea, rivers, boreholes and rain, and purify it for human consumption. It is particularly valuable in regions where natural groundwater reserves have been polluted, or where seawater is the only water source available.\n\nJanssen saw that there was a need for a sustainable way to clean water in both the developing and the developed countries when he moved to the United Arab Emirates and saw large-scale water processing. I was confronted with the enormous carbon footprint that the Gulf nations have because of all of the desalination that they do, he says.\n\nC The Desolenator can produce 15 litres of drinking water per day, enough to sustain a family for cooking and drinking. Its main selling point is that unlike standard desalination techniques, it doesn't require a generated power supply: just sunlight. It measures 120 cm by 90 cm, and is easy to transport, thanks to its two wheels. Water enters through a pipe, and flows as a thin film between a sheet of double glazing and the surface of a solar panel, where it is heated by the sun. The warm water flows into a small boiler (heated by a solar-powered battery) where it is converted to steam. When the steam cools, it becomes distilled water. The device has a very simple filter to trap particles, and this can easily be shaken to remove them. There are two tubes for liquid coming out: one for the waste – salt from seawater, fluoride, etc. – and another for the distilled water. The performance of the unit is shown on an LCD screen and transmitted to the company which provides servicing when necessary.\n\nD A recent analysis found that at least two-thirds of the world's population lives with severe water scarcity for at least a month every year. Janssen says that by 2030 half of the world's population will be living with water stress – where the demand exceeds the supply over a certain period of time. It is really important that a sustainable solution is brought to the market that is able to help these people, he says. Many countries don't have the money for desalination plants, which are very expensive to build. They don't have the money to operate them, they are very maintenance intensive, and they don't have the money to buy the diesel to run the desalination plants, so it is a really bad situation.\n\nE The device is aimed at a wide variety of users – from homeowners in the developing world who do not have a constant supply of water to people living off the grid in rural parts of the US. The first commercial versions of the Desolenator are expected to be in operation in India early next year, after field tests are carried out. The market for the self-sufficient devices in developing countries is twofold – those who cannot afford the money for the device outright and pay through microfinance, and middleincome homes that can lease their own equipment. People in India don't pay for a fridge outright; they pay for it over six months. They would put the Desolenator on their roof and hook it up to their municipal supply and they would get very reliable drinking water on a daily basis,' Janssen says. In the developed world, it is aimed at niche markets where tap water is unavailable – for camping, on boats, or for the military, for instance\n\nPrices will vary according to where it is bought. In the developing world, the price will depend on what deal aid organisations can negotiate. In developed countries, it is likely to come in at \\$1,000 (£685) a unit, said Janssen. We are a venture with a social mission. We are aware that the product we have envisioned is mainly finding application in the developing world and humanitarian sector and that this is the way we will proceed. We do realise, though, that to be a viable company there is a bottom line to keep in mind,' he says.\n\nG The company itself is based at Imperial College London, although Janssen, its chief executive, still lives in the UAE. It has raised £340,000 in funding so far. Within two years, he says, the company aims to be selling 1,000 units a month, mainly in the humanitarian field. They are expected to be sold in areas such as Australia, northern Chile, Peru, Texas and California."
+      },
+      "questionGroups": [
+        {
+          "id": "c15t3r-g14",
+          "instruction": "Reading Passage has seven sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Section A",
+              "acceptedAnswers": [
+                "iii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:03:47.460322+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Getting the finance for production"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An unexpected benefit"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "From initial inspiration to new product"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The range of potential customers for the device"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "What makes the device different from alternatives"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Cleaning water from a range of sources"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Overcoming production difficulties"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Profit not the primary goal"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A warm welcome for the device"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The number of people affected by water shortages"
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g15",
+          "instruction": "Reading Passage has seven sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Section B",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:03:47.460322+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Getting the finance for production"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An unexpected benefit"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "From initial inspiration to new product"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The range of potential customers for the device"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "What makes the device different from alternatives"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Cleaning water from a range of sources"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Overcoming production difficulties"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Profit not the primary goal"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A warm welcome for the device"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The number of people affected by water shortages"
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g16",
+          "instruction": "Reading Passage has seven sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Section C",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Travelling around Thailand in the 1990s, William Janssen was impressed with the basic rooftop solar heating systems that were on many homes, where energy from the sun was absorbed by a plate and then used to heat water f"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The Desolenator operates as a mobile desalination unit that can take water from different places, such as the sea, rivers, boreholes and rain, and purify it for human consumption. It is particularly valuable in regions w"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Travelling around Thailand in the 1990s, William Janssen was impressed with the basic rooftop solar heating systems that were on many homes, where energy from the sun was absorbed by a plate and then used to heat water f"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The Desolenator operates as a mobile desalination unit that can take water from different places, such as the sea, rivers, boreholes and rain, and purify it for human consumption. It is particularly valuable in regions w"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": [
+              "Write the correct number, i-x, in boxes 14–20 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g17",
+          "instruction": "Reading Passage has seven sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Section D",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              },
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Getting the finance for production"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "An unexpected benefit"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "From initial inspiration to new product"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The range of potential customers for the device"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "What makes the device different from alternatives"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Cleaning water from a range of sources"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Overcoming production difficulties"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Profit not the primary goal"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "A warm welcome for the device"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "The number of people affected by water shortages"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:03:47.460322+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Getting the finance for production"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An unexpected benefit"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "From initial inspiration to new product"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The range of potential customers for the device"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "What makes the device different from alternatives"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Cleaning water from a range of sources"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Overcoming production difficulties"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Profit not the primary goal"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A warm welcome for the device"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The number of people affected by water shortages"
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g18",
+          "instruction": "Reading Passage has seven sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Section E",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:03:47.460322+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Getting the finance for production"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An unexpected benefit"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "From initial inspiration to new product"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The range of potential customers for the device"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "What makes the device different from alternatives"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Cleaning water from a range of sources"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Overcoming production difficulties"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Profit not the primary goal"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A warm welcome for the device"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The number of people affected by water shortages"
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g19",
+          "instruction": "Reading Passage has seven sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "30s Moore's exhibition at the Leicester Galleries is criticised by the press Moore is urged to offer his 8 . and leave the Royal College",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:03:47.460322+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Getting the finance for production"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An unexpected benefit"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "From initial inspiration to new product"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The range of potential customers for the device"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "What makes the device different from alternatives"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Cleaning water from a range of sources"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Overcoming production difficulties"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Profit not the primary goal"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A warm welcome for the device"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The number of people affected by water shortages"
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g20",
+          "instruction": "Reading Passage has seven sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "Section G",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              },
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Getting the finance for production"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "An unexpected benefit"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "From initial inspiration to new product"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The range of potential customers for the device"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "What makes the device different from alternatives"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Cleaning water from a range of sources"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Overcoming production difficulties"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Profit not the primary goal"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "A warm welcome for the device"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "The number of people affected by water shortages"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:03:47.460322+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Getting the finance for production"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An unexpected benefit"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "From initial inspiration to new product"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The range of potential customers for the device"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "What makes the device different from alternatives"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Cleaning water from a range of sources"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Overcoming production difficulties"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Profit not the primary goal"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A warm welcome for the device"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The number of people affected by water shortages"
+            }
+          ]
+        },
+        {
+          "id": "c15t3r-g21",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Water is fed into a pipe, and a",
+              "acceptedAnswers": [
+                "wheels"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g22",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Water is fed into a pipe, and a ___ of water flows over a solar panel",
+              "acceptedAnswers": [
+                "film"
+              ],
+              "gapText": "Water is fed into a pipe, and a 22 ___ of water flows over a solar panel",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g23",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "The purified water comes out through one tube, and all types of",
+              "acceptedAnswers": [
+                "filter"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g24",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "The purified water comes out through one tube, and all types of ___ come out through another",
+              "acceptedAnswers": [
+                "waste"
+              ],
+              "gapText": "The purified water comes out through one tube, and all types of 24 ___ come out through another",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g25",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "A screen displays the ___ of the device, and transmits the information to the company",
+              "acceptedAnswers": [
+                "performance"
+              ],
+              "gapText": "A screen displays the 25 ___ of the device, and transmits the information to the company",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g26",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "The company knows when the Desolenator requires ___",
+              "acceptedAnswers": [
+                "servicing"
+              ],
+              "gapText": "so that they know when the Desolenator requires 26 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:18:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Why fairy tales are really scary tales\n\nSome people think that fairy tales are just stories to amuse children, but their universal and enduring appeal may be due to more serious reasons\n\nPeople of every culture tell each other fairy tales but the same story often takes a variety of forms in different parts of the world. In the story of Little Red Riding Hood that European children are familiar with, a young girl on the way to see her grandmother meets a wolf and tells him where she is going. The wolf runs on ahead and disposes of the grandmother, then gets into bed dressed in the grandmother's clothes to wait for Little Red Riding Hood. You may think you know the story – but which version? In some versions, the wolf swallows up the grandmother, while in others it locks her in a cupboard. In some stories Red Riding Hood gets the better of the wolf on her own, while in others a hunter or a woodcutter hears her cries and comes to her rescue.\n\nThe universal appeal of these tales is frequently attributed to the idea that they contain cautionary messages: in the case of Little Red Riding Hood, to listen to your mother, and avoid talking to strangers. It might be what we find interesting about this story is that it's got this survivalrelevant information in it,' says anthropologist Jamie Tehrani at Durham University in the UK. But his research suggests otherwise. We have this huge gap in our knowledge about the history and prehistory of storytelling, despite the fact that we know this genre is an incredibly ancient one,' he says. That hasn't stopped anthropologists, folklorists\" and other academics devising theories to explain the importance of fairy tales in human society. Now Tehrani has found a way to test these ideas, borrowing a technique from evolutionary biologists.\n\nTo work out the evolutionary history, development and relationships among groups of organisms, biologists compare the characteristics of living species in a process called phylogenetic analysis’. Tehrani has used the same approach to compare related versions of fairy tales to discover how they have evolved and which elements have survived longest.\n\nTehrani's analysis focused on Little Red Riding Hood in its many forms, which include another Western fairy tale known as The Wolf and the Kids. Checking for variants of these two tales and similar stories from Africa, East Asia and other regions, he ended up with 58 stories recorded from oral traditions. Once his phylogenetic analysis had established that they were indeed related, he used the same methods to explore how they have developed and altered over time.\n\nFirst he tested some assumptions about which aspects of the story alter least as it evolves, indicating their importance. Folklorists believe that what happens in a story is more central to the story than the characters in it – that visiting a relative, only to be met by a scary animal in disguise, is\n\nmore fundamental than whether the visitor is a little girl or three siblings, or the animal is a tiger instead of a wolf.\n\nHowever, Tehrani found no significant difference in the rate of evolution of incidents compared with that of characters. Certain episodes are very stable because they are crucial to the story, but there are lots of other details that can evolve quite freely,' he says. Neither did his analysis support the theory that the central section of a story is the most conserved part. He found no significant difference in the flexibility of events there compared with the beginning or the end.\n\nBut the really big surprise came when he looked at the cautionary elements of the story.'Studies on hunter-gatherer folk tales suggest that these narratives include really important information about the environment and the possible dangers that may be faced there – stuff that's relevant to survival,' he says. Yet in his analysis such elements were just as flexible as seemingly trivial details. What, then, is important enough to be reproduced from generation to generation?\n\nThe answer, it would appear, is fear – blood-thirsty and gruesome aspects of the story, such as the eating of the grandmother by the wolf, turned out to be the best preserved of all. Why are these details retained by generations of storytellers, when other features are not? Tehrani has an idea: 'In an oral context, a story won't survive because of one great teller. It also needs to be interesting when it's told by someone who's not necessarily a great storyteller.' Maybe being swallowed whole by a wolf, then cut out of its stomach alive is so gripping that it helps the story remain popular, no matter how badly it's told.\n\nJack Zipes at the University of Minnesota, Minneapolis, is unconvinced by Tehrani's views on fairy tales. Even if they're gruesome, they won't stick unless they matter,' he says. He believes the perennial theme of women as victims in stories like Little Red Riding Hood explains why they continue to feel relevant. But Tehrani points out that although this is often the case in Western versions, it is not always true elsewhere. In Chinese and Japanese versions, often known as The Tiger Grandmother, the villain is a woman, and in both Iran and Nigeria, the victim is a boy.\n\nMathias Clasen at Aarhus University in Denmark isn't surprised by Tehrani's findings. Habits and morals change, but the things that scare us, and the fact that we seek out entertainment that's designed to scare us – those are constant,' he says. Clasen believes that scary stories teach us what it feels like to be afraid without having to experience real danger, and so build up resistance to negative emotions.\n\n## Test 3\n\nQuestions 27-31\n\nComplete each sentence with the correct ending, A-F, below.\n\nWrite the correct letter, A-F, in boxes 27–31on your answer sheet.\n\n27 In fairy tales, details of the plot\n\n28 Tehrani rejects the idea that the useful lessons for life in fairy tales\n\n29 Various theories about the social significance of fairy tales\n\n30 Insights into the development of fairy tales\n\n31 All the fairy tales analysed by Tehrani\n\nA may be provided through methods used in biological research.\n\nB are the reason for their survival.\n\nC show considerableglobal variation.\n\nD contain animals which transform to become humans.\n\nE were originally spoken rather than written.\n\nF have been developed without factual basis."
+      },
+      "questionGroups": [
+        {
+          "id": "c15t3r-g27",
+          "instruction": "Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "In fairy tales, details of the plot",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:59.355542+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "may be provided through methods used in biological research."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "are the reason for their survival."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "show considerable global variation."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "contain animals which transform to become humans."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "were originally spoken rather than written."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "have been developed without factual basis."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c15t3r-g28",
+          "instruction": "Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Tehrani rejects the idea that the useful lessons for life in fairy tales",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:59.355542+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "may be provided through methods used in biological research."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "are the reason for their survival."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "show considerable global variation."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "contain animals which transform to become humans."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "were originally spoken rather than written."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "have been developed without factual basis."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c15t3r-g29",
+          "instruction": "Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "Various theories about the social significance of fairy tales",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "may be provided through methods used in biological research"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "are the reason for their survival"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "show considerableglobal variation"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "contain animals which transform to become humans"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "were originally spoken rather than written"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "have been developed without factual basis"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "may be provided through methods used in biological research"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "are the reason for their survival"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "show considerableglobal variation"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "contain animals which transform to become humans"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "were originally spoken rather than written"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "have been developed without factual basis"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c15t3r-g30",
+          "instruction": "Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Insights into the development of fairy tales",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "may be provided through methods used in biological research"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "are the reason for their survival"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "show considerableglobal variation"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "contain animals which transform to become humans"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "were originally spoken rather than written"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "have been developed without factual basis"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "may be provided through methods used in biological research"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "are the reason for their survival"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "show considerableglobal variation"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "contain animals which transform to become humans"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "were originally spoken rather than written"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "have been developed without factual basis"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c15t3r-g31",
+          "instruction": "Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "All the fairy tales analysed by Tehrani A may be provided through methods used in biological research. B are the reason for their survival. C show considerableglobal variation. D contain animals which transform to become humans. E were originally spoken rather than written. F have been developed without factual basis",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "may be provided through methods used in biological research"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "are the reason for their survival"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "show considerableglobal variation"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "contain animals which transform to become humans"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "were originally spoken rather than written"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "have been developed without factual basis"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "may be provided through methods used in biological research"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "are the reason for their survival"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "show considerableglobal variation"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "contain animals which transform to become humans"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "were originally spoken rather than written"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "have been developed without factual basis"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c15t3r-g32",
+          "instruction": "Complete the summary using the list of words, A–I, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "Tehrani used techniques from evolutionary biology to find out if 32 ___ existed among 58 stories from around the world.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ending"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "events"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "warning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "records"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "variations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "horror"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "people"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "plot"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "ending"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "events"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "warning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "links"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "records"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "variations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "horror"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "people"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "plot"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:55:01.373378+00:00"
+          }
+        },
+        {
+          "id": "c15t3r-g33",
+          "instruction": "Complete the summary using the list of words, A–I, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "He also wanted to know which aspects of the stories had fewest 33 ___, as he believed these aspects would be the most important ones.",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ending"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "events"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "warning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "records"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "variations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "horror"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "people"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "plot"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "ending"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "events"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "warning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "links"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "records"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "variations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "horror"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "people"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "plot"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:55:01.373378+00:00"
+          }
+        },
+        {
+          "id": "c15t3r-g34",
+          "instruction": "Complete the summary using the list of words, A–I, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "Contrary to other beliefs, he found that some 34 ___ that were included in a story tended to change over time, and that the middle of a story seemed no more important than the other parts.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ending"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "events"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "warning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "records"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "variations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "horror"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "people"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "plot"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "ending"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "events"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "warning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "links"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "records"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "variations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "horror"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "people"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "plot"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:55:01.373378+00:00"
+          }
+        },
+        {
+          "id": "c15t3r-g35",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "He was also surprised that parts of a story which seemed to provide some sort of 35 ___ were unimportant.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ending"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "events"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "warning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "records"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "variations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "horror"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "people"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "plot"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c15t3r-g36",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "The aspect that he found most important in a story's survival was 36 ___.",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "ending"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "events"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "warning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "records"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "variations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "horror"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "people"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "plot"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c15t3r-g37",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "What method did Jamie Tehrani use to test his ideas about fairy tales?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:59.431375+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He compared oral and written forms of the same stories."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He looked at many different forms of the same basic story."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He looked at unrelated stories from many different countries."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "He contrasted the development of fairy tales with that of living creatures."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g38",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q38",
+              "number": 38,
+              "type": "matching",
+              "prompt": "When discussing Tehrani's views, Jack Zipes suggests that",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:59.431375+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Tehrani ignores key changes in the role of women."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "stories which are too horrific are not always taken seriously."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Tehrani overemphasises the importance of violence in stories."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "features of stories only survive if they have a deeper significance."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g39",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q39",
+              "number": 39,
+              "type": "matching",
+              "prompt": "Why does Tehrani refer to Chinese and Japanese fairy tales?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:59.431375+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to indicate that Jack Zipes' theory is incorrect"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to suggest that crime is a global problem"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to imply that all fairy tales have a similar meaning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to add more evidence for Jack Zipes' ideas"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c15t3r-g40",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c15t3r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "What does Mathias Clasen believe about fairy tales?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are a safe way of learning to deal with fear."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They are a type of entertainment that some people avoid."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They reflect the changing values of our society."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They reduce our ability to deal with real-world problems."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They are a safe way of learning to deal with fear."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They are a type of entertainment that some people avoid."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They reflect the changing values of our society."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They reduce our ability to deal with real-world problems."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:55:01.520954+00:00"
+          }
+        }
+      ]
+    }
+  ]
+}

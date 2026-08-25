@@ -1,0 +1,1398 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-5-test-3-listening",
+  "title": "Cambridge IELTS 5 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0007-71a832e4",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 5",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题5.pdf",
+        "sha256": "7df6a474e84e69a622dd48fc009e69dd7fd711a64b713671bdf492311f5f58cc"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C05\\剑桥雅思真题5\\auto\\剑桥雅思真题5.md",
+        "sha256": "f824a696e954976360e36d9a1615a7da3cbfefff2c6511ed3f1e04f97d5a6c21",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-5-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\n## Questions 1–10\n\nComplete the form below.\n\n## Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.\n\nHOST FAMILY APPLICANT\n\nExample Answer Name: Jenny Chan\n\nPresent address: Sea View Guest House, 1 Daytime phone number: 2237676\n\n[NB Best time to contact is 2\n\nAge: 19 Intended length of stay: 3\n\nOccupation while in UK: student\n\nGeneral level of English: 4 .\n\nPreferred location: in the 5\n\nSpecial diet: 6 ..\n\nOther requirements:\n\nown facilities\n\nown television\n\n7.\n\nto be 8\n\nMaximum price: 9 £ . a week Preferred starting date: 10"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t3l-g1",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Present address: Sea View Guest House,",
+              "acceptedAnswers": [
+                "1.4 litres",
+                "1.4 liters"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g2",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "[NB Best time to contact is",
+              "acceptedAnswers": [
+                "automatic"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g3",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Intended length of stay",
+              "acceptedAnswers": [
+                "light",
+                "sky"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g4",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Complete the form below.",
+              "acceptedAnswers": [
+                "credit"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g5",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Preferred location: in the",
+              "acceptedAnswers": [
+                "Harries"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g6",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Special diet",
+              "acceptedAnswers": [
+                "Dr",
+                "Doctor"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g7",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Address: 20, Green Banks, ___, Hampshire",
+              "acceptedAnswers": [
+                "Alton"
+              ],
+              "gapText": "Address: 20, Green Banks, 7 ___, Hampshire",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c5t3l-g8",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Contact number: (for ___ only) 0798 257643",
+              "acceptedAnswers": [
+                "messages"
+              ],
+              "gapText": "Contact number: 8 (for ___ only) 0798 257643",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g9",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Maximum price",
+              "acceptedAnswers": [
+                "Lion"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g10",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "£ . a week Preferred starting date",
+              "acceptedAnswers": [
+                "reasonable"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:20.583678+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 472518
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\n## Questions11-13\n\nComplete the sentences below.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\n11 The next meeting of the soccer club will be in the ........... in King's Park on 2 July.\n\n12 The irst event is a .\n\n13 At the final dinner, players receive .\n\n## Questions 14–17\n\nComplete the table below\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nCompetition\n\nNumber of Teams\n\nGames Begin\n\nTraining Session(in King's Park)\n\nJunior\n\n14 .....\n\n8.30 am\n\n15... \n\nSenior\n\n16 ...\n\n2.00 pm\n\n17 .....\n\n## Questions 18–20\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS for each answer.\n\nName of Office Bearer\n\nResponsibility\n\nRobert Young: President\n\nto manage meetings\n\nGina Costello: Treasurer\n\nto 18\n\nDavid West: Secretary\n\nto 19\n\nJason Dokic: Head Coach\n\nto 20 ."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t3l-g11",
+          "instruction": "Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "in_either_order",
+          "questions": [
+            {
+              "id": "c5t3l-q11",
+              "number": 11,
+              "type": "matching",
+              "prompt": "The next meeting of the soccer club will be in the ........... in King's Park on 2 July",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "higher than average results in examinations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "good transport links with central London"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "near London Airport"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "special government funding"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "good links with local industry"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.377114+00:00"
+              }
+            },
+            {
+              "id": "c5t3l-q12",
+              "number": 12,
+              "type": "matching",
+              "prompt": "The irst event is a",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "higher than average results in examinations"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "good transport links with central London"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "near London Airport"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "special government funding"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "good links with local industry"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.377114+00:00"
+              }
+            }
+          ],
+          "acceptedAnswers": [
+            "C",
+            "E ()"
+          ]
+        },
+        {
+          "id": "c5t3l-g13",
+          "instruction": "Complete the notes below. Write NO MORE THAN ONE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "At the final dinner, players receive",
+              "acceptedAnswers": [
+                "references"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g14",
+          "instruction": "Complete the notes below. Write NO MORE THAN ONE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Complete the sentences below.",
+              "acceptedAnswers": [
+                "country"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g15",
+          "instruction": "Complete the notes below. Write NO MORE THAN ONE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Senior",
+              "acceptedAnswers": [
+                "weather"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "The speaker says international students at UK universities will be",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "offered accommodation with local families."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "given special help by their lecturers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "expected to work independently."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "offered accommodation with local families."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "given special help by their lecturers."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "expected to work independently."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:02.064964+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g17",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "What does the speaker say about university accommodation on campus?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Most places are given to undergraduates."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "No places are available for postgraduates with families."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "A limited number of places are available for new postgraduates."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Most places are given to undergraduates."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "No places are available for postgraduates with families."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "A limited number of places are available for new postgraduates."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:02.064964+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g18",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Students wishing to live off-campus should apply",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "several months in advance."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "two or three weeks in advance."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "at the beginning of term."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "several months in advance."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "two or three weeks in advance."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "at the beginning of term."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:02.064964+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g19",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "The university accommodation officer will",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "send a list of agents for students to contact."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "contact accommodation agencies for students."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ensure that students have suitable accommodation."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "send a list of agents for students to contact."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "contact accommodation agencies for students."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "ensure that students have suitable accommodation."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:02.064964+00:00"
+          }
+        },
+        {
+          "id": "c5t3l-g20",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "With regard to their English, the speaker advises the students to",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "tell their lecturers if they have problems understanding."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "have private English lessons when they arrive."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "practise their spoken English before they arrive."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "tell their lecturers if they have problems understanding."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "have private English lessons when they arrive."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "practise their spoken English before they arrive."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:52:02.064964+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 472518,
+      "audioDurationMs": 498435
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\n## Questions21–24\n\nComplete the notes below.\n\nWrite NO MORE THAN THREE WORDS for each answer.\n\nBox Telecom\n\nProblems: been affected by\n\n drop in 21\n\nCauses of problems:\n\ngrowing 22 ..\n\ndelays due to a strike\n\n• high 23 ...\n\nlack of good 24 .\n\n## Questions 25–27\n\nChoose the correct letter, A. B or C\n\n25 What does Karin think the company will do? AB look for private investors accept a takeover offer C issue some new shares\n\n26 How does the tutor suggest the company can recover?\n\nA by appointing a new managing director\n\nB by changing the way it is organised\n\nC by closing some of its retail outlets\n\n27 The tutor wants Jason and Karin to produce a report which\n\nA offers solutions to Box Telecom's problems.\n\nB analyses the UK market.\n\nC compares different companies.\n\n## Questions 28-30\n\nWhich opinion does each person express about Box Telecom?\n\nChoose your answers from the box and write the letters A–F next to questions 28–30.\n\nAits workers are motivated\n\nB it has too little investment\n\nC it will overcome its problems\n\nD its marketing campaign needs improvement\n\nE it is old-fashioned\n\nF it has strong managers\n\n28 Karin\n\n29 Jason\n\n30 the tutor ……"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t3l-g21",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Dates: from ___ to 22 ___",
+              "acceptedAnswers": [
+                "5th May"
+              ],
+              "gapText": "Dates: from 21 ___ to 22 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g22",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Dates: from 21 ___ to ___",
+              "acceptedAnswers": [
+                "16th July",
+                "Friday 16th July"
+              ],
+              "gapText": "Dates: from 21 ___ to 22 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g23",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "• high",
+              "acceptedAnswers": [
+                "clear",
+                "was clear"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g24",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "(an",
+                "the) outline",
+                "(a",
+                "the) course outline"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g25",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "What does Karin think the company will do? AB look for private investors accept a takeover offer C issue some new shares",
+              "acceptedAnswers": [
+                "(the) 2nd half"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g26",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "How does the tutor suggest the company can recover? A by appointing a new managing director B by changing the way it is organised C by closing some of its retail outlets",
+              "acceptedAnswers": [
+                "(standard of) teaching",
+                "(standard of) teachers"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g27",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "The tutor wants Jason and Karin to produce a report which A offers solutions to Box Telecom's problems. B analyses the UK market. C compares different companies",
+              "acceptedAnswers": [
+                "discussion",
+                "group discussion"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g28",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Karin",
+              "acceptedAnswers": [
+                "handouts"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g29",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Jason",
+              "acceptedAnswers": [
+                "written work"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g30",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "Other comments: excellent ___",
+              "acceptedAnswers": [
+                "student support",
+                "support for students"
+              ],
+              "gapText": "Other comments: excellent 30 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 970953,
+      "audioDurationMs": 391660
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31–40\n\n## Questions 31–36\n\n## Choose the correct letter, A, B or C.\n\n31 During the first week of term, students are invited to \nA be shown round the library by the librarian. \nB listen to descriptions of library resources. \ndo an intensive course in the computer centre. \n32 The speaker warns the students that \nA internet materials can be unreliable. \nB downloaded information must be acknowledged. \nC computer access may be limited at times. \n33 The library is acquiring more CDs as a resource because \nA they are a cheap source of information. \nBC they take up verylittle space. \nthey are more up to date than the reference books. \n34 Students are encouraged to use journals online because \nA the articles do not need to be returned to the shelves. \nB reading online is cheaper than photocopying articles. \nC the stock of printed articles is to be reduced. \n35 Why might some students continue to use reference books? \nA they can be taken away from the library \nB they provide information unavailable elsewhere \nC they can be borrowed for an extended loan period \n36 What is the responsibility of the Training Supervisor? \nA to supervise and support library staff \nB to provide orientation to the library facilities \nto identify needs and inform section managers\n\n## Questions 37–40\n\nWhich section of the university will help postgraduate students with their dissertations in the following ways?\n\nA the postgraduate's own department or tutor\n\nB library staff\n\nC another section of the university\n\nWrite the correct letter, A, B or C, next to questions 37–40.\n\n37 training in specialised computer programs\n\n38 advising on bibliography presentation\n\n39 checking the draft of the dissertation\n\n40 providing language support"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t3l-g31",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "During the first week of term, students are invited to A be shown round the library by the librarian. B listen to descriptions of library resources. do an intensive course in the computer centre",
+              "acceptedAnswers": [
+                "12.5%"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN TWO WORDS and/or A NUMBER for euch answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t3l-g32",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "The speaker warns the students that A internet materials can be unreliable. B downloaded information must be acknowledged. C computer access may be limited at times",
+              "acceptedAnswers": [
+                "incineration plants"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN TWO WORDS and/or A NUMBER for euch answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t3l-g33",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "The library is acquiring more CDs as a resource because A they are a cheap source of information. BC they take up verylittle space. they are more up to date than the reference books",
+              "acceptedAnswers": [
+                "drop-off"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN TWO WORDS and/or A NUMBER for euch answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t3l-g34",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Students are encouraged to use journals online because A the articles do not need to be returned to the shelves. B reading online is cheaper than photocopying articles. C the stock of printed articles is to be reduced",
+              "acceptedAnswers": [
+                "cooking"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN TWO WORDS and/or A NUMBER for euch answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t3l-g35",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Why might some students continue to use reference books? A they can be taken away from the library B they provide information unavailable elsewhere C they can be borrowed for an extended loan period",
+              "acceptedAnswers": [
+                "500,000"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN TWO WORDS and/or A NUMBER for euch answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t3l-g36",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "What is the responsibility of the Training Supervisor? A to supervise and support library staff B to provide orientation to the library facilities to identify needs and inform section managers",
+              "acceptedAnswers": [
+                "roads"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g37",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Papersave: ___ for use on farms",
+              "acceptedAnswers": [
+                "soil conditioner"
+              ],
+              "gapText": "Papersave: 37 ___ for use on farms",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g38",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Pacrite: ___ for collecting waste",
+              "acceptedAnswers": [
+                "containers"
+              ],
+              "gapText": "Pacrite: 38 ___ for collecting waste",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g39",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Johnson & Jones",
+              "acceptedAnswers": [
+                "pencils"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t3l-g40",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Johnson & Jones: ___",
+              "acceptedAnswers": [
+                "business cards"
+              ],
+              "gapText": "Johnson & Jones: 40 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1362612,
+      "audioDurationMs": 426556
+    }
+  ]
+}

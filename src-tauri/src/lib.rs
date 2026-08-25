@@ -1,7 +1,11 @@
+mod audio;
+mod audio_meta;
 mod band;
 mod commands;
+mod content;
 mod error;
 mod library;
+mod migrate;
 mod paths;
 mod scoring;
 mod session;
@@ -9,6 +13,7 @@ mod srs;
 mod store;
 mod study;
 mod updates;
+mod ziputil;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
@@ -29,6 +34,19 @@ pub fn run() {
             commands::save_profile,
             commands::analytics_report,
             commands::load_transcript,
+            commands::audio_library_status,
+            commands::audio_catalog,
+            commands::audio_pick_files,
+            commands::audio_pick_folder,
+            commands::audio_scan_paths,
+            commands::audio_confirm_import,
+            commands::audio_playback_source,
+            commands::audio_remove_binding,
+            commands::audio_repair_bindings,
+            commands::audio_set_manual_parts,
+            commands::audio_waveform,
+            commands::audio_open_guide,
+            commands::audio_bindings,
             study::mistake_add,
             study::mistake_list,
             study::mistake_resolve,

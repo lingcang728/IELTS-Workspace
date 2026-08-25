@@ -1,0 +1,2002 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-1-reading",
+  "title": "Cambridge IELTS 4 Academic Test 1 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0006-7b153c1d",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/adults-children-tropical-rainforests-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/what-do-whales-feel-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/visual-symbols-and-blind-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/lost-for-words-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/alternative-medicine-australia-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/play-is-serious-business-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/micro-enterprise-credit-street-youth-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/volcanoes-earth-shattering-news-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/obtaining-linguistic-data-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/how-much-higher-how-much-faster-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/nature-aims-of-archaeology-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/problem-of-scarce-resources-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-1-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-2-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-3-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-4-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Adults and children are frequently confronted with statements about the alarming rat of loss of tropical rainforests. For example, one graphic illustration to which children might readily relate is the estimate that rainforests are being destroyed at a rate equivalent to one thousand football fields every forty minutes – about the duration of a normal classroom period. In the face of the frequent and often vivid media coverage, it is likely that children will have formed ideas about rainforests – what and where they are, why they are important, what endangers them – independent of any formal tuition. It is also possible that some of these ideas will be mistaken.\n\nMany studies have shown that children harbor misconceptions about ‘pure’, curriculum science. These misconceptions do not remain isolated but become incorporated into a multifaceted, but organized, conceptual framework, making it and the component ideas, some of which are erroneous, more robust but also accessible to modification. These ideas may be developed by children absorbing ideas through the popular media. Sometimes this information may be erroneous. It seems schools may not be providing an opportunity for children to re-express their ideas and so have them tested and refined by teachers and their peers.\n\nDespite the extensive coverage in the popular media of the destruction of rainforests, little formal information is available about children’s ideas in this area, the aim of the present study is to start to provide such information, to help teachers design their educational strategies to build upon correct ideas and to displace misconceptions and to plan programs in environmental studies in their schools.\n\nThe study surveys children’s scientific knowledge and attitudes to rainforests.\n\nSecondary school children were asked to complete a questionnaire containing five open-form questions. The most frequent responses to the first question were descriptions which are self-evident from the term ‘rainforest’. Some children described them as damp, wet or hot. The second question concerned the geographical location of rainforests. The commonest responses were continents or countries: Africa (given by 43% of children), South America (30%), Brazil (25%). Some children also gave more general locations, such as being near the Equator.\n\nResponses to question three concerned the importance of rainforests. The dominant idea, raised by 64% of the pupils, was that rainforests provide animals with habitats. Fewer students responded that rainforests provide plant habitats, and even fewer (60%) raised the idea of rainforest as animal habitats.\n\nSimilarly, but at a lower level, more girls (13%) than boys (5%) said that rainforests provided human habitats. These observations are generally consistent with our previous studied of pupils’ views about the use and conservation of rainforests, in which girls were shown to be more sympathetic to animals and expressed views which seem to place an intrinsic value on non-human animal life.\n\nThe fourth question concerned the causes of the destruction of rainforests. Perhaps encouragingly, more than half of the pupil (59%) identified that it is human activities which are destroying rainforests, some personalizing the responsibility by the use of terms such as ‘we are’. About 18% of the pupils referred specifically to logging activity.\n\nOne misconception, expressed by some 1) % of the pupils, was that acid rain is responsible for rainforest destruction; a similar proportion said that pollution is destroying rainforests. Here, children are confusing rainforest destruction with damage to the forests of Western Europe by these factors. While two fifths of the students provided the information that the rainforests provide oxygen, in some cases this response also embraced the misconception that rainforest destruction would reduce atmospheric oxygen, making the atmosphere incompatible with human life on Earth.\n\nIn answer to the final question about the importance of rainforest conservation, the majority of children simply said that we need rainforests to survive. Only a few of the pupils (6%) mentioned that rainforest destruction may contribute to global warming. This is surprising considering the high level of media coverage on this issue. Some children expressed the idea that the conservation of rainforests is not important.\n\nThe results of this study suggest that certain ideas predominate in the thinking of children about rainforests. Pupils’ responses indicate some misconceptions in basic scientific knowledge of rainforests’ ecosystems such as their ideas about rainforests as habitats for animals, plants and humans and the relationship between climatic change and destruction of rainforests.\n\nPupils did not volunteer ideas that suggested that they appreciated the complexity of causes of rainforest destruction. In other words, they gave no indication of an appreciation of either the rage of ways in which rainforests are important or the complex social, economic and political factors which drive the activities which are destroying the rainforests. One encouragement is that the results of similar studies about other environmental issues suggest that older children seem to acquire the ability to appreciate value and evaluate conflicting views. Environmental education offers an arena in which these sills can be developed, which is essential fore these children as future decision –makers."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t1r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "The plight of the rainforests has largely been ignored by the media",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Children only accept opinions on rainforests that they encounter in their classrooms",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "It has been suggested that children hold mistaken views about the ‘pure’ science that they study at school",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "The fact that children’s ideas about science from part of a larger framework of ideas means that it is easier to change them. The study involved asking children a number of yes/no questions such as ‘Are there any rainforests in Africa?’",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "The study involved asking children a number of yes/no questions such as ‘Are there any rainforests in Africa?’",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "Girls are more likely than boys to hold mistaken views about the rainforests’ destruction",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "The study reported here follows on from a series of studies that have looked at children’s understanding of rainforests",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "A second study has been planned to investigate primary school children’s ideas about rainforests",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g9",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q9",
+              "number": 9,
+              "type": "matching",
+              "prompt": "What was the children’s most frequent response when asked where the rainforests were?",
+              "acceptedAnswers": [
+                "M"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.821361+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a complicated combination of reasons for the loss of the rainforests."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The rainforests are being destroyed by the same things that are destroying the forests of Western Europe."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Rainforests are located near the Equator."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Brazil is home to the rainforests."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Without rainforests some animals would have nowhere to live."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Rainforests are important habitats for a lot of plants."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "People are responsible for the loss of the rainforests."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "The rainforests are a source of oxygen."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Rainforests are of consequence for a number of different reasons."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "As the rainforests are destroyed, the world gets warmer."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Without rainforests there would not be enough oxygen in the air."
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "There are people for whom the rainforests are home."
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "Rainforests are found in Africa."
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "Rainforests are not really important to human life."
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "The destruction of the rainforests is the direct result of logging activity."
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "Humans depend on the rainforests for their continuing existence."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g10",
+          "instruction": "Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q10",
+              "number": 10,
+              "type": "single_choice",
+              "prompt": "0 94 HAPPY-SAD GOOD-EVIL 94 89 LOVE-HATE ALIVE-DEAD 89 87 BRIGHT-DARK 87 85 LIGHT-HEAVY WARM-COLD 81 SUMMER-WINTER 81 WEAK-STRONG 79 FAST-SLOW 79 CAT-DOG SPRING-FALL 74 QUIET-LOUD 74 62 WALKING-STANDING 62 ODD-EVEN 57 FAR-NEAR 53 PLANT-ANIMAL 53 DEEP-SHALLOW 51 Fig. 2 Subjects were asked which word in each pair fits best with a circle and which with a square. These percentages show the level of consensus among sighted subjects",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a complicated combination of reasons for the loss of the rain-"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The rainforests are being destroyed by the same things that are destroy-"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Rainforests are located near the Equator"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Brazil is home to the rainforests"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Without rainforests some animals would have nowhere to live"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Rainforests are important habitats for a lot of plants"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "P"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a complicated combination of reasons for the loss of the rain-"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The rainforests are being destroyed by the same things that are destroy-"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Rainforests are located near the Equator"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Brazil is home to the rainforests"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Without rainforests some animals would have nowhere to live"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Rainforests are important habitats for a lot of plants"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "P"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g11",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "What did most children give as the reason for the loss of the rainforests?",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a complicated combination of reasons for the loss of the rain-"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The rainforests are being destroyed by the same things that are destroy-"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Rainforests are located near the Equator"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Brazil is home to the rainforests"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Without rainforests some animals would have nowhere to live"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Rainforests are important habitats for a lot of plants"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "People are responsible for the loss of the rainforests"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "The rainforests are a source of oxyge"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a complicated combination of reasons for the loss of the rain-"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The rainforests are being destroyed by the same things that are destroy-"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Rainforests are located near the Equator"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Brazil is home to the rainforests"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Without rainforests some animals would have nowhere to live"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Rainforests are important habitats for a lot of plants"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "People are responsible for the loss of the rainforests"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "The rainforests are a source of oxyge"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g12",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q12",
+              "number": 12,
+              "type": "matching",
+              "prompt": "Why did most children think it important for the rainforests to be protected?",
+              "acceptedAnswers": [
+                "P"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.821361+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a complicated combination of reasons for the loss of the rainforests."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The rainforests are being destroyed by the same things that are destroying the forests of Western Europe."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Rainforests are located near the Equator."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Brazil is home to the rainforests."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Without rainforests some animals would have nowhere to live."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Rainforests are important habitats for a lot of plants."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "People are responsible for the loss of the rainforests."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "The rainforests are a source of oxygen."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Rainforests are of consequence for a number of different reasons."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "As the rainforests are destroyed, the world gets warmer."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Without rainforests there would not be enough oxygen in the air."
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "There are people for whom the rainforests are home."
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "Rainforests are found in Africa."
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "Rainforests are not really important to human life."
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "The destruction of the rainforests is the direct result of logging activity."
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "Humans depend on the rainforests for their continuing existence."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g13",
+          "instruction": "Answer the following questions by choosing the correct responses A-P. The box below gives a list of responses A-P to the questionnaire discussed in Reading Passage 1.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Which of the responses is cited as unexpectedly uncommon, given the amount of time spent on the issue by the newspapers and television?",
+              "acceptedAnswers": [
+                "J"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a complicated combination of reasons for the loss of the rainforests."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The rainforests are being destroyed by the same things that are destroying the forests of Western Europe."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Rainforests are located near the Equator."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Brazil is home to the rainforests."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Without rainforests some animals would have nowhere to live."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Rainforests are important habitats for a lot of plants."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "People are responsible for the loss of the rainforests."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "The rainforests are a source of oxygen."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Rainforests are of consequence for a number of different reasons."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "As the rainforests are destroyed, the world gets warmer."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Without rainforests there would not be enough oxygen in the air."
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "There are people for whom the rainforests are home."
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "Rainforests are found in Africa."
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "Rainforests are not really important to human life."
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "The destruction of the rainforests is the direct result of logging activity."
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "Humans depend on the rainforests for their continuing existence."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:54.405157+00:00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "An examination of the functioning of the senses in cetaceans, the group of mammals comprising whales, dolphins and porpoises\n\nSome of the senses that we and other terrestrial mammals take for granted are either reduced or absent in cetaceans or fail to function well in water. For example, it appears from their brain structure that toothed species are unable to smell. Baleen species, on the other hand, appear to have some related brain structures but it is not known whether these are functional. It has been speculated that, as the blowholes evolved and migrated to the top of the head, the neural pathways serving sense of smell may have been nearly all sacrificed. Similarly, although at least some cetaceans have taste buds, the nerves serving these have degenerated or are rudimentary.\n\nThe sense of touch has sometimes been described as weak too, but this view is probably mistaken. Trainers of captive dolphins and small whales often remark on their animals’ responsiveness to being touched or rubbed, and both captive and freeranging cetacean individuals of all species (particularly adults and calves, or members of the same subgroup) appear to make frequent contact. This contact may help to maintain order within a group, and stroking or touching are part of the courtship ritual in most species. The area around the blowhole is also particularly sensitive and captive animals often object strongly to being touched there.\n\nThe sense of vision is developed to different degrees in different species. Baleen species studied at close quarters underwater – specifically a grey whale calf in captivity for a year, and free-ranging right whales and humpback whales studied and\n\nfilmed off Argentina and Hawaii – have obviously tracked objects with vision underwater, and they can apparently see moderately well both in water and in air. However, the position of the eyes so restricts the field of vision in baleen whales that they probably do not have stereoscopic vision.\n\nOn the other hand, the position of the eyes in most dolphins and porpoises suggests that they have stereoscopic vision forward and downward. Eye position in freshwater dolphins, which often swim on their side or upside down while feeding, suggests that what vision they have is stereoscopic forward and upward. By compareson, the bottlenose dolphin has extremely keen vision in water. Judging from the way it watches and tracks airborne flying fish, it can apparently see fairly well through the air–water interface as well. And although preliminary experimental evidence suggests that their in-air vision is poor, the accuracy with which dolphins leap high to take small fish out of a trainer’s hand provides anecdotal evidence to the contrary.\n\nSuch variation can no doubt be explained with reference to the habitats in which individual species have developed. For example, vision is obviously more useful to species inhabiting clear open waters than to those living in turbid rivers and flooded plains. The South American boutu and Chinese beiji, for instance, appear to have very limited vision, and the Indian susus are blind, their eyes reduced to slits that probably allow them to sense only the direction and intensity of light.\n\nAlthough the senses of taste and smell appear to have deteriorated, and vision in water appears to be uncertain, such weaknesses are more than compensated for by cetaceans’ well-developed acoustic sense. Most species are highly vocal, although\n\nthey vary in the range of sounds they produce, and many forage for food using echolocationv①. Large baleen whales primarily use the lower frequencies and are often limited in their repertoire. Notable exceptions are the nearly song-like choruses of bowhead whales in summer and the complex, haunting utterances of the humpback whales. Toothed species in general employ more of the frequency spectrum, and produce a wider variety of sounds, than baleen species (though the sperm whale apparently produces a monotonous series of high-energy clicks and little else). Some of the more complicated sounds are clearly communicative, although what role they may play in the social life and ‘culture’ of cetaceans has been more the subject of wild speculation than of solid science.\n\n①. Echolocation: the perception of objects by means of sound wave echoes."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t1r-g14",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Which of the following is the most suitable title for Reading Passage 1?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The development of a program in environmental studies within a science curriculum"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Children’s ideas about the rainforests and the implications for course design"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The extent to which children have been misled by the media concerning the rainforests"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "How to collect, collate and describe the ideas of secondary school children"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The importance of the rainforests and the reasons for their destruction"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The development of a program in environmental studies within a science curriculum"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Children’s ideas about the rainforests and the implications for course design"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The extent to which children have been misled by the media concerning the rainforests"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "How to collect, collate and describe the ideas of secondary school children"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The importance of the rainforests and the reasons for their destruction"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g15",
+          "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Taste: nerves linked to their ___ are underdeveloped",
+              "acceptedAnswers": [
+                "taste buds"
+              ],
+              "gapText": "Taste: nerves linked to their ___ are underdeveloped",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              21
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 15–21 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g16",
+          "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Vision species ___ probably do not have stereoscopic vision",
+              "acceptedAnswers": [
+                "baleen",
+                "the baleen whales"
+              ],
+              "gapText": "Vision species ___ probably do not have stereoscopic vision",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              21
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 15–21 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g17",
+          "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Dolphins and porpoises probably have stereoscopic vision ___ and ___",
+              "acceptedAnswers": [
+                "forward , downward"
+              ],
+              "gapText": "Dolphins and porpoises probably have stereoscopic vision ___ and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              21
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 15–21 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g18",
+          "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Vision species ___ probably have stereoscopic vision forward and upward",
+              "acceptedAnswers": [
+                "freshwater dolphin(s)",
+                "the freshwater dolphin(s)"
+              ],
+              "gapText": "Vision species ___ probably have stereoscopic vision forward and upward",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              21
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 15–21 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g19",
+          "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Bottlenose dolphin vision is exceptional in ___ and good in air-water interface",
+              "acceptedAnswers": [
+                "water",
+                "the water"
+              ],
+              "gapText": "Bottlenose dolphin vision is exceptional in ___ and good in air-water interface",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              21
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 15–21 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g20",
+          "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Most large baleen whales usually use ___; repertoire limited",
+              "acceptedAnswers": [
+                "lower frequencies",
+                "the lower frequencies"
+              ],
+              "gapText": "Most large baleen whales usually use ___; repertoire limited",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              21
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 15–21 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g21",
+          "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "___ whales and ___ whales have song-like hearing",
+              "acceptedAnswers": [
+                "bowhead, humpback"
+              ],
+              "gapText": "___ whales and ___ whales have song-like hearing",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              21
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 15–21 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g22",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Which of the senses is described here as being involved in mating?",
+              "acceptedAnswers": [
+                "touch",
+                "sense of touch"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              22,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 22–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g23",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Which species swims upside down while eating?",
+              "acceptedAnswers": [
+                "freshwater dolphin(s)",
+                "the freshwater dolphin(s)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              22,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 22–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g24",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "What can bottlenose dolphins follow from under the water?",
+              "acceptedAnswers": [
+                "airborne flying fish"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              22,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 22–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g25",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Which type of habitat is related to good visual ability?",
+              "acceptedAnswers": [
+                "clear water(s)",
+                "clear open water(s)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              22,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 22–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g26",
+          "instruction": "Answer the questions below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Which of the senses is best developed in cetaceans?",
+              "acceptedAnswers": [
+                "acoustic sense",
+                "the acoustic sense"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              22,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 22–26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Visual Symbols and the Blind\n\n## Part 1\n\nFrom a number of recent studies, it has become clear that blind people can appreciate the use of outlines and perspectives to describe the arrangement of objects and other surfaces in space. But pictures are more than literal representations. This fact was drawn to my attention dramatically when a blind woman in one of my investigations decided on her own initiative to draw a wheel as it was spinning. To show this motion, she traced a curve inside the circle (Fig. 1). I was taken aback. Lines of motion, such as the one she used, are a very recent invention in the history of illustration. Indeed, as art scholar David Kunzle notes, Wilhelm Busch, a trend-setting nineteenth-century cartoonist, used virtually no motion lines in his popular figures until about 1877.\n\n[] \nFlg.1\n\nWhen I asked several other blind study subjects to draw a spinning wheel, one particularly clever rendition appeared repeatedly: several subjects showed the wheel’s\n\nspokes as curved lines. When asked about these curves, they all described them as metaphorical ways of suggesting motion. Majority rule would argue that this device somehow indicated motion very well. But was it a better indicator than, say, broken or wavy lines – or any other kind of line, for that matter? The answer was not clear. So I decided to test whether various lines of motion were apt ways of showing movement or if they were merely idiosyncratic marks. Moreover, I wanted to discover whether there were differences in how the blind and the sighted interpreted lines of motion.\n\nTo search out these answers, I created raised-line drawings of five different wheels, depicting spokes with lines that curved, bent, waved, dashed and extended beyond the perimeter of the wheel. I then asked eighteen blind volunteers to feel the wheels and assign one of the following motions to each wheel: wobbling, spinning fast, spinning steadily, jerking or braking. My control group consisted of eighteen sighted undergraduates from the University of Toronto.\n\nAll but one of the blind subjects assigned distinctive motions to each wheel. Most guessed that the curved spokes indicated that the wheel was spinning steadily; the wavy spokes, they thought, suggested that the wheel was wobbling; and the bent spokes were taken as a sign that the wheel was jerking. Subjects assumed that spokes extending beyond the wheel’s perimeter signified that the wheel had its brakes on and that dashed spokes indicated the wheel was spinning quickly.\n\nIn addition, the favored description for the sighted was the favored description for the blind in every instance. What is more, the consensus among the sighted was bare-\n\nly higher than that among the blind. Because motion devices are unfamiliar to the blind, the task I gave them involved some problem solving. Evidently, however, the blind not only figured out meanings for each line of motion, but as a group they generally came up with the same meaning at least as frequently as did sighted subjects.\n\n## Part 2\n\nWe have found that the blind understand other kinds of visual metaphors as well. One blind woman drew a picture of a child inside a heart – choosing that symbol, she said, to show that love surrounded the child. With Chang Hong Liu, a doctoral student from China, I have begun exploring how well blind people understand the symbolism behind shapes such as hearts that do not directly represent their meaning. We gave a list of twenty pairs of words to sighted subjects and asked them to pick from each pair the term that best related to a circle and the term that best related to a square. For example, we asked: What goes with soft? A circle or a square? Which shape goes with hard?\n\nAll our subjects deemed the circle soft and the square hard. A full 94% ascribed happy to the circle, instead of sad. But other pairs revealed less agreement: 79% matched fast to slow and weak to strong, respectively. And only 51% linked deep to circle and shallow to square. (See Fig. 2) When we tested four totally blind volunteers using the same list, we found that their choices closely resembled those made by the sighted subjects. One man, who had been blind since birth, scored extremely well. He made only one match differing from the consensus, assigning ‘far’ to square and ‘near’ to circle. In fact, only a small majority of sighted subjects – 53% – had paired far and near to the opposite partners. Thus, we concluded that the blind interpret abstract shapes as sighted people do.\n\nWords associated with circle/square\n\nAgreement among subjects (%)\n\nSOFT-HARD MOTHER-FATHER\n\n100 94\n\nHAPPY-SAD GOOD-EVIL\n\n94 89\n\nLOVE-HATE ALIVE-DEAD\n\n89 87\n\nBRIGHT-DARK\n\n87 85\n\nLIGHT-HEAVY\n\nWARM-COLD\n\n81\n\nSUMMER-WINTER\n\n81\n\nWEAK-STRONG\n\n79\n\nFAST-SLOW\n\n79\n\nCAT-DOG SPRING-FALL\n\n74\n\nQUIET-LOUD\n\n74\n\n62\n\nWALKING-STANDING\n\n62\n\nODD-EVEN\n\n57\n\nFAR-NEAR\n\n53\n\nPLANT-ANIMAL\n\n53\n\nDEEP-SHALLOW\n\n51\n\nFig. 2 Subjects were asked which word in each pair fits best with a circle and which with a square. These percentages show the level of consensus among sighted subjects."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t1r-g27",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "In the first paragraph the writer makes the point that blind people A may be interested in studying art. B can draw outlines of different objects and surfaces. C can recognize conventions such as perspective. D can draw accurately",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "may be interested in studying art"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "can draw outlines of different objects and surfaces"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "can recognize conventions such as perspective"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "can draw accurately"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "may be interested in studying art"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "can draw outlines of different objects and surfaces"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "can recognize conventions such as perspective"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "can draw accurately"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g28",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "The writer was surprised because the blind woman A drew a circle on her own initiative. B did not understand what a wheel looked like. C included a symbol representing movement. D was the first person to use lines of motion",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "may be interested in studying art"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "can draw outlines of different objects and surfaces"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "can recognize conventions such as perspective"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "can draw accurately"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "may be interested in studying art"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "can draw outlines of different objects and surfaces"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "can recognize conventions such as perspective"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "can draw accurately"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g29",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "From the experiment described in Part 1, the writer found that the blind subjects A had good understanding of symbols representing movement. B could control the movement of wheels very accurately. C worked together well as a group in solving problems. D got better results than the sighted undergraduates",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "can draw accurately"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "drew a circle on her own initiative"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "did not understand what a wheel looked like"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "included a symbol representing movement"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "use of brakes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "can draw accurately"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "drew a circle on her own initiative"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "did not understand what a wheel looked like"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "included a symbol representing movement"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "use of brakes"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g30",
+          "instruction": "Choose the correct letter A–E and write them in boxes 30–32 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Choose the correct letter A–E and write them in boxes 30–32 on your answer sheet.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "steady spinning"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "jerky movement"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "rapid spinning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "wobbling movement"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "use of brakes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "steady spinning"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "jerky movement"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "rapid spinning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "wobbling movement"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "use of brakes"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g31",
+          "instruction": "Choose the correct letter A–E and write them in boxes 30–32 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "Diagram 31: type of movement generally assigned in the experiment",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "steady spinning"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "jerky movement"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "rapid spinning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "wobbling movement"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "use of brakes"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "steady spinning"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "jerky movement"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "rapid spinning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "wobbling movement"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "use of brakes"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g32",
+          "instruction": "Choose the correct letter A–E and write them in boxes 30–32 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "A steady spinning B jerky movement C rapid spinning D wobbling movement E use of brakes",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "steady spinning"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "jerky movement"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "rapid spinning"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "wobbling movement"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "use of brakes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "steady spinning"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "jerky movement"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "rapid spinning"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "wobbling movement"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "use of brakes"
+            }
+          ]
+        },
+        {
+          "id": "c4t1r-g33",
+          "instruction": "Complete the summary below. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "In the experiment described in Part 2, a set of word ___ was used to investigate whether blind and sighted people perceived the symbolism in abstract ___ in the same way.",
+              "acceptedAnswers": [
+                "pairs"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              39
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–39 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g34",
+          "instruction": "Complete the summary below. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Blind and sighted people perceived the symbolism in abstract ___ in the same way.",
+              "acceptedAnswers": [
+                "shapes"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              39
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–39 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g35",
+          "instruction": "Complete the summary below. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "From the ___ volunteers, everyone thought a circle fitted ‘soft’ while a square fitted ‘hard’.",
+              "acceptedAnswers": [
+                "sighted"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              39
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–39 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g36",
+          "instruction": "Complete the summary below. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "However, only 51% of the ___ volunteers assigned a circle to ___.",
+              "acceptedAnswers": [
+                "sighted"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              39
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–39 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g37",
+          "instruction": "Complete the summary below. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "_. When the test was later repeated with",
+              "acceptedAnswers": [
+                "deep"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              39
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–39 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g38",
+          "instruction": "Complete the summary below. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "When the test was later repeated with ___ volunteers, it was found that they made ___ choices.",
+              "acceptedAnswers": [
+                "blind"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              39
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–39 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g39",
+          "instruction": "Complete the summary below. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "When the test was later repeated with blind volunteers, it was found that they made ___ choices.",
+              "acceptedAnswers": [
+                "similar"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              39
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–39 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t1r-g40",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "Which of the following statements best summarizes the writer’s general conclusion?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The blind represent some aspects of reality differently from sighted people."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The blind comprehend visual metaphors in similar ways to sighted people."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The blind may create unusual and effective symbols to represent reality."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The blind may be successful artists if given the right training."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The blind represent some aspects of reality differently from sighted people."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The blind comprehend visual metaphors in similar ways to sighted people."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The blind may create unusual and effective symbols to represent reality."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The blind may be successful artists if given the right training."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

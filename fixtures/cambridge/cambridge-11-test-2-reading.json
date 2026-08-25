@@ -1,0 +1,2396 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-11-test-2-reading",
+  "title": "Cambridge IELTS 11 Academic Test 2 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0022-b75ba67f",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 11",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题11.pdf",
+        "sha256": "6dfc84371b9d08e31b450ede3a20e64f13f505b1e52261894681a31d733b3fe3"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C11\\剑桥雅思真题11\\auto\\剑桥雅思真题11.md",
+        "sha256": "8c76b257af01336b0c595c91c5f1d093513832fc8770fa0695824b87faf21ad2",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-11-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Raising the Mary Rose\n\n## How a sixteenth-century warship was recovered from the seabed\n\nOn 19 July 1545, English and French fleets were engaged in a sea battle off the coast of southern England in the area of water called the Solent, between Portsmouth and the Isle of Wight. Among the English vessels was a warship by the name of Mary Rose. Built in Portsmouth some 35 years earlier, she had had a long and successful fighting career, and was a favourite of King Henry VIII. Accounts of what happened to the ship vary: while witnesses agree that she was not hit by the French, some maintain that she was outdated, overladen and sailing too low in the water, others that she was mishandled by undisciplined crew. What is undisputed, however, is that the Mary Rose sank into the Solent that day, taking at least 500 men with her. After the battle, attempts were made to recover the ship, but these failed.\n\nThe Mary Rose came to rest on the seabed, lying on her starboard (right) side at an angle of approximately 60 degrees. The hull (the body of the ship) acted as a trap for the sand and mud carried by Solent currents. As a result, the starboard side filled rapidly, leaving the exposed port (left) side to be eroded by marine organisms and mechanical degradation. Because of the way the ship sank, nearly all of the starboard half survived intact. During the seventeenth and eighteenth centuries, the entire site became covered with a layer of hard grey clay, which minimised further erosion.\n\nThen, on 16 June 1836, some fishermen in the Solent found that their equipment was caught on an underwater obstruction, which turned out tobe theMary Rose. Diver John Deane happened to be exploring another sunken ship nearby, and the fishermen approached him, asking him to free their gear. Deane dived down, and found the equipment caught on a timber protruding slightly from the seabed. Exploring further, he uncovered several other timbers and a bronze gun. Deane continued diving on the site intermittently until 1840, recovering several more guns, two bows, various timbers, part of a pump and various other small finds.\n\nThe Mary Rose then faded into obscurity for another hundred years. But in 1965, military historian and amateur diver Alexander McKee, in conjunction with the British Sub-Aqua Club, initiated a project called ‘Solent Ships'. While on paper this was a plan to examine a number of known wrecks in the Solent, what McKee really hoped for was to find the Mary Rose. Ordinary search techniques proved unsatisfactory, so McKee entered into collaboration with Harold E. Edgerton, professor of electrical engineering at the Massachusetts Institute of Technology. In 1967, Edgerton's side-scan sonar systems revealeda large, unusually shaped object, which McKee believed was the Mary Rose.\n\nFurther excavations revealed stray pieces of timber and an iron gun. But the climax to the operation came when, on 5 May 1971, part of the ship's frame was uncovered. McKee and his team now knew for certain that they had found the wreck, but were asyet unaware that it also housed a treasure trove of beautifully preserved artefacts. Interest in the project grew, and in 1979, The Mary Rose Trust was formed, with Prince Charles as its President and Dr Margaret Rule its Archaeological Director. The decision whether or not to salvage the wreck was not an easy one, although an excavation in 1978 had shown that it might be possible to raise the hull.While the original aim was to raise the hull if at all feasible, the operation was not given the go-aheaduntil January 1982, when all the necessary information was available.\n\nAn important factor in trying to salvage the Mary Rose was that the remaining hull was an open shell. This led to an important decision being taken: namely to carry out the lifting operation in three very distinct stages. The hull was attached to a lifting frame via a network of bolts and lifting wires. The problem of the hull being sucked back downwards into the mudwas overcome by using 12hydraulic jacks. These raised it a few centimetres over a period of several days, as the lifting frame rose slowly up its four legs. It was only when the hull was hanging freely from the lifting frame, clear of the seabed and the suction effect of the surrounding mud, that the salvage operation progressed to the second stage. In this stage, the lifting frame was fixed to a hook attached to a crane, and the hull was lifted completely clear of the seabed and transferred underwater into the lifting cradle. This required precise positioning to locate the legs into the ‘stabbing guides' of the lifting cradle. The lifting cradle was designed to fit the hull using archaeological survey drawings, and was fitted with air bags to provide additional cushioning for the hull's delicate timber framework. The third and final stage was to lift the entire structure into the air, by which time the hull was also supported from below. Finally, on11 October 1982, millions of people around the world held their breath as the timber skeleton of the Mary Rose was lifted clear of the water, ready to be returned home to Portsmouth."
+      },
+      "questionGroups": [
+        {
+          "id": "c11t2r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "There is some doubt about what caused the Mary Rose to sink",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "The Mary Rose was the only ship to sink in the battle of 19 July 1545",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Most of one side of the Mary Rose lay undamaged under the sea",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Alexander McKee knew that the wreck would contain many valuable historical objects",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g5",
+          "instruction": "Look at the following statements (Questions 5-8) and the list of dates below. Match each statement with the correct date, A-G. Write the correct letter, A-G, in boxes 5-8 on your answer sheet.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q5",
+              "number": 5,
+              "type": "matching",
+              "prompt": "A search for the Mary Rose was launched",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "1836"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "1840"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "1965"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "1967"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "1971"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "1979"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "1982"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "1836"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "1840"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "1965"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "1967"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "1971"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "1979"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "1982"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:21.893121+00:00"
+          }
+        },
+        {
+          "id": "c11t2r-g6",
+          "instruction": "Look at the following statements. Match each statement with the correct date, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q6",
+              "number": 6,
+              "type": "matching",
+              "prompt": "One person's exploration of the Mary Rose site stopped",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "1836"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "1971"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "1840"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "1979"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "1965"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "1982"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "1967"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "1836"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "1971"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "1840"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "1979"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "1965"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "1982"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "1967"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g7",
+          "instruction": "Look at the following statements. Match each statement with the correct date, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q7",
+              "number": 7,
+              "type": "matching",
+              "prompt": "It was agreed that the hull of the Mary Rose should be raised",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "1836"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "1971"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "1840"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "1979"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "1965"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "1982"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "1967"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "1836"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "1971"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "1840"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "1979"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "1965"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "1982"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "1967"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g8",
+          "instruction": "Look at the following statements. Match each statement with the correct date, A-G. Write the correct letter, A-G, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q8",
+              "number": 8,
+              "type": "matching",
+              "prompt": "The site of the Mary Rose was found by chance. List of Dates A",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "1836"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "1971"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "1840"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "1979"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "1965"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "1982"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "1967"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "1836"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "1971"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "1840"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "1979"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "1965"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "1982"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "1967"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g9",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "a71e36b16a97edc5b74d26dd8a3119eb9d7c2551fc03368764.jpg)",
+              "acceptedAnswers": [
+                "(lifting) frame"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g10",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "___ to prevent hull being sucked into mud",
+              "acceptedAnswers": [
+                "hydraulic jacks"
+              ],
+              "gapText": "___ to prevent hull being sucked into mud",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g11",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "Legs are placed into ___",
+              "acceptedAnswers": [
+                "stabbing guides"
+              ],
+              "gapText": "Legs are placed into ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g12",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Hull is lowered into ___",
+              "acceptedAnswers": [
+                "(lifting) cradle"
+              ],
+              "gapText": "Hull is lowered into ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g13",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "___ used as extra protection for the hull",
+              "acceptedAnswers": [
+                "air bags"
+              ],
+              "gapText": "___ used as extra protection for the hull",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 9–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 on the following pages.\n\nQuestions 14-20\n\nReading Passage 2 has seven paragraphs, A-G.\n\nChoose the correct heading for each paragraph from the list of headings below.\n\nWrite the correct number, i-ix, in boxes 14–20 on your answer sheet\n\n## List of Headings\n\niEvidence of innovative environment management practices\n\nii An undisputed answer to a question about the moai\n\niii The future of the moai statues\n\niv A theory whichsupports a local belief\n\nv The future of Easter Island\n\nvi Two opposing views about the Rapanui people\n\nvii Destruction outside the inhabitants'control\n\nviii How the statues made a situation worse\n\nix Diminishing food resources\n\n14 Paragraph A\n\n15 Paragraph B\n\n16 Paragraph C\n\n17 Paragraph D\n\n18 Paragraph E\n\n19 Paragraph F\n\n20 Paragraph G\n\n## What destroyed the civilisation of Easter Island?\n\nA Easter Island, or Rapu Nui as it is known locally, is home to several hundred ancient human statues - the moai. After this remote Pacific island was settled by the Polynesians, it remained isolated for centuries. All the energy and resources that went into the moai – some of which are ten metres tall and weigh over 7,000 kilos – came from the island itself. Yet when Dutch explorers landed in 1722, they met a Stone Age culture. The moai were carved with stone tools, then transported for many kilometres, without the use of animals or wheels, to massive stone platforms. The identity of the moai builders was in doubt until well into the twentieth century. Thor Heyerdahl, the Norwegian ethnographer and adventurer, thought the statues had been created by pre-Inca peoples from Peru. Bestselling Swiss author Erich von Däniken believed they were built by stranded extraterrestrials. Modern science - linguistic, archaeological andgenetic evidence – has definitively proved the moai builders were Polynesians, but not how they moved their creations. Local folklore maintains that the statues walked, while researchers have tended to assume the ancestors dragged the statues somehow, using ropes and logs.\n\nB When the Europeans arrived, Rapa Nui was grassland, with only a few scrawny trees. In the 1970s and 1980s, though, researchers found pollen preserved in lake sediments, which proved the island had been covered in lush palm forests for thousands of years. Onlyafter the Polynesians arrived did those forests disappear. US scientist Jared Diamond believes that the Rapanui people – descendants of Polynesian settlers – wrecked their own environment. They had unfortunately settled on an extremely fragile island – dry, cool, and too remote to be properly fertilised by windblown volcanic ash. When the islanders cleared the forests for firewood and farming, the forests didn't grow back. As trees became scarce and they could no longer construct wooden canoes for fishing, they ate birds. Soil erosion decreased their crop yields. Before Europeans arrived, the Rapanui had descended into civil war and cannibalism, he maintains. The collapse of their isolated civilisation, Diamond writes,is a 'worst-case scenario for what may lie ahead of us in our own future'.\n\nC The moai, he thinks, accelerated the self-destruction. Diamond interprets them as power displays by rival chieftains who, trapped on a remote little island, lacked other ways of asserting their dominance. They competed by building ever bigger figures. Diamond thinks they laid the moai on wooden sledges, hauled over log rails, but that required both a lot of wood and a lot of people. To feed the people, even more land had to be cleared. When the wood was gone and civil war began, the islanders began toppling the moai. By the nineteenth century none were standing.\n\nD Archaeologists Terry Hunt of the University of Hawaii and Carl Lipo of California State University agree that Easter Island lost its lush forests and that it was an ‘ecological catastrophe' - but they believe the islanders themselves weren't to blame. And the moai certainly weren't. Archaeological excavations indicate that the Rapanui went to heroic efforts to protect the resources of their wind-lashed, infertile fields. They built thousands of circular stone windbreaks and gardened inside them, and used broken volcanic rocks to keep the soil moist. In short, Hunt and Lipo argue, the prehistoric Rapanui were pioneers of sustainable farming.\n\nE Hunt and Lipo contend that moai-building was an activity that helped keep the peace between islanders. They also believe that moving the moai required few people and no wood, because they were walked upright. On that issue, Hunt and Lipo say, archaeological evidence backs up Rapanui folklore. Recent experiments indicate that as few as 18 people could, with three strong ropes and a bit of practice, easily manoeuvre a 1,000 kg moai replica a few hundred metres. The figures' fat bellies tilted them forward, and a D-shaped base allowed handlers to roll and rock them side to side.\n\nF Moreover, Hunt and Lipo are convincedthat the settlers were not wholly responsible for the loss of the island's trees. Archaeological finds of nuts from the extinct Easter Island palm show tiny grooves, made by the teeth of Polynesian rats. The rats arrived along with the settlers, and in just a few years, Hunt and Lipo calculate, they would haveoverrun the island. They would have prevented the reseeding of theslow-growing palm trees and thereby doomed Rapa Nui's forest, even without the settlers' campaign of deforestation. No doubt the rats ate birds' eggs too. Hunt and Lipo also see no evidence that Rapanui civilisation collapsed when the palm forest did. They think its population grew rapidly and then remained more or less stable until the arrival of the Europeans, who introduced deadly diseases to which islanders had no immunity. Then in the nineteenth century slave traders decimated the population, which shrivelled to 111 people by 1877.\n\nG Hunt and Lipo's vision, therefore, is one of an island populated by peaceful and ingenious moai builders and careful stewards of the land, rather than by reckless destroyers ruining their own environment and society. Rather than a case of abject failure, Rapu Nui is an unlikely story of success', they claim. Whichever is the case, there are surely some valuable lessons which the world at large can learn from the story of Rapa Nui.\n\nQuestions 21-24\n\nComplete the summary below.\n\nChoose ONE WoRD ONLY from the passage for each answer.\n\nWrite your answers in boxes 21–24 on your answer sheet.\n\n## Jared Diamond's View\n\nDiamond believes that the Polynesian settlers on Rapa Nui destroyed its forests, cutting down it.s trees for fuel and clearing land for 2..Twentieth-century discoveries of pollen prove that Rapu Nui had once been covered in palm forests, which had turned into grassland by the time the Europeans arrivedon the island. When the islanders were no longer able to build the 2..hey needed to go fishing, they began using the island's 23as a food source, according to Diamond. Diamond also claims that the moai were built to show the power of theisland's chieftains, and that the methods of transporting the statues needed not only a great number of people, but also a great deal of 24...\n\nQuestions25 and 26\n\nChoose TWO letters, A-E.\n\nWrite the correct letters in boxes 25 and 26 on your answer sheet.\n\nOn what points do Hunt and Lipo disagree with Diamond?\n\nAthe period when the moai were created\n\nB how the moai were transported\n\nC the impact of the moai on Rapanui society\n\nD how the moai were carved\n\nEthe origins of the people who made the moai"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t2r-g14",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Paragraph A",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:27.644464+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Evidence of innovative environment management practices"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An undisputed answer to a question about the moai"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The future of the moai statues"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A theory which supports a local belief"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The future of Easter Island"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Two opposing views about the Rapanui people"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Destruction outside the inhabitants' control"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "How the statues made a situation worse"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Diminishing food resources"
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g15",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Paragraph B",
+              "acceptedAnswers": [
+                "ix"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:27.644464+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Evidence of innovative environment management practices"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An undisputed answer to a question about the moai"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The future of the moai statues"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A theory which supports a local belief"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The future of Easter Island"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Two opposing views about the Rapanui people"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Destruction outside the inhabitants' control"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "How the statues made a situation worse"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Diminishing food resources"
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g16",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:27.644464+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Evidence of innovative environment management practices"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An undisputed answer to a question about the moai"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The future of the moai statues"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A theory which supports a local belief"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The future of Easter Island"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Two opposing views about the Rapanui people"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Destruction outside the inhabitants' control"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "How the statues made a situation worse"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Diminishing food resources"
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g17",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Evidence of innovative environment management practices"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "An undisputed answer to a question about the moai"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The future of the moai statues"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "A theory which supports a local belief"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The future of Easter Island"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Two opposing views about the Rapanui people"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Destruction outside the inhabitants' control"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "How the statues made a situation worse"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Diminishing food resources"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Evidence of innovative environment management practices"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An undisputed answer to a question about the moai"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The future of the moai statues"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A theory which supports a local belief"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The future of Easter Island"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Two opposing views about the Rapanui people"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Destruction outside the inhabitants' control"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "How the statues made a situation worse"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Diminishing food resources"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:27.644464+00:00"
+          }
+        },
+        {
+          "id": "c11t2r-g18",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "40 F 1979 C 1965 G",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:27.644464+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Evidence of innovative environment management practices"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An undisputed answer to a question about the moai"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The future of the moai statues"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A theory which supports a local belief"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The future of Easter Island"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Two opposing views about the Rapanui people"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Destruction outside the inhabitants' control"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "How the statues made a situation worse"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Diminishing food resources"
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g19",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Paragraph F",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:27.644464+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Evidence of innovative environment management practices"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An undisputed answer to a question about the moai"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The future of the moai statues"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A theory which supports a local belief"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The future of Easter Island"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Two opposing views about the Rapanui people"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Destruction outside the inhabitants' control"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "How the statues made a situation worse"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Diminishing food resources"
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g20",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Paragraph G",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:27.644464+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Evidence of innovative environment management practices"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An undisputed answer to a question about the moai"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The future of the moai statues"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A theory which supports a local belief"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The future of Easter Island"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Two opposing views about the Rapanui people"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Destruction outside the inhabitants' control"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "How the statues made a situation worse"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Diminishing food resources"
+            }
+          ]
+        },
+        {
+          "id": "c11t2r-g21",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Complete the summary below.",
+              "acceptedAnswers": [
+                "farming"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g22",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "When the islanders were no longer able to build the ___ they needed to go fishing",
+              "acceptedAnswers": [
+                "canoes"
+              ],
+              "gapText": "When the islanders were no longer able to build the ___ they needed to go fishing",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g23",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "They began using the island's ___ as a food source, according to Diamond",
+              "acceptedAnswers": [
+                "birds"
+              ],
+              "gapText": "They began using the island's ___ as a food source, according to Diamond",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g24",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Diamond also claims that the moai were built to show the power of the island's chieftains, and that the methods of transporting the statues needed not only a great number of people, but also a great deal of ___",
+              "acceptedAnswers": [
+                "wood"
+              ],
+              "gapText": "Diamond also claims that the moai were built to show the power of the island's chieftains, and that the methods of transporting the statues needed not only a great number of people, but also a great deal of ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 21–24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g25",
+          "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 25 and 26 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "On what points do Hunt and Lipo disagree with Diamond? (Question 25)",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the period when the moai were created"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how the moai were transported"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the impact of the moai on Rapanui society"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "how the moai were carved"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the origins of the people who made the moai"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the period when the moai were created"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how the moai were transported"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the impact of the moai on Rapanui society"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "how the moai were carved"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the origins of the people who made the moai"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:51.826158+00:00"
+          }
+        },
+        {
+          "id": "c11t2r-g26",
+          "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 25 and 26 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q26",
+              "number": 26,
+              "type": "multi_choice",
+              "prompt": "On what points do Hunt and Lipo disagree with Diamond? (Question 26)",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the period when the moai were created"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how the moai were transported"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the impact of the moai on Rapanui society"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "how the moai were carved"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the origins of the people who made the moai"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the period when the moai were created"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how the moai were transported"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the impact of the moai on Rapanui society"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "how the moai were carved"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the origins of the people who made the moai"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:52:51.826158+00:00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Neuroaesthetics\n\nAn emerging discipline called neuroaesthetics is seeking to bring scientific objectivity to the study of art, and has already given us a better understanding of many masterpieces. The blurred imagery of Impressionist paintings seems to stimulate the brain's amygdala, for instance. Since the amygdala plays a crucial role in our feelings, that finding might explain why many people find these pieces so moving.\n\nCould the same approach also shed light on abstract twentieth-century pieces, from Mondrian's geometrical blocks of colour, to Pollock's seemingly haphazard arrangements of splashed paint on canvas? Sceptics believe that people claim to like such works simply because they are famous. We certainly do have an inclination to follow the crowd. When asked to make simple perceptual decisions such as matching a shape to its rotated image, for example, people often choose a definitively wrong answer if they see others doing the same. It is easy to imagine that this mentality would have even more impact on a fuzzy concept like art appreciation, where there is no right or wrong answer.\n\nAngelina Hawley-Dolan, of Boston College, Massachusetts, responded to this debate by asking volunteers to view pairs of paintings – either the creations of famous abstract artists or the doodles of infants, chimps and elephants. They then had to judge which they preferred. A third of the paintings were given no captions, while many were labelled incorrectly – volunteers might think they were viewing a chimp's messy brushstrokes when they were actually seeing an acclaimed masterpiece. In each set of trials, volunteers generally preferred the work of renowned artists, even when they believed it was by an animal or a child. It seems that the viewer can sense the artist's vision in paintings, even if they can't explain why.\n\nRobert Pepperell, an artist based at Cardiff University, creates ambiguous works that are neither entirely abstract nor clearly representational. In one study, Pepperell and his collaborators asked volunteers to decide how'powerful'they considered an artwork to be, and whether they saw anything familiar in the piece. The longer they took to answer these questions, the more highly they rated the piece under scrutiny, and the greater their neural activity. It would seem that the brain sees these images as puzzles, and the harder it is to decipher the meaning, the more rewarding is the moment of recognition.\n\nAnd what about artists such as Mondrian, whose paintings consist exclusively of horizontal and vertical lines encasing blocks of colour? Mondrian's works are deceptively simple, but eye-tracking studies confirm that they are meticulously composed, and that simply rotating a piece radically changes the way we view it. With the originals, volunteers' eyes tended to stay longer on certain places in the image, but with the altered versions they would flit across a piece more rapidly. As a result, the volunteers considered the altered versions less pleasurable when they later rated the work.\n\nIn a similar study, Oshin Vartanian of Toronto University asked volunteers to compare original paintings with ones which he had altered by moving objects around within the frame. He found that almost everyone preferred the original, whether it was a Van Gogh still life or an abstract by Miró. Vartanian also found that changing the composition of the paintings reduced activation in those brain areas linked with meaning and interpretation.\n\nIn another experiment, Alex Forsythe of the University of Liverpool analysed the visual intricacy of different pieces of art, and her results suggest that many artists use a key level of detail to please the brain. Too little and the work is boring, but too much results in a kind of 'perceptual overload', according to Forsythe. What's more, appealing pieces both abstract and representational, show signs of'fractals'– repeatedmotifs recurring in different scales. Fractals are common throughout nature, for example in the shapes of mountain peaks or the branches of trees. It is possible that our visual system, which evolved in the great outdoors, finds it easier to process such patterns.\n\nIt is also intriguing that the brain appears to process movement when we see a handwritten letter, as if we are replaying the writer's moment of creation. This has led some to wonder whether Pollock's works feel so dynamic because the brain reconstructs the energetic actions the artist used as he painted. This may be down to our brain's'mirror neurons, which are known to mimic others'actions. The hypothesis will need to be thoroughly tested, however. It might even be the case that we could use neuroaesthetic studies to understand the longevity of some pieces of artwork. While the fashions of the time might shape what is currently popular, works that are best adapted to our visual system may be the most likely to linger once the trends of previous generations have been forgotten.\n\nIt's still early days for the field of neuroaesthetics - and these studies are probably only a taste of what is to come. It would, however, be foolish to reduce art appreciation to a set of scientific laws. We shouldn't underestimate the importance of the style of a particular artist, their place in history and the artistic environment of their time. Abstract art offers both a challenge and the freedom to play with different interpretations. In some ways, it's not so different to science, where we are constantly looking for systems and decoding meaning so that we can view and appreciate the world in a new way."
+      },
+      "questionGroups": [
+        {
+          "id": "c11t2r-g27",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "In the second paragraph, the writer refers to a shape-matching test in order to illustrate",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the subjective nature of art appreciation."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the reliance of modern art on abstract forms."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "our tendency to be influenced by the opinions of others."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a common problem encountered when processing visual data."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.087266+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27-30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g28",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Angelina Hawley-Dolan's findings indicate thatpeople",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "mostly favour works of art which they know well."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "hold fixed ideas about what makes a good work of art."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "are often misled by their initial expectations of a work of art."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "have the ability to perceive the intention behind works of art."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.087266+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27-30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g29",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "Results of studies involving Robert Pepperell's pieces suggest that people",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "can appreciate a painting without fully understanding it."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "find it satisfying to work out what a painting represents."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "vary widely in the time they spend looking at paintings."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "generally prefer representational art to abstract art."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.087266+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27-30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g30",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "What do the experiments described in the fifth paragraph suggest about the paintings of Mondrian?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are more carefully put together than they appear."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They can be interpreted in a number of different ways."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They challenge our assumptions about shape and colour."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They are easier to appreciate than many other abstract works."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.087266+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27-30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c11t2r-g31",
+          "instruction": "Complete the summary using the list of words, A-H, below. Write the correct letters, A-H, in boxes 31-33 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "Alex Forsythe of the University of Liverpool believes many artists give their works the precise degre of",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "interpretation"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "complexity"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "emotions"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "movements"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "skill"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "layout"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "concern"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "images"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "interpretation"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "complexity"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "emotions"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "movements"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "skill"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "layout"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "concern"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "images"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.613358+00:00"
+          }
+        },
+        {
+          "id": "c11t2r-g32",
+          "instruction": "Complete the summary using the list of words, A-H, below. Write the correct letters, A-H, in boxes 31-33 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "Alex Forsythe of the University of Liverpool believes many artists give their works the precise degree of ___ which most appeals to the viewer's brain",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "interpretation"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "complexity"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "emotions"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "movements"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "skill"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "layout"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "concern"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "images"
+                }
+              ],
+              "gapText": "Alex Forsythe of the University of Liverpool believes many artists give their works the precise degree of ___ which most appeals to the viewer's brain",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "interpretation"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "complexity"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "emotions"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "movements"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "skill"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "layout"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "concern"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "images"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.613358+00:00"
+          }
+        },
+        {
+          "id": "c11t2r-g33",
+          "instruction": "Complete the summary using the list of words, A-H, below. Write the correct letters, A-H, in boxes 31-33 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "Pleasing works of art often contain certain repeated ___ which occur frequently in the natural world",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "interpretation"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "complexity"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "emotions"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "movements"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "skill"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "layout"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "concern"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "images"
+                }
+              ],
+              "gapText": "Pleasing works of art often contain certain repeated ___ which occur frequently in the natural world",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "interpretation"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "complexity"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "emotions"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "movements"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "skill"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "layout"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "concern"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "images"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.614322+00:00"
+          }
+        },
+        {
+          "id": "c11t2r-g34",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q34",
+              "number": 34,
+              "type": "true_false_ng",
+              "prompt": "Forsythe's findings contradicted previous beliefs on the function of fractals' in art",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              39
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g35",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q35",
+              "number": 35,
+              "type": "yes_no_ng",
+              "prompt": "Certain ideas regarding the link between mirror neurons' and art appreciation require further verification",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              39
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g36",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q36",
+              "number": 36,
+              "type": "yes_no_ng",
+              "prompt": "People's taste in paintings depends entirely on the current artistic trends of the period",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              39
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g37",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q37",
+              "number": 37,
+              "type": "yes_no_ng",
+              "prompt": "Scientists should seek to definetheprecise rules whichgovern people's reactions to works of art",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              39
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g38",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q38",
+              "number": 38,
+              "type": "yes_no_ng",
+              "prompt": "Art appreciation should always involve taking into consideration the cultural context in which an artist worked",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              39
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g39",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q39",
+              "number": 39,
+              "type": "true_false_ng",
+              "prompt": "It is easier to find meaning in the field of science than in that of art",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              39
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2r-g40",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "What would be the most appropriate subtitle for the article?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Some scientific insights into how the brain responds to abstract art"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Recent studies focusing on the neural activity of abstract artists"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "A comparison of the neurological bases of abstract and representational art"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "How brain research has altered public opinion about abstract art"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.087266+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -25,6 +25,9 @@ import { Mistakes } from "./pages/Mistakes";
 import { Vocab } from "./pages/Vocab";
 import { Intensive } from "./pages/Intensive";
 import { PromptStudio } from "./pages/PromptStudio";
+import { AudioCenter } from "./pages/AudioCenter";
+import { AudioWizard } from "./components/AudioWizard";
+import { listeningReady, audioOpenGuide, audioRemoveBinding } from "./lib/audio";
 import { mistakesFromReport } from "./lib/mistakes";
 import { generatePlan } from "./lib/plan";
 import { checkForDesktopUpdate } from "./lib/updateService";
@@ -55,6 +58,7 @@ export function App() {
   const [vocab, setVocab] = useState<VocabCard[]>([]);
   const [openMistakes, setOpenMistakes] = useState(0);
   const [dueVocab, setDueVocab] = useState(0);
+  const [audioWizard, setAudioWizard] = useState<string | null | undefined>(undefined);
 
   function flash(message: string) {
     setToast(message);
@@ -119,8 +123,16 @@ export function App() {
     await reload();
   }
 
+  function addAudio(examId?: string) {
+    setAudioWizard(examId ?? null);
+  }
+
   async function startExam(summary: ExamSummary, mode: "mock" | "practice") {
     if (busy) return;
+    if (summary.module === "listening" && !listeningReady(summary.audioStatus)) {
+      addAudio(summary.id);
+      return;
+    }
     setBusy(true);
     try {
       const ex = await loadExam(summary.id);
@@ -241,7 +253,7 @@ export function App() {
       <Sidebar view={view} setView={setView} />
       <main className="workspace-main">
         {boot.probe.warning && <div className="notice-strip"><Icon name="info" size={16} />{boot.probe.warning}</div>}
-        {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} />}
+        {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} onDismissGuide={() => void updateProfile({ audioGuideDismissed: true })} onAddAudio={() => addAudio()} />}
         {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onContinue={continueSession} onView={setView} />}
         {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onContinue={continueSession} onView={setView} />}
         {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
@@ -252,10 +264,12 @@ export function App() {
         {view === "vocab" && <Vocab />}
         {view === "intensive" && <Intensive exams={boot.exams} />}
         {view === "studio" && <PromptStudio vocab={vocab} />}
+        {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => setError(String(e)))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => setError(String(e)))} />}
         {view === "results" && session && <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} />}
       </main>
     </div>
     <div className="toast-region">{toast && <div className="toast"><Icon name="check" size={17} />{toast}</div>}</div>
     {busy && <div className="busy-indicator" role="status"><i /><span>正在准备试卷…</span></div>}
+    {audioWizard !== undefined && <AudioWizard targetExamId={audioWizard} onClose={() => setAudioWizard(undefined)} onDone={() => { setAudioWizard(undefined); void reload(); flash("听力音频已添加"); }} />}
   </div>;
 }

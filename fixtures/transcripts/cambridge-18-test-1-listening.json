@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-18-test-1-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 18,
+    "test": 1
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    22,
+    23,
+    26,
+    27,
+    29,
+    32,
+    33,
+    35,
+    36,
+    37
+  ],
+  "missingMarkers": [
+    15,
+    17,
+    18,
+    19,
+    20,
+    21,
+    24,
+    25,
+    28,
+    30,
+    31,
+    34,
+    38,
+    39,
+    40
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": "MAN",
+          "text": "Excuse me. Would you mind if I asked you some questions?We're doing a",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "survey on transport.",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Yes, that's OK.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "First of all, can I take your name?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Yes. It's Sadie Jones.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Thanks very much. And could I have your date of birth - just the year will do,",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "actually. Is that all right?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Yes, that's fine. It's 1991.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "So next your postcode, please.",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "It's DW30 7YZ.",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Great. Thanks. Is that in Wells?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "No it's actually in Harborne — Wells isn't far from there, though.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I really like that area. My grandmother lived there when I was a kid.",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Yes, it is nice.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Right, so now I want to ask you some questions about how you travelled here",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "today. Did you use public transport?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Yes. I came by bus.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "OK. And that was today. It's the 24th of April, isn't it?",
+          "answers": [
+            2
+          ]
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Isn't it the 25th? No, actually, you're right.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Ha ha, And what was the reason for your trip today? I can see you've got some",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "shopping with you.",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Yes. I did some shopping but the main reason I came here was to go to the",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "dentist.",
+          "answers": [
+            3
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "That's not much fun. Hope it was nothing serious.",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "No, it was just a check-up. It's fine.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Good. Do you normally travel by bus into the city centre?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Yes. I stopped driving in ages ago because parking was so difficult to find and it",
+          "answers": [
+            4
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "costs so much.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I see.",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "The bus is much more convenient too. It only takes about 30 minutes.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "That's good. So where did you start your journey?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "At the bus stop on Claxby Street.",
+          "answers": [
+            5
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Is that C-L-A-X-B-Y?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "That's right.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "And how satisfied with the service are you? Do you have any complaints?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Well, as I said, it's very convenient and quick when it's on time, but this morning it",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "was late. Only about 10 minutes, but still.",
+          "answers": [
+            6
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes, I understand that's annoying. And what about the timetable? Do you have",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "any comments about that?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Mmm. I suppose I mainly use the bus during the day, but any time I've been in",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "town in the evening – for dinner or at the cinema – I've noticed you have to wait a",
+          "answers": [
+            7
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "long time for a bus – there aren't that many.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "OK, thanks. So now l'd like to ask you about your car use.",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Well, I have got a car but I don't use it that often. Mainly just to go to the supermarket. But that's about it really. My husband uses it at the weekends to go to the golf club.",
+          "answers": [
+            8
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "And what about a bicycle?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "I don't actually have one at the moment.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "What about the city bikes you can rent? Do you ever use those?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "No - I'm not keen on cycling there because of all the pollution. But I would like to get a bike - it would be good to use it to get to work.",
+          "answers": [
+            9
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "So why haven't you got one now?",
+          "answers": []
+        },
+        {
+          "speaker": "SADIE",
+          "text": "Well, I live in a flat – on the second floor and it doesn't have any storage – so we'd have to leave it in the hall outside the flat.",
+          "answers": [
+            10
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "I see. OK. Well, I think that's all ...",
+          "answers": []
+        }
+      ],
+      "charCount": 2571,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Good evening, everyone. Let me start by welcoming you all to this talk and thanking you for taking the time toconsider joining ACE voluntary organisation. ACE offers support to people and services in the local area and we're now looking for more volunteers to help usdo this.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "By the way, I hope you're all comfortable - we have brought in extra seats so that no one has to stand, but it does mean that the people at the back of the room may be a bit squashed We'll only be here for about half an hour so, hopefully, that's OK.",
+          "answers": [
+            11
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "One of the first questions we're often asked is how old you need to be to volunteer. Well you can be as young as 16 or you can be 60 or over; it all depends on what type of voluntary work you want to do.Other considerations, such as reliability, are crucial in voluntary work and age isn't related to these, in our experience.",
+          "answers": [
+            12
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Another question we get asked relates to training. Well, there's plenty of that and it's all face-to-face. What's more, training doesn't end when you start working for us - it takes place before, during and after periods of work. Often, it's run by other experienced volunteers as managers tend to prefer to get on with other things.",
+          "answers": [
+            13
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now, I would ask you to consider a couple of important issues before you decide to apply for voluntary work. We don't worry about why you want tobe a volunteer - people have many different reasons that range from getting work experience to just doing something they've always wanted to do. But it is critical that you have enough hours in the day for whatever role /15 we agree is suitable for you – if being a volunteer becomes stressful then it's best not to do it at all. You may think that your income is important, but we don't ask about that. It's up to you to decide if you can work without earning money. What we value is dedication. Some of our /15 most loyal volunteers earn very little themselves but still give their full energy to the work they dowith us.",
+          "answers": [
+            14
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "OK, so let's take a look at some of the work areas that we need volunteers for and the sort of things that would help you in those.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "You may wish simply to help us raise money. If you have the creativity to come up with an imaginative or novel way of fundraising, we'd be delighted, as standing in the local streets or shops with a collection box can be rather boring!",
+          "answers": [
+            16
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "One outdoor activity that we need volunteers for islitter collection and for this it's useful if you can walk for long periods. sometimes uphill. Some of our regular collectors are quite elderly, but very active and keen to protect the environment.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "If you enjoy working with children, we have three vacancies for what are called playmates'. These volunteers help children learn about staying healthy through a range of out-of-school activities. You don't need to have children yourself, but it's good if you know something about nutritionand can give clear instructions.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "If that doesn't appeal to you, maybe you would be interested in helping out at our story club for disabled children, especially if you have done some acting. We put on three performances a year based on books they have read and we're always looking for supportwith the theatrical side of this.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The last area I'll mention today is first aid. Volunteers who join this group can end up teaching others in vulnerable groups who may be at risk of injury. Initially, though, your priority will be to take in a lot of information and not forget any important steps or details.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Right, so does anyone have any questions ...",
+          "answers": []
+        }
+      ],
+      "charCount": 3499,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": "HUGO",
+          "text": "Hi Chantal. What did you think of the talk, then?Hi Hugo. I thought it was good once l'd moved seats.Oh – were the peoplebeside you chatting or something?It wasn't that. I went early so that I'd get a seat and not have to stand, but thenthis guy sat right in front of me and he was so tall! Q21Impossible! Anyway, to answer your question, I thought it was really interesting,especially what the speaker said about the job market.Me too. I mean we know we're going into a really competitive field so it's obviousthat we may struggle to get work.That's right – and we know we can't all have that dream job'.Yeah, but it looks like there's a whole range of ... areas of work that we hadn't",
+          "answers": [
+            22
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "even thought of - like fashion journalism, for instance.Yeah — I wasn't expecting so many career options.Mmm. Overall, she had quite a strong message, didn't she?She did. She kept saying things like 'I know you all think this, but ...' and thenshe'd tell us how it really is.Perhaps she thinks students are a bit narrow-minded about the industry.It was a bit harsh, though! We know it's a tough industry.",
+          "answers": [
+            23
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Audioscripts",
+          "answers": []
+        },
+        {
+          "speaker": "CHANTAL",
+          "text": "HUGO: Well, I think we'll just have to differ on that issue!",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "One thing's for certain, though. From what she said, we'll be unpaid assistants in the industry for quite a long time. Mmm.",
+          "answers": []
+        },
+        {
+          "speaker": "CHANTAL",
+          "text": "HUGO: CHANTAL: HUGO: CHANTAL: I'm prepared for that, aren't you? Actually, I'm not going to accept that view. Really? But she knows it's the case – andeveryone else says the same. That doesn't mean it has to be true for me. /28",
+          "answers": [
+            26,
+            27
+          ]
+        },
+        {
+          "speaker": "HUGO",
+          "text": "CHANTAL: OK. Well — I hope you're right! I thought the speaker's account of her first job was fascinating.",
+          "answers": []
+        },
+        {
+          "speaker": "HUGO",
+          "text": "Yeah – she admitted she was lucky to get work being a personal dresser for a musician. She didn't even apply for the job and there she was getting paid to choose all his clothes.",
+          "answers": []
+        },
+        {
+          "speaker": "CHANTAL",
+          "text": "It must have felt amazing - though she said all she was looking for back then was experience, not financial reward. Mmm. And then he was so mean, telling her she was more interested in her own",
+          "answers": []
+        },
+        {
+          "speaker": "HUGO",
+          "text": "appearance than his! But - she did realise he was right about that, which really made me think. I'm",
+          "answers": []
+        },
+        {
+          "speaker": "CHANTAL",
+          "text": "always considering my own clothes but now I can see you should be focusing on your client!",
+          "answers": []
+        },
+        {
+          "speaker": "HUGO",
+          "text": "CHANTAL: She obviously regretted losing the job. Well, as she said, she should have hidden her negative feelings about him, but /28",
+          "answers": [
+            27
+          ]
+        },
+        {
+          "speaker": "HUGO",
+          "text": "she didn't. It was really brave the way she picked herself up and took that job in retail. Fancy",
+          "answers": []
+        },
+        {
+          "speaker": "CHANTAL",
+          "text": "working in a shop after that! Yeah – well, she recommended we all do it at some point. I guess as a designer",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "you'd get to find out some useful information, like how big or small the average shopper is. /30",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": "HUGO",
+          "text": "I think that's an issue for manufacturers, not designers. However, it would be useful to know if there's a gap in the market - you know, an item that no one's stocking but that consumers are looking for.",
+          "answers": []
+        },
+        {
+          "speaker": "CHANTAL",
+          "text": "Yeah, people don't give up searching. They also take things back to the store if they aren't right.",
+          "answers": []
+        },
+        {
+          "speaker": "HUGO",
+          "text": "Yeah. Imagine you worked in an expensive shop and you found out the garments /30",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": "CHANTAL",
+          "text": "sold there were being returned because they ... fell apart in the wash! Yeah, it would be good to know that kind of thing.",
+          "answers": []
+        }
+      ],
+      "charCount": 3112,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "For my presentation today I want to tell you about how groups of elephants have been moved andsettled in new reserves. This is known as translocation and has been carried out in Malawi in Africa in recent years. The reason this is being done is because of overpopulation of elephants in some areas.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Overpopulation is a good problem to have and not one we tend to hear about very often. In Malawi's Majete National Park the elephant population had been wiped out by poachers, who killed the elephants for their ivory. But in 2003, the park was restocked and effective law enforcement was introduced. Since then, not a single elephant has been poached. In this safe environment, the elephant population boomed. Breeding went so well that there were more elephants than the park could support",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "This led to a number of problems. Firstly, there was more competition for food, which meant that some elephants were suffering from hunger. As there was a limit to the amount of food in the national park, some elephants began looking further afield. Elephants were routinely knocking down fences around the park, which then had to be repaired at a significant cost.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "To solve this problem, the decision was made to move dozens of elephants from Majete National Park to Nkhotakota Wildlife Park, where there were no elephants. But, obviously, attempting to move significant numbers of elephants to a new home 300 kilometres away is quite a challenge.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "So how did this translocation process work in practice?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Elephants were moved in groups of between eight and twenty, all belonging to one family. Because relationships are very important to elephants, they all had to be moved at the same time. A team of vets and park rangers flew over the park in helicopters and targeted a group. which were rounded up and directed to a designated open plain.",
+          "answers": [
+            32,
+            33
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "The yets then used darts to immobilise the elephants - this was a tricky manoeuvre, as they not only had to select the right dose of tranquiliser for different-sized elephants but they had to dart the elephants as they were running around. This also had to be done as quickly as possible so as to minimise the stress caused. As soon as the elephants began to flop onto the ground, the team moved in to take care of them.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "To avoid the risk of suffocation. the team had to make sure none of the elephants were lying on their chests because their lungs could be crushed in this position. So all the elephants had to be placed on their sides. One person staved with each elephant while they waited for the vets to do checks. It was very important to keep an eve on their breathing - if there were fewer than six breaths per minute. the elephant would need urgent medical attention. Collars were fitted to the matriarch in each group so their movementscould be tracked in their new home. Measurements were taken of each elephant's tusks - elephants with large tusks would be at greater risk from poachers - and also of their feet. The elephants were then taken to a recovery area before being loaded onto trucks and transported to their new home.",
+          "answers": [
+            35,
+            36,
+            37
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "The elephants translocated to Nkhotakota settled in very well and the project has generally been accepted to have been a huge success - and not just for the elephants. Employment prospects have improved enormously, contributing to rising living standards for the whole community. Poaching is no longer an issue, as former poachers are able to find more reliable sources of income. In fact, many of them volunteered to give up their weapons, as they were no longer of any use to them.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "More than two dozen elephants have been born at Nkhotakota since relocation. With an area of more than 1,800 square kilometres, there's plenty of space for the elephant population to continue to grow. Their presence is also helping to rebalance Nkhotakota's damaged ecosystem and providing a sustainable conservation model, which could be replicated in other parks, All this has been a big draw for tourism, which contributes five times more than the illegal wildlife trade to GDP, and this is mainly because of the elephants. There's also been a dramatic rise in interest ...",
+          "answers": []
+        }
+      ],
+      "charCount": 4126,
+      "missing": false
+    }
+  ]
+}

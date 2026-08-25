@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-11-test-4-writing",
+  "title": "Cambridge IELTS 11 Academic Test 4 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-8c76b257af01",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 11",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题11.pdf",
+        "sha256": "6dfc84371b9d08e31b450ede3a20e64f13f505b1e52261894681a31d733b3fe3"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C11\\剑桥雅思真题11\\auto\\剑桥雅思真题11.md",
+        "sha256": "8c76b257af01336b0c595c91c5f1d093513832fc8770fa0695824b87faf21ad2",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe table below shows the numbers of visitors to Ashdown Museum during the year before andthe year after it was refurbished.The charts show the result of surveys asking visitors how satisfied they were with their visit, during the same twoperiods.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\n## Totalnumber of visitorsto Ashdown Museum\n\n## Results of surveys of visitor satisfaction\n\n## Year before refurbishment\n\n[] \nVery satisfied \nSatisfied \nDissatisfied \nVery dissatisfied\n\nNo response\n\n## Year after refurbishment\n\n[]\n\nVery satisfied\n\nSatisfied\n\nDissatisfied\n\nVery dissatisfied\n\nNo response"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c11-t4-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nMany governments think that economicprogress istheir most important goal.Some people,however, think that other types of progress areequally important for a country.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

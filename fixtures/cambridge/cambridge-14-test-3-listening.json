@@ -1,0 +1,1997 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-14-test-3-listening",
+  "title": "Cambridge IELTS 14 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0021-01a78e5a",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 14",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题14.pdf",
+        "sha256": "f0f0d86e7cf93b37154696851b2e61be4f1194b05bd1651c1711e221720018ba"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C14\\剑桥雅思真题14\\auto\\剑桥雅思真题14.md",
+        "sha256": "922bb365c0a65fe38e3625473ed796ac216275ad75839f452a8d20a7435ef431",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=21, reading=1; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-14-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\n## Concerts in university arts festival\n\n## Concert 1\n\n• Australian composer: Liza Lim\n\nstudied piano and 31 efore turning to composition\n\n•performers and festivals around the world have given her a lot of commissions\n\ncompositions show great deal of 32. nd are drawn from various cultural sources\n\nher music is very expressive and also 3..\n\nfestival will include her 34 called The Oresteia\n\nLim described the sounds in The Oresteia as 35 ..\n\nBritish composers: Ralph Vaughan Williams, Frederick Delius\n\n## Concert 2\n\nBritish composers: Benjamin Britten, Judith Weir\n\n• Australian composer: Ross Edwards\n\nfestival will include The Tower of Remoteness, inspired by nature\n\nThe Tower of Remoteness is performed by piano and 36...\n\n•compositions include music for children\n\ncelebrates Australia's cultural 37\n\n## Concert 3\n\nAustralian composer: Carl Vine\n\n• played cornet then piano\n\nstudied 38 ..before studying music\n\n•worked in Sydney as a pianist and composer\n\nbecame well known as composer of music for 39...\n\nfestival will include his music for the 1996 40 ..\n\n• British composers: Edward Elgar, Thomas Adès"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t3l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Sorry? Tesla – that's spelled T-E-S-L-A. It holds up to a hundred people, and it's fully ANGELA: equipped with a projector and so on. MAN: How about a microphone? Q2 Yes, that'll be all set up ready for you, and there'll be one that members of the ANGELA: audience can use",
+              "acceptedAnswers": [
+                "Tesla"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "ANGELA: equipped with a projector and so on. MAN: How about a microphone? Yes, that'll be all set up ready for you, and there'll be one that members of the ANGELA: audience can use too, for questions, if necessary. MAN: Fine. And we'll also need some sort of open area where people c",
+              "acceptedAnswers": [
+                "microphone"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Area for coffee and an ___",
+              "acceptedAnswers": [
+                "exhibition"
+              ],
+              "gapText": "Area for coffee and an ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Free ___ throughout",
+              "acceptedAnswers": [
+                "wifi"
+              ],
+              "gapText": "Free ___ throughout",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "A standard buffet lunch costs $___ per head",
+              "acceptedAnswers": [
+                "45"
+              ],
+              "gapText": "A standard buffet lunch costs $___ per head",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Rooms will cost $___ including breakfast",
+              "acceptedAnswers": [
+                "135"
+              ],
+              "gapText": "Rooms will cost $___ including breakfast",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The hotel also has a spa and rooftop ___",
+              "acceptedAnswers": [
+                "pool"
+              ],
+              "gapText": "The hotel also has a spa and rooftop ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "There's a free shuttle service to the ___",
+              "acceptedAnswers": [
+                "airport"
+              ],
+              "gapText": "There's a free shuttle service to the ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Wilby Street (quite near the ___)",
+              "acceptedAnswers": [
+                "sea"
+              ],
+              "gapText": "Wilby Street (quite near the ___)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Near to restaurants and many ___",
+              "acceptedAnswers": [
+                "clubs"
+              ],
+              "gapText": "Near to restaurants and many ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:32:11.976382+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 525420
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\n## Concerts in university arts festival\n\n## Concert 1\n\n• Australian composer: Liza Lim\n\nstudied piano and 31 efore turning to composition\n\n•performers and festivals around the world have given her a lot of commissions\n\ncompositions show great deal of 32. nd are drawn from various cultural sources\n\nher music is very expressive and also 3..\n\nfestival will include her 34 called The Oresteia\n\nLim described the sounds in The Oresteia as 35 ..\n\nBritish composers: Ralph Vaughan Williams, Frederick Delius\n\n## Concert 2\n\nBritish composers: Benjamin Britten, Judith Weir\n\n• Australian composer: Ross Edwards\n\nfestival will include The Tower of Remoteness, inspired by nature\n\nThe Tower of Remoteness is performed by piano and 36...\n\n•compositions include music for children\n\ncelebrates Australia's cultural 37\n\n## Concert 3\n\nAustralian composer: Carl Vine\n\n• played cornet then piano\n\nstudied 38 ..before studying music\n\n•worked in Sydney as a pianist and composer\n\nbecame well known as composer of music for 39...\n\nfestival will include his music for the 1996 40 ..\n\n• British composers: Edward Elgar, Thomas Adès"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t3l-g11",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q11",
+              "number": 11,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO activities that volunteers do are mentioned?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "decorating"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "cleaning"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "delivering meals"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "shopping"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "childcare"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "decorating"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "cleaning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "delivering meals"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "shopping"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "childcare"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:42.793911+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g12",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q12",
+              "number": 12,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO activities that volunteers do are mentioned?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "decorating"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "cleaning"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "delivering meals"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "shopping"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "childcare"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "decorating"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "cleaning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "delivering meals"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "shopping"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "childcare"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:42.793911+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g13",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q13",
+              "number": 13,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO ways that volunteers can benefit from volunteering are mentioned?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "learning how to be part of a team"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "having a sense of purpose"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "realising how lucky they are"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "improved ability at time management"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "boosting their employment prospects"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g14",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q14",
+              "number": 14,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO ways that volunteers can benefit from volunteering are mentioned?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "learning how to be part of a team"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "having a sense of purpose"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "realising how lucky they are"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "improved ability at time management"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "boosting their employment prospects"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "learning how to be part of a team"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "having a sense of purpose"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "realising how lucky they are"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "improved ability at time management"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "boosting their employment prospects"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:42.793911+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g15",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Volunteer Habib: what has this volunteer helped someone to do?",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "overcome physical difficulties"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rediscover skills not used for a long time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "improve their communication skills"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "solve problems independently"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "escape isolation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "remember past times"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "start a new hobby"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "overcome physical difficulties"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "rediscover skills not used for a long time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "improve their communication skills"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "solve problems independently"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "escape isolation"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "remember past times"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "start a new hobby"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:59.486255+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g16",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Consuela",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "overcome physical difficulties"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rediscover skills not used for a long time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "improve their communication skills"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "solve problems independently"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "escape isolation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "remember past times"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "start a new hobby"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "overcome physical difficulties"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "rediscover skills not used for a long time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "improve their communication skills"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "solve problems independently"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "escape isolation"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "remember past times"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "start a new hobby"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:59.486255+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g17",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Volunteer Minh: what has this volunteer helped someone to do?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "overcome physical difficulties"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rediscover skills not used for a long time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "improve their communication skills"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "solve problems independently"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "escape isolation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "remember past times"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "start a new hobby"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "overcome physical difficulties"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "rediscover skills not used for a long time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "improve their communication skills"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "solve problems independently"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "escape isolation"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "remember past times"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "start a new hobby"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:59.486255+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g18",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Volunteer Tanya: what has this volunteer helped someone to do?",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "overcome physical difficulties"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rediscover skills not used for a long time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "improve their communication skills"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "solve problems independently"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "escape isolation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "remember past times"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "start a new hobby"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g19",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "Volunteer Alexei: what has this volunteer helped someone to do?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "overcome physical difficulties"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rediscover skills not used for a long time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "improve their communication skills"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "solve problems independently"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "escape isolation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "remember past times"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "start a new hobby"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "overcome physical difficulties"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "rediscover skills not used for a long time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "improve their communication skills"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "solve problems independently"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "escape isolation"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "remember past times"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "start a new hobby"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:59.486255+00:00"
+          }
+        },
+        {
+          "id": "c14t3l-g20",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "Volunteer Juba: what has this volunteer helped someone to do?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "overcome physical difficulties"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "rediscover skills not used for a long time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "improve their communication skills"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "solve problems independently"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "escape isolation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "remember past times"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "start a new hobby"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "overcome physical difficulties"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "rediscover skills not used for a long time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "improve their communication skills"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "solve problems independently"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "escape isolation"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "remember past times"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "start a new hobby"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:48:59.486255+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 525420,
+      "audioDurationMs": 397610
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\n## Concerts in university arts festival\n\n## Concert 1\n\n• Australian composer: Liza Lim\n\nstudied piano and 31 efore turning to composition\n\n•performers and festivals around the world have given her a lot of commissions\n\ncompositions show great deal of 32. nd are drawn from various cultural sources\n\nher music is very expressive and also 3..\n\nfestival will include her 34 called The Oresteia\n\nLim described the sounds in The Oresteia as 35 ..\n\nBritish composers: Ralph Vaughan Williams, Frederick Delius\n\n## Concert 2\n\nBritish composers: Benjamin Britten, Judith Weir\n\n• Australian composer: Ross Edwards\n\nfestival will include The Tower of Remoteness, inspired by nature\n\nThe Tower of Remoteness is performed by piano and 36...\n\n•compositions include music for children\n\ncelebrates Australia's cultural 37\n\n## Concert 3\n\nAustralian composer: Carl Vine\n\n• played cornet then piano\n\nstudied 38 ..before studying music\n\n•worked in Sydney as a pianist and composer\n\nbecame well known as composer of music for 39...\n\nfestival will include his music for the 1996 40 ..\n\n• British composers: Edward Elgar, Thomas Adès"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t3l-g21",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "It consists of around ___ students.",
+              "acceptedAnswers": [
+                "50"
+              ],
+              "gapText": "It consists of around ___ students.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g22",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "It is due to play in a ___ band competition.",
+              "acceptedAnswers": [
+                "regional"
+              ],
+              "gapText": "It is due to play in a ___ band competition.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g23",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "They have listened to a talk by a",
+              "acceptedAnswers": [
+                "carnival"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g24",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Joe will discuss a",
+              "acceptedAnswers": [
+                "drummer"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g25",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Joe will discuss a ___ with the band.",
+              "acceptedAnswers": [
+                "film"
+              ],
+              "gapText": "Joe will discuss a ___ with the band.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g26",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Joe hopes the band will attend a ___ next month.",
+              "acceptedAnswers": [
+                "parade"
+              ],
+              "gapText": "Joe hopes the band will attend a ___ next month.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g27",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 27-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "What problem does Joe mention for the flautist?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "makes a lot of mistakes in rehearsals"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "keeps making unhelpful suggestions"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "has difficulty with rhythm"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "misses too many rehearsals"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "has a health problem"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "doesn't mix with other students"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g28",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 27-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "What problem does Joe mention for the trumpeter?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "makes a lot of mistakes in rehearsals"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "keeps making unhelpful suggestions"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "has difficulty with rhythm"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "misses too many rehearsals"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "has a health problem"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "doesn't mix with other students"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g29",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 27-30.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "What problem does Joe mention for the trombonist?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "makes a lot of mistakes in rehearsals"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "keeps making unhelpful suggestions"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "has difficulty with rhythm"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "misses too many rehearsals"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "has a health problem"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "doesn't mix with other students"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g30",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 27-30.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "What problem does Joe mention for the percussionist?",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "makes a lot of mistakes in rehearsals"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "keeps making unhelpful suggestions"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "has difficulty with rhythm"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "misses too many rehearsals"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "has a health problem"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "doesn't mix with other students"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 923030,
+      "audioDurationMs": 381440
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\n## Concerts in university arts festival\n\n## Concert 1\n\n• Australian composer: Liza Lim\n\nstudied piano and 31 efore turning to composition\n\n•performers and festivals around the world have given her a lot of commissions\n\ncompositions show great deal of 32. nd are drawn from various cultural sources\n\nher music is very expressive and also 3..\n\nfestival will include her 34 called The Oresteia\n\nLim described the sounds in The Oresteia as 35 ..\n\nBritish composers: Ralph Vaughan Williams, Frederick Delius\n\n## Concert 2\n\nBritish composers: Benjamin Britten, Judith Weir\n\n• Australian composer: Ross Edwards\n\nfestival will include The Tower of Remoteness, inspired by nature\n\nThe Tower of Remoteness is performed by piano and 36...\n\n•compositions include music for children\n\ncelebrates Australia's cultural 37\n\n## Concert 3\n\nAustralian composer: Carl Vine\n\n• played cornet then piano\n\nstudied 38 ..before studying music\n\n•worked in Sydney as a pianist and composer\n\nbecame well known as composer of music for 39...\n\nfestival will include his music for the 1996 40 ..\n\n• British composers: Edward Elgar, Thomas Adès"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t3l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Studied piano and ___ before turning to composition",
+              "acceptedAnswers": [
+                "violin"
+              ],
+              "gapText": "Studied piano and ___ before turning to composition",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Compositions show a great deal of ___ and are drawn from various cultural sources",
+              "acceptedAnswers": [
+                "energy"
+              ],
+              "gapText": "Compositions show a great deal of ___ and are drawn from various cultural sources",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Her music is very expressive and also ___",
+              "acceptedAnswers": [
+                "complex"
+              ],
+              "gapText": "Her music is very expressive and also ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Festival will include her ___ called The Oresteia",
+              "acceptedAnswers": [
+                "opera"
+              ],
+              "gapText": "Festival will include her ___ called The Oresteia",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Lim described the sounds in The Oresteia as ___",
+              "acceptedAnswers": [
+                "disturbing"
+              ],
+              "gapText": "Lim described the sounds in The Oresteia as ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "The Tower of Remoteness is performed by piano and ___",
+              "acceptedAnswers": [
+                "clarinet"
+              ],
+              "gapText": "The Tower of Remoteness is performed by piano and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Celebrates Australia's cultural ___",
+              "acceptedAnswers": [
+                "diversity"
+              ],
+              "gapText": "Celebrates Australia's cultural ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Studied ___ before studying music",
+              "acceptedAnswers": [
+                "physics"
+              ],
+              "gapText": "Studied ___ before studying music",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Became well known as composer of music for ___",
+              "acceptedAnswers": [
+                "dance"
+              ],
+              "gapText": "Became well known as composer of music for ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Festival will include his music for the 1996 ___",
+              "acceptedAnswers": [
+                "Olympics"
+              ],
+              "gapText": "Festival will include his music for the 1996 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1304470,
+      "audioDurationMs": 488319
+    }
+  ]
+}

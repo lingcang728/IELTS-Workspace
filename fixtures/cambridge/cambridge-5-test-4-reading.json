@@ -1,0 +1,2572 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-5-test-4-reading",
+  "title": "Cambridge IELTS 5 Academic Test 4 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0015-96962580",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 5",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题5.pdf",
+        "sha256": "7df6a474e84e69a622dd48fc009e69dd7fd711a64b713671bdf492311f5f58cc"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C05\\剑桥雅思真题5\\auto\\剑桥雅思真题5.md",
+        "sha256": "f824a696e954976360e36d9a1615a7da3cbfefff2c6511ed3f1e04f97d5a6c21",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-5-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## A\n\nThe market for tourism in remote areas is booming as never before. Countries all across the world are actively promoting their wilderness' regions – such as mountains, Arctic lands, deserts, small islands and wetlands – to high-spending tourists. The attraction of these areasis obvious: by definition, wilderness tourism requires little or no initial investment. But that does not mean that there is no cost. As the 1992 United Nations Conference on Environment and Development recognizeu, these regions are fragile (i.e. highly vulnerable to abnormal pressures) not just in terms of their ecology, but also in terms of the culture of their inhabitants. The three most significant types of fragile environment in these respects, and also in terms of the proportion of the Earth's surface they cover, are deserts, mountains and Arctic areas. An important characteristic is their marked seasonality, with harsh conditionsprevailing for many months each year. Consequently, most human activities, including tourism, are limited to quite clearly defined parts of the year.\n\nTourists are drawn to these regions by their natural landscape beauty and the unique cultures of their indigenous people. And poor governments in these isolated areas have welcomed the new breed of ‘adventure tourist', grateful for the hard currency they bring. For several years now, tourism has been the prime source of foreign exchange in Nepal and Bhutan. Tourism is also a key element in the economies of Arctic zones such as Lapland and Alaska and in desert areas such as Ayers Rock in Australía and Arizona's Monument Valley.\n\n## B\n\nOnce a location is established as a main tourist destination, the effects on the local community are profound. Whenhill-farmers, for example, can make more money in a few weeks working as porters for foreign trekkers than they can in a year working in their fields, it is not surprising that many of them give up their farm-work, which is thus left to other members of the family. In some hill-regions, this has led to a serious decline in farm output and a change in the local diet, because there is insufficient labour to maintain terraces and irrigation systems and tend to crops. The result has been that many people in these regions have turned to outside supplies of rice and other foods.\n\nIn Arctic and desert societies, year-round survival has traditionally depended on hunting animals and fish and collecting fruit over a relatively short season. However, as some inhabitants become Ínvolved in tourism, they no longer have time to collect wild food; this has led to increasing dependence on bought food and stores. Tourism is not always the culprit behind such changes. All kinds of wage labour, or government handouts, tend to undermine traditional survival systems. Whatever the cause, the dllemma is always the same: what happens if these new, external sources of income dry up?\n\nThe physical impact of visitors is another serious problem associated with the growth in adventure tourism. Much attention has focused on erosion along major trails, but perhaps more important are the deforestation and impacts on water supplies arising from the need to provide tourists with cooked food and hot showers. In both mountains and deserts, slow-growing trees are often the main sources of fuel and water supplies may be limited or vulnerable to degradation through heavy use.\n\n## C\n\nStories about the problems of tourism have become legion in the last few years. Yet it does not have to be a problem. Although tourism inevitably affects the region in which it takes place, the costs to these fragile environments and their local cultures can be minimized. Indeed, it can even be a vehicle for reinvigorating local cultures, as has happened with the Sherpas of Nepal's Khumbu Valley and in some Alpine villages. And a growing number of adventure tourism operators are trying to ensure that their activities benefit the local population and environment over the long term.\n\nIn the Swiss Alps, communities have decided that their future depends on integrating tourism more effectively with the local economy. Local concern about the rising number of second home developments in the Swiss Pays d’Enhaut resulted in limits being imposed on their growth. There has also been a renaissance In communal cheese production In the area, providing the locals with a reliable source of income that does not depend on outside visitors.\n\nMany of the Arctic tourist destinations have been exploited by outside companies, who employ transient workers and repatriate most ofthe profits to their home base. But some Arctic communities are now operating tour businesses themselves, thereby ensuring that the benefits accrue locally. For instance, a native corporation [n Alaska, employing local people, Is running an alr tour from Anchorage to Kotzebue, where tourists eat Arctic food, walk on the tundra and watch local muslcians and dancers.\n\nNative people in the desert regions of the American Southwest have followed similar strategies, encouraging tourists to visit their pueblos and reservations to purchase high-quality handicrafts and artwork. The Acoma and San lldefonso pueblos have established highly profitable pottery businesses, while the Navajo and Hopi groups have been similarly successful with jewellery.\n\nToo many people livingin fragile environments have lost control over their economies, their culture and their environment when tourism has penetrated their homelands. Merely restricting tourism cannot be the solution to the imbalance, because people's desire to see new places will not just disappear. Instead, communitles in fragile environments must achieve greater control over tourism ventures in their regions, in order to balance their needs and aspirations with the demands of tourism. Agrowingnumber of communities are demonstrating that, with firm communal decision-making, this is possible. The critical question now is whether this can become the norm, rather than the exception."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t4r-g1",
+          "instruction": "Reading Passage has three sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q1",
+              "number": 1,
+              "type": "matching",
+              "prompt": "Section A",
+              "acceptedAnswers": [
+                "iii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The expansion of international tourism in recent years"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "How local communities can balance their own needs with the demands of wilderness tourism"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Fragile regions and the reasons for the expansion of tourism there"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Traditional methods of food-supply in fragile regions"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Some of the disruptive effects of wilderness tourism"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "The economic benefits of mass tourism"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.008979+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The expansion of international tourism in recent years"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "How local communities can balance their own needs with the demands of wilderness tourism"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Fragile regions and the reasons for the expansion of tourism there"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Traditional methods of food-supply in fragile regions"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Some of the disruptive effects of wilderness tourism"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The economic benefits of mass tourism"
+            }
+          ]
+        },
+        {
+          "id": "c5t4r-g2",
+          "instruction": "Reading Passage has three sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q2",
+              "number": 2,
+              "type": "matching",
+              "prompt": "Section B",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The expansion of international tourism in recent years"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "How local communities can balance their own needs with the demands of wilderness tourism"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Fragile regions and the reasons for the expansion of tourism there"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Traditional methods of food-supply in fragile regions"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Some of the disruptive effects of wilderness tourism"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "The economic benefits of mass tourism"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.008979+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The expansion of international tourism in recent years"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "How local communities can balance their own needs with the demands of wilderness tourism"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Fragile regions and the reasons for the expansion of tourism there"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Traditional methods of food-supply in fragile regions"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Some of the disruptive effects of wilderness tourism"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The economic benefits of mass tourism"
+            }
+          ]
+        },
+        {
+          "id": "c5t4r-g3",
+          "instruction": "Reading Passage has three sections. Choose the correct heading for each section from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "一 =",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:07.008979+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The expansion of international tourism in recent years"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "How local communities can balance their own needs with the demands of wilderness tourism"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Fragile regions and the reasons for the expansion of tourism there"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Traditional methods of food-supply in fragile regions"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Some of the disruptive effects of wilderness tourism"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The economic benefits of mass tourism"
+            }
+          ]
+        },
+        {
+          "id": "c5t4r-g4",
+          "instruction": "Do the following statements reflect the opinion of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q4",
+              "number": 4,
+              "type": "yes_no_ng",
+              "prompt": "The low financial cost of setting up wilderness tourism makes it attractive to many countries.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g5",
+          "instruction": "Do the following statements reflect the opinion of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q5",
+              "number": 5,
+              "type": "yes_no_ng",
+              "prompt": "0 口",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g6",
+          "instruction": "Do the following statements reflect the opinion of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q6",
+              "number": 6,
+              "type": "yes_no_ng",
+              "prompt": "C 8",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g7",
+          "instruction": "Do the following statements reflect the opinion of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q7",
+              "number": 7,
+              "type": "yes_no_ng",
+              "prompt": "= 0",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g8",
+          "instruction": "Do the following statements reflect the opinion of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q8",
+              "number": 8,
+              "type": "yes_no_ng",
+              "prompt": "11 0",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g9",
+          "instruction": "Do the following statements reflect the opinion of the writer in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q9",
+              "number": 9,
+              "type": "true_false_ng",
+              "prompt": "C 一",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              9
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g10",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "IN EITHER ORDER; BOTI REQUIRED FOR ONE MARK C (and) E",
+              "acceptedAnswers": [
+                "cheese"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD from Reading Passage 1 for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g11",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "0 8",
+              "acceptedAnswers": [
+                "tourism",
+                "tourist",
+                "tour"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD from Reading Passage 1 for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g12",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Produce and sell",
+              "acceptedAnswers": [
+                "pottery"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD from Reading Passage 1 for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g13",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "IN EITIIER ORDER; BOTH REQUIRED FOR ONE MARK D (and) G",
+              "acceptedAnswers": [
+                "jewellery",
+                "jewelry"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD from Reading Passage 1 for each answer."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Flawed Beauty: the problem with toughenedglass\n\nOn 2nd August 1999, a particularly hot day in the town of Cirencester in the UK, a large pane of toughened glass in the roof of a shopping centre at Bishops Walk shattered without warning and fell from its frame. When fragments were analysed by experts at the giant glass manufacturer Pilkington, which had made the pane, they found that minute crystals of nickel sulphide trapped inside the glass had almost certainly caused the failure.\n\nThe giass industry is aware of the issue,' says Brian Waldron, chairman of the standards committee at the Glass and Glazing Federation, a British trade association, and standards development officer at Pilkington. But he insists that cases are few and far between. 'It's a very rare phenomenon,' he says.\n\nOthers disagree. 'On average I see about one or two buildings a month suffering from nickel sulphide related failures,' says Barrie Josie, a consultant engineer involved in the Bishops Walk investigation. Other experts tell of similar experiences. Tony Wilmott of London-based consulting engineers Sandberg, and Simon Armstrong at CladTech Associates in Hampshire both say they know of hundreds of cases. \"What you hear is only the tip of the iceberg.' says Trevor Ford, a glass expert at Resolve Engineering in Brisbane. Queensland, He believes the reason is simple: 'No-one wants bad press.'\n\nToughened glass is found everywhere, from cars and bus shelters to the windows, walls and roofs of thousands of buildings around the worid. It's easy to see why. This glass has five times the strength of standard glass, and when it does break it shatters Into tiny cubes rather than large, razor-sharp shards. Architects love it because large panels can be bolted together to make transparent walls, and turning it into ceilings and floors is almost as easy.\n\nIt is made by heating a sheet of ordinary glass to about 620°C to soften it slightly, allowingits structure to expand, and then cooling it rapidly with jets of cold air. This causes the outer layer of the pane to contract and solidify before the interior. When the interior finally solidifies and shrinks, it exerts a pull on the outer layer that leaves it in permanent compression and produces a tensile force inside the glass. As cracks propagate best in materíals under tension, the compressive force on the surface must be overcome before the pane will break, makingit more resistant to cracking.\n\nThe problem starts when glass contains nickel sulphide impurities. Trace amounts of nickel and sulphur are usually present in the raw materials used to make glass, and nickel can also be introduced by fragments of nickel alloys falling into the molten glass. As the glass is heated, these atoms react to form tiny crystals of nickel sulphide. Just a tenth of a gram of nickel in the furnace can create up to 50,000 crystals.\n\nThese crystals can exist in two forms: a dense form called the alpha phase, which is stable at high temperatures, and a less dense form called the beta phase, which is stable at room temperatures. The high temperatures used in the toughening process convert all the crystals to the dense, compact alpha form. But the subsequent cooling is so rapid that the crystals don't have time to change back to the beta phase. This leaves unstable alpha crystals in the glass, primed like a coiled spring, ready to revert to the beta phase without warning.\n\nWhen this happens, the crystals expand by up to 4%. And if they are within the central, tensile region of the pane, the stresses this unleashes can shatter the whole sheet. The time that elapses before failure occurs is unpredictable. It could happen just months after manufacture, or decades later, although if the glass is heated – by sunlight, for example – the process is speeded up. Ironically, says Graham Dodd, of consulting engineers Arup in London, the oldest pane of toughened glass known to have failed due to nickel sulphide inclusions was in Pilkington's glass research building in Lathom, Lancashire. The pane was 27 years old.\n\nData showing the scale of the nickel sulphide problem is almost impossible to find. The picture is made more complicated by the fact that these crystals occur in batches. So even if, on average, there is only one inclusion in 7 tonnes of glass, if you experience one nickel suiphide failure in your building, that probably means you've got a problem in more than one pane. Josie says that in the last decade he has worked on over 15 buildings with the number of failures into double figures.\n\nOne of the worst examples of this is Waterfront Place, which was completed in 1990. Over the following decade the 40. storey Brisbane block suffered a rash of failures. Eighty panes of its toughened glass shattered due to inclusions before experts were finally called in. John Barry, an expert in nickel sulphide contamination at the University of Queensland, analysed every glass pane in the building. Using a studio camera, a photographer went up in a cradle to take photos of every pane. These were scanned under a modified microfiche reader for signs of nickel sulphide crystals. 'We discovered at least another120 panes with potentially dangerous inclusions which were then replaced,' says Barry. 'It was a very expensive and time-consumingprocess that took around six months to complete.' Though the project cost A\\$1.6 million (nearly £700,000), the alternative – re-cladding the entire building – would have cost ten times as much."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t4r-g14",
+          "instruction": "Look at the following people and the list of statements below. Match each person with the correct statement. Write the correct letter A-H in boxes 14-17 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Brian Waldron",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "regularly sees cases of nickel sulphide failure"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "closely examined all the glass in one building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "was involved with the construction of Bishops Walk"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "recommended the rebuilding of Waterfront Place"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "thinks the benefits of toughened glass are exaggerated"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "claims that nickel sulphide failure is very unusual"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "refers to the most extreme case of delayed failure"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "regularly sees cases of nickel sulphide failure"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "closely examined all the glass in one building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "was involved with the construction of Bishops Walk"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "recommended the rebuilding of Waterfront Place"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "thinks the benefits of toughened glass are exaggerated"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "claims that nickel sulphide failure is very unusual"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "refers to the most extreme case of delayed failure"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:10:33.656616+00:00"
+          }
+        },
+        {
+          "id": "c5t4r-g15",
+          "instruction": "Look at the following people and the list of statements below. Match each person with the correct statement. Write the correct letter A-H in boxes 14-17 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "TRUE",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "regularly sees cases of nickel sulphide failure"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "closely examined all the glass in one building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "was involved with the construction of Bishops Walk"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "recommended the rebuilding of Waterfront Place"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "thinks the benefits of toughened glass are exaggerated"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "claims that nickel sulphide failure is very unusual"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "refers to the most extreme case of delayed failure"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "regularly sees cases of nickel sulphide failure"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "closely examined all the glass in one building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "was involved with the construction of Bishops Walk"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "recommended the rebuilding of Waterfront Place"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "thinks the benefits of toughened glass are exaggerated"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "claims that nickel sulphide failure is very unusual"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "refers to the most extreme case of delayed failure"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:10:33.656616+00:00"
+          }
+        },
+        {
+          "id": "c5t4r-g16",
+          "instruction": "Look at the following people and the list of statements below. Match each person with the correct statement. Write the correct letter A-H in boxes 14-17 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Graham Dodd",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "regularly sees cases of nickel sulphide failure"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "closely examined all the glass in one building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "was involved with the construction of Bishops Walk"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "recommended the rebuilding of Waterfront Place"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "thinks the benefits of toughened glass are exaggerated"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "claims that nickel sulphide failure is very unusual"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "refers to the most extreme case of delayed failure"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "regularly sees cases of nickel sulphide failure"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "closely examined all the glass in one building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "was involved with the construction of Bishops Walk"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "recommended the rebuilding of Waterfront Place"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "thinks the benefits of toughened glass are exaggerated"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "claims that nickel sulphide failure is very unusual"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "refers to the most extreme case of delayed failure"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:10:33.656616+00:00"
+          }
+        },
+        {
+          "id": "c5t4r-g17",
+          "instruction": "Look at the following people and the list of statements below. Match each person with the correct statement. Write the correct letter A-H in boxes 14-17 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "57I I",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "regularly sees cases of nickel sulphide failure"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "closely examined all the glass in one building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "was involved with the construction of Bishops Walk"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "recommended the rebuilding of Waterfront Place"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "thinks the benefits of toughened glass are exaggerated"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "claims that nickel sulphide failure is very unusual"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "refers to the most extreme case of delayed failure"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "suggests that publicity about nickel sulphide failure has been suppressed"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "regularly sees cases of nickel sulphide failure"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "closely examined all the glass in one building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "was involved with the construction of Bishops Walk"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "recommended the rebuilding of Waterfront Place"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "thinks the benefits of toughened glass are exaggerated"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "claims that nickel sulphide failure is very unusual"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "refers to the most extreme case of delayed failure"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:10:33.656616+00:00"
+          }
+        },
+        {
+          "id": "c5t4r-g18",
+          "instruction": "Complete the summary below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "-29",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "numerous"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "detected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "quickly"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "agreed"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warm"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sharp"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "expands"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "slowly"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "unexpectedly"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "removed"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "contracts"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "disputed"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "cold"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "moved"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "small"
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "calculated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.289726+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": ""
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": ""
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": ""
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": ""
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": ""
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": ""
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": ""
+            },
+            {
+              "id": "P",
+              "label": "P",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              23
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 18-23 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g19",
+          "instruction": "Complete the summary below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "However, it has one disadvantage: it can shatter ___",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "numerous"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "detected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "quickly"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "agreed"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warm"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sharp"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "expands"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "slowly"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "unexpectedly"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "removed"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "contracts"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "disputed"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "cold"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "moved"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "small"
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "calculated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "numerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "detected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "quickly"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "agreed"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "warm"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sharp"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "expands"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "slowly"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "unexpectedly"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "removed"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "contracts"
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": "disputed"
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": "cold"
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": "moved"
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": "small"
+            },
+            {
+              "id": "P",
+              "label": "P",
+              "text": "calculated"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              23
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 18-23 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g20",
+          "instruction": "Complete the summary below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "The outer layer",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "numerous"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "detected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "quickly"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "agreed"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warm"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sharp"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "expands"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "slowly"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "unexpectedly"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "removed"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "contracts"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "disputed"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "cold"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "moved"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "small"
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "calculated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.289726+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": ""
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": ""
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": ""
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": ""
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": ""
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": ""
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": ""
+            },
+            {
+              "id": "P",
+              "label": "P",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              23
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 18-23 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g21",
+          "instruction": "Complete the summary below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "The outer layer ___ before the inner layer",
+              "acceptedAnswers": [
+                "K"
+              ],
+              "gapText": "The outer layer ___ before the inner layer",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.289726+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "numerous"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "detected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "quickly"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "agreed"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warm"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sharp"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "expands"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "slowly"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "unexpectedly"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "removed"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "contracts"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "disputed"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "cold"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "moved"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "small"
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "calculated"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              23
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 18-23 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g22",
+          "instruction": "Complete the summary below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Particularly if the weather is ___",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "numerous"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "detected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "quickly"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "agreed"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warm"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sharp"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "expands"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "slowly"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "unexpectedly"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "removed"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "contracts"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "disputed"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "cold"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "moved"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "small"
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "calculated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "numerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "detected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "quickly"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "agreed"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "warm"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sharp"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "expands"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "slowly"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "unexpectedly"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "removed"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "contracts"
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": "disputed"
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": "cold"
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": "moved"
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": "small"
+            },
+            {
+              "id": "P",
+              "label": "P",
+              "text": "calculated"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              23
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 18-23 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g23",
+          "instruction": "Complete the summary below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "The frequency with which such problems occur is ___ by glass experts",
+              "acceptedAnswers": [
+                "L"
+              ],
+              "gapText": "The frequency with which such problems occur is ___ by glass experts",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.289726+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "numerous"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "detected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "quickly"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "agreed"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "warm"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sharp"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "expands"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "slowly"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "unexpectedly"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "removed"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "contracts"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "disputed"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "cold"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "moved"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "small"
+                },
+                {
+                  "id": "P",
+                  "label": "P",
+                  "text": "calculated"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              23
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 18-23 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g24",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q24",
+              "number": 24,
+              "type": "true_false_ng",
+              "prompt": "Little doubt was expressed about the reason for the Bishops Walk accident.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "READING PASSAGE3"
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g25",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q25",
+              "number": 25,
+              "type": "true_false_ng",
+              "prompt": "Toughened glass has the same appearance as ordinary glass.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "READING PASSAGE3"
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g26",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q26",
+              "number": 26,
+              "type": "true_false_ng",
+              "prompt": "There is plenty of documented evidence available about the incidence of nickel sulphide failure.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "READING PASSAGE3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The effects of light on plant and animal species\n\nLight is important to organisms for two different reasons. Firstly it is used as a cue for the timing of daily and seasonal rhythms in both plants and animals, and secondly it is used to assist growth in plants.\n\nBreeding in most organisms occurs during a part of the year only, and so a reliable cue is needed to trigger breeding behaviour. Day length is an excellent cue, because it provides a perfectly predictable pattern of change within the year. In the temperate zone in spring. temperatures fluctuate greatly from day to day, but day length increases steadily by a predictable amount. The seasonal impact of day length on physiological responses is called photoperiodism, and the amount of experimental evidence for this phenomenon is considerable. For example, some species of birds' breeding can be induced even in midwinter simply by increasing day length artificially (Wolfson 1964). Other examples of photoperiodism occur in plants. A short-day plant flowers when the day is less than a certain critical length. A long-day plant flowers after a certain critical day length is exceeded. In both cases the critical day length differs from species to species. Plants which flower after a period of vegetative growth, regardless of photoperiod, are known as day-neutral plonts.\n\nBreeding seasons in animals such as birds have evolved to occupy the part of the year in which offspring have the greatest chances of survival. Before the breeding season begins, food reserves must be built up to support the energy cost of reproduction, and to provide for young birds both when they are in the nest and after fledging. Thus many temperate-zone birds use the increasing day lengths in spring as a cue to begin the nesting cycle, because this is a point when adequate food resources will be assured.\n\nThe adaptive significance of photoperiodism in plants is also clear. Short-day plants that flower in spring in the temperate zone are adapted to maximising seedling growth during the growing season. Long-day plants are adapted for situations that require fertilization by insects, or a long period of seed ripening. Short-day plants that flower in the autumn in the temperatezone are able to build up food reserves over the growing season and over winter as seeds. Day-neutral plants have an evolutionary advantage when the connection between the favourable period for reproduction and day length is much less certain. For example, desert annuals germinate, flower and seed whenever suitable rainfall occurs, regardless of the day length.\n\n<table><tr><td>The breeding season of some plants can be delayed to extraordinary lengths. Bamboos are perennial grasses that remain in a vegetative state for many years and then suddenly flower, fruit and die (Evans 1976). Every bamboo of the species Chusquea abietifolia on the island of Jamaica flowered, set seed and died during 1884. The next generation of bamboo flowered and died between 1916 and1918, which suggests a vegetative cycle of about 31 years. The climatic trigger for this flowering cycle is not yet known, but the adaptive significance is clear. The simultaneous production of masses of bamboo seeds (in some cases lying 12 to 15 centimetres deep on the ground) is more than all the seed-eating animals can cope with at the time, so that some seeds escape being eaten and grow up to form the next generation (Evans 1976). The second reason light is important to organisms is that it is essential for photosynthesis. This</td></tr><tr><td>is the process by which plants use energy from the sun to convert carbon from soil or water into organic material for growth. The rate of photosynthesis in a plant can be measured by calculating the rate of its uptake of carbon. There is a wide range of photosynthetic responses of plants to variations in light intensity. Some plants reach maximal photosynthesis at one-quarter full sunlight, and others, like sugarcane, never reach a maximum, but continue to increase photosynthesis rate as líght intensity rises. Plants in general can be divided into two groups: shade-tolerant species and shade-intolerant</td></tr><tr><td>species. This classification is commonly used in forestry and horticulture. Shade-tolerant plants have lower photosynthetic rates and hence have lower growth rates than those of shade-intolerant species. Plant species become adapted to living in a certain kind of habitat, and in the process evolve a series of characteristics that prevent them from occupying other habitats. Grime (1966) suggests that light may be one of the major components directing these adaptations. For example, eastern hemlock seedlings are shade-tolerant. They can survive in the forest understorey under very low light levels because they have a low photosynthetic rate.</td></tr></table>"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t4r-g27",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q27",
+              "number": 27,
+              "type": "true_false_ng",
+              "prompt": "33 on your unswer sheet. write",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g28",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q28",
+              "number": 28,
+              "type": "true_false_ng",
+              "prompt": "Some types of bird can be encouraged to breed out of season.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g29",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q29",
+              "number": 29,
+              "type": "true_false_ng",
+              "prompt": "Photoperiodism is restricted to certain geographie areas.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g30",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q30",
+              "number": 30,
+              "type": "true_false_ng",
+              "prompt": "-40 you are highly unlikely to get an aeceptable score under examination conditions and we recommend that you spend a lot of time improving your English before you take IELTS. you may get an acceptable seore under examination conditions but we recommend that you think about having more practice or lessons before you take IELTS. you are likely to get an acceptable score under examination conditions but remember that different institutions will find different scores acceptable. # Model and sample answers for Writing tasks",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g31",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q31",
+              "number": 31,
+              "type": "true_false_ng",
+              "prompt": "Bamboos flower several times during their life cycle.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g32",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q32",
+              "number": 32,
+              "type": "true_false_ng",
+              "prompt": "E C",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g33",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q33",
+              "number": 33,
+              "type": "true_false_ng",
+              "prompt": "Eastern hemlock is a fast-growing plant.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4r-g34",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "NOT GIVEN",
+              "acceptedAnswers": [
+                "temperatures"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 34–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g35",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "FALSE",
+              "acceptedAnswers": [
+                "day-neutral",
+                "day-neutral plants"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 34–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g36",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Birds in temperate climates associate longer days with nesting and the availability of ....",
+              "acceptedAnswers": [
+                "food",
+                "food resources",
+                "adequate food resources"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 34–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g37",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Plants that ower when days are long often depend on..to help them reproduce.",
+              "acceptedAnswers": [
+                "insects",
+                "fertilization by insects"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 34–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g38",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Desert annuals respond to.as a signal for reproduction.",
+              "acceptedAnswers": [
+                "rainfall",
+                "suitable rainfall"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 34–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g39",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "There is no limit tso the photosynthetie rate isn plants such as..",
+              "acceptedAnswers": [
+                "sugarcane"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 34–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t4r-g40",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4r-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Tolerance to shade is one criterion for the ...........of plants in forestry and horticulture.",
+              "acceptedAnswers": [
+                "classification"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 34–40 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

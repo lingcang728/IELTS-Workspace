@@ -1,0 +1,2325 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-5-test-1-reading",
+  "title": "Cambridge IELTS 5 Academic Test 1 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0018-33fb89f3",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 5",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题5.pdf",
+        "sha256": "7df6a474e84e69a622dd48fc009e69dd7fd711a64b713671bdf492311f5f58cc"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C05\\剑桥雅思真题5\\auto\\剑桥雅思真题5.md",
+        "sha256": "f824a696e954976360e36d9a1615a7da3cbfefff2c6511ed3f1e04f97d5a6c21",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-5-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Johnson's Dictionary\n\n[]\n\nFor the century before Johnson's Dictionary was published in 1775, there had been concern about the state of the English language. There was no standard way of speaking or writing and no agreement as to the best way of bringing some order to the chaos of English spelling. Dr Johnson provided the solution.\n\nThere had, of course, been dictionaries in the past, the first of these being a little book of some 120 pages, compiled by a certain Robert Cawdray, published in 1604 under the title A Table Aíphabeticall 'of hard usuall English wordes'. Like the various dictionaries that came after it during the seventeenth century, Cawdray's tended to concentrate on 'scholarly' words; one function of the dictionary was to enable its student to convey an impression of fine learning.\n\nBeyond the practical need to make order out of chaos, the rise of dictionaries is associated with the rise of the English middle class, who were anxious to define and circumscribe the various worlds to conquer – lexical as well as social and commercial. It is highly appropriate that Dr Samuel Johnson, the very model of an eighteenth-century literary man, as famous in his own time as in ours, should have\n\npublished his Dictionary at the very beginning of the heyday of the middle class.\n\njohnson was a poet and critic who raised common sense to the heights of genius. His approach to the problems that had worried writers throughout the late seventeenth and early eighteenth centuries was intensely practical. Up until his time, the task of producing a dictionary on such a large scale had seemed impossible without the establishment of an academy to make decisions about right and wrong usage. Johnson decided he did not need an academy to settle arguments about language: he would write a dictionary himself; and he would do it single-handed. Johnson signed the contract for the Dictionary with the bookseller Robert Dosley at a breakfast held at the Golden Anchor Inn near Holborn Bar on 18 June 1764. He was to be paid £1,575 in instalments, and from this he took money to rent 17 Gough Square, in which he set up his 'dictionary workshop'.\n\nJames Boswell, his biographer, described the garret where Johnson worked as fitted up like a counting house' with a long desk running down the middle at which the copying clerks would work standing up.\n\nJohnson himself was stationed on a rickety chair at an 'old crazy deal table' surrounded by a chaos of borrowed books. He was also helped by six assistants, two of whom died whilst the Dictionary was still in preparation.\n\nThe work was immense; filling about eighty large notebooks (and without a library to hand). Johnson wrote the definitions of over 40,000 words, and illustrated their many meanings with some 14.000 quotations drawn from English writing on every subject, from the Elizabethans to his own time. He did not expect to achieve complete originality. Working to a deadline, he had to draw on the best of all previous dictionaries, and to make his work one of heroic synthesis. In fact, it was very much more. Unlike his predecessors, Johnson treated English very practically, as a living language, with many different shades of meaning. He adopted his definitions on the principle of English common law – according to precedent. After its publication, his Dictionary was not seriously rivalled for over a century.\n\nAfter many vicissitudes the Dictionary was finally published on 15 April 1775. It was instantly recognised as a landmark throughout Europe.'This very noble work,' wrote the leading Italian lexicographer,\"will be a perpetual monument of Fame to the\n\nAuthor, an Honour to his own Country in particular, and a general Benefit to the republic of Letters throughout Europe.' The fact that Johnson had taken on the Academies of Europe and matched them (everyone knew that forty French academics had taken forty years to produce the first French national dictionary) was cause for much English celebration.\n\nJohnson had worked for nine years, 'with little assistance of the learned, and without any patronage of the great; not in the soft obscurities of retirement, or under the shelter of academic bowers, but amidst inconvenience and distraction, in sickness and in sorrow', For all its faults and eccentricities his two-volume work is a masterpiece and a landmark, in his own words,'setting the orthography, displaying the analogy, regulating the structures, and ascertaining the significations of English words'. It is the cornerstone of Standard English, an achievement which, in James Boswell's words,'conferred stability on the language of his country’.\n\nThe Dictionary, together with his other writing, made Johnson famous and so well esteemed that his friends were able to prevail upon King George Ill to offer him a pension. From then on, he was to become the Johnson of folklore."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t1r-g1",
+          "instruction": "Choose THREE letters A-H.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "Here we have two radically different explanations for why so many teacher-subjects were willing to forgo their sense of personal responsibility for the sake of an institutional authority figure. The problem for biologists, psychologists and anthropologists is to sort out which of these two polar explanations is more plausible. This, in essence, is the problem of modern sociobiology – to discover the degree to which hard-wired genetic programming dictates, or at least strongly biases, the interaction of animais and humans with their environment, that is, their behaviour. Put another way. sociob",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It avoided all scholarly words."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was the only English dictionary in general use for 200 years."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was famous because of the large number of people involved."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It focused mainly on language from contemporary texts."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "There was a time limit for its completion."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It ignored work done by previous dictionary writers."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It took into account subtleties of meaning."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Its definitions were famous for their originality."
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It avoided all scholarly words."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was the only English dictionary in general use for 200 years."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It was famous because of the large number of people involved."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It focused mainly on language from contemporary texts."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "There was a time limit for its completion."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It ignored work done by previous dictionary writers."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It took into account subtleties of meaning."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Its definitions were famous for their originality."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:44.533860+00:00"
+          }
+        },
+        {
+          "id": "c5t1r-g2",
+          "instruction": "Choose THREE letters A-H.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q2",
+              "number": 2,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which THREE of the following statements are true of Johnson's Dictionary?",
+              "acceptedAnswers": [
+                "D",
+                "E",
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It avoided all scholarly words."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was the only English dictionary in general use for 200 years."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was famous because of the large number of people involved."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It focused mainly on language from contemporary texts."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "There was a time limit for its completion."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It ignored work done by previous dictionary writers."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It took into account subtleties of meaning."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Its definitions were famous for their originality."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It avoided all scholarly words."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was the only English dictionary in general use for 200 years."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It was famous because of the large number of people involved."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It focused mainly on language from contemporary texts."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "There was a time limit for its completion."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It ignored work done by previous dictionary writers."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It took into account subtleties of meaning."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Its definitions were famous for their originality."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:44.533860+00:00"
+          }
+        },
+        {
+          "id": "c5t1r-g3",
+          "instruction": "Choose THREE letters A-H.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q3",
+              "number": 3,
+              "type": "multi_choice",
+              "prompt": "Third selected letter: Which THREE of the following statements are true of Johnson's Dictionary?",
+              "acceptedAnswers": [
+                "D",
+                "E",
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It avoided all scholarly words."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was the only English dictionary in general use for 200 years."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was famous because of the large number of people involved."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It focused mainly on language from contemporary texts."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "There was a time limit for its completion."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It ignored work done by previous dictionary writers."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It took into account subtleties of meaning."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Its definitions were famous for their originality."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It avoided all scholarly words."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was the only English dictionary in general use for 200 years."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It was famous because of the large number of people involved."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It focused mainly on language from contemporary texts."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "There was a time limit for its completion."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It ignored work done by previous dictionary writers."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It took into account subtleties of meaning."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Its definitions were famous for their originality."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:05:44.533860+00:00"
+          }
+        },
+        {
+          "id": "c5t1r-g4",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "In 1764 Dr Johnson accepted the contract to produce a dictionary. Having rented a garret, he took on a number of 4 who stood at a long central desk.",
+              "acceptedAnswers": [
+                "clerks",
+                "copying clerks"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              7
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 4–7 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g5",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Johnson did not have a 5 available to him, but eventually produced definitions of in excess of 40,000 words written down in 80 large notebooks.",
+              "acceptedAnswers": [
+                "library"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              7
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 4–7 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g6",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "According to his biographer, James Boswell, Johnson's principal achievement was to bring 6 to the English language.",
+              "acceptedAnswers": [
+                "stability"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              7
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 4–7 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g7",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "As a reward for his hard work, he was granted a 7 by the king.",
+              "acceptedAnswers": [
+                "pension"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              7
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 4–7 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "The growing importance of the middle classes led to an increased demand for dictionaries",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g9",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q9",
+              "number": 9,
+              "type": "true_false_ng",
+              "prompt": "Johnson has become more well known since his death",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g10",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q10",
+              "number": 10,
+              "type": "true_false_ng",
+              "prompt": "Johnson had been planning to write a dictionary for several years",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g11",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q11",
+              "number": 11,
+              "type": "true_false_ng",
+              "prompt": "Johnson set up an academy to help with the writing of his Dictionary",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g12",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q12",
+              "number": 12,
+              "type": "true_false_ng",
+              "prompt": "Johnson only received payment for his Dictionary on its completion",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g13",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q13",
+              "number": 13,
+              "type": "true_false_ng",
+              "prompt": "Not all of the assistants survived to see the publication of the Dictionary",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Nature or Nurture?\n\nA A few years ago, in one of the most fascinating and disturbing experimentsin behavioural psychology, Stanley Milgram of Yale University tested 40 subjects from ail walks of life for their willingness to obey instructions given by a 'leader' in a situation in which the subjects might feel a personal distaste for the actions they were called upon to perform. Specifically. Milgram told each volunteer 'teacher-subject' that the experiment was in the noble cause of education, and was designed to test whether or not punishing pupils for their mistakes would have a positive effect on the pupils' ability to learn.\n\nB Milgram's experimental set-up involved placing the teacher-subject before a panel of thirty switches with labels ranging from '15 volts of electricity (slight shock)' to ‘450 volts (danger – severe shock)' in steps of 15 volts each. The teacher-subject was told that whenever the pupil gave the wrong answer to a question, a shock was to be administered, beginning at the lowest level and increasing in severity with each successive wrong answer. The supposed 'pupil' was in reality an actor hired by Milgram to simulate receiving the shocks by emitting a spectrum of groans, screams and writhings together with an assortment of statements and expletives denouncing both the experiment and the experimenter. Milgram told the teacher-subject to ignore the reactions of the pupil, and to administer whatever level of shock was calied for, as per the rule governing the experimental situation of the moment.\n\nC As the experiment unfolded, the pupil wouid deliberately give the wrong answers to questions posed by the teacher, thereby bringing on various electrical punishments, even up to the danger level of 300 volts and beyond. Many of the teacher-subjects balked at administering the higher levels of punishment, and turned to Milgram with questioning looks and/or complaints about continuing the experiment. In these situations, Milgram calmly explained that the teacher-subject was to ignore the pupil's cries for mercy and carry on with the experiment. If the subject was still reluctant to proceed, Milgram said that it was important for the sake of the experiment that the procedure be foliowed through to the end. His final argument was, ‘You have no other choice. You must go on.' What Milgram was trying to discover was the number of teacher-subjects who would be willing to administer the highest levels of shock, even in the face of strong personal and moral revulsion against the rules and conditions of the experiment.\n\nD Prior to carrying out the experiment, Milgram explained his idea to a group of 39 psychiatrists and asked them to predict the average percentage of people in an ordinary population who would be willing to administer the highest shock level of 450 volts. The overwhelming consensus was that virtually all the teacher-subjects would refuse to obey the experimenter. The psychiatrists felt that 'most subjects would not go beyond 150 volts' and they further anticipated that only four per cent would go up to 300 volts.\n\nFurthermore, they thought that only a lunatic fringe of about one in 1,000 would give the highest shock of 450 volts.\n\nWhat were the actual results? Well, over 60 per cent of the teacher-subjects continued to obey Milgram up to the 450-volt limit! In repetitions of the experiment in other countries, the percentage of obedient teacher-subjects was even higher, reaching 85 per cent in one country. How can we possibly account for this vast discrepancy between what calm, rational, knowledgeable people predict in the comfort of their study and what pressured, flustered, but cooperative 'teachers' actually do in the laboratory of reat life?\n\nOne's first inclination might be to argue that there must be some sort of built-in animal aggression instinct that was activated by the experiment, and that Milgram's teachersubjects were just following a genetic need to discharge this pent-up primal urge onto the pupil by administering the electrical shock. A modern hard-core sociobiologist might even go so far as to claím that this aggressive instinct evolved as an advantageous trait, having been of survival value to our ancestors in their struggle against the hardships of life on the plains and in the caves, ultimately finding its way into our genetic make-up as a remnant of our ancient animal ways.\n\nen An alternative to this notion of genetic programming is to see the teacher-subjects' actions as a result of the social environment under which the experiment was carried out. As Milgram himself pointed out, 'Most subjects in the experiment see their behaviour in a larger context that is benevolent and useful to society – the pursuit of scientific truth.The psychological laboratory has a strong claim to legitimacy and evokes trust and confidence in those who perform there. An action such as shocking a victim, which in isolation appears evil, acquires a completely different meaning when piaced in this setting.\n\nH Thus, in this explanation the subject merges his unique personality and personal and moral code with that of larger institutional structures, surrendering individual properties like loyalty, self-sacrifice and discipline to the service of malevolent systems of authority.\n\n1 Here we have two radically different explanations for why so many teacher-subjects were willing to forgo their sense of personal responsibility for the sake of an institutional authority figure. The problem for biologists, psychologists and anthropologists is to sort out which of these two polar explanations is more plausible. This, in essence, is the problem of modern sociobiology – to discover the degree to which hard-wired genetic programming dictates, or at least strongly biases, the interaction of animais and humans with their environment, that is, their behaviour. Put another way. sociobiology is concerned with elucidating the biological basis of all behaviour."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t1r-g14",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "a biological explanation of the teacher-subjects' behaviour",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a 450-volt shock was dangerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1r-g15",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "the explanation Milgram gave the teacher-subjects for the experiment",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a 450-volt shock was dangerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1r-g16",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "the identity of the pupils",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a 450-volt shock was dangerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1r-g17",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "the expected statistical outcome",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a 450-volt shock was dangerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1r-g18",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "the general aim of sociobiological study",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a 450-volt shock was dangerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1r-g19",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "the way Milgram persuaded the teacher-subjects to continue",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a 450-volt shock was dangerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t1r-g20",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "The teacher-subjects were told that they were testing whether A a 450-volt shock was dangerous. B punishment helps learning. C the pupils were honest. D they were suited to teaching",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a 450-volt shock was dangerous."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "punishment helps learning."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the pupils were honest."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "they were suited to teaching."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:03.900819+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g21",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "The teacher-subjects were instructed to A stop when a pupil asked them to. B denounce pupils who made mistakes. C reduce the shock level after a correct answer. D give punishment according to a rule",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a 450-volt shock was dangerous"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "punishment helps learning"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the pupils were honest"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "they were suited to teaching"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a 450-volt shock was dangerous"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g22",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Before the experiment took place the psychiatrists A believed that a shock of 150 volts was too dangerous. B failed to agree on how the teacher-subjects would respond to instructions C underestimated the teacher-subjects' willingness to comply with experimental procedure. D thought that many of the teacher-subjects would administer a shock of 450 volts",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "punishment helps learning"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the pupils were honest"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "they were suited to teaching"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "stop when a pupil asked them to"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "punishment helps learning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the pupils were honest"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "they were suited to teaching"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "stop when a pupil asked them to"
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g23",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q23",
+              "number": 23,
+              "type": "true_false_ng",
+              "prompt": "Several of the subjects were psychology students at Yale University",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g24",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q24",
+              "number": 24,
+              "type": "true_false_ng",
+              "prompt": "Some people may believe that the teacher-subjects' behaviour could be explained as a positive survival mechanism",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g25",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q25",
+              "number": 25,
+              "type": "true_false_ng",
+              "prompt": "In a sociological explanation, personal values are more powerful than authority",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g26",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q26",
+              "number": 26,
+              "type": "true_false_ng",
+              "prompt": "Milgram's experiment solves an important question in sociobiology",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The Truth about the Environment\n\nFor many environmentalists, the world seems to be getting worse. They have developed a hit-list of our main fears: that natural resources are running out; that the population is ever growing, leaving less and less to eat; that species are becoming extinct in vast numbers, and that the planet's air and water are becoming ever more polluted.\n\nBut a quick look at the facts shows a different picture. First, energy and other natural resources have become more abundant, not less so, since the book The Limits to Growth’ was published in 1972 by a group of scientists. Second, more food is now produced per head of the world's population than at any time in history. Fewer people are starving. Third, although species are indeed becoming extinct, only about 0.7% of them are expected to disappear in the next 50 years, not 25–50%, as has so often been predicted. And finally, most forms of environmental pollution either appear to have been exaggerated, or are transient – associated with the early phases of industrialisation and therefore best cured not by restricting economic growth, but by accelerating it. One form of pollution – the release of greenhouse gases that causes global warming – does appear to be a phenomenon that is going to extend well into our future, but its total impact is unlikely to pose a devastating problem. A bigger problem may well turn out to be an inappropriate response to it.\n\nYet opinion polls suggest that many people nurture the belief that environmental standards are declining and four factors seem to cause this disjunction between perception and reality.\n\nOne is the lopsidedness built into scientific research. Scientific funding goes mainly to areas with many problems. That may be wise policy, but it will also create an impression that many more potential problems exist than is the case.\n\nSecondly, environmental groups need to be noticed by the mass media. They also need to keep the money rolling in. Understandably, perhaps, they sometimes overstate their arguments. In 1997, for example, the World Wide Fund for Nature issued a press release entitled: 'Two thirds of the world's forests lost forever'. The truth turns out to be nearer 20%.\n\nThough these groups are run overwhelmingly by selfless folk, they nevertheless share many of the characteristics of other lobby groups. That would matter less if people applied the same degree of scepticism to environmental lobbying as they do to lobby groups in other fields. A trade organisation arguing for, say, weaker pollution controls is instantly seen as self-interested. Yet a green organisation opposing such a weakening is\n\nseen as altruistic, even if an impartial view of the controls in question might suggest they are doing more harm than good. A third source of confusion is the attitude of the media. People are clearly more curious about bad news than good. Newspapers and broadcasters are there to provide what the\n\nand causing 22 deaths. However, according to an article in the Bulletin of the American Meteorologica/ Society, the damage it did was estimated at US$4 billion but the benefits amounted to some US$19 billion. These came from higher winter temperatures (which saved an estimated 850 lives, reduced heating costs and diminished spring floods caused by meltwaters). The fourth factor is poor individual perception. People worry that the endless rise in the amount of stuff everyone throws away will cause the world to run out of places to\n\ndispose of waste. Yet, even if America's trash output continues to rise as it has done in the past, and even if the American population doubles by 2100, all the rubbish America produces through the entire 21st century will still take up only one-12,000th of the area of the entire United States. So what of global warming? As we know, carbon dioxide emissions are causing the\n\nplanet to warm. The best estimates are that the temperatures will rise by 2–3ºC in this century, causing considerable problems, at a total cost of US$5,000 billion. Despite the intuition that something drastic needs to be done about such a costly problem, economic analyses clearly show it will be far more expensive to cut carbon dioxide emissions radically than to pay the costs of adaptation to the increased\n\ntemperatures. A model by one of the main authors of the United Nations Climate Change Panel shows how an expected temperature increase of 2.1 degrees in 2100 would only be diminished to an increase of 1.9 degrees. Or to put it another way, the temperature increase that the planet would have experienced in 2094 would be postponed to 2100.\n\nSo this does not prevent global warming, but merely buys the world six years. Yet the cost of reducing carbon dioxide emissions, for the United States alone, will be higher than the cost of solving the world's single, most pressing health problem: providing universal access to clean drinking water and sanitation. Such measures would avoid 2 million deaths every year, and prevent half a billion people from becoming seriously ill. It is crucial that we look at the facts if we want to make the best possible decisions for the future. It may be costly to be overly optimistic – but more costly still to be too pessimistic."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t1r-g27",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q27",
+              "number": 27,
+              "type": "yes_no_ng",
+              "prompt": "Environmentalists take a pessimistic view of the world for a number of reasons",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g28",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q28",
+              "number": 28,
+              "type": "true_false_ng",
+              "prompt": "Data on the Earth's natural resources has only been collected since 1972",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g29",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q29",
+              "number": 29,
+              "type": "yes_no_ng",
+              "prompt": "The number of starving people in the world has increased in recent years",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g30",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q30",
+              "number": 30,
+              "type": "true_false_ng",
+              "prompt": "Extinct species are being replaced by new species",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g31",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q31",
+              "number": 31,
+              "type": "yes_no_ng",
+              "prompt": "Some pollution problems have been correctly linked to industrialisation",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g32",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q32",
+              "number": 32,
+              "type": "yes_no_ng",
+              "prompt": "It would be best to attempt to slow down economic growth",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5t1r-g33",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "What aspect of scientific research does the writer express concern about in paragraph 4? A the need to produce results B the lack of financial support C the selection of areas to research D the desire to solve every research problem",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the need to produce results"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the lack of financial support"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the selection of areas to research"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the desire to solve every research problem"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the need to produce results"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the lack of financial support"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the selection of areas to research"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the desire to solve every research problem"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g34",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "The writer quotes from the Worldwide Fund for Nature to illustrate how A influential the mass media can be. B effective environmental groups can be. C the mass media can help groups raise funds. D environmental groups can exaggerate their claims",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Write your answers in boxes 33–37 on your answer sheet"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the need to produce results"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the lack of financial support"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the selection of areas to research"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Write your answers in boxes 33–37 on your answer sheet"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the need to produce results"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the lack of financial support"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the selection of areas to research"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g35",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "What is the writer's main point about lobby groups in paragraph 6? A Some are more active than others. B Some are better organised than others. C Some receive more criticism than others. DSome support more important issues than others",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the desire to solve every research problem"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "influential the mass media can be"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "effective environmental groups can be"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the mass media can help groups raise funds"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the desire to solve every research problem"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "influential the mass media can be"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "effective environmental groups can be"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the mass media can help groups raise funds"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g36",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "The writer suggests that newspapers print items that are intended to A educate readers. B meet their readers' expectations. C encourage feedback from readers D mislead readers",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "environmental groups can exaggerate their claims"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Some are more active than others"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Some are better organised than others"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Some receive more criticism than others"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "environmental groups can exaggerate their claims"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Some are more active than others"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Some are better organised than others"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Some receive more criticism than others"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g37",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q37",
+              "number": 37,
+              "type": "single_choice",
+              "prompt": "What does the writer say about America's waste problem? A It will increase in line with population growth. B It is not as important as we have been led to believe. C It has been reduced through public awareness of the issues. D It is only significant in certain areas of the country",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Some receive more criticism than others"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "educate readers"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "meet their readers' expectations"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mislead readers"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Some receive more criticism than others"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "educate readers"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "meet their readers' expectations"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "mislead readers"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c5t1r-g38",
+          "instruction": "Complete the summary with the list of words A-I below. Write the correct letter A-I.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q38",
+              "number": 38,
+              "type": "single_choice",
+              "prompt": "The writer admits that global warming is a challenge, but says that it will not have a catastrophic impact on our future",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "unrealistic"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agreed"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "expensive"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "right"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "long-term"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "usual"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "surprising"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "personal"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "urgent"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "unrealistic"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "agreed"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "expensive"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "right"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "long-term"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "usual"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "surprising"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "personal"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "urgent"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:13.696486+00:00"
+          }
+        },
+        {
+          "id": "c5t1r-g39",
+          "instruction": "Complete the summary with the list of words A-I below. Write the correct letter A-I.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q39",
+              "number": 39,
+              "type": "single_choice",
+              "prompt": "It will not have a catastrophic impact on our future, if we deal with it in the way",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "unrealistic"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agreed"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "expensive"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "right"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "long-term"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "usual"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "surprising"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "personal"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "urgent"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "unrealistic"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "agreed"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "expensive"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "right"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "long-term"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "usual"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "surprising"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "personal"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "urgent"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:13.696486+00:00"
+          }
+        },
+        {
+          "id": "c5t1r-g40",
+          "instruction": "Complete the summary with the list of words A-I below. Write the correct letter A-I.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t1r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "He feels it would be better to spend money on the more health problem of providing the world's population with clean drinking water",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "unrealistic"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agreed"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "expensive"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "right"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "long-term"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "usual"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "surprising"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "personal"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "urgent"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:28+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "unrealistic"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "agreed"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "expensive"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "right"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "long-term"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "usual"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "surprising"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "personal"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "urgent"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:13.696486+00:00"
+          }
+        }
+      ]
+    }
+  ]
+}

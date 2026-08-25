@@ -1,0 +1,2117 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-13-test-2-listening",
+  "title": "Cambridge IELTS 13 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0018-a27cd58a",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 13",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题13.pdf",
+        "sha256": "48bd75f7020065184a228ff32775802b887c8da18f77bccdb44c3e569e06a3bf"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C13\\剑桥雅思真题13\\auto\\剑桥雅思真题13.md",
+        "sha256": "5504759cfa0afc4b665c6af7e59bd8d4d70aa6e7f1785dd19bd71e7c4185fdb0",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=1, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-13-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nEpisodic memory \nthe ability to recall details, e.g. the time and 31 . of past \nevents \ndifferent to semantic memory – the ability to remember general information \nabout the 32 …… which does not involve recalling \n33 ... .. nformatioon \nForming episodic memories involves three steps: \nEncoding \ninvolves receiving and processing information \nthe more 34 ... .. given to an event, the more successfully it \ncan be encoded \nto remember a 35 . , it is useful to have a strategy for \nencoding such information \nConsolidation \nhow memories are strengthened and stored \nmost effective when memories can be added to a 36 ... \nof related information \nthe 37 ... of retrieval affects the strength of memories \nRetrieval \nmemory retrieval often depends on using a prompt, e.g. the \n38 ... . of an object near to the place where you left your car \nEpisodic memory impairments \nthese affect people with a wide range of medical conditions \ngames which stimulate the 39 have been found to help \npeople with schizophrenia \nchildren with autism may have difficulty forming episodic memories — \npossibly because their concept of the 4.. . may be absent \nmemory training may help autistic children develop social skills"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t2l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Full membership costs $260; this covers cycling and ___ all over Australia",
+              "acceptedAnswers": [
+                "races"
+              ],
+              "gapText": "Full membership costs $260; this covers cycling and 1 ___ all over Australia",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "The club kit is made by a company called",
+              "acceptedAnswers": [
+                "insurance"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "I buy that at the club? JIM: No, it's made to order by a company in Brisbane. You can find them online; they're called Jerriz. That's J-E-R-R-I-Z. You can use your membership number to put in an order on their website. WOMAN: OK. Now, can you tell me a bit about the rides I can do? JIM: Sure. So we have training rides pretty w",
+              "acceptedAnswers": [
+                "Jerriz"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Level B: speed about ___ kph",
+              "acceptedAnswers": [
+                "25",
+                "twenty-five"
+              ],
+              "gapText": "Level B: speed about 4 ___ kph",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "30 am, meet at the 5 – Thursdays at 5.30 am, meet at the entrance to the",
+              "acceptedAnswers": [
+                "stadium"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Further information Rides are about an hour and a half Members often have",
+              "acceptedAnswers": [
+                "park"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Members often have ___ together afterwards",
+              "acceptedAnswers": [
+                "coffee"
+              ],
+              "gapText": "Members often have 7 ___ together afterwards",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "There is not always a ___ with the group on these rides",
+              "acceptedAnswers": [
+                "leader"
+              ],
+              "gapText": "There is not always a 8 ___ with the group on these rides",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Check and print the ___ on the website beforehand",
+              "acceptedAnswers": [
+                "route"
+              ],
+              "gapText": "Check and print the 9 ___ on the website beforehand",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Bikes must have ___",
+              "acceptedAnswers": [
+                "lights"
+              ],
+              "gapText": "Bikes must have 10 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 520936
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nEpisodic memory \nthe ability to recall details, e.g. the time and 31 . of past \nevents \ndifferent to semantic memory – the ability to remember general information \nabout the 32 …… which does not involve recalling \n33 ... .. nformatioon \nForming episodic memories involves three steps: \nEncoding \ninvolves receiving and processing information \nthe more 34 ... .. given to an event, the more successfully it \ncan be encoded \nto remember a 35 . , it is useful to have a strategy for \nencoding such information \nConsolidation \nhow memories are strengthened and stored \nmost effective when memories can be added to a 36 ... \nof related information \nthe 37 ... of retrieval affects the strength of memories \nRetrieval \nmemory retrieval often depends on using a prompt, e.g. the \n38 ... . of an object near to the place where you left your car \nEpisodic memory impairments \nthese affect people with a wide range of medical conditions \ngames which stimulate the 39 have been found to help \npeople with schizophrenia \nchildren with autism may have difficulty forming episodic memories — \npossibly because their concept of the 4.. . may be absent \nmemory training may help autistic children develop social skills"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t2l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "How much time for volunteering does the company allow per employee?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "two hours per week"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "one day per month"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "8 hours per year"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "two hours per week"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "one day per month"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "8 hours per year"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "In feedback almost all employees said that volunteering improved their",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "chances of promotion."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "job satisfaction."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "relationships with colleagues."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "chances of promotion."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "job satisfaction."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "relationships with colleagues."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Last year some staff helped unemployed people with their",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "literacy skills."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "job applications."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "communication skills."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "literacy skills."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "job applications."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "communication skills."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "This year the company will start a new volunteering project with a local",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "school."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "park."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "charity."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "school."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "park."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "charity."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Where will the Digital Inclusion Day be held?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "at the company's training facility"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "at a college"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in a community centre"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "at the company's training facility"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "at a college"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "in a community centre"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "What should staff do if they want to take part in the Digital Inclusion Day?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "fill in a form"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "attend a training workshop"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "get permission from their manager"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "fill in a form"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "attend a training workshop"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "get permission from their manager"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g17",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q17",
+              "number": 17,
+              "type": "multi_choice",
+              "prompt": "What TWO things are mentioned about the participants on the last Digital Inclusion Day?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They were all over 70."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They never used their computer."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Their phones were mostly old-fashioned."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They only used their phones for making calls."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "They initially showed little interest."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g18",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q18",
+              "number": 18,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: What TWO things are mentioned about the participants on the last Digital Inclusion Day?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They were all over 70."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They never used their computer."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Their phones were mostly old-fashioned."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They only used their phones for making calls."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "They initially showed little interest."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g19",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q19",
+              "number": 19,
+              "type": "multi_choice",
+              "prompt": "What TWO activities on the last Digital Inclusion Day did participants describe as useful?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "learning to use tablets"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "communicating with family"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "shopping online"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "playing online games"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "sending emails"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g20",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q20",
+              "number": 20,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: What TWO activities on the last Digital Inclusion Day did participants describe as useful?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "learning to use tablets"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "communicating with family"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "shopping online"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "playing online games"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "sending emails"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 520936,
+      "audioDurationMs": 439843
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nEpisodic memory \nthe ability to recall details, e.g. the time and 31 . of past \nevents \ndifferent to semantic memory – the ability to remember general information \nabout the 32 …… which does not involve recalling \n33 ... .. nformatioon \nForming episodic memories involves three steps: \nEncoding \ninvolves receiving and processing information \nthe more 34 ... .. given to an event, the more successfully it \ncan be encoded \nto remember a 35 . , it is useful to have a strategy for \nencoding such information \nConsolidation \nhow memories are strengthened and stored \nmost effective when memories can be added to a 36 ... \nof related information \nthe 37 ... of retrieval affects the strength of memories \nRetrieval \nmemory retrieval often depends on using a prompt, e.g. the \n38 ... . of an object near to the place where you left your car \nEpisodic memory impairments \nthese affect people with a wide range of medical conditions \ngames which stimulate the 39 have been found to help \npeople with schizophrenia \nchildren with autism may have difficulty forming episodic memories — \npossibly because their concept of the 4.. . may be absent \nmemory training may help autistic children develop social skills"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t2l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Russ says that his difficulty in planning the presentation is due to",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "his lack of knowledge about the topic."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "his uncertainty about what he should try to achieve."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the short time that he has for preparation."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "his lack of knowledge about the topic."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "his uncertainty about what he should try to achieve."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the short time that he has for preparation."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111180+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Russ and his tutor agree that his approach in the presentation will be",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to concentrate on how nanotechnology is used in one field."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to follow the chronological development of nanotechnology."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to show the range of applications of nanotechnology."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to concentrate on how nanotechnology is used in one field."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to follow the chronological development of nanotechnology."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to show the range of applications of nanotechnology."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "In connection with slides, the tutor advises Russ to",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "talk about things that he can find slides to illustrate."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "look for slides to illustrate the points he makes."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "consider omitting slides altogether."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "talk about things that he can find slides to illustrate."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "look for slides to illustrate the points he makes."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "consider omitting slides altogether."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "They both agree that the best way for Russ to start his presentation is",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to encourage the audience to talk."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to explain what Russ intends to do."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to provide an example."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to encourage the audience to talk."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to explain what Russ intends to do."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to provide an example."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "What does the tutor advise Russ to do next while preparing his presentation?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "summarise the main point he wants to make"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "read the notes he has already made"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "list the topics he wants to cover"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "summarise the main point he wants to make"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "read the notes he has already made"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "list the topics he wants to cover"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g26",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "Structure",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lacked a conclusion"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful in the future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not enough"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sometimes distracting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "showed originality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "covered a wide range"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "not too technical"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "lacked a conclusion"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful in the future"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "not enough"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sometimes distracting"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "showed originality"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "covered a wide range"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "not too technical"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g27",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "Eye contact",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lacked a conclusion"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful in the future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not enough"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sometimes distracting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "showed originality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "covered a wide range"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "not too technical"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g28",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Body language",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lacked a conclusion"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful in the future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not enough"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sometimes distracting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "showed originality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "covered a wide range"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "not too technical"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "lacked a conclusion"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful in the future"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "not enough"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sometimes distracting"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "showed originality"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "covered a wide range"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "not too technical"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g29",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Choice of words",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lacked a conclusion"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful in the future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not enough"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sometimes distracting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "showed originality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "covered a wide range"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "not too technical"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "lacked a conclusion"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful in the future"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "not enough"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sometimes distracting"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "showed originality"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "covered a wide range"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "not too technical"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        },
+        {
+          "id": "c13t2l-g30",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Handouts",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lacked a conclusion"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful in the future"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not enough"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sometimes distracting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "showed originality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "covered a wide range"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "not too technical"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "lacked a conclusion"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful in the future"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "not enough"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sometimes distracting"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "showed originality"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "covered a wide range"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "not too technical"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:53:53.111684+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 960780,
+      "audioDurationMs": 428445
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nEpisodic memory \nthe ability to recall details, e.g. the time and 31 . of past \nevents \ndifferent to semantic memory – the ability to remember general information \nabout the 32 …… which does not involve recalling \n33 ... .. nformatioon \nForming episodic memories involves three steps: \nEncoding \ninvolves receiving and processing information \nthe more 34 ... .. given to an event, the more successfully it \ncan be encoded \nto remember a 35 . , it is useful to have a strategy for \nencoding such information \nConsolidation \nhow memories are strengthened and stored \nmost effective when memories can be added to a 36 ... \nof related information \nthe 37 ... of retrieval affects the strength of memories \nRetrieval \nmemory retrieval often depends on using a prompt, e.g. the \n38 ... . of an object near to the place where you left your car \nEpisodic memory impairments \nthese affect people with a wide range of medical conditions \ngames which stimulate the 39 have been found to help \npeople with schizophrenia \nchildren with autism may have difficulty forming episodic memories — \npossibly because their concept of the 4.. . may be absent \nmemory training may help autistic children develop social skills"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t2l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Episodic memories allow us to mentally travel back in time to an event from the past. Episodic memories include various details about these events, for example, when an event happened and other information such as the location. To help understand this concept, try to remember the last time you ate dinner at a restaurant. The ability to remember where you ate, who you were with",
+              "acceptedAnswers": [
+                "location"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Different to semantic memory – the ability to remember general information about the ___",
+              "acceptedAnswers": [
+                "world"
+              ],
+              "gapText": "Different to semantic memory – the ability to remember general information about the 32 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "which does not involve recalling ___ information",
+              "acceptedAnswers": [
+                "personal"
+              ],
+              "gapText": "which does not involve recalling 33 ___ information",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "The more ___ given to an event, the more successfully it can be encoded",
+              "acceptedAnswers": [
+                "attention"
+              ],
+              "gapText": "the more 34 ___ given to an event, the more successfully it can be encoded",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "To remember a ___, it is useful to have a strategy for encoding such information",
+              "acceptedAnswers": [
+                "name"
+              ],
+              "gapText": "to remember a 35 ___, it is useful to have a strategy for encoding such information",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Most effective when memories can be added to a ___ of related information",
+              "acceptedAnswers": [
+                "network"
+              ],
+              "gapText": "most effective when memories can be added to a 36 ___ of related information",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "The ___ of retrieval affects the strength of memories",
+              "acceptedAnswers": [
+                "frequency"
+              ],
+              "gapText": "the 37 ___ of retrieval affects the strength of memories",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:45:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Memory retrieval often depends on using a prompt, e.g. the ___ of an object near to the place where you left your car",
+              "acceptedAnswers": [
+                "colour",
+                "color"
+              ],
+              "gapText": "memory retrieval often depends on using a prompt, e.g. the 38 ___ of an object near to the place where you left your car",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Games which stimulate the ___ have been found to help people with schizophrenia",
+              "acceptedAnswers": [
+                "brain"
+              ],
+              "gapText": "games which stimulate the 39 ___ have been found to help people with schizophrenia",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t2l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t2l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Children with autism may have difficulty forming episodic memories – possibly because their concept of the ___ may be absent",
+              "acceptedAnswers": [
+                "self"
+              ],
+              "gapText": "children with autism may have difficulty forming episodic memories – possibly because their concept of the 40 ___ may be absent",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1389224,
+      "audioDurationMs": 543394
+    }
+  ]
+}

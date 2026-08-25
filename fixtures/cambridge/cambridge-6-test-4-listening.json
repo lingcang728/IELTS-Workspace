@@ -1,0 +1,1714 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-6-test-4-listening",
+  "title": "Cambridge IELTS 6 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0012-a17f5f5d",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 6",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题6.pdf",
+        "sha256": "a5d4812f970087a7c6dcd7333450c875ed9a401b294a6237c1071ff2629dfc6f"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C06\\剑桥雅思真题6\\auto\\剑桥雅思真题6.md",
+        "sha256": "f9efeec2692e4e1d331e8d209b5a03fe8975a68d9e32cf4d65afda5674868e4f",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-6-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 1–10\n\n1 75\n\n2 cheque/check\n\n15\n\n4 25\n\n5 10 minute(s')/min(s')\n\n6 conference pack\n\n7South\n\n8 library\n\n10 21A"
+      },
+      "questionGroups": [
+        {
+          "id": "c6t4l-g1",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Three day cost: £ ___",
+              "acceptedAnswers": [
+                "75"
+              ],
+              "gapText": "Three day cost: £ ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g2",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Payment by ___ or on arrival",
+              "acceptedAnswers": [
+                "cheque",
+                "check"
+              ],
+              "gapText": "Payment by ___ or on arrival",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g3",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Conference Centre: £ ___ per night",
+              "acceptedAnswers": [
+                "15"
+              ],
+              "gapText": "Conference Centre: £ ___ per night",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g4",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Guest House: £ ___ per night",
+              "acceptedAnswers": [
+                "25"
+              ],
+              "gapText": "Guest House: £ ___ per night",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g5",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "10 minute(s')/min(s')",
+              "acceptedAnswers": [
+                "10 minute(s)",
+                "min(s)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g6",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Further documents to be sent: ___",
+              "acceptedAnswers": [
+                "conference pack"
+              ],
+              "gapText": "Further documents to be sent: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g7",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "South",
+              "acceptedAnswers": [
+                "South"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g8",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Conference Centre is on ___ Park Road, next to the ___ .",
+              "acceptedAnswers": [
+                "library"
+              ],
+              "gapText": "Conference Centre is on ___ Park Road, next to the ___ .",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g9",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "£ or take bus number",
+              "acceptedAnswers": [
+                "5"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g10",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "21A",
+              "acceptedAnswers": [
+                "21A"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 343452
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 11–20\n\n11 D\n\n12 A\n\n13 C\n\n14 tax\n\n15 security\n\n16 ground floor\n\n17 lecture room 311\n\n18Safety at Work\n\n19 Main Hall\n\n20 team leaders\n\n## If you score . .."
+      },
+      "questionGroups": [
+        {
+          "id": "c6t4l-g11",
+          "instruction": "Which team will do each of the following jobs? Choose THREE answers from the box and write the correct letter, A-D, next to questions 11-13.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q11",
+              "number": 11,
+              "type": "matching",
+              "prompt": "Checking entrance tickets",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the blue team"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the yellow team"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the green team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the red team"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the blue team"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the yellow team"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the green team"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the red team"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:00:19.901489+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g12",
+          "instruction": "Which team will do each of the following jobs? Choose THREE answers from the box and write the correct letter, A-D, next to questions 11-13.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q12",
+              "number": 12,
+              "type": "matching",
+              "prompt": "Preparing refreshments",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the blue team"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the yellow team"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the green team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the red team"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the blue team"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the yellow team"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the green team"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the red team"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:00:19.901489+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g13",
+          "instruction": "Which team will do each of the following jobs? Choose THREE answers from the box and write the correct letter, A-D, next to questions 11-13.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q13",
+              "number": 13,
+              "type": "matching",
+              "prompt": "Directing car-park traffic",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the blue team"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the yellow team"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the green team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the red team"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the blue team"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the yellow team"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the green team"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the red team"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:00:19.901489+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g14",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Talk by Anne Smith: will give out the ___ forms",
+              "acceptedAnswers": [
+                "tax"
+              ],
+              "gapText": "Talk by Anne Smith: will give out the ___ forms",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:25.830972+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g15",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Talk by Peter Chen: will explain about arrangements for ___ and fire exits",
+              "acceptedAnswers": [
+                "security"
+              ],
+              "gapText": "Talk by Peter Chen: will explain about arrangements for ___ and fire exits",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:25.830972+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g16",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "11.00 am | Video Presentation | • go to",
+              "acceptedAnswers": [
+                "ground floor"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:25.830972+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g17",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "• video title:",
+              "acceptedAnswers": [
+                "lecture room 311"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:25.830972+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g18",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Safety at Work",
+              "acceptedAnswers": [
+                "safety at work"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:25.830972+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g19",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Main Hall",
+              "acceptedAnswers": [
+                "Main Hall"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:25.830972+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g20",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "3.00 pm | Finish",
+              "acceptedAnswers": [
+                "team leaders"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:25.830972+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 343452,
+      "audioDurationMs": 385884
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 21–30\n\n21 reference\n\n22 textbooks\n\n23 secondary\n\n24 primary\n\n25 back\n\n26 overdue books/ones\n\n27 7 working days\n\n28-30 IN ANY ORDER CEF"
+      },
+      "questionGroups": [
+        {
+          "id": "c6t4l-g21",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "The libraries on both sites provide internet access and have a variety of ___ materials on education.",
+              "acceptedAnswers": [
+                "reference"
+              ],
+              "gapText": "The libraries on both sites provide internet access and have a variety of ___ materials on education.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g22",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "The Castle Road library has books on sociology, together with ___ and other resources relevant to the majority of secondary school subjects.",
+              "acceptedAnswers": [
+                "textbooks"
+              ],
+              "gapText": "The Castle Road library has books on sociology, together with ___ and other resources relevant to the majority of secondary school subjects.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g23",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "The Castle Road library has books on sociology, together with textbooks and other resources relevant to the majority of ___ school subjects.",
+              "acceptedAnswers": [
+                "secondary"
+              ],
+              "gapText": "The Castle Road library has books on sociology, together with textbooks and other resources relevant to the majority of ___ school subjects.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g24",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "The Fordham library includes resources for teaching in ___ education and special needs.",
+              "acceptedAnswers": [
+                "primary"
+              ],
+              "gapText": "The Fordham library includes resources for teaching in ___ education and special needs.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g25",
+          "instruction": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Current issues of periodicals are available at both libraries, although ___ issues are only available at Fordham.",
+              "acceptedAnswers": [
+                "back"
+              ],
+              "gapText": "Current issues of periodicals are available at both libraries, although ___ issues are only available at Fordham.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g26",
+          "instruction": "Answer the questions below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Which books cannot be renewed by telephone or email?",
+              "acceptedAnswers": [
+                "overdue books",
+                "ones"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g27",
+          "instruction": "Answer the questions below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Choose THREE letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "7 working days",
+              "acceptedAnswers": [
+                "7 working days"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g28",
+          "instruction": "Choose THREE letters, A-G，选项也只有 A-G；工单却要求 A-H，且第 28 题题面被抽成答案标",
+          "questionType": "multi_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q28",
+              "number": 28,
+              "type": "multi_choice",
+              "prompt": "-30 IN ANY ORDER CEF",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "An introduction to the Internet"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "How to carry out research for a dissertation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Making good use of the whole range of library services"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Planning a dissertation"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Standard requirements when writing a dissertation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Using the Internet when doing research"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "What books and technical resources are available in the library"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.761409+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6t4l-g29",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "multi_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q29",
+              "number": 29,
+              "type": "multi_choice",
+              "prompt": "Which THREE topics do this term's study skills workshops cover? (Question 29)",
+              "acceptedAnswers": [
+                "C",
+                "E",
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "An introduction to the Internet"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "How to carry out research for a dissertation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Making good use of the whole range of library services"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Planning a dissertation"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Standard requirements when writing a dissertation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Using the Internet when doing research"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "What books and technical resources are available in the library"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "An introduction to the Internet"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "How to carry out research for a dissertation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Making good use of the whole range of library services"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Planning a dissertation"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Standard requirements when writing a dissertation"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Using the Internet when doing research"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "What books and technical resources are available in the library"
+            }
+          ]
+        },
+        {
+          "id": "c6t4l-g30",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "multi_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q30",
+              "number": 30,
+              "type": "multi_choice",
+              "prompt": "Which THREE topics do this term's study skills workshops cover? (Question 30)",
+              "acceptedAnswers": [
+                "C",
+                "E",
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "An introduction to the Internet"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "How to carry out research for a dissertation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Making good use of the whole range of library services"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Planning a dissertation"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Standard requirements when writing a dissertation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Using the Internet when doing research"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "What books and technical resources are available in the library"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "An introduction to the Internet"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "How to carry out research for a dissertation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Making good use of the whole range of library services"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Planning a dissertation"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Standard requirements when writing a dissertation"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Using the Internet when doing research"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "What books and technical resources are available in the library"
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 729335,
+      "audioDurationMs": 369444
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c06-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 31–40\n\n31 B\n\n32 A\n\n33 B\n\n35 1,450\n\n36 disease\n\n37 (wealthy) prince\n\n38 diet\n\n39 attack humans\n\n40 leadership\n\n0-12\n\n13-27\n\n28-40\n\nyou are unlikely to get an acceptable score under examination conditions and we recommend that you spend a lot of time improving your English before you take IELTS.\n\nyou may get an acceptable score under examination conditions but we recommend that you think about having more practice or lessons before you take IELTS.\n\nyou are likely to get an acceptable score under examination conditions but remember that different institutions will find different scores acceptable."
+      },
+      "questionGroups": [
+        {
+          "id": "c6t4l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "When did Asiatic lions develop as a separate sub-species? A about 10,000 ycars ago about 100,000 years ago C about 1,000,000 years ago",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "about 10,000 years ago"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "about 100,000 years ago"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "about 1,000,000 years ago"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "about 10,000 years ago"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "about 100,000 years ago"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "about 1,000,000 years ago"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T02:02:26.551319+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "Pictures of Asiatic lions can be seen on ancient coins from",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Greece."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The Middle East."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "India."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Greece."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The Middle East."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "India."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T02:02:26.551319+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "Asiatic lions disappeared from Europe",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "2,500 years ago."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "2,000 years ago."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "1,900 years ago."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "2,500 years ago."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "2,000 years ago."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "1,900 years ago."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c6t4l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "Very few African lions have",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a long mane."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a coat with varied colours."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a fold of skin on their stomach."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a long mane."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a coat with varied colours."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a fold of skin on their stomach."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T02:02:26.551319+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g35",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "1,450",
+              "acceptedAnswers": [
+                "1,450"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.163050+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g36",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "One threat to the lions in the sanctuary is ___.",
+              "acceptedAnswers": [
+                "disease"
+              ],
+              "gapText": "One threat to the lions in the sanctuary is ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.163050+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g37",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "(wealthy) prince",
+              "acceptedAnswers": [
+                "(wealthy) prince"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.163050+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g38",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "A large part of the lions'.. .consists of animals belonging to local farmers.",
+              "acceptedAnswers": [
+                "diet"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.163050+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g39",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "The lions sometimes. . ..... , especially when water is short.",
+              "acceptedAnswers": [
+                "attack humans"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.163050+00:00"
+          }
+        },
+        {
+          "id": "c6t4l-g40",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "In ancient India a man would fight a lion as a test of ...........",
+              "acceptedAnswers": [
+                "leadership"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.163050+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1098778,
+      "audioDurationMs": 363972
+    }
+  ]
+}

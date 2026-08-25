@@ -18,17 +18,23 @@ G:\build_cache/
 *.tmp
 sessions-debug/
 
-# Local licensed study corpus. Only the original renderer fixtures are public.
-fixtures/assets/
-fixtures/cambridge/
+# Shipped with the app (JSON + jpg + transcripts). Audio/PDF stay local.
+fixtures/cambridge/*.bak
+fixtures/assets/*
+!fixtures/assets/cambridge/
+fixtures/assets/cambridge/*
+!fixtures/assets/cambridge/*.jpg
 # 书末印刷答案键的抄写结果：和上面的语料同属受版权保护的内容，
 # 只留在本机，重建靠 data-dev/repair/answer-key-tasks + 74_write_answer_key.py
 fixtures/answer-keys/
-fixtures/transcripts/
 fixtures/overlays/
 fixtures/listening/
 fixtures/reading/
 fixtures/writing/
+
+# Product site build
+site-dist/
+site/node_modules/
 
 
 # Local conversion data and one-off diagnostics.

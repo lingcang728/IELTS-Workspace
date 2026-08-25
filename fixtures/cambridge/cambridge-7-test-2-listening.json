@@ -1,0 +1,1674 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-2-listening",
+  "title": "Cambridge IELTS 7 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0011-995062f1",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-7-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the form below.\n\n## Write NO MORE THAN THREE WORDS ANDIOR A NUMBER for each answer\n\nCAR INSURANCE\n\nExample Name:\n\nAnswer Patrick Jones\n\nAddress: 1 ... Contact number: 730453 Occupation: 2 .... Size of car engine: 1200cc\n\n. , Greendale Type of car: Manufacturer: Hewton\n\nPrevious insurance company:\n\nModel: 3 ... Year: 1997 Any insurance claims in the last five years?\n\n4. If yes, give brief details:\n\nYes No\n\nCar was 5 .... ….. in 1999 Name(s) of other driver(s): Uses of car: – social\n\nSimon 6 ..…. -8 ...\n\nRelationship to main driver: 7 ..\n\nStart date: 31 January\n\nRecommended Insurance arrangement\n\nName of company: 9 .... Annual cost: 10 $ ..."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t2l-g1",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "Address",
+              "acceptedAnswers": [
+                "X"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g2",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Occupation: ___",
+              "acceptedAnswers": [
+                "Dentist"
+              ],
+              "gapText": "Occupation: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g3",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Type of car — Manufacturer: Hewton; Model: ___",
+              "acceptedAnswers": [
+                "Sable"
+              ],
+              "gapText": "Type of car — Manufacturer: Hewton; Model: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g4",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Previous insurance company: ___",
+              "acceptedAnswers": [
+                "Northern Star"
+              ],
+              "gapText": "Previous insurance company: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g5",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q5",
+              "number": 5,
+              "type": "single_choice",
+              "prompt": "Car was",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": ""
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": ""
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": ""
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": ""
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": ""
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": ""
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": ""
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g6",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Name(s) of other driver(s): Simon ___",
+              "acceptedAnswers": [
+                "Paynter"
+              ],
+              "gapText": "Name(s) of other driver(s): Simon ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g7",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Relationship to main driver: ___",
+              "acceptedAnswers": [
+                "brother-in-law"
+              ],
+              "gapText": "Relationship to main driver: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g8",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Uses of car: social and ___",
+              "acceptedAnswers": [
+                "work"
+              ],
+              "gapText": "Uses of car: social and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g9",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q9",
+              "number": 9,
+              "type": "single_choice",
+              "prompt": "Name of company",
+              "acceptedAnswers": [
+                "Q"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g10",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Annual cost: $ ___",
+              "acceptedAnswers": [
+                "450"
+              ],
+              "gapText": "Annual cost: $ ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 418427
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\nQuestions 11 and 12\n\nLabel the map below.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\n[]\n\n## Questions 13-18\n\nComplete the table below.\n\n## Write NO MORE THAN TWO WORDS ANDIOR A NUMBER for each answer.\n\nAttraction\n\nFurther Information\n\nSTOP A:Main Booking Office:First boat: 8 a.m.Last boat:13... …... p.m.\n\nPalace\n\n• has lovely 14 ..\n\nSTOP B:\n\n15 ..\n\n• has good 16 .. .. ofcity centre\n\nSTOP C:\n\nMuseum\n\n• bookshop specialising in the17. .. of the localarea\n\nSTOP D:\n\nEntertainment Complex\n\n• 18 . .... cinema• bowling alley• video games arcade\n\n## Questions 19 and 20\n\nWrite NO MORE THAN THREE WORDS ANDIOR A NUMBER for each answer\n\n19 How often do the Top Bus Company tours run?\n\n20 Where can you catch a Number One Sightseeing Tour from?"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t2l-g11",
+          "instruction": "Label the map below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q11",
+              "number": 11,
+              "type": "labelling",
+              "prompt": "Boat-trip map, STOP B: ___",
+              "acceptedAnswers": [
+                "City Bridge"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "green banks",
+                  "label": "Green Banks",
+                  "text": "Green Banks"
+                },
+                {
+                  "id": "city bridge",
+                  "label": "City Bridge",
+                  "text": "City Bridge"
+                },
+                {
+                  "id": "roman landing",
+                  "label": "Roman Landing",
+                  "text": "Roman Landing"
+                },
+                {
+                  "id": "newtown",
+                  "label": "Newtown",
+                  "text": "Newtown"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              12
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c07-t2-listening-p0037.jpg"
+        },
+        {
+          "id": "c7t2l-g12",
+          "instruction": "Label the map below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q12",
+              "number": 12,
+              "type": "labelling",
+              "prompt": "Boat-trip map, STOP D: ___",
+              "acceptedAnswers": [
+                "Newtown"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "green banks",
+                  "label": "Green Banks",
+                  "text": "Green Banks"
+                },
+                {
+                  "id": "city bridge",
+                  "label": "City Bridge",
+                  "text": "City Bridge"
+                },
+                {
+                  "id": "roman landing",
+                  "label": "Roman Landing",
+                  "text": "Roman Landing"
+                },
+                {
+                  "id": "newtown",
+                  "label": "Newtown",
+                  "text": "Newtown"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              12
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c07-t2-listening-p0037.jpg"
+        },
+        {
+          "id": "c7t2l-g13",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "STOP A last boat: ___ p.m.",
+              "acceptedAnswers": [
+                "6.30",
+                "6:30"
+              ],
+              "gapText": "STOP A last boat: ___ p.m.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g14",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Stop A palace has lovely ___",
+              "acceptedAnswers": [
+                "formal gardens"
+              ],
+              "gapText": "Stop A palace has lovely ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g15",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "STOP B attraction: ___",
+              "acceptedAnswers": [
+                "Tower Restaurant"
+              ],
+              "gapText": "STOP B attraction: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g16",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Tower Restaurant has good ___ of city centre",
+              "acceptedAnswers": [
+                "views"
+              ],
+              "gapText": "Tower Restaurant has good ___ of city centre",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g17",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Bookshop specialising in the ___ of the local area",
+              "acceptedAnswers": [
+                "history"
+              ],
+              "gapText": "Bookshop specialising in the ___ of the local area",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g18",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Entertainment Complex: ___ cinema",
+              "acceptedAnswers": [
+                "seven-screen"
+              ],
+              "gapText": "Entertainment Complex: ___ cinema",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g19",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "How often do the Top Bus Company tours run?",
+              "acceptedAnswers": [
+                "every 20 minutes",
+                "20 minutes"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g20",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Where can you catch a Number One Sightseeing Tour from?",
+              "acceptedAnswers": [
+                "Central Station"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 418427,
+      "audioDurationMs": 315173
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\n## Questions 21–26\n\nChoose the correct letter, A, B or C\n\n21 The Antarctic Centre was established in Christchurch because A New Zealand is a member of the Antarctic Treaty. B Christchurch is geographically well positioned. C the climate of Christchurch is suitable.\n\n22 One role of the Antarctic Centre is to A provide expeditions with suitable equipment. B provide researchers with financial assistance. C ensure that research is internationally relevant\n\n23 The purpose of the Visitors' Centre is to A provide accommodation. B run training sessions. C show people what Antarctica is like.\n\n24 Dr Merrywhether says that Antarctica is\n\nA unlike any other country. B extremely beautiful C too cold for tourists.\n\n25 According to Dr Merrywhether, Antarctica is very cold because\n\nA of the shape of the continent. \nB it is surrounded by a frozen sea. \nC it is an extremely dry continent.\n\n26 Dr Merrywhether thinks Antarctica was part of another continent because\n\nA he has done his own research in the area.\n\nB there is geological evidence of this\n\nC it is very close to South America.\n\n本资料仅用于参考，。\n\n## Questions 27 and 28\n\nComplete the table below.\n\n## Write ONE WORD ANDIOR TWO NUMBERS for each answer.\n\nANTARCTIC TREATY\n\nDate\n\nEvent\n\n1870\n\nPolar Research meeting\n\n27 .. .. to\n\n1st International Polar Year\n\n1957\n\nAntarctic Treaty was proposed\n\n1959\n\nAntarctic Treaty was 28 ..\n\n## Questions 29 and 30\n\nChoose TWO letters, A-E.\n\nWhich TWO achievements of the Antarctic Treaty are mentioned by the speakers?\n\nA no military use\n\nB animals protected\n\nC historic sites preserved\n\nD no nuclear testing\n\nE fishing rights protected"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t2l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "The Antarctic Centre was established in Christchurch because A New Zealand is a member of the Antarctic Treaty. B Christchurch is geographically well positioned. C the climate of Christchurch is suitable",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "One role of the Antarctic Centre is to A provide expeditions with suitable equipment. B provide researchers with financial assistance. C ensure that research is internationally relevant",
+              "acceptedAnswers": [
+                "(obvious) spam"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "The purpose of the Visitors' Centre is to (Question 23)",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "provide accommodation."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "run training sessions."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "show people what Antarctica is like."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Dr Merrywhether says that Antarctica is (Question 24)",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "unlike any other country."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "extremely beautiful."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too cold for tourists."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "According to Dr Merrywhether, Antarctica is very cold because (Question 25)",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "of the shape of the continent."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it is surrounded by a frozen sea."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is an extremely dry continent."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Dr Merrywhether thinks Antarctica was part of another continent because (Question 26)",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he has done his own research in the area."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "there is geological evidence of this."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it is very close to South America."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g27",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "1st International Polar Year: ___ to ___",
+              "acceptedAnswers": [
+                "1882 to 1883"
+              ],
+              "gapText": "1st International Polar Year: ___ to ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c7t2l-g28",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Antarctic Treaty was",
+              "acceptedAnswers": [
+                "= 0"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              28
+            ],
+            "canonicalOf": [
+              "Write ONE WORD and/or TWO NUMBERS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c7t2l-g29",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q29",
+              "number": 29,
+              "type": "multi_choice",
+              "prompt": "Which TWO achievements of the Antarctic Treaty are mentioned? (Question 29)",
+              "acceptedAnswers": [
+                "A",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "no military use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "animals protected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "historic sites preserved"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "no nuclear testing"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "fishing rights protected"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              29,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g30",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q30",
+              "number": 30,
+              "type": "multi_choice",
+              "prompt": "Which TWO achievements of the Antarctic Treaty are mentioned? (Question 30)",
+              "acceptedAnswers": [
+                "A",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "no military use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "animals protected"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "historic sites preserved"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "no nuclear testing"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "fishing rights protected"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              29,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 733600,
+      "audioDurationMs": 428360
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31–40\n\n## Questions 31–35\n\nChoose the correct letter, A, Bor C\n\n## Left and Right Handedness in Sport\n\n31 Anita first felt the Matthews article was of value when she realised A how it would help her difficulties with left-handedness. B the relevance of connections he made with music. C the impressive size of his research project.\n\n32 Anita feels that the findings on handedness will be of value in A helping sportspeople identify their weaknesses. B aiding sportspeople as they plan tactics for each game. C developing suitable training programmes for sportspeople.\n\n33 Anita feels that most sports coaches A know nothing about the influence of handedness. B focus on the wrong aspects of performance. C underestimate what science has to offer sport\n\n34 A German study showed there was greater ‘mixed handedness' in musicians who\n\nA started playing instruments in early youth. \nB play a string instrument such as the violin. \nC practise a great deal on their instrument.\n\n35 Studies on ape behaviour show that\n\nA apes which always use the same hand to get food are most successful. \nB apes have the same proportion of left- and right-handers as humans. \nC more apes are left-handed than right-handed.\n\n本资料仅用于参考，。\n\n## Questions 36–40\n\nComplete the table below\n\n## Write ONE WORD ANDIOR A NUMBER for each answer\n\nSport\n\nBest laterality\n\nComments\n\nHockey\n\nmixed laterality\n\n• hockey stick has to be used in 36 ..• mixed-handed players found to be much more37 ... than others\n\nTennis\n\nsingle laterality\n\n• gives a larger relevant field of 38 ..• cross-lateral players make 39 .. .... toolate\n\nGymnastics\n\ncross laterality\n\n• gymnasts' 40 . ... is important forperformances\n\nREADING PASSAGE 1\n\nYou should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.\n\n[]\n\n# Why pagodas don't fall down\n\nIn a land swept by typhoons and shaken by earthquakes, how have Japan's tallest and seemingly flimsiest old buildings – 500 or so wooden pagodas – remained standing for centuries? Records show that only two have collapsed during the past 1400 years. Those that have disappeared were destroyed by fire as a result of lightning or civil war. The disastrous Hanshin earthquake in 1995 killed 6,400 people, toppled elevated highways, flattened office blocks and devastated the port area of Kobe. Yet it left the magnificent five-storey pagoda at the Toji temple in nearby Kyoto unscathed, though it levelled a number of buildings in the neighbourhood.\n\nJapanese scholars have been mystified for ages about why these tall, slender buildings are so stable. It was only thirty years ago that the building industry felt confident enough to erect office blocks of steel and reinforced concrete that had more than a dozen floors. With its special shock absorbers to dampen the effect of sudden sideways movements from an earthquake, the thirty-six-storey Kasumigaseki building in central Tokyo – Japan's first skyscraper – was considered a masterpiece of modern engineering when it was built in 1968\n\nYet in 826, with only pegs and wedges to keep his wooden structure upright, the master builder Kobodaishi had no hesitation in sending his majestic Toji pagoda soaring fifty-five metres into the sky – nearly half as high as the Kasumigaseki skyscraper built some eleven centuries later. Clearly, Japanese carpenters of the day knew a few tricks about allowing a building to sway and settle itself rather than fight nature's forces. But what sort of tricks?\n\nThe multi-storey pagoda came to Japan from China in the sixth century. As in China, they were first introduced with Buddhism and were attached to important temples. The Chinese built their pagodas in brick or stone, with inner staircases, and used them in later centuries mainly as watchtowers. When the pagoda reached Japan, however, its architecture was freely adapted to local conditions – they were built less high, typically five rather than nine storeys, made mainly of wood and the staircase was dispensed with because the Japanese pagoda did not have any practical use but became more of an art object. Because of the typhoons that batter Japan in the summer, Japanese builders learned to extend the eaves of buildings further beyond the walls. This prevents rainwater gushing down the walls. Pagodas in China and Korea have nothing like the overhang that is found on pagodas in Japan\n\nThe roof of a Japanese temple building can be made to overhang the sides of the structure by fifty per cent or more of the building's overall width. For the same reason, the builders of Japanese pagodas seem to have further increased their weight by choosing to cover these extended eaves not with the porcelain tiles of many Chinese pagodas but with much heavier earthenware tiles.\n\nBut this does not totally explain the great resilience of Japanese pagodas. Is the answer that, like a tall pine tree, the Japanese pagoda – with its massive trunk-like central pillar known as shinbashira – simply flexes and sways during a typhoon or earthquake? For centuries, many thought so. But the answer is not so simple because the startling thing is that the shinbashira actually carries no load at all. In fact, in some pagoda designs, it does not even rest on the ground, but is suspended from the top of the pagoda – hanging loosely down through the middle of the building. The weight of the building is supported entirely by twelve outer and four inner columns\n\nAnd what is the role of the shinbashira, the central pillar? The best way to understand the shinbashira's role is to watch a video made by Shuzo Ishida, a structural engineer at Kyoto Institute of Technology. Mr Ishida, known to his students as 'Professor Pagoda'because of his passion to understand the pagoda, has built a series of models and tested them on a 'shaketable'in his laboratory. In short, the shinbashira was acting like an enormous stationary pendulum. The ancient craftsmen, apparently without the assistance of very advanced mathematics, seemed to grasp the principles that were, more than a thousand years later applied in the construction of Japan's first skyscraper. What those early craftsmen had found by trial and error was that under pressure a paggda'skdosatackCoffloors could be made to slither to and fro independent of one another Viewed from the side, the pagoda seemed to be doing a snake dance – with each conseutive floor moving in theopposite direction to its neighbours above and below. The shinbashira, rynning up though a hole in the centre of the building, constrained individual storeys fromovng toofar berause, afterlnoveng a certain distance, they banged into it, transmitting energy away alongthe clumn.\n\nAnother strange feature of the Japanese pagoda is that, because the building tapers, with each successive floor plan being smaller tharthe qngboelowp Bthyertical pillars that carry the weight of the building is connected to Its corresponding pillar above. In other words, a fivestorey pagoda contains not even one pillar that travels right up through the building to carry the structural loads from the top to the bottom. More surprising is the fact that the individual storeys of a Japanese pagoda, unlike their counterparts elsewhere, are not actually connected to each other. They are simply stacked one on top of another like a pile of hats. Interestingly, such a design would not be permitted under current Japanese building regulations.\n\nAnd the extra-wide eaves? Think of them as a tightrope walker's balancing pole. The bigger the mass at each end of the pole, the easier it is for the tightrope walker to maintain his or her balance. The same holds true for a pagoda. 'With the eaves extending out on all sides like balancing poles,'says Mr Ishida, 'the building responds to even the most powerful jolt of an earthguake with a graceful swaying, never an abrupt shaking.'Here again, Japanese master builders of a thousand years ago anticipated concepts of modern structural engineering.\n\n## Questions 1-4\n\nDo the following statements agree with the claims of the writer in Reading Passage 1?\n\nIn boxes 1–4 on your answer sheet, write\n\nYES if the statement agrees with the claims of the writer NO if the statement contradicts the claims of the writer NOT GIVEN if it is impossible to say what the writer thinks about this\n\n1 Only two Japanese pagodas have collapsed in 1400 years\n\n2 The Hanshin earthquake of 1995 destroyed the pagoda at the Toji temple.\n\n3 The other buildings near the Toji pagoda had been built in the last 30 years.\n\n4 The builders of pagodas knew how to absorb some of the power produced by severe weather conditions.\n\n## Questions 5-10\n\nClassify the following as typical of\n\nA both Chinese and Japanese pagodas\n\nB only Chinese pagodas\n\nC only Japanese pagodas\n\nWrite the correct letter, A, B or C, in boxes 5–10 on your answer sheet\n\n5 easy interior access to top\n\n6 tiles on eaves\n\n7 use as observation post\n\n8 size of eaves up to half the width of the building\n\n9 original religious purpose\n\n10 floors fitting loosely over each other\n\n本资料仅用于参考，。\n\n## Questions 11-13\n\nChoose the correct letter, A, B, C or D\n\nWrite the correct letter in boxes 11–13 on your answer sheet.\n\n11 In a Japanese pagoda, the shinbashira\n\nA bears the full weight of the building.\n\nB bends under pressure like a tree.\n\nC connects the floors with the foundations,\n\nD stops the floors moving too far.\n\n## 12 Shuzo Ishida performs experiments in order to\n\nA improve skyscraper design.\n\nB be able to build new pagodas.\n\nC learn about the dynamics of pagodas.\n\nD understand ancient mathematics.\n\n13 The storeys of a Japanese pagoda are\n\nA linked only by wood.\n\nB fastened only to the central pillar.\n\nC fitted loosely on top of each other.\n\nD joined by special weights."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t2l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Anita first felt the Matthews article was of value when she realised A how it would help her difficulties with left-handedness. B the relevance of connections he made with music. C the impressive size of his research project",
+              "acceptedAnswers": [
+                "2001"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "Anita feels that the findings on handedness will be of value in (Question 32)",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "helping sportspeople identify their weaknesses."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "aiding sportspeople as they plan tactics for each game."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "developing suitable training programmes for sportspeople."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "Anita feels that most sports coaches (Question 33)",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "know nothing about the influence of handedness."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "focus on the wrong aspects of performance."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "underestimate what science has to offer sport."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "A German study showed there was greater ‘mixed handedness' in musicians who",
+              "acceptedAnswers": [
+                "Q"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g35",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "Studies on ape behaviour show that (Question 35)",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "apes which always use the same hand to get food are most successful."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "apes have the same proportion of left- and right-handers as humans."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "more apes are left-handed than right-handed."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t2l-g36",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "• hockey stick has to be used in",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "started playing instruments in early youth"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "play a string instrument such as the violin"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "practise a great deal on their instrument"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "started playing instruments in early youth"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "play a string instrument such as the violin"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "practise a great deal on their instrument"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c7t2l-g37",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q37",
+              "number": 37,
+              "type": "single_choice",
+              "prompt": "• mixed-handed players found to be much more",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "started playing instruments in early youth"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "play a string instrument such as the violin"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "practise a great deal on their instrument"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "started playing instruments in early youth"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "play a string instrument such as the violin"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "practise a great deal on their instrument"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c7t2l-g38",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "• gives a larger relevant field of",
+              "acceptedAnswers": [
+                "0 0"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c7t2l-g39",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Cross-lateral players make ___ too late",
+              "acceptedAnswers": [
+                "corrections"
+              ],
+              "gapText": "Cross-lateral players make ___ too late",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c7t2l-g40",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t2l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Gymnasts' ___ is important for performances",
+              "acceptedAnswers": [
+                "balance"
+              ],
+              "gapText": "Gymnasts' ___ is important for performances",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        }
+      ],
+      "audioStartMs": 1161960,
+      "audioDurationMs": 443813
+    }
+  ]
+}

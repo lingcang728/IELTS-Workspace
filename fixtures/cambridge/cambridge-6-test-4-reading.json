@@ -1,0 +1,2394 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-6-test-4-reading",
+  "title": "Cambridge IELTS 6 Academic Test 4 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0023-515bf3ee",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 6",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题6.pdf",
+        "sha256": "a5d4812f970087a7c6dcd7333450c875ed9a401b294a6237c1071ff2629dfc6f"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C06\\剑桥雅思真题6\\auto\\剑桥雅思真题6.md",
+        "sha256": "f9efeec2692e4e1d331e8d209b5a03fe8975a68d9e32cf4d65afda5674868e4f",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-6-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Dootofing sales\n\nPhanmacautlcals ls one ofthe mostprofitable industilesin North Amarlaa. Butdo the dlugsiinduatryaaalasand Imanketiing stnategitas go too fam?\n\nA A few months ago Kim Schaefer, sales representative of a major global pharmaceutical company, walked into a medical center in New York to bring information and free samples of her company's latest products. That day she was lucky – a doctor was available to see her. 'The last rep offered me a trip to Florida. What do you have?' the physician asked. He was only half joking.\n\nBWhat was on offer that day was a pair of tickets for a New York musical. But on any given day, what Schaefer can offer is typical for today's drugs rep – a car trunk full of promotional gifts and gadgets, a budget that could buy lunches and dinners for a small country, hundreds of free drug samples and the freedom to give a physlcian \\$200 to prescribe her new product to the next six patients who fit the drug's profile. And she also has a few \\$1,0o0 honoraria to offer in exchange for doctors' attendance at her company's next educational lecture.\n\nCSelling pharmaceuticals is a daily exercise in ethical judgement. Salespeople like Schaefer walk the line between the common practice of buying a prospect's time with a free meal, and bribing doctors to prescribe their drugs. They work in an industry highly criticized for its sales and marketing practices, but find themselves in the middle of the age-old chicken-or-egg question – businesses won't use strategles that don't work, so are doctors to blame for the escalating extravagance of pharmaceutical marketing? Or is it the industry's responsibility to decide the boundaries?\n\nD The explosion in the sheer number of salespeople in the field – and the amount of funding used to promote their causes – forces close examination of the pressures, influences and relatlonships between drug reps and doctors. Salespeople provide much-needed Information and education to physicians. In many cases the glossy brochures, article reprints and prescriptions they deliver are primary sources of drug educatlon for healthcare givers. With the huge investment the industry has placed in face-to-face selling, salespeople have essentially become specialists in one drug or group of drugs – a tremendous advantage in getting the attention of busy doctors in need of quick information.\n\nEBut the sales push rarely stops in the office. The flashy brochures and pamphlets left by the sales reps are often followed up with meals at expensive restaurants, meetings in warm and sunny places, and an inundation of promotional gadgets. Rarely do patients watch a doctor write with a pen that isn't emblazoned with a drug's name, or see a\n\nnurse use a tablet not bearing a pharmaceutical company's logo. Millions of dollars are spent by pharmaceutical companies on promotional products like coffee mugs, shirts,Com umbrellas, and golf balls. Money well spent? It's hard to tell. 'I've been the recipient of golf balls from one company and I use them, but it doesn't make me prescribe their medicine,' says one doctor. 'I tend to think I'm not influenced by what they give me.'\n\nF Free samples of new and expensive drugs might be the single most effective way of getting doctors and patients to become loyal to a product. Salespeople hand out hundreds of dollars'worth of samples each week–\\$7.2 billion worth of them in one year. Though few comprehensive studies have been conducted, one by the University of Washington investigated how drug sample availability affected what physicians prescribe. A total of 131 doctors self-reported their prescribing patterns – the conclusion was that the availability of samples led them to dispense and prescribe drugs that differed from their preferred drug choice.\n\nG The bottom line is that pharmaceutical companies as a whole invest more In marketing than they do in research and development. And patients are the ones who pay – in the form of sky-rocketing prescription prices – for every pen that's handed out, every free theatre ticket, and every steak dinner eaten. In the end the fact remains that pharmaceutical companies have every right to make a profit and will continue to find new ways to Increase sales. But as the medical world continues to grapple with what's acceptable and what's not, It is clear that companies must continue to be heavily scrutinized for their sales and marketing strategies.\n\nDo the following statements agree with the views of the writer in Reading Passage 1?\n\nIn boxes 8–13 on your answer sheet, write\n\nYES if the statement agrees with the views of the writer NO if the statement contradicts the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this\n\n8 Sales representatives like Kim Schaefer work to a very limited budget.\n\n9 Kim Schaefer's marketing technique may be open to criticism on moral grounds.\n\n10The information provided by drug companies is of little use to doctors.\n\n11 Evidence of drug promotion is clearly visible in the healthcare environment.\n\n12The drug companies may give free drug samples to patients without doctors' prescriptions.\n\n13 It is legitimate for drug companies to make money."
+      },
+      "questionGroups": [
+        {
+          "id": "c6t4r-g1",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q1",
+              "number": 1,
+              "type": "matching",
+              "prompt": "IN EITHER ORDER; BOTH REQUIRED 19 viii FOR ONE MARK 20 ii Saturday (and) 21 vii Tuesday 22 K 22 K",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Not all doctors are persuaded"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Choosing the best offers"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Who is responsible for the increase in promotions?"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Fighting the drug companies"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "An example of what doctors expect from drug companies"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Gifts include financial incentives"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Research shows that promotion works"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The high costs of research"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "The positive side of drugs promotion"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "Who really pays for doctors' free gifts?"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:42:48.258357+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Not all doctors are persuaded"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Choosing the best offers"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Who is responsible for the increase in promotions?"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Fighting the drug companies"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An example of what doctors expect from drug companies"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Gifts include financial incentives"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Research shows that promotion works"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The high costs of research"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The positive side of drugs promotion"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Who really pays for doctors' free gifts?"
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g2",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "IN EITHER ORDER; BOTH REQUIRED 23 c FOR ONE MARK 24 I Saturday (and) 25 H",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:42:48.258357+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Not all doctors are persuaded"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Choosing the best offers"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Who is responsible for the increase in promotions?"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Fighting the drug companies"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An example of what doctors expect from drug companies"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Gifts include financial incentives"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Research shows that promotion works"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The high costs of research"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The positive side of drugs promotion"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Who really pays for doctors' free gifts?"
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g3",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "iii"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:42:48.258357+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Not all doctors are persuaded"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Choosing the best offers"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Who is responsible for the increase in promotions?"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Fighting the drug companies"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An example of what doctors expect from drug companies"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Gifts include financial incentives"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Research shows that promotion works"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The high costs of research"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The positive side of drugs promotion"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Who really pays for doctors' free gifts?"
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g4",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "ix"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:42:48.258357+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Not all doctors are persuaded"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Choosing the best offers"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Who is responsible for the increase in promotions?"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Fighting the drug companies"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An example of what doctors expect from drug companies"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Gifts include financial incentives"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Research shows that promotion works"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The high costs of research"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The positive side of drugs promotion"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Who really pays for doctors' free gifts?"
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g5",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q5",
+              "number": 5,
+              "type": "matching",
+              "prompt": "50 0",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Not all doctors are persuaded"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Choosing the best offers"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Who is responsible for the increase in promotions?"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Fighting the drug companies"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "An example of what doctors expect from drug companies"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Gifts include financial incentives"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Research shows that promotion works"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The high costs of research"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "The positive side of drugs promotion"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "Who really pays for doctors' free gifts?"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:42:48.258357+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Not all doctors are persuaded"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Choosing the best offers"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Who is responsible for the increase in promotions?"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Fighting the drug companies"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An example of what doctors expect from drug companies"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Gifts include financial incentives"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Research shows that promotion works"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The high costs of research"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The positive side of drugs promotion"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Who really pays for doctors' free gifts?"
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g6",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "60 日",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:42:48.258357+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Not all doctors are persuaded"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Choosing the best offers"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Who is responsible for the increase in promotions?"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Fighting the drug companies"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An example of what doctors expect from drug companies"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Gifts include financial incentives"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Research shows that promotion works"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The high costs of research"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The positive side of drugs promotion"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Who really pays for doctors' free gifts?"
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g7",
+          "instruction": "Reading Passage has seven paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q7",
+              "number": 7,
+              "type": "matching",
+              "prompt": "70 日",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Not all doctors are persuaded"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Choosing the best offers"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Who is responsible for the increase in promotions?"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Fighting the drug companies"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "An example of what doctors expect from drug companies"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Gifts include financial incentives"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Research shows that promotion works"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The high costs of research"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "The positive side of drugs promotion"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "Who really pays for doctors' free gifts?"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:42:48.258357+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Not all doctors are persuaded"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Choosing the best offers"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Who is responsible for the increase in promotions?"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Fighting the drug companies"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "An example of what doctors expect from drug companies"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Gifts include financial incentives"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Research shows that promotion works"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The high costs of research"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "The positive side of drugs promotion"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Who really pays for doctors' free gifts?"
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g8",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q8",
+              "number": 8,
+              "type": "yes_no_ng",
+              "prompt": "Sales representatives like Kim Schaefer work to a very limited budget.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.314065+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g9",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q9",
+              "number": 9,
+              "type": "yes_no_ng",
+              "prompt": "Kim Schaefer's marketing technique may be open to criticism on moral grounds.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.314065+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g10",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q10",
+              "number": 10,
+              "type": "yes_no_ng",
+              "prompt": "The information provided by drug companies is of little use to doctors.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.314065+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g11",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q11",
+              "number": 11,
+              "type": "yes_no_ng",
+              "prompt": "Evidence of drug promotion is clearly visible in the healthcare environment.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.314065+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g12",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q12",
+              "number": 12,
+              "type": "true_false_ng",
+              "prompt": "The drug companies may give free drug samples to patients without doctors' prescriptions.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.314065+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g13",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q13",
+              "number": 13,
+              "type": "yes_no_ng",
+              "prompt": "It is legitimate for drug companies to make money.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:26.314065+00:00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Do literate women make better mothers?\n\nChildren in developing countries are healthier and more likely to survive past the age of five when their mothers can read and write. Experts in public health accepted this idea decades ago, but until now no one has been able to show that a woman's ability to read in itself improves her children's chances of survival.\n\nMost literate women learnt to read in primary school, and the fact that a woman has had an education may simply indicate her family's wealth or that it values its children more highly. Now a long-term study carried out in Nicaragua has eliminated these factors by showing that teaching reading to poor adult women, who would otherwise have remained illiterate, has a direct effect on their children's health and survival.\n\nIn 1979, the government of Nicaragua established a number of social programmes, including a National Literacy Crusade. By 1985, about 300,000 illiterate adults from all over the country, many of whom had never attended primary school, had learnt how to read, write and use numbers.\n\nDuring this period, researchers from the Liverpool School of Tropical Medicine, the Central American Institute of Health in Nicaragua, the National Autonomous University of Nicaragua and the Costa Rican Institute of Health interviewed nearly 3,000 women, some of whom had learnt to read as children, some during the literacy crusade and some who had never learnt at all. The women were asked how many children they had given birth to and how many of them had died in infancy. The research teams also examined the surviving children to find out how well-nourished they were.\n\nThe investigators' findings were striking. In the late 1970s, the infant mortality rate for the children of illiterate mothers was around 110 deaths per thousand live births. At this point in their lives, those mothers who later went on to learn to read had a similar level óf child mortality (105/1000). For women educated in primary school, however, the infant mortality rate was significantly lower, at 80 per thousand.\n\nIn 1985, after the National Literacy Crusade had ended, the infant mortality figures for those who remained illiterate and for those educated in primary school remained more or less om unchanged. For those women who learnt to read through the campaign, the infant mortality rate was 84 per thousand, an impressive 21 points lower than for those women who were still illiterate. The children of the newly-literate mothers were also better nourished than those of women who could not read.\n\nWhy are the children of literate mothers better off? According to Peter Sandiford of the Liverpool School of Tropical Medicine, no one knows for certain. Child health was not on the curriculum during the women's lessons, so he and his colleagues are looking at other factors. They are working with the same group of 3,000 women, to try to find out whether reading mothers make better use of hospitals and clinics, opt for smaller families, exert more control at home, learn modern childcare techniques more quickly, or whether they merely have more respect for themselves and their children.\n\nThe Nicaraguan study may have important implications for governments and aid agencies that need toknow where to direct their resources. Sandiford says that there is increasing evidence that female education, at any age, is ‘an important health intervention in its own right'. The results of the study lend support to the World Bank's recommendation that education budgets in developing countries should be increased, not just to help their economies, but also to improve child health.\n\n'We've known for a long time that maternal education is important,' says John Cleland of the London School of Hygiene and Tropical Medicine. 'But we thought that even if we started educating girls today, we'd have to wait a generation for the pay-off. The Nicaraguan study suggests we may be able to bypass that.\n\nCleland warns that the Nicaraguan crusade was special in many ways, and similar campaigns elsewhere might not work as well. It is notoriously difficult to teach adults skills that do not have an immediate impact on their everyday lives, and many literacy campaigns in other countries have been much less successful. 'The crusade was part of a larger effort to bring a better life to the people,' says Cleland. Replicating these conditions in other countries will be a major challenge for development workers.\n\nComplete the summary using the list of words, A–J, below.\n\nWrite the correct letter, A–J, in boxes 14–18 on your answer sheet.\n\n## NBYou may use any letter more than once.\n\nThe Nicaraguan National Literacy Crusade aimed to teach large numbers of illiterate 14 ......to read and write. Public health experts have known for many years that there is a connection between child health and 15.............. However, it has not previously been known whether these two factors were directly linked or not. This question has been investigated by 16.............. in Nicaragua. As a result, factors such as 17....and aitudes to children have been aeliminated, and it has been shown that 18....can in itself improve infant health and survival.\n\nAchild literacy\n\nB men and women\n\nD medical care\n\nJfamily wealth\n\nG adults and children\n\nEmortality\n\nH paternal literacy\n\nC an international research team\n\nFmaternal literacy\n\nI a National Literacy Crusade\n\nDo the following statements agree with the claims of the writer in Reading Passage 2?\n\nIn boxes 19–24 on your answer sheet, write\n\nYES if the statement agrees with the claims of the writer NO if the statement contradicts the claims of the writer NOT GIVEN if it is impossible to say what the writer thinks about this\n\n19 About a thousand of the women interviewed by the researchers had learnt to read when they were children.\n\n20 Before the National Literacy Crusade, illiterate women had approximately the same levels of infant mortality as those who had learnt to read in primary school.\n\n21 Before and after the National Literacy Crusade, the child mortality rate for the illiterate women stayed at about 110 deaths for each thousand live births.\n\n22 The women who had learnt to read through the National Literacy Crusade showed the greatest change in infant mortality levels.\n\n23 The women who had learnt to read through the National Literacy Crusade had the lowest rates of child mortality.\n\n24 After the National Literacy Crusade, the children of the women who remained illiterate were found to be severely malnourished."
+      },
+      "questionGroups": [
+        {
+          "id": "c6t4r-g14",
+          "instruction": "Complete the summary using the list of words, A–J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "The Nicaraguan National Literacy Crusade aimed to teach large numbers of illiterate ___ to read and write.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "child literacy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "men and women"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an international research team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "medical care"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mortality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "maternal literacy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "adults and children"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "paternal literacy"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "a National Literacy Crusade"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "family wealth"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "child literacy"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "men and women"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an international research team"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "medical care"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "mortality"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "maternal literacy"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "adults and children"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "paternal literacy"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "a National Literacy Crusade"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "family wealth"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g15",
+          "instruction": "Complete the summary using the list of words, A–J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "0 一",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "child literacy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "men and women"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an international research team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "medical care"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mortality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "maternal literacy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "adults and children"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "paternal literacy"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "a National Literacy Crusade"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "family wealth"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "child literacy"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "men and women"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an international research team"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "medical care"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "mortality"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "maternal literacy"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "adults and children"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "paternal literacy"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "a National Literacy Crusade"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "family wealth"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g16",
+          "instruction": "Complete the summary using the list of words, A–J, below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "V 160 0",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "child literacy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "men and women"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an international research team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "medical care"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mortality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "maternal literacy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "adults and children"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "paternal literacy"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "a National Literacy Crusade"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "family wealth"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T13:47:51.693474+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g17",
+          "instruction": "Complete the summary using the list of words, A–J, below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "As a result, factors such as ___ and attitudes to children have been eliminated,",
+              "acceptedAnswers": [
+                "J"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "child literacy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "men and women"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an international research team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "medical care"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mortality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "maternal literacy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "adults and children"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "paternal literacy"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "a National Literacy Crusade"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "family wealth"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g18",
+          "instruction": "Complete the summary using the list of words, A–J, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "It has been shown that ___ can in itself improve infant health and survival.",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "child literacy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "men and women"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an international research team"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "medical care"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "mortality"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "maternal literacy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "adults and children"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "paternal literacy"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "a National Literacy Crusade"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "family wealth"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "child literacy"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "men and women"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an international research team"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "medical care"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "mortality"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "maternal literacy"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "adults and children"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "paternal literacy"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "a National Literacy Crusade"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "family wealth"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g19",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q19",
+              "number": 19,
+              "type": "true_false_ng",
+              "prompt": "U 0",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g20",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q20",
+              "number": 20,
+              "type": "yes_no_ng",
+              "prompt": "Before the National Literacy Crusade, illiterate women had approximately the same levels of infant mortality as those who had learnt to read in primary school.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g21",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q21",
+              "number": 21,
+              "type": "yes_no_ng",
+              "prompt": "Before and after the National Literacy Crusade, the child mortality rate for the illiterate women stayed at about 110 deaths for each thousand live births.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g22",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q22",
+              "number": 22,
+              "type": "yes_no_ng",
+              "prompt": "1+0:",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g23",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q23",
+              "number": 23,
+              "type": "yes_no_ng",
+              "prompt": "0 0",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g24",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q24",
+              "number": 24,
+              "type": "yes_no_ng",
+              "prompt": "After the National Literacy Crusade, the children of the women who remained illiterate were found to be severely malnourished.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g25",
+          "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 25 and 26 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO important implications drawn from the Nicaraguan study are mentioned by the writer of the passage?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is better to educate mature women than young girls."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Similar campaigns in other countries would be equally successful."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The effects of maternal literacy programmes can be seen very quickly."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Improving child health can quickly affect a country's economy."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Money spent on female education will improve child health."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is better to educate mature women than young girls."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Similar campaigns in other countries would be equally successful."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The effects of maternal literacy programmes can be seen very quickly."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Improving child health can quickly affect a country's economy."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Money spent on female education will improve child health."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:04:52.245542+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g26",
+          "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 25 and 26 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q26",
+              "number": 26,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO important implications drawn from the Nicaraguan study are mentioned by the writer of the passage?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is better to educate mature women than young girls."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Similar campaigns in other countries would be equally successful."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The effects of maternal literacy programmes can be seen very quickly."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Improving child health can quickly affect a country's economy."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Money spent on female education will improve child health."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is better to educate mature women than young girls."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Similar campaigns in other countries would be equally successful."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The effects of maternal literacy programmes can be seen very quickly."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Improving child health can quickly affect a country's economy."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Money spent on female education will improve child health."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:04:52.245542+00:00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Persistent bullying is one of the worst experiences a child can face. How can it be prevented? Peter Smith, Professor of Psychology at the University of Sheffield, directed the Sheffield Con Anti-Bullying Intervention Project, funded by the Department for Education. Here he reports on his findings\n\nA Bullying can take a variety of forms, from the verbal – being taunted or called hurtful names - to the physical – being kicked or shoved - as well as indirect forms, such as being excluded from social groups. A surveyI conducted with Irene Whitney found that in British primary schools up to a quarter of pupils reported experience of bullying, which in about one in ten cases was persistent. There was less bullying in secondary schools, with about one in twenty-five suffering persistent bullying, but these cases may be particularly recalcitrant.\n\nB Bullying is clearly unpleasant, and can make the child experiencing it feel unworthy and depressed. In extreme cases it can even lead to suicide, though this is thankfully rare.Victimised pupils are more likely to experience difficulties with interpersonal relationships as adults, while children who persistently bully are more likely to grow up tobe physically violent, and convicted of anti-social offences.\n\nC Until recently, not much was known about the topic, and little help was available to teachers to deal with bullying. Perhaps as a consequence, schools would often deny the problem. There is no bullying at this school' has been a common refrain, almost certainly untrue. Fortunately more schools are now saying: 'There is not much bullying here, but when it occurs we have a clear policy for dealing with it.'\n\nD Three factors are involved in this change. First is an awareness of the severity of the problem. Second, a number of resources to help tackle bullying have become available in Britain. For example, the Scottish Council for Research in Education produced a package of materials, Action Against Bullying, circulated to all schools in England and Wales as well as in Scotland in summer 1992, with a second pack, Supporting Schools Against Bullying, produced the following year. In Ireland, Guidelines on Countering Bullying Behaviour in Post-Primary Schools was published in 1993. Third, there is evidence that these materials work, and that schools can achieve something. This comes from carefully conducted 'before and after' evaluations of interventions in schools, monitored by a research team. In Norway, after an intervention campaign was introduced nationally, an evaluation of forty-two schools suggested that, over a two-year period, bullying was halved. The Sheffield investigation, which involved sixteen primary schools and seven secondary schools, found that most schools succeeded in reducing bullying.\n\nE Evidence suggests that a key step is to develop a policy on bullying, saying clearly com what is meant by bullying, and giving explicit guidelines on what will be done if it occurs, what records will be kept, who will be informed, what sanctions will be employed. The policy should be developed through consultation, over a period of time - not just imposed from the head teacher's office! Pupils, parents and staff should feel they have been involved in the policy, which needs to be disseminated and implemented effectively.\n\nOther actions can be taken to back up the policy. There are ways of dealing with the topic through the curriculum, using video, drama and literature. These are useful for raising awareness, and can best be tied in to early phases of development, while the school is starting to discuss the issue of bullying. They are also useful in renewing the policy for new pupils, or revising it in the light of experience. But curriculum work alone may only have short-term effects; it should be an addition to policy work, not a substitute.\n\nThere are also ways of working with individual pupils, or in small groups. Assertiveness training for pupils who are liable to be victims is worthwhile, and certain approaches to group bullying such as no blame', can be useful in changing the behaviour of bullying pupils without confronting them directly, although other sanctions may be needed for those who continue with persistent bullying.\n\nWork in the playground is important, too. One helpful step is to train lunchtime supervisors to distinguish bullying from playful fighting, and help them break up conflicts. Another possibility is to improve the playground environment, so that pupils are less likely to be led into bullying from boredom or frustration.\n\nF With these developments, schools can expect that at least the most serious kinds of bullying can largely be prevented. The more effort put in and the wider the whole school involvement, the more substantial the results are likely to be. The reduction in bullying - and the consequent improvement in pupil happiness - is surely a worthwhile objective.\n\n## Choose the correct letter, A, B, C or D.\n\nWrite the correct letter in boxes 31–34 on your answer sheet.\n\n## 31 A recent survey found that in British secondary schools\n\nA there was more bullying than had previously been the case.\n\nB there was less bullying than in primary schools.\n\nC cases of persistent bullying were very common.\n\nD indirect forms of bullying were particularly difficult to deal with.\n\n## 32 Children who are bullied\n\nA are twice as likely to commit suicide as the average person.\n\nB find it more difficult to relate to adults.\n\nCare less likely to be violent in later life.\n\nD may have difficulty forming relationships in later life.\n\n## 33The writer thinks that the declaration ‘There is no bullying at this school'\n\nA is no longer true in many schools.\n\nB was not in fact made by many schools\n\nC reflected the school's lack of concern.\n\nD reflected a lack of knowledge and resources.\n\n## 34 What were the findings of research carried out in Norway?\n\nABullying declined by 50% after an anti-bullying campaign.\n\nBTwenty-one schools reduced bullying as a result of an anti-bullying campaign.\n\nC Two years is the optimum length for an anti-bullying campaign.\n\nDBullying is a less serious problem in Norway than in the UK.\n\nComplete the summary below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer:\n\nWrite your answers in boxes 35–39 on your answer sheet.\n\n## What steps should schools take to reduce bullying?\n\nThe most important step is for the school authorities to produce a 35................ which makes the school's attitude towards bullying quite clear. It should include detailed 36 .. as to how the school and íts staff will. react if bullying occurs.\n\nIn addition, action can be taken through the 37 ............ . This is particularly useful in the early part of the process, as a way of raising awareness and encouraging discussion. On its own, however, it is insufficient to bring about a permanent solution.\n\nEffective work can also be done with individual pupils and small groups. For example, potential 38...... of bullying can be trained to be more self-confident. Or again, in dealing with group bullying, a 'no blame' approach, which avoids confronting the offender too directly, is often effective.\n\nPlayground supervision will be more effective if members of staff are trained to recognise the difference between bullying and mere 39..\n\n## Question 40\n\nChoose the correct letter, A, B, C or D.\n\nWrite the correct letter in box 40 on your answer sheet.\n\nWhich of the following is the most suitable title for Reading Passage 3? A Bullying: what parents can do B Bullying: are the media to blame? CBullying: the link with academic failure D Bullying: from crisis management to prevention\n\n## WRITING TASK 1\n\nYou should spend about 20 minutes on this task.\n\nThe charts below give information about USA marriage and divorce rates between 1970 and 2000, and the marital status of adult Americans in two of the years.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\nYou should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome people prefer to spend their lives doing the same things and avoiding change. Others, however, think that change is always a good thing.\n\nDiscuss both these views and give your own opinion\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.\n\n## PART 1\n\nThe examiner asks the candidate about him/herself, his/her home, work or studies and other familiar topics.\n\n## EXAMPLE\n\n## Your friends\n\n• Do you prefer to have one particular friend or a group of friends? [Why?]\n\n• What do you like doing most with your friend/s?\n\n• Do you think it's important to keep in contact with friends you knew as a child? [Why/Why not?]\n\n• What makes a friend into a good friend?\n\n## PART 2\n\n<table><tr><td>Describe an important choice you had to make in your life. You should say:</td></tr><tr><td>when you had to make this choice what you had to choose between whether you made a good choice and explain how you felt when you were making this choice.</td></tr></table>\n\nYou will have to talk about the topic for one to two minutes.\n\nYou have one minute to think about what you are going to say.\n\nYou can make some notes to help you if you wish.\n\n## PART3\n\n## Discussion topics:\n\n## Important choices\n\nExample questions:\n\nWhat are the typical choices people make at different stages of their lives?\n\nShould important choices be made by parents rather than by young adults?\n\nWhy do some people like to discuss choices with other people?\n\n## Choices in everyday life\n\n## Example questions:\n\nWhat kind of choices do people have to make in their everyday life?\n\nWhy do some people choose to do the same things every day? Are there any disadvantages in this?\n\nDo you think that people today have more choices to make today than in the past?\n\n# General Training: Reading and Writingge Test A\n\n## SECTION 1"
+      },
+      "questionGroups": [
+        {
+          "id": "c6t4r-g27",
+          "instruction": "Reading Passage has six sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "0 D",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Choose the correct heading for sections A-D from the list of headings below."
+            ]
+          }
+        },
+        {
+          "id": "c6t4r-g28",
+          "instruction": "Reading Passage has six sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Section B",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Choose the correct heading for sections A-D from the list of headings below."
+            ]
+          }
+        },
+        {
+          "id": "c6t4r-g29",
+          "instruction": "Reading Passage has six sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "-40 you are unlikely to get an acceptable score under examination conditions and we recommend that you spend a lot of time improving your English before you take IELTS. you may get an acceptable score under examination conditions but we recommend that you think about having more practice or lessons before you take IELTS. you are likely to get an acceptable score under examination conditions but remember that different institutions will find different scores acceptable. # Model and sample answers for Writing tasks",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Choose the correct heading for sections A-D from the list of headings below."
+            ]
+          }
+        },
+        {
+          "id": "c6t4r-g30",
+          "instruction": "Reading Passage has six sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "Section D",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Choose the correct heading for sections A-D from the list of headings below."
+            ]
+          }
+        },
+        {
+          "id": "c6t4r-g31",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "C 0",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "there was more bullying than had previously been the case."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "there was less bullying than in primary schools."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cases of persistent bullying were very common."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "indirect forms of bullying were particularly difficult to deal with."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:05:47.788810+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g32",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "Children who are bullied",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "are twice as likely to commit suicide as the average person."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "find it more difficult to relate to adults."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "are less likely to be violent in later life."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "may have difficulty forming relationships in later life."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:05:47.788810+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g33",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "The writer thinks that the declaration ‘There is no bullying at this school'",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "is no longer true in many schools."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was not in fact made by many schools."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "reflected the school's lack of concern."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "reflected a lack of knowledge and resources."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:05:47.788810+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g34",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "F340 一",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Bullying declined by 50% after an anti-bullying campaign."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Twenty-one schools reduced bullying as a result of an anti-bullying campaign."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Two years is the optimum length for an anti-bullying campaign."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Bullying is a less serious problem in Norway than in the UK."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:05:47.788810+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6t4r-g35",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "The most important step is for the school authorities to produce a ___ which makes the school's attitude towards bullying quite clear.",
+              "acceptedAnswers": [
+                "policy"
+              ],
+              "gapText": "The most important step is for the school authorities to produce a ___ which makes the school's attitude towards bullying quite clear.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g36",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "=0 0",
+              "acceptedAnswers": [
+                "(explicit) guidelines"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g37",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "This is particularly useful in the early part of the process, as a way of raising awareness and encouraging discussion. On its own, however, it is insufficient to bring about a permanent solution.",
+              "acceptedAnswers": [
+                "(school) curriculum"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g38",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "For example, potential ___ of bullying can be trained to be more self-confident.",
+              "acceptedAnswers": [
+                "victims"
+              ],
+              "gapText": "For example, potential ___ of bullying can be trained to be more self-confident.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:36:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g39",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "(over) a thousand",
+              "acceptedAnswers": [
+                "playful fighting"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:14:52.427901+00:00"
+          }
+        },
+        {
+          "id": "c6t4r-g40",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c6t4r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "0 The authors and publishers are grateful to the following for permission to reproduce copyright material. While every effort has been made, it has not always been possible to identify the sources of all the material used, or to contact the copyright holders. If any omissions are brought to our notice, we will be happy to include the appropriate acknowledgements on reprinting. The publishers are grateful to the following for permission to reproduce copyright material: For the text on pp. 18–19: 'Australia's Sporting Success' by Wilson da Silva, New Scientist, 26 January 2002, for the text on p",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Bullying: what parents can do"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Bullying: are the media to blame?"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Bullying: the link with academic failure"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Bullying: from crisis management to prevention"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:05:47.788810+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

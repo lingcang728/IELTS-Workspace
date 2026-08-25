@@ -1,0 +1,2561 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-10-test-3-reading",
+  "title": "Cambridge IELTS 10 Academic Test 3 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0018-24c9673c",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 10",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题10.pdf",
+        "sha256": "924bf69326e33aacf54dff62009ff5badf01d17d41340c3e242f86d278b6420d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C10\\剑桥雅思真题10\\auto\\剑桥雅思真题10.md",
+        "sha256": "779bed817fd5e0c62ba6cda955f8bc236f88c4e87afa75b288b862fc8fad9048",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-10-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "The Context, Meaning and Scope of Tourism\n\nTravel has existed since the beginning of time, when primitive man set out, often traversing great distances in search of game, which provided the food and clothing necessary for his survival. Throughout the course of history, people have travelled for purposes of trade, religious conviction, economic gain, war, migration and other equally compelling motivations. In the Roman era, wealthy aristocrats and high government officials also travelled for pleasure. Seaside resorts located at Pompeii and Herculaneum afforded citizens the opportunity to escape to their vacation villas in order to avoid the summer heat of Rome. Travel, except during the Dark Ages, has continued to grow and, throughout recorded history, has played a vital role in the development of civilisations and their economies.\n\nTourism in the mass form as we know it today is a distinctly twentieth-century phenomenon. Historians suggest that the advent of mass tourism began in England during the industrial revolution with the rise of the middle class and the availability of relatively inexpensive transportation. The creation of the commercial airline industry following the Second World War and the subsequent development of the jet aircraft in the 1950s signalled the rapid growth and expansion of international travel. This growth led to the development of a major new industry: tourism. In turn, international tourism became the concern of a number of world governments since it not only provided new employment opportunities but also produced a means of earning foreign exchange.\n\nTourism today has grown significantly in both economic and social importance. In most industrialised countries over the past few years the fastest growth has been seen in the area of services. One of the largest segments of the service industry, although largely unrecognised as an entity in some of these countries, is travel and tourism. According to the World Travel and Tourism Council (1992), ‘Travel and tourism is the largest industry in the world on virtually any economic measure including value-added capital investment, employment and tax contributions'. In 1992, the industry's gross output was estimated to be \\$3.5 trillion, over 12 per cent of all consumer spending. The travel and tourism industry is the world's largest employer with almost 130 million jobs, or almost 7 per cent of all employees. This industry is the world's leading industrial contributor, producing over 6 per cent of the world's gross national product and accounting for capital investment in excess of \\$422 billion in direct, indirect and personal taxes each year. Thus, tourism has a profound impact both on the world economy and, because of the educative effect of travel and the effects on employment, on society itself.\n\nD However, the major problems of the travel and tourism industry that have hidden, or obscured, its economic impact are the diversity and fragmentation of the industry itself. The travel industry includes: hotels, motels and other types of accommodation; restaurants and other food services; transportation services and facilities; amusements, attractions and other leisure facilities; gift shops and a large number of other enterprises. Since many of these businesses also serve local residents, the impact of spending by visitors can easily be overlooked or underestimated. In addition, Meis (1992) points out that the tourism industry involves concepts that have remained amorphous to both analysts and decision makers. Moreover, in all nations this problem has made it difficult for the industry to develop any type of reliable or credible tourism information base in order to estimate the contribution it makes to regional, national and global economies. However, the nature of this very diversity makes travel and tourism ideal vehicles for economic development in a wide variety of countries, regions or communities.\n\nE Once the exclusive province of the wealthy, travel and tourism have become an institutionalised way of life for most of the population. In fact, McIntosh and Goeldner (1990) suggest that tourism has become the largest commodity in international trade for many nations and, for a significant number of other countries, it ranks second or third. For example, tourism is the major source of income in Bermuda, Greece, Italy, Spain, Switzerland and most Caribbean countries. In addition, Hawkins and Ritchie, quoting from data published by the American Express Company, suggest that the travel and tourism industry is the number one ranked employer in the Bahamas, Brazil, Canada, France, (the former) West Germany, Hong Kong, Italy, Jamaica, Japan, Singapore, the United Kingdom and the United States. However, because of problems of definition, which directly affect statistical measurement, it is not possible with any degree of certainty to provide precise, valid or reliable data about the extent of world-wide tourism participation or its economic impact. In many cases, similar difficulties arise when attempts are made to measure domestic tourism.\n\nDo the following statements agree with the information given in Reading Passage 1?\n\nboxes 5–10 on your answer sheet, write\n\nTRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVEN if there is no information on this\n\n5 The largest employment figures in the world are found in the travel and tourism industry.\n\nTourism contributes over six per cent of the Australian gross national product.\n\n1 Tourism has a social impact because it promotes recreation.\n\nTwo main features of the travel and tourism industry make its economic significance difficult to ascertain.\n\n9 Visitor spending is always greater than the spending of residents in tourist areas.\n\n10 It is easy to show statistically how tourism affects individual economies."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t3r-g1",
+          "instruction": "Reading Passage has five paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Tourism has a social impact because it promotes recreation. Two main features of the travel and tourism industry make its economic significance difficult to ascertain",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.882314+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Economic and social significance of tourism"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of mass tourism"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Travel for the wealthy"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Earning foreign exchange through tourism"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Difficulty in recognising the economic effects of tourism"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The contribution of air travel to tourism"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The world impact of tourism"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The history of travel"
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g2",
+          "instruction": "Reading Passage has five paragraphs.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q2",
+              "number": 2,
+              "type": "matching",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Economic and social significance of tourism"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The development of mass tourism"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Travel for the wealthy"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Earning foreign exchange through tourism"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Difficulty in recognising the economic effects of tourism"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "The contribution of air travel to tourism"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "The world impact of tourism"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The history of travel"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Economic and social significance of tourism"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of mass tourism"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Travel for the wealthy"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Earning foreign exchange through tourism"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Difficulty in recognising the economic effects of tourism"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The contribution of air travel to tourism"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The world impact of tourism"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The history of travel"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.882314+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g3",
+          "instruction": "Reading Passage has five paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q3",
+              "number": 3,
+              "type": "matching",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "V"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Economic and social significance of tourism"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The development of mass tourism"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Travel for the wealthy"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Earning foreign exchange through tourism"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Difficulty in recognising the economic effects of tourism"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "The contribution of air travel to tourism"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "The world impact of tourism"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The history of travel"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.882314+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Economic and social significance of tourism"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of mass tourism"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Travel for the wealthy"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Earning foreign exchange through tourism"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Difficulty in recognising the economic effects of tourism"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The contribution of air travel to tourism"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The world impact of tourism"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The history of travel"
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g4",
+          "instruction": "Reading Passage has five paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Paragraph E The Context, Meaning and Scope of Tourism Travel has existed since the beginning of time, when primitive man set out, often traversing great distances in search of game, which provided the food and clothing necessary for his survival. Throughout the course of history, people have travelled for purposes of trade, religious conviction, economic gain, war, migration and other equally compelling motivations. In the Roman era, wealthy aristocrats and high government officials also travelled for pleasure. Seaside resorts located at Pompeii and Herculaneum afforded citizens the opportunit",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.882314+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Economic and social significance of tourism"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of mass tourism"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Travel for the wealthy"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Earning foreign exchange through tourism"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Difficulty in recognising the economic effects of tourism"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The contribution of air travel to tourism"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The world impact of tourism"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The history of travel"
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g5",
+          "instruction": "Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "The largest employment figures in the world are found in the travel and tourism industry. Tourism contributes over six per cent of the Australian gross national product",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE, FALSE or NOT GIVEN.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "Tourism contributes over six per cent of the Australian gross national product.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:11:02.162753+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE, FALSE or NOT GIVEN.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "Tourism has a social impact because it promotes recreation.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:11:02.162753+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE, FALSE or NOT GIVEN.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Two main features of the travel and tourism industry make its economic significance difficult to ascertain.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:11:02.162753+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g9",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q9",
+              "number": 9,
+              "type": "true_false_ng",
+              "prompt": "Visitor spending is always greater than the spending of residents in tourist areas",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g10",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q10",
+              "number": 10,
+              "type": "true_false_ng",
+              "prompt": "It is easy to show statistically how tourism affects individual economies",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g11",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "In Greece, tourism is the most important",
+              "acceptedAnswers": [
+                "source of income",
+                "industry"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 11–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t3r-g12",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "The travel and tourism industry in Jamaica is the major",
+              "acceptedAnswers": [
+                "employer"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 11–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t3r-g13",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "The problems associated with measuring international tourism are often reflected in the measurement of . … You should spend about 20 minutes on",
+              "acceptedAnswers": [
+                "domestic tourism"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 11–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Autumn leaves\n\nCanadian writer Jay Ingram investigates the mystery of why leaves turn red in the fall\n\nA One of the most captivating natural events of the year in many areas throughout North America is the turning of the leaves in the fall.The colours are magnificent, but the question of exactly why some trees turn yellow or orange, and others red or purple, is something which has long puzzled scientists.\n\nB Summer leaves are green because they are full of chlorophyll, the molecule that captures sunlight and converts that energy into new building materials for the tree. As fall approaches in the northern hemisphere, the amount of solar energy available declines considerably. For many trees – evergreen conifers being an exception - the best strategy is to abandon photosynthesis\\* until the spring. So rather than maintaining the now redundant leaves throughout the winter, the tree saves its precious resources and discards them. But before letting its leaves go, the tree dismantles their chlorophyll molecules and ships their valuable nitrogen back into the twigs. As chlorophyll is depleted, other colours that have been dominated by it throughout the summer begin to be revealed. This unmasking explains the autumn colours of yellow and orange, but not the brilliant reds and purples of trees such as the maple or sumac.\n\nC The source of the red is widely known: it is created by anthocyanins, water-soluble plant pigments reflecting the red to blue range of the visible spectrum. They belong to a class of sugar-based chemical compounds also known as flavonoids. What's puzzling is that anthocyanins are actually newly minted, made in the leaves at the same time as the tree is preparing to drop them. But it is hard to make sense of the manufacture of anthocyanins – why should a tree bother making new chemicals in its leaves when it's already scrambling to withdraw and preserve the ones already there?\n\nD Some theories about anthocyanins have argued that they might act as a chemical defence against attacks by insects or fungi, or that they might attract fruit-eating birds or increase a leaf's tolerance to freezing. However there are problems with each of these theories, including the fact that leaves are red for such a relatively short period that the expense of energy needed to manufacture the anthocyanins would outweigh any anti-fungal or anti-herbivore activity achieved.\n\n\\* photosynthesis: the production of new material from sunlight, water and carbon dioxide\n\nIt has also been proposed that trees may produce vivid red colours to convince herbivorous insects that they are healthy and robust and would be easily able to mount chemical defences against infestation. If insects paid attention to such advertisements, they might be prompted to lay their eggs on a duller, and presumably less resistant host. The flaw in this theory lies in the lack of proof to support it. No one has as yet ascertained whether more robust trees sport the brightest leaves, or whether insects make choices according to colour intensity.\n\nPerhaps the most plausible suggestion as to why leaves would go to the trouble of making anthocyanins when they're busy packing up for the winter is the theory known as the 'light screen' hypothesis. It sounds paradoxical, because the idea behind this hypothesis is that the red pigment is made in autumn leaves to protect chlorophyll, the light-absorbing chemical, from too much light. Why does chlorophyll need protection when it is the natural world's supreme light absorber? Why protect chlorophyll at a time when the tree is breaking it down to salvage as much of it as possible?\n\nChlorophyll, although exquisitely evolved to capture the energy of sunlight, can sometimes be overwhelmed by it, especially in situations of drought, low temperatures, or nutrient deficiency. Moreover, the problem of oversensitivity to light is even more acute in the fall, when the leaf is busy preparing for winter by dismantling its internal machinery. The energy absorbed by the chlorophyll molecules of the unstable autumn leaf is not immediately channelled into useful products and processes, as it would be in an intact summer leaf. The weakened fall leaf then becomes vulnerable to the highly destructive effects of the oxygen created by the excited chlorophyll molecules.\n\nEven if you had never suspected that this is what was going on when leaves turn red, there are clues out there. One is straightforward: on many trees, the leaves that are the reddest are those on the side of the tree which gets most sun. Not only that, but the red is brighter on the upper side of the leaf. It has also been recognised for decades that the best conditions for intense red colours are dry, sunny days and cool nights, conditions that nicely match those that make leaves susceptible to excess light. And finally, trees such as maples usually get much redder the more north you travel in the northern hemisphere. It's colder there, they're more stressed, their chlorophyll is more sensitive and it needs more sunblock.\n\nWhat is still not fully understood, however, is why some trees resort to producing red pigments while others don't bother, and simply reveal their orange or yellow hues. Do these trees have other means at their disposal to prevent overexposure to light in autumn? Their story, though not as spectacular to the eye, will surely turn out to be as subtle and as complex.\n\nTest 3"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t3r-g14",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "The 'light screen' hypothesis would initially seem to contradict what is known about chlorophyll",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3r-g15",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "the reason why trees drop their leaves in autumn",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3r-g16",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "some evidence to confirm a theory about the purpose of the red leaves",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3r-g17",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "an explanation of the function of chlorophyll",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3r-g18",
+          "instruction": "Reading Passage has nine paragraphs. Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "a suggestion that the red colouration in leaves could serve as a warning signal",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Paragraph G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Paragraph H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Paragraph I"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t3r-g19",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "sun(light)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              22
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 19–22 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t3r-g20",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "The ___ surfaces of leaves contain the most red pigment.",
+              "acceptedAnswers": [
+                "upper"
+              ],
+              "gapText": "The ___ surfaces of leaves contain the most red pigment.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              22
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 19–22 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t3r-g21",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Red leaves are most abundant when daytime weather conditions are ___ and sunny.",
+              "acceptedAnswers": [
+                "dry"
+              ],
+              "gapText": "Red leaves are most abundant when daytime weather conditions are ___ and sunny.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              22
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 19–22 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t3r-g22",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "The intensity of the red colour of leaves increases as you go further ___.",
+              "acceptedAnswers": [
+                "north"
+              ],
+              "gapText": "The intensity of the red colour of leaves increases as you go further ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              22
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 19–22 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t3r-g23",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q23",
+              "number": 23,
+              "type": "true_false_ng",
+              "prompt": "It is likely that the red pigments help to protect the leaf from freezing temperatures.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:06.390469+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g24",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q24",
+              "number": 24,
+              "type": "true_false_ng",
+              "prompt": "The ‘light screen’ hypothesis would initially seem to contradict what is known about chlorophyll.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:06.390469+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g25",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q25",
+              "number": 25,
+              "type": "true_false_ng",
+              "prompt": "Leaves which turn colours other than red are more likely to be damaged by sunlight.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:54:06.390469+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g26",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "For which of the following questions does the writer offer an explanation?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "why conifers remain green in winter"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how leaves turn orange and yellow in autumn"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how herbivorous insects choose which trees to lay their eggs in"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "why anthocyanins are restricted to certain trees"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "why conifers remain green in winter"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how leaves turn orange and yellow in autumn"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how herbivorous insects choose which trees to lay their eggs in"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "why anthocyanins are restricted to certain trees"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Beyond the blue horizon\n\nAncient voyagers who settled the far-flung islands of the Pacific Ocean\n\nAn important archaeological discovery on the island of Éfaté in the Pacific archipelago of Vanuatu has revealed traces of an ancient seafaring people, the distant ancestors of today's Polynesians. The site came to light only by chance. An agricultural worker, digging in the grounds of a derelict plantation, scraped open a grave – the first of dozens in a burial ground some 3,000 years old. It is the oldest cemetery ever found in the Pacific islands, and it harbors the remains of an ancient people archaeologists call the Lapita.\n\nThey were daring blue-water adventurers who used basic canoes to rove across the ocean. But they were not just explorers. They were also pioneers who carried with them everything they would need to build new lives – their livestock, taro seedlings and stone tools. Within the span of several centuries, the Lapita stretched the boundaries of their world from the jungle-clad volcanoes of Papua New Guinea to the loneliest coral outliers ofTonga\n\nThe Lapita left precious few clues about themselves, but Éfaté expands the volume of data available to researchers dramatically. The remains of 62 individuals have been uncovered so far, and archaeologists were also thrilled to find six complete Lapita pots. Other items included a Lapita burial urn with modeled birds arranged on the rim as though peering down at the human remains sealed inside. It's an important discovery, says Matthew Spriggs, professor of archaeology at the Australian National University and head of the international team digging up the site, for it conclusively identifies the remains as Lapita.'\n\n[]\n\nDNA teased from these human remains may help answer one of the most puzzling questions in Pacific anthropology: did all Pacific islanders spring from one source or many? Was there only one outward migration from a single point in Asia, or several from different points? ‘This represents the best opportunity we've had yet, says Spriggs, 'to find out who the Lapita actually were, where they came from, and who their closest descendants are today.'\n\nThere is one stubborn question for which archaeology has yet to provide any answers: how did the Lapita accomplish the ancient equivalent of a moon landing, many times over? No-one has found one of their canoes or any rigging, which could reveal how the canoes were sailed. Nor do the oral histories and traditions of later Polynesians offer any insights, for they turn into myths long before they reach as far back in time as the Lapita.\n\nAll we can say for certain is that the Lapita canoes that were capable of ocean voyages, they had the ability to sail them,' says Geoff a professor of archaeology at the University ickland. Those sailing skills, he says, were loped and passed down over thousands of by earlier mariners who worked their way gh the archipelagoes of the western Pacific, ing short crossings to nearby islands.The real ture didn't begin, however, until their Lapita cendants sailed out of sight of land, with y horizons on every side. This must have as difficult for them as landing on the moon us today. Certainly it distinguished them their ancestors, but what gave them the age to launch out on such risky voyages?\n\nThe Lapita's thrust into the Pacific was rard, against the prevailing trade winds, notes. Those nagging headwinds, he argues, have been the key to their success. \"They d sail out for days into the unknown and assess area, secure in the knowledge that if they 't find anything, they could turn about catch a swift ride back on the trade winds. is what would have made the whole thing k' Once out there, skilled seafarers would detected abundant leads to follow to land: irds, coconuts and twigs carried out to sea by tides, and the afternoon pile-up of clouds on horizon which often indicates an island in the ance.\n\nFor returning explorers, successful or not, the graphy of their own archipelagoes would have wided a safety net.Without this to go by, ershooting their home ports, getting lost and ng off into eternity would have been all too easy. Vanuatu, for example, stretches more than 500miles in a northwest-southeast trend, its scores of intervisible islands forming a backstop for mariners riding the trade winds home.\n\nAll this presupposes one essential detail, says Atholl Anderson, professor of prehistory at the Australian National University: the Lapita had mastered the advanced art of sailing against the wind. And there's no proof they could do any such thing,' Anderson says.\"There has been this assumption they did, and people have built canoes to re-create those early voyages based on that assumption. But nobody has any idea what their canoes looked like or how they were rigged.\"\n\nRather than give all the credit to human skill, Anderson invokes the winds of chance. El Niño, the same climate disruption that affects the Pacific today, may have helped scatter the Lapita, Anderson suggests. He points out that climate data obtained from slow-growing corals around the Pacific indicate a series of unusually frequent El Niños around the time of the Lapita expansion. By reversing the regular east-to-west flow of the trade winds for weeks at a time, these super El Niños might have taken the Lapita on long unplanned voyages.\n\nHowever they did it, the Lapita spread themselves a third of the way across the Pacific, then called it quits for reasons known only to them. Ahead lay the vast emptiness of the central Pacific and perhaps they were too thinly stretched to venture farther. They probably never numbered more than a few thousand in total, and in their rapid migration eastward they encountered hundreds of islands - more than 300 in Fiji alone."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t3r-g27",
+          "instruction": "Complete the summary using the list of words and phrases, A-J, below. Write the correct letter, A-J, in boxes 27-31 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Complete the summary using the list of words and phrases, A-J, below.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "proof"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "plantation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "harbour"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "bones"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "data"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "archaeological discovery"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "burial urn"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "source"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "animals"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "maps"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "proof"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "plantation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "harbour"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "bones"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "data"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "archaeological discovery"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "burial urn"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "source"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "animals"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "maps"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:12:49.019390+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g28",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "The cemetery, which is a significant ___, was uncovered accidentally by an agricultural worker.",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "proof"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "plantation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "harbour"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "bones"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "data"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "archaeological discovery"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "burial urn"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "source"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "animals"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "maps"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "proof"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "plantation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "harbour"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "bones"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "data"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "archaeological discovery"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "burial urn"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "source"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "animals"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "maps"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:12:49.019390+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g29",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "They took many things with them on their voyages including ___ and tools.",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "proof"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "plantation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "harbour"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "bones"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "data"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "archaeological discovery"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "burial urn"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "source"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "animals"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "maps"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "proof"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "plantation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "harbour"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "bones"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "data"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "archaeological discovery"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "burial urn"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "source"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "animals"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "maps"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:12:49.019390+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g30",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Spriggs believes the ___ which was found at the site is very important",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "proof"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "plantation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "harbour"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "bones"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "data"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "archaeological discovery"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "burial urn"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "source"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "animals"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "maps"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "proof"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "plantation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "harbour"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "bones"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "data"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "archaeological discovery"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "burial urn"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "source"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "animals"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "maps"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:12:49.019390+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g31",
+          "instruction": "Complete the summary below. Write the correct letter, A-J, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "It confirms that the ___ found inside are Lapita.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "proof"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "plantation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "harbour"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "bones"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "data"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "archaeological discovery"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "burial urn"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "source"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "animals"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "maps"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "proof"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "plantation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "harbour"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "bones"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "data"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "archaeological discovery"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "burial urn"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "source"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "animals"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "maps"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:12:49.019390+00:00"
+          }
+        },
+        {
+          "id": "c10t3r-g32",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "According to the writer, there are difficulties explaining how the Lapita accomplished their journeys because A the canoes that have been discovered offer relatively few clues. B archaeologists have shown limited interest in this area of research. C little information relating to this period can be relied upon for accuracy. D technological advances have altered the way such achievements are viewed",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "proof"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "plantation"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "harbour"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "bones"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "data"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "archaeological discovery"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "burial urn"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "source"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "proof"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "plantation"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "harbour"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "bones"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "data"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "archaeological discovery"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "burial urn"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "source"
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g33",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "According to the sixth paragraph, what was extraordinary about the Lapita? A They sailed beyond the point where land was visible. B Their cultural heritage discouraged the expression of fear. C They were able to build canoes that withstood ocean voyages. D Their navigational skills were passed on from one generation to the next",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the canoes that have been discovered offer relatively few clues"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "archaeologists have shown limited interest in this area of research"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "little information relating to this period can be relied upon for accuracy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "technological advances have altered the way such achievements are viewed"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the canoes that have been discovered offer relatively few clues"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "archaeologists have shown limited interest in this area of research"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "little information relating to this period can be relied upon for accuracy"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "technological advances have altered the way such achievements are viewed"
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g34",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "What does This' refer to in the seventh paragraph? A the Lapita's seafaring talent B the Lapita's ability to detect signs of land C the Lapita's extensive knowledge of the region D the Lapita's belief they would be able to return home",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They sailed beyond the point where land was visible"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Their cultural heritage discouraged the expression of fear"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They were able to build canoes that withstood ocean voyages"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Their navigational skills were passed on from one generation to the next"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They sailed beyond the point where land was visible"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Their cultural heritage discouraged the expression of fear"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They were able to build canoes that withstood ocean voyages"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Their navigational skills were passed on from one generation to the next"
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g35",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "According to the eighth paragraph, how was the geography of the region significant? A It played an important role in Lapita culture. B It meant there were relatively few storms at sea. C It provided a navigational aid for the Lapita. D It made a large number of islands habitable",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the Lapita's seafaring talent"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the Lapita's ability to detect signs of land"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the Lapita's extensive knowledge of the region"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the Lapita's belief they would be able to return home"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the Lapita's seafaring talent"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the Lapita's ability to detect signs of land"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the Lapita's extensive knowledge of the region"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the Lapita's belief they would be able to return home"
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g36",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q36",
+              "number": 36,
+              "type": "yes_no_ng",
+              "prompt": "It is now clear that the Lapita could sail into a prevailing wind",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g37",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q37",
+              "number": 37,
+              "type": "yes_no_ng",
+              "prompt": "Extreme climate conditions may have played a role in Lapita migration",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g38",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q38",
+              "number": 38,
+              "type": "true_false_ng",
+              "prompt": "The Lapita learnt to predict the duration of El Niños",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g39",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q39",
+              "number": 39,
+              "type": "yes_no_ng",
+              "prompt": "It remains unclear why the Lapita halted their expansion across the Pacific",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t3r-g40",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t3r-q40",
+              "number": 40,
+              "type": "true_false_ng",
+              "prompt": "It is likely that the majority of Lapita settled on Fiji",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

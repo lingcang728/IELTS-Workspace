@@ -1,0 +1,2661 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-8-test-2-reading",
+  "title": "Cambridge IELTS 8 Academic Test 2 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0023-a6593332",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 8",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题8.pdf",
+        "sha256": "2f3cdf0c049ecac93bafafd034c2316ac7ed66b0694bea8a2a7c152042923e23"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C08\\剑桥雅思真题8\\auto\\剑桥雅思真题8.md",
+        "sha256": "9bc5a6c2dc6b80f2e6667849856a7af88f0f5e7102900ecf2906d8c2b913a8ca",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-8-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Sheet glass manufacture: the float process\n\nGlass, which has been made since the time of the Mesopotamians and Egyptians, is little more than a mixture of sand, soda ash and lime. When heated to about 1500 degrees Celsius (°C) this becomes a molten mass that hardens when slowly cooled. The first successful method for making clear, flat glass involved spinning. This method was very effective as the glass had not touched any surfaces between being soft and becoming hard, so it stayed perfectly unblemished, with a 'fire finish'. However, the process took a long time and was labour intensive.\n\nNevertheless, demand for flat glass was very high and glassmakers across the world were looking for a method of making it continuously. The first continuous ribbon process involved squeezing molten glass through two hot rollers, similar to an old mangle. This allowed glass of virtually any thickness to be made non-stop, but the rollers would leave both sides of the glass marked, and these would then need to be ground and polished. This part of the process rubbed away around 20 per cent of the glass, and the machines were very expensive.\n\nThe float process for making flat glass was invented by Alistair Pilkington. This process allows the manufacture of clear, tinted and coated glass for buildings, and clear and tinted glass for vehicles. Pilkington had been experimenting with improving the melting process, and in 1952 he had the idea of using a bed of molten metal to form the flat glass, eliminating altogether the need for rollers within the float bath, The metal had to melt at a temperature less than the hardening point of glass (about 600°C), but could not boil at a temperature below the temperature of the molten glass (about $1 5 0 0 ^ { \\circ } \\mathrm { C } )$ . The best metal for the job was tin.\n\nThe rest of the concept relied on gravity, which guaranteed that the surface of the molten metal was perfectly flat and horizontal. Consequently, when pouring molten glass onto the molten tin, the underside of the glass would also be perfectly flat. If the glass were kept hot enough, it would flow over the molten tin until the top surface was also flat, horizontal and perfectly parallel to the bottom surface. Once the glass cooled to $6 0 4 ^ { \\circ } \\mathrm { C }$ or less it was too hard to mark and could be transported out of the cooling zone by rollers. The glass settled to a thickness of six millimetres because of surface tension interactions between the glass and the tin. By fortunate coincidence, 60 per cent of the flat glass market at that time was for sixmillimetre glass.\n\nPilkington built a pilot plant in 1953 and by 1955 he had convinced his company to build a full-scale plant. However, it took 14 months of non-stop production, costing the company £100,000 a month, before the plant produced any usable glass. Furthermore, once they succeeded in making marketable flat glass, the machine was turned off for a service to prepare it for years of continuous production. When it started up again it took another four months to get the process right again. They finally succeeded in 1959 and there are now float plants all over the world, with each able to produce around 1000 tons of glass every day, non-stop for around 15 years.\n\nFloat plants today make glass of near optical quality. Several processes – melting, refiníng, homogenising - take place simultaneously in the 2000 tonnes of molten glass in the furnace. They occur in separate zones in a complex glass flow driven by high temperatures. It adds up to a continuous melting process, lasting as long as 50 hours, that delivers glass smoothly and continuously to the float bath, and from there to a coating zone and finally a heat treatment zone, where stresses formed during cooling are relieved.\n\nThe principle of float glass is unchanged since the 1950s. However, the product has changed dramatically, from a single thickness of 6.8 mm to a range from sub-millimetre to 25 mm, from a ribbon frequently marred by inclusions and bubbles to almost optical perfection. To ensure the highest quality, inspection takes place at every stage. Occasionally, a bubble is not removed during refining, a sand grain refuses to melt, a tremor in the tin puts ripples into the glass ribbon. Automated on-line inspection does two things. Firstly, it reveals process faults upstream that can be corrected. Inspection technology allows more than 100 million measurements a second to be made across the ribbon, locating flaws the unaided eye would be unable to see. Secondly, it enables computers downstream to steer cutters around flaws.\n\nFloat glass is sold by the square metre, and at the final stage computers translate customer requirements into patterns of cuts designed to minimise waste."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t2r-g1",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Glass remained2.. • Slow• 3.. Ribbon • Could produce glass sheetsof varying 4• Non-stop process Glass was 520% of glass rubbed away Machines were expensive Pilkington's float process [] 本资料仅用于参考，。 Test 2",
+              "acceptedAnswers": [
+                "Spinning"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g2",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Glass remained",
+              "acceptedAnswers": [
+                "(perfectly) unblemished"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g3",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "• Slow•",
+              "acceptedAnswers": [
+                "labour",
+                "labor-intensive"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g4",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "• Non-stop process | Glass was 520% of glass rubbed away Machines were expensive",
+              "acceptedAnswers": [
+                "thickness"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g5",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Ribbon method: Glass was ________.",
+              "acceptedAnswers": [
+                "marked"
+              ],
+              "gapText": "Ribbon method: Glass was ________.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g6",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Pilkington’s float process — label 6: ________.",
+              "acceptedAnswers": [
+                "(molten) glass"
+              ],
+              "gapText": "Pilkington’s float process — label 6: ________.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g7",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Pilkington’s float process — label 7: ________.",
+              "acceptedAnswers": [
+                "(molten) tin",
+                "metal"
+              ],
+              "gapText": "Pilkington’s float process — label 7: ________.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g8",
+          "instruction": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Pilkington’s float process — label 8: ________.",
+              "acceptedAnswers": [
+                "rollers"
+              ],
+              "gapText": "Pilkington’s float process — label 8: ________.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–8 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g9",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q9",
+              "number": 9,
+              "type": "true_false_ng",
+              "prompt": "The metal used in the float process had to have specific properties",
+              "acceptedAnswers": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g10",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q10",
+              "number": 10,
+              "type": "true_false_ng",
+              "prompt": "Pilkington invested some of his own money in his float plant",
+              "acceptedAnswers": [
+                "not given"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g11",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q11",
+              "number": 11,
+              "type": "true_false_ng",
+              "prompt": "Pilkington's first full-scale plant was an instant commercial success",
+              "acceptedAnswers": [
+                "false"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g12",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q12",
+              "number": 12,
+              "type": "true_false_ng",
+              "prompt": "The process invented by Pilkington has now been improved",
+              "acceptedAnswers": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g13",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q13",
+              "number": 13,
+              "type": "true_false_ng",
+              "prompt": "Computers are better than humans at detecting faults in glass",
+              "acceptedAnswers": [
+                "true"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 on the following pages.\n\nQuestions 14-17\n\nReading Passage 2 has six paragraphs, A-F.\n\nChoose the correct heading for paragraphs B and D-F from the list of headings below.\n\nWrite the correct number, i-ix, in boxes 14–17 on your answer sheet.\n\n## List of Headings\n\ni Predicting climatic changes\n\nii The relevance of the Little Ice Age today\n\niii How cities contribute to climate change\n\niv Human impact on the climate\n\nv How past climatic conditions can be determined\n\nvi A growing need for weather records\n\nvii A study covering a thousand years\n\nviii People have always responded to climate change\n\nix Enough food at last\n\nExample\n\nParagraph A\n\nAnswer\n\nviii\n\n## 14 Paragraph B\n\nExample\n\nAnswer\n\nParagraph C\n\nV\n\n15 Paragraph D\n\n16 Paragraph E\n\n17 Paragraph F\n\n# THE LITTLE ICE AGE\n\nAThis book will provide a detailed examination of the Little Ice Age and other climatic shifts, but, before I embark on that, let me provide a historical context. We tend to think of climate – as opposed to weather – as something unchanging, yet humanity has been at the mercy of climate change for its entire existence, with at least eight glacial episodes in the past 730,000 years. Our ancestors adapted to the universal but irregular global warming since the end of the last great Ice Age, around 10,000 years ago, with dazzling opportunism. They developed strategies for surviving harsh drought cycles, decades of heavy rainfall or unaccustomed cold; adopted agriculture and stock-raising, which revolutionised human life; and founded the world's first pre-industrial civilisations in Egypt, Mesopotamia and the Americas. But the price of sudden climate change, in famine, disease and suffering, was often high.\n\nB The Little Ice Age lasted from roughly 1300 until the middle of the nineteenth century. Only two centuries ago, Europe experienced a cycle of bitterly cold winters; mountain glaciers in the Swiss Alps were the lowest in recorded memory, and pack ice surrounded Iceland for much of the year. The climatic events of the Little Ice Age did more than help shape the modern world. They are the deeply important context for the current unprecedented global warming. The Little Ice Age was far from a deep freeze, however; rather an irregular seesaw of rapid climatic shifts, few lasting more than a quarter-century, driven by complex and still little understood interactions between the atmosphere and the ocean. The seesaw brought cycles of intensely cold winters and easterly winds, then switched abruptly to years of heavy spring and early summer rains, mild winters, and frequent Atlantic storms, or to periods of droughts, light northeasterly winds, and summer heat waves.\n\nC Reconstructing the climate changes of the past is extremely difficult, because systematic weather observations began only a few centuries ago, in Europe and North America. Records from India and tropical Africa are even more recent. For the time before records began, we have only 'proxy records' reconstructed largely from tree rings and ice cores, supplemented by a few incomplete written accounts. We now have hundreds of tree-ring records from throughout the northern hemisphere, and many from south of the equator, too, amplified with a growing body of temperature data from ice cores drilled in Antarctica, Greenland, the Peruvian Andes, and other locations. We are close to a knowledge of annual summer and winter temperature variations over much of the northern hemisphere going back 600 years.\n\nThis book is a narrative history of climatic shifts during the past ten centuries, and some of the ways in which people in Europe adapted to them. Part One describes the Medieval Warm Period, roughly 900 to 1200. During these three centuries, Norse voyagers from Northern Europe explored northern seas, settled Greenland, and visited North America. It was not a time of uniform warmth, for then, as always since the Great Ice Age, there were constant shifts in rainfall and temperature. Mean European temperatures were about the same as today, perhaps slightly cooler.\n\nE It is known that the Little Ice Age cooling began in Greenland and the Arctic in about 1200. As the Arctic ice pack spread southward, Norse voyages to the west were rerouted into the open Atlantic, then ended altogether. Storminess increased in the North Atlantic and North Sea. Colder, much wetter weather descended on Europe between 1315 and 1319, when thousands perished in a continent-wide farnine. By 1400, the weather had become decidedly more unpredictable and stormier, with sudden shifts and lower temperatures that culminated in the cold decades of the late sixteenth century. Fish were a vital commodity in growing towns and cities, where food supplies were a constant concern. Dried cod and herring were already the staples of the European fish trade, but changes in water temperatures forced fishing fleets to work further offshore. The Basques, Dutch, and English developed the first offshore fishing boats adapted to a colder and stormier Atlantic. A gradual agricultural revolution in northern Europe stemmed from concerns over food supplies at a time of rising populations. The revolution involved intensive commercial farming and the growing of animal fodder on land not previously used for crops. The increased productivity from farmland made some countries self-sufficient in grain and livestock and offered effective protection against famine.\n\nF Global temperatures began to rise slowly after 1850, with the beginning of the Modern Warm Period. There was a vast migration from Europe by land-hungry farmers and others, to which the famine caused by the Irish potato blight contributed, to North America, Australia, New Zealand, and southern Africa. Millions of hectares of forest and woodland fell before the newcomers' axes between 1850 and 1890, as intensive European farming methods expanded across the world. The unprecedented land clearance released vast quantities of carbon dioxide into the atmosphere, triggering for the first time humanly caused global warming. Temperatures climbed more rapidly in the twentieth century às the use of fossil fuels proliferated and greenhouse gas levels continued to soar. The rise has been even steeper since the early 1980s. The Little Ice Age has given way to a new climatic regime, marked by prolonged and steady warming. At the same time, extreme weather events like Category 5 hurricanes are becoming more frequent.\n\n## Test 2\n\nQuestions 18–22\n\nComplete the summary using the list of words, A—I, below.\n\nWrite the correct letter, A-I, in boxes 18–22 on your answer sheet.\n\n## Weather during the Little Ice Age\n\nDocumentation of past weather conditions is limited: our main sources of knowledge of conditions in the distant past are 18 .... .... and 19 ... .We can deduce that the Litle lce Age was a time of 20....., rather than of consistent freezing. Within it there were some periods of very cold winters, others of 21 and heavy rain, and yet others that saw 22 … with no rain at all.\n\nA\n\nclimatic shifts\n\nB\n\nice cores\n\nC\n\ntree rings\n\nD\n\nglaciers\n\nE\n\ninteractions\n\nF\n\nweather observations\n\nG\n\nheat waves\n\nH\n\nstorms\n\nI\n\nwritten accounts\n\nQuestions 23–26\n\nClassify the following events as occurring during the\n\nA Medieval Warm Period\n\nB Little Ice Age\n\nC Modern Warm Period\n\nWrite the correct letter, A, B or C, in boxes 23–26 on your answer sheet.\n\n23 Many Europeans started farming abroad.\n\n24 The cutting down of trees began to affect the climate.\n\n25 Europeans discovered other lands.\n\n26 Changes took place in fishing patterns."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t2r-g14",
+          "instruction": "Reading Passage has six paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "Paragraph B",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Predicting climatic changes"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The relevance of the Little Ice Age today"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "How cities contribute to climate change"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Human impact on the climate"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "How past climatic conditions can be determined"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "A growing need for weather records"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "A study covering a thousand years"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "People have always responded to climate change"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Enough food at last"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.940869+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Predicting climatic changes"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The relevance of the Little Ice Age today"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How cities contribute to climate change"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Human impact on the climate"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "How past climatic conditions can be determined"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A growing need for weather records"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A study covering a thousand years"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "People have always responded to climate change"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Enough food at last"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g15",
+          "instruction": "Reading Passage has six paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.940869+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Predicting climatic changes"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The relevance of the Little Ice Age today"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How cities contribute to climate change"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Human impact on the climate"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "How past climatic conditions can be determined"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A growing need for weather records"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A study covering a thousand years"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "People have always responded to climate change"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Enough food at last"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g16",
+          "instruction": "Reading Passage has six paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Paragraph E",
+              "acceptedAnswers": [
+                "ix"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.940869+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Predicting climatic changes"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The relevance of the Little Ice Age today"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How cities contribute to climate change"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Human impact on the climate"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "How past climatic conditions can be determined"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A growing need for weather records"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A study covering a thousand years"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "People have always responded to climate change"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Enough food at last"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g17",
+          "instruction": "Reading Passage has six paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Paragraph F # THE LITTLE ICE AGE AThis book will provide a detailed examination of the Little Ice Age and other climatic shifts, but, before I embark on that, let me provide a historical context. We tend to think of climate – as opposed to weather – as something unchanging, yet humanity has been at the mercy of climate change for its entire existence, with at least eight glacial episodes in the past 730,000 years. Our ancestors adapted to the universal but irregular global warming since the end of the last great Ice Age, around 10,000 years ago, with dazzling opportunism. They developed strate",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:18.940869+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Predicting climatic changes"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The relevance of the Little Ice Age today"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How cities contribute to climate change"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Human impact on the climate"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "How past climatic conditions can be determined"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "A growing need for weather records"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A study covering a thousand years"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "People have always responded to climate change"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Enough food at last"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g18",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Complete the summary using the list of words, A—I, below.",
+              "acceptedAnswers": [
+                "c"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climatic shifts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "ice cores"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "tree rings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "glaciers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "interactions"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "weather observations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "heat waves"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "storms"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "written accounts"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "climatic shifts"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "ice cores"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tree rings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "glaciers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "interactions"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "weather observations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "heat waves"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "storms"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "written accounts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T11:21:44.272675+00:00"
+          }
+        },
+        {
+          "id": "c8t2r-g19",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "We can deduce that the Litle lce Age was a time of",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climatic shifts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "ice cores"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "tree rings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "glaciers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "interactions"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "weather observations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "heat waves"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "storms"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "written accounts"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "climatic shifts"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "ice cores"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tree rings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "glaciers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "interactions"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "weather observations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "heat waves"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "storms"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "written accounts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T11:21:44.273251+00:00"
+          }
+        },
+        {
+          "id": "c8t2r-g20",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "We can deduce that the Little Ice Age was a time of ________, rather than of consistent freezing.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climatic shifts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "ice cores"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "tree rings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "glaciers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "interactions"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "weather observations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "heat waves"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "storms"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "written accounts"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              },
+              "gapText": "We can deduce that the Little Ice Age was a time of ________, rather than of consistent freezing."
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "climatic shifts"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "ice cores"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tree rings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "glaciers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "interactions"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "weather observations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "heat waves"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "storms"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "written accounts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T11:21:44.273251+00:00"
+          }
+        },
+        {
+          "id": "c8t2r-g21",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Within the Little Ice Age, some periods had very cold winters, while others had ________ and heavy rain.",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climatic shifts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "ice cores"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "tree rings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "glaciers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "interactions"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "weather observations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "heat waves"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "storms"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "written accounts"
+                }
+              ],
+              "gapText": "Within the Little Ice Age, some periods had very cold winters, while others had ________ and heavy rain.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "climatic shifts"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "ice cores"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tree rings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "glaciers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "interactions"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "weather observations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "heat waves"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "storms"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "written accounts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T11:21:44.273251+00:00"
+          }
+        },
+        {
+          "id": "c8t2r-g22",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Other periods of the Little Ice Age saw ________ with no rain at all.",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "climatic shifts"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "ice cores"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "tree rings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "glaciers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "interactions"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "weather observations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "heat waves"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "storms"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "written accounts"
+                }
+              ],
+              "gapText": "Other periods of the Little Ice Age saw ________ with no rain at all.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "climatic shifts"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "ice cores"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tree rings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "glaciers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "interactions"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "weather observations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "heat waves"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "storms"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "written accounts"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T11:21:44.273251+00:00"
+          }
+        },
+        {
+          "id": "c8t2r-g23",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "Many Europeans started farming abroad",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "interactions"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "weather observations"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "heat waves"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "storms"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Medieval Warm Period"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Little Ice Age"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Modern Warm Period"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "E",
+              "label": "E",
+              "text": "interactions"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "weather observations"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "heat waves"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "storms"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Medieval Warm Period"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Little Ice Age"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Modern Warm Period"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A, B or C, in boxes 23–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g24",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "The cutting down of trees began to affect the climate",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "heat waves"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "storms"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Medieval Warm Period"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Little Ice Age"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Modern Warm Period"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "G",
+              "label": "G",
+              "text": "heat waves"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "storms"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Medieval Warm Period"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Little Ice Age"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Modern Warm Period"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A, B or C, in boxes 23–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g25",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "Europeans discovered other lands",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Medieval Warm Period"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Little Ice Age"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Modern Warm Period"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Medieval Warm Period"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Little Ice Age"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Modern Warm Period"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A, B or C, in boxes 23–26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g26",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Changes took place in fishing patterns",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Medieval Warm Period"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Little Ice Age"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Modern Warm Period"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Medieval Warm Period"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Little Ice Age"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Modern Warm Period"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A, B or C, in boxes 23–26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 on the following pages.\n\nQuestions 27–32\n\nReading Passage 3 has six paragraphs, A-F.\n\nChoose the correct heading for each paragraph from the list of headings below.\n\nWrite the correct number, i-viii, in boxes 27–32 on your answer sheet.\n\n## List of Headings\n\ni The difficulties of talking about smells\n\nii The role of smell in personal relationships\n\niii Future studies into smell\n\niv The relationship between the brain and the nose\n\nv The interpretation of smells as a factor in defining groups\n\nvi Why our sense of smell is not appreciated\n\nvii Smell is our superior sense\n\nviii The relationship between smell and feelings\n\n27 Paragraph A\n\n28 Paragraph B\n\n29 Paragraph C\n\n30 Paragraph D\n\n31 Paragraph E\n\n32 Paragraph F\n\n## The meaning and power of smell\n\nThe sense of smell, or olfaction, is powerful. Odours affect us on a physical, psychological and social level. For the most part, however, we breathe in the aromas which surround us without being consciously aware of their importance to us. It is only when the faculty of smell is impaired for some reason that we begin to realise the essential role the sense of smell plays in our sense of well-being\n\nAA survey conducted by Anthony Synott at Montreal's Concordia University asked participants to comment onhow important smell was to thern in their lives. It became apparent that smell can evoke strong emotional responses. A scent associated with a good experience can bring a rush of joy, while a foul odour or one associated with a bad memory may make us grimace with disgust. Respondents to the survey noted that many of their olfactory likes and dislikes were based on emotional associations. Such associations can be powerful enough so that odours that we would generally label unpleasant become agreeable, and those that we would generally consider fragrant become disagreeable for particular individuals. The perception of smell, therefore, consists not only of the sensation of the odours themselves, but of the experiences and emotions associated with them.\n\nBOdours are also essential cues in social bonding. One respondent to the survey believed that there is no true emotional bonding without touching and smelling a loved one. In fact, infants recognise the odours of their mothers soon after birth and adults can often identify their children or spouses by scent. In one well-known test, women and men were able to distinguish by smell alone clothing worn by their marriage partners from similar clothing worn by other people. Most of the subjects would probably never have given much thought to odour as a cue for identifying family members before being involved in the test, but as the experiment revealed, even when not consciously considered, smells register.\n\nC In spite of its importance to our emotional and sensory lives, smell is probably the most undervalued sense in many cultures. The reason often given for the low regard in which smell is held is that, in comparison with its importance among animals, the human sense of smell is feeble and undeveloped. While it is true that the olfactory powers of humans are nothing like as fine as those possessed by certain animals, they are still remarkably acute. Our noses are able to recognise thousands of smells, and to perceive odours which are present only in extremely small quantities.\n\nD Smell, however, is a highly elusive phenomenon. Odours, unlike colours, for instance, cannot be named in many languages because the specific vocabulary simply doesn't exist. 'It smells like . . . ,'we have to say when describing an odour, struggling to express our olfactory experience. Nor can odours be recorded: there is no effective way to either capture or store them over time. In the realm of olfaction, we must make do with descriptions and recollections. This has implications for olfactory research.\n\nEMost of the research on smell undertaken to date has been of a physical scientific nature. Significant advances have been made in the understanding of the biological and chemical nature of olfaction, but many fundamental questions have yet to be answered. Researchers have still to decide whether smell is one sense or two – one responding to odours proper and the other registering odourless chemicals in the air. Other unanswered questions are whether the nose is the only part of the body affected by odours, and how smells can be measured objectively given the nonphysical components. Questions like these mean that interest in the psychology of smell is inevitably set to play an increasingly important role for researchers.\n\nF However, smell is not simply a biological and psychological phenomenon. Smell is cuíturaí, hence it is a sociaí andhistoricaí phenomenon. Odours are invested with cultural values: smells that are considered to be offensive in some cultures may be perfectly acceptable in others. Therefore, our sense of smell is a means of, and model for, interacting with the world. Different smells can provide us with intimate and emotionally charged experiences and the value that we attach to these experiences is interiorised by the members of society in a deeply personal way. Importantly, our commonly held feelings about smells can help distinguish us from other cultures. The study of the cultural history of smell is, therefore, in a very real sense, an investigation into the essence of human culture."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t2r-g27",
+          "instruction": "Reading Passage has six paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Paragraph A",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:33.788901+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The difficulties of talking about smells"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The role of smell in personal relationships"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Future studies into smell"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The relationship between the brain and the nose"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The interpretation of smells as a factor in defining groups"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Why our sense of smell is not appreciated"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Smell is our superior sense"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The relationship between smell and feelings"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g28",
+          "instruction": "Reading Passage has six paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Paragraph B",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The difficulties of talking about smells"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The role of smell in personal relationships"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Future studies into smell"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The relationship between the brain and the nose"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The interpretation of smells as a factor in defining groups"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Why our sense of smell is not appreciated"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Smell is our superior sense"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The relationship between smell and feelings"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:33.788901+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The difficulties of talking about smells"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The role of smell in personal relationships"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Future studies into smell"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The relationship between the brain and the nose"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The interpretation of smells as a factor in defining groups"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Why our sense of smell is not appreciated"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Smell is our superior sense"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The relationship between smell and feelings"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g29",
+          "instruction": "Reading Passage has six paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:33.788901+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The difficulties of talking about smells"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The role of smell in personal relationships"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Future studies into smell"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The relationship between the brain and the nose"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The interpretation of smells as a factor in defining groups"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Why our sense of smell is not appreciated"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Smell is our superior sense"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The relationship between smell and feelings"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g30",
+          "instruction": "Reading Passage has six paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Reading Passage 3 — Paragraph D",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The difficulties of talking about smells"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The role of smell in personal relationships"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Future studies into smell"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The relationship between the brain and the nose"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The interpretation of smells as a factor in defining groups"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Why our sense of smell is not appreciated"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Smell is our superior sense"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The relationship between smell and feelings"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The difficulties of talking about smells"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The role of smell in personal relationships"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Future studies into smell"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The relationship between the brain and the nose"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The interpretation of smells as a factor in defining groups"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Why our sense of smell is not appreciated"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Smell is our superior sense"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The relationship between smell and feelings"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": [
+              "Write the correct number, i-viii, in boxes 27–32 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g31",
+          "instruction": "Reading Passage has six paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "Reading Passage 3 — Paragraph E",
+              "acceptedAnswers": [
+                "iii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The difficulties of talking about smells"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The role of smell in personal relationships"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Future studies into smell"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The relationship between the brain and the nose"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The interpretation of smells as a factor in defining groups"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Why our sense of smell is not appreciated"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Smell is our superior sense"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The relationship between smell and feelings"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:33.788901+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The difficulties of talking about smells"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The role of smell in personal relationships"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Future studies into smell"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The relationship between the brain and the nose"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The interpretation of smells as a factor in defining groups"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Why our sense of smell is not appreciated"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Smell is our superior sense"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The relationship between smell and feelings"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g32",
+          "instruction": "Reading Passage has six paragraphs. Choose the correct heading for each paragraph from the list of headings below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q32",
+              "number": 32,
+              "type": "matching",
+              "prompt": "Paragraph F",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The difficulties of talking about smells"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The role of smell in personal relationships"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Future studies into smell"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "The relationship between the brain and the nose"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The interpretation of smells as a factor in defining groups"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Why our sense of smell is not appreciated"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Smell is our superior sense"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "The relationship between smell and feelings"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:05:33.788901+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The difficulties of talking about smells"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The role of smell in personal relationships"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Future studies into smell"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "The relationship between the brain and the nose"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The interpretation of smells as a factor in defining groups"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Why our sense of smell is not appreciated"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Smell is our superior sense"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "The relationship between smell and feelings"
+            }
+          ]
+        },
+        {
+          "id": "c8t2r-g33",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q33",
+              "number": 33,
+              "type": "matching",
+              "prompt": "According to the introduction, we become aware of the importance of smell when",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "we discover a new smell."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "we experience a powerful smell."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "our ability to smell is damaged."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "we are surrounded by odours."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.727956+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g34",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q34",
+              "number": 34,
+              "type": "matching",
+              "prompt": "The experiment described in paragraph B",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "shows how we make use of smell without realising it."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "demonstrates that family members have a similar smell."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "proves that a sense of smell is learnt."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "compares the sense of smell in males and females."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.727956+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g35",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q35",
+              "number": 35,
+              "type": "matching",
+              "prompt": "What is the writer doing in paragraph C? A supporting other research B making a proposal C rejecting a common belief D describing limitations",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "supporting other research"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "making a proposal"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "rejecting a common belief"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "describing limitations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.727956+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g36",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "What does the writer suggest about the study of smell in the atmosphere in paragraph E?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The measurement of smell is becoming more accurate."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Researchers believe smell is a purely physical reaction."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Most smells are inoffensive."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Smell is yet to be defined."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:39+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The measurement of smell is becoming more accurate."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Researchers believe smell is a purely physical reaction."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Most smells are inoffensive."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Smell is yet to be defined."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g37",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Tests have shown that odours can help people recognise te.. belonging to their husbands and wives",
+              "acceptedAnswers": [
+                "clothing"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g38",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Certain linguistic groups may have difficulty describing smell because they lack the appropriate",
+              "acceptedAnswers": [
+                "vocabulary"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g39",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "The sense of smell may involve response t .which do not smel, in addition to obvious odours",
+              "acceptedAnswers": [
+                "chemicals"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 37–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t2r-g40",
+          "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t2r-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Odours regarded as unpleasan in certai..are not regarded as unpleasant in others",
+              "acceptedAnswers": [
+                "cultures"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 37–40 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

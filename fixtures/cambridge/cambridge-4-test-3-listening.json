@@ -1,0 +1,1800 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-3-listening",
+  "title": "Cambridge IELTS 4 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0003-27c00466",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-1-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-2-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-3-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-4-listening-test-4-answers-pdf/",
+        "note": "Independent C4 Listening answer cross-check."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1—10\n\nQuestions 1—4\n\nComplete the form below.\n\nWrite NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.\n\n## Accommodation Request Form\n\nName\n\nSara\n\nAge\n\n23\n\nLength of time in Australia:\n\n1\n\nPresent address:\n\nFlat 1,\n\n539, 2 \\_Road\n\nCanterbury 2036\n\nPresent course:\n\n3 English\n\nAccommodation required form:\n\n4 2\n\n7th September\n\n## Questions 5—7\n\nChoose the correct letter, A, B or C.\n\n5 Sara requires a A single room. B twin room. C triple room.\n\n6 She would prefer to live with a A family. B single person. C couple.\n\n7 She would like to live in a A flat. B house. C studio apartment.\n\n## Questions 8—10\n\nComplete the sentences below.\n\nWrite NO MORE THAN ONE WORD for each answer.\n\n8 The will be \\$320.\n\n9 She needs to pay the rent by cash or cheque on a basis.\n\n10 She needs to pay her part of the bill."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t3l-g1",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Present address: Flat 1, 539, 2 \\_Road Canterbury 2036 Present course:",
+              "acceptedAnswers": [
+                "1-1",
+                "2 years"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN THREE WORDS and/or NUMBERS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t3l-g2",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Length of time in Australia: ___",
+              "acceptedAnswers": [
+                "Forest",
+                "Forrest"
+              ],
+              "gapText": "Length of time in Australia: 1 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN THREE WORDS and/or NUMBERS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t3l-g3",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "English Accommodation required form:",
+              "acceptedAnswers": [
+                "Academic"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN THREE WORDS and/or NUMBERS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t3l-g4",
+          "instruction": "Complete the form below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+              "acceptedAnswers": [
+                "Thursday"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write NO MORE THAN THREE WORDS and/or NUMBERS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t3l-g5",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q5",
+              "number": 5,
+              "type": "single_choice",
+              "prompt": "Sara requires a",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "single room."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "twin room."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "triple room"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "single room."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "twin room."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "triple room"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g6",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q6",
+              "number": 6,
+              "type": "single_choice",
+              "prompt": "She would prefer to live with a",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "family."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "single person."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "couple"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "family."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "single person."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "couple"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g7",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "She would like to live in a A flat. B house. C studio apartment",
+              "acceptedAnswers": [
+                "A dictionary"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g8",
+          "instruction": "Complete the sentences below. Write NO MORE THAN ONE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The will be \\$320",
+              "acceptedAnswers": [
+                "deposit"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g9",
+          "instruction": "Complete the sentences below. Write NO MORE THAN ONE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "She needs to pay the rent by cash or cheque on a basis",
+              "acceptedAnswers": [
+                "monthly"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g10",
+          "instruction": "Complete the sentences below. Write NO MORE THAN ONE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "She needs to pay her part of the bill",
+              "acceptedAnswers": [
+                "telephone",
+                "phone"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 437977
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11—20\n\n## Questions 11—14\n\n## Choose the correct letter, A, B or C.\n\n11 When is this year’s festival being held? A 1—13 January B 5—17 January C 25—31 January\n\n12 What will the reviewer concentrate on today? A theatre B dance C exhibitions\n\n13 How many circuses are there in the festival? A one B two C several\n\n14 Where does Circus Romano perform? A in a theatre B in a tent C in a stadium\n\n## Questions 15—20\n\nComplete the notes below.\n\nWrite NO MORE THAN THREE WORDS for each answer.\n\nWhere\n\nType ofperformance\n\nHighlights\n\nType ofaudience\n\nCircusRomano\n\nClowns andacrobats\n\nMusic and15\n\n16\n\nCircusElectrica\n\n17\n\nDancers andmagician\n\nAerial displays\n\n18\n\nMekongWaterPuppets\n\n19\n\nPuppets\n\nSeeing thepuppeteers at theend\n\n20"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t3l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "When is this year’s festival being held?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "1—13 January"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "5—17 January"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "25—31 January"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "1—13 January"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "5—17 January"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "25—31 January"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "What will the reviewer concentrate on today?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "theatre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "dance"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "exhibitions"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "theatre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "dance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "exhibitions"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "How many circuses are there in the festival?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "one"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "two"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "several"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "one"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "two"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "several"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Where does Circus Romano perform?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in a theatre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "in a tent"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in a stadium"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "in a theatre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "in a tent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "in a stadium"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g15",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Music and",
+              "acceptedAnswers": [
+                "lighting",
+                "lights",
+                "light"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g16",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "CircusElectrica",
+              "acceptedAnswers": [
+                "adult",
+                "adults"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g17",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Dancers andmagician Aerial displays",
+              "acceptedAnswers": [
+                "(at",
+                "the) Studio Theatre",
+                "Studio Theater"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g18",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "MekongWaterPuppets",
+              "acceptedAnswers": [
+                "the whole family",
+                "all the family",
+                "families"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g19",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Puppets Seeing thepuppeteers at theend",
+              "acceptedAnswers": [
+                "(in) City Gardens",
+                "the City Gardens",
+                "outdoors"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g20",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Write NO MORE THAN THREE WORDS for each answer.",
+              "acceptedAnswers": [
+                "young children",
+                "younger children",
+                "children"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 437977,
+      "audioDurationMs": 360733
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21—30\n\n## Questions 21—25\n\nChoose the correct letter, A, B or C.\n\n21 The man wants information on courses for A people going back to college. B postgraduate students. C business executives.\n\n22 The‘Study for Success’ seminar lasts for A one day. B two days. C three days.\n\n23 In the seminar the work on writing aims to improve A confidence. B speed. C clarity.\n\n24 Reading sessions help students to read A analytically. B as fast as possible. C thoroughly.\n\n25 The seminar tries to A prepare learners physically. B encourage interest in learning.\n\nC develop literacy skills.\n\n## Questions 26—30\n\nChoose the correct letter, A, B or C.\n\n26 A key component of the course is learning how to A use time effectively. B stay healthy. C select appropriate materials.\n\n27 Students who want to do the‘Study for Success’ seminar should A register with the Faculty Office. B contact their Course Convenor. C reserve a place in advance.\n\n28 The‘Learning Skills for University Study’ course takes place on A Monday, Wednesday and Friday. B Monday, Tuesday and Wednesday. C Monday, Thursday and Friday.\n\n29 A feature of this course is A a physical training component. B advice on coping with stress. C a detailed weekly planner.\n\n30 The man chooses the‘Study for Success’ seminar because\n\nA he is over forty.\n\nB he wants to start at the beginning.\n\nC he seeks to revise his skills."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t3l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "The man wants information on courses for",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "people going back to college."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "postgraduate students."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "business executives"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "people going back to college."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "postgraduate students."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "business executives"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "The‘Study for Success’ seminar lasts for",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "one day."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "two days."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "three days"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "one day."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "two days."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "three days"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "In the seminar the work on writing aims to improve A confidence. B speed. C clarity",
+              "acceptedAnswers": [
+                "C measurement units"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Reading sessions help students to read",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "analytically."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "as fast as possible."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "thoroughly"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "analytically."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "as fast as possible."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "thoroughly"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "The seminar tries to",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "prepare learners physically."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "encourage interest in learning."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "develop literacy skills"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "prepare learners physically."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "encourage interest in learning."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "develop literacy skills"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "A key component of the course is learning how to A use time effectively. B stay healthy. C select appropriate materials",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "develop literacy skills"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he is over forty"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "he wants to start at the beginning"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "develop literacy skills"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "he is over forty"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "he wants to start at the beginning"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Students who want to do the‘Study for Success’ seminar should A register with the Faculty Office. B contact their Course Convenor. C reserve a place in advance",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "develop literacy skills"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he is over forty"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "he wants to start at the beginning"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "develop literacy skills"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "he is over forty"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "he wants to start at the beginning"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g28",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "The‘Learning Skills for University Study’ course takes place on A Monday, Wednesday and Friday. B Monday, Tuesday and Wednesday. C Monday, Thursday and Friday",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he is over forty"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "he wants to start at the beginning"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "he seeks to revise his skills"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "he is over forty"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "he wants to start at the beginning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "he seeks to revise his skills"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g29",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "A feature of this course is A a physical training component. B advice on coping with stress. C a detailed weekly planner",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he is over forty"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "he wants to start at the beginning"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "he seeks to revise his skills"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "he is over forty"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "he wants to start at the beginning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "he seeks to revise his skills"
+            }
+          ]
+        },
+        {
+          "id": "c4t3l-g30",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "The man chooses the‘Study for Success’ seminar because A he is over forty. B he wants to start at the beginning. C he seeks to revise his skills",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he is over forty"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "he wants to start at the beginning"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "he seeks to revise his skills"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "he is over forty"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "he wants to start at the beginning"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "he seeks to revise his skills"
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 798710,
+      "audioDurationMs": 406630
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31—40\n\n## Questions 31 and 32\n\nComplete the notes below.\n\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.\n\n## New Union Building\n\nProcedures to establish student opinion:\n\n·students were asked to give written suggestions on the building’s design\n\n·these points informed the design of a 31\n\n(there were 32 respondents)\n\n·results collated and report produced by Union Committee\n\n## Questions 33—37\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS for each answer.\n\nCHOICE OF SITE\n\nSite One\n\nSite Two\n\nSite Three\n\nLocation\n\nCity centre nearFaculty of33\n\nOutskirts nearpark\n\nOut of town near the34\n\nAdvantagesand/ordisadvantages\n\nProblems with35and\n\nClose to36\n\nAccess to livingquarters. Larger site,so more 37\n\n## Questions 38\n\nChoose TWO letters A —G.\n\nWhich TWO facilities did the students request in the new Union building?\n\nA a library\n\nB a games room\n\nC a student health centre\n\nD a mini fitness centre\n\nE a large swimming pool\n\nF a travel agency\n\nG a lecture theatre\n\n## Questions 39\n\nChoose the correct letter, A, B or C.\n\nWhich argument was used AGAINST having a drama theatre?\n\nA It would be expensive and no students would use it.\n\nB It would be a poor use of resources because only a minority would use it.\n\nC It could not accommodate large productions of plays.\n\n## Questions 40\n\nChoose TWO letters A —E.\n\nWhich TWO security measures have been requested?\n\nA closed-circuit TV\n\nB show Union Card on entering the building\n\nC show Union Card when asked\n\nD spot searchers of bags\n\nE permanent Security Office on site"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t3l-g31",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "These points informed the design of a ___",
+              "acceptedAnswers": [
+                "questionnaire"
+              ],
+              "gapText": "These points informed the design of a 31 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g32",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "There were ___ respondents",
+              "acceptedAnswers": [
+                "approximately 2,000",
+                "about 2,000"
+              ],
+              "gapText": "There were 32 ___ respondents",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g33",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Choose TWO letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "| Outskirts nearpark | Out of town near the",
+              "acceptedAnswers": [
+                "Education"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g34",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Choose TWO letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Out of town near the",
+              "acceptedAnswers": [
+                "halls of residence",
+                "living quarters"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g35",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Choose TWO letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Problems with",
+              "acceptedAnswers": [
+                "traffic, parking"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g36",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Choose TWO letters, A-G.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "Close to",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a library"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a games room"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a student health centre"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a mini fitness centre"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a large swimming pool"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "a travel agency"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "a lecture thea"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a library"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a games room"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a student health centre"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a mini fitness centre"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a large swimming pool"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "a travel agency"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "a lecture thea"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g37",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer. Choose TWO letters, A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Access to livingquarters. Larger site,so more",
+              "acceptedAnswers": [
+                "(choice of",
+                "room for) facilities"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t3l-g38",
+          "instruction": "Choose TWO letters A-G.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q38",
+              "number": 38,
+              "type": "multi_choice",
+              "prompt": "Which TWO facilities did the students request in the new Union building?",
+              "acceptedAnswers": [
+                "D",
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a library"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a games room"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a student health centre"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a mini fitness centre"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a large swimming pool"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "a travel agency"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "a lecture theatre"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:53:13.812160+00:00"
+          }
+        },
+        {
+          "id": "c4t3l-g39",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q39",
+              "number": 39,
+              "type": "single_choice",
+              "prompt": "Which argument was used AGAINST having a drama theatre?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It would be expensive and no students would use it."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It would be a poor use of resources because only a minority would use it."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It could not accommodate large productions of plays."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a library"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a games room"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a student health centre"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a mini fitness centre"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a large swimming pool"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "a travel agency"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "a lecture thea"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:53:13.812160+00:00"
+          }
+        },
+        {
+          "id": "c4t3l-g40",
+          "instruction": "Choose TWO letters A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t3l-q40",
+              "number": 40,
+              "type": "multi_choice",
+              "prompt": "Which TWO security measures have been requested?",
+              "acceptedAnswers": [
+                "A",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "closed-circuit TV"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "show Union Card on entering the building"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "show Union Card when asked"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "spot searchers of bags"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "permanent Security Office on site"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:53:13.812160+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1205340,
+      "audioDurationMs": 355587
+    }
+  ]
+}

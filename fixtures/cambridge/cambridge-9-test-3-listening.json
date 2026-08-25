@@ -1,0 +1,1600 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-9-test-3-listening",
+  "title": "Cambridge IELTS 9 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0011-2ad27c99",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 9",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题9.pdf",
+        "sha256": "c3fbc2d06b1b60fe8e7d27936150a09c38714e4bd23e6351a09b93c9555ee890"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C09\\剑桥雅思真题9\\auto\\剑桥雅思真题9.md",
+        "sha256": "0fff67454e2c0209145ec163b53e0d8a4366227a4e4853f03d4cac2187f6196e",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-9-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nQuestions 1-5\n\nComplete the table below\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nApartments\n\nFacilites\n\nOther Information\n\nCost\n\nRose GardenApartments\n\nstudio flat\n\nExampleEntertainment programme:Greek dancing...\n\n£219\n\nBlue BayApartments\n\nlarge salt-waterswimming pool\n\n-just 1.. metres frombeach- near shops\n\n£275\n\n2Apartments\n\nTerrace\n\nwatersports\n\n£490\n\nThe Grand\n\n-Greek paintings-3\n\n-overlooking 4.-near a supermarket and adisco\n\n5f\n\nQuestions 6-10\n\nComplete the table below\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nGREEK ISLAND HOILDAYS\n\nInsurance Benefits\n\nMaximum Amount\n\nCancellation\n\n6f\n\nHospital\n\n£ 600. Additional benefit allows a 7..to travel to resort\n\n8 departure\n\nUp to £ 1000.Depends on reason\n\nPersonal belongings\n\nUp to £ 3000; £ 500 for one 9...\n\nName of Assistant Manager : Ben 10\n\nDirect phone line : 081260 543216"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t3l-g1",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Blue Bay Apartments are just ___ metres from the beach.",
+              "acceptedAnswers": [
+                "300"
+              ],
+              "gapText": "Blue Bay Apartments are just 1 ___ metres from the beach.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g2",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Apartments Terrace watersports £490 The Grand -Greek paintings-3 -overlooking 4.-near a supermarket and adisco",
+              "acceptedAnswers": [
+                "Sunshade"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g3",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Greek paintings",
+              "acceptedAnswers": [
+                "balcony"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g4",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "-near a supermarket and adisco",
+              "acceptedAnswers": [
+                "forest",
+                "forests"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g5",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "The Grand apartment cost is £ ___.",
+              "acceptedAnswers": [
+                "319"
+              ],
+              "gapText": "The Grand apartment cost is 5 £ ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g6",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "The maximum cancellation insurance amount is £ ___.",
+              "acceptedAnswers": [
+                "10,000"
+              ],
+              "gapText": "Cancellation: 6 £ ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g7",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "£ 600. Additional benefit allows a",
+              "acceptedAnswers": [
+                "relative"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g8",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The insurance benefit covers ___ departure.",
+              "acceptedAnswers": [
+                "missed"
+              ],
+              "options": [],
+              "gapText": "8 ___ departure.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g9",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Up to £ 3000; £ 500 for one",
+              "acceptedAnswers": [
+                "item"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g10",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Name of Assistant Manager : Ben",
+              "acceptedAnswers": [
+                "Ludlow"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 616856
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\nQuestions11-13\n\nChoose the correct letter ,A ,B or C.\n\n## Winridge Forest Railway Park\n\n11. Simon's idea for a theme park came from A his childhood hobby. B his interest in landscape design. C his visit to another park.\n\n12. When they started ,the family decided to open the park only when A the weather was expected to be good. B the children weren't at school. C there were fewer farming commitments.\n\n13. Since opening, the park has had A 50,000 visitors. 1,000,000 visitors. C 1,500,000 visitors.\n\nQuestions 14-18\n\nWhat is currently the main area of work of each the following people? Choose FIVE answers from the box and write the correct letter, A-H, next to questions 14-18.\n\n本资料仅用于参考，。\n\nArea of work\n\nA advertising\n\nB animal care\n\nC building\n\nD educational links\n\nE engine maintenance\n\nF food and drink\n\nG sales\n\nH staffing\n\n## People\n\n14 Simon (the speaker)\n\n15 Liz\n\n16 Sarah\n\n17 Duncan\n\n18 Judith\n\nQuestions 19 and 20\n\nComplete the table below.\n\n## Write ONE WORD AND/OR NUMBER for each answer.\n\nFeature\n\nSize\n\nBiggest challenge\n\nTarget age group\n\nRailway\n\n1.2km\n\nMaking tunnels\n\nGo-Kart arena\n\n19. m²\n\nRemoving moundson the track\n\n20...year-olds\n\n留学CLUB社团\n\nSECTION3 Questions 21-30\n\nComplete the notes below.\n\n# Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each anSwer.\n\n## Study Skills Tutorial-Caroline Benning\n\nDissertation topic : the 21.\n\nStrengths : 22...\n\ncomputer modeling\n\nWeaknesses: lack of background information\n\npoor 23skills\n\nPossible strategy\n\nBenefits\n\nProblems\n\npeer group discussion\n\nincreases 24\n\ndissertations tend tocontain the same 25..\n\nuse the 26service\n\nprovides structuredprogramme\n\nlimited 27\n\nconsult study skillsbooks\n\nare a good source ofreference\n\ncan be too 28.\n\nRecommendations : use a card index\n\nread all notes 29\n\nNext tutorial date : 30.January"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t3l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Simon's idea for a theme park came from A his childhood hobby. B his interest in landscape design. C his visit to another park",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "his childhood hobby."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "his interest in landscape design."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "his visit to another park."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "When they started ,the family decided to open the park only when A the weather was expected to be good. B the children weren't at school. C there were fewer farming commitments",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the weather was expected to be good."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the children weren't at school."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "there were fewer farming commitments."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q13",
+              "number": 13,
+              "type": "matching",
+              "prompt": "Since opening, the park has had A 50,000 visitors. 1,000,000 visitors. C 1,500,000 visitors.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "50,000 visitors."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "1,000,000 visitors."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "1,500,000 visitors."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g14",
+          "instruction": "Choose the correct letter ,A ,B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "Simon (the speaker)",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advertising"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "animal care"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "educational links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "engine maintenance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "food and drink"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "sales"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "staffing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9t3l-g15",
+          "instruction": "Choose the correct letter ,A ,B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Liz",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advertising"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "animal care"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "educational links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "engine maintenance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "food and drink"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "sales"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "staffing"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t3l-g16",
+          "instruction": "Choose the correct letter ,A ,B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Sarah",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advertising"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "animal care"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "educational links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "engine maintenance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "food and drink"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "sales"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "staffing"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t3l-g17",
+          "instruction": "Choose the correct letter ,A ,B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "Duncan",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advertising"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "animal care"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "educational links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "engine maintenance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "food and drink"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "sales"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "staffing"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t3l-g18",
+          "instruction": "Choose the correct letter ,A ,B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Judith",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "advertising"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "animal care"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "educational links"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "engine maintenance"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "food and drink"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "sales"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "staffing"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.804739+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t3l-g19",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "The Go-Kart arena size is ___ m².",
+              "acceptedAnswers": [
+                "120"
+              ],
+              "gapText": "Go-Kart arena: 19 ___ m².",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t3l-g20",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "The Go-Kart arena target age group is ___ year-olds.",
+              "acceptedAnswers": [
+                "5 to 12"
+              ],
+              "gapText": "Go-Kart arena: 20 ___ year-olds.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 616856,
+      "audioDurationMs": 362604
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION1 Questions 1-10\n\nQuestions 1-5\n\nComplete the table below\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\nApartments\n\nFacilites\n\nOther Information\n\nCost\n\nRose GardenApartments\n\nstudio flat\n\nExampleEntertainment programme:Greek dancing...\n\n£219\n\nBlue BayApartments\n\nlarge salt-waterswimming pool\n\n-just 1.. metres frombeach- near shops\n\n£275\n\n2Apartments\n\nTerrace\n\nwatersports\n\n£490\n\nThe Grand\n\n-Greek paintings-3\n\n-overlooking 4.-near a supermarket and adisco\n\n5f\n\nQuestions 6-10\n\nComplete the table below\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nGREEK ISLAND HOILDAYS\n\nInsurance Benefits\n\nMaximum Amount\n\nCancellation\n\n6f\n\nHospital\n\n£ 600. Additional benefit allows a 7..to travel to resort\n\n8 departure\n\nUp to £ 1000.Depends on reason\n\nPersonal belongings\n\nUp to £ 3000; £ 500 for one 9...\n\nName of Assistant Manager : Ben 10\n\nDirect phone line : 081260 543216\n\n## SECTION 2 Questions 11-20\n\nQuestions11-13\n\nChoose the correct letter ,A ,B or C.\n\n## Winridge Forest Railway Park\n\n11. Simon's idea for a theme park came from A his childhood hobby. B his interest in landscape design. C his visit to another park.\n\n12. When they started ,the family decided to open the park only when A the weather was expected to be good. B the children weren't at school. C there were fewer farming commitments.\n\n13. Since opening, the park has had A 50,000 visitors. 1,000,000 visitors. C 1,500,000 visitors.\n\nQuestions 14-18\n\nWhat is currently the main area of work of each the following people? Choose FIVE answers from the box and write the correct letter, A-H, next to questions 14-18.\n\n本资料仅用于参考，。\n\nArea of work\n\nA advertising\n\nB animal care\n\nC building\n\nD educational links\n\nE engine maintenance\n\nF food and drink\n\nG sales\n\nH staffing\n\n## People\n\n14 Simon (the speaker)\n\n15 Liz\n\n16 Sarah\n\n17 Duncan\n\n18 Judith\n\nQuestions 19 and 20\n\nComplete the table below.\n\n## Write ONE WORD AND/OR NUMBER for each answer.\n\nFeature\n\nSize\n\nBiggest challenge\n\nTarget age group\n\nRailway\n\n1.2km\n\nMaking tunnels\n\nGo-Kart arena\n\n19. m²\n\nRemoving moundson the track\n\n20...year-olds\n\n留学CLUB社团\n\nSECTION3 Questions 21-30\n\nComplete the notes below.\n\n# Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each anSwer.\n\n## Study Skills Tutorial-Caroline Benning\n\nDissertation topic : the 21.\n\nStrengths : 22...\n\ncomputer modeling\n\nWeaknesses: lack of background information\n\npoor 23skills\n\nPossible strategy\n\nBenefits\n\nProblems\n\npeer group discussion\n\nincreases 24\n\ndissertations tend tocontain the same 25..\n\nuse the 26service\n\nprovides structuredprogramme\n\nlimited 27\n\nconsult study skillsbooks\n\nare a good source ofreference\n\ncan be too 28.\n\nRecommendations : use a card index\n\nread all notes 29\n\nNext tutorial date : 30.January\n\n## SECTION4 Questions31-40\n\nQuestions 31-32\n\nChoose the correct letter ,A ,B or C.\n\n31. The owners of the underground house\n\nA had no experience of living in a rural area.\n\nB were interested in environmental issues.\n\nCwanted a professional project manager.\n\n32. What does the speaker say about the site of the house?\n\nA The land was quite cheap.\n\nB Stone was being extracted nearby.\n\nC It was in a completely unspoilt area.\n\nQuestions33-40\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\n## The Underground House\n\n## Design\n\nBuilt in the earth ,with two floors\n\nThe south-facing side was constructed of two layers of 33..\n\nPhotovoltaic tiles were attached\n\nA layer of foam was used to improve the 34 of the building\n\n留学CLUB社团\n\n## Special features\n\nTo increase the light , the building has many internal mirrors and 35..\n\nIn future , the house may produce more 36 than it needs\n\nRecycled wood was used for the 37.. of the house\n\nThe system for processing domestic 38..is organic\n\n## Environmental issues\n\nThe use of large quantities of 39.in construction was environmentally\n\n## harmful\n\nBut the house will have paid its environmental debt' within 40."
+      },
+      "questionGroups": [
+        {
+          "id": "c9t3l-g21",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Dissertation topic: the ___.",
+              "acceptedAnswers": [
+                "fishing industry"
+              ],
+              "gapText": "Dissertation topic: the 21 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g22",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Strengths include ___ and computer modeling.",
+              "acceptedAnswers": [
+                "statistics"
+              ],
+              "gapText": "Strengths: 22 ___; computer modeling.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g23",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "A weakness is poor ___ skills.",
+              "acceptedAnswers": [
+                "note-taking"
+              ],
+              "gapText": "Weaknesses: poor 23 ___ skills.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g24",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "dissertations tend tocontain the same",
+              "acceptedAnswers": [
+                "confidence"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g25",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Dissertations tend to contain the same ___.",
+              "acceptedAnswers": [
+                "ideas"
+              ],
+              "gapText": "Dissertations tend to contain the same 25 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g26",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Use the ___ service.",
+              "acceptedAnswers": [
+                "student support"
+              ],
+              "gapText": "Use the 26 ___ service.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g27",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "The service has limited ___.",
+              "acceptedAnswers": [
+                "places"
+              ],
+              "gapText": "Limited 27 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g28",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Study skills books can be too ___.",
+              "acceptedAnswers": [
+                "general"
+              ],
+              "gapText": "Study skills books can be too 28 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g29",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Read all notes ___ times.",
+              "acceptedAnswers": [
+                "3 times"
+              ],
+              "gapText": "Read all notes 29 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g30",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "The next tutorial date is ___ January.",
+              "acceptedAnswers": [
+                "25"
+              ],
+              "gapText": "Next tutorial date: 30 ___ January.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 979460,
+      "audioDurationMs": 361926
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions31-40\n\nQuestions 31-32\n\nChoose the correct letter ,A ,B or C.\n\n31. The owners of the underground house\n\nA had no experience of living in a rural area.\n\nB were interested in environmental issues.\n\nCwanted a professional project manager.\n\n32. What does the speaker say about the site of the house?\n\nA The land was quite cheap.\n\nB Stone was being extracted nearby.\n\nC It was in a completely unspoilt area.\n\nQuestions33-40\n\nComplete the notes below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\n## The Underground House\n\n## Design\n\nBuilt in the earth ,with two floors\n\nThe south-facing side was constructed of two layers of 33..\n\nPhotovoltaic tiles were attached\n\nA layer of foam was used to improve the 34 of the building\n\n留学CLUB社团\n\n## Special features\n\nTo increase the light , the building has many internal mirrors and 35..\n\nIn future , the house may produce more 36 than it needs\n\nRecycled wood was used for the 37.. of the house\n\nThe system for processing domestic 38..is organic\n\n## Environmental issues\n\nThe use of large quantities of 39.in construction was environmentally\n\n## harmful\n\nBut the house will have paid its environmental debt' within 40."
+      },
+      "questionGroups": [
+        {
+          "id": "c9t3l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "The owners of the underground house",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.884724+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "had no experience of living in a rural area."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "were interested in environmental issues."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "wanted a professional project manager."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q32",
+              "number": 32,
+              "type": "matching",
+              "prompt": "What does the speaker say about the site of the house?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.884724+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The land was quite cheap."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Stone was being extracted nearby."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was in a completely unspoilt area."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "The south-facing side was constructed of two layers of ___.",
+              "acceptedAnswers": [
+                "glass"
+              ],
+              "gapText": "The south-facing side was constructed of two layers of 33 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "A layer of foam improved the ___ of the building.",
+              "acceptedAnswers": [
+                "insulation"
+              ],
+              "gapText": "A layer of foam was used to improve the 34 ___ of the building.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "To increase the light, the building has internal mirrors and ___.",
+              "acceptedAnswers": [
+                "windows"
+              ],
+              "gapText": "To increase the light, the building has many internal mirrors and 35 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "In future, the house may produce more ___ than it needs.",
+              "acceptedAnswers": [
+                "electricity"
+              ],
+              "gapText": "In future, the house may produce more 36 ___ than it needs.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Recycled wood was used for the ___ of the house.",
+              "acceptedAnswers": [
+                "floor",
+                "floors"
+              ],
+              "gapText": "Recycled wood was used for the 37 ___ of the house.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "The system for processing domestic ___ is organic.",
+              "acceptedAnswers": [
+                "waste"
+              ],
+              "gapText": "The system for processing domestic 38 ___ is organic.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "The use of large quantities of ___ in construction was environmentally harmful.",
+              "acceptedAnswers": [
+                "concrete"
+              ],
+              "gapText": "The use of large quantities of 39 ___ in construction was environmentally harmful.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "The house will have paid its environmental debt within ___.",
+              "acceptedAnswers": [
+                "15 years"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "had no experience of living in a rural area"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "were interested in environmental issues"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was in a completely unspoilt area"
+                }
+              ],
+              "gapText": "The house will have paid its environmental debt within 40 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:56+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "had no experience of living in a rural area"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "were interested in environmental issues"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It was in a completely unspoilt area"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1341386,
+      "audioDurationMs": 412003
+    }
+  ]
+}

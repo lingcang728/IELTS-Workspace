@@ -1,0 +1,2447 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-8-test-3-reading",
+  "title": "Cambridge IELTS 8 Academic Test 3 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0020-2c8dab20",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 8",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题8.pdf",
+        "sha256": "2f3cdf0c049ecac93bafafd034c2316ac7ed66b0694bea8a2a7c152042923e23"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C08\\剑桥雅思真题8\\auto\\剑桥雅思真题8.md",
+        "sha256": "9bc5a6c2dc6b80f2e6667849856a7af88f0f5e7102900ecf2906d8c2b913a8ca",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-8-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "# Striking Back at Lightning With Lasers\n\nSeldom is the weather more dramatic than when thunderstorms strike. Their electrical fury inflicts death or serious injury on around 500 people each year in the United States alone. As the clouds roll in, a leisurely round of golf can become a terrifying dice with death - out in the open, a lone golfer may be a lightning bolt's most inviting target. And there is damage to property too. Lightning damage costs American power companies more than \\$100 million a year.\n\nBut researchers in the United States and Japan are planning to hit back. Already in laboratory trials they have tested strategies for neutralising the power of thunderstorms, and this winter they will brave real storms, equipped with an armoury of lasers that they will be pointing towards the heavens to discharge thunderclouds before lightning can strike.\n\nThe idea of forcing storm clouds to discharge their lightning on command is not new. In the early 1960s, researchers tried firing rockets trailing wires into thunderclouds to set up an easy discharge path for the huge electric charges that these clouds generate. The technique survives to this day at a test site in Florida run by the University of Florida, with support from the Electrical Power Research Institute (EPRI), based in California. EPRI, which is funded by power companies, is looking at ways to protect the United States' power grid from lightning strikes. 'We can cause the lightning to strike where we want it to using rockets,' says Ralph Bernstein, manager of lightning projects at EPRI. The rocket site is providing precise measurements of lightning voltages and allowing engineers to check how electrical equipment bears up.\n\n## Bad behaviour\n\nBut while rockets are fine for research, they cannot provide the protection from lightning strikes that everyone is looking for. The rockets cost around \\$1,200 each, can only be fired at a limited frequency and their failure rate is about 40 per cent. And even when they do trigger lightning, things still do not always go according to plan. 'Lightning is not perfectly well behaved,' says Bernstein. 'Occasionally, it will take a branch and go someplace it wasn't supposed to go.'\n\nAnd anyway, who would want to fire streams of rockets in a populated area? 'What goes up must come down,' points out Jean-Claude Diels of the University of New Mexico. Diels is leading a project, which is backed by EPRI, to try to use lasers to discharge lightning safely - and safety is a basic requirement since no one wants to put themselves or their expensive equipment at risk. With around \\$500,000 invested so far, a promising system is just emerging from the laboratory.\n\nThe idea began some 20 years ago, when high-powered lasers were revealing their ability to extract electrons out of atoms and create ions. If a laser could generate a line of ionisation in the air all the way up to a storm cloud, this conducting path could be used to guide lightning to Earth, before the electric field becomes strong enough to break down the air in an uncontrollable surge. To stop the laser itself being struck, it would not be pointed straight at the clouds. Instead it would be directed at a mirror, and from there into the sky. The mirror would be protected by placing lightning conductors close by. Ideally, the cloud-zapper (gun) would be cheap enough to be installed around all key power installations, and portable enough to be taken to international sporting events to beam up at brewing storm clouds.\n\n## A stumbling block\n\nHowever, there is still a big stumbling block. The laser is no nifty portable: it's a monster that takes up a whole room. Diels is trying to cut down the size and says that a laser around the size of a small table is in the offing. He plans to test this more manageable system on live thunderclouds next summer.\n\nBernstein says that Diels's system is attracting lots of interest from the power companies. But they have not yet come up with the \\$5 million that EPRI says will be needed to develop a commercial system, by making the lasers yet smaller and cheaper. 'I cannot say I have money yet, but I'm working on it,'says Bernstein. He reckons that the forthcoming field tests will be the turning point – and he's hoping for good news. Bernstein predicts 'an avalanche of interest and support' if all goes well. He expects to see cloud-zappers eventually costing \\$50,000 to \\$100,000 each.\n\nOther scientists could also benefit. With a lightning switch' at their fingertips, materials scientists could find out what happens when mighty currents meet matter. Diels also hopes to see the birth of interactive meteorology'- not just forecasting the weather but controlling it. 'If we could discharge clouds, we might affect the weather,' he says.\n\nAnd perhaps, says Diels, we'll be able to confront some other meteorological menaces. 'We think we could prevent hail by inducing lightning,' he says. Thunder, the shock wave that comes from a lightning flash, is thought to be the trigger for the torrential rain that is typical of storms. A laser thunder factory could shake the moisture out of clouds, perhaps preventing the formation of the giant hailstones that threaten crops. With luck, as the storm clouds gather this winter, laser-toting researchers could, for the first time, strike back."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t3r-g1",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "The main topic discussed in the text is A the damage caused to US golf courses and golf players by lightning strikes. B the effect of lightning on power supplies in the US and in Japan. C a variety of methods used in trying to control lightning strikes. D a laser technique used in trying to control lightning strikes",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the damage caused to US golf courses and golf players by lightning strikes"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the effect of lightning on power supplies in the US and in Japan"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a variety of methods used in trying to control lightning strikes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a laser technique used in trying to control lightning strikes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the damage caused to US golf courses and golf players by lightning strikes"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the effect of lightning on power supplies in the US and in Japan"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a variety of methods used in trying to control lightning strikes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a laser technique used in trying to control lightning strikes"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 1–3 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g2",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q2",
+              "number": 2,
+              "type": "matching",
+              "prompt": "According to the text, every year lightning",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "does considerable damage to buildings during thunderstorms."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "kills or injures mainly golfers in the United States."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "kills or injures around 500 people throughout the world."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "damages more than 100 American power companies."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.800919+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 1–3 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g3",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q3",
+              "number": 3,
+              "type": "matching",
+              "prompt": "Researchers at the University of Florida and at the University of New Mexico",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "receive funds from the same source."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "are using the same techniques."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "are employed by commercial companies."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "are in opposition to each other."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.800919+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 1–3 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g4",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "EPRI receives financial support from . The advantage of the technique being developed by Diels is that it can be used",
+              "acceptedAnswers": [
+                "power companies"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              6
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 4–6 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g5",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "The advantage of the technique being developed by Diels is that it can be used __________.",
+              "acceptedAnswers": [
+                "safely"
+              ],
+              "gapText": "The advantage of the technique being developed by Diels is that it can be used __________.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              6
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 4–6 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g6",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "The main difficulty associated with using the laser equipment is related to",
+              "acceptedAnswers": [
+                "size"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              6
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 4–6 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g7",
+          "instruction": "Complete the summary using the list of words, A–I, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q7",
+              "number": 7,
+              "type": "single_choice",
+              "prompt": "This lase is then directed at",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "cloud-zappers"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "atoms"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "storm clouds"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mirrors"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "technique"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "rockets"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "conductors"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "thunder"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "cloud-zappers"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "atoms"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "storm clouds"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "mirrors"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "technique"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "ions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "rockets"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "conductors"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "thunder"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.882889+00:00"
+          }
+        },
+        {
+          "id": "c8t3r-g8",
+          "instruction": "Complete the summary using the list of words, A–I, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q8",
+              "number": 8,
+              "type": "single_choice",
+              "prompt": "This laser is then directed at __________ in order to control electrical charges, a method which is less dangerous than using __________.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "cloud-zappers"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "atoms"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "storm clouds"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mirrors"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "technique"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "rockets"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "conductors"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "thunder"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "cloud-zappers"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "atoms"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "storm clouds"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "mirrors"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "technique"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "ions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "rockets"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "conductors"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "thunder"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.882889+00:00"
+          }
+        },
+        {
+          "id": "c8t3r-g9",
+          "instruction": "Complete the summary using the list of words, A–I, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q9",
+              "number": 9,
+              "type": "single_choice",
+              "prompt": "As a protection for the lasers, the beams are aimed firstly at",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "cloud-zappers"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "atoms"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "storm clouds"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mirrors"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "technique"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "rockets"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "conductors"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "thunder"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "cloud-zappers"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "atoms"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "storm clouds"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "mirrors"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "technique"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "ions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "rockets"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "conductors"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "thunder"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.882889+00:00"
+          }
+        },
+        {
+          "id": "c8t3r-g10",
+          "instruction": "Complete the summary using the list of words, A–I, below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q10",
+              "number": 10,
+              "type": "single_choice",
+              "prompt": "As a protection for the lasers, the beams are aimed firstly at __________.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "cloud-zappers"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "atoms"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "storm clouds"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mirrors"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "technique"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ions"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "rockets"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "conductors"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "thunder"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "cloud-zappers"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "atoms"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "storm clouds"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "mirrors"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "technique"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "ions"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "rockets"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "conductors"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "thunder"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.882889+00:00"
+          }
+        },
+        {
+          "id": "c8t3r-g11",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q11",
+              "number": 11,
+              "type": "yes_no_ng",
+              "prompt": "Power companies have given Diels enough money to develop his laser",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g12",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q12",
+              "number": 12,
+              "type": "yes_no_ng",
+              "prompt": "Obtaining money to improve the lasers will depend on tests in real storms",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g13",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q13",
+              "number": 13,
+              "type": "true_false_ng",
+              "prompt": "Weather forecasters are intensely interested in Diels's system",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The Nature of Genius\n\nThere has always been an interest in geniuses and prodigies. The word 'genius', from the Latin gens (= family) and the term 'genius', meaning 'begetter', comes from the early Roman cult of a divinity as the head of the family. In its earliest form, genius was concerned with the ability of the head of the family, the paterfamilias, to perpetuate himself. Gradually, genius came to represent a person's characteristics and thence an individual's highest attributes derived from his 'genius' or guiding spirit. Today, people still look to stars or genes, astrology or genetics, in the hope of finding the source of exceptional abilities or personal characteristics.\n\nThe concept of genius and of gifts has become part of our folk culture, and attitudes are ambivalent towards them. We envy the gifted and mistrust them. In the mythology of giftedness, it is popularly believed that if people are talented in one area, they must be defective in another, that intellectuals are impractical, that prodigies burn too brightly too soon and burn out, that gifted people are eccentric, that they are physical weaklings, that there's a thin line between genius and madness, that genius runs in families, that the gifted are so clever they don't need special help, that giftedness is the same as having a high IQ, that some races are more intelligent or musical or mathematical than others, that genius goes unrecognised and unrewarded that adversity makes men wise or that people with gifts have a responsibility to use them. Language has been enriched with such terms as 'highbrow', 'egghead', 'blue-stocking', 'wiseacre', 'know-all', 'boffin' and, for many, 'intellectual' is a term of denigration.\n\nThe nineteenth century saw considerable interest in the nature of genius, and produced not a few studies of famous prodigies. Perhaps for us today, two of the most significant aspects of most of these studies of genius are the frequency with which early encouragement and teaching by parents and tutors had beneficial effects on the intellectual, artistic or musical development of the children but caused great difficulties of adjustment later in their lives, and the frequency with which abilities went unrecognised by teachers and schools. However, the difficulty with the evidence produced by these studies, fascinating as they are in collecting together anecdotes and apparent similarities and exceptions, is that they are not what we would today call norm-referenced. In other words, when, for instance, information is collated about early illnesses, methods of upbringing, schooling, etc., we must also take into account information from other historical sources about how common or exceptional these were at the time. For instance, infant mortality was high and life expectancy much shorter than today, home tutoring was common in the families of the nobility and wealthy, bullying and corporal punishment were common at the best independent schools and, for the most part, the cases studied were members of the privileged classes. It was only with the growth of paediatrics and psychology in the twentieth century that studies could be carried out on a more objective, if still not always very scientific, basis.\n\nGeniuses, however they are defined, are but the peaks which stand out through the mist of history and are visible to the particular observer from his or her particular vantage point. Change the observers and the vantage points, clear away some of the mist, and a different lot of peaks appear. Genius is a term we apply to those whom we recognise for their outstanding achievements and who stand near the end of the continuum of human abilities which reaches back through the mundane and mediocre to the incapable. There is still much truth in Dr Samuel Johnson's observation, 'The true genius is a mind of large general powers, accidentally determined to some particular direction'. We may disagree with the 'general', for we doubt if all musicians of genius could have become scientists of genius or vice versa, but there is no doubting the accidental determination which nurtured or triggered their gifts into those channels into which they have poured their powers so successfully. Along the continuum of abilities are hundreds of thousands of gifted men and women, boys and girls.\n\nWhat we appreciate, enjoy or marvel at in thé works of genius or the achievements of prodigies are the manifestations of skills or abilities which are similar to, but so much superior to, our own. But that their minds are not different from our own is demonstrated by the fact that the hard-won discoveries of scientists like Kepler or Einstein become the commonplace knowledge of schoolchildren and the once outrageous shapes and colours of an artist like Paul Klee so soon appear on the fabrics we wear. This does not minimise the supremacy of their achievements, which outstrip our own as the sub-four-minute milers outstrip our jogging.\n\nTo think of geniuses and the gifted as having uniquely different brains is only reasonable if we accept that each human brain is uniquely different. The purpose of instruction is to make us even more different from one another, and in the process of being educated we can learn from the achievements of those more gifted than ourselves. But before we try to emulate geniuses or encourage our children to do so we should note that some of the things we learn from them may prove unpalatable. We may envy their achievements and fame, but we should also recognise the price they may have paid in terms of perseverance, single-mindedness, dedication, restrictions on their personal lives, the demands upon their energies and time, and how often they had to display great courage to preserve their integrity or to make their way to the top.\n\nGenius and giftedness are relative descriptive terms of no real substance. We may, at best, give them some precision by defining them and placing them in a context but, whatever we do, we should never delude ourselves into believing that gifted children or geniuses are different from the rest of humanity, save in the degree to which they have developed the performance of their abilities.\n\n本资料仅用于参考，。\n\n## Test 3\n\nQuestions 14-18\n\nChoose FIVE letters, A-K.\n\nWrite the correct letters in boxes 14–18 on your answer sheet.\n\nNB Your answers may be given in any order.\n\nBelow are listed some popular beliefs about genius and giftedness.\n\nWhich FIVE of these beliefs are reported by the writer of the text?\n\nA Truly gifted people are talented in all areas.\n\nB The talents of geniuses are soon exhausted.\n\nC Gifted people should use their gifts.\n\nD A genius appears once in every generation.\n\nEGenius can be easily destroyed by discouragement.\n\nF Genius is inherited.\n\nG Gifted people are very hard to live with.\n\nH People never appreciate true genius.\n\nI Geniuses are natural leaders.\n\nJ Gifted people develop their greatness through difficulties.\n\nKGenius will always reveal itself."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t3r-g14",
+          "instruction": "Choose FIVE letters, A-K.",
+          "questionType": "multi_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q14",
+              "number": 14,
+              "type": "multi_choice",
+              "prompt": "Choose FIVE letters, A-K.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Truly gifted people are talented in all areas."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The talents of geniuses are soon exhausted."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Gifted people should use their gifts."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "A genius appears once in every generation."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Genius can be easily destroyed by discouragement."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Genius is inherited."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Gifted people are very hard to live with."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "People never appreciate true genius."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Geniuses are natural leaders."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Gifted people develop their greatness through difficulties."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Genius will always reveal itself."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.879650+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": ""
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": ""
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g15",
+          "instruction": "Choose FIVE letters, A-K.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Which belief is reported by the writer? Gifted people should use their gifts.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Truly gifted people are talented in all areas."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The talents of geniuses are soon exhausted."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Gifted people should use their gifts."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "A genius appears once in every generation."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Genius can be easily destroyed by discouragement."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Genius is inherited."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Gifted people are very hard to live with."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "People never appreciate true genius."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Geniuses are natural leaders."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Gifted people develop their greatness through difficulties."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Genius will always reveal itself."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Truly gifted people are talented in all areas."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The talents of geniuses are soon exhausted."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Gifted people should use their gifts."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "A genius appears once in every generation."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Genius can be easily destroyed by discouragement."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Genius is inherited."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Gifted people are very hard to live with."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "People never appreciate true genius."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Geniuses are natural leaders."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Gifted people develop their greatness through difficulties."
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "Genius will always reveal itself."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g16",
+          "instruction": "Choose FIVE letters, A-K.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Which belief is reported by the writer? Genius is inherited.",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Truly gifted people are talented in all areas."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The talents of geniuses are soon exhausted."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Gifted people should use their gifts."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "A genius appears once in every generation."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Genius can be easily destroyed by discouragement."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Genius is inherited."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Gifted people are very hard to live with."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "People never appreciate true genius."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Geniuses are natural leaders."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Gifted people develop their greatness through difficulties."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Genius will always reveal itself."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Truly gifted people are talented in all areas."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The talents of geniuses are soon exhausted."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Gifted people should use their gifts."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "A genius appears once in every generation."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Genius can be easily destroyed by discouragement."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Genius is inherited."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Gifted people are very hard to live with."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "People never appreciate true genius."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Geniuses are natural leaders."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Gifted people develop their greatness through difficulties."
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "Genius will always reveal itself."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g17",
+          "instruction": "Choose FIVE letters, A-K.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "Which belief is reported by the writer? People never appreciate true genius.",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Truly gifted people are talented in all areas."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The talents of geniuses are soon exhausted."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Gifted people should use their gifts."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "A genius appears once in every generation."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Genius can be easily destroyed by discouragement."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Genius is inherited."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Gifted people are very hard to live with."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "People never appreciate true genius."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Geniuses are natural leaders."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Gifted people develop their greatness through difficulties."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Genius will always reveal itself."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Truly gifted people are talented in all areas."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The talents of geniuses are soon exhausted."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Gifted people should use their gifts."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "A genius appears once in every generation."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Genius can be easily destroyed by discouragement."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Genius is inherited."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Gifted people are very hard to live with."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "People never appreciate true genius."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Geniuses are natural leaders."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Gifted people develop their greatness through difficulties."
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "Genius will always reveal itself."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g18",
+          "instruction": "Choose FIVE letters, A-K.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Which belief is reported by the writer? Gifted people develop their greatness through difficulties.",
+              "acceptedAnswers": [
+                "J"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Truly gifted people are talented in all areas."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The talents of geniuses are soon exhausted."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Gifted people should use their gifts."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "A genius appears once in every generation."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Genius can be easily destroyed by discouragement."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Genius is inherited."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Gifted people are very hard to live with."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "People never appreciate true genius."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Geniuses are natural leaders."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Gifted people develop their greatness through difficulties."
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "Genius will always reveal itself."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g19",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q19",
+              "number": 19,
+              "type": "true_false_ng",
+              "prompt": "Nineteenth-century studies of the nature of genius failed to take into account the uniqueness of the person's upbringing",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g20",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q20",
+              "number": 20,
+              "type": "true_false_ng",
+              "prompt": "Nineteenth-century studies of genius lacked both objectivity and a proper scientific approach",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g21",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q21",
+              "number": 21,
+              "type": "true_false_ng",
+              "prompt": "A true genius has general powers capable of excellence in any area",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g22",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q22",
+              "number": 22,
+              "type": "true_false_ng",
+              "prompt": "The skills of ordinary individuals are in essence the same as the skills of prodigies",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g23",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q23",
+              "number": 23,
+              "type": "true_false_ng",
+              "prompt": "The ease with which truly great ideas are accepted and taken for granted fails to lessen their significance",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g24",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q24",
+              "number": 24,
+              "type": "true_false_ng",
+              "prompt": "Giftedness and genius deserve proper scientific research into their true nature so that all talent may be retained for the human race",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g25",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q25",
+              "number": 25,
+              "type": "true_false_ng",
+              "prompt": "Geniuses often pay a high price to achieve greatness",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g26",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q26",
+              "number": 26,
+              "type": "true_false_ng",
+              "prompt": "To be a genius is worth the high personal cost",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 on the following pages.\n\nQuestions 27–32\n\nReading Passage 3 has seven paragraphs, A-G.\n\nChoose the correct heading for paragraphs B-G from the list of headings below.\n\nWrite the correct number, i-x, in boxes 27-32 on your answer sheet.\n\n## List of Headings\n\ni The biological clock\n\nii Why dying is beneficial\n\niii The ageing process of men and women\n\niv Prolonging your life\n\nv Limitations of life span\n\nvi Modes of development of different species\n\nvii A stable life span despite improvements\n\nviii Energy consumption\n\nix Fundamental differences in ageing of objects and organisms\n\nx Repair of genetic material\n\nExample Paragraph A\n\nAnswer V\n\n27 Paragraph B\n\n28 Paragraph C\n\n29 Paragraph D\n\n30 Paragraph E\n\n31 Paragraph F\n\n32 Paragraph G\n\n# HOW DOES THE BIOLOGICAL CLOCK TICK?\n\nA Our life span is restricted. Everyone accepts this as 'biologically' obvious. 'Nothing lives for ever!' However, in this statement we think of artificially produced, technical objects, products which are subjected to natural wear and tear during use. This leads to the result that at some time or other the object stops working and is unusable (‘death' in the biological sense). But are the wear and tear and loss of function of technical objects and the death of living organisms really similar or comparable?\n\nBOur 'dead' products are 'static', closed systems. It is always the basic material which constitutes the object and which, in the natural course of things, is worn down and becomes 'older'. Ageing in this case must occur according to the laws of physical chemistry and of thermodynamics. Although the same law holds for a living organism, the result of this law is not inexorable in the same way. At least as long as a biological system has the ability to renew itself it could actually become older without ageing; an organism is an open, dynamic system through which new material continuously flows. Destruction of old material and formation of new material are thus in permanent dynamic equilibrium. The material of which the organism is formed changes continuously. Thus our bodies continuously exchange old substance for new, just like a spring which more or less maintains its form and movement, but in which the water molecules are always different.\n\nC Thus ageing and death should not be seen as inevitable, particularly as the organism possesses many mechanisms for repair. It is not, in principle, necessary for a biological system to age and die. Nevertheless, a restricted life span, ageing, and then death are basic characteristics of life. The reason for this is easy to recognise: in nature, the existent organisms either adapt or are regularly replaced by new types. Because of changes in the genetic material (mutations) these have new characteristics and in the course of their individual lives they are tested for optimal or better adaptation to the environmental conditions. Immortality would disturb this system - it needs room for new and better life. This is the basic problem of evolution.\n\nD Every organism has a life span which is highly characteristic. There are striking differences in life span between different species, but within one species the parameter is relatively constant. For example, the average duration of human life has hardly changed in thousands of years. Although more and more people attain an advanced age as a result of developments in medical care and better nutrition, the characteristic upper limit for most remains 80 years. A further argument against the simple wear and tear theory is the observation that the time within which organisms age lies between a few days (even a few hours for unicellular organisms) and several thousand years, as with mammoth trees.\n\nE If a life span is a genetically determined biological characteristic, it is logically necessary to propose the existence of an internal clock, which in some way measures and controls the ageing process and which finally determines death as the last step in a fixed programme. Like the life span, the metabolic rate has for different organisms a fixed mathematical relationship to the body mass. In comparison to the life span this relationship is 'inverted': the larger the organism the lower its metabolic rate. Again this relationship is valid not only for birds, but also, similarly on average within the systematic unit, for all other organisms (plants, animals, unicellular organisms).\n\nF Animals which behave 'frugally' with energy become particularly old, for example, crocodiles and tortoises. Parrots and birds of prey are often held chained up. Thus they are not able to 'experience life' and so they attain a high life span in captivity. Animals which save energy by hibernation or lethargy (e.g. bats or hedgehogs) live much longer than those which are always active. The metabolic rate of mice can be reduced by a very low consumption of food (hunger diet). They then may live twice as long as their well fed comrades. Women become distinctly (about 10 per cent) older than men. If you examine the metabolic rates of the two sexes you establish that the higher male metabolic rate roughly accounts for the lower male life span. That means that they live life 'energetically' – more intensively, but not for as long.\n\nG It follows from the above that sparing use of energy reserves should tend to extend life. Extreme high performance sports may lead to optimal cardiovascular performance, but they quite certainly do not prolong life. Relaxation lowers metabolic rate, as does adequate sleep and in general an equable and balanced personality. Each of us can develop his or her own 'energy saving programme' with a little self-observation, critical self-control and, above all, logical consistency. Experience will show that to live in this way not only increases the life span but is also very healthy. This final aspect should not be forgotten.\n\nQuestions 33-36\n\nComplete the notes below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\n\nWrite your answers in boxes 33–36 on your answer sheet.\n\n• Objects age in accordance with principles of 3 . and of 34 ..\n\n• Through mutations, organisms can 35..beter to the environment\n\n• 36 ..would pose serious problem for he theor of evolution\n\nQuestions 37–40\n\nDo the following statements agree with the views of the writer in Reading Passage 3?\n\nIn boxes 37–40 on your answer sheet, write\n\nYES if the statement agrees with the views of the writer NO if the statement contradicts the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this\n\n37 The wear and tear theory applies to both artificial objects and biological systems.\n\n38 In principle, it is possible for a biological system to become older without ageing.\n\n39 Within seven years, about 90 per cent of a human body is replaced as new.\n\n40 Conserving energy may help to extend a human's life."
+      },
+      "questionGroups": [
+        {
+          "id": "c8t3r-g27",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Paragraph B",
+              "acceptedAnswers": [
+                "ix"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:50.107679+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The biological clock"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Why dying is beneficial"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The ageing process of men and women"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Prolonging your life"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Limitations of life span"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Modes of development of different species"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A stable life span despite improvements"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Energy consumption"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Fundamental differences in ageing of objects and organisms"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Repair of genetic material"
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g28",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:50.107679+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The biological clock"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Why dying is beneficial"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The ageing process of men and women"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Prolonging your life"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Limitations of life span"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Modes of development of different species"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A stable life span despite improvements"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Energy consumption"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Fundamental differences in ageing of objects and organisms"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Repair of genetic material"
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g29",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:50.107679+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The biological clock"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Why dying is beneficial"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The ageing process of men and women"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Prolonging your life"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Limitations of life span"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Modes of development of different species"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A stable life span despite improvements"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Energy consumption"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Fundamental differences in ageing of objects and organisms"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Repair of genetic material"
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g30",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Paragraph E",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The biological clock"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Why dying is beneficial"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The ageing process of men and women"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Prolonging your life"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Limitations of life span"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Modes of development of different species"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "A stable life span despite improvements"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Energy consumption"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Fundamental differences in ageing of objects and organisms"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Repair of genetic material"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:05.955745+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The biological clock"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Why dying is beneficial"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The ageing process of men and women"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Prolonging your life"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Limitations of life span"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Modes of development of different species"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A stable life span despite improvements"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Energy consumption"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Fundamental differences in ageing of objects and organisms"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Repair of genetic material"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:50.107679+00:00"
+          }
+        },
+        {
+          "id": "c8t3r-g31",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Paragraph F",
+              "acceptedAnswers": [
+                "viii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:50.107679+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The biological clock"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Why dying is beneficial"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The ageing process of men and women"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Prolonging your life"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Limitations of life span"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Modes of development of different species"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A stable life span despite improvements"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Energy consumption"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Fundamental differences in ageing of objects and organisms"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Repair of genetic material"
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g32",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Paragraph G # HOW DOES THE BIOLOGICAL CLOCK TICK? A Our life span is restricted. Everyone accepts this as 'biologically' obvious. 'Nothing lives for ever!' However, in this statement we think of artificially produced, technical objects, products which are subjected to natural wear and tear during use. This leads to the result that at some time or other the object stops working and is unusable (‘death' in the biological sense). But are the wear and tear and loss of function of technical objects and the death of living organisms really similar or comparable? BOur 'dead' products are 'static', cl",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:50.107679+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The biological clock"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Why dying is beneficial"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The ageing process of men and women"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Prolonging your life"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Limitations of life span"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Modes of development of different species"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "A stable life span despite improvements"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Energy consumption"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Fundamental differences in ageing of objects and organisms"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "Repair of genetic material"
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g33",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "physical chemistry"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g34",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Objects age in accordance with principles of 33 __________ and of 34 __________.",
+              "acceptedAnswers": [
+                "physical chemistry",
+                "thermodynamics"
+              ],
+              "gapText": "Objects age in accordance with principles of 33 __________ and of 34 __________.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g35",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Through mutations, organisms can __________ better to the environment.",
+              "acceptedAnswers": [
+                "adapt"
+              ],
+              "gapText": "Through mutations, organisms can __________ better to the environment.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g36",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "__________ would pose a serious problem for the theory of evolution.",
+              "acceptedAnswers": [
+                "immortality"
+              ],
+              "gapText": "__________ would pose a serious problem for the theory of evolution.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:20:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              36
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33–36 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c8t3r-g37",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q37",
+              "number": 37,
+              "type": "yes_no_ng",
+              "prompt": "The wear and tear theory applies to both artificial objects and biological systems",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g38",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q38",
+              "number": 38,
+              "type": "yes_no_ng",
+              "prompt": "In principle, it is possible for a biological system to become older without ageing",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g39",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q39",
+              "number": 39,
+              "type": "true_false_ng",
+              "prompt": "Within seven years, about 90 per cent of a human body is replaced as new",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8t3r-g40",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3r-q40",
+              "number": 40,
+              "type": "yes_no_ng",
+              "prompt": "Conserving energy may help to extend a human's life",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

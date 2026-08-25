@@ -1,0 +1,2248 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-10-test-4-reading",
+  "title": "Cambridge IELTS 10 Academic Test 4 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0010-bf8c7ab2",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 10",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题10.pdf",
+        "sha256": "924bf69326e33aacf54dff62009ff5badf01d17d41340c3e242f86d278b6420d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C10\\剑桥雅思真题10\\auto\\剑桥雅思真题10.md",
+        "sha256": "779bed817fd5e0c62ba6cda955f8bc236f88c4e87afa75b288b862fc8fad9048",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=1, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-10-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "The megafires of California\n\nDrought, housing expansion, and oversupply of tinder make for bigger, hotter fires in the western United States\n\nWildfires are becoming an increasing menace in the western United States, with Southern California being the hardest hit area. There's a reason fire squads battling more frequent blazes in Southern California are having such difficulty containing the flames, despite better preparedness than ever and decades of experience fighting fires fanned by the 'Santa Ana Winds'. The wildfires themselves, experts say, are generally hotter, faster, and spread more erratically than in the past.\n\nMegafires, also called‘siege fires', are the increasingly frequent blazes that burn 500,000 acres or more – 10 times the size of the average forest fire of 20 years ago. Some recent wildfires are among the biggest ever in California in terms of acreage burned, according to state figures and news reports.\n\nOne explanation for the trend to more superhot fires is that the region, which usually has dry summers, has had significantly below normal precipitation in many recent years. Another reason, experts say, is related to the centurylong policy of the US Forest Service to stop wildfires as quickly as possible. The unintentional consequence has\n\nbeen to halt the natural eradication of underbrush, now the primary fuel for megafires.\n\nThree other factors contribute to the trend, they add. First is climate change, marked by a 1-degree Fahrenheit rise in average yearly temperature across the western states. Second is fire seasons that on average are 78 days longer than they were 20 years ago. Third is increased construction of homes in wooded areas.\n\n'We are increasingly building our homes in fire-prone ecosystems,' says Dominik Kulakowski, adjunct professor of biology at Clark University Graduate School of Geography in Worcester, Massachusetts. 'Doing that in many of the forests of the western US is like building homes on the side of an active volcano.'\n\nIn California, where population growth has averaged more than 600,000 a year for at least a decade, more residential housing is being built. 'What once was open space is now residential homes providing fuel to make fires burn with greater intensity,'says Terry McHale of the California Department of Forestry firefighters'union. 'With so uch dryness, so many communities tocatch fire, so many fronts to fight, it becomes an almost incredible job.'\n\nThat said, many experts give California high marks for making progress on preparedness in recent ears, after some of the largest fires n state history scorched thousands of acres, burned thousands of homes, and killed numerous people. Stung in the past by criticism of bungling that allowed fires to spread when they might havebeen contained, personnel are meeting the peculiar challenges of eighborhood - and canyon- hopping fres better than previously, observers say.\n\nState promises to provide more p-to-date engines, planes, and elicopters to fight fires have been fulfilled.Firefighters'unionsthat in the past complained of dilapidated equipment, old fire engines, and nsufficient blueprints for fire safety are owpraising the state's commitment, oting that funding for firefighting has ncreased, despite huge cuts in many other programs.'We are pleased that the current state administration has been very proactive in its support of us, and [has]come through with budgetary support of the infrastructure needs we ave long sought,' says Mr. McHale of the firefighters' union.\n\nBesides providing money to upgrade the fire engines that must traverse the mammoth state and wind along serpentine canyon roads, the state has invested in better command-and-control facilities as well as in the strategies to run them. 'In the fire sieges of earlier years, we found that other jurisdictions and states were willing to offer mutual-aid help, but we were not able to communicate adequately with them,' says Kim Zagaris, chief of the state's Office of Emergency Services Fire and Rescue Branch. After a commission examined and revamped communications procedures the statewide response 'has become far more professional and responsive, he says. There is a sense among both government officials and residents that the speed, dedication, and coordination of firefighters from several states and jurisdictions are resulting in greater efficiency than in past ‘siege fire' situations.\n\nIn recent years, the Southern California region has improved building codes, evacuation procedures, and procurement of new technology. 'I am extraordinarily impressed by the improvements we have witnessed,' says Randy Jacobs, a Southern Californiabased lawyer who has had to evacuate both his home and business to escape wildfires.'Notwithstanding all the damage that will continue to be caused by wildfires,we will no longer suffer the loss of life endured in the past because of the fire prevention and firefighting measures that have been put in place,' he says.\n\nTest 4"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t4r-g1",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "spread"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g2",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "It is possible to overcome shyness when faced with the need to speak in public. List of People A Christopher Peterson B David Fajgenbaum C Suzanne Segerstrom D Tanya Streeter E Todd Kashdan F Kenneth Pedeleose G Cynthia Pury Test 4",
+              "acceptedAnswers": [
+                "10",
+                "ten times"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g3",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "The humpback whale caught off Vancouver Island is mentioned because of A the exceptional size of its body. Bthe way it exemplifies Dollo's law. Cthe amount of local controversy it caused. D the reason given for its unusual features",
+              "acceptedAnswers": [
+                "below"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g4",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "More brush to act as ______",
+              "acceptedAnswers": [
+                "fuel"
+              ],
+              "gapText": "More brush to act as 4 ______",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g5",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Extended fire ______",
+              "acceptedAnswers": [
+                "seasons"
+              ],
+              "gapText": "Extended fire 5 ______",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g6",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "More building of ______ in vulnerable places",
+              "acceptedAnswers": [
+                "homes",
+                "housing"
+              ],
+              "gapText": "More building of 6 ______ in vulnerable places",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": [
+              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g7",
+          "instruction": "Which section contains the following information?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "When discussing the theory developed by Louis Dollo, the writer says that A it was immediately referred to as Dollo's law. B it supported the possibility of evolutionary throwbacks. C it was modified by biologists in the early twentieth century. Dit was based on many years of research",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Many experts believe California has made little progress in readying itself to fight fires",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g9",
+          "instruction": "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q9",
+              "number": 9,
+              "type": "true_false_ng",
+              "prompt": "People must accept that they do not know much when first trying something new. It is important for people to actively notice when good things happen",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g10",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q10",
+              "number": 10,
+              "type": "true_false_ng",
+              "prompt": "California has replaced a range of firefighting tools",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g11",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q11",
+              "number": 11,
+              "type": "true_false_ng",
+              "prompt": "More firefighters have been hired to improve fire-fighting capacity",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g12",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q12",
+              "number": 12,
+              "type": "true_false_ng",
+              "prompt": "Citizens and government groups disapprove of the efforts of different states and agencies working together",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g13",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q13",
+              "number": 13,
+              "type": "true_false_ng",
+              "prompt": "Randy Jacobs believes that loss of life from fires will continue at the same levels, despite changes made",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Second nature\n\nYour personality isn't necessarily set in stone. With a little experimentation, people can reshape their temperaments and inject passion, optimism, joy and courage into their lives\n\nA Psychologists have long held that a person's character cannot undergo a transformation in any meaningful way and that the key traits of personality are determined at a very young age. However, researchers have begun looking more closely at ways we can change. Positive psychologists have identified 24 qualities we admire, such as loyalty and kindness, and are studying them to find out why they come so naturally to some people. What they're discovering is that many of these qualities amount to habitual behaviour that determines the way we respond to theworld. The good news is that all this can be learned.\n\nSome qualities are less challenging to develop than others, optimism being one of them. However, developing qualities requires mastering a range of skills which are diverse and sometimes surprising. For example, to bring more joy and passion into your life, you must be open to experiencing negative emotions. Cultivating such qualities will help you realise your full potential.\n\nB 'The evidence is good that most personality traits can be altered,' says Christopher Peterson, professor of psychology at the University of Michigan, who cites himself as an example. Inherently introverted, he realised early on that as an academic, his reticence would prove disastrous in the lecture hall. So he learned to be more outgoing and to entertain his classes. 'Now my extroverted behaviour is spontaneous,' he says.\n\nC David Fajgenbaum had to make a similar transition. He was preparing for university, when he had an accident that put an end to his sports career. On campus, he quickly found that beyond ordinary counselling, the university had no services for students who were undergoing physical rehabilitation and suffering from depression like him. He therefore launched a support group to help others in similar situations. He took action despite his own pain – a typical response of an optimist.\n\nD Suzanne Segerstrom, professor of psychology at the University of Kentucky believes that the key to increasing optimism is through cultivating optimistic behaviour, rather than positive thinking. She recommends you train yourself to pay attention to good fortune by writing down three positive things that come about each day. This will help you convince yourself that favourable outcomes actually happen all the time, making it easier to begin taking action.\n\nYou can recognise a person who is passionate about a pursuit by the way they are so strongly involved in it. Tanya Streeter's passion is freediving –the sport of plunging deep into the water without tanks or other breathing equipment. Beginning in 1998, she set nine world records and can hold her breath for six minutes. The physical stamina required for this sport is intense but the psychological demands are even more overwhelming. Streeter learned to untangle her fears from her judgment of what her body and mind could do. 'In my career as a competitive freediver, there was a limit to what I could do – but it wasn't anywhere near what I thought it was,' she says.\n\nFinding a pursuit that excites you can improve anyone's life. The secret about consuming passions, though, according to psychologist Paul Silvia of the University of North Carolina, is that 'they require discipline, hard work and ability, which is why they are so rewarding.'Psychologist Todd Kashdan has this advice for those people taking up a new passion: 'As a newcomer, you also have to tolerate and laugh at your own ignorance. You must be willing to accept the negative feelings that come your way,' he says.\n\nIn 2004, physician-scientist Mauro Zappaterra began his PhD research at Harvard Medical School. Unfortunately, he was miserable as his research wasn't compatible with his curiosity about healing. He finally took a break and during eight months in Santa Fe, Zappaterra learned about alternative healing techniques not taught at Harvard. When he got back, he switched labs to study how cerebrospinal fluid nourishes the developing nervous system. He also vowed to look for the joy in everything, including failure, as this could help him learn about his research and himself.\n\nOne thing that can hold joy back is a person's concentration on avoiding failure rather than their looking forward to doing something well. 'Focusing on being safe might get in the way of your reaching your goals,' explains Kashdan. For example, are you hoping to get through a business lunch without embarrassing yourself, or are you thinking about how fascinating the conversation might be?\n\nUsually, we think of courage in physical terms but ordinary life demands something else. For marketing executive Kenneth Pedeleose, it meant speaking out against something he thought was ethically wrong. The new manager was intimidating staff so Pedeleose carefully recorded each instance of bullying and eventually took the evidence to a senior director, knowing his own job security would be threatened. Eventually the manager was the one to go. According to Cynthia Pury, a psychologist at Clemson University, Pedeleose's story proves the point that courage is not motivated by fearlessness, but by moral obligation. Pury also believes that people can acquire courage. Many of her students said that faced with a risky situation, they first tried to calm themselves down, then looked for a way to mitigate the danger, just as Pedeleose did by documenting his allegations.\n\nOver the long term, picking up a new character trait may help you move toward being the person you want to be. And in the short term, the effort itself could be surprisingly rewarding, a kind of internal adventure.\n\nTest 4"
+      },
+      "questionGroups": [
+        {
+          "id": "c10t4r-g14",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Complete the summary below.",
+              "acceptedAnswers": [
+                "transformation",
+                "change"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g15",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Psychologists have traditionally believed that a personality transformation was impossible and that by a ______, a person’s character tends to be fixed.",
+              "acceptedAnswers": [
+                "young age"
+              ],
+              "gapText": "Psychologists have traditionally believed that a personality 14 ______ was impossible and that by a 15 ______, a person’s character tends to be fixed.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g16",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "However, regardless of the quality, it is necessary to learn a wide variety of different",
+              "acceptedAnswers": [
+                "optimism"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g17",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "However, regardless of the quality, it is necessary to learn a wide variety of different ______ in order for a new quality to develop; for example, a person must understand and feel some negative emotions in order to increase their happiness.",
+              "acceptedAnswers": [
+                "skills",
+                "techniques"
+              ],
+              "gapText": "However, regardless of the quality, it is necessary to learn a wide variety of different 17 ______ in order for a new quality to develop; for example, a person must understand and feel some 18 ______ in order to increase their happiness.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g18",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "However, regardless of the quality, it is necessary to learn a wide variety of different skills in order for a new quality to develop; for example, a person must understand and feel some ______ in order to increase their happiness.",
+              "acceptedAnswers": [
+                "negative emotions",
+                "feelings"
+              ],
+              "gapText": "However, regardless of the quality, it is necessary to learn a wide variety of different 17 ______ in order for a new quality to develop; for example, a person must understand and feel some 18 ______ in order to increase their happiness.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:34:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 14–18 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c10t4r-g19",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "People must accept that they do not know much when first trying something new.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Christopher Peterson"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "David Fajgenbaum"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Suzanne Segerstrom"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Tanya Streeter"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Todd Kashdan"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Kenneth Pedeleose"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Cynthia Pury"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Christopher Peterson"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "David Fajgenbaum"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Suzanne Segerstrom"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Tanya Streeter"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Todd Kashdan"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Kenneth Pedeleose"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Cynthia Pury"
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g20",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "It is important for people to actively notice when good things happen.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Christopher Peterson"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "David Fajgenbaum"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Suzanne Segerstrom"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Tanya Streeter"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Todd Kashdan"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Kenneth Pedeleose"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Cynthia Pury"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Christopher Peterson"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "David Fajgenbaum"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Suzanne Segerstrom"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Tanya Streeter"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Todd Kashdan"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Kenneth Pedeleose"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Cynthia Pury"
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g21",
+          "instruction": "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Courage can be learned once its origins in a sense of responsibility are understood",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Christopher Peterson"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "David Fajgenbaum"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Suzanne Segerstrom"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Tanya Streeter"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Todd Kashdan"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Kenneth Pedeleose"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Cynthia Pury"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Christopher Peterson"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "David Fajgenbaum"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Suzanne Segerstrom"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Tanya Streeter"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Todd Kashdan"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Kenneth Pedeleose"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Cynthia Pury"
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g22",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "It is possible to overcome shyness when faced with the need to speak in public.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Christopher Peterson"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "David Fajgenbaum"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Suzanne Segerstrom"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Tanya Streeter"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Todd Kashdan"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Kenneth Pedeleose"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Cynthia Pury"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Christopher Peterson"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "David Fajgenbaum"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Suzanne Segerstrom"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Tanya Streeter"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Todd Kashdan"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Kenneth Pedeleose"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Cynthia Pury"
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g23",
+          "instruction": "Reading Passage has eight sections. Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "a mention of how rational thinking enabled someone to achieve physical goals",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Suzanne Segerstrom"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Tanya Streeter"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Todd Kashdan"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Kenneth Pedeleose"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Cynthia Pury"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g24",
+          "instruction": "Reading Passage has eight sections. Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q24",
+              "number": 24,
+              "type": "matching",
+              "prompt": "an account of how someone overcame a sad experience",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Section H"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g25",
+          "instruction": "Reading Passage has eight sections. Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "a description of how someone decided to rethink their academic career path",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Section H"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g26",
+          "instruction": "Reading Passage has eight sections. Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "an example of how someone risked his career out of a sense of duty",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Section H"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "When evolution runs backwards\n\nEvolution isn't supposed to run backwards – yet an increasing number of examples show that it does and that it can sometimes represent the future of a species\n\nThe description of any animal as an evolutionary throwback' is controversial. For the better part of a century, most ologists have been reluctant to use those ords, mindful of a principle of evolution at says ‘evolution cannot run backwards'. Eut as more and more examples come to ght and modern genetics enters the scene at principle is having to be rewritten. Not nly are evolutionary throwbacks possible, ey sometimes play an important role in the rward march of evolution.\n\nThe technical term for an evolutionary rowback is an ‘atavism',from the Latin avus, meaning forefather. The word has gly connotations thanks largely to Cesare ombroso, a 19th-century Italian medic who gued that criminals were born not made nd could be identified by certain physical eatures that were throwbacks to a primitive, sub-human state.\n\nWhile Lombroso was measuring minals, a Belgian palaeontologist called ouis Dollo was studying fossil records nd coming to the opposite conclusion. 1890 he proposed that evolution was eversible: that ‘an organism is unable to eturn, even partially, to a previous stage ready realised in the ranks of its ancestors' Early 20th-century biologists came to a milar conclusion, though they qualified it in terms of probability, stating that there is no reason why evolution cannot run backwards – it is just very unlikely. And so the idea of irreversibility in evolution stuck and came to be known as ‘Dollo's law'.\n\nIf Dollo's law is right, atavisms should occur only very rarely, if at all. Yet almost since the idea took root, exceptions have been cropping up. In 1919, for example, a humpback whale with a pair of leg-like appendages over a metre long, complete with a full set of limb bones, was caught off Vancouver Island in Canada. Explorer Roy Chapman Andrews argued at the time that the whale must be a throwback to a land-living ancestor. 'I can see no other explanation,'he wrote in 1921.\n\nSince then, so many other examples have been discovered that it no longer makes sense to say that evolution is as good as irreversible. And this poses a puzzle: how can characteristics that disappeared millions of years ago suddenly reappear? In 1994, Rudolf Raff and colleagues at Indiana University in the USA decided to use genetics to put a number on the probability of evolution going into reverse. They reasoned that while some evolutionary changes involve the loss of genes and are therefore irreversible, others may be the result of genes being switched off. If these\n\nsilent genes are somehow switched back on, they argued, long-lost traits could reappear.\n\nRaff's team went on to calculate the likelihood of it happening. Silent genes accumulate random mutations, they reasoned, eventually rendering them useless So how long can a gene survive in a species if it is no longer used? The team calculated that there is a good chance of silent genes surviving for up to 6 million years in at least a few individuals in a population, and that some might survive as long as 10 million years. In other words, throwbacks are possible, but only to the relatively recent evolutionary past.\n\nAs a possible example, the team pointed to the mole salamanders of Mexico and California. Like most amphibians these begin life in a juvenile ‘tadpole' state, then metamorphose into the adult form –except for one species, the axolotl, which famously lives its entire life as a juvenile. The simplest explanation for this is that the axolotl lineage alone lost the ability to metamorphose, while others retained it. From a detailed analysis of the salamanders' family tree, however, it is clear that the other lineages evolved from an ancestor that itself had lost the ability to metamorphose. In other words, metamorphosis in mole salamanders is an atavism. The salamander example fits with Raff's 10-million-year time frame.\n\nMore recently, however, examples have been reported that break the time limit, suggesting that silent genes may not be the whole story. In a paper published last year, biologist Gunter Wagner of Yale University reported some work on the evolutionary\n\nhistory of a group of South American lizards called Bachia. Many of these have minuscule limbs; some look more like snakes than lizards and a few have completely lost the toes on their hind limbs. Other species, however, sport up to four toes on their hind legs. The simplest explanation is that the toed lineages never lost their toes, but Wagner begs to differ. According to his analysis of the Bachia family tree, the toed species re-evolved toes from toeless ancestors and, what is more, digit loss and gain has occurred on more than one occasion over tens of millions of years.\n\nSo what's going on? One possibility is that these traits are lost and then simply reappear, in much the same way that similar structures can independently arise in unrelated species, such as the dorsal fins of sharks and killer whales. Another more intriguing possibility is that the genetic information needed to make toes somehow survived for tens or perhaps hundreds of millions of years in the lizards and was reactivated. These atavistic traits provided an advantage and spread through the population, effectively reversing evolution.\n\nBut if silent genes degrade within 6 to 10 million years, how can long-lost traits be reactivated over longer timescales?The answer may lie in the womb. Early embryos of many species develop ancestral features Snake embryos, for example, sprout hind limb buds. Later in development these features disappear thanks to developmental programs that say 'lose the leg'. If for any reason this does not happen, the ancestral feature may not disappear, leading to an atavism."
+      },
+      "questionGroups": [
+        {
+          "id": "c10t4r-g27",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "When discussing the theory developed by Louis Dollo, the writer says that",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it was immediately referred to as Dollo’s law."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it supported the possibility of evolutionary throwbacks."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it was modified by biologists in the early twentieth century."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "it was based on many years of research."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it was immediately referred to as Dollo’s law."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "it supported the possibility of evolutionary throwbacks."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it was modified by biologists in the early twentieth century."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "it was based on many years of research."
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g28",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "The humpback whale caught off Vancouver Island is mentioned because of",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the exceptional size of its body."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the way it exemplifies Dollo’s law."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the amount of local controversy it caused."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the reason given for its unusual features."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the exceptional size of its body."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the way it exemplifies Dollo’s law."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the amount of local controversy it caused."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the reason given for its unusual features."
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g29",
+          "instruction": "Which section contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "What is said about ‘silent genes'? A Their numbers vary according to species. B Raff disagreed with the use of the term. C They could lead to the re-emergence of certain characteristics. DThey can have an unlimited life span",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the exceptional size of its body"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the reason given for its unusual features"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Raff disagreed with the use of the term"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They could lead to the re-emergence of certain characteristics"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the exceptional size of its body"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the reason given for its unusual features"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Raff disagreed with the use of the term"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They could lead to the re-emergence of certain characteristics"
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g30",
+          "instruction": "Which section contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "The writer mentions the mole salamander because A it exemplifies what happens in the development of most amphibians. Bit suggests that Raff's theory is correct. Cit has lost and regained more than one ability. Dits ancestors have become the subject of extensive research",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it exemplifies what happens in the development of most amphibians."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it suggests that Raff's theory is correct."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it has lost and regained more than one ability."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its ancestors have become the subject of extensive research."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:56.994664+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g31",
+          "instruction": "Which section contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "Which of the following does Wagner claim? A Members of the Bachia lizard family have lost and regained certain features several times. B Evidence shows that the evolution of the Bachia lizard is due to the environment. CHis research into South American lizards supports Raff's assertions. D His findings will apply to other species of South American lizards",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "it exemplifies what happens in the development of most amphibians"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Evidence shows that the evolution of the Bachia lizard is due to the environment"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "His findings will apply to other species of South American lizards"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "it exemplifies what happens in the development of most amphibians"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Evidence shows that the evolution of the Bachia lizard is due to the environment"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "His findings will apply to other species of South American lizards"
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g32",
+          "instruction": "Complete each sentence with the correct ending, A-G, below. Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "For a long time biologists rejected",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "His findings will apply to other species of South American lizards"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the question of how certain long-lost traits could reappear"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the occurrence of a particular feature in different species"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "parallels drawn between behaviour and appearance"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the doubts felt about evolutionary throwbacks"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "the possibility of evolution being reversible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Dollo's findings and the convictions held by Lombroso"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "His findings will apply to other species of South American lizards"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the question of how certain long-lost traits could reappear"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the occurrence of a particular feature in different species"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "parallels drawn between behaviour and appearance"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the doubts felt about evolutionary throwbacks"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "the possibility of evolution being reversible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Dollo's findings and the convictions held by Lombroso"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g33",
+          "instruction": "Complete each sentence with the correct ending, A-G, below. Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "Opposing views on evolutionary throwbacks are represented by",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "His findings will apply to other species of South American lizards"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the question of how certain long-lost traits could reappear"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the occurrence of a particular feature in different species"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "parallels drawn between behaviour and appearance"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the doubts felt about evolutionary throwbacks"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "the possibility of evolution being reversible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Dollo's findings and the convictions held by Lombroso"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "His findings will apply to other species of South American lizards"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the question of how certain long-lost traits could reappear"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the occurrence of a particular feature in different species"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "parallels drawn between behaviour and appearance"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the doubts felt about evolutionary throwbacks"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "the possibility of evolution being reversible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Dollo's findings and the convictions held by Lombroso"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g34",
+          "instruction": "Complete each sentence with the correct ending, A-G, below. Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "Examples of evolutionary throwbacks have led to",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the question of how certain long-lost traits could reappear"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the occurrence of a particular feature in different species"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "parallels drawn between behaviour and appearance"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the continued existence of certain genetic information"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the doubts felt about evolutionary throwbacks"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "the possibility of evolution being reversible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Dollo's findings and the convictions held by Lombroso"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the question of how certain long-lost traits could reappear"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the occurrence of a particular feature in different species"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "parallels drawn between behaviour and appearance"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the continued existence of certain genetic information"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the doubts felt about evolutionary throwbacks"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "the possibility of evolution being reversible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Dollo's findings and the convictions held by Lombroso"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g35",
+          "instruction": "Complete each sentence with the correct ending, A-G, below. Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "The shark and killer whale are mentioned to exemplify",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the question of how certain long-lost traits could reappear"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the occurrence of a particular feature in different species"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "parallels drawn between behaviour and appearance"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the continued existence of certain genetic information"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the doubts felt about evolutionary throwbacks"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "the possibility of evolution being reversible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Dollo's findings and the convictions held by Lombroso"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the question of how certain long-lost traits could reappear"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the occurrence of a particular feature in different species"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "parallels drawn between behaviour and appearance"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the continued existence of certain genetic information"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the doubts felt about evolutionary throwbacks"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "the possibility of evolution being reversible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Dollo's findings and the convictions held by Lombroso"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g36",
+          "instruction": "Complete each sentence with the correct ending, A-G, below. Write the correct letter, A-G, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "One explanation for the findings of Wagner's research is A the question of how certain long-lost traits could reappear. B the occurrence of a particular feature in different species. C parallels drawn between behaviour and appearance. D the continued existence of certain genetic information. E the doubts felt about evolutionary throwbacks. F the possibility of evolution being reversible. G Dollo's findings and the convictions held by Lombroso",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the question of how certain long-lost traits could reappear"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the occurrence of a particular feature in different species"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "parallels drawn between behaviour and appearance"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the continued existence of certain genetic information"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the doubts felt about evolutionary throwbacks"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "the possibility of evolution being reversible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Dollo's findings and the convictions held by Lombroso"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the question of how certain long-lost traits could reappear"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the occurrence of a particular feature in different species"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "parallels drawn between behaviour and appearance"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the continued existence of certain genetic information"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the doubts felt about evolutionary throwbacks"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "the possibility of evolution being reversible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Dollo's findings and the convictions held by Lombroso"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c10t4r-g37",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q37",
+              "number": 37,
+              "type": "true_false_ng",
+              "prompt": "Wagner was the first person to do research on South American lizards",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g38",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q38",
+              "number": 38,
+              "type": "yes_no_ng",
+              "prompt": "Wagner believes that Bachia lizards with toes had toeless ancestors",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g39",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q39",
+              "number": 39,
+              "type": "yes_no_ng",
+              "prompt": "The temporary occurrence of long-lost traits in embryos is rare",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c10t4r-g40",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c10t4r-q40",
+              "number": 40,
+              "type": "yes_no_ng",
+              "prompt": "Evolutionary throwbacks might be caused by developmental problems in the womb",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

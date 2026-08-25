@@ -157,7 +157,7 @@ def iter_questions(exam: dict[str, Any]):
                 yield section, group, question
 
 
-def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], warnings: list[str], seen_ids: dict[str, str], gaps: list[str] | None = None) -> dict[str, Any] | None:
+def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], warnings: list[str], seen_ids: dict[str, str], gaps: list[str] | None = None, skip_audio: bool = False) -> dict[str, Any] | None:
     try:
         exam = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
@@ -411,7 +411,12 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
         if module == "listening" and not audio:
             add(errors, path, f"listening section {section.get('id')} has no audioAsset")
         if audio and not resolve_asset(root, str(audio)).exists():
-            add(errors, path, f"missing audio asset {audio}")
+            ext = str(audio).rsplit(".", 1)[-1].lower()
+            if ext in {"mp3", "m4a", "wav"}:
+                if not skip_audio:
+                    add(errors, path, f"missing audio asset {audio}")
+            else:
+                add(errors, path, f"missing asset {audio}")
     return {
         "id": exam_id,
         "module": module,
@@ -565,7 +570,7 @@ def main() -> int:
     if not args.partial and len(files) != EXPECTED_EXAMS:
         add(errors, exam_root, f"expected {EXPECTED_EXAMS} exam JSON files, got {len(files)}")
     for path in files:
-        result = validate_exam(path, root, errors, damage, warnings, seen_ids, gaps)
+        result = validate_exam(path, root, errors, damage, warnings, seen_ids, gaps, skip_audio=args.skip_audio)
         if result:
             exam_reports.append(result)
     key = set()

@@ -1,0 +1,1992 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-11-test-2-listening",
+  "title": "Cambridge IELTS 11 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0017-e8d76252",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 11",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题11.pdf",
+        "sha256": "6dfc84371b9d08e31b450ede3a20e64f13f505b1e52261894681a31d733b3fe3"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C11\\剑桥雅思真题11\\auto\\剑桥雅思真题11.md",
+        "sha256": "8c76b257af01336b0c595c91c5f1d093513832fc8770fa0695824b87faf21ad2",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-11-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the notes below\n\nWrite ONE WORD AND/OR A NUMBER for each anSwer.\n\nEnquiry about joining Youth Council \nExample \nName: Roger.... Brown \nAge: 18 \nCurrently staying in a 1. during the week \nPostal address:217, Street, Stamford, Lincs \nPostcode: 3 \nOccupation: student and part-time job as a 4 \nStudying 5 .... .major subject) and history (minor subject) \nHobbies: does a lot of 6. , and isinterested in the \n7\n\nOn Youth Council, wants to work with young people who are\n\n8\n\nWill come to talk to the Elections Officer next Monday at\n\n9\n\nMobile number:10"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t2l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Currently staying in a ___ during the week",
+              "acceptedAnswers": [
+                "hostel"
+              ],
+              "gapText": "Currently staying in a ___ during the week",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Postal address: 2 17, ___ Street, Stamford, Lincs",
+              "acceptedAnswers": [
+                "Buckleigh"
+              ],
+              "gapText": "Postal address: 2 17, ___ Street, Stamford, Lincs",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Postcode: ___",
+              "acceptedAnswers": [
+                "PE9 7QT"
+              ],
+              "gapText": "Postcode: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Occupation: student and part-time job as a ___",
+              "acceptedAnswers": [
+                "waiter"
+              ],
+              "gapText": "Occupation: student and part-time job as a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Studying ___ (major subject) and history (minor subject)",
+              "acceptedAnswers": [
+                "politics"
+              ],
+              "gapText": "Studying ___ (major subject) and history (minor subject)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Hobbies: does a lot of ___",
+              "acceptedAnswers": [
+                "cycling"
+              ],
+              "options": [],
+              "gapText": "Hobbies: does a lot of ___, and is interested in the ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "On Youth Council, wants to work with young people who are",
+              "acceptedAnswers": [
+                "cinema"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "On Youth Council, wants to work with young people who are ___",
+              "acceptedAnswers": [
+                "disabled"
+              ],
+              "gapText": "On Youth Council, wants to work with young people who are ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Mobile number:10",
+              "acceptedAnswers": [
+                "4.30 (pm)",
+                "half past four"
+              ],
+              "options": []
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Mobile number: ___",
+              "acceptedAnswers": [
+                "07788 136711",
+                "07788136711"
+              ],
+              "gapText": "Mobile number: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 503641
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\n# New staff at theatre\n\nQuestions 11 and 12\n\nChoose TWO letters, A-E.\n\nWhich TWo changes have been made so far during the refurbishment of the theatre?\n\nA Some rooms now have a different use.\n\nB A different type of seating has been installed.\n\nC An elevator has been installed.\n\nD The outside of the building has been repaired.\n\nE Extra seats have been added.\n\nQuestions 13 and 14\n\nChoose TWO letters, A-E.\n\nWhich Two facilities does the theatre currently offer to the public?\n\nA rooms for hire\n\nB backstage tours\n\nC hire of costumes\n\nD a bookshop\n\nE a café\n\nQuestions 15 and 16\n\nChoose TWO letters, A-E.\n\nWhich Two workshops does the theatre currently offer?\n\nA sound\n\nB acting\n\nC making puppets\n\nD make-up\n\nE lighting\n\nQuestions17-20\n\nLabel the plan below.\n\nWrite the correct letter, A-G, next to Questions 17-20.\n\nGround floor plan of theatre \n[]\n\n17 box office \n18 theatre manager's office \n19 lighting box \n20artistic director's office"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t2l-g11",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q11",
+              "number": 11,
+              "type": "multi_choice",
+              "prompt": "Which TWO changes have been made so far during the refurbishment of the theatre?",
+              "acceptedAnswers": [
+                "A",
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Some rooms now have a different use."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "A different type of seating has been installed."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "An elevator has been installed."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The outside of the building has been repaired."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Extra seats have been added."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g12",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q12",
+              "number": 12,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO changes have been made so far during the refurbishment of the theatre?",
+              "acceptedAnswers": [
+                "A",
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Some rooms now have a different use."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "A different type of seating has been installed."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "An elevator has been installed."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The outside of the building has been repaired."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Extra seats have been added."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g13",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q13",
+              "number": 13,
+              "type": "multi_choice",
+              "prompt": "Which TWO facilities does the theatre currently offer to the public?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "rooms for hire"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "backstage tours"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "hire of costumes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a bookshop"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a café"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g14",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q14",
+              "number": 14,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO facilities does the theatre currently offer to the public?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "rooms for hire"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "backstage tours"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "hire of costumes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a bookshop"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a café"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              13,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g15",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q15",
+              "number": 15,
+              "type": "multi_choice",
+              "prompt": "Which TWO workshops does the theatre currently offer?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "sound"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "acting"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "making puppets"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make-up"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "lighting"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g16",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q16",
+              "number": 16,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO workshops does the theatre currently offer?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "sound"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "acting"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "making puppets"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "make-up"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "lighting"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Some rooms now have a different use"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "A different type of seating has been installed"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "An elevator has been installed"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The outside of the building has been repaired"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Extra seats have been added"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g17",
+          "instruction": "Label the plan below. Write the correct letter, A-G, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q17",
+              "number": 17,
+              "type": "labelling",
+              "prompt": "Theatre plan label: box office",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "sound"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "acting"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "making puppets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "make-up"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "lighting"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c11-t2-listening-p0033.jpg"
+        },
+        {
+          "id": "c11t2l-g18",
+          "instruction": "Label the plan below. Write the correct letter, A-G, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q18",
+              "number": 18,
+              "type": "labelling",
+              "prompt": "Theatre plan label: theatre manager's office",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "sound"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "acting"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "making puppets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "make-up"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "lighting"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c11-t2-listening-p0033.jpg"
+        },
+        {
+          "id": "c11t2l-g19",
+          "instruction": "Label the plan below. Write the correct letter, A-G, next to Questions 17-20.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q19",
+              "number": 19,
+              "type": "labelling",
+              "prompt": "Theatre plan label: lighting box",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c11-t2-listening-p0033.jpg"
+        },
+        {
+          "id": "c11t2l-g20",
+          "instruction": "Label the plan below. Write the correct letter, A-G, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q20",
+              "number": 20,
+              "type": "labelling",
+              "prompt": "Theatre plan label: artistic director's office",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Some rooms now have a different use"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "A different type of seating has been installed"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "An elevator has been installed"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The outside of the building has been repaired"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Extra seats have been added"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c11-t2-listening-p0033.jpg"
+        }
+      ],
+      "audioStartMs": 503641,
+      "audioDurationMs": 431151
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions21-26\n\nChoose the correct letter, A, B or C.\n\n## Rocky Bay field trip\n\n21 What do the students agree should be included in their aims? \nA factors affecting where organisms live \nB the need to preserve endangered species \nC techniques for classifying different organisms \n22 What equipment did they forget to take on the Field Trip? \nA string \nB a compass \nC a ruler \n23 In Helen's procedure section, Colin suggests a change in \nA the order in which information is given. \nB the way the information is divided up. \nC the amount of information provided \n24 What do they say about the method they used to measure wave speed? \nA It provided accurate results. \nB It was simple to carry out. \nC It required special equipment. \n25 What mistake did Helen make when first drawing the map? \nA She chose the wrong scale. \nB She stood in the wrong place. \nC She did it at the wrong time. \n26 What do they decide to do next with their map? \nA scan it onto a computer \nB check it using photographs \nC add information from the internet\n\nQuestions27 and 28\n\nChoose Two letters, A-E.\n\nWhich Two problems affecting organisms in the splash zone are mentioned?\n\nA lack of water\n\nB strong winds\n\nC lack of food\n\nD high temperatures\n\nE large waves\n\nQuestions 29 and 30\n\nChoose TWo letters, A-E.\n\nWhich Two reasons for possible error will they include in their report?\n\nA inaccurate records of the habitat of organisms\n\nB influence on behaviour of organisms by observer\n\nC incorrect identification of some organisms\n\nD making generalisations from a small sample\n\nE missing some organisms when counting\n\nWrite ONE WORD ONLY for each answer.\n\n# DESIGNING A PUBLIC BUILDING: THE TAYLOR CONCERT HALL\n\nIntroduction\n\nThe designer of a public building may need to consider the building's\n\nfunction\n\nphysical and 31 context\n\n•symbolic meaning\n\nLocation and concept of the Concert Hall\n\nOn the site of a disused 32... …………\n\nBeside a 33\n\nThe design is based on the concept of a mystery\n\nBuilding design \nIt's approached by a 34.. for pedestrians \nThe buildingis the shape of a 35 \nOne exterior wall acts as a large 36 \nIn the auditorium: \nthe floor is built on huge pads made of 37 \nthe walls are made of local wood and are 38 . in shape \nceiling panels and 39 . on walls allow adjustment of \nacoustics \nEvaluation \nSome critics say the 40 style of the building is inappropriate"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t2l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "What do the students agree should be included in their aims? A factors affecting where organisms live B the need to preserve endangered species C techniques for classifying different organisms",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "factors affecting where organisms live"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the need to preserve endangered species"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "techniques for classifying different organisms"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.831127+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t2l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "What equipment did they forget to take on the Field Trip? A string B a compass C a ruler",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "string"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a compass"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a ruler"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.831127+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t2l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "In Helen's procedure section, Colin suggests a change in A the order in which information is given. B the way the information is divided up. C the amount of information provided",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the order in which information is given."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the way the information is divided up."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the amount of information provided."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.831127+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t2l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "What do they say about the method they used to measure wave speed? A It provided accurate results. B It was simple to carry out. C It required special equipment",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "string"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a compass"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a ruler"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "high temperatures"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "large waves"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "string"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a compass"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a ruler"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "high temperatures"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "large waves"
+            }
+          ]
+        },
+        {
+          "id": "c11t2l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "What mistake did Helen make when first drawing the map? A She chose the wrong scale. B She stood in the wrong place. C She did it at the wrong time",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the order in which information is given"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the way the information is divided up"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the amount of information provided"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "high temperatures"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "large waves"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the order in which information is given"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the way the information is divided up"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the amount of information provided"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "high temperatures"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "large waves"
+            }
+          ]
+        },
+        {
+          "id": "c11t2l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "What do they decide to do next with their map? A scan it onto a computer B check it using photographs C add information from the internet Questions27 and 28 Choose Two letters, A-E. Which Two problems affecting organisms in the splash zone are mentioned? A lack of water B strong winds C lack of food D high temperatures E large waves",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It provided accurate results"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was simple to carry out"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It required special equipment"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "high temperatures"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "large waves"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It provided accurate results"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was simple to carry out"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It required special equipment"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "high temperatures"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "large waves"
+            }
+          ]
+        },
+        {
+          "id": "c11t2l-g27",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q27",
+              "number": 27,
+              "type": "multi_choice",
+              "prompt": "Which TWO problems affecting organisms in the splash zone are mentioned?",
+              "acceptedAnswers": [
+                "A",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lack of water"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong winds"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "lack of food"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "high temperatures"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "large waves"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              28
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g28",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q28",
+              "number": 28,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO problems affecting organisms in the splash zone are mentioned?",
+              "acceptedAnswers": [
+                "A",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lack of water"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong winds"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "lack of food"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "high temperatures"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "large waves"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              28
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g29",
+          "instruction": "Choose TWO letters, A-E. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q29",
+              "number": 29,
+              "type": "multi_choice",
+              "prompt": "Which TWO reasons for possible error will they include in their report?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "inaccurate records of the habitat of organisms"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "influence on behaviour of organisms by observer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "incorrect identification of some organisms"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "making generalisations from a small sample"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "missing some organisms when counting"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              29,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t2l-g30",
+          "instruction": "Choose TWO letters, A-E. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q30",
+              "number": 30,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO reasons for possible error will they include in their report?",
+              "acceptedAnswers": [
+                "C",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "inaccurate records of the habitat of organisms"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "influence on behaviour of organisms by observer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "incorrect identification of some organisms"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "making generalisations from a small sample"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "missing some organisms when counting"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              29,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 934792,
+      "audioDurationMs": 457064
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION 1 Questions 1-10\n\nComplete the notes below\n\nWrite ONE WORD AND/OR A NUMBER for each anSwer.\n\nEnquiry about joining Youth Council \nExample \nName: Roger.... Brown \nAge: 18 \nCurrently staying in a 1. during the week \nPostal address:217, Street, Stamford, Lincs \nPostcode: 3 \nOccupation: student and part-time job as a 4 \nStudying 5 .... .major subject) and history (minor subject) \nHobbies: does a lot of 6. , and isinterested in the \n7\n\nOn Youth Council, wants to work with young people who are\n\n8\n\nWill come to talk to the Elections Officer next Monday at\n\n9\n\nMobile number:10\n\n## SECTION 2 Questions 11-20\n\n# New staff at theatre\n\nQuestions 11 and 12\n\nChoose TWO letters, A-E.\n\nWhich TWo changes have been made so far during the refurbishment of the theatre?\n\nA Some rooms now have a different use.\n\nB A different type of seating has been installed.\n\nC An elevator has been installed.\n\nD The outside of the building has been repaired.\n\nE Extra seats have been added.\n\nQuestions 13 and 14\n\nChoose TWO letters, A-E.\n\nWhich Two facilities does the theatre currently offer to the public?\n\nA rooms for hire\n\nB backstage tours\n\nC hire of costumes\n\nD a bookshop\n\nE a café\n\nQuestions 15 and 16\n\nChoose TWO letters, A-E.\n\nWhich Two workshops does the theatre currently offer?\n\nA sound\n\nB acting\n\nC making puppets\n\nD make-up\n\nE lighting\n\nQuestions17-20\n\nLabel the plan below.\n\nWrite the correct letter, A-G, next to Questions 17-20.\n\nGround floor plan of theatre \n[]\n\n17 box office \n18 theatre manager's office \n19 lighting box \n20artistic director's office\n\n## SECTION 3 Questions 21–30\n\nQuestions21-26\n\nChoose the correct letter, A, B or C.\n\n## Rocky Bay field trip\n\n21 What do the students agree should be included in their aims? \nA factors affecting where organisms live \nB the need to preserve endangered species \nC techniques for classifying different organisms \n22 What equipment did they forget to take on the Field Trip? \nA string \nB a compass \nC a ruler \n23 In Helen's procedure section, Colin suggests a change in \nA the order in which information is given. \nB the way the information is divided up. \nC the amount of information provided \n24 What do they say about the method they used to measure wave speed? \nA It provided accurate results. \nB It was simple to carry out. \nC It required special equipment. \n25 What mistake did Helen make when first drawing the map? \nA She chose the wrong scale. \nB She stood in the wrong place. \nC She did it at the wrong time. \n26 What do they decide to do next with their map? \nA scan it onto a computer \nB check it using photographs \nC add information from the internet\n\nQuestions27 and 28\n\nChoose Two letters, A-E.\n\nWhich Two problems affecting organisms in the splash zone are mentioned?\n\nA lack of water\n\nB strong winds\n\nC lack of food\n\nD high temperatures\n\nE large waves\n\nQuestions 29 and 30\n\nChoose TWo letters, A-E.\n\nWhich Two reasons for possible error will they include in their report?\n\nA inaccurate records of the habitat of organisms\n\nB influence on behaviour of organisms by observer\n\nC incorrect identification of some organisms\n\nD making generalisations from a small sample\n\nE missing some organisms when counting\n\nWrite ONE WORD ONLY for each answer.\n\n# DESIGNING A PUBLIC BUILDING: THE TAYLOR CONCERT HALL\n\nIntroduction\n\nThe designer of a public building may need to consider the building's\n\nfunction\n\nphysical and 31 context\n\n•symbolic meaning\n\nLocation and concept of the Concert Hall\n\nOn the site of a disused 32... …………\n\nBeside a 33\n\nThe design is based on the concept of a mystery\n\nBuilding design \nIt's approached by a 34.. for pedestrians \nThe buildingis the shape of a 35 \nOne exterior wall acts as a large 36 \nIn the auditorium: \nthe floor is built on huge pads made of 37 \nthe walls are made of local wood and are 38 . in shape \nceiling panels and 39 . on walls allow adjustment of \nacoustics \nEvaluation \nSome critics say the 40 style of the building is inappropriate"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t2l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "The designer of a public building may need to consider the building's physical and ___ context.",
+              "acceptedAnswers": [
+                "social"
+              ],
+              "gapText": "The designer of a public building may need to consider the building's physical and ___ context.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "On the site of a disused ___",
+              "acceptedAnswers": [
+                "factory"
+              ],
+              "gapText": "On the site of a disused ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Beside a ___",
+              "acceptedAnswers": [
+                "canal"
+              ],
+              "gapText": "Beside a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "It's approached by a ___ for pedestrians",
+              "acceptedAnswers": [
+                "bridge"
+              ],
+              "gapText": "It's approached by a ___ for pedestrians",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "The building is the shape of a ___",
+              "acceptedAnswers": [
+                "box"
+              ],
+              "gapText": "The building is the shape of a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "One exterior wall acts as a large ___",
+              "acceptedAnswers": [
+                "screen"
+              ],
+              "gapText": "One exterior wall acts as a large ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "The floor is built on huge pads made of ___",
+              "acceptedAnswers": [
+                "rubber"
+              ],
+              "gapText": "The floor is built on huge pads made of ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "The walls are made of local wood and are ___ in shape",
+              "acceptedAnswers": [
+                "curved"
+              ],
+              "gapText": "The walls are made of local wood and are ___ in shape",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Ceiling panels and ___ on walls allow adjustment of acoustics",
+              "acceptedAnswers": [
+                "curtains"
+              ],
+              "gapText": "Ceiling panels and ___ on walls allow adjustment of acoustics",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        },
+        {
+          "id": "c11t2l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t2l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Some critics say the ___ style of the building is inappropriate",
+              "acceptedAnswers": [
+                "international"
+              ],
+              "gapText": "Some critics say the ___ style of the building is inappropriate",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:02:58.859779+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1391856,
+      "audioDurationMs": 446981
+    }
+  ]
+}

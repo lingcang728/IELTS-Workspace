@@ -1,0 +1,2052 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-17-test-2-reading",
+  "title": "Cambridge IELTS 17 Academic Test 2 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0022-2634f26b",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 17",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题17.pdf",
+        "sha256": "73b39f0fb941a647267c9907407af1cc34a81d66864da8a06759aa869d63794d"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C17\\剑桥雅思真题17\\auto\\剑桥雅思真题17.md",
+        "sha256": "1737d1ac6907cd61e5f68f60e4e623d66e61bfbe84289510609c13577b1c19fa",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=18, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-17-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The Dead Sea Scrolls\n\nIn late 1946 or early 1947, three Bedouin teenagers were tending their goats and sheep near the ancient settlement of Qumran, located on the northwest shore of the Dead Sea in what is now known as theWest Bank. One of these young shepherds tossed a rock into an opening on the side of a cliff and was surprised to hear a shattering sound. He and his companions later entered the cave and stumbled across a collection of large clay jars, seven of which contained scrolls with writing on them. The teenagers took the seven scrolls to a nearby town where they were sold for a small sum to a local antiquities dealer. Word of the find spread, and Bedouins and archaeologists eventually unearthed tens of thousands of additional scroll fragments from 10 nearby caves; together they make up between 800 and 900 manuscripts. It soon became clear that this was one of the greatest archaeological discoveries ever made.\n\nThe origin of the Dead Sea Scrolls,which werewritten around 2,000years ago between 150 BCE and 70 CE, is still the subject of scholarly debate even today. According to the prevailing theory,they are the work of a population that inhabited the area until Roman troops destroyed the settlement around 70 CE. The area was known as Judea at that time, and the people are thought to have belonged to a group called the Essenes, a devout Jewish sect.\n\nThe majority of the texts on the Dead Sea Scrolls are in Hebrew, with some fragments written in anancient version of itsalphabet thought to have fallen out of use in the fifth century BCE. But there are other languages as well. Some scrolls are in Aramaic, the language spokenby many inhabitants of the region from the sixth century BCE to the siege of Jerusalem in 70CE. In addition, several texts feature translations of the Hebrew Bible into Greek.\n\nThe Dead Sea Scrollsinclude fragments from every book of the Old Testament of the Bible except for the Book of Esther. The only entire book of the Hebrew Bible preserved among the manuscripts from Qumran is Isaiah; this copy,dated to the first century BCE, is considered the earliest biblical manuscript still in existence. Along with biblical texts, the scrolls include documents about sectarian regulations and religious writings that do not appear in the Old Testament.\n\nThe writing on the Dead Sea Scrolls is mostly in black or occasionally red ink, and the scrolls themselves are nearly all made of either parchment (animal skin) or an early form of paper called papyrus'. The only exception is the scroll numbered 3Q15, which was created out of a combination of copper and tin. Known as the Copper Scroll, this curious document features letters chiselled onto metal – perhaps, as some have theorized, to better withstand the passage of time. One of the most intriguing manuscripts from Qumran, this is a sort of ancient treasure map that lists dozens of gold and silvercaches. Using an unconventional vocabulary and odd spelling, it describes64 underground hiding places that supposedly contain riches buried for safekeeping. None of these hoards have been recovered, possibly because the Romans pillaged Judea during the first century CE. According to various hypotheses, the treasure belonged to local people, or was rescued from the Second Temple before its destruction or never existed to begin with.\n\nSome of theDead Sea Scrolls have been on interesting journeys. In 1948, a Syrian Orthodox archbishop known as Mar Samuel acquired four of the original seven scrolls from a Jerusalem shoemaker and part-time antiquity dealer, paying less than\\$100 for them. He then travelled to the United States and unsuccessfully offered them to a number of universities, including Yale. Finally, in 1954, he placed an advertisement in the business newspaper The Wall Street Journal – under the category Miscellaneous Items for Sale' — that read: Biblical Manuscripts dating back to at least 200 B.C. are for sale. This would be an ideal gift to an educational or religious institution by an individual or group.' Fortunately, Israeli archaeologist and statesman Yigael Yadin negotiated their purchase and brought the scrolls back to Jerusalem, where they remain to this day.\n\nIn 2017, researchers from the University of Haifa restored and deciphered one of the last untranslated scrolls. The university's Eshbal Ratson and Jonathan Ben-Dov spent one year reassembling the 60 fragments that make up the scroll. Deciphered from a band of coded text on parchment, the find provides insight into the community of people who wrote it and the 364-day calendar they would have used. The scroll names celebrations that indicate shifts in seasons and details twoyearly religious events known from another Dead Sea Scroll. Only one more known scroll remains untranslated."
+      },
+      "questionGroups": [
+        {
+          "id": "c17t2r-g1",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "A noise of breaking was heard when one teenager threw a ______.",
+              "acceptedAnswers": [
+                "rock"
+              ],
+              "gapText": "heard a noise of breaking when one teenager threw a 1 ______",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–5 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g2",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "The teenagers went into the ______ and found a number of containers.",
+              "acceptedAnswers": [
+                "cave"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              },
+              "gapText": "teenagers went into the 2 ______ and found a number of containers"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–5 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g3",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "The containers were made of ______.",
+              "acceptedAnswers": [
+                "clay"
+              ],
+              "gapText": "found a number of containers made of 3 ______",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–5 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g4",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "The scrolls were thought to have been written by a group of people known as the ______.",
+              "acceptedAnswers": [
+                "Essenes"
+              ],
+              "gapText": "thought to have been written by group of people known as the 4 ______",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–5 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g5",
+          "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "The scrolls were written mainly in the ______ language.",
+              "acceptedAnswers": [
+                "Hebrew"
+              ],
+              "gapText": "written mainly in the 5 ______ language",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1–5 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "The Bedouin teenagers who found the scrolls were disappointed by how little money they received for them.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "There is agreement among academics about the origin of the Dead Sea Scrolls.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "Most of the books of the Bible written on the scrolls are incomplete.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g9",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q9",
+              "number": 9,
+              "type": "true_false_ng",
+              "prompt": "The information on the Copper Scroll is written in an unusual way.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g10",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q10",
+              "number": 10,
+              "type": "true_false_ng",
+              "prompt": "Mar Samuel was given some of the scrolls as a gift.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g11",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q11",
+              "number": 11,
+              "type": "true_false_ng",
+              "prompt": "In the early 1950s, a number of educational establishments in the US were keen to buy scrolls from Mar Samuel.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g12",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q12",
+              "number": 12,
+              "type": "true_false_ng",
+              "prompt": "The scroll that was pieced together in2017 contains information about annual occasions in the Qumran area 2,000 years ago.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g13",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q13",
+              "number": 13,
+              "type": "true_false_ng",
+              "prompt": "Academics at the University of Haifa are currently researching how to decipher the final scroll.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## A second attempt at domesticating the tomato\n\nA It took at least 3,000years for humans to learn how to domesticate the wild tomato and cultivate it for food. Now two separate teams in Brazil and China have done it all over again in less than three years. And they have done it better in some ways, as the re-domesticated tomatoes are more nutritious than the ones we eat at present.\n\nThisapproach relies on the revolutionaryCRISPR genome editing technique, in which changes are deliberately made to the DNA of a living cell, allowing genetic material to be added, removed or altered. The technique could not only improve existing crops, but could also be used to turn thousands of wild plants into useful and appealing foods. In fact, a third team in the US has already begun to do this with a relative of the tomato called the groundcherry.\n\nThis fast-track domestication could help make the world's food supply healthier and far more resistant to diseases, such as the rust fungus devastating wheat crops.\n\nThis could transform what we eat,'says Jorg Kudla at the University of Munster in Germany, a member of the Brazilian team. There are50,000 edible plants in the world, but 90 percent of our energy comes from just 15 crops.'\n\n'We can now mimic the known domestication course of major crops like rice, maize, sorghum or others,' says Caixia Gao of the Chinese Academy of Sciences in Beijing. Then we might try to domesticate plants that have never been domesticated.'\n\nB Wild tomatoes, which are native to the Andes region inSouth America, produce pea-sized fruits. Over many generations, peoples such as the Aztecs and Incas transformed the plant by selecting and breeding plants with mutations\\* in their genetic structure, which resulted in desirable traits such as larger fruit.\n\nBut every time a single plant with a mutation is taken from a larger population for breeding, much genetic diversity is lost. And sometimes the desirable mutations come with less desirable traits. For instance, the tomato strains grown for supermarkets have lost much of their flavour.\n\nBy comparingthe genomes of modern plants to those of their wild relatives, biologists have been working out what genetic changes occurred as plants were domesticated. The teams in Brazil and China have now used this knowledge to reintroduce these changes from scratch while maintaining or even enhancing the desirable traits of wild strains.\n\nC Kudla's team made six changes altogether. For instance, they tripled the size of fruit by editing a gene called FRUIT WEIGHT, and increased the number of tomatoes per trussby editing another called MULTIFLORA.\n\nWhile the historical domestication of tomatoes reduced levels of the red pigment lycopene - thought to havepotential health benefits -the team in Brazil managed to boost it instead. The wild tomato has twice as much lycopene as cultivated ones; the newly domesticated one has five times as much.\n\n'They are quite tasty,' says Kudla. A little bit strong. And very aromatic.'\n\nThe team in China re-domesticated several strains of wild tomatoes with desirable traits lost in domesticated tomatoes. In this way they managed to create a strain resistant to a common disease called bacterial spot race, which can devastate yields. They also created another strain that is more salt tolerant – and has higher levels of vitamin C.\n\nD Meanwhile, Joyce Van Eck at the Boyce Thompson Institute in New York state decided to use the same approach to domesticate the groundcherry or goldenberry (Physalispruinosa) for the first time.This fruit looks similar to the closely related Capegooseberry (Physalis peruviana).\n\nGroundcherries are already sold to a limited extent in the US but they are hard to produce because the plant has a sprawling growth habit and the small fruits fall off the branches when ripe. Van Eck's team has edited the plants to increase fruit size, make their growth more compact and to stop fruits dropping. There's potential for this to be a commercial crop,'says Van Eck. But she adds that taking the work further would be expensive because of the need topay for a licence for the CRISPR technology and get regulatory approval.\n\nE This approach could boost the use of many obscure plants, says Jonathan Jones of the Sainsbury Lab in the UK. But it will be hard for new foods togrow so popular with farmers and consumers that they become new staple crops, he thinks.\n\nThe three teams already have their eye on other plants that could be catapulted into the mainstream', including foxtail, oat-grass and cowpea. By choosing wild plants that are drought or heat tolerant, says Gao, we could create crops that will thrive even as the planet warms.\n\nBut Kudla didn't want to reveal which species were in his team's sights, because CRISPR has made the process so easy. Any one with the right skills could go to their lab and do this.'"
+      },
+      "questionGroups": [
+        {
+          "id": "c17t2r-g14",
+          "instruction": "Write the correct letter, A-E, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "a reference to a type of tomato that can resist a dangerous infection",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Reading Passage2 has five sections, A-E."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g15",
+          "instruction": "Write the correct letter, A-E, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "an explanation of how problems can arise from focusing only on a certain type of tomato plant.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Reading Passage2 has five sections, A-E."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g16",
+          "instruction": "Write the correct letter, A-E, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "a number of examples of plants that are not cultivated at present but could be useful as food sources",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Reading Passage2 has five sections, A-E."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g17",
+          "instruction": "Write the correct letter, A-E, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "a comparison between the early domestication of the tomato and more recent research",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Reading Passage2 has five sections, A-E."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g18",
+          "instruction": "Write the correct letter, A-E, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "a personal reaction to the flavour of a tomato that has been genetically edited",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              18
+            ],
+            "canonicalOf": [
+              "Reading Passage2 has five sections, A-E."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g19",
+          "instruction": "Look at the following statements. Match each statement with the correct researcher, A-D. Write the correct letter, A-D, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "Domestication of certain plants could allow them to adapt to future environmental challenges.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.841942+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Jorg Kudla"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Caixia Gao"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Joyce Van Eck"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Jonathan Jones"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g20",
+          "instruction": "Look at the following statements. Match each statement with the correct researcher, A-D. Write the correct letter, A-D, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "The idea of growing and eating unusual plants may not be accepted on a large scale.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.841942+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Jorg Kudla"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Caixia Gao"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Joyce Van Eck"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Jonathan Jones"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g21",
+          "instruction": "Look at the following statements. Match each statement with the correct researcher, A-D. Write the correct letter, A-D, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "It is not advisable for the future direction of certain research to be made public.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.841942+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Jorg Kudla"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Caixia Gao"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Joyce Van Eck"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Jonathan Jones"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g22",
+          "instruction": "Look at the following statements. Match each statement with the correct researcher, A-D. Write the correct letter, A-D, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "Present efforts to domesticate one wild fruit are limited by the costs involved.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.841942+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Jorg Kudla"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Caixia Gao"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Joyce Van Eck"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Jonathan Jones"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g23",
+          "instruction": "Look at the following statements. Match each statement with the correct researcher, A-D. Write the correct letter, A-D, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "Humans only make use of a small proportion of the plant food available on Earth.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.841942+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Jorg Kudla"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Caixia Gao"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Joyce Van Eck"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Jonathan Jones"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g24",
+          "instruction": "Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "An undesirable trait such as loss of ___ may be caused by a mutation in a tomato gene.",
+              "acceptedAnswers": [
+                "flavour",
+                "flavor"
+              ],
+              "gapText": "An undesirable trait such as loss of 24 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Completethe sentences below."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g25",
+          "instruction": "Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "By modifying one gene in a tomato plant, researchers made the tomato three times its original . ..",
+              "acceptedAnswers": [
+                "size"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Completethe sentences below."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g26",
+          "instruction": "Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "A type of tomato which was not badly affected by ... , and was rich in vitamin C, was produced by a team of researchers in China.",
+              "acceptedAnswers": [
+                "salt"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Completethe sentences below."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Scientific discovery is popularly believed to result from the sheer genius of such intellectual stars as naturalist Charles Darwin and theoretical physicist Albert Einstein. Our view of such unique contributions to science often disregards the person's prior experience and the efforts of their lesser-known predecessors. Conventionalwisdom also places great weight on insight in promoting breakthrough scientific achievements, as if ideas spontaneously pop into someone's head - fully formed and functional.\n\nThere may be some limited truth to this view. However, we believe that it largely misrepresents the real nature of scientific discovery, as well as that of creativity and innovation in many other realms of human endeavor.\n\nSetting aside such greats asDarwin and Einstein – whose monumental contributions are duly celebrated – we suggest that innovation is more a process of trial and error, where two steps forward may sometimes come with one step back, as well as one or more steps to the right or left. This evolutionary view of human innovation undermines the notion of creative genius and recognizes the cumulative nature of scientific progress.\n\nConsider one unheralded scientist: John Nicholson, a mathematical physicist working in the 1910s who postulated the existence of proto-elements' in outer space. By combining different numbers of weights of these proto-elements'atoms, Nicholson could recover the weights of al the elements in the then-known periodic table. These successes are all the more noteworthy given the fact that Nicholson was wrong about the presence of proto-elements: they do not actually exist. Yet, amid his often fanciful theories and wild speculations, Nicholson also proposed a novel theory about the structure of atoms. Niels Bohr, the Nobelprize-winning father of modern atomic theory, jumped off from this interesting idea to conceive his now-famous model of the atom.\n\nWhat are we to make of this story? One might simply conclude that science is a collective and cumulative enterprise. That may be true, but there may be a deeper insight to be gleaned. We propose that science is constantly evolving, much as species of animals do. In biological systems, organisms may display new characteristics that result from random genetic mutations. In the same way, random, arbitrary or accidental mutations of ideas may help pave the way for advances in science. If mutations prove beneficial, then the animal or the scientific theory will continue to thrive and perhaps reproduce.\n\nSupport for this evolutionary view of behavioral innovation comes from many domains. Consider one example of an influential innovation in US horseracing. The so-called acey-deucy' stirrup placement, in which the rider's foot in his leftstirrup is placed as much as 25 centimeters lower than the right, is believed to confer important speed advantages when turning on oval tracks. It was developed by a relatively unknown jockey named JackieWestrope. Had Westrope conducted methodical investigations or examined extensive film records in a shrewd plan to outrun his rivals? Had he foreseen the speed advantage that would be conferred by riding acey-deucy?No. He suffered a leg injury, which left him unable to fully bend his left knee. His modification just happened to coincide with enhanced left-hand turning performance. This led to the rapid and widespread adoption of riding acey-deucy by many riders, a racing style which continues in today's thoroughbred racing.\n\nPlenty of other stories show that fresh advances can arise from error, misadventure, and also pure serendipity – a happy accident. For example, in the early 1970s, two employees of the company 3M each had a problem: Spencer Silver had a product – a glue which was only slightly sticky – and no use for it, while his colleague Art Fry was trying to figure out how to affix temporary bookmarks in his hymn book without damaging its pages. The solution to both these problems was the invention of the brilliantly simple yet phenomenally successful Post-It note. Such examples give lie to the claim that ingenious, designing minds are responsible for human creativity and invention. Far more banal and mechanical forces may be at work; forces that are fundamentally connected to the laws of science.\n\nThe notions of insight, creativity and genius are often invoked, but they remain vague and of doubtful scientific utility, especially when one considers the diverse and enduring contributions of individuals such as Plato, Leonardo da Vinci, Shakespeare, Beethoven, Galileo, Newton, Kepler, Curie, Pasteur and Edison. These notions merely label rather than explain the evolution of human innovations. We need another approach, and there is a promising candidate.\n\nThe Law of Effect was advanced by psychologist Edward Thorndike in1898, some 40 years after Charles Darwin published his groundbreaking work on biological evolution, On the Origin ofSpecies. This simple law holds that organisms tend to repeat successful behaviors and to refrain from performing unsuccessful ones. Just like Darwin's Law of Natural Selection, the Law of Effect involves an entirely mechanical process of variation and selection, without any end objective in sight.\n\nOf course, the origin of human innovation demands much further study. In particular, the provenance of the raw material on which the Law of Effect operates is not as clearly known as that of the genetic mutations on which the Law of Natural Selection operates.The generation of novel ideas and behaviors may not be entirely random, but constrained by prior successes and failures – of the current individual (such as Bohr) or of predecessors (such as Nicholson).\n\nThe time seems right for abandoning the naive notions of intelligent design and genius, and for scientifically exploring the true origins of creative behavior."
+      },
+      "questionGroups": [
+        {
+          "id": "c17t2r-g27",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "The purpose of the first paragraph is to",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.914610+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "defend particular ideas."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "compare certain beliefs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "disprove a widely held view."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "outline a common assumption."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–31on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g28",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "What are the writers doing in the second paragraph?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "criticising an opinion"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "justifying a standpoint"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "explaining an approach"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "supporting an argument"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "criticising an opinion"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "justifying a standpoint"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "explaining an approach"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "supporting an argument"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–31on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g29",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "In the third paragraph, what do the writers suggest about Darwin and Einstein?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They represent an exception to a general rule."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Their way of working has been misunderstood."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They are an ideal which others should aspire to."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Their achievements deserve greater recognition."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They represent an exception to a general rule."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Their way of working has been misunderstood."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They are an ideal which others should aspire to."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Their achievements deserve greater recognition."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–31on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g30",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "John Nicholson is an example of a person whose idea",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "established his reputation as an influential scientist."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was only fully understood at a later point in history."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "laid the foundations for someone else's breakthrough."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "initially met with scepticism from the scientific community."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.914610+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–31on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g31",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "What is the key point of interest about the ‘acey-deucy’ stirrup placement?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the simple reason why it was invented"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the enthusiasm with which it was adopted"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the research that went into its development"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the cleverness of the person who first used it"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the simple reason why it was invented"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the enthusiasm with which it was adopted"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the research that went into its development"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the cleverness of the person who first used it"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              31
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–31on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c17t2r-g32",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q32",
+              "number": 32,
+              "type": "yes_no_ng",
+              "prompt": "Acknowledging people such as Plato or da Vinci as geniuses will help us understand the process by which great minds create new ideas.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "options": [],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:37:16+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g33",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q33",
+              "number": 33,
+              "type": "true_false_ng",
+              "prompt": "The Law of Effect was discovered at a time when psychologists were seeking a scientific reason why creativity occurs.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g34",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q34",
+              "number": 34,
+              "type": "yes_no_ng",
+              "prompt": "The Law of Effect states that no planning is involved in the behaviour of organisms.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g35",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q35",
+              "number": 35,
+              "type": "yes_no_ng",
+              "prompt": "The Law of Effect sets out clear explanations about the sources of new ideas and behaviours.",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g36",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q36",
+              "number": 36,
+              "type": "true_false_ng",
+              "prompt": "Many scientists are now turning away from the notion of intelligent design and genius.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g37",
+          "instruction": "Complete the summary below. Write the correct letter, A-G, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "Although this can occur, it is not often the case. Advances are more likely to be the result of a longer process. In some cases, this process involves",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.983397+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "invention"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "goals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "compromise"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mistakes"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "luck"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "inspiration"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "experiments"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g38",
+          "instruction": "Complete the summary below. Write the correct letter, A-G, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q38",
+              "number": 38,
+              "type": "matching",
+              "prompt": "In some cases, this process involves ___, such as Nicholson’s theory about proto-elements.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "In some cases, this process involves 38 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.983397+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "invention"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "goals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "compromise"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mistakes"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "luck"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "inspiration"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "experiments"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g39",
+          "instruction": "Complete the summary below. Write the correct letter, A-G, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q39",
+              "number": 39,
+              "type": "matching",
+              "prompt": "There is also often an element of ___, for example, the coincidence of ideas that led to the invention of the Post-It note.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "There is also often an element of 39 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.983397+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "invention"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "goals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "compromise"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mistakes"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "luck"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "inspiration"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "experiments"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c17t2r-g40",
+          "instruction": "Complete the summary below. Write the correct letter, A-G, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c17t2r-q40",
+              "number": 40,
+              "type": "matching",
+              "prompt": "With both the Law of Natural Selection and the Law of Effect, there may be no clear ___ involved, but merely a process of variation and selection.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "With both the Law of Natural Selection and the Law of Effect, there may be no clear 40 ___ involved.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:00.983397+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "invention"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "goals"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "compromise"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "mistakes"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "luck"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "inspiration"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "experiments"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    }
+  ]
+}

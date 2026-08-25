@@ -1,0 +1,1926 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-16-test-3-reading",
+  "title": "Cambridge IELTS 16 Academic Test 3 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0017-b9092439",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 16",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题16.pdf",
+        "sha256": "11675fa3dcb124e93afbf44371c174f676a78a260b01ebc190aae5f5fed3912e"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C16\\剑桥雅思真题16\\auto\\剑桥雅思真题16.md",
+        "sha256": "37e2b02fa11efa3ffea598a90df90c46ff0869335bca7ce4d74970bd09c97e48",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=10, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Extremes",
+        "url": "https://ieltsextremes.com/cambridge-16-reading-test-4-answers/",
+        "note": "Independent C16 Reading Test 4 key used for the incomplete scanned answer page."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Roman shipbuilding and navigation\n\nShipbuilding today is based on science and ships are built using computers and sophisticated tools. Shipbuilding in ancient Rome, however, was more of an art relying on estimation, inherited techniques and personal experience. The Romans were not traditionally sailors but mostly landbased people, who learned to build ships from the people that they conquered, namely the Greeks and the Egyptians.\n\nThere are a few surviving written documents that give descriptions and representations of ancient Roman ships, including the sails and rigging. Excavated vessels also provide some clues about ancient shipbuilding techniques. Studies of these have taught us that ancient Roman shipbuilders built the outer hull first, then proceeded with the frame and the rest of the ship. Planks used to build the outer hull were initially sewn together. Starting from the 6th century BCE, they were fixed using a method called mortise and tenon, whereby one plank locked into another without the need for stitching. Then in the first centuries of the current era, Mediterranean shipbuilders shifted to another shipbuilding method, still in use today, which consisted of building the frame first and then proceeding with the hull and the other components of the ship. This method was more systematic and dramatically shortened ship construction times. The ancient Romans built large merchant ships and warships whose size and technology were unequalled until the 16th century CE.\n\nWarships were built to be lightweight and very speedy. They had to be able to sail near the coast, which is why they had no ballast or excess load and were built with a long, narrow hull. They did not sink when damaged and often would lie crippled on the sea's surface following naval battles. They had a bronze battering ram, which was used to pierce the timber hulls or break the oars of enemy vessels. Warships used both wind (sails) and human power (oarsmen) and were therefore very fast. Eventually, Rome's navy became the largest and most powerful in the Mediterranean, and the Romans had control over what they therefore called Mare Nostrum meaning our sea'.\n\nThere were many kinds of warship. The trireme' was the dominant warship from the 7th to 4th century BCE. It had rowers in the top, middle and lower levels, and approximately 50 rowers in each bank. The rowers at the bottom had the most uncomfortable position as they were under the other rowers and were exposed to the water entering through the oar-holes. It is worth noting that contrary to popular perception, rowers were not slaves but mostly Roman citizens enrolled in the military. The trireme was superseded by larger ships with even more rowers.\n\nMerchant ships were built to transport lots of cargo over long distances and at a reasonable cost. They had a wider hull, double planking and a solid interior for added stability. Unlike warships, their V-shaped hull was deep underwater, meaning that they could not sail too close to the coast. They usually had two huge side rudders located off the stern and controlled by a small tiller bar connected to a system of cables. They had from one to three masts with large square sails and a small triangular sail at the bow. Just like warships, merchant ships used oarsmen, but coordinating the hundreds of rowers in both types of ship was not an easy task. In order to assist them, music would be played on an instrument, and oars would then keep time with this.\n\nThe cargo on merchant ships included raw materials (e.g. iron bars, copper, marble and granite), and agricultural products (e.g. grain from Egypt's Nile valley). During the Empire, Rome was a huge city by ancient standards of about one million inhabitants. Goods from all over the world would come to the city through the port of Pozzuoli situated west of the bay of Naples in Italy and through the gigantic port of Ostia situated at the mouth of the Tiber River. Large merchant ships would approach the destination port and, just like today, be intercepted by a number of towboats that would drag them to the quay.\n\nThe time of travel along the many sailing routes could vary widely. Navigation in ancient Rome did not rely on sophisticated instruments such as compasses but on experience, local knowledge and observation of natural phenomena. In conditions of good visibility, seamen in the Mediterranean often had the mainland or islands in sight, which greatly facilitated navigation. They sailed by noting their position relative to a succession of recognisable landmarks. When weather conditions were not good or where land was no longer visible, Roman mariners estimated directions from the pole star or, with less accuracy, from the Sun at noon. They also estimated directions relative to the wind and swell. Overall, shipping in ancient Roman times resembled shipping today with large vessels regularly crossing the seas and bringing supplies from their Empire."
+      },
+      "questionGroups": [
+        {
+          "id": "c16t3r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "The Romans' shipbuilding skills were passed on to the Greeks and the Egyptians",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Skilled craftsmen were needed for the mortise and tenon method of fixing planks.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "The later practice used by Mediterranean shipbuilders involved building the hull before the frame.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "The Romans called the Mediterranean Sea Mare Nostrum because they dominated its use.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "Most rowers on ships were people from the Roman army.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g6",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Warships were designed so that they were ___ and moved quickly.",
+              "acceptedAnswers": [
+                "lightweight"
+              ],
+              "gapText": "Warships were designed so that they were 6 ___ and moved quickly.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g7",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "A battering ram made of ___ was included in the design for attacking and damaging the timber and oars of enemy ships.",
+              "acceptedAnswers": [
+                "bronze"
+              ],
+              "gapText": "A battering ram made of 7 ___ was included in the design for attacking and damaging the timber and oars of enemy ships.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g8",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Warships, such as the 'trireme', had rowers on three different ___.",
+              "acceptedAnswers": [
+                "levels"
+              ],
+              "gapText": "Warships, such as the 'trireme', had rowers on three different 8 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g9",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Unlike warships, merchant ships had a broad ___ that lay far below the surface of the sea.",
+              "acceptedAnswers": [
+                "hull"
+              ],
+              "gapText": "Unlike warships, merchant ships had a broad 9 ___ that lay far below the surface of the sea.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g10",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Merchant ships had both square and ___ sails.",
+              "acceptedAnswers": [
+                "triangular"
+              ],
+              "gapText": "They had both square and 10 ___ sails.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g11",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "On merchant ships and warships, ___ was used to ensure rowers moved their oars in and out of the water at the same time.",
+              "acceptedAnswers": [
+                "music"
+              ],
+              "gapText": "On merchant ships and warships, 11 ___ was used to ensure rowers moved their oars in and out of the water at the same time.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g12",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Quantities of agricultural goods such as ___ were transported by merchant ships to two main ports in Italy.",
+              "acceptedAnswers": [
+                "grain"
+              ],
+              "gapText": "Quantities of agricultural goods such as 12 ___ were transported by merchant ships to two main ports in Italy.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g13",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "The ships were pulled to the shore by ___.",
+              "acceptedAnswers": [
+                "towboats"
+              ],
+              "gapText": "The ships were pulled to the shore by 13 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Climate change reveals ancient artefacts in Norway's glaciers\n\nA Well above the treeline in Norway's highest mountains, ancient fields of ice are shrinking as Earth's climate warms. As the ice has vanished, it has been giving up the treasures it has preserved in cold storage for the last 6,000 years – items such as ancient arrows and skis from Viking Age\\* traders. And those artefacts have provided archaeologists with some surprising insights into how ancient Norwegians made their livings.\n\nB Organic materials like textiles and hides are relatively rare finds at archaeological sites. This is because unless they're protected from the microorganisms that cause decay, they tend not to last long. Extreme cold is one reliable way to keep artefacts relatively fresh for a few thousand years, but once thawed out, these materials experience degradation relatively swiftly.\n\nWith climate change shrinking ice cover around the world, glacial archaeologists need to race the clock to find newly revealed artefacts, preserve them, and study them. If something fragile dries and is windblown it might very soon be lost to science, or an arrow might be exposed and then covered again by the next snow and remain well-preserved. The unpredictability means that glacial archaeologists have to be systematic in their approach to fieldwork.\n\nC Over a nine-year period, a team of archaeologists, which included Lars Pilø of Oppland County Council, Norway, and James Barrett of the McDonald Institute for Archaeological Research, surveyed patches of ice in Oppland, an area of south-central Norway that is home to some of the country's highest mountains. Reindeer once congregated on these icy patches in the later summer months to escape biting insects, and from the late Stone Age\\*\\*, hunters followed. In addition, trade routes threaded through the mountain passes of Oppland, linking settlements in Norway to the rest of Europe.\n\nThe slow but steady movement of glaciers tends to destroy anything at their bases, so the team focused on stationary patches of ice, mostly above 1,400 metres. That ice is found amid fields of frost-weathered boulders, fallen rocks, and exposed bedrock that for nine months of the year is buried beneath snow.\n\n‘Fieldwork is hard work – hiking with all our equipment, often camping on permafrost – but very rewarding. You're rescuing the archaeology, bringing the melting ice to wider attention, discovering a unique environmental history and really connecting with the natural environment,'says Barrett.\n\nD At the edges of the contracting ice patches, archaeologists found more than 2,000 artefacts, which formed a material record that ran from 4,000 BCE to the beginnings of the Renaissance in the 14th century. Many of the artefacts are associated with hunting. Hunters would have easily misplaced arrows and they often discarded broken bows rather than take them all the way home. Other items could have been used by hunters traversing the high mountain passes of Oppland: all-purpose items like tools, skis, and horse tack.\n\nE Barrett's team radiocarbon-dated 153 of the artefacts and compared those dates to the timing of major environmental changes in the region - such as periods of cooling or warming - and major social and economic shifts – such as the growth of farming settlements and the spread of international trade networks leading up to the Viking Age. They found that some periods had produced lots of artefacts, which indicates that people had been pretty active in the mountains during those times. But there were few or no signs of activity during other periods.\n\nF What was surprising, according to Barrett, was the timing of these periods. Oppland's mountains present daunting terrain and in periods of extreme cold, glaciers could block the higher mountain passes and make travel in the upper reaches of the mountains extremely difficult. Archaeologists assumed people would stick to lower elevations during a time like the Late Antique Little Ice Age, a short period of deeper-than-usual cold from about 536-600 CE. But it turned out that hunters kept regularly venturing into the mountains even when the climate turned cold, based on the amount of stuff they had apparently dropped there.\n\n'Remarkably, though, the finds from the ice may have continued through this period, perhaps suggesting that the importance of mountain hunting increased to supplement failing agricultural harvests in times of low temperatures,' says Barrett. A colder turn in the Scandinavian climate would likely have meant widespread crop failures, so more people would have depended on hunting to make up for those losses.\n\nMany of the artefacts Barrett's team recovered date from the beginning of the Viking Age, the 700s through to the 900s CE. Trade networks connecting Scandinavia with Europe and the Middle East were expanding around this time. Although we usually think of ships when we think of Scandinavian expansion, these recent discoveries show that plenty of goods travelled on overland routes, like the mountain passes of Oppland. And growing Norwegian towns, along with export markets, would have created a booming demand for hides to fight off the cold, as well as antlers to make useful things like combs. Business must have been good for hunters.\n\nH Norway's mountains are probably still hiding a lot of history - and prehistory - in remote ice patches. When Barrett's team looked at the dates for their sample of 153 artefacts, they noticed a gap with almost no artefacts from about 3,800 to 2,200 BCE. In fact, archaeological finds from that period are rare all over Norway. The researchers say that could be because many of those artefacts have already disintegrated or are still frozen in the ice. That means archaeologists could be extracting some of those artefacts from retreating ice in years to come."
+      },
+      "questionGroups": [
+        {
+          "id": "c16t3r-g14",
+          "instruction": "Which section contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "An explanation for weapons being left behind in the mountains",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Section H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:49:24.103259+00:00"
+          }
+        },
+        {
+          "id": "c16t3r-g15",
+          "instruction": "Which section contains the following information?",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "A reference to the physical difficulties involved in an archaeological expedition",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Section A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Section B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Section C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Section D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Section E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Section F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Section G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Section H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T15:49:24.103259+00:00"
+          }
+        },
+        {
+          "id": "c16t3r-g16",
+          "instruction": "Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "An explanation of why less food may have been available",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c16t3r-g17",
+          "instruction": "Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "A reference to the possibility of future archaeological discoveries",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c16t3r-g18",
+          "instruction": "Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Examples of items that would have been traded",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c16t3r-g19",
+          "instruction": "Which section contains the following information? Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "A reference to the pressure archaeologists are under to work quickly",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c16t3r-g20",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Organic materials such as animal skins and textiles have little protection against ___, which means that they decay relatively quickly.",
+              "acceptedAnswers": [
+                "microorganisms",
+                "micro-organisms"
+              ],
+              "gapText": "They have little protection against 20 ___, which means that they decay relatively quickly.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              20,
+              22
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 20–22 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g21",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "In the past, there were trade routes through these mountains and ___ gathered there in the summer months.",
+              "acceptedAnswers": [
+                "reindeer"
+              ],
+              "gapText": "In the past, there were trade routes through these mountains and 21 ___ gathered there in the summer months.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              20,
+              22
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 20–22 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g22",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "The reindeer gathered in the mountains in summer to avoid being attacked by ___ on lower ground.",
+              "acceptedAnswers": [
+                "insects"
+              ],
+              "gapText": "They gathered there in the summer months to avoid being attacked by 22 ___ on lower ground.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              20,
+              22
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 20–22 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g23",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q23",
+              "number": 23,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO of the following statements does the writer make about the discoveries of Barrett's team?",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Artefacts found in the higher mountain passes were limited to skiing equipment."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hunters went into the mountains even during periods of extreme cold."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The number of artefacts from certain time periods was relatively low."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Radiocarbon dating of artefacts produced some unreliable results."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "More artefacts were found in Oppland than at any other mountain site."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              24
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 23 and 24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g24",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q24",
+              "number": 24,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO of the following statements does the writer make about the discoveries of Barrett's team?",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Artefacts found in the higher mountain passes were limited to skiing equipment."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Hunters went into the mountains even during periods of extreme cold."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The number of artefacts from certain time periods was relatively low."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Radiocarbon dating of artefacts produced some unreliable results."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "More artefacts were found in Oppland than at any other mountain site."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              24
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 23 and 24 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g25",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO of the following statements does the writer make about the Viking Age?",
+              "acceptedAnswers": [
+                "A",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Hunters at this time benefited from an increased demand for goods."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The beginning of the period saw the greatest growth in the wealth of Vikings."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Vikings did not rely on ships alone to transport goods."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Norwegian towns at this time attracted traders from around the world."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Vikings were primarily interested in their trading links with the Middle East."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 25 and 26 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g26",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q26",
+              "number": 26,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO of the following statements does the writer make about the Viking Age?",
+              "acceptedAnswers": [
+                "A",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Hunters at this time benefited from an increased demand for goods."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The beginning of the period saw the greatest growth in the wealth of Vikings."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Vikings did not rely on ships alone to transport goods."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Norwegian towns at this time attracted traders from around the world."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Vikings were primarily interested in their trading links with the Middle East."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 25 and 26 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "# Plant thermometer'triggers springtime growth by measuring night-time heat\n\nA photoreceptor molecule in plant cells has been found to have a second job as a thermometer after dark – allowing plants to read seasonal temperature changes.Scientists saythe discovery could help breed crops that are more resilient to the temperatures expected to result from climate change\n\nAn international team of scientists led by the University of Cambridge has discovered that thethermometer' molecule in plants enables them to develop according to seasonal temperature changes. Researchers have revealed that molecules called phytochromes – used by plants to detect light during the day – actually change their function in darkness to become cellular temperature gauges that measure the heat of the night\n\nThe new findings, published in the journal Science, show that phytochromes control genetic switches in response to temperature as well as light to dictate plant development\n\nB At night, these molecules change states, and the pace at which they change is directly proportional to temperature', say scientists, who compare phytochromes to mercury in a thermometer. The warmer it is, the faster the molecular change – stimulating plant growth.\n\nC Farmers and gardeners have known for hundreds of years how responsive plants are to temperature: warm winters cause many trees and flowers to bud early, something humans have long used to predict weather and harvest times for the coming year. The latest research pinpoints for the first time a molecular mechanism in plants that reacts to temperature – often triggering the buds of spring we long to see at the end of winter.\n\nD With weather and temperatures set to become ever more unpredictable due to climate change, researchers say the discovery that this light-sensing molecule also functions as the internal thermometer in plant cells could help us breed tougher crops.It is estimated that agricultural yields will need to double by 2050, but climate change is a major threat to achieving this. Key crops such as wheat and rice are sensitive to high temperatures. Thermal stress reduces crop yields by around 10% for every one degree increase in temperature,' says lead researcher Dr Philip Wigge from Cambridge's Sainsbury Laboratory.Discovering the molecules that allow plants to sense temperature has the potential to accelerate the breeding of crops resilient to thermal stress and climate change.\"\n\nE In their active state, phytochrome molecules bind themselves to DNA to restrict plant growth. During the day, sunlight activates the molecules, slowing down growth. If a plant finds itself in shade, phytochromes are quickly inactivated - enabling it to grow faster to find sunlight again. This is how plants compete to escape each other's shade. 'Light-driven changes to phytochrome activity occur very fast, in less than a second,' says Wigge.\n\nAt night, however, it's a different story. Instead of a rapid deactivation following sundown, the molecules gradually change from their active to inactive state. This is called 'dark reversion'. Just as mercury rises in a thermometer, the rate at which phytochromes revert to their inactive state during the night is a direct measure of temperature,' says Wigge.\n\nThe lower the temperature, the slower the rate at which phytochromes revert to inactivity, so the molecules spend more time in their active, growth-suppressing state. This is why plants are slower to grow in winter. Warm temperatures accelerate dark reversion, so that phytochromes rapidly reach an inactive state and detach themselves from the plant's DNA - allowing genes to be expressed and plant growth to resume.' Wigge believes phytochrome thermo-sensing evolved at a later stage, and co-opted the biological network already used for light-based growth during the downtime of night.\n\nSome plants mainly use day length as an indicator of the season. Other species, such as daffodils, have considerable temperature sensitivity, and can flower months in advance during a warm winter. In fact, the discovery of the dual role of phytochromes provides the science behind a well-known rhyme long used to predict the coming season: oak before ash we'll have a splash, ash before oak we're in for a soak.\n\nWigge explains: Oak trees rely much more on temperature, likely using phytochromes as thermometers to dictate development, whereas ash trees rely on measuring day length to determine their seasonal timing. A warmer spring, and consequently a higher likeliness of a hot summer, will result in oak leafing before ash. A cold spring will see the opposite. As the British know only too well, a colder summer is likely to be a rain-soaked one.'\n\nThe new findings are the culmination of twelve years of research involving scientists from Germany, Argentina and the US, as well as the Cambridge team. The work was done in a model system, using a mustard plant called Arabidopsis, but Wigge says the phytochrome genes necessary for temperature sensing are found in crop plants as well.‘Recent advances in plant genetics now mean that scientists are able to rapidly identify the genes controlling these processes in crop plants, and even alter their activity using precise molecular \"scalpels\",'adds Wigge.‘Cambridge is uniquely well-positioned to do this kind of research as we have outstanding collaborators nearby who work on more applied aspects of plant biology, and can help us transfer this new knowledge into the field.'\n\nDo the following statements agree with the information given in Reading Passage 3?\n\nIn boxes 27–32 on your answer sheet, write\n\nTRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVEN if there is no information on this\n\n27 The Cambridge scientists' discovery of the thermometer molecule' caused surprise among other scientists.\n\n28 The target for agricultural production by 2050 could be missed.\n\n29Wheat and rice suffer from a rise in temperatures.\n\n30 It may be possible to develop crops that require less water.\n\n31 Plants grow faster in sunlight than in shade.\n\n32Phytochromes change their state at the same speed day and night."
+      },
+      "questionGroups": [
+        {
+          "id": "c16t3r-g27",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q27",
+              "number": 27,
+              "type": "true_false_ng",
+              "prompt": "The Cambridge scientists’ discovery of the ‘thermometer molecule’ caused surprise among other scientists.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g28",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q28",
+              "number": 28,
+              "type": "true_false_ng",
+              "prompt": "The target for agricultural production by 2050 could be missed.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g29",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q29",
+              "number": 29,
+              "type": "true_false_ng",
+              "prompt": "Wheat and rice suffer from a rise in temperatures.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g30",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q30",
+              "number": 30,
+              "type": "true_false_ng",
+              "prompt": "It may be possible to develop crops that require less water.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g31",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q31",
+              "number": 31,
+              "type": "true_false_ng",
+              "prompt": "Plants grow faster in sunlight than in shade.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g32",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q32",
+              "number": 32,
+              "type": "true_false_ng",
+              "prompt": "Phytochromes change their state at the same speed day and night.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c16t3r-g33",
+          "instruction": "Reading Passage has eight sections. Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q33",
+              "number": 33,
+              "type": "matching",
+              "prompt": "mention of specialists who can make use of the research findings",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Which section contains thefollowing information?"
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g34",
+          "instruction": "Reading Passage has eight sections. Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q34",
+              "number": 34,
+              "type": "matching",
+              "prompt": "a reference to a potential benefit of the research findings",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Which section contains thefollowing information?"
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g35",
+          "instruction": "Reading Passage has eight sections. Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q35",
+              "number": 35,
+              "type": "matching",
+              "prompt": "Scientific support for a traditional saying",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Which section contains thefollowing information?"
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g36",
+          "instruction": "Reading Passage has eight sections. Write the correct letter, A-H, next to each question.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q36",
+              "number": 36,
+              "type": "matching",
+              "prompt": "a reference to people traditionally making plans based on plant behaviour",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Which section contains thefollowing information?"
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g37",
+          "instruction": "Reading Passage has eight sections. Write the correct letter, A-H, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "a reference to where the research has been reported",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Section A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Section B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Section C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Section D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Section E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Section F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Section G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Section H"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Which section contains thefollowing information?"
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g38",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Daffodils are likely to flower early in response to ______ weather.",
+              "acceptedAnswers": [
+                "warm (winter)"
+              ],
+              "gapText": "Daffodils are likely to flower early in response to 38 ______ weather.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              38,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 38–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g39",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "If ash trees come into leaf before oak trees, the weather in ______ will probably be wet.",
+              "acceptedAnswers": [
+                "summer"
+              ],
+              "gapText": "If ash trees come into leaf before oak trees, the weather in 39 ______ will probably be wet.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:26:08+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              38,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 38–40 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c16t3r-g40",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c16t3r-q40",
+              "number": 40,
+              "type": "yes_no_ng",
+              "prompt": "The research was carried out using a particular species of",
+              "acceptedAnswers": [
+                "mustard plant(s)",
+                "mustard"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              38,
+              40
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 38–40 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

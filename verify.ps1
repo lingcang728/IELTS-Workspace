@@ -2,8 +2,15 @@ $ErrorActionPreference = 'Stop'
 Set-Location $PSScriptRoot
 if (Test-Path -LiteralPath 'fixtures\cambridge') {
   Write-Host '== Local licensed Cambridge content =='
-  python scripts/verify_cambridge.py --baseline --health
+  $audioArgs = @()
+  if (-not (Test-Path -LiteralPath 'fixtures\assets\cambridge\c04-t1.mp3')) {
+    $audioArgs += '--skip-audio'
+    Write-Host 'audio files absent; validating JSON/images/transcripts only'
+  }
+  python scripts/verify_cambridge.py --baseline --health @audioArgs
   if ($LASTEXITCODE -ne 0) { throw "Cambridge verification failed with exit code $LASTEXITCODE" }
+  python scripts/verify_content_pack.py
+  if ($LASTEXITCODE -ne 0) { throw "Content pack verification failed with exit code $LASTEXITCODE" }
 } else {
   Write-Host '== Local licensed Cambridge content: skipped (not distributed) =='
 }

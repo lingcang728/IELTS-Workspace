@@ -60,6 +60,7 @@
   --marker-3: rgba(127, 192, 255, .40);
   --marker-4: rgba(255, 157, 148, .40);
   --shadow: 0 16px 48px rgba(0, 0, 0, .22);
+  --scrim: rgba(5, 13, 20, .48);
   --font-sans: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
   --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", serif;
   --font-mono: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
@@ -99,6 +100,7 @@
   --marker-3: #a8cdf0;
   --marker-4: #f3b9b3;
   --shadow: 0 12px 32px rgba(39, 58, 73, .1);
+  --scrim: rgba(20, 33, 44, .32);
   color-scheme: light;
 }
 

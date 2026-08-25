@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-15-test-4-writing",
+  "title": "Cambridge IELTS 15 Academic Test 4 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-e9f6c0fc7c5a",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 15",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题15.pdf",
+        "sha256": "8d632033a6576c06ed86732a51b8ca361a7bdc7735c0aebac2ca1806c52f6fed"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C15\\剑桥雅思真题15\\auto\\剑桥雅思真题15.md",
+        "sha256": "e9f6c0fc7c5a88740c3d024db01c38c0d615c62ee66ab15b8bd51f8d3d2810e4",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe chart below shows what Anthropology graduates from one university did after finishing their undergraduate degree course. The table shows the salaries of the anthropologists in work after five years.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\nDestination of Anthropology graduates (from one university)\n\n[]\n\nFull-time work\n\nFull-time postgrad study\n\nSalaries of Antrhropology graduates (after 5 years' work)\n\nType of employment\n\n$25,000-49,999\n\n$50,000-74,999\n\n$75,000-99,999\n\n$100,000+\n\nFreelance consultants\n\n5%\n\n15%\n\n40%\n\n40%\n\nGovernment sector\n\n5%\n\n15%\n\n30%\n\n50%\n\nPrivate companies\n\n10%\n\n35%\n\n25%\n\n30%\n\n## Test 4"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c15-t4-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nIn some cultures, children are often told that they can achieve anything if they try hard enough.\n\nWhat are the advantages and disadvantages of giving children this message?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.\n\nDescribe an interesting TV programme you watched about a science topic.\n\nYou should say:\n\nwhat science topic this TV programme was about\n\nwhen you saw this TV programme\n\nwhat you learnt from this TV programme about a science topic\n\nand explain why you found this TV programme\n\ninteresting."
+      },
+      "questionGroups": []
+    }
+  ]
+}

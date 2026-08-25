@@ -1,0 +1,1859 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-11-test-3-listening",
+  "title": "Cambridge IELTS 11 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0019-804732e0",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 11",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题11.pdf",
+        "sha256": "6dfc84371b9d08e31b450ede3a20e64f13f505b1e52261894681a31d733b3fe3"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C11\\剑桥雅思真题11\\auto\\剑桥雅思真题11.md",
+        "sha256": "8c76b257af01336b0c595c91c5f1d093513832fc8770fa0695824b87faf21ad2",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-11-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nQuestions 1-6\n\nChoose the correct letter, A, B or C.\n\n## Free activities in the Burnham area\n\nExample\n\nThe caller wants to find out about events on\n\nA 27 June.\n\nB 28 June.\n\nC 29 June.\n\n1 The Family Welcome' event in the art gallery begins at A 10 am. B 10.30 am. C 2 pm.\n\nThe film that is now shown in the 'Family Welcome' event is about A sculpture. \nB painting. \nC ceramics. \nWhen do most of the free concerts \ntake place? \nA in the morning \nB at lunchtime \nC in the evening\n\n4 Where will the 4 pm concert of Latin American music take place? A in a museum B in a theatre C in a library\n\n5 The boat race begins at A Summer Pool. B Charlesworth Bridge. C Offord Marina.\n\n6 One of the boat race teams A won a regional competition earlier this year. B has represented the region in a national competition. C has won several regional competitions.\n\nQuestions 7-10 \nComplete the sentences below. \nWrite ONE WORD ONLY for each answer.\n\n## Paxton Nature Reserve\n\n7 Paxton is a good place for seing rare.. all year round. \n8 This is a particularly good time for seeing certain unusual \nVisitors will be able to learn about. . and then collect some. \n10 Part of the as been made suitable for swimming."
+      },
+      "questionGroups": [
+        {
+          "id": "c11t3l-g1",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "The 'Family Welcome' event in the art gallery begins at",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "10 am."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "10.30 am."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "2 pm."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q2",
+              "number": 2,
+              "type": "single_choice",
+              "prompt": "The film that is now shown in the 'Family Welcome' event is about",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "sculpture."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "painting."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "ceramics."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g3",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q3",
+              "number": 3,
+              "type": "single_choice",
+              "prompt": "When do most of the free concerts take place?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in the morning"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "at lunchtime"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in the evening"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g4",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q4",
+              "number": 4,
+              "type": "single_choice",
+              "prompt": "Where will the 4 pm concert of Latin American music take place?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in a museum"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "in a theatre"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in a library"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g5",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q5",
+              "number": 5,
+              "type": "single_choice",
+              "prompt": "The boat race begins at A Summer Pool. B Charlesworth Bridge. C Offord Marina",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Summer Pool."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Charlesworth Bridge."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Offord Marina."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.915229+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g6",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q6",
+              "number": 6,
+              "type": "single_choice",
+              "prompt": "One of the boat race teams A won a regional competition earlier this year. B has represented the region in a national competition. C has won several regional competitions",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "in the morning"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "at lunchtime"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "in the evening"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "in the morning"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "at lunchtime"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "in the evening"
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g7",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Paxton is a good place for seing rare.. all year round",
+              "acceptedAnswers": [
+                "birds"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g8",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "This is a particularly good time for seeing certain unusual ___.",
+              "acceptedAnswers": [
+                "flowers"
+              ],
+              "gapText": "This is a particularly good time for seeing certain unusual ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g9",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q9",
+              "number": 9,
+              "type": "single_choice",
+              "prompt": "Complete the sentences below.",
+              "acceptedAnswers": [
+                "mushrooms"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "27 June"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "28 June"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "29 June"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "27 June"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "28 June"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "29 June"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g10",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Part of the as been made suitable for swimming",
+              "acceptedAnswers": [
+                "river"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 483004
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\n## Questions 11-15\n\nChoose the correct letter, A, B or C.\n\n## Changes in Barford over the last 50years\n\n11 In Shona's opinion, why do fewer people use buses in Barford these days? A Thebuses are old and uncomfortable. B Fares have gone up too much. C There are not so many bus routes.\n\n12 What change in the road network is known to have benefited the town most?\n\nA the construction of a bypass\n\nB the development of cycle paths\n\nC the banning of cars from certain streets\n\n13 What is the problem affecting shopping inthe town centre? A lack of parking spaces B lack of major retailers C lack of restaurants and cafés\n\n14 What does Shona say about medical facilities in Barford?\n\nA There is no hospital.\n\nB New medical practices are planned.\n\nC The number of dentists is too low.\n\n15 The largest number of people are employed in\n\nA manufacturing.\n\nB services.\n\nC education.\n\n## Questions 16-20\n\nWhat is planned for each of the following facilities?\n\nChoose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.\n\n## Plans\n\nA It will move to a new location.\n\nB It will have its opening hours extended.\n\nC It will be refurbished.\n\nD It will be used for a different purpose.\n\nE It will have its opening hours reduced.\n\nF It will have new management.\n\nG It will be expanded.\n\n## Facilities\n\n16 railway station car park\n\n17 cinema\n\n18 indoor market …\n\n19library\n\n20 nature reserve"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t3l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "In Shona's opinion, why do fewer people use buses in Barford these days?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The buses are old and uncomfortable."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Fares have gone up too much."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "There are not so many bus routes."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "What change in the road network is known to have benefited the town most?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the construction of a bypass"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the development of cycle paths"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the banning of cars from certain streets"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "What is the problem affecting shopping in the town centre?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lack of parking spaces"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "lack of major retailers"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "lack of restaurants and cafés"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "What does Shona say about medical facilities in Barford?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is no hospital."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "New medical practices are planned."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The number of dentists is too low."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "The largest number of people are employed in",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "manufacturing."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "services."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "education."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g16",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "Railway station car park",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It will move to a new location."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It will have its opening hours extended."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It will be refurbished."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It will be used for a different purpose."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It will have its opening hours reduced."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It will have new management."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It will be expanded."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It will move to a new location"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It will have its opening hours extended"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It will be refurbished"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It will be used for a different purpose"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It will have its opening hours reduced"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It will have new management"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It will be expanded"
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g17",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Cinema",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It will move to a new location."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It will have its opening hours extended."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It will be refurbished."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It will be used for a different purpose."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It will have its opening hours reduced."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It will have new management."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It will be expanded."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g18",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Indoor market",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It will move to a new location."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It will have its opening hours extended."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It will be refurbished."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It will be used for a different purpose."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It will have its opening hours reduced."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It will have new management."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It will be expanded."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g19",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "Library",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It will move to a new location."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It will have its opening hours extended."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It will be refurbished."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It will be used for a different purpose."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It will have its opening hours reduced."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It will have new management."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It will be expanded."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t3l-g20",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "Nature reserve",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It will move to a new location."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It will have its opening hours extended."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It will be refurbished."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It will be used for a different purpose."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It will have its opening hours reduced."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It will have new management."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It will be expanded."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 483004,
+      "audioDurationMs": 427363
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions 21-26\n\nComplete the table below.\n\n## Write ONE WORD ONLY for each answer.\n\nSubject of drawing\n\nChange to be made\n\nA 21 surrounded bytrees\n\nAdd Malcolm and a 22noticing him\n\nPeople who are 23outside the forest\n\nAdd Malcolm sitting on a tree trunkand 24\n\nIce-skaters on 25covered with ice\n\nAdd a 26 for eachperson\n\n## Questions 27-30\n\nWho is going to write each of the following parts of the report?\n\nWrite the correct letter, A-D, next to Questions 27-30.\n\nA Helen only\n\nB Jeremy only\n\nC both Helen and Jeremy\n\nD neither Helen nor Jeremy\n\n## Parts of the report\n\n27 how they planned the project\n\n28 how they had ideas for their stories\n\n29 an interpretation of their stories\n\n30 comments on the illustrations"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t3l-g21",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q21",
+              "number": 21,
+              "type": "true_false_ng",
+              "prompt": "Complete the table below.",
+              "acceptedAnswers": [
+                "cave"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g22",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q22",
+              "number": 22,
+              "type": "true_false_ng",
+              "prompt": "Add Malcolm and a",
+              "acceptedAnswers": [
+                "tiger"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g23",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q23",
+              "number": 23,
+              "type": "true_false_ng",
+              "prompt": "People who are",
+              "acceptedAnswers": [
+                "dancing"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g24",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Add Malcolm sitting on a tree trunkand",
+              "acceptedAnswers": [
+                "crying"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "21 surrounded bytrees"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Jeremy only"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "both Helen and Jeremy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "neither Helen nor Jeremy"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "21 surrounded bytrees"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Jeremy only"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "both Helen and Jeremy"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "neither Helen nor Jeremy"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g25",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "Ice-skaters on",
+              "acceptedAnswers": [
+                "grass"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "21 surrounded bytrees"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Jeremy only"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "both Helen and Jeremy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "neither Helen nor Jeremy"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "21 surrounded bytrees"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Jeremy only"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "both Helen and Jeremy"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "neither Helen nor Jeremy"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g26",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Add a",
+              "acceptedAnswers": [
+                "scarf"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "21 surrounded bytrees"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Jeremy only"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "both Helen and Jeremy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "neither Helen nor Jeremy"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "21 surrounded bytrees"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Jeremy only"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "both Helen and Jeremy"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "neither Helen nor Jeremy"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g27",
+          "instruction": "Write the correct letter, A-D, next to Questions 27-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "How they planned the project",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Helen only"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Jeremy only"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "both Helen and Jeremy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "neither Helen nor Jeremy"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g28",
+          "instruction": "Write the correct letter, A-D, next to Questions 27-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "How they had ideas for their stories",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Helen only"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Jeremy only"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "both Helen and Jeremy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "neither Helen nor Jeremy"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g29",
+          "instruction": "Write the correct letter, A-D, next to Questions 27-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "An interpretation of their stories",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Helen only"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Jeremy only"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "both Helen and Jeremy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "neither Helen nor Jeremy"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g30",
+          "instruction": "Write the correct letter, A-D, next to Questions 27-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Comments on the illustrations",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Helen only"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Jeremy only"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "both Helen and Jeremy"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "neither Helen nor Jeremy"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 910367,
+      "audioDurationMs": 397845
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## ETHNOGRAPHY IN BUSINESS\n\nEthnography: research which explores human cultures\n\nIt can be used in business:\n\nto investigate customer needs and 31\n\nto help companies develop new designs\n\nExamples of ethnographic research in business\n\nKitchen equipment\n\nResearchers foundthat cooks could not easily see the 32.. \nin measuring cups.\n\nCell phones\n\n• In Uganda, customers paid to use the cell phones of entrepreneurs.\n\nThese customers wanted to check the 3 sed.\n\nComputer companies\n\nThere was a need to develop 34.. ... to improve communication between system administrators and colleagues.\n\nHospitals\n\nNurses needed to acces information about 3. dierent parts of the hospital.\n\n## Airlines\n\nRespondents recorded information about their 36.hile travelling.\n\n## Principles of ethnographic research in business\n\n• The researcher does not start off with a hypothesis.\n\nParticipants may be selected by criteria such as age, 37..or product used.\n\nThe participants must feel 38 about taking part in the research.\n\nThere is usually direct 39 of the participants.\n\n• The interview is guided by the participant\n\n•A lot of time is needed for the 40. of the data.\n\n•Researchers look for a meaningful pattern in the data."
+      },
+      "questionGroups": [
+        {
+          "id": "c11t3l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "To investigate customer needs and ___",
+              "acceptedAnswers": [
+                "attitude",
+                "attitudes"
+              ],
+              "gapText": "To investigate customer needs and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Researchers found that cooks could not easily see the ___ in measuring cups.",
+              "acceptedAnswers": [
+                "numbers"
+              ],
+              "gapText": "Researchers found that cooks could not easily see the ___ in measuring cups.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "These customers wanted to check the ___ used.",
+              "acceptedAnswers": [
+                "time",
+                "minutes"
+              ],
+              "gapText": "These customers wanted to check the ___ used.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "There was a need to develop ___ to improve communication between system administrators and colleagues.",
+              "acceptedAnswers": [
+                "software"
+              ],
+              "gapText": "There was a need to develop ___ to improve communication between system administrators and colleagues.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Nurses needed to access information about ___ in different parts of the hospital.",
+              "acceptedAnswers": [
+                "patients"
+              ],
+              "gapText": "Nurses needed to access information about ___ in different parts of the hospital.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Respondents recorded their ___ while travelling.",
+              "acceptedAnswers": [
+                "emotions",
+                "feelings"
+              ],
+              "gapText": "Respondents recorded their ___ while travelling.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Participants may be selected by criteria such as age, ___ or product used.",
+              "acceptedAnswers": [
+                "income"
+              ],
+              "gapText": "Participants may be selected by criteria such as age, ___ or product used.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "The participants must feel ___ about taking part in the research.",
+              "acceptedAnswers": [
+                "comfortable"
+              ],
+              "gapText": "The participants must feel ___ about taking part in the research.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "There is usually direct ___ of the participants.",
+              "acceptedAnswers": [
+                "observation"
+              ],
+              "gapText": "There is usually direct ___ of the participants.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "A lot of time is needed for the ___ of the data.",
+              "acceptedAnswers": [
+                "analysis"
+              ],
+              "gapText": "A lot of time is needed for the ___ of the data.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1308212,
+      "audioDurationMs": 512287
+    }
+  ]
+}

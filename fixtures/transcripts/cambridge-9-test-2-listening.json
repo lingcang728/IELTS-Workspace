@@ -1,0 +1,745 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-9-test-2-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 9,
+    "test": 2
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "missingMarkers": [
+    13,
+    14,
+    16,
+    17,
+    20
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "SECTION 1",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Good morning. Can I help you?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes. I've just been accepted on a course at the university and l'd like to try",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "and arrange accommodation in the hall of residence. Example Yes, certainly. Please sit down. What I'll do is fill in a form with you to find",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "out a little more about your preferences and so forth. Thank you.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "So first of all, can I take your name?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "It's Anu Bhatt.",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "MAN; Could you spell your name please?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes. A-N-U .. B-H-A double T.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Thanks, and could I ask your date of birth?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "31stMarch 1972",
+          "answers": [
+            2
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Thank you. And where are you from?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "India.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Oh right. And what will you be studying?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "I'm doing a course in nursing",
+          "answers": [
+            3
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Right, thank you. And how long would you want to stay in hall, do you think? Well, it'll take three years but I'd only like to stay in hall for two. I'd like to",
+          "answers": [
+            4
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "think about living outside for the third year.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Fine. And what did you have in mind for catering? Do you want to cook for yourself or have all your meals provided, that's full board?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Is there something in between?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes. You can just have evening meal provided, which is half board.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "That's what I'd prefer.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes, a lot of students opt for that. Now, with that in mind, do you have any",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "special diet, anything we should know about? Yes, I don't take red meat.",
+          "answers": [
+            5
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "No red meat.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Now, thinking about the room itself, we have a number of options. You can",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "have a single study bedroom or you can have a shared one. These are both what we call simple rooms. The other alternative is to opt for a single",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "bedsit which actually has more space and better facilities. There's about",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "£20 a week difference between them.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, actually my grant is quite generous and I think the bedsit sounds the",
+          "answers": [
+            6
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "best option.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Lovely. I'll put you down for that and we'll see what availability is like. Now can I ask some other personal details which we like to have on record?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes, of course.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I wonder if you could let us know what your interests are. This might help",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "us get a closer match for placing you in a particular hall.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Ummm. Well, I love the theatre.",
+          "answers": [
+            7
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "Right.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "And I enjoy sports, particularly badminton.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "That's worth knowing. Now, what we finish with on the form is really a list",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "from you of what your priorities are in choosing a hall and we'll do our",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "best to take these into account.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, the first thing is I'd prefer a hall where there are other mature",
+          "answers": [
+            8
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "students, if possible.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes, we do have halls which tend to cater for slightly older students.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Ummm and I'd prefer to be out of town.",
+          "answers": [
+            9
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "That's actually very good for you because we tend to have more",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "vacancies in out-of-town halls.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Lucky!",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes. Anything else?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Well, I would like somewhere with a shared area, a TV room for example,",
+          "answers": [
+            10
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "or something like that. It's a good way to socialise.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "It certainly is.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "That's it.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Now, we just need a contact telephone number for you.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Sure, I'll just find it. It's double 67549.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Great, so we'll be in contact with you as soon as possible ...",
+          "answers": []
+        }
+      ],
+      "charCount": 2822,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Hello, I'm delighted to welcome you to our Wildlife Club, and very pleased that you're interested in the countryside and the plants and creatures of this area. I think you'll be surprised at the variety we have here, even though we're not far from London. I'll start by telling you about some of the parks and open spaces nearby.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "One very pleasant place is Halland Common. This has been public land for hundreds of years, and what you'll find interesting is that the River Ouse, which flows into the sea eighty kilometres away, has its source in the common. There's an information board about the plants and animals you can see here, and by the way, the common is accessible 24 hours a day.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Then there's Holt Island, which is noted for its great range of trees. In the past willows were grown here commercially for basket-making, and this ancient craft has recently been reintroduced. The island is only open to the public from Friday to Sunday, because it's quite small, and if there were people around every day, much of the wildlife would keep away.",
+          "answers": [
+            11,
+            12
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Longfield Park has a programme of activities throughout the year, and to give you a sample, this is what's happening in the next few days. On Monday you can learn about herbs, and how they've been used over the centuries. You'll start with a tour of our herb garden, practise the technique of using them as colour dyes for cloth, and listen to an illustrated talk about their use in cooking and medicine.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Then on Wednesday you can join local experts to discover the variety of insects and birds that appear in the evening. We keep to a small number of people in the group, so if you want to go you'll need to phone the park ranger a few days ahead. There's a small charge, which you should pay when you turn up.",
+          "answers": [
+            15
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "I'm sure you're all keen to help with the practical task of looking after the park, so on Saturday you can join a working party. You'll have a choice of all sorts of activities, from planting hedges to picking up litter, so you'll be able to change from one to another when you feel like it. The rangers will be hard at work all day, but do come and join in, even for just a short while. One thing, though, is to make sure you're wearing something that you don't mind getting dirty or torn.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "And finally I'd like to tell you about our new wildlife area, Hinchingbrooke Park, which will be opened to the public next month. This slide doesn't really indicate how big it is, but anyway, you can see the two gates into the park, and the main paths. As you can see, there's a lake in the north west of the park, with a bird hide to the west of it, at the end of a path. So it'll be a nice quiet place for watching the birds on the lake.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Fairly close to where refreshments are available, there's a dog-walking area in the southern part of the park, leading off from the path. And if you just want to sit and relax, you can go to the flower garden; that's the circular area on the map surrounded by paths.",
+          "answers": [
+            18,
+            19
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Okay, that's enough from me, so let's go on to ..",
+          "answers": []
+        }
+      ],
+      "charCount": 3004,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": "PAM",
+          "text": "Hi Jun. As you know, I've asked you here today to discuss the future of our Self-Access Centre. We have to decide what we want to do about this very important resource for our English language students. So, can you tell me what the students think about this?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "JUN; Well, from the students' point of view, we would like to keep it. The majority of students say that they enjoy using it because it provides",
+          "answers": []
+        },
+        {
+          "speaker": "PAM",
+          "text": "a variation on the classroom routine and they see it as a pretty major component of their course, but we would like to see some improvements to the equipment, particularly the computers; there aren't enough for one each at the moment and we always have to share. Well yes, the teachers agree that it is a very valuable resource but one thing we have noticed is that a lot of the students are using it to check their personal emails. We don't want to stop you students using it, but we think the computers should be used as a learning resource, not for emails.",
+          "answers": [
+            21
+          ]
+        },
+        {
+          "speaker": "JUN",
+          "text": "Some of us also think that we could benefit a lot more by relocating the Self-Access Centre to the main University library building. How do you think the students would feel about that, Jun? Well, the library is big enough to incorporate the Self-Access Centre, but it wouldn't be like a class activity anymore. Our main worry would be not being able to go to a teacher for advice. I'm sure there would be plenty of things to",
+          "answers": [
+            22,
+            23
+          ]
+        },
+        {
+          "speaker": "PAM",
+          "text": "do but we really need teachers to help us choose the best activities. Well, there would still be a teacher present and he or she would guide the activities of the students, we wouldn't just leave them to get on with it.",
+          "answers": []
+        },
+        {
+          "speaker": "JUN",
+          "text": "Yes, but I think the students would be much happier keeping the existing set-up; they really like going to the Self-Access Centre with their teacher and staying together as a group to do activities. If we could just improve",
+          "answers": []
+        },
+        {
+          "speaker": "PAM",
+          "text": "the resources and facilities, I think it would be fine. Is the cost going to be a problem? It's not so much the expense that I'm worried about, and we've certainly got room to do it, but it's the problem of timetabling a teacher to be in there outside class hours. If we're going to spend a lot of money on equipment and resources, we really need to make sure that everything",
+          "answers": [
+            24
+          ]
+        },
+        {
+          "speaker": "PAM",
+          "text": "is looked after properly. Anyway, let's make some notes to see just what needs doing to improve the Centre. Now, what about the computers? I think it might be a good idea to install",
+          "answers": []
+        },
+        {
+          "speaker": "JUN",
+          "text": "some new models. They would take up a lot less room and so that would increase the work space for text books and so on. That would be great. It is a bit cramped in there at times. What about other resources? Do you have a list of things that the students",
+          "answers": [
+            25
+          ]
+        },
+        {
+          "speaker": "PAM",
+          "text": "JUN: would like to see improved? Yes, one of the comments that students frequently make is that they find",
+          "answers": []
+        },
+        {
+          "speaker": "PAM",
+          "text": "it difficult to find materials that are appropriate for their level, especially reading resources, so I think we need to label them more clearly. Well that's easy enough, we can get that organised very quickly. In fact",
+          "answers": [
+            26
+          ]
+        },
+        {
+          "speaker": "JUN",
+          "text": "I think we should review all of the study resources as some of them are looking a bit out-of-date. Definitely. The CD section especially needs to be more current. I think we",
+          "answers": []
+        },
+        {
+          "speaker": "PAM",
+          "text": "Good, now I was also thinking about some different materials that we haven't got in there at all. What do you think of the idea of introducing some workbooks? If we break them up into separate pages and laminate",
+          "answers": [
+            27
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "them, they'd be a great resource. The students could study the main course book in class and then do follow-up practice in the Self-Access",
+          "answers": []
+        },
+        {
+          "speaker": "JUN",
+          "text": "Centre. That sounds good.",
+          "answers": [
+            28
+          ]
+        },
+        {
+          "speaker": "PAM",
+          "text": "Okay, now finally we need to think about how the room is used. I'll have",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "to talk to the teachers and make sure we can all reach some agreement on a timetable to supervise the centre after class. But we also need to",
+          "answers": []
+        },
+        {
+          "speaker": "JUN",
+          "text": "think about security, too. Especially if we're going to invest in some new equipment. What about putting in an alarm?",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": "PAM",
+          "text": "Good idea. The other thing l'd like to do is talk to our technicians and see",
+          "answers": [
+            30
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "whether we could somehow limit the access to email. I really don't want to see that resource misused.",
+          "answers": []
+        },
+        {
+          "speaker": "JUN",
+          "text": "RAM: What about if we agree to only use it before and after class? Yes, that would be fine. OK, anyway ... that's great for now. We'll discuss",
+          "answers": []
+        }
+      ],
+      "charCount": 4157,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Good morning everyone. Now whether you're going to university to study business or some other subject, many of you will eventually end up working for a company of some kind.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Now, when you first start working somewhere you will realise that the organisation you've joined has certain characteristics. And we often refer to these social characteristics as the culture of the organisation - this includes its unwritten ideas, beliefs, values and things like that. One well known writer has classified company cultures by identifying four major types.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The first type is called the Power Culture, and it's usually found in small organisations.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "It's the type of culture that needs a central source of power to be effective, and because control is in the hands of just one or two people there aren't many rules or procedures.",
+          "answers": [
+            31
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Another characteristic is that communication usually takes the form of conversationsrather than, say, formal meetings or written memos. Now one of the benefits of this culture is that the organisation has the ability to act quickly, so it responds well to threat, or danger on the one hand, and opportunity on the other.",
+          "answers": [
+            32
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "But on the negative side, this type of organisation doesn't always act effectively, because it depends too much on one or two people at the top, and when these people make poor",
+          "answers": [
+            33
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "decisions there's no-one else who can influence them.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "And the kind of person who does well in this type of business culture is one who is happy",
+          "answers": [
+            34
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "to take risks, and for whom job security is a low priority",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The next type is known as Role Culture - that's R-O-L-E, not R-O-double L, by the way,",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "and this type is usually found in large companies, which have lots of different levels in them.",
+          "answers": [
+            35
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "These organisations usually have separate departments that specialise in things like finance,",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "or sales, or maintenance, or whatever. Each one is co-ordinated at the top by a small group",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "of senior managers, and typically everyone's job is controlled by sets of rules and procedures",
+          "answers": [
+            36
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "- for example, there are specific job descriptions, rules for discipline, and so on.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "What are the benefits of this kind of culture? Well firstly, because it's found in large",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "organisations, its fixed costs, or overheads as they're known, are low in relation to its",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "output, or what it produces. In other words it can achieve economies of scale. And",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "secondly, it is particularly successful in business markets where technical expertise is",
+          "answers": [
+            37
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "important. On the other hand, this culture is often very slow to recognise the need for",
+          "answers": [
+            38
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "change, and even slower to react. What kind of person does this type of culture suit?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Well it suits employees who value security, and who don't particularly want to have",
+          "answers": [
+            39
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "responsibility.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Moving on now to Task Cultures - this type is found in organisations that are project",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "oriented. You usually find it where the market for the company's product is extremely",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "competitive, or where the products themselves have a short life-span. Usually top",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "management delegates the projects, the people and other resources. And once these have",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "been allocated, little day-to-day control is exercised from the top, because this would seem",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "like 'breaking the rules'.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Now one of the major benefits of this culture is that it's flexible. But it does have some",
+          "answers": [
+            40
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "major disadvantages too. For instance, it can't produce economies of scale or great depth",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "of expertise. People who like working in groups or teams prefer this type of culture.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "And finally, the fourth category is called the Person Culture ..",
+          "answers": []
+        }
+      ],
+      "charCount": 3454,
+      "missing": false
+    }
+  ]
+}

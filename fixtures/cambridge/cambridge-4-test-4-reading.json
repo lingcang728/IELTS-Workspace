@@ -1,0 +1,1845 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-4-reading",
+  "title": "Cambridge IELTS 4 Academic Test 4 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0017-3777284f",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/adults-children-tropical-rainforests-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/what-do-whales-feel-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/visual-symbols-and-blind-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/lost-for-words-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/alternative-medicine-australia-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/play-is-serious-business-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/micro-enterprise-credit-street-youth-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/volcanoes-earth-shattering-news-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/obtaining-linguistic-data-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/how-much-higher-how-much-faster-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/nature-aims-of-archaeology-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/problem-of-scarce-resources-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-1-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-2-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-3-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-4-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## How Much Higher? How Much Faster?\n\n— Limits to human sporting performance are not yet in sight —\n\nSince the early years of the twentieth century, when the International Athletic Federation began keeping records, there has been a steady improvement in how fast athletes run, how high they jump and how far they are able to hurl massive objects, themselves included, through space. For the so-called power events — that require a relatively brief, explosive release of energy, like the 100-metre sprint and the long jump — times and distances have improved ten to twenty percent. In the endurance events the results have been more dramatic. At the 1908 Olympics, John Hayes of the U.S. team ran a marathon in a time of 2:55:18. In 1999, Morocco's Khalid Khannouchi set a new world record of 2:05:42, almost thirty percent faster.\n\nNo one theory can explain improvements in performance, but the most important factor has been genetics. ‘The athlete must choose his parents carefully,’ says Jesus Dapena, a sports scientist at Indiana University, invoking an oft-cited adage. Over the past century, the composition of the human gene pool has not changed appreciably, but with increasing global participation in athletics — and greater rewards to tempt athletes — it is more\n\nlikely that individuals possessing the unique complement of genes for athletic performance can be identified early. ‘Was there someone like [sprinter] Michael Johnson in the 1920s?’ Dapena asks. ‘I’m sure that there was, but his talent was probably never realized.’\n\nIdentifying genetically talented individuals is only the first step. Michael Yessis, an emeritus professor of Sports Science at California State University at Fullerton, maintains that ‘genetics only determines about one third of what an athlete can do. But with the right training we can go much further with that one third than we’ve been going.’ Yessis believes that U.S. runners, despite their impressive achievements, are ‘running on their genetics’. By applying more scientific methods, ‘they’re going to go much faster’. These methods include strength training that duplicates what they are doing in their running events as well as plyometrics, a technique pioneered in the former Soviet Union.\n\nWhereas most exercises are designed to build up strength or endurance, plyometrics focuses on increasing power — the rate at which an athlete can expend energy. When a sprinter runs, Yessis explains, her foot stays in contact with the ground for just under a tenth of a second, half of which is devoted to landing and the other half to pushing off. Plyometric exercises help athletes make the best use of this brief interval.\n\nNutrition is another area that sports trainers have failed to address adequately. ‘Many athletes are not getting the best nutrition, even through supplements,’ Yessis insists. Each activity has its own nutritional needs. Few coaches, for instance, understand how deficiencies in trace mineral can lead to injuries.\n\nFocused training will also play a role in enabling records to be broken. ‘If we applied the Russian training model to some of the outstanding runners we have in this country,’ Yessis asserts, ‘they would be breaking records left and right.’ He will not predict by how much, however: ‘Exactly what the limits are it’s hard to say, but there will be increase even if only by hundredths of a second, as long as our training continues to improve.’\n\nOne of the most important new methodologies is biomechanics, the study of the body in motion. A biomechanics films an athlete in action and then digitizes her performance, recording the motion of every joint and limb in three dimensions. By applying Newton’s laws to these motions, ‘we can say that this athlete’s run is not fast enough; that this one is not using his arms strongly enough during take-off,’ says Dapena, who uses these methods to help high jumpers. To date, however, biomechan- ics has made only a small difference to athletic performance.\n\nRevolutionary ideas still come from the athletes themselves. For example, during the 1968 Olympics in Mexico City, a relatively unknown high jumper named Dick Fosbury won the gold by going over the bar backwards, in complete contradiction of all the received high-jumping wisdom, a move instantly dubbed the Fosbury flop. Fosbury himself did not know what he was doing. That understanding took the later analysis of biomechanics, who put their minds to comprehending something that was too complex and unorthodox ever to have been invented through their own mathe- maticcal simula- tions. Fosbury also required another element that lies behind many improvements in athletic performance: an innovation in athletic equipment. In Fosbury’s case, it was the cushions that jumpers land on. Traditionally, high jumpers would land in pits filled with sawdust.\n\nBut by Fosbury’s time, sawdust pits had been replaced by soft foam cushions, ideal for flopping.\n\nIn the end, most people who examination human performance are humbled by the resourcefulness of athletes and the powers of the human body. ‘Once you study athletics, you learn that it’s a vexingly complex issue,’ says John S.Raglin, a sports psychologist at Indiana University. ‘Core performance is not a simple of mundane thing of higher, faster, longer. So many variables enter into the equation, and our understanding in many cases is fundamental. We’ve got a long way to go.’ For the foreseeable future, records will be made to be broken."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t4r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Modern official athletic records date from about 1900",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "There was little improvement in athletic performance before the twentieth century",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Performance has improved most greatly in events requiring an intensive burst of energy",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Improvements in athletic performance can be fully explained by genetics",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "The parents of top athletes have often been successful athletes themselves",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "The growing international importance of athletics means that gifted athletes can be recognized at a younger age",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g7",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "According to Professor Yessis, American runners are relying for their current success on",
+              "acceptedAnswers": [
+                "genetics"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 7—10 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g8",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Yessis describes a training approach from the former Soviet Union that aims to develop an athlete’s",
+              "acceptedAnswers": [
+                "power"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 7—10 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g9",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Yessis links an inadequate diet to",
+              "acceptedAnswers": [
+                "injuries"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 7—10 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g10",
+          "instruction": "Complete the sentences below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Yessis claims that the key to setting new records is better",
+              "acceptedAnswers": [
+                "training"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              10
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 7—10 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g11",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Biomechanics films are proving particularly useful because they enable trainers to A highlight areas for improvement in athletes. B assess the fitness levels of athletes. C select top athletes. D predict the success of athletes",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "highlight areas for improvement in athletes"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "assess the fitness levels of athletes"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "select top athletes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "predict the success of athletes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "highlight areas for improvement in athletes"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "assess the fitness levels of athletes"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "select top athletes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "predict the success of athletes"
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g12",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "Biomechanics specialists used theoretical models to A soften the Fosbury flop. B create the Fosbury flop. C correct the Fosbury flop. D explain the Fosbury flop. John S.Raglin believes our current knowledge of athletics is A mistaken. B basic. C diverse. D theoretical",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "highlight areas for improvement in athletes"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "assess the fitness levels of athletes"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "select top athletes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "predict the success of athletes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "highlight areas for improvement in athletes"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "assess the fitness levels of athletes"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "select top athletes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "predict the success of athletes"
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g13",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "John S.Raglin believes our current knowledge of athletics is",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "mistaken."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "basic."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "diverse."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "theoretical."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "mistaken."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "basic."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "diverse."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "theoretical."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 11 —13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## The Nature and Aims of Archaeology\n\nArchaeology is partly the discovery of the treasures of the past, partly the careful work of the scientific analyst, partly the exercise of the creative imagination. It is toiling in the sun on an excavation in the Middle-East, it is working with living Inuit in the snows of Alaska, and it is investigating the sewers of Roman Britain. But it is also the painstaking task of interpretation, so that we come to understand what these things mean for the human story. And it is the conservation of the world's cultural heritage against looting and careless harm.\n\nArchaeology, then, is both a physical activity out in the field, and an intellectual pursuit in the study or laboratory. That is part of its great attraction. The rich mixture of danger and detective work has also made it the perfect vehicle for fiction writers and filmmakers, from Agatha Christie with Murder in Mesopotamia to Stephen Spielberg with Indiana Jones. However far from reality such portrayals are, they capture the essential truth that archaeology is an exciting quest — the quest for knowledge about ourselves and our past.\n\nBut how does archaeology relate to disciplines such as anthropology and history, that are also concerned with the human story? Is archaeology itself a science? And what are the responsibilities of the archaeologist in today's world?\n\nAnthropology, at its broadest, is the study of humanity — our physical characteristic as animals and our unique non-biological characteristics that we call culture. Culture in this sense includes what the anthropologist, Edward Tylor, summarized in 1871 as ‘knowledge, belief, art, morals, custom and any other capabilities and habits acquired by man as a member of society’. Anthropologists also use the term ‘culture’ in a more restricted sense when they refer to the ‘culture’ of a particular society, meaning the nonbiological characteristics unique to that society, which distinguish it from other societies. Anthropology is thus a broad discipline — so broad that it is generally broken down into three smaller disciplines: physical anthropology, cultural anthropology and archaeology.\n\nPhysical anthropology, or biological anthropology as it is also called, concerns the study of human biological or physical characteristics and how they evolved. Cultural anthropology — or social anthropology — analyses human culture and society. Two of its branches are ethnography (the study at first hand of individual living cultures) and ethnology (which sets out to compare cultures using ethnographic evidence to derive general principles about human society).\n\nArchaeology is the ‘past tense of culture anthropology’. Whereas cultural anthropologists will often base their conclusions on the experience of living within contemporary communities, archaeologists study past societies primarily through their material remains — the buildings, tools and other artefacts that constitutes what is known as the material culture left over from former societies.\n\nNevertheless, one of the most important tasks for the archaeologist today is to know how to interpret material culture in human terms. How were those pots used? Why are some dwellings round and others square? Here the methods of archaeology and ethnography overlap. Archaeologists in recent decades have developed ‘ethnography’, where, like ethnographers, they live among contemporary communities, but with the specific purpose of learning how such societies use material culture — how they make their tools and weapons, why they build their settlements where they do, and so on. Moreover, archaeology has an active role to play in the field of conservation. Heritage studies constitutes a developing field, where it is realized that the world’s cultural heritage is a diminishing resource which holds different meanings for different people.\n\nIf, then archaeology deals with the past, in what way does it differ from history? In the broadest sense, just as archaeology is an aspect of anthropology, so too is it a part of history — where we mean the whole history of humankind from its beginnings over three million years ago. Indeed, for more than ninety-nine percent of that huge span of time, archaeology — the study of past material culture — is the only significant source of information. Conventional historical sources begin only with the introduction of written records around 3000 BC in western Asia, and much later in most other parts of the world.\n\nA commonly drawn distinction is between pre-history, i.e. the period before written records — and history in the narrow sense, meaning the study of the past using written evidence. To archaeology, which studies all cultures and periods, whether with or without writing, the distinction between history and pre-history is a convenient dividing line that recognizes the importance of the written word, but in no way lessens the importance of the useful information contained in oral histories.\n\nSince the aim of archaeology is the understanding of humankind, it is a humanistic study, and since it deals with the human past, it is a historical discipline. But it differs from the study of written history in a fundamental way. The material the archaeologist finds does not tell us directly what to think. Historical records make statements, offer opinions and pass judgments. The objects the archaeologists discover, on the other hand, tell us nothing directly in themselves. In this respect, the practice of the archaeologist is rather like that of the scientist, who collects data, conducts experiments, formulates a hypothesis, tests the hypothesis against more data, and then, in conclusion, devises a model that seems best to summarize the pattern observed in the data. The archaeologist has to develop a picture of the past, just as the scientist has to develop a coherent view of the natural world."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t4r-g14",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q14",
+              "number": 14,
+              "type": "yes_no_ng",
+              "prompt": "Archaeology involves creativity as well as careful investigative work",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g15",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q15",
+              "number": 15,
+              "type": "true_false_ng",
+              "prompt": "Archaeologists must be able to translate texts from ancient languages",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g16",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q16",
+              "number": 16,
+              "type": "yes_no_ng",
+              "prompt": "Movies give a realistic picture of the work of archaeologists",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g17",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q17",
+              "number": 17,
+              "type": "yes_no_ng",
+              "prompt": "Anthropologists define culture in more than one way",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g18",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q18",
+              "number": 18,
+              "type": "true_false_ng",
+              "prompt": "Archaeology is a more demanding field of study than anthropology",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g19",
+          "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q19",
+              "number": 19,
+              "type": "yes_no_ng",
+              "prompt": "The history of Europe has been documented since 3,000 BC",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g20",
+          "instruction": "Choose TWO letters A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q20",
+              "number": 20,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO statements about anthropology are mentioned by the writer of the text?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is important for government planners."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is a continually growing field of study."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It often involves long periods of fieldwork."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is subdivided for study purposes."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It studies human evolutionary patterns."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is important for government planners."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is a continually growing field of study."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It often involves long periods of fieldwork."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is subdivided for study purposes."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It studies human evolutionary patterns."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:52.234630+00:00"
+          }
+        },
+        {
+          "id": "c4t4r-g21",
+          "instruction": "Choose TWO letters A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q21",
+              "number": 21,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO statements about anthropology are mentioned by the writer of the text?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is important for government planners."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is a continually growing field of study."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It often involves long periods of fieldwork."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is subdivided for study purposes."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It studies human evolutionary patterns."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is important for government planners."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is a continually growing field of study."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It often involves long periods of fieldwork."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is subdivided for study purposes."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It studies human evolutionary patterns."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:52.235138+00:00"
+          }
+        },
+        {
+          "id": "c4t4r-g22",
+          "instruction": "Choose TWO letters A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q22",
+              "number": 22,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO tasks of an archaeologist are mentioned by the writer of the text?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "examining ancient waste sites to investigate diet"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "studying cave art to determine its significance"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "deducing reasons for the shape of domestic buildings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "investigating the way different cultures make and use objects."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "examining evidence for past climate changes"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "examining ancient waste sites to investigate diet"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "studying cave art to determine its significance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "deducing reasons for the shape of domestic buildings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "investigating the way different cultures make and use objects."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "examining evidence for past climate changes"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:00:31.683362+00:00"
+          }
+        },
+        {
+          "id": "c4t4r-g23",
+          "instruction": "Choose TWO letters A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q23",
+              "number": 23,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO tasks of an archaeologist are mentioned by the writer of the text?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "examining ancient waste sites to investigate diet"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "studying cave art to determine its significance"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "deducing reasons for the shape of domestic buildings"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "investigating the way different cultures make and use objects."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "examining evidence for past climate changes"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "examining ancient waste sites to investigate diet"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "studying cave art to determine its significance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "deducing reasons for the shape of domestic buildings"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "investigating the way different cultures make and use objects."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "examining evidence for past climate changes"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T02:00:31.683362+00:00"
+          }
+        },
+        {
+          "id": "c4t4r-g24",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Much of the work of archaeologists can be done using written records but they find ___ equally valuable.",
+              "acceptedAnswers": [
+                "oral histories"
+              ],
+              "gapText": "Much of the work of archaeologists can be done using written records but they find 24 ___ equally valuable.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 24 —27 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g25",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "The writer describes archaeology as both a ___ and a ___.",
+              "acceptedAnswers": [
+                "humanistic study"
+              ],
+              "gapText": "The writer describes archaeology as both a 25 ___ and a 26 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 24 —27 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g26",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "_. However, as archaeologists do not try to influence human behavior, the writer compares their style of working to that of a 27",
+              "acceptedAnswers": [
+                "historical discipline"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 24 —27 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 28—40 which are based on\n\nReading Passage 3 on the following pages.\n\nQuestions 28—31\n\nReading Passage 3 has five sections A—E.\n\nChoose the correct heading for section A and C—E from the list of headings\n\nbelow.\n\nWrite the correct number i—viii in the boxes 28 —31 on your answer sheet.\n\n## List of Headings\n\ni The connection between health-care and other human rights\n\nii The development of market-based health systems\n\niii The role of the state in health-care\n\niv A problem shared by every economically developed country\n\nv The impact of recent change\n\nvi The views of the medical establishment\n\nvii The end of an illusion\n\nviii Sustainable economic development\n\n## 28 Section A\n\nExample\n\nAnswer\n\nSection B\n\nviii\n\n29 Section C\n\n30 Section D\n\n31 Section E\n\n## The Problem of Scarce Resources\n\n## Section A\n\nThe problem of how health-care resources should be allocated or apportioned, so that they are distributed in both the most just and most efficient way, is not a new one. Every health system in an economically developed society is faced with the need to decide (either formally or informally) what proportion of the community’s total resources should be spent on health-care; how resources are to be apportioned; what diseases and disabilities and which forms of treatment are to be given priority; which members of the community are to be given special consideration in respect of their health needs; and which forms of treatment are the most cost-effective.\n\n## Section B\n\nWhat is new is that, from the 1950s onwards, there have been certain general changes in outlook about the finitude of resources as a whole and of health-care resources in particular, as well as more specific changes regarding the clientele of health-care resources and the cost to the community of those resources. Thus, in the 1950s and 1960s, there emerged an awareness in Western societies that resources for the provision of fossil fuel energy were finite and exhaustible and that the capacity of nature or the environment to sustain economic development and population was also finite. In other words, we became aware of the obvious fact that there were ‘limits to growth’. The new consciousness that there were also severe limits to health-care resources was part of this general revelation of the obvious. Looking back, it now seems quite incredible that in the national health systems that emerged in many counties in the years immediately after the 1939—45 World War, it was assumed without question that all the basic health needs of any community could be satisfied, at least in principle; the ‘invisible hand’ of economic progress would provide.\n\n## Section C\n\nHowever, at exactly the same time as this new realization of the finite character of health-care resources was sinking in, an awareness of a contrary kind was developing in Western societies: that people have a basic right to health-care as a necessary condition of a proper human life. Like education, political and legal processes and institutions, public order, communication, transport and money supply, health-care came to be seen as one of the fundamental social facilities necessary for people to exercise their other rights as autonomous human beings. People are not in a position to exercise personal liberty and to be self-determining if they are poverty-stricken, or deprived of basic education, or do not live within a context of law and order. In the same way, basic health-care is a condition of the exercise of autonomy.\n\n## Section D\n\nAlthough the language of ‘rights’ sometimes leads to confusion, by the late 1970s it was recognized in most societies that people have a right to health-care (though there has been considerable resistance in the United States to the idea that there is a formal right to health-care). It is also accepted that this right generates an obligation or duty for the state to ensure that adequate health-care resources are provided out of the public purse. The state has no obligation to provide a health-care system itself, but to ensure that such a system is provided. Put another way, basic health-care is now recognized as a ‘public good’, rather than a ‘private good’ that one is expected to buy for oneself. As the 1976 declaration of the World Health Organization put it: ‘The enjoyment of the highest attainable standard of health is one of the fundamental rights of every human being without distinction of race, religion, political belief, economic or social condition.’ As has just been remarked, in a liberal society basic health is seen as one of the indispensable conditions for the exercise of personal autonomy.\n\n## Section E\n\nJust at the time when it became obvious that health-care resources could not possibly meet the demands being made upon them, people were demanding that their fundamental right to health-care be satisfied by the state. The second set of more specific changes that have led to the present concern about the distribution of health-care resources stems from the dramatic rise in health costs in most OECD① countries, accompanied by large-scale demographic and social changes which have meant, to take one example, that elderly\n\npeople are now major (and relatively very expensive) consumers of health-care resources. Thus in OECD countries as a whole, health costs increased from 3.8% of GDP② in 1960 to 7% of GDP in 1980, and it has been predicted that the proportion of health costs to GDP will continue to increase. (In the US the current figure is about 12% of GDP, and in Australia about 7.8% of GDP.)\n\nAs a consequence, during the 1980s a kind of doomsday scenario (analogous to similar doomsday extrapolations about energy needs and fossil fuels or about population increases) was projected by health administrators, economists and politicians. In this scenario, ever-rising health costs were matched against static or declining resources.\n\n①. Organization for Economic Cooperation and Development\n\n②. Gross Domestic Product"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t4r-g27",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "However, as archaeologists do not try to influence human behaviour, the writer compares their style of working to that of a ___.",
+              "acceptedAnswers": [
+                "scientist"
+              ],
+              "gapText": "However, as archaeologists do not try to influence human behaviour, the writer compares their style of working to that of a 27 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 24 —27 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g28",
+          "instruction": "Reading Passage has five sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Section A",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The connection between health-care and other human rights"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The development of market-based health systems"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The role of the state in health-care"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "A problem shared by every economically developed country"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The impact of recent change"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "The views of the medical establishment"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "The end of an illusion"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Sustainable economic development"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:11.891790+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The connection between health-care and other human rights"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of market-based health systems"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The role of the state in health-care"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A problem shared by every economically developed country"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The impact of recent change"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The views of the medical establishment"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The end of an illusion"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Sustainable economic development"
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g29",
+          "instruction": "Reading Passage has five sections.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Section C",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The connection between health-care and other human rights"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "The development of market-based health systems"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "The role of the state in health-care"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "A problem shared by every economically developed country"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "The impact of recent change"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "The views of the medical establishment"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "The end of an illusion"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Sustainable economic development"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The connection between health-care and other human rights"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of market-based health systems"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The role of the state in health-care"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A problem shared by every economically developed country"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The impact of recent change"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The views of the medical establishment"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The end of an illusion"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Sustainable economic development"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:11.891790+00:00"
+          }
+        },
+        {
+          "id": "c4t4r-g30",
+          "instruction": "Reading Passage has five sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "Section D",
+              "acceptedAnswers": [
+                "iii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:11.891790+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The connection between health-care and other human rights"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of market-based health systems"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The role of the state in health-care"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A problem shared by every economically developed country"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The impact of recent change"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The views of the medical establishment"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The end of an illusion"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Sustainable economic development"
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g31",
+          "instruction": "Reading Passage has five sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "Section E",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:11.891790+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The connection between health-care and other human rights"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "The development of market-based health systems"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "The role of the state in health-care"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A problem shared by every economically developed country"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "The impact of recent change"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The views of the medical establishment"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The end of an illusion"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Sustainable economic development"
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g32",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "The realization that the resources of the national health systems were limited",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "between 1945 and 1950"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "between 1950 and 1980"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "after 1980"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "between 1945 and 1950"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "between 1950 and 1980"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "after 1980"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              35
+            ],
+            "canonicalOf": [
+              "Write the correct letter A, B or C in boxes 32 —35 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g33",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "A sharp rise in the cost of health-care",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "between 1945 and 1950"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "between 1950 and 1980"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "after 1980"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "between 1945 and 1950"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "between 1950 and 1980"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "after 1980"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              35
+            ],
+            "canonicalOf": [
+              "Write the correct letter A, B or C in boxes 32 —35 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g34",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "A belief that all the health-care resources the community needed would be produced by economic growth",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "between 1945 and 1950"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "between 1950 and 1980"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "after 1980"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "between 1945 and 1950"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "between 1950 and 1980"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "after 1980"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              35
+            ],
+            "canonicalOf": [
+              "Write the correct letter A, B or C in boxes 32 —35 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g35",
+          "instruction": "Classify the following statements.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "An acceptance of the role of the state in guaranteeing the provision of health-care",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "between 1945 and 1950"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "between 1950 and 1980"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "after 1980"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:51:30+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "between 1945 and 1950"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "between 1950 and 1980"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "after 1980"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              32,
+              35
+            ],
+            "canonicalOf": [
+              "Write the correct letter A, B or C in boxes 32 —35 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t4r-g36",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q36",
+              "number": 36,
+              "type": "yes_no_ng",
+              "prompt": "Personal liberty and independence have never been regarded as directly linked to health-care",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g37",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q37",
+              "number": 37,
+              "type": "yes_no_ng",
+              "prompt": "Health-care came to be seen as a right at about the same time that the limits of health-care resources became evident",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g38",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q38",
+              "number": 38,
+              "type": "yes_no_ng",
+              "prompt": "In OECD countries population changes have had an impact on health-care costs in recent years",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g39",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q39",
+              "number": 39,
+              "type": "true_false_ng",
+              "prompt": "OECD governments have consistently underestimated the level of health-care provision needed",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t4r-g40",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4r-q40",
+              "number": 40,
+              "type": "true_false_ng",
+              "prompt": "In most economically developed countries the elderly will have to make special provision for their health-care in the future",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

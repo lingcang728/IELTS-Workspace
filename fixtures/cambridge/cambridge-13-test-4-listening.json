@@ -1,0 +1,2053 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-13-test-4-listening",
+  "title": "Cambridge IELTS 13 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0012-b91e73b3",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 13",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题13.pdf",
+        "sha256": "48bd75f7020065184a228ff32775802b887c8da18f77bccdb44c3e569e06a3bf"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C13\\剑桥雅思真题13\\auto\\剑桥雅思真题13.md",
+        "sha256": "5504759cfa0afc4b665c6af7e59bd8d4d70aa6e7f1785dd19bd71e7c4185fdb0",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=10, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-13-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nAlex's Training\n\nExample Alex completed his training in 2014\n\nAbout the applicant: At first, Alex did his training in the 1 . department. Alex didn't have a qualification from school in 2 Alex thinks he should have done the diploma in 3 . .. skills.\n\n11 Annie recommends that when cross-country skiing, the visitors should \nA get away from the regular trails. \nB stop to enjoy views of the scenery. \nC go at a slow speed at the beginning. \n12 What does Annie tell the group about this afternoon's dog-sled trip? \nA Those who want to can take part in a race. \nB Anyone has the chance to drive a team of dogs. \nC One group member will be chosen to lead the trail. \n13 What does Annie say about the team relay event? \nA All participants receive a medal. \nB The course is 4 km long. \nC Each team is led by a teacher. \n14 On the snow-shoe trip, the visitors will \nA visit an old gold mine. \nBlearn about unusual flowers. \nC climb to the top of a mountain. \n15 The cost of accommodation in the mountain hut includes \nA a supply of drinking water. \nB transport of visitors' luggage. \nC cooked meals. \n16 If there is a storm while the visitors are in the hut, they should \nA contact the bus driver. \nB wait until the weather improves. \nC use the emergency locator beacon."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t4l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "Finance"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "About the applicant: At first, Alex did his training in the 1 . department. Alex didn't have a qualification from school in",
+              "acceptedAnswers": [
+                "Maths",
+                "Math",
+                "Mathematics"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Alex thinks he should have done the diploma in ___ skills.",
+              "acceptedAnswers": [
+                "business"
+              ],
+              "gapText": "Alex thinks he should have done the diploma in 3 ___ skills.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Age of other trainees: the youngest was ___.",
+              "acceptedAnswers": [
+                "17",
+                "seventeen"
+              ],
+              "gapText": "Age of other trainees: the youngest was 4 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Trainees receive the same amount of ___ as permanent staff.",
+              "acceptedAnswers": [
+                "holiday(s)",
+                "vacation (s)"
+              ],
+              "gapText": "Trainees receive the same amount of 5 ___ as permanent staff.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Trainees go to ___ one day per month.",
+              "acceptedAnswers": [
+                "college"
+              ],
+              "gapText": "Trainees go to 6 ___ one day per month.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The company is in a convenient ___.",
+              "acceptedAnswers": [
+                "location"
+              ],
+              "gapText": "The company is in a convenient 7 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Don't wear ___.",
+              "acceptedAnswers": [
+                "jeans"
+              ],
+              "gapText": "Don't wear 8 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Don't be ___.",
+              "acceptedAnswers": [
+                "late"
+              ],
+              "gapText": "Don't be 9 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Make sure you ___.",
+              "acceptedAnswers": [
+                "smile"
+              ],
+              "gapText": "Make sure you 10 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 466161
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\nQuestions 11–16\n\nChoose the correct letter, A, B or C.\n\n## The Snow Centre\n\nQuestions 17–20\n\nWhat information does Annie give about skiing on each of the following mountain trails?\n\nChoose FOuR answers from the box and write the correct letter, A-F, next to Questions 17–20.\n\n## Information\n\nA It has a good place to stop and rest.\n\nB It is suitable for all abilities.\n\nC It involves crossing a river.\n\nD It demands a lot of skill.\n\nE It may be closed in bad weather.\n\nF It has some very narrow sections.\n\n## Mountain trails\n\n17 Highland Trail\n\n18 Pine Trail\n\n19 Stony Trail\n\n20 Loser's Trail"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t4l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Choose the correct letter, A, B or C.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "get away from the regular trails."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "stop to enjoy views of the scenery."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "go at a slow speed at the beginning."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.705857+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "What does Annie tell the group about this afternoon's dog-sled trip?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Those who want to can take part in a race."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Anyone has the chance to drive a team of dogs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "One group member will be chosen to lead the trail."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has a good place to stop and rest"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is suitable for all abilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It involves crossing a river"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It demands a lot of skill"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It may be closed in bad weather"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It has some very narrow sections"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "What does Annie say about the team relay event?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "All participants receive a medal."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The course is 4 km long."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Each team is led by a teacher."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has a good place to stop and rest"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is suitable for all abilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It involves crossing a river"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It demands a lot of skill"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It may be closed in bad weather"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It has some very narrow sections"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "On the snow-shoe trip, the visitors will",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "visit an old gold mine."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "learn about unusual flowers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "climb to the top of a mountain."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has a good place to stop and rest"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is suitable for all abilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It involves crossing a river"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It demands a lot of skill"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It may be closed in bad weather"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It has some very narrow sections"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "The cost of accommodation in the mountain hut includes",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a supply of drinking water."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "transport of visitors' luggage."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cooked meals."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has a good place to stop and rest"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is suitable for all abilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It involves crossing a river"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It demands a lot of skill"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It may be closed in bad weather"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It has some very narrow sections"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "If there is a storm while the visitors are in the hut, they should",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "contact the bus driver."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "wait until the weather improves."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "use the emergency locator beacon."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has a good place to stop and rest"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is suitable for all abilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It involves crossing a river"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It demands a lot of skill"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It may be closed in bad weather"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It has some very narrow sections"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g17",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "Highland Trail",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It has a good place to stop and rest"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is suitable for all abilities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It involves crossing a river"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It demands a lot of skill"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It may be closed in bad weather"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It has some very narrow sections"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has a good place to stop and rest"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is suitable for all abilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It involves crossing a river"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It demands a lot of skill"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It may be closed in bad weather"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It has some very narrow sections"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g18",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Pine Trail",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.705857+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It has a good place to stop and rest."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is suitable for all abilities."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It involves crossing a river."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It demands a lot of skill."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It may be closed in bad weather."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It has some very narrow sections."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g19",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Stony Trail",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It has a good place to stop and rest"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is suitable for all abilities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It involves crossing a river"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It demands a lot of skill"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It may be closed in bad weather"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It has some very narrow sections"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It has a good place to stop and rest"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is suitable for all abilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It involves crossing a river"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It demands a lot of skill"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It may be closed in bad weather"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It has some very narrow sections"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g20",
+          "instruction": "Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "Loser's Trail",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.705857+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It has a good place to stop and rest."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is suitable for all abilities."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It involves crossing a river."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It demands a lot of skill."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It may be closed in bad weather."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It has some very narrow sections."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 466161,
+      "audioDurationMs": 412064
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\nQuestions 21–26\n\nChoose the correct letter, A, B or C.\n\n## Labels giving nutritional information on food packaging\n\n21 What was Jack's attitude to nutritional food labels before this project?\n\nA He didn't read everything on them.\n\nB He didn't think they were important.\n\nC He thought they were too complicated.\n\n22 Alice says that before doing this project,\n\nA she was unaware of what certain foods contained.\n\nB she was too lazy to read food labels.\n\nC she was only interested in the number of calories.\n\n23 When discussing supermarket brands of pizza, Jack agrees with Alice that\n\nA the list of ingredients is shocking.\n\nB he will hesitate before buying pizza again.\n\nC the nutritional label is misleading.\n\n24 Jack prefers the daily value system to other labelling systems because it is\n\nA more accessible.\n\nB more logical.\n\nC more comprehensive.\n\n25 What surprised both students about one flavour of crisps?\n\nA The percentage of artificial additives given was incorrect.\n\nB The products did not contain any meat.\n\nC The labels did not list all the ingredients.\n\n26 What do the students think about research into the impact of nutritional food labelling?\n\nA It did not produce clear results.\n\nB It focused on the wrong people.\n\nC It made unrealistic recommendations.\n\n## Test 4\n\n## Questions 27 and 28\n\n## Choose TWO letters, A-E.\n\nWhich TWO things surprised the students about the traffic-light system for nutritional labels?\n\nA its widespread use\n\nB the fact that it is voluntary for supermarkets\n\nC how little research was done before its introduction\n\nD its unpopularity with food manufacturers\n\nE the way that certain colours are used\n\n## Questions 29 and 30\n\nChoose TWO letters, A-E.\n\nWhich TWO things are true about the participants in the study on the traffic-light system?\n\nA They had low literacy levels\n\nB They were regular consumers of packaged food.\n\nC They were selected randomly.\n\nD They were from all socio-economic groups\n\nE They were interviewed face-to-face."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t4l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "What was Jack's attitude to nutritional food labels before this project? A He didn't read everything on them. B He didn't think they were important. C He thought they were too complicated",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He didn't read everything on them"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He didn't think they were important"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He thought they were too complicated"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He didn't read everything on them"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He didn't think they were important"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He thought they were too complicated"
+            }
+          ]
+        },
+        {
+          "id": "c13t4l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Alice says that before doing this project, A she was unaware of what certain foods contained. B she was too lazy to read food labels. C she was only interested in the number of calories",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He didn't read everything on them"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He didn't think they were important"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He thought they were too complicated"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He didn't read everything on them"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He didn't think they were important"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He thought they were too complicated"
+            }
+          ]
+        },
+        {
+          "id": "c13t4l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "When discussing supermarket brands of pizza, Jack agrees with Alice that A the list of ingredients is shocking. B he will hesitate before buying pizza again. C the nutritional label is misleading",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He didn't think they were important"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He thought they were too complicated"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "she was unaware of what certain foods contained"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He didn't think they were important"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He thought they were too complicated"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "she was unaware of what certain foods contained"
+            }
+          ]
+        },
+        {
+          "id": "c13t4l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Jack prefers the daily value system to other labelling systems because it is A more accessible. B more logical. C more comprehensive",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "she was too lazy to read food labels"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "she was only interested in the number of calories"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the list of ingredients is shocking"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "she was too lazy to read food labels"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "she was only interested in the number of calories"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the list of ingredients is shocking"
+            }
+          ]
+        },
+        {
+          "id": "c13t4l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "What surprised both students about one flavour of crisps? A The percentage of artificial additives given was incorrect. B The products did not contain any meat. C The labels did not list all the ingredients",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the list of ingredients is shocking"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "he will hesitate before buying pizza again"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the nutritional label is misleading"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its unpopularity with food manufacturers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the way that certain colours are used"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the list of ingredients is shocking"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "he will hesitate before buying pizza again"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the nutritional label is misleading"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "its unpopularity with food manufacturers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the way that certain colours are used"
+            }
+          ]
+        },
+        {
+          "id": "c13t4l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "What do the students think about research into the impact of nutritional food labelling? A It did not produce clear results. B It focused on the wrong people. C It made unrealistic recommendations",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "more accessible"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "more logical"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "more comprehensive"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its unpopularity with food manufacturers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the way that certain colours are used"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "more accessible"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "more logical"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "more comprehensive"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "its unpopularity with food manufacturers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the way that certain colours are used"
+            }
+          ]
+        },
+        {
+          "id": "c13t4l-g27",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q27",
+              "number": 27,
+              "type": "multi_choice",
+              "prompt": "Which TWO things surprised the students about the traffic-light system for nutritional labels? (Question 27)",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its widespread use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that it is voluntary for supermarkets"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how little research was done before its introduction"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its unpopularity with food manufacturers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the way that certain colours are used"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              28
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g28",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q28",
+              "number": 28,
+              "type": "multi_choice",
+              "prompt": "Which TWO things surprised the students about the traffic-light system for nutritional labels? (Question 28)",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its widespread use"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that it is voluntary for supermarkets"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how little research was done before its introduction"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its unpopularity with food manufacturers"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "the way that certain colours are used"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              28
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g29",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q29",
+              "number": 29,
+              "type": "multi_choice",
+              "prompt": "Which TWO things are true about the participants in the study on the traffic-light system? (Question 29)",
+              "acceptedAnswers": [
+                "D",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They had low literacy levels."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They were regular consumers of packaged food."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They were selected randomly."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They were from all socio-economic groups."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "They were interviewed face-to-face."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              29,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g30",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q30",
+              "number": 30,
+              "type": "multi_choice",
+              "prompt": "Which TWO things are true about the participants in the study on the traffic-light system? (Question 30)",
+              "acceptedAnswers": [
+                "D",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They had low literacy levels."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They were regular consumers of packaged food."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They were selected randomly."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They were from all socio-economic groups."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "They were interviewed face-to-face."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:05+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              29,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 878226,
+      "audioDurationMs": 450198
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The history of coffee\n\n## Coffee in the Arab world\n\n• There was small-scale trade in wild coffee from Ethiopia.\n\n• 1522: Coffee was approved in the Ottoman court as a type of medicine.\n\n1623: In Constantinople, the ruler ordered the 31 of every coffee house.\n\nCoffee arrives in Europe (17th century)\n\n• Coffee shops were compared to 32.\n\n•They played an important part in social and hanges.\n\n• European powers established coffee plantations in their colonies\n\nTypes of cofe were often named according to the 34 .hey came from.\n\nIn Brazil and the Caribbean, most cultivation depended on 35 ....\n\nIn Java, coffe was used as a form of 36..\n\nCoffe became almost as important as 3..\n\nThe move towards te consumption of 38n ritain did not also take place in the USA.\n\n## Coffee in the 19th century\n\nPrices dropped because of improvements in 39.\n\nIndustrial workers found coffe helped them to work at 4.."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t4l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "In 1623: In Constantinople, the ruler ordered the ___ of every coffee house.",
+              "acceptedAnswers": [
+                "destruction"
+              ],
+              "gapText": "In 1623: In Constantinople, the ruler ordered the 31 ___ of every coffee house.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Coffee shops were compared to ___.",
+              "acceptedAnswers": [
+                "universities",
+                "university"
+              ],
+              "gapText": "Coffee shops were compared to 32 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "They played an important part in social and ___ changes.",
+              "acceptedAnswers": [
+                "political"
+              ],
+              "gapText": "They played an important part in social and 33 ___ changes.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Types of coffee were often named according to the ___ they came from.",
+              "acceptedAnswers": [
+                "port(s)"
+              ],
+              "gapText": "Types of coffee were often named according to the 34 ___ they came from.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "In Brazil and the Caribbean, most cultivation depended on ___.",
+              "acceptedAnswers": [
+                "slaves",
+                "slavery"
+              ],
+              "gapText": "In Brazil and the Caribbean, most cultivation depended on 35 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "In Java, coffee was used as a form of ___.",
+              "acceptedAnswers": [
+                "taxation"
+              ],
+              "gapText": "In Java, coffee was used as a form of 36 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Coffee became almost as important as ___.",
+              "acceptedAnswers": [
+                "sugar"
+              ],
+              "gapText": "Coffee became almost as important as 37 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "The move towards the consumption of ___ in Britain did not also take place in the USA.",
+              "acceptedAnswers": [
+                "tea"
+              ],
+              "gapText": "The move towards the consumption of 38 ___ in Britain did not also take place in the USA.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Prices dropped because of improvements in ___.",
+              "acceptedAnswers": [
+                "transportation"
+              ],
+              "gapText": "Prices dropped because of improvements in 39 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t4l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t4l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Industrial workers found coffee helped them to work at ___.",
+              "acceptedAnswers": [
+                "night"
+              ],
+              "gapText": "Industrial workers found coffee helped them to work at 40 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:24+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1328424,
+      "audioDurationMs": 477742
+    }
+  ]
+}

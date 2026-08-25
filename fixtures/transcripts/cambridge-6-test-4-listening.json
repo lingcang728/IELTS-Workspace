@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-6-test-4-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 6,
+    "test": 4
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    25,
+    26,
+    27,
+    29,
+    30,
+    33,
+    34,
+    35,
+    36,
+    37,
+    40
+  ],
+  "missingMarkers": [
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    22,
+    23,
+    24,
+    28,
+    31,
+    32,
+    38,
+    39
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": "PIETER",
+          "text": "Good morning. I'd like to open a bank account, please.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Certainly. If you'd like to take a seat, I'll just get some details from you.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "It won't take long.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Thanks.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Is it a current account or a deposit account you wanted?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "A current account. Exan",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Right. I've got the application form here then. We have different",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "types – I see you've got our leaflet there.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "I've decided on the one called 'Select.",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Right, that's fine, so, first of all, can I have your full name please?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Yes, it's PieterHenes. That's P-I-E-T-E-R.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Is it H-E-double N-E-S?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Uh, only one N actually. It's a less common spelling of the name.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, right. OK. And what's your date of birth please?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "The twenty-seventh of the first, ninetcen seventy-three.",
+          "answers": [
+            2
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Right. And will this be a joint account?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "No, just myself.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "OK, fine. And where are you living, Mr Henes?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "15, Riverside.",
+          "answers": [
+            3
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Excter?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Yes.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "How long have you been at your present address? Er, is it more than two years?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Ah, just two weeks actually. I only arrived in the country a month ago. I'm from Holland.",
+          "answers": [
+            4
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, that's fine. But we normally ask for a previous address in that case.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Oh yes, well, it's Rielsdorf 2. That's R-I-E-L-S-D-O-R-F 2,",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Holland. OK. Thank you. Do you have a daytime telephone number?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Yes, I think the number at my office is six-oh-six-two-nine-five. Um, just a minute, I'd better check, Oh, no sorry, six-one-six. I'm not used to it yet. Would you like my home number too?",
+          "answers": [
+            5
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes please.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "It's seven-nine-six-four-three-one.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Are they both local numbers?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Yes.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Right. And your occupation?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Well, I'm in Britain as a project manager, but that's not my main job. I'm an engineer by profession.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "I see. I think I'll put that then. It's shorter! Now we usually ask for a picce of information which we can use to check your identity, for security reasons. You know, if you phone us.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Like, erm, my wife's first name?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Mother's might be better. It's less likely to be known.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "OK. Hers is Siti.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Siti?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Yes, S-I-T-I. It's Indonesian.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Fine. And how much would you like to open your account with? We usually ask for a minimum sum of £50. That's about €75.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Well, I'm going to transfer €2,000 from my Dutch account, just till I getQ8 paid. In fact, I wanted to ask you about that. What's the best way to do it?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "It's the Fransen Bank in Utrecht.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "OK, fine. I'll check that in a minute. If we have links with them we can do a direct transfer. But it's not a big problem either way. Um, let's see. How often would you like to receive statements?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "I haven't really thought. Um, what's the usual thing?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "It's up to you. Some people like them weekly.",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Oh, no, that's too often. Can I have them sent, um, once a month?",
+          "answers": [
+            9
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes, that's fine. Is there anything else?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "I was thinking of registering for your internet service at some stage.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, yes. Would you like me to send you information about that?",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Please, yes.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "And would you like to receive information about the bank's other",
+          "answers": []
+        },
+        {
+          "speaker": "PIETER",
+          "text": "Hmm, I don't think so, thanks.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "That's OK then. And one last thing, if you agree . . .",
+          "answers": []
+        }
+      ],
+      "charCount": 2893,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Welcome, everybody, to the lovely house and gardens of Rosewood, once the home of the famous writer, Sebastian George. He bought the house in 1902 although he had first seen it two years earlier. At that time the owners let it out to a tenant because George was too Qi1 slow making up his mind to buy it.When it came back on the market, there was no hesitation and he bought it immediately, for £9,300, even though the house had no bathroom, no running water upstairs, and no electricity.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "When he came here, he'd been married for ten years. During that time, he'd become one of the most famous writers in the English-speaking world.His professional success was enormous, but his personal life wasn't as successful. He was no longer on speaking terms with his brother and had been devastated by the death at the age of seven of his elder daughter, Josephine.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Moving to Rosewood allowed the family to start a new life. George regarded Rosewood as a pure example of a traditional country house of this part of England and did some of his most successful writing here. The house and its grounds became the family haven and their escape to privacy and quiet. The walls, and the mullioned windows were built of the local sandstone, the tiles on the roofs and the bricks of the chimney stack were baked from local clay, and the wooden structures inside came from oak trees which grow around here.",
+          "answers": [
+            13
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now, please look at the map I've given you of the house and gardens. We're here at the Information Centre. Follow the path marked with the arrow and the first area you come to is the orchard on your left.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "As you go further down the path, there's the kitchen garden on the right and as you go round the first sharp corner you will find, to your left, an arca where different types of pear tree have been planted as well as some lovely flowers, and this is known as Pear Allcydesigned by George himself.",
+          "answers": [
+            14
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Next to this is the greenhouse where some exotic plants and fruits are grown. Follow the path round the second corner and on your right you will see the entrance to the Mulberry",
+          "answers": [
+            15
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Garden with its 500-year-old tree. Past the Mulberry Garden, follow the path until you reach the front of the house. I suggest you spend a good hour wandering around this lovely building. A guide takes visitor groups round every two hours.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "If you would like to purchase any of George's books or other souvenirs, then leave the house by the side entrance, where you will find our shop, which is situated between the house and the garage which contains the magnificent old Rolls-Royce car which used to belong to George. I expect by this time you may also be in need of a rest and some refreshment. Most visitors are, so why don't you visit the tea room on the far side of the garage?",
+          "answers": [
+            16,
+            17
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "If you have time, there is a lovely walk down towards the River Dudwell. For me, this is the best part of the estate. This isn't on the map but it is all clearly signposted. You cross the field which spreads along the banks of the river. In spring, this area is well worth a visit. Spend a minute or two watching the water pass by underneath as you cross the footbridge, and then continue along the River Walk through the woodland. On a hot summer's day the trees along this path provide welcome shade. Eventually you come to the water mill which used to provide the electricity for the house - only about four hours every evening – in George's time. And, finally, for those of you who would like to see stunning views of the surrounding countryside and who are a little bit more energetic, when you return from the mill take the first turning on your left and climb up to the viewpoint. You won't regret it.",
+          "answers": [
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Enjoy your visit!",
+          "answers": []
+        }
+      ],
+      "charCount": 3670,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": "JACK",
+          "text": "Lucy, we really need to get working on this marketing assignment. We've only got five weeks left to the end of term to design it, carry it out, and then write up the results.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Sure. Well, let's get started right now. Let's go over the instructions. What exactly do we have to do?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Well, it says here we have to look at one area of the entertainment industry. There's a list of the different types.",
+          "answers": [
+            21
+          ]
+        },
+        {
+          "speaker": "LUCY",
+          "text": "What are they?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Music, cinema, theatre, sport, and eating out.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Is that all?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Looks like it.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "So we choose one branch of the industry and then we look at how two different groups of people use it? Is that right?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Yes.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "And do we have to use any particular method to get our data? Can we mail out a questionnaire, or do face-to-face interviews, or maybe even observations?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Well actually, it looks like we don't have a choice. We have to do telephone interviews",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "OK, so at least we don't have to waste time deciding between the different methods.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Yeah, that's right. Oh, and the other requirement is the number of interviewees.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Not too many, I hope. 'Ten? Twenty?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Well, we have to do two groups, remember, and it looks like we have to interview fifteen for cach group.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "That's thirty altogether then. It's going to take ages.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Yes, but remember we're working on this together, so we'll only have to do fifteen each",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "OK, so those are all the requirements?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Yes, looks like it.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "So, first, which area are we going to choose? My preference would be cinema, since that's where I spend most of my money.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Hmm, I don't think that's such a good idea. I don't think there are huge differences in the market there. I mean you get young and old, male and female, rich and poor all going to the same movies.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Yeah, maybe you're right. Let's make it music then.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Right. So, what two groups will we compare and contrast?",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Male and female?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "No. Most of my female friends like the same music as me. Different age groups would be much more likely to show up differences, I think.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Yeah, I suppose you're right again. I'll take some notes, shall I? So. . . Age Groups. Well. What do you think? Maybe twenty-five or under for one group, and forty-five or over for the other group? That should show up differences.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Right.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "OK. Next. How about the kind of music they like - let's give them some choices and then we can just tick boxes.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "OK. Let's have pop, jazz, folk, casy listening . . . What else?",
+          "answers": [
+            25
+          ]
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Well, we should include classical. Some people like it, you know.",
+          "answers": [
+            26
+          ]
+        },
+        {
+          "speaker": "JACK",
+          "text": "OK. OK. And then we should have how they listen to music.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "The medium. Right. Let's include radio, CD – and then 1 guess there's TV.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "What about concerts? You know, in pubs and halls.",
+          "answers": [
+            27
+          ]
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Oh yeah, we should include live music of course.",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "OK, we're on a roll now! Next point could be about where they actually get their music.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "You mean like, do they buy it in music shops, or department",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "Yes, or download it from the Internet.",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Right. That could be for recorded music. Then we need another section",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "OK. Let's say disco, pub, club, concert hall . ..",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": "LUCY",
+          "text": "Or opera house! And I guess we should include karaoke bars.",
+          "answers": [
+            30
+          ]
+        },
+        {
+          "speaker": "JACK",
+          "text": "Not many of them in this city!",
+          "answers": []
+        },
+        {
+          "speaker": "LUCY",
+          "text": "OK. We'll leave that out then. So, what's left to do?",
+          "answers": []
+        },
+        {
+          "speaker": "JACK",
+          "text": "That's it. Well, now we can make a time-scale for doing it.",
+          "answers": []
+        }
+      ],
+      "charCount": 3121,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Good morning everyone. Last week we were looking at the hunter-gatherers in Ireland, across the Irish Sea from England. Today, we're going to move on to the period between four and six thousand years ago, known as the Neolithic period, which is when a total farming economy was introduced in Ireland.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Now, there are several hypotheses about the origins of the first Neolithic settlers in Ireland, O31 but most of these contain problems. For instance, there are considerable archacological difficulties about the theory that they came from England. The evidence doesn't really add up. But there are even greater practical problems about the theory that they came directly from continental Europe. For one thing, it's not clear just how sufficient numbers of men and women could have been transported to Ireland to establish a viable population. As you know, the hunter-gatherer economy which existed beforehand was based on small scattered groups. The farming economy would almost certainly have required much larger communities to do all the work needed to plant and tend sufficient crops to sustain them through the year.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The early farmers kept various animals, including cattle and sheep. There's also evidence of pigs, but it is possible that these could have been descended from the native wild species. Now, we know from modern farming that if the level of breeding stock falls below about three hundred females, the future of the species locally is at risk. So we must assume that from the beginnings of Neolithic farming the number of breeding sheep would have considerably exceeded three hundred, and the national cattle herd must have been of a similar size. The question is how these were brought to the area and where they came from.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "It's usually suggested that the Neolithic settlers used skin-covered boats to transport livestock, But this method would have severely restricted the range of the colonising fleets The sheer volume of animal transport necessary means it's unlikely that this livestock could have been brought from anywhere further than England.",
+          "answers": [
+            33
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "What about crops? Well, two main cereal crops were introduced to Ireland during this time:",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "wheat and barley, both in several varieties. The main cvidence for their presence consists of Com impressions on pottery, where a cereal grain accidentally became embedded in the surface",
+          "answers": [
+            34
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "of a pot before it was fired. The grain itself was destroyed by the firing, but it",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "left an impression on the pot which could be studied and identified by",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "botanists.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Let's turn our attention now to the farming technology available at that time. Before the cereal crops could be planted, it would have been necessary to clear the forest and to break the ground by ploughing. The stone blade of a plough has been discovered during excavation in County Mayo in western Ireland. The body of the plough would have been of wood and could have been drawn by people, but it's also likely that cattle were used.",
+          "answers": [
+            35
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now, the cultivation of crops and the husbandry of livestock brought about changes in people's lifestyle such as the type of shelters they made. For one thing, instead of moving from place to place they needed permanent dwellings. The stone axes used to chop down trees to make these dwellings were far superior to any that the Stone Age hunter-gatherers used.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "To make the axes, sources of suitable stone had to be found and systematically exploited. These so-called axe factories' were really quarries rather than factories, as the manufacture of the axes wasn't regularly performed on the quarry site. However, after the axe had been chipped into shape, they needed water and sand for grinding and polishing, so a high mountainside wouldn't have been an appropriate place for this. So this final stage of the manufacture must have been carried out close to water and sure enough, there's ample evidence of this at coastal sites.",
+          "answers": [
+            36
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now it's clear that these Neolithic axes were transported all over Ireland, as well as to Scotland and the south of England. It's not really surprising that axes from ‘axe factories' in England have also been found in Ireland. At the very least, this indicates that there was a link between the two islands during that period.",
+          "answers": [
+            37
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "One of the most useful innovations of the colonisers was pottery making, which was quite unknown to Irish hunter-gatherers. The pottery was probably made by shaping clay into a ball with the hand, and then hollowing it until the walls were the right thickness. After firing, the outside was often polished. This would have helped the pots to retain water, as they weren't glazed. Now we know that the clay used usually came from local sources, which suggests that manufacture was on a fairly small scale, even though thousands of fragments are usually found at Neolithic sites.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "In the course of time decoration began to appear. At first this looked like a series of stitches and was just around the tops of the pots. This could have been an imitation of earlier vessels which were made of leather sewn onto wood. Then eventually pots with decoration all over...",
+          "answers": [
+            40
+          ]
+        }
+      ],
+      "charCount": 5058,
+      "missing": false
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-19-test-4-writing",
+  "title": "Cambridge IELTS 19 Academic Test 4 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-6dd667aa6e69",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 19",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题19.pdf",
+        "sha256": "5b460d32f81cba72576e097dba82d8817717f8ae6a261b428916b49dcbdb86c2"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C19\\剑桥雅思真题19\\auto\\剑桥雅思真题19.md",
+        "sha256": "6dd667aa6e69151c7031880caf6760e5cb8b55250f974548bd5c5947a957cd27",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe charts below give information on the location and types of dance classes young people in a town in Australia are currently attending.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\nLocation of dance classes \n[]\n\nTypes of dance classes (by age group) \n[]"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c19-t4-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spendabout 40 minutes on this task.\n\nWrite about the following topic:\n\nIn many countries nowadays, consumers can go to a supermarket and buy food produced all over the world.\n\nDo youthink this is a positive or negative development?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

@@ -90,6 +90,17 @@ fn build_index() -> Result<LibraryIndex, AppError> {
         let has_transcript = transcripts
             .iter()
             .any(|root| root.join(format!("{id}.json")).exists());
+        let module = v.get("module").and_then(Value::as_str).unwrap_or("");
+        let audio_status = if module == "listening" {
+            let bound = crate::audio::status_for(id);
+            if bound == "ready" || has_local_audio(&v) {
+                "ready"
+            } else {
+                bound
+            }
+        } else {
+            "ready"
+        };
         index.summaries.push(serde_json::json!({
             "id": v.get("id"),
             "title": v.get("title"),
@@ -99,6 +110,7 @@ fn build_index() -> Result<LibraryIndex, AppError> {
             "durationMs": v.pointer("/policy/endCondition/durationMs"),
             "questionCount": count_questions(&v),
             "hasTranscript": has_transcript,
+            "audioStatus": audio_status,
         }));
         index.exams.insert(id.to_string(), v);
     }
@@ -183,8 +195,26 @@ fn invalidate_index() {
     }
 }
 
+pub fn invalidate() {
+    invalidate_index();
+}
+
 pub fn list_exams() -> Result<Vec<Value>, AppError> {
     with_index(|index| index.summaries.clone())
+}
+
+fn has_local_audio(exam: &Value) -> bool {
+    let Some(sections) = exam.get("sections").and_then(Value::as_array) else {
+        return false;
+    };
+    for section in sections {
+        if let Some(rel) = section.get("audioAsset").and_then(Value::as_str) {
+            if resolve_asset(rel).is_ok() {
+                return true;
+            }
+        }
+    }
+    false
 }
 
 fn count_questions(exam: &Value) -> u32 {

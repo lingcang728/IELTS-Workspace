@@ -1,0 +1,1914 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-12-test-4-listening",
+  "title": "Cambridge IELTS 12 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0001-74e64535",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 12",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题12.pdf",
+        "sha256": "c9b61939ce31049dd9552020dbaf3deb979cbb6244b4cac0ac64f13b3ce049c6"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C12\\剑桥雅思真题12\\auto\\剑桥雅思真题12.md",
+        "sha256": "7a2c612d2c8d56d7c069234ee770a1aa17fccf10cecc1497b4f05fa686bc807a",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-12-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nCycle tour leader: Applicant enquiry \nExample \nName: Margaret . Smith \nAbout the applicant: \nwants a 1 ..job \nwill soon start work as a 2 \nhas led cycle trips in 3 \ninterested in being a leader of a cycling trip for families \nis currently doing voluntary work with members of a 4. . clulb \navailable for five months from the 1st of 5 \ncan't eat 6 .. \nContact details: \naddress: 27 7 Place, Dumfries \npostcode: 8 \nInterview: \ninterview at 2.30 pm on 9 \nwill plan a short 10. . about being a tour guide"
+      },
+      "questionGroups": [
+        {
+          "id": "c12t4l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "temporary"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Will soon start work as a ___",
+              "acceptedAnswers": [
+                "doctor"
+              ],
+              "gapText": "Will soon start work as a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Has led cycle trips in ___",
+              "acceptedAnswers": [
+                "Africa"
+              ],
+              "gapText": "Has led cycle trips in ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Is currently doing voluntary work with members of a ___ club",
+              "acceptedAnswers": [
+                "youth"
+              ],
+              "gapText": "Is currently doing voluntary work with members of a ___ club",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Available for five months from the 1st of ___",
+              "acceptedAnswers": [
+                "May"
+              ],
+              "gapText": "Available for five months from the 1st of ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Contact details: address: 27",
+              "acceptedAnswers": [
+                "cheese"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Place, Dumfries postcode:",
+              "acceptedAnswers": [
+                "Arbuthnot"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Interview: interview at 2.30 pm on",
+              "acceptedAnswers": [
+                "DG7 4PH"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Interview at 2.30 pm on ___",
+              "acceptedAnswers": [
+                "Tuesday"
+              ],
+              "gapText": "Interview at 2.30 pm on ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Will plan a short ___ about being a tour guide",
+              "acceptedAnswers": [
+                "talk",
+                "presentation"
+              ],
+              "gapText": "Will plan a short ___ about being a tour guide",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 478472
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\nQuestions 11-14\n\nChoose the correct letter, A, B or C.\n\n## Visiting the Sheepmarket area\n\n11 Which is the most rapidly-growing group of residents in the Sheepmarket area?\n\nA young professional people\n\nB students from the university\n\nC employees in the local market\n\n12 The speaker recommends the side streets in the Sheepmarket for their\n\nA international restaurants.\n\nB historical buildings.\n\nC arts and crafts.\n\n13 Clothes designed by entrants for the Young Fashion competition must\n\nA be modelled by the designers themselves.\n\nB be inspired by aspects of contemporary culture.\n\nC be made from locally produced materials\n\n14 Car parking is free in some car parks if you\n\nA stay for less than an hour.\n\nB buy something in the shops.\n\nC park in the evenings or at weekends.\n\nQuestions 15–20\n\nLabel the map below.\n\nWrite the correct letter, A-I, next to Questions 15–20.\n\nArt and History in the Sheepmarket \n[]\n\n15 The Reynolds House\n\n16 The Thumb\n\n17 The Museum\n\n18 The Contemporary Art Gallery\n\n19 The Warner Gallery\n\n20 Nucleus"
+      },
+      "questionGroups": [
+        {
+          "id": "c12t4l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Which is the most rapidly-growing group of residents in the Sheepmarket area? A young professional people B students from the university C employees in the local market",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "young professional people"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "students from the university"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "employees in the local market"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "young professional people"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "students from the university"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "employees in the local market"
+            }
+          ]
+        },
+        {
+          "id": "c12t4l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "The speaker recommends the side streets in the Sheepmarket for their A international restaurants. B historical buildings. C arts and crafts",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "young professional people"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "students from the university"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "employees in the local market"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "young professional people"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "students from the university"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "employees in the local market"
+            }
+          ]
+        },
+        {
+          "id": "c12t4l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Clothes designed by entrants for the Young Fashion competition must A be modelled by the designers themselves. B be inspired by aspects of contemporary culture. C be made from locally produced materials",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "young professional people"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "students from the university"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "employees in the local market"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "young professional people"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "students from the university"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "employees in the local market"
+            }
+          ]
+        },
+        {
+          "id": "c12t4l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Car parking is free in some car parks if you A stay for less than an hour. B buy something in the shops. C park in the evenings or at weekends",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "international restaurants"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "historical buildings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "arts and crafts"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "international restaurants"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "historical buildings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "arts and crafts"
+            }
+          ]
+        },
+        {
+          "id": "c12t4l-g15",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q15",
+              "number": 15,
+              "type": "labelling",
+              "prompt": "The Reynolds House",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "stay for less than an hour"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "buy something in the shops"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "park in the evenings or at weekends"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "stay for less than an hour"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "buy something in the shops"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "park in the evenings or at weekends"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c12-t4-listening-p0075.jpg"
+        },
+        {
+          "id": "c12t4l-g16",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q16",
+              "number": 16,
+              "type": "labelling",
+              "prompt": "The Thumb",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "stay for less than an hour"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "buy something in the shops"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "park in the evenings or at weekends"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "stay for less than an hour"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "buy something in the shops"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "park in the evenings or at weekends"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c12-t4-listening-p0075.jpg"
+        },
+        {
+          "id": "c12t4l-g17",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q17",
+              "number": 17,
+              "type": "labelling",
+              "prompt": "The Museum",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "stay for less than an hour"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "buy something in the shops"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "park in the evenings or at weekends"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "stay for less than an hour"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "buy something in the shops"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "park in the evenings or at weekends"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c12-t4-listening-p0075.jpg"
+        },
+        {
+          "id": "c12t4l-g18",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q18",
+              "number": 18,
+              "type": "labelling",
+              "prompt": "The Contemporary Art Gallery",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "stay for less than an hour"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "buy something in the shops"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "park in the evenings or at weekends"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "stay for less than an hour"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "buy something in the shops"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "park in the evenings or at weekends"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c12-t4-listening-p0075.jpg"
+        },
+        {
+          "id": "c12t4l-g19",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q19",
+              "number": 19,
+              "type": "labelling",
+              "prompt": "The Warner Gallery",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "buy something in the shops"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "park in the evenings or at weekends"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "buy something in the shops"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "park in the evenings or at weekends"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              15,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c12-t4-listening-p0075.jpg"
+        },
+        {
+          "id": "c12t4l-g20",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 15-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q20",
+              "number": 20,
+              "type": "labelling",
+              "prompt": "Nucleus",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:12:58.697499+00:00"
+          },
+          "imageAsset": "assets/cambridge/c12-t4-listening-p0075.jpg"
+        }
+      ],
+      "audioStartMs": 478472,
+      "audioDurationMs": 369306
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\nQuestions21–24\n\nComplete the table below\n\nWrite ONE WORD ONLY for each answer.\n\nPresentation on film adaptations of Shakespeare's plays\n\nStages of presentation\n\nWork still to be done\n\nIntroduce Giannetti's book containing a21 of adaptations\n\nOrganise notes\n\nAsk class to suggest the 22adaptations\n\nNo further work needed\n\nPresent Rachel Malchow's ideas\n\nPrepare some 23\n\nDiscuss relationship betweenadaptations and 24 … at thetime of making the film\n\nNo further work needed\n\nQuestions 25–30\n\nWhat do the speakers say about each of the following films?\n\nChoose SIX answers from the box and write the correct letter, A-G, next to questions 25–30.\n\n## Comments\n\nA clearly shows the historical period\n\nB contains only parts of the play\n\nC is too similar to another kind of film\n\nD turned out to be unpopular with audiences\n\nE presents the play in a different period from the original\n\nF sets the original in a different country\n\nG incorporates a variety of art forms\n\n## Films\n\n25 Ran \n26 Much Ado About Nothing \n27 Romeo & Juliet \n28 Hamlet \n29 Prospero's Books \n30 Looking for Richard"
+      },
+      "questionGroups": [
+        {
+          "id": "c12t4l-g21",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Introduce Giannetti's book containing a",
+              "acceptedAnswers": [
+                "classification"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g22",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Ask class to suggest the",
+              "acceptedAnswers": [
+                "worst"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g23",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Prepare some",
+              "acceptedAnswers": [
+                "slides"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g24",
+          "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Discuss relationship betweenadaptations and",
+              "acceptedAnswers": [
+                "issues"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g25",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "Ran",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "contains only parts of the play"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "is too similar to another kind of film"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "turned out to be unpopular with audiences"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "presents the play in a different period from the original"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sets the original in a different country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "incorporates a variety of art forms"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "contains only parts of the play"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "is too similar to another kind of film"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "turned out to be unpopular with audiences"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "presents the play in a different period from the original"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sets the original in a different country"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "incorporates a variety of art forms"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g26",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Much Ado About Nothing",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "contains only parts of the play"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "is too similar to another kind of film"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "turned out to be unpopular with audiences"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "presents the play in a different period from the original"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sets the original in a different country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "incorporates a variety of art forms"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "contains only parts of the play"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "is too similar to another kind of film"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "turned out to be unpopular with audiences"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "presents the play in a different period from the original"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sets the original in a different country"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "incorporates a variety of art forms"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g27",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Romeo & Juliet",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "is too similar to another kind of film"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "turned out to be unpopular with audiences"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "presents the play in a different period from the original"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sets the original in a different country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "incorporates a variety of art forms"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "is too similar to another kind of film"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "turned out to be unpopular with audiences"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "presents the play in a different period from the original"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sets the original in a different country"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "incorporates a variety of art forms"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g28",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Hamlet",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "is too similar to another kind of film"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "turned out to be unpopular with audiences"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "presents the play in a different period from the original"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sets the original in a different country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "incorporates a variety of art forms"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "is too similar to another kind of film"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "turned out to be unpopular with audiences"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "presents the play in a different period from the original"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sets the original in a different country"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "incorporates a variety of art forms"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g29",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "Prospero's Books",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "turned out to be unpopular with audiences"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "presents the play in a different period from the original"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sets the original in a different country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "incorporates a variety of art forms"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "turned out to be unpopular with audiences"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "presents the play in a different period from the original"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sets the original in a different country"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "incorporates a variety of art forms"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g30",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Looking for Richard",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "turned out to be unpopular with audiences"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "presents the play in a different period from the original"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "sets the original in a different country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "incorporates a variety of art forms"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "turned out to be unpopular with audiences"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "presents the play in a different period from the original"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "sets the original in a different country"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "incorporates a variety of art forms"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 847778,
+      "audioDurationMs": 465019
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions31–40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## Noise in Cities\n\nPast research focused on noise level (measured in decibels) and people's responses.\n\n## Noise‘maps'\n\nshow that the highest noise levels are usually found on roads\n\ndo not show other sources of noise, e.g. when windows are open or people's neighbours are in their 31...\n\n• ignore variations in people's perceptions of noise\n\nhave made people realize that he noise is a 32 sue that must be dealt with\n\n## Problems caused by noise\n\nsleep disturbance\n\nincrease in amount of stress\n\neffect on the 3. of schoolchildren\n\n## Different types of noise\n\nSome noises can be considered pleasant e.g. the sound of a 34...\n\nTo investigate this, researchers may use methods from35\n\nsciences e.g. questionnaires\n\n## What people want\n\nPlenty of activity in urban environments which are 36 , but also allow people to relax\n\nBut architects and town planners\n\n•do not get much 37 . in acoustics\n\n• regard sound as the responsibility of engineers\n\n## Understanding sound as an art form\n\nWe need to know\n\nhow sound relates to 38\n\n• what can be learnt from psychology about the effects of sound\n\nwhether physics can help us understand the 39. of sound\n\nVirtual reality programs\n\nadvantage: predict the effect of buildings\n\ncurrent disadvantage: they are 40 ."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t4l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Do not show other sources of noise, e.g. when windows are open or people's neighbours are in their ___",
+              "acceptedAnswers": [
+                "garden(s)"
+              ],
+              "gapText": "Do not show other sources of noise, e.g. when windows are open or people's neighbours are in their ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Have made people realize that the noise is a ___ issue that must be dealt with",
+              "acceptedAnswers": [
+                "political"
+              ],
+              "gapText": "Have made people realize that the noise is a ___ issue that must be dealt with",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Effect on the ___ of schoolchildren",
+              "acceptedAnswers": [
+                "work",
+                "study"
+              ],
+              "gapText": "Effect on the ___ of schoolchildren",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Some noises can be considered pleasant e.g. the sound of a ___ in a town",
+              "acceptedAnswers": [
+                "fountain"
+              ],
+              "gapText": "Some noises can be considered pleasant e.g. the sound of a ___ in a town",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "To investigate this, researchers may use methods from ___ sciences e.g. questionnaires",
+              "acceptedAnswers": [
+                "social"
+              ],
+              "gapText": "To investigate this, researchers may use methods from ___ sciences e.g. questionnaires",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Plenty of activity in urban environments which are ___, but also allow people to relax",
+              "acceptedAnswers": [
+                "lively"
+              ],
+              "gapText": "Plenty of activity in urban environments which are ___, but also allow people to relax",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Do not get much ___ in acoustics",
+              "acceptedAnswers": [
+                "training"
+              ],
+              "gapText": "Do not get much ___ in acoustics",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "how sound relates to ___",
+              "acceptedAnswers": [
+                "culture"
+              ],
+              "gapText": "how sound relates to ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Whether physics can help us understand the ___ of sound",
+              "acceptedAnswers": [
+                "nature"
+              ],
+              "gapText": "Whether physics can help us understand the ___ of sound",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t4l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t4l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Current disadvantage: they are ___",
+              "acceptedAnswers": [
+                "silent"
+              ],
+              "gapText": "Current disadvantage: they are ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:26+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1312797,
+      "audioDurationMs": 474214
+    }
+  ]
+}

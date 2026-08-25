@@ -1,0 +1,2177 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-11-test-4-listening",
+  "title": "Cambridge IELTS 11 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0024-8019830a",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 11",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题11.pdf",
+        "sha256": "6dfc84371b9d08e31b450ede3a20e64f13f505b1e52261894681a31d733b3fe3"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C11\\剑桥雅思真题11\\auto\\剑桥雅思真题11.md",
+        "sha256": "8c76b257af01336b0c595c91c5f1d093513832fc8770fa0695824b87faf21ad2",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-11-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nQuestions1-7\n\nComplete the table below.\n\n## Write ONE WORD AND/OR A NUMBER for each anSwer\n\nEvent\n\nCost\n\nVenue\n\nNotes\n\nJazzband\n\nExampleTickets availablefor £ 15\n\nThe 1.school\n\nAlso appearing: Carolyn Hart(plays the 2\n\nDuckraces\n\n£1per duck\n\nStart behind the3\n\nPrize: tickets for 4held at the end of the festival.Ducks can bebought inthe 5\n\nFlowershow\n\nFree\n\n6. Hall\n\nPrizes presented at 5 pm by awell-known 7\n\n## Questions 8-10\n\nWho is each play suitable for?\n\nWrite the correct letter, A, B or C, next to Questions 8–10.\n\nA mainly for children\n\nB mainly for adults\n\nC suitable for people of all ages\n\n## Plays\n\n8 The Mystery of Muldoon\n\n9 Fire and Flood\n\n10 Silly Sailor"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t4l-g1",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "The ___ school",
+              "acceptedAnswers": [
+                "secondary"
+              ],
+              "gapText": "The ___ school",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g2",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Carolyn Hart plays the ___",
+              "acceptedAnswers": [
+                "flute"
+              ],
+              "gapText": "Carolyn Hart (plays the ___)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g3",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Start behind the ___",
+              "acceptedAnswers": [
+                "cinema"
+              ],
+              "gapText": "Start behind the ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g4",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Prize: tickets for ___ held at the end of the festival",
+              "acceptedAnswers": [
+                "concert"
+              ],
+              "gapText": "Prize: tickets for ___ held at the end of the festival",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g5",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Ducks can be bought in the ___",
+              "acceptedAnswers": [
+                "market"
+              ],
+              "gapText": "Ducks can be bought in the ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g6",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q6",
+              "number": 6,
+              "type": "single_choice",
+              "prompt": "Hall Prizes presented at 5 pm by awell-known 7",
+              "acceptedAnswers": [
+                "Bythwaite"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "mainly for children"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mainly for adults"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "suitable for people of all ages"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "mainly for children"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "mainly for adults"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "suitable for people of all ages"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g7",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Prizes presented at 5 pm by a well-known ___",
+              "acceptedAnswers": [
+                "actor"
+              ],
+              "gapText": "Prizes presented at 5 pm by a well-known ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g8",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 8-10.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q8",
+              "number": 8,
+              "type": "single_choice",
+              "prompt": "The Mystery of Muldoon",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "mainly for children"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mainly for adults"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "suitable for people of all ages"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g9",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 8-10.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q9",
+              "number": 9,
+              "type": "single_choice",
+              "prompt": "Fire and Flood",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "mainly for children"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mainly for adults"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "suitable for people of all ages"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "mainly for children"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "mainly for adults"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "suitable for people of all ages"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g10",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 8-10.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q10",
+              "number": 10,
+              "type": "matching",
+              "prompt": "Silly Sailor",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "mainly for children"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "mainly for adults"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "suitable for people of all ages"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.991569+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 490527
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\nQuestions 11-16\n\nWhat does the speaker say about each of the following collections?\n\nChoose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.\n\n## Comments\n\nA was given by one person\n\nB was recently publicised in the media\n\nC includes some items given by members of the public\n\nD includes some items given by the artists\n\nE includes the most popular exhibits in the museum\n\nF is the largest of its kind in the country\n\nG has had some of its contents relocated\n\n## Collections\n\n11 20th- and 21st-century paintings\n\n12 19th-century paintings\n\n13 Sculptures\n\n14'Around theworld' exhibition\n\n15 Coins\n\n16 Porcelain and glass\n\n## Questions 17-20\n\nLabel the plan below.\n\nWrite the correct letter, A-H,next to Questions 17–20.\n\nBasement of museum \n[]\n\n17 restaurant\n\n18 café …\n\n19 baby-changing facilities …\n\n20 cloakroom"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t4l-g11",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q11",
+              "number": 11,
+              "type": "matching",
+              "prompt": "20th- and 21st-century paintings",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "was given by one person"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was recently publicised in the media"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "includes some items given by members of the public"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "includes some items given by the artists"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "includes the most popular exhibits in the museum"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "is the largest of its kind in the country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "has had some of its contents relocated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g12",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q12",
+              "number": 12,
+              "type": "matching",
+              "prompt": "19th-century paintings",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "was given by one person"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was recently publicised in the media"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "includes some items given by members of the public"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "includes some items given by the artists"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "includes the most popular exhibits in the museum"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "is the largest of its kind in the country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "has had some of its contents relocated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g13",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q13",
+              "number": 13,
+              "type": "matching",
+              "prompt": "Sculptures",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "was given by one person"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was recently publicised in the media"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "includes some items given by members of the public"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "includes some items given by the artists"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "includes the most popular exhibits in the museum"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "is the largest of its kind in the country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "has had some of its contents relocated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g14",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "'Around the world' exhibition",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "was given by one person"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was recently publicised in the media"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "includes some items given by members of the public"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "includes some items given by the artists"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "includes the most popular exhibits in the museum"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "is the largest of its kind in the country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "has had some of its contents relocated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g15",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Coins",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "was given by one person"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was recently publicised in the media"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "includes some items given by members of the public"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "includes some items given by the artists"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "includes the most popular exhibits in the museum"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "is the largest of its kind in the country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "has had some of its contents relocated"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g16",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Porcelain and glass",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "includes the most popular exhibits in the museum"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "is the largest of its kind in the country"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "has had some of its contents relocated"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "E",
+              "label": "E",
+              "text": "includes the most popular exhibits in the museum"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "is the largest of its kind in the country"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "has had some of its contents relocated"
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g17",
+          "instruction": "Label the plan below. Write the correct letter, A-H, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q17",
+              "number": 17,
+              "type": "labelling",
+              "prompt": "Basement museum plan: restaurant",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:58:11.142906+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t4-listening-p0080.jpg"
+        },
+        {
+          "id": "c11t4l-g18",
+          "instruction": "Label the plan below. Write the correct letter, A-H, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q18",
+              "number": 18,
+              "type": "labelling",
+              "prompt": "Basement museum plan: café",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:58:11.142906+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t4-listening-p0080.jpg"
+        },
+        {
+          "id": "c11t4l-g19",
+          "instruction": "Label the plan below. Write the correct letter, A-H, next to Questions 17-20.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q19",
+              "number": 19,
+              "type": "labelling",
+              "prompt": "Basement museum plan: baby-changing facilities",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c11-t4-listening-p0080.jpg"
+        },
+        {
+          "id": "c11t4l-g20",
+          "instruction": "Label the plan below. Write the correct letter, A-H, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q20",
+              "number": 20,
+              "type": "labelling",
+              "prompt": "Basement museum plan: cloakroom",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:58:11.142906+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t4-listening-p0080.jpg"
+        }
+      ],
+      "audioStartMs": 490527,
+      "audioDurationMs": 362606
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions 21and 22\n\nChoose TWoletters, A-E.\n\nWhich Two characteristics were shared by the subjects of Joanna's psychology study?\n\nA They had all won prizes for their music.\n\nB They had all made music recordings.\n\nC They were all under 27years old.\n\nDThey had all toured internationally.\n\nE They all played a string instrument.\n\n## Questions 23 and 24\n\n## Choose TWo letters, A-E.\n\nWhich Two points does Joanna make about her use of telephone interviews?\n\nA It meant rich data could be collected.\n\nB It allowed the involvement of top performers.\n\nC It led to a stressful atmosphere at times.\n\nD It meant interview times had to be limited.\n\nE It caused some technical problems.\n\n## Questions25 and 26\n\n## Choose TWo letters, A-E.\n\n## Which Two topics did Joanna originally intend to investigate in her research?\n\nA regulations concerning concert dress\n\nB audience reactions to the dress of performers\n\nC changes in performer attitudes to concert dress\n\nD how choice of dress relates to performer roles\n\nE links between musical instrument and dress choice\n\n## Questions 27-30\n\nChoose the correct letter, A, B or C.\n\n## 27 Joanna concentrated on women performers because\n\nA women are more influenced by fashion.\n\nB women's dress has led to more controversy.\n\nC women's code of dress is less strict than men's.\n\n28 Mike Frost's article suggests that in popular music, women's dress is affected by\n\nA their wish to be taken seriously.\n\nB their tendency to copy each other.\n\nC their reaction to the masculine nature of the music.\n\n29What did Joanna's subjects say about the audience at a performance?\n\nA The musicians'choice of clothing is linked to respect for the audience.\n\nB The clothing should not distract the audience from the music.\n\nC The audience should make the effort to dress appropriately.\n\n## 30 According to the speakers, musicians could learn from sports scientists about\n\nA the importance of clothing for physical freedom.\n\nB the part played by clothing in improving performance.\n\nC the way clothing may protect against physical injury.\n\n## SECTION4Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The use of soil to reduce carbon dioxide (CO2) in the atmosphere\n\n## Rattan Lal:\n\nClaims that 13% of $C O _ { 2 }$ in the atmosphere could be absorbed by agricultural soils\n\nErosion is more likely in soil that is31\n\nLal found soil in Africa that was very32\n\n•It was suggested that carbon from soil was entering the atmosphere\n\n## Soil and carbon:\n\nplants turn $C O _ { 2 }$ from the air into carbon-based substances such as 33\n\nsome $C O _ { 2 }$ moves from the 3.. . of plants to microbes in the soil\n\ncarbon was lost from the soil when agriculture was invented\n\nRegenerative agriculture:\n\nuses established practices to make sure soil remains fertile and 35.\n\ne.g. through year-round planting and increasing the 36... plants that are grown\n\nCalifornia study:\n\n• taking place on a big 37.. … . farm\n\nuses compost made from waste from agriculture and 38\n\nAustralia study:\n\naims to increase soil carbon by using 39 .that are always green\n\nFuture developments may include:\n\n• reducing the amount of fertilizer used in farming\n\n•giving farmers 40..for carbon storage, as wel as their produce"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t4l-g21",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "Choose TWoletters, A-E.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They had all won prizes for their music."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They had all made music recordings."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They were all under 27 years old."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They had all toured internationally."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "They all played a string instrument."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.066574+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:03:00.419084+00:00"
+          }
+        },
+        {
+          "id": "c11t4l-g22",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q22",
+              "number": 22,
+              "type": "multi_choice",
+              "prompt": "Which TWO characteristics were shared by the subjects of Joanna's psychology study?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They had all won prizes for their music."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They had all made music recordings."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They were all under 27 years old."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They had all toured internationally."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "They all played a string instrument."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:03:00.419084+00:00"
+          }
+        },
+        {
+          "id": "c11t4l-g23",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q23",
+              "number": 23,
+              "type": "multi_choice",
+              "prompt": "One point Joanna makes about her use of telephone interviews",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It meant rich data could be collected."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It allowed the involvement of top performers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It led to a stressful atmosphere at times."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It meant interview times had to be limited."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It caused some technical problems."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g24",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q24",
+              "number": 24,
+              "type": "multi_choice",
+              "prompt": "Another point Joanna makes about her use of telephone interviews",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It meant rich data could be collected."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It allowed the involvement of top performers."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It led to a stressful atmosphere at times."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It meant interview times had to be limited."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It caused some technical problems."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They had all won prizes for their music"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They had all made music recordings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They were all under 27years old"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They all played a string instrument"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It meant interview times had to be limited"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g25",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "One topic Joanna originally intended to investigate in her research",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "regulations concerning concert dress"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "audience reactions to the dress of performers"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "changes in performer attitudes to concert dress"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "how choice of dress relates to performer roles"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "links between musical instrument and dress choice"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They had all won prizes for their music"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They had all made music recordings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They were all under 27years old"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They all played a string instrument"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It meant interview times had to be limited"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g26",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q26",
+              "number": 26,
+              "type": "multi_choice",
+              "prompt": "Another topic Joanna originally intended to investigate in her research",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "regulations concerning concert dress"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "audience reactions to the dress of performers"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "changes in performer attitudes to concert dress"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "how choice of dress relates to performer roles"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "links between musical instrument and dress choice"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They had all won prizes for their music"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They had all made music recordings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They were all under 27years old"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They all played a string instrument"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It meant interview times had to be limited"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Joanna concentrated on women performers because",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "women are more influenced by fashion."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "women's dress has led to more controversy."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "women's code of dress is less strict than men's."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g28",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Mike Frost's article suggests that in popular music, women's dress is affected by",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "their wish to be taken seriously."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "their tendency to copy each other."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "their reaction to the masculine nature of the music."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g29",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "What did Joanna's subjects say about the audience at a performance? A The musicians'choice of clothing is linked to respect for the audience. B The clothing should not distract the audience from the music. C The audience should make the effort to dress appropriately",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The musicians' choice of clothing is linked to respect for the audience."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The clothing should not distract the audience from the music."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The audience should make the effort to dress appropriately."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.066574+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t4l-g30",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "According to the speakers, musicians could learn from sports scientists about",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.066574+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the importance of clothing for physical freedom."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the part played by clothing in improving performance."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the way clothing may protect against physical injury."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 853133,
+      "audioDurationMs": 436794
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION 1 Questions 1-10\n\nQuestions1-7\n\nComplete the table below.\n\n## Write ONE WORD AND/OR A NUMBER for each anSwer\n\nEvent\n\nCost\n\nVenue\n\nNotes\n\nJazzband\n\nExampleTickets availablefor £ 15\n\nThe 1.school\n\nAlso appearing: Carolyn Hart(plays the 2\n\nDuckraces\n\n£1per duck\n\nStart behind the3\n\nPrize: tickets for 4held at the end of the festival.Ducks can bebought inthe 5\n\nFlowershow\n\nFree\n\n6. Hall\n\nPrizes presented at 5 pm by awell-known 7\n\n## Questions 8-10\n\nWho is each play suitable for?\n\nWrite the correct letter, A, B or C, next to Questions 8–10.\n\nA mainly for children\n\nB mainly for adults\n\nC suitable for people of all ages\n\n## Plays\n\n8 The Mystery of Muldoon\n\n9 Fire and Flood\n\n10 Silly Sailor\n\n## SECTION 2 Questions 11-20\n\nQuestions 11-16\n\nWhat does the speaker say about each of the following collections?\n\nChoose SIX answers from the box and write the correct letter, A-G, next to Questions 11-16.\n\n## Comments\n\nA was given by one person\n\nB was recently publicised in the media\n\nC includes some items given by members of the public\n\nD includes some items given by the artists\n\nE includes the most popular exhibits in the museum\n\nF is the largest of its kind in the country\n\nG has had some of its contents relocated\n\n## Collections\n\n11 20th- and 21st-century paintings\n\n12 19th-century paintings\n\n13 Sculptures\n\n14'Around theworld' exhibition\n\n15 Coins\n\n16 Porcelain and glass\n\n## Questions 17-20\n\nLabel the plan below.\n\nWrite the correct letter, A-H,next to Questions 17–20.\n\nBasement of museum \n[]\n\n17 restaurant\n\n18 café …\n\n19 baby-changing facilities …\n\n20 cloakroom\n\n## SECTION 3 Questions 21–30\n\nQuestions 21and 22\n\nChoose TWoletters, A-E.\n\nWhich Two characteristics were shared by the subjects of Joanna's psychology study?\n\nA They had all won prizes for their music.\n\nB They had all made music recordings.\n\nC They were all under 27years old.\n\nDThey had all toured internationally.\n\nE They all played a string instrument.\n\n## Questions 23 and 24\n\n## Choose TWo letters, A-E.\n\nWhich Two points does Joanna make about her use of telephone interviews?\n\nA It meant rich data could be collected.\n\nB It allowed the involvement of top performers.\n\nC It led to a stressful atmosphere at times.\n\nD It meant interview times had to be limited.\n\nE It caused some technical problems.\n\n## Questions25 and 26\n\n## Choose TWo letters, A-E.\n\n## Which Two topics did Joanna originally intend to investigate in her research?\n\nA regulations concerning concert dress\n\nB audience reactions to the dress of performers\n\nC changes in performer attitudes to concert dress\n\nD how choice of dress relates to performer roles\n\nE links between musical instrument and dress choice\n\n## Questions 27-30\n\nChoose the correct letter, A, B or C.\n\n## 27 Joanna concentrated on women performers because\n\nA women are more influenced by fashion.\n\nB women's dress has led to more controversy.\n\nC women's code of dress is less strict than men's.\n\n28 Mike Frost's article suggests that in popular music, women's dress is affected by\n\nA their wish to be taken seriously.\n\nB their tendency to copy each other.\n\nC their reaction to the masculine nature of the music.\n\n29What did Joanna's subjects say about the audience at a performance?\n\nA The musicians'choice of clothing is linked to respect for the audience.\n\nB The clothing should not distract the audience from the music.\n\nC The audience should make the effort to dress appropriately.\n\n## 30 According to the speakers, musicians could learn from sports scientists about\n\nA the importance of clothing for physical freedom.\n\nB the part played by clothing in improving performance.\n\nC the way clothing may protect against physical injury.\n\n## SECTION4Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The use of soil to reduce carbon dioxide (CO2) in the atmosphere\n\n## Rattan Lal:\n\nClaims that 13% of $C O _ { 2 }$ in the atmosphere could be absorbed by agricultural soils\n\nErosion is more likely in soil that is31\n\nLal found soil in Africa that was very32\n\n•It was suggested that carbon from soil was entering the atmosphere\n\n## Soil and carbon:\n\nplants turn $C O _ { 2 }$ from the air into carbon-based substances such as 33\n\nsome $C O _ { 2 }$ moves from the 3.. . of plants to microbes in the soil\n\ncarbon was lost from the soil when agriculture was invented\n\nRegenerative agriculture:\n\nuses established practices to make sure soil remains fertile and 35.\n\ne.g. through year-round planting and increasing the 36... plants that are grown\n\nCalifornia study:\n\n• taking place on a big 37.. … . farm\n\nuses compost made from waste from agriculture and 38\n\nAustralia study:\n\naims to increase soil carbon by using 39 .that are always green\n\nFuture developments may include:\n\n• reducing the amount of fertilizer used in farming\n\n•giving farmers 40..for carbon storage, as wel as their produce"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t4l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Erosion is more likely in soil that is ___",
+              "acceptedAnswers": [
+                "dry"
+              ],
+              "gapText": "Erosion is more likely in soil that is ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Lal found soil in Africa that was very ___",
+              "acceptedAnswers": [
+                "hard"
+              ],
+              "gapText": "Lal found soil in Africa that was very ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Plants turn CO2 from the air into carbon-based substances such as ___",
+              "acceptedAnswers": [
+                "sugar",
+                "sugars"
+              ],
+              "gapText": "Plants turn CO2 from the air into carbon-based substances such as ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Some CO2 moves from the ___ of plants to microbes in the soil",
+              "acceptedAnswers": [
+                "roots"
+              ],
+              "gapText": "Some CO2 moves from the ___ of plants to microbes in the soil",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Regenerative agriculture makes sure soil remains fertile and ___",
+              "acceptedAnswers": [
+                "moist",
+                "damp",
+                "wet"
+              ],
+              "gapText": "Regenerative agriculture makes sure soil remains fertile and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Regenerative agriculture increases the ___ of plants that are grown",
+              "acceptedAnswers": [
+                "variety"
+              ],
+              "gapText": "Regenerative agriculture increases the ___ of plants that are grown",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "The California study is taking place on a big ___ farm",
+              "acceptedAnswers": [
+                "cattle"
+              ],
+              "gapText": "The California study is taking place on a big ___ farm",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "The California study uses compost made from waste from agriculture and ___",
+              "acceptedAnswers": [
+                "gardens",
+                "gardening"
+              ],
+              "gapText": "The California study uses compost made from waste from agriculture and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "The Australia study aims to increase soil carbon by using ___ that are always green",
+              "acceptedAnswers": [
+                "grasses"
+              ],
+              "gapText": "The Australia study aims to increase soil carbon by using ___ that are always green",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t4l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t4l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Future developments may include giving farmers ___ for carbon storage, as well as their produce",
+              "acceptedAnswers": [
+                "payment",
+                "payments",
+                "money"
+              ],
+              "gapText": "Future developments may include giving farmers ___ for carbon storage, as well as their produce",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:13+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1289927,
+      "audioDurationMs": 501629
+    }
+  ]
+}

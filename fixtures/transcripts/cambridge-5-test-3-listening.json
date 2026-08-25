@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-5-test-3-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 5,
+    "test": 3
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    16,
+    17,
+    25,
+    26,
+    27,
+    29,
+    30,
+    40
+  ],
+  "missingMarkers": [
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    28,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": "LIBRARIAN",
+          "text": "Good morning, North College Library. How can 1 help you?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I was wondering if it was possible to join the library.",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "Are you a student at North College?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "No. I'm not, but someone told me it was possible to join, even if I wasn't.",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "That's right, it is. Are you over 18? That's our minimum joining age. Example",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Yes, I am.",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "That's no problem then.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Could you tell me what I have to do to join?",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "Well, you'll need to come in to the library and fill out some forms.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "You'll also need to bring two passport photos with you. We also need two",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "documents forID, so a driving licence would be fine.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I’ve got that and what else? A credit card?",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "No, it needs to have your address on it.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Shall I bring a bank statement, would that do?",
+          "answers": [
+            2
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "LIBRARIAN; That'll be fine.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Good. Does it cost anything to join?",
+          "answers": []
+        },
+        {
+          "speaker": "L.IBRARIAN",
+          "text": "Well, it's free for students here but otherwise it's £125 per year or £25 if",
+          "answers": [
+            3
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "youve got a current student card from another college.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "I was at Westerley College until last year but now I've got a job at",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Jefferson's steel factory. Er, it's more expensive than I thought. My local",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "library is free.",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "But you'll find they don’t have the range of reference books or facilities which we buy for our students.That's why you have to pay to be an external member.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "LIBRARIAN: I see. How many books can I borrow? We allow twelve items borrowed at any one time if you're a student, and",
+          "answers": [
+            4
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "that includes CDs, DVDs and videos. However, it's oniy eight items for members of the public.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Fine. And how long can 1 have them for?",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "Well. you can have both fiction and reference books for four weeks which isn't bad really.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "LIBRARIAN: And what happens if I return them late? Like all libra. ies theres a fine system in place. The minimum fine is £L50 but",
+          "answers": [
+            5
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "it can be much higher for some items - up to £5 per week. We'll give you a booklet with all the details when you join. You can always renew items if theyre not required by anyone else by telephoning or logging on to our website.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "LIBRARIAN: MAN: LIBRARIAN: For college students it's free, but for external members like yourself, the first hour is free and then we make a nominal charge of €l per hour thereafter. Do I have to book in advance for them?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Oh, yes, it's advisable. Most people tend to book twenty-four hours in advance although sometimes you can get one with only six hours’ notice. However, the earliest you can book a computer is forty-ejght hours before you need it. and you can only book one hour at a time. Il no-one else has booked the computer out, then you may be able to have another hour if you want. We have a wide range of databases, so the computers are in great demand.",
+          "answers": [
+            6
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "LIBRARIAN: I’'m thinking of doing some writing and 1 might need to access national newspapers. Do you have them on these databases? We do indeed. Weve got all the big nationals, The Guardian and",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "The Observer, The Independent and The Times and Sunday Times. Weve also got all the local papers and a wide selection of magazines. Excellent. 1 assume you have photocopying facilities?",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "Or course. 5p a sheet for both A4 and A3 black-and-white copies and 40p a sheet for colour. You can get a card from the counter here – it",
+          "answers": [
+            8
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "doesn't take coins. OK. Oh by the way. another thing I was wondering about was if you ran any writing classes through the library?",
+          "answers": []
+        },
+        {
+          "speaker": "LIBRARIAN",
+          "text": "We do. but you'll have to speak to John Grantingham about that. He's our resident author. He runs the creative writing classes.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "LIBRARIAN: John . . . Grant . . . . Could you spell that for me please? Certainly. G-R-A-N-T-1-N-G-II-A-M.",
+          "answers": [
+            9
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "LIBRARIAN: Are the classes here at the library? Yes he's here on Thursday evenings. oh no sorry, Friday – he's just",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "changed it. You can contaet him by emailing the library.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "later this week to join. Thanks. Bye.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Okay. Right. well that's about all I need to know. Thank you. I'll be along",
+          "answers": [
+            10
+          ]
+        }
+      ],
+      "charCount": 3729,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "My name's Dan Pearman and l’d like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, il anyone would like to find out more about how to support us.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993 just after graduating from university. After three years of studying. I wanted adventure. I loved travelling, so I decidled to join a yoluntary organisation and was sent to Ecuador to carry out land surveys. The project came to an end atter five years and when I returned to the UK in 1998, I started planning Pedal Power.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Where 1 lived in Ecuador was a very rural area. My neighbour had the only bicyele in the village, whereas everyone else walked everywhere. My neighbour's business was unusually suecessful, and for years I couldn't understand why. Then I realised having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "At Pedal Power. we colleet second-hand bikes in the UK and send them to some of the poorest regions in the worid. When we distribute bikes overseas we don't give them away for free. Wed like to. but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally. So we sell them for 5% of the normal price. But in order to continue operating we need to have a constant supply of bikes which we send out every six months.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "One example of a town that's received bieycles from Pedal Power is Rivas. It was the first place I sent a full container of bieycles to. Most peopie there now own a bicyele. The local economy has developed so much. you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam. if you’ve ever been there.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "But Pedal Power still needs your help. You may have read about some of our recent problems in the British media. In August 2000. we simply ran out of money. We had containers of bikes ready to send. but no money to pay the bills. It was a terrible situation We managed to ensure the bikes went out on time, but the other problems carried on for several months.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Fortunately in Oetober 2001 we won an Enterprise Award which helped us enormously We invested ffteen of the seventy-fve-thousand-pound prize money to help secure our future. Winning the award helped raise our profile. and the money enabled us to pay all our shipping costs, which represent our greatest expense. Pedal Power changes lives when someone gets a bicycle from us. they see a 14%, increase in their income. Were currently looking to invest in computers so that our office staff can do an even better job. Because of our work. people in a number of countries now have a better standard of living so far",
+          "answers": [
+            16,
+            17
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "weve provided 46,000 people with bikes. But we'd like to send more, at least 50,000 by the end of the year.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Now there are many ways in which you can support the work of Pedal Power, not just by taking a bike to a collcction in your area. I should also like to say if you do have a bike to donate. it doesn't matter what condition it's in – if we can't repair it, we'll strip it down for spare parts.Of course, to do that we always need tools, which are expensive to buy, so we welcome any that you can give. Also, you could help by contacting the voluntary staff at our offices, theyll be able to suggest activities you could organise to bring in funds for us. People do all kinds of things – including, of course, sponsored bike rides. Also, we're always interested to hear of other places that would benefit from recciving a consignment of bikes, and welcome suggestions from people who've been to developing regions on their travels. We hope that by talking on radio programmes like this. we will be able to raise public awareness, which will lead to government organisations also giving us regular financial support, something that we really need.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "If you’d like some more information about where to donate an old bicyele or offer help in other wá please contact us on . ,",
+          "answers": []
+        }
+      ],
+      "charCount": 4247,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": "TUTOR",
+          "text": "First of all I'd just like to say, Cristina and Ibrahim, that I really enjoyed watching your video about student life last week, and I could see that the rest of the group did too. You did really well, and I hope that you got a lot out of it. l’d like to use this tutoriaì as a feedback session, where you reflect on the experience of doing the projeet. So Cristina, I was wondering, what did you enjoy most about making the video?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "CRisTINA: I liked using the camera.",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Is it the first time youve operated one like that?",
+          "answers": []
+        },
+        {
+          "speaker": "CRISTINA",
+          "text": "–Yes, it ís.",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Well the results were very good! Anything else?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "CRis rINA: I also enjoyed visiting one of the British students we filmed. I'd never been inside a British home before.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "TUTor:OK Cristina. thanks. What about you. Ibrahim? What did you enjoy?",
+          "answers": []
+        },
+        {
+          "speaker": "IBRAHIM",
+          "text": "Well for me it was a very good chance to get to know students who are on other courses, because everyone in our group is studying English, and we don't usually have much to do with the rest of the college.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "turor:Yes, good. Do you think youll maintain the contact now?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "iBRAíim: I hope so. Ive invited three of them to have dinner with me next week.",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Great! If you havent decided what to make yet I can tell you they'll love trying Arab dishes. And of course, it's good for your English too. Cristina. what did you find? What was the most useful aspeet of the project from the point of view of the English practice?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "cRtsTisA: I think, when we were being shown how to edit the film. we had to follow the instruetions. And that was very good practice for me. And I also learned some techniçal words that I hadn't heard before",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "What about you Ibrahim? What was the most useful for your English?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "ıBRaıım: It was listening to the British students, because they don't speak as slowly as most of the tutors on our course. I think they speak at natural speed, so it forces me to get used to it. And they use a lot of slang.",
+          "answers": []
+        },
+        {
+          "speaker": "IUTOR",
+          "text": "So you learned some new words which will be useful?",
+          "answers": []
+        },
+        {
+          "speaker": "IBRAHIM",
+          "text": "Yes.",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Good. I'm glad it helped, Well, we've talked a little bit about enjoyment, and about language practice. Were there any other benefits? What else did you feel you'd learnt from the projeet? Was it useful in other ways?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "cRtstıNA: Yes, well firstly, I learned how to use a video camera. And also, I think I really learned a lot about working together with other people. I’ve never done anything with a group before, and we had to find ways of cooperating, erm, : and compromising, and sometimes persuading people, when they don't agree with you.",
+          "answers": [
+            2,
+            25,
+            26
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Yes, that is a very useful experience, 1 know.",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "What about you. Ibrahim?",
+          "answers": []
+        },
+        {
+          "speaker": "IBRAHIM",
+          "text": "Well, I think I learnt a lot about how important editing is. When you’re filmingQ27 you think that everything's going to be interesting. but in fact we cut around half of it in the end, and then it was much better.",
+          "answers": [
+            27
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Good. Well, one last thing l'd like to ask. What mistakes do you think you, as a group that is, made? I mean, to put it another way. if you had to do it all over again, is there anything you'd do differently?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "cRisttNA: We didn't plan very well. For example, we didn't decide on dates when we'd complete each separate step of the project, and we should have agreed about that in the beginning, because we were always late with everything!",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Right. Anything else?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "CRisTiNA: I think we should have tried to experiment more with the camera. I mean with angles, and the focus and that kind of thing.",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "TUToR:So you should have been more ambitious? Do you agree, Ibrahim?",
+          "answers": []
+        },
+        {
+          "speaker": "IBRAHIM",
+          "text": "Not really. In fact, I think we were too ambitious. We were inexperienced, and we didn’t have a lot of time, and we tried to do too much, to make a long film. Next time I would make a shorter one and try to get the quality better.",
+          "answers": [
+            30
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Well, that's veryinteresting. Next semester we will be doing another video projeet - with a different content, of course but you'll have an opportunity to put into practice what you've learnt this time. Do you have any ideas about . . .",
+          "answers": []
+        }
+      ],
+      "charCount": 3872,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Tonight I'm going to talk to you about that remarkable continent Antaretica – remote. hostile and at present uninhabited on a permanent basis. For early explorers, it was the ultimate survival contest; for researchers like me, it remains a place of great intellectual challenge; while for the modern tourist, it's simply a wilderness of great beauty.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "First, some facts and figures. Antaretica is a place of extremes the highest, coldest and windiest continent and over fifty-eighi times the size of the UK. The ice-cap contains almost 70½ of the world's fresh water and 90% of its ice, but with very low snowfall, most of the continent technically falls unbelievably into the category of desert\"! Huge icebergs,break off the continent each year, while in winter half the surrounding ocean freezes over. which means its size almost doubles.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Research and exploration has been going on in Antaretica for more than two hundred years, and has involved scientists from many different countries. who work together on researeh stations. Here science and technical support have been integrated in a very cost-effective waó our Antaretic rescarch programme has several summers-only stations and two all-year-round ones; I was based on one of the all-year-round ones.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The research stations are really self-contained communities ol’ about twenty people. There's living and working space. a kitehen with a huge food store, a small hospital and a well-equipped gym to ensure everyone keeps fit in their spare time. The station generates its own electricity and communicates with the outside world using a sateltlite link.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Our station –Zero One –had some special features. It wasn't built on land but on an ice-shelf. hundreds ol metres thick. Supplies were brought to us on large sledges from a ship fifteen kilometres away at the ice edge.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Living in the Antaretie hasn’t afways been so comfortable. Suow build-ups caused enormous problems for four previous stations on the same site, which were buried and fnally erushed by the weight. Fortunately no-one was hurt, but these buildings became a fuge challenge to architects who fnally came up with a remarkable solution the buildings are placed on platforms which can be raised above the changing snow level on legs which are extendable",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Food is one of the most important aspects of survival in a polar climate. People living there need to obtain a lot more energy from their food, both to keep warm and to undertake heavy physical work. Maybe you know that an adult in the UK will probably need about 1.700 kilocalories a day on average: someone in Antaretica will need about 3.500–just over double! This energy is provided by foods which are high in carbohydrate and fat.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Rations for fieldwork present an additional problem. They need to provide maximum energy. but they must also be compaet and light for easy transport. Special boxes are prepared, each containing enough food for one person for twenty days. You may be familiar with eoffee",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "processed by freeze-drying, which preserves the quality of the food product while making a large saving in weight– well, this type of presentation is ideal in our situation. It wasn't available to earlier polar explorers, whose diet was commonly insufficient for their health.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "I think that being at the cutting edge of seience has a special appeal for everyone working in Antaretica. in whatever capacity. As a marine biologist, my own research was fascinating; but it's perhaps climate change research that is the most crucial field of study",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Within this general field, surveying changes in the volume and stability of the ice-cap is vital, since these may have profound effects on world sea levels and on ocean currents. A second important area is monitoring the size of the hole in the ozone layer above Antaretica. since this is an indicator of global ultra-violet radiation levels. Thirdly, bubbies in the ice-sheet itself provide an index of pollution because frozen inside them are samples of previous atmospheres over the past 500,000 years, and these provide us with evidence for the efleets of such human activities as agriculture and industry.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "There are an inereasing number of opportunities for young people to work for a period in Antaretica – not only as research assistants in projects like mine, but also in a wide range of junior administrative and technical positions including vacancies for map-makers. 1 hope that the insights I've provided will encourage you to take up these opportunities in this fascinating continent.",
+          "answers": [
+            40
+          ]
+        }
+      ],
+      "charCount": 4508,
+      "missing": false
+    }
+  ]
+}

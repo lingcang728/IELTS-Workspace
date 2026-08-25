@@ -25,6 +25,7 @@ pub(crate) fn is_portable_update() -> Result<bool, String> {
 
 #[tauri::command]
 pub(crate) fn launch_migrated_install(app: AppHandle) -> Result<(), String> {
+    crate::migrate::portable_to_installed().map_err(|e| e.to_string())?;
     for _ in 0..30 {
         for installed in install_candidates()? {
             let Some(parent) = installed.parent() else {

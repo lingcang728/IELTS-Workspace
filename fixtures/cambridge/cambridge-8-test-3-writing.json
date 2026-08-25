@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-8-test-3-writing",
+  "title": "Cambridge IELTS 8 Academic Test 3 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-9bc5a6c2dc6b",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 8",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题8.pdf",
+        "sha256": "2f3cdf0c049ecac93bafafd034c2316ac7ed66b0694bea8a2a7c152042923e23"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C08\\剑桥雅思真题8\\auto\\剑桥雅思真题8.md",
+        "sha256": "9bc5a6c2dc6b80f2e6667849856a7af88f0f5e7102900ecf2906d8c2b913a8ca",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe diagrams below show the stages and eguipment used in the cement-making process, and how cement is used to produce concrete for building purposes.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.\n\n[]\n\n[]\n\n本资料仅用于参考，。\n\nWriting"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c08-t3-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nIncreasing the price of petrol is the best way to solve growing traffic and pollution probiems.\n\nTo what extent do you agree or disagree?\n\nWhat other measures do you think might be effective?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.\n\n## Test 3"
+      },
+      "questionGroups": []
+    }
+  ]
+}

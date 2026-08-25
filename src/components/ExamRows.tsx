@@ -2,9 +2,9 @@ import { Icon, ModuleIcon } from "./Ui";
 import { completion, durationLabel, formatDate, isFinished, moduleLabel, sourceLabel, statusLabel } from "../lib/format";
 import type { ExamSummary, SessionSummary } from "../lib/types";
 
-export function ModuleCard({ module, exam, onStart, disabled }: { module: "reading" | "listening" | "writing"; exam?: ExamSummary; onStart: () => void; disabled?: boolean }) {
+export function ModuleCard({ module, exam, onStart, disabled, action }: { module: "reading" | "listening" | "writing"; exam?: ExamSummary; onStart: () => void; disabled?: boolean; action?: string }) {
   const meta = { reading: ["Reading", "学术类阅读", "60 分钟 · 3 篇文章 · 40 题"], listening: ["Listening", "学术类听力", "约 30 分钟 · 4 部分 · 40 题"], writing: ["Writing", "学术类写作", "60 分钟 · Task 1 & Task 2"] }[module];
-  return <article className={`module-card ${module}`}><div className="module-card-main"><span className="module-icon-shell"><ModuleIcon module={module} size={56} /></span><div><h3>{meta[0]}</h3><span>{meta[1]}</span></div></div><small>{meta[2]}</small><button type="button" disabled={disabled || !exam} onClick={onStart}>开始练习</button></article>;
+  return <article className={`module-card ${module}`}><div className="module-card-main"><span className="module-icon-shell"><ModuleIcon module={module} size={56} /></span><div><h3>{meta[0]}</h3><span>{meta[1]}</span></div></div><small>{meta[2]}</small><button type="button" disabled={disabled || !exam} onClick={onStart}>{action ?? "开始练习"}</button></article>;
 }
 
 export function ExamRow({ exam, action, onClick }: { exam: ExamSummary; action: string; onClick: () => void }) {

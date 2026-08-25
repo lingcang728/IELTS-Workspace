@@ -1,0 +1,2650 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-2-reading",
+  "title": "Cambridge IELTS 4 Academic Test 2 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0013-84ca1a7b",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/adults-children-tropical-rainforests-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/what-do-whales-feel-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/visual-symbols-and-blind-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/lost-for-words-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/alternative-medicine-australia-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/play-is-serious-business-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/micro-enterprise-credit-street-youth-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/volcanoes-earth-shattering-news-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/obtaining-linguistic-data-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/how-much-higher-how-much-faster-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/nature-aims-of-archaeology-reading-answers-pdf/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://ieltsprogress.com/problem-of-scarce-resources-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-1-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-2-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-3-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress / The IELTS Bridge",
+        "url": "https://theieltsbridge.com/ielts-cambridge-4-test-4-academic-reading-answers/",
+        "note": "Independent C4 Reading answer cross-check."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Alternative Medicine in Australia\n\nThe first students to study alternative medicine at university level in Australia began their four-year, full-time course at the University of Technology Sydney, in early 1994. Their course covered, among other therapies, acupuncture. The theory they learnt is based on the traditional Chinese explanation of this ancient healing art that it can regulate the flow of‘Qi’ or energy through pathways in the body. This course reflects how far some alternative therapies have come in their struggle for acceptance by the medical establishment.\n\nAustralia has been unusual in the Western world in having a very conservative attitude to natural or alternative therapies, according to Dr Paul Laver, a lecturer in Public Health at the University of Sydney.‘We’ve had a tradition of doctors being fairly powerful and I guess they are pretty loath to allow any pretenders to their position to come into it.’ In many other industrialized countries, orthodox and alternative medicine have worked‘hand in glove’ for years. In Europe, only orthodox doctors can prescribe herbal medicine. In Germany, plant remedies account for 10% of the national turnover of pharmaceuticals. Americans made more visits to alternative therapists than to orthodox doctors in 1990, and each year they spend about \\$US12 billion on therapies that have not been scientifically tested.\n\nDisenchantment with orthodox medicine has seen the popularity of alternative therapies in Australia climb steadily during the past 20 years. In a 1983 national health survey, 1.9% of people said they had contacted a chiropractor, naturopath, osteopath, acupuncturist or herbalist in the two weeks prior to the survey. By 1990, this figure had risen to 2.6% of the population. The 550,000 consultations with alternative therapists reported in the 1990 survey represented about an eighth of the total number of consultations with medically qualified personnel covered by the survey, according to Dr Laver and colleagues writing in the Australian Journal of Public Health in1993. ‘A better educated and less accepting public has become disillusioned with the experts in general, and increasingly skeptical about science and empirically based knowledge,’ they said.‘The high standing of professionals, including doctors, has been eroded as a consequence.’\n\nRather than resisting or criticizing this trend, increasing numbers of Australian doctors, particularly younger ones, are forming group practices with alternative therapists or taking courses themselves, particularly in acupuncture and herbalism. Part of the incentive was financial, Dr Laver said. ‘ The bottom line is that most general practitioners are business people. If they see potential clientele going elsewhere, they might want to be able to offer a similar service.'\n\nIn 1993, Dr Laver and his colleagues published a survey of 289 Sydney people who attended eight alternative therapists’ practices in Sydney. These practices offered a wide range of alternative therapies from 25 therapists. Those surveyed had experienced chronicillnesses, for which orthodox medicine had been able to provide little relief. They commented that they liked the holistic approach of their alternative therapists and the friendly, concerned and detailed attention they had received. The cold, impersonal manner of orthodox doctors featured in the survey. An increasing exodus from their clinics, coupled with this and a number of other relevant surveys carried out in Australia, all pointing to orthodox doctors’ inadequacies, have led mainstream doctors themselves to begin to admit they could learn from the personal style of alternative therapists. Dr Patrick Store, President of the Royal College of General Practitioners, concurs that orthodox doctors could learn a lot about bedside manner and advising patients on preventative health from alternative therapists.\n\nAccording to the Australian Journal of Public Health, 18% of patients visiting alternative therapists do so because they suffer from musculo-skeletal complaints, 12% suffer from digestive problems, which is only 1% more than those suffering from emotional problems. Those suffering from respiratory complaints represent 7% of their patients, and candida sufferers represent an equal percentage. Headache sufferers and those complaining of general ill health represent 6% and 5% of patients respectively and a further 4% see therapists for general health maintenance.\n\nThe survey suggested that complementary medicine is probably a better term than alternative medicine. Alternative medicine appears to be an adjunct sought in times of disenchantment when conventional medicine seems not to offer the answer."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t2r-g1",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "_. But in today’s world, factors such as government initiatives and",
+              "acceptedAnswers": [
+                "isolation"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1 —4 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g2",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "But in today’s world, factors such as government initiatives and ___ are contributing to a huge decrease in the number of languages.",
+              "acceptedAnswers": [
+                "economic globalisation",
+                "economic globalization",
+                "socio-economic pressures"
+              ],
+              "gapText": "But in today’s world, factors such as government initiatives and 2 ___ are contributing to a huge decrease in the number of languages.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1 —4 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g3",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "_. This has been encouraged through programs of language classes for children and through‘apprentice’ schemes, in which the endangered language is used as the medium of instruction to teach people a",
+              "acceptedAnswers": [
+                "cultural identity"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1 —4 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g4",
+          "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "_. Some speakers of endangered languages have been produced writing systems in order to help secure the survival of their mother tongue.",
+              "acceptedAnswers": [
+                "traditional skill"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 1 —4 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g5",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-E.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q5",
+              "number": 5,
+              "type": "matching",
+              "prompt": "Endangered languages cannot be saved unless people learn to speak more than one language",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Michael Krauss"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Salikoko Mufwene"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Nicholas Ostler"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Mark Pagel"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Doug Whalen"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Michael Krauss"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Salikoko Mufwene"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Nicholas Ostler"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Mark Pagel"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Doug Whalen"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              9
+            ],
+            "canonicalOf": [
+              "Write the appropriate letter A —E in boxes 5 —9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g6",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-E.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q6",
+              "number": 6,
+              "type": "matching",
+              "prompt": "Saving languages from extinction is not in itself a satisfactory goal",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Michael Krauss"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Salikoko Mufwene"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Nicholas Ostler"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Mark Pagel"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Doug Whalen"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Michael Krauss"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Salikoko Mufwene"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Nicholas Ostler"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Mark Pagel"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Doug Whalen"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              9
+            ],
+            "canonicalOf": [
+              "Write the appropriate letter A —E in boxes 5 —9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g7",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-E.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q7",
+              "number": 7,
+              "type": "matching",
+              "prompt": "The way we think may be determined by our language",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Michael Krauss"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Salikoko Mufwene"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Nicholas Ostler"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Mark Pagel"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Doug Whalen"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Michael Krauss"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Salikoko Mufwene"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Nicholas Ostler"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Mark Pagel"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Doug Whalen"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              9
+            ],
+            "canonicalOf": [
+              "Write the appropriate letter A —E in boxes 5 —9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g8",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-E.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q8",
+              "number": 8,
+              "type": "matching",
+              "prompt": "Young people often reject the established way of life in their community",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Michael Krauss"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Salikoko Mufwene"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Nicholas Ostler"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Mark Pagel"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Doug Whalen"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Michael Krauss"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Salikoko Mufwene"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Nicholas Ostler"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Mark Pagel"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Doug Whalen"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              9
+            ],
+            "canonicalOf": [
+              "Write the appropriate letter A —E in boxes 5 —9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g9",
+          "instruction": "Look at the following statements. Match each statement with the correct person, A-E.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q9",
+              "number": 9,
+              "type": "matching",
+              "prompt": "A change of language may mean a loss of traditional culture. A Michael Krauss B Salikoko Mufwene C Nicholas Ostler D Mark Pagel E Doug Whalen",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Michael Krauss"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Salikoko Mufwene"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Nicholas Ostler"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Mark Pagel"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Doug Whalen"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Michael Krauss"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Salikoko Mufwene"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Nicholas Ostler"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Mark Pagel"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Doug Whalen"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              9
+            ],
+            "canonicalOf": [
+              "Write the appropriate letter A —E in boxes 5 —9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g10",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q10",
+              "number": 10,
+              "type": "yes_no_ng",
+              "prompt": "The Navajo language will die out because it currently has too few speakers",
+              "acceptedAnswers": [
+                "No"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g11",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q11",
+              "number": 11,
+              "type": "yes_no_ng",
+              "prompt": "A large number of native speakers fail to guarantee the survival of a language",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g12",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q12",
+              "number": 12,
+              "type": "true_false_ng",
+              "prompt": "National governments could do more to protect endangered languages",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g13",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 1?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q13",
+              "number": 13,
+              "type": "yes_no_ng",
+              "prompt": "The loss of linguistic diversity is inevitable",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Play is a Serious Business\n\nDoes play help develop bigger, better brains?\n\nBryant Furlow investigates.\n\nA Playing is a serious business. Children engrossed in a make-believe world, fox cubs play-fighting or kittens teasing a ball of string aren’t just having fun. Play may look like a carefree and exuberant way to pass the time before the hard work of adulthood comes along, but there’s much more to it than that. For a start, play can even cost animals their lives. Eighty percent of deaths among juvenile fur seals occur because playing pups fail to spot predators approaching. It is also extremely expensive in terms of energy. Playful young animals use around two or three percent of their energy cavorting, and in children that figure can be closer to fifteen percent.‘Even two or three percent is huge,’ says John Byers of Idaho University. ‘You just don’t find animals wasting energy like that,’ he adds. There must be a reason.\n\nB But if play is not simply a developmental hiccup, as biologists once thought, why did it evolve? The latest idea suggests that play has evolved to build big brains. In other words, playing makes you intelligent. Playfulness, it seems, is common only among mammals, although a few of the larger-brained birds also indulge. Animals at play often use unique signs-tail-wagging in dogs, for example—to indicate that activity superficially resembling adult behavior is not really in earnest. A popular explanation of play has been that it helps juveniles develop the skills they will need to hunt, mate and socialize as adults. Another has been that it allows young animals to get in shape for adult life by improving their respiratory endurance. Both these ideas have been questioned in recent years.\n\nC Take the exercise theory. If play evolved to build muscle or as a kind of endurance training, then you would expect to see permanent benefits. But Byers points out that the benefits of increased exercise disappear rapidly after training stops, so any improvement in endurance resulting from juvenile play would be lost by adulthood. ‘If the function of play was to get into shape,’ says Byers, ‘the optimum time for playing would depend on when it was most advantageous for the young of a particular species to do so. But it doesn’t work like that.’ Across species, play tends to peak about halfway through the suckling stage and then decline.\n\nD Then there’s the skills-training hypothesis. At first glance, playing animals do appear to be practicing the complex manoeuvres they will need in adulthood. But a closer inspection reveals this interpretation as too simplistic. In one study, behavioral ecologist Tim Caro, from the University of California, looked at the predatory play of kittens and their predatory behavior when they reached adulthood. He found that the way the cats played had no significant effect on their hunting prowess in later life.\n\nE Earlier this year, Sergio Pellis of Lethbridge University, Canada, reported that there is a strong positive link between brain size and playfulness among mammals in general. Comparing measurements for fifteen orders of mammal, he and his team found larger brains (for a given body size) are linked to greater playfulness. The converse was also found to be true. Robert Barton of Durham University believes that, because large brains are more sensitive to developmental stimuli than smaller brains, they require more play to help mould them for adulthood. ‘I concluded it’s to do with learning, and with the importance of environmental data to the brain during development,’ he says.\n\nF According to Byers, the timing of the playful stage in young animals provides an important clue to what’s going on. If you plot the amount of time a juvenile devotes to play each day over the course of its development, you discover a pattern typically associated with a ‘sensitive period’-a brief development window during which the brain can actually be modified in ways that are not possible earlier or later in life. Think of the relative ease with which young children-but not infants or adults-absorb language. Other researchers have found that play in cats, rats and mice is at its most intense just as this ‘window of opportunity’ reaches its peak.\n\nG ‘People have not paid enough attention to the amount of the brain activated by play,’ says Marc Bekoff from Colorado University. Bekoff studied coyote pups at play and found that the kind of behavior involved was markedly more variable and unpredictable than that of adults. Such behavior activates many different parts of the brain, he reasons. Bekoff likens it to a behavioral kaleidoscope, with animals at play jumping rapidly between activities. ‘They use behavior from a lot of different context-- predation, aggression, reproduction,’ he says. ‘Their developing brain is getting all sorts of stimulation.’\n\nH Not only is more of the brain involved in play than was suspected, but it also seems to activate higher cognitive processes. ‘There’s enormous cognitive, involvement in play,’ says Bekoof. He points out that play often involves complex assessments of playmates, ideas of reciprocity and the use of specialized signals and rules. He believes that play creates a brain that has greater behavioral flexibility and improved potential for learning later in life. The idea is backed up by the work of Stephen Siviy of Gettysburg College. Siviy studied how bouts of play affected the brain’s levels of a particular chemical associated with the stimulation and growth of nerve cells. He was surprised by the extent of the activation. ‘Play just lights everything up,’ he says. By allowing link-ups between brain areas that might not normally communicate with each other, play may enhance creativity.\n\nI What might further experimentation suggest about the way children are raised in many societies today? We already know that rat pups denied the chance to play grow smaller brain components and fail to develop the ability to apply social rules when they interact with their peers. With schooling beginning earlier and becoming increasingly exam-orientated, play is likely to get even less of a look-in. Who knows what the result of that will be?"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t2r-g14",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Traditionally, how have Australian doctors differed from doctors in many Western countries? A They have worked closely with pharmaceutical companies. B They have often worked alongside other therapists. C They have been reluctant to accept alternative therapists. D They have regularly prescribed alternative remedies",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They have worked closely with pharmaceutical companies"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They have often worked alongside other therapists"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They have been reluctant to accept alternative therapists"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They have regularly prescribed alternative remedies"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They have worked closely with pharmaceutical companies"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They have often worked alongside other therapists"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They have been reluctant to accept alternative therapists"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They have regularly prescribed alternative remedies"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              15
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 14 and 15 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g15",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "In 1990, Americans",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "were prescribed more herbal medicines than in previous years."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "consulted alternative therapists more often than doctors."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "spent more on natural therapies than orthodox medicines."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "made more complaints about doctors than in previous years."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "were prescribed more herbal medicines than in previous years."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "consulted alternative therapists more often than doctors."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "spent more on natural therapies than orthodox medicines."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "made more complaints about doctors than in previous years."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              15
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 14 and 15 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g16",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q16",
+              "number": 16,
+              "type": "yes_no_ng",
+              "prompt": "Australians have been turning to alternative therapies in increasing numbers over the past 20 years.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2r-g17",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q17",
+              "number": 17,
+              "type": "yes_no_ng",
+              "prompt": "Between 1983 and 1990 the numbers of patients visiting alternative therapists rose to include a further 8% of the population",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g18",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q18",
+              "number": 18,
+              "type": "yes_no_ng",
+              "prompt": "The 1990 survey related to 550,000 consultations with alternative therapists",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g19",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q19",
+              "number": 19,
+              "type": "yes_no_ng",
+              "prompt": "In the past, Australians had a higher opinion of doctors than they do today",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g20",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q20",
+              "number": 20,
+              "type": "yes_no_ng",
+              "prompt": "Some Australian doctors are retraining in alternative therapies. Medical complaints of patients visiting therapists",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g21",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q21",
+              "number": 21,
+              "type": "true_false_ng",
+              "prompt": "Alternative therapists earn higher salaries than doctors",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g22",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q22",
+              "number": 22,
+              "type": "yes_no_ng",
+              "prompt": "The 1993 Sydney survey involved 289 patients who visited alternative therapists for acupuncture treatment",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g23",
+          "instruction": "Do the following statements agree with the views of the writer in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q23",
+              "number": 23,
+              "type": "yes_no_ng",
+              "prompt": "All the patients in the 1993 Sydney survey had long-term medical complaints",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4t2r-g24",
+          "instruction": "Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Label 24 on the vertical axis",
+              "acceptedAnswers": [
+                "emotional",
+                "emotional problems"
+              ],
+              "gapText": "24 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Complete the vertical axis on the table below."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g25",
+          "instruction": "Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "Label 25 on the vertical axis",
+              "acceptedAnswers": [
+                "headache",
+                "headaches"
+              ],
+              "gapText": "25 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Complete the vertical axis on the table below."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g26",
+          "instruction": "Choose NO MORE THAN THREE WORDS from Reading Passage 2 for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Label 26 on the vertical axis",
+              "acceptedAnswers": [
+                "general ill health"
+              ],
+              "gapText": "26 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              26
+            ],
+            "canonicalOf": [
+              "Complete the vertical axis on the table below."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 1—13 which are based on Reading Passage 1 below.\n\n## Lost for Words\n\nMany minority languages are on the danger lists\n\nIn the Native American Navajo nation, which sprawls across four states in the American south-west, the native language is dying. Most of its speakers are middle-aged or elderly. Although many students take classes in Navajo, the schools are run in English. Street signs, supermarket goods and even their own newspaper are all in English. Not surprisingly, linguists doubt that any native speakers of Navajo will remain in a hundred years’ time.\n\nNavajo is far from alone. Half the world’s 6,800 languages are likely to vanish within two generations—that’s one language lost every ten days. Never before has the planet’s linguistic diversity shrunk at such a pace. ‘At the moment, we are heading for about three or four languages dominating the world,’ says Mark Pagel, an evolutionary biologist at the University of Reading. ‘It’s a mass extinction, and whether we will ever rebound from the loss is difficult to know.’\n\nIsolation breeds linguistic diversity: as a result, the world is peppered with languages spoken by only a few people. Only 250 languages have more than a million speakers, and at least 3,000 have fewer than 2,500. It is not necessarily these small languages that are about to disappear. Navajo is considered endangered despite having 150,000 speakers. What makes a language endangered is not just the number of speakers, but how old they are. If it is spoken by children it is relatively safe. The critically endangered languages are those that are only spoken by the elderly, according to Michael Krauss, director of the Alassk Native Language Center, in Fairbanks.\n\nWhy do people reject the language of their parents? It begins with a crisis of confidence, when a small community finds itself alongside a larger, wealthier society, says Nicholas Ostler, of Britain’s Foundation for Endangered Languages, in Bath. People lose faith in their culture,’ he says. ‘When the next generation reaches their teens, they might not want to be induced into the old traditions.’\n\nThe change is not always voluntary. Quite often, governments try to kill off a minority language by banning its use in public or discouraging its use in schools, all to promote national unity. The former US policy of running Indian reservation schools in English, for example, effectively put languages such as Navajo on the danger list. But Salikoko Mufwene, who chairs the Linguistics department at the University of Chicago, argues that the deadliest weapon is not government policy but economic globalization.\n\nNative Americans have not lost pride in their language, but they have had to adapt to socio-economic pressures,’ he says. ‘They cannot refuse to speak English if most commercial activity is in English.’ But are languages worth saving? At the very least, there is a loss of data for the study of languages and their evolution, which relies on comparisons between languages, both living and dead. When an unwritten and unrecorded language disappears, it is lost to science.\n\nLanguage is also intimately bound up with culture, so it may be difficult to preserve one without the other. ‘If a person shifts from Navajo to English, they lose something,’ Mufwene says. ‘Moreover, the loss of diversity may also deprive us of different ways of looking at the world.’ says Pagel. There is mounting evidence that learning a language produces physiological changes in the brain. ‘Your brain and mine are different from the brain of someone who speaks French, for instance,’ Pagel says, and this could affect our thoughts and perceptions. ‘The patterns and connections we make among various concepts may be structured by the linguistic habits of our community.’\n\nSo despite linguists’ best efforts, many languages will disappear over the next century. But a growing interest in cultural identity may prevent the direst predictions from coming true. ‘The key to fostering diversity is for people to learn their ancestral tongue, as well as the dominant language,’ says Doug Whalen, founder and president of the Endangered Language Fund in New Haven, Connecticut . ‘Most of these languages will not survive without a large degree of bilingualism,’ he says. In New Zealand, classes for children have slowed the erosion of Maori and rekindled interest in the language. A similar approach in Hawaii has produced about 8,000 new speakers of Polynesian languages in the past few years. In California,‘apprentice’ programs have provided life support to several indigenous languages. Volunteer ‘apprentices’ pair up with one of the last living speakers of a Native American tongue to learn a traditional skill such as basket weaving, with instruction exclusively in the endangered language. After about 300 hours of training they are generally sufficiently fluent to transmit the language to the next generation. But Mufwene says that preventing a language dying out is not the same as giving it new life by using it every day. ‘Preserving a language is more like preserving fruits in a jar,’ he says.\n\nHowever, preservation can bring a language back from the dead. There are examples of languages that have survived in written form and then been revived by later generations. But a written form is essential for this, so the mere possibility of revival has led many speakers of endangered languages to develop systems of writing where none existed before.\n\n## Questions 1—4\n\nComplete the summary below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer. \nWrite your answers in boxes 1 —4 on your answer sheet.\n\nThere are currently approximately 6,800 languages in the world. This great variety of languages came about largely as a result of geographical 1 \\_. But in today’s world, factors such as government initiatives and 2 are contributing to a huge decrease in the number of languages. One factor which may help to ensure that some endangered languages do not die out completely is people’s increasing appreciation of their 3 \\_. This has been encouraged through programs of language classes for children and through‘apprentice’ schemes, in which the endangered language is used as the medium of instruction to teach people a 4 \\_. Some speakers of endangered languages have been produced writing systems in order to help secure the survival of their mother tongue.\n\n## Questions 5—9\n\nLook at the following statements(Questions5 —9)and the list of people in the box below.\n\nMatch each statement with the correct person A —E.\n\nWrite the appropriate letter A —E in boxes 5 —9 on your answer sheet.\n\nNB You may use any letter more than once.\n\n5 Endangered languages cannot be saved unless people learn to speak more than one language.\n\n6 Saving languages from extinction is not in itself a satisfactory goal.\n\n7 The way we think may be determined by our language.\n\n8 Young people often reject the established way of life in their community.\n\n9 A change of language may mean a loss of traditional culture.\n\nA Michael Krauss\n\nB Salikoko Mufwene\n\nC Nicholas Ostler\n\nD Mark Pagel\n\nE Doug Whalen\n\n## Questions 10—13\n\nDo the following statements agree with the views of the writer in Reading Passage 1?\n\nIn boxes 10 —13 on your answer sheet write\n\nYES if the statement agrees with the views of the writer\n\nNO if the statement contradicts the views of the writer\n\nNOT GIVEN if it is impossible to say what the writer thinks about this\n\n10 The Navajo language will die out because it currently has too few speakers.\n\n11 A large number of native speakers fail to guarantee the survival of a language.\n\n12 National governments could do more to protect endangered languages.\n\n13 The loss of linguistic diversity is inevitable.\n\n## READING PASSAGE 2"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t2r-g27",
+          "instruction": "Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "the way play causes unusual connections in the brain which are beneficial",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up s"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2r-g28",
+          "instruction": "Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Insights from recording how much time young animals spend playing",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive stra"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2r-g29",
+          "instruction": "Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "a description of the physical hazards that can accompany play",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2r-g30",
+          "instruction": "Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "a description of the mental activities which are exercised and developed during play",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "—I in boxes 27—32 on your answer sheet"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2r-g31",
+          "instruction": "Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "the possible effects that a reduction in play opportunities will have on humans",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2r-g32",
+          "instruction": "Which paragraph contains the following information? Write the correct letter, A-I, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q32",
+              "number": 32,
+              "type": "matching",
+              "prompt": "the classes of animals for which play is important",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Paragraph G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Paragraph H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Paragraph I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2r-g33",
+          "instruction": "Choose THREE letters A-F.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q33",
+              "number": 33,
+              "type": "multi_choice",
+              "prompt": "First answer: Which THREE ways are mentioned by the writer of the text?",
+              "acceptedAnswers": [
+                "A",
+                "C",
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a rehearsal for later adult activities"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a method animals use to prove themselves to their peer group"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an activity intended to build up strength for adulthood"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a means of communicating feelings"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a defensive strategy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "an activity assisting organ growth"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:53:52.795842+00:00"
+          }
+        },
+        {
+          "id": "c4t2r-g34",
+          "instruction": "Choose THREE letters A-F.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q34",
+              "number": 34,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which THREE ways are mentioned by the writer of the text?",
+              "acceptedAnswers": [
+                "A",
+                "C",
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a rehearsal for later adult activities"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a method animals use to prove themselves to their peer group"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an activity intended to build up strength for adulthood"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a means of communicating feelings"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a defensive strategy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "an activity assisting organ growth"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:53:52.795842+00:00"
+          }
+        },
+        {
+          "id": "c4t2r-g35",
+          "instruction": "Choose THREE letters A-F.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q35",
+              "number": 35,
+              "type": "multi_choice",
+              "prompt": "Third answer: Which THREE ways are mentioned by the writer of the text?",
+              "acceptedAnswers": [
+                "A",
+                "C",
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a rehearsal for later adult activities"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a method animals use to prove themselves to their peer group"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an activity intended to build up strength for adulthood"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "a means of communicating feelings"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a defensive strategy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "an activity assisting organ growth"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rehearsal for later adult activities"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a method animals use to prove themselves to their peer group"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an activity intended to build up strength for adulthood"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a means of communicating feelings"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:53:52.795842+00:00"
+          }
+        },
+        {
+          "id": "c4t2r-g36",
+          "instruction": "Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q36",
+              "number": 36,
+              "type": "matching",
+              "prompt": "Robert Barton",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a defensive strategy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "an activity assisting organ growth"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a link between a specific substance in the brain and playing"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Play provides input concerning physical surroundings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Varieties of play can be matched to different stages of evolutionary history"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "There is a tendency for mammals with smaller brains to play less"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "A wide range of activities are combined during play"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Play is a method of teaching survival techniques"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a link between a specific substance in the brain and playing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Play provides input concerning physical surroundings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Varieties of play can be matched to different stages of evolutionary history"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "There is a tendency for mammals with smaller brains to play less"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "A wide range of activities are combined during play"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Play is a method of teaching survival techniques"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Look at the following researchers(Questions36—40)and the list of findings below."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g37",
+          "instruction": "Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q37",
+              "number": 37,
+              "type": "matching",
+              "prompt": "Marc Bekoff",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "a defensive strategy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "an activity assisting organ growth"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a link between a specific substance in the brain and playing"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Play provides input concerning physical surroundings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Varieties of play can be matched to different stages of evolutionary history"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "There is a tendency for mammals with smaller brains to play less"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "A wide range of activities are combined during play"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Play is a method of teaching survival techniques"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a defensive strategy"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a link between a specific substance in the brain and playing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Play provides input concerning physical surroundings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Varieties of play can be matched to different stages of evolutionary history"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "There is a tendency for mammals with smaller brains to play less"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "A wide range of activities are combined during play"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Play is a method of teaching survival techniques"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Look at the following researchers(Questions36—40)and the list of findings below."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g38",
+          "instruction": "Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q38",
+              "number": 38,
+              "type": "matching",
+              "prompt": "John Byers",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "an activity assisting organ growth"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a link between a specific substance in the brain and playing"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Play provides input concerning physical surroundings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Varieties of play can be matched to different stages of evolutionary history"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "There is a tendency for mammals with smaller brains to play less"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Play is not a form of fitness training for the future"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "A wide range of activities are combined during play"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Play is a method of teaching survival techniques"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "F",
+              "label": "F",
+              "text": "an activity assisting organ growth"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a link between a specific substance in the brain and playing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Play provides input concerning physical surroundings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Varieties of play can be matched to different stages of evolutionary history"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "There is a tendency for mammals with smaller brains to play less"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Play is not a form of fitness training for the future"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "A wide range of activities are combined during play"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Play is a method of teaching survival techniques"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Look at the following researchers(Questions36—40)and the list of findings below."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g39",
+          "instruction": "Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q39",
+              "number": 39,
+              "type": "matching",
+              "prompt": "Sergio Pellis",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a link between a specific substance in the brain and playing"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Play provides input concerning physical surroundings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Varieties of play can be matched to different stages of evolutionary history"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "There is a tendency for mammals with smaller brains to play less"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Play is not a form of fitness training for the future"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Some species of larger-brained birds engage in play"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "A wide range of activities are combined during play"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Play is a method of teaching survival techniques"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a link between a specific substance in the brain and playing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Play provides input concerning physical surroundings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Varieties of play can be matched to different stages of evolutionary history"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "There is a tendency for mammals with smaller brains to play less"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Play is not a form of fitness training for the future"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Some species of larger-brained birds engage in play"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "A wide range of activities are combined during play"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Play is a method of teaching survival techniques"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Look at the following researchers(Questions36—40)and the list of findings below."
+            ]
+          }
+        },
+        {
+          "id": "c4t2r-g40",
+          "instruction": "Write the correct letter, A-H, next to each question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2r-q40",
+              "number": 40,
+              "type": "matching",
+              "prompt": "Stephen Siviy",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "There is a link between a specific substance in the brain and playing"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Play provides input concerning physical surroundings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Varieties of play can be matched to different stages of evolutionary history"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "There is a tendency for mammals with smaller brains to play less"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Play is not a form of fitness training for the future"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Some species of larger-brained birds engage in play"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "A wide range of activities are combined during play"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Play is a method of teaching survival techniques"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "There is a link between a specific substance in the brain and playing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Play provides input concerning physical surroundings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Varieties of play can be matched to different stages of evolutionary history"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "There is a tendency for mammals with smaller brains to play less"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Play is not a form of fitness training for the future"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Some species of larger-brained birds engage in play"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "A wide range of activities are combined during play"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Play is a method of teaching survival techniques"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": [
+              "Look at the following researchers(Questions36—40)and the list of findings below."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

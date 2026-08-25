@@ -1,0 +1,1827 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-5-test-4-listening",
+  "title": "Cambridge IELTS 5 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0017-c42a9595",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 5",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题5.pdf",
+        "sha256": "7df6a474e84e69a622dd48fc009e69dd7fd711a64b713671bdf492311f5f58cc"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C05\\剑桥雅思真题5\\auto\\剑桥雅思真题5.md",
+        "sha256": "f824a696e954976360e36d9a1615a7da3cbfefff2c6511ed3f1e04f97d5a6c21",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-5-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 1–10\n\n1 14 Hill Road\n\n2 between 9 and 9.30 / 9–9.30\n\n3 I year\n\n4 intermediate\n\n5 North-West\n\n6 vegetarian\n\n7 (a) (real) garden\n\n8 (the) only guest\n\n9 100\n\n1023rd March / Monday 23rd March"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t4l-g1",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "14 Hill Road",
+              "acceptedAnswers": [
+                "14 Hill Road"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g2",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Age: 19 Intended length of stay:",
+              "acceptedAnswers": [
+                "between 9 and 9.30",
+                "9-9.30"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g3",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "I year",
+              "acceptedAnswers": [
+                "1 year"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g4",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Preferred location: in the",
+              "acceptedAnswers": [
+                "intermediate"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g5",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "North-West",
+              "acceptedAnswers": [
+                "North-West"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g6",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Other requirements: own facilities own television",
+              "acceptedAnswers": [
+                "vegetarian"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g7",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "(a) (real) garden",
+              "acceptedAnswers": [
+                "(a) (real) garden"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g8",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "(the) only guest",
+              "acceptedAnswers": [
+                "(the) only guest"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g9",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "100",
+              "acceptedAnswers": [
+                "100"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g10",
+          "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR NUMBERS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "23rd March / Monday 23rd March",
+              "acceptedAnswers": [
+                "23rd March",
+                "Monday 23rd March"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:30:21.640379+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 447723
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 11–20\n\n11 clubhouse\n\n12 picnic\n\n13 prizes\n\n14 10\n\n15 Wednesday afternoon(s)\n\n17 Sunday afternoon(s)\n\n18 collect (the) fees / collect (the) money\n\n19 send (out/the) newsletter(s)\n\n20 supervise (the) teams\n\n## If you score . . ."
+      },
+      "questionGroups": [
+        {
+          "id": "c5t4l-g11",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "The next meeting of the soccer club will be in the ........... in King's Park on 2 July.",
+              "acceptedAnswers": [
+                "clubhouse"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g12",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "The irst event is a .",
+              "acceptedAnswers": [
+                "picnic"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g13",
+          "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "At the final dinner, players receive .",
+              "acceptedAnswers": [
+                "prizes"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g14",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Junior competition - number of teams",
+              "acceptedAnswers": [
+                "10"
+              ],
+              "gapText": "Junior competition - number of teams",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g15",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Wednesday afternoon(s)",
+              "acceptedAnswers": [
+                "Wednesday afternoon(s)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g16",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Senior competition - number of teams",
+              "acceptedAnswers": [
+                "4"
+              ],
+              "gapText": "Senior competition - number of teams",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g17",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Sunday afternoon(s)",
+              "acceptedAnswers": [
+                "Sunday afternoon(s)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g18",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "David West: Secretary | to",
+              "acceptedAnswers": [
+                "collect (the) fees",
+                "collect (the) money"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g19",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Jason Dokic: Head Coach | to",
+              "acceptedAnswers": [
+                "send (out",
+                "the) newsletter(s)"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g20",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "Jason Dokic: Head Coach - responsibility",
+              "acceptedAnswers": [
+                "supervise (the) teams"
+              ],
+              "gapText": "Jason Dokic: Head Coach - responsibility",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 447723,
+      "audioDurationMs": 315552
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 21–30\n\n21 sales\n\n22 competition\n\n23 interest rates / rates of interest\n\n24 training\n\n25 A\n\n26 B\n\n27 A\n\n28 C\n\n29 B\n\n30 D"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t4l-g21",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Causes of problems: | growing",
+              "acceptedAnswers": [
+                "sales"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g22",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Box Telecom problems: growing ___",
+              "acceptedAnswers": [
+                "competition"
+              ],
+              "gapText": "Box Telecom problems: growing ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g23",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Box Telecom causes of problems: high ___",
+              "acceptedAnswers": [
+                "interest rates",
+                "rates of interest"
+              ],
+              "gapText": "Box Telecom causes of problems: high ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g24",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Box Telecom causes of problems: lack of good ___",
+              "acceptedAnswers": [
+                "training"
+              ],
+              "gapText": "Box Telecom causes of problems: lack of good ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g25",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "What does Karin think the company will do? AB look for private investors accept a takeover offer C issue some new shares",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "look for private investors"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "accept a takeover offer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "issue some new shares"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.210102+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c5t4l-g26",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "How does the tutor suggest the company can recover?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "by appointing a new managing director"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "by changing the way it is organised"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "by closing some of its retail outlets"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.210102+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c5t4l-g27",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "The tutor wants Jason and Karin to produce a report which",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "offers solutions to Box Telecom's problems."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "analyses the UK market."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "compares different companies."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.210102+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c5t4l-g28",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Karin - opinion about Box Telecom",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its workers are motivated"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it has too little investment"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it will overcome its problems"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its marketing campaign needs improvement"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "it is old-fashioned"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "it has strong managers"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its workers are motivated"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "it has too little investment"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it will overcome its problems"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "its marketing campaign needs improvement"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "it is old-fashioned"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "it has strong managers"
+            }
+          ]
+        },
+        {
+          "id": "c5t4l-g29",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "Jason - opinion about Box Telecom",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its workers are motivated"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it has too little investment"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it will overcome its problems"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its marketing campaign needs improvement"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "it is old-fashioned"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "it has strong managers"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its workers are motivated"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "it has too little investment"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it will overcome its problems"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "its marketing campaign needs improvement"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "it is old-fashioned"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "it has strong managers"
+            }
+          ]
+        },
+        {
+          "id": "c5t4l-g30",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "The tutor - opinion about Box Telecom",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "its workers are motivated"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "it has too little investment"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "it will overcome its problems"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "its marketing campaign needs improvement"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "it is old-fashioned"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "it has strong managers"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its workers are motivated"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "it has too little investment"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "it will overcome its problems"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "its marketing campaign needs improvement"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "it is old-fashioned"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "it has strong managers"
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 763275,
+      "audioDurationMs": 416089
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c05-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": ", Questions 31–40\n\n31 B\n\n32 A\n\n33 A\n\n36 B\n\n37 B\n\n38 A\n\n39 B\n\n40 c\n\n0-12\n\n13-27\n\n2840\n\nyou are higłly unlikely to getan acceptable score underexamination conditions and werecommend that you spend alot of time improving yourEnglish before you take IELTS.\n\nyou may get an acceptablescore under examinationconditions but we recommendthat you think about havingmore practice or lessons beforeyou take IELTS.\n\nyou are likely to get anacceptable score underexamination conditions butremember that differentinstitutions will find differentscores acceptable.\n\n## ACADEMIC READING"
+      },
+      "questionGroups": [
+        {
+          "id": "c5t4l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "During the first week of term, students are invited to A be shown round the library by the librarian. B listen to descriptions of library resources. do an intensive course in the computer centre.",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "be shown round the library by the librarian."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "listen to descriptions of library resources."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "do an intensive course in the computer centre."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "be shown round the library by the librarian."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "listen to descriptions of library resources."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "do an intensive course in the computer centre."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:54:06.814228+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "The speaker warns the students that",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "internet materials can be unreliable."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "downloaded information must be acknowledged."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "computer access may be limited at times."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "internet materials can be unreliable."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "downloaded information must be acknowledged."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "computer access may be limited at times."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "The library is acquiring more CDs as a resource because A they are a cheap source of information. BC they take up verylittle space. they are more up to date than the reference books.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they are a cheap source of information."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they take up very little space."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they are more up to date than the reference books."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are a cheap source of information."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they take up very little space."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they are more up to date than the reference books."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:54:06.814228+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "Students are encouraged to use journals online because",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the articles do not need to be returned to the shelves."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "reading online is cheaper than photocopying articles."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the stock of printed articles is to be reduced."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the articles do not need to be returned to the shelves."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "reading online is cheaper than photocopying articles."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the stock of printed articles is to be reduced."
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g35",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "Why might some students continue to use reference books?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they can be taken away from the library"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they provide information unavailable elsewhere"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they can be borrowed for an extended loan period"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they can be taken away from the library"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they provide information unavailable elsewhere"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they can be borrowed for an extended loan period"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              36
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c5t4l-g36",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "What is the responsibility of the Training Supervisor? A to supervise and support library staff B to provide orientation to the library facilities to identify needs and inform section managers",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to supervise and support library staff"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to provide orientation to the library facilities"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to identify needs and inform section managers"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to supervise and support library staff"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to provide orientation to the library facilities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to identify needs and inform section managers"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:54:06.814228+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g37",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 37-40.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q37",
+              "number": 37,
+              "type": "single_choice",
+              "prompt": "Training in specialised computer programs - university section",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the postgraduate's own department or tutor"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "library staff"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "another section of the university"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the postgraduate's own department or tutor"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "library staff"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "another section of the university"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:54:06.814228+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g38",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 37-40.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q38",
+              "number": 38,
+              "type": "single_choice",
+              "prompt": "Advising on bibliography presentation - university section",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the postgraduate's own department or tutor"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "library staff"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "another section of the university"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the postgraduate's own department or tutor"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "library staff"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "another section of the university"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:54:06.814228+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g39",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 37-40.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q39",
+              "number": 39,
+              "type": "single_choice",
+              "prompt": "Checking the draft of the dissertation - university section",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the postgraduate's own department or tutor"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "library staff"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "another section of the university"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the postgraduate's own department or tutor"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "library staff"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "another section of the university"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:54:06.814228+00:00"
+          }
+        },
+        {
+          "id": "c5t4l-g40",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 37-40.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c5t4l-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "Providing language support - university section",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the postgraduate's own department or tutor"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "library staff"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "another section of the university"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:29+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the postgraduate's own department or tutor"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "library staff"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "another section of the university"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:54:06.814228+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1179364,
+      "audioDurationMs": 355772
+    }
+  ]
+}

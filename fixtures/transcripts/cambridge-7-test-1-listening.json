@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-7-test-1-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 7,
+    "test": 1
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40
+  ],
+  "missingMarkers": [
+    5,
+    24,
+    27,
+    31,
+    38
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": "MAN",
+          "text": "Hello, this is Land Transport Information at Toronto Airport. How may I help you? Example",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, good morning. Um, I'm flying to Toronto Airport next week, and I need to get to a town called um, Milton. Could you tell me how I can get there?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Milton, did you say? Let me see. I think that's about 150 miles south- west of here. In fact it's 147 miles to be exact, so it'll take you at least – say, three to four hours by road.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Wow! Is it as far as that? Yes, I'm afraid so. But you have a number of options to get you there",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "WOMAN: and you can always rent a car right here at the airport, of course. Right. Well, I don't really want to drive myself, so I'd like more",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "information about public transport. OK. In that case the quickest and most comfortable is a cab and of",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "course there are always plenty available. But it'll cost you. You can also take a Greyhound bus or there's an Airport Shuttle Service to Milton. Hmmm, I think for that kind of distance a cab would be way beyond",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "my budget. But the bus sounds OK. Can you tell me how much that would cost?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Sure. Let's see, that would be $15 one way, or $27.50 return. . . that's on the Greyhound. Oh, that's quite cheap – great! But whereabouts does it stop in",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "MAN: Milton?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "It goes directly from the airport here to the City Centre and it's pretty fast. But you have to bear in mind that there is only one departure a day, so it depends what time your flight gets in.",
+          "answers": [
+            2,
+            3
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "MAN: Oh, of course. Hang on, we're due to get there at 11.30 am. Hmmm, too bad, the bus leaves at 3.45, so you would have quite a wait – more than 4 hours.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "MAN: Oh, I see. Well, what about the Shuttle you mentioned? OK. That's the Airport Shuttle that will take you from the airport right to your hotel or private address. It's a door-to-door service and it",
+          "answers": [
+            4
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "MAN: would suit you much better, because there's one every two hours.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "So how much does that cost? Let's see. Yeah, that's $35 one way, $65 return, so I guess it's a bit more expensive than the Greyhound.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Oh, that doesn't sound too bad, especially if it'll take me straight to the hotel.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "WOMAN: But you do need to reserve a seat.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Sure. OK, is it possible to make a booking right now? Through you?",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "OK, I just have to fill this form out for you. So what date do you want to book this for?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "The 16th of October – oh, no, sorry, that's my departure date. I arrive on the 17th, so book it for then, please.",
+          "answers": [
+            6
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "So, that's the Toronto Airport Shuttle to Milton. And this is for just one person or . . .?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes, just me, please.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Right. And you said your expected time of arrival was 11.30? So if I book your Shuttle for after 12.00 – let's say, 12.30: that should give you plenty of time to, you know, collect your baggage, maybe grab a",
+          "answers": [
+            7
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "MAN: coffee? Yeah, that sounds fine, as long as we land on time! Well, we'll take your flight details so you don't need to worry too",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "MAN: much about that. Now, what about the fare? What sort of ticket do you want? One way or . . .? Yes, that'll be fine, provided I can book the return trip once I'm there.",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "No problem – just allow a couple of days in advance to make sure you get a seat. And what's your name, please? Janet, Janet Thomson.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "Is that Thompson spelt with a p'?",
+          "answers": [
+            8
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "No, it's T-H-O-M-S-O-N. OK. And you'll be coming from the UK? What flight will you be",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "travelling on?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "WMAN: Oh, it's Air Canada flight number AC936, from London Heathrow. Right. Now, do you know where you'll be staying? We need to give the",
+          "answers": [
+            9
+          ]
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "driver an address. Yes, it's called the Vacation Motel – and I think it's near the town",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "centre. Anyway, the address is 24, Kitchener Street – that's KITCHENER Street.",
+          "answers": []
+        },
+        {
+          "speaker": "MAN",
+          "text": "That's fine. Right, so that's $35 to pay please. Have you got your credit card number there?",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "Yes, it's a VISA card, and the number is 3303 8450 2045 6837.",
+          "answers": [
+            10
+          ]
+        },
+        {
+          "speaker": "MAN",
+          "text": "OK. Well, that seems to be everything. Have a good trip and we'll see",
+          "answers": []
+        },
+        {
+          "speaker": "WOMAN",
+          "text": "you in Toronto next week! Yes, bye – oh, thanks for your help!",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "本资料仅用于学习交流参考，建议购买正版。",
+          "answers": []
+        }
+      ],
+      "charCount": 3845,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Thank you all for coming to my talk this evening. It's nice to see so many people in the audience. For those of you who don't know very much about PS Camping, let me start by giving you some background information about the company.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The company started twenty-five years ago. It actually opened as a retail chain selling camping equipment, and then twenty years ago, it bought a small number of campsites in the UK, and began offering camping holidays. The company grew rapidly and has been providing holidays in continental Europe for the last fifteen years.",
+          "answers": [
+            11
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "If you book a camping holiday with us, you'll have a choice of over three hundred sites. In Italy we now have some 64 sites that we either own, or have exclusive use of. France is where we have the majority of sites, and we currently have a project to expand into Switzerland. We also have a number of sites in Northern Spain, particularly in the mountainous region of Picos de Europa. We've upgraded all these Spanish sites, and improved them considerably from their original three-star rating",
+          "answers": [
+            12
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "We believe our holidays offer superb facilities for the whole family. Parents who want their children to be fully occupied for all or part of the day can take advantage of our children's activities. These are organised by our well-qualified and enthusiastic staff. Each day kicks off with a sports match, perhaps football, or volleyball, followed by an hour of drama for everyone. This may include singing or dancing, mime or other activities. In the afternoon, there's a different art activity for each day of the week including a poster competition or model making. What's more, our sites are truly child-friendly, and, with this in mind, we operate a no-noise rule in the evenings. Children's evening activities usually finish at 9.30, or occasionally 10, and from 10.30 holiday-makers are expected to be quiet in the areas where there are tents.",
+          "answers": [
+            13,
+            14
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "We want nothing to go wrong on a PS Camping holiday, but if it does, we also want all customers to be insured. If you haven't organised an annual insurance policy of your own you'll need to take out the low-cost cover we offer and we require that you arrange this when you make your holiday reservation",
+          "answers": [
+            15
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "There are many advantages to choosing PS Camping, and to recommending it to others. As a regular customer, you'll be kept informed of special offers, and your friends can benefit from ten per cent off their holiday, or book a luxury tent for the price of a standard one. In return we'll send you a thank-you present, which you can choose from a list of high-quality items.",
+          "answers": [
+            16
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "When it comes to our tents, these are equipped to the highest standard. We really do think of every essential detail, from an oven and cooking rings fuelled by bottled gas, to mirrors in the bedroom areas. If you don't want to cook indoors, you can borrow a barbecue if you ask in advance for one to be made available, and there's even a picnic blanket to sit on outside your",
+          "answers": [
+            17
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "tent. Inside, a box of games and toys can be found, and children's tents can be hired if required. All tents have a fridge, and if you want to spend the day on the beach, for example ask for a specially designed PS Camping cool box, which will keep your food and drinks chilled. There are excellent washing facilities at all our sites, with washing machines and clothes lines in the central areas, along with mops and buckets in case your tent needs cleaning during your stay. All sites have a café and/or a shop for those who'd rather eat in than dine at a local restaurant",
+          "answers": [
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "charCount": 3524,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": "TUTOR",
+          "text": "PHILIP: Well, you've both been looking at different styles of managing individuals in companies and the workplace. How's the research going, Philip? Well, I've been looking at why individualism, I mean individual differences, are such an important area of management studies. When",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "you think about any organization, be it a family business or a multinational company, they are all fundamentally a group of people working together. But it's what these individuals contribute to their places of work that makes you realize how important they are. Of course they bring different ideas, but it's also their attitudes and their experiences of learning. Diversity is important in these areas too.",
+          "answers": [
+            21
+          ]
+        },
+        {
+          "speaker": "PHILIP",
+          "text": "So why do people behave so differently from one another at work? There are lots of reasons but research has shown a lot of it comes down to personality. And the other factor is gender. It's a well known fact that men and women do lots of things in different ways, and the workplace is no different.",
+          "answers": [
+            22
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "PHILIP: Did you look at the effects of this variation on companies? Yes, I did. On the positive side, exposure to such diversity helps encourage creativity which is generally an asset to a company. But unfortunately individual differences are also the root of conflict between staff and they can lead to difficulties for management, which can sometimes be serious.",
+          "answers": [
+            23
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "Thanks, Philip. So now I guess the two main things to remember here are to identify individual talent and then to utilize it. So Janice, you",
+          "answers": []
+        },
+        {
+          "speaker": "JANICE",
+          "text": "were looking at identifying different talents in workers. Do you think this is easy for managers to do? Well, currently teamwork is in fashion in the workplace and in my",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "opinion the importance of the individual is generally neglected. What managers should be targeting is those employees who can take the lead in a situation and are not afraid to accept the idea of",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "responsibility. TUTOR: That's true Janice but unfortunately many managers think the entire 沪otion uencouraging individualityamongst their staf is far too hard.",
+          "answers": []
+        },
+        {
+          "speaker": "JANICE",
+          "text": "Yes, that may be true but I think one of the most important tasks of managers is to consider the needs of the individual on one hand and group co-operation and conformity on the other. It requires creative thinking on the part of management to avoid tension.",
+          "answers": [
+            25
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "JANICE: So Janice, what kind of people do you think companies should be looking for? Well, it has to start from the very beginning when companies are looking for new employees. When the personnel department is choosing between applicants they need to look for someone who's broken the mould and can think for themselves. Instead, people",
+          "answers": [
+            26
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "if a person is a problem solver, or will do as they're told. I'm not convinced these qualities are actually the most important. So do you think being a good team player is overrated? No, it's not overrated. You do need to learn the rules and learn them",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "JANICE: fast. No individual can get around this if you're working in an organization. So how should managers deal with this? Rewards. When an individual demonstrates the behaviour the organisation expects, some kind of incentive can be given. What's",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "should be something the individual actually wants, and this isn't always just money. To come back to you, Philip. You were saying that recognition of good performers is essential. What else should managers be looking for?",
+          "answers": []
+        },
+        {
+          "speaker": "PHILIP",
+          "text": "Well, managing people means you not only have an understanding of your employees, but you also recognise the culture of the organization. In fact, for some organizations creativity and individuality may be the last thing they want to see during working",
+          "answers": [
+            28
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "PHILIP: hours! Very true. Yes, but managing people isn't as easy as it looks. For example, change in the workplace can be quite tricky, especially if there's a need",
+          "answers": []
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "PHILIP: to increase profit. And at times like these managers may have to give priority to profit rather than individual staff needs. Yes, and that creates difficult situations for people. Yes but what's important is that managers are able to deal with quite",
+          "answers": [
+            29
+          ]
+        },
+        {
+          "speaker": "TUTOR",
+          "text": "thinking not only about the strain on their staff but take time out to think of themselves.",
+          "answers": [
+            30
+          ]
+        }
+      ],
+      "charCount": 4093,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Good afternoon, everyone!",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "This is the first seminar in preparation for our archaeological fieldwork in Namibia; we are fantastically lucky to have received partial research funding for this trip from our Institute, so I shall expect 200% attention and participation from you all. First in this seminar, I'm going to give a brief introduction to contemporary research on rock art, and in the second part I'm going to give you some do's and don'ts for our fieldwork trip in April – so please listen very carefully",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "I'm first going to focus on the interpretation of rock art in Namibia. We are very fortunate to be going to an area where you can find some of the most important sites in the entire world. And I hope to show you how easy it is for everyone to make mistakes in looking at cultures which are different from our own – the first and most important lesson we have to learn.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "In Namibia there are both paintings and engravings – that's where the surface of the rock is cut out. Many of the engravings show footprints of animals and most scholars used to think that the purpose of these was simple and obvious: this rock art was like a school book with pictures to teach children about tracks: which track belonged to which animal – giraffe, lion and so on.",
+          "answers": [
+            32
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "But there were some mysteries. First, when you look at a typical Namibian painting or engraving, you see the tracks are repeated, there are dozens of tracks for the same animal. You'd expect just one clear illustration if the reason – the aim – was to teach tracking",
+          "answers": [
+            33
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now there were two more problems. Why are some of the engravings of animals very accurate as you'd expect – all clearly identifiable – and others quite unrealistic?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "And another mystery – some of these unrealistic animals – that's in the engravings – seem to be half human. Some, for example, have got human faces. Many researchers now think that these were pictures the wise men engraved of themselves. They believed they could use magic to control the animals they had drawn, so the hunters could then catch them for food.",
+          "answers": [
+            34,
+            35
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "This shows you some of the dangers of coming from one culture to another, as we'll be doing, without understanding it fully. Scholars imagined that children looked at rock art pictures to learn to track – just because they themselves had learnt skills from pictures; many researchers now believe that rock art had a much more complex purpose. And we'll talk more about it next week!",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Now before I invite you to join in a discussion in this second part of the seminar, I'd like to make some very important points about our fieldwork – and in fact any field trip to look at rock art.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "本资料仅用于学习交流参考，建议购买正版。",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "We're going to a number of sites, and we won't always be together. The single largest problem faced by people who manage the sites is – yes, I'm sure you've guessed – damage caused by visitors, even though it's usually unintentional.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Whenever you do go to a site, don't forget you can learn many things from observing at a distance instead of walking all over it. This can really help to reduce visitor pressure. People often say, 'Well, there's only two of us and just this one time', but maybe thousands of people are saying the same thing.",
+          "answers": [
+            36
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "And then some basic rules to guide you – we'll have our own camp near a village, but remember never to camp on a site if you go on your own. It may be disrespectful to the people of that culture, and certainly don't make fires, however romantic it may seem. It's really dangerous in dry areas, and you can easily burn priceless undiscovered material byQ38 doing so.",
+          "answers": [
+            37
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "So, how are we going to enjoy the rock art on our field trip? By looking at it, drawing it and photographing it – NEVER by touching it or even tracing it. Rock art is fragile and precious.",
+          "answers": [
+            39
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Remember that climbing on rocks and in caves can destroy in a moment what has lasted for centuries. So no heroics in Namibia, please! Try to be extra careful and help others to be too.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "And lastly please don't even move rocks or branches to take photographs – you should leave the site intact – I'm sure I can rely on you to do that",
+          "answers": [
+            40
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Well, that's about all I want to say before today's first discussion, but if you have any questions please ask them now – and don't forget you'll find some fascinating information about world-wide sites on the Internet. Right, first question then?",
+          "answers": []
+        }
+      ],
+      "charCount": 4316,
+      "missing": false
+    }
+  ]
+}

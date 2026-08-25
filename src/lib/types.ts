@@ -232,6 +232,8 @@ export interface AnalyticsReport {
   speakingEnabled: false;
 }
 
+export type AudioStatus = "ready" | "missing" | "needsReview";
+
 export interface ExamSummary {
   id: string;
   title: string;
@@ -245,6 +247,8 @@ export interface ExamSummary {
    * audio and questions but no extracted transcript, so 精听 would open blank.
    */
   hasTranscript?: boolean;
+  /** Listening: whether a local audio binding exists. Other modules are always ready. */
+  audioStatus?: AudioStatus;
 }
 
 export interface SessionSummary {
@@ -271,6 +275,7 @@ export interface ProbeResult {
   dataRoot: string;
   appRoot: string;
   dev: boolean;
+  portable?: boolean;
   warning?: string | null;
   error?: string | null;
 }
@@ -281,6 +286,24 @@ export interface Profile {
   targetBand?: number;
   /** Exam date as YYYY-MM-DD. Drives the countdown on the workbench. */
   examDate?: string;
+  /** First-run listening guide; once dismissed it stays dismissed. */
+  audioGuideDismissed?: boolean;
+}
+
+export interface AudioLibraryStatus {
+  catalogCount: number;
+  boundCount: number;
+  missingCount: number;
+  needsReviewCount: number;
+  guideUrl: string;
+  releaseTag: string;
+}
+
+export interface MigrationReport {
+  migrated: boolean;
+  from?: string | null;
+  to?: string | null;
+  error?: string | null;
 }
 
 export interface Bootstrap {
@@ -288,6 +311,8 @@ export interface Bootstrap {
   exams: ExamSummary[];
   sessions: SessionSummary[];
   profile: Profile | null;
+  audio?: AudioLibraryStatus | null;
+  migration?: MigrationReport | null;
 }
 
 export function allQuestions(exam: Exam): Question[] {

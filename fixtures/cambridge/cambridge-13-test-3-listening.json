@@ -1,0 +1,2340 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-13-test-3-listening",
+  "title": "Cambridge IELTS 13 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0024-13519131",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 13",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题13.pdf",
+        "sha256": "48bd75f7020065184a228ff32775802b887c8da18f77bccdb44c3e569e06a3bf"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C13\\剑桥雅思真题13\\auto\\剑桥雅思真题13.md",
+        "sha256": "5504759cfa0afc4b665c6af7e59bd8d4d70aa6e7f1785dd19bd71e7c4185fdb0",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=2, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-13-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nThe sleepy lizard (tiliqua rugosa) \nDescription \nThey are common in Western and South Australia \nThey are brown, but recognisable by their blue 31 .. \nThey are relatively large \nTheir diet consists mainly of 32 .. \nTheir main predators are large birds and 33.. \nNavigation study \nOne study found that lizards can use the 34... to help \nthem navigate \nObservations in the wild \nObservations show that these lizards keep the same 35. \nfor several years \nWhat people want \nPossible reasons: \nto improve the survival of their young \n(but little 36 ... .has been noted between parents and \nchildren) \nto provide 37 . ….for female lizards \nTracking study \nA study was carried out using GPS systems attached to \nthe 38 ... . f hohe lizards \nThis provided information on the lizards' location and even the number \nof 39 ... . takenn \nIt appeared that the lizards were trying to avoid one another \nThis may be in order to reduce chances of 40 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t3l-g1",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Accommodation — Average rent: £___ a month",
+              "acceptedAnswers": [
+                "850"
+              ],
+              "gapText": "Accommodation — Average rent: £___ a month",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g2",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Linda travels to work by ___",
+              "acceptedAnswers": [
+                "bike",
+                "bicycle"
+              ],
+              "gapText": "Linda travels to work by ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g3",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Limited ___ in city centre",
+              "acceptedAnswers": [
+                "parking"
+              ],
+              "gapText": "Limited ___ in city centre",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g4",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Trains to London every ___ minutes",
+              "acceptedAnswers": [
+                "30",
+                "thirty"
+              ],
+              "gapText": "Trains to London every ___ minutes",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g5",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Poor train service at ___",
+              "acceptedAnswers": [
+                "weekend",
+                "weekends"
+              ],
+              "gapText": "Poor train service at ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g6",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "New ___ opened recently",
+              "acceptedAnswers": [
+                "cinema"
+              ],
+              "gapText": "New ___ opened recently",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g7",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "___ has an excellent reputation",
+              "acceptedAnswers": [
+                "hospital"
+              ],
+              "gapText": "___ has an excellent reputation",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g8",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Good ___ on Bridge Street",
+              "acceptedAnswers": [
+                "dentist"
+              ],
+              "gapText": "Good ___ on Bridge Street",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g9",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Meet Linda on ___ after 5.30 pm",
+              "acceptedAnswers": [
+                "Thursday"
+              ],
+              "gapText": "Meet Linda on ___ after 5.30 pm",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:22+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g10",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Meet in the ___ opposite the station",
+              "acceptedAnswers": [
+                "café",
+                "cafe"
+              ],
+              "gapText": "Meet in the ___ opposite the station",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 548350
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nThe sleepy lizard (tiliqua rugosa) \nDescription \nThey are common in Western and South Australia \nThey are brown, but recognisable by their blue 31 .. \nThey are relatively large \nTheir diet consists mainly of 32 .. \nTheir main predators are large birds and 33.. \nNavigation study \nOne study found that lizards can use the 34... to help \nthem navigate \nObservations in the wild \nObservations show that these lizards keep the same 35. \nfor several years \nWhat people want \nPossible reasons: \nto improve the survival of their young \n(but little 36 ... .has been noted between parents and \nchildren) \nto provide 37 . ….for female lizards \nTracking study \nA study was carried out using GPS systems attached to \nthe 38 ... . f hohe lizards \nThis provided information on the lizards' location and even the number \nof 39 ... . takenn \nIt appeared that the lizards were trying to avoid one another \nThis may be in order to reduce chances of 40 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t3l-g11",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "– you often have to go very early or late as some gyms can get very crowded. But with regular training you'll see a big difference in a relatively short space of time. Running has become incredibly popular in recent years. That's probably got a lot to do with the fact that it's a very accessible form of exercise - anyone can run - even if you can only run a Q12 few metres to",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": ""
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": ""
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": ""
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": ""
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": ""
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": ""
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": ""
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": ""
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g12",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q12",
+              "number": 12,
+              "type": "matching",
+              "prompt": "Running",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "not dependent on season"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "enjoyable"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "low risk of injury"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "fitness level unimportant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "sociable"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fast results"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "motivating"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "not dependent on season"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "enjoyable"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "low risk of injury"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "fitness level unimportant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "sociable"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "fast results"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "motivating"
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g13",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q13",
+              "number": 13,
+              "type": "matching",
+              "prompt": "Swimming",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "not dependent on season"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "enjoyable"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "low risk of injury"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "fitness level unimportant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "sociable"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fast results"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "motivating"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "not dependent on season"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "enjoyable"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "low risk of injury"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "fitness level unimportant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "sociable"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "fast results"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "motivating"
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g14",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "Cycling",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "not dependent on season"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "enjoyable"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "low risk of injury"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "fitness level unimportant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "sociable"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fast results"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "motivating"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "not dependent on season"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "enjoyable"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "low risk of injury"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "fitness level unimportant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "sociable"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "fast results"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "motivating"
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g15",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Doing yoga",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "not dependent on season"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "enjoyable"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "low risk of injury"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "fitness level unimportant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "sociable"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fast results"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "motivating"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "not dependent on season"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "enjoyable"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "low risk of injury"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "fitness level unimportant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "sociable"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "fast results"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "motivating"
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g16",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "Training with a personal trainer",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "not dependent on season"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "enjoyable"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "low risk of injury"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "fitness level unimportant"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "sociable"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fast results"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "motivating"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "not dependent on season"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "enjoyable"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "low risk of injury"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "fitness level unimportant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "sociable"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "fast results"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "motivating"
+            }
+          ]
+        },
+        {
+          "id": "c13t3l-g17",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q17",
+              "number": 17,
+              "type": "multi_choice",
+              "prompt": "First selected letter: For which TWO reasons does the speaker say people give up going to the gym?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lack of time"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "loss of confidence"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too much effort required"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "high costs"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "feeling less successful than others"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g18",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q18",
+              "number": 18,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: For which TWO reasons does the speaker say people give up going to the gym?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "lack of time"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "loss of confidence"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too much effort required"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "high costs"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "feeling less successful than others"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g19",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q19",
+              "number": 19,
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which TWO pieces of advice does the speaker give for setting goals?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "write goals down"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "have achievable aims"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "set a time limit"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "give yourself rewards"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "challenge yourself"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g20",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q20",
+              "number": 20,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO pieces of advice does the speaker give for setting goals?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "write goals down"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "have achievable aims"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "set a time limit"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "give yourself rewards"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "challenge yourself"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 548350,
+      "audioDurationMs": 380817
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nThe sleepy lizard (tiliqua rugosa) \nDescription \nThey are common in Western and South Australia \nThey are brown, but recognisable by their blue 31 .. \nThey are relatively large \nTheir diet consists mainly of 32 .. \nTheir main predators are large birds and 33.. \nNavigation study \nOne study found that lizards can use the 34... to help \nthem navigate \nObservations in the wild \nObservations show that these lizards keep the same 35. \nfor several years \nWhat people want \nPossible reasons: \nto improve the survival of their young \n(but little 36 ... .has been noted between parents and \nchildren) \nto provide 37 . ….for female lizards \nTracking study \nA study was carried out using GPS systems attached to \nthe 38 ... . f hohe lizards \nThis provided information on the lizards' location and even the number \nof 39 ... . takenn \nIt appeared that the lizards were trying to avoid one another \nThis may be in order to reduce chances of 40 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t3l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "What first inspired Jim to choose this project?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "textiles displayed in an exhibition"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a book about a botanic garden"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "carpets he saw on holiday"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "textiles displayed in an exhibition"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a book about a botanic garden"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "carpets he saw on holiday"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:57:14.076480+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Jim eventually decided to do a practical investigation which involved",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "using a range of dyes with different fibres."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "applying different dyes to one type of fibre."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "testing one dye and a range of fibres."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "using a range of dyes with different fibres."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "applying different dyes to one type of fibre."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "testing one dye and a range of fibres."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:57:14.076480+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "When doing his experiments, Jim was surprised by",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "how much natural material was needed to make the dye."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that dyes were widely available on the internet."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the time that he had to leave the fabric in the dye."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "how much natural material was needed to make the dye."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the fact that dyes were widely available on the internet."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the time that he had to leave the fabric in the dye."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:57:14.076480+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "What problem did Jim have with using tartrazine as a fabric dye?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It caused a slight allergic reaction."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was not a permanent dye on cotton."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was ineffective when used on nylon."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It caused a slight allergic reaction."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was not a permanent dye on cotton."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It was ineffective when used on nylon."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "approved",
+            "reviewedAt": "2026-08-25T01:57:14.076480+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g25",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "Problem identified with turmeric",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is expensive."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The colour is too strong."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The colour is not long-lasting."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is very poisonous."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It can damage the fabric."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The colour may be unexpected."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It is unsuitable for some fabrics."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It is not generally available."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is expensive."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The colour is too strong."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The colour is not long-lasting."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is very poisonous."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It can damage the fabric."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The colour may be unexpected."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It is unsuitable for some fabrics."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It is not generally available."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:21:22.137251+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g26",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "Problem identified with beetroot",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is expensive."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The colour is too strong."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The colour is not long-lasting."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is very poisonous."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It can damage the fabric."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The colour may be unexpected."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It is unsuitable for some fabrics."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It is not generally available."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is expensive."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The colour is too strong."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The colour is not long-lasting."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is very poisonous."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It can damage the fabric."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The colour may be unexpected."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It is unsuitable for some fabrics."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It is not generally available."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:21:22.137251+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g27",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "Tyrian purple",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.621695+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is expensive."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The colour is too strong."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The colour is not long-lasting."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is very poisonous."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It can damage the fabric."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The colour may be unexpected."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It is unsuitable for some fabrics."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It is not generally available."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g28",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Problem identified with logwood",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is expensive."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The colour is too strong."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The colour is not long-lasting."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is very poisonous."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It can damage the fabric."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The colour may be unexpected."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It is unsuitable for some fabrics."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It is not generally available."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is expensive."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The colour is too strong."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The colour is not long-lasting."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is very poisonous."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It can damage the fabric."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The colour may be unexpected."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It is unsuitable for some fabrics."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It is not generally available."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:21:22.137251+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g29",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Problem identified with cochineal",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is expensive."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The colour is too strong."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The colour is not long-lasting."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is very poisonous."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It can damage the fabric."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The colour may be unexpected."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It is unsuitable for some fabrics."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It is not generally available."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is expensive."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The colour is too strong."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The colour is not long-lasting."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is very poisonous."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It can damage the fabric."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The colour may be unexpected."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It is unsuitable for some fabrics."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It is not generally available."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:21:22.137251+00:00"
+          }
+        },
+        {
+          "id": "c13t3l-g30",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Problem identified with metal oxide",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is expensive."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The colour is too strong."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The colour is not long-lasting."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It is very poisonous."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It can damage the fabric."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The colour may be unexpected."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It is unsuitable for some fabrics."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It is not generally available."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is expensive."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The colour is too strong."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The colour is not long-lasting."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is very poisonous."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It can damage the fabric."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The colour may be unexpected."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It is unsuitable for some fabrics."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It is not generally available."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T13:21:22.137251+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 929167,
+      "audioDurationMs": 397953
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Complete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nThe sleepy lizard (tiliqua rugosa) \nDescription \nThey are common in Western and South Australia \nThey are brown, but recognisable by their blue 31 .. \nThey are relatively large \nTheir diet consists mainly of 32 .. \nTheir main predators are large birds and 33.. \nNavigation study \nOne study found that lizards can use the 34... to help \nthem navigate \nObservations in the wild \nObservations show that these lizards keep the same 35. \nfor several years \nWhat people want \nPossible reasons: \nto improve the survival of their young \n(but little 36 ... .has been noted between parents and \nchildren) \nto provide 37 . ….for female lizards \nTracking study \nA study was carried out using GPS systems attached to \nthe 38 ... . f hohe lizards \nThis provided information on the lizards' location and even the number \nof 39 ... . takenn \nIt appeared that the lizards were trying to avoid one another \nThis may be in order to reduce chances of 40 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t3l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "They are relatively large Their diet consists mainly of",
+              "acceptedAnswers": [
+                "tongue(s)"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Their main predators are large birds and",
+              "acceptedAnswers": [
+                "plants"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Navigation study One study found that lizards can use the",
+              "acceptedAnswers": [
+                "snakes"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "One study found that lizards can use the ___ to help them navigate",
+              "acceptedAnswers": [
+                "sky"
+              ],
+              "gapText": "One study found that lizards can use the ___ to help them navigate",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Observations show that these lizards keep the same ___ for several years",
+              "acceptedAnswers": [
+                "partner",
+                "partners"
+              ],
+              "gapText": "Observations show that these lizards keep the same ___ for several years",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "But little ___ has been noted between parents and children",
+              "acceptedAnswers": [
+                "contact"
+              ],
+              "gapText": "But little ___ has been noted between parents and children",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "To provide ___ for female lizards",
+              "acceptedAnswers": [
+                "protection"
+              ],
+              "gapText": "To provide ___ for female lizards",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "GPS systems attached to the ___ of the lizards",
+              "acceptedAnswers": [
+                "tail",
+                "tails"
+              ],
+              "gapText": "GPS systems attached to the ___ of the lizards",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Information on the lizards’ location and even the number of ___ taken",
+              "acceptedAnswers": [
+                "steps"
+              ],
+              "gapText": "Information on the lizards’ location and even the number of ___ taken",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "This may be in order to reduce chances of ___",
+              "acceptedAnswers": [
+                "injury",
+                "injuries"
+              ],
+              "gapText": "This may be in order to reduce chances of ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:23+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1327120,
+      "audioDurationMs": 398997
+    }
+  ]
+}

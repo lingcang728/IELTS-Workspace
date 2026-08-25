@@ -1,0 +1,2009 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-1-listening",
+  "title": "Cambridge IELTS 4 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0007-e34e0e35",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-1-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-2-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-3-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-4-listening-test-4-answers-pdf/",
+        "note": "Independent C4 Listening answer cross-check."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nQuestions 1-4\n\nComplete the notes below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\n## Questions 5-10\n\nComplete the table blew.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nWEEKEND TRIPS\n\nPlace\n\nDate\n\nNumber of seats\n\nOptional extra\n\nSt Ives\n\n5\n\n16\n\nHepworth Museum\n\nLondon\n\n16th February\n\n45\n\n6\n\n7\n\n3rd March\n\n18\n\nS.S. Great Britain\n\nSalisbury\n\n18th March\n\n50\n\nStonehenge\n\nBath\n\n23rd March\n\n16\n\n8\n\nFor further information:Read the 9 or see Social Assistant: Jane 10"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t1l-g1",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "shopping",
+                "variety of shopping"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g2",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Visit places which have: good ___",
+              "acceptedAnswers": [
+                "guided tours"
+              ],
+              "gapText": "Visit places which have: good 1 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g3",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Special trips organized for groups of ___ people",
+              "acceptedAnswers": [
+                "more than 12",
+                "over 12"
+              ],
+              "gapText": "Special trips organized for groups of 3 ___ people",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g4",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "To reserve a seat: sign name on the ___ 3 days in advance",
+              "acceptedAnswers": [
+                "notice board"
+              ],
+              "gapText": "To reserve a seat: sign name on the 4 ___ 3 days in advance",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              4
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g5",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+              "acceptedAnswers": [
+                "13th February"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g6",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "London, 16th February, 45 seats: optional extra ___",
+              "acceptedAnswers": [
+                "Tower of London"
+              ],
+              "gapText": "London | 16th February | 45 | 6 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g7",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Place for the 3rd March trip, with 18 seats and S.S. Great Britain",
+              "acceptedAnswers": [
+                "Bristol"
+              ],
+              "gapText": "7 ___ | 3rd March | 18 | S.S. Great Britain",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g8",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "For further information:Read the 9 or see Social Assistant: Jane 10",
+              "acceptedAnswers": [
+                "American Museum"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g9",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "For further information:Read the",
+              "acceptedAnswers": [
+                "student newspaper"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t1l-g10",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Read the ___ or see Social Assistant: Jane ___",
+              "acceptedAnswers": [
+                "Yentob"
+              ],
+              "gapText": "Read the 9 ___ or see Social Assistant: Jane 10 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              5,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 452344
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\n## Questions 11-13\n\nComplete the sentence below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\n## RIVERSIDE INDUSTRIAL VILLAGE\n\n11 Riverside Village was a good place to start an industry because it had water, raw materials and fuels such as and\n\n12 The metal industry was established at Riverside Village by who lived in the area.\n\n13 There were over water-powered mills in the area in the eighteenth century.\n\n## Questions 14-20\n\nLabel the plan below.\n\nWrite NO MORE THAN THREE WORDS for each answer.\n\n[]"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t1l-g11",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "Riverside Village was a good place to start an industry because it had water, raw materials and fuels such as and",
+              "acceptedAnswers": [
+                "coal"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t1l-g12",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "The metal industry was established at Riverside Village by who lived in the area",
+              "acceptedAnswers": [
+                "local craftsmen"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t1l-g13",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "There were over water-powered mills in the area in the eighteenth century",
+              "acceptedAnswers": [
+                "160"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t1l-g14",
+          "instruction": "Label the plan below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Complete the sentence below.",
+              "acceptedAnswers": [
+                "Woodside"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g15",
+          "instruction": "Label the plan below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "The ___ beside the Entrance and Toilets",
+              "acceptedAnswers": [
+                "Ticket Office"
+              ],
+              "gapText": "The 15 ___ beside the Entrance and Toilets",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g16",
+          "instruction": "Label the plan below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "The ___ beside the Entrance and River",
+              "acceptedAnswers": [
+                "Gift Shop"
+              ],
+              "gapText": "The 16 ___ beside the Entrance and River",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g17",
+          "instruction": "Label the plan below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "The ___ above the Yard, next to The Engine Room",
+              "acceptedAnswers": [
+                "(main) Workshop"
+              ],
+              "gapText": "The 17 ___ above the Yard, next to The Engine Room",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g18",
+          "instruction": "Label the plan below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "The ___ on the upper right side of the Yard",
+              "acceptedAnswers": [
+                "Showroom"
+              ],
+              "gapText": "The 18 ___ on the upper right side of the Yard",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g19",
+          "instruction": "Label the plan below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "The ___ between The Grinding Shop and workers' building",
+              "acceptedAnswers": [
+                "Cafe"
+              ],
+              "gapText": "The 19 ___ between The Grinding Shop and workers' building",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g20",
+          "instruction": "Label the plan below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "The ___ for the workers",
+              "acceptedAnswers": [
+                "cottages"
+              ],
+              "gapText": "The 20 ___ for the workers",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        }
+      ],
+      "audioStartMs": 452344,
+      "audioDurationMs": 361752
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\n## Questions 21 and 22\n\nChoose the correct letter, A, B or C.\n\nExample\n\nMelanie could not borrow any books from the library because\n\nA the library was out.\n\nB she didn’t have time to look.\n\nC the books had already been borrowed.\n\n21 Melanie says she has not started the assignment because\n\nA she was doing work for another course.\n\nB it was s really big assignment.\n\nC she hasn’t spent time in the library.\n\n22 The lecture says that reasonable excuses for extensions are\n\nA planning problems.\n\nB problems with assignment.\n\nC personal illness or accident.\n\n## Questions 23-27\n\nWhat recommendation does Dr Johnson make about the journal articles? Choose your answers for the box and write the letters A-G next to questions 23-27.\n\nA must read\n\nB useful\n\nC\n\nlimited value\n\nD read first section\n\nE read research methods\n\nF read conclusion\n\nG don't read\n\nExample Anderson and Hawker\n\nAnswer A\n\nJackson: 23\n\nRoberts: 24\n\nMorris: 25\n\nCooper: 26\n\nForster: 27\n\n## Questions 28-30\n\nLabel the chart below.\n\nChoose your answer from the box below and write the letters A-H next to questions 28-30.\n\nPopulation studies Reasons for changing accommodation \n[]\n\nPossible reasons\n\nA uncooperative landlord\n\nB environment\n\nC\n\nspace\n\nD noisy neighbors\n\nE near city\n\nF\n\nwork location\n\nG transport\n\nH rent"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t1l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Melanie says she has not started the assignment because A she was doing work for another course. B it was s really big assignment. C she hasn’t spent time in the library",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the library was out"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "she didn’t have time to look"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the books had already been borrowed"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don't read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the library was out"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "she didn’t have time to look"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the books had already been borrowed"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don't read"
+            }
+          ]
+        },
+        {
+          "id": "c4t1l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "The lecture says that reasonable excuses for extensions are A planning problems. B problems with assignment. C personal illness or accident",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the library was out"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "she didn’t have time to look"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the books had already been borrowed"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don't read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the library was out"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "she didn’t have time to look"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the books had already been borrowed"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don't read"
+            }
+          ]
+        },
+        {
+          "id": "c4t1l-g23",
+          "instruction": "Choose your answers for the box and write the letters A-G next to questions 23-27.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "Jackson",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "must read"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "limited value"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don’t read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "must read"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "limited value"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don’t read"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:07:16.751777+00:00"
+          }
+        },
+        {
+          "id": "c4t1l-g24",
+          "instruction": "Choose your answers for the box and write the letters A-G next to questions 23-27.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Roberts",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "must read"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "limited value"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don’t read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "must read"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "limited value"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don’t read"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:07:16.751777+00:00"
+          }
+        },
+        {
+          "id": "c4t1l-g25",
+          "instruction": "Choose your answers for the box and write the letters A-G next to questions 23-27.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "Morris",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "must read"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "limited value"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don’t read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "must read"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "limited value"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don’t read"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:07:16.751777+00:00"
+          }
+        },
+        {
+          "id": "c4t1l-g26",
+          "instruction": "Choose your answers for the box and write the letters A-G next to questions 23-27.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Cooper",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "must read"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "limited value"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don’t read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "must read"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "limited value"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don’t read"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:07:16.751777+00:00"
+          }
+        },
+        {
+          "id": "c4t1l-g27",
+          "instruction": "Choose your answers for the box and write the letters A-G next to questions 23-27.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Forster",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "must read"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "useful"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "limited value"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don’t read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "must read"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "useful"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "limited value"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don’t read"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:07:16.751777+00:00"
+          }
+        },
+        {
+          "id": "c4t1l-g28",
+          "instruction": "Label the chart below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Choose the correct letter, A, B or C.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the library was out"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "she didn’t have time to look"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the books had already been borrowed"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "read first section"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "read research methods"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "read conclusion"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "don't read"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the library was out"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "she didn’t have time to look"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the books had already been borrowed"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don't read"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": [
+              "Choose your answer from the box below and write the letters A-H next to questions 28-30."
+            ]
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g29",
+          "instruction": "Label the chart below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q29",
+              "number": 29,
+              "type": "labelling",
+              "prompt": "Population studies: reason for changing accommodation, bar 4",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "uncooperative landlord"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "environment"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "space"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "noisy neighbors"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "near city"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "work location"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "transport"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "rent"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the library was out"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "she didn’t have time to look"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the books had already been borrowed"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don't read"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": [
+              "Choose your answer from the box below and write the letters A-H next to questions 28-30."
+            ]
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        },
+        {
+          "id": "c4t1l-g30",
+          "instruction": "Label the chart below.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q30",
+              "number": 30,
+              "type": "labelling",
+              "prompt": "Population studies: reason for changing accommodation, bar 6",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "uncooperative landlord"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "environment"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "space"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "noisy neighbors"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "near city"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "work location"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "transport"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "rent"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the library was out"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "she didn’t have time to look"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the books had already been borrowed"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "read first section"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "read research methods"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "read conclusion"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "don't read"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": [
+              "Choose your answer from the box below and write the letters A-H next to questions 28-30."
+            ]
+          },
+          "imageAsset": "assets/cambridge/c04-t1-listening-p0003.jpg"
+        }
+      ],
+      "audioStartMs": 814096,
+      "audioDurationMs": 405298
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Question 31-40\n\nComplete the notes below\n\nWrite NO MORE THSN TWO WORDS for each answer.\n\n## THE URBAN LANDSCAPE\n\nTwo areas of focus:\n\n· the effect of vegetation on the urban climate\n\n· ways of planning our 31 better\n\nLarge-scale impact of trees:\n\n· they can make cities more or less 32\n\n· in summer they can make cities cooler\n\n· they can make inland cities more 33\n\nLocal impact of trees:\n\n· they can make local areas\n\n-- more 43\\_\n\n-- cooler\n\n-- more humid\n\n-- less windy\n\n-- less 35\\_\n\n## Comparing trees and buildings\n\nTemperature regulation:\n\n· tress evaporate water through their 36\n\n· building surfaces may reach high temperatures wind force:\n\n· tall buildings cause more wind at 37 level\n\n· these 38 the wind force\n\nNoise:\n\n· trees have a small effect on traffic noise\n\n· 39 frequency noise passes through trees\n\nImportant points to consider:\n\n· trees require a lot of sunlight, water and 40 to grow"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t1l-g31",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Complete the notes below",
+              "acceptedAnswers": [
+                "cities",
+                "environment"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g32",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "They can make cities more or less ___",
+              "acceptedAnswers": [
+                "windy"
+              ],
+              "gapText": "They can make cities more or less 32 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g33",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "They can make inland cities more ___",
+              "acceptedAnswers": [
+                "humid"
+              ],
+              "gapText": "They can make inland cities more 33 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g34",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "They can make local areas more ___",
+              "acceptedAnswers": [
+                "shady",
+                "shaded"
+              ],
+              "gapText": "They can make local areas more 34 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g35",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "They can make local areas less ___",
+              "acceptedAnswers": [
+                "dangerous"
+              ],
+              "gapText": "They can make local areas less 35 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g36",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Trees evaporate water through their ___",
+              "acceptedAnswers": [
+                "leaves"
+              ],
+              "gapText": "Trees evaporate water through their 36 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g37",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Tall buildings cause more wind at ___ level",
+              "acceptedAnswers": [
+                "ground"
+              ],
+              "gapText": "Tall buildings cause more wind at 37 ___ level",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g38",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "These ___ the wind force",
+              "acceptedAnswers": [
+                "considerably reduce",
+                "decrease",
+                "filter"
+              ],
+              "gapText": "These 38 ___ the wind force",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g39",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "___ frequency noise passes through trees",
+              "acceptedAnswers": [
+                "low"
+              ],
+              "gapText": "39 ___ frequency noise passes through trees",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        },
+        {
+          "id": "c4t1l-g40",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Trees require a lot of sunlight, water and ___ to grow",
+              "acceptedAnswers": [
+                "space",
+                "room"
+              ],
+              "gapText": "Trees require a lot of sunlight, water and 40 ___ to grow",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:20+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "Write NO MORE THSN TWO WORDS for each answer."
+            ]
+          }
+        }
+      ],
+      "audioStartMs": 1219394,
+      "audioDurationMs": 354934
+    }
+  ]
+}

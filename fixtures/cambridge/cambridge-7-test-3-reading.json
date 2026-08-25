@@ -1,0 +1,3644 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-3-reading",
+  "title": "Cambridge IELTS 7 Academic Test 3 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0040-c5075b34",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-7-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Ant Intelligence\n\nWhen we think of intelligent members of the animal kingdom, the creatures that spring immediately to mind are apes and monkeys. But in fact the social lives of some members of the insect kingdom are sufficiently complex to suggest more than a hint of intelligence.\n\nAmong these, the world of the ant has come in for considerable scrutiny lately, and the idea that ants demonstrate sparks of cognition has certainly not been rejected by those involved in these investigations.\n\nAnts store food, repel attackers and use chemical signals to contact one another in case of attack. Such chemical communication can be compared to the human use of visual and auditory channels (as in religious chants, advertising images and jingles, political slogans and martial music) to arouse and propagate moods and attitudes. The biologist Lewis Thomas wrote, 'Ants are so much like human beings as to be an embarrassment. They farm fungi, raise aphids\\* as livestock, launch armies to war, use chemical sprays to alarm and confuse enemies, capture slaves, engage in child labour, exchange information ceaselessly. They do everything but watch television.'\n\nHowever, in ants there is no cultural transmission — everything must be encoded in the genes – whereas in humans the opposite is true. Only basic instincts are carried in the genes of a newborn baby, other skills being learned from others in the community as the child\n\ngrows up. It may seem that this cultural continuity gives us a huge advantage over ants. They have never mastered fire nor progressed. Their fungus farming and aphid herding crafts are sophisticated when compared to the agricultural skills of humans five thousand years ago but have been totally overtaken by modern human agribusiness.\n\nOr have they? The farming methods of ants are at least sustainable. They do not ruin environments or use enormous amounts of energy. Moreover, recent evidence suggests that the crop farming of ants may be more sophisticated and adaptable than was thought.\n\nAnts were farmers fifty million years before humans were. Ants can't digest the cellulose in leaves – but some fungi can. The ants therefore cultivate these fungi in their nests, bringing them leaves to feed on, and then\n\nuse them as a source of food. Farmer ants secrete antibiotics to control other fungi that might act as 'weeds', and spread waste to fertilise the crop.\n\nIt was once thought that the fungus that ants cultivate was a single type that they had propagated, essentially unchanged from the distant past. Not so. Ulrich Mueller of Maryland and his colleagues genetically screened 862 different types of fungi taken from ants' nests. These turned out to be highly diverse: it seems that ants are continually domesticating new species. Even more impressively, DNA analysis of the fungi suggests that the ants improve or modify the fungi by regularly swapping and sharing strains with neighbouring ant colonies.\n\nWhereas prehistoric man had no exposure to urban lifestyles – the forcing house of intelligence – the evidence suggests that ants have lived in urban settings for close on a hundred million years, developing and maintaining underground cities of specialised chambers and tunnels.\n\nWhen we survey Mexico City, Tokyo, Los Angeles, we are amazed at what has been accomplished by humans. Yet Hoelldobler and Wilson's magnificent work for ant lovers, The Ants, describes a supercolony of the ant Formica yessensis on the Ishikari Coast of Hokkaido. This 'megalopolis' was reported to be composed of 360 million workers and a million queens living in 4,500 interconnected nests across a territory of 2.7 square kilometres.\n\nSuch enduring and intricately meshed levels of technical achievement outstrip by far anything achieved by our distant ancestors. We hail as masterpieces the cave paintings in southern France and elsewhere, dating back some 20,000 years. Ant societies\n\nexisted in something like their present form more than seventy million years ago. Beside this, prehistoric man looks technologically primitive. Is this then some kind of intelligence, albeit of a different kind?\n\nResearch conducted at Oxford, Sussex and Zürich Universities has shown that when desert ants return from a foraging trip, they navigate by integrating bearings and distances, which they continuously update in their heads. They combine the evidence of visual landmarks with a mental library of local directions, all within a framework which is consulted and updated. So ants can learn too.\n\nAnd in a twelve-year programme of work, Ryabko and Reznikova have found evidence that ants can transmit very complex messages. Scouts who had located food in a maze returned to mobilise their foraging teams. They engaged in contact sessions, at the end of which the scout was removed in order to observe what her team might do. Often the foragers proceeded to the exact spot in the maze where the food had been. Elaborate precautions were taken to prevent the foraging team using odour clues. Discussion now centres on whether the route through the maze is communicated as a ‘leftright' sequence of turns or as a compass bearing and distance' message.\n\nDuring the course of this exhaustive study, Reznikova has grown so attached to her laboratory ants that she feels she knows them as individuals – even without the paint spots used to mark them. It's no surprise that Edward Wilson, in his essay, 'In the company of ants', advises readers who ask what to do with the ants in their kitchen to: 'Watch where you step. Be careful of little lives.'"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t3r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Ants use the same channels of communication as humans do.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "City life is one factor that encourages the development of intelligence.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Ants can build large cities more quickly than humans do.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Some ants can find their way by making calculations based on distance and position.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "In one experiment, foraging teams were able to use their sense of smell to find food,",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "The essay, In the company of ants', explores ant communication.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              6
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g7",
+          "instruction": "Complete the summary below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q7",
+              "number": 7,
+              "type": "matching",
+              "prompt": "The edible fungi convert ___ into a form which the ants can digest.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "aphids"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agricultural"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cellulose"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "exchanging"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "energy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fertilizers"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "food"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "fungi"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "growing"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "interbreeding"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "natural"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "other species"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "secretions"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "sustainable"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "environment"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.914572+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": ""
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": ""
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": ""
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": ""
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": ""
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": ""
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t3r-g8",
+          "instruction": "Complete the summary below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q8",
+              "number": 8,
+              "type": "matching",
+              "prompt": "The ants use their own natural ___ as weed-killers.",
+              "acceptedAnswers": [
+                "M"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.914572+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "aphids"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agricultural"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cellulose"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "exchanging"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "energy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fertilizers"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "food"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "fungi"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "growing"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "interbreeding"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "natural"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "other species"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "secretions"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "sustainable"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "environment"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t3r-g9",
+          "instruction": "Complete the summary below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q9",
+              "number": 9,
+              "type": "matching",
+              "prompt": "The ants use unwanted materials as ___.",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "aphids"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agricultural"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cellulose"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "exchanging"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "energy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fertilizers"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "food"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "fungi"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "growing"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "interbreeding"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "natural"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "other species"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "secretions"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "sustainable"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "environment"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.914572+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": ""
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": ""
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": ""
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": ""
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": ""
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": ""
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t3r-g10",
+          "instruction": "Complete the summary below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q10",
+              "number": 10,
+              "type": "matching",
+              "prompt": "The ants upgrade their fungi by ___ species with neighbouring ant colonies.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "aphids"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agricultural"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cellulose"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "exchanging"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "energy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fertilizers"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "food"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "fungi"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "growing"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "interbreeding"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "natural"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "other species"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "secretions"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "sustainable"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "environment"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.914572+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": ""
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": ""
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": ""
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": ""
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": ""
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": ""
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t3r-g11",
+          "instruction": "Complete the summary below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q11",
+              "number": 11,
+              "type": "matching",
+              "prompt": "The farming methods of ants use ___ methods.",
+              "acceptedAnswers": [
+                "N"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.914572+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "aphids"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agricultural"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cellulose"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "exchanging"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "energy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fertilizers"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "food"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "fungi"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "growing"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "interbreeding"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "natural"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "other species"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "secretions"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "sustainable"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "environment"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t3r-g12",
+          "instruction": "Complete the summary below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q12",
+              "number": 12,
+              "type": "matching",
+              "prompt": "The farming methods of ants do not affect the ___.",
+              "acceptedAnswers": [
+                "O"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.914572+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "aphids"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agricultural"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cellulose"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "exchanging"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "energy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fertilizers"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "food"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "fungi"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "growing"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "interbreeding"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "natural"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "other species"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "secretions"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "sustainable"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "environment"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t3r-g13",
+          "instruction": "Complete the summary below.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q13",
+              "number": 13,
+              "type": "matching",
+              "prompt": "The farming methods of ants do not waste ___.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "aphids"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agricultural"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cellulose"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "exchanging"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "energy"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "fertilizers"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "food"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "fungi"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "growing"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "interbreeding"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "natural"
+                },
+                {
+                  "id": "L",
+                  "label": "L",
+                  "text": "other species"
+                },
+                {
+                  "id": "M",
+                  "label": "M",
+                  "text": "secretions"
+                },
+                {
+                  "id": "N",
+                  "label": "N",
+                  "text": "sustainable"
+                },
+                {
+                  "id": "O",
+                  "label": "O",
+                  "text": "environment"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.914572+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": ""
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": ""
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": ""
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": ""
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": ""
+            },
+            {
+              "id": "L",
+              "label": "L",
+              "text": ""
+            },
+            {
+              "id": "M",
+              "label": "M",
+              "text": ""
+            },
+            {
+              "id": "N",
+              "label": "N",
+              "text": ""
+            },
+            {
+              "id": "O",
+              "label": "O",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              7,
+              13
+            ],
+            "canonicalOf": [
+              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Population movements and genetics\n\nA Study of the origins and distribution of human populations used to be based on archaeological and fossil evidence. A number of techniques developed since the 1950s, however, have placed the study of these subjects on a sounder and more objective footing. The best information on early population movements is now being obtained from the 'archaeology of the living body', the clues to be found in genetic material.\n\nB Recent work on the problem of when people first entered the Americas is an example of the value of these new techniques. North-east Asia and Siberia have long been accepted as the launching ground for the first human colonisers of the New World'. But was there one major wave of migration across the Bering Strait into the Americas, or several? And when did this event, or events, take place? In recent years, new clues have come from research into genetics, including the distribution of genetic markers in modern Native Americans².\n\nC An important project, led by the biological anthropologist Robert Williams, focused on the variants (called Gm allotypes) of one particular protein — immunoglobin G – found in the fluid portion of human blood. All proteins 'drift', or produce variants, over the generations, and members of an interbreeding human population will share a set of such variants. Thus, by comparing the Gm allotypes of two\n\ndifferent populations (e.g. two Indian tribes), one can establish their genetic 'distance', which itself can be calibrated to give an indication of the length of time since these populations last interbred.\n\nD Williams and his colleagues sampled the blood of over 5,000 American Indians in western North America during a twentyyear period. They found that their Gm allotypes could be divided into two groups, one of which also corresponded to the genetic typing of Central and South American Indians. Other tests showed that the Inuit (or Eskimo) and Aleut³ formed a third group. From this evidence it was deduced that there had been three major waves of migration across the Bering Strait. The first, Paleo-Indian, wave more than 15,000 years ago was ancestral to all Central and South American Indians. The second wave, about 14,000–12,000 years ago, brought Na-Dene hunters, ancestors of the Navajo and Apache (who only migrated south from Canada about 600 or 700 years ago). The third wave, perhaps 10,000 or 9,000 years ago, saw the migration from North-east Asia of groups ancestral to the modern Eskimo and Aleut.\n\nE How far does other research support these conclusions? Geneticist Douglas Wallace has studied mitochondrial DNA⁴ in blood samples from three widely separated Native American groups: Pima-Papago Indians in Arizona, Maya Indians on the Yucatán peninsula, Mexico, and\n\nTicuna Indians in the Upper Amazon region of Brazil. As would have been predicted by Robert Williams's work, all three groups appear to be descended from the same ancestral (Paleo-Indian) population.\n\nF There are two other kinds of research that have thrown some light on the origins of the Native American population; they involve the study of teeth and of languages. The biological anthropologist Christy Turner is an expert in the analysis of changing physical characteristics in human teeth. He argues that tooth crowns and roots⁵ have a high genetic component, minimally affected by environmental and other factors. Studies carried out by Turner of many thousands of New and Old World specimens, both ancient and modern, suggest that the majority of prehistoric Americans are linked to Northern Asian populations by crown and root traits such as incisor⁶ shoveling (a scooping out on one or both surfaces of the tooth), single-rooted upper first premolars6 and triple-rooted lower first molars6.\n\nAccording to Turner, this ties in with the idea of a single Paleo-Indian migration out of North Asia, which he sets at before 14,000 years ago by calibrating rates of dental micro-evolution. Tooth analyses also suggest that there were two later migrations of Na-Denes and Eskimo-Aleut.\n\nG The linguist Joseph Greenberg has, since the 1950s, argued that all Native American languages belong to a single 'Amerind' family, except for Na-Dene and Eskimo-Aleut – a view that gives credence to the idea of three main migrations. Greenberg is in a minority among fellow linguists, most of whom favour the notion of a great many waves of migration to account for the more than 1,000 languages spoken at one time by American Indians. But there is no doubt that the new genetic and dental evidence provides strong backing for Greenberg's view. Dates given for the migrations should nevertheless be treated with caution, except where supported by hard archaeological evidence."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t3r-g14",
+          "instruction": "Reading Passage has seven sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "Section A",
+              "acceptedAnswers": [
+                "iv"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The results of the research into blood-variants"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Dental evidence"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Greenberg’s analysis of the dental and linguistic evidence"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Developments in the methods used to study early population movements"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Indian migration from Canada to the U.S.A."
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Further genetic evidence relating to the three-wave theory"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Long-standing questions about prehistoric migration to America"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Questions about the causes of prehistoric migration to America"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:53.510637+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The results of the research into blood-variants"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Dental evidence"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Greenberg's analysis of the dental and linguistic evidence"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Developments in the methods used to study early population movements"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Indian migration from Canada to the U.S.A."
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Further genetic evidence relating to the three-wave theory"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Long-standing questions about prehistoric migration to America"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Questions about the causes of prehistoric migration to America"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g15",
+          "instruction": "Reading Passage has seven sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "Section B",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The results of the research into blood-variants"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Dental evidence"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Greenberg’s analysis of the dental and linguistic evidence"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Developments in the methods used to study early population movements"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Indian migration from Canada to the U.S.A."
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Further genetic evidence relating to the three-wave theory"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Long-standing questions about prehistoric migration to America"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Questions about the causes of prehistoric migration to America"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:53.510637+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The results of the research into blood-variants"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Dental evidence"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Greenberg's analysis of the dental and linguistic evidence"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Developments in the methods used to study early population movements"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Indian migration from Canada to the U.S.A."
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Further genetic evidence relating to the three-wave theory"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Long-standing questions about prehistoric migration to America"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Questions about the causes of prehistoric migration to America"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g16",
+          "instruction": "Reading Passage has seven sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "Section C",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The results of the research into blood-variants"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Dental evidence"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Greenberg’s analysis of the dental and linguistic evidence"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Developments in the methods used to study early population movements"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Indian migration from Canada to the U.S.A."
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Further genetic evidence relating to the three-wave theory"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Long-standing questions about prehistoric migration to America"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Questions about the causes of prehistoric migration to America"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:53.510637+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The results of the research into blood-variants"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Dental evidence"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Greenberg's analysis of the dental and linguistic evidence"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Developments in the methods used to study early population movements"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Indian migration from Canada to the U.S.A."
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Further genetic evidence relating to the three-wave theory"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Long-standing questions about prehistoric migration to America"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Questions about the causes of prehistoric migration to America"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g17",
+          "instruction": "Reading Passage has seven sections.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Section D",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The results of the research into blood-variants"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Dental evidence"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Greenberg’s analysis of the dental and linguistic evidence"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Developments in the methods used to study early population movements"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Indian migration from Canada to the U.S.A."
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Further genetic evidence relating to the three-wave theory"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Long-standing questions about prehistoric migration to America"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Questions about the causes of prehistoric migration to America"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The results of the research into blood-variants"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Dental evidence"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Greenberg’s analysis of the dental and linguistic evidence"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Developments in the methods used to study early population movements"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Indian migration from Canada to the U.S.A."
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Further genetic evidence relating to the three-wave theory"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Long-standing questions about prehistoric migration to America"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Questions about the causes of prehistoric migration to America"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              19
+            ],
+            "canonicalOf": [
+              "Choose the correct headings for sections A-F from the list of headings below"
+            ]
+          }
+        },
+        {
+          "id": "c7t3r-g18",
+          "instruction": "Reading Passage has seven sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "Section E",
+              "acceptedAnswers": [
+                "vi"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The results of the research into blood-variants"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Dental evidence"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Greenberg’s analysis of the dental and linguistic evidence"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Developments in the methods used to study early population movements"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Indian migration from Canada to the U.S.A."
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Further genetic evidence relating to the three-wave theory"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Long-standing questions about prehistoric migration to America"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Questions about the causes of prehistoric migration to America"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:53.510637+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The results of the research into blood-variants"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Dental evidence"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Greenberg's analysis of the dental and linguistic evidence"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Developments in the methods used to study early population movements"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Indian migration from Canada to the U.S.A."
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Further genetic evidence relating to the three-wave theory"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Long-standing questions about prehistoric migration to America"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Questions about the causes of prehistoric migration to America"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g19",
+          "instruction": "Reading Passage has seven sections.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "Section F",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "The results of the research into blood-variants"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "Dental evidence"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "Greenberg’s analysis of the dental and linguistic evidence"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Developments in the methods used to study early population movements"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Indian migration from Canada to the U.S.A."
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "Further genetic evidence relating to the three-wave theory"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "Long-standing questions about prehistoric migration to America"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "Questions about the causes of prehistoric migration to America"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:53.510637+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "The results of the research into blood-variants"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "Dental evidence"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "Greenberg's analysis of the dental and linguistic evidence"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Developments in the methods used to study early population movements"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Indian migration from Canada to the U.S.A."
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "Further genetic evidence relating to the three-wave theory"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "Long-standing questions about prehistoric migration to America"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Conflicting views of the three-wave theory, based on non-genetic evidence"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "Questions about the causes of prehistoric migration to America"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "How analysis of blood-variants measures the closeness of the relationship between different populations"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g20",
+          "instruction": "Complete the table below. Write the correct letter, A-F, in boxes 20 and 21 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "Route corresponding to the period 15,000 years ago or more",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Route A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Route B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Route C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Route D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Route E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Route F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Route A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Route B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Route C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Route D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Route E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Route F"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:56:59.714790+00:00"
+          }
+        },
+        {
+          "id": "c7t3r-g21",
+          "instruction": "Complete the table below. Write the correct letter, A-F, in boxes 20 and 21 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Route corresponding to the period 600 to 700 years ago",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Route A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Route B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Route C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Route D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Route E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Route F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Route A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Route B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Route C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Route D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Route E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Route F"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:56:59.714790+00:00"
+          }
+        },
+        {
+          "id": "c7t3r-g22",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Inuit: wave number",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the first wave"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the second wave"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the third wave"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the first wave"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the second wave"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the third wave"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g23",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "Apache: wave number",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the first wave"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the second wave"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the third wave"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the first wave"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the second wave"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the third wave"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g24",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Pima-Papago: wave number",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the first wave"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the second wave"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the third wave"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the first wave"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the second wave"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the third wave"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g25",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "Ticuna: wave number",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the first wave"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the second wave"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the third wave"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the first wave"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the second wave"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the third wave"
+            }
+          ]
+        },
+        {
+          "id": "c7t3r-g26",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Christy Turner’s research involved the examination of",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "teeth from both prehistoric and modern Americans and Asians."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "thousands of people who live in either the New or the Old World."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "dental specimens from the majority of prehistoric Americans."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "the eating habits of American and Asian populations."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:34+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "teeth from both prehistoric and modern Americans and Asians."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "thousands of people who live in either the New or the Old World."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "dental specimens from the majority of prehistoric Americans."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the eating habits of American and Asian populations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "Forests are one of the main elements of our natural heritage. The decline of Europe's forests over the last decade and a half has led to an increasing awareness and understanding of the serious imbalances which threaten them. European countries are becoming increasingly concerned by major threats to European forests, threats which know no frontiers other than those of geography or climate: air pollution, soil deterioration, the increasing number of forest fires and sometimes even the mismanagement of our woodland and forest heritage. There has been a growing awareness of the need for countries to get\n\ntogether to co-ordinate their policies. In December 1990, Strasbourg hosted the first Ministerial Conference on the protection of Europe's forests. The conference brought together 31 countries from both Western and Eastern Europe. The topics discussed included the co-ordinated study of the destruction of forests, as well as how to combat forest fires and the extension of European research programs on the forest ecosystem. The preparatory work for the conference had been undertaken at two meetings of experts. Their initial task was to decide which of the many forest problems of concern to Europe involved the largest number of countries and might be the subject of joint action. Those confined to particular geographical areas, such as countries bordering the Mediterranean or the Nordic countries therefore had to be discarded. However, this does not mean that in future they will be ignored.\n\nAs a whole, European countries see forests as performing a triple function: biological, economic and recreational. The first is to act as a 'green lung' for our planet; by means of photosynthesis, forests produce oxygen through the transformation of solar energy, thus fulfilling what for humans is the essential role of an immense, non-polluting power plant. At the same time, forests provide raw materials for human activities through their constantly renewed production of wood. Finally, they offer those condemned to spend five days a week in an urban environment an unrivalled area of freedom to unwind and take part in a range of leisure activities, such as hunting, riding and hiking. The economic importance of forests has been understood since the dawn of man – wood was the first fuel. The other aspects have been recognised only for a few centuries but they are becoming more and more important. Hence, there is a real concern throughout Europe about the damage to the forest environment which threatens these three basic roles.\n\nThe myth of the 'natural' forest has survived, yet there are effectively no remaining 'primary' forests in Europe. All European forests are artificial, having been adapted and exploited by man for thousands of years. This means that a forest policy is vital, that it must transcend national frontiers and generations of people, and that it must allow for the inevitable changes that take place in the forests, in needs, and hence in policy. The Strasbourg conference was one of the first events on such a scale to reach this conclusion. A general declaration was made that 'a central place in any ecologically coherent forest policy must be given to continuity over time and to the possible effects of unforeseen events, to ensure that the full potential of these forests is maintained'\n\nThat general declaration was accompanied by six detailed resolutions to assist national policy making. The first proposes the extension and systematisation of surveillance sites to monitor forest decline. Forest decline is still poorly understood but leads to the loss of a high proportion of a tree's needles or leaves. The entire continent and the majority of species are now affected: between 30% and 50% of the tree population. The condition appears to result from the cumulative effect of a number of factors, with atmospheric pollutants the principal culprits. Compounds of nitrogen and sulphur dioxide should be particularly closely watched. However, their effects are probably accentuated by climatic factors, such as drought and hard winters, or soil imbalances such as soil acidification, which damages the roots. The second resolution concentrates on the need to preserve the genetic diversity of European forests. The aim is to reverse the decline in the number of tree species or at least to preserve the 'genetic material' of all of them. Although forest fires do not affect all of Europe to the same extent, the amount of damage caused the experts to propose as the third resolution that the Strasbourg conference consider the establishment of a European databank on the subject. All information used in the development of national preventative policies would become generally available. The subject of the fourth resolution discussed by the ministers was mountain forests. In Europe, it is undoubtedly the mountain ecosystem which has changed most rapidly and is most at risk. A thinly scattered permanent population and development of leisure activities, particularly skiing, have resulted in significant long-term changes to the local ecosystems. Proposed developments include a preferential research program on mountain forests. The fifth resolution relaunched the European research network on the physiology of trees, called Eurosilva. Eurosilva should support joint European research on tree diseases and their physioloqical and biochemical aspects. Each country concerned could increase the number of scholarships and other financial support for doctoral theses and research projects in this area. Finally, the conference established the framework for a European research network on forest ecosystems. This would also involve harmonising activities in individual countries as well as identifying a number of priority research topics relating to the protection of forests. The Strasbourg conference's main concern was to provide for the future. This was the initial motivation, one now shared by all 31 participants representing 31 European countries. Their final text commits them to on-going discussion between government representatives with responsibility for forests."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t3r-g27",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q27",
+              "number": 27,
+              "type": "true_false_ng",
+              "prompt": "Forest problems of Mediterranean countries are to be discussed at the next meeting of experts.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g28",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q28",
+              "number": 28,
+              "type": "true_false_ng",
+              "prompt": "Problems in Nordic countries were excluded because they are outside the European Economic Community.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g29",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q29",
+              "number": 29,
+              "type": "true_false_ng",
+              "prompt": "Forests are a renewable source of raw material.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g30",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q30",
+              "number": 30,
+              "type": "true_false_ng",
+              "prompt": "The biological functions of forests were recognised only in the twentieth century.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g31",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q31",
+              "number": 31,
+              "type": "true_false_ng",
+              "prompt": "Natural forests still exist in parts of Europe.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g32",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q32",
+              "number": 32,
+              "type": "true_false_ng",
+              "prompt": "Forest policy should be limited by national boundaries.",
+              "acceptedAnswers": [
+                "FALSE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g33",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q33",
+              "number": 33,
+              "type": "true_false_ng",
+              "prompt": "The Strasbourg conference decided that a forest policy must allow for the possibility of change.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              33
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g34",
+          "instruction": "Look at the following statements. Write the correct letter, A-J, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "Resolution 1",
+              "acceptedAnswers": [
+                "J"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "All kinds of species of trees should be preserved"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Fragile mountain forests should be given priority in research programs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The surviving natural forests of Europe do not need priority treatment."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Research is to be better co-ordinated throughout Europe."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Information on forest fires should be collected and shared."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Resources should be allocated to research into tree diseases"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Skiing should be encouraged in thinly populated areas"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Information is to be systematically gathered on any decline in the condition of forests. 34 Resolution 1 35 Resolution 2 36 Resolution 3 37 Resolution 4 38 Resolution 5 39 Resolution 6 Question 40 Choose the correct letter, A, B, C or D. Write the correct letter in box 40 on your answer sheet. 40 What is the best title for Reading Passage 3?"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The biological, economic and recreational role of forests"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Plans to protect the forests of Europe"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The priority of European research into ecosystems"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Proposals for a world-wide policy on forest management WRITING WRITING TASK 1 You should spend about 20 minutes on this task The chart below shows information about changes in average house prices"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              34,
+              39
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t3r-g35",
+          "instruction": "Look at the following statements issued by the conference. Match the statements with the appropriate resolutions.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "Resolution 2",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "All kinds of species of trees should be preserved."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Fragile mountain forests should be given priority in research programs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The surviving natural forests of Europe do not need priority treatment."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Research is to be better co-ordinated throughout Europe."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Information on forest fires should be collected and shared."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Resources should be allocated to research into tree diseases."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Skiing should be encouraged in thinly populated areas."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Information is to be systematically gathered on any decline in the condition of forests."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "All kinds of species of trees should be preserved."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Fragile mountain forests should be given priority in research programs."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The surviving natural forests of Europe do not need priority treatment."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Research is to be better co-ordinated throughout Europe."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Information on forest fires should be collected and shared."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Resources should be allocated to research into tree diseases."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Skiing should be encouraged in thinly populated areas."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Information is to be systematically gathered on any decline in the condition of forests."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.691820+00:00"
+          }
+        },
+        {
+          "id": "c7t3r-g36",
+          "instruction": "Look at the following statements issued by the conference. Match the statements with the appropriate resolutions.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "Resolution 3",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "All kinds of species of trees should be preserved."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Fragile mountain forests should be given priority in research programs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The surviving natural forests of Europe do not need priority treatment."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Research is to be better co-ordinated throughout Europe."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Information on forest fires should be collected and shared."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Resources should be allocated to research into tree diseases."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Skiing should be encouraged in thinly populated areas."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Information is to be systematically gathered on any decline in the condition of forests."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "All kinds of species of trees should be preserved."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Fragile mountain forests should be given priority in research programs."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The surviving natural forests of Europe do not need priority treatment."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Research is to be better co-ordinated throughout Europe."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Information on forest fires should be collected and shared."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Resources should be allocated to research into tree diseases."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Skiing should be encouraged in thinly populated areas."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Information is to be systematically gathered on any decline in the condition of forests."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.691820+00:00"
+          }
+        },
+        {
+          "id": "c7t3r-g37",
+          "instruction": "Look at the following statements issued by the conference. Match the statements with the appropriate resolutions.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q37",
+              "number": 37,
+              "type": "single_choice",
+              "prompt": "Resolution 4",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "All kinds of species of trees should be preserved."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Fragile mountain forests should be given priority in research programs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The surviving natural forests of Europe do not need priority treatment."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Research is to be better co-ordinated throughout Europe."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Information on forest fires should be collected and shared."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Resources should be allocated to research into tree diseases."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Skiing should be encouraged in thinly populated areas."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Information is to be systematically gathered on any decline in the condition of forests."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "All kinds of species of trees should be preserved."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Fragile mountain forests should be given priority in research programs."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The surviving natural forests of Europe do not need priority treatment."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Research is to be better co-ordinated throughout Europe."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Information on forest fires should be collected and shared."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Resources should be allocated to research into tree diseases."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Skiing should be encouraged in thinly populated areas."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Information is to be systematically gathered on any decline in the condition of forests."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.691820+00:00"
+          }
+        },
+        {
+          "id": "c7t3r-g38",
+          "instruction": "Look at the following statements issued by the conference. Match the statements with the appropriate resolutions.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q38",
+              "number": 38,
+              "type": "single_choice",
+              "prompt": "Resolution 5",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "All kinds of species of trees should be preserved."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Fragile mountain forests should be given priority in research programs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The surviving natural forests of Europe do not need priority treatment."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Research is to be better co-ordinated throughout Europe."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Information on forest fires should be collected and shared."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Resources should be allocated to research into tree diseases."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Skiing should be encouraged in thinly populated areas."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Information is to be systematically gathered on any decline in the condition of forests."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "All kinds of species of trees should be preserved."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Fragile mountain forests should be given priority in research programs."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The surviving natural forests of Europe do not need priority treatment."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Research is to be better co-ordinated throughout Europe."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Information on forest fires should be collected and shared."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Resources should be allocated to research into tree diseases."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Skiing should be encouraged in thinly populated areas."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Information is to be systematically gathered on any decline in the condition of forests."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.691820+00:00"
+          }
+        },
+        {
+          "id": "c7t3r-g39",
+          "instruction": "Look at the following statements issued by the conference. Match the statements with the appropriate resolutions.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q39",
+              "number": 39,
+              "type": "single_choice",
+              "prompt": "Resolution 6",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "All kinds of species of trees should be preserved."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Fragile mountain forests should be given priority in research programs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The surviving natural forests of Europe do not need priority treatment."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Research is to be better co-ordinated throughout Europe."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Information on forest fires should be collected and shared."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "Resources should be allocated to research into tree diseases."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Skiing should be encouraged in thinly populated areas."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "Information is to be systematically gathered on any decline in the condition of forests."
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "All kinds of species of trees should be preserved."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Fragile mountain forests should be given priority in research programs."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The surviving natural forests of Europe do not need priority treatment."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Research is to be better co-ordinated throughout Europe."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Information on forest fires should be collected and shared."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Loss of leaves from trees should be more extensively and carefully monitored."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Resources should be allocated to research into tree diseases."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "Skiing should be encouraged in thinly populated areas."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Soil imbalances such as acidification should be treated with compounds of nitrogen and sulphur."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Information is to be systematically gathered on any decline in the condition of forests."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:06:39.691820+00:00"
+          }
+        },
+        {
+          "id": "c7t3r-g40",
+          "instruction": "Write the answer from the source question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t3r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "What is the best title for Reading Passage 3?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The biological, economic and recreational role of forests"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Plans to protect the forests of Europe"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The priority of European research into ecosystems"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Proposals for a world-wide policy on forest management"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:04.989546+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

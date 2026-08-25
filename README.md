@@ -55,8 +55,9 @@
   - 顶部官方风格倒计时，考试剩余 10 分钟与 5 分钟时触发**红字闪烁强提醒**，时间用尽强制交卷。
   - 底部 40 题全景导航条，清晰指示「已作答（横线标识）」、「未作答」、「标疑（Review Flag 圆形标识）」状态。
 
-### 📚 剑桥雅思全真题库开箱即用（Cambridge IELTS 4–20+）
-- 全面覆盖剑桥雅思官方真题集，内置结构化真题数据、原版高清听力音频与教材文档。
+### 📚 剑桥雅思全真题库开箱即用（Cambridge IELTS 4–21）
+- 安装后即内置 212 份结构化试卷：Reading / Writing 可直接开考；Listening 题目同样内置，音频需由用户在本机添加。
+- 应用不捆绑听力 MP3。请到「听力资源」导入整轨、四个 Part、文件夹或 [分册 ZIP](https://ielts-workspace.pages.dev/#listening)。
 - 完整支持雅思机考全题型：单选、多选、填空（Summary/Sentence/Table/Flow-chart）、配对（Matching/Headings）、判断（TRUE/FALSE/NOT GIVEN, YES/NO/NOT GIVEN）等。
 
 ### ⚡ 双模式智能备考（Practice & Mock）
@@ -90,8 +91,10 @@
 
 | 版本类型 | 文件名 | 说明 |
 | :--- | :--- | :--- |
-| **📦 Windows 安装版** | `IELTS_Workspace_1.1.0_x64-setup.exe` | 推荐普通用户使用；支持应用内检查、下载、安装并重启更新 |
-| **🚀 Windows 单文件版** | `IELTS_Workspace_1.1.0_x64.exe` | 独立绿色版，双击直接运行；更新时自动迁移到安装版 |
+| **📦 Windows 安装版** | `IELTS_Workspace_1.3.0_x64-setup.exe` | 推荐；数据在 `%LOCALAPPDATA%\IELTS Workspace\data`；支持应用内更新 |
+| **🚀 Windows 单文件版** | `IELTS_Workspace_1.3.0_x64.exe` | 便携版，数据在 EXE 同目录的 `data\`；更新时会迁到安装版 |
+
+产品网站与听力导入说明：[ielts-workspace.pages.dev](https://ielts-workspace.pages.dev)
 
 > **支持系统**：Windows 10 / Windows 11 (64-bit)
 
@@ -99,12 +102,11 @@
 
 ## 🚀 快速上手
 
-1. **启动程序**：安装后打开 IELTS Workspace，进入清新优雅的现代化主界面。
-2. **选择题库与模块**：在「练习中心」中选择剑桥雅思真题册次（例如剑 18、剑 19、剑 20），点击进入对应 Test。
-3. **选择作答模式**：
-   - 点击 **「专项练习」**：自由掌握节奏，逐题攻克薄弱环节。
-   - 点击 **「全真模考」**：带上耳机，深呼吸，开启完整的 1:1 考场实战模拟！
-4. **考后复盘**：完成提交后，查看详细评分结果、正误对比和能力维度统计。
+1. **启动程序**：安装后打开 IELTS Workspace。阅读和写作可直接开始。
+2. **添加听力（可选）**：Listening 行会显示「添加音频」。导入本机 MP3/M4A/WAV、四个 Part，或下载 [C04-C20 分册 ZIP](https://ielts-workspace.pages.dev/#listening)。
+3. **选择题库与模块**：在「练习中心」选择剑桥雅思册次，来源显示为「剑桥雅思 X · 本项目整理」。
+4. **选择作答模式**：专项练习可暂停重听；全真模考按考场纪律，听力不可拖动或暂停。
+5. **考后复盘**：提交后查看估算 Band、正误对比和历史记录。
 
 ---
 

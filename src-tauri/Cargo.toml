@@ -1,6 +1,6 @@
 [package]
 name = "ielts-workspace"
-version = "1.2.0"
+version = "1.3.0"
 description = "Local portable IELTS Academic computer-test workspace"
 authors = ["Linc"]
 edition = "2021"
@@ -11,6 +11,9 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
 tauri-build = { version = "2", features = [] }
+sha2 = "0.10"
+hex = "0.4"
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
 
 [dependencies]
 tauri = { version = "2", features = ["protocol-asset"] }
@@ -19,6 +22,15 @@ serde_json = "1"
 thiserror = "2"
 tauri-plugin-process = "2.3.1"
 tauri-plugin-updater = "2.10.1"
+sha2 = "0.10"
+hex = "0.4"
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
+rfd = "0.15"
+open = "5"
+symphonia = { version = "0.5", default-features = false, features = ["mp3", "aac", "isomp4", "wav", "pcm"] }
+
+[dev-dependencies]
+tempfile = "3"
 
 [profile.release]
 lto = true

@@ -1,0 +1,2547 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-14-test-4-listening",
+  "title": "Cambridge IELTS 14 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0014-0e0f48fa",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 14",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题14.pdf",
+        "sha256": "f0f0d86e7cf93b37154696851b2e61be4f1194b05bd1651c1711e221720018ba"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C14\\剑桥雅思真题14\\auto\\剑桥雅思真题14.md",
+        "sha256": "922bb365c0a65fe38e3625473ed796ac216275ad75839f452a8d20a7435ef431",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=4, reading=2; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-14-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\nQuestions 1-7\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nEnquiry about booking hotel room for event\n\nExample\n\nEvents Andrew is the ..Manager\n\nRooms Adelphi Room\n\nnumber of people who can sit down to eat: 1 has a gallery suitable for musicians can go out and see the 2.. . in pots on the terrace\n\nterrace has a view of a group of 3 .\n\nCarlton Room number of people who can sit down to eat: 110\n\nhas a 4. view of the lake\n\nOptions\n\nMaster of Ceremonies:\n\ncan give a 5. while people are eating\n\nwill provide 6 . if there are any problems\n\nAccommodation:\n\nin hotel rooms or 7\n\nQuestions 8-10\n\nWhat is said about using each of the following hotel facilities?\n\nChoose THREE answers from the box and write the correct letter, A, B or C, next to Questions 8-10.\n\n## Availability\n\nA included in cost of hiring room\n\nB available at extra charge\n\nC not available\n\n## Hotel facilities\n\n8 outdoor swimming pool\n\n9 gym\n\n10 tennis courts\n\nInformation \nA all downhill \nB suitable for beginners \nonly in good weather \nD food included \nE no charge \nF swimming possible \nG fully booked today \nH transport not included"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t4l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Adelphi Room — number of people who can sit down to eat: ___",
+              "acceptedAnswers": [
+                "85"
+              ],
+              "gapText": "Adelphi Room — number of people who can sit down to eat: 1 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Adelphi Room — can go out and see the ___ in pots on the terrace",
+              "acceptedAnswers": [
+                "roses"
+              ],
+              "gapText": "Adelphi Room — can go out and see the 2 ___ in pots on the terrace",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Carlton Room number of people who can sit down to eat: 110 has a",
+              "acceptedAnswers": [
+                "trees"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Carlton Room — has a ___",
+              "acceptedAnswers": [
+                "stage"
+              ],
+              "gapText": "Carlton Room — has a 4 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Master of Ceremonies can give a ___ while people are eating",
+              "acceptedAnswers": [
+                "speech"
+              ],
+              "gapText": "Master of Ceremonies can give a 5 ___ while people are eating",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Master of Ceremonies will provide ___ if there are any problems",
+              "acceptedAnswers": [
+                "support"
+              ],
+              "gapText": "Master of Ceremonies will provide 6 ___ if there are any problems",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Accommodation is available in hotel rooms or ___",
+              "acceptedAnswers": [
+                "cabins"
+              ],
+              "gapText": "Accommodation: in hotel rooms or 7 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              7
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g8",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 8-10.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q8",
+              "number": 8,
+              "type": "single_choice",
+              "prompt": "What is said about using the outdoor swimming pool?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "included in cost of hiring room"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "available at extra charge"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not available"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "included in cost of hiring room"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "available at extra charge"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "not available"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "food included"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "no charge"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "swimming possible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "fully booked today"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "transport not included"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g9",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 8-10.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q9",
+              "number": 9,
+              "type": "single_choice",
+              "prompt": "What is said about using the gym?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "included in cost of hiring room"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "available at extra charge"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not available"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "included in cost of hiring room"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "available at extra charge"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "not available"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "food included"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "no charge"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "swimming possible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "fully booked today"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "transport not included"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g10",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 8-10.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q10",
+              "number": 10,
+              "type": "single_choice",
+              "prompt": "What is said about using the tennis courts?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "included in cost of hiring room"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "available at extra charge"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "not available"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "included in cost of hiring room"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "available at extra charge"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "not available"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "food included"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "no charge"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "swimming possible"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "fully booked today"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "transport not included"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              8,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 491711
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\nQuestions 11-16\n\nWhat information does the speaker give about each of the following excursions?\n\nChoose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.\n\n## Excursions\n\n11 dolphin watching \n12 forest walk \n13 cycle trip \n14 local craft tour \n15 observatory trip \n16 horse riding\n\n## Test 4\n\n## Questions 17 and 18\n\n## Choose TWO letters, A-E.\n\nWhich TWO things does the speaker say about the attraction called Musical Favourites?\n\nA You pay extra for drinks.\n\nB You must book it in advance.\n\nC You get a reduction if you buy two tickets.\n\nD You can meet the performers.\n\nE You can take part in the show.\n\n## Questions 19 and 20\n\n## Choose TWO letters, A-E.\n\n## Which TWO things does the speaker say about the Castle Feast?\n\nA Visitors can dance after the meal\n\nB There is a choice of food.\n\nC Visitors wear historical costume.\n\nD Knives and forks are not used.\n\nE The entertainment includes horse races."
+      },
+      "questionGroups": [
+        {
+          "id": "c14t4l-g11",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "What information does the speaker give about dolphin watching?",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all downhill"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "suitable for beginners"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "only in good weather"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "food included"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "no charge"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "swimming possible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "fully booked today"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "transport not included"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ]
+        },
+        {
+          "id": "c14t4l-g12",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "What information does the speaker give about the forest walk?",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all downhill"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "suitable for beginners"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "only in good weather"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "food included"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "no charge"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "swimming possible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "fully booked today"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "transport not included"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ]
+        },
+        {
+          "id": "c14t4l-g13",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "What information does the speaker give about the cycle trip?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all downhill"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "suitable for beginners"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "only in good weather"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "food included"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "no charge"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "swimming possible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "fully booked today"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "transport not included"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ]
+        },
+        {
+          "id": "c14t4l-g14",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "What information does the speaker give about the local craft tour?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all downhill"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "suitable for beginners"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "only in good weather"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "food included"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "no charge"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "swimming possible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "fully booked today"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "transport not included"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ]
+        },
+        {
+          "id": "c14t4l-g15",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "What information does the speaker give about the observatory trip?",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all downhill"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "suitable for beginners"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "only in good weather"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "food included"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "no charge"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "swimming possible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "fully booked today"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "transport not included"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ]
+        },
+        {
+          "id": "c14t4l-g16",
+          "instruction": "Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "What information does the speaker give about horse riding?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "all downhill"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "suitable for beginners"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "only in good weather"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "food included"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "no charge"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "swimming possible"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "fully booked today"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "transport not included"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ]
+        },
+        {
+          "id": "c14t4l-g17",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q17",
+              "number": 17,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO things does the speaker say about the attraction called Musical Favourites?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "You pay extra for drinks."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "You must book it in advance."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "You get a reduction if you buy two tickets."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "You can meet the performers."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "You can take part in the show."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g18",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q18",
+              "number": 18,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO things does the speaker say about the attraction called Musical Favourites?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "You pay extra for drinks."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "You must book it in advance."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "You get a reduction if you buy two tickets."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "You can meet the performers."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "You can take part in the show."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g19",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q19",
+              "number": 19,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO things does the speaker say about the Castle Feast?",
+              "acceptedAnswers": [
+                "A",
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Visitors can dance after the meal."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "There is a choice of food."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Visitors wear historical costume."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Knives and forks are not used."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The entertainment includes horse races."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g20",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q20",
+              "number": 20,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO things does the speaker say about the Castle Feast?",
+              "acceptedAnswers": [
+                "A",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Visitors can dance after the meal."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "There is a choice of food."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Visitors wear historical costume."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Knives and forks are not used."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The entertainment includes horse races."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You pay extra for drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "You must book it in advance"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get a reduction if you buy two tickets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "You can meet the performers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "You can take part in the show"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 491711,
+      "audioDurationMs": 432533
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\n## Questions 21-25\n\n## Choose the correct letter, A, B or C.\n\n## 21 What does Trevor find interesting about the purpose of children's literature?\n\nA the fact that authors may not realise what values they're teaching\n\nB the fact that literature can be entertaining and educational at the same time\n\nC the fact that adults expect children to imitate characters in literature\n\n## 22 Trevor says the module about the purpose of children's literature made him\n\nA analyse some of the stories that his niece reads.\n\nB wonder how far popularity reflects good quality.\n\nC decide to start writing some children's stories.\n\n## 23 Stephanie is interested in the Pictures module because\n\nA she intends to become an illustrator.\n\nB she can remember beautiful illustrations from her childhood.\n\nC she believes illustrations are more important than words.\n\n## 24 Trevor and Stephanie agree that comics\n\nare inferior to books.\n\nB have the potential for being useful\n\nC discourage children from using their imagination.\n\n## 25 With regard to books aimed at only boys or only girls, Trevor was surprised\n\nA how long the distinction had gone unquestioned.\n\nB how few books were aimed at both girls and boys.\n\nC how many children enjoyed books intended for the opposite sex.\n\nStories \n26 Perrault's fairy tales \n27 The Swiss Family Robinson \n28 The Nutcracker and The Mouse King \n29 The Lord of the Rings \n30 War Horse\n\n## Test 4\n\nQuestions 26-30\n\nWhat comment is made about each of these stories?\n\nChoose FIVE answers from the box and write the correct letter, A-G, next to Questions 26–30.\n\n## Comments\n\nA translated into many other languages\n\nB hard to read\n\nC inspired a work in a different area of art\n\nD more popular than the author's other works\n\nE original title refers to another book\n\nF started a new genre\n\nG unlikely topic"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t4l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "What does Trevor find interesting about the purpose of children's literature?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the fact that authors may not realise what values they're teaching"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that literature can be entertaining and educational at the same time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the fact that adults expect children to imitate characters in literature"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the fact that authors may not realise what values they're teaching"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the fact that literature can be entertaining and educational at the same time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the fact that adults expect children to imitate characters in literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Trevor says the module about the purpose of children's literature made him",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the fact that authors may not realise what values they're teaching"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that literature can be entertaining and educational at the same time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the fact that adults expect children to imitate characters in literature"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the fact that authors may not realise what values they're teaching"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the fact that literature can be entertaining and educational at the same time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the fact that adults expect children to imitate characters in literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "Stephanie is interested in the Pictures module because",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the fact that authors may not realise what values they're teaching"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that literature can be entertaining and educational at the same time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the fact that adults expect children to imitate characters in literature"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the fact that authors may not realise what values they're teaching"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the fact that literature can be entertaining and educational at the same time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the fact that adults expect children to imitate characters in literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Trevor and Stephanie agree that comics",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the fact that authors may not realise what values they're teaching"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that literature can be entertaining and educational at the same time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the fact that adults expect children to imitate characters in literature"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the fact that authors may not realise what values they're teaching"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the fact that literature can be entertaining and educational at the same time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the fact that adults expect children to imitate characters in literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "With regard to books aimed at only boys or only girls, Trevor was surprised",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the fact that authors may not realise what values they're teaching"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the fact that literature can be entertaining and educational at the same time"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the fact that adults expect children to imitate characters in literature"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the fact that authors may not realise what values they're teaching"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the fact that literature can be entertaining and educational at the same time"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the fact that adults expect children to imitate characters in literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g26",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Perrault's fairy tales",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "how long the distinction had gone unquestioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how few books were aimed at both girls and boys"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how many children enjoyed books intended for the opposite sex"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "more popular than the author's other works"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "original title refers to another book"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "started a new genre"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unlikely topic"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "how long the distinction had gone unquestioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how few books were aimed at both girls and boys"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how many children enjoyed books intended for the opposite sex"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "more popular than the author's other works"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "original title refers to another book"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "started a new genre"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "unlikely topic"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g27",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "The Swiss Family Robinson",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "how long the distinction had gone unquestioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how few books were aimed at both girls and boys"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how many children enjoyed books intended for the opposite sex"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "more popular than the author's other works"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "original title refers to another book"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "started a new genre"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unlikely topic"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "how long the distinction had gone unquestioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how few books were aimed at both girls and boys"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how many children enjoyed books intended for the opposite sex"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "more popular than the author's other works"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "original title refers to another book"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "started a new genre"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "unlikely topic"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g28",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "The Nutcracker and The Mouse King",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:58.679002+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "translated into many other languages"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "hard to read"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "inspired a work in a different area of art"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "more popular than the author's other works"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "original title refers to another book"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "started a new genre"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unlikely topic"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g29",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "The Lord of the Rings",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "how long the distinction had gone unquestioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how few books were aimed at both girls and boys"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how many children enjoyed books intended for the opposite sex"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "more popular than the author's other works"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "original title refers to another book"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "started a new genre"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unlikely topic"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "how long the distinction had gone unquestioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how few books were aimed at both girls and boys"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how many children enjoyed books intended for the opposite sex"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "more popular than the author's other works"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "original title refers to another book"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "started a new genre"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "unlikely topic"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g30",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "War Horse",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "how long the distinction had gone unquestioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "how few books were aimed at both girls and boys"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "how many children enjoyed books intended for the opposite sex"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "more popular than the author's other works"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "original title refers to another book"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "started a new genre"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unlikely topic"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "how long the distinction had gone unquestioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how few books were aimed at both girls and boys"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how many children enjoyed books intended for the opposite sex"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "more popular than the author's other works"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "original title refers to another book"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "started a new genre"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "unlikely topic"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 924244,
+      "audioDurationMs": 463189
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c14-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## The hunt for sunken settlementsand ancient shipwrecks\n\n## ATLIT-YAM\n\nwas a village on coast of eastern Mediterranean\n\nthrived until about 7,000 BC\n\nstone homes had a courtyard\n\nhad a semicircle of large stones round a 31\n\nC cause of destruction unknown - now under the sea\n\nbiggest settlement from the prehistoric period found on the seabed\n\nresearch carried out into structures, 32 . and human remains\n\n## TRADITIONAL AUTONOMOUS UNDERWATER VEHICLES (AUVs)\n\nused in the oil industry, e.g. to make 33 mo…\n\nproblems: they were expensive and 34\n\n## LATEST AUVs\n\nmuch easier to use, relatively cheap, sophisticated\n\n## Tests:\n\nMarzamemi, Sicily: found ancient Roman ships carrying architectural elements made of 35 ..\n\n## Underwater internet:\n\n36. is used for short distance communication, acoustic waves for long distance\n\nplans for communication with researchers by satellite\n\nAUV can send data to another AUV that has better 37 for example\n\nPlanned research in Gulf of Baratti:\n\nto find out more about wrecks of ancient Roman ships, including\n\none carrying 38 .. supplies; tablets may have been used for cleaning the 39...\n\n一 others carrying containers of olive oil or 40"
+      },
+      "questionGroups": [
+        {
+          "id": "c14t4l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Atlit-Yam had a semicircle of large stones round a ___",
+              "acceptedAnswers": [
+                "spring"
+              ],
+              "gapText": "Atlit-Yam had a semicircle of large stones round a 31 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Research was carried out into structures, ___ and human remains",
+              "acceptedAnswers": [
+                "tools"
+              ],
+              "gapText": "Research was carried out into structures, 32 ___ and human remains",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Traditional AUVs were used in the oil industry, e.g. to make ___",
+              "acceptedAnswers": [
+                "maps"
+              ],
+              "gapText": "Traditional AUVs were used in the oil industry, e.g. to make 33 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Traditional AUVs were expensive and ___",
+              "acceptedAnswers": [
+                "heavy"
+              ],
+              "gapText": "Traditional AUVs — problems: they were expensive and 34 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Ancient Roman ships were carrying architectural elements made of ___",
+              "acceptedAnswers": [
+                "marble"
+              ],
+              "gapText": "Ancient Roman ships were carrying architectural elements made of 35 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "___ is used for short distance communication, acoustic waves for long distance",
+              "acceptedAnswers": [
+                "light"
+              ],
+              "gapText": "36 ___ is used for short distance communication, acoustic waves for long distance",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Another AUV can receive data from one that has better ___, for example",
+              "acceptedAnswers": [
+                "camera",
+                "cameras"
+              ],
+              "gapText": "Another AUV can send data to one that has better 37 ___, for example",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:07+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "One Roman ship was carrying ___ supplies",
+              "acceptedAnswers": [
+                "medical"
+              ],
+              "gapText": "One Roman ship was carrying 38 ___ supplies",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Tablets may have been used for cleaning the ___",
+              "acceptedAnswers": [
+                "eyes"
+              ],
+              "gapText": "Tablets may have been used for cleaning the 39 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c14t4l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c14t4l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Other Roman ships carried containers of olive oil or ___",
+              "acceptedAnswers": [
+                "wine"
+              ],
+              "gapText": "Other Roman ships carried containers of olive oil or 40 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:09:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1387433,
+      "audioDurationMs": 558399
+    }
+  ]
+}

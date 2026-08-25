@@ -1,0 +1,2267 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-12-test-2-listening",
+  "title": "Cambridge IELTS 12 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0004-5e686f8c",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 12",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题12.pdf",
+        "sha256": "c9b61939ce31049dd9552020dbaf3deb979cbb6244b4cac0ac64f13b3ce049c6"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C12\\剑桥雅思真题12\\auto\\剑桥雅思真题12.md",
+        "sha256": "7a2c612d2c8d56d7c069234ee770a1aa17fccf10cecc1497b4f05fa686bc807a",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-12-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\n扫码回复【剑12】即可获得音频\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nEvents during Kenton Festival\n\nExample Start date: 16th May\n\nOpening ceremony (first day) In town centre, starting at 1 The mayor will make a speech\n\nA2.. . will perform Performance of a 3. about Helen Tungate (a 4. Evening fireworks display situated across the 5\n\nOther events Videos about relationships that children have with their 6 Venue:7 House"
+      },
+      "questionGroups": [
+        {
+          "id": "c12t2l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Opening ceremony (first day) In town centre, starting at",
+              "acceptedAnswers": [
+                "2.45"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "band"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Performance of a ___ about Helen Tungate (a ___)",
+              "acceptedAnswers": [
+                "play"
+              ],
+              "gapText": "Performance of a ___ about Helen Tungate (a ___)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Evening fireworks display situated across the",
+              "acceptedAnswers": [
+                "scientist"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Other events Videos about relationships that children have with their",
+              "acceptedAnswers": [
+                "river"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Videos about relationships that children have with their ___",
+              "acceptedAnswers": [
+                "grandparents"
+              ],
+              "gapText": "Videos about relationships that children have with their ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Venue",
+              "acceptedAnswers": [
+                "Handsworth"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Performance of ___ dances",
+              "acceptedAnswers": [
+                "traditional"
+              ],
+              "gapText": "Performance of ___ dances",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Venue: the ___ market in the town centre",
+              "acceptedAnswers": [
+                "outdoor"
+              ],
+              "gapText": "Venue: the ___ market in the town centre",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Tickets available online from festival box office and from shops which have the festival ___ in their windows",
+              "acceptedAnswers": [
+                "logo"
+              ],
+              "gapText": "Tickets available online from festival box office and from shops which have the festival ___ in their windows",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:52:25+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 540878
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\n## Theatre trip to Munich\n\n11 When the group meet at the airport they will have A breakfast. B coffee. C lunch.\n\n12 The group will be met at Munich Airport by A an employee at the National Theatre. B a theatre manager. C a tour operator.\n\n13 How much will they pay per night for a double room at the hotel? A 110 euros B 120 euros C 150 euros\n\n14 What type of restaurant will they go to on Tuesday evening? A an Italian restaurant B a Lebanese restaurant C a typical restaurant of the region\n\n15 Who will they meet on Wednesday afternoon? A an actor B a playwright C a theatre director\n\nQuestions 16–20\n\nWhat does the man say about the play on each of the following days?\n\nChoose FIVE answers from the box and write the correct letter, A-G, next to Questions 16–20.\n\n## Comments\n\nA The playwright will be present.\n\nB The play was written to celebrate an anniversary.\n\nC The play will be performed inside a historic building.\n\nD The play will be accompanied by live music.\n\nE The play will be performed outdoors.\n\nF The play will be performed for the first time.\n\nG The performance will be attended by officials from the town.\n\n## Days\n\n16 Wednesday\n\n17 Thursday\n\n18 Friday\n\n19 Saturday\n\n20 Monday"
+      },
+      "questionGroups": [
+        {
+          "id": "c12t2l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "When the group meet at the airport they will have A breakfast. B coffee. C lunch",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The playwright will be present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The play"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The playwright will be present"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The play"
+            }
+          ]
+        },
+        {
+          "id": "c12t2l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "The group will be met at Munich Airport by A an employee at the National Theatre. B a theatre manager. C a tour operator",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The playwright will be present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The play was written to celebrate an anniversary"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The play will be performed inside a histor"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The playwright will be present"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The play was written to celebrate an anniversary"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The play will be performed inside a histor"
+            }
+          ]
+        },
+        {
+          "id": "c12t2l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "How much will they pay per night for a double room at the hotel? A 110 euros B 120 euros C 150 euros",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The playwright will be present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The play was written to celebrate an anniversary"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The play will be performed inside a historic building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be perfor"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The playwright will be present"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The play was written to celebrate an anniversary"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The play will be performed inside a historic building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be perfor"
+            }
+          ]
+        },
+        {
+          "id": "c12t2l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "What type of restaurant will they go to on Tuesday evening? A an Italian restaurant B a Lebanese restaurant C a typical restaurant of the region",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The playwright will be present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The play was written to celebrate an anniversary"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The play will be performed inside a historic building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be performed for the first time"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "The performance will be attended by officials from the town"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The playwright will be present"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The play was written to celebrate an anniversary"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The play will be performed inside a historic building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be performed for the first time"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "The performance will be attended by officials from the town"
+            }
+          ]
+        },
+        {
+          "id": "c12t2l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Who will they meet on Wednesday afternoon? A an actor B a playwright C a theatre director",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The playwright will be present"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The play was written to celebrate an anniversary"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The play will be performed inside a historic building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be performed for the first time"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "The performance will be attended by officials from the town"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The playwright will be present"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The play was written to celebrate an anniversary"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The play will be performed inside a historic building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be performed for the first time"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "The performance will be attended by officials from the town"
+            }
+          ]
+        },
+        {
+          "id": "c12t2l-g16",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Wednesday",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The play will be performed inside a historic building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be performed for the first time"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "The performance will be attended by officials from the town"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The play will be performed inside a historic building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be performed for the first time"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "The performance will be attended by officials from the town"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g17",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "Thursday",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The play will be performed inside a historic building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be performed for the first time"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "The performance will be attended by officials from the town"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The play will be performed inside a historic building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be performed for the first time"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "The performance will be attended by officials from the town"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g18",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Friday",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The play will be performed inside a historic building"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be performed for the first time"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "The performance will be attended by officials from the town"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The play will be performed inside a historic building"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be performed for the first time"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "The performance will be attended by officials from the town"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g19",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Saturday",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be performed for the first time"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "The performance will be attended by officials from the town"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be performed for the first time"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "The performance will be attended by officials from the town"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g20",
+          "instruction": "Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "Monday",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "The play will be accompanied by live music"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "The play will be performed outdoors"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "The play will be performed for the first time"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "The performance will be attended by officials from the town"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The play will be accompanied by live music"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The play will be performed outdoors"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "The play will be performed for the first time"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "The performance will be attended by officials from the town"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 540878,
+      "audioDurationMs": 469303
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions 21–25\n\nChoose the correct letter, A, Bor C.\n\n## Scandinavian Studies\n\n21 James chose to take Scandinavian Studies because when he was a child A he was often taken to Denmark. B C his mother spoke to him in Danish. a number of Danish people visited his family.\n\n22 When he graduates, James would like to A take a postgraduate course. B work in the media. C become a translator.\n\n23 Which course will end this term? A Swedish cinema B Danish television programmes C Scandinavian literature\n\n24 They agree that James's literature paper this term will be on A 19th century playwrights. B theIcelandic sagas. C modern Scandinavian novels.\n\n25 Beth recommends that James's paper should be\n\nA a historical overview of the genre. \nB an in-depth analysis of a single writer. \nC a study of the social background to the literature.\n\nQuestions 26–30\n\nComplete the flow-chart below.\n\nChoose FIvE answers from the box and write the correct letter, A-G, next to Questions 26–30.\n\nA bullet points \nB film \nC notes \nD structure \nE student paper \nF textbook \nG documentary\n\n## How James will write his paper on the Vikings\n\n[]\n\n## SECTION4Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nConflict at work\n\nConflict mostly consists of behaviour in the general category of 31 Often a result of people wanting to prove their 32.....\n\nAlso caused by differences in 33 between people\n\n34 .'conflicts: people more concerned about own team than about company\n\nConflict-related stress can cause 35 that may last for months\n\nChief Executives (CEOs)\n\nMany have both36 and anxiety\n\nMay not like to have their decisions questioned\n\nThere may be conflict between people who have different 37\n\nOther managers A structure that is more38 may create a feeling of uncertainty\n\nabout who staff should report to.\n\nMinimising conflict\n\nBosses need to try hard to gain 39\n\nSomeone from outsidethe company may be given the role of 40 in order to resolve conflicts."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t2l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "James chose to take Scandinavian Studies because when he was a child A he was often taken to Denmark. B C his mother spoke to him in Danish. a number of Danish people visited his family",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a historical overview of the genre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an in-depth analysis of a single writer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a study of the social background to the literature"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "When he graduates, James would like to A take a postgraduate course. B work in the media. C become a translator",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a historical overview of the genre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an in-depth analysis of a single writer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a study of the social background to the literature"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "structure"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "student paper"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "textbook"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "documentary"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "Which course will end this term? A Swedish cinema B Danish television programmes C Scandinavian literature",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a historical overview of the genre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an in-depth analysis of a single writer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a study of the social background to the literature"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "structure"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "student paper"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "textbook"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "documentary"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "They agree that James's literature paper this term will be on A 19th century playwrights. B the Icelandic sagas. C modern Scandinavian novels",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a historical overview of the genre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an in-depth analysis of a single writer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a study of the social background to the literature"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "structure"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "student paper"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "textbook"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "documentary"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "Beth recommends that James's paper should be A a historical overview of the genre. B an in-depth analysis of a single writer. C a study of the social background to the literature",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a historical overview of the genre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an in-depth analysis of a single writer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a study of the social background to the literature"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "structure"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "student paper"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "textbook"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "documentary"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g26",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Complete the flow-chart below.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a historical overview of the genre"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an in-depth analysis of a single writer"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a study of the social background to the literature"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g27",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "He'll borrow a ___ from Beth.",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "bullet points"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "film"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "notes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ],
+              "gapText": "He'll borrow a ___ from Beth.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g28",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "He'll plan the ___ of the paper.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "bullet points"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "film"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "notes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ],
+              "gapText": "He'll plan the ___ of the paper.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g29",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "He'll read some source material and write ___.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "bullet points"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "film"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "notes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ],
+              "gapText": "He'll read some source material and write ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c12t2l-g30",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "He'll write the paper using ___.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "bullet points"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "film"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "notes"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "structure"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "student paper"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "textbook"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "documentary"
+                }
+              ],
+              "gapText": "He'll write the paper using ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a historical overview of the genre"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "an in-depth analysis of a single writer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a study of the social background to the literature"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1010181,
+      "audioDurationMs": 430642
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c12-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION 1 Questions 1–10\n\n扫码回复【剑12】即可获得音频\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nEvents during Kenton Festival\n\nExample Start date: 16th May\n\nOpening ceremony (first day) In town centre, starting at 1 The mayor will make a speech\n\nA2.. . will perform Performance of a 3. about Helen Tungate (a 4. Evening fireworks display situated across the 5\n\nOther events Videos about relationships that children have with their 6 Venue:7 House\n\n## SECTION 2 Questions 11–20\n\nQuestions 11-15\n\nChoose the correct letter, A, B or C.\n\n## Theatre trip to Munich\n\n11 When the group meet at the airport they will have A breakfast. B coffee. C lunch.\n\n12 The group will be met at Munich Airport by A an employee at the National Theatre. B a theatre manager. C a tour operator.\n\n13 How much will they pay per night for a double room at the hotel? A 110 euros B 120 euros C 150 euros\n\n14 What type of restaurant will they go to on Tuesday evening? A an Italian restaurant B a Lebanese restaurant C a typical restaurant of the region\n\n15 Who will they meet on Wednesday afternoon? A an actor B a playwright C a theatre director\n\nQuestions 16–20\n\nWhat does the man say about the play on each of the following days?\n\nChoose FIVE answers from the box and write the correct letter, A-G, next to Questions 16–20.\n\n## Comments\n\nA The playwright will be present.\n\nB The play was written to celebrate an anniversary.\n\nC The play will be performed inside a historic building.\n\nD The play will be accompanied by live music.\n\nE The play will be performed outdoors.\n\nF The play will be performed for the first time.\n\nG The performance will be attended by officials from the town.\n\n## Days\n\n16 Wednesday\n\n17 Thursday\n\n18 Friday\n\n19 Saturday\n\n20 Monday\n\n## SECTION 3 Questions 21–30\n\nQuestions 21–25\n\nChoose the correct letter, A, Bor C.\n\n## Scandinavian Studies\n\n21 James chose to take Scandinavian Studies because when he was a child A he was often taken to Denmark. B C his mother spoke to him in Danish. a number of Danish people visited his family.\n\n22 When he graduates, James would like to A take a postgraduate course. B work in the media. C become a translator.\n\n23 Which course will end this term? A Swedish cinema B Danish television programmes C Scandinavian literature\n\n24 They agree that James's literature paper this term will be on A 19th century playwrights. B theIcelandic sagas. C modern Scandinavian novels.\n\n25 Beth recommends that James's paper should be\n\nA a historical overview of the genre. \nB an in-depth analysis of a single writer. \nC a study of the social background to the literature.\n\nQuestions 26–30\n\nComplete the flow-chart below.\n\nChoose FIvE answers from the box and write the correct letter, A-G, next to Questions 26–30.\n\nA bullet points \nB film \nC notes \nD structure \nE student paper \nF textbook \nG documentary\n\n## How James will write his paper on the Vikings\n\n[]\n\n## SECTION4Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nConflict at work\n\nConflict mostly consists of behaviour in the general category of 31 Often a result of people wanting to prove their 32.....\n\nAlso caused by differences in 33 between people\n\n34 .'conflicts: people more concerned about own team than about company\n\nConflict-related stress can cause 35 that may last for months\n\nChief Executives (CEOs)\n\nMany have both36 and anxiety\n\nMay not like to have their decisions questioned\n\nThere may be conflict between people who have different 37\n\nOther managers A structure that is more38 may create a feeling of uncertainty\n\nabout who staff should report to.\n\nMinimising conflict\n\nBosses need to try hard to gain 39\n\nSomeone from outsidethe company may be given the role of 40 in order to resolve conflicts."
+      },
+      "questionGroups": [
+        {
+          "id": "c12t2l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Conflict mostly consists of behaviour in the general category of",
+              "acceptedAnswers": [
+                "bullying"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Often a result of people wanting to prove their",
+              "acceptedAnswers": [
+                "superiority"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Also caused by differences in",
+              "acceptedAnswers": [
+                "personality"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "'conflicts: people more concerned about own team than about company Conflict-related stress can cause 35 that may last for months Chief Executives (CEOs) Many have both36 and anxiety May not like to have their decisions questioned There may be conflict between people who have different 37 Other managers A structure that is more38 may create a feeling of uncertainty about who staff should report to. Minimising conflict Bosses need to try hard to gain 39 Someone from outsidethe company may be given the role of 40 in order to resolve conflicts",
+              "acceptedAnswers": [
+                "structural"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Conflict-related stress can cause",
+              "acceptedAnswers": [
+                "absence"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Many have both",
+              "acceptedAnswers": [
+                "confidence"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "There may be conflict between people who have different",
+              "acceptedAnswers": [
+                "visions"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Other managers A structure that is more",
+              "acceptedAnswers": [
+                "democratic"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Bosses need to try hard to gain",
+              "acceptedAnswers": [
+                "respect"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        },
+        {
+          "id": "c12t2l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c12t2l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Someone from outsidethe company may be given the role of",
+              "acceptedAnswers": [
+                "mediator"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": [
+              "READING PASSAGE 1"
+            ]
+          }
+        }
+      ],
+      "audioStartMs": 1440823,
+      "audioDurationMs": 517002
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-9-test-3-writing",
+  "title": "Cambridge IELTS 9 Academic Test 3 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-0fff67454e2c",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 9",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题9.pdf",
+        "sha256": "c3fbc2d06b1b60fe8e7d27936150a09c38714e4bd23e6351a09b93c9555ee890"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C09\\剑桥雅思真题9\\auto\\剑桥雅思真题9.md",
+        "sha256": "0fff67454e2c0209145ec163b53e0d8a4366227a4e4853f03d4cac2187f6196e",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe charts below give information on the ages of the populations of Yemen and Italy in 2000 and projections for 2050.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relavant.\n\nWrite at least 150 words.\n\n[]\n\n[]\n\n[]\n\n[]\n\n留学CLUB社团\n\n打算申请出国留学？正在备考雅思托福？来和大家一起吧\\~快乐加倍！效率加倍！"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c09-t3-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome people say that the best way to improve public health is by increasing\n\nthe number of sports facilities. Others, however, say that this would have little\n\neffect on public health and that other measures are required.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own\n\nknowledge or experience.\n\nWrite at least 250 words."
+      },
+      "questionGroups": []
+    }
+  ]
+}

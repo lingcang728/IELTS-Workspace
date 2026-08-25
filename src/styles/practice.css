@@ -393,3 +393,22 @@
 .progress-line.partial i b { background: var(--caution); }
 .record-line b.partial { color: var(--caution); }
 .history-info .progress-line { margin-top: 6px; }
+
+.audio-guide-card { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+.audio-guide-card h2 { margin: 0 0 6px; }
+.audio-search { margin-top: 12px; display: flex; }
+.audio-dot { width: 10px; height: 10px; border-radius: 50%; align-self: center; background: var(--caution); }
+.audio-dot.ready { background: var(--positive); }
+.catalog-row.audio-missing { opacity: .96; }
+.audio-wizard-backdrop { position: fixed; inset: 0; z-index: 40; background: var(--scrim); display: grid; place-items: center; padding: 24px; }
+.audio-wizard { width: min(720px, 100%); max-height: min(86vh, 820px); overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+.audio-wizard header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.audio-wizard h2, .audio-wizard h3 { margin: 0 0 8px; }
+.audio-plan { margin-top: 16px; display: grid; gap: 8px; }
+.audio-candidate { display: flex; gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid var(--line); }
+.audio-candidate small { display: block; color: var(--muted); }
+.audio-errors { color: var(--danger); padding-left: 18px; }
+.audio-calibrator { margin-top: 16px; display: grid; gap: 10px; }
+.audio-wave { width: 100%; height: 88px; background: var(--panel-2); border: 1px solid var(--line); cursor: pointer; }
+.ghost-icon { background: transparent; border: 0; color: var(--ink); cursor: pointer; }
+.form-error { color: var(--danger); }

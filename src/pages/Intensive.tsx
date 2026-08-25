@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
-import { assetSrc, loadExam, loadTranscript } from "../lib/api";
+import { loadExam, loadTranscript } from "../lib/api";
+import { audioPlaybackSource, listeningReady, localMediaSrc, type PlaybackSource } from "../lib/audio";
 import { accuracy, diffWords } from "../lib/dictation";
 import type { Exam, ExamSummary, Transcript, TranscriptLine } from "../lib/types";
 
@@ -36,18 +37,23 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
   const [typed, setTyped] = useState("");
   const [checked, setChecked] = useState(false);
   const [position, setPosition] = useState(0);
+  const [play, setPlay] = useState<PlaybackSource | null>(null);
   const audio = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     if (!examId) return;
     let live = true;
-    setExam(null); setTranscript(null); setSrc(""); setPart(0); setTyped(""); setChecked(false);
+    setExam(null); setTranscript(null); setSrc(""); setPlay(null); setPart(0); setTyped(""); setChecked(false);
     void (async () => {
       const next = await loadExam(examId).catch(() => null);
       if (!live) return;
       setExam(next);
-      if (next?.sections[0]?.audioAsset) {
-        setSrc(await assetSrc(next.sections[0].audioAsset).catch(() => ""));
+      try {
+        const nextPlay = await audioPlaybackSource(examId);
+        setPlay(nextPlay);
+        if (nextPlay.tracks[0]) setSrc(localMediaSrc(nextPlay.tracks[0].path));
+      } catch {
+        setSrc("");
       }
       setTranscript(await loadTranscript(examId).catch(() => null));
     })();
@@ -59,8 +65,10 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
   // `30_part_offsets.py` measured with ffprobe. No audio alignment is needed to
   // jump to a part — only to a sentence, which is why sentence-level seeking is
   // deliberately not offered here.
-  const startMs = section?.audioStartMs ?? 0;
-  const durationMs = section?.audioDurationMs ?? 0;
+  const startMs = play?.mode === "parts" ? 0 : (section?.audioStartMs ?? play?.partStartsMs[part] ?? 0);
+  const durationMs = play?.mode === "parts"
+    ? (play.tracks[part]?.durationMs ?? 0)
+    : (section?.audioDurationMs ?? 0);
 
   const lines = useMemo(() => {
     const found = transcript?.sections.find((s) => s.index === part || s.sectionId === section?.id);
@@ -73,10 +81,15 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
 
   function seekToPart(index: number) {
     setPart(index); setTyped(""); setChecked(false); setShowText(false);
-    const target = exam?.sections[index];
     const el = audio.current;
+    if (play?.mode === "parts" && play.tracks[index]) {
+      setSrc(localMediaSrc(play.tracks[index].path));
+      window.setTimeout(() => { void audio.current?.play().catch(() => undefined); }, 40);
+      return;
+    }
+    const target = exam?.sections[index];
     if (el && target) {
-      el.currentTime = (target.audioStartMs ?? 0) / 1000;
+      el.currentTime = (target.audioStartMs ?? play?.partStartsMs[index] ?? 0) / 1000;
       void el.play().catch(() => undefined);
     }
   }
@@ -104,7 +117,7 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
         {src
           ? <audio ref={audio} src={src} controls preload="metadata"
                    onTimeUpdate={(e) => setPosition(e.currentTarget.currentTime * 1000)} />
-          : <p className="meta">这套题没有音频文件。</p>}
+          : <p className="meta">{listeningReady(listening.find((e) => e.id === examId)?.audioStatus) ? "音频正在加载。" : "这套题还没有添加音频。请到听力资源中心导入后再精听。"}</p>}
         <div className="intensive-progress">
           <span>{clock(Math.max(0, position - startMs))} / {clock(durationMs)}</span>
           <i><b style={{ width: durationMs ? `${Math.min(100, Math.max(0, ((position - startMs) / durationMs) * 100))}%` : "0%" }} /></i>

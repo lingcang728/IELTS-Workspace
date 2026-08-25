@@ -92,7 +92,7 @@ try {
   if ([string]::IsNullOrWhiteSpace($signature)) { throw 'updater 签名为空。' }
   $latest = [ordered]@{
     version = $version
-    notes = if ($env:IELTS_RELEASE_NOTES) { $env:IELTS_RELEASE_NOTES.Trim() } else { '新增 GitHub Release 自动检查、下载安装与重启更新。' }
+    notes = if ($env:IELTS_RELEASE_NOTES) { $env:IELTS_RELEASE_NOTES.Trim() } else { '1.3.0：内置剑桥题库（阅读/写作开箱即用），Listening 音频改为本机导入；安装版数据目录改为 LocalAppData。' }
     pub_date = (Get-Date).ToUniversalTime().ToString('o')
     size = (Get-Item -LiteralPath $installer).Length
     platforms = [ordered]@{

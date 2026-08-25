@@ -1,0 +1,1577 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-1-listening",
+  "title": "Cambridge IELTS 7 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0014-f31da6d5",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-7-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\n## Questions 1-5\n\nComplete the notes below.\n\nWrite NO MORE THAN THREE WORDS for each answer\n\n##\n\n## Transport from Airport to Milton\n\nExample\n\nDistance:\n\n## Options:\n\n• Car hire – don't want to drive\n\n• 1 .... – expensive\n\n• Greyhound bus – \\$15 single, \\$27.50 return – direct to the 2 .... – long 3 .....\n\n• Airport Shuttle -4 . .. service – every 2 hours – \\$35 single, \\$65 return – need to 5 ....\n\n留学CLUB社团 \n\n## Questions 6-10\n\nComplete the booking form below\n\nWrite ONE WORD ANDIOR A NUMBER for each answer.\n\nAIRPORT SHUTTLE BOOKING FORM\n\nTo: Milton\n\nDate:\n\n6 ..\n\nNo. of passengers: One\n\nBus Time:\n\n7 ... …… pm\n\nType of ticket: Single\n\nName:\n\nJanet 8 ..\n\nFlight No:\n\n9..\n\nFrom: London Heathrow\n\nAddress in Milton: Vacation Motel,\n\n24, Kitchener Street\n\nFare: Credit Card No:\n\n$35 (Visa) 10 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t1l-g1",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "(a) taxi",
+                "cab"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g2",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Greyhound bus — direct to the ___",
+              "acceptedAnswers": [
+                "city centre",
+                "city center"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g3",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Greyhound bus — long ___",
+              "acceptedAnswers": [
+                "wait"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g4",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Airport Shuttle — ___ service",
+              "acceptedAnswers": [
+                "door-to-door"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g5",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Airport Shuttle — need to ___",
+              "acceptedAnswers": [
+                "reserve",
+                "reserve a seat"
+              ],
+              "options": [],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              5
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g6",
+          "instruction": "Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Date: ___ (No. of passengers: One)",
+              "acceptedAnswers": [
+                "17th October",
+                "the 17th October",
+                "17 October",
+                "the 17th of October",
+                "17th of October"
+              ],
+              "gapText": "Date: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": [
+              "Complete the booking form below"
+            ]
+          }
+        },
+        {
+          "id": "c7t1l-g7",
+          "instruction": "Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Bus Time: ___ pm (Type of ticket: Single)",
+              "acceptedAnswers": [
+                "12.30",
+                "12:30"
+              ],
+              "gapText": "Bus Time: ___ pm",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": [
+              "Complete the booking form below"
+            ]
+          }
+        },
+        {
+          "id": "c7t1l-g8",
+          "instruction": "Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Name: Janet ___",
+              "acceptedAnswers": [
+                "Thomson"
+              ],
+              "gapText": "Name: Janet ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": [
+              "Complete the booking form below"
+            ]
+          }
+        },
+        {
+          "id": "c7t1l-g9",
+          "instruction": "Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "| From: London Heathrow Address in Milton: Vacation Motel, | 24, Kitchener Street Fare: Credit Card No: | $35 (Visa)",
+              "acceptedAnswers": [
+                "AC 936"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": [
+              "Complete the booking form below"
+            ]
+          }
+        },
+        {
+          "id": "c7t1l-g10",
+          "instruction": "Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Credit Card No. (Visa): ___",
+              "acceptedAnswers": [
+                "3303 8450 2045 6837"
+              ],
+              "gapText": "Credit Card No. (Visa): ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              10
+            ],
+            "canonicalOf": [
+              "Complete the booking form below"
+            ]
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 555560
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11-20\n\n## Questions 11-16\n\nChoose the correct letter, A, B or C\n\n11 PS Camping has been organising holidays for A 15 years. B 20 years. C 25 years.\n\n12 The company has most camping sites in A France. B Italy. C Switzerland.\n\n13 Which organised activity can children do every day of the week? A football B drama C model making\n\n14 Some areas of the sites have a ‘no noise' rule after A 9.30 p.m. B 10.00 p.m. C 10.30 p.m.\n\n15 The holiday insurance that is offered by PS Camping A can be charged on an annual basis. B is included in the price of the holiday. C must be taken out at the time of booking.\n\n16 Customers who recommend PS Camping to friends will receive A a free gift. B an upgrade to a luxury tent C a discount.\n\n## Questions 17–20\n\nWhat does the speaker say about the following items?\n\nWrite the correct letter, A, B or C, next to questions 17–20.\n\nA They are provided in all tents.\n\nB They are found in central areas of the campsite.\n\nC They are available on request.\n\n17 barbecues\n\n18 toys\n\n19 cool boxes\n\n20 mops and buckets"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t1l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "PS Camping has been organising holidays for",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "15 years."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "20 years."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "25 years."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "The company has most camping sites in A France. B Italy. C Switzerland",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "France."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Italy."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Switzerland."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.545224+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "Which organised activity can children do every day of the week?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "football"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "drama"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "model making"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "Some areas of the sites have a ‘no noise’ rule after",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "9.30 p.m."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "10.00 p.m."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "10.30 p.m."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "The holiday insurance that is offered by PS Camping",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "can be charged on an annual basis."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "is included in the price of the holiday."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "must be taken out at the time of booking."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Customers who recommend PS Camping to friends will receive",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a free gift."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "an upgrade to a luxury tent."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a discount."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g17",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 17-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "What does the speaker say about barbecues?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are provided in all tents."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They are found in central areas of the campsite."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They are available on request."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g18",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 17-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "What does the speaker say about toys?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are provided in all tents."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They are found in central areas of the campsite."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They are available on request."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g19",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 17-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q19",
+              "number": 19,
+              "type": "matching",
+              "prompt": "What does the speaker say about cool boxes?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are provided in all tents."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They are found in central areas of the campsite."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They are available on request."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g20",
+          "instruction": "Write the correct letter, A, B or C, next to Questions 17-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q20",
+              "number": 20,
+              "type": "matching",
+              "prompt": "What does the speaker say about mops and buckets?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are provided in all tents."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They are found in central areas of the campsite."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They are available on request."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 555560,
+      "audioDurationMs": 406733
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\n## Questions 21-23\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## DIFFERENCES BETWEEN INDIVIDUALS IN THE WORKPLACE\n\nIndividuals bring different:\n\n• ideas\n\n• 21 …\n\n• learning experiences\n\nWork behaviour differences are due to:\n\n• personality\n\n• 22\n\nEffects of diversity on companies:\n\nAdvantage: diversity develops 23\n\nDisadvantage: diversity can cause conflict\n\n## Questions 24–27\n\nChoose the correct letter, A, B or C\n\n24 Janice thinks that employers should encourage workers who are A potential leaders. B open to new ideas. C good at teamwork.\n\n25 Janice suggests that managers may find it difficult to\n\nA form successful groups.\n\nB balance conflicting needs.\n\nC deal with uncooperative workers\n\n26 Janice believes employers should look for job applicants who\n\nA can think independently\n\nB will obey the system.\n\nC can solve problems.\n\n27 Janice believes managers should\n\nA demonstrate good behaviour.\n\nB encourage co-operation early on.\n\nC increase financial incentives.\n\n## Questions 28–30\n\nComplete the sentences below.\n\nWrite ONE WORD ONLY for each answer\n\n28 All managers need to understand their employees and recognise their company's\n\n29 When managing change, increasing the company's ... .may be more important than employee satisfaction.\n\n30 During periods of change, managers may have to cope with increased amounts of"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t1l-g21",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Individuals bring different: ideas; ___; learning experiences",
+              "acceptedAnswers": [
+                "attitude",
+                "attitudes"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g22",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Work behaviour differences are due to: personality; ___",
+              "acceptedAnswers": [
+                "gender",
+                "sex"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g23",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Advantage: diversity develops ___",
+              "acceptedAnswers": [
+                "creativity",
+                "creativeness"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              23
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Janice thinks that employers should encourage workers who are",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "potential leaders."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "open to new ideas."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "good at teamwork."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "Janice suggests that managers may find it difficult to",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "form successful groups."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "balance conflicting needs."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "deal with uncooperative workers."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Janice believes employers should look for job applicants who",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "can think independently."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "will obey the system."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "can solve problems."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Janice believes managers should",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "demonstrate good behaviour."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "encourage co-operation early on."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "increase financial incentives."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              24,
+              27
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g28",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "All managers need to understand their employees and recognise their company's",
+              "acceptedAnswers": [
+                "culture"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g29",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "When managing change, increasing the company’s ___ may be more important than employee satisfaction.",
+              "acceptedAnswers": [
+                "profit",
+                "profits"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g30",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "During periods of change, managers may have to cope with increased amounts of ___",
+              "acceptedAnswers": [
+                "stress",
+                "strain"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              28,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 962293,
+      "audioDurationMs": 454067
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c07-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\nQuestions 31–35\n\nComplete the notes below\n\nWrite ONE WORD ONLY for each answer.\n\nSEMINAR ON ROCK ART\n\nPreparation for fieldwork trip to Namibia in 31 ..\n\nRock art in Namibia may be\n\n• paintings • engravings\n\nEarliest explanation of engravings of animal footprints\n\nThey were used to help 32 ......\n\n..... learn about tracking\n\nBut:\n\n• Why are the tracks usually 33 ....\n\n..?\n\n• Why are the unrealistic animals sometimes half 34 ....\n\n• Why are some engravings realistic and others unrealistic? ……….?\n\nMore recent explanation:\n\nWise men may have been trying to control wild animals with 35 .\n\nComment: Earlier explanation was due to scholars over-generalising from their experience of a\n\n本资料仅用于参考，。\n\n## Questions 36–40\n\nComplete the sentences below.\n\nWrite ONE WORD ONLY for each answer.\n\n36 If you look at a site from a .. .. , you reduce visitor pressure. \n37 To camp on a site may be disrespectful to people from that \n38 Undiscovered material may be damaged by . \n39 You should avoid .... .. or tracing rock art as it is so fragile. \n40 In general, your aim is to leave the site ."
+      },
+      "questionGroups": [
+        {
+          "id": "c7t1l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Preparation for fieldwork trip to Namibia in",
+              "acceptedAnswers": [
+                "April"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "They were used to help ___ learn about tracking",
+              "acceptedAnswers": [
+                "children"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Why are the tracks usually ___?",
+              "acceptedAnswers": [
+                "repeated"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "• Why are the unrealistic animals sometimes half",
+              "acceptedAnswers": [
+                "human"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Wise men may have been trying to control wild animals with ___",
+              "acceptedAnswers": [
+                "magic"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              35
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g36",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "If you look at a site from a .. .. , you reduce visitor pressure",
+              "acceptedAnswers": [
+                "distance"
+              ],
+              "options": []
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g37",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "To camp on a site may be disrespectful to people from that",
+              "acceptedAnswers": [
+                "culture"
+              ],
+              "options": []
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g38",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Undiscovered material may be damaged by",
+              "acceptedAnswers": [
+                "fire(s)"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g39",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "You should avoid ___ or tracing rock art as it is so fragile.",
+              "acceptedAnswers": [
+                "touching"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1l-g40",
+          "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "In general, your aim is to leave the site ___",
+              "acceptedAnswers": [
+                "intact"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:32+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              36,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1416360,
+      "audioDurationMs": 407107
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "examId": "cambridge-12-test-1-listening",
+  "source": {
+    "kind": "mineru",
+    "book": 12,
+    "test": 1
+  },
+  "note": "Cambridge audioscript appendix. Q-markers show which line carries each answer.",
+  "answerMarkers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    32,
+    33,
+    40
+  ],
+  "missingMarkers": [
+    8,
+    24,
+    27,
+    28,
+    29,
+    30,
+    31,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "sectionId": "part1",
+      "lines": [
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Hi. Can I help you?",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "I'd like to find out if you have any excursions suitable for families.",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Sure. How about taking your family for a cruise?We have a steamship that Examp takes passengers out several times a day –it's over 100 years old.",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "That sounds interesting. How long is the trip?",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "About an hour and a half. And don't forget to take pictures of the mountains. They're all around you when you're on the boat and they look fantastic.",
+          "answers": [
+            1
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "OK. And I assume there's a café or something on board?",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Sure. How old are your children?",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Er, my daughter's fifteen and my son's seven.",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Right. Well there are various things you can do once you've crossed the lake, to make a day of it. One thing that's very popular is a visit to the Country Farm. You're met off the boat by the farmer and he'll take you to the holding pens, where the sheep are kept. Children love feeding them!",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "My son would love that. He really likes animals.",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Well, there's also a 40-minute trek round the farm on a horse, if he wants.",
+          "answers": [
+            2
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Do you think he'd manage it? He hasn't done that before.",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Sure. It's suitable for complete beginners.",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Ah, good.",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "And again, visitors are welcome to explore the farm on their own, as long as they take care to close gates and so on. There are some very beautiful gardens along the side of the lake which also belong to the farm – they'll be just at their best now. You could easily spend an hour or two there.",
+          "answers": [
+            3
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "OK. Well that all sounds good. And can we get lunch there?",
+          "answers": [
+            4
+          ]
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "You can, and it's very good, though it's not included in the basic cost. You pay when you get there.",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Right.",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "So is there anything else to do over on that side of the lake?",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Well, what you can do is take a bike over on the ship and then go on a cycling trip. There's a trail there called the Back Road – you could easily spend three or four hours exploring it, and the scenery's wonderful. They'll give you a map when you get your ticket for the cruise - there's no extra charge.",
+          "answers": [
+            5
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "What's the trail like in terms of difficulty?",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Quite challenging in places. It wouldn't be suitable for your seven-year-old. It needs someone who's got a bit more experience.",
+          "answers": [
+            6
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Hmm. Well, my daughter loves cycling and so do I, so maybe the two of us could go, and my wife and son could stay on the farm. That might work out quite well. But we don't have bikes here... is there somewhere we could rent them?",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Yes, there's a place here in the city. It's called Ratchesons.",
+          "answers": [
+            7
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "I'll just make a note of that – er, how do you spell it?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "TC EMPLoYEE: R-A-T-C-H-E-S-O-N-S. It's just by the cruise ship terminal.",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "OK.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Tc EmPLovEE: You'd also need to pick up a repair kit for the bike from there to take along with you, and you'd need to take along a snack and some water – it'd be best to get those in the city.",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Fine.That shouldn't be a problem. And I assume I can rent a helmet from theQ8 bike place?",
+          "answers": []
+        },
+        {
+          "speaker": "TC EMPLOYEE",
+          "text": "Sure, vou should definitely get that. It's a qreat ride, but you want to be well prepared because it's very remote - you won't see any shops round there, or anywhere to stay, so you need to get back in time for the last boat.",
+          "answers": [
+            9
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Yeah. So what sort of prices are we looking at here?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Tc EmPLoYEE: Let's see, that'd be one adult and one child for the cruise with farm tour, that's \\$117, and an adult and a child for the cruise only so that's \\$214 dollars altogether. Oh, wait a minute, how old did you say your daughter was?",
+          "answers": []
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "Fifteen.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "TC EmPLoYEE: Then I'm afraid it's \\$267 because she has to pay the adult fare, which is \\$75 instead of the child fare which is \\$22 – sorry about that.",
+          "answers": [
+            10
+          ]
+        },
+        {
+          "speaker": "VISITOR",
+          "text": "That's OK. Er, so how do ...",
+          "answers": []
+        }
+      ],
+      "charCount": 3490,
+      "missing": false
+    },
+    {
+      "index": 1,
+      "sectionId": "part2",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "Good morning everyone. My name's Joy Parkins and I'm the restaurant manager. And I understand that none of you've had any previous experience as kitchen assistants? Well, you might be feeling a bit nervous now, but most of our kitchen assistants say they enjoy the work. OK, they might get shouted at sometimes, but it's nothing personal, and they're pleased that they have so many different things to do, which means they never get bored. And I'll tell you straightaway that if you do well, we might think about moving you up and giving you some more responsibility.",
+          "answers": [
+            11
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Right, well, you've all shown up on time, which is an excellent start. Now I'm glad to see none of you have unsuitable footwear, so that's good – you need to be careful as the floors can get very wet and slippery. Those of you with long hair have got it well out of the way, but some of you'll need to remove your rings and bracelets - just put them somewhere safe for today, and remember to leave them at home tomorrow, as they can be a safety hazard",
+          "answers": [
+            12
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now it's going to be a busy day for you all today – we don't have any tables free for this evening, and only a few for lunch. Fortunately we've got our Head Chef back – he was away on holiday all last week which meant the other chefs had extra work. Now, I'll tell you a bit more about the job in a minute but first, some general regulations. For all of you, whatever your age, there's some equipment you mustn't use until you've been properly trained, like the waste disposal system for example, for health and safety reasons. Then I think there are two of you here who are under 18 – that's Emma and Jake, isn't it? Right, so for you two, the meat slicer is out of bounds. And of course none of you are allowed to use the electric mixer until you've been shown how it works.",
+          "answers": [
+            13,
+            14
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now you may have heard that this can be a stressful job, and I have to say that can be true. You'll be working an eight-hour day for the first week, though you'll have the chance to do overtime after that as well if you want to. But however long the hours are, you'll get a break in the middle. What you will find is that you're on your feet all day long, lifting and carrying, so & if you're not fit now you soon will be! You'll find you don't have much chance to take it easy – when someone tells you to do something you need to do it straightaway – but at least we do have a very efficient air conditioning system compared with some kitchens.",
+          "answers": [
+            15,
+            16
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Now let me tell you about some of the people you need to know. So as I said, I'm Joy Parkins and I decide who does what during the day and how long they work for. I'll be trying to get you to work with as many different people in the kitchen as possible, so that you learn while you're on the job. One person whose name you must remember is David Field. If you injure yourself at all, even if it's really minor, you must report to him and he'll make sure the incident is recorded and you get the appropriate treatment. He's trained to give basic treatment to staff himself, or he'll send you off somewhere else if necessary. Then there's Dexter Wills – he's the person you need to see if you smash a plate or something like that. Don't just leave it and hope no one will notice – it's really important to get things noted and replaced or there could be problems later. And finally. there's Mike Smith. He's the member of staff who takes care of all the stores of perishables, so if you notice we're getting low in flour or sugar or something, make sure you let him know so he can put in an order.",
+          "answers": [
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "OK, now the next thing ...",
+          "answers": []
+        }
+      ],
+      "charCount": 3561,
+      "missing": false
+    },
+    {
+      "index": 2,
+      "sectionId": "part3",
+      "lines": [
+        {
+          "speaker": "TRUDIE",
+          "text": "OK, Stewart.We need to start planning our paper on public libraries. Have you thought of an angle yet?",
+          "answers": []
+        },
+        {
+          "speaker": "STEWART",
+          "text": "Well, there's so much we could look into. How libraries have changed over the centuries, for instance, or how different countries organise them. What do you think, Trudie?",
+          "answers": []
+        },
+        {
+          "speaker": "TRUDIE",
+          "text": "Maybe we should concentrate on this country, and try and relate the changes in libraries to external developments, like the fact that far more people can read than a century ago, and that the local population may speak lots of different languages.",
+          "answers": [
+            21
+          ]
+        },
+        {
+          "speaker": "STEWART",
+          "text": "TRUDIE: STEWART: We could include something about changes in the source of funding, too. Yes, but remember we're only supposed to write a short paper, so it's probably best if we don't go into funding in any detail. Right. Well, shall we just brainstorm a few ideas, to get started?",
+          "answers": []
+        },
+        {
+          "speaker": "TRUDIE",
+          "text": "OK. We obviously need to look at the impact of new technology, particularly the internet. Now that lots of books have been digitalised, people can access them from their own computers at home.",
+          "answers": []
+        },
+        {
+          "speaker": "STEWART",
+          "text": "TRUDIE: STEWART: And if everyone did that, libraries would be obsolete. Yes.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "But the digitalised books that are available online for free are mostly out of copyright, aren't they? And copyright in this country lasts for 70 years after the author dies. So you won't find the latest best-seller or up-to-date information.",
+          "answers": [
+            22
+          ]
+        },
+        {
+          "speaker": "TRUDIE",
+          "text": "STEWART: That's an important point. Anyway, I find it hard to concentrate when I'm reading a long text on a screen. I'd much rather read a physical book. And it takes longer to read on a screen.",
+          "answers": []
+        },
+        {
+          "speaker": "TRUDIE",
+          "text": "Oh, I prefer it. I suppose it's just a personal preference. Mm. I expect that libraries will go on evolving in the next few years. Some have already become centres where community activities take place, like local clubs",
+          "answers": []
+        },
+        {
+          "speaker": "STEWART",
+          "text": "meeting there. I think that'll become even more common. I'd like to think so, and that they'll still be serving their traditional function, but I'm",
+          "answers": []
+        },
+        {
+          "speaker": "TRUDIE",
+          "text": "not so sure. There are financial implications, after all. What I'm afraid will happen is that books and magazines will all disappear, and there'll just be rows and rows of computers. They won't look anythinglike the libraries we're used to. Well, we'll see.",
+          "answers": [
+            23
+          ]
+        },
+        {
+          "speaker": "TRUDIE",
+          "text": "I've just had an idea. Why don't wemake an in-depth study of our local publiclibrary as background to our paper?Yes, that'd be interesting, and raise all sorts of issues. Let's make a list of possiblethings we could ask about, then work out some sort of structure.For instance, um. Q24we could interview some of the staff, and find out whether the library has its ownbudget, or if that's controlled by the local council.And what their policies are. I know they don't allow food, but I'd love to find outwhat types of noise they ban – there always seems to be a lot of talking, but nevermusic. I don't know if that's a policy or it just happens.Ah, I've often wondered. Then there are things like how the library is affected by",
+          "answers": [
+            25
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Yes, that'd be interesting, a",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "things we could ask about, t",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "employment laws. I suppose there are rules about working hours, facilities for staff,",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "and so on.Right. Then there are other issues relating to the design of the building and how",
+          "answers": [
+            26
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "customers use it. Like what measures does the library take to ensure their safety?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "They'd need floor coverings that aren't slippery, and emergency exits, for instance.Oh, and another thing – there's the question of the kind of insurance the library Q27needs to have, in case anyone gets injured.Yes, that's something else to find out. You know something I've often wondered?What's that?Well, you know they've got an archive of local newspapers going back years? Well,next to it they've got the diary of a well-known politician from the late 19th century. Q28I wonder why it's there. Do you know what his connection was with this area?No idea. Let's add it to our list of things to find out. Oh, I've just thought – you knowQ29people might ask in the library about local organisations, like sports clubs? Well, I",
+          "answers": []
+        },
+        {
+          "speaker": "STEWART",
+          "text": "Well. you know they've got a",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "next to it they've got the diary of",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "I wonder why it's there. Do yo",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "wonder if they keep a database, or whether they just look online.Right. I quite fancy finding out what the differences are between a library that's Q30open to the public and one that's part of a museum, for example – they must bevery different.Mmm. Then something else I'd like to know is ...",
+          "answers": []
+        }
+      ],
+      "charCount": 4283,
+      "missing": false
+    },
+    {
+      "index": 3,
+      "sectionId": "part4",
+      "lines": [
+        {
+          "speaker": null,
+          "text": "In public discussion of business, we take certain values for granted. Today I'm going to talk about four of them: collaboration, hard work, creativity and excellence. Most people would say they're all 'good things'. I'm going to suggest that's an over-simple view.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "The trouble with these values is that they're theoretical concepts, removed from the reality of day-to-day business. Pursue values by all means, but be prepared for what may happen as aQ31 result. They can actually cause damage, which is not at all the intention.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Business leaders generally try to do the right thing. But all too often the right thing backfires. if those leaders adopt values without understanding and managing the side effects that arise. The values can easily get in the way of what's actually intended.",
+          "answers": [
+            32
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "OK. So the first value I'm going to discuss is collaboration. Er, let me give you an example. On a management training course I once attended, we were put into groups and had to construct a bridge across a stream, using building blocks that we were given. The rule was that everyone in the team had to move at least one building block during the construction. This was intended to encourage teamwork.",
+          "answers": [
+            33
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "But it was really a job best done by one person. The other teams tried to collaborate on building the structure, and descended into confusion, with everyone getting in each other's way. Our team leader solved the challenge brilliantly. She simply asked everyone in the team to move a piece a few centimetres, to comply with the rule, and then let the person in the team with an aptitude for puzzles like this build it alone. We finished before any other team. My point is that the task wasn't really suited to teamworking, so why make it one?",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Teamwork can also lead to inconsistency – a common cause of poor sales. In the case of a smartphone that a certain company launched, one director wanted to target the business market, and another demanded it was aimed at consumers. The company wanted both directors to be involved,so gave the product a consumer-friendly name, but marketed it to companies. The result was that it met the needs of neither group. It would have been better to let one director or the other have his way, not both.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Now industriousness, or hard work. It's easy to mock people who say they work hard: after all, a hamster running around in a wheel is working hard – and getting nowhere. Of course hard work is valuable, but only when properly targeted. Otherwise it wastes the resources that companies value most - time and energy. And that's bad for the organisation.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "There's a management model that groups people according to four criteria: clever, hardworking, stupid and lazy. Here 'lazy' means having a rational determination not to carry out unnecessary tasks. It doesn't mean trying to avoid work altogether. Most people display two of these characteristics, and the most valuable people are those who are both clever and lazy: they possess intellectual clarity, and they don't rush into making decisions. They come up with solutions to save the time and energy spent by the stupid and hard-working group. Instead of throwing moreman-hours at a problem, the clever and lazy group looks for a more effective solution.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "Next we come to creativity. This often works well – creating an attention-grabbing TV commercial, for example, might lead to increased sales. But it isn't always a good thing. Some advertising campaigns are remembered for their creativity, without having any effect on sales. This happened a few years ago with the launch of a chocolate bar: subsequent research showed that plenty of consumers remembered the adverts, but had no idea what was being advertised. The trouble is that the creator derives pleasure from coming up with the idea, and wrongly assumes the audience for the campaign will share that feeling.",
+          "answers": []
+        },
+        {
+          "speaker": null,
+          "text": "A company that brings out thousands of new products may seem more creative than a company that only has a few, but it may be too creative, and make smaller profits. Creativity ! needs to be targeted, to solve a problem that the company has identified.Just coming up with more and more novel products isn't necessarily a good thing.",
+          "answers": [
+            3
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "And finally, excellence. We all know companies that claim they strive for excellence', but it takes a long time to achieve excellence. In business, being first with a product is more profitable than having the best product. A major study of company performance compared pioneers – that is, companies bringing out the first version of a particular product – with followers, the companies that copied and improved on that product. The study found that the pioneers commanded an average market share of 29 percent, while the followers achieved less than half that, only 13 percent – even though their product might have been better.",
+          "answers": [
+            40
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Insisting on excellence in everything we do is time-consuming, wastes energy and leads to losing out on opportunities. Sometimes, second-rate work is more worthwhile than excellence.'Make sure it's excellent' sounds like a good approach to business, but the justget-started' approach is likely to be more successful.",
+          "answers": []
+        }
+      ],
+      "charCount": 5116,
+      "missing": false
+    }
+  ]
+}

@@ -1,5 +1,8 @@
+use crate::audio;
+use crate::content;
 use crate::error::AppError;
 use crate::library;
+use crate::migrate;
 use crate::paths;
 use crate::scoring;
 use crate::session;
@@ -8,13 +11,32 @@ use std::fs;
 
 #[tauri::command]
 pub fn bootstrap() -> Result<Value, AppError> {
-    let probe = paths::probe_writable();
+    let migration = migrate::run();
+    let mut probe = paths::probe_writable();
+    if probe.ok {
+        match content::ensure() {
+            Ok(status) => {
+                if probe.warning.is_none() {
+                    probe.warning = status.warning;
+                }
+            }
+            Err(err) => {
+                probe.ok = false;
+                probe.error = Some(err.to_string());
+            }
+        }
+    }
+    if probe.warning.is_none() {
+        probe.warning = migration.error.clone();
+    }
     if !probe.ok {
         return Ok(serde_json::json!({
             "probe": probe,
             "exams": [],
             "sessions": [],
             "profile": null,
+            "audio": null,
+            "migration": migration,
         }));
     }
     let exams = library::list_exams().unwrap_or_default();
@@ -22,11 +44,14 @@ pub fn bootstrap() -> Result<Value, AppError> {
     let profile = fs::read_to_string(paths::profile_path()?)
         .ok()
         .and_then(|t| serde_json::from_str::<Value>(&t).ok());
+    let audio_status = audio::library_status().ok();
     Ok(serde_json::json!({
         "probe": probe,
         "exams": exams,
         "sessions": sessions,
         "profile": profile,
+        "audio": audio_status,
+        "migration": migration,
     }))
 }
 
@@ -254,6 +279,80 @@ pub fn load_transcript(exam_id: String) -> Result<Value, AppError> {
         }
     }
     Ok(Value::Null)
+}
+
+#[tauri::command]
+pub fn audio_library_status() -> Result<Value, AppError> {
+    Ok(serde_json::to_value(audio::library_status()?)?)
+}
+
+#[tauri::command]
+pub fn audio_catalog() -> Result<Value, AppError> {
+    Ok(serde_json::to_value(audio::catalog()?)?)
+}
+
+#[tauri::command]
+pub fn audio_pick_files() -> Result<Vec<String>, AppError> {
+    audio::pick_files()
+}
+
+#[tauri::command]
+pub fn audio_pick_folder() -> Result<Option<String>, AppError> {
+    audio::pick_folder()
+}
+
+#[tauri::command]
+pub fn audio_scan_paths(paths: Vec<String>) -> Result<Value, AppError> {
+    Ok(serde_json::to_value(audio::scan_paths(paths)?)?)
+}
+
+#[tauri::command]
+pub fn audio_confirm_import(candidates_json: String) -> Result<Value, AppError> {
+    let candidates = serde_json::from_str(&candidates_json)?;
+    let value = serde_json::to_value(audio::confirm_import(candidates)?)?;
+    library::invalidate();
+    Ok(value)
+}
+
+#[tauri::command]
+pub fn audio_playback_source(exam_id: String) -> Result<Value, AppError> {
+    Ok(serde_json::to_value(audio::playback_source(&exam_id)?)?)
+}
+
+#[tauri::command]
+pub fn audio_remove_binding(exam_id: String) -> Result<(), AppError> {
+    audio::remove_binding(&exam_id)?;
+    library::invalidate();
+    Ok(())
+}
+
+#[tauri::command]
+pub fn audio_repair_bindings() -> Result<Value, AppError> {
+    let value = serde_json::to_value(audio::repair_bindings()?)?;
+    library::invalidate();
+    Ok(value)
+}
+
+#[tauri::command]
+pub fn audio_set_manual_parts(exam_id: String, starts_ms: Vec<u64>, path: String) -> Result<Value, AppError> {
+    let value = serde_json::to_value(audio::set_manual_parts(&exam_id, starts_ms, path)?)?;
+    library::invalidate();
+    Ok(value)
+}
+
+#[tauri::command]
+pub fn audio_waveform(path: String) -> Result<Value, AppError> {
+    Ok(serde_json::to_value(audio::waveform(path)?)?)
+}
+
+#[tauri::command]
+pub fn audio_open_guide() -> Result<String, AppError> {
+    audio::open_guide()
+}
+
+#[tauri::command]
+pub fn audio_bindings() -> Result<Value, AppError> {
+    Ok(serde_json::to_value(audio::load_bindings()?)?)
 }
 
 #[cfg(test)]

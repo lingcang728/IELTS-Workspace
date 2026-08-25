@@ -1,0 +1,2363 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-7-test-1-reading",
+  "title": "Cambridge IELTS 7 Academic Test 1 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0021-e874caa8",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 7",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题7.pdf",
+        "sha256": "b0d7be939b192c4ea7601b2315049770b7705542f04ae9b87a19e37daac1c971"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C07\\剑桥雅思真题7\\auto\\剑桥雅思真题7.md",
+        "sha256": "c83601c8d4c8af1e6f2365c559017458e69f5e4d2dad02ca26f299ab0acc0afc",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-7-reading-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "[]\n\nA Bats have a problem: how to find their way around in the dark.They hunt at night, and cannot use light to help them find prey and avoid obstacles.You might say that this is a problem of their own making, one that they could avoid simply by changing their habits and hunting by day. But the daytime economy is already heavily exploited by other creatures such as birds. Given that there is a living to be made at night, and given that alternative daytime trades are thoroughly occupied, natural selection has favoured bats that make a go of the night-hunting trade. It is probable that the nocturnal trades go way back in the ancestry of all mammals. In the time when the dinosaurs dominated the daytime economy, our mammalian ancestors probably only managed to survive at all because they found ways of scraping a living at night. Only after the mysterious mass extinction of the dinosaurs about 65 million years ago were our ancestors able to emerge into the daylight in any substantial numbers.\n\nB Bats have an engineering problem: how to find their way and find their prey in the absence of light. Bats are not the only creatures to face this difficulty today. Obviously the night-flying insects that they prey on must find their way about somehow. Deep-sea fish and whales have little or no light by day or by night. Fish and dolphins that live in extremely muddy water cannot see because, although there is light, it is obstructed and scattered by the dirt in the water. Plenty of other modern animals make their living in conditions where seeing is difficult or impossible.\n\nC Given the questions of how to manoeuvre in the dark, what solutions might an engineer consider? The first one that might occur to him is to manufacture light, to use a lantern or a searchlight. Fireflies and some fish (usually with the help of bacteria) have the power to manufacture their own light, but the process seems to consume a large amount of energy Fireflies use their light for attracting mates.This doesn't require a prohibitive amount of energy: a male's tiny pinprick of light can be seen by a female from some distance on a dark night, since her eyes are exposed directly to the light source itself. However, using light to find one's own way around requires vastly more energy, since the eyes have to detect the tiny fraction of the light that bounces off each part of the scene.The light source must therefore be immensely\n\n留学CLUB社团 brighter if it is to be used as a headlight to illuminate the path, than if it is to be used as a signal to others. In any event, whether or not the reason is the energy expense, it seems to be the case that, with the possible exception of some weird deep-sea fish, no animal apart from man uses manufactured light to find its way about.\n\nD What else might the engineer think of? Well, blind humans sometimes seem to have an uncanny sense of obstacles in their path. It has been given the name 'facial vision', because blind people have reported that it feels a bit like the sense of touch, on the face. One report tells of a totally blind boy who could ride his tricycle at good speed round the block near his home, using facial vision. Experiments showed that, in fact, facial vision is nothing to do with touch or the front of the face, although the sensation may be referred to the front of the face, like the referred pain in a phantom limb.The sensation of facial vision, it turns out, really goes in through the ears. Blind people, without even being aware of the fact, are actually using echoes of their own footsteps and of other sounds, to sense the presence of obstacles. Before this was discovered, engineers had already built instruments to exploit the principle, for example to measure the depth of the sea under a ship. After this technique had been invented, it was only a matter of time before weapons designers adapted it for the detection of submarines. Both sides in the Second World War relied heavily on these devices, under such codenames as Asdic (British) and Sonar (American), as well as Radar (American) or RDF (British), which uses radio echoes rather than sound echoes\n\nE The Sonar and Radar pioneers didn't know it then, but all the world now knows that bats, or rather natural selection working on bats, had perfected the system tens of millions of years earlier, and their'radar' achieves feats of detection and navigation that would strike an engineer dumb with admiration. It is technically incorrect to talk about bat 'radar', since they do not use radio waves. It is sonar. But the underlying mathematical theories of radar and sonar are very similar, and much of our scientific understanding of the details of what bats are doing has come from applying radar theory to them.The American zoologist Donald Griffin, who was largely responsible for the discovery of sonar in bats, coined the term ‘echolocation' to cover both sonar and radar, whether used by animals or by human instruments"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t1r-g1",
+          "instruction": "Reading Passage 1 has five paragraphs, A-E. Which paragraph contains the following information? Write the correct letter, A-E, in boxes 1-5 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "examples of wildlife other than bats which do not rely on vision to navigate by",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:03.452772+00:00"
+          }
+        },
+        {
+          "id": "c7t1r-g2",
+          "instruction": "Reading Passage 1 has five paragraphs, A-E. Which paragraph contains the following information? Write the correct letter, A-E, in boxes 1-5 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q2",
+              "number": 2,
+              "type": "single_choice",
+              "prompt": "how early mammals avoided dying out",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:03.453300+00:00"
+          }
+        },
+        {
+          "id": "c7t1r-g3",
+          "instruction": "Reading Passage 1 has five paragraphs, A-E. Which paragraph contains the following information? Write the correct letter, A-E, in boxes 1-5 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q3",
+              "number": 3,
+              "type": "single_choice",
+              "prompt": "why bats hunt in the dark",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:03.453300+00:00"
+          }
+        },
+        {
+          "id": "c7t1r-g4",
+          "instruction": "Reading Passage 1 has five paragraphs, A-E. Which paragraph contains the following information? Write the correct letter, A-E, in boxes 1-5 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q4",
+              "number": 4,
+              "type": "single_choice",
+              "prompt": "how a particular discovery has helped our understanding of bats",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:03.453300+00:00"
+          }
+        },
+        {
+          "id": "c7t1r-g5",
+          "instruction": "Reading Passage 1 has five paragraphs, A-E. Which paragraph contains the following information? Write the correct letter, A-E, in boxes 1-5 on your answer sheet. NB You may use any letter more than once.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q5",
+              "number": 5,
+              "type": "single_choice",
+              "prompt": "The early military uses of echolocation",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Paragraph E"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:51:03.453300+00:00"
+          }
+        },
+        {
+          "id": "c7t1r-g6",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "The sensation is more similar to the way in which pain from a ___ arm or leg might be felt",
+              "acceptedAnswers": [
+                "phantom"
+              ],
+              "gapText": "The sensation is more similar to the way in which pain from a ___ arm or leg might be felt",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              9
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g7",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The ability actually comes from perceiving ___ through the ears",
+              "acceptedAnswers": [
+                "echoes",
+                "obstacles"
+              ],
+              "gapText": "The ability actually comes from perceiving ___ through the ears",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              9
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g8",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The principle had been applied in the design of instruments which calculated the ___ of the seabed",
+              "acceptedAnswers": [
+                "depth"
+              ],
+              "gapText": "The principle had been applied in the design of instruments which calculated the ___ of the seabed",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              9
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g9",
+          "instruction": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "This was followed by a wartime application in devices for finding ___",
+              "acceptedAnswers": [
+                "submarines"
+              ],
+              "gapText": "This was followed by a wartime application in devices for finding ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              9
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 6–9 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g10",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Long before the invention of radar,.. ad resulted in a sophisticated radar-like system in bats",
+              "acceptedAnswers": [
+                "natural selection"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 10–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g11",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "Radar is an inaccurate term when refering to bats becaus. are not used in their navigation system. luckbar. com",
+              "acceptedAnswers": [
+                "radio waves",
+                "echoes"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 10–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g12",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Radar and sonar are based on similar",
+              "acceptedAnswers": [
+                "mathematical theories"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 10–13 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g13",
+          "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "The word echolocation was first used y someone working as a 谨防 倒卖 唯一QQ：2029808",
+              "acceptedAnswers": [
+                "zoologist"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              10,
+              13
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 10–13 on your answer sheet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 on the following pages.\n\nQuestions 14-20\n\nReading Passage 2 has seven paragraphs, A-H.\n\nChoose the correct heading for paragraphs A and C-H from the list of headings below\n\nWrite the correct number, i-xi, in boxes 14–20 on your answer sheet.\n\nii A\n\nAn\n\nvi The\n\n## 14 Paragraph A\n\nExample Answer Paragraph B iii\n\n15 Paragraph C\n\n16 Paragraph D 17 Paragraph E\n\n18 Paragraph F\n\n19 Paragraph G\n\n20 Paragraph H 留学CLUB社团\n\n打算申请出国留学？正在备考雅思托福？来和大家一起吧~快乐加倍！效率加倍！ 22\n\n本资料仅用于参考，。\n\n## MAKING EVERY DROP COUNT\n\n[]\n\nA The history of human civilisation is entwined with the history of the ways we have learned to manipulate water resources. As towns gradually expanded, water was brought from increasingly remote sources, leading to sophisticated engineering efforts such as dams and aqueducts. At the height of the Roman Empire, nine major systems, with an innovative layout of pipes and well-built sewers, supplied the occupants of Rome with as much water per person as is provided in many parts of the industrial world today\n\nB During the industrial revolution and population explosion of the 19th and 20th centuries, the demand for water rose dramatically. Unprecedented construction of tens of thousands of monumental engineering projects designed to control floods, protect clean water supplies, and provide water for irrigation and hydropower brought great benefits to hundreds of millions of people. Food production has kept pace with soaring populations mainly because of the expansion of artificial irrigation systems that make possible the growth of 40 % of the world's food. Nearly one fifth of all the electricity generated worldwide is produced by turbines spun by the power of falling water.\n\nC Yet there is a dark side to this picture: despite our progress, half of the world's population still suffers, with water services inferior to those available to the ancient Greeks and Romans. As the United Nations report on access to water reiterated in November 2001, more than one billion people lack access to clean drinking water; some two and a half billion do not have adequate sanitation services. Preventable water-related diseases kill an estimated 10,000 to 20,000 children every day, and the latest evidence suggests that we are falling behind in efforts to solve these problems.\n\nD The consequences of our water policies extend beyond jeopardising human health. Tens of millions of people have been forced to move from their homes – often with little warning or compensation – to make way for the reservoirs behind dams. More than 20 % of all freshwater fish species are now threatened or endangered because dams and water withdrawals have destroyed the free-flowing river ecosystems where they thrive. Certain irrigation practices degrade soil quality and reduce agricultural productivity. Groundwater aquifers\\* are being pumped down faster than they are naturally replenished in parts of India, China, the USA and elsewhere. And disputes over shared water resources have led to violence and continue to raise local, national and even international tensions.\n\nE At the outset of the new millennium, however, the way resource planners think about water is beginning to change. The focus is slowly shifting back to the provision of basic human and environmental needs as top priority – ensuring 'some for all, instead of 'more for some'. Some water experts are now demanding that existing infrastructure be used in smarter ways rather than building new facilities, which is increasingly considered the option of last, not first, resort. This shift in philosophy has not been universally accepted, and it comes with strong opposition from some established water organisations. Nevertheless, it may be the only way to address successfully the pressing problems of providing everyone with clean water to drink, adequate water to grow food and a life free from preventable water-related illness.\n\nF Fortunately – and unexpectedly – the demand for water is not rising as rapidly as some predicted. As a result, the pressure to build new water infrastructures has dirninished over the past two decades. Although population, industrial output and economic productivity have continued to soar in developed nations, the rate at which people withdraw water from aquifers, rivers and lakes has slowed. And in a few parts of the world, demand has actually fallen.\n\nG What explains this remarkable turn of events? Two factors: people have figured out how to use water more efficiently, and communities are rethinking their priorities for water use. Throughout the first three-quarters of the 20th century, the quantity of freshwater consumed per person doubled on average; in the USA, water withdrawals increased tenfold while the population quadrupled. But since 1980, the amount of water consumed per person has actually decreased, thanks to a range of new technologies that help to conserve water in homes and industry. In 1965, for instance, Japan used approximately 13 million gallons\\* of water to produce \\$1 million of commercial output; by 1989 this had dropped to 3.5 million gallons (even accounting for inflation) – almost a quadrupling of water productivity. In the USA, water withdrawals have fallen by more than 20 % from their peak in 1980.\n\nH On the other hand, dams, aqueducts and other kinds of infrastructure will still have to be built, particularly in developing countries where basic human needs have not been met. But such projects must be built to higher specifications and with more accountability to local people and their environment than in the past. And even in regions where new projects seem warranted, we must find ways to meet demands with fewer resources, respecting ecological criteria and to a smaller budget\n\n本资料仅用于参考，。"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t1r-g14",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Choose the correct heading for paragraphs A and C-H from the list of headings below",
+              "acceptedAnswers": [
+                "xi"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:04.461760+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Scientists' call for a revision of policy"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An explanation for reduced water use"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a global challenge was met"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Irrigation systems fall into disuse"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Environmental effects"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The financial cost of recent technological improvements"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The relevance to health"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Addressing the concern over increasing populations"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A surprising downward trend in demand for water"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The need to raise standards"
+            },
+            {
+              "id": "xi",
+              "label": "xi",
+              "text": "A description of ancient water supplies"
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g15",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Paragraph C",
+              "acceptedAnswers": [
+                "vii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:04.461760+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Scientists' call for a revision of policy"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An explanation for reduced water use"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a global challenge was met"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Irrigation systems fall into disuse"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Environmental effects"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The financial cost of recent technological improvements"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The relevance to health"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Addressing the concern over increasing populations"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A surprising downward trend in demand for water"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The need to raise standards"
+            },
+            {
+              "id": "xi",
+              "label": "xi",
+              "text": "A description of ancient water supplies"
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g16",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Paragraph D 17 Paragraph E",
+              "acceptedAnswers": [
+                "v"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:04.461760+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Scientists' call for a revision of policy"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An explanation for reduced water use"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a global challenge was met"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Irrigation systems fall into disuse"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Environmental effects"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The financial cost of recent technological improvements"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The relevance to health"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Addressing the concern over increasing populations"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A surprising downward trend in demand for water"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The need to raise standards"
+            },
+            {
+              "id": "xi",
+              "label": "xi",
+              "text": "A description of ancient water supplies"
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g17",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "Paragraph D",
+              "acceptedAnswers": [
+                "i"
+              ],
+              "options": [
+                {
+                  "id": "i",
+                  "label": "i",
+                  "text": "Scientists' call for a revision of policy"
+                },
+                {
+                  "id": "ii",
+                  "label": "ii",
+                  "text": "An explanation for reduced water use"
+                },
+                {
+                  "id": "iii",
+                  "label": "iii",
+                  "text": "How a global challenge was met"
+                },
+                {
+                  "id": "iv",
+                  "label": "iv",
+                  "text": "Irrigation systems fall into disuse"
+                },
+                {
+                  "id": "v",
+                  "label": "v",
+                  "text": "Environmental effects"
+                },
+                {
+                  "id": "vi",
+                  "label": "vi",
+                  "text": "The financial cost of recent technological improvements"
+                },
+                {
+                  "id": "vii",
+                  "label": "vii",
+                  "text": "The relevance to health"
+                },
+                {
+                  "id": "viii",
+                  "label": "viii",
+                  "text": "Addressing the concern over increasing populations"
+                },
+                {
+                  "id": "ix",
+                  "label": "ix",
+                  "text": "A surprising downward trend in demand for water"
+                },
+                {
+                  "id": "x",
+                  "label": "x",
+                  "text": "The need to raise standards"
+                },
+                {
+                  "id": "xi",
+                  "label": "xi",
+                  "text": "A description of ancient water supplies"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Scientists' call for a revision of policy"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An explanation for reduced water use"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a global challenge was met"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Irrigation systems fall into disuse"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Environmental effects"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The financial cost of recent technological improvements"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The relevance to health"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Addressing the concern over increasing populations"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A surprising downward trend in demand for water"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The need to raise standards"
+            },
+            {
+              "id": "xi",
+              "label": "xi",
+              "text": "A description of ancient water supplies"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:04.461760+00:00"
+          }
+        },
+        {
+          "id": "c7t1r-g18",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "Paragraph F",
+              "acceptedAnswers": [
+                "ix"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:04.461760+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Scientists' call for a revision of policy"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An explanation for reduced water use"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a global challenge was met"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Irrigation systems fall into disuse"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Environmental effects"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The financial cost of recent technological improvements"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The relevance to health"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Addressing the concern over increasing populations"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A surprising downward trend in demand for water"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The need to raise standards"
+            },
+            {
+              "id": "xi",
+              "label": "xi",
+              "text": "A description of ancient water supplies"
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g19",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "Paragraph G",
+              "acceptedAnswers": [
+                "ii"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:04.461760+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Scientists' call for a revision of policy"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An explanation for reduced water use"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a global challenge was met"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Irrigation systems fall into disuse"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Environmental effects"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The financial cost of recent technological improvements"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The relevance to health"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Addressing the concern over increasing populations"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A surprising downward trend in demand for water"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The need to raise standards"
+            },
+            {
+              "id": "xi",
+              "label": "xi",
+              "text": "A description of ancient water supplies"
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g20",
+          "instruction": "Reading Passage has seven paragraphs.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "Paragraph H 留学CLUB社团 打算申请出国留学？正在备考雅思托福？来和大家一起吧~快乐加倍！效率加倍！ 22 本资料仅用于参考，。",
+              "acceptedAnswers": [
+                "x"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T12:04:04.461760+00:00"
+          },
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Scientists' call for a revision of policy"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "An explanation for reduced water use"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a global challenge was met"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "Irrigation systems fall into disuse"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Environmental effects"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "The financial cost of recent technological improvements"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The relevance to health"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "Addressing the concern over increasing populations"
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": "A surprising downward trend in demand for water"
+            },
+            {
+              "id": "x",
+              "label": "x",
+              "text": "The need to raise standards"
+            },
+            {
+              "id": "xi",
+              "label": "xi",
+              "text": "A description of ancient water supplies"
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g21",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q21",
+              "number": 21,
+              "type": "yes_no_ng",
+              "prompt": "Water use per person is higher in the industrial world than it was in Ancient Rome",
+              "acceptedAnswers": [
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g22",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q22",
+              "number": 22,
+              "type": "yes_no_ng",
+              "prompt": "Feeding increasing populations is possible due primarily to improved irrigation systems",
+              "acceptedAnswers": [
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g23",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q23",
+              "number": 23,
+              "type": "true_false_ng",
+              "prompt": "Modern water systems imitate those of the ancient Greeks and Romans",
+              "acceptedAnswers": [
+                "not given"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g24",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q24",
+              "number": 24,
+              "type": "yes_no_ng",
+              "prompt": "Industrial growth is increasing the overall demand for water",
+              "acceptedAnswers": [
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g25",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q25",
+              "number": 25,
+              "type": "yes_no_ng",
+              "prompt": "Modern technologies have led to a reduction in domestic water consumption",
+              "acceptedAnswers": [
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g26",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 2?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q26",
+              "number": 26,
+              "type": "true_false_ng",
+              "prompt": "In the future, governments should maintain ownership of water infrastructures",
+              "acceptedAnswers": [
+                "not given"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "# EDUCATING PSYCHE\n\nEducating Psyche by Bernie Neville is a book which looks at radical new approaches to learning, describing the effects of emotion, imagination and the unconscious on learning. One theory discussed in the book is that proposed by George Lozanov, which focuses on the power of suggestion.\n\nLozanov's instructional technique is based on the evidence that the connections made in the brain through unconscious processing (which he calls non-specific mental reactivity) are more durable than those made through conscious processing. Besides the laboratory evidence for this, we know from our experience that we often remember what we have perceived peripherally, long after we have forgotten what we set out to learn. If we think of a book we studied months or years ago, we will find it easier to recall peripheral details – the colour, the binding, the typeface, the table at the library where we sat while studying it – than the content on which we were concentrating. If we think of a lecture we listened to with qreat concentration, we will recall the lecturer's appearance and mannerisms, our place in the auditorium, the failure of the air-conditioning, much more easily than the ideas we went to learn. Even if these peripheral details are a bit elusive, they come back readily in hypnosis or when we relive the event imaginatively, as in psychodrama. The details of the content of the lecture, on the other hand, seem to have gone forever.\n\nThis phenomenon can be partly attributed to the common counterproductive approach to study (making extreme efforts to memorise, tensing muscles, inducing fatigue), but it also simply reflects the way the brain functions. Lozanov therefore made indirect instruction (suggestion) central to his teaching system. In suggestopedia, as he called his method, consciousness is shifted away from the curriculum to focus on something peripheral. The curriculum then becomes peripheral and is dealt with by the reserve capacity of the brain.\n\nThe suggestopedic approach to foreign language learning provides a good illustration. In its most recent variant (1980), it consists of the reading of vocabulary and text while the class is listening to music. The first session is in two parts. In the first part, the music is classical (Mozart, Beethoven, Brahms) and the teacher reads the text slowly and solemnly with attention to the dynamics of the music. The students follow the text in their books. This is followed by several minutes of silence. In the second part, they listen to baroque music (Bach, Corelli, Handel) while the teacher reads the text in a normal speaking voice. During this time they have their books closed. During the whole of this session, their attention is passive; they listen to the music but make no attempt to learn the material.\n\nBeforehand, the students have been carefully prepared for the language learning experience. Through meeting with the staff and satisfied students they develop the expectation that learning will be easy and pleasant and that they will successfully learn several hundred words of the foreign language during the class. In a preliminary talk, the teacher introduces them to the material to be covered, but does not 'teach' it. Likewise, the students are instructed not to try to learn it during this introduction.\n\nSome hours after the two-part session, there is a follow-up class at which the students are stimulated to recall the material presented. Once again the approach is indirect. The students do not focus their attention on trying to remember the vocabulary, but focus on using the language to communicate (e.g. through games or improvised dramatisations). Such methods are not unusual in language teaching. What is distinctive in the suggestopedic method is that they are devoted entirely to assisting recall. The 'learning' of the material is assumed to be automatic and effortless, accomplished while listening to music. The teacher's task is to assist the students to apply what they have learned paraconsciously, and in doing so to make it easily accessible to consciousness. Another difference from conventional teaching is the evidence that students can regularly learn 1000 new words of a foreign language during a suggestopedic session, as well as grammar and idiom.\n\nLozanov experimented with teaching by direct suggestion during sleep, hypnosis and trance states, but found such procedures unnecessary. Hypnosis, yoga, Silva mind-control, religious ceremonies and faith healing are all associated with successful suggestion, but none of their techniques seem to be essential to it. Such rituals may be seen as placebos Lozanov acknowledges that the ritual surrounding suggestion in his own system is also a placebo, but maintains that without such a placebo people are unable or afraid to tap the reserve capacity of their brains. Like any placebo, it must be dispensed with authority to be effective. Just as a doctor cals on the full power of autocratic suggestion by insisting that the patient take precisely this white capsule precisely three times a day before meals, Lozanov is categoric in insisting that the suggestopedic session be conducted exactly in the manner designated, by trained and accredited suggestopedic teachers.\n\nWhile suggestopedia has gained some notoriety through success in the teaching of modern languages, few teachers are able to emulate the spectacular results of Lozanov and his associates. We can, perhaps, attribute mediocre results to an inadequate placebo effect. The students have not developed the appropriate mind set. They are often not motivated to learn through this method. They do not have enough 'faith'. They do not see it as 'real teaching', especially as it does not seem to involve the 'work' they have learned to believe is essential to learning.\n\n本资料仅用于参考，。"
+      },
+      "questionGroups": [
+        {
+          "id": "c7t1r-g27",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "The book Educating Psyche is mainly concerned with A the power of suggestion in learning. B a particular technique for learning based on emotions. C the effects of emotion on the imagination and the unconscious, D ways of learning which are not traditional",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the power of suggestion in learning"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a particular technique for learning based on emotions"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the effects of emotion on the imagination and the unconscious,"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "ways of learning which are not traditional"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the power of suggestion in learning"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a particular technique for learning based on emotions"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the effects of emotion on the imagination and the unconscious,"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "ways of learning which are not traditional"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g28",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Lozanov's theory claims that, when we try to remember things, A unimportant details are the easiest to recall. B concentrating hard produces the best results. C the most significant facts are most easily recalled D peripheral vision is not important",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the power of suggestion in learning"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a particular technique for learning based on emotions"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the effects of emotion on the imagination and the unconscious,"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "ways of learning which are not traditional"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the power of suggestion in learning"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a particular technique for learning based on emotions"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the effects of emotion on the imagination and the unconscious,"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "ways of learning which are not traditional"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g29",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "In this passage, the author uses the examples of a book and a lecture to illustrate that A both of these are important for developing concentration. B his theory about methods of learning is valid. C reading is a better technique for learning than listening. D we can remember things more easily under hypnosis",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "unimportant details are the easiest to recall"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "concentrating hard produces the best results"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the most significant facts are most easily recalled"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "peripheral vision is not important"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "unimportant details are the easiest to recall"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "concentrating hard produces the best results"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the most significant facts are most easily recalled"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "peripheral vision is not important"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g30",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Lozanov claims that teachers should train students to A memorise details of the curriculum. B develop their own sets of indirect instructions. C think about something other than the curriculum content. D avoid overloading the capacity of the brain. 本资料仅用于参考，。",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "both of these are important for developing concentration"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "his theory about methods of learning is valid"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "reading is a better technique for learning than listening"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "we can remember things more easily under hypnosis"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "both of these are important for developing concentration"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "his theory about methods of learning is valid"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "reading is a better technique for learning than listening"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "we can remember things more easily under hypnosis"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              30
+            ],
+            "canonicalOf": [
+              "Write the correct letter in boxes 27–30 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c7t1r-g31",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q31",
+              "number": 31,
+              "type": "true_false_ng",
+              "prompt": "In the example of suggestopedic teaching in the fourth paragraph, the only variable that changes is the music",
+              "acceptedAnswers": [
+                "false"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g32",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q32",
+              "number": 32,
+              "type": "true_false_ng",
+              "prompt": "Prior to the suggestopedia class, students are made aware that the language experience will be demanding",
+              "acceptedAnswers": [
+                "false"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g33",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q33",
+              "number": 33,
+              "type": "true_false_ng",
+              "prompt": "In the follow-up class, the teaching activities are similar to those used in conventional classes",
+              "acceptedAnswers": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g34",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q34",
+              "number": 34,
+              "type": "true_false_ng",
+              "prompt": "As an indirect benefit, students notice improvements in their memory",
+              "acceptedAnswers": [
+                "not given"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g35",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q35",
+              "number": 35,
+              "type": "true_false_ng",
+              "prompt": "Teachers say they prefer suggestopedia to traditional approaches to language teaching",
+              "acceptedAnswers": [
+                "not given"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g36",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q36",
+              "number": 36,
+              "type": "true_false_ng",
+              "prompt": "Students in a suggestopedia class retain more new vocabulary than those in ordinary classes",
+              "acceptedAnswers": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7t1r-g37",
+          "instruction": "Complete the summary below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q37",
+              "number": 37,
+              "type": "single_choice",
+              "prompt": "Lozanov admits that a certain amount of ___ is necessary in order to convince students",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "spectacular"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "teaching"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "lesson"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "authoritarian"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "unpopular"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ritual"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unspectacular"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "placebo"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "involved"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "appropriate"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "well known"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "spectacular"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "teaching"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "lesson"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "authoritarian"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "unpopular"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "ritual"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "unspectacular"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "placebo"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "involved"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "appropriate"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "well known"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1r-g38",
+          "instruction": "Complete the summary below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q38",
+              "number": 38,
+              "type": "single_choice",
+              "prompt": "The amount of ritual necessary to convince students may be just a ___",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "spectacular"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "teaching"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "lesson"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "authoritarian"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "unpopular"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ritual"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unspectacular"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "placebo"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "involved"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "appropriate"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "well known"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "spectacular"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "teaching"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "lesson"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "authoritarian"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "unpopular"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "ritual"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "unspectacular"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "placebo"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "involved"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "appropriate"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "well known"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1r-g39",
+          "instruction": "Complete the summary below. Write the correct letter, A-K, next to each question.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q39",
+              "number": 39,
+              "type": "single_choice",
+              "prompt": "Although Lozanov's method has become quite ___",
+              "acceptedAnswers": [
+                "K"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "spectacular"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "teaching"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "lesson"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "authoritarian"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "unpopular"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ritual"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unspectacular"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "placebo"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "involved"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "appropriate"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "well known"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c7t1r-g40",
+          "instruction": "Complete the summary below. Write the correct letter, A-K, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c7t1r-q40",
+              "number": 40,
+              "type": "single_choice",
+              "prompt": "The results of most other teachers using this method have been ___",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "spectacular"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "teaching"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "lesson"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "authoritarian"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "unpopular"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "ritual"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "unspectacular"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "placebo"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "involved"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "appropriate"
+                },
+                {
+                  "id": "K",
+                  "label": "K",
+                  "text": "well known"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:10:33+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "spectacular"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "teaching"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "lesson"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "authoritarian"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "unpopular"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "ritual"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "unspectacular"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "placebo"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "involved"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "appropriate"
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "well known"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              37,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1702 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-9-test-2-listening",
+  "title": "Cambridge IELTS 9 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0012-1f520995",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 9",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题9.pdf",
+        "sha256": "c3fbc2d06b1b60fe8e7d27936150a09c38714e4bd23e6351a09b93c9555ee890"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C09\\剑桥雅思真题9\\auto\\剑桥雅思真题9.md",
+        "sha256": "0fff67454e2c0209145ec163b53e0d8a4366227a4e4853f03d4cac2187f6196e",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-9-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the form below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\nAccommodation Form - Student Information\n\nExample:Type of accommodation:\n\nhal!.. of residence\n\nName:\n\nAnu 1\n\nDate of birth:\n\n2\n\nCountry of origin:\n\nIndia\n\nCourse of study:\n\n3\n\nNumber of years planned in hall:\n\n4\n\nPreferred catering arrangement:\n\nhalf board\n\nSpecial dietary requirements:\n\nno 5.re)\n\nPreferred room type:\n\na single 6\n\nInterests:\n\nthe 7. adminton\n\nPriorities in choice of hall:\n\nto be with other students who are 8to live outside the 9to have a 10 area forsocializing\n\nContact phone number:\n\n667549"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t2l-g1",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Anu",
+              "acceptedAnswers": [
+                "Bhatt"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g2",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Country of origin: India Course of study:",
+              "acceptedAnswers": [
+                "31 March"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g3",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Number of years planned in hall:",
+              "acceptedAnswers": [
+                "nursing"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g4",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Preferred catering arrangement: half board Special dietary requirements: no 5.re) Preferred room type: a single 6 Interests: the 7. adminton Priorities in choice of hall: to be with other students who are 8to live outside the 9to have a 10 area forsocializing Contact phone number: 667549",
+              "acceptedAnswers": [
+                "2"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g5",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Complete the form below.",
+              "acceptedAnswers": [
+                "meat"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g6",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Preferred room type: a single ___",
+              "acceptedAnswers": [
+                "bedsit"
+              ],
+              "gapText": "Preferred room type: a single 6 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g7",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Interests: the ___ badminton",
+              "acceptedAnswers": [
+                "theatre"
+              ],
+              "gapText": "Interests: the 7 ___ badminton",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g8",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Priority in hall choice: to be with other students who are ___",
+              "acceptedAnswers": [
+                "mature"
+              ],
+              "options": [],
+              "gapText": "to be with other students who are 8 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g9",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Priority in hall choice: to live outside the ___",
+              "acceptedAnswers": [
+                "town"
+              ],
+              "gapText": "to live outside the 9 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g10",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Priority in hall choice: to have a ___ area for socializing",
+              "acceptedAnswers": [
+                "shared"
+              ],
+              "gapText": "to have a 10 ___ area for socializing",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 443898
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11—20\n\nQuestions 11-13\n\nComplete the table below.\n\n## Write NO MORE THAN THREE WORDS for each answer.\n\nParks and open spaces\n\nName of place\n\nOf particular interest\n\nOpen\n\nHalland Common\n\nsource of River Ouse\n\n24 hours\n\nHolt Island\n\nmany different 11.\n\nbetwen 12.and\n\nLongfield Country Park\n\nreconstruction of a2,000-year-old 13with activities for children\n\ndaylight hours\n\nQuestions 14—16\n\nChoose the correct letter, A, B, or C.\n\nLongfield Park\n\n14 As part of Monday's activity, visitors will\n\nA prepare food with herbs.\n\nB meet a well-known herbalist.\n\nC dye cloth with herbs.\n\n15 For the activity on Wednesday,\n\nA only group bookings are accepted.\n\nB visitors should book in advance.\n\nC attendance is free.\n\n16 For the activity on Saturday, visitors should\n\nA come in suitable clothing.\n\nB make sure they are able to stay for the whole day.\n\nC tell the rangers before the event what they wish to do.\n\nQuestions 17-20\n\nLabel the map below\n\nWrite the correct letter, A-I, next to questions 17-20.\n\nHinchingbrooke Park \n[]\n\n17 bird hide\n\n18 dog-walking area\n\n19 flower garden\n\n20 wooded area"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t2l-g11",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "betwen",
+              "acceptedAnswers": [
+                "trees"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g12",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Holt Island open period: between ___ and ___",
+              "acceptedAnswers": [
+                "Friday/Sunday",
+                "Friday and Sunday",
+                "Friday to Sunday"
+              ],
+              "gapText": "between 12 ___ and ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g13",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "Longfield Country Park: reconstruction of a 2,000-year-old ___",
+              "acceptedAnswers": [
+                "farm"
+              ],
+              "gapText": "reconstruction of a 2,000-year-old 13 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              13
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q14",
+              "number": 14,
+              "type": "matching",
+              "prompt": "As part of Monday's activity, visitors will",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.551141+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "prepare food with herbs."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "meet a well-known herbalist."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "dye cloth with herbs."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "For the activity on Wednesday,",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.551141+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "only group bookings are accepted."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "visitors should book in advance."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "attendance is free."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "For the activity on Saturday, visitors should",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.551141+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "come in suitable clothing."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "make sure they are able to stay for the whole day."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "tell the rangers before the event what they wish to do."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g17",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q17",
+              "number": 17,
+              "type": "labelling",
+              "prompt": "Hinchingbrooke Park map feature: bird hide",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "come in suitable clothing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "make sure they are able to stay for the whole day"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tell the rangers before the event what they wish to do"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c09-t2-listening-p0029.jpg"
+        },
+        {
+          "id": "c9t2l-g18",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q18",
+              "number": 18,
+              "type": "labelling",
+              "prompt": "Hinchingbrooke Park map feature: dog-walking area",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "come in suitable clothing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "make sure they are able to stay for the whole day"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tell the rangers before the event what they wish to do"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c09-t2-listening-p0029.jpg"
+        },
+        {
+          "id": "c9t2l-g19",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q19",
+              "number": 19,
+              "type": "labelling",
+              "prompt": "Hinchingbrooke Park map feature: flower garden",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "come in suitable clothing"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "make sure they are able to stay for the whole day"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tell the rangers before the event what they wish to do"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c09-t2-listening-p0029.jpg"
+        },
+        {
+          "id": "c9t2l-g20",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 17-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q20",
+              "number": 20,
+              "type": "labelling",
+              "prompt": "Hinchingbrooke Park map feature: wooded area",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "make sure they are able to stay for the whole day"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "tell the rangers before the event what they wish to do"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c09-t2-listening-p0029.jpg"
+        }
+      ],
+      "audioStartMs": 443898,
+      "audioDurationMs": 378566
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21—30\n\nQuestions 21—24\n\nChoose the correct letter, A, B, or C.\n\n## Self-Access Centre\n\n21 Students want to keep the Self-Access Centre because \nA they enjoy the variety of equipment. \nB they like being able to work on their own. \nC It is an important part of their studies. \n22 Some teachers would prefer to \nA close the Self-Access Centre. \nB move the Self-Access Centre elsewhere. \nC restrict access to the Self-Access Centre. \n23 The students' main concern about using the library would be \nA the size of the library. \nB difficulty in getting help. \nC the lack of materials. \n24 The Director of Studies is concerned about \nA the cost of upgrading the centre. \nB the lack of space in the centre. \nC the difficulty in supervising the centre.\n\nQuestions 25—30\n\nComplete the notes below.\n\nWrite NO MORE THAN TWO WORDS for each answer.\n\n## Necessary improvements to existing Self-Access Centre\n\nEquipment\n\nReplace computers to create more space.\n\n## Resources\n\nThe level of the 25. materials, in particular, should be more clearly shown.\n\nUpdate the 26. collection.\n\nBuy some 27. and divide them up.\n\nUse of the room\n\nSpeak to the teachers and organize a 28. for supervising the centre.\n\nInstall an 29\n\nRestrict personal use of 30.on computer."
+      },
+      "questionGroups": [
+        {
+          "id": "c9t2l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Students want to keep the Self-Access Centre because A they enjoy the variety of equipment. B they like being able to work on their own. C It is an important part of their studies",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they enjoy the variety of equipment."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they like being able to work on their own."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It is an important part of their studies."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.641213+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Some teachers would prefer to A close the Self-Access Centre. B move the Self-Access Centre elsewhere. C restrict access to the Self-Access Centre",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "close the Self-Access Centre."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "move the Self-Access Centre elsewhere."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "restrict access to the Self-Access Centre."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.641213+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "The students' main concern about using the library would be A the size of the library. B difficulty in getting help. C the lack of materials",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the size of the library."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "difficulty in getting help."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the lack of materials."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.641213+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "The Director of Studies is concerned about A the cost of upgrading the centre. B the lack of space in the centre. C the difficulty in supervising the centre",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the cost of upgrading the centre."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the lack of space in the centre."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the difficulty in supervising the centre."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.641213+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g25",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "The level of the ___ materials should be more clearly shown",
+              "acceptedAnswers": [
+                "reading"
+              ],
+              "gapText": "The level of the 25 ___ materials, in particular, should be more clearly shown.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g26",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "Update the ___ collection",
+              "acceptedAnswers": [
+                "CD"
+              ],
+              "gapText": "Update the 26 ___ collection.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g27",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Buy some ___ and divide them up",
+              "acceptedAnswers": [
+                "workbooks"
+              ],
+              "gapText": "Buy some 27 ___ and divide them up.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g28",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Organize a ___ for supervising the centre",
+              "acceptedAnswers": [
+                "timetable"
+              ],
+              "gapText": "Speak to the teachers and organize a 28 ___ for supervising the centre.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g29",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Install an ___",
+              "acceptedAnswers": [
+                "alarm"
+              ],
+              "gapText": "Install an 29 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g30",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "Restrict personal use of ___ on computer",
+              "acceptedAnswers": [
+                "emails",
+                "email"
+              ],
+              "gapText": "Restrict personal use of 30 ___ on computer.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 822464,
+      "audioDurationMs": 421642
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31—40\n\nComplete the notes below.\n\n## Write ONE WORD ONLY for each answer\n\nBusiness Cultures\n\nPower culture\n\nCharacteristics of organisation\n\nsmall\n\n31ower source\n\nfew rules and procedures\n\ncommunication by 32..\n\nAdvantage :\n\ncan act quickly\n\nDisadvantage:\n\nmight not act 3.\n\nSuitable employee:\n\nnot afraid of 34..\n\ndoesn't need job security\n\nRole culture\n\nCharacteristics of organization:\n\nlarge, many 35..\n\nspecialized departments\n\nrules and procedure, e.g. job 36...andnd\n\nrules for discipline\n\nAdvantages:\n\neconomies of scale\n\nsuccessful when 37....ability is importannt\n\nDisadvantages:\n\nslow to se when 38...is neededd\n\nslow to react\n\nSuitable employee:\n\nvalues security\n\ndoesn't want 39\n\nTask culture Characteristics of organization:\n\nproject orientated\n\nin competitive market or making product with\n\nshort life\n\nAdvantage:\n\na lot of delegation\n\nDisadvantages:\n\n40...\n\nno economies of scale or special expertise\n\nSuitable employee:\n\nlikes to work in groups"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t2l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Power culture characteristic: ___ power source",
+              "acceptedAnswers": [
+                "central"
+              ],
+              "gapText": "31 ___ power source",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Advantage : | can act quickly Disadvantage: | might not act 3. Suitable employee: | not afraid of",
+              "acceptedAnswers": [
+                "conversation",
+                "conversations"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Power culture disadvantage: might not act ___",
+              "acceptedAnswers": [
+                "effectively"
+              ],
+              "gapText": "might not act 33 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Suitable employee: not afraid of ___",
+              "acceptedAnswers": [
+                "risks"
+              ],
+              "gapText": "not afraid of 34 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Role culture: large, many ___",
+              "acceptedAnswers": [
+                "levels"
+              ],
+              "gapText": "large, many 35 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Role culture rules and procedure, e.g. job ___",
+              "acceptedAnswers": [
+                "descriptions"
+              ],
+              "gapText": "rules and procedure, e.g. job 36 ___ and rules for discipline",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Role culture successful when ___ ability is important",
+              "acceptedAnswers": [
+                "technical"
+              ],
+              "gapText": "successful when 37 ___ ability is important",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Role culture slow to see when ___ is needed",
+              "acceptedAnswers": [
+                "change"
+              ],
+              "gapText": "slow to see when 38 ___ is needed",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Task culture Characteristics of organization: project orientated in competitive market or making product with short life Advantage: | a lot of delegation Disadvantages: |",
+              "acceptedAnswers": [
+                "responsibility"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t2l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t2l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Task culture advantage: ___",
+              "acceptedAnswers": [
+                "flexible",
+                "flexibility"
+              ],
+              "options": [],
+              "gapText": "Advantage: 40 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1244106,
+      "audioDurationMs": 376965
+    }
+  ]
+}

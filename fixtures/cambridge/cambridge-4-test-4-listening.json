@@ -1,0 +1,2080 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-4-listening",
+  "title": "Cambridge IELTS 4 Academic Test 4 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0007-17939906",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-1-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-2-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-3-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-4-listening-test-4-answers-pdf/",
+        "note": "Independent C4 Listening answer cross-check."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1—10\n\nQuestions 1—10\n\nComplete the notes below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\n## GOODBYE PARTY FOR JOHN\n\nExample\n\nAnswer\n\nData\n\n22nd.December\n\nVenue: 1\n\nInvitations (Tony)\n\nWho to invite:\n\n-- John and his wife\n\n-- Director\n\n-- the 2\n\n-- all the teachers\n\n-- all the 3\n\nDate for sending invitations:\n\n4\n\nPresent (Lisa)\n\nCollect money during the\n\nSuggested amount per person:\n\n5\n\nCheck prices for:\n\n6 \\$\n\n-- CD players\n\n-- 7\n\n-- coffee maker\n\nAsk guests to bring:\n\n-- snacks\n\n-- 8\n\n-- 9\n\nAsk student representative to prepare a 10"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t4l-g1",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Venue for the party: ___",
+              "acceptedAnswers": [
+                "College Dining Room"
+              ],
+              "gapText": "Venue: 1 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:56.695491+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g2",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Who to invite: the ___",
+              "acceptedAnswers": [
+                "office staff"
+              ],
+              "gapText": "Who to invite: -- the 2 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:56.695491+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g3",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Who to invite: all the ___",
+              "acceptedAnswers": [
+                "students"
+              ],
+              "gapText": "Who to invite: -- all the 3 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:56.695491+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g4",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Present (Lisa) Collect money during the Suggested amount per person:",
+              "acceptedAnswers": [
+                "10th December"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g5",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Check prices for:",
+              "acceptedAnswers": [
+                "coffee break",
+                "coffee breaks"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g6",
+          "instruction": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "\\$ -- CD players -- 7 -- coffee maker Ask guests to bring: -- snacks -- 8 -- 9 Ask student representative to prepare a 10",
+              "acceptedAnswers": [
+                "6"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g7",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Check prices for: ___",
+              "acceptedAnswers": [
+                "set of dictionaries",
+                "dictionaries",
+                "a good dictionary"
+              ],
+              "gapText": "Check prices for: -- 7 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:56.695491+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g8",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Ask guests to bring: snacks and ___",
+              "acceptedAnswers": [
+                "tapes"
+              ],
+              "gapText": "Ask guests to bring: -- 8 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:56.695491+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g9",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Ask guests to bring: snacks, ___ and ___",
+              "acceptedAnswers": [
+                "photos",
+                "photographs"
+              ],
+              "gapText": "Ask guests to bring: -- 9 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:56.695491+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g10",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Ask student representative to prepare a ___",
+              "acceptedAnswers": [
+                "speech"
+              ],
+              "gapText": "Ask student representative to prepare a 10 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:56.695491+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 502578
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11—20\n\n## Questions 11—15\n\nChoose the correct letter, A, B or C.\n\n11 To find out how much holidays cost, you should press button A one. B two. C three.\n\n12 Travelite currently offer walking holidays A only in Western Europe. B all over Europe. C outside Europe.\n\n13 The walks offered by Travelite A cater for a range of walking abilities. B are planned by guides from the local area. C are for people with good fitness levels.\n\n14 On Travelite holidays, people holidaying alone pay A the same as other clients. B only a little more than other clients. C extra only if they stay in a large room.\n\n15 Entertainment is provided A when guests request it. B most nights.\n\nC every night.\n\n## Questions 16—20\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nLength of holiday\n\nCost per person (includingall accommodation costs)\n\nSpecial offers included inprice\n\n3 days\n\n16 $\n\nPick up from the17\n\n7 days\n\n$350\n\nAs above plus• book of 18• maps\n\n14days\n\n19 $\n\nAs above plus membershipof a 20"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t4l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "To find out how much holidays cost, you should press button",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "one."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "two."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "three"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "one."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "two."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "three"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "Travelite currently offer walking holidays",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "only in Western Europe."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "all over Europe."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "outside Europe"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "only in Western Europe."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "all over Europe."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "outside Europe"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "The walks offered by Travelite",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "cater for a range of walking abilities."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "are planned by guides from the local area."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "are for people with good fitness levels"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "cater for a range of walking abilities."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "are planned by guides from the local area."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "are for people with good fitness levels"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "On Travelite holidays, people holidaying alone pay",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the same as other clients."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "only a little more than other clients."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "extra only if they stay in a large room"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the same as other clients."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "only a little more than other clients."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "extra only if they stay in a large room"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              15
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Entertainment is provided",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "when guests request it."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "most nights."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "every night"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "when guests request it."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "most nights."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "every night"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g16",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "$ Pick up from the17",
+              "acceptedAnswers": [
+                "180"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g17",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Pick up from the",
+              "acceptedAnswers": [
+                "nearest station"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g18",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "• maps 14days",
+              "acceptedAnswers": [
+                "local history"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g19",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "$ As above plus membershipof a 20",
+              "acceptedAnswers": [
+                "690"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g20",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "As above plus membershipof a",
+              "acceptedAnswers": [
+                "walking club",
+                "local walking club"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              16,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 502578,
+      "audioDurationMs": 334819
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21—30\n\nQuestions 21—26\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nExperiment number\n\nEquipment\n\nPurpose\n\nExperiment 1\n\n21 anda table\n\nTo show how things move ona cushion of air\n\nExperiment 2\n\nLots of paperclips\n\nTo show why we needstandard 22\n\nExperiment 3\n\n23 anda jar of water\n\nTo show how24 grow\n\nExperiment 4\n\nCardboard, coloredPens and a25\n\nTo teach children about how26 is madeup\n\nExperiment 5\n\nA drill, an old record,a pin/needle, paper,a bolt\n\nTo make a record player inorder to learn about recordingsound\n\n## Questions 27—30\n\nWhat problems do the speakers identify for each experiment?\n\nChoose your answers from the box and write the letters A—H next to questions 27—30.\n\nProblems\n\nA too messy\n\nB too boring\n\nC too difficult\n\nD too much equipment\n\nE too long\n\nF too easy\n\nG too noisy\n\nH too dangerous\n\nExperiment 1: 27\n\nExperiment 2: 28\n\nExperiment 3: 29\n\nExperiment 4:\n\nExample F\n\nExperiment 5:\n\n30\\_"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t4l-g21",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Experiment 1: ___ and a table",
+              "acceptedAnswers": [
+                "20 balloons"
+              ],
+              "gapText": "Experiment 1: 21 ___ and a table",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g22",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "To show why we needstandard",
+              "acceptedAnswers": [
+                "units of measurement",
+                "measurements"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g23",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Experiment 3: ___ and a jar of water",
+              "acceptedAnswers": [
+                "rock salt",
+                "salt"
+              ],
+              "gapText": "Experiment 3: 23 ___ and a jar of water",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g24",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "To show how",
+              "acceptedAnswers": [
+                "crystals"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g25",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q25",
+              "number": 25,
+              "type": "completion",
+              "prompt": "To teach children about how",
+              "acceptedAnswers": [
+                "string",
+                "pieces of string"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g26",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q26",
+              "number": 26,
+              "type": "completion",
+              "prompt": "To teach children about how",
+              "acceptedAnswers": [
+                "(ordinary",
+                "white) light"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g27",
+          "instruction": "Choose your answers from the box and write the letters A-H next to questions 27-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Experiment 1: What problem do the speakers identify?",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "too messy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "too boring"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too difficult"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "too much equipment"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "too long"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "too easy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "too noisy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "too dangerous"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "drill, an old record,a pin/needle, paper,a bolt"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "too boring"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too difficult"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "too much equipment"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "too long"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "too easy"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "too noisy"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "too dangerous"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:57.027257+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g28",
+          "instruction": "Choose your answers from the box and write the letters A-H next to questions 27-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Experiment 2: What problem do the speakers identify?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "too messy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "too boring"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too difficult"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "too much equipment"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "too long"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "too easy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "too noisy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "too dangerous"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "drill, an old record,a pin/needle, paper,a bolt"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "too boring"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too difficult"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "too much equipment"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "too long"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "too easy"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "too noisy"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "too dangerous"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:57.027257+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g29",
+          "instruction": "Choose your answers from the box and write the letters A-H next to questions 27-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "Experiment 3: What problem do the speakers identify?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "too messy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "too boring"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too difficult"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "too much equipment"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "too long"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "too easy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "too noisy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "too dangerous"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "drill, an old record,a pin/needle, paper,a bolt"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "too boring"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too difficult"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "too much equipment"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "too long"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "too easy"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "too noisy"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "too dangerous"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:57.027257+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g30",
+          "instruction": "Choose your answers from the box and write the letters A—H next to questions 27—30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Choose your answers from the box and write the letters A—H next to questions 27—30.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "too messy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "too boring"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too difficult"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "too much equipment"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "too long"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "too easy"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "too noisy"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "too dangerous"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "too messy"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "too boring"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too difficult"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "too much equipment"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "too long"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "too easy"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "too noisy"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "too dangerous"
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 837397,
+      "audioDurationMs": 458797
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t4.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION 1 Questions 1—10\n\nQuestions 1—10\n\nComplete the notes below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\n## GOODBYE PARTY FOR JOHN\n\nExample\n\nAnswer\n\nData\n\n22nd.December\n\nVenue: 1\n\nInvitations (Tony)\n\nWho to invite:\n\n-- John and his wife\n\n-- Director\n\n-- the 2\n\n-- all the teachers\n\n-- all the 3\n\nDate for sending invitations:\n\n4\n\nPresent (Lisa)\n\nCollect money during the\n\nSuggested amount per person:\n\n5\n\nCheck prices for:\n\n6 \\$\n\n-- CD players\n\n-- 7\n\n-- coffee maker\n\nAsk guests to bring:\n\n-- snacks\n\n-- 8\n\n-- 9\n\nAsk student representative to prepare a 10\n\n## SECTION 2 Questions 11—20\n\n## Questions 11—15\n\nChoose the correct letter, A, B or C.\n\n11 To find out how much holidays cost, you should press button A one. B two. C three.\n\n12 Travelite currently offer walking holidays A only in Western Europe. B all over Europe. C outside Europe.\n\n13 The walks offered by Travelite A cater for a range of walking abilities. B are planned by guides from the local area. C are for people with good fitness levels.\n\n14 On Travelite holidays, people holidaying alone pay A the same as other clients. B only a little more than other clients. C extra only if they stay in a large room.\n\n15 Entertainment is provided A when guests request it. B most nights.\n\nC every night.\n\n## Questions 16—20\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nLength of holiday\n\nCost per person (includingall accommodation costs)\n\nSpecial offers included inprice\n\n3 days\n\n16 $\n\nPick up from the17\n\n7 days\n\n$350\n\nAs above plus• book of 18• maps\n\n14days\n\n19 $\n\nAs above plus membershipof a 20\n\n## SECTION 3 Questions 21—30\n\nQuestions 21—26\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nExperiment number\n\nEquipment\n\nPurpose\n\nExperiment 1\n\n21 anda table\n\nTo show how things move ona cushion of air\n\nExperiment 2\n\nLots of paperclips\n\nTo show why we needstandard 22\n\nExperiment 3\n\n23 anda jar of water\n\nTo show how24 grow\n\nExperiment 4\n\nCardboard, coloredPens and a25\n\nTo teach children about how26 is madeup\n\nExperiment 5\n\nA drill, an old record,a pin/needle, paper,a bolt\n\nTo make a record player inorder to learn about recordingsound\n\n## Questions 27—30\n\nWhat problems do the speakers identify for each experiment?\n\nChoose your answers from the box and write the letters A—H next to questions 27—30.\n\nProblems\n\nA too messy\n\nB too boring\n\nC too difficult\n\nD too much equipment\n\nE too long\n\nF too easy\n\nG too noisy\n\nH too dangerous\n\nExperiment 1: 27\n\nExperiment 2: 28\n\nExperiment 3: 29\n\nExperiment 4:\n\nExample F\n\nExperiment 5:\n\n30\\_\n\n## SECTION 3 Questions 31—40\n\n## Questions 31—34\n\nComplete the notes below.\n\nWrite NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.\n\nSharks in Australia\n\nLength\n\nlargest caught: 16 meters\n\nWeight\n\nheaviest:\n\n31 kg\n\nSkeleton\n\ncartilage\n\nSkin texture\n\nrough barbs\n\nSwimming aide\n\nfins and 32\n\nFood\n\ngathered from the ocean 33\n\nSharks locate food by using their 34\n\n## Questions 35—38\n\nChoose the correct letter, A, B or C.\n\n35 Shark meshing uses nets laid A along the coastline. B at an angle to the beach. C from the beach to the sea.\n\n36 Other places that have taken up shark meshing include A South Africa. B New Zealand. C Tahiti.\n\n37 The average number of sharks caught in nets cash year is A 15. B 150. C 1,500.\n\n38 Most sharks are caught in A spring. B summer. C winter.\n\n## Questions 39 and 40\n\nChoose TWO letters A—G.\n\nWhich TWO factors reduce the benefits of shark nets?\n\nA nets wrongly positioned\n\nB strong waves and currents\n\nC too many fish\n\nD sharks eat holes in nets\n\nE moving sands\n\nF nets too short\n\nG holes in nets scare sharks"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t4l-g31",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Weight — heaviest: ___ kg",
+              "acceptedAnswers": [
+                "795"
+              ],
+              "gapText": "Weight — heaviest: 31 ___ kg",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g32",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Food | gathered from the ocean",
+              "acceptedAnswers": [
+                "tail"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g33",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Sharks locate food by using their",
+              "acceptedAnswers": [
+                "floor",
+                "bed",
+                "bottom"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g34",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Sharks locate food by using their ___",
+              "acceptedAnswers": [
+                "sense of smell"
+              ],
+              "gapText": "Sharks locate food by using their 34 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              34
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t4l-g35",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q35",
+              "number": 35,
+              "type": "single_choice",
+              "prompt": "Shark meshing uses nets laid A along the coastline. B at an angle to the beach. C from the beach to the sea",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "nets wrongly positioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong waves and currents"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too many fish"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sharks eat holes in nets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "moving sands"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "nets too short"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "holes in nets scare sharks"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "nets wrongly positioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "strong waves and currents"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too many fish"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sharks eat holes in nets"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "moving sands"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "nets too short"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "holes in nets scare sharks"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g36",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q36",
+              "number": 36,
+              "type": "single_choice",
+              "prompt": "Other places that have taken up shark meshing include A South Africa. B New Zealand. C Tahiti",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "nets wrongly positioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong waves and currents"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too many fish"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sharks eat holes in nets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "moving sands"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "nets too short"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "holes in nets scare sharks"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "nets wrongly positioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "strong waves and currents"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too many fish"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sharks eat holes in nets"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "moving sands"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "nets too short"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "holes in nets scare sharks"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g37",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q37",
+              "number": 37,
+              "type": "single_choice",
+              "prompt": "The average number of sharks caught in nets cash year is A 15. B 150. C 1,500",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "nets wrongly positioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong waves and currents"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too many fish"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sharks eat holes in nets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "moving sands"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "nets too short"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "holes in nets scare sharks"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "nets wrongly positioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "strong waves and currents"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too many fish"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sharks eat holes in nets"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "moving sands"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "nets too short"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "holes in nets scare sharks"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g38",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q38",
+              "number": 38,
+              "type": "single_choice",
+              "prompt": "Most sharks are caught in A spring. B summer. C winter",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "nets wrongly positioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong waves and currents"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too many fish"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sharks eat holes in nets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "moving sands"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "nets too short"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "holes in nets scare sharks"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "nets wrongly positioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "strong waves and currents"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too many fish"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sharks eat holes in nets"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "moving sands"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "nets too short"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "holes in nets scare sharks"
+            }
+          ]
+        },
+        {
+          "id": "c4t4l-g39",
+          "instruction": "Choose TWO letters A-G.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q39",
+              "number": 39,
+              "type": "multi_choice",
+              "prompt": "First answer: Which TWO factors reduce the benefits of shark nets?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "nets wrongly positioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong waves and currents"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too many fish"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sharks eat holes in nets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "moving sands"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "nets too short"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "holes in nets scare sharks"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "nets wrongly positioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "strong waves and currents"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too many fish"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sharks eat holes in nets"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "moving sands"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "nets too short"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "holes in nets scare sharks"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:18.464253+00:00"
+          }
+        },
+        {
+          "id": "c4t4l-g40",
+          "instruction": "Choose TWO letters A-G.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t4l-q40",
+              "number": 40,
+              "type": "multi_choice",
+              "prompt": "Second answer: Which TWO factors reduce the benefits of shark nets?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "nets wrongly positioned"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "strong waves and currents"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "too many fish"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sharks eat holes in nets"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "moving sands"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "nets too short"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "holes in nets scare sharks"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:22+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "nets wrongly positioned"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "strong waves and currents"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too many fish"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sharks eat holes in nets"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "moving sands"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "nets too short"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "holes in nets scare sharks"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:59:18.464789+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 1296194,
+      "audioDurationMs": 360550
+    }
+  ]
+}

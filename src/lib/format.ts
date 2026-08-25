@@ -3,7 +3,12 @@ import type { ExamSummary, SessionSummary } from "./types";
 
 export function sourceLabel(exam: ExamSummary) {
   if (exam.source?.kind === "official_sample") return "IELTS Official";
-  if (exam.source?.kind === "cambridge_book") return exam.source.title || exam.source.publisher || "Cambridge IELTS";
+  if (exam.source?.kind === "cambridge_book") {
+    const fromId = exam.id.match(/^cambridge-(\d+)/);
+    const fromTitle = (exam.source.title || "").match(/(\d+)/);
+    const book = fromId?.[1] || fromTitle?.[1];
+    return book ? `剑桥雅思 ${book} · 本项目整理` : "剑桥雅思 · 本项目整理";
+  }
   if (exam.source?.kind === "imported_document") return exam.source.title || "本地导入";
   return exam.source?.title || "本地题库";
 }

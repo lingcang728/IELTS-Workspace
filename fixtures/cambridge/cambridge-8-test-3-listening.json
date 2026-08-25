@@ -1,0 +1,1707 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-8-test-3-listening",
+  "title": "Cambridge IELTS 8 Academic Test 3 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0012-6096b429",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 8",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题8.pdf",
+        "sha256": "2f3cdf0c049ecac93bafafd034c2316ac7ed66b0694bea8a2a7c152042923e23"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C08\\剑桥雅思真题8\\auto\\剑桥雅思真题8.md",
+        "sha256": "9bc5a6c2dc6b80f2e6667849856a7af88f0f5e7102900ecf2906d8c2b913a8ca",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-8-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1–10\n\nQuestions 1-3\n\nComplete the form below.\n\n## Write ONE WORD ANDIOR A NUMBER for each answer.\n\nRented Properties Customer's Requirements Name: Steven Godfrey\n\nExample Answer\n\nNo. of bedrooms:\n\nfour\n\nPreferred location:\n\nin the 1. area of town\n\nMaximum monthly rent:\n\n2£.\n\nLength of let required:\n\n3..\n\nStarting:\n\nSeptember 1st\n\nQuestions 4-8\n\nComplete the table below.\n\nWrite ONE WORD ANDIOR A NUMBER for each answer.\n\nAddress\n\nRooms\n\nMonthly rent\n\nProblem\n\nOakingtonAvenue\n\nliving/dining room,separate kitchen\n\n£550\n\nno 4.\n\nMead Street\n\nfarge living room andkitchen, bathroom and acloakroom\n\n£580\n\nthe 5.is too large\n\nHamilton Road\n\nliving room, kitchen-diner, and a6..\n\n£550\n\ntoo 7\n\nDevon Close\n\nliving room, dining room,small kitchen\n\n8£.\n\nnone\n\nTest 3\n\nQuestions 9 and 10\n\nChoose TWO letters, A-E.\n\nWhich Two facilities in the district of Devon Close are open to the public at the moment?\n\nA museum\n\nB concert hall\n\nC cinema\n\nD sports centre\n\nE swimming pool\n\nListening"
+      },
+      "questionGroups": [
+        {
+          "id": "c8t3l-g1",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "September",
+              "acceptedAnswers": [
+                "central"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g2",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Maximum monthly rent: £ ___",
+              "acceptedAnswers": [
+                "600"
+              ],
+              "gapText": "Maximum monthly rent: £ ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g3",
+          "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Starting: September 1st",
+              "acceptedAnswers": [
+                "2 year(s)"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              3
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g4",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Oakington Avenue: no ___",
+              "acceptedAnswers": [
+                "garage"
+              ],
+              "gapText": "Oakington Avenue: no ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g5",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q5",
+              "number": 5,
+              "type": "true_false_ng",
+              "prompt": "Complete the table below.",
+              "acceptedAnswers": [
+                "garden"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g6",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q6",
+              "number": 6,
+              "type": "true_false_ng",
+              "prompt": "| £550 | too",
+              "acceptedAnswers": [
+                "study"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g7",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q7",
+              "number": 7,
+              "type": "true_false_ng",
+              "prompt": "Devon Close | living room, dining room,small kitchen |",
+              "acceptedAnswers": [
+                "noisy"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g8",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q8",
+              "number": 8,
+              "type": "true_false_ng",
+              "prompt": "£. none Test 3",
+              "acceptedAnswers": [
+                "595"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              4,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g9",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q9",
+              "number": 9,
+              "type": "single_choice",
+              "prompt": "Choose TWO letters, A-E.",
+              "acceptedAnswers": [
+                "['B', 'E']"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "museum"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "concert hall"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cinema"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sports centre"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "swimming pool"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "museum"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "concert hall"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cinema"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sports centre"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "swimming pool"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g10",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q10",
+              "number": 10,
+              "type": "multi_choice",
+              "prompt": "Which TWO facilities in the district of Devon Close are open to the public at the moment?",
+              "acceptedAnswers": [
+                "B",
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "museum"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "concert hall"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cinema"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "sports centre"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "swimming pool"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "museum"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "concert hall"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cinema"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "sports centre"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "swimming pool"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 454904
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\nQuestions 11-16\n\nComplete the notes below.\n\nWrite NO MORE THAN TWO WORDS ANDIOR A NUMBER for each anSwer.\n\nTHE NATIONAL ARTS CENTRE\n\nWell known for: 11.\n\nComplex consists of: concert rooms\n\ntheatres\n\ncinemas\n\nart galleries\n\npublic library\n\nrestaurants\n\na 12 ..\n\nHistorical background: 1940 – area destroyed by bombs\n\n1960s-1970s - Centre was 13 . .. and built\n\nin 14.. .....- opened to public\n\nManaged by: the 15 ..\n\nOpen: 16 . days per year\n\nQuestions 17-20\n\nComplete the table below.\n\nWrite NO MORE THAN THREE WORDS ANDIOR A NUMBER for each anSWer.\n\nDay\n\nTime\n\nEvent\n\nVenue\n\nTicket price\n\nMonday andTuesday\n\n7.30 p.m.\n\n'The Magic Flute'(opera by Mozart)\n\n17.\n\nfrom £8.00\n\nWednesday\n\n8.00 p.m.\n\n18(Canadian film)\n\nCinema 2\n\n19£€...\n\nSaturdayand Sunday\n\n11 a.m. to10 p.m.\n\n20(art exhibition)\n\nGallery 1\n\nfree"
+      },
+      "questionGroups": [
+        {
+          "id": "c8t3l-g11",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "Well known for: ___",
+              "acceptedAnswers": [
+                "classical music",
+                "classical concerts",
+                "music concerts"
+              ],
+              "options": [],
+              "gapText": "Well known for: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g12",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "bookshop",
+                "bookstore"
+              ],
+              "options": []
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g13",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "1960s-1970s - Centre was ___ and built",
+              "acceptedAnswers": [
+                "planned"
+              ],
+              "options": [],
+              "gapText": "1960s-1970s - Centre was ___ and built",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g14",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "In ___ - opened to public",
+              "acceptedAnswers": [
+                "1983",
+                "the 1980s"
+              ],
+              "options": [],
+              "gapText": "In ___ - opened to public",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g15",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Managed by: the",
+              "acceptedAnswers": [
+                "City Council"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g16",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Open: ___ days per year",
+              "acceptedAnswers": [
+                "363"
+              ],
+              "gapText": "Open: ___ days per year",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g17",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q17",
+              "number": 17,
+              "type": "completion",
+              "prompt": "Venue for The Magic Flute (opera by Mozart): ___",
+              "acceptedAnswers": [
+                "Garden Hall",
+                "the Garden Hall"
+              ],
+              "gapText": "Venue for The Magic Flute (opera by Mozart): ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g18",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q18",
+              "number": 18,
+              "type": "completion",
+              "prompt": "(Canadian film) Cinema 2",
+              "acceptedAnswers": [
+                "Three Lives"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g19",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q19",
+              "number": 19,
+              "type": "completion",
+              "prompt": "60s-1970s - Centre was 13 . .. and built in 14.. .....- opened to public Managed by: the 15 .. Open: 16 . days per year",
+              "acceptedAnswers": [
+                "4.50"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g20",
+          "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q20",
+              "number": 20,
+              "type": "completion",
+              "prompt": "(art exhibition) Gallery 1 free",
+              "acceptedAnswers": [
+                "Faces of China"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 454904,
+      "audioDurationMs": 344615
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nQuestions 21-26\n\nChoose the correct letter, A, B or C.\n\n## Latin American studies\n\n21 Paul decided to get work experience in South America because he wanted A to teach English there. B to improve his Spanish. C to learn about Latin American life.\n\n22 What project work did Paul originally intend to get involved in? A construction Bagriculture C tourism\n\n23Why did Paul change from one project to another? A His first job was not well organised. B He found doing the routine work very boring. C The work was too physically demanding.\n\n24 In the village community, he learnt how important it was to A respect family life. B develop trust. C use money wisely.\n\n25What does Paul say about his project manager? A He let Paul do most of the work. B His plans were too ambitious. C He was very supportive of Paul\n\n26Paul was surprised to be given\n\nA a computer to use.\n\nBso little money to live on.\n\nC an extension to his contract.\n\n## Test 3\n\nQuestions 27-30\n\nWhat does Paul decide about each of the following modules?\n\nWrite the correct letter, A, B or ${ \\pmb { c } } ,$ next to questions 27-30.\n\nA He will do this.\n\nB He might do this.\n\nC He won't do this.\n\n## Module\n\n27Gender Studies in Latin America mmm\n\n28 Second Language Acquisition ……\n\n29 Indigenous Women's Lives\n\n30 Portuguese Language Studies ……"
+      },
+      "questionGroups": [
+        {
+          "id": "c8t3l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "Paul decided to get work experience in South America because he wanted A to teach English there. B to improve his Spanish. C to learn about Latin American life",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to teach English there."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to improve his Spanish."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to learn about Latin American life."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "What project work did Paul originally intend to get involved in? A construction Bagriculture C tourism",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "construction"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "agriculture"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "tourism"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "Why did Paul change from one project to another? A His first job was not well organised. B He found doing the routine work very boring. C The work was too physically demanding",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "His first job was not well organised."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He found doing the routine work very boring."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The work was too physically demanding."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q24",
+              "number": 24,
+              "type": "matching",
+              "prompt": "In the village community, he learnt how important it was to A respect family life. B develop trust. C use money wisely",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "respect family life."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "develop trust."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "use money wisely."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "What does Paul say about his project manager? A He let Paul do most of the work. B His plans were too ambitious. C He was very supportive of Paul",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He let Paul do most of the work."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "His plans were too ambitious."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He was very supportive of Paul."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q26",
+              "number": 26,
+              "type": "matching",
+              "prompt": "Paul was surprised to be given A a computer to use. Bso little money to live on. C an extension to his contract",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "a computer to use."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "so little money to live on."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "an extension to his contract."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q27",
+              "number": 27,
+              "type": "matching",
+              "prompt": "Gender Studies in Latin America mmm",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He will do this."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He might do this."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He won't do this."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g28",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q28",
+              "number": 28,
+              "type": "matching",
+              "prompt": "Second Language Acquisition ……",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He will do this."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He might do this."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He won't do this."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g29",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "Indigenous Women's Lives",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He will do this."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He might do this."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He won't do this."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g30",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "Portuguese Language Studies ……",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He will do this."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He might do this."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He won't do this."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.701766+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 799520,
+      "audioDurationMs": 395972
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c08-t3.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31–40\n\nQuestions 31-34\n\nChoose the correct letter, A, B or C.\n\n## Trying to repeat success\n\n31 Compared to introducing new business processes, attempts to copy exístíng processes are A more attractive. B more frequent. C more straightforward.\n\n32 Most research into the repetition of success in business has\n\nA been done outside the United States.\n\nB produced consistent findings.\n\nC related to only a few contexts.\n\n33 What does the speaker say about consultíng experts?\n\nA Too few managers ever do it.\n\nB It can be useful in certain circumstances.\n\nC Experts are sometimes unwilling to give advice.\n\n34 An expert's knowledge about a business system may be incompiete because\n\nAsome details are difficult for workers to explain.\n\nB workers choose not to mention certain details.\n\nC details are sometimes altered by workers.\n\n## Test 3\n\nQuestions 35-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\n## Setting up systems based on an existing process\n\n## Two mistakes\n\nManager tries to:\n\n• improve on the original process\n\n• create an ideal 35...from the best parts of several processes\n\n## Cause of problems\n\n• information was inaccurate\n\n• comparison between the business settings was invalid\n\n• disadvantages were overlooked, e.g. effect of changes on 36..\n\n## Solution\n\n• change 37 …\n\n• impose rigorous 38\n\n• copy original very closely:\n\n– physical features of the 39 ...\n\n\\- the 40 of original employees"
+      },
+      "questionGroups": [
+        {
+          "id": "c8t3l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q31",
+              "number": 31,
+              "type": "matching",
+              "prompt": "Compared to introducing new business processes, attempts to copy exístíng processes are A more attractive. B more frequent. C more straightforward",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "more attractive."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "more frequent."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "more straightforward."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:25.790635+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "Most research into the repetition of success in business has A been done outside the United States. B produced consistent findings. C related to only a few contexts",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "been done outside the United States"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "produced consistent findings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "related to only a few contexts"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "been done outside the United States"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "produced consistent findings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "related to only a few contexts"
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g33",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q33",
+              "number": 33,
+              "type": "single_choice",
+              "prompt": "What does the speaker say about consultíng experts? A Too few managers ever do it. B It can be useful in certain circumstances. C Experts are sometimes unwilling to give advice",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "been done outside the United States"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "produced consistent findings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "related to only a few contexts"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "been done outside the United States"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "produced consistent findings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "related to only a few contexts"
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g34",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q34",
+              "number": 34,
+              "type": "single_choice",
+              "prompt": "An expert's knowledge about a business system may be incompiete because Asome details are difficult for workers to explain. B workers choose not to mention certain details. C details are sometimes altered by workers",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "been done outside the United States"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "produced consistent findings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "related to only a few contexts"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "been done outside the United States"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "produced consistent findings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "related to only a few contexts"
+            }
+          ]
+        },
+        {
+          "id": "c8t3l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Create an ideal ___ from the best parts of several processes",
+              "acceptedAnswers": [
+                "combination",
+                "system"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "been done outside the United States"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "produced consistent findings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "related to only a few contexts"
+                }
+              ],
+              "gapText": "Create an ideal ___ from the best parts of several processes",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "been done outside the United States"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "produced consistent findings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "related to only a few contexts"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Disadvantages were overlooked, e.g. effect of changes on ___",
+              "acceptedAnswers": [
+                "safety"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "been done outside the United States"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "produced consistent findings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "related to only a few contexts"
+                }
+              ],
+              "gapText": "Disadvantages were overlooked, e.g. effect of changes on ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "been done outside the United States"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "produced consistent findings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "related to only a few contexts"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Solution: change ___",
+              "acceptedAnswers": [
+                "attitude",
+                "attitudes"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "been done outside the United States"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "produced consistent findings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "related to only a few contexts"
+                }
+              ],
+              "gapText": "Solution: change ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "been done outside the United States"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "produced consistent findings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "related to only a few contexts"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Impose rigorous ___",
+              "acceptedAnswers": [
+                "control",
+                "controls"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "been done outside the United States"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "produced consistent findings"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "related to only a few contexts"
+                }
+              ],
+              "gapText": "Impose rigorous ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "been done outside the United States"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "produced consistent findings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "related to only a few contexts"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Physical features of the ___",
+              "acceptedAnswers": [
+                "factory",
+                "factories"
+              ],
+              "gapText": "Physical features of the ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c8t3l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c8t3l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "The ___ of original employees",
+              "acceptedAnswers": [
+                "skills"
+              ],
+              "gapText": "The ___ of original employees",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:22:40+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              35,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1195492,
+      "audioDurationMs": 469454
+    }
+  ]
+}

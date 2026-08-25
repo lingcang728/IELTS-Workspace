@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-9-test-1-listening",
+  "title": "Cambridge IELTS 9 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0014-469c163f",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 9",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题9.pdf",
+        "sha256": "c3fbc2d06b1b60fe8e7d27936150a09c38714e4bd23e6351a09b93c9555ee890"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C09\\剑桥雅思真题9\\auto\\剑桥雅思真题9.md",
+        "sha256": "0fff67454e2c0209145ec163b53e0d8a4366227a4e4853f03d4cac2187f6196e",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-9-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the notes below.\n\n## Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each anSwer.\n\n## JOB ENQUIRY\n\nExample\n\nWork at: \\_\\_a restaurant\n\n● Type of work: 1\n\n● Number of hours per week: 12hours\n\n● Would need work permit\n\nWork in the: 2 branch\n\n● Nearest bus stop: next to 3\n\n● Pay: 4 £ an hour\n\n● Extra benefits:\n\n– a free dinner\n\n— extra pay when you work on 5\n\n— transport home when you work 6\n\n● Qualities required:\n\n-7\n\n— ability to 8\n\n● Interview arranged for: Thursday 9 at 6 p.m.\n\n● Bring the names of two referees\n\nAsk for: Samira 10"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t1l-g1",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "answer(ing) (the) phone"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g2",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Work in the: ___ branch",
+              "acceptedAnswers": [
+                "Hillsdunne Road"
+              ],
+              "gapText": "Work in the: ___ branch",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g3",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Nearest bus stop: next to ___",
+              "acceptedAnswers": [
+                "library"
+              ],
+              "gapText": "Nearest bus stop: next to ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g4",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Pay: £___ an hour",
+              "acceptedAnswers": [
+                "4.45"
+              ],
+              "gapText": "Pay: £___ an hour",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g5",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Extra pay when you work on ___",
+              "acceptedAnswers": [
+                "national holidays"
+              ],
+              "gapText": "Extra pay when you work on ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g6",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Transport home when you work ___",
+              "acceptedAnswers": [
+                "after 11 o'clock",
+                "after 11"
+              ],
+              "gapText": "Transport home when you work ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g7",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Qualities required: ___",
+              "acceptedAnswers": [
+                "clear voice"
+              ],
+              "gapText": "Qualities required: ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g8",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Ability to ___",
+              "acceptedAnswers": [
+                "think quickly"
+              ],
+              "options": [],
+              "gapText": "Ability to ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g9",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "Interview arranged for: Thursday ___ at 6 p.m.",
+              "acceptedAnswers": [
+                "22 October",
+                "22nd October"
+              ],
+              "gapText": "Interview arranged for: Thursday ___ at 6 p.m.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g10",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "Ask for: Samira ___",
+              "acceptedAnswers": [
+                "Manuja"
+              ],
+              "gapText": "Ask for: Samira ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 459885
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Question 11-20\n\nQuestions 11-16\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\n## SPORTS WORLD\n\n● a new 11 of an international sports goods company\n\n● located in the shopping centre to the 12 of Bradcasster\n\n● has sports 13 and equipment on floors 1-3\n\n● can get you any item within 14 days\n\n● shop specializes in equipment for 15\n\n● has a special section which just sells 16\n\nQuestions 17 and 18\n\nChoose the correct letter, A, B, or C.\n\n17 A champion athlete will be in the shop\n\nA on Saturday morning only\n\nB all day Saturday\n\nC for the whole weekend\n\n18The first person to answer 20 quiz questions correctly will win\n\nA gym membership\n\nB a video\n\nC a calendar\n\nQuestions 19 and 20\n\nChoose TWO letters, A-E.\n\nWhich TWo pieces of information does the speaker give about the fitness test?\n\nA You need to reserve a place.\n\nB It is free to account holders.\n\nC You get advice on how to improve your health.\n\nD It takes place in a special clinic.\n\nE It is cheaper this month."
+      },
+      "questionGroups": [
+        {
+          "id": "c9t1l-g11",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "A new ___ of an international sports goods company",
+              "acceptedAnswers": [
+                "branch"
+              ],
+              "gapText": "A new ___ of an international sports goods company",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g12",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Located in the shopping centre to the ___ of Bradcaster",
+              "acceptedAnswers": [
+                "west"
+              ],
+              "gapText": "Located in the shopping centre to the ___ of Bradcaster",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g13",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "Has sports ___ and equipment on floors 1-3",
+              "acceptedAnswers": [
+                "clothing"
+              ],
+              "gapText": "Has sports ___ and equipment on floors 1-3",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g14",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Can get you any item within ___ days",
+              "acceptedAnswers": [
+                "10"
+              ],
+              "gapText": "Can get you any item within ___ days",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g15",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q15",
+              "number": 15,
+              "type": "completion",
+              "prompt": "Shop specializes in equipment for ___",
+              "acceptedAnswers": [
+                "running"
+              ],
+              "gapText": "Shop specializes in equipment for ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g16",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q16",
+              "number": 16,
+              "type": "completion",
+              "prompt": "Has a special section which just sells ___",
+              "acceptedAnswers": [
+                "bags"
+              ],
+              "gapText": "Has a special section which just sells ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              16
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g17",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "A champion athlete will be in the shop",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.382089+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "on Saturday morning only"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "all day Saturday"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "for the whole weekend"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g18",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q18",
+              "number": 18,
+              "type": "matching",
+              "prompt": "The first person to answer",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.382089+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "gym membership"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a video"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "a calendar"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              17,
+              18
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g19",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Choose TWO letters, A-E.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "You need to reserve a place."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is free to account holders."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "You get advice on how to improve your health."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It takes place in a special clinic."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It is cheaper this month."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.382089+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g20",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q20",
+              "number": 20,
+              "type": "multi_choice",
+              "prompt": "Which TWO pieces of information does the speaker give about the fitness test?",
+              "acceptedAnswers": [
+                "A",
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "You need to reserve a place."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It is free to account holders."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "You get advice on how to improve your health."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It takes place in a special clinic."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It is cheaper this month."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              19,
+              20
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 459885,
+      "audioDurationMs": 340636
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21-30\n\nChoose the correct letter, A, B or C.\n\n## Course Feedback\n\n21One reason why Spiros felt happy about his marketing presentation was that\n\nA he was not nervous.\n\nB his style was good.\n\nC the presentation was the best in his group.\n\n22What surprised Hiroko about the other students' presentations?\n\nA Their presentations were not interesting.\n\nB They found their presentations stressful.\n\nC They didn't look at the audience enough.\n\n23 After she gave her presentation, Hiroko felt\n\nA delighted.\n\nB dissatisfied.\n\nC embarrassed.\n\n24How does Spiros feel about his performance tutorials?\n\nA not very happy\n\nB really pleased\n\nC fairly confident\n\n25 Why can the other students participate so easily in discussions?\n\nA They are polite to each other.\n\nB They agree to take turns in speaking.\n\nC They know each other well. \n26 Why is Hiroko feeling more positive about tutorials now? \nA She finds the other students' opinions more interesting. \nB She is making more of a contribution. \nC The tutor includes her in the discussion. \n27 To help her understand lectures, Hiroko \nA consulted reference materials. \nB had extra tutorials with her lectures. \nC borrowed lecture notes from other students. \n28What does Spiros think of his reading skills? \nA He reads faster than he used to. \nB It still takes him a long time to read. \nC He tends to struggle with new vocabulary. \n29 What is Hiroko's subject area? \nA environmental studies \nB health education \nC engineering \n30 Hiroko thinks that in the reading classes the students should \nA learn more vocabulary. \nB read more in their own subject areas. \nC develop better reading strategies."
+      },
+      "questionGroups": [
+        {
+          "id": "c9t1l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "One reason why Spiros felt happy about his marketing presentation was that",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "he was not nervous."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "his style was good."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the presentation was the best in his group."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "What surprised Hiroko about the other students' presentations?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Their presentations were not interesting."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They found their presentations stressful."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They didn't look at the audience enough."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "After she gave her presentation, Hiroko felt",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "delighted."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "dissatisfied."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "embarrassed."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q24",
+              "number": 24,
+              "type": "matching",
+              "prompt": "How does Spiros feel about his performance tutorials?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "not very happy"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "really pleased"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "fairly confident"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q25",
+              "number": 25,
+              "type": "matching",
+              "prompt": "Why can the other students participate so easily in discussions?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are polite to each other."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They agree to take turns in speaking."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They know each other well."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Why is Hiroko feeling more positive about tutorials now? A She finds the other students' opinions more interesting. B She is making more of a contribution. C The tutor includes her in the discussion",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "She finds the other students' opinions more interesting."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "She is making more of a contribution."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The tutor includes her in the discussion."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "To help her understand lectures, Hiroko A consulted reference materials. B had extra tutorials with her lectures. C borrowed lecture notes from other students",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "consulted reference materials."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "had extra tutorials with her lectures."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "borrowed lecture notes from other students."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g28",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "What does Spiros think of his reading skills? A He reads faster than he used to. B It still takes him a long time to read. C He tends to struggle with new vocabulary",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He reads faster than he used to."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It still takes him a long time to read."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He tends to struggle with new vocabulary."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g29",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "What is Hiroko's subject area?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "environmental studies"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "health education"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "engineering"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c9t1l-g30",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "Hiroko thinks that in the reading classes the students should A learn more vocabulary. B read more in their own subject areas. C develop better reading strategies",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "learn more vocabulary."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "read more in their own subject areas."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "develop better reading strategies."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.466705+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 800521,
+      "audioDurationMs": 462759
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c09-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\nComplete the notes below\n\n## Write NO MORE THAN TWO WORDS for each answer.\n\n## Mass Strandings of Whales and Dolphins\n\nMass strandings: situations where groups of whales, dolphins, etc.\n\nswim onto the beach and die\n\nCommon in areas where the 31. can change quickly Several other theories:\n\n## Parasites\n\ne.g. some parasites can affect marine animals' 32 \\_, which they depend on for navigation\n\n## Toxins\n\nPoisons from 33 or are commonly consumed by whales\n\ne.g. Cape Cod (1988) – whales were killed by saxitoxin\n\n## Accidental Strandings\n\nAnimals may follow prey as hore, e.g. Thurston (1995)\n\nUnlikely because the majority of animals were not 34 when they stranded\n\n## Human Activity\n\n35 from military tests are linked to some recent strandings The Bahamas (2000) stranding was unusual because the whales\n\n● were all 36\n\n● were not in a 37\n\n## Group Behaviour\n\n● More strandings in the most 38 species of whales\n\n● 1994 dolphin stranding – only the 39 was ill\n\n## Further Reading\n\nMarine Mammals Ashore (Connor) – gives information about stranding 40"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t1l-g31",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Complete the notes below",
+              "acceptedAnswers": [
+                "tide",
+                "tides"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g32",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "_, which they depend on for navigation",
+              "acceptedAnswers": [
+                "hearing",
+                "ear",
+                "ears"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g33",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Poisons from ___ or ___ are commonly consumed by whales",
+              "acceptedAnswers": [
+                "plants",
+                "animals",
+                "fish",
+                "fishes"
+              ],
+              "gapText": "Poisons from ___ or ___ are commonly consumed by whales",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g34",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Unlikely because the majority of animals were not ___ when they stranded",
+              "acceptedAnswers": [
+                "feeding"
+              ],
+              "gapText": "Unlikely because the majority of animals were not ___ when they stranded",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g35",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "___ from military tests are linked to some recent strandings",
+              "acceptedAnswers": [
+                "noise",
+                "noises"
+              ],
+              "gapText": "___ from military tests are linked to some recent strandings",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g36",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "The Bahamas stranding was unusual because the whales were all ___",
+              "acceptedAnswers": [
+                "healthy"
+              ],
+              "gapText": "The Bahamas stranding was unusual because the whales were all ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g37",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "The whales were not in a ___",
+              "acceptedAnswers": [
+                "group"
+              ],
+              "gapText": "The whales were not in a ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g38",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "More strandings in the most ___ species of whales",
+              "acceptedAnswers": [
+                "social"
+              ],
+              "gapText": "More strandings in the most ___ species of whales",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g39",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "1994 dolphin stranding: only the ___ was ill",
+              "acceptedAnswers": [
+                "leader"
+              ],
+              "gapText": "1994 dolphin stranding: only the ___ was ill",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t1l-g40",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Marine Mammals Ashore gives information about stranding ___",
+              "acceptedAnswers": [
+                "network",
+                "networks"
+              ],
+              "options": [],
+              "gapText": "Marine Mammals Ashore gives information about stranding ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:55+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1263280,
+      "audioDurationMs": 397348
+    }
+  ]
+}

@@ -1,0 +1,1888 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-4-test-2-listening",
+  "title": "Cambridge IELTS 4 Academic Test 2 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0008-78337f81",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 4",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题4.pdf",
+        "sha256": "c019fb8d269d8df4783443c2351fc2cd5c71cc063c584b9397ef37a165cf2fe1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C04\\剑桥雅思真题4\\auto\\剑桥雅思真题4.md",
+        "sha256": "71b289d2c3dd9a1841af3336fc85d7b5a6ae514368fc562353019cb7b70b4e3c",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=40, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-1-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-2-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-ielts-4-listening-test-3-answers/",
+        "note": "Independent C4 Listening answer cross-check."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-4-listening-test-4-answers-pdf/",
+        "note": "Independent C4 Listening answer cross-check."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1—10\n\n## Questions 1—5\n\nChoose the correct letter, A, B or C.\n\n## Example:\n\nHow long has Sally been waiting?\n\nA five minutes\n\nB twenty minutes\n\n○C thirty minutes\n\n1 What does Peter want to drink? A tea B coffee C a cold drink\n\n2 What caused Peter problems at the bank? A The exchange rate was down. B He was late. C The computers weren’t working.\n\nArt Gallery\n\nCathedral\n\nCastle\n\nGardens\n\nMarkets\n\n3 Who did Peter talk to at the bank? A an old friend B an American man C a German man\n\n4 Henry gave Peter a map of A the city. B the bus routes. C the train system.\n\n5 What do Peter and Sally decide to order? A food and drinks B just food C just drinks\n\n## Questions 6–8\n\nComplete the notes below using words from the box.\n\nTourist attractions open all day: 6 and Gardens\n\nTourist attractions NOT open on Mondays: 7 and Castle\n\nTourist attractions which have free entry: 8 and Markets\n\n## Questions 9 and 10\n\nComplete the sentences below.\n\nWrite NO MORE THAN THREE WORDS for each answer.\n\n9 The first place Peter and Sally will visit is the\n\n10 At the Cathedral, Peter really wants to"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t2l-g1",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q1",
+              "number": 1,
+              "type": "single_choice",
+              "prompt": "What does Peter want to drink? A tea B coffee C a cold drink",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "five minutes"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "twenty minutes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "five minutes"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "twenty minutes"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g2",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q2",
+              "number": 2,
+              "type": "single_choice",
+              "prompt": "What caused Peter problems at the bank? A The exchange rate was down. B He was late. C The computers weren’t working. Art Gallery Cathedral Castle Gardens Markets",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "five minutes"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "twenty minutes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "five minutes"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "twenty minutes"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g3",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q3",
+              "number": 3,
+              "type": "single_choice",
+              "prompt": "Who did Peter talk to at the bank? A an old friend B an American man C a German man",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "five minutes"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "twenty minutes"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "five minutes"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "twenty minutes"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g4",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q4",
+              "number": 4,
+              "type": "single_choice",
+              "prompt": "Henry gave Peter a map of",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the city."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the bus routes."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the train system"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the city."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the bus routes."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the train system"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g5",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q5",
+              "number": 5,
+              "type": "single_choice",
+              "prompt": "What do Peter and Sally decide to order?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "food and drinks"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "just food"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "just drinks"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "food and drinks"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "just food"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "just drinks"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g6",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Tourist attractions open all day: ___ and Gardens",
+              "acceptedAnswers": [
+                "Cathedral"
+              ],
+              "gapText": "Tourist attractions open all day: 6 ___ and Gardens",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g7",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "Tourist attractions NOT open on Mondays: ___ and Castle",
+              "acceptedAnswers": [
+                "Markets"
+              ],
+              "gapText": "Tourist attractions NOT open on Mondays: 7 ___ and Castle",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g8",
+          "instruction": "Complete the notes below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Tourist attractions which have free entry: ___ and Markets",
+              "acceptedAnswers": [
+                "Gardens"
+              ],
+              "gapText": "Tourist attractions which have free entry: 8 ___ and Markets",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              6,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g9",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "The first place Peter and Sally will visit is the",
+              "acceptedAnswers": [
+                "Art Gallery"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g10",
+          "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "At the Cathedral, Peter really wants to",
+              "acceptedAnswers": [
+                "climb the tower",
+                "see the view"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 436148
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11—20\n\n## Questions 11—20\n\n## Choose the correct letter, A, B or C.\n\n11 The Counseling Service may contact tutors if\n\nA they are too slow in marking assignments.\n\nB they give students a lot of work.\n\nC they don’t inform students about their progress.\n\n12 Stress may be caused by\n\nA new teachers.\n\nB time pressure.\n\nC unfamiliar subject matter.\n\n13 International students may find stress difficult to handle because\n\nA they lack support from family and friends.\n\nB they don’t have time to make new friends.\n\nC they find it difficult to socialize.\n\n14 A personal crisis may be caused by\n\nA studying for too long overseas.\n\nB business problems in the student’s own country.\n\nC disruptions to personal relationships.\n\n15 Students may lose self-esteem if\n\nA they have to change courses.\n\nB they don’t complete a course.\n\nC their family puts too much pressure on them.\n\nStudents should consult Glenda Roberts if A their general health is poor. B their diet is too strict. C they can’t eat the local food.\n\n17 Students in financial difficulties can receive A assistance to buy books. B a loan to pay their course fees. C a no-interest loan to cover study expenses.\n\nLoans are also available to students who A can’t pay their rent. B need to buy furniture. C can’t cover their living expenses.\n\nThe number of students counseled by the service last year was A 214. \nB 240. \nC 2,600.\n\nThe speaker thinks the Counseling Service A has been effective in spite of staff shortages. B is under-used by students. C has suffered badly because of staff cuts."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t2l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "The Counseling Service may contact tutors if A they are too slow in marking assignments. B they give students a lot of work. C they don’t inform students about their progress",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they are too slow in marking assignments"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they give students a lot of work"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they don’t inform students about their progress"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are too slow in marking assignments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they give students a lot of work"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they don’t inform students about their progress"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "Stress may be caused by A new teachers. B time pressure. C unfamiliar subject matter",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they are too slow in marking assignments"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they give students a lot of work"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they don’t inform students about their progress"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are too slow in marking assignments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they give students a lot of work"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they don’t inform students about their progress"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "International students may find stress difficult to handle because A they lack support from family and friends. B they don’t have time to make new friends. C they find it difficult to socialize",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they are too slow in marking assignments"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they give students a lot of work"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they don’t inform students about their progress"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are too slow in marking assignments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they give students a lot of work"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they don’t inform students about their progress"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g14",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "A personal crisis may be caused by A studying for too long overseas. B business problems in the student’s own country. C disruptions to personal relationships",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "new teachers"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "time pressure"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "unfamiliar subject matter"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "new teachers"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "time pressure"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "unfamiliar subject matter"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g15",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q15",
+              "number": 15,
+              "type": "single_choice",
+              "prompt": "Students may lose self-esteem if A they have to change courses. B they don’t complete a course. C their family puts too much pressure on them. Students should consult Glenda Roberts if A their general health is poor. B their diet is too strict. C they can’t eat the local food",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they lack support from family and friends"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they don’t have time to make new friends"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they find it difficult to socialize"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they lack support from family and friends"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they don’t have time to make new friends"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they find it difficult to socialize"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g16",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q16",
+              "number": 16,
+              "type": "single_choice",
+              "prompt": "Students should consult Glenda Roberts if",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "their general health is poor."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "their diet is too strict."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "they can't eat the local food."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are too slow in marking assignments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they give students a lot of work"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they don’t inform students about their progress"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g17",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q17",
+              "number": 17,
+              "type": "single_choice",
+              "prompt": "Students in financial difficulties can receive A assistance to buy books. B a loan to pay their course fees. C a no-interest loan to cover study expenses. Loans are also available to students who A can’t pay their rent. B need to buy furniture. C can’t cover their living expenses. The number of students counseled by the service last year was A 214. B 240. C 2,600. The speaker thinks the Counseling Service A has been effective in spite of staff shortages. B is under-used by students. C has suffered badly because of staff cuts",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "they have to change courses"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "they don’t complete a course"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "their family puts too much pressure on them"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they have to change courses"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they don’t complete a course"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "their family puts too much pressure on them"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g18",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Loans are also available to students who",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "can't pay their rent."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "need to buy furniture."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "can't cover their living expenses."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are too slow in marking assignments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they give students a lot of work"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they don’t inform students about their progress"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g19",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "The number of students counseled by the service last year was",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "214."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "240."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "2,600."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are too slow in marking assignments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they give students a lot of work"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they don’t inform students about their progress"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        },
+        {
+          "id": "c4t2l-g20",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "The speaker thinks the Counseling Service",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "has been effective in spite of staff shortages."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "is under-used by students."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "has suffered badly because of staff cuts."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "they are too slow in marking assignments"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "they give students a lot of work"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "they don’t inform students about their progress"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:23:55.058958+00:00"
+          }
+        }
+      ],
+      "audioStartMs": 436148,
+      "audioDurationMs": 349004
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21—30\n\nQuestions 21—24\n\nComplete the notes below.\n\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.\n\nDETAILS OF ASSIGNMENT\n\nPart 1\n\nEssay Title:Assess the two main methods of 21\n\nPart 2\n\nin social science research'\n\nNumber of words: 22\n\nSmall-scale study\n\nChoose one method.\n\nGather data from at least 23 subjects.\n\nPart 3\n\nReport on study\n\nNumber of words: 24\n\n## Questions 25 and 26\n\nChoose TWO letters A —E.\n\nWhat TWO disadvantages of the questionnaire form of data collection do the\n\nstudents discuss?\n\nA The data is sometimes invalid.\n\nB Too few people may respond.\n\nC It is less likely to reveal the unexpected.\n\nD It can only be used with literate populations.\n\nE There is a delay between the distribution and return of questionnaires.\n\n## Questions 27—30\n\nComplete the table below.\n\n## Write NO MORE THAN THREE WORDS OR A NUMBER for each answer.\n\nAUTHOR\n\nTITLE\n\nPUBLISHER\n\nYEAR OFPUBLICATION\n\n27\n\nSample Surveys inSocial Science Research'\n\nBell\n\n28\n\n29\n\nWilson\n\nInterviews that work'\n\nOxfordUniversityPress\n\n30"
+      },
+      "questionGroups": [
+        {
+          "id": "c4t2l-g21",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q21",
+              "number": 21,
+              "type": "completion",
+              "prompt": "Essay Title:Assess the two main methods of",
+              "acceptedAnswers": [
+                "collecting data",
+                "gathering data",
+                "data collection"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g22",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q22",
+              "number": 22,
+              "type": "completion",
+              "prompt": "Number of words",
+              "acceptedAnswers": [
+                "1,500"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g23",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q23",
+              "number": 23,
+              "type": "completion",
+              "prompt": "Gather data from at least",
+              "acceptedAnswers": [
+                "5"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g24",
+          "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q24",
+              "number": 24,
+              "type": "completion",
+              "prompt": "Part 3 Report on study — Number of words: ___",
+              "acceptedAnswers": [
+                "3,000 – 4,000"
+              ],
+              "gapText": "Part 3 Report on study — Number of words: 24 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              24
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g25",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q25",
+              "number": 25,
+              "type": "multi_choice",
+              "prompt": "First answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The data is sometimes invalid."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Too few people may respond."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It is less likely to reveal the unexpected."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It can only be used with literate populations."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "There is a delay between the distribution and return of questionnaires."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The data is sometimes invalid"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Too few people may respond"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It is less likely to reveal the unexpected"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It can only be used with literate populations"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "There is a delay between the distribution and return of questionnaires"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g26",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q26",
+              "number": 26,
+              "type": "multi_choice",
+              "prompt": "Second answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The data is sometimes invalid."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Too few people may respond."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It is less likely to reveal the unexpected."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It can only be used with literate populations."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "There is a delay between the distribution and return of questionnaires."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The data is sometimes invalid"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Too few people may respond"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It is less likely to reveal the unexpected"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It can only be used with literate populations"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "There is a delay between the distribution and return of questionnaires"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              25,
+              26
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g27",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q27",
+              "number": 27,
+              "type": "completion",
+              "prompt": "Sample Surveys inSocial Science Research' Bell",
+              "acceptedAnswers": [
+                "Media"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g28",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q28",
+              "number": 28,
+              "type": "completion",
+              "prompt": "Complete the table below.",
+              "acceptedAnswers": [
+                "Survey",
+                "Research"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g29",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q29",
+              "number": 29,
+              "type": "completion",
+              "prompt": "Wilson Interviews that work' OxfordUniversityPress",
+              "acceptedAnswers": [
+                "London University",
+                "London University Press"
+              ],
+              "gapText": "____"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g30",
+          "instruction": "Complete the table below.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q30",
+              "number": 30,
+              "type": "completion",
+              "prompt": "Wilson 'Interviews that work' — YEAR OF PUBLICATION: ___",
+              "acceptedAnswers": [
+                "1988"
+              ],
+              "gapText": "Wilson 'Interviews that work' — YEAR OF PUBLICATION: 30 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ]
+        }
+      ],
+      "audioStartMs": 785152,
+      "audioDurationMs": 302271
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c04-t2.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Question 31—40\n\n## Questions 31and 32\n\nChoose the correct letter, A, B or C.\n\n31 Corporate crime is generally committed\n\nA against individuals.\n\nB by groups.\n\nC for companies.\n\n32 Corporate crime does NOT include\n\nA employees stealing from their company.\n\nB unintentional crime by employees.\n\nC fraud resulting from company policy.\n\n## Questions 33—38\n\nComplete the notes below.\n\n## Write NO MORE THAN THREE WORDS for each answer.\n\nCorporate crime has been ignored by:\n\na) the 33 e.g. films.\n\nb) 34\n\nReasons:\n\na) often more complex and needing 35\n\nb) less human interest than conventional crime.\n\nc) victims often 36\n\nEffects:\n\na) Economic costs\n\n·may appear unimportant to 37\n\n·can make large 38 for company\n\n·cause more losses to individuals than conventional crimes\n\nb) Social costs\n\n·make people lose trust in business world\n\n·affect poorer people most\n\n## Questions 39 and 40\n\n## Choose TWO letters A —F.\n\nThe oil tanker explosion was an example of a crime which\n\nA was no-one’s fault.\n\nB was not a corporate crime.\n\nC was intentional.\n\nD was caused by indifference.\n\nE had tragic results.\n\nF made a large profit for the company."
+      },
+      "questionGroups": [
+        {
+          "id": "c4t2l-g31",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "Corporate crime is generally committed A against individuals. B by groups. C for companies",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "against individuals"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "by groups"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "for companies"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "against individuals"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "by groups"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "for companies"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g32",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "Corporate crime does NOT include A employees stealing from their company. B unintentional crime by employees. C fraud resulting from company policy",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "against individuals"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "by groups"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "for companies"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "against individuals"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "by groups"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "for companies"
+            }
+          ]
+        },
+        {
+          "id": "c4t2l-g33",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Corporate crime has been ignored by: a) the ___ e.g. films.",
+              "acceptedAnswers": [
+                "mass media",
+                "media"
+              ],
+              "gapText": "Corporate crime has been ignored by: a) the 33 ___ e.g. films.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              38
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g34",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Corporate crime has been ignored by: b) ___",
+              "acceptedAnswers": [
+                "academic circles",
+                "academics",
+                "researchers"
+              ],
+              "gapText": "Corporate crime has been ignored by: b) 34 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              38
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g35",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Reasons: a) often more complex and needing ___",
+              "acceptedAnswers": [
+                "specialist knowledge",
+                "specialized knowledge"
+              ],
+              "gapText": "Reasons: a) often more complex and needing 35 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              38
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g36",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Reasons: c) victims often ___",
+              "acceptedAnswers": [
+                "unaware"
+              ],
+              "gapText": "Reasons: c) victims often 36 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              38
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g37",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Effects: Economic costs — may appear unimportant to ___",
+              "acceptedAnswers": [
+                "individual customers",
+                "individual consumers",
+                "individuals"
+              ],
+              "gapText": "Effects: Economic costs — may appear unimportant to 37 ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              38
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g38",
+          "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Effects: Economic costs — can make large ___ for company",
+              "acceptedAnswers": [
+                "illegal profit",
+                "illegal profits"
+              ],
+              "gapText": "Effects: Economic costs — can make large 38 ___ for company",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              38
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g39",
+          "instruction": "Choose TWO letters, A-F.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q39",
+              "number": 39,
+              "type": "multi_choice",
+              "prompt": "First answer: The oil tanker explosion was an example of a crime which",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "was no-one's fault."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was not a corporate crime."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "was intentional."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "was caused by indifference."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "had tragic results."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "made a large profit for the company."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "against individuals"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "by groups"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "for companies"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              39,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c4t2l-g40",
+          "instruction": "Choose TWO letters, A-F.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c4t2l-q40",
+              "number": 40,
+              "type": "multi_choice",
+              "prompt": "Second answer: The oil tanker explosion was an example of a crime which",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "was no-one's fault."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "was not a corporate crime."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "was intentional."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "was caused by indifference."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "had tragic results."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "made a large profit for the company."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T02:49:21+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "against individuals"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "by groups"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "for companies"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              39,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1087423,
+      "audioDurationMs": 490065
+    }
+  ]
+}

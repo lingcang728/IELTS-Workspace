@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-20-test-1-writing",
+  "title": "Cambridge IELTS 20 Academic Test 1 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-cfb64fd80090",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 20",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题20-官方扫描.pdf",
+        "sha256": "d22841253438f6e92c52c4de6e639b25db532457a06e2954b05070a7eb4645f1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C20\\剑桥雅思真题20-官方扫描\\auto\\剑桥雅思真题20-官方扫描.md",
+        "sha256": "cfb64fd8009021e8658f57d19f13864c2a78efab8f97bec384823eea86b8501e",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe first table below shows changes in the total population of New York City from 1800 to 2000. The second and third tables show changes in the Queens, Staten Island) over the same period.\n\nSummarise the information by selecting and reporting the main features, and make comparisons whe\n\nWrite at least 150 words.\n\nNew York City (all five districts)\n\nYear\n\nPopulation\n\n1800\n\n79,216\n\n1900\n\n3,437,202\n\n2000\n\n8,009,185\n\nManhattan\n\nYear\n\nPopulation\n\nAs percentage (%) of total population\n\n1800\n\n60,515\n\n76%\n\n1900\n\n1,850,093\n\n54%\n\n2000\n\n1,538,096\n\n19%\n\nOther districts (Brooklyn, Bronx, Queens, Staten Island)\n\nYear\n\nPopulation\n\nAs percentage (%) of total population\n\n1800\n\n18,701\n\n24%\n\n1900\n\n1,587,109\n\n46%\n\n2000\n\n6,471,089\n\n[]"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c20-t1-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nAccss to cean water s basic human right. Thefore every home should a water supply that is provided free of\n\nDo you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.\n\n## PART 1\n\nfamiliar topics\n\nEXAMPLE\n\n## Walking\n\nHow muc walking do you do in your daily life?\n\nDid you walk more when you were at school t?\n\nWhat places are there to go for a walk chorl than now?\n\nWould you ver like to go on a waking holiday ou live?\n\n## PART 2\n\nDescribe a play or a film you have seen that you would like to see again\n\nwhat play or film you'd like to go to see again who you would go with \nwhat other people have said about this play or film\n\nand explain why you would like to see this play or film again with friends.\n\nYou will have to talk about the topic for one to two minutes. You have one minute to think about what you are going to say. You can make some notes to help you if you wish.\n\n## PART 3\n\nDiscussion topics:\n\nTheatres today\n\nExample questions:\n\nWhat are the most popular kinds of plays or shows at theatres in your country? How easy is it to get tickets to t\n\nDo you think theatres need to do more to attract younger audiences?\n\n## Actors\n\nExample questions: What do you think attracts people to working as an actor? if the\n\n## Test 2"
+      },
+      "questionGroups": []
+    }
+  ]
+}

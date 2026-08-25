@@ -1,0 +1,2055 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-11-test-1-listening",
+  "title": "Cambridge IELTS 11 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0019-08457300",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 11",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题11.pdf",
+        "sha256": "6dfc84371b9d08e31b450ede3a20e64f13f505b1e52261894681a31d733b3fe3"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C11\\剑桥雅思真题11\\auto\\剑桥雅思真题11.md",
+        "sha256": "8c76b257af01336b0c595c91c5f1d093513832fc8770fa0695824b87faf21ad2",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-11-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\n## HIRING A PUBLIC ROOM\n\n## Example\n\nthe Main Hall – seats 200\n\n## Room and cost\n\nthe 1 .... Room – seats 100\n\nCost of Main Hall for Saturday evening: 2 £ + £250 deposit (3.. ... payment is required)\n\nCost includes use of tables and chairs and also 4.\n\n• Additional charge for use of the kitchen: £25\n\n## Before the event\n\n•Will need a 5 ...licence\n\nNeed to contact caretaker (Mr Evans) in advance to arrange 6.\n\n## During the event\n\n• The building is no smoking\n\nThe band should use the 7oor at the back\n\n•Don't touch the system that controls the volume\n\n•For microphones, contact the caretaker\n\n## After the event\n\nNed to know the 8 . for the cleaning cupboard\n\nThe 9 must be washed and rubbish placed in black bags\n\n•All 10 … must be taken down\n\n• Chairs and tables must be piled up"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t1l-g1",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "The Charlton Room – seats 100",
+              "acceptedAnswers": [
+                "Charlton"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g2",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "Cost of Main Hall for Saturday evening: £___ + £250 deposit",
+              "acceptedAnswers": [
+                "115",
+                "one hundred and fifteen",
+                "a hundred and fifteen"
+              ],
+              "gapText": "Cost of Main Hall for Saturday evening: £___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g3",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "The £250 deposit requires ___ payment",
+              "acceptedAnswers": [
+                "cash"
+              ],
+              "gapText": "£250 deposit (___ payment is required)",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g4",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "Cost includes use of tables and chairs and also ___",
+              "acceptedAnswers": [
+                "parking"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g5",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Will need a ___ licence",
+              "acceptedAnswers": [
+                "music"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g6",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Contact caretaker Mr Evans in advance to arrange ___",
+              "acceptedAnswers": [
+                "entry"
+              ],
+              "options": [],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g7",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The band should use the ___ door at the back",
+              "acceptedAnswers": [
+                "stage"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g8",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "Need to know the ___ for the cleaning cupboard",
+              "acceptedAnswers": [
+                "code"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g9",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "The ___ must be washed and rubbish placed in black bags",
+              "acceptedAnswers": [
+                "floor",
+                "floors"
+              ],
+              "options": [],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g10",
+          "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "All ___ must be taken down",
+              "acceptedAnswers": [
+                "decoration",
+                "decorations"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:11+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 577881
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\nQuestions11-14\n\nComplete the notes below.\n\nWrite ONE WORD for each answer.\n\n## Fiddy Working Heritage Farm\n\nAdvice about visiting the farm\n\nVisitors should\n\ntake care not to harm any11\n\nnot touch any 12\n\n• wear 13..\n\nnot bring 14.nto the farm, with certain exceptions\n\nLabel the map below.\n\nWrite the correct letter A-I, next to Questions 15-20.\n\n[]"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t1l-g11",
+          "instruction": "Complete the notes below. Write ONE WORD for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q11",
+              "number": 11,
+              "type": "completion",
+              "prompt": "Visitors should take care not to harm any ___",
+              "acceptedAnswers": [
+                "animal",
+                "animals"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g12",
+          "instruction": "Complete the notes below. Write ONE WORD for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q12",
+              "number": 12,
+              "type": "completion",
+              "prompt": "Visitors should not touch any ___",
+              "acceptedAnswers": [
+                "tool",
+                "tools"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g13",
+          "instruction": "Complete the notes below. Write ONE WORD for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q13",
+              "number": 13,
+              "type": "completion",
+              "prompt": "Visitors should wear ___",
+              "acceptedAnswers": [
+                "shoes"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g14",
+          "instruction": "Complete the notes below. Write ONE WORD for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q14",
+              "number": 14,
+              "type": "completion",
+              "prompt": "Visitors should not bring ___ into the farm, with certain exceptions",
+              "acceptedAnswers": [
+                "dog",
+                "dogs"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              11,
+              14
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g15",
+          "instruction": "Label the map below. Write the correct letter A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q15",
+              "number": 15,
+              "type": "labelling",
+              "prompt": "Fiddy Working Heritage Farm map feature: Scarecrow",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.174844+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t1-listening-p0010.jpg"
+        },
+        {
+          "id": "c11t1l-g16",
+          "instruction": "Label the map below. Write the correct letter A-I, next to Questions 15-20.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q16",
+              "number": 16,
+              "type": "labelling",
+              "prompt": "Fiddy Working Heritage Farm map feature: Maze",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.174844+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t1-listening-p0010.jpg"
+        },
+        {
+          "id": "c11t1l-g17",
+          "instruction": "Label the map below. Write the correct letter A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q17",
+              "number": 17,
+              "type": "labelling",
+              "prompt": "Fiddy Working Heritage Farm map feature: Café",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.174844+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t1-listening-p0010.jpg"
+        },
+        {
+          "id": "c11t1l-g18",
+          "instruction": "Label the map below. Write the correct letter A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q18",
+              "number": 18,
+              "type": "labelling",
+              "prompt": "Fiddy Working Heritage Farm map feature: Black Barn",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.174844+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t1-listening-p0010.jpg"
+        },
+        {
+          "id": "c11t1l-g19",
+          "instruction": "Label the map below. Write the correct letter A-I, next to Questions 15-20.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q19",
+              "number": 19,
+              "type": "labelling",
+              "prompt": "Fiddy Working Heritage Farm map feature: Covered picnic area",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.174844+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t1-listening-p0010.jpg"
+        },
+        {
+          "id": "c11t1l-g20",
+          "instruction": "Label the map below. Write the correct letter A-I, next to Questions 15-20.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q20",
+              "number": 20,
+              "type": "labelling",
+              "prompt": "Fiddy Working Heritage Farm map feature: Fiddy House",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:03+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T16:13:51.174844+00:00"
+          },
+          "imageAsset": "assets/cambridge/c11-t1-listening-p0010.jpg"
+        }
+      ],
+      "audioStartMs": 577881,
+      "audioDurationMs": 399647
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\nChoose the correct letter, A, B or C.\n\n## Study on Gender in Physics\n\n21 The students in Akira Miyake's study were all majoring in \nA physics. \nB psychology or physics. \nC science, technology, engineering or mathematics. \n22 The aim of Miyake's study was to investigate \nA what kind of women choose to study physics. \nB a way of improving women'sperformance in physics. \nC whether fewer women than men study physics at college. \n23 The female physics students were wrong to believe that \nA the teachers marked them in an unfair way. \nB the male students expected them to do badly. \nC their test results were lower than the male students’. \n24 Miyake's team asked the students to write about \nA what they enjoyed about studying physics. \nB the successful experiences of other people. \nC something that was important to them personally. \n25 What was the aim of the writing exercise done by the subjects? \nA to reduce stress \nB to strengthen verbal ability \nC to encourage logical thinking \n26 What surprised the researchers about the study? \nA how few students managed to get A grades \nB the positive impact it hadon physics results for women \nC the difference between male and female performance \n27 Greg and Lisa thinkMiyake's results could have been affected by \nA the length of the writing task. \nB the number of students who took part. \nC the information the students were given.\n\n## 28Greg and Lisa decide that in their own project, they will compare the effects of\n\nA two different writing tasks.\n\nB a writing task with an oral task.\n\nC two different oral tasks.\n\n## 29 The main finding of Smolinsky's research was that class teamwork activities\n\nA were most effective when done by all-women groups.\n\nB had no effect on the performance of men or women.\n\nC improved the results of men more than of women.\n\n## 30What will Lisa and Greg do next?\n\nA talk to a professor\n\nB observe a science class\n\nClook at the science timetable\n\n## SECTION 4Questions 31-40\n\nComplete the notes below\n\nWrite ONE WORD ONLY for each answer\n\nOcean Biodiversity \nBiodiversity hotspots \nareas containing many different species \nimportant for locating targets for 31 \nat first only identified on land \nBoris Worm, 2005 \nidentified hotspots forlargeocean predators, e.g. sharks \nfound that ocean hotspots: \nwere not always rich in 32 \nhad higher temperatures at the33 \nhad sufficient 34 ...in the water \nLisa Ballance, 2007 \nlooked for hotspots for marine 35 \nfound these were all locatedwhere ocean currents meet \nCensus of Marine Life \nfound new ocean species living: \nunder the 36 \nnear volcanoes on the ocean floor\n\n## Global Marine Species Assessment\n\n• want to list endangeredocean species, considering:\n\n-population size\n\n-geographical distribution\n\n\\- rate of 37..\n\nAim: to assess 20,000 species and make a distribution38 for each one\n\n## Recommendations to retain ocean biodiversity\n\n• increase the number of ocean reserves\n\nestablish 39 …… corridors (e.g. for turtles)\n\nreduce fishing quotas\n\ncatch fish only for the purpose of 40"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t1l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q21",
+              "number": 21,
+              "type": "matching",
+              "prompt": "The students in Akira Miyake's study were all majoring in A physics. B psychology or physics. C science, technology, engineering or mathematics",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "physics."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "psychology or physics."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "science, technology, engineering or mathematics."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.741930+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t1l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "The aim of Miyake's study was to investigate A what kind of women choose to study physics. B a way of improving women'sperformance in physics. C whether fewer women than men study physics at college",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "what kind of women choose to study physics."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a way of improving women's performance in physics."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "whether fewer women than men study physics at college."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.741930+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t1l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q23",
+              "number": 23,
+              "type": "matching",
+              "prompt": "The female physics students were wrong to believe that A the teachers marked them in an unfair way. B the male students expected them to do badly. C their test results were lower than the male students’",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the teachers marked them in an unfair way."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the male students expected them to do badly."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "their test results were lower than the male students'."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.741930+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t1l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "Miyake's team asked the students to write about A what they enjoyed about studying physics. B the successful experiences of other people. C something that was important to them personally",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "whether fewer women than men study physics at college"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the teachers marked them in an unfair way"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the male students expected them to do badly"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "whether fewer women than men study physics at college"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the teachers marked them in an unfair way"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the male students expected them to do badly"
+            }
+          ]
+        },
+        {
+          "id": "c11t1l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "What was the aim of the writing exercise done by the subjects? A to reduce stress B to strengthen verbal ability C to encourage logical thinking",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "their test results were lower than the male students’"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "what they enjoyed about studying physics"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the successful experiences of other people"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "C",
+              "label": "C",
+              "text": "their test results were lower than the male students’"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "what they enjoyed about studying physics"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the successful experiences of other people"
+            }
+          ]
+        },
+        {
+          "id": "c11t1l-g26",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "What surprised the researchers about the study? A how few students managed to get A grades B the positive impact it hadon physics results for women C the difference between male and female performance",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "what they enjoyed about studying physics"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the successful experiences of other people"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "something that was important to them personally"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "what they enjoyed about studying physics"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the successful experiences of other people"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "something that was important to them personally"
+            }
+          ]
+        },
+        {
+          "id": "c11t1l-g27",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Greg and Lisa think Miyake's results could have been affected by",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the length of the writing task."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "the number of students who took part."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "the information the students were given."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c11t1l-g28",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Greg and Lisa decide that in their own project, they will compare the effects of",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "two different writing tasks."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "a writing task with an oral task."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "two different oral tasks."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g29",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q29",
+              "number": 29,
+              "type": "matching",
+              "prompt": "The main finding of Smolinsky's research was that class teamwork activities",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.741930+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "were most effective when done by all-women groups."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "had no effect on the performance of men or women."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "improved the results of men more than of women."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g30",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q30",
+              "number": 30,
+              "type": "matching",
+              "prompt": "What will Lisa and Greg do next?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T12:42:24.741930+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "talk to a professor"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "observe a science class"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "look at the science timetable"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 977528,
+      "audioDurationMs": 492199
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c11-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "## SECTION 1 Questions 1-10\n\nComplete the notes below.\n\n## Write ONE WORD AND/OR A NUMBER for each answer.\n\n## HIRING A PUBLIC ROOM\n\n## Example\n\nthe Main Hall – seats 200\n\n## Room and cost\n\nthe 1 .... Room – seats 100\n\nCost of Main Hall for Saturday evening: 2 £ + £250 deposit (3.. ... payment is required)\n\nCost includes use of tables and chairs and also 4.\n\n• Additional charge for use of the kitchen: £25\n\n## Before the event\n\n•Will need a 5 ...licence\n\nNeed to contact caretaker (Mr Evans) in advance to arrange 6.\n\n## During the event\n\n• The building is no smoking\n\nThe band should use the 7oor at the back\n\n•Don't touch the system that controls the volume\n\n•For microphones, contact the caretaker\n\n## After the event\n\nNed to know the 8 . for the cleaning cupboard\n\nThe 9 must be washed and rubbish placed in black bags\n\n•All 10 … must be taken down\n\n• Chairs and tables must be piled up\n\n## SECTION 2 Questions 11–20\n\nQuestions11-14\n\nComplete the notes below.\n\nWrite ONE WORD for each answer.\n\n## Fiddy Working Heritage Farm\n\nAdvice about visiting the farm\n\nVisitors should\n\ntake care not to harm any11\n\nnot touch any 12\n\n• wear 13..\n\nnot bring 14.nto the farm, with certain exceptions\n\nLabel the map below.\n\nWrite the correct letter A-I, next to Questions 15-20.\n\n[]\n\n## SECTION 3 Questions 21–30\n\nChoose the correct letter, A, B or C.\n\n## Study on Gender in Physics\n\n21 The students in Akira Miyake's study were all majoring in \nA physics. \nB psychology or physics. \nC science, technology, engineering or mathematics. \n22 The aim of Miyake's study was to investigate \nA what kind of women choose to study physics. \nB a way of improving women'sperformance in physics. \nC whether fewer women than men study physics at college. \n23 The female physics students were wrong to believe that \nA the teachers marked them in an unfair way. \nB the male students expected them to do badly. \nC their test results were lower than the male students’. \n24 Miyake's team asked the students to write about \nA what they enjoyed about studying physics. \nB the successful experiences of other people. \nC something that was important to them personally. \n25 What was the aim of the writing exercise done by the subjects? \nA to reduce stress \nB to strengthen verbal ability \nC to encourage logical thinking \n26 What surprised the researchers about the study? \nA how few students managed to get A grades \nB the positive impact it hadon physics results for women \nC the difference between male and female performance \n27 Greg and Lisa thinkMiyake's results could have been affected by \nA the length of the writing task. \nB the number of students who took part. \nC the information the students were given.\n\n## 28Greg and Lisa decide that in their own project, they will compare the effects of\n\nA two different writing tasks.\n\nB a writing task with an oral task.\n\nC two different oral tasks.\n\n## 29 The main finding of Smolinsky's research was that class teamwork activities\n\nA were most effective when done by all-women groups.\n\nB had no effect on the performance of men or women.\n\nC improved the results of men more than of women.\n\n## 30What will Lisa and Greg do next?\n\nA talk to a professor\n\nB observe a science class\n\nClook at the science timetable\n\n## SECTION 4Questions 31-40\n\nComplete the notes below\n\nWrite ONE WORD ONLY for each answer\n\nOcean Biodiversity \nBiodiversity hotspots \nareas containing many different species \nimportant for locating targets for 31 \nat first only identified on land \nBoris Worm, 2005 \nidentified hotspots forlargeocean predators, e.g. sharks \nfound that ocean hotspots: \nwere not always rich in 32 \nhad higher temperatures at the33 \nhad sufficient 34 ...in the water \nLisa Ballance, 2007 \nlooked for hotspots for marine 35 \nfound these were all locatedwhere ocean currents meet \nCensus of Marine Life \nfound new ocean species living: \nunder the 36 \nnear volcanoes on the ocean floor\n\n## Global Marine Species Assessment\n\n• want to list endangeredocean species, considering:\n\n-population size\n\n-geographical distribution\n\n\\- rate of 37..\n\nAim: to assess 20,000 species and make a distribution38 for each one\n\n## Recommendations to retain ocean biodiversity\n\n• increase the number of ocean reserves\n\nestablish 39 …… corridors (e.g. for turtles)\n\nreduce fishing quotas\n\ncatch fish only for the purpose of 40"
+      },
+      "questionGroups": [
+        {
+          "id": "c11t1l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Biodiversity hotspots are important for locating targets for ___",
+              "acceptedAnswers": [
+                "conservation"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "Ocean hotspots were not always rich in ___",
+              "acceptedAnswers": [
+                "food",
+                "foods"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Ocean hotspots had higher temperatures at the ___",
+              "acceptedAnswers": [
+                "surface"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "Ocean hotspots had sufficient ___ in the water",
+              "acceptedAnswers": [
+                "oxygen",
+                "O2"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Lisa Ballance looked for hotspots for marine ___",
+              "acceptedAnswers": [
+                "mammals"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Census of Marine Life found new ocean species living under the ___",
+              "acceptedAnswers": [
+                "ice"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Global Marine Species Assessment considers the rate of ___",
+              "acceptedAnswers": [
+                "decline",
+                "declining",
+                "decrease"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "Aim to assess 20,000 species and make a distribution ___ for each one",
+              "acceptedAnswers": [
+                "map"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Establish ___ corridors, for example for turtles",
+              "acceptedAnswers": [
+                "migration"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c11t1l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c11t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "Catch fish only for the purpose of ___",
+              "acceptedAnswers": [
+                "consumption"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:44:12+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1469727,
+      "audioDurationMs": 510250
+    }
+  ]
+}

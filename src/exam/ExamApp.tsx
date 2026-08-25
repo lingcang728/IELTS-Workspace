@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { assetSrc, saveSession, scoreExam, vocabAdd } from "../lib/api";
+import { audioPlaybackSource, localMediaSrc, type PlaybackSource } from "../lib/audio";
 import { BrandMark, Icon, WindowControls } from "../components/Ui";
 import { applyMarks, makeHighlight, rangeToUtf16, recoverHighlight } from "../lib/highlight";
 import { toNfc } from "../lib/unicode";
@@ -42,8 +43,12 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
   const [navOpen, setNavOpen] = useState(true);
   const [imgSrc, setImgSrc] = useState<string | null>(null);
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  const [playback, setPlayback] = useState<PlaybackSource | null>(null);
+  const [trackIndex, setTrackIndex] = useState(0);
   const passageRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const nextAudioRef = useRef<HTMLAudioElement>(null);
+  const restoredRef = useRef(false);
   const optionsButtonRef = useRef<HTMLButtonElement>(null);
   const optionsPanelRef = useRef<HTMLDivElement>(null);
   const persistTimer = useRef<number | null>(null);
@@ -75,8 +80,11 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
   const practice = session.mode === "practice";
   const mediaClockPending = !practice && exam.module === "listening" && exam.policy.endCondition.type === "media_driven" && !session.audio?.ended;
   const mediaCheckMs = exam.policy.endCondition.type === "media_driven" ? exam.policy.endCondition.checkMsAfterEnd : 0;
+  const laterTracksMs = playback?.mode === "parts"
+    ? playback.tracks.slice(trackIndex + 1).reduce((sum, track) => sum + track.durationMs, 0)
+    : 0;
   const visibleRemainingMs = mediaClockPending && audioDur > 0
-    ? Math.max(0, (audioDur - audioTime) * 1000 + mediaCheckMs)
+    ? Math.max(0, (audioDur - audioTime) * 1000 + laterTracksMs + mediaCheckMs)
     : session.remainingMs;
 
   useEffect(() => {
@@ -99,9 +107,37 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
 
   useEffect(() => {
     if (exam.module !== "listening") return;
-    const rel = exam.sections.find((s) => s.audioAsset)?.audioAsset;
-    if (rel) assetSrc(rel).then(setAudioSrc).catch(() => setAudioSrc(null));
+    let live = true;
+    restoredRef.current = false;
+    void audioPlaybackSource(exam.id)
+      .then((src) => {
+        if (!live) return;
+        setPlayback(src);
+        setTrackIndex(src.mode === "parts" ? Math.min(src.tracks.length - 1, sessionRef.current.audio?.partIndex ?? 0) : 0);
+      })
+      .catch(() => {
+        if (!live) return;
+        setPlayback(null);
+        const rel = exam.sections.find((s) => s.audioAsset)?.audioAsset;
+        if (rel) assetSrc(rel).then(setAudioSrc).catch(() => setAudioSrc(null));
+        else setAudioSrc(null);
+      });
+    return () => {
+      live = false;
+    };
   }, [exam]);
+
+  useEffect(() => {
+    if (!playback) return;
+    const track = playback.tracks[trackIndex];
+    if (!track) return;
+    setAudioSrc(localMediaSrc(track.path));
+    const next = playback.mode === "parts" ? playback.tracks[trackIndex + 1] : undefined;
+    if (nextAudioRef.current) {
+      nextAudioRef.current.src = next ? localMediaSrc(next.path) : "";
+      if (next) nextAudioRef.current.load();
+    }
+  }, [playback, trackIndex]);
 
   useEffect(() => {
     let cancelled = false;
@@ -576,6 +612,7 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
         )}
         <div className="pane">
           {exam.module === "listening" && (
+            <>
             <audio
               ref={audioRef}
               src={audioSrc ?? undefined}
@@ -585,27 +622,59 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
                 if (practice) setPausedLocal(true);
               }}
               onEnded={() => {
+                if (playback?.mode === "parts" && trackIndex + 1 < playback.tracks.length) {
+                  const next = trackIndex + 1;
+                  setTrackIndex(next);
+                  patch({
+                    audio: { positionMs: 0, partIndex: next, ended: false },
+                  }, false);
+                  restoredRef.current = true;
+                  window.setTimeout(() => { void audioRef.current?.play(); }, 30);
+                  return;
+                }
                 const check =
                   exam.policy.endCondition.type === "media_driven"
                     ? exam.policy.endCondition.checkMsAfterEnd
                     : 120000;
                 patch({
                   remainingMs: check,
-                  audio: { ...(session.audio ?? { positionMs: 0, partIndex: 0 }), ended: true, positionMs: (audioRef.current?.duration ?? 0) * 1000 },
+                  audio: { ...(session.audio ?? { positionMs: 0, partIndex: trackIndex }), ended: true, positionMs: (audioRef.current?.duration ?? 0) * 1000, partIndex: trackIndex },
                   events: [...session.events, { t: new Date().toISOString(), type: "audio_end" }],
                 });
               }}
-              onLoadedMetadata={(e) => setAudioDur(e.currentTarget.duration || 0)}
+              onLoadedMetadata={(e) => {
+                const el = e.currentTarget;
+                setAudioDur(el.duration || 0);
+                if (restoredRef.current) return;
+                const pos = (sessionRef.current.audio?.positionMs ?? 0) / 1000;
+                if (pos > 0.4 && pos < el.duration) {
+                  el.currentTime = pos;
+                }
+                restoredRef.current = true;
+              }}
               onTimeUpdate={(e) => {
                 const el = e.currentTarget;
+                const ms = el.currentTime * 1000;
                 setAudioTime(el.currentTime);
+                let partIndex = trackIndex;
+                if (playback?.mode === "fullTrack" && playback.partStartsMs.length) {
+                  for (let i = 0; i < playback.partStartsMs.length; i++) {
+                    if (ms >= playback.partStartsMs[i]) partIndex = i;
+                  }
+                }
+                const prev = sessionRef.current.audio;
+                if (!prev || Math.abs((prev.positionMs ?? 0) - ms) > 800 || prev.partIndex !== partIndex) {
+                  patch({ audio: { positionMs: ms, partIndex, ended: false } }, false);
+                }
                 if (policy.audioSeekAllowed) return;
-                if (session.audio && el.currentTime + 0.4 < (session.audio.positionMs ?? 0) / 1000) {
-                  el.currentTime = (session.audio.positionMs ?? 0) / 1000;
+                if (prev && el.currentTime + 0.4 < (prev.positionMs ?? 0) / 1000) {
+                  el.currentTime = (prev.positionMs ?? 0) / 1000;
                 }
               }}
               controls={false}
             />
+            {playback?.mode === "parts" && <audio ref={nextAudioRef} preload="auto" hidden />}
+            </>
           )}
           {exam.module === "writing" ? (
             <WritingPane exam={exam} session={session} patch={patch} sectionId={currentSection?.id} />

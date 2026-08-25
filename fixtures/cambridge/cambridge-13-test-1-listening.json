@@ -1,0 +1,2236 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-13-test-1-listening",
+  "title": "Cambridge IELTS 13 Academic Test 1 Listening",
+  "module": "listening",
+  "contentRevision": "repair-0006-fcc4ad42",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 13",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题13.pdf",
+        "sha256": "48bd75f7020065184a228ff32775802b887c8da18f77bccdb44c3e569e06a3bf"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C13\\剑桥雅思真题13\\auto\\剑桥雅思真题13.md",
+        "sha256": "5504759cfa0afc4b665c6af7e59bd8d4d70aa6e7f1785dd19bd71e7c4185fdb0",
+        "note": "MinerU 3.4.5 Listening"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=20, reading=0; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Progress",
+        "url": "https://ieltsprogress.com/cambridge-13-listening-test-1-2-3-4-answers/",
+        "note": "Independent answer-key cross-check; MinerU remains the content source."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "media_driven",
+      "checkMsAfterEnd": 120000
+    },
+    "timeWarningsMs": []
+  },
+  "sections": [
+    {
+      "id": "part1",
+      "title": "Section 1",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 1-10\n\nComplete the table below.\n\nWrite ONE WORD AND/OR A NUMBER for each answer.\n\n## COOKERY CLASSES\n\nCookery Class\n\nFocus\n\nOther Information\n\nExampleThe Food Studio\n\nhow to 1and cook with seasonalproducts\n\nsmall classesalso offers 2classesclients who return geta 3... discount\n\nBond's CookerySchool\n\nfood thatis 4 ...\n\nincludes recipes to strengthenyour 5 ..they have afree 6... everyThursday\n\nThe7...Centre\n\nmainly 8food\n\nlocated nearthe 9.a special course in skills witha 10. ...ssometimes available"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t1l-g1",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q1",
+              "number": 1,
+              "type": "completion",
+              "prompt": "The Food Studio: how to ___ and cook with seasonal products",
+              "acceptedAnswers": [
+                "choose"
+              ],
+              "gapText": "The Food Studio: how to ___ and cook with seasonal products",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g2",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q2",
+              "number": 2,
+              "type": "completion",
+              "prompt": "The Food Studio also offers ___ classes",
+              "acceptedAnswers": [
+                "private"
+              ],
+              "gapText": "The Food Studio also offers ___ classes",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g3",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q3",
+              "number": 3,
+              "type": "completion",
+              "prompt": "Clients who return get a ___ discount",
+              "acceptedAnswers": [
+                "20",
+                "twenty percent"
+              ],
+              "gapText": "Clients who return get a ___ discount",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g4",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q4",
+              "number": 4,
+              "type": "completion",
+              "prompt": "includes recipes to strengthenyour",
+              "acceptedAnswers": [
+                "healthy"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g5",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q5",
+              "number": 5,
+              "type": "completion",
+              "prompt": "Bond's Cookery School includes recipes to strengthen your ___",
+              "acceptedAnswers": [
+                "bones"
+              ],
+              "gapText": "Bond's Cookery School includes recipes to strengthen your ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g6",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q6",
+              "number": 6,
+              "type": "completion",
+              "prompt": "Bond's Cookery School has a free ___ every Thursday",
+              "acceptedAnswers": [
+                "lecture"
+              ],
+              "gapText": "Bond's Cookery School has a free ___ every Thursday",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g7",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q7",
+              "number": 7,
+              "type": "completion",
+              "prompt": "The",
+              "acceptedAnswers": [
+                "Arretsa"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g8",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q8",
+              "number": 8,
+              "type": "completion",
+              "prompt": "The Arretta Centre mainly ___ food",
+              "acceptedAnswers": [
+                "vegetarian"
+              ],
+              "gapText": "The Arretta Centre mainly ___ food",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g9",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q9",
+              "number": 9,
+              "type": "completion",
+              "prompt": "a special course in skills witha",
+              "acceptedAnswers": [
+                "market"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g10",
+          "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q10",
+              "number": 10,
+              "type": "completion",
+              "prompt": "A special course in skills with a ___ is sometimes available",
+              "acceptedAnswers": [
+                "knife"
+              ],
+              "gapText": "A special course in skills with a ___ is sometimes available",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              10
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 0,
+      "audioDurationMs": 448294
+    },
+    {
+      "id": "part2",
+      "title": "Section 2",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 11–20\n\nQuestions 11-13\n\nChoose the correct letter, A, B or C.\n\n## Traffic Changes in Granford\n\n11 Why are changes needed to traffic systems in Granford?\n\nA The number of traffic accidents has risen.\n\nB The amount of traffic on the roads has increased.\n\nC The types of vehicles on the roads have changed.\n\n12 In a survey, local residents particularly complained about\n\nA dangerous driving by parents.\n\nB pollution from trucks and lorries.\n\nC inconvenience from parked cars.\n\n13 According to the speaker, one problem with the new regulations will be\n\nA raising money to pay for them.\n\nB finding a way to make people follow them.\n\nC getting the support of the police.\n\nQuestions 14–20\n\nLabel the map below.\n\nWrite the correct letter, A-I, next to Questions 14–20.\n\nProposed traffic changes in Granford \n[]\n\n14 New traffic lights\n\n15 Pedestrian crossing\n\n16 Parking allowed\n\n17 New ‘No Parking'sign\n\n18 New disabled parking spaces\n\n19 Widened pavement\n\n20 Lorry loading/unloading restrictions"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t1l-g11",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q11",
+              "number": 11,
+              "type": "single_choice",
+              "prompt": "Why are changes needed to traffic systems in Granford? A The number of traffic accidents has risen. B The amount of traffic on the roads has increased. C The types of vehicles on the roads have changed",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The number of traffic accidents has risen"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The amount of traffic on the roads has increased"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The types of vehicles on the roads have changed"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The number of traffic accidents has risen"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The amount of traffic on the roads has increased"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The types of vehicles on the roads have changed"
+            }
+          ]
+        },
+        {
+          "id": "c13t1l-g12",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q12",
+              "number": 12,
+              "type": "single_choice",
+              "prompt": "In a survey, local residents particularly complained about A dangerous driving by parents. B pollution from trucks and lorries. C inconvenience from parked cars",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The number of traffic accidents has risen"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The amount of traffic on the roads has increased"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The types of vehicles on the roads have changed"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The number of traffic accidents has risen"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The amount of traffic on the roads has increased"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The types of vehicles on the roads have changed"
+            }
+          ]
+        },
+        {
+          "id": "c13t1l-g13",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "According to the speaker, one problem with the new regulations will be A raising money to pay for them. B finding a way to make people follow them. C getting the support of the police",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "The amount of traffic on the roads has increased"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "The types of vehicles on the roads have changed"
+                },
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "dangerous driving by parents"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The amount of traffic on the roads has increased"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The types of vehicles on the roads have changed"
+            },
+            {
+              "id": "A",
+              "label": "A",
+              "text": "dangerous driving by parents"
+            }
+          ]
+        },
+        {
+          "id": "c13t1l-g14",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q14",
+              "number": 14,
+              "type": "labelling",
+              "prompt": "New traffic lights",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "raising money to pay for them"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "finding a way to make people follow them"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "getting the support of the police"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "raising money to pay for them"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "finding a way to make people follow them"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "getting the support of the police"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c13-t1-listening-p0012.jpg"
+        },
+        {
+          "id": "c13t1l-g15",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q15",
+              "number": 15,
+              "type": "labelling",
+              "prompt": "Pedestrian crossing",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "raising money to pay for them"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "finding a way to make people follow them"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "getting the support of the police"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "raising money to pay for them"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "finding a way to make people follow them"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "getting the support of the police"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c13-t1-listening-p0012.jpg"
+        },
+        {
+          "id": "c13t1l-g16",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q16",
+              "number": 16,
+              "type": "labelling",
+              "prompt": "Parking allowed",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "finding a way to make people follow them"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "getting the support of the police"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "finding a way to make people follow them"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "getting the support of the police"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c13-t1-listening-p0012.jpg"
+        },
+        {
+          "id": "c13t1l-g17",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q17",
+              "number": 17,
+              "type": "labelling",
+              "prompt": "New ‘No Parking'sign",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "options": [
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "finding a way to make people follow them"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "getting the support of the police"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "B",
+              "label": "B",
+              "text": "finding a way to make people follow them"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "getting the support of the police"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c13-t1-listening-p0012.jpg"
+        },
+        {
+          "id": "c13t1l-g18",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q18",
+              "number": 18,
+              "type": "labelling",
+              "prompt": "New disabled parking spaces",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "J"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "J"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c13-t1-listening-p0012.jpg"
+        },
+        {
+          "id": "c13t1l-g19",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q19",
+              "number": 19,
+              "type": "labelling",
+              "prompt": "Widened pavement",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "J"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "J"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c13-t1-listening-p0012.jpg"
+        },
+        {
+          "id": "c13t1l-g20",
+          "instruction": "Label the map below. Write the correct letter, A-I, next to Questions 14-20.",
+          "questionType": "labelling",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q20",
+              "number": 20,
+              "type": "labelling",
+              "prompt": "Lorry loading/unloading restrictions",
+              "acceptedAnswers": [
+                "I"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "F"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "G"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "H"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "I"
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "J"
+                }
+              ]
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "A"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "B"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "C"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "D"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "E"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "F"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "G"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "H"
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "I"
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "J"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              20
+            ],
+            "canonicalOf": null
+          },
+          "imageAsset": "assets/cambridge/c13-t1-listening-p0012.jpg"
+        }
+      ],
+      "audioStartMs": 448294,
+      "audioDurationMs": 405596
+    },
+    {
+      "id": "part3",
+      "title": "Section 3",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 21–30\n\n## Questions 21–25\n\n## Choose the correct letter, A, B or C.\n\n## 21 Why is Jack interested in investigating seed germination?\n\nA He may do a module on a related topic later on.\n\nB He wants to have a career in plant science.\n\nC He is thinking of choosing this topic for his dissertation.\n\n## 22 Jack and Emma agree the main advantage of their present experiment is that it can be\n\nA described very easily.\n\nB carried out inside the laboratory.\n\nC completed in the time available.\n\n## 23 What do they decide to check with their tutor?\n\nA whether their aim is appropriate\n\nB whether anyone else has chosen this topic\n\nC whether the assignment contributes to their final grade\n\n## 24 They agree that Graves' book on seed germination is disappointing because\n\nA it fails to cover recent advances in seed science.\n\nB the content is irrelevant for them.\n\nC its focus is very theoretical.\n\n## 25 What does Jack say about the article on seed germination by Lee Hall?\n\nA The diagrams of plant development are useful.\n\nB The analysis of seed germination statistics is thorough.\n\nC The findings on seed germination after fires are surprising.\n\nQuestions 26–30\n\nComplete the flow-chart below.\n\nChoose FIVE answers from the box and write the correct letter, A-H, next to Questions 26–30.\n\nA\n\ncontainer\n\nB\n\nsoil\n\nC\n\nweight\n\nD\n\ncondition\n\nE\n\nheight\n\nF\n\ncolour\n\nG\n\ntypes\n\nH\n\ndepths\n\n## Stages in the experiment\n\n[]"
+      },
+      "questionGroups": [
+        {
+          "id": "c13t1l-g21",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Why is Jack interested in investigating seed germination?",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He may do a module on a related topic later on"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He wants to have a career in plant science"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He is thinking of choosing this topic for his dissertation"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g22",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q22",
+              "number": 22,
+              "type": "single_choice",
+              "prompt": "Jack and Emma agree the main advantage of their present experiment is that it can be",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He may do a module on a related topic later on"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He wants to have a career in plant science"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He is thinking of choosing this topic for his dissertation"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g23",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q23",
+              "number": 23,
+              "type": "single_choice",
+              "prompt": "What do they decide to check with their tutor?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He may do a module on a related topic later on"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He wants to have a career in plant science"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He is thinking of choosing this topic for his dissertation"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g24",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q24",
+              "number": 24,
+              "type": "single_choice",
+              "prompt": "They agree that Graves' book on seed germination is disappointing because",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He may do a module on a related topic later on"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He wants to have a career in plant science"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He is thinking of choosing this topic for his dissertation"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g25",
+          "instruction": "Choose the correct letter, A, B or C.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q25",
+              "number": 25,
+              "type": "single_choice",
+              "prompt": "What does Jack say about the article on seed germination by Lee Hall?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "He may do a module on a related topic later on"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "He wants to have a career in plant science"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "He is thinking of choosing this topic for his dissertation"
+                }
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              21,
+              25
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g26",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-H, next to Questions 26-30.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q26",
+              "number": 26,
+              "type": "single_choice",
+              "prompt": "Complete the flow-chart below.",
+              "acceptedAnswers": [
+                "G"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "container"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "soil"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "weight"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "condition"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "height"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "colour"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "types"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "depths"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:40:57.396687+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g27",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-H, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "Measure and record the ___ and size of each one",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "container"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "soil"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "weight"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "condition"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "height"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "colour"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "types"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "depths"
+                }
+              ],
+              "gapText": "Measure and record the ___ and size of each one",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:02+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g28",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-H, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "Decide on the ___ to be used",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "container"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "soil"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "weight"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "condition"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "height"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "colour"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "types"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "depths"
+                }
+              ],
+              "gapText": "Decide on the ___ to be used",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:02+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g29",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-H, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "Use a different ___ for each seed and label it",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "container"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "soil"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "weight"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "condition"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "height"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "colour"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "types"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "depths"
+                }
+              ],
+              "gapText": "Use a different ___ for each seed and label it",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:02+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g30",
+          "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-H, next to Questions 26-30.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "After about 3 weeks, record the plant's ___",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "container"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "soil"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "weight"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "condition"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "height"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "colour"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "types"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "depths"
+                }
+              ],
+              "gapText": "After about 3 weeks, record the plant's ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:45:02+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "He may do a module on a related topic later on"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He wants to have a career in plant science"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He is thinking of choosing this topic for his dissertation"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              26,
+              30
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 853890,
+      "audioDurationMs": 426645
+    },
+    {
+      "id": "part4",
+      "title": "Section 4",
+      "kind": "listening_part",
+      "audioAsset": "assets/cambridge/c13-t1.mp3",
+      "content": {
+        "format": "plain",
+        "text": "Questions 31-40\n\nComplete the notes below.\n\nWrite ONE WORD ONLY for each answer.\n\nEffects of urban environments on animals \nIntroduction \nRecent urban developments represent massive environmental changes. It was \npreviously thought that only a few animals were suitable for city life, e.g. \nthe 31. …...– because of its general adaptability \nthe pigeon – because walls of city buildings are similar to 32 .. \nIn fact, many urban animals are adapting with unusual 33 \nRecent research \nEmilie Snell-Rood studied small urbanised mammal specimens from museums \nin Minnesota. \n– She found the size of their 34 had increased. \n– She suggests this may be due to the need to locate new sources \nof 35 ... . and to deal with new dangers. \nCatarina Miranda focused on the 36.. .f urban and rural \nblackbirds. \n– She found urban birds were often braver, but were afraid of situations that \nwere 37 \nJonathan Atwell studies how animals respond to urban environments. \n– He found that some animals respond to 38 .y producing \nlower levels of hormones. \nSarah Partan's team found urban squirrels use their 39 .. ... to \nhelp them communicate. \nLong-term possibilities \nSpecies of animals may develop which are unique to cities. However, some changes \nmay not be 40 .."
+      },
+      "questionGroups": [
+        {
+          "id": "c13t1l-g31",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q31",
+              "number": 31,
+              "type": "completion",
+              "prompt": "Complete the notes below.",
+              "acceptedAnswers": [
+                "crow"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g32",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q32",
+              "number": 32,
+              "type": "completion",
+              "prompt": "In fact, many urban animals are adapting with unusual",
+              "acceptedAnswers": [
+                "cliffs"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g33",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "Recent research Emilie Snell-Rood studied small urbanised mammal specimens from museums in Minnesota. – She found the size of their",
+              "acceptedAnswers": [
+                "speed"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g34",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "She found the size of their ___ had increased",
+              "acceptedAnswers": [
+                "brain(s)"
+              ],
+              "gapText": "Emilie Snell-Rood found the size of their ___ had increased",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g35",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "She suggests this may be due to the need to locate new sources of ___ and to deal with new dangers",
+              "acceptedAnswers": [
+                "food"
+              ],
+              "gapText": "The need to locate new sources of ___ and to deal with new dangers",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g36",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q36",
+              "number": 36,
+              "type": "completion",
+              "prompt": "Catarina Miranda focused on the ___ of urban and rural blackbirds",
+              "acceptedAnswers": [
+                "behaviour(s)",
+                "behavior(s)"
+              ],
+              "gapText": "Catarina Miranda focused on the ___ of urban and rural blackbirds",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g37",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "Jonathan Atwell studies how animals respond to urban environments. – He found that some animals respond to",
+              "acceptedAnswers": [
+                "new"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g38",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q38",
+              "number": 38,
+              "type": "completion",
+              "prompt": "He found that some animals respond to ___ by producing lower levels of hormones",
+              "acceptedAnswers": [
+                "stress"
+              ],
+              "gapText": "Some animals respond to ___ by producing lower levels of hormones",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g39",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q39",
+              "number": 39,
+              "type": "completion",
+              "prompt": "Sarah Partan's team found urban squirrels use their ___ to help them communicate",
+              "acceptedAnswers": [
+                "tail(s)"
+              ],
+              "gapText": "Urban squirrels use their ___ to help them communicate",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c13t1l-g40",
+          "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c13t1l-q40",
+              "number": 40,
+              "type": "completion",
+              "prompt": "However, some changes may not be ___",
+              "acceptedAnswers": [
+                "permanent"
+              ],
+              "gapText": "Some changes may not be ___",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T04:01:21+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              31,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ],
+      "audioStartMs": 1280535,
+      "audioDurationMs": 419107
+    }
+  ]
+}

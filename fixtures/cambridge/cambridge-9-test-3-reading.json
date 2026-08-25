@@ -1,0 +1,2618 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-9-test-3-reading",
+  "title": "Cambridge IELTS 9 Academic Test 3 Reading",
+  "module": "reading",
+  "contentRevision": "repair-0026-97729cdb",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 9",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题9.pdf",
+        "sha256": "c3fbc2d06b1b60fe8e7d27936150a09c38714e4bd23e6351a09b93c9555ee890"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C09\\剑桥雅思真题9\\auto\\剑桥雅思真题9.md",
+        "sha256": "0fff67454e2c0209145ec163b53e0d8a4366227a4e4853f03d4cac2187f6196e",
+        "note": "MinerU 3.4.5 Reading"
+      },
+      {
+        "kind": "answer_key",
+        "source": "local MinerU answer pages",
+        "note": "MinerU key parser missing listening=0, reading=40; legacy fallback used where available."
+      },
+      {
+        "kind": "external",
+        "source": "IELTS Extremes",
+        "url": "https://ieltsextremes.com/cambridge-9-reading-test-2-answers/",
+        "note": "Independent C9 Reading Test 2 key used for the incomplete final matching-headings rows."
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "p1",
+      "title": "Reading Passage 3",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "## Information theory — the big idea\n\nInformation theory lies at the heart of everything—from DVD players and the genetic code of DNA to the physics of the universe at its most fundamental. It has been central t the development of the science of communication, which enables data to be sent electronically and has therefore had a major impact on our lives\n\nIn April 2002 an event took place which demonstrated one of the many applications of information theory. The space probe Voyager I, launched in 1977, had sent back spectacular images of Jupiter and Saturn and then soared out of the Solar System on a one-way mission to the stars. After 25 years of exposure to the freezing temperatures of deep space, the probe was beginning to show its age. Sensors and circuits were on the brink of failing and NASA experts realized that they had to do something or lose contact with their probe forever. The solution was to get a message to Voyager I to instruct it to use spares to change the failing parts. With the probe 12 billion kilometers from Earth, this was not an easy task. By means of a radio dish belonging to NASA's Deep Space Network, the message was sent out into the depths of space. Even travelling at the speed of light, it took over 11 hours to reach its target, far beyond the orbit of Pluto. Yet, incredibly, the little probe managed to hear the faint call from its home planet and successfully made the switchover.\n\nB. It was the longest-distance repair job history, and a triumph for the NASA engineers. But it also highlighted the astonishing power of the techniques developed by American communications engineer Claude Shannon, who had died just a year earlier. Born in 1916 in Petoskey, Michigan, Shannon showed an early talent for maths and for building gadgets, and made breakthroughs in the foundations of computer technology when still a student. While at Bell Laboratories, Shannon developed information theory, but shunned the resulting acclaim. In the 1940s, he singe-handedly created an entire science of communication which has since inveigled its way into a host of applications, from DVDs to satellite communications to bar codes— any area, in short, where data has to be conveyed rapidly yet accurately.\n\nC. This all seems light years away from the down-to earth uses Shannon originally had for his work, which began when he was a 22-year-old graduate engineering student at the prestigious Massachusetts Institute of Technology in 1939. He set out with an apparently simple aim: to pin down the precise meaning of the concept of information'. The most basic form of information, Shannon argued, is whether something is true or false—which can be captured in the binary unit, or bit', of the form 1 or 0. Having identified this fundamental unit, Shannon set about defining otherwise vague ideas about information and how to transit it from place to place. In the process he discovered something surprising: it is always possible to guarantee information will get through random interference—noise'—intact. \nD. Noise usually means unwanted sounds which interfere with genuine information.\n\nInformation theory generalizes this idea via theorems that capture the effects of noise with mathematical precise. In particular,Shannon showed that noise sets a limit on the rate at which information can pass along communication channels while remaining error-free. This rate depends on the relative strengths of the signal and noise travelling down the communication channel, and on its capacity (its 'bandwidth'). The resulting limit, given in units of bits per second, is the absolute maximum rate of error-free communication given signal strength and noise level. The trick, Shannon showed, is to find ways of packaging up—coding'—information to cope with the ravages of noise, while staying within the information-carrying capacity—bandwidth'—of the communication system being used.\n\nE. Over the years scientists have devised many such coding methods, and they have proved crucial in many technological feats. The voyager spacecraft transmitted data using codes which added one extra bit for every single bit of information; the result was an error rate of just one bit in 10,000—and stunningly clear pictures of the planets. Other codes have become part of everyday life—such as the Universal Product Code, or bar code. Which uses a simple error—detecting systems that ensures supermarket check-out lasers can read the price even on, say, a crumpled bag of crisps. As recently as 1993, engineers made a major breakthrough by discovering so-called turbo—which come very close to Shannon's ultimate limit for the maximum rate that data can be transmitted reliably, and now play a key role in the mobile videophone revolution.\n\nF. Shannon also laid the foundations of more efficient ways of storing information, by stripping out superfluous (redundant') bits from data which contributed little real information. As mobile phone text messages like I CN C U' show, it is often possible to leave out a lot of data without losing much meaning. As with error correction, however, there's a limit beyond which message become too ambiguous. Shannon showed how to calculate this limit, opening the way to the design of compression methods that cram maximum information into the minimum space.\n\nQuestion27-32\n\nReading Passage 3 has six paragraphs, A—F.\n\nWhich paragraph contains the following information?\n\nWrite the correct letter, A—F, in boxes 27—32 on your answer sheet.\n\n27 an explanation of the factors affecting the transmission of the information\n\n28 an example of how unnecessary information can be omitted\n\n29 a reference to Shannon's attitude to fame\n\n30 details of a machine capable of interpreting incomplete information\n\n31 a detailed account of an incident involving information theory\n\n32 a reference to what Shannon initially intended to achieve in his research\n\nQuestion33-37\n\nComplete the notes below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\n\nWrite your answers in boxes 33—37 on your answer sheet.\n\n## The Voyager 1 Space Probe\n\nThe probe transmitted pictures of both 33............ and. \nthen left the 34....\n\n● The freezing temperatures were found to have a negative effect on parts of the space probe.\n\nScientists feared that both the 35..and were about to stop working.\n\n● The only hope was to tell the probe to replace them with 36...............—but distance made communication with probe difficult.\n\n● A 37................was used to transmit the message at the speed of light.\n\n● The message was picked up by the probe and the switchover toll place.\n\nQuestion38-40\n\nDo the following statements agree with the information given in Reading Passage 3? In boxes 38—40 on your answer sheet, write\n\nTRUE if the statement agrees with the information\n\nFALES if the statement contradicts the information\n\nNOT GIVEN if there is no information on this\n\nThe concept of describing something as true or false was the starting point for Shannon in his attempts to send message over distances.\n\nThe amount of information that can be sent in a given time period is determined with reference to the signal strength and poise level.\n\n40 Products have now been developed which can convey more information than Shannon had anticipated as possible."
+      },
+      "questionGroups": [
+        {
+          "id": "c9t3r-g1",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q1",
+              "number": 1,
+              "type": "yes_no_ng",
+              "prompt": "There are understandable reasons why arguments occur about language",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g2",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q2",
+              "number": 2,
+              "type": "yes_no_ng",
+              "prompt": "People feel more strongly about language education than about small differences in language usage",
+              "acceptedAnswers": [
+                "NO"
+              ],
+              "options": []
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": ""
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": ""
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": ""
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": ""
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": ""
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": ""
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": ""
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": ""
+            },
+            {
+              "id": "ix",
+              "label": "ix",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g3",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q3",
+              "number": 3,
+              "type": "yes_no_ng",
+              "prompt": "Our assessment of a person's intelligence is affected by the way he or she uses language.",
+              "acceptedAnswers": [
+                "YES"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g4",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q4",
+              "number": 4,
+              "type": "true_false_ng",
+              "prompt": "Prescriptive grammar books cost a lot of money to buy in the 18th century",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ],
+              "gapText": "____"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g5",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q5",
+              "number": 5,
+              "type": "yes_no_ng",
+              "prompt": "Prescriptivism still exists today",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g6",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q6",
+              "number": 6,
+              "type": "yes_no_ng",
+              "prompt": "According to descriptivist it is pointless to try to stop language change",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g7",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q7",
+              "number": 7,
+              "type": "yes_no_ng",
+              "prompt": "Descriptivism only appeared after the 18th century",
+              "acceptedAnswers": [
+                "NO"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g8",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 1?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q8",
+              "number": 8,
+              "type": "yes_no_ng",
+              "prompt": "Both descriptivists and prescriptivists have been misrepresented",
+              "acceptedAnswers": [
+                "YES"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              1,
+              8
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g9",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question. Choose the correct letter, A, B, C or D.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q9",
+              "number": 9,
+              "type": "matching",
+              "prompt": ", there is only one correct form of language. Linguists who take this approach to language place great importance on grammatical",
+              "acceptedAnswers": [
+                "H"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:06.960714+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "descriptivists"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "language experts"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "popular speech"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "formal language"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "evaluation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "rules"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "modern linguists"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "prescriptivists"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "change"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g10",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question. Choose the correct letter, A, B, C or D.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q10",
+              "number": 10,
+              "type": "matching",
+              "prompt": "Linguists who take this approach to language place great importance on grammatical ___.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "descriptivists"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "language experts"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "popular speech"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "formal language"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "evaluation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "rules"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "modern linguists"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "prescriptivists"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "change"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g11",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q11",
+              "number": 11,
+              "type": "matching",
+              "prompt": "Conversely, the view of ___, such as Joseph Priestley, is that grammar should be based on",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "descriptivists"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "language experts"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "popular speech"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "formal language"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "evaluation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "rules"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "modern linguists"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "prescriptivists"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "change"
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g12",
+          "instruction": "Complete the summary below. Write the correct letter, A-I, next to each question. Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q12",
+              "number": 12,
+              "type": "matching",
+              "prompt": "Grammar should be based on ___.",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "descriptivists"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "language experts"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "popular speech"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "formal language"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "evaluation"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "rules"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "modern linguists"
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "prescriptivists"
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "change"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              9,
+              12
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g13",
+          "instruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q13",
+              "number": 13,
+              "type": "single_choice",
+              "prompt": "What is the writer’s purpose in Reading Passage 1?",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "to argue in favour of a particular approach to writing dictionaries and grammar books"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to present a historical account of differing views of language"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "to describe the differences between spoken and written language"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to show how a certain view of language has been discredited."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-25T01:55:48.399848+00:00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Reading Passage 1",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Questions 1—13, which are based on\n\nReading Passage 1 below.\n\n## Attitudes to Language\n\nIt is not easy to be systematic and objective about language study. Popular linguistic debate regularly deteriorates into invective and polemic. Language belongs to everyone, so most people feel they have a right to hold an option about it. And when options differ, emotions can run high. Arguments can start as easily over minor points of usage as over major policies of linguistic education.\n\nLanguage, moreover, is a very public behavior, so it is easy for different usages to be noted and criticised. No part of society or social behavior is exempt. Linguistic factors influence how we judge personality, intelligence, social status, educational standards, job aptitude, and many other areas of identity and social survival. As a result, it is easy to hurt, and to be hurt, when language use is unfeelingly attacked.\n\nIn its most general sense, prescriptivism is the view that one variety of language has\n\nan inherently higher value than others and that this ought to be imposed on the whole\n\nof the speech community. The view is propounded especially in relation to grammar\n\nand vocabulary, and frequently with reference to pronunciation. The variety which is\n\nfavoured, in this account, is usually a version of the ‘standard' written language,\n\nespecially as encountered in literature, or in the formal spoken language which most closely reflects this style. Adherents to this variety are said to speak or write correctly' deviations from it are said to be incorrect'.\n\nAll the main languages have been studied prescriptively, especially in the 18th century approach to the writing of grammar and dictionaries. The aims of these early grammarians were threefold: (a) they wanted to codify the principles of their languages, to show that there was a system beneath the apparent chaos of usage; (b) they wanted a means of settling disputes over usage, and (c) they wanted to point out what they felt to be common errors, in order to improve' the language. The authoritarian nature of the approach is best characterized by its reliance on rules'’ of grammar. Some usages are prescribed', to be learnt and followed accurately; others are proscribed', to be avoided. In this early period, there were no half-measures: usage was either right or wrong, and it was the task of the grammarian not simply to record alternatives, but to pronounce judgment upon them.\n\nThese attitudes are still with us, and they motivate a widespread concern that linguistic standards should be maintained. Nevertheless, there is an alternative point of view that is concerned less with standards than with the facts of linguistic usage. This approach is summarized in the statement that it is the task of the grammarian to describe, not prescribe—to record the facts of linguistic diversity, and not to attempt the impossible tasks of evaluating language variation or halting language change. In the second half of the 18th century, we already find advocates of this view, such as Joseph Priestley, whose Rudiments of English Grammar (1761) insists that 'the custom of speaking is the original and only just standard of any language'. Linguistic issues, it is argued, cannot be solved by logic and legislation. And this view has become the tenet of the modern linguistic approach to grammatical analysis.\n\nIn our own time, the opposition between descriptivists' and ‘prescriptivists' has often become extreme, with both sides painting unreal pictures of the other. Descriptive grammarians have been presented as people who do not care about standards, because of the way they see all forms of usage as equally valid. Prescriptive grammarians have been presented as blind adherents to a historical tradition. The opposition has even been presented in quasi-political terms—of radical liberalism vs elitist conservatism.\n\n## Question 1—8\n\nDo the following statements agree with the information given in Reading Passage 1? In boxes 1—8 on your answer sheet, write\n\nTRUE if the statement agrees with the information FALES if the statement contradicts the information NOT GIVEN if there is no information on this\n\n1 There are understandable reasons why arguments occur about language.\n\n2 People feel more strongly about language education than about small differences in language usage.\n\n3 our assessment of a person's intelligence is affected by the way he or she uses language.\n\n4 Prescriptive grammar books cost a lot of money to buy in the 18th century.\n\n5Prescriptivism still exists today.\n\n6 According to descriptivist it is pointless to try to stop language change.\n\n7 Descriptivism only appeared after the 18th century.\n\n8Both descriptivists and prescriptivists have been misrepresented.\n\nQuestion 9-12\n\nComplete the summary using the list of words, A—I, below.\n\nWrite the correct letter, A—I, in boxes 9—12 on your answer sheet.\n\n## The language debate\n\nAccording to 9..........., there is only one correct form of language. Linguists who take this approach to language place great importance on grammatical 10....\n\nConversely, the view of 11.........., such as Joseph Priestley, is that grammar should be based on 12..........\n\nA descriptivists\n\nB language experts C popular speech\n\nD formal language E evaluation\n\nF rules\n\nG modern linguists H prescriptivists\n\nI change\n\nQuestion 13\n\nChoose the correct letter, A, B, C or D.\n\nWrite the correct letter in box 13 on your answer sheet.\n\nWhat is the writer's purpose in Reading Passage 1?\n\nA to argue in favour of a particular approach to writing dictionaries and grammar books\n\nB to present a historical account of differing views of language\n\nC to describe the differences between spoken and written language\n\nD to show how a certain view of language has been discredited.\n\nREADING PASSAGE 2"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t3r-g14",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q14",
+              "number": 14,
+              "type": "single_choice",
+              "prompt": "The location of the first test site",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:07.052457+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g15",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q15",
+              "number": 15,
+              "type": "matching",
+              "prompt": "a way of bringing the power produced on one site back into Britain",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is a more reliable source of energy than wind power"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It would replace all other forms of energy in Britain"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Its introduction has come as a result of public pressure"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It would cut down on air pollution"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It could contribute to the closure of many existing power stations in Britain"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It could be a means of increasing national income"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It could face a lot of res"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g16",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q16",
+              "number": 16,
+              "type": "matching",
+              "prompt": "a reference to a previous attempt by Britain to find an alternative source of energy",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is a more reliable source of energy than wind power"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It would replace all other forms of energy in Britain"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Its introduction has come as a result of public pressure"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It would cut down on air pollution"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It could contribute to the closure of many existing power stations in Britain"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It could be a means of increasing national income"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It could face a lot of resistance from other fuel industries"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It could be sold more cheaply th"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g17",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q17",
+              "number": 17,
+              "type": "matching",
+              "prompt": "mention of the possibility of applying technology from another industry",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is a more reliable source of energy than wind power"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It would replace all other forms of energy in Britain"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Its introduction has come as a result of public pressure"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It would cut down on air pollution"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It could contribute to the closure of many existing power stations in Britain"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It could be a means of increasing national income"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It could face a lot of resistance from other fuel industries"
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It could be sold more cheaply than any other type of fuel"
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              14,
+              17
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g18",
+          "instruction": "Choose FIVE letters, A–J. Write the correct letters in boxes 18–22 on your answer sheet.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q18",
+              "number": 18,
+              "type": "single_choice",
+              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It is a more reliable source of energy than wind power.",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is a more reliable source of energy than wind power."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It would replace all other forms of energy in Britain."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Its introduction has come as a result of public pressure."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It would cut down on air pollution."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It could contribute to the closure of many existing power stations in Britain."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It could be a means of increasing national income."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It could face a lot of resistance from other fuel industries."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It could be sold more cheaply than any other type of fuel."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "It could compensate for the shortage of inland sites for energy production."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "It is best produced in the vicinity of coastlines with particular features."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is a more reliable source of energy than wind power."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It would replace all other forms of energy in Britain."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Its introduction has come as a result of public pressure."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It would cut down on air pollution."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It could contribute to the closure of many existing power stations in Britain."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It could be a means of increasing national income."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It could face a lot of resistance from other fuel industries."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It could be sold more cheaply than any other type of fuel."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "It could compensate for the shortage of inland sites for energy production."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "It is best produced in the vicinity of coastlines with particular features."
+            }
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "corrected",
+            "reviewedAt": "2026-08-24T12:44:55.503389+00:00"
+          }
+        },
+        {
+          "id": "c9t3r-g19",
+          "instruction": "Choose FIVE letters, A-J.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q19",
+              "number": 19,
+              "type": "single_choice",
+              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It would cut down on air pollution.",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is a more reliable source of energy than wind power."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It would replace all other forms of energy in Britain."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Its introduction has come as a result of public pressure."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It would cut down on air pollution."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It could contribute to the closure of many existing power stations in Britain."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It could be a means of increasing national income."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It could face a lot of resistance from other fuel industries."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It could be sold more cheaply than any other type of fuel."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "It could compensate for the shortage of inland sites for energy production."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "It is best produced in the vicinity of coastlines with particular features."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              22
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 18—22 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g20",
+          "instruction": "Choose FIVE letters, A-J.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q20",
+              "number": 20,
+              "type": "single_choice",
+              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It could contribute to the closure of many existing power stations in Britain.",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is a more reliable source of energy than wind power."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It would replace all other forms of energy in Britain."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Its introduction has come as a result of public pressure."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It would cut down on air pollution."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It could contribute to the closure of many existing power stations in Britain."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It could be a means of increasing national income."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It could face a lot of resistance from other fuel industries."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It could be sold more cheaply than any other type of fuel."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "It could compensate for the shortage of inland sites for energy production."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "It is best produced in the vicinity of coastlines with particular features."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              22
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 18—22 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g21",
+          "instruction": "Choose FIVE letters, A-J.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q21",
+              "number": 21,
+              "type": "single_choice",
+              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It could be a means of increasing national income.",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is a more reliable source of energy than wind power."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It would replace all other forms of energy in Britain."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Its introduction has come as a result of public pressure."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It would cut down on air pollution."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It could contribute to the closure of many existing power stations in Britain."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It could be a means of increasing national income."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It could face a lot of resistance from other fuel industries."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It could be sold more cheaply than any other type of fuel."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "It could compensate for the shortage of inland sites for energy production."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "It is best produced in the vicinity of coastlines with particular features."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              22
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 18—22 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g22",
+          "instruction": "Choose FIVE letters, A-J.",
+          "questionType": "completion",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q22",
+              "number": 22,
+              "type": "matching",
+              "prompt": "-year-old graduate engineering student at the prestigious Massachusetts Institute of Technology in 1939. He set out with an apparently simple aim: to pin down the precise meaning of the concept of information'. The most basic form of information, Shannon argued, is whether something is true or false—which can be captured in the binary unit, or bit', of the form 1 or 0. Having identified this funda",
+              "acceptedAnswers": [
+                "J"
+              ],
+              "gapText": "____",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-25T11:41:07.052457+00:00"
+              },
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It is a more reliable source of energy than wind power."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It would replace all other forms of energy in Britain"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Its introduction has come as a result of public pressure."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It would cut down on air pollution."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "It could contribute to the closure of many existing power stations in Britain."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It could be a means of increasing national income."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It could face a lot of resistance from other fuel industries."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "It could be sold more cheaply than any other type of fuel."
+                },
+                {
+                  "id": "I",
+                  "label": "I",
+                  "text": "It could compensate for the shortage of inland sites for energy production."
+                },
+                {
+                  "id": "J",
+                  "label": "J",
+                  "text": "It is best produced in the vicinity of coastlines with particular features."
+                }
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              18,
+              22
+            ],
+            "canonicalOf": [
+              "Write the correct letters in boxes 18—22 on your answer sheet"
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g23",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q23",
+              "number": 23,
+              "type": "labelling",
+              "prompt": "Whole tower can be raised for ___ and the extraction of seaweed from the blades",
+              "acceptedAnswers": [
+                "maintenance"
+              ],
+              "options": [
+                {
+                  "id": "maintenance",
+                  "label": "maintenance",
+                  "text": "maintenance"
+                },
+                {
+                  "id": "slow (turning)",
+                  "label": "slow (turning)",
+                  "text": "slow (turning)"
+                },
+                {
+                  "id": "low pressure",
+                  "label": "low pressure",
+                  "text": "low pressure"
+                },
+                {
+                  "id": "cavitation",
+                  "label": "cavitation",
+                  "text": "cavitation"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23—26 on your answer sheet."
+            ]
+          },
+          "imageAsset": "assets/cambridge/c09-t3-reading-p0072.jpg"
+        },
+        {
+          "id": "c9t3r-g24",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q24",
+              "number": 24,
+              "type": "labelling",
+              "prompt": "Sea life not in danger due to the fact that blades are comparatively ___",
+              "acceptedAnswers": [
+                "slow (turning)"
+              ],
+              "options": [
+                {
+                  "id": "maintenance",
+                  "label": "maintenance",
+                  "text": "maintenance"
+                },
+                {
+                  "id": "slow (turning)",
+                  "label": "slow (turning)",
+                  "text": "slow (turning)"
+                },
+                {
+                  "id": "low pressure",
+                  "label": "low pressure",
+                  "text": "low pressure"
+                },
+                {
+                  "id": "cavitation",
+                  "label": "cavitation",
+                  "text": "cavitation"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23—26 on your answer sheet."
+            ]
+          },
+          "imageAsset": "assets/cambridge/c09-t3-reading-p0072.jpg"
+        },
+        {
+          "id": "c9t3r-g25",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q25",
+              "number": 25,
+              "type": "labelling",
+              "prompt": "Air bubbles result from ___ behind blades.",
+              "acceptedAnswers": [
+                "low pressure"
+              ],
+              "options": [
+                {
+                  "id": "maintenance",
+                  "label": "maintenance",
+                  "text": "maintenance"
+                },
+                {
+                  "id": "slow (turning)",
+                  "label": "slow (turning)",
+                  "text": "slow (turning)"
+                },
+                {
+                  "id": "low pressure",
+                  "label": "low pressure",
+                  "text": "low pressure"
+                },
+                {
+                  "id": "cavitation",
+                  "label": "cavitation",
+                  "text": "cavitation"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23—26 on your answer sheet."
+            ]
+          },
+          "imageAsset": "assets/cambridge/c09-t3-reading-p0072.jpg"
+        },
+        {
+          "id": "c9t3r-g26",
+          "instruction": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q26",
+              "number": 26,
+              "type": "labelling",
+              "prompt": "This is known as ___.",
+              "acceptedAnswers": [
+                "cavitation"
+              ],
+              "options": [
+                {
+                  "id": "maintenance",
+                  "label": "maintenance",
+                  "text": "maintenance"
+                },
+                {
+                  "id": "slow (turning)",
+                  "label": "slow (turning)",
+                  "text": "slow (turning)"
+                },
+                {
+                  "id": "low pressure",
+                  "label": "low pressure",
+                  "text": "low pressure"
+                },
+                {
+                  "id": "cavitation",
+                  "label": "cavitation",
+                  "text": "cavitation"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              23,
+              26
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 23—26 on your answer sheet."
+            ]
+          },
+          "imageAsset": "assets/cambridge/c09-t3-reading-p0072.jpg"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Reading Passage 2",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on Question 14—26, which are based on Reading Passage 2 below.\n\n## Tidal Power\n\nUndersea turbines which produce electricity from the tides are set to become an important source of renewable energy for Britain. It is still too early to predict the extent of the impact they may have, but all the signs are that they will play a significant role in the future\n\nA. Operating on the same principle as wind turbines, the power in sea turbines comes from tidal currents which turn blades similar to ships propellers, but, unlike wind, the tides are predictable and the power input is constant. The technology raises the prospect of Britain becoming self-sufficient in renewable energy and drastically reducing its carbon dioxide emissions. If tide, wind and wave-power are all developed, Britain would be able to close gas, coal and nuclear plants and export renewable power to other parts of Europe. Unlike wind power which Britain originally developed and then abandoned for 20 years allowing the Dutch to make it a major industry, undersea turbines could become a big export earner to island nations such as Japan and New Zealand.\n\nB. Tidal sites have already been identified that will produce one sixth or more of the UK's power—and at prices competitive with modern gas turbines and undercutting those of the already ailing nuclear industry. One site alone, the Pentland Firth, between Orkney and mainland Scotland, could produce 10% of the country's electricity with banks of turbines under the sea, and another at Alderney in the Channel Islands three times the 1,2000 megawatts of Britain's largest and newest nuclear plant, Sizewell B, in Suffolk. Other sites identified include the Bristol Channel and the west coast of Scotland, particularly the channel between Campbelttown and Northern Irealand.\n\nC. Work on designs for the new turbine blades and sites are well advanced at the university of Southampton's sustainable energy research group. The first station is expected to be installed off Lynmouth in Devon shortly to test the technology in a venture jointly funded by the department of Trade and Industry and the European Union. AbuBakn Bahaj, in charge of the Southampton research, said: The prospects for energy from tidal currents are far better than from wind because the flows of water are predictable and constant. The technology for dealing with the hostile saline environment under the sea has been developed in the North Sea oil industry and much is already known about turbine blade design because of wind power and ship propellers. There are a few technical difficulties, but I believe in the next five to ten years we will be installing commercial marine turbine farm. Southampton has been rewarded £215,000 over three years to develop the turbines and is working with Marine Current Turbines, a subsidiary of IT power, on the Lynmouth project. EU research has now identified 106 potential sites for tidal power, 80% round the coasts of Britain. The best sites are between islands or around heavily indented coasts where there are strong tidal currents.\n\nD. A marine turbine blade needs to be only one third of the size of a wind generator to produce three times as much power. The blades will be about 20 meters in diameter, so around 30 meters of water is required. Unlike wind power, there are unlikely to be environmental objections. Fish and other creatures are thought unlikely to be at risk from the relatively slow-turning blades. Each turbine will be mounted on a tower which will connect to the national power supply grid via underwater cables. The towers will stick out of the water and be lit, to warn shipping, and also be designed to be lifted out of the water for maintenance and to clean seaweed from the blades.\n\nE. Dr Bahaj has done most work on the Alderney site, where there are powerful currents. The single undersea turbine farm would produce far more power than needed for the Channel Isalands and most would be fed into the French Grid and be re-imported into Britain via the cable under the Channel.\n\nF. One technical difficulty is cavitation, where low pressure behind a turning blade causes air bubbles. These can cause vibration and damage the blades of the turbines. Dr Bahaj said: 'We have to test a number of blade types to avoid this happening or at least make sure it does not damage the turbines or reduce performance. Another slight concern is submerged debris floating into the blades. So far we do not know how much of a problem it might be. We will have to make the turbines robust because the sea is a hostile environment, but all the signs that we can do it are good.\n\nQuestion14-17\n\nReading Passage 2 has six paragraphs, A—F.\n\nWhich paragraph contains the following information?\n\nWrite the correct letter, A—F, in boxes 14—17 on your answer sheet.\n\nNB You may use any letter more than once.\n\n14The location of the first test site\n\n15 a way of bringing the power produced on one site back into Britain\n\n16 a reference to a previous attempt by Britain to find an alternative source of energy\n\n17 mention of the possibility of applying technology from another industry\n\nQuestion18-22\n\nChoose FIVE letters, A—J.\n\nWrite the correct letters in boxes 18—22 on your answer sheet\n\nWhich FIVE of the following claims about tidal power are made by the writer?\n\nA It is a more reliable source of energy than wind power.\n\nB It would replace all other forms of energy in Britain\n\nC Its introduction has come as a result of public pressure.\n\nD It would cut down on air pollution.\n\nE It could contribute to the closure of many existing power stations in Britain.\n\nF It could be a means of increasing national income.\n\nG It could face a lot of resistance from other fuel industries.\n\nH It could be sold more cheaply than any other type of fuel.\n\nI It could compensate for the shortage of inland sites for energy production.\n\nJ It is best produced in the vicinity of coastlines with particular features.\n\nQuestion 23—26\n\nLabel the diagram below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.\n\nWrite your answers in boxes 23—26 on your answer sheet.\n\n[]\n\n## READING PASSAGE 3"
+      },
+      "questionGroups": [
+        {
+          "id": "c9t3r-g27",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q27",
+              "number": 27,
+              "type": "single_choice",
+              "prompt": "an explanation of the factors affecting the transmission of the information",
+              "acceptedAnswers": [
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g28",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q28",
+              "number": 28,
+              "type": "single_choice",
+              "prompt": "an example of how unnecessary information can be omitted",
+              "acceptedAnswers": [
+                "F"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g29",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q29",
+              "number": 29,
+              "type": "single_choice",
+              "prompt": "a reference to Shannon’s attitude to fame",
+              "acceptedAnswers": [
+                "B"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g30",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q30",
+              "number": 30,
+              "type": "single_choice",
+              "prompt": "details of a machine capable of interpreting incomplete information",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g31",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q31",
+              "number": 31,
+              "type": "single_choice",
+              "prompt": "a detailed account of an incident involving information theory",
+              "acceptedAnswers": [
+                "A"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "approved",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g32",
+          "instruction": "Reading Passage has six paragraphs. Which paragraph contains the following information? Write the correct letter, A-F, next to each question.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q32",
+              "number": 32,
+              "type": "single_choice",
+              "prompt": "a reference to what Shannon initially intended to achieve in his research",
+              "acceptedAnswers": [
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "Paragraph A"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Paragraph B"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Paragraph C"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Paragraph D"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "Paragraph E"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "Paragraph F"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": ""
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": ""
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": ""
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": ""
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": ""
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": ""
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              27,
+              32
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g33",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q33",
+              "number": 33,
+              "type": "completion",
+              "prompt": "The probe transmitted pictures of both ___ and ___.",
+              "acceptedAnswers": [
+                "Jupiter",
+                "Saturn"
+              ],
+              "options": [],
+              "gapText": "The probe transmitted pictures of both 33 ___ and ___, then left the 34 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33—37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g34",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q34",
+              "number": 34,
+              "type": "completion",
+              "prompt": "The probe then left the ___.",
+              "acceptedAnswers": [
+                "Solar System"
+              ],
+              "options": [],
+              "gapText": "The probe transmitted pictures of both 33 ___ and ___, then left the 34 ___.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33—37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g35",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "single_choice",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q35",
+              "number": 35,
+              "type": "completion",
+              "prompt": "Scientists feared that both the ___ and ___ were about to stop working.",
+              "acceptedAnswers": [
+                "sensors",
+                "circuits"
+              ],
+              "options": [],
+              "gapText": "Scientists feared that both the 35 ___ and ___ were about to stop working.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33—37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g36",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q36",
+              "number": 36,
+              "type": "yes_no_ng",
+              "prompt": "—but distance made communication with probe difficult.",
+              "acceptedAnswers": [
+                "spares"
+              ],
+              "repairSource": {
+                "kind": "parsed",
+                "confidence": "HIGH",
+                "reasons": []
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33—37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g37",
+          "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q37",
+              "number": 37,
+              "type": "completion",
+              "prompt": "A ___ was used to transmit the message at the speed of light.",
+              "acceptedAnswers": [
+                "radio dish"
+              ],
+              "gapText": "A 37 ___ was used to transmit the message at the speed of light.",
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              33,
+              37
+            ],
+            "canonicalOf": [
+              "Write your answers in boxes 33—37 on your answer sheet."
+            ]
+          }
+        },
+        {
+          "id": "c9t3r-g38",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q38",
+              "number": 38,
+              "type": "true_false_ng",
+              "prompt": "The concept of describing something as true or false was the starting point for Shannon in his attempts to send message over distances.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              38,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g39",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "yes_no_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q39",
+              "number": 39,
+              "type": "true_false_ng",
+              "prompt": "The amount of information that can be sent in a given time period is determined with reference to the signal strength and poise level.",
+              "acceptedAnswers": [
+                "TRUE"
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:23:57+00:00"
+              }
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              38,
+              40
+            ],
+            "canonicalOf": null
+          }
+        },
+        {
+          "id": "c9t3r-g40",
+          "instruction": "Do the following statements agree with the information given in Reading Passage 3?",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "c9t3r-q40",
+              "number": 40,
+              "type": "true_false_ng",
+              "prompt": "Products have now been developed which can convey more information than Shannon had anticipated as possible",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            }
+          ],
+          "repairSource": {
+            "kind": "rubric-recovery",
+            "headingRange": [
+              38,
+              40
+            ],
+            "canonicalOf": null
+          }
+        }
+      ]
+    }
+  ]
+}

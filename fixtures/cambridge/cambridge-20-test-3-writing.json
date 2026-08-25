@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cambridge-20-test-3-writing",
+  "title": "Cambridge IELTS 20 Academic Test 3 Writing",
+  "module": "writing",
+  "contentRevision": "mineru-cfb64fd80090",
+  "source": {
+    "kind": "cambridge_book",
+    "publisher": "Cambridge University Press",
+    "title": "Cambridge IELTS 20",
+    "note": "Local PDF reconstructed with MinerU; personal use.",
+    "provenance": [
+      {
+        "kind": "pdf",
+        "source": "C:\\Users\\15pro\\Desktop\\教材\\剑桥雅思真题20-官方扫描.pdf",
+        "sha256": "d22841253438f6e92c52c4de6e639b25db532457a06e2954b05070a7eb4645f1"
+      },
+      {
+        "kind": "mineru",
+        "source": "C:\\Users\\15pro\\Desktop\\MyProject\\IELTS Workspace\\data-dev\\mineru\\C20\\剑桥雅思真题20-官方扫描\\auto\\剑桥雅思真题20-官方扫描.md",
+        "sha256": "cfb64fd8009021e8658f57d19f13864c2a78efab8f97bec384823eea86b8501e",
+        "note": "MinerU 3.4.5 Writing"
+      }
+    ]
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "task1",
+      "title": "Writing Task 1",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 20 minutes on this task.\n\nThe charts below give information about a public library in a town called de ed notemitr ud le tluee erlt e J\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant\n\n## Write at least 150 words.\n\n## Little Chalfont Library\n\nAge of library members (2016)\n\nChildrenYoung adults 13-17 Adults 18–64Adults 65 and over\n\n[]\n\nTotal loans by category (2016)\n\nChildren's fiction\n\n38%\n\nChildren's non-fiction\n\n6%\n\nChildren's DVDs\n\n1%\n\nYoung adults\n\n2%\n\nAdult fiction\n\n38%\n\nAdult non-fiction\n\n13%\n\nAdult audio books\n\n2%\n\n[]"
+      },
+      "questionGroups": [],
+      "imageAsset": "assets/cambridge/c20-t3-writing-task1.jpg"
+    },
+    {
+      "id": "task2",
+      "title": "Writing Task 2",
+      "kind": "writing_task",
+      "content": {
+        "format": "plain",
+        "text": "You should spend about 40 minutes on this task.\n\nWrite about the following topic:\n\nSome people have decided to reduce the number of times they fly every year or to sto\n\nDo you think the environmental benefits of this development outweigh the disadvantages for individuals and businesses\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.\n\n## Test 3"
+      },
+      "questionGroups": []
+    }
+  ]
+}
