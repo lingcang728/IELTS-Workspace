@@ -126,6 +126,24 @@ def parse_answer_key(markdown: str) -> dict[tuple[int, str], dict[int, str]]:
     return dict(out)
 
 
+ANSWER_KEY_STORE = ROOT / "fixtures" / "answer-keys"
+
+
+def transcribed_key(exam_id: str) -> dict[int, list[str]]:
+    """A block read off the printed answer page and passed stage 7b's checks.
+
+    This outranks the markdown extraction and the stored fixture both: it is the
+    printed page itself, transcribed in full and machine-verified against every
+    answer the text extraction had already recovered. The markdown is a lossy
+    read of the same page; the fixture is what we are trying to correct.
+    """
+    path = ANSWER_KEY_STORE / f"{exam_id}.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {int(k): list(v) for k, v in (data.get("answers") or {}).items()}
+
+
 def book_keys(book: int) -> dict[tuple[int, str], dict[int, str]]:
     hits = sorted(MINERU.glob(f"C{book:02d}/**/*.md"))
     if not hits:
@@ -174,30 +192,38 @@ def main() -> int:
             continue
         if module not in ("reading", "listening"):
             continue
+        transcribed = transcribed_key(name)
         keys = book_keys(book).get((test, module), {})
-        if not keys:
+        if not keys and not transcribed:
             stats["exam_without_text_key"] += 1
             continue
+        if transcribed:
+            stats["exam_with_transcribed_key"] += 1
         exam = json.loads(path.read_text(encoding="utf-8"))
         touched = False
         for section in exam.get("sections") or []:
             for group in section.get("questionGroups") or []:
                 for question in group.get("questions") or []:
                     number = question.get("number")
-                    printed = keys.get(number)
-                    if printed is None:
-                        stats["no_printed_answer"] += 1
-                        continue
+                    if number in transcribed:
+                        wanted = transcribed[number]
+                        source = "transcribed"
+                    else:
+                        printed = keys.get(number)
+                        if printed is None:
+                            stats["no_printed_answer"] += 1
+                            continue
+                        wanted = split_alternatives(printed)
+                        source = "markdown"
                     current = [str(a).strip() for a in (question.get("acceptedAnswers") or [])]
-                    wanted = split_alternatives(printed)
                     if [c.upper() for c in current] == [w.upper() for w in wanted]:
                         stats["agrees"] += 1
                         continue
                     if args.limit_to_refused and (name, number) not in refused:
                         stats["disagrees_out_of_scope"] += 1
                         continue
-                    stats["disagrees"] += 1
-                    changes.append((name, number, current, wanted, answer_shape(printed) or "?"))
+                    stats[f"disagrees_{source}"] += 1
+                    changes.append((name, number, current, wanted, source))
                     if args.apply:
                         question["acceptedAnswers"] = wanted
                         touched = True
