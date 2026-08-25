@@ -72,6 +72,8 @@ WRITTEN_ANSWER_RE = re.compile(
     r"\bONE WORD ONLY\b|\bNO MORE THAN (?:ONE|TWO|THREE) WORDS?\b", re.I
 )
 
+JUDGEMENT_WORDS = {"TRUE", "FALSE", "NOT GIVEN", "YES", "NO"}
+
 
 def texted(options: list[dict]) -> int:
     return sum(1 for o in options if (o.get("text") or "").strip())
@@ -139,7 +141,29 @@ def repair_question(question: dict, group: dict, stats: dict[str, int]) -> bool:
     options = question.get("options") or []
     shared = group.get("sharedOptions") or []
 
-    if lettery and question.get("type") == "completion":
+    # The printed key settles the type when it is a judgement word. TRUE/FALSE
+    # and YES/NO are different question types in IELTS and the app renders them
+    # differently, so the pair present in the key decides which; a group whose
+    # key is only "NOT GIVEN" keeps whichever judgement type it already had.
+    upper = {a.upper() for a in answers}
+    if upper and upper <= JUDGEMENT_WORDS:
+        if upper & {"TRUE", "FALSE"}:
+            wanted = "true_false_ng"
+        elif upper & {"YES", "NO"}:
+            wanted = "yes_no_ng"
+        else:
+            wanted = question.get("type") if question.get("type") in (
+                "true_false_ng", "yes_no_ng") else "true_false_ng"
+        if question.get("type") != wanted:
+            question["type"] = wanted
+            # A judgement question has no options; leaving a row of empty slots
+            # behind would put buttons under a TRUE/FALSE/NOT GIVEN prompt.
+            if options and not texted(options):
+                question["options"] = []
+            stats["retyped_from_judgement_key"] += 1
+            changed = True
+
+    if lettery and question.get("type") in ("completion", "true_false_ng", "yes_no_ng"):
         if texted(options) >= 2:
             question["type"] = "matching"
             stats["retyped_own_options"] += 1
@@ -178,6 +202,7 @@ def main() -> int:
         "retyped_inherited_options": 0,
         "inline_recovered": 0,
         "phantom_options_dropped": 0,
+        "retyped_from_judgement_key": 0,
     }
     files = 0
     for path in sorted(FIXTURES.glob("*.json")):
