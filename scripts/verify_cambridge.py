@@ -300,6 +300,19 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
                 # The labels survived extraction but the words next to them did
                 # not, so the app renders A/B/C/... with nothing to choose from.
                 gap(f"question {number}", f"answer is option {letters} but every option is blank")
+            else:
+                # (5) The key points at a letter this question does not offer.
+                #     Whatever else is true, the learner cannot ever be marked
+                #     right: the option they must pick is not on screen. This
+                #     was invisible to the gate for a long time because every
+                #     earlier check was satisfied — there are two options, they
+                #     have text, the type is right — and only the *relationship*
+                #     between key and options is wrong.
+                labels = {str(o.get("label") or "").strip().upper() for o in options}
+                stray = sorted({x.upper() for x in letters} - labels)
+                if stray:
+                    broken(f"answer {stray} is not among this question's options "
+                           f"{sorted(labels)}")
         # (5) Completion stems must show the gap, unless the placeholder lives
         #     in the group's table/flow-chart layout instead.
         if qtype in COMPLETION_TYPES and prompt and not GAP_MARKER_RE.search(prompt):
