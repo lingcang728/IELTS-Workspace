@@ -66,8 +66,44 @@ DEGLUE = [
 ]
 
 
+# "Write ONE WORD ONLY", "NO MORE THAN TWO WORDS" — the answer is written, not
+# chosen, so the group has no options at all.
+WRITTEN_ANSWER_RE = re.compile(
+    r"\bONE WORD ONLY\b|\bNO MORE THAN (?:ONE|TWO|THREE) WORDS?\b", re.I
+)
+
+
 def texted(options: list[dict]) -> int:
     return sum(1 for o in options if (o.get("text") or "").strip())
+
+
+def drop_phantom_options(group: dict, stats: dict[str, int]) -> bool:
+    """Remove the option slots a written-answer group should never have had.
+
+    58 groups whose rubric asks the test-taker to *write* a word still carry a
+    row of empty `A`-`H` slots from the importer, so the app offers a choice
+    where the printed page offers a blank line. 22 of them answer with a bare
+    letter, which means either a real word bank or a corrupt key — either way a
+    human has to look, so they are left alone. The other 36 answer with words
+    ("solar"), and for those the slots are simply phantom.
+    """
+    instruction = group.get("instruction") or ""
+    if not WRITTEN_ANSWER_RE.search(instruction):
+        return False
+    shared = group.get("sharedOptions") or []
+    if not shared or texted(shared):
+        return False
+    answers = [str(a).strip() for q in (group.get("questions") or [])
+               for a in (q.get("acceptedAnswers") or [])]
+    if not answers or any(len(a) == 1 and a.isalpha() for a in answers):
+        return False
+    group["sharedOptions"] = []
+    for question in group.get("questions") or []:
+        if question.get("options") and not texted(question["options"]):
+            question["options"] = []
+        question["type"] = "completion"
+    stats["phantom_options_dropped"] += 1
+    return True
 
 
 def strip_edge_pipes(prompt: str) -> str | None:
@@ -141,6 +177,7 @@ def main() -> int:
         "retyped_own_options": 0,
         "retyped_inherited_options": 0,
         "inline_recovered": 0,
+        "phantom_options_dropped": 0,
     }
     files = 0
     for path in sorted(FIXTURES.glob("*.json")):
@@ -151,6 +188,8 @@ def main() -> int:
                 for question in group.get("questions") or []:
                     if repair_question(question, group, stats):
                         touched = True
+                if drop_phantom_options(group, stats):
+                    touched = True
         if not touched:
             continue
         files += 1
