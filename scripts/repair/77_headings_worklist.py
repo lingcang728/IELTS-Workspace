@@ -25,6 +25,7 @@ import argparse
 import collections
 import importlib.util
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -34,6 +35,9 @@ TASKS = REPAIR / "headings-tasks"
 
 ROMAN = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"]
 ROMAN_SET = set(ROMAN)
+# The rubric is what makes a group a List of Headings group, not the shape of
+# its answer key.
+HEADING_RUBRIC_RE = re.compile(r"\bheadings?\b", re.I)
 
 
 def _load(name: str, filename: str):
@@ -51,6 +55,14 @@ def heading_groups(exam: dict) -> list[dict]:
     found: list[dict] = []
     for section in exam.get("sections") or []:
         for group in section.get("questionGroups") or []:
+            # `i`, `v` and `x` are also perfectly good Latin option labels, and
+            # OCR junk keys land on them too. Reading a key as a roman numeral
+            # without checking the rubric is what put 16 note-completion and
+            # summary tasks into the first run of this worklist — a reviewer
+            # opened the page, found no headings box, and rightly refused.
+            # Only a group that says "heading" is a List of Headings group.
+            if not HEADING_RUBRIC_RE.search(group.get("instruction") or ""):
+                continue
             numbers, keys = [], set()
             for question in group.get("questions") or []:
                 answers = [str(a).strip() for a in (question.get("acceptedAnswers") or [])]
