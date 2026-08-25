@@ -10,6 +10,7 @@
 20_extract_transcripts.py → fixtures/transcripts/{exam-id}.json
 30_part_offsets.py     → 写回 exam json 的 Part 边界（待建）
 40_apply.py            → 合并 overlay + parsed → fixtures（待建）
+64/65/67_*.py          → 结构/机械修复（直接写 fixtures，先 .bak）
 ```
 
 合并优先级：**`overlay(人工)` > `parsed(自动)` > `现有 fixtures`**。
