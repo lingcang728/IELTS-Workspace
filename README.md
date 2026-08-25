@@ -1,196 +1,49 @@
-<div align="center">
-
-<img src="docs/assets/logo.png" alt="IELTS Workspace Logo" width="120" height="120" />
-
 # IELTS Workspace
 
-### 🎯 本地优先的高保真雅思机考（IELTS on Computer）备考与全真模考桌面工作台
+Windows 上的雅思 Academic 机考练习软件。试卷和作答都在本机，不注册、不登录。
+
+阅读和写作装好就能做。听力题目一并内置，音频不随安装包提供，需要自己导入。
+
+网站：<https://ielts-workspace.pages.dev>
 
 <p align="center">
-  <a href="https://github.com/lingcang728/IELTS-Workspace/releases/latest"><img src="https://img.shields.io/github/v/release/lingcang728/IELTS-Workspace?color=blue&label=Release&logo=github" alt="Release" /></a>
-  <img src="https://img.shields.io/badge/Platform-Windows%20x64-brightgreen?logo=windows" alt="Platform" />
-  <img src="https://img.shields.io/badge/Architecture-Local--First%20%7C%20Offline-blueviolet" alt="Architecture" />
-  <img src="https://img.shields.io/badge/Framework-Tauri%202%20%7C%20React%2018%20%7C%20Rust-orange?logo=tauri" alt="Tech Stack" />
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
-  <a href="https://github.com/lingcang728/IELTS-Workspace/stargazers"><img src="https://img.shields.io/github/stars/lingcang728/IELTS-Workspace?style=social" alt="GitHub Stars" /></a>
+  <img src="docs/assets/preview.png" alt="练习中心" width="88%" />
 </p>
 
-<p align="center">
-  <b>1:1 深度还原官方机考真实交互行为 • 剑桥雅思真题全覆盖 • 纯本地离线运行 • 零广告 • 零隐私泄露</b>
-</p>
+## 下载
 
----
+系统：Windows 10 / 11，64 位。推荐安装版。
 
-[✨ 特性亮点](#-特性亮点) • [🖥️ 界面预览](#-界面预览) • [📥 快速下载](#-快速下载与安装) • [🚀 快速上手](#-快速上手) • [🛠️ 源码构建](#-本地开发与构建) • [🏗️ 技术架构](#-技术架构) • [📄 版权说明](#-免责与版权声明)
+到 [Releases](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载：
 
-</div>
+| 包 | 文件 | 数据放哪 |
+| --- | --- | --- |
+| 安装版（推荐） | `IELTS_Workspace_*_x64-setup.exe` | `%LOCALAPPDATA%\IELTS Workspace\data` |
+| 便携版 | `IELTS_Workspace_*_x64.exe` | exe 同目录的 `data\` |
 
-<br />
+安装版支持应用内检查更新。便携版更新时会迁到安装版。
 
-## 💡 为什么选择 IELTS Workspace？
+## 怎么用
 
-在准备雅思机考（IELTS on Computer）时，许多考生常常受困于以下痛点：
-- **考场适应困难**：传统备考网站或 App 界面样式与真实机考系统出入极大，无法有效建立答题肌肉记忆（如底部导航栏标记、划线与便签联动、左右分栏独立滚动等）。
-- **流程不真实**：很多练习平台允许听力随意快进、倒带或反复重听，缺乏真实机考中“音频仅放一次 + 严格时间联动”的紧迫感。
-- **网络与广告干扰**：在线刷题平台充斥广告弹窗与网络波动，甚至需强制登录与高昂订阅费。
-- **隐私与数据丢失**：作答记录和笔记全保存在云端第三方服务器，无法自主备份和完全拥有自己的学习资产。
+1. 打开软件。Reading / Writing 直接开始。
+2. Listening 若按钮是「添加音频」：导入本机 `mp3` / `m4a` / `wav`。可以是整轨、四个 Part、文件夹，或按册 ZIP。分册包在网站 [听力音频](https://ielts-workspace.pages.dev/#listening)。软件不会自己下载音频。
+3. **练习**：可暂停、重听。**模考**：按机考纪律，听力只放一遍，不能拖进度条；听完后有 2 分钟检查。
+4. 交卷后看对错。Listening / Reading 的 Band 是按公开换算表估算的，不是官方成绩。写作没有客观 Band。
 
-**IELTS Workspace** 由个人开发者独立打造，致力于解决上述所有痛点——以 **“极致考场还原”** 与 **“本地优先（Local-First）”** 为核心原则，为每一位雅思考生提供纯粹、专业、稳定、可信赖的现代化机考备考工作台。
+来源栏里的「剑桥雅思 X · 本项目整理」表示题是本项目从教材整理出来的，不是剑桥官方软件。
 
----
+## 数据
 
-## ✨ 特性亮点
+练习记录、笔记、导入的听力都在上面的数据目录里。卸载安装版时，LocalAppData 里的用户数据会留下。
 
-### 🎯 1:1 深度还原官方机考交互（Official Exam Runtime）
-- **🎧 听力（Listening）考场仿真**：
-  - 严格遵循官方机考逻辑：音频**仅播放一次**，播放期间不可随意暂停与拖动。
-  - 音频与答题计时器深度协同，听力结束后自动进入官方专属 **2 分钟全卷检查倒计时**。
-- **📖 阅读（Reading）双栏交互**：
-  - 左侧文章、右侧题目独立双滚动条设计，互不干扰。
-  - 支持 **划词即时高亮（Highlight）** 与 **关联便签笔记（Notes）**，操作习惯与机考完全一致。
-- **✍️ 写作（Writing）考场环境**：
-  - Task 1 与 Task 2 双任务自由切换作答，实时**字数统计（Word Count）**。
-  - 主动禁用浏览器拼写纠错（Spellcheck）与自动修正，杜绝考前产生依赖。
-- **⏱️ 考场全局状态与提醒**：
-  - 顶部官方风格倒计时，考试剩余 10 分钟与 5 分钟时触发**红字闪烁强提醒**，时间用尽强制交卷。
-  - 底部 40 题全景导航条，清晰指示「已作答（横线标识）」、「未作答」、「标疑（Review Flag 圆形标识）」状态。
+除检查更新会访问 GitHub Release 外，软件不发网络请求，也没有遥测。
 
-### 📚 剑桥雅思全真题库开箱即用（Cambridge IELTS 4–21）
-- 安装后即内置 212 份结构化试卷：Reading / Writing 可直接开考；Listening 题目同样内置，音频需由用户在本机添加。
-- 应用不捆绑听力 MP3。请到「听力资源」导入整轨、四个 Part、文件夹或 [分册 ZIP](https://ielts-workspace.pages.dev/#listening)。
-- 完整支持雅思机考全题型：单选、多选、填空（Summary/Sentence/Table/Flow-chart）、配对（Matching/Headings）、判断（TRUE/FALSE/NOT GIVEN, YES/NO/NOT GIVEN）等。
+不内置 AI。需要讲解或批改时，软件只生成 prompt，你复制到自己已有的 ChatGPT / Gemini / Grok / Claude 网页里用。
 
-### ⚡ 双模式智能备考（Practice & Mock）
-- **专项练习模式（Practice）**：适合日常精练，支持随时暂停、回放音频、即时查看参考答案与解析。
-- **全真模考模式（Mock）**：完全锁定考场规则，严格计时，还原全真考场压力与流程。
+## 版权
 
-### 📊 智能考后复盘与能力雷达
-- 模考结束后即时生成全卷评估报告，按 `schema/band-conversion.json` 的近似换算表给出**估算 Band**（明确标注非官方成绩，前后端共用同一张表）。
-- 题型得分率分布、各 Part 耗时分析、错题快速定位与历史作答回溯。
+IELTS 是 Cambridge Assessment English、British Council、IDP 的商标。本项目与官方无关。
 
-### 🔒 本地优先与零隐私泄露（Local-First & Zero-Telemetry）
-- **100% 离线运行**：无需注册账号、无需联网登录、无任何后台埋点与数据收集。
-- **数据完全自主**：所有练习记录、模考成绩、高亮笔记均以标准格式保存在本地，随时可备份迁移。
+题库供个人学习，请使用正版剑桥教材。源码为 [MIT](LICENSE)。
 
----
-
-## 🖥️ 界面预览
-
-<div align="center">
-  <img src="docs/assets/preview.png" alt="IELTS Workspace 练习中心与答题界面" width="92%" />
-  <p><i>▲ IELTS Workspace 练习中心 — 题库选择、模块练习与真题管理</i></p>
-</div>
-
----
-
-## 📥 快速下载与安装
-
-### 方式一：直接下载安装包（推荐）
-
-前往 [GitHub Releases 最新发布页](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载：
-
-| 版本类型 | 文件名 | 说明 |
-| :--- | :--- | :--- |
-| **📦 Windows 安装版** | `IELTS_Workspace_1.3.0_x64-setup.exe` | 推荐；数据在 `%LOCALAPPDATA%\IELTS Workspace\data`；支持应用内更新 |
-| **🚀 Windows 单文件版** | `IELTS_Workspace_1.3.0_x64.exe` | 便携版，数据在 EXE 同目录的 `data\`；更新时会迁到安装版 |
-
-产品网站与听力导入说明：[ielts-workspace.pages.dev](https://ielts-workspace.pages.dev)
-
-> **支持系统**：Windows 10 / Windows 11 (64-bit)
-
----
-
-## 🚀 快速上手
-
-1. **启动程序**：安装后打开 IELTS Workspace。阅读和写作可直接开始。
-2. **添加听力（可选）**：Listening 行会显示「添加音频」。导入本机 MP3/M4A/WAV、四个 Part，或下载 [C04-C20 分册 ZIP](https://ielts-workspace.pages.dev/#listening)。
-3. **选择题库与模块**：在「练习中心」选择剑桥雅思册次，来源显示为「剑桥雅思 X · 本项目整理」。
-4. **选择作答模式**：专项练习可暂停重听；全真模考按考场纪律，听力不可拖动或暂停。
-5. **考后复盘**：提交后查看估算 Band、正误对比和历史记录。
-
----
-
-## 🛠️ 本地开发与构建
-
-如果你是开发者，或希望自行定制与二次开发 IELTS Workspace：
-
-### 前置要求
-- **Node.js** >= 18.0.0
-- **Rust & Cargo** >= 1.75.0
-- **C++ Build Tools**（Windows 下推荐 Visual Studio C++ 工具包）
-
-### 开发步骤
-
-```powershell
-# 1. 克隆本仓库
-git clone https://github.com/lingcang728/IELTS-Workspace.git
-cd IELTS-Workspace
-
-# 2. 安装前端依赖
-npm install
-
-# 3. 启动桌面端开发热重载
-npm run tauri dev
-```
-
-### 打包构建 Release
-
-```powershell
-# 验证并构建签名的 NSIS、便携版及 latest.json
-npm run package:release
-```
-构建完成后的发布资产输出在 `output/release/`；GitHub Tag 工作流会使用相同流程生成 Release。
-
----
-
-## 🏗️ 技术架构
-
-```
-IELTS-Workspace/
-├── release/              # 编译发布产物 (Windows 安装包与独立可执行程序)
-├── src/                  # 前端 UI 与业务交互层 (React 18 + TypeScript + TailwindCSS)
-│   ├── components/       # 核心组件库（考场计时器、底部导航栏、高亮便签、分屏滚动等）
-│   ├── pages/            # 页面视图（练习中心、考场 Runtime、成绩分析、设置）
-│   └── lib/              # 评分引擎、本地数据存储、状态管理与工具库
-├── src-tauri/            # 原生桌面后端与系统桥接 (Rust + Tauri 2)
-│   ├── src/              # Rust 原生命令、文件系统访问、窗口无边框控制
-│   └── tauri.conf.json   # 桌面端应用配置与窗口策略
-├── 听力/                 # 剑桥雅思各册听力音频与校验清单 (MP3/M4A/manifest.csv)
-├── 教材/                 # 剑桥雅思各册真题教材文档与校验清单 (PDF/manifest.csv)
-├── fixtures/             # 结构化试题数据与渲染器测试用例
-├── docs/                 # 项目文档、机考规范参考与设计资源
-└── scripts/              # 数据清洗、音频合并、自动化构建与验证脚本
-```
-
----
-
-## 🗺️ 路线图 (Roadmap)
-
-- [x] 1:1 还原 2025/2026 最新官方机考 Listening、Reading、Writing 考场交互
-- [x] 剑桥雅思 4~20 全套真题与音频本地化深度集成
-- [x] 逐题对照复盘与估算 Band 考后报告（题型正确率、时间范围筛选）
-- [x] 双模式（Practice / Mock）自由切换
-- [ ] 离线 AI 写作智能批改与润色（可选接入本地 Ollama / 自定义 API）
-- [ ] 错题本与高频词汇生词本（从做过的材料自动成卡）
-- [ ] macOS (Apple Silicon / Intel) 与 Linux 原生桌面端适配
-
----
-
-## 📄 免责与版权声明
-
-1. **学术与个人备考用途**：本项目为开源学习与备考研究项目，旨在为全球雅思考生提供优秀的数字化模拟工具。
-2. **商标权属声明**：`IELTS` 是剑桥大学英语考评部（Cambridge Assessment English）、英国文化协会（British Council）以及 IDP 教育集团的注册商标。本项目为独立开源作品，与上述官方机构不存在任何商业合作或附属关系。
-3. **开源协议**：本项目核心源代码基于 [MIT License](LICENSE) 开源发布。
-
----
-
-## 💖 参与贡献与致谢
-
-欢迎所有关注和使用 IELTS Workspace 的朋友参与项目建设！
-- 发现 Bug 或有新功能建议？欢迎提交 [Issues](https://github.com/lingcang728/IELTS-Workspace/issues)。
-- 有代码改进或功能实现？欢迎提交 [Pull Requests](https://github.com/lingcang728/IELTS-Workspace/pulls)。
-- 如果这个项目对你的雅思备考有所帮助，请给项目点一个 ⭐️ **Star**，让更多考鸭看见！
-
-<div align="center">
-  <sub>Made with ❤️ by <a href="https://github.com/lingcang728">凌苍 (lingcang728)</a> and contributors</sub>
-</div>
+有问题请开 [Issue](https://github.com/lingcang728/IELTS-Workspace/issues)。
