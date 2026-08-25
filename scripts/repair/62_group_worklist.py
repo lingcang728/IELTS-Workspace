@@ -113,17 +113,31 @@ def numbers_for_key(key: str, groups: dict[str, dict[str, Any]]) -> list[int]:
     return []
 
 
-def overlay_done_groups(exam_id: str) -> set[str]:
+DONE_STATUSES = {"approved", "corrected", "flagged"}
+
+
+def overlay_done_groups(exam_id: str, reopen_flagged: bool = False) -> set[str]:
+    """Groups already dealt with, so the worklist does not re-issue them.
+
+    ``flagged`` normally counts as dealt with: the reviewer looked and reported
+    that the page could not answer the task. But round 3 flagged 747 groups for
+    one reason -- the task declared options ``A``-``H`` that the printed page
+    never had -- and stage 6b then fixed exactly that. Those groups are now
+    answerable, and re-opening them is the whole point of ``--reopen-flagged``.
+    Without the switch the behaviour is unchanged, because reopening a flag
+    that is still true only wastes a reviewer's time.
+    """
     path = OVERLAYS / f"{exam_id}.json"
     if not path.exists():
         return set()
     data = read_json(path)
+    done = DONE_STATUSES - {"flagged"} if reopen_flagged else DONE_STATUSES
     return {gid for gid, entry in (data.get("groups") or {}).items()
-            if (entry or {}).get("status") in {"approved", "corrected", "flagged"}}
+            if (entry or {}).get("status") in done}
 
 
 def build_book(book: int, page_map: dict[str, Any], gaps: dict[str, dict[str, list[str]]],
-               render: bool) -> list[dict[str, Any]]:
+               render: bool, reopen_flagged: bool = False) -> list[dict[str, Any]]:
     tasks: list[dict[str, Any]] = []
     exams = sorted(exam_id for exam_id, entry in page_map["exams"].items()
                    if entry["book"] == book)
@@ -138,7 +152,7 @@ def build_book(book: int, page_map: dict[str, Any], gaps: dict[str, dict[str, li
         exam = read_json(exam_path)
         groups = group_index(exam)
         pending = normalise_keys(pending, groups)
-        done = overlay_done_groups(exam_id)
+        done = overlay_done_groups(exam_id, reopen_flagged)
         questions = stage50.load_exam_questions(exam_id)
 
         # Reuse the stem worklist's page clustering by expressing each gap as
@@ -228,6 +242,9 @@ def main() -> int:
     parser.add_argument("--status", action="store_true")
     parser.add_argument("--next", type=int, default=0)
     parser.add_argument("--no-render", action="store_true")
+    parser.add_argument("--reopen-flagged", action="store_true",
+                        help="re-issue groups a previous round flagged (use after the "
+                             "reason for the flag has been repaired)")
     parser.add_argument("--expand", type=str, default="",
                         help="widen one task's page window and re-render, e.g. --expand <taskId>")
     parser.add_argument("--by", type=int, default=2, help="pages to add on each side of --expand")
@@ -243,7 +260,8 @@ def main() -> int:
 
     grand = {"tasks": 0, "groups": 0, "remaining": 0, "pages": 0}
     for book in books:
-        tasks = build_book(book, page_map, gaps, render=not (args.status or args.no_render))
+        tasks = build_book(book, page_map, gaps, render=not (args.status or args.no_render),
+                           reopen_flagged=args.reopen_flagged)
         pages = {(book, p) for t in tasks for p in t["pdfPagesZeroBased"]}
         remaining = sum(t["remaining"] for t in tasks)
         total = sum(len(t["groups"]) for t in tasks)
