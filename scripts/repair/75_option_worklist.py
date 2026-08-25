@@ -59,6 +59,10 @@ def missing_option_questions(exam: dict) -> dict[str, list[dict]]:
                     continue
                 out.setdefault(group.get("id") or "?", []).append({
                     "number": question.get("number"),
+                    # The overlay store is keyed by question id, not number:
+                    # `40_apply` looks up `overlay[question["id"]]`. Writing the
+                    # number instead means the overlay is silently never read.
+                    "questionId": question.get("id"),
                     "prompt": (question.get("prompt") or "")[:160],
                     "answerLetters": sorted({a.upper() for a in answers}),
                     "type": question.get("type"),

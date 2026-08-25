@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "note": "Content damage ratchet. It rises only when the data becomes MORE truthful, and each such rise is recorded here. (1) 232 -> 304: the gate learned an answer key must name an option the question offers. (2) contentGaps 502 -> 638: the gate learned a map/plan labelling group needs its image; 136 have none. (3) 263 -> 476: 984 answer keys were replaced with the ones printed at the back of the book, transcribed from the scanned answer pages and machine-verified. The old keys were wrong in a way that HID other damage -- a form-completion question storing 'TRUE' matched its equally wrong 'true_false_ng' type, so neither showed. With correct keys the corpus now agrees with the printed answer key on 3990 questions and 0 disagreements remain from that source, while 413 questions stand revealed as letter-answered with no option list ever extracted. contentGaps fell 638 -> 535 in the same step. Nothing got worse; the masking stopped.",
-  "damagedQuestions": 476,
-  "contentGaps": 535,
+  "note": "Content damage ratchet. It may only fall, except where the data became more truthful and that is recorded. History: 232 -> 304 (gate learned a key must name an option the question offers); gaps 502 -> 638 (gate learned a labelling group needs its image; 136 have none); 263 -> 476 (984 keys replaced with the printed answer key, which stopped the old wrong keys from masking wrong types). That last rise has now been paid back in full: 355 missing option lists were transcribed from the scanned pages and 189 questions retyped once their options existed, taking damage to 251 and gaps to 427 — below where the corpus stood before the keys were corrected, and honest this time.",
+  "damagedQuestions": 251,
+  "contentGaps": 427,
   "byBook": {
     "4": {
       "listening": {
@@ -39,7 +39,7 @@
         "questions": 160,
         "damaged": 10,
         "suspect": 3,
-        "gaps": 12,
+        "gaps": 9,
         "healthy": 150,
         "healthPct": 93.8
       },
@@ -48,7 +48,7 @@
         "questions": 160,
         "damaged": 0,
         "suspect": 0,
-        "gaps": 30,
+        "gaps": 19,
         "healthy": 160,
         "healthPct": 100.0
       },
@@ -68,7 +68,7 @@
         "questions": 160,
         "damaged": 15,
         "suspect": 0,
-        "gaps": 15,
+        "gaps": 13,
         "healthy": 145,
         "healthPct": 90.6
       },
@@ -77,7 +77,7 @@
         "questions": 160,
         "damaged": 2,
         "suspect": 2,
-        "gaps": 58,
+        "gaps": 47,
         "healthy": 158,
         "healthPct": 98.8
       },
@@ -104,11 +104,11 @@
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 7,
+        "damaged": 3,
         "suspect": 0,
-        "gaps": 26,
-        "healthy": 153,
-        "healthPct": 95.6
+        "gaps": 19,
+        "healthy": 157,
+        "healthPct": 98.1
       },
       "writing": {
         "exams": 4,
@@ -124,18 +124,18 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 31,
+        "damaged": 12,
         "suspect": 0,
         "gaps": 12,
-        "healthy": 129,
-        "healthPct": 80.6
+        "healthy": 148,
+        "healthPct": 92.5
       },
       "reading": {
         "exams": 4,
         "questions": 160,
         "damaged": 7,
         "suspect": 0,
-        "gaps": 50,
+        "gaps": 30,
         "healthy": 153,
         "healthPct": 95.6
       },
@@ -153,20 +153,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 42,
+        "damaged": 13,
         "suspect": 0,
         "gaps": 7,
-        "healthy": 118,
-        "healthPct": 73.8
+        "healthy": 147,
+        "healthPct": 91.9
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 4,
+        "damaged": 2,
         "suspect": 0,
-        "gaps": 37,
-        "healthy": 156,
-        "healthPct": 97.5
+        "gaps": 24,
+        "healthy": 158,
+        "healthPct": 98.8
       },
       "writing": {
         "exams": 4,
@@ -182,18 +182,18 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 30,
+        "damaged": 7,
         "suspect": 0,
         "gaps": 0,
-        "healthy": 130,
-        "healthPct": 81.2
+        "healthy": 153,
+        "healthPct": 95.6
       },
       "reading": {
         "exams": 4,
         "questions": 160,
         "damaged": 5,
         "suspect": 0,
-        "gaps": 17,
+        "gaps": 16,
         "healthy": 155,
         "healthPct": 96.9
       },
@@ -222,7 +222,7 @@
         "questions": 160,
         "damaged": 9,
         "suspect": 0,
-        "gaps": 23,
+        "gaps": 16,
         "healthy": 151,
         "healthPct": 94.4
       },
@@ -251,7 +251,7 @@
         "questions": 160,
         "damaged": 5,
         "suspect": 0,
-        "gaps": 31,
+        "gaps": 21,
         "healthy": 155,
         "healthPct": 96.9
       },
@@ -269,20 +269,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 12,
+        "damaged": 9,
         "suspect": 0,
         "gaps": 25,
-        "healthy": 148,
-        "healthPct": 92.5
+        "healthy": 151,
+        "healthPct": 94.4
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 9,
+        "damaged": 4,
         "suspect": 0,
         "gaps": 2,
-        "healthy": 151,
-        "healthPct": 94.4
+        "healthy": 156,
+        "healthPct": 97.5
       },
       "writing": {
         "exams": 4,
@@ -298,20 +298,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 22,
+        "damaged": 5,
         "suspect": 0,
         "gaps": 5,
-        "healthy": 138,
-        "healthPct": 86.2
+        "healthy": 155,
+        "healthPct": 96.9
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 21,
+        "damaged": 6,
         "suspect": 0,
         "gaps": 0,
-        "healthy": 139,
-        "healthPct": 86.9
+        "healthy": 154,
+        "healthPct": 96.2
       },
       "writing": {
         "exams": 4,
@@ -327,20 +327,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 13,
+        "damaged": 7,
         "suspect": 0,
         "gaps": 12,
-        "healthy": 147,
-        "healthPct": 91.9
+        "healthy": 153,
+        "healthPct": 95.6
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 18,
+        "damaged": 6,
         "suspect": 0,
         "gaps": 0,
-        "healthy": 142,
-        "healthPct": 88.8
+        "healthy": 154,
+        "healthPct": 96.2
       },
       "writing": {
         "exams": 4,
@@ -356,20 +356,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 16,
+        "damaged": 7,
         "suspect": 0,
         "gaps": 12,
-        "healthy": 144,
-        "healthPct": 90.0
+        "healthy": 153,
+        "healthPct": 95.6
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 12,
+        "damaged": 1,
         "suspect": 0,
-        "gaps": 5,
-        "healthy": 148,
-        "healthPct": 92.5
+        "gaps": 3,
+        "healthy": 159,
+        "healthPct": 99.4
       },
       "writing": {
         "exams": 4,
@@ -385,20 +385,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 9,
+        "damaged": 5,
         "suspect": 0,
         "gaps": 5,
-        "healthy": 151,
-        "healthPct": 94.4
+        "healthy": 155,
+        "healthPct": 96.9
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 25,
+        "damaged": 7,
         "suspect": 0,
-        "gaps": 16,
-        "healthy": 135,
-        "healthPct": 84.4
+        "gaps": 14,
+        "healthy": 153,
+        "healthPct": 95.6
       },
       "writing": {
         "exams": 4,
@@ -414,20 +414,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 24,
+        "damaged": 11,
         "suspect": 0,
         "gaps": 6,
-        "healthy": 136,
-        "healthPct": 85.0
+        "healthy": 149,
+        "healthPct": 93.1
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 15,
+        "damaged": 8,
         "suspect": 0,
-        "gaps": 15,
-        "healthy": 145,
-        "healthPct": 90.6
+        "gaps": 11,
+        "healthy": 152,
+        "healthPct": 95.0
       },
       "writing": {
         "exams": 4,
@@ -443,20 +443,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 16,
+        "damaged": 11,
         "suspect": 0,
         "gaps": 11,
-        "healthy": 144,
-        "healthPct": 90.0
+        "healthy": 149,
+        "healthPct": 93.1
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 14,
+        "damaged": 4,
         "suspect": 3,
-        "gaps": 23,
-        "healthy": 146,
-        "healthPct": 91.2
+        "gaps": 16,
+        "healthy": 156,
+        "healthPct": 97.5
       },
       "writing": {
         "exams": 4,
@@ -472,20 +472,20 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 16,
+        "damaged": 8,
         "suspect": 0,
         "gaps": 4,
-        "healthy": 144,
-        "healthPct": 90.0
+        "healthy": 152,
+        "healthPct": 95.0
       },
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 4,
+        "damaged": 1,
         "suspect": 4,
-        "gaps": 26,
-        "healthy": 156,
-        "healthPct": 97.5
+        "gaps": 18,
+        "healthy": 159,
+        "healthPct": 99.4
       },
       "writing": {
         "exams": 4,
@@ -501,11 +501,11 @@
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 8,
+        "damaged": 6,
         "suspect": 0,
         "gaps": 1,
-        "healthy": 152,
-        "healthPct": 95.0
+        "healthy": 154,
+        "healthPct": 96.2
       },
       "writing": {
         "exams": 4,

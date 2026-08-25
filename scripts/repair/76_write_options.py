@@ -157,10 +157,14 @@ def main() -> int:
     now = dt.datetime.now(dt.timezone.utc).isoformat()
     for spec in task["questions"]:
         number = spec["number"]
+        # Keyed by question id, because that is what `40_apply` looks up. An
+        # earlier version keyed by number, so 355 recovered option lists sat in
+        # the overlay and were never read into a single fixture.
+        qid = spec.get("questionId") or str(number)
         raw = submission["questions"].get(str(number), submission["questions"].get(number))
         options = normalise_options(raw) or []
-        overlay["questions"][str(number)] = {
-            **(overlay["questions"].get(str(number)) or {}),
+        overlay["questions"][qid] = {
+            **(overlay["questions"].get(qid) or {}),
             "status": "corrected",
             "reviewedAt": now,
             "note": f"option list read off {task['pdf']} page {task['pdfPageNumbers']}",
