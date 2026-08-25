@@ -86,9 +86,34 @@ def answer_shape(value: str) -> str | None:
 
 
 def parse_answer_key(markdown: str) -> dict[tuple[int, str], dict[int, str]]:
-    match = KEYS_RE.search(markdown)
-    if not match:
+    # The heading occurs several times: once or twice in the contents at the
+    # front, then as a running header on every answer page. Taking the first
+    # match starts at the contents and swallows the whole book — that is how
+    # "14 New traffic lights", a map question's item list, ended up stored as
+    # the answer to question 14. Taking the last match starts on the section's
+    # final page and loses almost everything.
+    #
+    # The section is where the answers actually are, so find it by density:
+    # score each occurrence by how many answer-shaped lines follow it within a
+    # short window, and take the best. Front matter scores near zero.
+    matches = list(KEYS_RE.finditer(markdown))
+    if not matches:
         return {}
+
+    def density(offset: int) -> int:
+        window = markdown[offset:].splitlines()[1:160]
+        return sum(1 for line in window
+                   if (m := LINE_RE.match(line.strip())) and answer_shape(m.group(2)))
+
+    scored = [(m, density(m.start())) for m in matches]
+    best = max(s for _, s in scored)
+    if best < 10:
+        return {}
+    # The header repeats on every answer page, so every occurrence inside the
+    # section scores high. The section *starts* at the earliest of those, which
+    # is the one to parse from; picking the highest score alone would land on
+    # whichever page happens to be densest, usually the last.
+    match = next(m for m, s in scored if s >= max(10, best // 3))
     out: dict[tuple[int, str], dict[int, str]] = collections.defaultdict(dict)
     test: int | None = None
     module: str | None = None
@@ -166,6 +191,8 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="report only (default)")
     parser.add_argument("--limit-to-refused", action="store_true",
                         help="only touch the groups stage 67 refused")
+    parser.add_argument("--only-transcribed", action="store_true",
+                        help="apply only keys read off the printed page by stage 7b")
     args = parser.parse_args()
 
     refused: set[tuple[str, int]] = set()
@@ -224,6 +251,14 @@ def main() -> int:
                         continue
                     stats[f"disagrees_{source}"] += 1
                     changes.append((name, number, current, wanted, source))
+                    if args.only_transcribed and source != "transcribed":
+                        # The markdown extraction is a lossy read of the same
+                        # page the transcription read properly. Where only the
+                        # lossy one disagrees, it is more likely to be the one
+                        # that is wrong — "(£)115 / a / one hundred(and)fifteen"
+                        # is what that source does to a good key.
+                        stats["skipped_markdown_only"] += 1
+                        continue
                     if args.apply:
                         question["acceptedAnswers"] = wanted
                         touched = True
