@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {
-  analyticsReport, bootstrap, importExam, loadExam, loadSession, mistakeAdd, mistakeList,
+  analyticsReport, bootstrap, discardSession, importExam, loadExam, loadSession, mistakeAdd, mistakeList,
   planGet, planSave, saveProfile, saveSession, scoreExam, vocabDue, vocabList,
 } from "./lib/api";
 import { buildReviewPrompt } from "./lib/reviewPrompt";
@@ -125,6 +125,28 @@ export function App() {
 
   function addAudio(examId?: string) {
     setAudioWizard(examId ?? null);
+  }
+
+  async function retakeExam(summary: ExamSummary, mode: "mock" | "practice") {
+    if (busy) return;
+    if (summary.module === "listening" && !listeningReady(summary.audioStatus)) {
+      addAudio(summary.id);
+      return;
+    }
+    setBusy(true);
+    try {
+      const previous = (boot?.sessions ?? []).filter((row) => row.examId === summary.id && row.mode === mode);
+      for (const row of previous) {
+        await discardSession(row.id);
+      }
+      await reload();
+    } catch (e) {
+      setError(String(e));
+      setBusy(false);
+      return;
+    }
+    setBusy(false);
+    await startExam(summary, mode);
   }
 
   async function startExam(summary: ExamSummary, mode: "mock" | "practice") {
@@ -254,10 +276,10 @@ export function App() {
       <main className="workspace-main">
         {boot.probe.warning && <div className="notice-strip"><Icon name="info" size={16} />{boot.probe.warning}</div>}
         {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} onDismissGuide={() => void updateProfile({ audioGuideDismissed: true })} onAddAudio={() => addAudio()} />}
-        {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onContinue={continueSession} onView={setView} />}
-        {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onContinue={continueSession} onView={setView} />}
+        {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
+        {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
         {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
-        {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} />}
+        {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else setError("找不到这套试卷，无法重考"); }} />}
         {view === "import" && <ImportPage value={importText} onChange={setImportText} onImport={() => importExam(importText).then(reload).then(() => setView("home")).catch((e) => setError(String(e)))} />}
         {view === "settings" && <Settings profile={boot.profile} theme={theme} onProfile={(patch) => void updateProfile(patch)} onImport={() => setView("import")} />}
         {view === "mistakes" && <Mistakes onPractise={() => setView("practice")} />}
@@ -265,7 +287,7 @@ export function App() {
         {view === "intensive" && <Intensive exams={boot.exams} />}
         {view === "studio" && <PromptStudio vocab={vocab} />}
         {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => setError(String(e)))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => setError(String(e)))} />}
-        {view === "results" && session && <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} />}
+        {view === "results" && session && <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} onRetake={() => { const found = boot.exams.find((row) => row.id === session.examId); if (found) void retakeExam(found, session.mode); else setError("找不到这套试卷，无法重考"); }} />}
       </main>
     </div>
     <div className="toast-region">{toast && <div className="toast"><Icon name="check" size={17} />{toast}</div>}</div>

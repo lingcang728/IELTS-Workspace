@@ -79,7 +79,7 @@
 .catalog-heading h2 { margin: 0; font-size: 16px; }
 .catalog-heading span { color: var(--muted); font-size: 11px; }
 .catalog-list { min-height: 0; display: flex; flex: 1; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; }
-.catalog-row { min-height: 63px; display: grid; grid-template-columns: 48px minmax(180px, 1.8fr) minmax(68px, .55fr) minmax(78px, .65fr) minmax(60px, .5fr) 96px; align-items: center; gap: 10px; padding: 7px 11px; border-bottom: 1px solid var(--line); }
+.catalog-row { min-height: 63px; display: grid; grid-template-columns: 48px minmax(180px, 1.8fr) minmax(68px, .55fr) minmax(78px, .65fr) minmax(60px, .5fr) auto; align-items: center; gap: 10px; padding: 7px 11px; border-bottom: 1px solid var(--line); }
 .catalog-row:last-child { border-bottom: 0; }
 .catalog-row:hover { background: var(--panel-hover); }
 .catalog-row .module-image { width: 42px; height: 42px; }
@@ -91,7 +91,10 @@
 /* The catalogue lists dozens of rows: a coloured button on every one would be
    the accent-per-screen budget spent thirty times over. Mock is the primary
    action, practice the secondary. */
+.catalog-actions { display: flex; gap: 6px; justify-self: end; }
+.catalog-actions .module-button, .catalog-actions .strict-button, .retake-button { width: auto; min-width: 72px; min-height: 34px; padding: 0 10px; font-size: 13px; }
 .module-button, .strict-button { width: 96px; min-height: 34px; padding: 0; font-size: 13px; }
+.history-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 .module-button { border: 1px solid var(--line-strong); background: transparent; color: var(--ink-soft); }
 .module-button:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
 /* Outlined, not filled: a catalogue page shows six of these at once, and six
@@ -225,7 +228,7 @@
 @media (max-width: 1220px) {
   .top-grid, .bottom-grid, .practice-layout, .mock-layout { grid-template-columns: 1fr; }
   .practice-aside, .mock-aside { display: grid; grid-template-columns: 1fr 1fr; }
-  .catalog-row { grid-template-columns: 42px minmax(200px, 1.8fr) 75px 82px 65px 88px; }
+  .catalog-row { grid-template-columns: 42px minmax(160px, 1.8fr) 75px 82px 65px auto; }
   .analytics-grid { grid-template-columns: 1fr 1fr; }
   .overall-card { grid-column: span 2; }
   .page-heading blockquote { display: none; }

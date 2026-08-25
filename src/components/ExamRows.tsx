@@ -11,8 +11,9 @@ export function ExamRow({ exam, action, onClick }: { exam: ExamSummary; action: 
   return <article className="exam-row"><ModuleIcon module={exam.module} size={44} /><div className="exam-row-copy"><span className="tag">{sourceLabel(exam)}</span><h3>{exam.title}</h3><p>{moduleLabel(exam.module)} · {exam.questionCount} 题</p></div><button type="button" className="secondary-button" onClick={onClick}>{action}</button></article>;
 }
 
-export function ExamCatalogRow({ exam, mode, action, busy, onClick }: { exam: ExamSummary; mode: "mock" | "practice"; action: string; busy: boolean; onClick: () => void }) {
-  return <article className={`catalog-row ${exam.module}`}><ModuleIcon module={exam.module} size={42} /><div className="catalog-title"><h3>{exam.title}</h3><small>{sourceLabel(exam)}</small></div><span><small>模块</small>{moduleLabel(exam.module)}</span><span><small>时长</small>{durationLabel(exam)}</span><span><small>题量</small>{exam.questionCount || "—"} {exam.module === "writing" ? "任务" : "题"}</span><button type="button" className={mode === "mock" ? "strict-button" : "module-button"} disabled={busy} onClick={onClick}>{action}</button></article>;
+export function ExamCatalogRow({ exam, mode, action, busy, onClick, onRetake }: { exam: ExamSummary; mode: "mock" | "practice"; action: string; busy: boolean; onClick: () => void; onRetake?: () => void }) {
+  const locked = action === "添加音频";
+  return <article className={`catalog-row ${exam.module}`}><ModuleIcon module={exam.module} size={42} /><div className="catalog-title"><h3>{exam.title}</h3><small>{sourceLabel(exam)}</small></div><span><small>模块</small>{moduleLabel(exam.module)}</span><span><small>时长</small>{durationLabel(exam)}</span><span><small>题量</small>{exam.questionCount || "—"} {exam.module === "writing" ? "任务" : "题"}</span><div className="catalog-actions"><button type="button" className={mode === "mock" ? "strict-button" : "module-button"} disabled={busy} onClick={onClick}>{action}</button>{onRetake && !locked && <button type="button" className="secondary-button retake-button" disabled={busy} onClick={onRetake}>重考</button>}</div></article>;
 }
 
 export function SessionRow({ session, action, onClick }: { session: SessionSummary; action: string; onClick: () => void }) {
