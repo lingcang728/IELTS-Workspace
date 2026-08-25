@@ -126,6 +126,30 @@ def resolve_asset(root: Path, rel: str) -> Path:
     return root / "fixtures" / rel
 
 
+LABEL_RUBRIC_RE = re.compile(r"\blabel\s+the\s+(map|plan|diagram|chart)\b", re.I)
+# Any picture reference: a markdown embed, or an asset path that is not audio.
+IMAGE_REF_RE = re.compile(r"!\[[^\]]*\]\([^)]+\)|[\w./-]+\.(?:jpe?g|png|gif|svg|webp)", re.I)
+
+
+def is_labelling(group: dict[str, Any]) -> bool:
+    if any(q.get("type") == "labelling" for q in group.get("questions") or []):
+        return True
+    return bool(LABEL_RUBRIC_RE.search(str(group.get("instruction") or "")))
+
+
+def has_image(group: dict[str, Any], section: dict[str, Any]) -> bool:
+    """Whether the picture the group depends on is referenced anywhere near it.
+
+    Searched on the group first and the section second, because the importer
+    puts a shared map on the section while a per-question diagram stays on the
+    group. `audioAsset` is excluded by the extension list — an mp3 is not a map.
+    """
+    for holder in (group, section):
+        if IMAGE_REF_RE.search(json.dumps(holder, ensure_ascii=False)):
+            return True
+    return False
+
+
 def iter_questions(exam: dict[str, Any]):
     for section in exam.get("sections") or []:
         for group in section.get("questionGroups") or []:
@@ -231,6 +255,17 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
             if shared and sum(1 for o in shared if str(o.get("text") or "").strip()) < 2:
                 gap(f"group {gid}", f"carries {len(shared)} option labels with no text — "
                                     f"the heading list / word bank was lost in extraction")
+            # A map/plan/diagram question is the picture. Its options are bare
+            # letters because the letters are printed *on the image*, so filling
+            # each option's text with its own label — which is the honest way to
+            # model it — also makes the group look complete to every other check
+            # here. Without the image the test-taker sees "Label the map below"
+            # and nine buttons marked A to I, and cannot answer at all. So the
+            # image is checked directly, or this whole class goes silent.
+            if is_labelling(group) and not has_image(group, section):
+                gap(f"group {gid}", "is a map/plan/diagram labelling group but no image is "
+                                    "referenced — the letters live on a picture that was never "
+                                    "extracted, so the question cannot be answered")
 
         def broken(message: str) -> None:
             add(damage, path, f"question {number} {message}")
