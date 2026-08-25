@@ -21,6 +21,9 @@ sessions-debug/
 # Local licensed study corpus. Only the original renderer fixtures are public.
 fixtures/assets/
 fixtures/cambridge/
+# 书末印刷答案键的抄写结果：和上面的语料同属受版权保护的内容，
+# 只留在本机，重建靠 data-dev/repair/answer-key-tasks + 74_write_answer_key.py
+fixtures/answer-keys/
 fixtures/transcripts/
 fixtures/overlays/
 fixtures/listening/
