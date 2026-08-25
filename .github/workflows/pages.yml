@@ -31,11 +31,37 @@ jobs:
           cache: npm
           cache-dependency-path: site/package-lock.json
       - run: npm --prefix site ci
-      - run: npm run build:site
+      - run: npm --prefix site run build
+      - name: Ensure Cloudflare Pages project
+        if: github.event_name != 'pull_request'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ] || [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ]; then
+            echo "missing CLOUDFLARE_API_TOKEN or CLOUDFLARE_ACCOUNT_ID"
+            exit 1
+          fi
+          code=$(curl -sS -o /tmp/cf-project.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects/ielts-workspace")
+          echo "GET ielts-workspace HTTP ${code}"
+          if [ "${code}" = "404" ]; then
+            echo "creating Cloudflare Pages project ielts-workspace"
+            curl -sS -f -X POST \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              --data '{"name":"ielts-workspace","production_branch":"main"}' \
+              "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects"
+          elif [ "${code}" != "200" ]; then
+            cat /tmp/cf-project.json
+            exit 1
+          fi
       - name: Deploy to Cloudflare Pages
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        if: github.event_name != 'pull_request'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy site-dist --project-name=ielts-workspace --commit-dirty=true
+          command: pages deploy site-dist --project-name=ielts-workspace --branch=main --commit-dirty=true
