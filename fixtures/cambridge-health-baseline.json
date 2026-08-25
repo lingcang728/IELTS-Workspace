@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "note": "Content damage ratchet. It may only fall, except where the data became more truthful and that is recorded. History: 232 -> 304 (gate learned a key must name an option the question offers); gaps 502 -> 638 (gate learned a labelling group needs its image; 136 have none); 263 -> 476 (984 keys replaced with the printed answer key, which stopped the old wrong keys from masking wrong types). That last rise has now been paid back in full: 355 missing option lists were transcribed from the scanned pages and 189 questions retyped once their options existed, taking damage to 251 and gaps to 427 — below where the corpus stood before the keys were corrected, and honest this time.",
-  "damagedQuestions": 251,
+  "note": "Content damage ratchet. Phase 1 lowers this; it must never rise.",
+  "damagedQuestions": 249,
   "contentGaps": 427,
   "byBook": {
     "4": {
@@ -75,11 +75,11 @@
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 2,
+        "damaged": 0,
         "suspect": 2,
         "gaps": 47,
-        "healthy": 158,
-        "healthPct": 98.8
+        "healthy": 160,
+        "healthPct": 100.0
       },
       "writing": {
         "exams": 4,

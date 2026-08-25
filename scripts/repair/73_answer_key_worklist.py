@@ -52,6 +52,57 @@ stage69 = _load("stage69", "69_fix_answer_keys.py")
 
 TEST_MARK_RE = re.compile(r"^TEST\s*(\d)\s*$", re.I)
 MODULE_MARK_RE = re.compile(r"^(LISTENING|READING)\s*$", re.I)
+PLAIN_KEY_RE = re.compile(r"^\s*answer\s*keys?\s*$", re.I)
+KEY_LINE_RE = re.compile(r"^\s*(\d{1,2})\s+(\S.{0,40})$")
+DENSE_MIN = 8            # answer-shaped lines on a page before it counts as key
+
+# Books whose answer pages the three detectors below cannot reach: C04's OCR of
+# that section is too poor to leave any trace, and C07 only surfaces two pages
+# of it. Both books state the printed range in their own introduction ("其答案在
+# 第152页至第161页"), so a person can pin the PDF range here once and for all
+# rather than have a script guess. Empty until someone checks the rendered page.
+PINNED: dict[int, tuple[int, int]] = {}
+
+
+def longest_run(pages: list[int]) -> list[int]:
+    if not pages:
+        return []
+    runs: list[list[int]] = [[pages[0]]]
+    for page in pages[1:]:
+        if page == runs[-1][-1] + 1:
+            runs[-1].append(page)
+        else:
+            runs.append([page])
+    return max(runs, key=len)
+
+
+def header_pages(blocks: list[dict]) -> list[int]:
+    """C13+ run the full title as a header on every answer page."""
+    return sorted({int(b.get("page_idx") or 0) for b in blocks
+                   if ANSWER_KEY_RE.search(str(b.get("text") or ""))})
+
+
+def heading_pages(blocks: list[dict]) -> list[int]:
+    """C05/C06 title the section just "Answer key"."""
+    return sorted({int(b.get("page_idx") or 0) for b in blocks
+                   if PLAIN_KEY_RE.match(str(b.get("text") or ""))})
+
+
+def dense_pages(blocks: list[dict]) -> list[int]:
+    """Last resort: pages that simply look like an answer key.
+
+    No title is needed — an answer page is a column of "<number> <short thing>"
+    lines and nothing else in the book looks like that in bulk. This is what
+    reaches C11, whose section is announced only in prose on page 5.
+    """
+    per: dict[int, int] = {}
+    for block in blocks:
+        page = int(block.get("page_idx") or 0)
+        for line in str(block.get("text") or "").splitlines():
+            match = KEY_LINE_RE.match(line.strip())
+            if match and 1 <= int(match.group(1)) <= 40:
+                per[page] = per.get(page, 0) + 1
+    return sorted(page for page, count in per.items() if count >= DENSE_MIN)
 
 
 def answer_key_pages(book: int) -> tuple[Path, list[int], dict[tuple[int, str], list[int]]] | None:
@@ -72,17 +123,25 @@ def answer_key_pages(book: int) -> tuple[Path, list[int], dict[tuple[int, str], 
     if not lists or not pdfs:
         return None
     blocks = json.loads(lists[0].read_text(encoding="utf-8"))
-    marked = sorted({int(b.get("page_idx") or 0) for b in blocks
-                     if ANSWER_KEY_RE.search(str(b.get("text") or ""))})
-    if not marked:
-        return None
-    runs: list[list[int]] = [[marked[0]]]
-    for page in marked[1:]:
-        if page == runs[-1][-1] + 1:
-            runs[-1].append(page)
-        else:
-            runs.append([page])
-    pages = max(runs, key=len)
+
+    # Three ways to find the section, tried in order of how sure each one is.
+    # The books do not agree on what to call it: C13 and later run "Listening
+    # and Reading answer keys" as a page header, C05 and C06 just say "Answer
+    # key", and C07 and C11 say neither and only mention it in prose on the
+    # introduction page. Anything that fails here is left for `PINNED` rather
+    # than guessed at.
+    # Take the first candidate that spans more than one page. A bare `or` chain
+    # would stop at the first non-empty one, and C11's introduction contains the
+    # sentence "At the end of each Listening and Reading Answer Key you will..."
+    # — a single-page hit that shadowed the eight real pages behind it.
+    pages: list[int] = []
+    for candidate in (header_pages(blocks), heading_pages(blocks), dense_pages(blocks)):
+        run = longest_run(candidate)
+        if len(run) >= 2:
+            pages = run
+            break
+    if book in PINNED:
+        pages = list(range(PINNED[book][0], PINNED[book][1] + 1))
     if len(pages) < 2:
         return None
 

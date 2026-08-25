@@ -33,6 +33,9 @@ FIXTURES = ROOT / "fixtures" / "cambridge"
 REPAIR = ROOT / "data-dev" / "repair"
 TASKS = REPAIR / "option-tasks"
 
+# Roman numerals as stored in the fixtures: a List of Headings answer.
+ROMAN_ANSWERS = {"i", "v", "x"}
+
 
 def _load(name: str, filename: str):
     spec = importlib.util.spec_from_file_location(name, Path(__file__).with_name(filename))
@@ -53,6 +56,20 @@ def missing_option_questions(exam: dict) -> dict[str, list[dict]]:
             for question in group.get("questions") or []:
                 answers = [str(a).strip() for a in (question.get("acceptedAnswers") or [])]
                 if not answers or not all(len(a) == 1 and a.isalpha() for a in answers):
+                    continue
+                # "One letter" is not the same as "an option label". Three kinds
+                # of single letter mean something else entirely, and sweeping
+                # them in here cost the round 27 tasks that a reviewer correctly
+                # refused rather than fabricate:
+                #   i / v / x   a List of Headings answer. Uppercasing it turned
+                #               'i' into 'I' and then demanded an option 'I'.
+                #   Y / N       a YES/NO/NOT GIVEN judgement, abbreviated.
+                #   Q, X, ...   OCR junk: no printed choice list runs past J.
+                if all(a.lower() in ROMAN_ANSWERS for a in answers):
+                    continue
+                if all(a.upper() in {"Y", "N"} for a in answers):
+                    continue
+                if any(a.upper() > "J" for a in answers):
                     continue
                 options = question.get("options") or shared
                 if sum(1 for o in options if (o.get("text") or "").strip()) >= 2:

@@ -73,6 +73,10 @@ WRITTEN_ANSWER_RE = re.compile(
 )
 
 JUDGEMENT_WORDS = {"TRUE", "FALSE", "NOT GIVEN", "YES", "NO"}
+# "views of the writer" / "claims of the writer" is the YES/NO/NOT GIVEN rubric;
+# "information given" is the TRUE/FALSE/NOT GIVEN one. Cambridge is consistent
+# about this, which is what makes a bare "Y" safe to expand.
+YES_NO_RUBRIC_RE = re.compile(r"\b(?:views|claims)\s+of\s+the\s+writer\b", re.I)
 
 
 def texted(options: list[dict]) -> int:
@@ -145,6 +149,21 @@ def repair_question(question: dict, group: dict, stats: dict[str, int]) -> bool:
     # and YES/NO are different question types in IELTS and the app renders them
     # differently, so the pair present in the key decides which; a group whose
     # key is only "NOT GIVEN" keeps whichever judgement type it already had.
+    # "Y" and "N" are the printed YES/NO abbreviated by the extraction, not
+    # option labels. IELTS splits these two rubrics on a fixed rule: statements
+    # measured against the writer's *views* or *claims* are answered YES / NO /
+    # NOT GIVEN, while statements measured against the *information* are TRUE /
+    # FALSE / NOT GIVEN. So the rubric alone settles the expansion, and it adds
+    # nothing the page did not already say — without it the scorer marks a
+    # correct "YES" wrong. Groups whose key happens to hold a "N" for another
+    # reason (a word bank running to Q) do not match and are left alone.
+    if answers and all(a.upper() in {"Y", "N"} for a in answers) and \
+            YES_NO_RUBRIC_RE.search(group.get("instruction") or ""):
+        answers = ["YES" if a.upper() == "Y" else "NO" for a in answers]
+        question["acceptedAnswers"] = answers
+        stats["yn_expanded"] += 1
+        changed = True
+
     upper = {a.upper() for a in answers}
     if upper and upper <= JUDGEMENT_WORDS:
         if upper & {"TRUE", "FALSE"}:
@@ -203,6 +222,7 @@ def main() -> int:
         "inline_recovered": 0,
         "phantom_options_dropped": 0,
         "retyped_from_judgement_key": 0,
+        "yn_expanded": 0,
     }
     files = 0
     for path in sorted(FIXTURES.glob("*.json")):
