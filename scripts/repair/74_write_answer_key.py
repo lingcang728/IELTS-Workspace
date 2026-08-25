@@ -59,7 +59,8 @@ def shape(value: str) -> str | None:
     if ROMAN_RE.match(text):
         return "roman"
     words = text.replace("/", " ").split()
-    if len(words) <= 6 and not re.search(r"[.;:]\s", text):
+    parts = text.split("/")
+    if all(len(p.split()) <= 6 for p in parts) and len(words) <= 12 and not re.search(r"[.;:]\s", text):
         return "written"
     return None
 
@@ -133,11 +134,25 @@ def check(task: dict, submission: dict) -> list[str]:
 
     # A printed "Questions a-b" group is one task type throughout. Judgements
     # and letters never interleave; when they do, a line was misread.
+    # Drift shows up as *short runs*, not as transitions. A reading module runs
+    # three passages of two or three question types each, so six or seven
+    # changes of shape across 40 answers is ordinary — an earlier version of
+    # this check counted transitions and capped them at four, which refused
+    # perfectly good papers like C05 Test 3 (letter x10, judgement x3, roman x4,
+    # judgement x6, letter x8 ...). What a slipped line actually produces is a
+    # lone judgement stranded between letters, again and again.
     ordered = [shapes[n] for n in sorted(shapes)]
-    flips = sum(1 for a, b in zip(ordered, ordered[1:])
-                if {a, b} in ({"judgement", "letter"}, {"judgement", "roman"}))
-    if flips > 4:
-        problems.append(f"判断题与字母题在区块内交替出现 {flips} 次，通常说明抄串行了")
+    runs: list[tuple[str, int]] = []
+    for shape_name in ordered:
+        if runs and runs[-1][0] == shape_name:
+            runs[-1] = (shape_name, runs[-1][1] + 1)
+        else:
+            runs.append((shape_name, 1))
+    singles = sum(1 for index, (_, length) in enumerate(runs)
+                  if length == 1 and 0 < index < len(runs) - 1)
+    if singles > 3:
+        problems.append(f"区块里有 {singles} 处孤立的单题题型（前后都是别的题型），"
+                        f"这是抄串行的典型形状")
 
     known = {int(k): v for k, v in (task.get("knownAnswers") or {}).items()}
     # Look answers up by an int-keyed view. JSON object keys are strings, so
