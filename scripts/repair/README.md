@@ -2,7 +2,7 @@
 
 把 MinerU 从剑桥 PDF 提取的 markdown，还原成可用的题面，写回
 `fixtures/cambridge/*.json`。每个阶段都幂等可重跑，产物落在
-`data-dev/repair/`，**只有 `40_apply.py` 会改 fixtures**。
+`data-dev/repair/`。题干/选项的合并只走 `40_apply.py`；65/67/79 这类机械修复会直接写 fixtures（先 `.bak`），但**永远不写 overlays**。
 
 ```
 00_index_sources.py    → data-dev/repair/source-index.json
@@ -11,6 +11,7 @@
 30_part_offsets.py     → 写回 exam json 的 Part 边界（待建）
 40_apply.py            → 合并 overlay + parsed → fixtures（待建）
 64/65/67_*.py          → 结构/机械修复（直接写 fixtures，先 .bak）
+79_attach_map_images.py → 给 labelling 组挂 MinerU 切图（写 imageAsset，先 .bak；不碰 overlays）
 ```
 
 合并优先级：**`overlay(人工)` > `parsed(自动)` > `现有 fixtures`**。

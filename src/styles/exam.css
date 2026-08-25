@@ -74,6 +74,8 @@
 .passage p { margin: 0 0 14px; }
 .instr { margin: 0 0 14px; padding: 12px 14px; border: 1px solid var(--exam-line); border-radius: 5px; background: var(--exam-instr); color: var(--exam-ink); line-height: 1.55; }
 .instr strong, .instr b { font-weight: 650; }
+.group-figure { margin: 0 0 14px; padding: 10px 12px; border: 1px solid var(--exam-line); border-radius: 5px; background: var(--exam-panel); }
+.group-figure img { display: block; width: 100%; max-width: 720px; height: auto; }
 
 .q-group { max-width: 920px; }
 .q-block { margin: 0; padding: 13px 5px; border-bottom: 1px solid var(--exam-line-soft); color: var(--exam-ink); }

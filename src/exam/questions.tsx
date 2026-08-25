@@ -1,4 +1,5 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import { assetSrc } from "../lib/api";
 import type { ExamMode, ExamSection, Question, QuestionGroup } from "../lib/types";
 
 interface Props {
@@ -14,9 +15,11 @@ interface Props {
    * exam sheet repeats "Do the following statements agree ..." forty times.
    */
   showInstruction?: boolean;
+  /** False when the group above already showed the same map/diagram asset. */
+  showImage?: boolean;
 }
 
-export function QuestionGroupView({ group, values, onChange, disabled, skin = "mock", showInstruction = true }: Props) {
+export function QuestionGroupView({ group, values, onChange, disabled, skin = "mock", showInstruction = true, showImage = true }: Props) {
   const practice = skin === "practice";
   const layoutQuestionIds = group.layoutHtml
     ? new Set(
@@ -36,6 +39,7 @@ export function QuestionGroupView({ group, values, onChange, disabled, skin = "m
       {showInstruction && (
         <div className="instr" dangerouslySetInnerHTML={{ __html: escapeKeepBreaks(group.instruction) }} />
       )}
+      {showImage && group.imageAsset ? <GroupFigure rel={group.imageAsset} /> : null}
       {group.wordBank && group.wordBank.length > 0 && (
         <p className="bank">{group.wordBank.join(" · ")}</p>
       )}
@@ -60,6 +64,29 @@ export function QuestionGroupView({ group, values, onChange, disabled, skin = "m
         />
       ))}
     </section>
+  );
+}
+
+function GroupFigure({ rel }: { rel: string }) {
+  const [src, setSrc] = useState<string | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    assetSrc(rel)
+      .then((next) => {
+        if (!cancelled) setSrc(next);
+      })
+      .catch(() => {
+        if (!cancelled) setSrc(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [rel]);
+  if (!src) return null;
+  return (
+    <p className="group-figure">
+      <img src={src} alt="" />
+    </p>
   );
 }
 

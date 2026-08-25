@@ -622,6 +622,10 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
                   g.instruction.trim() !==
                   (currentSection.questionGroups[index - 1]?.instruction ?? "").trim()
                 }
+                showImage={
+                  Boolean(g.imageAsset) &&
+                  g.imageAsset !== currentSection.questionGroups[index - 1]?.imageAsset
+                }
               />
             ))
           )}

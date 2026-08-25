@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "note": "Content damage ratchet. It may only fall, except where the data became more truthful — those rises are in the git history. Latest change is a fall: the gate stopped reporting a group's empty `sharedOptions` when every question in it already carries its own complete options. 139 groups were in that state — an importer shell, not missing content — and reporting them sent readers hunting for a word bank the page never printed.",
-  "damagedQuestions": 243,
-  "contentGaps": 236,
+  "note": "Content damage ratchet. It may only fall, except where the data became more truthful. Latest change is a fall: 79_attach_map_images.py referenced MinerU crops on 136 labelling groups (26 unique maps; gaps 236→100) and two recovered option lists (C17 T3 R Q36/Q40) dropped damagedQuestions 243→241. Remaining 100 gaps are 92 placeholder rubrics plus a handful of blank option lists that are not letter-choice on the printed page.",
+  "damagedQuestions": 241,
+  "contentGaps": 100,
   "byBook": {
     "4": {
       "listening": {
@@ -10,7 +10,7 @@
         "questions": 160,
         "damaged": 16,
         "suspect": 0,
-        "gaps": 10,
+        "gaps": 0,
         "healthy": 144,
         "healthPct": 90.0
       },
@@ -48,7 +48,7 @@
         "questions": 160,
         "damaged": 0,
         "suspect": 0,
-        "gaps": 3,
+        "gaps": 0,
         "healthy": 160,
         "healthPct": 100.0
       },
@@ -68,7 +68,7 @@
         "questions": 160,
         "damaged": 15,
         "suspect": 0,
-        "gaps": 11,
+        "gaps": 7,
         "healthy": 145,
         "healthPct": 90.6
       },
@@ -97,7 +97,7 @@
         "questions": 160,
         "damaged": 15,
         "suspect": 2,
-        "gaps": 8,
+        "gaps": 3,
         "healthy": 145,
         "healthPct": 90.6
       },
@@ -126,7 +126,7 @@
         "questions": 160,
         "damaged": 12,
         "suspect": 0,
-        "gaps": 10,
+        "gaps": 0,
         "healthy": 148,
         "healthPct": 92.5
       },
@@ -135,7 +135,7 @@
         "questions": 160,
         "damaged": 7,
         "suspect": 0,
-        "gaps": 9,
+        "gaps": 0,
         "healthy": 153,
         "healthPct": 95.6
       },
@@ -155,7 +155,7 @@
         "questions": 160,
         "damaged": 13,
         "suspect": 0,
-        "gaps": 7,
+        "gaps": 0,
         "healthy": 147,
         "healthPct": 91.9
       },
@@ -164,7 +164,7 @@
         "questions": 160,
         "damaged": 2,
         "suspect": 0,
-        "gaps": 6,
+        "gaps": 2,
         "healthy": 158,
         "healthPct": 98.8
       },
@@ -213,7 +213,7 @@
         "questions": 160,
         "damaged": 3,
         "suspect": 1,
-        "gaps": 14,
+        "gaps": 0,
         "healthy": 157,
         "healthPct": 98.1
       },
@@ -222,7 +222,7 @@
         "questions": 160,
         "damaged": 9,
         "suspect": 0,
-        "gaps": 8,
+        "gaps": 1,
         "healthy": 151,
         "healthPct": 94.4
       },
@@ -242,7 +242,7 @@
         "questions": 160,
         "damaged": 14,
         "suspect": 0,
-        "gaps": 6,
+        "gaps": 0,
         "healthy": 146,
         "healthPct": 91.2
       },
@@ -271,7 +271,7 @@
         "questions": 160,
         "damaged": 9,
         "suspect": 0,
-        "gaps": 25,
+        "gaps": 18,
         "healthy": 151,
         "healthPct": 94.4
       },
@@ -300,7 +300,7 @@
         "questions": 160,
         "damaged": 5,
         "suspect": 0,
-        "gaps": 5,
+        "gaps": 0,
         "healthy": 155,
         "healthPct": 96.9
       },
@@ -329,7 +329,7 @@
         "questions": 160,
         "damaged": 7,
         "suspect": 0,
-        "gaps": 12,
+        "gaps": 0,
         "healthy": 153,
         "healthPct": 95.6
       },
@@ -358,7 +358,7 @@
         "questions": 160,
         "damaged": 7,
         "suspect": 0,
-        "gaps": 12,
+        "gaps": 0,
         "healthy": 153,
         "healthPct": 95.6
       },
@@ -394,11 +394,11 @@
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 7,
+        "damaged": 5,
         "suspect": 0,
         "gaps": 0,
-        "healthy": 153,
-        "healthPct": 95.6
+        "healthy": 155,
+        "healthPct": 96.9
       },
       "writing": {
         "exams": 4,
@@ -416,7 +416,7 @@
         "questions": 160,
         "damaged": 11,
         "suspect": 0,
-        "gaps": 6,
+        "gaps": 0,
         "healthy": 149,
         "healthPct": 93.1
       },
@@ -445,7 +445,7 @@
         "questions": 160,
         "damaged": 10,
         "suspect": 0,
-        "gaps": 11,
+        "gaps": 0,
         "healthy": 150,
         "healthPct": 93.8
       },
@@ -474,7 +474,7 @@
         "questions": 160,
         "damaged": 8,
         "suspect": 0,
-        "gaps": 4,
+        "gaps": 0,
         "healthy": 152,
         "healthPct": 95.0
       },
