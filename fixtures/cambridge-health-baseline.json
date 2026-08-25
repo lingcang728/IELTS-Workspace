@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "note": "Content damage ratchet. It may only fall, except where the data became more truthful — every such rise is recorded. Latest: 249 -> 286 when the last 32 printed answer-key blocks (C05/C06/C07/C08/C11) were transcribed and applied. The corpus now agrees with the printed answer key on 4771 questions. As every earlier time, correcting keys stops them masking wrong types: 100 more questions stand revealed as letter-answered with a missing or partial option list, and are queued as 20 option tasks and 2 headings tasks. contentGaps fell 427 -> 395 in the same step.",
-  "damagedQuestions": 286,
+  "note": "Content damage ratchet. Phase 1 lowers this; it must never rise.",
+  "damagedQuestions": 243,
   "contentGaps": 395,
   "byBook": {
     "4": {
@@ -37,11 +37,11 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 15,
+        "damaged": 10,
         "suspect": 3,
         "gaps": 9,
-        "healthy": 145,
-        "healthPct": 90.6
+        "healthy": 150,
+        "healthPct": 93.8
       },
       "reading": {
         "exams": 4,
@@ -75,11 +75,11 @@
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 6,
+        "damaged": 2,
         "suspect": 2,
         "gaps": 41,
-        "healthy": 154,
-        "healthPct": 96.2
+        "healthy": 158,
+        "healthPct": 98.8
       },
       "writing": {
         "exams": 4,
@@ -95,11 +95,11 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 18,
+        "damaged": 15,
         "suspect": 2,
         "gaps": 8,
-        "healthy": 142,
-        "healthPct": 88.8
+        "healthy": 145,
+        "healthPct": 90.6
       },
       "reading": {
         "exams": 4,
@@ -124,11 +124,11 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 23,
+        "damaged": 12,
         "suspect": 0,
         "gaps": 10,
-        "healthy": 137,
-        "healthPct": 85.6
+        "healthy": 148,
+        "healthPct": 92.5
       },
       "reading": {
         "exams": 4,
@@ -211,11 +211,11 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 16,
+        "damaged": 3,
         "suspect": 1,
         "gaps": 14,
-        "healthy": 144,
-        "healthPct": 90.0
+        "healthy": 157,
+        "healthPct": 98.1
       },
       "reading": {
         "exams": 4,
@@ -394,11 +394,11 @@
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 10,
+        "damaged": 7,
         "suspect": 0,
         "gaps": 14,
-        "healthy": 150,
-        "healthPct": 93.8
+        "healthy": 153,
+        "healthPct": 95.6
       },
       "writing": {
         "exams": 4,
@@ -443,11 +443,11 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 12,
+        "damaged": 10,
         "suspect": 0,
         "gaps": 11,
-        "healthy": 148,
-        "healthPct": 92.5
+        "healthy": 150,
+        "healthPct": 93.8
       },
       "reading": {
         "exams": 4,
@@ -501,11 +501,11 @@
       "reading": {
         "exams": 4,
         "questions": 160,
-        "damaged": 8,
+        "damaged": 6,
         "suspect": 0,
         "gaps": 1,
-        "healthy": 152,
-        "healthPct": 95.0
+        "healthy": 154,
+        "healthPct": 96.2
       },
       "writing": {
         "exams": 4,

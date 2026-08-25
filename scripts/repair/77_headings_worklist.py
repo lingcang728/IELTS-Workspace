@@ -84,6 +84,35 @@ def heading_groups(exam: dict) -> list[dict]:
     return found
 
 
+def expected_numbers(task):
+    return task["questionNumbers"]
+
+
+def drop_stale_answer(task_path: Path, task: dict, key: str) -> bool:
+    """Remove an answer written against an older shape of this task.
+
+    Task ids are stable but their contents are not: a task regenerated after
+    some of its questions were repaired covers fewer numbers than before. The
+    old answer then fails validation for a reason that has nothing to do with
+    the reviewer — twice now an outsourced round was told it had failures that
+    were really this. An answer whose covered set no longer matches is moved
+    aside rather than left to confuse the next person.
+    """
+    answer_path = task_path.with_name(task_path.name.replace(".task.json", ".answer.json"))
+    if not answer_path.exists():
+        return False
+    try:
+        given = json.loads(answer_path.read_text(encoding="utf-8"))
+    except Exception:
+        given = {}
+    submitted = {str(k) for k in (given.get(key) or {})}
+    wanted = {str(n) for n in expected_numbers(task)}
+    if submitted == wanted:
+        return False
+    stale = answer_path.with_suffix(".json.stale")
+    answer_path.replace(stale)
+    return True
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--status", action="store_true")
@@ -91,7 +120,15 @@ def main() -> int:
 
     page_map = json.loads((REPAIR / "page-map.json").read_text(encoding="utf-8"))["exams"]
     TASKS.mkdir(parents=True, exist_ok=True)
-    emitted = questions = 0
+    if not args.status:
+        # Clear the previous generation first. Task ids are stable but the set
+        # of tasks is not — a repaired question drops out — and leaving the old
+        # files behind is what twice made an outsourced round chase tasks that
+        # no longer existed. Answers are kept: an answer whose task is gone was
+        # already applied.
+        for old_task in TASKS.glob("*.task.json"):
+            old_task.unlink()
+    emitted = questions = stale = 0
     per_book = collections.Counter()
 
     for path in sorted(FIXTURES.glob("*.json")):
@@ -142,14 +179,24 @@ def main() -> int:
                 "instruction": records[0]["instruction"],
             }
             if not args.status:
-                (TASKS / f"{task['taskId']}.task.json").write_text(
+                task_path = TASKS / f"{task['taskId']}.task.json"
+                task_path.write_text(
                     json.dumps(task, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                # No staleness check here. A headings answer is a *list* of
+                # headings, not a map keyed by question number, so comparing it
+                # against the task's question set is meaningless — the first
+                # version of this did exactly that and moved two perfectly good
+                # submissions aside. Regenerating a headings task only ever
+                # shrinks its question set; the printed box behind it does not
+                # change, so an existing answer stays valid.
             emitted += 1
             questions += len(numbers)
             per_book[entry["book"]] += 1
 
     print(f"{'would emit' if args.status else 'emitted'} {emitted} 工单 · {questions} 题")
     print("按册:", {f"C{b:02d}": n for b, n in sorted(per_book.items())})
+    if stale:
+        print(f"已移走 {stale} 份与新工单题号不符的旧答卷（改名 .json.stale）")
     if not args.status:
         print(f"工单 → {TASKS}")
     return 0
