@@ -419,8 +419,8 @@ pub fn audio_pick_files() -> Result<Vec<String>, AppError> {
 }
 
 #[tauri::command]
-pub fn audio_pick_folder() -> Result<Option<String>, AppError> {
-    audio::pick_folder()
+pub fn audio_pick_folders() -> Result<Vec<String>, AppError> {
+    audio::pick_folders()
 }
 
 #[tauri::command]

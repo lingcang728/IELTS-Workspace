@@ -93,8 +93,8 @@ export async function audioPickFiles(): Promise<string[]> {
   return invoke("audio_pick_files");
 }
 
-export async function audioPickFolder(): Promise<string | null> {
-  return invoke("audio_pick_folder");
+export async function audioPickFolders(): Promise<string[]> {
+  return invoke("audio_pick_folders");
 }
 
 export async function audioScanPaths(paths: string[], targetExamId?: string | null): Promise<AudioImportPlan> {

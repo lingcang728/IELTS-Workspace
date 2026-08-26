@@ -16,7 +16,7 @@ export function Sidebar({ view, setView }: { view: View; setView: (v: View) => v
     { view: "practice", icon: "pen", label: "练习" },
     { view: "mock", icon: "clock", label: "模考" },
     { view: "intensive", icon: "headphones", label: "精听" },
-    { view: "audio", icon: "folder", label: "听力资源" },
+    { view: "audio", icon: "folder", label: "添加音频" },
   ];
   const study: { view: View; icon: IconName; label: string }[] = [
     { view: "mistakes", icon: "rotate", label: "错题本" },

@@ -271,11 +271,14 @@ pub fn pick_files() -> Result<Vec<String>, AppError> {
         .collect())
 }
 
-pub fn pick_folder() -> Result<Option<String>, AppError> {
+pub fn pick_folders() -> Result<Vec<String>, AppError> {
     Ok(rfd::FileDialog::new()
-        .set_title("选择包含听力音频的文件夹")
-        .pick_folder()
-        .map(|p| p.display().to_string()))
+        .set_title("选择包含听力音频的文件夹（可多选）")
+        .pick_folders()
+        .unwrap_or_default()
+        .into_iter()
+        .map(|p| p.display().to_string())
+        .collect())
 }
 
 pub fn open_guide() -> Result<String, AppError> {

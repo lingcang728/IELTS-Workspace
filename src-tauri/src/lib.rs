@@ -38,7 +38,7 @@ pub fn run() {
             commands::audio_library_status,
             commands::audio_catalog,
             commands::audio_pick_files,
-            commands::audio_pick_folder,
+            commands::audio_pick_folders,
             commands::audio_scan_paths,
             commands::audio_confirm_import,
             commands::audio_cancel_import,

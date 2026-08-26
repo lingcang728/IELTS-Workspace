@@ -403,6 +403,20 @@
 .audio-dot { width: 10px; height: 10px; border-radius: 50%; align-self: center; background: var(--caution); }
 .audio-dot.ready { background: var(--positive); }
 .catalog-row.audio-missing { opacity: .96; }
+.audio-board { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; align-items: start; }
+.audio-book { display: grid; gap: 10px; }
+.audio-book-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.audio-book-head h2 { margin: 0; font-size: 16px; }
+.audio-tests { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.audio-test { display: grid; justify-items: start; gap: 2px; padding: 10px 10px 8px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel-2); color: var(--muted); text-align: left; min-width: 0; }
+.audio-test strong { font-size: 13px; }
+.audio-test small { color: inherit; }
+.audio-test-mark { width: 18px; height: 18px; display: grid; place-items: center; }
+.audio-test.ready { color: var(--positive); border-color: var(--positive); background: var(--positive-soft); }
+.audio-test.ready .audio-test-mark { color: var(--positive); }
+.audio-test.missing { color: var(--muted-2); }
+.audio-test.review { color: var(--caution); border-color: var(--caution); }
+.audio-test .link-button { margin-top: 4px; padding: 0; font-size: 12px; }
 .audio-wizard-backdrop { position: fixed; inset: 0; z-index: 40; background: var(--scrim); display: grid; place-items: center; padding: 24px; }
 .audio-wizard { width: min(720px, 100%); max-height: min(86vh, 820px); overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
 .audio-wizard header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }

@@ -5,7 +5,7 @@ import {
   audioCancelImport,
   audioConfirmImport,
   audioPickFiles,
-  audioPickFolder,
+  audioPickFolders,
   audioScanPaths,
   type AudioImportPlan,
   type ExamImportRow,
@@ -66,12 +66,12 @@ export function AudioWizard({
     await scan(files);
   }
 
-  async function pickFolder() {
-    const folder = await audioPickFolder().catch((e) => {
+  async function pickFolders() {
+    const folders = await audioPickFolders().catch((e) => {
       setError(String(e));
-      return null;
+      return [];
     });
-    if (folder) await scan([folder]);
+    if (folders.length) await scan(folders);
   }
 
   async function confirm() {
@@ -112,7 +112,7 @@ export function AudioWizard({
         </p>
         <div className="button-row">
           <button type="button" className="primary-button" disabled={busy} onClick={() => void pickFiles()}>选择文件</button>
-          <button type="button" className="secondary-button" disabled={busy} onClick={() => void pickFolder()}>选择文件夹</button>
+          <button type="button" className="secondary-button" disabled={busy} onClick={() => void pickFolders()}>选择文件夹（可多选）</button>
           {busy && <button type="button" className="secondary-button" onClick={() => void cancel()}>取消</button>}
         </div>
         {progress && (
