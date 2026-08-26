@@ -1068,8 +1068,8 @@
         {
           "id": "c16t4l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t4l-q21",
@@ -1113,23 +1113,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:08+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t4l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t4l-q22",
               "number": 22,
@@ -1181,13 +1165,44 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "reducing noise pollution"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "reducing traffic congestion"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "improving air quality"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "encouraging health and fitness"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "making cycling affordable"
+            }
+          ]
         },
         {
           "id": "c16t4l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t4l-q23",
@@ -1231,23 +1246,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:08+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t4l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t4l-q24",
               "number": 24,
@@ -1299,7 +1298,38 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Bikes should have a GPS system."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The app should be easy to use."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Public awareness should be raised."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Only one scheme should be available."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "There should be a large network of cycle lanes."
+            }
+          ]
         },
         {
           "id": "c16t4l-g25",

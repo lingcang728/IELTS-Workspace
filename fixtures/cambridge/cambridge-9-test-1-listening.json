@@ -666,14 +666,14 @@
         {
           "id": "c9t1l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c9t1l-q19",
               "number": 19,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -710,28 +710,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:06.382089+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c9t1l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c9t1l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Which TWO pieces of information does the speaker give about the fitness test?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -778,7 +762,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "You need to reserve a place."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It is free to account holders."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "You get advice on how to improve your health."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It takes place in a special clinic."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It is cheaper this month."
+            }
+          ]
         }
       ],
       "audioStartMs": 459885,

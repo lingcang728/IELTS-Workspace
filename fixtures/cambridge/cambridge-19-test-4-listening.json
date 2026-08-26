@@ -355,14 +355,14 @@
         {
           "id": "c19t4l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t4l-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO problems with some training programmes for new runners does Liz mention?",
+              "prompt": "First selected letter: First answer: Which TWO problems with some training programmes for new runners does Liz mention?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -399,40 +399,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "There is a risk of serious injury"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "They are unsui"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c19t4l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c19t4l-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO problems with some training programmes for new runners does Liz mention?",
+              "prompt": "Second selected letter: First answer: Which TWO problems with some training programmes for new runners does Liz mention?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -475,12 +447,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "There is a risk of serious injury"
+              "text": "There is a risk of serious injury."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "They are unsui"
+              "text": "They are unsuitable for certain age groups."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They are unsuitable for people with health issues."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is difficult to stay motivated."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "There is a lack of individual support."
             }
           ],
           "repairSource": {
@@ -490,19 +477,23 @@
               12
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ]
         },
         {
           "id": "c19t4l-g13",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t4l-q13",
               "number": 13,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -518,40 +509,12 @@
                   "text": "They are unsui"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "There is a risk of serious injury"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "They are unsui"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              13,
-              14
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c19t4l-g14",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c19t4l-q14",
               "number": 14,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO tips does Liz recommend for new runners?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -609,7 +572,11 @@
               14
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "D"
+          ]
         },
         {
           "id": "c19t4l-g15",

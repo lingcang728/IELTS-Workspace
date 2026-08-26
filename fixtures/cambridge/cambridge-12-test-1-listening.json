@@ -602,14 +602,14 @@
         {
           "id": "c12t1l-g15",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c12t1l-q15",
               "number": 15,
               "type": "multi_choice",
-              "prompt": "According to the manager, which TWO things can make the job of kitchen assistant stressful? (Question 15)",
+              "prompt": "First selected letter: According to the manager, which TWO things can make the job of kitchen assistant stressful? (Question 15)",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -646,52 +646,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:03+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "They have to follow orders immediately."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "The kitchen gets very hot."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "They may not be able to take a break."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "They have to do overtime."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "The work is physically demanding."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T15:50:54.557558+00:00"
-          }
-        },
-        {
-          "id": "c12t1l-g16",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c12t1l-q16",
               "number": 16,
               "type": "multi_choice",
-              "prompt": "According to the manager, which TWO things can make the job of kitchen assistant stressful? (Question 16)",
+              "prompt": "Second selected letter: According to the manager, which TWO things can make the job of kitchen assistant stressful? (Question 15)",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -761,7 +721,11 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T15:50:54.557558+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ]
         },
         {
           "id": "c12t1l-g17",

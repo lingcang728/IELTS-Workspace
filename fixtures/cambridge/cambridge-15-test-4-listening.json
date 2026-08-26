@@ -960,14 +960,14 @@
         {
           "id": "c15t4l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t4l-q17",
               "number": 17,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -1004,28 +1004,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:59.520813+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              17,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c15t4l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c15t4l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "First answer: What does the speaker say about the adventure playground?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -1072,19 +1056,50 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Children must be supervised."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It costs more in winter."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Some activities are only for younger children."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "No payment is required."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It was recently expanded."
+            }
+          ]
         },
         {
           "id": "c15t4l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t4l-q19",
               "number": 19,
               "type": "multi_choice",
-              "prompt": "First answer: What does the speaker say about the glass houses?",
+              "prompt": "First selected letter: First answer: What does the speaker say about the glass houses?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1122,28 +1137,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c15t4l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c15t4l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Second answer: What does the speaker say about the glass houses?",
+              "prompt": "Second selected letter: First answer: What does the speaker say about the glass houses?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1190,7 +1189,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They are closed at weekends."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Volunteers are needed to work there."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They were badly damaged by fire."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "More money is needed to repair some of the glass."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Visitors can see palm trees from tropical regions."
+            }
+          ]
         }
       ],
       "audioStartMs": 473425,

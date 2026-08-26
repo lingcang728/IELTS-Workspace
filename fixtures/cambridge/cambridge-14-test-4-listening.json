@@ -1105,14 +1105,14 @@
         {
           "id": "c14t4l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t4l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things does the speaker say about the attraction called Musical Favourites?",
+              "prompt": "First selected letter: First answer: Which TWO things does the speaker say about the attraction called Musical Favourites?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1149,55 +1149,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "You pay extra for drinks"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "You must book it in advance"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "You get a reduction if you buy two tickets"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "You can meet the performers"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "You can take part in the show"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              17,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c14t4l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c14t4l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things does the speaker say about the attraction called Musical Favourites?",
+              "prompt": "Second selected letter: First answer: Which TWO things does the speaker say about the attraction called Musical Favourites?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1240,27 +1197,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "You pay extra for drinks"
+              "text": "You pay extra for drinks."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "You must book it in advance"
+              "text": "You must book it in advance."
             },
             {
               "id": "C",
               "label": "C",
-              "text": "You get a reduction if you buy two tickets"
+              "text": "You get a reduction if you buy two tickets."
             },
             {
               "id": "D",
               "label": "D",
-              "text": "You can meet the performers"
+              "text": "You can meet the performers."
             },
             {
               "id": "E",
               "label": "E",
-              "text": "You can take part in the show"
+              "text": "You can take part in the show."
             }
           ],
           "repairSource": {
@@ -1270,19 +1227,23 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ]
         },
         {
           "id": "c14t4l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t4l-q19",
               "number": 19,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things does the speaker say about the Castle Feast?",
+              "prompt": "First selected letter: First answer: Which TWO things does the speaker say about the Castle Feast?",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -1320,28 +1281,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c14t4l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c14t4l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things does the speaker say about the Castle Feast?",
+              "prompt": "Second selected letter: First answer: Which TWO things does the speaker say about the Castle Feast?",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -1380,33 +1325,6 @@
               }
             }
           ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "You pay extra for drinks"
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "You must book it in advance"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "You get a reduction if you buy two tickets"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "You can meet the performers"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "You can take part in the show"
-            }
-          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -1414,7 +1332,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Visitors can dance after the meal."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "There is a choice of food."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Visitors wear historical costume."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Knives and forks are not used."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The entertainment includes horse races."
+            }
+          ]
         }
       ],
       "audioStartMs": 491711,

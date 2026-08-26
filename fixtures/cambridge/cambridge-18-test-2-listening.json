@@ -365,14 +365,14 @@
         {
           "id": "c18t2l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t2l-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "What are the TWO main reasons why this site has been chosen for the housing development?",
+              "prompt": "First selected letter: What are the TWO main reasons why this site has been chosen for the housing development?",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -409,47 +409,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It has suitable geographical features."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There is easy access to local facilities."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It has good connections with the airport."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "The land is of little agricultural value."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "It will be convenient for workers."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T16:08:17.454738+00:00"
-          }
-        },
-        {
-          "id": "c18t2l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t2l-q12",
               "number": 12,
@@ -523,20 +483,24 @@
           "repairSource": {
             "kind": "overlay",
             "status": "corrected",
-            "reviewedAt": "2026-08-24T16:08:17.456249+00:00"
-          }
+            "reviewedAt": "2026-08-24T16:08:17.454738+00:00"
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ]
         },
         {
           "id": "c18t2l-g13",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t2l-q13",
               "number": 13,
               "type": "multi_choice",
-              "prompt": "Which TWO aspects of the planned housing development have people given positive feedback about?",
+              "prompt": "First selected letter: Which TWO aspects of the planned housing development have people given positive feedback about?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -573,47 +537,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "the facilities for cyclists"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "the impact on the environment"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "the encouragement of good relations between residents"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "the low cost of all the accommodation"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "the rural location"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T16:08:17.456249+00:00"
-          }
-        },
-        {
-          "id": "c18t2l-g14",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t2l-q14",
               "number": 14,
@@ -688,7 +612,11 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T16:08:17.456249+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ]
         },
         {
           "id": "c18t2l-g15",
@@ -1393,14 +1321,14 @@
         {
           "id": "c18t2l-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t2l-q25",
               "number": 25,
-              "type": "single_choice",
-              "prompt": "ChooseTWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: ChooseTWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -1437,28 +1365,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:01.451918+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t2l-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c18t2l-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Which TWO issues following the Laki eruption surprised the students?",
+              "prompt": "Second selected letter: ChooseTWO letters, A-E.",
               "acceptedAnswers": [
                 "A",
                 "B"
@@ -1505,7 +1417,38 @@
               26
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "B"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "how widespread the effects were"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how long-lasting the effects were"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the number of deaths it caused"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the speed at which the volcanic ash cloud spread"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "how people ignored the warning signs"
+            }
+          ]
         },
         {
           "id": "c18t2l-g27",

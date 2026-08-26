@@ -670,14 +670,14 @@
         {
           "id": "c17t1l-g15",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t1l-q15",
               "number": 15,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -714,28 +714,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:00.439652+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              15,
-              16
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c17t1l-g16",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c17t1l-q16",
               "number": 16,
               "type": "multi_choice",
-              "prompt": "Which TWO features of the lighthouse does Lou mention?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -782,19 +766,50 @@
               16
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "why it was built"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "who built it"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how long it took to build"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "who staffed it"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "what it was built with"
+            }
+          ]
         },
         {
           "id": "c17t1l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t1l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "Which TWO types of creature might come close to the boat?",
+              "prompt": "First selected letter: Which TWO types of creature might come close to the boat?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -832,28 +847,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              17,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c17t1l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c17t1l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Which TWO types of creature might come close to the boat? (Question 18)",
+              "prompt": "Second selected letter: Which TWO types of creature might come close to the boat?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -900,19 +899,50 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "sea eagles"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "fur seals"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "dolphins"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "whales"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "penguins"
+            }
+          ]
         },
         {
           "id": "c17t1l-g19",
           "instruction": "Choose TWO letters, A-E. Choose the correct letter, A, B or C.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t1l-q19",
               "number": 19,
               "type": "multi_choice",
-              "prompt": "Which TWO points does Lou make about the caves?",
+              "prompt": "First selected letter: Which TWO points does Lou make about the caves?",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -950,28 +980,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c17t1l-g20",
-          "instruction": "Choose TWO letters, A-E. Choose the correct letter, A, B or C.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c17t1l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Which TWO points does Lou make about the caves? (Question 20)",
+              "prompt": "Second selected letter: Which TWO points does Lou make about the caves?",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -1018,7 +1032,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Only large tourist boats can visit them."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The entrances to them are often blocked."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It is too dangerous for individuals to go near them."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Someone will explain what is inside them."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They cannot be reached on foot."
+            }
+          ]
         }
       ],
       "audioStartMs": 414211,

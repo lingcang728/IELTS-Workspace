@@ -1270,14 +1270,14 @@
         {
           "id": "c17t2l-g21",
           "instruction": "Choose TWO letters, A–E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t2l-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things do the students agree they need to include in their reviews of Romeo and Juliet?",
+              "prompt": "First selected letter: First answer: Which TWO things do the students agree they need to include in their reviews of Romeo and Juliet?",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -1315,25 +1315,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T13:58:43.587955+00:00"
-          }
-        },
-        {
-          "id": "c17t2l-g22",
-          "instruction": "Choose TWO letters, A–E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c17t2l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things do the students agree they need to include in their reviews of Romeo and Juliet?",
+              "prompt": "Second selected letter: First answer: Which TWO things do the students agree they need to include in their reviews of Romeo and Juliet?",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -1377,7 +1364,38 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T13:58:43.587955+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "analysis of the text"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "a summary of the plot"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "a description of the theatre"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a personal reaction"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a reference to particular scenes"
+            }
+          ]
         },
         {
           "id": "c17t2l-g23",

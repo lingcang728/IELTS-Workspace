@@ -1157,14 +1157,14 @@
         {
           "id": "c15t2l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t2l-q21",
               "number": 21,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1201,28 +1201,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:59.018304+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c15t2l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c15t2l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Which TWO groups of people is the display primarily intended for?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1269,19 +1253,50 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "students from the English department"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "residents of the local area"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the university's teaching staff"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "potential new students"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "students from other departments"
+            }
+          ]
         },
         {
           "id": "c15t2l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t2l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "What are Cathy and Graham's TWO reasons for choosing the novelist Charles Dickens?",
+              "prompt": "First selected letter: What are Cathy and Graham's TWO reasons for choosing the novelist Charles Dickens?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -1319,28 +1334,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c15t2l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c15t2l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Second selected answer: What are Cathy and Graham's TWO reasons for choosing the novelist Charles Dickens?",
+              "prompt": "Second selected letter: What are Cathy and Graham's TWO reasons for choosing the novelist Charles Dickens?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -1387,7 +1386,38 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "His speeches inspired others to try to improve society."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "He used his publications to draw attention to social problems."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "His novels are well-known now."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "He was consulted on a number of social issues."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "His reputation has changed in recent times."
+            }
+          ]
         },
         {
           "id": "c15t2l-g25",

@@ -1486,14 +1486,14 @@
         {
           "id": "c13t4l-g27",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c13t4l-q27",
               "number": 27,
               "type": "multi_choice",
-              "prompt": "Which TWO things surprised the students about the traffic-light system for nutritional labels? (Question 27)",
+              "prompt": "First selected letter: Which TWO things surprised the students about the traffic-light system for nutritional labels? (Question 27)",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -1531,28 +1531,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:45:05+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              28
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c13t4l-g28",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c13t4l-q28",
               "number": 28,
               "type": "multi_choice",
-              "prompt": "Which TWO things surprised the students about the traffic-light system for nutritional labels? (Question 28)",
+              "prompt": "Second selected letter: Which TWO things surprised the students about the traffic-light system for nutritional labels? (Question 27)",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -1599,19 +1583,50 @@
               28
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "its widespread use"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the fact that it is voluntary for supermarkets"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "how little research was done before its introduction"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "its unpopularity with food manufacturers"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the way that certain colours are used"
+            }
+          ]
         },
         {
           "id": "c13t4l-g29",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c13t4l-q29",
               "number": 29,
               "type": "multi_choice",
-              "prompt": "Which TWO things are true about the participants in the study on the traffic-light system? (Question 29)",
+              "prompt": "First selected letter: Which TWO things are true about the participants in the study on the traffic-light system? (Question 29)",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -1649,28 +1664,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:45:05+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              29,
-              30
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c13t4l-g30",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c13t4l-q30",
               "number": 30,
               "type": "multi_choice",
-              "prompt": "Which TWO things are true about the participants in the study on the traffic-light system? (Question 30)",
+              "prompt": "Second selected letter: Which TWO things are true about the participants in the study on the traffic-light system? (Question 29)",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -1717,7 +1716,38 @@
               30
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They had low literacy levels."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They were regular consumers of packaged food."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They were selected randomly."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They were from all socio-economic groups."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They were interviewed face-to-face."
+            }
+          ]
         }
       ],
       "audioStartMs": 878226,

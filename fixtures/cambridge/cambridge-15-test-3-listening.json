@@ -765,14 +765,14 @@
         {
           "id": "c15t3l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t3l-q17",
               "number": 17,
-              "type": "single_choice",
-              "prompt": "91: Leblanc invented a way of making soda ash from 38 early1800s: Chevreul turned soapmakinginto a 39 from 1800s, there was no longer a 40 . . on soap",
+              "type": "multi_choice",
+              "prompt": "First selected letter: 91: Leblanc invented a way of making soda ash from 38 early1800s: Chevreul turned soapmakinginto a 39 from 1800s, there was no longer a 40 . . on soap",
               "acceptedAnswers": [
                 "B"
               ],
@@ -809,28 +809,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:59.280423+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              17,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c15t3l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c15t3l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Second selected letter: Which TWO benefits for children does Alice think are the most important?",
+              "prompt": "Second selected letter: 91: Leblanc invented a way of making soda ash from 38 early1800s: Chevreul turned soapmakinginto a 39 from 1800s, there was no longer a 40 . . on soap",
               "acceptedAnswers": [
                 "D"
               ],
@@ -876,13 +860,44 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "increased physical activity"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "increased sense of independence"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "opportunity to learn new games"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "opportunity to be part of a community"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "opportunity to make new friends"
+            }
+          ]
         },
         {
           "id": "c15t3l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t3l-q19",
@@ -924,40 +939,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "two years ago"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "three years ago"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "six years ago"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c15t3l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c15t3l-q20",
               "number": 20,
@@ -1004,17 +986,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "two years ago"
+              "text": "more shoppers"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "three years ago"
+              "text": "improved safety"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "six years ago"
+              "text": "less air pollution"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "more relaxed atmosphere"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "less noise pollution"
             }
           ],
           "repairSource": {
@@ -1024,7 +1016,11 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ]
         }
       ],
       "audioStartMs": 469360,

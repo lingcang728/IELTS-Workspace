@@ -349,14 +349,14 @@
         {
           "id": "c10t1l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c10t1l-q11",
               "number": 11,
-              "type": "single_choice",
-              "prompt": "Late",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Late",
               "acceptedAnswers": [
                 "A"
               ],
@@ -387,55 +387,12 @@
                   "text": "the sports training for children"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "the gym"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "the tracks"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "the indoor pool"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "the outdoor pool"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "the sports training for children"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c10t1l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c10t1l-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Which TWO facilities at the leisure club have recently been improved?",
+              "prompt": "Second selected letter: Late",
               "acceptedAnswers": [
                 "C"
               ],
@@ -507,7 +464,11 @@
               12
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ]
         },
         {
           "id": "c10t1l-g13",

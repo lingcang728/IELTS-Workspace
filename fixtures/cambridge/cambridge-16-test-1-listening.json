@@ -1307,8 +1307,8 @@
         {
           "id": "c16t1l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t1l-q21",
@@ -1352,23 +1352,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t1l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t1l-q22",
               "number": 22,
@@ -1420,19 +1404,50 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the Bird Park visit"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the workshop sessions"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the Natural History Museum visit"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the projects done in previous years"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the handouts with research sources"
+            }
+          ]
         },
         {
           "id": "c16t1l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t1l-q23",
               "number": 23,
-              "type": "single_choice",
-              "prompt": "Choose TWo letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWo letters, A-E.",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1469,28 +1484,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:59.680104+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t1l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t1l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Second selected letter: In which TWO ways do both Jess and Tom decide to change their proposals?",
+              "prompt": "Second selected letter: Choose TWo letters, A-E.",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -1537,7 +1536,38 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "by giving a rationale for their action plans"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "by being less specific about the outcome"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "by adding a video diary presentation"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "by providing a timeline and a mind map"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "by making their notes more evaluative"
+            }
+          ]
         },
         {
           "id": "c16t1l-g25",

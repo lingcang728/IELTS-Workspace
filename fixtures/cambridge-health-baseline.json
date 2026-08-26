@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "note": "Content damage ratchet. It may only fall, except where the data became more truthful. Latest change is a fall: 79_attach_map_images.py referenced MinerU crops on 136 labelling groups (26 unique maps; gaps 236→100) and two recovered option lists (C17 T3 R Q36/Q40) dropped damagedQuestions 243→241. Remaining 100 gaps are 92 placeholder rubrics plus a handful of blank option lists that are not letter-choice on the printed page.",
-  "damagedQuestions": 241,
+  "note": "Content damage ratchet. Phase 1 lowers this; it must never rise.",
+  "damagedQuestions": 240,
   "contentGaps": 100,
   "byBook": {
     "4": {
@@ -472,11 +472,11 @@
       "listening": {
         "exams": 4,
         "questions": 160,
-        "damaged": 8,
+        "damaged": 7,
         "suspect": 0,
         "gaps": 0,
-        "healthy": 152,
-        "healthPct": 95.0
+        "healthy": 153,
+        "healthPct": 95.6
       },
       "reading": {
         "exams": 4,

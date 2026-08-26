@@ -1,10 +1,14 @@
 use crate::error::AppError;
 use crate::paths;
+use crate::safe_path;
 use serde_json::Value;
 use std::collections::BTreeMap;
 use std::fs;
 use std::path::{Path, PathBuf};
 use std::sync::{Mutex, OnceLock};
+
+const MAX_IMPORT_BYTES: usize = 2 * 1024 * 1024;
+const MAX_IMPORT_QUESTIONS: usize = 80;
 
 #[derive(Default)]
 struct LibraryIndex {
@@ -92,12 +96,7 @@ fn build_index() -> Result<LibraryIndex, AppError> {
             .any(|root| root.join(format!("{id}.json")).exists());
         let module = v.get("module").and_then(Value::as_str).unwrap_or("");
         let audio_status = if module == "listening" {
-            let bound = crate::audio::status_for(id);
-            if bound == "ready" || has_local_audio(&v) {
-                "ready"
-            } else {
-                bound
-            }
+            crate::audio::status_for(id)
         } else {
             "ready"
         };
@@ -203,20 +202,6 @@ pub fn list_exams() -> Result<Vec<Value>, AppError> {
     with_index(|index| index.summaries.clone())
 }
 
-fn has_local_audio(exam: &Value) -> bool {
-    let Some(sections) = exam.get("sections").and_then(Value::as_array) else {
-        return false;
-    };
-    for section in sections {
-        if let Some(rel) = section.get("audioAsset").and_then(Value::as_str) {
-            if resolve_asset(rel).is_ok() {
-                return true;
-            }
-        }
-    }
-    false
-}
-
 fn count_questions(exam: &Value) -> u32 {
     let mut n = 0u32;
     if let Some(sections) = exam.get("sections").and_then(Value::as_array) {
@@ -238,7 +223,31 @@ pub fn load_exam(id: &str) -> Result<Value, AppError> {
         .ok_or_else(|| AppError::from(format!("找不到试卷: {id}")))
 }
 
+fn collect_asset_fields(value: &Value, out: &mut Vec<String>) {
+    match value {
+        Value::Object(map) => {
+            for (key, child) in map {
+                if matches!(key.as_str(), "audioAsset" | "imageAsset") {
+                    if let Some(s) = child.as_str() {
+                        out.push(s.to_string());
+                    }
+                }
+                collect_asset_fields(child, out);
+            }
+        }
+        Value::Array(items) => {
+            for child in items {
+                collect_asset_fields(child, out);
+            }
+        }
+        _ => {}
+    }
+}
+
 pub fn import_exam_json(raw: &str) -> Result<Value, AppError> {
+    if raw.len() > MAX_IMPORT_BYTES {
+        return Err(AppError::from("导入失败：JSON 超过 2 MB 上限"));
+    }
     let v: Value = serde_json::from_str(raw)?;
     if v.get("schemaVersion").and_then(Value::as_u64) != Some(1) {
         return Err(AppError::from("导入失败：缺少 schemaVersion=1"));
@@ -247,33 +256,60 @@ pub fn import_exam_json(raw: &str) -> Result<Value, AppError> {
         .get("id")
         .and_then(Value::as_str)
         .ok_or_else(|| AppError::from("导入失败：缺少 id"))?;
+    if !safe_path::valid_id(id) {
+        return Err(AppError::from("导入失败：id 只能含字母、数字、连字符和下划线"));
+    }
+    let module = v.get("module").and_then(Value::as_str).unwrap_or("");
+    if !matches!(module, "reading" | "listening" | "writing") {
+        return Err(AppError::from("导入失败：module 必须是 reading、listening 或 writing"));
+    }
+    let questions = count_questions(&v) as usize;
+    if questions == 0 {
+        return Err(AppError::from("导入失败：试卷没有任何题目"));
+    }
+    if questions > MAX_IMPORT_QUESTIONS {
+        return Err(AppError::from(format!(
+            "导入失败：题目数量 {questions} 超过 {MAX_IMPORT_QUESTIONS} 上限"
+        )));
+    }
+    let mut assets = Vec::new();
+    collect_asset_fields(&v, &mut assets);
+    for rel in &assets {
+        safe_path::sanitize_rel(rel).map_err(|e| {
+            AppError::from(format!("导入失败：资源路径非法（{rel}）：{e}"))
+        })?;
+    }
+    if exam_exists(id) {
+        return Err(AppError::from("导入失败：试卷 ID 已存在，拒绝覆盖"));
+    }
     let dest = paths::library_dir()?.join(format!("{id}.json"));
     crate::session::atomic_write(&dest, serde_json::to_vec_pretty(&v)?.as_slice())?;
     invalidate_index();
     Ok(v)
 }
 
+fn exam_exists(id: &str) -> bool {
+    with_index(|index| index.exams.contains_key(id)).unwrap_or(false)
+}
+
+fn asset_roots() -> Result<Vec<PathBuf>, AppError> {
+    let mut roots = vec![paths::assets_dir()?, paths::fixtures_root()?];
+    let fixtures_assets = paths::fixtures_root()?.join("assets");
+    if fixtures_assets.exists() {
+        roots.push(fixtures_assets);
+    }
+    Ok(roots)
+}
+
 pub fn resolve_asset(rel: &str) -> Result<String, AppError> {
-    if rel.is_empty() || rel.contains("..") {
-        return Err(AppError::from("非法资源路径"));
-    }
-    let candidates = [
-        paths::assets_dir()?.join(rel),
-        paths::data_root()?.join(rel),
-        paths::fixtures_root()?.join(rel),
-        paths::app_root()?.join(rel),
-    ];
-    for p in candidates {
-        if p.exists() {
-            return Ok(p.display().to_string());
-        }
-    }
-    Err(AppError::from(format!("找不到资源: {rel}")))
+    let path = safe_path::resolve_under(rel, &asset_roots()?)?;
+    Ok(path.display().to_string())
 }
 
 #[cfg(test)]
 mod tests {
-    use super::natural_cmp;
+    use super::{collect_asset_fields, natural_cmp};
+    use serde_json::json;
 
     fn sorted(mut titles: Vec<&str>) -> Vec<&str> {
         titles.sort_by(|a, b| natural_cmp(a, b));
@@ -332,5 +368,25 @@ mod tests {
         assert_eq!(natural_cmp("Test 4", "Test 04"), Ordering::Less);
         assert_eq!(natural_cmp("Test 4", "Test 4"), Ordering::Equal);
         assert_eq!(natural_cmp("Test 4", "Test 4 Reading"), Ordering::Less);
+    }
+
+    #[test]
+    fn import_rejects_bad_ids_and_absolute_assets() {
+        use super::import_exam_json;
+        assert!(import_exam_json(r#"{"schemaVersion":1,"id":"../x","module":"reading","sections":[]}"#).is_err());
+        assert!(import_exam_json(r#"{"schemaVersion":1,"id":"ok-id","module":"reading","sections":[{"questionGroups":[{"questions":[{"id":"q1","number":1,"type":"completion","prompt":"x"}],"instruction":"i","questionType":"completion","scoringPolicy":"per_question"}],"imageAsset":"C:\\Windows\\x.png"}]}"#).is_err());
+    }
+
+    #[test]
+    fn import_collects_nested_asset_fields() {
+        let exam = json!({
+            "sections": [{
+                "audioAsset": "assets/cambridge/c4-t1.mp3",
+                "questionGroups": [{ "imageAsset": "assets/cambridge/map.jpg", "questions": [] }]
+            }]
+        });
+        let mut out = Vec::new();
+        collect_asset_fields(&exam, &mut out);
+        assert_eq!(out.len(), 2);
     }
 }

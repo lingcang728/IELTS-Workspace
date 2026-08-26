@@ -93,10 +93,20 @@ Older 2017–2018 tutorials were **not** used as the visual source of truth when
 |---|---|---|
 | Exact navy/grey hex of the 2025 chrome | Not published as a design spec | Approximate official light exam chrome, not a dark “product” theme |
 | Whether the answered-mark is a 2px bar or a 1px rule | Video only | 3px bar above the number |
-| Colour-scheme presets | Mentioned (“colour settings”) | Provide default / yellow-on-black / black-on-cream (common a11y set used in computer tests) |
+| Colour-scheme presets | Mentioned (“colour settings”) | Mock: default / yellow-on-black / black-on-cream. Practice: follow workspace / fixed light / fixed dark (`Profile.practiceScheme`). High-contrast and cream stay mock-only. |
 | Hide/Resume (leave room) | In older tutorials | Not implemented in v1 (not needed for home mock) |
 | Exact font | Not specified | Segoe UI / Calibri-like system UI for exam; never a marketing font |
 | IDP vs British Council pixel differences | Same partner test; 2025 official videos treat one platform | One runtime |
+
+## Display
+
+- Mock runtime is always the official light exam chrome (`data-theme="exam"` + `default` / `high_contrast` / `cream`). It does not follow the workspace theme.
+- Practice runtime reads `Profile.practiceScheme`:
+  - `follow_shell` — light exam tokens when the workspace is light, `practice_dark` tokens when the workspace is dark
+  - `light` — official light exam tokens
+  - `dark` — practice-only `--exam-*` dark tokens
+- `exam.css` still reads only `--exam-*`. Practice dark is a new exam-token set, not a leak of `--ink` / `--bg`.
+- Older profiles without `practiceScheme` migrate to `follow_shell`.
 
 ## Timing policy used in Runtime
 

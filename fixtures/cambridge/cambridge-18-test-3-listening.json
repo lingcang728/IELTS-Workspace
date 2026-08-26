@@ -351,14 +351,14 @@
         {
           "id": "c18t3l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t3l-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "Which TWO warnings does Dan give about picking mushrooms? (Question 11)",
+              "prompt": "First selected letter: Which TWO warnings does Dan give about picking mushrooms? (Question 11)",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -395,45 +395,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "scene in the home"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Don't pick mushrooms near busy roads"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Don't eat mushrooms gi"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t3l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t3l-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Which TWO warnings does Dan give about picking mushrooms? (Question 12)",
+              "prompt": "Second selected letter: Which TWO warnings does Dan give about picking mushrooms? (Question 11)",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -476,17 +443,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "scene in the home"
+              "text": "Don't pick more than one variety of mushroom at a time."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "Don't pick mushrooms near busy roads"
+              "text": "Don't pick mushrooms near busy roads."
             },
             {
               "id": "C",
               "label": "C",
-              "text": "Don't eat mushrooms gi"
+              "text": "Don't eat mushrooms given to you."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Don't eat mushrooms while picking them."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Don't pick old mushrooms."
             }
           ],
           "repairSource": {
@@ -496,19 +473,23 @@
               12
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ]
         },
         {
           "id": "c18t3l-g13",
           "instruction": "Choose TWO letters, A-E. Choose the correct letter, A, B or C.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t3l-q13",
               "number": 13,
               "type": "multi_choice",
-              "prompt": "Which TWO ideas about wild mushrooms does Dan say are correct? (Question 13)",
+              "prompt": "First selected letter: Which TWO ideas about wild mushrooms does Dan say are correct? (Question 13)",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -545,45 +526,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "scene in the home"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Don't pick mushrooms near busy roads"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Don't eat mushrooms gi"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              13,
-              14
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t3l-g14",
-          "instruction": "Choose TWO letters, A-E. Choose the correct letter, A, B or C.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t3l-q14",
               "number": 14,
               "type": "multi_choice",
-              "prompt": "Which TWO ideas about wild mushrooms does Dan say are correct? (Question 14)",
+              "prompt": "Second selected letter: Which TWO ideas about wild mushrooms does Dan say are correct? (Question 13)",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -626,17 +574,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "scene in the home"
+              "text": "Mushrooms should always be peeled before eating."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "Don't pick mushrooms near busy roads"
+              "text": "Mushrooms eaten by animals may be unsafe."
             },
             {
               "id": "C",
               "label": "C",
-              "text": "Don't eat mushrooms gi"
+              "text": "Cooking destroys toxins in mushrooms."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Brightly coloured mushrooms can be edible."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "All poisonous mushrooms have a bad smell."
             }
           ],
           "repairSource": {
@@ -646,7 +604,11 @@
               14
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ]
         },
         {
           "id": "c18t3l-g15",
@@ -1020,14 +982,14 @@
         {
           "id": "c18t3l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t3l-q21",
               "number": 21,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -1064,28 +1026,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:01.687405+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t3l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c18t3l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Which TWO opinions about the Luddites do the students express? (Question 22)",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -1132,19 +1078,50 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Their actions were ineffective."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They are still influential today."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They have received unfair criticism."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They were proved right."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Their attitude is understandable."
+            }
+          ]
         },
         {
           "id": "c18t3l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t3l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "Which TWO predictions about the future of work are the students doubtful about? (Question 23)",
+              "prompt": "First selected letter: Which TWO predictions about the future of work are the students doubtful about? (Question 23)",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1182,28 +1159,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t3l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c18t3l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Which TWO predictions about the future of work are the students doubtful about? (Question 24)",
+              "prompt": "Second selected letter: Which TWO predictions about the future of work are the students doubtful about? (Question 23)",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1250,7 +1211,38 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Work will be more rewarding."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Unemployment will fall."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "People will want to delay retiring."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Working hours will be shorter."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "People will change jobs more frequently."
+            }
+          ]
         },
         {
           "id": "c18t3l-g25",

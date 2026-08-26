@@ -387,8 +387,8 @@
         {
           "id": "c12t3l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c12t3l-q11",
@@ -430,47 +430,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "16–30 years"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "31–42 years"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "43–54 years"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "55–64 years"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "over 65 years"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
-          }
-        },
-        {
-          "id": "c12t3l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c12t3l-q12",
               "number": 12,
@@ -544,13 +504,17 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ]
         },
         {
           "id": "c12t3l-g13",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c12t3l-q13",
@@ -592,47 +556,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Clients make new friends."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Clients learn a useful skill."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Clients learn about a different culture."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "Clients are excited by the risk involved."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "Clients find them good value for money."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
-          }
-        },
-        {
-          "id": "c12t3l-g14",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c12t3l-q14",
               "number": 14,
@@ -706,7 +630,11 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T13:12:57.887700+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ]
         },
         {
           "id": "c12t3l-g15",

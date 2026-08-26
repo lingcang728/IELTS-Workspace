@@ -890,8 +890,8 @@
         {
           "id": "c13t3l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c13t3l-q17",
@@ -934,23 +934,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:45:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              17,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c13t3l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c13t3l-q18",
               "number": 18,
@@ -1001,13 +985,44 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "lack of time"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "loss of confidence"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "too much effort required"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "high costs"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "feeling less successful than others"
+            }
+          ]
         },
         {
           "id": "c13t3l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c13t3l-q19",
@@ -1050,23 +1065,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:45:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c13t3l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c13t3l-q20",
               "number": 20,
@@ -1117,7 +1116,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "write goals down"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "have achievable aims"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "set a time limit"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "give yourself rewards"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "challenge yourself"
+            }
+          ]
         }
       ],
       "audioStartMs": 548350,

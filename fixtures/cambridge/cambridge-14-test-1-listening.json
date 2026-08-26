@@ -355,14 +355,14 @@
         {
           "id": "c14t1l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t1l-q11",
               "number": 11,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -398,28 +398,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:57.903601+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c14t1l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c14t1l-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Second selected letter: Which TWO pieces of advice for the first week of an apprenticeship does the manager give?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "C"
               ],
@@ -464,13 +448,44 @@
               12
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "get to know colleagues"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "learn from any mistakes"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "ask lots of questions"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "react positively to feedback"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "enjoy new challenges"
+            }
+          ]
         },
         {
           "id": "c14t1l-g13",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t1l-q13",
@@ -512,23 +527,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              13,
-              14
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c14t1l-g14",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c14t1l-q14",
               "number": 14,
@@ -571,33 +570,6 @@
               }
             }
           ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "get to know colleagues"
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "learn from any mistakes"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "ask lots of questions"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "react positively to feedback"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "enjoy new challenges"
-            }
-          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -605,7 +577,38 @@
               14
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "confidence-building"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "making career plans"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "completing difficult tasks"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "making a weekly timetable"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "reviewing progress"
+            }
+          ]
         },
         {
           "id": "c14t1l-g15",

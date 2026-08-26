@@ -1,5 +1,6 @@
 use crate::error::AppError;
 use crate::paths;
+use crate::safe_path;
 use serde_json::Value;
 use std::fs::{self, File};
 use std::io::Write;
@@ -66,8 +67,20 @@ pub fn session_path(id: &str) -> Result<PathBuf, AppError> {
     Ok(paths::sessions_dir()?.join(format!("{id}.json")))
 }
 
-pub fn save_session_json(raw: &str) -> Result<String, AppError> {
-    let value: Value = serde_json::from_str(raw)?;
+fn valid_iso_datetime(s: &str) -> bool {
+    let b = s.as_bytes();
+    if b.len() < 19 {
+        return false;
+    }
+    b[4] == b'-'
+        && b[7] == b'-'
+        && (b[10] == b'T' || b[10] == b' ')
+        && b[13] == b':'
+        && b[16] == b':'
+        && b[0].is_ascii_digit()
+}
+
+fn validate_session(value: &Value) -> Result<(), AppError> {
     let version = value
         .get("schemaVersion")
         .and_then(Value::as_u64)
@@ -79,8 +92,62 @@ pub fn save_session_json(raw: &str) -> Result<String, AppError> {
         .get("id")
         .and_then(Value::as_str)
         .ok_or_else(|| AppError::from("Session 缺少 id"))?;
+    if !safe_path::valid_id(id) {
+        return Err(AppError::from("非法 session id"));
+    }
+    let exam_id = value
+        .get("examId")
+        .and_then(Value::as_str)
+        .unwrap_or("");
+    if exam_id.is_empty() || !safe_path::valid_id(exam_id) {
+        return Err(AppError::from("Session 缺少合法 examId"));
+    }
+    let status = value.get("status").and_then(Value::as_str).unwrap_or("");
+    if !matches!(
+        status,
+        "created" | "in_progress" | "submitted" | "aborted" | "interrupted"
+    ) {
+        return Err(AppError::from("Session status 非法"));
+    }
+    for key in ["startedAt", "updatedAt"] {
+        let Some(s) = value.get(key).and_then(Value::as_str) else {
+            return Err(AppError::from(format!("Session 缺少 {key}")));
+        };
+        if !valid_iso_datetime(s) {
+            return Err(AppError::from(format!("Session {key} 不是合法日期")));
+        }
+    }
+    if let Some(audio) = value.get("audio") {
+        if audio.is_null() {
+            return Ok(());
+        }
+        let obj = audio
+            .as_object()
+            .ok_or_else(|| AppError::from("Session.audio 格式错误"))?;
+        if let Some(pos) = obj.get("positionMs") {
+            if !pos.is_number() || pos.as_f64().unwrap_or(-1.0) < 0.0 {
+                return Err(AppError::from("Session.audio.positionMs 非法"));
+            }
+        }
+        if let Some(part) = obj.get("partIndex") {
+            let n = part.as_u64().unwrap_or(99);
+            if n > 3 {
+                return Err(AppError::from("Session.audio.partIndex 必须是 0–3"));
+            }
+        }
+    }
+    Ok(())
+}
+
+pub fn save_session_json(raw: &str) -> Result<String, AppError> {
+    let value: Value = serde_json::from_str(raw)?;
+    validate_session(&value)?;
+    let id = value
+        .get("id")
+        .and_then(Value::as_str)
+        .ok_or_else(|| AppError::from("Session 缺少 id"))?;
     let path = session_path(id)?;
-    atomic_write(&path, raw.as_bytes())?;
+    atomic_write(&path, serde_json::to_vec_pretty(&value)?.as_slice())?;
     Ok(path.display().to_string())
 }
 
@@ -89,28 +156,50 @@ pub fn load_session_json(id: &str) -> Result<String, AppError> {
     read_with_fallback(&path)
 }
 
+pub fn quarantine_file(path: &Path, why: &str) -> Result<PathBuf, AppError> {
+    quarantine_file_to(path, &paths::sessions_dir()?.join("quarantine"), why)
+}
+
+pub fn quarantine_file_to(path: &Path, dir: &Path, why: &str) -> Result<PathBuf, AppError> {
+    fs::create_dir_all(dir)?;
+    let name = path
+        .file_name()
+        .and_then(|s| s.to_str())
+        .unwrap_or("broken.json");
+    let stamp = std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .map(|d| d.as_millis())
+        .unwrap_or_default();
+    let dest = dir.join(format!("{stamp}-{name}"));
+    let _ = fs::rename(path, &dest).or_else(|_| fs::copy(path, &dest).map(|_| {
+        let _ = fs::remove_file(path);
+    }));
+    let note = dest.with_extension("reason.txt");
+    let _ = fs::write(&note, format!("{why}\n原文件：{}\n", path.display()));
+    Ok(dest)
+}
+
+fn try_parse_session(path: &Path) -> Result<String, String> {
+    let text = fs::read_to_string(path).map_err(|e| e.to_string())?;
+    serde_json::from_str::<Value>(&text).map_err(|e| e.to_string())?;
+    Ok(text)
+}
+
 fn read_with_fallback(path: &Path) -> Result<String, AppError> {
-    match fs::read_to_string(path) {
-        Ok(text) => {
-            serde_json::from_str::<Value>(&text)?;
-            Ok(text)
+    let bak = path.with_extension("json.bak");
+    let tmp = path.with_extension("json.tmp");
+    for candidate in [path, bak.as_path(), tmp.as_path()] {
+        if !candidate.exists() {
+            continue;
         }
-        Err(_) => {
-            let bak = path.with_extension("json.bak");
-            if bak.exists() {
-                let text = fs::read_to_string(&bak)?;
-                serde_json::from_str::<Value>(&text)?;
-                return Ok(text);
+        match try_parse_session(candidate) {
+            Ok(text) => return Ok(text),
+            Err(why) => {
+                let _ = quarantine_file(candidate, &format!("JSON 损坏：{why}"));
             }
-            let tmp = path.with_extension("json.tmp");
-            if tmp.exists() {
-                let text = fs::read_to_string(&tmp)?;
-                serde_json::from_str::<Value>(&text)?;
-                return Ok(text);
-            }
-            Err(AppError::from("找不到有效的 Session 文件"))
         }
     }
+    Err(AppError::from("找不到有效的 Session 文件（损坏文件已隔离）"))
 }
 
 /// How much of a paper was actually attempted: (answered, total).
@@ -156,34 +245,65 @@ fn answered_counts(session: &Value) -> (u64, u64) {
     (0, 0)
 }
 
+#[derive(Debug, Default)]
+pub struct SessionList {
+    pub summaries: Vec<Value>,
+    pub quarantined: Vec<String>,
+}
+
 pub fn list_session_summaries() -> Result<Vec<Value>, AppError> {
+    Ok(list_sessions_with_diagnostics()?.summaries)
+}
+
+pub fn list_sessions_with_diagnostics() -> Result<SessionList, AppError> {
     let dir = paths::sessions_dir()?;
-    let mut out = Vec::new();
+    let mut out = SessionList::default();
     if !dir.exists() {
         return Ok(out);
     }
-    for entry in fs::read_dir(dir)? {
+    for entry in fs::read_dir(&dir)? {
         let entry = entry?;
         let path = entry.path();
         if path.extension().and_then(|s| s.to_str()) != Some("json") {
             continue;
         }
-        let Ok(text) = fs::read_to_string(&path) else { continue };
-        let Ok(v) = serde_json::from_str::<Value>(&text) else { continue };
-        let (answered, total) = answered_counts(&v);
-        out.push(serde_json::json!({
-            "id": v.get("id"),
-            "examId": v.get("examId"),
-            "module": v.get("module"),
-            "mode": v.get("mode"),
-            "status": v.get("status"),
-            "integrity": v.get("integrity"),
-            "startedAt": v.get("startedAt"),
-            "updatedAt": v.get("updatedAt"),
-            "title": v.get("examTitle"),
-            "answered": answered,
-            "total": total,
-        }));
+        if path
+            .parent()
+            .and_then(|p| p.file_name())
+            .and_then(|s| s.to_str())
+            == Some("quarantine")
+        {
+            continue;
+        }
+        match try_parse_session(&path) {
+            Ok(text) => {
+                let Ok(v) = serde_json::from_str::<Value>(&text) else {
+                    continue;
+                };
+                let (answered, total) = answered_counts(&v);
+                out.summaries.push(serde_json::json!({
+                    "id": v.get("id"),
+                    "examId": v.get("examId"),
+                    "module": v.get("module"),
+                    "mode": v.get("mode"),
+                    "status": v.get("status"),
+                    "integrity": v.get("integrity"),
+                    "startedAt": v.get("startedAt"),
+                    "updatedAt": v.get("updatedAt"),
+                    "title": v.get("examTitle"),
+                    "answered": answered,
+                    "total": total,
+                }));
+            }
+            Err(why) => {
+                let dest = quarantine_file(&path, &format!("列出会话时发现损坏：{why}"))?;
+                out.quarantined.push(format!(
+                    "{}（已隔离到 {}）",
+                    path.display(),
+                    dest.display()
+                ));
+            }
+        }
     }
     Ok(out)
 }
@@ -257,5 +377,34 @@ mod tests {
         let text = fs::read_to_string(&path).unwrap();
         assert!(text.contains("schemaVersion"));
         let _ = fs::remove_dir_all(&dir);
+    }
+
+    #[test]
+    fn rejects_bad_status_and_dates() {
+        let bad = serde_json::json!({
+            "schemaVersion": 1,
+            "id": "s-1",
+            "examId": "cambridge-4-test-1-reading",
+            "status": "done",
+            "startedAt": "2026-08-26T10:00:00.000Z",
+            "updatedAt": "2026-08-26T10:00:00.000Z",
+        });
+        assert!(validate_session(&bad).is_err());
+        let good = serde_json::json!({
+            "schemaVersion": 1,
+            "id": "s-1",
+            "examId": "cambridge-4-test-1-reading",
+            "status": "in_progress",
+            "startedAt": "2026-08-26T10:00:00.000Z",
+            "updatedAt": "2026-08-26T10:00:00.000Z",
+        });
+        assert!(validate_session(&good).is_ok());
+    }
+
+    #[test]
+    fn isol_datetime_gate() {
+        assert!(valid_iso_datetime("2026-08-26T10:00:00.000Z"));
+        assert!(!valid_iso_datetime("tomorrow"));
+        assert!(!valid_iso_datetime("2026/08/26"));
     }
 }

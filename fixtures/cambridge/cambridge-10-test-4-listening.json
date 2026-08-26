@@ -755,14 +755,14 @@
         {
           "id": "c10t4l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c10t4l-q21",
               "number": 21,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -783,45 +783,12 @@
                   "text": "It had a good position on the sea coast"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It was safe from enemy attack"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "It was convenient for river transport"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It had a good position on the sea coast"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c10t4l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c10t4l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Which TWO skills did Laura improve through the work placement",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -860,6 +827,23 @@
               }
             }
           ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was safe from enemy attack"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It was convenient for river transport"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It had a good position on the sea coast"
+            }
+          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -867,19 +851,23 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ]
         },
         {
           "id": "c10t4l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c10t4l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "Question 23: which immediate benefits did the company get",
+              "prompt": "First selected letter: Question 23: which immediate benefits did the company get",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -917,28 +905,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c10t4l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c10t4l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Question 24: which other immediate benefit did the company get",
+              "prompt": "Second selected letter: Question 23: which immediate benefits did the company get",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -977,23 +949,6 @@
               }
             }
           ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It was safe from enemy attack"
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "It was convenient for river transport"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It had a good position on the sea coast"
-            }
-          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -1001,7 +956,38 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "updates for its software"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "cost savings"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "an improved image"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "new clients"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a growth in sales"
+            }
+          ]
         },
         {
           "id": "c10t4l-g25",

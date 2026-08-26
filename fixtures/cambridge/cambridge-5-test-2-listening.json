@@ -769,14 +769,14 @@
         {
           "id": "c5t2l-g18",
           "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c5t2l-q18",
               "number": 18,
-              "type": "matching",
-              "prompt": "Students wishing to live off-campus should apply A several months in advance. B two or three weeks in advance. C at the beginning of term",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Students wishing to live off-campus should apply A several months in advance. B two or three weeks in advance. C at the beginning of term",
               "acceptedAnswers": [
                 "C"
               ],
@@ -823,28 +823,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T12:42:25.298442+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              18,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c5t2l-g19",
-          "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c5t2l-q19",
               "number": 19,
-              "type": "matching",
-              "prompt": "The university accommodation officer will A send a list of agents for students to contact. B contact accommodation agencies for students. C ensure that students have suitable accommodation",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Students wishing to live off-campus should apply A several months in advance. B two or three weeks in advance. C at the beginning of term",
               "acceptedAnswers": [
                 "E"
               ],
@@ -891,28 +875,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T12:42:25.298442+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              18,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c5t2l-g20",
-          "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c5t2l-q20",
               "number": 20,
-              "type": "matching",
-              "prompt": "With regard to their English, the speaker advises the students to A tell their lecturers if they have problems understanding. Bhave private English lessons when they arrive. C practise their spoken English before they arrive",
+              "type": "multi_choice",
+              "prompt": "Third selected letter: Students wishing to live off-campus should apply A several months in advance. B two or three weeks in advance. C at the beginning of term",
               "acceptedAnswers": [
                 "F"
               ],
@@ -968,7 +936,49 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E",
+            "F"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "organise a bicycle collection"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "repair the donated bikes"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "donate their unwanted tools"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "do voluntary work in its office"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "hold an event to raise money"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "identify areas that need bikes"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "write to the government"
+            }
+          ]
         }
       ],
       "audioStartMs": 476041,

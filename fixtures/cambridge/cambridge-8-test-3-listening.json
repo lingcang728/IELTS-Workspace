@@ -283,14 +283,14 @@
         {
           "id": "c8t3l-g9",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c8t3l-q9",
               "number": 9,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "['B', 'E']"
               ],
@@ -321,55 +321,12 @@
                   "text": "swimming pool"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "museum"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "concert hall"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "cinema"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "sports centre"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "swimming pool"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              9,
-              10
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c8t3l-g10",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c8t3l-q10",
               "number": 10,
               "type": "multi_choice",
-              "prompt": "Which TWO facilities in the district of Devon Close are open to the public at the moment?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -442,7 +399,11 @@
               10
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ]
         }
       ],
       "audioStartMs": 0,

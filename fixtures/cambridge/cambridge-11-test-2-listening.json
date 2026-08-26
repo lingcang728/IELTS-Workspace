@@ -380,14 +380,14 @@
         {
           "id": "c11t2l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t2l-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "Which TWO changes have been made so far during the refurbishment of the theatre?",
+              "prompt": "First selected letter: Which TWO changes have been made so far during the refurbishment of the theatre?",
               "acceptedAnswers": [
                 "A",
                 "B"
@@ -425,23 +425,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c11t2l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c11t2l-q12",
               "number": 12,
@@ -493,19 +477,50 @@
               12
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "B"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Some rooms now have a different use."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "A different type of seating has been installed."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "An elevator has been installed."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The outside of the building has been repaired."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Extra seats have been added."
+            }
+          ]
         },
         {
           "id": "c11t2l-g13",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t2l-q13",
               "number": 13,
               "type": "multi_choice",
-              "prompt": "Which TWO facilities does the theatre currently offer to the public?",
+              "prompt": "First selected letter: Which TWO facilities does the theatre currently offer to the public?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -543,23 +558,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              13,
-              14
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c11t2l-g14",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c11t2l-q14",
               "number": 14,
@@ -611,19 +610,50 @@
               14
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "rooms for hire"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "backstage tours"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "hire of costumes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "a bookshop"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "a café"
+            }
+          ]
         },
         {
           "id": "c11t2l-g15",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t2l-q15",
               "number": 15,
               "type": "multi_choice",
-              "prompt": "Which TWO workshops does the theatre currently offer?",
+              "prompt": "First selected letter: Which TWO workshops does the theatre currently offer?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -661,23 +691,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              15,
-              16
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c11t2l-g16",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c11t2l-q16",
               "number": 16,
@@ -721,33 +735,6 @@
               }
             }
           ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Some rooms now have a different use"
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "A different type of seating has been installed"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "An elevator has been installed"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "The outside of the building has been repaired"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "Extra seats have been added"
-            }
-          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -755,7 +742,38 @@
               16
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "sound"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "acting"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "making puppets"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "make-up"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "lighting"
+            }
+          ]
         },
         {
           "id": "c11t2l-g17",
@@ -1457,14 +1475,14 @@
         {
           "id": "c11t2l-g27",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t2l-q27",
               "number": 27,
               "type": "multi_choice",
-              "prompt": "Which TWO problems affecting organisms in the splash zone are mentioned?",
+              "prompt": "First selected letter: Which TWO problems affecting organisms in the splash zone are mentioned?",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -1502,23 +1520,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              28
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c11t2l-g28",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c11t2l-q28",
               "number": 28,
@@ -1570,19 +1572,50 @@
               28
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "lack of water"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "strong winds"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "lack of food"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "high temperatures"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "large waves"
+            }
+          ]
         },
         {
           "id": "c11t2l-g29",
           "instruction": "Choose TWO letters, A-E. Write ONE WORD ONLY for each answer.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t2l-q29",
               "number": 29,
               "type": "multi_choice",
-              "prompt": "Which TWO reasons for possible error will they include in their report?",
+              "prompt": "First selected letter: Which TWO reasons for possible error will they include in their report?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -1620,23 +1653,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              29,
-              30
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c11t2l-g30",
-          "instruction": "Choose TWO letters, A-E. Write ONE WORD ONLY for each answer.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c11t2l-q30",
               "number": 30,
@@ -1688,7 +1705,38 @@
               30
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "inaccurate records of the habitat of organisms"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "influence on behaviour of organisms by observer"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "incorrect identification of some organisms"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "making generalisations from a small sample"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "missing some organisms when counting"
+            }
+          ]
         }
       ],
       "audioStartMs": 934792,

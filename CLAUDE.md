@@ -17,7 +17,7 @@ npm run verify           # vitest + cargo test (the minimal gate)
 npm run package:release  # signed NSIS + portable + latest.json → output/release/
 ```
 
-`.\verify.ps1` is the gate `package-release.ps1` runs before every release build; run it before claiming a change is done. It skips `verify_cambridge.py` when `fixtures/cambridge/` is absent (CI, fresh clone).
+`.\verify.ps1` is the gate `package-release.ps1` runs before every release build; run it before claiming a change is done. It skips `verify_cambridge.py` when `fixtures/cambridge/` is absent (CI, fresh clone). 维护步骤、发布、题库 ratchet 见 `docs/维护与发布指南.md`。
 
 Playwright smoke scripts (`scripts/visual_smoke.py`, `mode_smoke.py`, `window_smoke.py`) attach over CDP to `127.0.0.1:9223` against a running dev app and dump screenshots into `.codex-verify/`; `portable_smoke.py` uses `:9224` against a packaged build. Use the global Python Playwright (see the user-level instructions) — do not install Playwright into this repo.
 
@@ -33,7 +33,7 @@ Every capability is a `#[tauri::command]`. Adding one means touching three place
 Never uses the process cwd. In debug builds the app root is the repo root and data lives in `data-dev/`; in release it is the directory next to the executable and data lives in `data/`. `bootstrap()` write-probes that directory and returns a `ProbeResult` — if `ok` is false the frontend shows an error instead of a library, so a read-only install degrades safely rather than losing sessions.
 
 ### Exam library (`library.rs`)
-Exams are JSON files discovered by walking `data/library`, `fixtures/`, and `official-samples/`, cached in a process-wide `OnceLock<Mutex<..>>` index that `import_exam_json` invalidates. Files without `schemaVersion == 1`, without an `id`, or with `source.kind == "generated_practice"` are skipped silently. `resolve_asset` rejects `..` and probes assets/data/fixtures/app roots in order.
+Exams are JSON files discovered by walking `data/library`, `fixtures/`, and `official-samples/`, cached in a process-wide `OnceLock<Mutex<..>>` index that `import_exam_json` invalidates. Files without `schemaVersion == 1`, without an `id`, or with `source.kind == "generated_practice"` are skipped silently. `resolve_asset` only resolves sanitized relative paths under `data/assets` and the content/fixtures root.
 
 ### Session persistence (`session.rs`)
 `atomic_write` = temp file + `fsync` + `.bak` copy + `MoveFileExW(REPLACE_EXISTING | WRITE_THROUGH)` on Windows. Reads fall back `.json` → `.json.bak` → `.json.tmp` so a crash mid-exam never costs answers. Session ids are validated as `[A-Za-z0-9_-]+` before touching the path.

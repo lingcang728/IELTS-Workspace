@@ -1120,14 +1120,14 @@
         {
           "id": "c7t2l-g29",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c7t2l-q29",
               "number": 29,
               "type": "multi_choice",
-              "prompt": "Which TWO achievements of the Antarctic Treaty are mentioned? (Question 29)",
+              "prompt": "First selected letter: Which TWO achievements of the Antarctic Treaty are mentioned? (Question 29)",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -1165,28 +1165,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T03:10:33+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              29,
-              30
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c7t2l-g30",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c7t2l-q30",
               "number": 30,
               "type": "multi_choice",
-              "prompt": "Which TWO achievements of the Antarctic Treaty are mentioned? (Question 30)",
+              "prompt": "Second selected letter: Which TWO achievements of the Antarctic Treaty are mentioned? (Question 29)",
               "acceptedAnswers": [
                 "A",
                 "D"
@@ -1233,7 +1217,38 @@
               30
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "no military use"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "animals protected"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "historic sites preserved"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "no nuclear testing"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "fishing rights protected"
+            }
+          ]
         }
       ],
       "audioStartMs": 733600,

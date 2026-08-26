@@ -1429,8 +1429,8 @@
         {
           "id": "c15t1l-g29",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t1l-q29",
@@ -1474,23 +1474,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              29,
-              30
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c15t1l-g30",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c15t1l-q30",
               "number": 30,
@@ -1542,7 +1526,38 @@
               30
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "learning to share"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "learning to stand up for oneself"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "learning to be a good loser"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "learning to be tolerant"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "learning to say sorry"
+            }
+          ]
         }
       ],
       "audioStartMs": 876378,

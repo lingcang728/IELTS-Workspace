@@ -849,14 +849,14 @@
         {
           "id": "c16t2l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t2l-q19",
               "number": 19,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B"
               ],
@@ -893,28 +893,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:59.838187+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t2l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t2l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Which TWO optional after-school lessons are new?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -961,7 +945,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "swimming"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "piano"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "acting"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "cycling"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "theatre sound and lighting"
+            }
+          ]
         }
       ],
       "audioStartMs": 403586,

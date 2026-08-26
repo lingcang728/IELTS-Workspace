@@ -811,14 +811,14 @@
         {
           "id": "c8t1l-g16",
           "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c8t1l-q16",
               "number": 16,
-              "type": "single_choice",
-              "prompt": "Choose THREE letters, A-G.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose THREE letters, A-G.",
               "acceptedAnswers": [
                 "C"
               ],
@@ -865,28 +865,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:05.303937+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              16,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c8t1l-g17",
-          "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c8t1l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "Which THREE things can students have with them in the museum? (Question 17)",
+              "prompt": "Second selected letter: Choose THREE letters, A-G.",
               "acceptedAnswers": [
                 "C",
                 "F",
@@ -935,28 +919,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:22:39+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              16,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c8t1l-g18",
-          "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c8t1l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Which THREE things can students have with them in the museum? (Question 18)",
+              "prompt": "Third selected letter: Choose THREE letters, A-G.",
               "acceptedAnswers": [
                 "C",
                 "F",
@@ -1014,19 +982,61 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "F",
+            "G"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "food"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "water"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cameras"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "books"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "bags"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "pens"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "worksheets"
+            }
+          ]
         },
         {
           "id": "c8t1l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c8t1l-q19",
               "number": 19,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1063,28 +1073,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:05.303937+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c8t1l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c8t1l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Which TWO activities can students do after the tour at present?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -1131,7 +1125,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "build model dinosaurs"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "watch films"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "draw dinosaurs"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "find dinosaur eggs"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "play computer games"
+            }
+          ]
         }
       ],
       "audioStartMs": 425412,
@@ -1310,14 +1335,14 @@
         {
           "id": "c8t1l-g25",
           "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c8t1l-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "Which THREE topics does Sandra agree to include in the proposal? (Question 25)",
+              "prompt": "First selected letter: Which THREE topics does Sandra agree to include in the proposal? (Question 25)",
               "acceptedAnswers": [
                 "B",
                 "C",
@@ -1366,28 +1391,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:22:39+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              27
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c8t1l-g26",
-          "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c8t1l-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Which THREE topics does Sandra agree to include in the proposal? (Question 26)",
+              "prompt": "Second selected letter: Which THREE topics does Sandra agree to include in the proposal? (Question 25)",
               "acceptedAnswers": [
                 "B",
                 "C",
@@ -1436,28 +1445,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:22:39+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              27
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c8t1l-g27",
-          "instruction": "Choose THREE letters, A-G.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c8t1l-q27",
               "number": 27,
               "type": "multi_choice",
-              "prompt": "Which THREE topics does Sandra agree to include in the proposal? (Question 27)",
+              "prompt": "Third selected letter: Which THREE topics does Sandra agree to include in the proposal? (Question 25)",
               "acceptedAnswers": [
                 "B",
                 "C",
@@ -1515,7 +1508,49 @@
               27
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C",
+            "F"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "climate change"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "field trip activities"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "geographical features"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "impact of tourism"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "myths and legends"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "plant and animal life"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "social history"
+            }
+          ]
         },
         {
           "id": "c8t1l-g28",

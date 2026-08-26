@@ -25,7 +25,7 @@ fn pack_content() {
 
     if profile != "release" {
         write_empty_zip(&zip_path);
-        fs::write(&manifest_path, b"{\"contentVersion\":\"1.3.0\",\"embedded\":false,\"files\":[]}\n")
+        fs::write(&manifest_path, b"{\"contentVersion\":\"1.3.1\",\"embedded\":false,\"files\":[]}\n")
             .expect("write debug content manifest");
         return;
     }
@@ -50,7 +50,7 @@ fn pack_content() {
         listing.push(serde_like(rel, bytes.len() as u64, &digest));
     }
     let manifest_json = format!(
-        "{{\n  \"contentVersion\": \"1.3.0\",\n  \"fileCount\": {},\n  \"totalBytes\": {},\n  \"generatedAtUnix\": {},\n  \"files\": [\n{}\n  ]\n}}\n",
+        "{{\n  \"contentVersion\": \"1.3.1\",\n  \"fileCount\": {},\n  \"totalBytes\": {},\n  \"generatedAtUnix\": {},\n  \"files\": [\n{}\n  ]\n}}\n",
         listing.len(),
         total,
         unix_now(),

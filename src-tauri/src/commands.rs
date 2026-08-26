@@ -4,10 +4,12 @@ use crate::error::AppError;
 use crate::library;
 use crate::migrate;
 use crate::paths;
+use crate::safe_path;
 use crate::scoring;
 use crate::session;
 use serde_json::Value;
 use std::fs;
+use tauri::{AppHandle, Emitter};
 
 #[tauri::command]
 pub fn bootstrap() -> Result<Value, AppError> {
@@ -39,20 +41,143 @@ pub fn bootstrap() -> Result<Value, AppError> {
             "migration": migration,
         }));
     }
-    let exams = library::list_exams().unwrap_or_default();
-    let sessions = session::list_session_summaries().unwrap_or_default();
-    let profile = fs::read_to_string(paths::profile_path()?)
-        .ok()
-        .and_then(|t| serde_json::from_str::<Value>(&t).ok());
-    let audio_status = audio::library_status().ok();
+    let mut warnings: Vec<String> = Vec::new();
+    if let Some(w) = &probe.warning {
+        if !w.is_empty() {
+            warnings.push(w.clone());
+        }
+    }
+    let exams = match library::list_exams() {
+        Ok(v) => v,
+        Err(e) => {
+            warnings.push(format!("题库读取失败：{e}"));
+            Vec::new()
+        }
+    };
+    let listed = match session::list_sessions_with_diagnostics() {
+        Ok(v) => v,
+        Err(e) => {
+            warnings.push(format!("会话列表读取失败：{e}"));
+            session::SessionList::default()
+        }
+    };
+    if !listed.quarantined.is_empty() {
+        warnings.push(format!(
+            "已隔离 {} 个损坏的会话文件，可在数据目录 sessions/quarantine 查看",
+            listed.quarantined.len()
+        ));
+    }
+    let profile = match load_profile_migrated() {
+        Ok(v) => v,
+        Err(e) => {
+            warnings.push(e.to_string());
+            None
+        }
+    };
+    let audio_status = match audio::library_status() {
+        Ok(v) => Some(v),
+        Err(e) => {
+            warnings.push(format!("音频绑定读取失败：{e}"));
+            None
+        }
+    };
+    if probe.warning.is_none() && !warnings.is_empty() {
+        probe.warning = Some(warnings.join("；"));
+    }
     Ok(serde_json::json!({
         "probe": probe,
         "exams": exams,
-        "sessions": sessions,
+        "sessions": listed.summaries,
         "profile": profile,
         "audio": audio_status,
         "migration": migration,
+        "diagnostics": {
+            "warnings": warnings,
+            "sessionsQuarantined": listed.quarantined,
+        },
     }))
+}
+
+fn valid_ymd(s: &str) -> bool {
+    let b = s.as_bytes();
+    if b.len() != 10 || b[4] != b'-' || b[7] != b'-' {
+        return false;
+    }
+    let Ok(y) = s[0..4].parse::<i32>() else { return false };
+    let Ok(m) = s[5..7].parse::<u32>() else { return false };
+    let Ok(d) = s[8..10].parse::<u32>() else { return false };
+    if !(2000..=2100).contains(&y) || !(1..=12).contains(&m) || d < 1 {
+        return false;
+    }
+    let max = match m {
+        2 => {
+            if y % 4 == 0 && (y % 100 != 0 || y % 400 == 0) {
+                29
+            } else {
+                28
+            }
+        }
+        4 | 6 | 9 | 11 => 30,
+        _ => 31,
+    };
+    d <= max
+}
+
+fn normalize_profile(value: &mut Value) -> Result<(), AppError> {
+    let obj = value
+        .as_object_mut()
+        .ok_or_else(|| AppError::from("配置必须是 JSON 对象"))?;
+    if let Some(theme) = obj.get("theme") {
+        if !theme.is_null() {
+            let s = theme.as_str().unwrap_or("");
+            if !matches!(s, "light" | "dark") {
+                return Err(AppError::from("主题只能是 light 或 dark"));
+            }
+        }
+    }
+    match obj.get("practiceScheme").and_then(Value::as_str) {
+        Some("follow_shell") | Some("light") | Some("dark") => {}
+        Some(_) => return Err(AppError::from("练习外观只能是 follow_shell、light 或 dark")),
+        None => {
+            obj.insert(
+                "practiceScheme".into(),
+                serde_json::Value::String("follow_shell".into()),
+            );
+        }
+    }
+    if let Some(date) = obj.get("examDate").cloned() {
+        if let Some(s) = date.as_str() {
+            if !s.is_empty() && !valid_ymd(s) {
+                return Err(AppError::from("考试日期必须是 YYYY-MM-DD"));
+            }
+        } else if !date.is_null() {
+            return Err(AppError::from("考试日期必须是 YYYY-MM-DD"));
+        }
+    }
+    Ok(())
+}
+
+fn load_profile_migrated() -> Result<Option<Value>, AppError> {
+    let path = paths::profile_path()?;
+    if !path.exists() {
+        return Ok(None);
+    }
+    let text = fs::read_to_string(&path)
+        .map_err(|e| AppError::from(format!("无法读取配置：{e}")))?;
+    let mut value: Value = match serde_json::from_str(&text) {
+        Ok(v) => v,
+        Err(e) => {
+            let dir = path.parent().unwrap_or(std::path::Path::new(".")).join("quarantine");
+            let _ = session::quarantine_file_to(&path, &dir, &format!("profile 损坏：{e}"));
+            return Err(AppError::from("配置文件已损坏，已隔离。请重新设置主题与考试日期。"));
+        }
+    };
+    let missing = value.get("practiceScheme").is_none();
+    normalize_profile(&mut value)?;
+    if missing {
+        let _ = session::atomic_write(&path, serde_json::to_vec_pretty(&value)?.as_slice());
+    }
+    Ok(Some(value))
 }
 
 #[tauri::command]
@@ -105,7 +230,8 @@ pub fn score_exam(exam_id: String, answers_json: String) -> Result<Value, AppErr
 
 #[tauri::command]
 pub fn save_profile(json: String) -> Result<(), AppError> {
-    let v: Value = serde_json::from_str(&json)?;
+    let mut v: Value = serde_json::from_str(&json)?;
+    normalize_profile(&mut v)?;
     let path = paths::profile_path()?;
     session::atomic_write(&path, serde_json::to_vec_pretty(&v)?.as_slice())?;
     Ok(())
@@ -261,11 +387,7 @@ fn chrono_like_now() -> String {
 /// needs them, and loading an exam for a mock should not pay for them.
 #[tauri::command]
 pub fn load_transcript(exam_id: String) -> Result<Value, AppError> {
-    if exam_id.is_empty()
-        || exam_id.contains("..")
-        || exam_id.contains('/')
-        || exam_id.contains('\\')
-    {
+    if !safe_path::valid_id(&exam_id) {
         return Err(AppError::from("非法的试卷 id"));
     }
     for root in [
@@ -302,16 +424,30 @@ pub fn audio_pick_folder() -> Result<Option<String>, AppError> {
 }
 
 #[tauri::command]
-pub fn audio_scan_paths(paths: Vec<String>) -> Result<Value, AppError> {
-    Ok(serde_json::to_value(audio::scan_paths(paths)?)?)
+pub fn audio_scan_paths(
+    app: AppHandle,
+    paths: Vec<String>,
+    target_exam_id: Option<String>,
+) -> Result<Value, AppError> {
+    let plan = audio::scan_paths(paths, target_exam_id, |p| {
+        let _ = app.emit("audio-import-progress", &p);
+    })?;
+    Ok(serde_json::to_value(plan)?)
 }
 
 #[tauri::command]
-pub fn audio_confirm_import(candidates_json: String) -> Result<Value, AppError> {
-    let candidates = serde_json::from_str(&candidates_json)?;
-    let value = serde_json::to_value(audio::confirm_import(candidates)?)?;
+pub fn audio_confirm_import(app: AppHandle, exam_ids: Vec<String>) -> Result<Value, AppError> {
+    let value = serde_json::to_value(audio::confirm_import(exam_ids, |p| {
+        let _ = app.emit("audio-import-progress", &p);
+    })?)?;
     library::invalidate();
     Ok(value)
+}
+
+#[tauri::command]
+pub fn audio_cancel_import() -> Result<(), AppError> {
+    audio::request_cancel();
+    Ok(())
 }
 
 #[tauri::command]
@@ -331,18 +467,6 @@ pub fn audio_repair_bindings() -> Result<Value, AppError> {
     let value = serde_json::to_value(audio::repair_bindings()?)?;
     library::invalidate();
     Ok(value)
-}
-
-#[tauri::command]
-pub fn audio_set_manual_parts(exam_id: String, starts_ms: Vec<u64>, path: String) -> Result<Value, AppError> {
-    let value = serde_json::to_value(audio::set_manual_parts(&exam_id, starts_ms, path)?)?;
-    library::invalidate();
-    Ok(value)
-}
-
-#[tauri::command]
-pub fn audio_waveform(path: String) -> Result<Value, AppError> {
-    Ok(serde_json::to_value(audio::waveform(path)?)?)
 }
 
 #[tauri::command]
@@ -375,6 +499,14 @@ mod tests {
         assert_eq!(iso_epoch_day(""), None);
         assert_eq!(iso_epoch_day("not-a-date"), None);
         assert_eq!(iso_epoch_day("2026-13-01T00:00:00Z"), None);
+    }
+
+    #[test]
+    fn ymd_gate() {
+        assert!(super::valid_ymd("2026-08-26"));
+        assert!(!super::valid_ymd("2026-13-01"));
+        assert!(!super::valid_ymd("26-08-26"));
+        assert!(!super::valid_ymd("2026-02-30"));
     }
 }
 

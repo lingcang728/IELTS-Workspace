@@ -61,6 +61,7 @@ export function QuestionGroupView({ group, values, onChange, disabled, skin = "m
           onChange={onChange}
           disabled={disabled}
           practice={practice}
+          taken={takenOptions(group, values, q.id)}
         />
       ))}
     </section>
@@ -317,6 +318,21 @@ function QuestionInlineInput({
   );
 }
 
+function takenOptions(
+  group: QuestionGroup,
+  values: Record<string, string | string[] | null | undefined>,
+  currentId: string,
+): Set<string> {
+  if (group.scoringPolicy !== "in_either_order") return new Set();
+  const taken = new Set<string>();
+  for (const q of group.questions) {
+    if (q.id === currentId) continue;
+    const v = values[q.id];
+    if (typeof v === "string" && v) taken.add(v);
+  }
+  return taken;
+}
+
 function QuestionView({
   question,
   group,
@@ -324,6 +340,7 @@ function QuestionView({
   onChange,
   disabled,
   practice,
+  taken,
 }: {
   question: Question;
   group: QuestionGroup;
@@ -331,6 +348,7 @@ function QuestionView({
   onChange: (id: string, v: string | string[] | null) => void;
   disabled?: boolean;
   practice: boolean;
+  taken: Set<string>;
 }) {
   const type = question.type || group.questionType;
   const options = question.options?.length ? question.options : group.sharedOptions || [];
@@ -403,7 +421,7 @@ function QuestionView({
                 key={opt.id}
                 type="button"
                 className={`choice-card ${str === opt.id ? "on" : ""}`}
-                disabled={disabled}
+                disabled={disabled || (taken.has(opt.id) && str !== opt.id)}
                 onClick={() => onChange(question.id, str === opt.id ? null : opt.id)}
               >
                 <strong>{opt.label}</strong>
@@ -427,7 +445,7 @@ function QuestionView({
                 type="radio"
                 name={question.id}
                 checked={str === opt.id}
-                disabled={disabled}
+                disabled={disabled || (taken.has(opt.id) && str !== opt.id)}
                 onChange={() => onChange(question.id, opt.id)}
                 onClick={() => {
                   if (str === opt.id) onChange(question.id, null);

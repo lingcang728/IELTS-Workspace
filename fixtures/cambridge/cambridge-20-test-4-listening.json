@@ -410,14 +410,14 @@
         {
           "id": "c20t4l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t4l-q11",
               "number": 11,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B"
               ],
@@ -438,45 +438,12 @@
                   "text": "Parents must stay with their children at all times"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Children can get their photo taken with a football player"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There is a competition for children today"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Parents must stay with their children at all times"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t4l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t4l-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things does the speaker say about visiting the football stadium with children?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -539,19 +506,23 @@
               12
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ]
         },
         {
           "id": "c20t4l-g13",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t4l-q13",
               "number": 13,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO features of the stadium tour are new this year?",
+              "prompt": "First selected letter: First answer: Which TWO features of the stadium tour are new this year?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -588,45 +559,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Children can get their photo taken with a football player"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There is a competition for children today"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Parents must stay with their children at all times"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              13,
-              14
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t4l-g14",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t4l-q14",
               "number": 14,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO features of the stadium tour are new this year?",
+              "prompt": "Second selected letter: First answer: Which TWO features of the stadium tour are new this year?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -669,17 +607,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "Children can get their photo taken with a football player"
+              "text": "VIP tour"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "There is a competition for children today"
+              "text": "360 cinema experience"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "Parents must stay with their children at all times"
+              "text": "audio guide"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "dressing room tour"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "tours in other languages"
             }
           ],
           "repairSource": {
@@ -689,7 +637,11 @@
               14
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ]
         },
         {
           "id": "c20t4l-g15",
@@ -1174,14 +1126,14 @@
         {
           "id": "c20t4l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t4l-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO benefits for children of learning to write did both students find surprising?",
+              "prompt": "First selected letter: First answer: Which TWO benefits for children of learning to write did both students find surprising?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -1218,45 +1170,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Children can get their photo taken with a football player"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There is a competition for children today"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Parents must stay with their children at all times"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t4l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t4l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO benefits for children of learning to write did both students find surprising?",
+              "prompt": "Second selected letter: First answer: Which TWO benefits for children of learning to write did both students find surprising?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -1299,17 +1218,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "Children can get their photo taken with a football player"
+              "text": "improved fine motor skills"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "There is a competition for children today"
+              "text": "improved memory"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "Parents must stay with their children at all times"
+              "text": "improved concentration"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "improved imagination"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "improved spatial awareness"
             }
           ],
           "repairSource": {
@@ -1319,19 +1248,23 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ]
         },
         {
           "id": "c20t4l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t4l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "First answer: For children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct?",
+              "prompt": "First selected letter: First answer: For children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1368,45 +1301,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Children can get their photo taken with a football player"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There is a competition for children today"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Parents must stay with their children at all times"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t4l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t4l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Second answer: For children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct?",
+              "prompt": "Second selected letter: First answer: For children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1449,17 +1349,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "Children can get their photo taken with a football player"
+              "text": "not spacing letters correctly"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "There is a competition for children today"
+              "text": "not writing in a straight line"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "Parents must stay with their children at all times"
+              "text": "applying too much pressure when writing"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "confusing letter shapes"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "writing very slowly"
             }
           ],
           "repairSource": {
@@ -1469,7 +1379,11 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ]
         },
         {
           "id": "c20t4l-g25",

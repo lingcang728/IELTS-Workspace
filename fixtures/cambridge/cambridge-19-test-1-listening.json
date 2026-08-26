@@ -1055,14 +1055,14 @@
         {
           "id": "c19t1l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t1l-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things did Colin find most satisfying about his bread reuse project?",
+              "prompt": "First selected letter: First answer: Which TWO things did Colin find most satisfying about his bread reuse project?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1100,28 +1100,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c19t1l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c19t1l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things did Colin find most satisfying about his bread reuse project?",
+              "prompt": "Second selected letter: First answer: Which TWO things did Colin find most satisfying about his bread reuse project?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1168,24 +1152,97 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "receiving support from local restaurants"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "finding a good way to prevent waste"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "overcoming problems in a basic process"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "experimenting with designs and colours"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "learning how to apply 3-D printing"
+            }
+          ]
         },
         {
           "id": "c19t1l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t1l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
+              "prompt": "First selected letter: First answer: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
               "acceptedAnswers": [
                 "A",
                 "E"
               ],
               "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "for use on medical products"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "to show that food is no longer fit to eat"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "for use with drinks as well as foods"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "to provide applications for blind people"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "to indicate the weight of certain foods"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            },
+            {
+              "id": "c19t1l-q24",
+              "number": 24,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: First answer: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
+              "acceptedAnswers": [
+                "A",
+                "E"
+              ],
               "options": [
                 {
                   "id": "A",
@@ -1227,56 +1284,10 @@
               24
             ],
             "canonicalOf": null
-          }
-        },
-        {
-          "id": "c19t1l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c19t1l-q24",
-              "number": 24,
-              "type": "multi_choice",
-              "prompt": "Second answer: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
-              "acceptedAnswers": [
-                "A",
-                "E"
-              ],
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "for use on medical products"
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "to show that food is no longer fit to eat"
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "for use with drinks as well as foods"
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "to provide applications for blind people"
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "to indicate the weight of certain foods"
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
           ],
           "sharedOptions": [
             {
@@ -1304,12 +1315,7 @@
               "label": "E",
               "text": "to indicate the weight of certain foods"
             }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T15:54:25.356396+00:00"
-          }
+          ]
         },
         {
           "id": "c19t1l-g25",

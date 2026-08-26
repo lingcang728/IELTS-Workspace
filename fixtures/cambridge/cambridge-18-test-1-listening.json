@@ -557,14 +557,14 @@
         {
           "id": "c18t1l-g14",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t1l-q14",
               "number": 14,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
+              "prompt": "First selected letter: First answer: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -601,45 +601,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "They are too small"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There are not enough of them"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Some of them are very close together"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              15
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t1l-g15",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t1l-q15",
               "number": 15,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
+              "prompt": "Second selected letter: First answer: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -682,17 +649,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "They are too small"
+              "text": "their financial situation"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "There are not enough of them"
+              "text": "their level of commitment"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "Some of them are very close together"
+              "text": "their work experience"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "their ambition"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "their availability"
             }
           ],
           "repairSource": {
@@ -702,7 +679,11 @@
               15
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ]
         },
         {
           "id": "c18t1l-g16",
@@ -1488,14 +1469,14 @@
         {
           "id": "c18t1l-g27",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t1l-q27",
               "number": 27,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1516,45 +1497,12 @@
                   "text": "Some of them are very close together"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "They are too small"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There are not enough of them"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Some of them are very close together"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              28
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t1l-g28",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t1l-q28",
               "number": 28,
               "type": "multi_choice",
-              "prompt": "Which TWO mistakes did the speaker admit she made in her first job?",
+              "prompt": "Second selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -1617,19 +1565,23 @@
               28
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ]
         },
         {
           "id": "c18t1l-g29",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t1l-q29",
               "number": 29,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+              "prompt": "First selected letter: First answer: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1667,28 +1619,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              29,
-              30
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t1l-g30",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c18t1l-q30",
               "number": 30,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+              "prompt": "Second selected letter: First answer: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1727,23 +1663,6 @@
               }
             }
           ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "They are too small"
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "There are not enough of them"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Some of them are very close together"
-            }
-          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -1751,7 +1670,38 @@
               30
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the reasons people return fashion items"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how much time people have to shop for clothes"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "fashion designs people want but can't find"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the best time of year for fashion buying"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the most popular fashion sizes"
+            }
+          ]
         }
       ],
       "audioStartMs": 829378,

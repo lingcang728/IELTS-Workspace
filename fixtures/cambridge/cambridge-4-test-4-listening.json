@@ -1873,14 +1873,14 @@
         {
           "id": "c4t4l-g39",
           "instruction": "Choose TWO letters A-G.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c4t4l-q39",
               "number": 39,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO factors reduce the benefits of shark nets?",
+              "prompt": "First selected letter: First answer: Which TWO factors reduce the benefits of shark nets?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1926,62 +1926,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:49:22+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "nets wrongly positioned"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "strong waves and currents"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "too many fish"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "sharks eat holes in nets"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "moving sands"
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "nets too short"
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "holes in nets scare sharks"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T01:59:18.464253+00:00"
-          }
-        },
-        {
-          "id": "c4t4l-g40",
-          "instruction": "Choose TWO letters A-G.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c4t4l-q40",
               "number": 40,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO factors reduce the benefits of shark nets?",
+              "prompt": "Second selected letter: First answer: Which TWO factors reduce the benefits of shark nets?",
               "acceptedAnswers": [
                 "E"
               ],
@@ -2069,8 +2019,12 @@
           "repairSource": {
             "kind": "overlay",
             "status": "corrected",
-            "reviewedAt": "2026-08-25T01:59:18.464789+00:00"
-          }
+            "reviewedAt": "2026-08-25T01:59:18.464253+00:00"
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ]
         }
       ],
       "audioStartMs": 1296194,

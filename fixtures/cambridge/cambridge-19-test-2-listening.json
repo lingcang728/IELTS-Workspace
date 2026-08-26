@@ -681,14 +681,14 @@
         {
           "id": "c19t2l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t2l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things does David say about the lifeboat volunteer training?",
+              "prompt": "First selected letter: First answer: Which TWO things does David say about the lifeboat volunteer training?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -725,52 +725,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "The residential course developed his leadership skills."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "The training in use of ropes and knots was quite brief."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "The training exercises have built up his mental strength."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "The casualty care activities were particularly challenging for him."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "The wave tank activities provided practice in survival techniques."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:53:21.708644+00:00"
-          }
-        },
-        {
-          "id": "c19t2l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c19t2l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things does David say about the lifeboat volunteer training?",
+              "prompt": "Second selected letter: First answer: Which TWO things does David say about the lifeboat volunteer training?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -840,19 +800,23 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:53:21.708644+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ]
         },
         {
           "id": "c19t2l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t2l-q19",
               "number": 19,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things does David find most motivating about the work he does?",
+              "prompt": "First selected letter: First answer: Which TWO things does David find most motivating about the work he does?",
               "acceptedAnswers": [
                 "A",
                 "B"
@@ -889,52 +853,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "working as part of a team"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "experiences when working in winter"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "being thanked by those he has helped"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "the fact that it keeps him fit"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "the chance to develop new equipment"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:53:21.710161+00:00"
-          }
-        },
-        {
-          "id": "c19t2l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c19t2l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things does David find most motivating about the work he does?",
+              "prompt": "Second selected letter: First answer: Which TWO things does David find most motivating about the work he does?",
               "acceptedAnswers": [
                 "A",
                 "B"
@@ -1004,7 +928,11 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:53:21.710161+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "B"
+          ]
         }
       ],
       "audioStartMs": 481881,

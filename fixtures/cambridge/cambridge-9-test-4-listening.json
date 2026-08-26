@@ -175,14 +175,14 @@
         {
           "id": "c9t4l-g5",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c9t4l-q5",
               "number": 5,
               "type": "multi_choice",
-              "prompt": "Which TWO of the following are offered free of charge at Shore Lane Health Centre?",
+              "prompt": "First selected letter: Which TWO of the following are offered free of charge at Shore Lane Health Centre?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -219,23 +219,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              6
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c9t4l-g6",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c9t4l-q6",
               "number": 6,
@@ -286,7 +270,38 @@
               6
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "acupuncture"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "employment medicals"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "sports injury therapy"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "travel advice"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "vaccinations"
+            }
+          ]
         },
         {
           "id": "c9t4l-g7",

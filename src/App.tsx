@@ -5,7 +5,7 @@ import {
 } from "./lib/api";
 import { buildReviewPrompt } from "./lib/reviewPrompt";
 import type {
-  AnalyticsReport, Bootstrap, Exam, ExamSummary, Profile, ScoreReport, Session,
+  AnalyticsReport, Bootstrap, Exam, ExamSummary, PracticeScheme, Profile, ScoreReport, Session,
   SessionSummary, StudyPlan, VocabCard,
 } from "./lib/types";
 import { allQuestions } from "./lib/types";
@@ -59,6 +59,11 @@ export function App() {
   const [openMistakes, setOpenMistakes] = useState(0);
   const [dueVocab, setDueVocab] = useState(0);
   const [audioWizard, setAudioWizard] = useState<string | null | undefined>(undefined);
+  const [pendingStart, setPendingStart] = useState<{
+    summary: ExamSummary;
+    mode: "mock" | "practice";
+    open: SessionSummary;
+  } | null>(null);
 
   function flash(message: string) {
     setToast(message);
@@ -127,18 +132,47 @@ export function App() {
     setAudioWizard(examId ?? null);
   }
 
+  function openSessionOf(examId: string, mode: "mock" | "practice") {
+    return (boot?.sessions ?? []).find((row) =>
+      row.examId === examId
+      && row.mode === mode
+      && row.status !== "submitted"
+      && row.status !== "aborted"
+    );
+  }
+
   async function retakeExam(summary: ExamSummary, mode: "mock" | "practice") {
     if (busy) return;
     if (summary.module === "listening" && !listeningReady(summary.audioStatus)) {
       addAudio(summary.id);
       return;
     }
+    const open = openSessionOf(summary.id, mode);
+    if (open) {
+      setPendingStart({ summary, mode, open });
+      return;
+    }
+    await createExamSession(summary, mode);
+  }
+
+  async function startExam(summary: ExamSummary, mode: "mock" | "practice") {
+    if (busy) return;
+    if (summary.module === "listening" && !listeningReady(summary.audioStatus)) {
+      addAudio(summary.id);
+      return;
+    }
+    const open = openSessionOf(summary.id, mode);
+    if (open) {
+      setPendingStart({ summary, mode, open });
+      return;
+    }
+    await createExamSession(summary, mode);
+  }
+
+  async function abandonAndStart(summary: ExamSummary, mode: "mock" | "practice", openId: string) {
     setBusy(true);
     try {
-      const previous = (boot?.sessions ?? []).filter((row) => row.examId === summary.id && row.mode === mode);
-      for (const row of previous) {
-        await discardSession(row.id);
-      }
+      await discardSession(openId);
       await reload();
     } catch (e) {
       setError(String(e));
@@ -146,11 +180,11 @@ export function App() {
       return;
     }
     setBusy(false);
-    await startExam(summary, mode);
+    setPendingStart(null);
+    await createExamSession(summary, mode);
   }
 
-  async function startExam(summary: ExamSummary, mode: "mock" | "practice") {
-    if (busy) return;
+  async function createExamSession(summary: ExamSummary, mode: "mock" | "practice") {
     if (summary.module === "listening" && !listeningReady(summary.audioStatus)) {
       addAudio(summary.id);
       return;
@@ -253,6 +287,9 @@ export function App() {
     return <ExamApp
       exam={exam}
       session={session}
+      shellTheme={theme}
+      practiceScheme={(boot.profile?.practiceScheme ?? "follow_shell") as PracticeScheme}
+      onPracticeScheme={(scheme) => void updateProfile({ practiceScheme: scheme })}
       onSession={setSession}
       onExit={(s, r) => {
         setSession(s);
@@ -293,5 +330,18 @@ export function App() {
     <div className="toast-region">{toast && <div className="toast"><Icon name="check" size={17} />{toast}</div>}</div>
     {busy && <div className="busy-indicator" role="status"><i /><span>正在准备试卷…</span></div>}
     {audioWizard !== undefined && <AudioWizard targetExamId={audioWizard} onClose={() => setAudioWizard(undefined)} onDone={() => { setAudioWizard(undefined); void reload(); flash("听力音频已添加"); }} />}
+    {pendingStart && (
+      <div className="audio-wizard-backdrop" role="dialog" aria-modal="true" aria-labelledby="pending-start-title">
+        <div className="audio-wizard">
+          <h2 id="pending-start-title">这套题还有未完成记录</h2>
+          <p className="meta">已提交的历史不会被删除。未完成的会话只能继续，或明确放弃后再新开。</p>
+          <div className="button-row">
+            <button type="button" className="primary-button" onClick={() => { const id = pendingStart.open.id; setPendingStart(null); void continueSession(id); }}>继续未完成</button>
+            <button type="button" className="secondary-button" onClick={() => void abandonAndStart(pendingStart.summary, pendingStart.mode, pendingStart.open.id)}>放弃未完成并新开</button>
+            <button type="button" className="secondary-button" onClick={() => setPendingStart(null)}>取消</button>
+          </div>
+        </div>
+      </div>
+    )}
   </div>;
 }

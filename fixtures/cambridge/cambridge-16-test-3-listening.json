@@ -365,14 +365,14 @@
         {
           "id": "c16t3l-g11",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t3l-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?",
+              "prompt": "First selected letter: According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -410,28 +410,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t3l-g12",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t3l-q12",
               "number": 12,
-              "type": "single_choice",
-              "prompt": "For a start, they often offer opportunities for those who don't want to be stuck with a 40-hour week, but need to Q11/ juggle work with other responsibilities such as child care - and this is very important for many of our recruits. Some people like working in a rural setting, surrounded by plants and trees instead of buildings, although we can't guarantee that. But there are",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -477,19 +461,50 @@
               12
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the active lifestyle"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the above-average salaries"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the flexible working opportunities"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the opportunities for overseas travel"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the chance to be in a natural environment"
+            }
+          ]
         },
         {
           "id": "c16t3l-g13",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t3l-q13",
               "number": 13,
               "type": "multi_choice",
-              "prompt": "Which TWO of the following are likely to be disadvantages for people working outdoors?",
+              "prompt": "First selected letter: Which TWO of the following are likely to be disadvantages for people working outdoors?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -527,28 +542,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              13,
-              14
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t3l-g14",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t3l-q14",
               "number": 14,
               "type": "multi_choice",
-              "prompt": "Question 14: Which TWO of the following are likely to be disadvantages for people working outdoors?",
+              "prompt": "Second selected letter: Which TWO of the following are likely to be disadvantages for people working outdoors?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -595,7 +594,38 @@
               14
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the increasing risk of accidents"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "being in a very quiet location"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "difficult weather conditions at times"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the cost of housing"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the level of physical fitness required"
+            }
+          ]
         },
         {
           "id": "c16t3l-g15",
@@ -1124,14 +1154,14 @@
         {
           "id": "c16t3l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t3l-q21",
               "number": 21,
-              "type": "single_choice",
-              "prompt": "I'd organise it, especially how I could make sure that people didn't know which drink I was giving them. It was hard to /Q22 keep track of it all, especially as I had so many people doing it – I had to make Q21/Q22 sure I kept a proper record of what each person had had. ROSIE: ADAM: So could most people tell the difference? Yeah - I hadn't",
+              "type": "multi_choice",
+              "prompt": "First selected letter: I'd organise it, especially how I could make sure that people didn't know which drink I was giving them. It was hard to /Q22 keep track of it all, especially as I had so many people doing it – I had to make Q21/Q22 sure I kept a proper record of what each person had had. ROSIE: ADAM: So could most people tell the difference? Yeah - I hadn't",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1168,28 +1198,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:00.174898+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t3l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t3l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Which TWO points does Adam make about his experiment on artificial sweeteners?",
+              "prompt": "Second selected letter: I'd organise it, especially how I could make sure that people didn't know which drink I was giving them. It was hard to /Q22 keep track of it all, especially as I had so many people doing it – I had to make Q21/Q22 sure I kept a proper record of what each person had had. ROSIE: ADAM: So could most people tell the difference? Yeah - I hadn't",
               "acceptedAnswers": [
                 "C",
                 "D"
@@ -1236,19 +1250,50 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The results were what he had predicted."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The experiment was simple to set up."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "A large sample of people was tested."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The subjects were unaware of what they were drinking."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The test was repeated several times for each person."
+            }
+          ]
         },
         {
           "id": "c16t3l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t3l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "Which TWO problems did Rosie have when measuring the fat content of nuts?",
+              "prompt": "First selected letter: Which TWO problems did Rosie have when measuring the fat content of nuts?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -1286,28 +1331,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c16t3l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t3l-q24",
               "number": 24,
-              "type": "single_choice",
-              "prompt": "/td> information was right. I think I should probably have ground up the nuts more Q23/ than I did. It's possible that the scales for weighing the fat weren't accurate Q23/Q24 enough, too. I'd really like to try the experiment again some time. So what can we say about helping people to lose weight? There's a",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO problems did Rosie have when measuring the fat content of nuts?",
               "acceptedAnswers": [
                 "E"
               ],
@@ -1353,7 +1382,38 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "She used the wrong sort of nuts."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "She used an unsuitable chemical."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "She did not grind the nuts finely enough."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The information on the nut package was incorrect."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The weighing scales may have been unsuitable."
+            }
+          ]
         },
         {
           "id": "c16t3l-g25",

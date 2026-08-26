@@ -1249,14 +1249,14 @@
         {
           "id": "c11t4l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t4l-q21",
               "number": 21,
-              "type": "matching",
-              "prompt": "Choose TWoletters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Choose TWoletters, A-E.",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1292,25 +1292,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T12:42:25.066574+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T13:03:00.419084+00:00"
-          }
-        },
-        {
-          "id": "c11t4l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c11t4l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Which TWO characteristics were shared by the subjects of Joanna's psychology study?",
+              "prompt": "Second selected letter: Choose TWoletters, A-E.",
               "acceptedAnswers": [
                 "D"
               ],
@@ -1352,19 +1339,50 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T13:03:00.419084+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They had all won prizes for their music."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They had all made music recordings."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They were all under 27 years old."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They had all toured internationally."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They all played a string instrument."
+            }
+          ]
         },
         {
           "id": "c11t4l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t4l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "One point Joanna makes about her use of telephone interviews",
+              "prompt": "First selected letter: One point Joanna makes about her use of telephone interviews",
               "acceptedAnswers": [
                 "A"
               ],
@@ -1400,28 +1418,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c11t4l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c11t4l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Another point Joanna makes about her use of telephone interviews",
+              "prompt": "Second selected letter: One point Joanna makes about her use of telephone interviews",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1459,33 +1461,6 @@
               }
             }
           ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "They had all won prizes for their music"
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "They had all made music recordings"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "They were all under 27years old"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "They all played a string instrument"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It meant interview times had to be limited"
-            }
-          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -1493,19 +1468,50 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "B"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It meant rich data could be collected."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It allowed the involvement of top performers."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It led to a stressful atmosphere at times."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It meant interview times had to be limited."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It caused some technical problems."
+            }
+          ]
         },
         {
           "id": "c11t4l-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c11t4l-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "One topic Joanna originally intended to investigate in her research",
+              "prompt": "First selected letter: One topic Joanna originally intended to investigate in her research",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1541,55 +1547,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "They had all won prizes for their music"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "They had all made music recordings"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "They were all under 27years old"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "They all played a string instrument"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It meant interview times had to be limited"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c11t4l-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c11t4l-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Another topic Joanna originally intended to investigate in her research",
+              "prompt": "Second selected letter: One topic Joanna originally intended to investigate in her research",
               "acceptedAnswers": [
                 "E"
               ],
@@ -1631,27 +1594,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "They had all won prizes for their music"
+              "text": "regulations concerning concert dress"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "They had all made music recordings"
+              "text": "audience reactions to the dress of performers"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "They were all under 27years old"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "They all played a string instrument"
+              "text": "changes in performer attitudes to concert dress"
             },
             {
               "id": "D",
               "label": "D",
-              "text": "It meant interview times had to be limited"
+              "text": "how choice of dress relates to performer roles"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "links between musical instrument and dress choice"
             }
           ],
           "repairSource": {
@@ -1661,7 +1624,11 @@
               26
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ]
         },
         {
           "id": "c11t4l-g27",

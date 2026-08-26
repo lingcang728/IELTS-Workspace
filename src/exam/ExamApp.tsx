@@ -8,15 +8,20 @@ import type {
   Exam,
   HighlightRecord,
   NoteRecord,
+  PracticeScheme,
   ScoreReport,
   Session,
 } from "../lib/types";
+import type { UiTheme } from "../lib/view";
 import { allQuestions, sectionForQuestion } from "../lib/types";
 import { QuestionGroupView } from "./questions";
 
 interface Props {
   exam: Exam;
   session: Session;
+  shellTheme: UiTheme;
+  practiceScheme: PracticeScheme;
+  onPracticeScheme: (scheme: PracticeScheme) => void;
   onSession: (s: Session) => void;
   onExit: (s: Session, report?: ScoreReport) => void;
 }
@@ -31,7 +36,7 @@ function fmt(ms: number) {
   return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
 }
 
-export function ExamApp({ exam, session, onSession, onExit }: Props) {
+export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeScheme, onSession, onExit }: Props) {
   const questions = useMemo(() => allQuestions(exam), [exam]);
   const [currentId, setCurrentId] = useState(questions[0]?.id ?? "");
   const [writingSectionId, setWritingSectionId] = useState(exam.sections[0]?.id ?? "");
@@ -195,11 +200,19 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
       for (const [id, a] of Object.entries(sessionRef.current.answers)) {
         answers[id] = a.value;
       }
-      const report = exam.module === "writing" ? undefined : await scoreExam(exam.id, answers);
+      let report: ScoreReport | undefined;
+      try {
+        report = exam.module === "writing" ? undefined : await scoreExam(exam.id, answers);
+      } catch (err) {
+        patch({ saveError: `评分失败：${String(err)}` }, false);
+        setConfirm(false);
+        return;
+      }
       const next: Session = {
         ...sessionRef.current,
         status: "submitted",
         remainingMs: reason === "force" ? 0 : sessionRef.current.remainingMs,
+        saveError: null,
         events: [
           ...sessionRef.current.events,
           {
@@ -211,12 +224,18 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
       };
       try {
         await saveSession(next);
-      } catch {
-        next.saveError = "提交时保存失败，成绩仍已计算。";
+      } catch (err) {
+        onSession({
+          ...sessionRef.current,
+          remainingMs: next.remainingMs,
+          saveError: `提交保存失败，尚未离开考场。${String(err)}`,
+        });
+        setConfirm(false);
+        return;
       }
       onExit(next, report);
     },
-    [exam.id, onExit],
+    [exam.id, exam.module, onExit, onSession, patch],
   );
 
   useEffect(() => {
@@ -265,10 +284,19 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
       saveSession(sessionRef.current).catch((err) =>
         patch({ saveError: String(err) }, false),
       );
-    }, 8000);
+    }, 5000);
+    const onHide = () => {
+      saveSession(sessionRef.current).catch((err) =>
+        patch({ saveError: String(err) }, false),
+      );
+    };
+    window.addEventListener("blur", onHide);
+    document.addEventListener("visibilitychange", onHide);
     return () => {
       window.clearInterval(id);
       window.clearInterval(persistId);
+      window.removeEventListener("blur", onHide);
+      document.removeEventListener("visibilitychange", onHide);
     };
   }, [session.status, pausedLocal, policy.pauseAllowed, exam.module, exam.policy, patch, submit, session.audio?.ended]);
 
@@ -422,12 +450,15 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
   const fontScale = session.fontScale ?? 1;
   const moduleLabel = exam.module === "reading" ? "Reading" : exam.module === "listening" ? "Listening" : "Writing";
   const writingWordCount = (session.writing?.[currentSection?.id ?? ""] ?? "").trim().split(/\s+/).filter(Boolean).length;
+  const examScheme = practice
+    ? (practiceScheme === "dark" || (practiceScheme === "follow_shell" && shellTheme === "dark") ? "practice_dark" : "default")
+    : (session.colorScheme ?? "default");
 
   return (
     <div
       className={`exam ${practice ? "practice" : "mock"}`}
       data-theme="exam"
-      data-scheme={practice ? "default" : (session.colorScheme ?? "default")}
+      data-scheme={examScheme}
       style={{ ["--font-scale" as string]: String(fontScale) }}
     >
       <div className="exam-windowbar" data-tauri-drag-region>
@@ -435,7 +466,11 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
         <WindowControls beforeClose={async () => { try { await saveSession(sessionRef.current); } catch { /* close remains available after a failed final save */ } }} />
       </div>
       {session.saveError && (
-        <div className="banner-save">答案可能尚未安全保存：{session.saveError}。正在重试写入。</div>
+        <div className="banner-save">
+          答案可能尚未安全保存：{session.saveError}
+          <button type="button" onClick={() => void saveSession(sessionRef.current).then(() => patch({ saveError: null }, false)).catch((err) => patch({ saveError: String(err) }, false))}>重试保存</button>
+          {session.status === "in_progress" && <button type="button" onClick={() => void submit("manual")}>重试提交</button>}
+        </div>
       )}
       <header className="exam-header">
         <div className="left">
@@ -491,9 +526,20 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
           <div ref={optionsPanelRef} className="options-pop">
             <div className="text-size-heading"><p>Text size</p><output>{Math.round(fontScale * 100)}%</output></div>
             <label className="text-size-slider"><span>A</span><input type="range" min={0.85} max={1.4} step={0.05} value={fontScale} aria-label="Text size" onChange={(event) => patch({ fontScale: Number(event.target.value) })} /><strong>A</strong></label>
-            {!practice && (
+            {practice ? (
               <>
-                <p style={{ marginTop: 12 }}>Colour settings</p>
+                <p className="text-size-heading">Practice appearance</p>
+                <div className="row">
+                  {([["follow_shell", "Follow workspace"], ["light", "Light"], ["dark", "Dark"]] as const).map(([value, label]) => (
+                    <button key={value} type="button" onClick={() => onPracticeScheme(value)}>
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <>
+                <p className="text-size-heading">Colour settings</p>
                 <div className="row">
                   {(["default", "high_contrast", "cream"] as const).map((s) => (
                     <button key={s} type="button" onClick={() => patch({ colorScheme: s })}>
@@ -627,7 +673,7 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
                   setTrackIndex(next);
                   patch({
                     audio: { positionMs: 0, partIndex: next, ended: false },
-                  }, false);
+                  }, true);
                   restoredRef.current = true;
                   window.setTimeout(() => { void audioRef.current?.play(); }, 30);
                   return;
@@ -656,12 +702,7 @@ export function ExamApp({ exam, session, onSession, onExit }: Props) {
                 const el = e.currentTarget;
                 const ms = el.currentTime * 1000;
                 setAudioTime(el.currentTime);
-                let partIndex = trackIndex;
-                if (playback?.mode === "fullTrack" && playback.partStartsMs.length) {
-                  for (let i = 0; i < playback.partStartsMs.length; i++) {
-                    if (ms >= playback.partStartsMs[i]) partIndex = i;
-                  }
-                }
+                const partIndex = trackIndex;
                 const prev = sessionRef.current.audio;
                 if (!prev || Math.abs((prev.positionMs ?? 0) - ms) > 800 || prev.partIndex !== partIndex) {
                   patch({ audio: { positionMs: ms, partIndex, ended: false } }, false);

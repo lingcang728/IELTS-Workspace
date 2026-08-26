@@ -167,6 +167,38 @@
   --exam-flag: #8f4d08; --exam-flag-soft: #f0e0c8; --exam-scrim: rgba(45, 35, 22, .5);
 }
 
+/* Practice-only dark exam tokens. Mock never uses this scheme.
+ * exam.css still reads only --exam-*; the shell palette is not referenced. */
+[data-theme="exam"][data-scheme="practice_dark"] {
+  color-scheme: dark;
+  --exam-bg: #16110c;
+  --exam-panel: #1e1812;
+  --exam-panel-2: #241e17;
+  --exam-nav: #1e1812;
+  --exam-nav-btn: #241e17;
+  --exam-instr: #2a231b;
+  --exam-chrome: #3a2e22;
+  --exam-chrome-ink: #f3eadc;
+  --exam-ink: #f3eadc;
+  --exam-muted: #b8a894;
+  --exam-line: #4a3f33;
+  --exam-line-soft: #322b23;
+  --exam-accent: #d4b483;
+  --exam-accent-soft: #3a3124;
+  --exam-answered: #7dbe8c;
+  --exam-answered-soft: #1f3326;
+  --exam-flag: #e0a35c;
+  --exam-flag-soft: #3a2a16;
+  --exam-warn: #e07060;
+  --exam-warn-ink: #1a120c;
+  --exam-warn-soft: #3a1c16;
+  --exam-hl: #5c4a18;
+  --exam-note: #e0c36a;
+  --exam-note-bg: #3a3218;
+  --exam-scrim: rgba(12, 9, 6, .62);
+  --exam-shadow: 0 10px 28px rgba(0, 0, 0, .4);
+}
+
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; margin: 0; }
 body { overflow: hidden; font-family: var(--font-sans); background: var(--bg); color: var(--ink); text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }

@@ -17,6 +17,18 @@ if (Test-Path -LiteralPath 'fixtures\cambridge') {
 Write-Host '== styles (token discipline + exam domain) =='
 python scripts/check_styles.py
 if ($LASTEXITCODE -ne 0) { throw "Style check failed with exit code $LASTEXITCODE" }
+Write-Host '== npm audit =='
+npm audit --registry=https://registry.npmjs.org --audit-level=high
+if ($LASTEXITCODE -ne 0) { throw "npm audit failed with exit code $LASTEXITCODE" }
+npm audit --prefix site --registry=https://registry.npmjs.org --audit-level=high
+if ($LASTEXITCODE -ne 0) { throw "site npm audit failed with exit code $LASTEXITCODE" }
+Write-Host '== cargo audit =='
+if (-not (Get-Command cargo-audit -ErrorAction SilentlyContinue)) {
+  cargo install cargo-audit --locked
+  if ($LASTEXITCODE -ne 0) { throw "cargo-audit install failed" }
+}
+cargo audit --file src-tauri/Cargo.lock
+if ($LASTEXITCODE -ne 0) { throw "cargo audit failed with exit code $LASTEXITCODE" }
 Write-Host '== vitest =='
 npm test
 if ($LASTEXITCODE -ne 0) { throw "Vitest failed with exit code $LASTEXITCODE" }

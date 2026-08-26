@@ -765,14 +765,14 @@
         {
           "id": "c13t2l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c13t2l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "What TWO things are mentioned about the participants on the last Digital Inclusion Day?",
+              "prompt": "First selected letter: What TWO things are mentioned about the participants on the last Digital Inclusion Day?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -810,23 +810,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:45:03+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              17,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c13t2l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c13t2l-q18",
               "number": 18,
@@ -878,19 +862,50 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They were all over 70."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They never used their computer."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Their phones were mostly old-fashioned."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They only used their phones for making calls."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They initially showed little interest."
+            }
+          ]
         },
         {
           "id": "c13t2l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c13t2l-q19",
               "number": 19,
               "type": "multi_choice",
-              "prompt": "What TWO activities on the last Digital Inclusion Day did participants describe as useful?",
+              "prompt": "First selected letter: What TWO activities on the last Digital Inclusion Day did participants describe as useful?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -928,23 +943,7 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:45:03+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c13t2l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c13t2l-q20",
               "number": 20,
@@ -996,7 +995,38 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "learning to use tablets"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "communicating with family"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "shopping online"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "playing online games"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "sending emails"
+            }
+          ]
         }
       ],
       "audioStartMs": 520936,

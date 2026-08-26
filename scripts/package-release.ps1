@@ -18,16 +18,42 @@ function Write-Utf8NoBom([string]$Path, [string]$Content) {
   [System.IO.File]::WriteAllText($Path, $Content, [System.Text.UTF8Encoding]::new($false))
 }
 
+function Get-ReleaseNotes([string]$Version) {
+  if ($env:IELTS_RELEASE_NOTES) {
+    return $env:IELTS_RELEASE_NOTES.Trim()
+  }
+  $notesFile = Join-Path $root 'docs\release-notes.md'
+  if (Test-Path -LiteralPath $notesFile) {
+    $text = Get-Content -LiteralPath $notesFile -Raw -Encoding UTF8
+    $heading = [regex]::Escape($Version)
+    $m = [regex]::Match($text, "(?ms)^##\s+$heading\s*\r?\n(.+?)(?=^##\s|\z)")
+    if ($m.Success) {
+      return $m.Groups[1].Value.Trim()
+    }
+  }
+  return "${Version}：见 GitHub Release 说明。"
+}
+
 $loadedLocalSigningKey = $false
 Push-Location $root
 try {
-  npm run verify
+  & (Join-Path $root 'verify.ps1')
   if ($LASTEXITCODE -ne 0) { throw '完整验证失败，拒绝发布。' }
 
   $config = Get-Content -LiteralPath 'src-tauri\tauri.conf.json' -Raw | ConvertFrom-Json
   $version = [string]$config.version
-  if ((Get-Content -LiteralPath 'package.json' -Raw | ConvertFrom-Json).version -cne $version) {
-    throw 'package.json 与 Tauri 版本不一致。'
+  $pkgVersion = [string](Get-Content -LiteralPath 'package.json' -Raw | ConvertFrom-Json).version
+  if ($pkgVersion -cne $version) {
+    throw "package.json ($pkgVersion) 与 Tauri ($version) 版本不一致。"
+  }
+  $cargoLine = Select-String -LiteralPath 'src-tauri\Cargo.toml' -Pattern '^version\s*=\s*"([^"]+)"' | Select-Object -First 1
+  $cargoVersion = [string]$cargoLine.Matches.Groups[1].Value
+  if ($cargoVersion -cne $version) {
+    throw "Cargo.toml ($cargoVersion) 与 Tauri ($version) 版本不一致。"
+  }
+  $siteVersion = [string](Get-Content -LiteralPath 'site\package.json' -Raw | ConvertFrom-Json).version
+  if ($siteVersion -cne $version) {
+    throw "site/package.json ($siteVersion) 与 Tauri ($version) 版本不一致。"
   }
 
   if ([string]::IsNullOrWhiteSpace($env:TAURI_SIGNING_PRIVATE_KEY) -and
@@ -92,7 +118,7 @@ try {
   if ([string]::IsNullOrWhiteSpace($signature)) { throw 'updater 签名为空。' }
   $latest = [ordered]@{
     version = $version
-    notes = if ($env:IELTS_RELEASE_NOTES) { $env:IELTS_RELEASE_NOTES.Trim() } else { '1.3.0：内置剑桥题库（阅读/写作开箱即用），Listening 音频改为本机导入；安装版数据目录改为 LocalAppData。' }
+    notes = Get-ReleaseNotes $version
     pub_date = (Get-Date).ToUniversalTime().ToString('o')
     size = (Get-Item -LiteralPath $installer).Length
     platforms = [ordered]@{

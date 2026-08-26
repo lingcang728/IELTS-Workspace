@@ -7,6 +7,7 @@ mod error;
 mod library;
 mod migrate;
 mod paths;
+mod safe_path;
 mod scoring;
 mod session;
 mod srs;
@@ -40,11 +41,10 @@ pub fn run() {
             commands::audio_pick_folder,
             commands::audio_scan_paths,
             commands::audio_confirm_import,
+            commands::audio_cancel_import,
             commands::audio_playback_source,
             commands::audio_remove_binding,
             commands::audio_repair_bindings,
-            commands::audio_set_manual_parts,
-            commands::audio_waveform,
             commands::audio_open_guide,
             commands::audio_bindings,
             study::mistake_add,
@@ -64,6 +64,19 @@ pub fn run() {
             updates::is_portable_update,
             updates::launch_migrated_install,
         ])
+        .setup(|app| {
+            use tauri::Manager;
+            if let Ok(root) = paths::data_root() {
+                let _ = app.asset_protocol_scope().allow_directory(&root, true);
+            }
+            if let Ok(fx) = paths::fixtures_root() {
+                let _ = app.asset_protocol_scope().allow_directory(&fx, true);
+            }
+            if let Ok(audio) = paths::audio_files_dir() {
+                let _ = app.asset_protocol_scope().allow_directory(&audio, true);
+            }
+            Ok(())
+        })
         .run(tauri::generate_context!())
         .expect("error while running IELTS Workspace");
 }

@@ -26,7 +26,7 @@ Windows 上的雅思 Academic 机考练习软件。试卷和作答都在本机�
 ## 怎么用
 
 1. 打开软件。Reading / Writing 直接开始。
-2. Listening 若按钮是「添加音频」：导入本机 `mp3` / `m4a` / `wav`。可以是整轨、四个 Part、文件夹，或按册 ZIP。分册包在网站 [听力音频](https://ielts-workspace.pages.dev/#listening)。软件不会自己下载音频。
+2. Listening 若按钮是「添加音频」：导入本机 `mp3` / `m4a` / `wav`。每套必须是四个 Part/Section，也可以是文件夹或按册 ZIP。不再支持整轨校准。分册包在网站 [听力音频](https://ielts-workspace.pages.dev/#listening)。软件不会自己下载音频。
 3. **练习**：可暂停、重听。**模考**：按机考纪律，听力只放一遍，不能拖进度条；听完后有 2 分钟检查。
 4. 交卷后看对错。Listening / Reading 的 Band 是按公开换算表估算的，不是官方成绩。写作没有客观 Band。
 

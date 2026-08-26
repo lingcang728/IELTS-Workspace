@@ -18,12 +18,7 @@ if (-not $exe) { throw 'release exe not found' }
 $dest = Join-Path $env:LOCALAPPDATA 'Programs\IELTS Workspace'
 New-Item -ItemType Directory -Force -Path $dest | Out-Null
 Copy-Item -Force $exe (Join-Path $dest $exeName)
-foreach ($d in @('fixtures','docs','schema')) {
-  if (Test-Path $d) {
-    robocopy $d (Join-Path $dest $d) /MIR /NFL /NDL /NJH /NJS /nc /ns /np | Out-Null
-    if ($LASTEXITCODE -ge 8) { throw "robocopy failed for $d with exit code $LASTEXITCODE" }
-  }
-}
+# 题库由 content-pack 嵌入 exe，安装后解压到 data\content。不要再镜像整个 fixtures/docs。
 foreach ($sub in @('sources','library','assets','sessions','profile','notes','cache','temp','official-samples')) {
   New-Item -ItemType Directory -Force -Path (Join-Path $dest "data\$sub") | Out-Null
 }

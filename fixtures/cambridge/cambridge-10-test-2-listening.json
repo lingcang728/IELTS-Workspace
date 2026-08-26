@@ -1111,14 +1111,56 @@
         {
           "id": "c10t2l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c10t2l-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "Which TWO hobbies was Thor Heyerdahl very interested in as a youth? (Question 21)",
+              "prompt": "First selected letter: Which TWO hobbies was Thor Heyerdahl very interested in as a youth? (Question 21)",
+              "acceptedAnswers": [
+                "B",
+                "C"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "camping"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "climbing"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "collecting"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "hunting"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reading"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            },
+            {
+              "id": "c10t2l-q22",
+              "number": 22,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO hobbies was Thor Heyerdahl very interested in as a youth? (Question 21)",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -1188,48 +1230,53 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T12:53:08.707862+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ]
         },
         {
-          "id": "c10t2l-g22",
+          "id": "c10t2l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
-              "id": "c10t2l-q22",
-              "number": 22,
+              "id": "c10t2l-q23",
+              "number": 23,
               "type": "multi_choice",
-              "prompt": "Which TWO hobbies was Thor Heyerdahl very interested in as a youth? (Question 22)",
+              "prompt": "First selected letter: Which do the speakers say are the TWO reasons why Heyerdahl went to live on an island? (Question 23)",
               "acceptedAnswers": [
                 "B",
-                "C"
+                "E"
               ],
+              "gapText": "____",
               "options": [
                 {
                   "id": "A",
                   "label": "A",
-                  "text": "camping"
+                  "text": "to examine ancient carvings"
                 },
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "climbing"
+                  "text": "to experience an isolated place"
                 },
                 {
                   "id": "C",
                   "label": "C",
-                  "text": "collecting"
+                  "text": "to formulate a new theory"
                 },
                 {
                   "id": "D",
                   "label": "D",
-                  "text": "hunting"
+                  "text": "to learn survival skills"
                 },
                 {
                   "id": "E",
                   "label": "E",
-                  "text": "reading"
+                  "text": "to study the impact of an extreme environment"
                 }
               ],
               "repairSource": {
@@ -1237,30 +1284,16 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T15:35:05.292340+00:00"
-          }
-        },
-        {
-          "id": "c10t2l-g23",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
-              "id": "c10t2l-q23",
-              "number": 23,
+              "id": "c10t2l-q24",
+              "number": 24,
               "type": "multi_choice",
-              "prompt": "Which do the speakers say are the TWO reasons why Heyerdahl went to live on an island? (Question 23)",
+              "prompt": "Second selected letter: Which do the speakers say are the TWO reasons why Heyerdahl went to live on an island? (Question 23)",
               "acceptedAnswers": [
                 "B",
                 "E"
               ],
-              "gapText": "____",
               "options": [
                 {
                   "id": "A",
@@ -1299,62 +1332,38 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T12:53:08.707862+00:00"
-          }
-        },
-        {
-          "id": "c10t2l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c10t2l-q24",
-              "number": 24,
-              "type": "multi_choice",
-              "prompt": "Which do the speakers say are the TWO reasons why Heyerdahl went to live on an island? (Question 24)",
-              "acceptedAnswers": [
-                "B",
-                "E"
-              ],
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "to examine ancient carvings"
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "to experience an isolated place"
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "to formulate a new theory"
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "to learn survival skills"
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "to study the impact of an extreme environment"
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
           ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T15:35:05.292340+00:00"
-          }
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "to examine ancient carvings"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "to experience an isolated place"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "to formulate a new theory"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "to learn survival skills"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "to study the impact of an extreme environment"
+            }
+          ]
         },
         {
           "id": "c10t2l-g25",

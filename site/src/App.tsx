@@ -137,7 +137,7 @@ export default function App() {
             <h2 id="listening-title">听力音频</h2>
             <ol className="steps">
               <li>打开应用，进入听力资源中心，或在试卷行点「添加音频」。</li>
-              <li>支持整轨 mp3 / m4a / wav、四个 Part、文件夹，以及每册 ZIP。</li>
+              <li>只支持四个 Part/Section（剑4–20）、文件夹，以及每册 ZIP。不支持整轨。</li>
               <li>
                 应用不会在内部下载音频。点「打开下载指南」只会打开本页的这一节。
               </li>

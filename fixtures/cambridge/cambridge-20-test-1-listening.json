@@ -753,14 +753,14 @@
         {
           "id": "c20t1l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t1l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things does Heather explain about kilns?",
+              "prompt": "First selected letter: First answer: Which TWO things does Heather explain about kilns?",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -797,52 +797,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "what their function is"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "when they were invented"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "ways of keeping them safe"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "where to put one in your home"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "what some people use instead of one"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:51:00.455022+00:00"
-          }
-        },
-        {
-          "id": "c20t1l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t1l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things does Heather explain about kilns?",
+              "prompt": "Second selected letter: First answer: Which TWO things does Heather explain about kilns?",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -912,19 +872,23 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:51:00.455022+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ]
         },
         {
           "id": "c20t1l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "matching",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t1l-q19",
               "number": 19,
-              "type": "matching",
-              "prompt": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes",
+              "type": "multi_choice",
+              "prompt": "First selected letter: If a tree gets infected with Dutch elm disease, the damage rapidly becomes",
               "acceptedAnswers": [
                 "C"
               ],
@@ -945,45 +909,12 @@
                   "text": "Peter Bourne"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Matt Elliot"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Karen Russell"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Peter Bourne"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t1l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "matching",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t1l-q20",
               "number": 20,
-              "type": "matching",
-              "prompt": "It may be better to wait and see if the mature elms that have survived continue to flourish",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: If a tree gets infected with Dutch elm disease, the damage rapidly becomes",
               "acceptedAnswers": [
                 "E"
               ],
@@ -1030,7 +961,11 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ]
         }
       ],
       "audioStartMs": 466599,
@@ -1049,14 +984,14 @@
         {
           "id": "c20t1l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "matching",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t1l-q21",
               "number": 21,
-              "type": "matching",
-              "prompt": "There must be an explanation for the survival of some mature elms",
+              "type": "multi_choice",
+              "prompt": "First selected letter: There must be an explanation for the survival of some mature elms",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1077,45 +1012,12 @@
                   "text": "Peter Bourne"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Matt Elliot"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Karen Russell"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Peter Bourne"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t1l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "matching",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t1l-q22",
               "number": 22,
-              "type": "matching",
-              "prompt": "We need to be aware that insects carrying Dutch elm disease are not very far away. monl baruntan",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: There must be an explanation for the survival of some mature elms",
               "acceptedAnswers": [
                 "E"
               ],
@@ -1162,19 +1064,23 @@
               22
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ]
         },
         {
           "id": "c20t1l-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "matching",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t1l-q23",
               "number": 23,
-              "type": "matching",
-              "prompt": "You understand the effect Dutch elm disease has had when you see evidence of how prominent the tree once List of People A Matt Elliot B Karen Russell C Peter Bourne",
+              "type": "multi_choice",
+              "prompt": "First selected letter: You understand the effect Dutch elm disease has had when you see evidence of how prominent the tree once List of People A Matt Elliot B Karen Russell C Peter Bourne",
               "acceptedAnswers": [
                 "A"
               ],
@@ -1195,45 +1101,12 @@
                   "text": "Peter Bourne"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Matt Elliot"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Karen Russell"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Peter Bourne"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t1l-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t1l-q24",
               "number": 24,
-              "type": "single_choice",
-              "prompt": "Starting in the Bronze Age, many tools were made from elm and people also used it to make weapons. In the 18th century, it was grown to provide wood for boxes and 25 Due to its strength, elm was often used for mining equipment and the C6utty Sark's 6 was also constructed from elm",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: You understand the effect Dutch elm disease has had when you see evidence of how prominent the tree once List of People A Matt Elliot B Karen Russell C Peter Bourne",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1272,6 +1145,23 @@
               }
             }
           ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Matt Elliot"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Karen Russell"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Peter Bourne"
+            }
+          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -1279,19 +1169,23 @@
               24
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ]
         },
         {
           "id": "c20t1l-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t1l-q25",
               "number": 25,
-              "type": "single_choice",
-              "prompt": "Complete the summary below.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Complete the summary below.",
               "acceptedAnswers": [
                 "A"
               ],
@@ -1322,52 +1216,12 @@
                   "text": "It is difficult to understand."
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It has little practical relevance."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "It needs further investigation."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It is misleading."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It should be more widely accepted."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "It is difficult to understand."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:51:13.731007+00:00"
-          }
-        },
-        {
-          "id": "c20t1l-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c20t1l-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Which TWO opinions do both the students express about the evolutionary theory of loneliness?",
+              "prompt": "Second selected letter: Complete the summary below.",
               "acceptedAnswers": [
                 "A",
                 "B"
@@ -1436,8 +1290,12 @@
           "repairSource": {
             "kind": "overlay",
             "status": "approved",
-            "reviewedAt": "2026-08-25T01:51:13.731529+00:00"
-          }
+            "reviewedAt": "2026-08-25T01:51:13.731007+00:00"
+          },
+          "acceptedAnswers": [
+            "A",
+            "B"
+          ]
         },
         {
           "id": "c20t1l-g27",

@@ -1169,14 +1169,14 @@
         {
           "id": "c4t2l-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c4t2l-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "First answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
+              "prompt": "First selected letter: First answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1212,55 +1212,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:49:21+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "The data is sometimes invalid"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Too few people may respond"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It is less likely to reveal the unexpected"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It can only be used with literate populations"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "There is a delay between the distribution and return of questionnaires"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c4t2l-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c4t2l-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Second answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
+              "prompt": "Second selected letter: First answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1302,27 +1259,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "The data is sometimes invalid"
+              "text": "The data is sometimes invalid."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "Too few people may respond"
+              "text": "Too few people may respond."
             },
             {
               "id": "C",
               "label": "C",
-              "text": "It is less likely to reveal the unexpected"
+              "text": "It is less likely to reveal the unexpected."
             },
             {
               "id": "D",
               "label": "D",
-              "text": "It can only be used with literate populations"
+              "text": "It can only be used with literate populations."
             },
             {
               "id": "E",
               "label": "E",
-              "text": "There is a delay between the distribution and return of questionnaires"
+              "text": "There is a delay between the distribution and return of questionnaires."
             }
           ],
           "repairSource": {
@@ -1332,7 +1289,11 @@
               26
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ]
         },
         {
           "id": "c4t2l-g27",
@@ -1725,14 +1686,14 @@
         {
           "id": "c4t2l-g39",
           "instruction": "Choose TWO letters, A-F.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c4t2l-q39",
               "number": 39,
               "type": "multi_choice",
-              "prompt": "First answer: The oil tanker explosion was an example of a crime which",
+              "prompt": "First selected letter: First answer: The oil tanker explosion was an example of a crime which",
               "acceptedAnswers": [
                 "D"
               ],
@@ -1773,45 +1734,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:49:21+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "against individuals"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "by groups"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "for companies"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              39,
-              40
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c4t2l-g40",
-          "instruction": "Choose TWO letters, A-F.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c4t2l-q40",
               "number": 40,
               "type": "multi_choice",
-              "prompt": "Second answer: The oil tanker explosion was an example of a crime which",
+              "prompt": "Second selected letter: First answer: The oil tanker explosion was an example of a crime which",
               "acceptedAnswers": [
                 "E"
               ],
@@ -1858,17 +1786,32 @@
             {
               "id": "A",
               "label": "A",
-              "text": "against individuals"
+              "text": "was no-one's fault."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "by groups"
+              "text": "was not a corporate crime."
             },
             {
               "id": "C",
               "label": "C",
-              "text": "for companies"
+              "text": "was intentional."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "was caused by indifference."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "had tragic results."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "made a large profit for the company."
             }
           ],
           "repairSource": {
@@ -1878,7 +1821,11 @@
               40
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ]
         }
       ],
       "audioStartMs": 1087423,

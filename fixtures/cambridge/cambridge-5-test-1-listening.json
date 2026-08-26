@@ -187,14 +187,14 @@
         {
           "id": "c5t1l-g5",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c5t1l-q5",
               "number": 5,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO things are included in the price of the tour?",
+              "prompt": "First selected letter: First answer: Which TWO things are included in the price of the tour?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -232,28 +232,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T03:02:27+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              6
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c5t1l-g6",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c5t1l-q6",
               "number": 6,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO things are included in the price of the tour?",
+              "prompt": "Second selected letter: First answer: Which TWO things are included in the price of the tour?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -300,7 +284,38 @@
               6
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "fishing trip"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "guided bushwalk"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "reptile park entry"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "table tennis"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "tennis"
+            }
+          ]
         },
         {
           "id": "c5t1l-g7",
@@ -968,14 +983,14 @@
         {
           "id": "c5t1l-g24",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c5t1l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "First answer: What TWO types of coursework are required each month on the part-time course?",
+              "prompt": "First selected letter: First answer: What TWO types of coursework are required each month on the part-time course?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1012,52 +1027,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T03:02:27+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "a case study"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "an essay"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "a survey"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "a short report"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "a study diary"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:50:15.753034+00:00"
-          }
-        },
-        {
-          "id": "c5t1l-g25",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c5t1l-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "Second answer: What TWO types of coursework are required each month on the part-time course?",
+              "prompt": "Second selected letter: First answer: What TWO types of coursework are required each month on the part-time course?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1127,7 +1102,11 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:50:15.753034+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ]
         },
         {
           "id": "c5t1l-g26",

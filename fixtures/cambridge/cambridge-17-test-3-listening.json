@@ -382,14 +382,14 @@
         {
           "id": "c17t3l-g11",
           "instruction": "Choose TWO letters, A–E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t3l-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO facts are given about the school’s extended hours childcare service? (Question 11)",
+              "prompt": "First selected letter: First answer: Which TWO facts are given about the school’s extended hours childcare service? (Question 11)",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -426,52 +426,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It started recently"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "More children attend after school than before school"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "An average of 50 children attend in the mornings"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "A child cannot attend both the before and after school sessions"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "The maximum number of children"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T13:58:44.501663+00:00"
-          }
-        },
-        {
-          "id": "c17t3l-g12",
-          "instruction": "Choose TWO letters, A–E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c17t3l-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO facts are given about the school’s extended hours childcare service? (Question 12)",
+              "prompt": "Second selected letter: First answer: Which TWO facts are given about the school’s extended hours childcare service? (Question 11)",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -514,34 +474,38 @@
             {
               "id": "A",
               "label": "A",
-              "text": "It started recently"
+              "text": "It started recently."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "More children attend after school than before school"
+              "text": "More children attend after school than before school."
             },
             {
               "id": "C",
               "label": "C",
-              "text": "An average of 50 children attend in the mornings"
+              "text": "An average of 50 children attend in the mornings."
             },
             {
               "id": "D",
               "label": "D",
-              "text": "A child cannot attend both the before and after school sessions"
+              "text": "A child cannot attend both the before and after school sessions."
             },
             {
               "id": "E",
               "label": "E",
-              "text": "The maximum number of children"
+              "text": "The maximum number of children who can attend is 70."
             }
           ],
           "repairSource": {
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T13:58:44.501663+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ]
         },
         {
           "id": "c17t3l-g13",

@@ -16,7 +16,8 @@
 .exam-windowbar > span { display: flex; align-items: center; gap: 7px; font-weight: 600; }
 .exam-windowbar .window-actions { height: 100%; }
 .exam-windowbar .brand-image { filter: none; }
-.banner-save { flex: 0 0 auto; padding: 7px 14px; border-bottom: 1px solid var(--exam-warn); background: var(--exam-warn-soft); color: var(--exam-warn); font-size: 11px; text-align: center; }
+.banner-save { flex: 0 0 auto; padding: 7px 14px; border-bottom: 1px solid var(--exam-warn); background: var(--exam-warn-soft); color: var(--exam-warn); font-size: 11px; text-align: center; display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; }
+.banner-save button { border: 1px solid var(--exam-warn); background: var(--exam-panel); color: var(--exam-warn); border-radius: 4px; padding: 2px 8px; }
 
 .exam-header { flex: 0 0 66px; min-width: 0; display: grid; grid-template-columns: minmax(360px, 1fr) auto minmax(360px, 1fr); align-items: center; gap: 18px; padding: 0 18px; border-bottom: 1px solid var(--exam-line); background: var(--exam-panel); }
 .exam.practice .exam-header { border-top: 2px solid var(--exam-answered); }

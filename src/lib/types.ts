@@ -182,6 +182,8 @@ export interface Session {
   updatedAt: string;
   remainingMs: number;
   answers: Record<string, AnswerEntry>;
+  /** Optional group-level answers for Choose TWO/THREE; old sessions omit this. */
+  groupAnswers?: Record<string, string[]>;
   highlights: HighlightRecord[];
   notes: NoteRecord[];
   events: SessionEvent[];
@@ -280,8 +282,15 @@ export interface ProbeResult {
   error?: string | null;
 }
 
+export type PracticeScheme = "follow_shell" | "light" | "dark";
+
 export interface Profile {
   theme?: "light" | "dark";
+  /**
+   * Practice-mode exam chrome. Mock stays official light.
+   * Missing field is treated as follow_shell on load.
+   */
+  practiceScheme?: PracticeScheme;
   /** Target overall band, 4.0-9.0 in 0.5 steps. Drives "距目标还差 N 题". */
   targetBand?: number;
   /** Exam date as YYYY-MM-DD. Drives the countdown on the workbench. */
@@ -313,6 +322,7 @@ export interface Bootstrap {
   profile: Profile | null;
   audio?: AudioLibraryStatus | null;
   migration?: MigrationReport | null;
+  diagnostics?: { warnings: string[]; sessionsQuarantined: string[] };
 }
 
 export function allQuestions(exam: Exam): Question[] {

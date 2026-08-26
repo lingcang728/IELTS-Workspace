@@ -34,7 +34,7 @@ export function AudioCenter({
         </div>}
       />
       <section className="workspace-card">
-        <p className="meta">已绑定 {bound} / {listening.length} 套 · 支持整轨、四个 Part、文件夹和每册 ZIP。C21 没有 Listening。</p>
+        <p className="meta">已绑定 {bound} / {listening.length} 套 · 每套必须是四个 Part/Section。旧整轨绑定会标为「需要重新导入」。C21 没有 Listening。</p>
         <label className="catalog-search audio-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="搜索册次或 Test" /></label>
       </section>
       <section className="workspace-card catalog-card">
@@ -48,7 +48,7 @@ export function AudioCenter({
                   <h3>{exam.title}</h3>
                   <small>{sourceLabel(exam)}</small>
                 </div>
-                <span><small>状态</small>{ready ? "已就绪" : exam.audioStatus === "needsReview" ? "待确认" : "缺少音频"}</span>
+                <span><small>状态</small>{ready ? "已就绪" : exam.audioStatus === "needsReview" ? "需要重新导入" : "缺少音频"}</span>
                 <div className="button-row">
                   {ready
                     ? <button type="button" className="secondary-button" onClick={() => onRemove(exam.id)}>移除绑定</button>

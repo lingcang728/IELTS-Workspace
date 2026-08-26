@@ -1035,14 +1035,14 @@
         {
           "id": "c19t3l-g17",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t3l-q17",
               "number": 17,
-              "type": "single_choice",
-              "prompt": "First answer: Which TWO reasons does the speaker give for recommending Alive and Kicking?",
+              "type": "multi_choice",
+              "prompt": "First selected letter: First answer: Which TWO reasons does the speaker give for recommending Alive and Kicking?",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -1079,40 +1079,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "involves painting and drawing"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "will be led by a prize-winning author"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              17,
-              18
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c19t3l-g18",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c19t3l-q18",
               "number": 18,
-              "type": "single_choice",
-              "prompt": "Second answer: Which TWO reasons does the speaker give for recommending Alive and Kicking?",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: First answer: Which TWO reasons does the speaker give for recommending Alive and Kicking?",
               "acceptedAnswers": [
                 "D",
                 "E"
@@ -1152,6 +1124,33 @@
               }
             }
           ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It will appeal to both boys and girls."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The author is well known."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It has colourful illustrations."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It is funny."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It deals with an important topic."
+            }
+          ],
           "repairSource": {
             "kind": "rubric-recovery",
             "headingRange": [
@@ -1159,19 +1158,23 @@
               18
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ]
         },
         {
           "id": "c19t3l-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t3l-q19",
               "number": 19,
-              "type": "single_choice",
-              "prompt": "First answer: Which TWO pieces of advice does the speaker give to parents about reading?",
+              "type": "multi_choice",
+              "prompt": "First selected letter: First answer: Which TWO pieces of advice does the speaker give to parents about reading?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -1208,40 +1211,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "involves painting and drawing"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "will be led by a prize-winning author"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c19t3l-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c19t3l-q20",
               "number": 20,
-              "type": "single_choice",
-              "prompt": "Second answer: Which TWO pieces of advice does the speaker give to parents about reading?",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: First answer: Which TWO pieces of advice does the speaker give to parents about reading?",
               "acceptedAnswers": [
                 "B",
                 "C"
@@ -1284,12 +1259,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "involves painting and drawing"
+              "text": "Encourage children to write down new vocabulary."
             },
             {
               "id": "B",
               "label": "B",
-              "text": "will be led by a prize-winning author"
+              "text": "Allow children to listen to audio books."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Get recommendations from librarians."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Give children a choice about what they read."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Only read aloud to children until they can read independently."
             }
           ],
           "repairSource": {
@@ -1299,7 +1289,11 @@
               20
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ]
         }
       ],
       "audioStartMs": 396173,

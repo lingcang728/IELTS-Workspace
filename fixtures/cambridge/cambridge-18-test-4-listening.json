@@ -1418,14 +1418,56 @@
         {
           "id": "c18t4l-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "yes_no_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t4l-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO educational skills were shown in the video of children doing origami?",
+              "prompt": "First selected letter: First answer: Which TWO educational skills were shown in the video of children doing origami?",
+              "acceptedAnswers": [
+                "B",
+                "D"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "solving problems"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "following instructions"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "working cooperatively"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "learning through play"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "developing hand-eye coordination"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              }
+            },
+            {
+              "id": "c18t4l-q22",
+              "number": 22,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: First answer: Which TWO educational skills were shown in the video of children doing origami?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1471,82 +1513,38 @@
               22
             ],
             "canonicalOf": null
-          }
-        },
-        {
-          "id": "c18t4l-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c18t4l-q22",
-              "number": 22,
-              "type": "multi_choice",
-              "prompt": "Second answer: Which TWO educational skills were shown in the video of children doing origami?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "solving problems"
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "following instructions"
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "working cooperatively"
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "learning through play"
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "developing hand-eye coordination"
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
-            }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
           ],
           "sharedOptions": [
             {
               "id": "A",
               "label": "A",
-              "text": "a factory"
+              "text": "solving problems"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "a private home"
+              "text": "following instructions"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "a hall of residence"
+              "text": "working cooperatively"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "learning through play"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "developing hand-eye coordination"
             }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": null
-          }
+          ]
         },
         {
           "id": "c18t4l-g23",
