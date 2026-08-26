@@ -8,7 +8,7 @@ const DATA_SUBDIRS: &[&str] = &[
     "mistakes", "vocab", "plans", "feedback", "audio", "content",
 ];
 
-pub const CONTENT_VERSION: &str = "1.3.1";
+pub const CONTENT_VERSION: &str = "1.3.2";
 
 pub fn is_dev() -> bool {
     cfg!(debug_assertions)
