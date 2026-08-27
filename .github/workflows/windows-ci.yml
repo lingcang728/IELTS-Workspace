@@ -13,7 +13,8 @@ permissions:
 
 jobs:
   verify:
-    runs-on: windows-latest
+    # fork PR -> GitHub 云端隔离环境；自己的 push/tag -> 本地 self-hosted runner
+    runs-on: ${{ github.event.pull_request.head.repo.fork && 'windows-latest' || 'local-win' }}
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -38,7 +39,8 @@ jobs:
   release:
     if: startsWith(github.ref, 'refs/tags/')
     needs: verify
-    runs-on: windows-latest
+    # fork PR -> GitHub 云端隔离环境；自己的 push/tag -> 本地 self-hosted runner
+    runs-on: ${{ github.event.pull_request.head.repo.fork && 'windows-latest' || 'local-win' }}
     timeout-minutes: 60
     permissions:
       contents: write
