@@ -17,6 +17,11 @@ import sys
 from pathlib import Path
 from typing import Any
 
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if sys.stderr and hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 
 BOOKS = tuple(range(4, 22))
 AUDIO_BOOKS = tuple(range(4, 21))
