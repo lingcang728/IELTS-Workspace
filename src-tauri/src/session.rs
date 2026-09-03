@@ -56,12 +56,7 @@ pub fn atomic_write(path: &Path, bytes: &[u8]) -> Result<(), AppError> {
 }
 
 pub fn session_path(id: &str) -> Result<PathBuf, AppError> {
-    if id.is_empty()
-        || id.contains("..")
-        || id.contains('/')
-        || id.contains('\\')
-        || id.chars().any(|c| !(c.is_ascii_alphanumeric() || c == '-' || c == '_'))
-    {
+    if !crate::safe_path::valid_id(id) {
         return Err(AppError::from("非法 session id"));
     }
     Ok(paths::sessions_dir()?.join(format!("{id}.json")))
@@ -193,7 +188,12 @@ fn read_with_fallback(path: &Path) -> Result<String, AppError> {
             continue;
         }
         match try_parse_session(candidate) {
-            Ok(text) => return Ok(text),
+            Ok(text) => {
+                if candidate != path {
+                    let _ = fs::write(path, &text);
+                }
+                return Ok(text);
+            }
             Err(why) => {
                 let _ = quarantine_file(candidate, &format!("JSON 损坏：{why}"));
             }
@@ -296,12 +296,38 @@ pub fn list_sessions_with_diagnostics() -> Result<SessionList, AppError> {
                 }));
             }
             Err(why) => {
-                let dest = quarantine_file(&path, &format!("列出会话时发现损坏：{why}"))?;
-                out.quarantined.push(format!(
-                    "{}（已隔离到 {}）",
-                    path.display(),
-                    dest.display()
-                ));
+                let bak = path.with_extension("json.bak");
+                let mut recovered = false;
+                if bak.exists() {
+                    if let Ok(bak_text) = try_parse_session(&bak) {
+                        if let Ok(v) = serde_json::from_str::<Value>(&bak_text) {
+                            let _ = fs::write(&path, &bak_text);
+                            let (answered, total) = answered_counts(&v);
+                            out.summaries.push(serde_json::json!({
+                                "id": v.get("id"),
+                                "examId": v.get("examId"),
+                                "module": v.get("module"),
+                                "mode": v.get("mode"),
+                                "status": v.get("status"),
+                                "integrity": v.get("integrity"),
+                                "startedAt": v.get("startedAt"),
+                                "updatedAt": v.get("updatedAt"),
+                                "title": v.get("examTitle"),
+                                "answered": answered,
+                                "total": total,
+                            }));
+                            recovered = true;
+                        }
+                    }
+                }
+                if !recovered {
+                    let dest = quarantine_file(&path, &format!("列出会话时发现损坏：{why}"))?;
+                    out.quarantined.push(format!(
+                        "{}（已隔离到 {}）",
+                        path.display(),
+                        dest.display()
+                    ));
+                }
             }
         }
     }
@@ -325,7 +351,19 @@ pub fn archive_session(id: &str) -> Result<(), AppError> {
     let archive = paths::sessions_dir()?.join("archive");
     fs::create_dir_all(&archive)?;
     if path.exists() {
-        fs::rename(&path, archive.join(path.file_name().unwrap()))?;
+        if let Some(file_name) = path.file_name() {
+            fs::rename(&path, archive.join(file_name))?;
+        }
+    }
+    let bak = path.with_extension("json.bak");
+    if bak.exists() {
+        if let Some(file_name) = bak.file_name() {
+            let _ = fs::rename(&bak, archive.join(file_name));
+        }
+    }
+    let tmp = path.with_extension("json.tmp");
+    if tmp.exists() {
+        let _ = fs::remove_file(tmp);
     }
     Ok(())
 }

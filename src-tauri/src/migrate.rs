@@ -136,10 +136,21 @@ fn verify_dir(src: &Path, copy: &Path) -> Result<(), AppError> {
             return Err(AppError::from(format!("迁移副本校验失败：{}", d.display())));
         }
         if d.extension().and_then(|e| e.to_str()) == Some("json") {
-            let text = fs::read_to_string(&d)?;
-            serde_json::from_str::<Value>(&text).map_err(|e| {
-                AppError::from(format!("迁移副本 JSON 无效（{}）：{e}", d.display()))
-            })?;
+            let in_quarantine = s
+                .parent()
+                .and_then(|p| p.file_name())
+                .and_then(|n| n.to_str())
+                == Some("quarantine");
+            if !in_quarantine {
+                if let Ok(src_text) = fs::read_to_string(&s) {
+                    if serde_json::from_str::<Value>(&src_text).is_ok() {
+                        let text = fs::read_to_string(&d)?;
+                        serde_json::from_str::<Value>(&text).map_err(|e| {
+                            AppError::from(format!("迁移副本 JSON 无效（{}）：{e}", d.display()))
+                        })?;
+                    }
+                }
+            }
         }
     }
     Ok(())

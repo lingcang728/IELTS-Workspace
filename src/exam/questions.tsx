@@ -633,8 +633,8 @@ function renderGap(
   onChange: (v: string) => void,
   disabled?: boolean,
 ) {
-  const parts = text.split("____");
-  if (parts.length === 1) {
+  const gapMatch = text.match(/_{2,}|\[gap\]|<gap>/);
+  if (!gapMatch || gapMatch.index == null) {
     return (
       <>
         {text}{" "}
@@ -642,11 +642,13 @@ function renderGap(
       </>
     );
   }
+  const before = text.slice(0, gapMatch.index);
+  const after = text.slice(gapMatch.index + gapMatch[0].length);
   return (
     <>
-      {parts[0]}
+      {before}
       <input className="gap" disabled={disabled} value={value} onChange={(e) => onChange(e.target.value)} />
-      {parts.slice(1).join("____")}
+      {after}
     </>
   );
 }

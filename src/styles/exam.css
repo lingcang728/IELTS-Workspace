@@ -213,3 +213,42 @@
   .tool-hint, .practice-hint { display: none; }
   .nav-legend { display: none; }
 }
+
+/* 考场文本划选与键盘焦点专属 Token，隔绝外壳 tokens.css 污染 */
+.exam ::selection {
+  background: var(--exam-accent-soft);
+  color: inherit;
+}
+.exam :focus-visible {
+  outline: 2px solid var(--exam-accent);
+  outline-offset: 2px;
+}
+
+/* 考场窗口控制按钮专属样式，屏蔽 shell.css 的 --ink 与 --panel-hover */
+.exam-windowbar .window-actions button {
+  width: 46px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--exam-chrome-ink);
+  opacity: .85;
+}
+.exam-windowbar .window-actions button:hover {
+  background: var(--exam-accent-soft);
+  color: var(--exam-chrome-ink);
+  opacity: 1;
+}
+.exam-windowbar .window-actions button:last-child:hover {
+  background: var(--exam-warn);
+  color: var(--exam-warn-ink);
+  opacity: 1;
+}
+
+/* 考场标题栏 Logo 显色上色 */
+.exam-windowbar .brand-image .brand-face-left { fill: var(--exam-chrome-ink); opacity: .7; }
+.exam-windowbar .brand-image .brand-face-right { fill: var(--exam-chrome-ink); opacity: .9; }
+.exam-windowbar .brand-image .brand-ridge { stroke: var(--exam-chrome); stroke-width: 2.3; stroke-linecap: round; stroke-linejoin: round; }
+

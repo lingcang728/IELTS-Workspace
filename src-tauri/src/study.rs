@@ -109,12 +109,9 @@ pub fn mistake_add(entries_json: String) -> Result<Value, AppError> {
             .and_then(|p| p.get("addedAt").cloned())
             .unwrap_or_else(|| json!(now_iso()));
         record["updatedAt"] = json!(now_iso());
-        record["streak"] = previous
-            .and_then(|p| p.get("streak").cloned())
-            .unwrap_or_else(|| json!(0));
-        record["status"] = previous
-            .and_then(|p| p.get("status").cloned())
-            .unwrap_or_else(|| json!("open"));
+        // 重新答错已掌握错题时，必须重置连续答对次数并重新激活为 open
+        record["streak"] = json!(0);
+        record["status"] = json!("open");
         record["timesWrong"] = json!(previous
             .and_then(|p| p.get("timesWrong").and_then(Value::as_i64))
             .unwrap_or(0)
@@ -187,7 +184,16 @@ pub fn vocab_add(entry_json: String) -> Result<Value, AppError> {
         .chars()
         .map(|c| if c.is_ascii_alphanumeric() { c } else { '-' })
         .collect();
-    let id = format!("w-{}", slug.trim_matches('-'));
+    let clean_slug = slug.trim_matches('-');
+    let id = if clean_slug.is_empty() {
+        use std::collections::hash_map::DefaultHasher;
+        use std::hash::{Hash, Hasher};
+        let mut hasher = DefaultHasher::new();
+        term.hash(&mut hasher);
+        format!("w-{:x}", hasher.finish())
+    } else {
+        format!("w-{}", clean_slug)
+    };
     let mut record = entry.clone();
     if let Some(existing) = store::read("vocab", &id)? {
         // Meeting a word again adds a sighting; it never resets the schedule.

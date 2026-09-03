@@ -58,8 +58,29 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   const optionsPanelRef = useRef<HTMLDivElement>(null);
   const persistTimer = useRef<number | null>(null);
   const lastWarn = useRef<number>(0);
+  const submittingRef = useRef(false);
+  const [splitPercent, setSplitPercent] = useState<number>(50);
+  const isDraggingGutter = useRef(false);
   const sessionRef = useRef(session);
   sessionRef.current = session;
+
+  // Cleanup audio decoders and media buffers when leaving exam runtime
+  useEffect(() => {
+    const a1 = audioRef.current;
+    const a2 = nextAudioRef.current;
+    return () => {
+      if (a1) {
+        a1.pause();
+        a1.removeAttribute("src");
+        a1.load();
+      }
+      if (a2) {
+        a2.pause();
+        a2.removeAttribute("src");
+        a2.load();
+      }
+    };
+  }, []);
 
   const policy = useMemo(() => {
     const p = { ...exam.policy };
@@ -196,6 +217,8 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
   const submit = useCallback(
     async (reason: "manual" | "force") => {
+      if (submittingRef.current) return;
+      submittingRef.current = true;
       const answers: Record<string, unknown> = {};
       for (const [id, a] of Object.entries(sessionRef.current.answers)) {
         answers[id] = a.value;
@@ -204,6 +227,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       try {
         report = exam.module === "writing" ? undefined : await scoreExam(exam.id, answers);
       } catch (err) {
+        submittingRef.current = false;
         patch({ saveError: `评分失败：${String(err)}` }, false);
         setConfirm(false);
         return;
@@ -225,6 +249,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       try {
         await saveSession(next);
       } catch (err) {
+        submittingRef.current = false;
         onSession({
           ...sessionRef.current,
           remainingMs: next.remainingMs,
@@ -248,7 +273,9 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
           if (left <= 0) {
             window.clearInterval(id);
             patch({ remainingMs: 0 }, false);
-            void submit("force");
+            if (policy.forceSubmit) {
+              void submit("force");
+            }
           } else {
             patch({ remainingMs: left }, false);
           }
@@ -274,8 +301,11 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         }
       }
       if (left <= 0) {
+        window.clearInterval(id);
         patch({ remainingMs: 0 }, false);
-        void submit("force");
+        if (policy.forceSubmit) {
+          void submit("force");
+        }
         return;
       }
       patch({ remainingMs: left }, false);
@@ -298,7 +328,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       window.removeEventListener("blur", onHide);
       document.removeEventListener("visibilitychange", onHide);
     };
-  }, [session.status, pausedLocal, policy.pauseAllowed, exam.module, exam.policy, patch, submit, session.audio?.ended]);
+  }, [exam.module, exam.policy.endCondition, exam.policy.timeWarningsMs, patch, pausedLocal, policy.pauseAllowed, policy.forceSubmit, session.audio?.ended, session.status, submit]);
 
   function setAnswer(questionId: string, value: string | string[] | null) {
     const q = questions.find((x) => x.id === questionId);
@@ -404,29 +434,70 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   }
 
   function deleteHighlight() {
-    const root = passageRef.current;
-    if (!root) return;
-    const mark = (document.elementFromPoint(menu?.x ?? 0, menu?.y ?? 0) as HTMLElement | null)?.closest("mark");
-    const id = mark?.getAttribute("data-hl");
-    if (!id) return;
+    let targetHlId: string | null = null;
+    if (menu) {
+      const mark = (document.elementFromPoint(menu.x, menu.y) as HTMLElement | null)?.closest("mark");
+      targetHlId = mark?.getAttribute("data-hl") ?? null;
+    }
+    if (!targetHlId && sel && currentSection) {
+      const overlapped = session.highlights.find(
+        (h) =>
+          h.targetId === currentSection.id &&
+          !h.invalid &&
+          Math.max(h.startOffset, sel.start) < Math.min(h.endOffset, sel.end),
+      );
+      if (overlapped) targetHlId = overlapped.id;
+    }
+    if (!targetHlId) {
+      const activeMark = window.getSelection()?.anchorNode?.parentElement?.closest("mark");
+      targetHlId = activeMark?.getAttribute("data-hl") ?? null;
+    }
+    if (!targetHlId) return;
     patch({
-      highlights: session.highlights.filter((h) => h.id !== id),
-      notes: session.notes.filter((n) => n.highlightId !== id),
+      highlights: session.highlights.filter((h) => h.id !== targetHlId),
+      notes: session.notes.filter((n) => n.highlightId !== targetHlId),
     });
     setMenu(null);
   }
 
+  const onGutterMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    isDraggingGutter.current = true;
+    const onMouseMove = (moveEvent: MouseEvent) => {
+      if (!isDraggingGutter.current) return;
+      const body = document.querySelector(".exam-body") as HTMLElement | null;
+      if (!body) return;
+      const rect = body.getBoundingClientRect();
+      const pct = ((moveEvent.clientX - rect.left) / rect.width) * 100;
+      setSplitPercent(Math.min(75, Math.max(25, pct)));
+    };
+    const onMouseUp = () => {
+      isDraggingGutter.current = false;
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("mouseup", onMouseUp);
+    };
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mouseup", onMouseUp);
+  }, []);
+
   const navIndex = Math.max(0, questions.findIndex((q) => q.id === currentId));
   const warn = (exam.policy.timeWarningsMs ?? []).some((w) => session.remainingMs <= w);
-  const passageHtml = currentSection?.content
-    ? applyMarks(
-        toNfc(currentSection.content.text),
-        session.highlights.filter((h) => h.targetId === currentSection.id),
-      )
-    : "";
 
-  const values: Record<string, string | string[] | null> = {};
-  for (const [k, v] of Object.entries(session.answers)) values[k] = v.value;
+  const sectionHighlights = useMemo(() => {
+    return session.highlights.filter((h) => h.targetId === currentSection?.id);
+  }, [session.highlights, currentSection?.id]);
+
+  const passageHtml = useMemo(() => {
+    return currentSection?.content
+      ? applyMarks(toNfc(currentSection.content.text), sectionHighlights)
+      : "";
+  }, [currentSection?.content, sectionHighlights]);
+
+  const values = useMemo(() => {
+    const res: Record<string, string | string[] | null> = {};
+    for (const [k, v] of Object.entries(session.answers)) res[k] = v.value;
+    return res;
+  }, [session.answers]);
 
   function go(id: string) {
     setCurrentId(id);
@@ -600,7 +671,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         </div>
       )}
 
-      <div className={`exam-body ${exam.module}`}>
+      <div
+        className={`exam-body ${exam.module}`}
+        style={exam.module !== "listening" ? { gridTemplateColumns: `${splitPercent}% 6px 1fr` } : undefined}
+      >
         {exam.module !== "listening" && (
           <>
             <div
@@ -653,7 +727,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                 </div>
               )}
             </div>
-            <div className="gutter" />
+            <div className="gutter" onMouseDown={onGutterMouseDown} />
           </>
         )}
         <div className="pane">
@@ -838,6 +912,9 @@ function WritingPane({
   sectionId?: string;
 }) {
   const sec = exam.sections.find((s) => s.id === sectionId) ?? exam.sections[0];
+  if (!sec) {
+    return <div className="instr">暂无写作任务内容</div>;
+  }
   const text = session.writing?.[sec.id] ?? "";
   const words = text.trim() ? text.trim().split(/\s+/).length : 0;
   const min = sec.id.includes("task2") || /task 2/i.test(sec.title) ? 250 : 150;

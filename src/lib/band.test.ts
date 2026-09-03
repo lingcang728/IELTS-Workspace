@@ -69,6 +69,9 @@ describe("rawNeededForBand", () => {
 
   it("returns null for unreachable targets and untabled modules", () => {
     expect(rawNeededForBand("listening", 9.5)).toBeNull();
+    expect(rawNeededForBand("listening", 3.5)).toBeNull();
+    expect(rawNeededForBand("reading", 2.0)).toBeNull();
     expect(rawNeededForBand("writing", 7)).toBeNull();
   });
 });
+

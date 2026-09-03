@@ -1,7 +1,10 @@
+import sitePkg from "../package.json";
+
+const VERSION = sitePkg.version;
 const INSTALLER =
-  "https://github.com/lingcang728/IELTS-Workspace/releases/latest/download/IELTS_Workspace_1.3.0_x64-setup.exe";
+  `https://github.com/lingcang728/IELTS-Workspace/releases/latest/download/IELTS_Workspace_${VERSION}_x64-setup.exe`;
 const PORTABLE =
-  "https://github.com/lingcang728/IELTS-Workspace/releases/latest/download/IELTS_Workspace_1.3.0_x64.exe";
+  `https://github.com/lingcang728/IELTS-Workspace/releases/latest/download/IELTS_Workspace_${VERSION}_x64.exe`;
 const REPO = "https://github.com/lingcang728/IELTS-Workspace";
 const AUDIO_TAG = "listening-audio-v1";
 
@@ -107,7 +110,7 @@ export default function App() {
               <article className="dl-card">
                 <p className="badge">推荐</p>
                 <h3>安装版</h3>
-                <p className="file">IELTS_Workspace_1.3.0_x64-setup.exe</p>
+                <p className="file">IELTS_Workspace_{VERSION}_x64-setup.exe</p>
                 <p>
                   安装到本机，数据写在{" "}
                   <code className="path">%LOCALAPPDATA%\IELTS Workspace\data</code>。
@@ -119,7 +122,7 @@ export default function App() {
               <article className="dl-card">
                 <p className="badge badge-quiet">绿色</p>
                 <h3>便携版</h3>
-                <p className="file">IELTS_Workspace_1.3.0_x64.exe</p>
+                <p className="file">IELTS_Workspace_{VERSION}_x64.exe</p>
                 <p>
                   单文件运行，数据写在 <code className="path">&lt;EXE目录&gt;\data</code>。
                 </p>

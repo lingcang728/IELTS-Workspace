@@ -216,10 +216,7 @@ fn save_bindings(file: &BindingsFile) -> Result<(), AppError> {
     session::atomic_write(&path, &bytes)
 }
 
-pub fn status_for(exam_id: &str) -> &'static str {
-    let Ok(file) = load_bindings() else {
-        return "missing";
-    };
+pub fn status_for_with_bindings(file: &BindingsFile, exam_id: &str) -> &'static str {
     match file.bindings.get(exam_id) {
         None => "missing",
         Some(b) if b.mode != BindingMode::Parts || b.files.len() != 4 => "needsReview",
@@ -227,27 +224,36 @@ pub fn status_for(exam_id: &str) -> &'static str {
             paths::audio_files_dir()
                 .map(|d| !d.join(&f.managed_name).is_file())
                 .unwrap_or(true)
-        }) =>
-        {
+        }) => {
             "needsReview"
         }
         Some(_) => "ready",
     }
 }
 
+#[allow(dead_code)]
+pub fn status_for(exam_id: &str) -> &'static str {
+    let Ok(file) = load_bindings() else {
+        return "missing";
+    };
+    status_for_with_bindings(&file, exam_id)
+}
+
 pub fn library_status() -> Result<AudioLibraryStatus, AppError> {
     let cat = catalog()?;
-    let bindings = load_bindings()?;
+    let bindings = load_bindings().unwrap_or_else(|_| BindingsFile {
+        schema_version: 1,
+        bindings: BTreeMap::new(),
+    });
     let mut bound = 0usize;
     let mut review = 0usize;
     for entry in &cat.entries {
-        match status_for(&entry.exam_id) {
+        match status_for_with_bindings(&bindings, &entry.exam_id) {
             "ready" => bound += 1,
             "needsReview" => review += 1,
             _ => {}
         }
     }
-    let _ = bindings;
     Ok(AudioLibraryStatus {
         catalog_count: cat.entries.len(),
         bound_count: bound,

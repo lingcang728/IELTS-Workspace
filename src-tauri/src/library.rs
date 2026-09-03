@@ -69,6 +69,10 @@ fn transcript_roots() -> Vec<PathBuf> {
 fn build_index() -> Result<LibraryIndex, AppError> {
     let mut index = LibraryIndex::default();
     let transcripts = transcript_roots();
+    let audio_bindings = crate::audio::load_bindings().unwrap_or_else(|_| crate::audio::BindingsFile {
+        schema_version: 1,
+        bindings: std::collections::BTreeMap::new(),
+    });
     for path in collect_exam_files()? {
         let Ok(text) = fs::read_to_string(&path) else { continue };
         let Ok(v) = serde_json::from_str::<Value>(&text) else { continue };
@@ -96,7 +100,7 @@ fn build_index() -> Result<LibraryIndex, AppError> {
             .any(|root| root.join(format!("{id}.json")).exists());
         let module = v.get("module").and_then(Value::as_str).unwrap_or("");
         let audio_status = if module == "listening" {
-            crate::audio::status_for(id)
+            crate::audio::status_for_with_bindings(&audio_bindings, id)
         } else {
             "ready"
         };

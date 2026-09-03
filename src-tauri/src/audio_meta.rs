@@ -1,6 +1,5 @@
 use crate::error::AppError;
 use std::fs::{self, File};
-use std::io::Write;
 use std::path::{Path, PathBuf};
 
 /// WAVE_FORMAT_MPEG / MPEG Layer-3 in a RIFF container.
@@ -17,8 +16,12 @@ pub enum Sniff {
 }
 
 pub fn sniff(path: &Path) -> Result<Sniff, AppError> {
-    let bytes = fs::read(path).map_err(|e| AppError::from(format!("无法读取音频：{e}")))?;
-    sniff_bytes(&bytes, path)
+    use std::io::Read;
+    let mut f = File::open(path).map_err(|e| AppError::from(format!("无法打开音频：{e}")))?;
+    let mut buf = vec![0u8; 64 * 1024];
+    let n = f.read(&mut buf).map_err(|e| AppError::from(format!("无法读取音频头部：{e}")))?;
+    buf.truncate(n);
+    sniff_bytes(&buf, path)
 }
 
 fn sniff_bytes(bytes: &[u8], path: &Path) -> Result<Sniff, AppError> {
@@ -71,7 +74,7 @@ fn sniff_wav(bytes: &[u8]) -> Sniff {
         }
         if id == b"data" {
             data_offset = Some(body);
-            data_len = size.min(bytes.len().saturating_sub(body));
+            data_len = size;
         }
         let step = 8 + size;
         i = i.saturating_add(step + step % 2);
@@ -99,8 +102,9 @@ fn sniff_wav(bytes: &[u8]) -> Sniff {
 
 /// Copy MPEG payload out of a WAV wrapper without transcoding. Returns the new path.
 pub fn extract_mpeg_from_wav(src: &Path, dest_dir: &Path) -> Result<PathBuf, AppError> {
-    let bytes = fs::read(src).map_err(|e| AppError::from(format!("无法读取音频：{e}")))?;
-    match sniff_bytes(&bytes, src)? {
+    use std::io::{Read, Seek, SeekFrom};
+    let sniff_result = sniff(src)?;
+    match sniff_result {
         Sniff::MpegInWav {
             data_offset,
             data_len,
@@ -112,15 +116,17 @@ pub fn extract_mpeg_from_wav(src: &Path, dest_dir: &Path) -> Result<PathBuf, App
                     .and_then(|s| s.to_str())
                     .unwrap_or("extracted")
             ));
-            let end = data_offset.saturating_add(data_len).min(bytes.len());
-            let mut f = File::create(&dest)?;
-            f.write_all(&bytes[data_offset..end])?;
-            f.sync_all()?;
+            let mut src_file = File::open(src)?;
+            src_file.seek(SeekFrom::Start(data_offset as u64))?;
+            let mut dest_file = File::create(&dest)?;
+            let mut take = src_file.take(data_len as u64);
+            std::io::copy(&mut take, &mut dest_file)?;
+            dest_file.sync_all()?;
             Ok(dest)
         }
-        Sniff::Mp3 => Ok(src.to_path_buf()),
-        other => Err(AppError::from(format!(
-            "不是可拆取的 MPEG-in-WAV：{other:?}"
+        _ => Err(AppError::from(format!(
+            "{} 不是 WAV 封装的 MPEG 流",
+            src.display()
         ))),
     }
 }

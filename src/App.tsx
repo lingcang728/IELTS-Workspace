@@ -13,6 +13,7 @@ import type { UiTheme, View } from "./lib/view";
 import { ExamApp } from "./exam/ExamApp";
 import { BrandMark, Icon, runWindowAction } from "./components/Ui";
 import { DesktopTitlebar, Sidebar } from "./components/Shell";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Workbench } from "./pages/Workbench";
 import { PracticeCenter } from "./pages/PracticeCenter";
 import { MockCenter } from "./pages/MockCenter";
@@ -283,65 +284,90 @@ export function App() {
   if (!boot.probe.ok) return <div className="boot-screen"><div className="error-panel"><h1>无法安全启动</h1><p>{boot.probe.error || "当前目录不可写，无法安全保存考试数据。"}</p><small>程序：{boot.probe.appRoot}<br />数据：{boot.probe.dataRoot}</small></div></div>;
   const theme: UiTheme = boot.profile?.theme === "light" ? "light" : "dark";
 
-  if (view === "exam" && exam && session) {
-    return <ExamApp
-      exam={exam}
-      session={session}
-      shellTheme={theme}
-      practiceScheme={(boot.profile?.practiceScheme ?? "follow_shell") as PracticeScheme}
-      onPracticeScheme={(scheme) => void updateProfile({ practiceScheme: scheme })}
-      onSession={setSession}
-      onExit={(s, r) => {
-        setSession(s);
-        setReport(r ?? null);
-        setView("results");
-        void reload();
-        // Collected here rather than inside ExamApp: the exam runtime stays
-        // free of study-tool concerns, and the backend keys entries by
-        // exam+question so a re-do updates the row instead of adding a second.
-        if (r) {
-          const entries = mistakesFromReport(exam, r);
-          if (entries.length) void mistakeAdd(entries).catch(() => undefined);
-        }
-      }} />;
-  }
-
-  return <div className="app-shell">
-    <DesktopTitlebar />
-    <div className="app-frame">
-      <Sidebar view={view} setView={setView} />
-      <main className="workspace-main">
-        {boot.probe.warning && <div className="notice-strip"><Icon name="info" size={16} />{boot.probe.warning}</div>}
-        {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} onDismissGuide={() => void updateProfile({ audioGuideDismissed: true })} onAddAudio={() => addAudio()} />}
-        {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
-        {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
-        {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
-        {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else setError("找不到这套试卷，无法重考"); }} />}
-        {view === "import" && <ImportPage value={importText} onChange={setImportText} onImport={() => importExam(importText).then(reload).then(() => setView("home")).catch((e) => setError(String(e)))} />}
-        {view === "settings" && <Settings profile={boot.profile} theme={theme} onProfile={(patch) => void updateProfile(patch)} onImport={() => setView("import")} />}
-        {view === "mistakes" && <Mistakes onPractise={() => setView("practice")} />}
-        {view === "vocab" && <Vocab />}
-        {view === "intensive" && <Intensive exams={boot.exams} />}
-        {view === "studio" && <PromptStudio vocab={vocab} />}
-        {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => setError(String(e)))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => setError(String(e)))} />}
-        {view === "results" && session && <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} onRetake={() => { const found = boot.exams.find((row) => row.id === session.examId); if (found) void retakeExam(found, session.mode); else setError("找不到这套试卷，无法重考"); }} />}
-      </main>
-    </div>
-    <div className="toast-region">{toast && <div className="toast"><Icon name="check" size={17} />{toast}</div>}</div>
-    {busy && <div className="busy-indicator" role="status"><i /><span>正在准备试卷…</span></div>}
-    {audioWizard !== undefined && <AudioWizard targetExamId={audioWizard} onClose={() => setAudioWizard(undefined)} onDone={() => { setAudioWizard(undefined); void reload(); flash("听力音频已添加"); }} />}
-    {pendingStart && (
-      <div className="audio-wizard-backdrop" role="dialog" aria-modal="true" aria-labelledby="pending-start-title">
-        <div className="audio-wizard">
-          <h2 id="pending-start-title">这套题还有未完成记录</h2>
-          <p className="meta">已提交的历史不会被删除。未完成的会话只能继续，或明确放弃后再新开。</p>
-          <div className="button-row">
-            <button type="button" className="primary-button" onClick={() => { const id = pendingStart.open.id; setPendingStart(null); void continueSession(id); }}>继续未完成</button>
-            <button type="button" className="secondary-button" onClick={() => void abandonAndStart(pendingStart.summary, pendingStart.mode, pendingStart.open.id)}>放弃未完成并新开</button>
-            <button type="button" className="secondary-button" onClick={() => setPendingStart(null)}>取消</button>
+  if (view === "exam") {
+    if (!exam || !session) {
+      return (
+        <div className="boot-screen">
+          <div className="error-panel">
+            <BrandMark size={52} />
+            <h1>考场未找到对应会话</h1>
+            <p>未找到当前考卷或作答数据，请返回工作台重试。</p>
+            <button type="button" onClick={() => setView("home")}>返回工作台</button>
           </div>
         </div>
+      );
+    }
+    return (
+      <ErrorBoundary fallbackTitle="考场运行遇到异常" onReset={() => setView("home")}>
+        <ExamApp
+          exam={exam}
+          session={session}
+          shellTheme={theme}
+          practiceScheme={(boot.profile?.practiceScheme ?? "follow_shell") as PracticeScheme}
+          onPracticeScheme={(scheme) => void updateProfile({ practiceScheme: scheme })}
+          onSession={setSession}
+          onExit={(s, r) => {
+            setSession(s);
+            setReport(r ?? null);
+            setView("results");
+            void reload();
+            // Collected here rather than inside ExamApp: the exam runtime stays
+            // free of study-tool concerns, and the backend keys entries by
+            // exam+question so a re-do updates the row instead of adding a second.
+            if (r) {
+              const entries = mistakesFromReport(exam, r);
+              if (entries.length) void mistakeAdd(entries).catch(() => undefined);
+            }
+          }}
+        />
+      </ErrorBoundary>
+    );
+  }
+
+  return (
+    <ErrorBoundary fallbackTitle="应用运行遇到异常" onReset={() => void reload()}>
+      <div className="app-shell">
+        <DesktopTitlebar />
+        <div className="app-frame">
+          <Sidebar view={view} setView={setView} />
+          <main className="workspace-main">
+            {boot.probe.warning && <div className="notice-strip"><Icon name="info" size={16} />{boot.probe.warning}</div>}
+            {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} onDismissGuide={() => void updateProfile({ audioGuideDismissed: true })} onAddAudio={() => addAudio()} />}
+            {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
+            {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
+            {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
+            {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else setError("找不到这套试卷，无法重考"); }} />}
+            {view === "import" && <ImportPage value={importText} onChange={setImportText} onImport={() => importExam(importText).then(reload).then(() => setView("home")).catch((e) => setError(String(e)))} />}
+            {view === "settings" && <Settings profile={boot.profile} theme={theme} onProfile={(patch) => void updateProfile(patch)} onImport={() => setView("import")} />}
+            {view === "mistakes" && <Mistakes onPractise={() => setView("practice")} />}
+            {view === "vocab" && <Vocab />}
+            {view === "intensive" && <Intensive exams={boot.exams} />}
+            {view === "studio" && <PromptStudio vocab={vocab} />}
+            {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => setError(String(e)))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => setError(String(e)))} />}
+            {view === "results" && (session ? (
+              <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} onRetake={() => { const found = boot.exams.find((row) => row.id === session.examId); if (found) void retakeExam(found, session.mode); else setError("找不到这套试卷，无法重考"); }} />
+            ) : (
+              <div className="empty-wrap"><p className="meta">未选择考卷会话</p><button type="button" onClick={() => setView("home")}>返回工作台</button></div>
+            ))}
+          </main>
+        </div>
+        <div className="toast-region">{toast && <div className="toast"><Icon name="check" size={17} />{toast}</div>}</div>
+        {busy && <div className="busy-indicator" role="status"><i /><span>正在准备试卷…</span></div>}
+        {audioWizard !== undefined && <AudioWizard targetExamId={audioWizard} onClose={() => setAudioWizard(undefined)} onDone={() => { setAudioWizard(undefined); void reload(); flash("听力音频已添加"); }} />}
+        {pendingStart && (
+          <div className="audio-wizard-backdrop" role="dialog" aria-modal="true" aria-labelledby="pending-start-title">
+            <div className="audio-wizard">
+              <h2 id="pending-start-title">这套题还有未完成记录</h2>
+              <p className="meta">已提交的历史不会被删除。未完成的会话只能继续，或明确放弃后再新开。</p>
+              <div className="button-row">
+                <button type="button" className="primary-button" onClick={() => { const id = pendingStart.open.id; setPendingStart(null); void continueSession(id); }}>继续未完成</button>
+                <button type="button" className="secondary-button" onClick={() => void abandonAndStart(pendingStart.summary, pendingStart.mode, pendingStart.open.id)}>放弃未完成并新开</button>
+                <button type="button" className="secondary-button" onClick={() => setPendingStart(null)}>取消</button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-    )}
-  </div>;
+    </ErrorBoundary>
+  );
 }

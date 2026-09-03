@@ -28,13 +28,16 @@ export function AudioWizard({
   const [accepted, setAccepted] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
+    let active = true;
     let unlisten: (() => void) | undefined;
-    void listen<ImportProgress>("audio-import-progress", (event) => {
-      setProgress(event.payload);
+    listen<ImportProgress>("audio-import-progress", (event) => {
+      if (active) setProgress(event.payload);
     }).then((fn) => {
-      unlisten = fn;
+      if (!active) fn();
+      else unlisten = fn;
     });
     return () => {
+      active = false;
       unlisten?.();
     };
   }, []);

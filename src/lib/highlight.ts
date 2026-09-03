@@ -55,18 +55,21 @@ export async function recoverHighlight(
   const needle = `${hl.contextBefore}${hl.excerpt}${hl.contextAfter}`;
   if (hl.excerpt && nfc.includes(hl.excerpt)) {
     if (needle && nfc.includes(needle)) {
-      const idx = nfc.indexOf(needle);
-      const startUtf = idx + hl.contextBefore.length;
-      const start = utf16ToCodePoint(nfc, startUtf);
-      const end = start + codePointLength(hl.excerpt);
-      return {
-        ...hl,
-        startOffset: start,
-        endOffset: end,
-        textHash: hash,
-        invalid: false,
-        recovered: true,
-      };
+      const needleCount = nfc.split(needle).length - 1;
+      if (needleCount === 1) {
+        const idx = nfc.indexOf(needle);
+        const startUtf = idx + hl.contextBefore.length;
+        const start = utf16ToCodePoint(nfc, startUtf);
+        const end = start + codePointLength(hl.excerpt);
+        return {
+          ...hl,
+          startOffset: start,
+          endOffset: end,
+          textHash: hash,
+          invalid: false,
+          recovered: true,
+        };
+      }
     }
     const count = nfc.split(hl.excerpt).length - 1;
     if (count === 1) {

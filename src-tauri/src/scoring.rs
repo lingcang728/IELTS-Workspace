@@ -68,13 +68,13 @@ pub fn score_exam(exam: &Value, answers: &Value) -> Result<ScoreReport, String> 
     let sections = exam
         .get("sections")
         .and_then(Value::as_array)
-        .ok_or("exam.sections missing")?;
+        .ok_or("试卷缺少 sections 字段")?;
 
     for section in sections {
         let groups = section
             .get("questionGroups")
             .and_then(Value::as_array)
-            .ok_or("section.questionGroups missing")?;
+            .ok_or("部分缺少 questionGroups 字段")?;
         for group in groups {
             score_group(group, answers, &mut questions_out)?;
         }
@@ -99,7 +99,7 @@ fn score_group(
     let questions = group
         .get("questions")
         .and_then(Value::as_array)
-        .ok_or("group.questions missing")?;
+        .ok_or("题目分组缺少 questions 字段")?;
     let policy = group
         .get("scoringPolicy")
         .and_then(Value::as_str)
@@ -166,7 +166,11 @@ fn accepted_list(question: &Value, group: &Value) -> Vec<String> {
 }
 
 fn value_to_compare(value: Option<&Value>) -> Option<String> {
-    match value {
+    let unnested = match value {
+        Some(Value::Object(map)) if map.contains_key("value") => map.get("value"),
+        other => other,
+    };
+    match unnested {
         None | Some(Value::Null) => None,
         Some(Value::String(s)) => Some(s.clone()),
         Some(Value::Number(n)) => Some(n.to_string()),
@@ -175,7 +179,8 @@ fn value_to_compare(value: Option<&Value>) -> Option<String> {
             // Multi-select stored as array: compare as sorted joined tokens only
             // for per-question multi_choice of a single slot. Group either-order
             // handles arrays at group level instead.
-            let parts: Vec<String> = arr.iter().filter_map(Value::as_str).map(str::to_string).collect();
+            let mut parts: Vec<String> = arr.iter().filter_map(Value::as_str).map(str::to_string).collect();
+            parts.sort();
             if parts.is_empty() {
                 None
             } else {
@@ -203,6 +208,19 @@ fn score_in_either_order(
                 .collect()
         })
         .unwrap_or_default();
+
+    if remaining.is_empty() {
+        for q in questions {
+            if let Some(list) = q.get("acceptedAnswers").and_then(Value::as_array) {
+                for item in list.iter().filter_map(Value::as_str) {
+                    let norm = normalize_answer(item);
+                    if !norm.is_empty() && !remaining.contains(&norm) {
+                        remaining.push(norm);
+                    }
+                }
+            }
+        }
+    }
 
     let accepted_display: Vec<String> = group
         .get("acceptedAnswers")
@@ -415,5 +433,41 @@ mod tests {
             .find(|q| q.question_id == "f3")
             .unwrap();
         assert!(f2.correct && f3.correct);
+    }
+
+    #[test]
+    fn unpacks_answer_entry_objects() {
+        let exam = exam_with_group(json!({
+            "id": "g1",
+            "scoringPolicy": "per_question",
+            "questions": [
+                { "id": "q1", "number": 1, "type": "true_false_ng", "acceptedAnswers": ["FALSE"] },
+                { "id": "q2", "number": 2, "type": "completion", "acceptedAnswers": ["library"] }
+            ]
+        }));
+        // Answers formatted as session storage AnswerEntry
+        let answers = json!({
+            "q1": { "questionId": "q1", "value": "FALSE", "timeMs": 1200 },
+            "q2": { "questionId": "q2", "value": "  Library  ", "timeMs": 3400 }
+        });
+        let report = score_exam(&exam, &answers).unwrap();
+        assert_eq!(report.raw_correct, 2);
+    }
+
+    #[test]
+    fn multi_choice_array_order_independent() {
+        let exam = exam_with_group(json!({
+            "id": "g1",
+            "scoringPolicy": "per_question",
+            "questions": [
+                { "id": "q1", "number": 1, "type": "multi_choice", "acceptedAnswers": ["A|B"] }
+            ]
+        }));
+        // User selects B then A
+        let answers = json!({
+            "q1": ["B", "A"]
+        });
+        let report = score_exam(&exam, &answers).unwrap();
+        assert_eq!(report.raw_correct, 1);
     }
 }

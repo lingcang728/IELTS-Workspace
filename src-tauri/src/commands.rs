@@ -314,13 +314,13 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
         }
     }
     let mut averages = serde_json::Map::new();
-    let mut overall_sum = 0.0;
-    let mut overall_count = 0usize;
+    let mut module_avg_sum = 0.0;
+    let mut module_avg_count = 0usize;
     for (module, scores) in &module_scores {
         if scores.is_empty() { continue; }
         let avg = scores.iter().sum::<f64>() / scores.len() as f64;
-        overall_sum += scores.iter().sum::<f64>();
-        overall_count += scores.len();
+        module_avg_sum += avg;
+        module_avg_count += 1;
         averages.insert(module.clone(), serde_json::json!(avg));
     }
     let accuracy = type_totals.into_iter().map(|((module, question_type), (correct, total))| {
@@ -330,7 +330,7 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
         "schemaVersion": 1,
         "generatedAt": chrono_like_now(),
         "rangeDays": range_days,
-        "overallAverage": if overall_count == 0 { Value::Null } else { serde_json::json!(overall_sum / overall_count as f64) },
+        "overallAverage": if module_avg_count == 0 { Value::Null } else { serde_json::json!(module_avg_sum / module_avg_count as f64) },
         "moduleAverages": averages,
         "moduleCounts": module_counts,
         "unbandedCounts": unbanded_counts,

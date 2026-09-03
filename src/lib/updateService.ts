@@ -86,14 +86,34 @@ export function getUpdateState(): UpdateViewState {
   return state;
 }
 
+function sanitizeUpdateError(error: unknown): string {
+  const raw = error instanceof Error ? error.message : String(error);
+  const lower = raw.toLowerCase();
+  if (lower.includes("dns") || lower.includes("could not resolve") || lower.includes("no such host")) {
+    return "无法解析更新服务器，请检查网络连接。";
+  }
+  if (lower.includes("timeout") || lower.includes("timed out")) {
+    return "检查更新超时，请稍后重试。";
+  }
+  if (lower.includes("connect") || lower.includes("connection refused") || lower.includes("failed to send")) {
+    return "无法连接到更新服务器，请检查网络或代理。";
+  }
+  if (lower.includes("404") || lower.includes("not found")) {
+    return "未找到更新清单。";
+  }
+  return `检查更新异常：${raw}`;
+}
+
 export async function checkForDesktopUpdate(manual = false): Promise<void> {
   if (!isTauriRuntime()) return;
-  publish({ status: "checking", error: "" });
+  if (manual) {
+    publish({ status: "checking", error: "" });
+  }
   try {
     await loadCurrentVersion();
     const lastCheck = Number(localStorage.getItem(AUTO_CHECK_KEY) ?? 0);
     if (!manual && Date.now() - lastCheck < AUTO_CHECK_INTERVAL) {
-      publish({ status: "upToDate" });
+      if (state.status === "idle") publish({ status: "upToDate" });
       return;
     }
 
@@ -119,7 +139,13 @@ export async function checkForDesktopUpdate(manual = false): Promise<void> {
     });
   } catch (error) {
     pendingUpdate = null;
-    publish({ status: "failed", error: errorMessage(error) });
+    if (manual) {
+      publish({ status: "failed", error: sanitizeUpdateError(error) });
+    } else {
+      if (state.status === "checking") {
+        publish({ status: "idle", error: "" });
+      }
+    }
   }
 }
 

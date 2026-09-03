@@ -23,9 +23,12 @@ fn pack_content() {
     let profile = std::env::var("PROFILE").unwrap_or_default();
     let repo = manifest_dir.parent().expect("src-tauri parent");
 
+    let pkg_version = std::env::var("CARGO_PKG_VERSION").unwrap_or_else(|_| "0.0.0".to_string());
+
     if profile != "release" {
         write_empty_zip(&zip_path);
-        fs::write(&manifest_path, b"{\"contentVersion\":\"1.3.2\",\"embedded\":false,\"files\":[]}\n")
+        let empty_manifest = format!("{{\"contentVersion\":\"{pkg_version}\",\"embedded\":false,\"files\":[]}}\n");
+        fs::write(&manifest_path, empty_manifest.as_bytes())
             .expect("write debug content manifest");
         return;
     }
@@ -50,7 +53,8 @@ fn pack_content() {
         listing.push(serde_like(rel, bytes.len() as u64, &digest));
     }
     let manifest_json = format!(
-        "{{\n  \"contentVersion\": \"1.3.2\",\n  \"fileCount\": {},\n  \"totalBytes\": {},\n  \"generatedAtUnix\": {},\n  \"files\": [\n{}\n  ]\n}}\n",
+        "{{\n  \"contentVersion\": \"{}\",\n  \"fileCount\": {},\n  \"totalBytes\": {},\n  \"generatedAtUnix\": {},\n  \"files\": [\n{}\n  ]\n}}\n",
+        pkg_version,
         listing.len(),
         total,
         unix_now(),

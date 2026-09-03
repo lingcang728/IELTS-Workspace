@@ -19,6 +19,7 @@ pub fn valid_id(id: &str) -> bool {
         && id
             .chars()
             .all(|c| c.is_ascii_alphanumeric() || c == '-' || c == '_')
+        && !is_reserved_component(id)
 }
 
 pub fn looks_unc(raw: &str) -> bool {

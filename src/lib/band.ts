@@ -53,10 +53,15 @@ export function bandLabel(module: string, raw: number): string {
  */
 export function rawNeededForBand(module: string, target: number): number | null {
   const rows = TABLES[module as BandModule];
-  if (!rows) return null;
+  if (!rows || rows.length === 0) return null;
+  if (!Number.isFinite(target)) return null;
+  const lowestBand = rows[rows.length - 1].band;
+  const highestBand = rows[0].band;
+  if (target < lowestBand || target > highestBand) return null;
   let best: number | null = null;
   for (const row of rows) {
     if (row.band >= target) best = best == null ? row.min : Math.min(best, row.min);
   }
   return best;
 }
+

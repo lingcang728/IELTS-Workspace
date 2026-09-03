@@ -14,14 +14,24 @@ if (Test-Path -LiteralPath 'fixtures\cambridge') {
 } else {
   Write-Host '== Local licensed Cambridge content: skipped (not distributed) =='
 }
+Write-Host '== release hygiene & version consistency =='
+python scripts/check_release_hygiene.py
+if ($LASTEXITCODE -ne 0) { throw "Hygiene check failed with exit code $LASTEXITCODE" }
 Write-Host '== styles (token discipline + exam domain) =='
 python scripts/check_styles.py
 if ($LASTEXITCODE -ne 0) { throw "Style check failed with exit code $LASTEXITCODE" }
 Write-Host '== npm audit =='
-npm audit --registry=https://registry.npmjs.org --audit-level=high
-if ($LASTEXITCODE -ne 0) { throw "npm audit failed with exit code $LASTEXITCODE" }
-npm audit --prefix site --registry=https://registry.npmjs.org --audit-level=high
-if ($LASTEXITCODE -ne 0) { throw "site npm audit failed with exit code $LASTEXITCODE" }
+function Invoke-AuditRetry($scriptBlock, $name) {
+  for ($i = 1; $i -le 3; $i++) {
+    & $scriptBlock
+    if ($LASTEXITCODE -eq 0) { return }
+    Write-Host "$name 第 $i 次网络抖动，重试中..."
+    Start-Sleep -Seconds 2
+  }
+  throw "$name 验证失败。"
+}
+Invoke-AuditRetry { npm audit --registry=https://registry.npmjs.org --audit-level=high } "npm audit"
+Invoke-AuditRetry { npm audit --prefix site --registry=https://registry.npmjs.org --audit-level=high } "site npm audit"
 Write-Host '== cargo audit =='
 if (-not (Get-Command cargo-audit -ErrorAction SilentlyContinue)) {
   cargo install cargo-audit --locked
@@ -41,4 +51,7 @@ if ($LASTEXITCODE -ne 0) { throw "TypeScript check failed with exit code $LASTEX
 Write-Host '== production build =='
 npm run build
 if ($LASTEXITCODE -ne 0) { throw "Production build failed with exit code $LASTEXITCODE" }
+Write-Host '== site build =='
+npm --prefix site run build
+if ($LASTEXITCODE -ne 0) { throw "Site build failed with exit code $LASTEXITCODE" }
 Write-Host 'OK'
