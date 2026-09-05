@@ -1,38 +1,41 @@
 param([switch]$SkipBuild)
 
 $ErrorActionPreference = 'Stop'
-Set-Location (Split-Path $PSScriptRoot -Parent)
-$tauri = Join-Path (Get-Location) 'node_modules\.bin\tauri.cmd'
-if (-not (Test-Path -LiteralPath $tauri)) { throw "local Tauri CLI missing: $tauri" }
+$root = Split-Path $PSScriptRoot -Parent
+Set-Location $root
+
 if (-not $SkipBuild) {
+  $tauri = Join-Path $root 'node_modules\.bin\tauri.cmd'
+  if (-not (Test-Path -LiteralPath $tauri)) { throw "local Tauri CLI missing: $tauri" }
   & $tauri build --bundles nsis
   if ($LASTEXITCODE -ne 0) { throw "Tauri build failed with exit code $LASTEXITCODE" }
 }
-$exeName = 'IELTS Workspace.exe'
-$candidates = @(
-  'G:\build_cache\cargo-target\release\IELTS Workspace.exe',
-  'src-tauri\target\release\IELTS Workspace.exe'
-)
-$exe = $candidates | Where-Object { Test-Path $_ } | Select-Object -First 1
-if (-not $exe) { throw 'release exe not found' }
-$dest = Join-Path $env:LOCALAPPDATA 'Programs\IELTS Workspace'
-New-Item -ItemType Directory -Force -Path $dest | Out-Null
-Copy-Item -Force $exe (Join-Path $dest $exeName)
-# 题库由 content-pack 嵌入 exe，安装后解压到 data\content。不要再镜像整个 fixtures/docs。
-foreach ($sub in @('sources','library','assets','sessions','profile','notes','cache','temp','official-samples')) {
-  New-Item -ItemType Directory -Force -Path (Join-Path $dest "data\$sub") | Out-Null
+
+$version = [string](Get-Content -LiteralPath (Join-Path $root 'package.json') -Raw | ConvertFrom-Json).version
+$exe = Join-Path $root "release\IELTS_Workspace_${version}_x64.exe"
+if (-not (Test-Path -LiteralPath $exe)) {
+  throw "release/ 里没有当前版本便携包：$exe"
 }
-if (Test-Path 'data-dev\official-samples') {
-  robocopy 'data-dev\official-samples' (Join-Path $dest 'data\official-samples') /E /NFL /NDL /NJH /NJS /nc /ns /np | Out-Null
-  if ($LASTEXITCODE -ge 8) { throw "robocopy failed for official samples with exit code $LASTEXITCODE" }
+$workDir = Split-Path $exe -Parent
+
+function Set-IeltsShortcut([string]$Path, [string]$Target, [string]$WorkDir) {
+  $parent = Split-Path $Path -Parent
+  if (-not (Test-Path -LiteralPath $parent)) {
+    New-Item -ItemType Directory -Force -Path $parent | Out-Null
+  }
+  $shell = New-Object -ComObject WScript.Shell
+  $shortcut = $shell.CreateShortcut($Path)
+  $shortcut.TargetPath = $Target
+  $shortcut.WorkingDirectory = $WorkDir
+  $shortcut.IconLocation = "$Target,0"
+  $shortcut.Description = 'IELTS Workspace'
+  $shortcut.Save()
 }
-$shortcutPath = Join-Path $env:APPDATA 'Microsoft\Windows\Start Menu\Programs\IELTS Workspace.lnk'
-$shell = New-Object -ComObject WScript.Shell
-$shortcut = $shell.CreateShortcut($shortcutPath)
-$shortcut.TargetPath = Join-Path $dest $exeName
-$shortcut.WorkingDirectory = $dest
-$shortcut.IconLocation = "$(Join-Path $dest $exeName),0"
-$shortcut.Description = 'IELTS Workspace'
-$shortcut.Save()
-Write-Host "portable exe: $dest\$exeName"
-Get-Item (Join-Path $dest $exeName) | Select-Object FullName, Length, LastWriteTime
+
+$startMenu = Join-Path $env:APPDATA 'Microsoft\Windows\Start Menu\Programs\IELTS Workspace.lnk'
+$desktop = Join-Path ([Environment]::GetFolderPath('Desktop')) 'IELTS Workspace.lnk'
+Set-IeltsShortcut -Path $startMenu -Target $exe -WorkDir $workDir
+Set-IeltsShortcut -Path $desktop -Target $exe -WorkDir $workDir
+
+Write-Host "shortcuts -> $exe"
+Get-Item -LiteralPath $startMenu, $desktop, $exe | Select-Object FullName, Length, LastWriteTime

@@ -133,9 +133,9 @@ try {
 
   if ($env:GITHUB_ACTIONS -ne 'true') {
     & (Join-Path $PSScriptRoot 'package-portable.ps1') -SkipBuild
-    if ($LASTEXITCODE -ne 0) { throw '本机 IELTS Workspace 同步失败。' }
+    if ($LASTEXITCODE -ne 0) { throw '本机开始菜单 / 桌面快捷方式更新失败。' }
   } else {
-    Write-Host 'GitHub Actions 环境：跳过本机安装目录同步。'
+    Write-Host 'GitHub Actions 环境：跳过本机快捷方式更新。'
   }
 
   Get-ChildItem -LiteralPath $output -File | Select-Object Name,Length,LastWriteTime,@{n='SHA256';e={Get-Sha256 $_.FullName}}
