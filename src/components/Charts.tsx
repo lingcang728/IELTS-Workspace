@@ -25,7 +25,7 @@ export function BandEstimate({ module, raw, total, target }: { module: ModuleKin
   const needed = target == null ? null : rawNeededForBand(module, target);
   const gap = needed == null ? null : needed - raw;
   return <div className="band-estimate">
-    <div className="band-value"><small>Estimated band</small><strong>{band == null ? "—" : band.toFixed(1)}</strong></div>
+    <div className="band-value"><small>估算 Band</small><strong>{band == null ? "—" : band.toFixed(1)}</strong></div>
     <p className="band-caveat">非官方成绩。按 <code>schema/band-conversion.json</code> 的近似换算表估算，真实考试以官方评分为准。{band == null && " 本次原始分低于换算表下限，无法给出估算。"}</p>
     {target != null && (needed == null
       ? <p className="band-gap">目标 {target.toFixed(1)} 分不在本模块的换算表范围内。</p>

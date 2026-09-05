@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { completion, isFinished, sourceLabel } from "./format";
+import { completion, isFinished, moduleLabel, sourceLabel } from "./format";
 import type { ExamSummary } from "./types";
 import type { SessionSummary } from "./types";
 
@@ -26,6 +26,14 @@ describe("completion", () => {
   it("is null when the summary carries no progress", () => {
     expect(completion(session({}))).toBeNull();
     expect(completion(session({ answered: 3, total: 0 }))).toBeNull();
+  });
+});
+
+describe("moduleLabel", () => {
+  it("uses Chinese names in the shell", () => {
+    expect(moduleLabel("reading")).toBe("阅读");
+    expect(moduleLabel("listening")).toBe("听力");
+    expect(moduleLabel("writing")).toBe("写作");
   });
 });
 

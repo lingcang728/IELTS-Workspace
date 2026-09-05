@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { assetSrc } from "../lib/api";
+import { selectedLetters, toggleSharedLetter } from "../lib/choice";
 import type { ExamMode, ExamSection, Question, QuestionGroup } from "../lib/types";
 
 interface Props {
@@ -34,6 +35,10 @@ export function QuestionGroupView({ group, values, onChange, disabled, skin = "m
                      showInstruction={showInstruction} />
     );
   }
+  const sharedMulti =
+    group.questionType === "multi_choice" &&
+    group.scoringPolicy === "in_either_order" &&
+    Boolean(group.sharedOptions?.length);
   return (
     <section className={`q-group ${practice ? "q-group-practice" : ""}`}>
       {showInstruction && (
@@ -52,18 +57,28 @@ export function QuestionGroupView({ group, values, onChange, disabled, skin = "m
           disabled={disabled}
         />
       ) : null}
-      {group.questions.filter((q) => !layoutQuestionIds.has(q.id)).map((q) => (
-        <QuestionView
-          key={q.id}
-          question={q}
+      {sharedMulti ? (
+        <SharedMultiSelect
           group={group}
-          value={values[q.id] ?? null}
+          values={values}
           onChange={onChange}
           disabled={disabled}
           practice={practice}
-          taken={takenOptions(group, values, q.id)}
         />
-      ))}
+      ) : (
+        group.questions.filter((q) => !layoutQuestionIds.has(q.id)).map((q) => (
+          <QuestionView
+            key={q.id}
+            question={q}
+            group={group}
+            value={values[q.id] ?? null}
+            onChange={onChange}
+            disabled={disabled}
+            practice={practice}
+            taken={takenOptions(group, values, q.id)}
+          />
+        ))
+      )}
     </section>
   );
 }
@@ -329,8 +344,106 @@ function takenOptions(
     if (q.id === currentId) continue;
     const v = values[q.id];
     if (typeof v === "string" && v) taken.add(v);
+    else if (Array.isArray(v)) {
+      for (const item of v) if (item) taken.add(item);
+    }
   }
   return taken;
+}
+
+function asChoiceList(value: string | string[] | null | undefined): string[] {
+  if (Array.isArray(value)) return value.filter((item): item is string => typeof item === "string" && item !== "");
+  if (typeof value === "string" && value !== "") return [value];
+  return [];
+}
+
+function sharedStem(questions: Question[]): string {
+  for (const question of questions) {
+    const text = question.prompt.replace(/^(?:First|Second|Third|Fourth|Fifth)\s+selected letter:\s*/i, "").trim();
+    if (text) return text;
+  }
+  return "";
+}
+
+function SharedMultiSelect({
+  group,
+  values,
+  onChange,
+  disabled,
+  practice,
+}: {
+  group: QuestionGroup;
+  values: Record<string, string | string[] | null | undefined>;
+  onChange: (questionId: string, value: string | string[] | null) => void;
+  disabled?: boolean;
+  practice: boolean;
+}) {
+  const ordered = [...group.questions].sort((a, b) => a.number - b.number);
+  const options = group.sharedOptions || [];
+  const limit = ordered.length;
+  const picked = selectedLetters(ordered, values);
+  const stem = sharedStem(ordered);
+
+  function toggle(letter: string) {
+    if (disabled) return;
+    const next = toggleSharedLetter({ questions: ordered, values, letter, limit });
+    for (const question of ordered) {
+      onChange(question.id, next[question.id] ?? null);
+    }
+  }
+
+  const rangeLabel =
+    ordered.length === 1
+      ? `Question ${ordered[0].number}`
+      : `Questions ${ordered[0].number} to ${ordered[ordered.length - 1].number}`;
+
+  return (
+    <div className={`q-block ${practice ? "q-card-block" : ""}`}>
+      <div className="q-stem">
+        {ordered.map((question) => (
+          <span key={question.id} className="q-num" data-qid={question.id}>
+            {question.number}
+          </span>
+        ))}
+        {stem}
+      </div>
+      {practice ? <p className="choice-limit">已选 {picked.length} / {limit}</p> : null}
+      {practice ? (
+        <div className="choice-cards" role="group" aria-label={rangeLabel}>
+          {options.map((opt) => {
+            const on = picked.includes(opt.id);
+            return (
+              <button
+                key={opt.id}
+                type="button"
+                className={`choice-card ${on ? "on" : ""}`}
+                aria-pressed={on}
+                disabled={disabled}
+                onClick={() => toggle(opt.id)}
+              >
+                <strong className="choice-letter">{opt.label}</strong>
+                <span>{opt.text}</span>
+              </button>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="choices multi" role="group" aria-label={rangeLabel}>
+          {options.map((opt) => {
+            const on = picked.includes(opt.id);
+            return (
+              <label key={opt.id} className={on ? "on" : undefined}>
+                <input type="checkbox" checked={on} disabled={disabled} onChange={() => toggle(opt.id)} />
+                <span>
+                  <strong className="choice-letter">{opt.label}</strong> {opt.text}
+                </span>
+              </label>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
 }
 
 function QuestionView({
@@ -370,6 +483,7 @@ function QuestionView({
                 key={lab}
                 type="button"
                 className={`choice-card ${str === lab ? "on" : ""}`}
+                aria-pressed={str === lab}
                 disabled={disabled}
                 onClick={() => onChange(question.id, str === lab ? null : lab)}
               >
@@ -407,7 +521,12 @@ function QuestionView({
     );
   }
 
-  if (type === "single_choice" || type === "multi_choice") {
+  if (type === "multi_choice") {
+    const picked = asChoiceList(value);
+    const toggle = (id: string) => {
+      const next = picked.includes(id) ? picked.filter((item) => item !== id) : [...picked, id];
+      onChange(question.id, next.length ? next : null);
+    };
     if (practice) {
       return (
         <div className="q-block q-card-block" data-qid={question.id}>
@@ -415,19 +534,26 @@ function QuestionView({
             <span className="q-num">{question.number}</span>
             {question.prompt}
           </div>
-          <div className="choice-cards">
-            {options.map((opt) => (
-              <button
-                key={opt.id}
-                type="button"
-                className={`choice-card ${str === opt.id ? "on" : ""}`}
-                disabled={disabled || (taken.has(opt.id) && str !== opt.id)}
-                onClick={() => onChange(question.id, str === opt.id ? null : opt.id)}
-              >
-                <strong>{opt.label}</strong>
-                <span>{opt.text}</span>
-              </button>
-            ))}
+          <p className="choice-limit">已选 {picked.length}</p>
+          <div className="choice-cards" role="group">
+            {options.map((opt) => {
+              const on = picked.includes(opt.id);
+              const blocked = taken.has(opt.id) && !on;
+              return (
+                <button
+                  key={opt.id}
+                  type="button"
+                  className={`choice-card ${on ? "on" : ""} ${blocked ? "taken" : ""}`}
+                  aria-pressed={on}
+                  title={blocked ? "已用于其他题" : undefined}
+                  disabled={disabled || blocked}
+                  onClick={() => toggle(opt.id)}
+                >
+                  <strong className="choice-letter">{opt.label}</strong>
+                  <span>{opt.text}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
       );
@@ -438,24 +564,84 @@ function QuestionView({
           <span className="q-num">{question.number}</span>
           {question.prompt}
         </div>
-        <div className="choices">
-          {options.map((opt) => (
-            <label key={opt.id}>
-              <input
-                type="radio"
-                name={question.id}
-                checked={str === opt.id}
-                disabled={disabled || (taken.has(opt.id) && str !== opt.id)}
-                onChange={() => onChange(question.id, opt.id)}
-                onClick={() => {
-                  if (str === opt.id) onChange(question.id, null);
-                }}
-              />
-              <span>
-                <strong>{opt.label}</strong> {opt.text}
-              </span>
-            </label>
-          ))}
+        <div className="choices multi" role="group">
+          {options.map((opt) => {
+            const on = picked.includes(opt.id);
+            const blocked = taken.has(opt.id) && !on;
+            return (
+              <label key={opt.id} className={`${on ? "on" : ""} ${blocked ? "taken" : ""}`} title={blocked ? "已用于其他题" : undefined}>
+                <input type="checkbox" checked={on} disabled={disabled || blocked} onChange={() => toggle(opt.id)} />
+                <span>
+                  <strong className="choice-letter">{opt.label}</strong> {opt.text}
+                </span>
+              </label>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  if (type === "single_choice") {
+    if (practice) {
+      return (
+        <div className="q-block q-card-block" data-qid={question.id}>
+          <div className="q-stem">
+            <span className="q-num">{question.number}</span>
+            {question.prompt}
+          </div>
+          <div className="choice-cards" role="radiogroup">
+            {options.map((opt) => {
+              const on = str === opt.id;
+              const blocked = taken.has(opt.id) && !on;
+              return (
+                <button
+                  key={opt.id}
+                  type="button"
+                  role="radio"
+                  className={`choice-card ${on ? "on" : ""} ${blocked ? "taken" : ""}`}
+                  aria-checked={on}
+                  title={blocked ? "已用于其他题" : undefined}
+                  disabled={disabled || blocked}
+                  onClick={() => onChange(question.id, on ? null : opt.id)}
+                >
+                  <strong className="choice-letter">{opt.label}</strong>
+                  <span>{opt.text}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+    return (
+      <div className="q-block" data-qid={question.id}>
+        <div>
+          <span className="q-num">{question.number}</span>
+          {question.prompt}
+        </div>
+        <div className="choices" role="radiogroup">
+          {options.map((opt) => {
+            const on = str === opt.id;
+            const blocked = taken.has(opt.id) && !on;
+            return (
+              <label key={opt.id} className={`${on ? "on" : ""} ${blocked ? "taken" : ""}`} title={blocked ? "已用于其他题" : undefined}>
+                <input
+                  type="radio"
+                  name={question.id}
+                  checked={on}
+                  disabled={disabled || blocked}
+                  onChange={() => onChange(question.id, opt.id)}
+                  onClick={() => {
+                    if (on) onChange(question.id, null);
+                  }}
+                />
+                <span>
+                  <strong className="choice-letter">{opt.label}</strong> {opt.text}
+                </span>
+              </label>
+            );
+          })}
         </div>
       </div>
     );

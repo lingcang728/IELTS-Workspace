@@ -1,70 +1,61 @@
-/* App-shell tokens — the blue workspace palette.
+/* App-shell tokens — kami paper, aligned with the product site.
  *
- * This is the original blue of v1.1.0, restored on purpose: the warm "paper"
- * palette that briefly replaced it read as fog, and the blue did not. What the
- * warm pass got right is kept — the token *names* are the new ones, so the
- * whole app still reads `--accent` / `--positive` / `--caution` / `--danger`
- * rather than hue-named variables, and every feature built on top of them
- * (quote highlighter, progress bars, study tools) works unchanged.
+ * The exam runtime is a separate domain (`--exam-*` below) and stays official
+ * light chrome. This file only colours the workspace shell.
  *
- * There is deliberately no `--blue`: a hue-named token invites decoration, and
- * the palette this replaced used `--blue` in 30-odd places that were neither
- * links nor actions. The blue lives in `--accent`, which is the only accent.
+ * A previous warm pass desaturated the paper until it read as fog, then the
+ * shell snapped back to tool-blue. This palette keeps the chroma: cream paper
+ * + cinnabar in light, warm near-black + copper-cinnabar in dark. There is
+ * still no `--blue`. Accent is the only accent.
  *
- * Eight of the original values did not clear WCAG AA against the surface they
- * actually landed on (dark --muted-2 3.0, light --accent 4.2, light --caution
- * 3.0 ...). Those are nudged along their own hue until they clear 4.5 — the
- * colour is the same blue, just legible. Contrast is quoted against the
- * *worst* of the six surfaces a token can land on, not the friendliest one:
- *   dark   ink 12.4 · ink-soft 9.6 · muted 5.9 · muted-2 4.6
- *          accent 6.8 · positive 7.0 · caution 7.7 · danger 4.6
- *   light  ink 11.9 · ink-soft 7.8 · muted 5.6 · muted-2 4.6
- *          accent 4.6 · positive 4.6 · caution 4.7 · danger 4.6
- * Highlighter tints (--marker-N) are checked the same way: --ink over the
- * blended stroke stays 4.9:1 or better in dark and 8.5:1 in light, while the
- * stroke lifts 2.4-2.9:1 off the panel in dark so it reads as a pen mark.
- * Surface separation: light panel/bg 1.13, dark panel/bg 1.13.
- * `scripts/check_styles.py` keeps the literals in this file; the ratios are
- * recomputed by hand when a value changes.
+ * Contrast is quoted against the *worst* of the six surfaces a token can land
+ * on, not the friendliest one. Recheck by hand if a value changes.
+ *   dark   ink ~12 · ink-soft ~9 · muted ~5.8 · muted-2 ~4.6
+ *          accent ~6.2 · positive ~7 · caution ~7.4 · danger ~4.7
+ *   light  ink ~12 · ink-soft ~8 · muted ~5.5 · muted-2 ~4.6
+ *          accent ~5.0 · positive ~4.8 · caution ~4.7 · danger ~4.6
+ * Surface separation: light panel/bg ~1.08, dark panel/bg ~1.14.
+ * `scripts/check_styles.py` keeps the literals in this file.
  */
 :root {
   /* Dark is the default: the app opens before the profile is read, and
      `applyUi` only switches to light when the saved profile asks for it. */
-  --bg: #07111a;
-  --bg-deep: #050d14;
-  --bg-2: #0b1720;
-  --panel: #111f29;
-  --panel-2: #172630;
-  --panel-hover: #1b2b36;
-  --ink: #e8eef4;
-  --ink-soft: #c9d3dc;
-  --muted: #9aa7b3;
-  --muted-2: #85939e;
+  --bg: #14110e;
+  --bg-deep: #0e0c0a;
+  --bg-2: #1a1612;
+  --panel: #221c17;
+  --panel-2: #2b241c;
+  --panel-hover: #342c23;
+  --ink: #f3eadc;
+  --ink-soft: #d9ccbb;
+  --muted: #c4b6a3;
+  --muted-2: #b3a48f;
   /* Translucent rules rather than solid dark edges, so a panel reads as a
      sheet lifted off the ground instead of a box drawn on it. */
-  --line: rgba(132, 158, 177, .17);
-  --line-strong: rgba(141, 170, 191, .28);
-  --accent: #78b6fb;
-  --accent-soft: rgba(79, 156, 255, .14);
-  --accent-ink: #07111a;
-  --positive: #69c878;
-  --positive-soft: rgba(105, 200, 120, .13);
-  --caution: #e9b541;
-  --caution-soft: rgba(233, 181, 65, .13);
-  --danger: #de7268;
-  --danger-soft: rgba(222, 114, 104, .13);
+  --line: rgba(214, 190, 160, .17);
+  --line-strong: rgba(214, 190, 160, .28);
+  --accent: #e7a08c;
+  --accent-soft: rgba(231, 160, 140, .14);
+  --accent-ink: #1c1410;
+  --positive: #7dba8c;
+  --positive-soft: rgba(125, 186, 140, .13);
+  --caution: #e0b056;
+  --caution-soft: rgba(224, 176, 86, .13);
+  --danger: #e07a6e;
+  --danger-soft: rgba(224, 122, 110, .13);
   /* Highlighter tints for the quote of the day. Translucent here so the ink
      stays --ink and legible; solid pastels in light mode. */
   --marker-1: rgba(255, 210, 74, .40);
   --marker-2: rgba(127, 227, 166, .40);
-  --marker-3: rgba(127, 192, 255, .40);
+  --marker-3: rgba(231, 160, 140, .40);
   --marker-4: rgba(255, 157, 148, .40);
-  --shadow: 0 16px 48px rgba(0, 0, 0, .22);
-  --scrim: rgba(5, 13, 20, .48);
+  --shadow: 0 16px 48px rgba(0, 0, 0, .28);
+  --scrim: rgba(14, 12, 10, .52);
   --font-sans: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
   --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", serif;
   --font-mono: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
-  --radius: 7px;
+  --radius: 6px;
+  --radius-sm: 4px;
   color-scheme: dark;
 }
 
@@ -74,33 +65,33 @@
 }
 
 [data-ui="light"] {
-  --bg: #edf2f5;
-  --bg-deep: #e4eaee;
-  --bg-2: #f7f9fa;
-  --panel: #ffffff;
-  --panel-2: #f3f6f8;
-  --panel-hover: #eef3f6;
-  --ink: #1d2b36;
-  --ink-soft: #354856;
-  --muted: #4f5d69;
-  --muted-2: #5d6973;
-  --line: rgba(61, 86, 104, .16);
-  --line-strong: rgba(61, 86, 104, .28);
-  --accent: #2569b0;
-  --accent-soft: rgba(39, 121, 207, .1);
-  --accent-ink: #ffffff;
-  --positive: #307540;
-  --positive-soft: rgba(48, 117, 64, .1);
+  --bg: #f4efe6;
+  --bg-deep: #ebe4d8;
+  --bg-2: #f7f2ea;
+  --panel: #fbf8f2;
+  --panel-2: #efe8dc;
+  --panel-hover: #e8dfd0;
+  --ink: #1c1712;
+  --ink-soft: #3f372e;
+  --muted: #5c5348;
+  --muted-2: #6a6054;
+  --line: rgba(60, 48, 36, .16);
+  --line-strong: rgba(60, 48, 36, .28);
+  --accent: #9c3b2e;
+  --accent-soft: rgba(156, 59, 46, .12);
+  --accent-ink: #f4efe6;
+  --positive: #2f6b4f;
+  --positive-soft: rgba(47, 107, 79, .12);
   --caution: #8b5d06;
   --caution-soft: rgba(139, 93, 6, .1);
   --danger: #ae463d;
   --danger-soft: rgba(174, 70, 61, .1);
   --marker-1: #f6d97a;
   --marker-2: #a9e0bd;
-  --marker-3: #a8cdf0;
+  --marker-3: #e7c0b4;
   --marker-4: #f3b9b3;
-  --shadow: 0 12px 32px rgba(39, 58, 73, .1);
-  --scrim: rgba(20, 33, 44, .32);
+  --shadow: 0 12px 32px rgba(60, 48, 36, .1);
+  --scrim: rgba(28, 23, 18, .36);
   color-scheme: light;
 }
 

@@ -12,7 +12,8 @@ const MAX_IMPORT_QUESTIONS: usize = 80;
 
 #[derive(Default)]
 struct LibraryIndex {
-    exams: BTreeMap<String, Value>,
+    /// id → on-disk exam JSON. The full Value is read in `load_exam`, not cached.
+    exams: BTreeMap<String, PathBuf>,
     summaries: Vec<Value>,
 }
 
@@ -22,15 +23,24 @@ fn library_cache() -> &'static Mutex<Option<LibraryIndex>> {
     LIBRARY_INDEX.get_or_init(|| Mutex::new(None))
 }
 
-fn collect_exam_files() -> Result<Vec<PathBuf>, AppError> {
-    let mut files = Vec::new();
-    let mut dirs = vec![paths::library_dir()?, paths::fixtures_root()?];
+/// Directories that actually hold exam JSON. Never walk overlays / answer-keys /
+/// question-types / transcripts — those live under the fixtures root but are not papers.
+fn exam_scan_dirs() -> Result<Vec<PathBuf>, AppError> {
+    let mut dirs = vec![paths::library_dir()?];
     if paths::is_dev() {
-        dirs.push(paths::app_root()?.join("data-dev").join("official-samples"));
+        let root = paths::app_root()?;
+        dirs.push(root.join("fixtures").join("cambridge"));
+        dirs.push(root.join("data-dev").join("official-samples"));
     } else {
+        dirs.push(paths::fixtures_root()?.join("cambridge"));
         dirs.push(paths::data_root()?.join("official-samples"));
     }
-    for dir in dirs {
+    Ok(dirs)
+}
+
+fn collect_exam_files() -> Result<Vec<PathBuf>, AppError> {
+    let mut files = Vec::new();
+    for dir in exam_scan_dirs()? {
         if !dir.exists() {
             continue;
         }
@@ -115,7 +125,7 @@ fn build_index() -> Result<LibraryIndex, AppError> {
             "hasTranscript": has_transcript,
             "audioStatus": audio_status,
         }));
-        index.exams.insert(id.to_string(), v);
+        index.exams.insert(id.to_string(), path);
     }
     index.summaries.sort_by(|a, b| {
         natural_cmp(
@@ -223,8 +233,10 @@ fn count_questions(exam: &Value) -> u32 {
 }
 
 pub fn load_exam(id: &str) -> Result<Value, AppError> {
-    with_index(|index| index.exams.get(id).cloned())?
-        .ok_or_else(|| AppError::from(format!("找不到试卷: {id}")))
+    let path = with_index(|index| index.exams.get(id).cloned())?
+        .ok_or_else(|| AppError::from(format!("找不到试卷: {id}")))?;
+    let text = fs::read_to_string(&path)?;
+    Ok(serde_json::from_str(&text)?)
 }
 
 fn collect_asset_fields(value: &Value, out: &mut Vec<String>) {
@@ -372,6 +384,47 @@ mod tests {
         assert_eq!(natural_cmp("Test 4", "Test 04"), Ordering::Less);
         assert_eq!(natural_cmp("Test 4", "Test 4"), Ordering::Equal);
         assert_eq!(natural_cmp("Test 4", "Test 4 Reading"), Ordering::Less);
+    }
+
+    #[test]
+    fn exam_scan_dirs_point_at_cambridge_not_whole_fixtures() {
+        let dirs = super::exam_scan_dirs().expect("scan dirs");
+        let texts: Vec<String> = dirs
+            .iter()
+            .map(|p| p.to_string_lossy().replace('\\', "/"))
+            .collect();
+        assert!(
+            texts.iter().any(|d| d.ends_with("/cambridge")),
+            "expected cambridge exam dir, got {texts:?}"
+        );
+        assert!(
+            texts.iter().any(|d| d.ends_with("/official-samples")),
+            "expected official-samples dir, got {texts:?}"
+        );
+        assert!(
+            texts.iter().all(|d| !d.ends_with("/fixtures")),
+            "must not scan whole fixtures root: {texts:?}"
+        );
+        for banned in ["/overlays", "/answer-keys", "/question-types", "/transcripts"] {
+            assert!(
+                texts.iter().all(|d| !d.contains(banned)),
+                "scan dirs must not include {banned}: {texts:?}"
+            );
+        }
+    }
+
+    #[test]
+    fn collect_exam_files_does_not_walk_overlays_or_answer_keys() {
+        let files = super::collect_exam_files().expect("scan exam files");
+        for path in &files {
+            let text = path.to_string_lossy().replace('\\', "/").to_ascii_lowercase();
+            for banned in ["/overlays/", "/answer-keys/", "/question-types/", "/transcripts/"] {
+                assert!(
+                    !text.contains(banned),
+                    "exam scan should not include {banned}: {text}"
+                );
+            }
+        }
     }
 
     #[test]

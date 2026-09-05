@@ -14,7 +14,7 @@ export function sourceLabel(exam: ExamSummary) {
 }
 
 export function moduleLabel(module: ExamSummary["module"]) {
-  return module[0].toUpperCase() + module.slice(1);
+  return ({ reading: "阅读", listening: "听力", writing: "写作", speaking: "口语" } as const)[module];
 }
 
 export function durationLabel(exam: ExamSummary) {

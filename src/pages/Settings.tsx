@@ -1,10 +1,10 @@
 import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
 import { UpdatePanel } from "../components/UpdatePanel";
-import type { PracticeScheme, Profile } from "../lib/types";
+import type { PracticeScheme, ProbeResult, Profile } from "../lib/types";
 import type { UiTheme } from "../lib/view";
 
-export function Settings({ profile, theme, onProfile, onImport }: { profile: Profile | null; theme: UiTheme; onProfile: (patch: Partial<Profile>) => void; onImport: () => void }) {
+export function Settings({ profile, theme, probe, onProfile, onImport }: { profile: Profile | null; theme: UiTheme; probe: ProbeResult; onProfile: (patch: Partial<Profile>) => void; onImport: () => void }) {
   const targets = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9];
   const practice = profile?.practiceScheme ?? "follow_shell";
   return <div className="page-stack"><PageHeading title="设置" subtitle="管理备考目标、外观、试卷导入与软件更新" />
@@ -19,7 +19,8 @@ export function Settings({ profile, theme, onProfile, onImport }: { profile: Pro
         <p className="meta">练习考场</p>
         <div className="button-row">{([["follow_shell", "跟随工作台"], ["light", "固定浅色"], ["dark", "固定深色"]] as [PracticeScheme, string][]).map(([value, label]) => <button key={value} type="button" className={practice === value ? "primary-button" : "secondary-button"} onClick={() => onProfile({ practiceScheme: value })}>{label}</button>)}</div>
       </div>
-      <div className="workspace-card"><Icon name="folder" size={28} /><h2>导入试卷</h2><p className="meta">添加符合 Schema v1 的本地题目。</p><button type="button" className="secondary-button" onClick={onImport}>打开导入</button></div>
+      <div className="workspace-card"><Icon name="folder" size={28} /><h2>导入试卷</h2><p className="meta">添加符合 Schema v1 的本地题目。剑桥题库已内置，一般不需要从这里导入。</p><button type="button" className="secondary-button" onClick={onImport}>打开导入</button></div>
+      <div className="workspace-card path-card"><Icon name="info" size={28} /><h2>数据位置</h2><p className="meta">{probe.dev ? "开发模式，数据在仓库 data-dev。" : probe.portable ? "便携版：数据在程序旁边的 data 文件夹。不要在安装包目录里运行便携版。" : "安装版：数据在本机 LocalAppData。"}</p><code className="path-box">{probe.dataRoot}</code></div>
       <UpdatePanel />
     </section></div>;
 }

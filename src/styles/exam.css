@@ -84,10 +84,16 @@
 .q-num { display: inline-grid; min-width: 26px; height: 26px; place-items: center; margin-right: 7px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-ink); font: 600 11px/1 var(--exam-mono); vertical-align: middle; }
 .q-stem { line-height: 1.6; }
 .choices { display: grid; gap: 7px; margin: 10px 0 0 34px; }
-.choices label { display: flex; align-items: flex-start; gap: 9px; padding: 7px 9px; border: 1px solid transparent; border-radius: 4px; color: var(--exam-ink); line-height: 1.45; }
+.choices label { display: flex; align-items: flex-start; gap: 9px; padding: 8px 10px; border: 1px solid transparent; border-radius: 4px; color: var(--exam-ink); line-height: 1.45; }
 .choices label:hover { border-color: var(--exam-line); background: var(--exam-panel-2); }
+.choices label:has(input:checked) { border-color: var(--exam-accent); background: var(--exam-accent-soft); }
+.choices label:focus-within { border-color: var(--exam-accent); }
+.choices label.taken { opacity: .55; }
 .choices input { margin-top: 3px; accent-color: var(--exam-accent); }
+.choice-letter { flex: 0 0 1.5rem; color: var(--exam-muted); font-variant-numeric: tabular-nums; }
+.choice-limit { margin: 8px 0 0 34px; color: var(--exam-muted); font-size: 12px; }
 .gap, .match, .layout-answer { min-width: 120px; height: 30px; margin: 0 4px; padding: 2px 8px; border: 1px solid var(--exam-line); border-radius: 3px; background: var(--exam-panel); color: var(--exam-ink); }
+.match { display: block; width: min(100%, 36rem); min-width: min(100%, 18rem); height: auto; min-height: 32px; margin: 8px 0 0; }
 .gap { border-width: 0 0 1px; border-radius: 0; text-align: center; }
 .gap:focus, .match:focus, .layout-answer:focus { border-color: var(--exam-accent); outline: 0; background: var(--exam-accent-soft); }
 .q-layout { overflow-x: auto; margin: 10px 0 18px; }
@@ -101,9 +107,10 @@
 .choice-cards { display: grid; gap: 7px; margin: 11px 0 0 33px; }
 .choice-cards.tfng { grid-template-columns: repeat(3, minmax(90px, 1fr)); }
 .choice-card { display: flex; align-items: center; gap: 9px; min-height: 38px; padding: 8px 11px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel); color: var(--exam-ink); text-align: left; }
-.choice-card strong { min-width: 20px; color: var(--exam-muted); }
+.choice-card strong, .choice-card .choice-letter { min-width: 20px; color: var(--exam-muted); font-variant-numeric: tabular-nums; }
 .choice-card:hover { border-color: var(--exam-answered); }
 .choice-card.on { border-color: var(--exam-answered); background: var(--exam-answered-soft); box-shadow: inset 3px 0 var(--exam-answered); }
+.choice-card.taken { opacity: .55; }
 
 .matching-board { max-width: 900px; }
 .match-hint { margin: -4px 0 12px; color: var(--exam-muted); font-size: 10px; }

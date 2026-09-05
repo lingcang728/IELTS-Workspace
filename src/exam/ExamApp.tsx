@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type MutableRefObject, type RefObject } from "react";
 import { assetSrc, saveSession, scoreExam, vocabAdd } from "../lib/api";
 import { audioPlaybackSource, localMediaSrc, type PlaybackSource } from "../lib/audio";
 import { BrandMark, Icon, WindowControls } from "../components/Ui";
@@ -36,6 +36,153 @@ function fmt(ms: number) {
   return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
 }
 
+/** Parent `session` is a snapshot; remainingMs / audio.positionMs live on the ref between patches. */
+function mergeLiveSession(live: Session, incoming: Session): Session {
+  if (live === incoming || live.id !== incoming.id) return incoming;
+  return {
+    ...incoming,
+    remainingMs: live.remainingMs,
+    audio: incoming.audio?.ended ? incoming.audio : (live.audio ?? incoming.audio),
+  };
+}
+
+function readVisibleRemainingMs(
+  sessionRef: RefObject<Session>,
+  audioRef: RefObject<HTMLAudioElement | null>,
+  listeningMediaClock: boolean,
+  mediaCheckMs: number,
+  laterTracksMs: number,
+): { ms: number; loading: boolean } {
+  const sess = sessionRef.current;
+  if (listeningMediaClock && !sess?.audio?.ended) {
+    const el = audioRef.current;
+    const dur = el?.duration ?? 0;
+    const t = el?.currentTime ?? 0;
+    if (!(dur > 0)) return { ms: 0, loading: true };
+    return { ms: Math.max(0, (dur - t) * 1000 + laterTracksMs + mediaCheckMs), loading: false };
+  }
+  return { ms: Math.max(0, sess?.remainingMs ?? 0), loading: false };
+}
+
+function ExamClock({
+  variant,
+  wordCount,
+  sessionRef,
+  audioRef,
+  listeningMediaClock,
+  mediaCheckMs,
+  laterTracksMs,
+  timeWarningsMs,
+}: {
+  variant: "timer" | "writing";
+  wordCount?: number;
+  sessionRef: MutableRefObject<Session>;
+  audioRef: RefObject<HTMLAudioElement | null>;
+  listeningMediaClock: boolean;
+  mediaCheckMs: number;
+  laterTracksMs: number;
+  timeWarningsMs: number[];
+}) {
+  const compute = useCallback(() => {
+    const vis = readVisibleRemainingMs(sessionRef, audioRef, listeningMediaClock, mediaCheckMs, laterTracksMs);
+    const warn = !vis.loading && timeWarningsMs.some((w) => vis.ms <= w);
+    return { ...vis, warn };
+  }, [sessionRef, audioRef, listeningMediaClock, mediaCheckMs, laterTracksMs, timeWarningsMs]);
+
+  const [view, setView] = useState(compute);
+
+  useEffect(() => {
+    setView(compute());
+    const id = window.setInterval(() => setView(compute()), 250);
+    return () => window.clearInterval(id);
+  }, [compute]);
+
+  if (variant === "writing") {
+    return (
+      <div className="writing-header-metrics">
+        <span><Icon name="clock" size={22} /><small>Time remaining</small><strong>{fmt(view.ms)}</strong></span>
+        <span><Icon name="wordcount" size={22} /><small>Word count</small><strong>{wordCount ?? 0}</strong></span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="timer-stack">
+      <span>Time remaining</span>
+      <div className={`timer ${view.warn ? "warn" : ""}`} aria-live="polite">
+        {view.loading ? "Loading…" : fmt(view.ms)}
+      </div>
+    </div>
+  );
+}
+
+function ListeningPlayer({
+  audioRef,
+  audioSrc,
+  pauseAllowed,
+  seekAllowed,
+  paused,
+  onToggle,
+}: {
+  audioRef: RefObject<HTMLAudioElement | null>;
+  audioSrc: string | null;
+  pauseAllowed: boolean;
+  seekAllowed: boolean;
+  paused: boolean;
+  onToggle: () => void;
+}) {
+  const [audioTime, setAudioTime] = useState(0);
+  const [audioDur, setAudioDur] = useState(0);
+
+  useEffect(() => {
+    const el = audioRef.current;
+    if (!el) return;
+    const sync = () => {
+      setAudioTime(el.currentTime);
+      setAudioDur(el.duration && Number.isFinite(el.duration) ? el.duration : 0);
+    };
+    sync();
+    el.addEventListener("timeupdate", sync);
+    el.addEventListener("loadedmetadata", sync);
+    el.addEventListener("durationchange", sync);
+    el.addEventListener("seeked", sync);
+    return () => {
+      el.removeEventListener("timeupdate", sync);
+      el.removeEventListener("loadedmetadata", sync);
+      el.removeEventListener("durationchange", sync);
+      el.removeEventListener("seeked", sync);
+    };
+  }, [audioRef, audioSrc]);
+
+  return (
+    <div className="listening-player">
+      <button
+        type="button"
+        disabled={!pauseAllowed}
+        aria-label={pauseAllowed ? "Toggle playback" : "Listening playback locked"}
+        onClick={onToggle}
+      >
+        <span className="player-state"><Icon name={paused ? "play" : "pause"} size={18} /></span>{paused ? "Paused" : "Playing"}
+      </button>
+      <input
+        type="range"
+        min={0}
+        max={Math.max(1, audioDur)}
+        step={0.1}
+        value={audioTime}
+        aria-label="Seek"
+        disabled={!seekAllowed}
+        onChange={(e) => {
+          const t = Number(e.target.value);
+          if (audioRef.current) audioRef.current.currentTime = t;
+          setAudioTime(t);
+        }}
+      />
+      <span className="player-time">{fmt(audioTime * 1000)} / {fmt(audioDur * 1000)}</span>
+    </div>
+  );
+}
+
 export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeScheme, onSession, onExit }: Props) {
   const questions = useMemo(() => allQuestions(exam), [exam]);
   const [currentId, setCurrentId] = useState(questions[0]?.id ?? "");
@@ -62,7 +209,11 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   const [splitPercent, setSplitPercent] = useState<number>(50);
   const isDraggingGutter = useRef(false);
   const sessionRef = useRef(session);
-  sessionRef.current = session;
+  const parentSessionRef = useRef(session);
+  if (parentSessionRef.current !== session) {
+    sessionRef.current = mergeLiveSession(sessionRef.current, session);
+    parentSessionRef.current = session;
+  }
 
   // Cleanup audio decoders and media buffers when leaving exam runtime
   useEffect(() => {
@@ -101,17 +252,12 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     : current ? sectionForQuestion(exam, current.id) : exam.sections[0];
   const [pausedLocal, setPausedLocal] = useState(session.mode === "practice");
   const [optionsOpen, setOptionsOpen] = useState(false);
-  const [audioTime, setAudioTime] = useState(0);
-  const [audioDur, setAudioDur] = useState(0);
   const practice = session.mode === "practice";
-  const mediaClockPending = !practice && exam.module === "listening" && exam.policy.endCondition.type === "media_driven" && !session.audio?.ended;
+  const listeningMediaClock = !practice && exam.module === "listening" && exam.policy.endCondition.type === "media_driven";
   const mediaCheckMs = exam.policy.endCondition.type === "media_driven" ? exam.policy.endCondition.checkMsAfterEnd : 0;
   const laterTracksMs = playback?.mode === "parts"
     ? playback.tracks.slice(trackIndex + 1).reduce((sum, track) => sum + track.durationMs, 0)
     : 0;
-  const visibleRemainingMs = mediaClockPending && audioDur > 0
-    ? Math.max(0, (audioDur - audioTime) * 1000 + laterTracksMs + mediaCheckMs)
-    : session.remainingMs;
 
   useEffect(() => {
     if (!optionsOpen) return;
@@ -144,9 +290,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       .catch(() => {
         if (!live) return;
         setPlayback(null);
-        const rel = exam.sections.find((s) => s.audioAsset)?.audioAsset;
-        if (rel) assetSrc(rel).then(setAudioSrc).catch(() => setAudioSrc(null));
-        else setAudioSrc(null);
+        setAudioSrc(null);
       });
     return () => {
       live = false;
@@ -191,6 +335,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         ...partial,
         updatedAt: new Date().toISOString(),
       };
+      sessionRef.current = next;
       onSession(next);
       if (!persist) return;
       if (persistTimer.current) window.clearTimeout(persistTimer.current);
@@ -266,6 +411,13 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   useEffect(() => {
     if (session.status !== "in_progress") return;
     if (pausedLocal && policy.pauseAllowed) return;
+    const tickQuiet = (left: number) => {
+      sessionRef.current = {
+        ...sessionRef.current,
+        remainingMs: left,
+        updatedAt: new Date().toISOString(),
+      };
+    };
     if (exam.module === "listening" && exam.policy.endCondition.type === "media_driven") {
       if (session.audio?.ended) {
         const id = window.setInterval(() => {
@@ -277,7 +429,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
               void submit("force");
             }
           } else {
-            patch({ remainingMs: left }, false);
+            tickQuiet(left);
           }
         }, 250);
         return () => window.clearInterval(id);
@@ -308,7 +460,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         }
         return;
       }
-      patch({ remainingMs: left }, false);
+      tickQuiet(left);
     }, 250);
     const persistId = window.setInterval(() => {
       saveSession(sessionRef.current).catch((err) =>
@@ -332,13 +484,14 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
   function setAnswer(questionId: string, value: string | string[] | null) {
     const q = questions.find((x) => x.id === questionId);
+    const currentAnswers = sessionRef.current.answers;
     const answers = {
-      ...session.answers,
+      ...currentAnswers,
       [questionId]: {
         questionId,
         questionType: q?.type ?? "completion",
         value,
-        flagged: session.answers[questionId]?.flagged ?? false,
+        flagged: currentAnswers[questionId]?.flagged ?? false,
         updatedAt: new Date().toISOString(),
       },
     };
@@ -347,10 +500,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
   function toggleFlag() {
     if (!current) return;
-    const prev = session.answers[current.id];
+    const prev = sessionRef.current.answers[current.id];
     patch({
       answers: {
-        ...session.answers,
+        ...sessionRef.current.answers,
         [current.id]: {
           questionId: current.id,
           questionType: current.type,
@@ -481,7 +634,6 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   }, []);
 
   const navIndex = Math.max(0, questions.findIndex((q) => q.id === currentId));
-  const warn = (exam.policy.timeWarningsMs ?? []).some((w) => session.remainingMs <= w);
 
   const sectionHighlights = useMemo(() => {
     return session.highlights.filter((h) => h.targetId === currentSection?.id);
@@ -504,7 +656,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     const sec = sectionForQuestion(exam, id);
     patch({
       events: [
-        ...session.events,
+        ...sessionRef.current.events,
         {
           t: new Date().toISOString(),
           type: "nav",
@@ -550,7 +702,30 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
           <span className="exam-title">{exam.title}</span>
           <span className="section-title">{currentSection?.title}</span>
         </div>
-        {exam.module === "writing" ? <div className="writing-header-metrics"><span><Icon name="clock" size={22} /><small>Time remaining</small><strong>{fmt(visibleRemainingMs)}</strong></span><span><Icon name="wordcount" size={22} /><small>Word count</small><strong>{writingWordCount}</strong></span></div> : practice ? <div className="practice-clock"><span>Flexible session</span><strong>No forced submit</strong></div> : <div className="timer-stack"><span>Time remaining</span><div className={`timer ${warn ? "warn" : ""}`} aria-live="polite">{mediaClockPending && audioDur <= 0 ? "Loading…" : fmt(visibleRemainingMs)}</div></div>}
+        {exam.module === "writing" ? (
+          <ExamClock
+            variant="writing"
+            wordCount={writingWordCount}
+            sessionRef={sessionRef}
+            audioRef={audioRef}
+            listeningMediaClock={false}
+            mediaCheckMs={0}
+            laterTracksMs={0}
+            timeWarningsMs={practice ? [] : (exam.policy.timeWarningsMs ?? [])}
+          />
+        ) : practice ? (
+          <div className="practice-clock"><span>Flexible session</span><strong>No forced submit</strong></div>
+        ) : (
+          <ExamClock
+            variant="timer"
+            sessionRef={sessionRef}
+            audioRef={audioRef}
+            listeningMediaClock={listeningMediaClock}
+            mediaCheckMs={mediaCheckMs}
+            laterTracksMs={laterTracksMs}
+            timeWarningsMs={exam.policy.timeWarningsMs ?? []}
+          />
+        )}
         <div className="right toolbar">
           {exam.module === "listening" && (
             <label className="vol-wrap">
@@ -634,41 +809,24 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
       <div className="exam-mid">
       {exam.module === "listening" && (
-        <div className="listening-player">
-          <button
-            type="button"
-            disabled={!policy.pauseAllowed}
-            aria-label={policy.pauseAllowed ? "Toggle playback" : "Listening playback locked"}
-            onClick={() => {
-              const el = audioRef.current;
-              if (!el) return;
-              if (el.paused) {
-                void el.play();
-                setPausedLocal(false);
-              } else {
-                el.pause();
-                setPausedLocal(true);
-              }
-            }}
-          >
-            <span className="player-state"><Icon name={pausedLocal ? "play" : "pause"} size={18} /></span>{pausedLocal ? "Paused" : "Playing"}
-          </button>
-          <input
-            type="range"
-            min={0}
-            max={Math.max(1, audioDur)}
-            step={0.1}
-            value={audioTime}
-            aria-label="Seek"
-            disabled={!policy.audioSeekAllowed}
-            onChange={(e) => {
-              const t = Number(e.target.value);
-              if (audioRef.current) audioRef.current.currentTime = t;
-              setAudioTime(t);
-            }}
-          />
-          <span className="player-time">{fmt(audioTime * 1000)} / {fmt(audioDur * 1000)}</span>
-        </div>
+        <ListeningPlayer
+          audioRef={audioRef}
+          audioSrc={audioSrc}
+          pauseAllowed={policy.pauseAllowed}
+          seekAllowed={policy.audioSeekAllowed}
+          paused={pausedLocal}
+          onToggle={() => {
+            const el = audioRef.current;
+            if (!el) return;
+            if (el.paused) {
+              void el.play();
+              setPausedLocal(false);
+            } else {
+              el.pause();
+              setPausedLocal(true);
+            }
+          }}
+        />
       )}
 
       <div
@@ -758,13 +916,12 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                     : 120000;
                 patch({
                   remainingMs: check,
-                  audio: { ...(session.audio ?? { positionMs: 0, partIndex: trackIndex }), ended: true, positionMs: (audioRef.current?.duration ?? 0) * 1000, partIndex: trackIndex },
-                  events: [...session.events, { t: new Date().toISOString(), type: "audio_end" }],
+                  audio: { ...(sessionRef.current.audio ?? { positionMs: 0, partIndex: trackIndex }), ended: true, positionMs: (audioRef.current?.duration ?? 0) * 1000, partIndex: trackIndex },
+                  events: [...sessionRef.current.events, { t: new Date().toISOString(), type: "audio_end" }],
                 });
               }}
               onLoadedMetadata={(e) => {
                 const el = e.currentTarget;
-                setAudioDur(el.duration || 0);
                 if (restoredRef.current) return;
                 const pos = (sessionRef.current.audio?.positionMs ?? 0) / 1000;
                 if (pos > 0.4 && pos < el.duration) {
@@ -775,15 +932,18 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
               onTimeUpdate={(e) => {
                 const el = e.currentTarget;
                 const ms = el.currentTime * 1000;
-                setAudioTime(el.currentTime);
                 const partIndex = trackIndex;
                 const prev = sessionRef.current.audio;
                 if (!prev || Math.abs((prev.positionMs ?? 0) - ms) > 800 || prev.partIndex !== partIndex) {
-                  patch({ audio: { positionMs: ms, partIndex, ended: false } }, false);
+                  sessionRef.current = {
+                    ...sessionRef.current,
+                    audio: { positionMs: ms, partIndex, ended: false },
+                  };
                 }
                 if (policy.audioSeekAllowed) return;
-                if (prev && el.currentTime + 0.4 < (prev.positionMs ?? 0) / 1000) {
-                  el.currentTime = (prev.positionMs ?? 0) / 1000;
+                const locked = sessionRef.current.audio;
+                if (locked && el.currentTime + 0.4 < (locked.positionMs ?? 0) / 1000) {
+                  el.currentTime = (locked.positionMs ?? 0) / 1000;
                 }
               }}
               controls={false}

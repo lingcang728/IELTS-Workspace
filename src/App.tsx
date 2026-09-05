@@ -337,8 +337,14 @@ export function App() {
             {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
             {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
             {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else setError("找不到这套试卷，无法重考"); }} />}
-            {view === "import" && <ImportPage value={importText} onChange={setImportText} onImport={() => importExam(importText).then(reload).then(() => setView("home")).catch((e) => setError(String(e)))} />}
-            {view === "settings" && <Settings profile={boot.profile} theme={theme} onProfile={(patch) => void updateProfile(patch)} onImport={() => setView("import")} />}
+            {view === "import" && <ImportPage value={importText} onChange={setImportText} busy={busy} onImport={async () => {
+              await importExam(importText);
+              await reload();
+              flash("试卷已导入");
+              setImportText("");
+              setView("practice");
+            }} />}
+            {view === "settings" && <Settings profile={boot.profile} theme={theme} probe={boot.probe} onProfile={(patch) => void updateProfile(patch)} onImport={() => setView("import")} />}
             {view === "mistakes" && <Mistakes onPractise={() => setView("practice")} />}
             {view === "vocab" && <Vocab />}
             {view === "intensive" && <Intensive exams={boot.exams} />}
