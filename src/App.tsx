@@ -319,6 +319,13 @@ export function App() {
               if (entries.length) void mistakeAdd(entries).catch(() => undefined);
             }
           }}
+          onLeave={(s) => {
+            setSession(s);
+            setReport(null);
+            setView(s.mode === "practice" ? "practice" : "mock");
+            void reload();
+            flash("进度已保存，可随时继续");
+          }}
         />
       </ErrorBoundary>
     );

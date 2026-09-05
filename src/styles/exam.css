@@ -47,8 +47,9 @@
 .toolbar { display: flex; gap: 7px; }
 .toolbar button { min-height: 30px; display: inline-flex; align-items: center; gap: 6px; padding: 0 10px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-ink); font-size: 10px; }
 .toolbar button:hover { border-color: var(--exam-accent); background: var(--exam-accent-soft); }
-.toolbar button:last-of-type { border-color: var(--exam-accent); background: var(--exam-accent); color: var(--exam-chrome-ink); }
-.exam.practice .toolbar button:last-of-type { border-color: var(--exam-answered); background: var(--exam-answered); }
+.toolbar button.finish-action { border-color: var(--exam-accent); background: var(--exam-accent); color: var(--exam-chrome-ink); }
+.exam.practice .toolbar button.finish-action { border-color: var(--exam-answered); background: var(--exam-answered); }
+.toolbar button.leave-button { border-color: var(--exam-line); background: var(--exam-panel-2); color: var(--exam-ink); }
 .toolbar button:disabled { opacity: .4; }
 .vol-wrap { display: flex; align-items: center; gap: 6px; color: var(--exam-muted); font-size: 10px; }
 .vol { width: 78px; accent-color: var(--exam-accent); }
@@ -177,6 +178,7 @@
 .nav-arrows .next-button { border-color: var(--exam-accent); background: var(--exam-accent); color: var(--exam-chrome-ink); }
 .nav-arrows .submit-button { border-color: var(--exam-answered); background: var(--exam-answered); color: var(--exam-panel); }
 .nav-arrows .finish-button { border-color: var(--exam-answered); color: var(--exam-answered); }
+.nav-arrows .leave-button { border-color: var(--exam-line); color: var(--exam-muted); }
 .flip { transform: rotate(180deg); }
 
 /* ------------------------------------------------------------- overlays */

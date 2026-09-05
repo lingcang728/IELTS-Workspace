@@ -24,6 +24,8 @@ interface Props {
   onPracticeScheme: (scheme: PracticeScheme) => void;
   onSession: (s: Session) => void;
   onExit: (s: Session, report?: ScoreReport) => void;
+  /** Save progress and return to the shell without scoring. */
+  onLeave: (s: Session) => void;
 }
 
 function fmt(ms: number) {
@@ -183,14 +185,14 @@ function ListeningPlayer({
   );
 }
 
-export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeScheme, onSession, onExit }: Props) {
+export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeScheme, onSession, onExit, onLeave }: Props) {
   const questions = useMemo(() => allQuestions(exam), [exam]);
   const [currentId, setCurrentId] = useState(questions[0]?.id ?? "");
   const [writingSectionId, setWritingSectionId] = useState(exam.sections[0]?.id ?? "");
   const [sel, setSel] = useState<{ start: number; end: number } | null>(null);
   const [menu, setMenu] = useState<{ x: number; y: number } | null>(null);
   const [noteOpen, setNoteOpen] = useState<string | null>(null);
-  const [confirm, setConfirm] = useState(false);
+  const [dialog, setDialog] = useState<null | "submit" | "leave">(null);
   // The bottom navigator can be collapsed, as in the official runtime.
   const [navOpen, setNavOpen] = useState(true);
   const [imgSrc, setImgSrc] = useState<string | null>(null);
@@ -374,7 +376,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       } catch (err) {
         submittingRef.current = false;
         patch({ saveError: `评分失败：${String(err)}` }, false);
-        setConfirm(false);
+        setDialog(null);
         return;
       }
       const next: Session = {
@@ -400,13 +402,38 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
           remainingMs: next.remainingMs,
           saveError: `提交保存失败，尚未离开考场。${String(err)}`,
         });
-        setConfirm(false);
+        setDialog(null);
         return;
       }
       onExit(next, report);
     },
     [exam.id, exam.module, onExit, onSession, patch],
   );
+
+  const leave = useCallback(async () => {
+    if (submittingRef.current) return;
+    audioRef.current?.pause();
+    const next: Session = {
+      ...sessionRef.current,
+      status: "in_progress",
+      saveError: null,
+      events: [
+        ...sessionRef.current.events,
+        { t: new Date().toISOString(), type: "pause", extra: "leave" },
+      ],
+    };
+    try {
+      await saveSession(next);
+    } catch (err) {
+      onSession({
+        ...sessionRef.current,
+        saveError: `退出保存失败，尚未离开考场。${String(err)}`,
+      });
+      setDialog(null);
+      return;
+    }
+    onLeave(next);
+  }, [onLeave, onSession]);
 
   useEffect(() => {
     if (session.status !== "in_progress") return;
@@ -764,7 +791,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
           <button ref={optionsButtonRef} type="button" aria-expanded={optionsOpen} onClick={() => setOptionsOpen((o) => !o)}>
             <Icon name="contrast" size={16} /> Display
           </button>
-          <button type="button" onClick={() => setConfirm(true)}>
+          <button type="button" className="leave-button" onClick={() => practice ? void leave() : setDialog("leave")}>
+            {practice ? "Save and exit" : "Leave test"}
+          </button>
+          <button type="button" className="finish-action" onClick={() => setDialog("submit")}>
             {practice ? "Finish practice" : "Submit test"}
           </button>
         </div>
@@ -1005,7 +1035,8 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         <div className="nav-arrows">
           <button type="button" className="previous-button" disabled={exam.module === "writing" ? exam.sections.findIndex((section) => section.id === currentSection?.id) <= 0 : navIndex <= 0} onClick={() => exam.module === "writing" ? setWritingSectionId(exam.sections[Math.max(0, exam.sections.findIndex((section) => section.id === currentSection?.id) - 1)]?.id ?? writingSectionId) : go(questions[Math.max(0, navIndex - 1)]?.id)}><Icon name="chevron" className="flip" size={16} />Previous</button>
           <button type="button" className="next-button" disabled={exam.module === "writing" ? exam.sections.findIndex((section) => section.id === currentSection?.id) >= exam.sections.length - 1 : navIndex >= questions.length - 1} onClick={() => exam.module === "writing" ? setWritingSectionId(exam.sections[Math.min(exam.sections.length - 1, exam.sections.findIndex((section) => section.id === currentSection?.id) + 1)]?.id ?? writingSectionId) : go(questions[Math.min(questions.length - 1, navIndex + 1)]?.id)}>Next<Icon name="chevron" size={16} /></button>
-          <button type="button" className={practice ? "finish-button" : "submit-button"} onClick={() => setConfirm(true)}>{practice ? "Finish practice" : "Submit test"}</button>
+          <button type="button" className="leave-button" onClick={() => practice ? void leave() : setDialog("leave")}>{practice ? "Save and exit" : "Leave test"}</button>
+          <button type="button" className={practice ? "finish-button" : "submit-button"} onClick={() => setDialog("submit")}>{practice ? "Finish practice" : "Submit test"}</button>
         </div>
         </div>
       </nav>
@@ -1039,7 +1070,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         />
       )}
 
-      {confirm && (
+      {dialog === "submit" && (
         <div className="confirm">
           <div className="box">
             <span className={`confirm-icon ${practice ? "practice" : "mock"}`}><Icon name={practice ? "check" : "lock"} size={24} /></span>
@@ -1049,8 +1080,25 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
               <button type="button" className="primary" onClick={() => void submit("manual")}>
                 {practice ? "Finish and review" : "Yes, submit test"}
               </button>
-              <button type="button" className="ghost" onClick={() => setConfirm(false)}>
+              <button type="button" className="ghost" onClick={() => setDialog(null)}>
                 Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {dialog === "leave" && (
+        <div className="confirm">
+          <div className="box">
+            <span className="confirm-icon mock"><Icon name="info" size={24} /></span>
+            <h2>Leave this mock test?</h2>
+            <p>This is not a submission. Your answers and remaining time will be saved, and you can continue later from Mock.</p>
+            <div className="row">
+              <button type="button" className="primary" onClick={() => void leave()}>
+                Leave and save
+              </button>
+              <button type="button" className="ghost" onClick={() => setDialog(null)}>
+                Stay
               </button>
             </div>
           </div>
