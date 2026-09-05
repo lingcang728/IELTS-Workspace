@@ -94,13 +94,16 @@ try {
   }
 
   New-Item -ItemType Directory -Force -Path $output | Out-Null
-  # 发布目录只放当前版本可分发产物。便携版是「exe 旁边就是 data」的设计，所以
-  # 只要有人直接在这里双击它，就会当场长出一个 data\。这里把非产物目录清掉，
-  # 但绝不静默删除有真实文件的 data\：那说明有人把它当安装目录在用。
+  # 发布目录只放当前版本可分发产物。本机使用时快捷方式直指 release/ 下的便携版，
+  # 运行时会在同级生成 data\ 存放做题记录与解压题库。
+  # 发布新版本时清理旧的 exe/latest 等文件，保留用户数据目录 data\；清理其他非预期的空目录或杂项。
   Get-ChildItem -LiteralPath $output -File -ErrorAction SilentlyContinue | Remove-Item -Force
   foreach ($stray in @(Get-ChildItem -LiteralPath $output -Directory -ErrorAction SilentlyContinue)) {
+    if ($stray.Name -ieq 'data') {
+      continue
+    }
     if (Get-ChildItem -LiteralPath $stray.FullName -File -Recurse -ErrorAction SilentlyContinue) {
-      throw "发布目录里有带数据的子目录：$($stray.FullName)。便携版请复制到别处再运行，确认后手动删除该目录。"
+      throw "发布目录里有非预期的子目录：$($stray.FullName)。确认后手动删除该目录。"
     }
     Remove-Item -LiteralPath $stray.FullName -Recurse -Force
   }

@@ -9,6 +9,17 @@ if (-not $SkipBuild) {
   if (-not (Test-Path -LiteralPath $tauri)) { throw "local Tauri CLI missing: $tauri" }
   & $tauri build --bundles nsis
   if ($LASTEXITCODE -ne 0) { throw "Tauri build failed with exit code $LASTEXITCODE" }
+
+  $metadata = cargo metadata --format-version 1 --no-deps --manifest-path (Join-Path $root 'src-tauri\Cargo.toml') | ConvertFrom-Json
+  if ($LASTEXITCODE -ne 0) { throw '无法解析 Cargo target 目录。' }
+  $target = [string]$metadata.target_directory
+  $binary = Join-Path $target 'release\IELTS Workspace.exe'
+  if (-not (Test-Path -LiteralPath $binary)) { throw "找不到编译出的 exe: $binary" }
+
+  $relDir = Join-Path $root 'release'
+  New-Item -ItemType Directory -Force -Path $relDir | Out-Null
+  $version = [string](Get-Content -LiteralPath (Join-Path $root 'package.json') -Raw | ConvertFrom-Json).version
+  Copy-Item -LiteralPath $binary -Destination (Join-Path $relDir "IELTS_Workspace_${version}_x64.exe") -Force
 }
 
 $version = [string](Get-Content -LiteralPath (Join-Path $root 'package.json') -Raw | ConvertFrom-Json).version
