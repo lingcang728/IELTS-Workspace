@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { makeHighlight, recoverHighlight } from "./highlight";
-import { codePointLength, sha256HexUtf8, toNfc, utf16ToCodePoint } from "./unicode";
+import { codePointLength, codePointToUtf16, sha256HexUtf8, sliceCodePoints, toNfc, utf16ToCodePoint } from "./unicode";
 
 describe("unicode offsets", () => {
   it("ASCII", () => {
@@ -30,6 +30,15 @@ describe("unicode offsets", () => {
   it("newlines are code points", () => {
     const s = toNfc("ab\ncd");
     expect(codePointLength(s)).toBe(5);
+  });
+
+  it("counts a surrogate pair as one code point", () => {
+    const s = toNfc("a😀b");
+    expect(codePointLength(s)).toBe(3);
+    expect(utf16ToCodePoint(s, s.length)).toBe(3);
+    expect(codePointToUtf16(s, 1)).toBe(1);
+    expect(codePointToUtf16(s, 2)).toBe(3);
+    expect(sliceCodePoints(s, 1, 2)).toBe("😀");
   });
 });
 

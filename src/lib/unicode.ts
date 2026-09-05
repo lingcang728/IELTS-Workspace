@@ -4,23 +4,47 @@ export function toNfc(text: string): string {
   return text.normalize("NFC");
 }
 
+function utf16Step(text: string, index: number): number {
+  const code = text.charCodeAt(index);
+  return code >= 0xd800 && code <= 0xdbff && index + 1 < text.length ? 2 : 1;
+}
+
 export function codePointLength(text: string): number {
-  return [...toNfc(text)].length;
+  const nfc = toNfc(text);
+  let i = 0;
+  let count = 0;
+  while (i < nfc.length) {
+    i += utf16Step(nfc, i);
+    count++;
+  }
+  return count;
 }
 
 export function utf16ToCodePoint(nfcText: string, utf16Index: number): number {
   const clamped = Math.max(0, Math.min(utf16Index, nfcText.length));
-  return [...nfcText.slice(0, clamped)].length;
+  let i = 0;
+  let count = 0;
+  while (i < clamped) {
+    i += utf16Step(nfcText, i);
+    count++;
+  }
+  return count;
 }
 
 export function codePointToUtf16(nfcText: string, codePointOffset: number): number {
-  const chars = [...nfcText];
-  const n = Math.max(0, Math.min(codePointOffset, chars.length));
-  return chars.slice(0, n).join("").length;
+  let i = 0;
+  let count = 0;
+  while (i < nfcText.length && count < codePointOffset) {
+    i += utf16Step(nfcText, i);
+    count++;
+  }
+  return i;
 }
 
 export function sliceCodePoints(nfcText: string, start: number, end: number): string {
-  return [...nfcText].slice(start, end).join("");
+  const a = codePointToUtf16(nfcText, start);
+  const b = codePointToUtf16(nfcText, end);
+  return nfcText.slice(a, b);
 }
 
 export async function sha256HexUtf8(nfcText: string): Promise<string> {

@@ -953,6 +953,15 @@ fn capture_test(s: &str) -> Option<u32> {
     for key in ["test", "t"] {
         let mut rest = n.as_str();
         while let Some(idx) = rest.find(key) {
+            // Single-letter `t` must sit on a token boundary. `part1` / `section1`
+            // contain a `t` followed by digits and must not be read as Test 1.
+            if key == "t" && idx > 0 {
+                let prev = rest.as_bytes()[idx - 1];
+                if prev.is_ascii_alphabetic() {
+                    rest = &rest[idx + 1..];
+                    continue;
+                }
+            }
             let after = &rest[idx + key.len()..];
             let digits: String = after.chars().take_while(|c| c.is_ascii_digit()).collect();
             if let Ok(test) = digits.parse::<u32>() {
@@ -1099,6 +1108,19 @@ mod tests {
         assert_eq!(parse_part("Section1"), Some(1));
         assert_eq!(parse_part("Part 3.m4a"), Some(3));
         assert_eq!(parse_part("c04-t1"), None);
+    }
+
+    #[test]
+    fn capture_test_ignores_t_inside_part() {
+        assert_eq!(capture_test("c04_part1"), None);
+        assert_eq!(capture_test("c04part2"), None);
+        assert_eq!(capture_test("section3"), None);
+        assert_eq!(capture_test("c04t1"), Some(1));
+        assert_eq!(capture_test("c04-t2"), Some(2));
+        assert_eq!(capture_test("test3"), Some(3));
+        assert_eq!(parse_book_test("c04_part1"), None);
+        assert_eq!(parse_book_test("c04t1_part2"), Some((4, 1)));
+        assert_eq!(parse_part("c04_part1"), Some(1));
     }
 
     #[test]

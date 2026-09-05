@@ -11,6 +11,32 @@ import type { Exam, Mistake, ScoreReport } from "./types";
 import { groupForQuestion, sectionForQuestion } from "./types";
 
 /** The sentence in `text` that contains `needle`, or undefined. */
+/** Same normalisation the scorer uses: trim, collapse spaces, lowercase. */
+export function normaliseAnswer(value: string) {
+  return value.trim().replace(/\s+/g, " ").toLowerCase();
+}
+
+/**
+ * Redo matching for the mistakes book. A single token still hits any
+ * alternative (`library` vs `the library` / `library`). A comma-separated
+ * multi-select (`A, C`) is compared as a set against the accepted list.
+ */
+export function attemptMatches(attempt: string, accepted: string[]): boolean {
+  const mine = normaliseAnswer(attempt);
+  if (!mine) return false;
+  const acceptedNorm = accepted.map(normaliseAnswer).filter(Boolean);
+  if (acceptedNorm.some((answer) => answer === mine)) return true;
+  const parts = attempt
+    .split(/[,;|/]+|\s+/)
+    .map(normaliseAnswer)
+    .filter(Boolean);
+  if (parts.length < 2 || acceptedNorm.length < 2) return false;
+  if (new Set(parts).size !== parts.length) return false;
+  if (parts.length !== acceptedNorm.length) return false;
+  const pool = new Set(acceptedNorm);
+  return parts.every((part) => pool.has(part));
+}
+
 export function sentenceContaining(text: string, needle: string): string | undefined {
   const hay = text.trim();
   const term = needle.trim();

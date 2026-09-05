@@ -33,8 +33,11 @@
 .timer-stack, .practice-clock { min-width: 145px; display: grid; justify-items: center; }
 .timer-stack > span, .practice-clock > span { color: var(--exam-muted); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }
 .timer { min-width: 96px; color: var(--exam-ink); font: 600 23px/1.2 var(--exam-mono); letter-spacing: .04em; text-align: center; font-variant-numeric: tabular-nums; }
-.timer.warn { margin-top: 3px; padding: 3px 9px; border-radius: 3px; background: var(--exam-warn); color: var(--exam-warn-ink); animation: pulse 1s steps(2) infinite; }
+.timer.warn { margin-top: 3px; padding: 3px 9px; border-radius: 3px; background: var(--exam-warn); color: var(--exam-warn-ink); }
+.timer.warn.flash { animation: pulse 1s steps(2) infinite; }
 .practice-clock strong { margin-top: 3px; color: var(--exam-answered); font-size: 12px; font-weight: 560; }
+.writing-header-metrics strong.warn { padding: 2px 7px; border-radius: 3px; background: var(--exam-warn); color: var(--exam-warn-ink); }
+.writing-header-metrics strong.warn.flash { animation: pulse 1s steps(2) infinite; }
 @keyframes pulse { 50% { opacity: .6; } }
 
 .writing-header-metrics { display: flex; align-items: center; justify-content: center; gap: 24px; }
@@ -93,7 +96,7 @@
 .choices input { margin-top: 3px; accent-color: var(--exam-accent); }
 .choice-letter { flex: 0 0 1.5rem; color: var(--exam-muted); font-variant-numeric: tabular-nums; }
 .choice-limit { margin: 8px 0 0 34px; color: var(--exam-muted); font-size: 12px; }
-.gap, .match, .layout-answer { min-width: 120px; height: 30px; margin: 0 4px; padding: 2px 8px; border: 1px solid var(--exam-line); border-radius: 3px; background: var(--exam-panel); color: var(--exam-ink); }
+.gap, .match, .layout-answer { min-width: 120px; min-height: 2.2em; height: auto; margin: 0 4px; padding: 2px 8px; border: 1px solid var(--exam-line); border-radius: 3px; background: var(--exam-panel); color: var(--exam-ink); }
 .match { display: block; width: min(100%, 36rem); min-width: min(100%, 18rem); height: auto; min-height: 32px; margin: 8px 0 0; }
 .gap { border-width: 0 0 1px; border-radius: 0; text-align: center; }
 .gap:focus, .match:focus, .layout-answer:focus { border-color: var(--exam-accent); outline: 0; background: var(--exam-accent-soft); }
@@ -149,10 +152,11 @@
 /* A horizontal scrollbar appears when the 40 numbers do not fit — the official
  * runtime does the same rather than dropping the navigator on narrow screens. */
 .question-strip { display: flex; gap: 6px; padding: 2px 1px 8px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--exam-line) transparent; }
-.question-strip button { position: relative; flex: 0 0 auto; width: 34px; height: 34px; padding-top: 3px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-nav-btn); color: var(--exam-ink); font: 11px var(--exam-mono); }
+.question-strip button { position: relative; overflow: hidden; flex: 0 0 auto; width: 34px; height: 34px; padding-top: 3px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-nav-btn); color: var(--exam-ink); font: 11px var(--exam-mono); }
 .question-strip button:hover { border-color: var(--exam-accent); }
-/* Answered → a bar ABOVE the number (2025 official Quick Guide). */
-.question-strip button.answered::before { position: absolute; top: 2px; right: 5px; left: 5px; height: 3px; border-radius: 2px; background: var(--exam-answered); content: ""; }
+/* Answered → a bar ABOVE the number (2025 official Quick Guide). Neutral ink, not green. */
+.question-strip button.answered::before { position: absolute; top: 2px; right: 5px; left: 5px; height: 3px; border-radius: 2px; background: var(--exam-ink); content: ""; }
+.question-strip button.flagged.answered::before { right: 9px; left: 9px; }
 .question-strip button.current { border-color: var(--exam-accent); background: var(--exam-accent-soft); box-shadow: 0 0 0 1px var(--exam-accent); font-weight: 700; }
 /* Flagged for review → the number is shown as a circle. */
 .question-strip button.flagged { border-color: var(--exam-flag); border-radius: 50%; color: var(--exam-flag); }
@@ -160,7 +164,7 @@
 .nav-legend span { width: 11px; height: 11px; display: inline-block; margin-left: 3px; border: 1px solid var(--exam-line); border-radius: 2px; background: var(--exam-nav-btn); }
 .nav-legend span:first-of-type { margin-left: 0; }
 .nav-legend .current-dot { border-color: var(--exam-accent); background: var(--exam-accent-soft); }
-.nav-legend .answered-dot { border-top: 3px solid var(--exam-answered); }
+.nav-legend .answered-dot { border-top: 3px solid var(--exam-ink); }
 .nav-legend .review-dot { border-color: var(--exam-flag); border-radius: 50%; }
 
 .exam-nav-row { flex: 0 0 56px; display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 18px; padding: 0 14px; border-top: 1px solid var(--exam-line-soft); }
@@ -216,9 +220,11 @@
 .labelling .hot { position: absolute; min-width: 28px; transform: translate(-50%,-50%); text-align: center; }
 .sr-only, .sr-fallback { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important; }
 
-@media (max-width: 980px) {
-  .exam-header { grid-template-columns: 1fr auto; }
-  .exam-header .right { grid-column: 1 / -1; display: none; }
+@media (max-width: 1200px) {
+  .exam-header { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; padding: 0 10px; }
+  .exam-title, .section-title { max-width: 140px; }
+  .exam-header .right { flex-wrap: wrap; justify-content: flex-end; }
+  .toolbar .leave-button { display: none; }
   .tool-hint, .practice-hint { display: none; }
   .nav-legend { display: none; }
 }

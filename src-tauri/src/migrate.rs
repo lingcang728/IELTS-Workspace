@@ -52,15 +52,12 @@ fn run_inner() -> Result<MigrationReport, AppError> {
     }
     for src in candidates {
         copy_verify_merge(&src, &dest)?;
-        fs::remove_dir_all(&src).map_err(|e| {
-            AppError::from(format!(
-                "数据已复制到 {}，但删除旧目录 {} 失败：{e}。旧数据仍保留，可稍后手动删除。",
-                dest.display(),
-                src.display()
-            ))
-        })?;
+        // Never delete the old tree. Rename it to a cold backup so non-whitelist
+        // files (exports, extra folders) survive, and dest-wins conflicts stay
+        // recoverable. The next launch no longer sees sidecar `data/`.
+        let bak = retire_source(&src)?;
         report.migrated = true;
-        report.from = Some(src.display().to_string());
+        report.from = Some(bak.display().to_string());
     }
     Ok(report)
 }
@@ -168,6 +165,30 @@ fn merge_into(staging: &Path, dest: &Path) -> Result<(), AppError> {
     Ok(())
 }
 
+/// Move `src` aside after a verified copy. Failure leaves the source intact.
+fn retire_source(src: &Path) -> Result<PathBuf, AppError> {
+    let parent = src.parent().unwrap_or(src);
+    let name = src
+        .file_name()
+        .map(|n| n.to_string_lossy().into_owned())
+        .unwrap_or_else(|| "data".into());
+    let mut bak = parent.join(format!("{name}.migrated.bak"));
+    if bak.exists() {
+        let ms = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .map(|d| d.as_millis())
+            .unwrap_or_default();
+        bak = parent.join(format!("{name}.migrated.bak.{ms}"));
+    }
+    fs::rename(src, &bak).map_err(|e| {
+        AppError::from(format!(
+            "数据已复制，但无法将旧目录改名为备份 {}：{e}。旧数据仍保留，可稍后手动删除。",
+            bak.display()
+        ))
+    })?;
+    Ok(bak)
+}
+
 fn merge_dir(from: &Path, to: &Path) -> Result<(), AppError> {
     fs::create_dir_all(to)?;
     for entry in fs::read_dir(from)? {
@@ -195,7 +216,7 @@ pub fn portable_to_installed() -> Result<PathBuf, AppError> {
 
 #[cfg(test)]
 mod tests {
-    use super::copy_verify_merge;
+    use super::{copy_verify_merge, retire_source};
     use std::fs;
 
     #[test]
@@ -225,5 +246,16 @@ mod tests {
         copy_verify_merge(&src, &dest).unwrap();
         let text = fs::read_to_string(dest.join("sessions/s-1.json")).unwrap();
         assert!(text.contains("from-dest"));
+    }
+
+    #[test]
+    fn retire_source_renames_instead_of_deleting() {
+        let tmp = tempfile::tempdir().unwrap();
+        let src = tmp.path().join("data");
+        fs::create_dir_all(src.join("exports")).unwrap();
+        fs::write(src.join("exports/report.html"), b"keep-me").unwrap();
+        let bak = retire_source(&src).unwrap();
+        assert!(!src.exists());
+        assert!(bak.join("exports/report.html").is_file());
     }
 }

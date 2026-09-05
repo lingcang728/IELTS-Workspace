@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
 import { MiniTrend } from "../components/Charts";
-import { rangeLabel } from "../lib/format";
+import { questionTypeLabel, rangeLabel } from "../lib/format";
 import type { AnalyticsReport } from "../lib/types";
 
 export function AnalyticsPage({ report, rangeDays, onRangeDays }: { report: AnalyticsReport | null; rangeDays: number; onRangeDays: (d: number) => void }) {
@@ -18,7 +18,7 @@ export function AnalyticsPage({ report, rangeDays, onRangeDays }: { report: Anal
       <option value={7}>过去 7 天</option><option value={30}>过去 30 天</option><option value={90}>过去 90 天</option><option value={365}>过去一年</option><option value={0}>全部记录</option>
     </select></label>
     <label className="select-field"><span className="sr-only">题型</span><select value={questionType} onChange={(e) => setQuestionType(e.target.value)}>
-      <option value="all">所有题型</option>{types.map((tp) => <option key={tp} value={tp}>{tp.replaceAll("_", " ")}</option>)}
+      <option value="all">所有题型</option>{types.map((tp) => <option key={tp} value={tp}>{questionTypeLabel(tp)}</option>)}
     </select></label>
   </div>;
   return <div className="analytics-page page-stack"><PageHeading title="分析报告" subtitle="基于你的练习与模考数据，全面分析学习表现，识别优势与薄弱环节。" aside={toolbar} />
@@ -31,7 +31,7 @@ export function AnalyticsPage({ report, rangeDays, onRangeDays }: { report: Anal
           <section className="workspace-card overall-card"><h2>总体表现</h2><strong className={report.overallAverage == null ? "no-data" : undefined}>{report.overallAverage?.toFixed(1) ?? "—"}</strong><p>{rangeLabel(rangeDays)}内 {sessionCount} 次已提交会话</p><small>非官方估算，按 schema/band-conversion.json 换算；口语未启用，不进入总分。{unbanded > 0 && ` 另有 ${unbanded} 次原始分低于换算表，未计入平均。`}</small></section>
         </div>
         <div className="analytics-grid lower">
-          <section className="workspace-card accuracy-card"><div className="card-heading"><h2>题型正确率</h2>{questionType !== "all" && <span className="meta">已筛选：{questionType.replaceAll("_", " ")}</span>}</div>{accuracyRows.length === 0 && <p className="meta">暂无题型数据</p>}{accuracyRows.slice(0, 12).map((row) => <div className="accuracy-row" key={`${row.module}-${row.questionType}`}><span>{row.module === "listening" ? "听力" : "阅读"} · {row.questionType.replaceAll("_", " ")}</span><i><b style={{ width: `${Math.round(row.accuracy * 100)}%` }} /></i><strong>{Math.round(row.accuracy * 100)}%</strong></div>)}</section>
+          <section className="workspace-card accuracy-card"><div className="card-heading"><h2>题型正确率</h2>{questionType !== "all" && <span className="meta">已筛选：{questionTypeLabel(questionType)}</span>}</div>{accuracyRows.length === 0 && <p className="meta">暂无题型数据</p>}{accuracyRows.slice(0, 12).map((row) => <div className="accuracy-row" key={`${row.module}-${row.questionType}`}><span>{row.module === "listening" ? "听力" : "阅读"} · {questionTypeLabel(row.questionType)}</span><i><b style={{ width: `${Math.round(row.accuracy * 100)}%` }} /></i><strong>{Math.round(row.accuracy * 100)}%</strong></div>)}</section>
         </div>
       </>}
   </div>;

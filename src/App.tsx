@@ -300,6 +300,7 @@ export function App() {
     return (
       <ErrorBoundary fallbackTitle="考场运行遇到异常" onReset={() => setView("home")}>
         <ExamApp
+          key={session.id}
           exam={exam}
           session={session}
           shellTheme={theme}
@@ -343,7 +344,7 @@ export function App() {
             {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
             {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
             {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
-            {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else setError("找不到这套试卷，无法重考"); }} />}
+            {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else flash("找不到这套试卷，无法重考"); }} />}
             {view === "import" && <ImportPage value={importText} onChange={setImportText} busy={busy} onImport={async () => {
               await importExam(importText);
               await reload();
@@ -356,9 +357,9 @@ export function App() {
             {view === "vocab" && <Vocab />}
             {view === "intensive" && <Intensive exams={boot.exams} />}
             {view === "studio" && <PromptStudio vocab={vocab} />}
-            {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => setError(String(e)))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => setError(String(e)))} />}
+            {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => flash(String(e)))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => flash(String(e)))} />}
             {view === "results" && (session ? (
-              <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} onRetake={() => { const found = boot.exams.find((row) => row.id === session.examId); if (found) void retakeExam(found, session.mode); else setError("找不到这套试卷，无法重考"); }} />
+              <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} onRetake={() => { const found = boot.exams.find((row) => row.id === session.examId); if (found) void retakeExam(found, session.mode); else flash("找不到这套试卷，无法重考"); }} />
             ) : (
               <div className="empty-wrap"><p className="meta">未选择考卷会话</p><button type="button" onClick={() => setView("home")}>返回工作台</button></div>
             ))}

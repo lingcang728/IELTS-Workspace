@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
 import { vocabAdd, vocabDelete, vocabDue, vocabList, vocabReview } from "../lib/api";
@@ -34,6 +34,7 @@ export function Vocab() {
   const [term, setTerm] = useState("");
   const [sentence, setSentence] = useState("");
   const [tab, setTab] = useState<"review" | "list">("review");
+  const grading = useRef(false);
 
   async function reload() {
     const [list, queue] = await Promise.all([
@@ -56,10 +57,15 @@ export function Vocab() {
   }, [card]);
 
   async function grade(value: VocabGrade) {
-    if (!card) return;
+    if (!card || grading.current) return;
+    grading.current = true;
     setFlipped(false);
-    await vocabReview(card.id, value).catch(() => undefined);
-    await reload();
+    try {
+      await vocabReview(card.id, value).catch(() => undefined);
+      await reload();
+    } finally {
+      grading.current = false;
+    }
   }
 
   async function add() {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { completion, isFinished, moduleLabel, sourceLabel } from "./format";
+import { completion, isFinished, moduleLabel, questionTypeLabel, sourceLabel } from "./format";
 import type { ExamSummary } from "./types";
 import type { SessionSummary } from "./types";
 
@@ -34,6 +34,14 @@ describe("moduleLabel", () => {
     expect(moduleLabel("reading")).toBe("阅读");
     expect(moduleLabel("listening")).toBe("听力");
     expect(moduleLabel("writing")).toBe("写作");
+  });
+});
+
+describe("questionTypeLabel", () => {
+  it("maps exam types to Chinese names in the shell", () => {
+    expect(questionTypeLabel("multi_choice")).toBe("多选题");
+    expect(questionTypeLabel("matching")).toBe("配对题");
+    expect(questionTypeLabel("unknown_type")).toBe("unknown type");
   });
 });
 

@@ -142,8 +142,22 @@ pub fn save_session_json(raw: &str) -> Result<String, AppError> {
         .and_then(Value::as_str)
         .ok_or_else(|| AppError::from("Session 缺少 id"))?;
     let path = session_path(id)?;
+    if path.exists() {
+        if let Ok(text) = fs::read_to_string(&path) {
+            if let Ok(existing) = serde_json::from_str::<Value>(&text) {
+                if is_submitted_downgrade(&existing, &value) {
+                    return Err(AppError::from("会话已交卷，不能覆盖为未提交状态"));
+                }
+            }
+        }
+    }
     atomic_write(&path, serde_json::to_vec_pretty(&value)?.as_slice())?;
     Ok(path.display().to_string())
+}
+
+fn is_submitted_downgrade(existing: &Value, incoming: &Value) -> bool {
+    existing.get("status").and_then(Value::as_str) == Some("submitted")
+        && incoming.get("status").and_then(Value::as_str) != Some("submitted")
 }
 
 pub fn load_session_json(id: &str) -> Result<String, AppError> {
@@ -444,5 +458,14 @@ mod tests {
         assert!(valid_iso_datetime("2026-08-26T10:00:00.000Z"));
         assert!(!valid_iso_datetime("tomorrow"));
         assert!(!valid_iso_datetime("2026/08/26"));
+    }
+
+    #[test]
+    fn refuses_to_downgrade_submitted_session() {
+        let submitted = serde_json::json!({"status": "submitted"});
+        let in_progress = serde_json::json!({"status": "in_progress"});
+        assert!(is_submitted_downgrade(&submitted, &in_progress));
+        assert!(!is_submitted_downgrade(&submitted, &submitted));
+        assert!(!is_submitted_downgrade(&in_progress, &submitted));
     }
 }

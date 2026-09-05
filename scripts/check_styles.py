@@ -72,6 +72,8 @@ def main() -> int:
                 if not token.startswith("--exam-") and token != "--font-scale":
                     failures.append(f"exam.css: reads {token}. The exam runtime is a separate "
                                     f"visual domain and may only read --exam-* tokens.")
+            if re.search(r"\.exam-header\s+\.right\s*\{[^}]*display\s*:\s*none", text, re.S):
+                failures.append("exam.css hides .exam-header .right — volume and Display must stay visible")
         else:
             for token in sorted(used):
                 if token.startswith("--exam-"):

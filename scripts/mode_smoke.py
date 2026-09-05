@@ -40,7 +40,8 @@ with sync_playwright() as playwright:
     for module, filename in captures:
         open_home(page)
         page.get_by_role("button", name="练习", exact=True).click()
-        page.get_by_role("button", name=module, exact=True).click()
+        labels = {"Reading": "阅读", "Writing": "写作", "Listening": "听力"}
+        page.get_by_role("button", name=labels.get(module, module), exact=True).click()
         started = perf_counter()
         page.locator(".catalog-row .module-button").first.click()
         page.wait_for_selector(f".exam-body.{module.lower()}", timeout=30_000)

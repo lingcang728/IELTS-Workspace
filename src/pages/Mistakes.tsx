@@ -1,19 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
 import { mistakeDelete, mistakeList, mistakeResolve } from "../lib/api";
-import { formatDate } from "../lib/format";
+import { formatDate, questionTypeLabel } from "../lib/format";
+import { attemptMatches } from "../lib/mistakes";
 import type { Mistake, ModuleKind } from "../lib/types";
-
-/** How the scorer compares answers: trim, collapse spaces, lowercase. Nothing else. */
-function normalise(value: string) {
-  return value.trim().replace(/\s+/g, " ").toLowerCase();
-}
-
-function isCorrect(attempt: string, accepted: string[]) {
-  const mine = normalise(attempt);
-  return mine.length > 0 && accepted.some((answer) => normalise(answer) === mine);
-}
 
 function answerText(value: Mistake["userAnswer"]) {
   if (value == null || value === "") return "（未作答）";
@@ -28,6 +19,7 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
   const [module, setModule] = useState<ModuleKind | "all">("all");
   const [attempts, setAttempts] = useState<Record<string, string>>({});
   const [verdict, setVerdict] = useState<Record<string, "ok" | "bad">>({});
+  const checking = useRef(false);
 
   async function reload() {
     setRows(await mistakeList().catch(() => []));
@@ -55,11 +47,17 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
   }, [rows]);
 
   async function check(row: Mistake) {
-    const attempt = attempts[row.id] ?? "";
-    const correct = isCorrect(attempt, row.acceptedAnswers);
-    setVerdict((v) => ({ ...v, [row.id]: correct ? "ok" : "bad" }));
-    await mistakeResolve(row.id, correct).catch(() => undefined);
-    await reload();
+    if (checking.current) return;
+    checking.current = true;
+    try {
+      const attempt = attempts[row.id] ?? "";
+      const correct = attemptMatches(attempt, row.acceptedAnswers);
+      setVerdict((v) => ({ ...v, [row.id]: correct ? "ok" : "bad" }));
+      await mistakeResolve(row.id, correct).catch(() => undefined);
+      await reload();
+    } finally {
+      checking.current = false;
+    }
   }
 
   if (rows === null) return <div className="page-stack"><PageHeading title="错题本" /></div>;
@@ -83,7 +81,7 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
       <div className="card-heading"><h2>薄弱题型</h2><span className="meta">按待攻克错题数排序</span></div>
       <div className="weakness-list">{byType.slice(0, 6).map(([type, count]) => <button
         key={type} type="button" className="weakness-row" onClick={() => onPractise(type)}>
-        <span>{type.replaceAll("_", " ")}</span>
+        <span>{questionTypeLabel(type)}</span>
         <i><b style={{ width: `${Math.min(100, (count / byType[0][1]) * 100)}%` }} /></i>
         <strong>{count} 题</strong>
         <Icon name="arrow" size={15} />
@@ -96,7 +94,7 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
           <p>提交一次听力或阅读后，答错的题会自动收录到这里，并带上原文出处。</p></div>
       : <div className="mistake-list">{visible.map((row) => <article className="workspace-card mistake-row" key={row.id}>
           <header>
-            <span className={`mode-label ${row.module === "listening" ? "" : "practice"}`}>{row.questionType.replaceAll("_", " ")}</span>
+            <span className={`mode-label ${row.module === "listening" ? "" : "practice"}`}>{questionTypeLabel(row.questionType)}</span>
             <h3>Q{row.number} · {row.examTitle || row.examId}</h3>
             <small>{formatDate(row.updatedAt)} · 错 {row.timesWrong} 次 · 连对 {row.streak}/3</small>
           </header>

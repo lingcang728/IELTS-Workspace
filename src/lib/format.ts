@@ -17,6 +17,20 @@ export function moduleLabel(module: ExamSummary["module"]) {
   return ({ reading: "阅读", listening: "听力", writing: "写作", speaking: "口语" } as const)[module];
 }
 
+const QUESTION_TYPE_LABELS: Record<string, string> = {
+  single_choice: "单选题",
+  multi_choice: "多选题",
+  true_false_ng: "判断题 T/F/NG",
+  yes_no_ng: "判断题 Y/N/NG",
+  completion: "填空题",
+  matching: "配对题",
+  labelling: "标注题",
+};
+
+export function questionTypeLabel(type: string) {
+  return QUESTION_TYPE_LABELS[type] ?? type.replaceAll("_", " ");
+}
+
 export function durationLabel(exam: ExamSummary) {
   if (exam.durationMs) return `${Math.round(exam.durationMs / 60000)} 分钟`;
   if (exam.module === "listening") return "约 30 分钟";

@@ -14,6 +14,7 @@ import type {
 } from "../lib/types";
 import type { UiTheme } from "../lib/view";
 import { allQuestions, sectionForQuestion } from "../lib/types";
+import { clampPlaybackTime, timerWarningState } from "../lib/examRuntime";
 import { QuestionGroupView } from "./questions";
 
 interface Props {
@@ -87,8 +88,10 @@ function ExamClock({
 }) {
   const compute = useCallback(() => {
     const vis = readVisibleRemainingMs(sessionRef, audioRef, listeningMediaClock, mediaCheckMs, laterTracksMs);
-    const warn = !vis.loading && timeWarningsMs.some((w) => vis.ms <= w);
-    return { ...vis, warn };
+    const { warn, flash } = vis.loading
+      ? { warn: false, flash: false }
+      : timerWarningState(vis.ms, timeWarningsMs);
+    return { ...vis, warn, flash };
   }, [sessionRef, audioRef, listeningMediaClock, mediaCheckMs, laterTracksMs, timeWarningsMs]);
 
   const [view, setView] = useState(compute);
@@ -102,7 +105,7 @@ function ExamClock({
   if (variant === "writing") {
     return (
       <div className="writing-header-metrics">
-        <span><Icon name="clock" size={22} /><small>Time remaining</small><strong>{fmt(view.ms)}</strong></span>
+        <span><Icon name="clock" size={22} /><small>Time remaining</small><strong className={view.warn ? `warn${view.flash ? " flash" : ""}` : undefined}>{fmt(view.ms)}</strong></span>
         <span><Icon name="wordcount" size={22} /><small>Word count</small><strong>{wordCount ?? 0}</strong></span>
       </div>
     );
@@ -111,7 +114,7 @@ function ExamClock({
   return (
     <div className="timer-stack">
       <span>Time remaining</span>
-      <div className={`timer ${view.warn ? "warn" : ""}`} aria-live="polite">
+      <div className={`timer${view.warn ? " warn" : ""}${view.flash ? " flash" : ""}`} aria-live="polite">
         {view.loading ? "Loading…" : fmt(view.ms)}
       </div>
     </div>
@@ -210,6 +213,8 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   const submittingRef = useRef(false);
   const [splitPercent, setSplitPercent] = useState<number>(50);
   const isDraggingGutter = useRef(false);
+  const gutterCleanup = useRef<(() => void) | null>(null);
+  const audioLockSec = useRef(0);
   const sessionRef = useRef(session);
   const parentSessionRef = useRef(session);
   if (parentSessionRef.current !== session) {
@@ -217,11 +222,17 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     parentSessionRef.current = session;
   }
 
-  // Cleanup audio decoders and media buffers when leaving exam runtime
+  // Cleanup audio decoders and media buffers when leaving exam runtime.
+  // Read refs inside cleanup so a later-assigned preload element is released.
   useEffect(() => {
-    const a1 = audioRef.current;
-    const a2 = nextAudioRef.current;
     return () => {
+      gutterCleanup.current?.();
+      if (persistTimer.current) {
+        window.clearTimeout(persistTimer.current);
+        persistTimer.current = null;
+      }
+      const a1 = audioRef.current;
+      const a2 = nextAudioRef.current;
       if (a1) {
         a1.pause();
         a1.removeAttribute("src");
@@ -303,6 +314,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     if (!playback) return;
     const track = playback.tracks[trackIndex];
     if (!track) return;
+    audioLockSec.current = 0;
     setAudioSrc(localMediaSrc(track.path));
     const next = playback.mode === "parts" ? playback.tracks[trackIndex + 1] : undefined;
     if (nextAudioRef.current) {
@@ -340,20 +352,26 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       sessionRef.current = next;
       onSession(next);
       if (!persist) return;
+      if (submittingRef.current || next.status === "submitted") return;
       if (persistTimer.current) window.clearTimeout(persistTimer.current);
       persistTimer.current = window.setTimeout(() => {
-        saveSession(next)
+        if (submittingRef.current) return;
+        const snap = sessionRef.current;
+        if (snap.status === "submitted") return;
+        saveSession(snap)
           .then(() => {
             if (sessionRef.current.saveError) {
               onSession({ ...sessionRef.current, saveError: null });
             }
           })
           .catch((err) => {
+            if (submittingRef.current || sessionRef.current.status === "submitted") return;
             onSession({
               ...sessionRef.current,
               saveError: String(err),
             });
             window.setTimeout(() => {
+              if (submittingRef.current || sessionRef.current.status === "submitted") return;
               saveSession(sessionRef.current).catch(() => undefined);
             }, 1500);
           });
@@ -366,6 +384,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     async (reason: "manual" | "force") => {
       if (submittingRef.current) return;
       submittingRef.current = true;
+      if (persistTimer.current) {
+        window.clearTimeout(persistTimer.current);
+        persistTimer.current = null;
+      }
       const answers: Record<string, unknown> = {};
       for (const [id, a] of Object.entries(sessionRef.current.answers)) {
         answers[id] = a.value;
@@ -395,6 +417,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       };
       try {
         await saveSession(next);
+        sessionRef.current = next;
       } catch (err) {
         submittingRef.current = false;
         onSession({
@@ -412,6 +435,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
   const leave = useCallback(async () => {
     if (submittingRef.current) return;
+    if (persistTimer.current) {
+      window.clearTimeout(persistTimer.current);
+      persistTimer.current = null;
+    }
     audioRef.current?.pause();
     const next: Session = {
       ...sessionRef.current,
@@ -490,11 +517,13 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       tickQuiet(left);
     }, 250);
     const persistId = window.setInterval(() => {
+      if (submittingRef.current || sessionRef.current.status === "submitted") return;
       saveSession(sessionRef.current).catch((err) =>
         patch({ saveError: String(err) }, false),
       );
     }, 5000);
     const onHide = () => {
+      if (submittingRef.current || sessionRef.current.status === "submitted") return;
       saveSession(sessionRef.current).catch((err) =>
         patch({ saveError: String(err) }, false),
       );
@@ -509,7 +538,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     };
   }, [exam.module, exam.policy.endCondition, exam.policy.timeWarningsMs, patch, pausedLocal, policy.pauseAllowed, policy.forceSubmit, session.audio?.ended, session.status, submit]);
 
-  function setAnswer(questionId: string, value: string | string[] | null) {
+  const setAnswer = useCallback((questionId: string, value: string | string[] | null) => {
     const q = questions.find((x) => x.id === questionId);
     const currentAnswers = sessionRef.current.answers;
     const answers = {
@@ -523,7 +552,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       },
     };
     patch({ answers });
-  }
+  }, [questions, patch]);
 
   function toggleFlag() {
     if (!current) return;
@@ -642,6 +671,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
   const onGutterMouseDown = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
+    gutterCleanup.current?.();
     isDraggingGutter.current = true;
     const onMouseMove = (moveEvent: MouseEvent) => {
       if (!isDraggingGutter.current) return;
@@ -655,9 +685,16 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       isDraggingGutter.current = false;
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("mouseup", onMouseUp);
+      gutterCleanup.current = null;
     };
     window.addEventListener("mousemove", onMouseMove);
     window.addEventListener("mouseup", onMouseUp);
+    gutterCleanup.current = () => {
+      isDraggingGutter.current = false;
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("mouseup", onMouseUp);
+      gutterCleanup.current = null;
+    };
   }, []);
 
   const navIndex = Math.max(0, questions.findIndex((q) => q.id === currentId));
@@ -957,10 +994,17 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                 if (pos > 0.4 && pos < el.duration) {
                   el.currentTime = pos;
                 }
+                audioLockSec.current = el.currentTime;
                 restoredRef.current = true;
               }}
               onTimeUpdate={(e) => {
                 const el = e.currentTarget;
+                const clamped = clampPlaybackTime(el.currentTime, audioLockSec.current, policy.audioSeekAllowed);
+                if (clamped.snapped) {
+                  el.currentTime = clamped.time;
+                  return;
+                }
+                audioLockSec.current = clamped.lock;
                 const ms = el.currentTime * 1000;
                 const partIndex = trackIndex;
                 const prev = sessionRef.current.audio;
@@ -969,11 +1013,6 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                     ...sessionRef.current,
                     audio: { positionMs: ms, partIndex, ended: false },
                   };
-                }
-                if (policy.audioSeekAllowed) return;
-                const locked = sessionRef.current.audio;
-                if (locked && el.currentTime + 0.4 < (locked.positionMs ?? 0) / 1000) {
-                  el.currentTime = (locked.positionMs ?? 0) / 1000;
                 }
               }}
               controls={false}

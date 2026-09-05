@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { getCurrentWindow } from "@tauri-apps/api/window";
 
 export type IconName =
@@ -6,7 +6,7 @@ export type IconName =
   | "folder" | "shield" | "database" | "info" | "arrow" | "history" | "settings"
   | "search" | "target" | "check" | "pause" | "play" | "eye" | "rotate" | "lock"
   | "chevron" | "expand" | "minus" | "close" | "bookmark" | "volume" | "help"
-  | "contrast" | "document" | "wordcount";
+  | "contrast" | "document" | "wordcount" | "maximize" | "restore";
 
 const paths: Record<IconName, ReactNode> = {
   grid: <><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></>,
@@ -41,6 +41,8 @@ const paths: Record<IconName, ReactNode> = {
   contrast: <><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 0 0 17Z" fill="currentColor" stroke="none"/></>,
   document: <><path d="M6 3.5h8l4 4V21H6Z"/><path d="M14 3.5V8h4M9 12h6M9 15.5h6"/></>,
   wordcount: <><circle cx="12" cy="12" r="8.5"/><path d="m9.5 9.5 5 5M14.5 9.5l-5 5"/></>,
+  maximize: <rect x="6" y="6" width="12" height="12" rx="1.2"/>,
+  restore: <><path d="M9 6h8v8"/><rect x="5" y="9" width="10" height="10" rx="1.2"/></>,
 };
 
 export function Icon({ name, size = 20, className = "" }: { name: IconName; size?: number; className?: string }) {
@@ -69,18 +71,32 @@ export async function runWindowAction(action: "minimize" | "maximize" | "fullscr
 }
 
 export function WindowControls({ beforeClose }: { beforeClose?: () => void | Promise<void> }) {
+  const [maximized, setMaximized] = useState(false);
+  useEffect(() => {
+    if (!("__TAURI_INTERNALS__" in window)) return;
+    const win = getCurrentWindow();
+    let unlisten: (() => void) | undefined;
+    void win.isMaximized().then(setMaximized).catch(() => undefined);
+    void win.onResized(() => {
+      void win.isMaximized().then(setMaximized).catch(() => undefined);
+    }).then((fn) => { unlisten = fn; }).catch(() => undefined);
+    return () => { unlisten?.(); };
+  }, []);
   async function act(action: "minimize" | "maximize" | "close") {
     try {
       if (action === "close") await beforeClose?.();
       await runWindowAction(action);
+      if (action === "maximize" && "__TAURI_INTERNALS__" in window) {
+        setMaximized(await getCurrentWindow().isMaximized());
+      }
     } catch (error) {
       if (!("__TAURI_INTERNALS__" in window)) return;
-      console.error(`Window action ${action} failed`, error);
+      console.error(`窗口操作失败：${action}`, error);
     }
   }
   return <div className="window-actions">
     <button type="button" aria-label="最小化" title="最小化" onClick={() => void act("minimize")}><Icon name="minus" size={16} /></button>
-    <button type="button" aria-label="最大化或还原" title="最大化或还原" onClick={() => void act("maximize")}><span className="maximize-glyph" /></button>
+    <button type="button" aria-label={maximized ? "还原" : "最大化"} title={maximized ? "还原" : "最大化"} onClick={() => void act("maximize")}><Icon name={maximized ? "restore" : "maximize"} size={16} className={`maximize-glyph${maximized ? " restore" : ""}`} /></button>
     <button type="button" aria-label="关闭" title="关闭" onClick={() => void act("close")}><Icon name="close" size={17} /></button>
   </div>;
 }

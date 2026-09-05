@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { mistakesFromReport, sentenceContaining } from "./mistakes";
+import { attemptMatches, mistakesFromReport, sentenceContaining } from "./mistakes";
 import type { Exam, ScoreReport } from "./types";
 
 const passage =
@@ -78,6 +78,20 @@ describe("sentenceContaining", () => {
   it("falls back to a window when there is no sentence boundary", () => {
     const notes = "ADDRESS 48 North Avenue Westsea POSTCODE WS6 2YH";
     expect(sentenceContaining(notes, "North Avenue")).toContain("North Avenue");
+  });
+});
+
+describe("attemptMatches", () => {
+  it("matches a single alternative the same way as the scorer", () => {
+    expect(attemptMatches("Library", ["the library", "library"])).toBe(true);
+    expect(attemptMatches("museum", ["the library", "library"])).toBe(false);
+  });
+
+  it("treats comma-separated letters as a set for multi-select", () => {
+    expect(attemptMatches("A, C", ["A", "C"])).toBe(true);
+    expect(attemptMatches("C A", ["A", "C"])).toBe(true);
+    expect(attemptMatches("A, B", ["A", "C"])).toBe(false);
+    expect(attemptMatches("A", ["A", "C"])).toBe(true);
   });
 });
 

@@ -10,6 +10,9 @@ use crate::error::AppError;
 use crate::srs::{self, Grade, Memory};
 use crate::store;
 use serde_json::{json, Value};
+use std::sync::atomic::AtomicU64;
+
+static FEEDBACK_SEQ: AtomicU64 = AtomicU64::new(0);
 
 /// Consecutive correct answers before a mistake leaves the active book. Three
 /// is the point where a re-do stops being recall of the last attempt.
@@ -341,7 +344,12 @@ pub fn plan_save(plan_json: String) -> Result<Value, AppError> {
 pub fn feedback_save(entry_json: String) -> Result<Value, AppError> {
     let mut entry: Value = serde_json::from_str(&entry_json)?;
     if entry.get("id").and_then(Value::as_str).is_none() {
-        entry["id"] = json!(format!("f-{}", epoch_day_now() * 1_000_000 + (now_iso().len() as i64)));
+        let ms = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .map(|d| d.as_millis())
+            .unwrap_or_default();
+        let seq = FEEDBACK_SEQ.fetch_add(1, std::sync::atomic::Ordering::Relaxed);
+        entry["id"] = json!(format!("f-{ms}-{seq}"));
     }
     entry["savedAt"] = json!(now_iso());
     store::save("feedback", &entry)?;

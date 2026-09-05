@@ -41,7 +41,18 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
   const audio = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
+    return () => {
+      const el = audio.current;
+      if (!el) return;
+      el.pause();
+      el.removeAttribute("src");
+      el.load();
+    };
+  }, []);
+
+  useEffect(() => {
     if (!examId) return;
+    audio.current?.pause();
     let live = true;
     setExam(null); setTranscript(null); setSrc(""); setPlay(null); setPart(0); setTyped(""); setChecked(false);
     void (async () => {

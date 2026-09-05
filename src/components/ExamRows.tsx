@@ -131,7 +131,7 @@ function FlatCatalogGroup({
 }) {
   const exams = group.tests.flatMap((test) => test.exams);
   return (
-    <section className="workspace-card catalog-book">
+    <section className="workspace-card catalog-book catalog-book-flat">
       <div className="catalog-book-head">
         <h2>{group.label}</h2>
         <span>{exams.length} 套</span>

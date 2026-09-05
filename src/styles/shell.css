@@ -13,7 +13,7 @@
 .window-actions button { width: 46px; height: 100%; display: grid; place-items: center; padding: 0; border: 0; background: transparent; color: var(--muted); }
 .window-actions button:hover { background: var(--panel-hover); color: var(--ink); }
 .window-actions button:last-child:hover { background: var(--danger); color: var(--accent-ink); }
-.maximize-glyph { width: 10px; height: 10px; border: 1.4px solid currentColor; }
+.maximize-glyph { display: block; }
 
 .app-frame { min-height: 0; flex: 1; display: grid; grid-template-columns: clamp(196px, 15vw, 236px) minmax(0, 1fr); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); }
 .sidebar { min-height: 0; display: flex; flex-direction: column; border-right: 1px solid var(--line-strong); background: var(--bg-2); }
@@ -33,10 +33,10 @@
 
 .workspace-main { min-width: 0; min-height: 0; display: flex; flex-direction: column; overflow: hidden; padding: 18px 22px 0; }
 .workspace-main > .page-stack { min-height: 0; flex: 1; overflow-x: hidden; overflow-y: auto; scrollbar-color: var(--line-strong) transparent; }
-.page-stack { min-height: 100%; display: flex; flex-direction: column; gap: 12px; animation: page-enter .22s ease-out both; }
+.page-stack { min-height: 100%; display: flex; flex-direction: column; align-items: stretch; gap: 12px; animation: page-enter .22s ease-out both; }
 @keyframes page-enter { from { transform: translateY(3px); } }
 
-.page-heading { min-height: 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 4px 4px; }
+.page-heading { flex: 0 0 auto; min-height: min-content; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 0 4px 8px; }
 .page-heading h1 { margin: 0; color: var(--ink); font-size: clamp(22px, 1.7vw, 28px); font-weight: 650; letter-spacing: -.025em; }
 .page-heading p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
 .page-heading p em { color: var(--ink); font-style: normal; font-weight: 600; }

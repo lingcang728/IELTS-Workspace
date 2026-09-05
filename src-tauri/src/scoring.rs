@@ -165,6 +165,40 @@ fn accepted_list(question: &Value, group: &Value) -> Vec<String> {
         .unwrap_or_default()
 }
 
+fn answer_tokens(value: Option<&Value>) -> Vec<String> {
+    let unnested = match value {
+        Some(Value::Object(map)) if map.contains_key("value") => map.get("value"),
+        other => other,
+    };
+    match unnested {
+        None | Some(Value::Null) => Vec::new(),
+        Some(Value::String(s)) => {
+            let n = normalize_answer(s);
+            if n.is_empty() {
+                Vec::new()
+            } else {
+                vec![n]
+            }
+        }
+        Some(Value::Number(n)) => vec![normalize_answer(&n.to_string())],
+        Some(Value::Bool(b)) => vec![normalize_answer(&b.to_string())],
+        Some(Value::Array(arr)) => arr
+            .iter()
+            .filter_map(Value::as_str)
+            .map(normalize_answer)
+            .filter(|s| !s.is_empty())
+            .collect(),
+        Some(other) => {
+            let n = normalize_answer(&other.to_string());
+            if n.is_empty() {
+                Vec::new()
+            } else {
+                vec![n]
+            }
+        }
+    }
+}
+
 fn value_to_compare(value: Option<&Value>) -> Option<String> {
     let unnested = match value {
         Some(Value::Object(map)) if map.contains_key("value") => map.get("value"),
@@ -222,7 +256,7 @@ fn score_in_either_order(
         }
     }
 
-    let accepted_display: Vec<String> = group
+    let mut accepted_display: Vec<String> = group
         .get("acceptedAnswers")
         .and_then(Value::as_array)
         .map(|list| {
@@ -232,6 +266,17 @@ fn score_in_either_order(
                 .collect()
         })
         .unwrap_or_default();
+    if accepted_display.is_empty() {
+        for q in questions {
+            if let Some(list) = q.get("acceptedAnswers").and_then(Value::as_array) {
+                for item in list.iter().filter_map(Value::as_str) {
+                    if !item.is_empty() && !accepted_display.iter().any(|a| a == item) {
+                        accepted_display.push(item.to_string());
+                    }
+                }
+            }
+        }
+    }
 
     for q in questions {
         let id = q.get("id").and_then(Value::as_str).unwrap_or("").to_string();
@@ -242,14 +287,11 @@ fn score_in_either_order(
             .unwrap_or("unknown")
             .to_string();
         let user_val = answers.get(&id).cloned();
-        let given = value_to_compare(user_val.as_ref()).map(|s| normalize_answer(&s));
         let mut correct = false;
-        if let Some(g) = given {
-            if !g.is_empty() {
-                if let Some(pos) = remaining.iter().position(|a| a == &g) {
-                    remaining.remove(pos);
-                    correct = true;
-                }
+        for g in answer_tokens(user_val.as_ref()) {
+            if let Some(pos) = remaining.iter().position(|a| a == &g) {
+                remaining.remove(pos);
+                correct = true;
             }
         }
         out.push(QuestionScore {
@@ -399,6 +441,28 @@ mod tests {
         assert_eq!(report.raw_correct, 1);
         let report = score_exam(&exam, &json!({"q21":"A","q22":"C"})).unwrap();
         assert_eq!(report.raw_correct, 0);
+    }
+
+    #[test]
+    fn in_either_order_unpacks_single_letter_arrays() {
+        let exam = either_order_exam();
+        let report = score_exam(&exam, &json!({"q21":["D"],"q22":["B"]})).unwrap();
+        assert_eq!(report.raw_correct, 2);
+    }
+
+    #[test]
+    fn in_either_order_display_falls_back_to_questions() {
+        let exam = exam_with_group(json!({
+            "id": "g-either",
+            "scoringPolicy": "in_either_order",
+            "questions": [
+                { "id": "q21", "number": 21, "type": "multi_choice", "acceptedAnswers": ["B"] },
+                { "id": "q22", "number": 22, "type": "multi_choice", "acceptedAnswers": ["D"] }
+            ]
+        }));
+        let report = score_exam(&exam, &json!({"q21":"B","q22":"D"})).unwrap();
+        assert_eq!(report.raw_correct, 2);
+        assert_eq!(report.questions[0].accepted_answers, vec!["B", "D"]);
     }
 
     fn either_order_exam() -> Value {
