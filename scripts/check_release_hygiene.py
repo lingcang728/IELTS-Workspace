@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Release hygiene gate:
 1. Validates version consistency across package.json, tauri.conf.json, site/package.json, Cargo.toml.
-2. Ensures release/ directory contains no leftover binaries.
+2. Packages live only in repo-root release/, current version only; output/release must be empty.
 3. Scans src/ and src-tauri/ for unauthorized external network calls.
 4. Ensures site/src/App.tsx points to current version without dead links.
 """
@@ -38,12 +38,22 @@ def main() -> int:
         if v != pkg_ver:
             errors.append(f"版本不一致：package.json 为 {pkg_ver}，而 {k} 为 {v}")
 
-    # 2. 检查 release/ 目录下不得有安装包或便携版遗留 (AGENTS.md 第 1 条)
+    # 2. 安装包只放仓库根 release/，且只能是当前版本。
+    allowed_exes = {
+        f"IELTS_Workspace_{pkg_ver}_x64.exe",
+        f"IELTS_Workspace_{pkg_ver}_x64-setup.exe",
+    }
+    out_rel = ROOT / "output" / "release"
+    if out_rel.exists():
+        leftover = [p.name for p in out_rel.iterdir() if p.is_file()]
+        if leftover:
+            errors.append(f"安装包应放在 release/，发现 output/release/ 残留：{leftover}")
     release_dir = ROOT / "release"
     if release_dir.exists():
-        stray_bins = list(release_dir.glob("*.exe")) + list(release_dir.glob("*.zip")) + list(release_dir.glob("*.msi"))
-        if stray_bins:
-            errors.append(f"release/ 目录严禁保留安装包或便携版，发现遗留：{[b.name for b in stray_bins]}")
+        bins = list(release_dir.glob("*.exe")) + list(release_dir.glob("*.zip")) + list(release_dir.glob("*.msi"))
+        extra = [p.name for p in bins if p.name not in allowed_exes]
+        if extra:
+            errors.append(f"release/ 只许保留当前版本 {pkg_ver}，发现多余：{extra}")
 
     # 3. 扫描 src/ 下的前端代码，严禁未授权网络请求 (AGENTS.md 第 8 条)
     disallowed_network = re.compile(r"\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(", re.I)
@@ -64,7 +74,7 @@ def main() -> int:
         for err in errors:
             print(f"FAIL [Hygiene]: {err}", file=sys.stderr)
         return 1
-    print(f"Release hygiene ok: 版本严格一致 ({pkg_ver})，release/ 纯净，网络边界密封")
+    print(f"Release hygiene ok: 版本严格一致 ({pkg_ver})，release/ 仅当前版，网络边界密封")
     return 0
 
 if __name__ == "__main__":

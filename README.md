@@ -14,7 +14,7 @@ Windows 上的雅思 Academic 机考练习软件。试卷和作答都在本机�
 
 系统：Windows 10 / 11，64 位。推荐安装版。
 
-到 [Releases](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载：
+到 [Releases](https://github.com/lingcang728/IELTS-Workspace/releases/latest) 下载。本机刚打好的当前版本在仓库 `release/` 目录，只保留最新一版：
 
 | 包 | 文件 | 数据放哪 |
 | --- | --- | --- |

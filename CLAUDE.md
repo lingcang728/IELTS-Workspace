@@ -14,7 +14,7 @@ npx vitest run -t "recovers by context"         # single test by name
 cargo test --manifest-path src-tauri/Cargo.toml # Rust tests
 npm run verify           # vitest + cargo test (the minimal gate)
 .\verify.ps1             # full gate: cambridge corpus + vitest + cargo + tsc + build
-npm run package:release  # signed NSIS + portable + latest.json → output/release/
+npm run package:release  # signed NSIS + portable + latest.json → release/
 ```
 
 `.\verify.ps1` is the gate `package-release.ps1` runs before every release build; run it before claiming a change is done. It skips `verify_cambridge.py` when `fixtures/cambridge/` is absent (CI, fresh clone). 维护步骤、发布、题库 ratchet 见 `docs/维护与发布指南.md`。

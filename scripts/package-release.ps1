@@ -1,5 +1,5 @@
 param(
-  [string]$OutputDirectory = 'output\release'
+  [string]$OutputDirectory = 'release'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -94,10 +94,9 @@ try {
   }
 
   New-Item -ItemType Directory -Force -Path $output | Out-Null
-  # 发布目录只放可分发产物。便携版是「exe 旁边就是 data」的设计，所以只要有人
-  # 直接在这里双击它，就会当场长出一个 data\ —— 用户数据和发布产物混在同一个
-  # 文件夹里，下次发布时谁也说不清哪个该删。这里把非产物目录清掉，但绝不静默
-  # 删除有真实文件的 data\：那说明有人把它当安装目录在用，应当由人来决定。
+  # 发布目录只放当前版本可分发产物。便携版是「exe 旁边就是 data」的设计，所以
+  # 只要有人直接在这里双击它，就会当场长出一个 data\。这里把非产物目录清掉，
+  # 但绝不静默删除有真实文件的 data\：那说明有人把它当安装目录在用。
   Get-ChildItem -LiteralPath $output -File -ErrorAction SilentlyContinue | Remove-Item -Force
   foreach ($stray in @(Get-ChildItem -LiteralPath $output -Directory -ErrorAction SilentlyContinue)) {
     if (Get-ChildItem -LiteralPath $stray.FullName -File -Recurse -ErrorAction SilentlyContinue) {

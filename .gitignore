@@ -10,6 +10,8 @@ portable/
 release/*.exe
 release/*.zip
 release/*.msi
+release/*.sig
+release/latest.json
 *.log
 .DS_Store
 Thumbs.db

@@ -7,18 +7,16 @@
 ## 1. 发布纪律：新包出来，旧包立刻删
 
 > **每次打出新包并确认完成后，即刻删除旧包。**
-> `output/release/` 与 `release/` 下**不得同时存在两个版本**的安装包或便携版。
+> 安装包只放仓库根目录 `release/`，且**只保留当前版本**。禁止再写 `output/release/`。
 
 原因：两个版本的 exe 同时躺在磁盘上，早晚会双击错一个，然后拿着旧版本调试新问题。这不是洁癖，是防止浪费一整个下午。
 
 执行顺序：
 
-1. `npm run package:release` 产出新包到 `output/release/`。
+1. `npm run package:release` 产出新包到 `release/`（setup.exe、便携 exe、`latest.json`）。
 2. 亲自跑一次新包（安装版 + 便携版各一次），确认能启动、能进考场、能交卷。
-3. **确认通过后，删掉上一版的所有产物**，再把新包归档。
-4. GitHub Releases 已经是历史归档，仓库里不需要再留旧包。
-
-当前仓库里的 `release/IELTS_Workspace.exe` 与 `release/IELTS_Workspace_1.0.0_x64_setup.exe` 是 1.0.0 的遗留物，与 `package.json` 的当前版本不符，属于本条要清理的对象。
+3. **确认通过后，`release/` 里只应剩下这一版。** 旧版立刻删。
+4. GitHub Releases 已经是历史归档；`release/*.exe` 不进 git。
 
 ---
 
