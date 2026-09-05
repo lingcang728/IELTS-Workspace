@@ -16,6 +16,13 @@ const SPEAKING_TOPICS = [
   "Environment and city planning",
 ];
 
+const TEMPLATE_ICONS: Record<PromptTemplate, "pen" | "search" | "volume" | "headphones"> = {
+  writing: "pen",
+  explain: "search",
+  speaking: "volume",
+  listening: "headphones",
+};
+
 export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
   const [template, setTemplate] = useState<PromptTemplate>("explain");
   const [mistakes, setMistakes] = useState<Mistake[]>([]);
@@ -70,8 +77,8 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
   async function copy() {
     try {
       await navigator.clipboard.writeText(prompt);
-      setToast("已复制，粘贴到外部模型即可");
-    } catch { setToast("复制失败，请手动选中"); }
+      setToast("已复制到剪贴板");
+    } catch { setToast("复制失败，请手动全选复制"); }
     window.setTimeout(() => setToast(""), 2200);
   }
 
@@ -85,7 +92,7 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
       reply,
     }).catch(() => undefined);
     setReply("");
-    setToast("已存入个人语料库");
+    setToast("已成功存入个人语料库");
     window.setTimeout(() => setToast(""), 2200);
     await reload();
   }
@@ -96,71 +103,154 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
       subtitle="本应用不内置 AI。这里把题目、你的作答、答案键和原文出处拼成一份完整 prompt，复制到你惯用的模型，再把回复贴回来存档。" />
 
     <section className="workspace-card template-picker">
-      {TEMPLATES.map((item) => <button
-        key={item.id} type="button"
-        className={`template-card ${template === item.id ? "active" : ""}`}
-        onClick={() => { setTemplate(item.id); setPrompt(""); }}>
-        <strong>{item.label}</strong><small>{item.blurb}</small>
-      </button>)}
+      {TEMPLATES.map((item) => {
+        const iconName = TEMPLATE_ICONS[item.id] || "document";
+        return (
+          <button
+            key={item.id}
+            type="button"
+            className={`template-card ${template === item.id ? "active" : ""}`}
+            onClick={() => { setTemplate(item.id); setPrompt(""); }}
+          >
+            <div className="template-card-top">
+              <span className="template-icon-wrap">
+                <Icon name={iconName} size={18} />
+              </span>
+              {template === item.id && <span className="template-active-pill">当前场景</span>}
+            </div>
+            <div className="template-card-text">
+              <strong>{item.label}</strong>
+              <small>{item.blurb}</small>
+            </div>
+          </button>
+        );
+      })}
     </section>
 
     <div className="studio-grid">
       <section className="workspace-card studio-input">
-        <div className="card-heading"><h2>输入</h2></div>
+        <div className="card-heading">
+          <div className="section-title-group">
+            <span className="step-badge">STEP 1</span>
+            <h2>材料与输入配置</h2>
+          </div>
+        </div>
 
         {template === "writing" && <>
           <label className="field"><span>题目标题</span>
             <input value={taskTitle} onChange={(e) => setTaskTitle(e.target.value)} /></label>
-          <label className="field"><span>题干</span>
-            <textarea rows={4} value={taskPrompt} onChange={(e) => setTaskPrompt(e.target.value)}
-                      placeholder="把 Writing Task 的题干贴进来" /></label>
-          <label className="field"><span>你的作文</span>
-            <textarea rows={10} value={essay} onChange={(e) => setEssay(e.target.value)} /></label>
+          <label className="field"><span>题干要求</span>
+            <textarea rows={3} value={taskPrompt} onChange={(e) => setTaskPrompt(e.target.value)}
+                      placeholder="把 Writing Task 的官方题干要求贴进来" /></label>
+          <label className="field">
+            <div className="field-label-row">
+              <span>你的作答正文</span>
+              <small className="field-hint">已输入 {essay.trim() ? essay.trim().split(/\s+/).length : 0} 词</small>
+            </div>
+            <textarea rows={8} value={essay} onChange={(e) => setEssay(e.target.value)}
+                      placeholder="把完整的作文内容贴在这里……" />
+          </label>
         </>}
 
-        {template === "explain" && (mistakes.length
-          ? <p className="meta">将把错题本里最近 {Math.min(12, mistakes.length)} 道待攻克错题（共 {mistakes.length} 道）
-              连同原文出处一起拼进 prompt。</p>
-          : <p className="meta">错题本还是空的。先完成一次听力或阅读。</p>)}
+        {template === "explain" && (mistakes.length ? (
+          <div className="studio-info-banner">
+            <Icon name="check" size={16} />
+            <p>已从错题本捕获最近 <strong>{Math.min(12, mistakes.length)}</strong> 道待攻克题目（共 {mistakes.length} 道），将自动打包题干、可接受答案与原文出处。</p>
+          </div>
+        ) : (
+          <div className="studio-empty-notice">
+            <Icon name="info" size={24} />
+            <div>
+              <h4>错题本当前暂无待攻克题目</h4>
+              <p>完成真题练习后错题将自动汇入；也可以切换到上方「作文批改」或「口语陪练」体验 Prompt 生成。</p>
+            </div>
+          </div>
+        ))}
 
         {template === "speaking" && <>
-          <label className="field"><span>话题</span>
+          <label className="field"><span>口语备选话题</span>
             <input value={topic} onChange={(e) => setTopic(e.target.value)} list="speaking-topics" />
             <datalist id="speaking-topics">{SPEAKING_TOPICS.map((t) => <option key={t} value={t} />)}</datalist>
           </label>
-          <div className="field"><span>Part</span>
+          <div className="field"><span>考试 Part 阶段</span>
             <div className="filter-tabs">{([1, 2, 3] as const).map((p) =>
               <button key={p} type="button" className={part === p ? "active" : ""}
                       onClick={() => setPart(p)}>Part {p}</button>)}</div></div>
         </>}
 
-        {template === "listening" && (listeningExams.length
-          ? <label className="field"><span>试卷</span>
-              <select value={listeningExam} onChange={(e) => setListeningExam(e.target.value)}>
-                {listeningExams.map(([id, title]) => <option key={id} value={id}>{title}</option>)}
-              </select></label>
-          : <p className="meta">还没有听力错题。</p>)}
+        {template === "listening" && (listeningExams.length ? (
+          <label className="field"><span>选择包含错题的听力试卷</span>
+            <select value={listeningExam} onChange={(e) => setListeningExam(e.target.value)}>
+              {listeningExams.map(([id, title]) => <option key={id} value={id}>{title}</option>)}
+            </select></label>
+        ) : (
+          <div className="studio-empty-notice">
+            <Icon name="headphones" size={24} />
+            <div>
+              <h4>暂无听力错题记录</h4>
+              <p>完成听力模考或练习后产生的错题与原文定位会自动汇总于此，生成精细复盘提示词。</p>
+            </div>
+          </div>
+        ))}
 
-        <div className="button-row">
-          <button type="button" className="primary-button" onClick={() => void build()}>生成 Prompt</button>
+        <div className="button-row studio-action-row">
+          <button type="button" className="primary-button build-prompt-btn" onClick={() => void build()}>
+            <Icon name="rotate" size={14} /> 生成完整 Prompt
+          </button>
           {vocab.length > 0 && <button type="button" className="secondary-button"
-            onClick={() => setPrompt(vocabPrompt(vocab.slice(0, 20)))}>改成生词讲解</button>}
+            onClick={() => setPrompt(vocabPrompt(vocab.slice(0, 20)))}>改成生词精讲</button>}
         </div>
       </section>
 
       <section className="workspace-card studio-output">
-        <div className="card-heading"><h2>Prompt</h2>
-          <button type="button" className="link-button" disabled={!prompt} onClick={() => void copy()}>
-            复制 <Icon name="document" size={14} /></button></div>
-        <textarea rows={14} value={prompt} onChange={(e) => setPrompt(e.target.value)}
-                  placeholder="点「生成 Prompt」后出现在这里，可以再手工改" />
-        <div className="card-heading"><h2>把模型的回复贴回来</h2></div>
-        <textarea rows={7} value={reply} onChange={(e) => setReply(e.target.value)}
-                  placeholder="存档后会进入个人语料库，可随时回看" />
-        <div className="button-row">
-          <button type="button" className="secondary-button" disabled={!prompt.trim() || !reply.trim()}
-                  onClick={() => void archive()}>存档</button>
-          {toast && <span className="verdict ok">{toast}</span>}
+        <div className="studio-stage-section">
+          <div className="card-heading">
+            <div className="section-title-group">
+              <span className="step-badge">STEP 2</span>
+              <h2>生成的 Prompt</h2>
+            </div>
+            <button
+              type="button"
+              className={`secondary-button copy-prompt-btn ${toast ? "copied" : ""}`}
+              disabled={!prompt}
+              onClick={() => void copy()}
+            >
+              <Icon name="document" size={14} /> {toast && toast.includes("复制") ? toast : "一键复制"}
+            </button>
+          </div>
+          <div className="prompt-textarea-wrap">
+            <textarea
+              rows={9}
+              value={prompt}
+              onChange={(e) => setPrompt(e.target.value)}
+              placeholder="点击左侧「生成完整 Prompt」后，装配好的考官提示词将出现在此，可直接复制或二次调整"
+            />
+          </div>
+        </div>
+
+        <div className="studio-stage-section reply-stage">
+          <div className="card-heading">
+            <div className="section-title-group">
+              <span className="step-badge">STEP 3</span>
+              <h2>将模型回复贴回存档</h2>
+            </div>
+            <button
+              type="button"
+              className="primary-button archive-btn"
+              disabled={!prompt.trim() || !reply.trim()}
+              onClick={() => void archive()}
+            >
+              <Icon name="bookmark" size={14} /> 存入语料库
+            </button>
+          </div>
+          <div className="reply-textarea-wrap">
+            <textarea
+              rows={6}
+              value={reply}
+              onChange={(e) => setReply(e.target.value)}
+              placeholder="把外部大模型（ChatGPT / Claude / Gemini 等）返回的批改点评或逐题讲解贴回此处，点击右上角存入语料库"
+            />
+          </div>
         </div>
       </section>
     </div>

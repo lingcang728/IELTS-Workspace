@@ -53,8 +53,20 @@ export function AudioCenter({
           <button type="button" className="primary-button" onClick={() => onAdd()}>添加音频</button>
         </div>}
       />
-      <section className="workspace-card">
-        <p className="meta">已添加 {bound} / {total} 套 · 选择文件夹时可一次勾多个。C21 没有 Listening。</p>
+      <section className="workspace-card audio-overview-card">
+        <div className="audio-overview-main">
+          <div className="audio-overview-stat">
+            <span className={`audio-dot ${bound === total ? "ready" : ""}`} />
+            <strong>已添加 {bound} / {total} 套听力音频</strong>
+            <span className="audio-overview-ratio">({Math.round((bound / total) * 100)}%)</span>
+          </div>
+          <p className="audio-overview-tip">
+            选择文件夹导入时支持多选 · 剑 21 原版未包含听力真题
+          </p>
+        </div>
+        <div className="audio-overview-progress">
+          <i style={{ width: `${Math.round((bound / total) * 100)}%` }} />
+        </div>
       </section>
       <div className="audio-board">
         {books.map((row) => {
@@ -71,10 +83,14 @@ export function AudioCenter({
                   if (cell.ready && cell.exam) {
                     return (
                       <div key={cell.test} className="audio-test ready">
-                        <span className="audio-test-mark" aria-hidden="true"><Icon name="check" size={16} /></span>
-                        <strong>{label}</strong>
-                        <small>已添加</small>
-                        <button type="button" className="link-button" onClick={() => onRemove(cell.exam!.id)}>移除</button>
+                        <div className="audio-test-top">
+                          <span className="audio-test-mark" aria-hidden="true"><Icon name="check" size={14} /></span>
+                          <strong>{label}</strong>
+                        </div>
+                        <div className="audio-test-actions">
+                          <small>已添加</small>
+                          <button type="button" className="link-button remove-audio-btn" onClick={() => onRemove(cell.exam!.id)}>移除</button>
+                        </div>
                       </div>
                     );
                   }

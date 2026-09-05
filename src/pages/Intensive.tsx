@@ -105,6 +105,20 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
     }
   }
 
+  const wordCount = useMemo(() => {
+    const trimmed = typed.trim();
+    return trimmed ? trimmed.split(/\s+/).length : 0;
+  }, [typed]);
+
+  function handleKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
+    if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+      if (typed.trim() && expected) {
+        e.preventDefault();
+        setChecked(true);
+      }
+    }
+  }
+
   return <div className="page-stack intensive-page">
     <PageHeading
       title="精听"
@@ -137,35 +151,122 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
 
       <div className="intensive-grid">
         <section className="workspace-card dictation-card">
-          <div className="card-heading"><h2>听写</h2>
-            <span className="meta">{checked ? `命中 ${Math.round(score * 100)}%` : "听完这一 Part 再写"}</span></div>
-          <textarea rows={10} value={typed} placeholder="把听到的内容写下来，标点和大小写不计入比对"
-                    onChange={(e) => { setTyped(e.target.value); setChecked(false); }} />
-          <div className="button-row">
-            <button type="button" className="primary-button" disabled={!typed.trim() || !expected}
-                    onClick={() => setChecked(true)}>比对</button>
-            <button type="button" className="secondary-button" onClick={() => { setTyped(""); setChecked(false); }}>清空</button>
+          <div className="card-heading">
+            <div className="section-title-group">
+              <Icon name="pen" size={16} />
+              <h2>听写练习</h2>
+            </div>
+            <div className="card-header-actions">
+              {checked ? (
+                <span className="dictation-badge score">
+                  准确率 {Math.round(score * 100)}%
+                </span>
+              ) : (
+                <span className="meta">已输入 {wordCount} 词 · Ctrl+Enter 快速比对</span>
+              )}
+            </div>
           </div>
-          {checked && <div className="dictation-diff">{runs.map((run, index) =>
-            <span key={index} className={`run ${run.kind}`}>{run.words.join(" ")} </span>)}</div>}
-          {checked && <p className="meta">灰底 = 你漏掉的；删除线 = 原文里没有的。</p>}
+
+          <div className="dictation-input-area">
+            <textarea
+              value={typed}
+              placeholder="在此输入听写内容……（大小写与标点自动忽略，听完完整句子或整段后听写，按 Ctrl+Enter 快速检查）"
+              onChange={(e) => { setTyped(e.target.value); setChecked(false); }}
+              onKeyDown={handleKeyDown}
+            />
+          </div>
+
+          <div className="dictation-toolbar">
+            <div className="button-row">
+              <button
+                type="button"
+                className="primary-button"
+                disabled={!typed.trim() || !expected}
+                onClick={() => setChecked(true)}
+              >
+                <Icon name="check" size={14} /> 比对结果
+              </button>
+              <button
+                type="button"
+                className="secondary-button"
+                disabled={!typed}
+                onClick={() => { setTyped(""); setChecked(false); }}
+              >
+                清空
+              </button>
+            </div>
+            <span className="dictation-rule-hint">标点与大小写自动忽略</span>
+          </div>
+
+          {checked && (
+            <div className="dictation-result-panel">
+              <div className="dictation-legend">
+                <span className="legend-item"><i className="legend-dot same" /> 匹配正确</span>
+                <span className="legend-item"><i className="legend-dot missing" /> 漏写/错误</span>
+                <span className="legend-item"><i className="legend-dot extra" /> 多余词</span>
+              </div>
+              <div className="dictation-diff">
+                {runs.map((run, index) => (
+                  <span key={index} className={`run ${run.kind}`}>{run.words.join(" ")} </span>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
 
         <section className="workspace-card transcript-card">
-          <div className="card-heading"><h2>原文</h2>
-            <button type="button" className="link-button" onClick={() => setShowText((v) => !v)}>
-              {showText ? "隐藏" : "显示"} <Icon name="eye" size={14} /></button></div>
-          {!transcript && <p className="meta">这套题还没有提取到听力原文。</p>}
-          {transcript && !showText && <p className="meta">先自己听写，再打开原文对照。</p>}
-          {transcript && showText && <div className="transcript-lines">{lines.map((line, index) => {
-            const answers = lineAnswers(line);
-            return <p key={index} className={answers.length ? "carries-answer" : ""}>
-              {line.speaker && <b>{line.speaker}: </b>}
-              {line.text}
-              {answers.length > 0 && <span className="answer-flag">答案 Q{answers.join(" / Q")}</span>}
-            </p>;
-          })}
-          {lines.length === 0 && <p className="meta">这一 Part 的原文缺失。</p>}</div>}
+          <div className="card-heading">
+            <div className="section-title-group">
+              <Icon name="document" size={16} />
+              <h2>原文与考点对照</h2>
+            </div>
+            <button
+              type="button"
+              className={`link-button text-toggle ${showText ? "active" : ""}`}
+              onClick={() => setShowText((v) => !v)}
+            >
+              {showText ? "隐藏原文" : "显示原文"} <Icon name="eye" size={14} />
+            </button>
+          </div>
+
+          {!transcript && <div className="transcript-empty"><p className="meta">这套题还没有提取到听力原文。</p></div>}
+
+          {transcript && !showText && (
+            <div className="transcript-shield">
+              <div className="shield-icon-wrap">
+                <Icon name="eye" size={28} />
+              </div>
+              <h3>防剧透模式已开启</h3>
+              <p>建议先自主听写，听完当前 Part 后再开启对照，定位考点句与题目出处。</p>
+              <button
+                type="button"
+                className="secondary-button reveal-button"
+                onClick={() => setShowText(true)}
+              >
+                查看听力原文与考点出处
+              </button>
+            </div>
+          )}
+
+          {transcript && showText && (
+            <div className="transcript-lines">
+              {lines.map((line, index) => {
+                const answers = lineAnswers(line);
+                return (
+                  <p key={index} className={answers.length ? "carries-answer" : ""}>
+                    {line.speaker && <b>{line.speaker}: </b>}
+                    {line.text}
+                    {answers.length > 0 && (
+                      <span className="answer-flag">
+                        <Icon name="target" size={11} /> 考点 Q{answers.join(" / Q")}
+                      </span>
+                    )}
+                  </p>
+                );
+              })}
+              {lines.length === 0 && <p className="meta">这一 Part 的原文缺失。</p>}
+            </div>
+          )}
         </section>
       </div>
     </>}
