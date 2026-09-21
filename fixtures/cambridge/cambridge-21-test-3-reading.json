@@ -461,7 +461,13 @@
               "label": "ix",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:01:42.410884+00:00",
+            "note": "Page 66 contains True/False/Not Given questions for Questions 14-18; fixture mistakenly declared single_choice with optionLabels A-H."
+          }
         },
         {
           "id": "c21t3r-g15",
@@ -503,7 +509,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:01:42.410884+00:00",
+            "note": "Page 66 contains True/False/Not Given questions for Questions 14-18; fixture mistakenly declared single_choice with optionLabels A-H."
+          }
         },
         {
           "id": "c21t3r-g17",
@@ -522,7 +534,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:01:42.410884+00:00",
+            "note": "Page 66 contains True/False/Not Given questions for Questions 14-18; fixture mistakenly declared single_choice with optionLabels A-H."
+          }
         },
         {
           "id": "c21t3r-g18",

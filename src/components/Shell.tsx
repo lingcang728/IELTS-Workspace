@@ -24,7 +24,7 @@ export function Sidebar({ view, setView }: { view: View; setView: (v: View) => v
     { view: "studio", icon: "document", label: "Prompt Studio" },
     { view: "analytics", icon: "chart", label: "分析报告" },
   ];
-  const nav = (item: { view: View; icon: IconName; label: string }) => <button key={item.view} type="button" className={view === item.view ? "selected" : ""} onClick={() => setView(item.view)}><Icon name={item.icon} size={21} /><span>{item.label}</span></button>;
+  const nav = (item: { view: View; icon: IconName; label: string }) => <button key={item.view} type="button" className={view === item.view ? "selected" : ""} aria-current={view === item.view ? "page" : undefined} onClick={() => setView(item.view)}><Icon name={item.icon} size={21} /><span>{item.label}</span></button>;
   return <aside className="sidebar">
     <div className="sidebar-brand"><BrandMark size={56} className="sidebar-mark" /><div><strong>IELTS</strong><span>Workspace</span></div></div>
     <nav className="side-nav" aria-label="主导航">{primary.map(nav)}</nav>

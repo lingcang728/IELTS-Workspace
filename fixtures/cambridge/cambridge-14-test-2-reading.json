@@ -2022,7 +2022,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:35.585793+00:00",
+            "note": "原书印刷页49上Questions 38-40为TRUE/FALSE/NOT GIVEN判断题，第40题题干为'Google was inspired to adopt flexibility by the success of General Electric'，页面无A-H选项列表，原题库错误挂载了8个空白选项，按规范予以flagged。"
+          }
         }
       ]
     }

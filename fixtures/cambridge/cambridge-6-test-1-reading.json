@@ -144,7 +144,13 @@
               "label": "F",
               "text": "Paragraph F"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 1-7 段落信息匹配题（Reading Passage 1 has six paragraphs, A-F），页面无 A-H 选项列表，题库错误声明了 A-H 选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g2",
@@ -230,7 +236,13 @@
               "label": "F",
               "text": "Paragraph F"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 1-7 段落信息匹配题（Reading Passage 1 has six paragraphs, A-F），页面无 A-H 选项列表，题库错误声明了 A-H 选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g3",
@@ -316,7 +328,13 @@
               "label": "F",
               "text": "Paragraph F"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 1-7 段落信息匹配题（Reading Passage 1 has six paragraphs, A-F），页面无 A-H 选项列表，题库错误声明了 A-H 选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g4",
@@ -402,7 +420,13 @@
               "label": "F",
               "text": "Paragraph F"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 1-7 段落信息匹配题（Reading Passage 1 has six paragraphs, A-F），页面无 A-H 选项列表，题库错误声明了 A-H 选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g5",
@@ -488,7 +512,13 @@
               "label": "F",
               "text": "Paragraph F"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 1-7 段落信息匹配题（Reading Passage 1 has six paragraphs, A-F），页面无 A-H 选项列表，题库错误声明了 A-H 选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g6",
@@ -574,7 +604,13 @@
               "label": "F",
               "text": "Paragraph F"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 1-7 段落信息匹配题（Reading Passage 1 has six paragraphs, A-F），页面无 A-H 选项列表，题库错误声明了 A-H 选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g7",
@@ -660,7 +696,13 @@
               "label": "F",
               "text": "Paragraph F"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 1-7 段落信息匹配题（Reading Passage 1 has six paragraphs, A-F），页面无 A-H 选项列表，题库错误声明了 A-H 选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g8",
@@ -718,14 +760,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              8,
-              11
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 8–11 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 8-11 分类题，选项仅有 A、B、C 三项（A are currently exclusively used by Australians / B will be used in the future by Australians / C are currently used by both Australians and their rivals），题库错误声明了 A-H 八个选项标签，需结构修复。"
           }
         },
         {
@@ -784,14 +822,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              8,
-              11
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 8–11 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 8-11 分类题，选项仅有 A、B、C 三项（A are currently exclusively used by Australians / B will be used in the future by Australians / C are currently used by both Australians and their rivals），题库错误声明了 A-H 八个选项标签，需结构修复。"
           }
         },
         {
@@ -850,14 +884,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              8,
-              11
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 8–11 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 8-11 分类题，选项仅有 A、B、C 三项（A are currently exclusively used by Australians / B will be used in the future by Australians / C are currently used by both Australians and their rivals），题库错误声明了 A-H 八个选项标签，需结构修复。"
           }
         },
         {
@@ -916,14 +946,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              8,
-              11
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 8–11 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:18.749178+00:00",
+            "note": "页面实际为 Questions 8-11 分类题，选项仅有 A、B、C 三项（A are currently exclusively used by Australians / B will be used in the future by Australians / C are currently used by both Australians and their rivals），题库错误声明了 A-H 八个选项标签，需结构修复。"
           }
         },
         {
@@ -1108,7 +1134,13 @@
               "label": "I",
               "text": "Paragraph I"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:39.136811+00:00",
+            "note": "页面实际为 Questions 14-17 段落信息匹配题（Reading Passage 2 has nine paragraphs, A-I），选项为段落 A-I（共9段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 14 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g15",
@@ -1224,7 +1256,13 @@
               "label": "I",
               "text": "Paragraph I"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:39.136811+00:00",
+            "note": "页面实际为 Questions 14-17 段落信息匹配题（Reading Passage 2 has nine paragraphs, A-I），选项为段落 A-I（共9段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 14 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g16",
@@ -1340,7 +1378,13 @@
               "label": "I",
               "text": "Paragraph I"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:39.136811+00:00",
+            "note": "页面实际为 Questions 14-17 段落信息匹配题（Reading Passage 2 has nine paragraphs, A-I），选项为段落 A-I（共9段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 14 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g17",
@@ -1456,7 +1500,13 @@
               "label": "I",
               "text": "Paragraph I"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:39.136811+00:00",
+            "note": "页面实际为 Questions 14-17 段落信息匹配题（Reading Passage 2 has nine paragraphs, A-I），选项为段落 A-I（共9段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 14 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t1r-g18",

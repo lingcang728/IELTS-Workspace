@@ -3,7 +3,7 @@
   "id": "cambridge-18-test-4-reading",
   "title": "Cambridge IELTS 18 Academic Test 4 Reading",
   "module": "reading",
-  "contentRevision": "repair-0035-f006924c",
+  "contentRevision": "repair-0002-8ed95769",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -600,14 +600,14 @@
         {
           "id": "c18t4r-g10",
           "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 10 and 11 on your answer sheet.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t4r-q10",
               "number": 10,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO advantages of using newer buildings for green roofs are mentioned in Paragraph C of the passage?",
+              "prompt": "First selected letter: Which TWO advantages of using newer buildings for green roofs are mentioned in Paragraph C of the passage?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -643,52 +643,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "a longer growing season for edible produce"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "more economical use of water"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "greater water-storage capacity"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "ability to cultivate more plant types"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "a large surface area for growing plants"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T01:56:58.307393+00:00"
-          }
-        },
-        {
-          "id": "c18t4r-g11",
-          "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 10 and 11 on your answer sheet.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t4r-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO advantages of using newer buildings for green roofs are mentioned in Paragraph C of the passage?",
+              "prompt": "Second selected letter: Which TWO advantages of using newer buildings for green roofs are mentioned in Paragraph C of the passage?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -757,19 +717,23 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-25T01:56:58.307393+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "D"
+          ]
         },
         {
           "id": "c18t4r-g12",
           "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 12 and 13 on your answer sheet.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c18t4r-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO aims of new variations on the concept of green roofs are mentioned in Paragraph E of the passage?",
+              "prompt": "First selected letter: Which TWO aims of new variations on the concept of green roofs are mentioned in Paragraph E of the passage?",
               "acceptedAnswers": [
                 "A"
               ],
@@ -805,52 +769,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "to provide habitats for a wide range of species"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "to grow plants successfully even in the wettest climates"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "to regulate the temperature of the immediate environment"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "to generate power from a sustainable source"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "to collect water to supply other buildings"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T01:56:58.307393+00:00"
-          }
-        },
-        {
-          "id": "c18t4r-g13",
-          "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 12 and 13 on your answer sheet.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c18t4r-q13",
               "number": 13,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO aims of new variations on the concept of green roofs are mentioned in Paragraph E of the passage?",
+              "prompt": "Second selected letter: Which TWO aims of new variations on the concept of green roofs are mentioned in Paragraph E of the passage?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -919,7 +843,11 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-25T01:56:58.307393+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "D"
+          ]
         }
       ]
     },
@@ -998,14 +926,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              16
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 14–16 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:02.896588+00:00",
+            "note": "原书印刷页 90 的 Questions 14-16 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -1074,14 +998,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              16
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 14–16 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:02.896588+00:00",
+            "note": "原书印刷页 90 的 Questions 14-16 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -1150,14 +1070,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              16
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 14–16 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:02.896588+00:00",
+            "note": "原书印刷页 90 的 Questions 14-16 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -2665,14 +2581,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes37–40 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:12.632183+00:00",
+            "note": "原书印刷页 95 的 Questions 37-40 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -2741,14 +2653,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes37–40 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:12.632183+00:00",
+            "note": "原书印刷页 95 的 Questions 37-40 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -2817,14 +2725,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes37–40 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:12.632183+00:00",
+            "note": "原书印刷页 95 的 Questions 37-40 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -2893,14 +2797,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes37–40 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:12.632183+00:00",
+            "note": "原书印刷页 95 的 Questions 37-40 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         }
       ]

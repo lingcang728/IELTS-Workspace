@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { listen } from "@tauri-apps/api/event";
+import { getCurrentWebview } from "@tauri-apps/api/webview";
 import { Icon } from "./Ui";
 import {
   audioCancelImport,
@@ -42,7 +43,7 @@ export function AudioWizard({
     };
   }, []);
 
-  async function scan(paths: string[]) {
+  const scan = useCallback(async (paths: string[]) => {
     if (!paths.length) return;
     setBusy(true);
     setError(null);
@@ -59,7 +60,32 @@ export function AudioWizard({
       setBusy(false);
       setProgress(null);
     }
-  }
+  }, [targetExamId]);
+
+  // OS drag-drop: with dragDropEnabled the webview never produces HTML5 drops
+  // on Windows, but Tauri reports the OS paths — feed them straight into scan.
+  const busyRef = useRef(false);
+  busyRef.current = busy;
+  useEffect(() => {
+    if (!("__TAURI_INTERNALS__" in window)) return;
+    let active = true;
+    let unlisten: (() => void) | undefined;
+    getCurrentWebview()
+      .onDragDropEvent((event) => {
+        if (event.payload.type === "drop" && !busyRef.current) {
+          void scan(event.payload.paths);
+        }
+      })
+      .then((fn) => {
+        if (!active) fn();
+        else unlisten = fn;
+      })
+      .catch(() => undefined);
+    return () => {
+      active = false;
+      unlisten?.();
+    };
+  }, [scan]);
 
   async function pickFiles() {
     const files = await audioPickFiles().catch((e) => {
@@ -81,7 +107,7 @@ export function AudioWizard({
     if (!plan) return;
     const chosen = plan.exams.filter((row) => row.status === "ready" && accepted[row.examId]).map((row) => row.examId);
     if (!chosen.length) {
-      setError("没有可导入的完整试卷。每套需要 Part/Section 1–4 四个文件。");
+      setError("没有可导入的完整试卷。每套需要 Part/Section 1–4 四个文件，或一个哈希与官方目录一致的整轨。");
       return;
     }
     setBusy(true);
@@ -103,7 +129,18 @@ export function AudioWizard({
   }
 
   return (
-    <div className="audio-wizard-backdrop" role="dialog" aria-modal="true" aria-labelledby="audio-wizard-title">
+    <div
+      className="audio-wizard-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="audio-wizard-title"
+      onClick={(e) => {
+        if (e.target === e.currentTarget && !busy) onClose();
+      }}
+      onKeyDown={(e) => {
+        if (e.key === "Escape" && !busy) onClose();
+      }}
+    >
       <div className="audio-wizard">
         <header>
           <h2 id="audio-wizard-title">添加听力音频</h2>
@@ -111,7 +148,7 @@ export function AudioWizard({
         </header>
         <p className="meta">
           {targetExamId ? `正在为 ${targetExamId} 添加。` : "可一次导入多套。"}
-          只接受剑4–20 每套恰好四个 Part/Section。不支持整轨，也不再提供时间点校准。
+          只接受剑4–20：每套四个 Part/Section 文件，或 SHA-256 与官方目录一致的整轨文件。也可以直接把音频文件或文件夹拖入窗口。
         </p>
         <div className="button-row">
           <button type="button" className="primary-button" disabled={busy} onClick={() => void pickFiles()}>选择文件</button>
@@ -162,7 +199,9 @@ function ExamRow({
   onToggle: (v: boolean) => void;
 }) {
   const ready = row.status === "ready";
-  const parts = [1, 2, 3, 4].map((n) => (row.parts[n - 1] ? `P${n}` : `缺${n}`)).join(" ");
+  const parts = row.wholeTrack
+    ? `整轨 ${row.wholeTrack.fileName}`
+    : [1, 2, 3, 4].map((n) => (row.parts[n - 1] ? `P${n}` : `缺${n}`)).join(" ");
   return (
     <label className="audio-candidate">
       <input type="checkbox" checked={checked && ready} disabled={!ready} onChange={(e) => onToggle(e.target.checked)} />

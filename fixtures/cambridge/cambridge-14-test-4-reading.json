@@ -3,7 +3,7 @@
   "id": "cambridge-14-test-4-reading",
   "title": "Cambridge IELTS 14 Academic Test 4 Reading",
   "module": "reading",
-  "contentRevision": "repair-0012-fecce5e4",
+  "contentRevision": "repair-0004-8d105671",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -909,18 +909,14 @@
         {
           "id": "c14t4r-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t4r-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "Question 23: Which TWO of the following are stated about zoo staff in the text?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "First selected letter: Which TWO of the following are stated about zoo staff in the text?",
               "gapText": "____",
               "options": [
                 {
@@ -953,35 +949,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 23 and 24 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c14t4r-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c14t4r-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Question 24: Which TWO of the following are stated about zoo staff in the text?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "Second selected letter: Which TWO of the following are stated about zoo staff in the text?",
               "gapText": "____",
               "options": [
                 {
@@ -1014,7 +991,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "repairSource": {
@@ -1026,23 +1006,50 @@
             "canonicalOf": [
               "Write the correct letters in boxes 23 and 24 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Some take part in television documentaries about animals."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Some travel to overseas locations to join teams in zoos."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Some get experience with species in the wild before taking up zoo jobs."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Some teach people who are involved with conservation projects."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Some specialise in caring for species which are under threat."
+            }
+          ]
         },
         {
           "id": "c14t4r-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t4r-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "Question 25: Which TWO of these beliefs about zoos does the writer mention in the text?",
-              "acceptedAnswers": [
-                "B",
-                "E"
-              ],
+              "prompt": "First selected letter: Which TWO of these beliefs about zoos does the writer mention in the text?",
               "gapText": "____",
               "options": [
                 {
@@ -1075,35 +1082,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 25 and 26 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c14t4r-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c14t4r-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Question 26: Which TWO of these beliefs about zoos does the writer mention in the text?",
-              "acceptedAnswers": [
-                "B",
-                "E"
-              ],
+              "prompt": "Second selected letter: Which TWO of these beliefs about zoos does the writer mention in the text?",
               "gapText": "____",
               "options": [
                 {
@@ -1136,7 +1124,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "repairSource": {
@@ -1148,7 +1139,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 25 and 26 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They can help children overcome their fears of wild animals."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They can increase public awareness of environmental issues."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They can provide employment for a range of professional people."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They can generate income to support wildlife conservation projects."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They can raise animals which can later be released into the wild."
+            }
+          ]
         }
       ]
     },

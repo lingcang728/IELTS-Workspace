@@ -13,16 +13,22 @@ function answerText(value: Mistake["userAnswer"]) {
 
 type Filter = "open" | "mastered" | "all";
 
-export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void }) {
+export function Mistakes({ onPractise }: { onPractise: (row: Mistake) => void }) {
   const [rows, setRows] = useState<Mistake[] | null>(null);
   const [filter, setFilter] = useState<Filter>("open");
   const [module, setModule] = useState<ModuleKind | "all">("all");
   const [attempts, setAttempts] = useState<Record<string, string>>({});
   const [verdict, setVerdict] = useState<Record<string, "ok" | "bad">>({});
+  const [saveError, setSaveError] = useState<string | null>(null);
   const checking = useRef(false);
 
   async function reload() {
-    setRows(await mistakeList().catch(() => []));
+    try {
+      setRows(await mistakeList());
+      setSaveError(null);
+    } catch (e) {
+      setSaveError(`错题列表读取失败：${String(e)}`);
+    }
   }
 
   useEffect(() => { void reload(); }, []);
@@ -36,7 +42,8 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
 
   // The weakness view is the point of the book: it is the same
   // questionTypeAccuracy the analytics page already computes, but here it has
-  // somewhere to go — every row leads to a practice set of that type.
+  // somewhere to go — every row opens a practice session on the paper where
+  // that type was missed.
   const byType = useMemo(() => {
     const counts = new Map<string, number>();
     for (const row of rows ?? []) {
@@ -53,14 +60,20 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
       const attempt = attempts[row.id] ?? "";
       const correct = attemptMatches(attempt, row.acceptedAnswers);
       setVerdict((v) => ({ ...v, [row.id]: correct ? "ok" : "bad" }));
-      await mistakeResolve(row.id, correct).catch(() => undefined);
+      setSaveError(null);
+      try {
+        await mistakeResolve(row.id, correct);
+      } catch (e) {
+        // 核对结果显示了但没落库（磁盘满/锁文件）——说出来，别装成功。
+        setSaveError(`核对结果保存失败，连对次数不会更新：${String(e)}`);
+      }
       await reload();
     } finally {
       checking.current = false;
     }
   }
 
-  if (rows === null) return <div className="page-stack"><PageHeading title="错题本" /></div>;
+  if (rows === null) return <div className="page-stack"><PageHeading title="错题本" />{saveError && <p className="form-error">{saveError}</p>}</div>;
 
   return <div className="page-stack mistakes-page">
     <PageHeading
@@ -77,10 +90,15 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
           </select></label>
       </div>} />
 
+    {saveError && <p className="form-error">{saveError}</p>}
+
     {byType.length > 0 && <section className="workspace-card weakness-card">
       <div className="card-heading"><h2>薄弱题型</h2><span className="meta">按待攻克错题数排序</span></div>
       <div className="weakness-list">{byType.slice(0, 6).map(([type, count]) => <button
-        key={type} type="button" className="weakness-row" onClick={() => onPractise(type)}>
+        key={type} type="button" className="weakness-row" onClick={() => {
+          const row = rows?.find((r) => r.status === "open" && r.questionType === type);
+          if (row) onPractise(row);
+        }}>
         <span>{questionTypeLabel(type)}</span>
         <i><b style={{ width: `${Math.min(100, (count / byType[0][1]) * 100)}%` }} /></i>
         <strong>{count} 题</strong>
@@ -111,7 +129,7 @@ export function Mistakes({ onPractise }: { onPractise: (typeKey: string) => void
               onChange={(e) => setAttempts((a) => ({ ...a, [row.id]: e.target.value }))}
               onKeyDown={(e) => { if (e.key === "Enter") void check(row); }} />
             <button type="button" className="secondary-button" onClick={() => void check(row)}>核对</button>
-            <button type="button" className="link-button" onClick={() => void mistakeDelete(row.id).then(reload)}>移除</button>
+            <button type="button" className="link-button" onClick={() => void mistakeDelete(row.id).then(reload).catch((e) => setSaveError(`移除失败：${String(e)}`))}>移除</button>
             {verdict[row.id] === "ok" && <span className="verdict ok"><Icon name="check" size={15} />正确</span>}
             {verdict[row.id] === "bad" && <span className="verdict bad">再看一遍原文</span>}
           </div>

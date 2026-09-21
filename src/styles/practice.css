@@ -97,6 +97,7 @@
 .catalog-actions .module-button, .catalog-actions .strict-button, .retake-button { width: auto; min-width: 72px; min-height: 34px; padding: 0 10px; font-size: 13px; }
 .module-button, .strict-button { width: 96px; min-height: 34px; padding: 0; font-size: 13px; white-space: nowrap; }
 .history-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.card-header-actions { display: flex; align-items: center; gap: 8px; }
 .module-button { border: 1px solid var(--line-strong); background: transparent; color: var(--ink-soft); }
 .module-button:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
 /* Outlined, not filled: a catalogue page shows six of these at once, and six
@@ -146,13 +147,17 @@
 .analytics-grid.lower { grid-template-columns: 1fr; }
 .analytics-grid .workspace-card { min-height: 210px; padding: 18px; }
 .score-rings { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 22px; }
-.score-ring { aspect-ratio: 1; display: grid; place-content: center; justify-items: center; border: 5px solid var(--line); border-top-color: var(--accent); border-radius: 50%; }
-.score-ring.reading { border-top-color: var(--positive); }
-.score-ring.writing { border-top-color: var(--caution); }
-.score-ring.speaking { border-top-color: var(--line-strong); }
+/* The arc is real data: --ring-fill = band / 9, set inline by the page.
+   A fixed quarter tint would read as progress that does not exist. The ring
+   lives on ::before so the mask cannot punch a hole through the label text. */
+.score-ring { position: relative; aspect-ratio: 1; display: grid; place-content: center; justify-items: center; }
+.score-ring::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(var(--ring-c, var(--accent)) calc(var(--ring-fill, 0) * 1turn), var(--line) 0); -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 6px), black calc(100% - 5px)); mask: radial-gradient(farthest-side, transparent calc(100% - 6px), black calc(100% - 5px)); }
+.score-ring.reading { --ring-c: var(--positive); }
+.score-ring.writing { --ring-c: var(--caution); }
+.score-ring.speaking { --ring-c: var(--muted); }
 .score-ring strong { font-size: 22px; font-weight: 520; }
 .score-ring span { margin-top: 7px; font-size: 10px; }
-.score-ring small { margin-top: 2px; color: var(--muted); font-size: 8px; }
+.score-ring small { margin-top: 2px; color: var(--muted); font-size: 9px; }
 .ring-note { display: block; margin-top: 13px; color: var(--muted-2); font-size: 9px; }
 .overall-card > strong { display: block; margin: 20px 0 8px; color: var(--ink); font-size: 40px; font-weight: 520; }
 .overall-card p { color: var(--ink-soft); font-size: 11px; }
@@ -185,6 +190,8 @@
 .import-card { padding: 18px; display: grid; gap: 12px; }
 .import-drop { display: grid; gap: 6px; place-items: center; min-height: 92px; padding: 16px; border: 1px dashed var(--line-strong); border-radius: 6px; background: var(--panel-2); color: var(--muted); text-align: center; cursor: pointer; }
 .import-drop:hover, .import-drop.over { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+/* The file input is sr-only; proxy its keyboard focus onto the drop zone. */
+.import-card input:focus-visible + .import-drop { outline: 2px solid var(--accent); outline-offset: 2px; }
 .import-drop strong { color: var(--ink-soft); font-size: 14px; }
 .import-drop small { font-size: 12px; }
 .import-card textarea { width: 100%; padding: 14px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); color: var(--ink); font: 12px/1.6 var(--font-mono); resize: vertical; }
@@ -215,7 +222,8 @@
 .update-card-head button, .update-release button, .update-confirm button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; }
 .update-state { display: grid; grid-template-columns: 8px minmax(0, 1fr); align-items: center; gap: 12px; margin-top: 18px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel-2); }
 .update-state i { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
-.update-available .update-state i, .update-upToDate .update-state i { background: var(--positive); }
+.update-upToDate .update-state i { background: var(--positive); }
+.update-available .update-state i { background: var(--accent); }
 .update-checking .update-state i, .update-downloading .update-state i, .update-installing .update-state i { background: var(--caution); }
 .update-failed .update-state i { background: var(--danger); }
 .update-state strong { color: var(--ink-soft); font-size: 12px; }
@@ -253,7 +261,6 @@
   .catalog-row { grid-template-columns: 42px minmax(160px, 1.8fr) 75px 82px 65px auto; }
   .analytics-grid { grid-template-columns: 1fr 1fr; }
   .overall-card { grid-column: span 2; }
-  .page-heading blockquote { display: none; }
 }
 @media (max-width: 760px) { .update-card-head, .update-release, .update-confirm { grid-template-columns: 1fr; } }
 
@@ -361,7 +368,7 @@
 .legend-dot.same { background: var(--positive); }
 .legend-dot.missing { background: var(--caution); }
 .legend-dot.extra { background: var(--muted-2); }
-.dictation-diff { padding: 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel-2); font-size: 13.5px; line-height: 2; }
+.dictation-diff { padding: 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel-2); font-size: 14px; line-height: 2; }
 .dictation-diff .run.same { color: var(--ink); }
 .dictation-diff .run.missing { padding: 2px 4px; border-radius: 3px; background: var(--caution-soft); color: var(--caution); font-weight: 500; }
 .dictation-diff .run.extra { color: var(--muted-2); text-decoration: line-through; }
@@ -374,7 +381,7 @@
 .transcript-shield p { margin: 0; max-width: 320px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .reveal-button { margin-top: 4px; }
 .transcript-lines { flex: 1; min-height: 0; overflow-y: auto; padding-right: 8px; scrollbar-color: var(--line-strong) transparent; }
-.transcript-lines p { margin: 0 0 12px; color: var(--ink-soft); font-size: 13.5px; line-height: 1.8; }
+.transcript-lines p { margin: 0 0 12px; color: var(--ink-soft); font-size: 14px; line-height: 1.8; }
 .transcript-lines p.carries-answer { padding: 10px 12px; border-left: 3px solid var(--positive); border-radius: 0 6px 6px 0; background: var(--positive-soft); color: var(--ink); margin: 6px 0 14px; }
 .transcript-lines b { color: var(--muted); }
 .answer-flag { display: inline-flex; align-items: center; gap: 4px; margin-left: 8px; padding: 2px 7px; border-radius: 4px; background: var(--positive); color: var(--accent-ink); font-size: 11px; font-weight: 600; vertical-align: middle; }
@@ -418,6 +425,7 @@
 .studio-stage-section.reply-stage { margin-top: 6px; padding-top: 14px; border-top: 1px solid var(--line); }
 .copy-prompt-btn { gap: 6px; font-size: 12px; }
 .copy-prompt-btn.copied { border-color: var(--positive); color: var(--positive); background: var(--positive-soft); }
+.copy-prompt-btn.failed { border-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
 .archive-btn { gap: 6px; font-size: 12px; }
 
 .prompt-textarea-wrap, .reply-textarea-wrap { display: flex; flex-direction: column; }
@@ -511,6 +519,7 @@
 .remove-audio-btn:hover { color: var(--danger); }
 .audio-wizard-backdrop { position: fixed; inset: 0; z-index: 40; background: var(--scrim); display: grid; place-items: center; padding: 24px; }
 .audio-wizard { width: min(720px, 100%); max-height: min(86vh, 820px); overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+.audio-wizard.compact { width: min(460px, 100%); }
 .audio-wizard header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .audio-wizard h2, .audio-wizard h3 { margin: 0 0 8px; }
 .audio-plan { margin-top: 16px; display: grid; gap: 8px; }

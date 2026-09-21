@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
 import { feedbackDelete, feedbackList, feedbackSave, loadTranscript, mistakeList } from "../lib/api";
@@ -35,7 +35,19 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
   const [listeningExam, setListeningExam] = useState("");
   const [prompt, setPrompt] = useState("");
   const [reply, setReply] = useState("");
-  const [toast, setToast] = useState("");
+  const [toast, setToast] = useState<{ text: string; error?: boolean } | null>(null);
+  const toastTimer = useRef<number | null>(null);
+
+  useEffect(() => () => {
+    if (toastTimer.current) window.clearTimeout(toastTimer.current);
+  }, []);
+
+  function showToast(message: string, error = false) {
+    setToast({ text: message, error });
+    // A stale timer from an earlier toast would otherwise clear this one early.
+    if (toastTimer.current) window.clearTimeout(toastTimer.current);
+    toastTimer.current = window.setTimeout(() => setToast(null), 2200);
+  }
 
   async function reload() {
     const [m, f] = await Promise.all([
@@ -77,23 +89,27 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
   async function copy() {
     try {
       await navigator.clipboard.writeText(prompt);
-      setToast("已复制到剪贴板");
-    } catch { setToast("复制失败，请手动全选复制"); }
-    window.setTimeout(() => setToast(""), 2200);
+      showToast("已复制到剪贴板");
+    } catch { showToast("复制失败，请手动全选复制", true); }
   }
 
   async function archive() {
     if (!prompt.trim() || !reply.trim()) return;
-    await feedbackSave({
-      template,
-      title: template === "writing" ? taskTitle : TEMPLATES.find((t) => t.id === template)?.label,
-      examId: template === "listening" ? listeningExam : undefined,
-      prompt,
-      reply,
-    }).catch(() => undefined);
+    try {
+      await feedbackSave({
+        template,
+        title: template === "writing" ? taskTitle : TEMPLATES.find((t) => t.id === template)?.label,
+        examId: template === "listening" ? listeningExam : undefined,
+        prompt,
+        reply,
+      });
+    } catch (e) {
+      // 失败必须说：否则用户看着"已存入"提示清空回复，实际什么都没留下。
+      showToast(`存档失败，回复内容还在输入框里：${String(e)}`, true);
+      return;
+    }
     setReply("");
-    setToast("已成功存入个人语料库");
-    window.setTimeout(() => setToast(""), 2200);
+    showToast("已成功存入个人语料库");
     await reload();
   }
 
@@ -175,6 +191,7 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
           <div className="field"><span>考试 Part 阶段</span>
             <div className="filter-tabs">{([1, 2, 3] as const).map((p) =>
               <button key={p} type="button" className={part === p ? "active" : ""}
+                      aria-pressed={part === p}
                       onClick={() => setPart(p)}>Part {p}</button>)}</div></div>
         </>}
 
@@ -211,11 +228,11 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
             </div>
             <button
               type="button"
-              className={`secondary-button copy-prompt-btn ${toast ? "copied" : ""}`}
+              className={`secondary-button copy-prompt-btn ${toast?.text.includes("复制") ? (toast.error ? "failed" : "copied") : ""}`}
               disabled={!prompt}
               onClick={() => void copy()}
             >
-              <Icon name="document" size={14} /> {toast && toast.includes("复制") ? toast : "一键复制"}
+              <Icon name="document" size={14} /> {toast && toast.text.includes("复制") ? toast.text : "一键复制"}
             </button>
           </div>
           <div className="prompt-textarea-wrap">
@@ -264,5 +281,8 @@ export function PromptStudio({ vocab }: { vocab: VocabCard[] }) {
                 onClick={() => void feedbackDelete(row.id).then(reload)}>删除</button>
       </details>)}</div>
     </section>}
+    {/* Non-copy feedback (e.g. archive success) has no in-button slot — show
+        it as a floating toast like the shell does. */}
+    {toast && !toast.text.includes("复制") && <div className="toast-region" role="status"><div className={`toast${toast.error ? " error" : ""}`}><Icon name={toast.error ? "info" : "check"} size={17} />{toast.text}</div></div>}
   </div>;
 }

@@ -3,7 +3,7 @@
   "id": "cambridge-16-test-1-reading",
   "title": "Cambridge IELTS 16 Academic Test 1 Reading",
   "module": "reading",
-  "contentRevision": "repair-0025-fb0f7683",
+  "contentRevision": "repair-0001-705c34ef",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -1171,14 +1171,14 @@
         {
           "id": "c16t1r-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t1r-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO of the following points does the writer make about King Djoser?",
+              "prompt": "First selected letter: Which TWO of the following points does the writer make about King Djoser?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1215,30 +1215,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 25 and 26 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c16t1r-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c16t1r-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of the following points does the writer make about King Djoser?",
+              "prompt": "Second selected letter: Which TWO of the following points does the writer make about King Djoser?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -1286,7 +1268,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 25 and 26 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Initially he had to be persuaded to build in stone rather than clay."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "There is disagreement concerning the length of his reign."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "He failed to appreciate Imhotep’s part in the design of the Step Pyramid."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "A few of his possessions were still in his tomb when archaeologists found it."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "He criticised the design and construction of other pyramids in Egypt."
+            }
+          ]
         }
       ]
     },

@@ -3,7 +3,7 @@
   "id": "cambridge-14-test-3-reading",
   "title": "Cambridge IELTS 14 Academic Test 3 Reading",
   "module": "reading",
-  "contentRevision": "repair-0021-77ec5afe",
+  "contentRevision": "repair-0001-60b3a1c3",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -1372,14 +1372,14 @@
         {
           "id": "c14t3r-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t3r-q21",
               "number": 21,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which TWO of the following make insects interesting for drug research?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1415,30 +1415,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:58.506424+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 21 and 22 on your answer sheet"
-            ]
-          }
-        },
-        {
-          "id": "c14t3r-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c14t3r-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of the following make insects interesting for drug research?",
+              "prompt": "Second selected letter: Which TWO of the following make insects interesting for drug research?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1485,7 +1467,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 21 and 22 on your answer sheet"
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the huge number of individual insects in the world"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the variety of substances insects have developed to protect themselves"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the potential to extract and make use of insects' genetic codes"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the similarities between different species of insect"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the manageable size of most insects"
+            }
+          ]
         },
         {
           "id": "c14t3r-g23",

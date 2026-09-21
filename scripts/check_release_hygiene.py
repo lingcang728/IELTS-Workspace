@@ -2,7 +2,7 @@
 """Release hygiene gate:
 1. Validates version consistency across package.json, tauri.conf.json, site/package.json, Cargo.toml.
 2. Packages live only in repo-root release/, current version only; output/release must be empty.
-3. Scans src/ and src-tauri/ for unauthorized external network calls.
+3. Scans src/ (frontend) and src-tauri/src/ (Rust backend) for unauthorized external network calls.
 4. Ensures site/src/App.tsx points to current version without dead links.
 """
 import json
@@ -17,16 +17,56 @@ if sys.stderr and hasattr(sys.stderr, "reconfigure"):
 
 ROOT = Path(__file__).resolve().parents[1]
 
+
+def _strip_line_comments(text: str) -> str:
+    """tauri.conf.json is parsed by Tauri as JSONC, so `//` line comments are
+    legal there. Strip them before the strict json.loads below — the scanner
+    tracks string state so URLs like https:// inside strings survive.
+    """
+    out: list[str] = []
+    in_str = False
+    esc = False
+    i = 0
+    while i < len(text):
+        c = text[i]
+        if in_str:
+            out.append(c)
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+            i += 1
+        elif c == '"':
+            in_str = True
+            out.append(c)
+            i += 1
+        elif c == "/" and i + 1 < len(text) and text[i + 1] == "/":
+            while i < len(text) and text[i] != "\n":
+                i += 1
+        else:
+            out.append(c)
+            i += 1
+    return "".join(out)
+
+
 def main() -> int:
     errors = []
     
     # 1. 提取各处版本号
     pkg_ver = json.loads((ROOT / "package.json").read_text(encoding="utf-8"))["version"]
-    tauri_ver = json.loads((ROOT / "src-tauri/tauri.conf.json").read_text(encoding="utf-8"))["version"]
+    tauri_ver = json.loads(_strip_line_comments((ROOT / "src-tauri/tauri.conf.json").read_text(encoding="utf-8")))["version"]
     site_ver = json.loads((ROOT / "site/package.json").read_text(encoding="utf-8"))["version"]
     
     cargo_m = re.search(r'^version\s*=\s*"([^"]+)"', (ROOT / "src-tauri/Cargo.toml").read_text(encoding="utf-8"), re.M)
     cargo_ver = cargo_m.group(1) if cargo_m else None
+
+    # package-lock.json 在 npm install 之外的路径上不会自动跟随 package.json，
+    # 漂移过的 lock 会让 CI 按旧版本号打包。
+    lock = json.loads((ROOT / "package-lock.json").read_text(encoding="utf-8"))
+    lock_ver = lock.get("version")
+    lock_root_ver = (lock.get("packages") or {}).get("", {}).get("version")
 
     versions = {
         "package.json": pkg_ver,
@@ -37,6 +77,10 @@ def main() -> int:
     for k, v in versions.items():
         if v != pkg_ver:
             errors.append(f"版本不一致：package.json 为 {pkg_ver}，而 {k} 为 {v}")
+    if lock_ver != pkg_ver or lock_root_ver != pkg_ver:
+        errors.append(
+            f"package-lock.json 版本漂移：lock.version={lock_ver}，packages[\"\"].version={lock_root_ver}，应为 {pkg_ver}"
+        )
 
     # 2. 安装包只放仓库根 release/，且只能是当前版本。
     allowed_exes = {
@@ -55,7 +99,7 @@ def main() -> int:
         if extra:
             errors.append(f"release/ 只许保留当前版本 {pkg_ver}，发现多余：{extra}")
 
-    # 3. 扫描 src/ 下的前端代码，严禁未授权网络请求 (AGENTS.md 第 8 条)
+    # 3. 扫描 src/ 前端与 src-tauri/src/ 后端，严禁未授权网络请求 (AGENTS.md 第 8 条)
     disallowed_network = re.compile(r"\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(", re.I)
     for tsx_file in (ROOT / "src").rglob("*.ts*"):
         if tsx_file.name.endswith(".test.ts") or tsx_file.name.endswith(".test.tsx"):
@@ -64,6 +108,13 @@ def main() -> int:
         for idx, line in enumerate(text.splitlines(), 1):
             if disallowed_network.search(line):
                 errors.append(f"网络纪律违规：{tsx_file.relative_to(ROOT)}:{idx} 发现未授权网络 API：{line.strip()}")
+    # Rust 侧没有 fetch；未授权外呼会体现为 HTTP 客户端 crate、裸 socket 或远程 URL。
+    disallowed_rust_net = re.compile(r"reqwest::|ureq::|hyper::|awc::|std::net::|https?://", re.I)
+    for rs_file in (ROOT / "src-tauri" / "src").rglob("*.rs"):
+        text = rs_file.read_text(encoding="utf-8")
+        for idx, line in enumerate(text.splitlines(), 1):
+            if disallowed_rust_net.search(line):
+                errors.append(f"网络纪律违规：{rs_file.relative_to(ROOT)}:{idx} 发现未授权网络调用痕迹：{line.strip()}")
 
     # 4. 检查官网 site/src/App.tsx 是否有当前版本的动态下载链接
     site_app = (ROOT / "site/src/App.tsx").read_text(encoding="utf-8")

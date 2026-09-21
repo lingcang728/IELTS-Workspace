@@ -374,7 +374,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:17.075223+00:00",
+            "note": "印刷页41题型为TRUE/FALSE/NOT GIVEN判断题，原书页面无A-H文字选项列表。"
+          }
         },
         {
           "id": "c13t2r-g11",
@@ -434,7 +440,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:17.075223+00:00",
+            "note": "印刷页41题型为TRUE/FALSE/NOT GIVEN判断题，原书页面无A-H文字选项列表。"
+          }
         }
       ]
     },
@@ -1027,14 +1039,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              26
-            ],
-            "canonicalOf": [
-              "READING PASSAGE 3"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:49.954123+00:00",
+            "note": "印刷页45题型为summary completion（从原文选词填空），原书页面无A-H文字选项列表。"
           }
         },
         {

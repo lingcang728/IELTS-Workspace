@@ -6,6 +6,7 @@ const INSTALLER =
 const PORTABLE =
   `https://github.com/lingcang728/IELTS-Workspace/releases/latest/download/IELTS_Workspace_${VERSION}_x64.exe`;
 const REPO = "https://github.com/lingcang728/IELTS-Workspace";
+const SHA256SUMS = `${REPO}/releases/latest/download/SHA256SUMS.txt`;
 const AUDIO_TAG = "listening-audio-v1";
 
 const BOOKS = Array.from({ length: 17 }, (_, i) => {
@@ -105,7 +106,14 @@ export default function App() {
           <div className="wrap">
             <p className="kicker">Download</p>
             <h2 id="download-title">下载</h2>
-            <p>Windows 10 / 11 x64。安装版支持应用内更新，便携版可整夹拷走。</p>
+            <p>
+              Windows 10 / 11 x64。安装版支持应用内更新，便携版可整夹拷走。下载后可用{" "}
+              <code className="path">certutil -hashfile 文件名 SHA256</code> 核对，哈希清单见{" "}
+              <a href={SHA256SUMS} rel="noreferrer" target="_blank">
+                SHA256SUMS.txt
+              </a>
+              。
+            </p>
             <div className="dl-grid">
               <article className="dl-card">
                 <p className="badge">推荐</p>
@@ -113,7 +121,7 @@ export default function App() {
                 <p className="file">IELTS_Workspace_{VERSION}_x64-setup.exe</p>
                 <p>
                   安装到本机，数据写在{" "}
-                  <code className="path">%LOCALAPPDATA%\IELTS Workspace\data</code>。
+                  <code className="path">%LOCALAPPDATA%\IELTS Workspace User Data\data</code>。
                 </p>
                 <a className="btn btn-primary" href={INSTALLER}>
                   下载安装版
@@ -140,7 +148,10 @@ export default function App() {
             <h2 id="listening-title">听力音频</h2>
             <ol className="steps">
               <li>打开应用，进入听力资源中心，或在试卷行点「添加音频」。</li>
-              <li>只支持四个 Part/Section（剑4–20）、文件夹，以及每册 ZIP。不支持整轨。</li>
+              <li>
+                支持四个 Part/Section 文件（剑4–20）、文件夹与每册 ZIP；ZIP
+                内的官方整轨按 SHA-256 自动识别。
+              </li>
               <li>
                 应用不会在内部下载音频。点「打开下载指南」只会打开本页的这一节。
               </li>
@@ -170,7 +181,7 @@ export default function App() {
               <div>
                 <dt>安装版</dt>
                 <dd>
-                  <code className="path">%LOCALAPPDATA%\IELTS Workspace\data</code>
+                  <code className="path">%LOCALAPPDATA%\IELTS Workspace User Data\data</code>
                 </dd>
               </div>
               <div>

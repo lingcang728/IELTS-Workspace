@@ -632,7 +632,13 @@
               "label": "D",
               "text": "if the projects planned are realistic and useful."
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:03:51.345856+00:00",
+            "note": "Printed page 81 has single-choice question 13 with 4 options (A-D), but fixture declares 8 empty options (A-H)."
+          }
         }
       ]
     },

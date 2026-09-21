@@ -87,11 +87,26 @@ describe("attemptMatches", () => {
     expect(attemptMatches("museum", ["the library", "library"])).toBe(false);
   });
 
-  it("treats comma-separated letters as a set for multi-select", () => {
-    expect(attemptMatches("A, C", ["A", "C"])).toBe(true);
-    expect(attemptMatches("C A", ["A", "C"])).toBe(true);
-    expect(attemptMatches("A, B", ["A", "C"])).toBe(false);
+  it("encodes a typed multi-select like the scorer's array join", () => {
+    // per_question multi_choice keys are single joined tokens ("B|C"): the
+    // full set and only the full set matches, order-insensitive.
+    expect(attemptMatches("B, C", ["B|C"])).toBe(true);
+    expect(attemptMatches("C B", ["B|C"])).toBe(true);
+    expect(attemptMatches("B", ["B|C"])).toBe(false);
+    expect(attemptMatches("B, D", ["B|C"])).toBe(false);
+    expect(attemptMatches("B, B", ["B|C"])).toBe(false);
+  });
+
+  it("treats a bare-letter accepted list as the shared either-order pool", () => {
+    // in_either_order report rows carry the group pool: any letter inside it
+    // would have consumed a pool entry and scored the slot.
     expect(attemptMatches("A", ["A", "C"])).toBe(true);
+    expect(attemptMatches("C", ["A", "C"])).toBe(true);
+    expect(attemptMatches("A, C", ["A", "C"])).toBe(true);
+    expect(attemptMatches("B", ["A", "C"])).toBe(false);
+    expect(attemptMatches("X, Y", ["A", "C"])).toBe(false);
+    // A pool that is not single letters is an alternatives list, not a pool.
+    expect(attemptMatches("the, library", ["the library", "library"])).toBe(false);
   });
 });
 

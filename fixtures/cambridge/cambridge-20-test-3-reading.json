@@ -3,7 +3,7 @@
   "id": "cambridge-20-test-3-reading",
   "title": "Cambridge IELTS 20 Academic Test 3 Reading",
   "module": "reading",
-  "contentRevision": "repair-0016-4c9ad3b1",
+  "contentRevision": "repair-0004-741279f0",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -855,18 +855,14 @@
         {
           "id": "c20t3r-g20",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t3r-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO of these causes of damage to coral reefs are mentioned by the writer of the text?",
-              "acceptedAnswers": [
-                "C",
-                "E"
-              ],
+              "prompt": "First selected letter: Which TWO of these causes of damage to coral reefs are mentioned by the writer of the text?",
               "gapText": "____",
               "options": [
                 {
@@ -899,33 +895,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              20,
-              21
-            ],
-            "canonicalOf": null
-          }
-        },
-        {
-          "id": "c20t3r-g21",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
+            },
             {
               "id": "c20t3r-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of these causes of damage to coral reefs are mentioned by the writer of the text?",
-              "acceptedAnswers": [
-                "C",
-                "E"
-              ],
+              "prompt": "Second selected letter: Which TWO of these causes of damage to coral reefs are mentioned by the writer of the text?",
               "gapText": "____",
               "options": [
                 {
@@ -958,7 +937,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "repairSource": {
@@ -968,23 +950,50 @@
               21
             ],
             "canonicalOf": null
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "a rising number of extreme storms"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "the removal of too many fish from the sea"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "the contamination of the sea from waste"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "increased disease among marine species"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "alterations in the usual flow of water in the seas"
+            }
+          ]
         },
         {
           "id": "c20t3r-g22",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c20t3r-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO of the following statements are true of the researchers at London Zoo?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "First selected letter: Which TWO of the following statements are true of the researchers at London Zoo?",
               "gapText": "____",
               "options": [
                 {
@@ -1017,7 +1026,51 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
+            {
+              "id": "c20t3r-q23",
+              "number": 23,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO of the following statements are true of the researchers at London Zoo?",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "They are hoping to expand the numbers of different corals being bred in laboratories."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "They want to identify corals that can cope well with the changed sea conditions."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "They are looking at ways of creating artificial reefs that corals could grow on."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "They are trying out methods that would speed up reproduction in some corals."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "They are investigating materials that might protect reefs from higher temperatures."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "repairSource": {
@@ -1029,56 +1082,10 @@
             "canonicalOf": [
               "Write the correct letters in boxes 22 and 23 on your answer sheet."
             ]
-          }
-        },
-        {
-          "id": "c20t3r-g23",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c20t3r-q23",
-              "number": 23,
-              "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of the following statements are true of the researchers at London Zoo?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "They are hoping to expand the numbers of different corals being bred in laboratories."
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "They want to identify corals that can cope well with the changed sea conditions."
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "They are looking at ways of creating artificial reefs that corals could grow on."
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "They are trying out methods that would speed up reproduction in some corals."
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "They are investigating materials that might protect reefs from higher temperatures."
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
-            }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
           ],
           "sharedOptions": [
             {
@@ -1106,12 +1113,7 @@
               "label": "E",
               "text": "They are investigating materials that might protect reefs from higher temperatures."
             }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:57:13.139824+00:00"
-          }
+          ]
         },
         {
           "id": "c20t3r-g24",
@@ -1132,14 +1134,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              24,
-              26
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 24–26 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:34.206564+00:00",
+            "note": "Page 66 contains sentence completion with Choose ONE WORD ONLY from the passage for Questions 24-26; fixture mistakenly declared single_choice with optionLabels A-H."
           }
         },
         {
@@ -1161,14 +1159,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              24,
-              26
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 24–26 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:34.206564+00:00",
+            "note": "Page 66 contains sentence completion with Choose ONE WORD ONLY from the passage for Questions 24-26; fixture mistakenly declared single_choice with optionLabels A-H."
           }
         },
         {
@@ -1190,14 +1184,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              24,
-              26
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 24–26 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:34.206564+00:00",
+            "note": "Page 66 contains sentence completion with Choose ONE WORD ONLY from the passage for Questions 24-26; fixture mistakenly declared single_choice with optionLabels A-H."
           }
         }
       ]

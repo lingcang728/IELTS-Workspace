@@ -896,7 +896,13 @@
               "label": "E",
               "text": "The importance of the rainforests and the reasons for their destruction"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:02:31.200251+00:00",
+            "note": "Printed page 14 has single-choice question 14 with 5 options (A-E), but fixture declares 8 empty options (A-H)."
+          }
         },
         {
           "id": "c4t1r-g15",
@@ -1994,7 +2000,13 @@
               "label": "D",
               "text": "The blind may be successful artists if given the right training."
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:02:54.827931+00:00",
+            "note": "Printed page 27 has single-choice question 40 with 4 options (A-D), but fixture declares 8 empty options (A-H)."
+          }
         }
       ]
     }

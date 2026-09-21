@@ -134,6 +134,14 @@ try {
   $latestPath = Join-Path $output 'latest.json'
   Write-Utf8NoBom $latestPath ($latest | ConvertTo-Json -Depth 6)
 
+  # 安装包没有 Authenticode 签名，公布的 SHA-256 是用户侧唯一能做的核对手段：
+  # certutil -hashfile <file> SHA256 对照本清单。sums 随包一起进 release/ 并由
+  # CI 上传到同一个 GitHub Release，与 latest.json 并列。
+  $sums = foreach ($f in @($installer, $portable, $latestPath)) {
+    '{0}  {1}' -f (Get-Sha256 $f).ToLowerInvariant(), [IO.Path]::GetFileName($f)
+  }
+  Write-Utf8NoBom (Join-Path $output 'SHA256SUMS.txt') (($sums -join "`r`n") + "`r`n")
+
   if ($env:GITHUB_ACTIONS -ne 'true') {
     & (Join-Path $PSScriptRoot 'package-portable.ps1') -SkipBuild
     if ($LASTEXITCODE -ne 0) { throw '本机开始菜单 / 桌面快捷方式更新失败。' }

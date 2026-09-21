@@ -151,12 +151,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              8
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:48.399848+00:00",
+            "note": "印刷页 74 的 Question 2 属于 TRUE / FALSE / NOT GIVEN 判断题，页面无 A-H 选项列表；工单声明 A-H 选项标签与题目结构不符，不能伪造 A-H 选项。"
           }
         },
         {
@@ -773,12 +771,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:56:33.059111+00:00",
+            "note": "印刷页 81 的 Question 14 属于 Reading Passage 2 六个段落（A-F）匹配题；页面没有独立的 A-F 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -1091,14 +1087,14 @@
         {
           "id": "c9t3r-g18",
           "instruction": "Choose FIVE letters, A–J. Write the correct letters in boxes 18–22 on your answer sheet.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c9t3r-q18",
               "number": 18,
-              "type": "single_choice",
-              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It is a more reliable source of energy than wind power.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which FIVE of the following claims about tidal power are made by the writer?",
               "acceptedAnswers": [
                 "A"
               ],
@@ -1155,81 +1151,17 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:06+00:00"
+                "reviewedAt": "2026-08-24T05:43:06+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It is a more reliable source of energy than wind power."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "It would replace all other forms of energy in Britain."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Its introduction has come as a result of public pressure."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It would cut down on air pollution."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "It could contribute to the closure of many existing power stations in Britain."
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "It could be a means of increasing national income."
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "It could face a lot of resistance from other fuel industries."
-            },
-            {
-              "id": "H",
-              "label": "H",
-              "text": "It could be sold more cheaply than any other type of fuel."
-            },
-            {
-              "id": "I",
-              "label": "I",
-              "text": "It could compensate for the shortage of inland sites for energy production."
-            },
-            {
-              "id": "J",
-              "label": "J",
-              "text": "It is best produced in the vicinity of coastlines with particular features."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T12:44:55.503389+00:00"
-          }
-        },
-        {
-          "id": "c9t3r-g19",
-          "instruction": "Choose FIVE letters, A-J.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c9t3r-q19",
               "number": 19,
-              "type": "single_choice",
-              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It would cut down on air pollution.",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which FIVE of the following claims about tidal power are made by the writer?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -1287,34 +1219,17 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:06+00:00"
+                "reviewedAt": "2026-08-24T05:43:06+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              18,
-              22
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 18—22 on your answer sheet"
-            ]
-          }
-        },
-        {
-          "id": "c9t3r-g20",
-          "instruction": "Choose FIVE letters, A-J.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c9t3r-q20",
               "number": 20,
-              "type": "single_choice",
-              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It could contribute to the closure of many existing power stations in Britain.",
+              "type": "multi_choice",
+              "prompt": "Third selected letter: Which FIVE of the following claims about tidal power are made by the writer?",
               "acceptedAnswers": [
                 "E"
               ],
@@ -1372,34 +1287,17 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:06+00:00"
+                "reviewedAt": "2026-08-24T05:43:06+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              18,
-              22
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 18—22 on your answer sheet"
-            ]
-          }
-        },
-        {
-          "id": "c9t3r-g21",
-          "instruction": "Choose FIVE letters, A-J.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c9t3r-q21",
               "number": 21,
-              "type": "single_choice",
-              "prompt": "Which FIVE of the following claims about tidal power are made by the writer? It could be a means of increasing national income.",
+              "type": "multi_choice",
+              "prompt": "Fourth selected letter: Which FIVE of the following claims about tidal power are made by the writer?",
               "acceptedAnswers": [
                 "F"
               ],
@@ -1457,42 +1355,26 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:06+00:00"
+                "reviewedAt": "2026-08-24T05:43:06+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              18,
-              22
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 18—22 on your answer sheet"
-            ]
-          }
-        },
-        {
-          "id": "c9t3r-g22",
-          "instruction": "Choose FIVE letters, A-J.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c9t3r-q22",
               "number": 22,
-              "type": "matching",
-              "prompt": "-year-old graduate engineering student at the prestigious Massachusetts Institute of Technology in 1939. He set out with an apparently simple aim: to pin down the precise meaning of the concept of information'. The most basic form of information, Shannon argued, is whether something is true or false—which can be captured in the binary unit, or bit', of the form 1 or 0. Having identified this funda",
+              "type": "multi_choice",
+              "prompt": "Fifth selected letter: Which FIVE of the following claims about tidal power are made by the writer?",
               "acceptedAnswers": [
                 "J"
               ],
               "gapText": "____",
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-25T11:41:07.052457+00:00"
+                "reviewedAt": "2026-08-25T11:41:07.052457+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               },
               "options": [
                 {
@@ -1503,7 +1385,7 @@
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "It would replace all other forms of energy in Britain"
+                  "text": "It would replace all other forms of energy in Britain."
                 },
                 {
                   "id": "C",
@@ -1548,16 +1430,69 @@
               ]
             }
           ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It is a more reliable source of energy than wind power."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It would replace all other forms of energy in Britain."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Its introduction has come as a result of public pressure."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It would cut down on air pollution."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It could contribute to the closure of many existing power stations in Britain."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "It could be a means of increasing national income."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "It could face a lot of resistance from other fuel industries."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "It could be sold more cheaply than any other type of fuel."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "It could compensate for the shortage of inland sites for energy production."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "It is best produced in the vicinity of coastlines with particular features."
+            }
+          ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              18,
-              22
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 18—22 on your answer sheet"
-            ]
-          }
+            "kind": "script",
+            "note": "83_fix_choose_n_groups: split Choose-N boxes merged into one in_either_order group"
+          },
+          "acceptedAnswers": [
+            "A",
+            "D",
+            "E",
+            "F",
+            "J"
+          ]
         },
         {
           "id": "c9t3r-g23",
@@ -1769,14 +1704,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              26
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 23—26 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:11.733160+00:00",
+            "note": "印刷页 82 的 Question 23-26 为图表填空题（Label the diagram），题 26 无选项列表；工单中声明 A-H 选项标签为提取错误。"
           },
           "imageAsset": "assets/cambridge/c09-t3-reading-p0072.jpg"
         }
@@ -1877,12 +1808,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:41.084180+00:00",
+            "note": "印刷页 86 的 Question 27 属于 Reading Passage 3 六个段落（A-F）匹配题；页面没有独立的 A-F 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -1971,12 +1900,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:41.084180+00:00",
+            "note": "印刷页 86 的 Question 28 属于 Reading Passage 3 六个段落（A-F）匹配题；页面没有独立的 A-F 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -2065,12 +1992,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:41.084180+00:00",
+            "note": "印刷页 86 的 Question 29 属于 Reading Passage 3 六个段落（A-F）匹配题；页面没有独立的 A-F 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -2159,12 +2084,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:41.084180+00:00",
+            "note": "印刷页 86 的 Question 30 属于 Reading Passage 3 六个段落（A-F）匹配题；页面没有独立的 A-F 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -2253,12 +2176,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:41.084180+00:00",
+            "note": "印刷页 86 的 Question 31 属于 Reading Passage 3 六个段落（A-F）匹配题；页面没有独立的 A-F 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -2347,12 +2268,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:41.084180+00:00",
+            "note": "印刷页 86 的 Question 32 属于 Reading Passage 3 六个段落（A-F）匹配题；页面没有独立的 A-F 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -2381,14 +2300,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 33—37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:58:30.824636+00:00",
+            "note": "印刷页 87 的 Question 33-37 为 notes 填空题，题 33 无选项列表；工单中声明 A-H 选项标签为提取错误。"
           }
         },
         {
@@ -2416,14 +2331,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 33—37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:58:30.824636+00:00",
+            "note": "印刷页 87 的 Question 33-37 为 notes 填空题，题 34 无选项列表；工单中声明 A-H 选项标签为提取错误。"
           }
         },
         {
@@ -2452,14 +2363,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 33—37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:58:30.824636+00:00",
+            "note": "印刷页 87 的 Question 33-37 为 notes 填空题，题 35 无选项列表；工单中声明 A-H 选项标签为提取错误。"
           }
         },
         {

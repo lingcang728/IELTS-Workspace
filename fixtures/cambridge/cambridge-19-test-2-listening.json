@@ -452,7 +452,13 @@
               "label": "C",
               "text": "the local council"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T14:13:36.777211+00:00",
+            "note": "结构不符：原书印刷页35的 Questions 11–16 为单选题，每题页面只印 A、B、C；工单 optionLabels 错列为 A–H，D–H 页面不存在，不能凭空补写选项。"
+          }
         },
         {
           "id": "c19t2l-g13",
@@ -503,7 +509,13 @@
               "label": "C",
               "text": "had undergone eye surgery"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T14:13:36.777211+00:00",
+            "note": "结构不符：原书印刷页35的 Questions 11–16 为单选题，每题页面只印 A、B、C；工单 optionLabels 错列为 A–H，D–H 页面不存在，且工单题面将 ‘In his health’ 粘成 ‘In hishealth’，不能凭空补写或掩盖结构错误。"
+          }
         },
         {
           "id": "c19t2l-g14",
@@ -554,7 +566,13 @@
               "label": "C",
               "text": "eight and a half minutes"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T14:13:36.777211+00:00",
+            "note": "结构不符：原书印刷页35的 Questions 11–16 为单选题，每题页面只印 A、B、C；工单 optionLabels 错列为 A–H，D–H 页面不存在，且工单题面将 ‘arriving at’ 粘成 ‘arrivingat’，不能凭空补写或掩盖结构错误。"
+          }
         },
         {
           "id": "c19t2l-g15",
@@ -605,7 +623,13 @@
               "label": "C",
               "text": "if the lifeboat should be launched"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T14:13:36.777211+00:00",
+            "note": "结构不符：原书印刷页35的 Questions 11–16 为单选题，每题页面只印 A、B、C；工单 optionLabels 错列为 A–H，D–H 页面不存在，且工单题面将 ‘who will’ 粘成 ‘whowill’，不能凭空补写或掩盖结构错误。"
+          }
         },
         {
           "id": "c19t2l-g16",
@@ -688,7 +712,7 @@
               "id": "c19t2l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO things does David say about the lifeboat volunteer training?",
+              "prompt": "First selected letter: Which TWO things does David say about the lifeboat volunteer training?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -730,7 +754,7 @@
               "id": "c19t2l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO things does David say about the lifeboat volunteer training?",
+              "prompt": "Second selected letter: Which TWO things does David say about the lifeboat volunteer training?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -816,7 +840,7 @@
               "id": "c19t2l-q19",
               "number": 19,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO things does David find most motivating about the work he does?",
+              "prompt": "First selected letter: Which TWO things does David find most motivating about the work he does?",
               "acceptedAnswers": [
                 "A",
                 "B"
@@ -858,7 +882,7 @@
               "id": "c19t2l-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO things does David find most motivating about the work he does?",
+              "prompt": "Second selected letter: Which TWO things does David find most motivating about the work he does?",
               "acceptedAnswers": [
                 "A",
                 "B"
@@ -1169,7 +1193,13 @@
               "label": "C",
               "text": "People dispose of more footwear than they used to"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T14:13:48.698656+00:00",
+            "note": "Questions 21–24 页面实际只印 A–C 三个选项；工单却为 q24 声明 A–H 八个空选项，D–H 未印在原书页，不能凭空补写。"
+          }
         },
         {
           "id": "c19t2l-g25",

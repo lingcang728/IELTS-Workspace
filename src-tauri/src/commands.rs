@@ -1,4 +1,5 @@
 use crate::audio;
+use crate::clock::{epoch_day_now, iso_epoch_day, now_iso};
 use crate::content;
 use crate::error::AppError;
 use crate::library;
@@ -7,15 +8,62 @@ use crate::paths;
 use crate::safe_path;
 use crate::scoring;
 use crate::session;
+use crate::store;
 use serde_json::Value;
+use std::collections::HashMap;
 use std::fs;
+use std::path::Path;
+use std::sync::{Mutex, OnceLock};
 use tauri::{AppHandle, Emitter};
 
+/// Run blocking file work off the async runtime's worker threads. `async fn`
+/// commands already avoid the UI thread, but they still share the runtime with
+/// small commands like `save_session` — a minutes-long audio scan or migration
+/// must not park an executor thread while autosave waits.
+async fn blocking<T: Send + 'static>(
+    f: impl FnOnce() -> Result<T, AppError> + Send + 'static,
+) -> Result<T, AppError> {
+    tauri::async_runtime::spawn_blocking(f)
+        .await
+        .map_err(|e| AppError::from(format!("后台任务失败：{e}")))?
+}
+
 #[tauri::command]
-pub fn bootstrap() -> Result<Value, AppError> {
-    let migration = migrate::run();
+pub async fn bootstrap(app: AppHandle) -> Result<Value, AppError> {
+    blocking(move || bootstrap_inner(&app)).await
+}
+
+/// Bootstraps can overlap now that they run on blocking workers (two reload
+/// triggers in quick succession). They share `.migrate-staging` and the
+/// content `.staging-{version}` directories, so a second bootstrap must wait
+/// rather than interleave file copies. Poisoning is recovered — the guard
+/// protects no data of its own.
+fn bootstrap_lock() -> &'static Mutex<()> {
+    static L: OnceLock<Mutex<()>> = OnceLock::new();
+    L.get_or_init(|| Mutex::new(()))
+}
+
+fn bootstrap_inner(app: &AppHandle) -> Result<Value, AppError> {
+    let _bootstrap_guard = bootstrap_lock()
+        .lock()
+        .unwrap_or_else(|poisoned| poisoned.into_inner());
+    let migration = migrate::run(|progress| {
+        let _ = app.emit("bootstrap-progress", progress);
+    });
     let mut probe = paths::probe_writable();
     if probe.ok {
+        // Staging from a scan that was never confirmed outlives the in-memory
+        // import plan only until reboot — the plan is gone, so the extracted
+        // files can never be confirmed. Drop them instead of letting up to
+        // 2 GiB sit under data/temp/audio-import.
+        if let Ok(root) = paths::ensure_data_layout() {
+            // The sweep races a scan in progress: the wizard keeps extracted
+            // ZIP parts under this staging dir until confirm. Wait for the
+            // scan lock instead of deleting files out from under it.
+            if let Ok(_scan_guard) = audio::scan_lock().lock() {
+                let _ = fs::remove_dir_all(root.join("temp").join("audio-import"));
+            }
+        }
         match content::ensure() {
             Ok(status) => {
                 if probe.warning.is_none() {
@@ -67,6 +115,18 @@ pub fn bootstrap() -> Result<Value, AppError> {
             listed.quarantined.len()
         ));
     }
+    let quarantined_records = store::quarantined_count();
+    if quarantined_records > 0 {
+        warnings.push(format!(
+            "已隔离 {quarantined_records} 个损坏的学习记录文件（错题/生词/计划/反馈），可在数据目录对应类别的 quarantine 子目录查看"
+        ));
+    }
+    if migration.conflicts > 0 {
+        warnings.push(format!(
+            "迁移时有 {} 个文件与现有数据重名，已保留现有版本；旧副本仍在原目录的 .migrated.bak 备份中",
+            migration.conflicts
+        ));
+    }
     let profile = match load_profile_migrated() {
         Ok(v) => v,
         Err(e) => {
@@ -103,9 +163,15 @@ fn valid_ymd(s: &str) -> bool {
     if b.len() != 10 || b[4] != b'-' || b[7] != b'-' {
         return false;
     }
-    let Ok(y) = s[0..4].parse::<i32>() else { return false };
-    let Ok(m) = s[5..7].parse::<u32>() else { return false };
-    let Ok(d) = s[8..10].parse::<u32>() else { return false };
+    let Ok(y) = s[0..4].parse::<i32>() else {
+        return false;
+    };
+    let Ok(m) = s[5..7].parse::<u32>() else {
+        return false;
+    };
+    let Ok(d) = s[8..10].parse::<u32>() else {
+        return false;
+    };
     if !(2000..=2100).contains(&y) || !(1..=12).contains(&m) || d < 1 {
         return false;
     }
@@ -145,6 +211,17 @@ fn normalize_profile(value: &mut Value) -> Result<(), AppError> {
             );
         }
     }
+    if let Some(band) = obj.get("targetBand") {
+        if !band.is_null() {
+            let ok = band
+                .as_f64()
+                .map(|b| (4.0..=9.0).contains(&b))
+                .unwrap_or(false);
+            if !ok {
+                return Err(AppError::from("目标分数必须是 4.0–9.0 的数字"));
+            }
+        }
+    }
     if let Some(date) = obj.get("examDate").cloned() {
         if let Some(s) = date.as_str() {
             if !s.is_empty() && !valid_ymd(s) {
@@ -162,66 +239,79 @@ fn load_profile_migrated() -> Result<Option<Value>, AppError> {
     if !path.exists() {
         return Ok(None);
     }
-    let text = fs::read_to_string(&path)
-        .map_err(|e| AppError::from(format!("无法读取配置：{e}")))?;
+    let text =
+        fs::read_to_string(&path).map_err(|e| AppError::from(format!("无法读取配置：{e}")))?;
     let mut value: Value = match serde_json::from_str(&text) {
         Ok(v) => v,
         Err(e) => {
-            let dir = path.parent().unwrap_or(std::path::Path::new(".")).join("quarantine");
+            let dir = path
+                .parent()
+                .unwrap_or(std::path::Path::new("."))
+                .join("quarantine");
             let _ = session::quarantine_file_to(&path, &dir, &format!("profile 损坏：{e}"));
-            return Err(AppError::from("配置文件已损坏，已隔离。请重新设置主题与考试日期。"));
+            return Err(AppError::from(
+                "配置文件已损坏，已隔离。请重新设置主题与考试日期。",
+            ));
         }
     };
     let missing = value.get("practiceScheme").is_none();
     normalize_profile(&mut value)?;
     if missing {
-        let _ = session::atomic_write(&path, serde_json::to_vec_pretty(&value)?.as_slice());
+        // Serialise the repair write against a concurrent save_profile —
+        // both share the same profile.json.tmp scratch file.
+        if let Ok(_guard) = session::write_guard() {
+            let _ = session::atomic_write(&path, serde_json::to_vec_pretty(&value)?.as_slice());
+        }
     }
     Ok(Some(value))
 }
 
+// Session commands run on the async runtime: they are small writes that must
+// not queue behind main-thread work (audio scans, migration) while autosave is
+// trying to land answers on disk.
 #[tauri::command]
-pub fn save_session(json: String) -> Result<String, AppError> {
+pub async fn save_session(json: String) -> Result<String, AppError> {
     session::save_session_json(&json)
 }
 
 #[tauri::command]
-pub fn load_session(id: String) -> Result<String, AppError> {
+pub async fn load_session(id: String) -> Result<String, AppError> {
     session::load_session_json(&id)
 }
 
 #[tauri::command]
-pub fn list_sessions() -> Result<Vec<Value>, AppError> {
+pub async fn list_sessions() -> Result<Vec<Value>, AppError> {
     session::list_session_summaries()
 }
 
 #[tauri::command]
-pub fn discard_session(id: String) -> Result<(), AppError> {
+pub async fn discard_session(id: String) -> Result<(), AppError> {
     session::discard_session(&id)
 }
 
 #[tauri::command]
-pub fn archive_session(id: String) -> Result<(), AppError> {
+pub async fn archive_session(id: String) -> Result<(), AppError> {
     session::archive_session(&id)
 }
 
 #[tauri::command]
-pub fn load_exam(id: String) -> Result<Value, AppError> {
+pub async fn load_exam(id: String) -> Result<Value, AppError> {
     library::load_exam(&id)
 }
 
 #[tauri::command]
-pub fn import_exam(json: String) -> Result<Value, AppError> {
+pub async fn import_exam(json: String) -> Result<Value, AppError> {
     library::import_exam_json(&json)
 }
 
 #[tauri::command]
-pub fn resolve_asset(rel: String) -> Result<String, AppError> {
+pub async fn resolve_asset(rel: String) -> Result<String, AppError> {
     library::resolve_asset(&rel)
 }
 
 #[tauri::command]
-pub fn score_exam(exam_id: String, answers_json: String) -> Result<Value, AppError> {
+pub async fn score_exam(exam_id: String, answers_json: String) -> Result<Value, AppError> {
+    safe_path::check_json_arg(&answers_json, "答案数据")?;
     let exam = library::load_exam(&exam_id)?;
     let answers: Value = serde_json::from_str(&answers_json)?;
     let report = scoring::score_exam(&exam, &answers).map_err(AppError::from)?;
@@ -229,10 +319,14 @@ pub fn score_exam(exam_id: String, answers_json: String) -> Result<Value, AppErr
 }
 
 #[tauri::command]
-pub fn save_profile(json: String) -> Result<(), AppError> {
+pub async fn save_profile(json: String) -> Result<(), AppError> {
+    safe_path::check_json_arg(&json, "个人资料")?;
     let mut v: Value = serde_json::from_str(&json)?;
     normalize_profile(&mut v)?;
     let path = paths::profile_path()?;
+    // Async commands can overlap: two rapid settings changes would otherwise
+    // interleave on the same profile.json.tmp scratch file.
+    let _guard = session::write_guard()?;
     session::atomic_write(&path, serde_json::to_vec_pretty(&v)?.as_slice())?;
     Ok(())
 }
@@ -248,12 +342,34 @@ pub fn save_profile(json: String) -> Result<(), AppError> {
 /// table contribute to `moduleCounts` but not to the averages, and are counted
 /// in `unbandedCounts` so the UI can say so instead of silently dropping them.
 #[tauri::command]
-pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
+pub async fn analytics_report(range_days: u32) -> Result<Value, AppError> {
+    blocking(move || analytics_report_inner(range_days)).await
+}
+
+fn analytics_report_inner(range_days: u32) -> Result<Value, AppError> {
     use std::collections::BTreeMap;
+    let dir = crate::paths::sessions_dir()?;
+    // The report is a pure function of the submitted sessions, the answer keys
+    // and today's date — stat-only fingerprints let repeat range switches skip
+    // the whole rescan without any stale reads.
+    let fingerprint = format!(
+        "{}|{}|{}",
+        epoch_day_now(),
+        sessions_fingerprint(&dir),
+        library::exam_tree_fingerprint()
+    );
+    if let Ok(cache) = analytics_cache().lock() {
+        if cache.fingerprint == fingerprint {
+            if let Some(report) = cache.reports.get(&range_days) {
+                return Ok(report.clone());
+            }
+        }
+    }
     let cutoff_day = if range_days == 0 {
         None
     } else {
-        Some(today_epoch_day().saturating_sub(i64::from(range_days)))
+        // "过去 N 天" 含今天在内是 N 个自然日：cutoff 要退 N-1 天而不是 N 天。
+        Some(epoch_day_now().saturating_sub(i64::from(range_days.saturating_sub(1))))
     };
     let mut module_scores: BTreeMap<String, Vec<f64>> = BTreeMap::new();
     let mut module_counts: BTreeMap<String, u32> = BTreeMap::new();
@@ -261,43 +377,72 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
     let mut trend: BTreeMap<String, Vec<Value>> = BTreeMap::new();
     let mut type_totals: BTreeMap<(String, String), (u32, u32)> = BTreeMap::new();
     let mut time_trend: Vec<Value> = Vec::new();
-    let dir = crate::paths::sessions_dir()?;
     if dir.exists() {
         for entry in std::fs::read_dir(dir)? {
             let path = entry?.path();
-            if path.extension().and_then(|s| s.to_str()) != Some("json") { continue; }
-            let Ok(raw) = std::fs::read_to_string(&path) else { continue };
-            let Ok(session) = serde_json::from_str::<Value>(&raw) else { continue };
-            if session.get("status").and_then(Value::as_str) != Some("submitted") { continue; }
-            let module = session.get("module").and_then(Value::as_str).unwrap_or("writing").to_string();
-            let updated = session.get("updatedAt").and_then(Value::as_str).unwrap_or("").to_string();
+            if path.extension().and_then(|s| s.to_str()) != Some("json") {
+                continue;
+            }
+            let Ok(raw) = std::fs::read_to_string(&path) else {
+                continue;
+            };
+            let Ok(session) = serde_json::from_str::<Value>(&raw) else {
+                continue;
+            };
+            if session.get("status").and_then(Value::as_str) != Some("submitted") {
+                continue;
+            }
+            let module = session
+                .get("module")
+                .and_then(Value::as_str)
+                .unwrap_or("writing")
+                .to_string();
+            let updated = session
+                .get("updatedAt")
+                .and_then(Value::as_str)
+                .unwrap_or("")
+                .to_string();
             if let Some(cutoff) = cutoff_day {
                 // Undated sessions are kept: dropping them would silently
                 // shrink the corpus the user is reasoning about.
                 if let Some(day) = iso_epoch_day(&updated) {
-                    if day < cutoff { continue; }
+                    if day < cutoff {
+                        continue;
+                    }
                 }
             }
             if module == "writing" {
                 *module_counts.entry(module).or_default() += 1;
                 continue;
             }
-            let Some(exam_id) = session.get("examId").and_then(Value::as_str) else { continue };
-            let Ok(exam) = crate::library::load_exam(exam_id) else { continue };
-            let answers = session.get("answers").cloned().unwrap_or_else(|| serde_json::json!({}));
-            let Ok(score) = crate::scoring::score_exam(&exam, &answers) else { continue };
+            let Some(exam_id) = session.get("examId").and_then(Value::as_str) else {
+                continue;
+            };
+            let Ok(exam) = crate::library::load_exam(exam_id) else {
+                continue;
+            };
+            let answers = session
+                .get("answers")
+                .cloned()
+                .unwrap_or_else(|| serde_json::json!({}));
+            let Ok(score) = crate::scoring::score_exam(&exam, &answers) else {
+                continue;
+            };
             let band = crate::band::raw_to_band(&module, score.raw_correct);
             match band {
                 Some(value) => module_scores.entry(module.clone()).or_default().push(value),
                 None => *unbanded_counts.entry(module.clone()).or_default() += 1,
             }
             *module_counts.entry(module.clone()).or_default() += 1;
-            trend.entry(module.clone()).or_default().push(serde_json::json!({
-                "date": updated,
-                "band": band,
-                "rawCorrect": score.raw_correct,
-                "rawTotal": score.raw_total,
-            }));
+            trend
+                .entry(module.clone())
+                .or_default()
+                .push(serde_json::json!({
+                    "date": updated,
+                    "band": band,
+                    "rawCorrect": score.raw_correct,
+                    "rawTotal": score.raw_total,
+                }));
             time_trend.push(serde_json::json!({
                 "date": updated,
                 "module": module.clone(),
@@ -309,7 +454,9 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
                 let key = (module.clone(), item.question_type.clone());
                 let totals = type_totals.entry(key).or_default();
                 totals.1 += 1;
-                if item.correct { totals.0 += 1; }
+                if item.correct {
+                    totals.0 += 1;
+                }
             }
         }
     }
@@ -317,7 +464,9 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
     let mut module_avg_sum = 0.0;
     let mut module_avg_count = 0usize;
     for (module, scores) in &module_scores {
-        if scores.is_empty() { continue; }
+        if scores.is_empty() {
+            continue;
+        }
         let avg = scores.iter().sum::<f64>() / scores.len() as f64;
         module_avg_sum += avg;
         module_avg_count += 1;
@@ -326,9 +475,9 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
     let accuracy = type_totals.into_iter().map(|((module, question_type), (correct, total))| {
         serde_json::json!({ "module": module, "questionType": question_type, "correct": correct, "total": total, "accuracy": if total == 0 { 0.0 } else { correct as f64 / total as f64 } })
     }).collect::<Vec<_>>();
-    Ok(serde_json::json!({
+    let report = serde_json::json!({
         "schemaVersion": 1,
-        "generatedAt": chrono_like_now(),
+        "generatedAt": now_iso(),
         "rangeDays": range_days,
         "overallAverage": if module_avg_count == 0 { Value::Null } else { serde_json::json!(module_avg_sum / module_avg_count as f64) },
         "moduleAverages": averages,
@@ -338,47 +487,58 @@ pub fn analytics_report(range_days: u32) -> Result<Value, AppError> {
         "questionTypeAccuracy": accuracy,
         "timeTrend": time_trend,
         "speakingEnabled": false,
-    }))
+    });
+    if let Ok(mut cache) = analytics_cache().lock() {
+        // A fingerprint change invalidates every cached range at once.
+        if cache.fingerprint != fingerprint {
+            cache.reports.clear();
+            cache.fingerprint = fingerprint;
+        }
+        cache.reports.insert(range_days, report.clone());
+    }
+    Ok(report)
 }
 
-/// Days since 1970-01-01 for the `YYYY-MM-DD` prefix of an ISO 8601 string.
-fn iso_epoch_day(value: &str) -> Option<i64> {
-    let bytes = value.as_bytes();
-    if bytes.len() < 10 || bytes[4] != b'-' || bytes[7] != b'-' { return None; }
-    let year: i64 = value.get(0..4)?.parse().ok()?;
-    let month: u32 = value.get(5..7)?.parse().ok()?;
-    let day: u32 = value.get(8..10)?.parse().ok()?;
-    if !(1..=12).contains(&month) || !(1..=31).contains(&day) { return None; }
-    Some(days_from_civil(year, month, day))
+/// Stat-only fingerprint of the sessions dir: any write, delete or quarantine
+/// move changes the (name, len, mtime) triples and re-runs the report.
+fn sessions_fingerprint(dir: &Path) -> String {
+    let mut rows = Vec::new();
+    if let Ok(entries) = fs::read_dir(dir) {
+        for entry in entries.flatten() {
+            let path = entry.path();
+            if path.extension().and_then(|s| s.to_str()) != Some("json") {
+                continue;
+            }
+            let Ok(meta) = entry.metadata() else {
+                continue;
+            };
+            let mtime = meta
+                .modified()
+                .ok()
+                .and_then(|t| t.duration_since(std::time::UNIX_EPOCH).ok())
+                .map(|d| d.as_millis() as u64)
+                .unwrap_or(0);
+            rows.push(format!("{}:{}:{mtime}", path.display(), meta.len()));
+        }
+    }
+    rows.sort();
+    crate::ziputil::sha256_bytes(rows.join("\n").as_bytes())
 }
 
-/// Howard Hinnant's `days_from_civil`; proleptic Gregorian, no dependencies.
-fn days_from_civil(year: i64, month: u32, day: u32) -> i64 {
-    let y = if month <= 2 { year - 1 } else { year };
-    let era = if y >= 0 { y } else { y - 399 } / 400;
-    let yoe = y - era * 400;
-    let m = month as i64;
-    let doy = (153 * (if m > 2 { m - 3 } else { m + 9 }) + 2) / 5 + day as i64 - 1;
-    let doe = yoe * 365 + yoe / 4 - yoe / 100 + doy;
-    era * 146_097 + doe - 719_468
+struct AnalyticsCache {
+    fingerprint: String,
+    reports: HashMap<u32, Value>,
 }
 
-fn today_epoch_day() -> i64 {
-    use std::time::{SystemTime, UNIX_EPOCH};
-    SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .map(|d| (d.as_secs() / 86_400) as i64)
-        .unwrap_or_default()
+fn analytics_cache() -> &'static Mutex<AnalyticsCache> {
+    static CACHE: OnceLock<Mutex<AnalyticsCache>> = OnceLock::new();
+    CACHE.get_or_init(|| {
+        Mutex::new(AnalyticsCache {
+            fingerprint: String::new(),
+            reports: HashMap::new(),
+        })
+    })
 }
-
-fn chrono_like_now() -> String {
-    // Keep the command dependency-free; milliseconds are enough for report
-    // freshness and the frontend already formats user-facing dates.
-    use std::time::{SystemTime, UNIX_EPOCH};
-    let millis = SystemTime::now().duration_since(UNIX_EPOCH).map(|d| d.as_millis()).unwrap_or_default();
-    millis.to_string()
-}
-
 
 /// The audioscript for a listening paper, when one was extracted.
 ///
@@ -386,7 +546,7 @@ fn chrono_like_now() -> String {
 /// inside the exam JSON: they are large, only the intensive-listening view
 /// needs them, and loading an exam for a mock should not pay for them.
 #[tauri::command]
-pub fn load_transcript(exam_id: String) -> Result<Value, AppError> {
+pub async fn load_transcript(exam_id: String) -> Result<Value, AppError> {
     if !safe_path::valid_id(&exam_id) {
         return Err(AppError::from("非法的试卷 id"));
     }
@@ -404,46 +564,49 @@ pub fn load_transcript(exam_id: String) -> Result<Value, AppError> {
 }
 
 #[tauri::command]
-pub fn audio_library_status() -> Result<Value, AppError> {
-    Ok(serde_json::to_value(audio::library_status()?)?)
+pub async fn audio_pick_files(window: tauri::Window) -> Result<Vec<String>, AppError> {
+    blocking(move || audio::pick_files(&window)).await
 }
 
 #[tauri::command]
-pub fn audio_catalog() -> Result<Value, AppError> {
-    Ok(serde_json::to_value(audio::catalog()?)?)
+pub async fn audio_pick_folders(window: tauri::Window) -> Result<Vec<String>, AppError> {
+    blocking(move || audio::pick_folders(&window)).await
 }
 
 #[tauri::command]
-pub fn audio_pick_files() -> Result<Vec<String>, AppError> {
-    audio::pick_files()
-}
-
-#[tauri::command]
-pub fn audio_pick_folders() -> Result<Vec<String>, AppError> {
-    audio::pick_folders()
-}
-
-#[tauri::command]
-pub fn audio_scan_paths(
+pub async fn audio_scan_paths(
     app: AppHandle,
     paths: Vec<String>,
     target_exam_id: Option<String>,
 ) -> Result<Value, AppError> {
-    let plan = audio::scan_paths(paths, target_exam_id, |p| {
-        let _ = app.emit("audio-import-progress", &p);
-    })?;
+    let plan = blocking(move || {
+        audio::scan_paths(paths, target_exam_id, |p| {
+            let _ = app.emit("audio-import-progress", &p);
+        })
+    })
+    .await?;
     Ok(serde_json::to_value(plan)?)
 }
 
 #[tauri::command]
-pub fn audio_confirm_import(app: AppHandle, exam_ids: Vec<String>) -> Result<Value, AppError> {
-    let value = serde_json::to_value(audio::confirm_import(exam_ids, |p| {
-        let _ = app.emit("audio-import-progress", &p);
-    })?)?;
+pub async fn audio_confirm_import(
+    app: AppHandle,
+    exam_ids: Vec<String>,
+) -> Result<Value, AppError> {
+    let value = serde_json::to_value(
+        blocking(move || {
+            audio::confirm_import(exam_ids, |p| {
+                let _ = app.emit("audio-import-progress", &p);
+            })
+        })
+        .await?,
+    )?;
     library::invalidate();
     Ok(value)
 }
 
+// Deliberately stays sync: it only flips an AtomicBool and must land the
+// moment it is invoked, even while a scan/import is parked on the pool.
 #[tauri::command]
 pub fn audio_cancel_import() -> Result<(), AppError> {
     audio::request_cancel();
@@ -451,56 +614,40 @@ pub fn audio_cancel_import() -> Result<(), AppError> {
 }
 
 #[tauri::command]
-pub fn audio_playback_source(exam_id: String) -> Result<Value, AppError> {
+pub async fn audio_playback_source(exam_id: String) -> Result<Value, AppError> {
     Ok(serde_json::to_value(audio::playback_source(&exam_id)?)?)
 }
 
 #[tauri::command]
-pub fn audio_remove_binding(exam_id: String) -> Result<(), AppError> {
+pub async fn audio_remove_binding(exam_id: String) -> Result<(), AppError> {
     audio::remove_binding(&exam_id)?;
     library::invalidate();
     Ok(())
 }
 
 #[tauri::command]
-pub fn audio_repair_bindings() -> Result<Value, AppError> {
-    let value = serde_json::to_value(audio::repair_bindings()?)?;
+pub async fn audio_repair_bindings() -> Result<Value, AppError> {
+    let value = serde_json::to_value(blocking(audio::repair_bindings).await?)?;
     library::invalidate();
     Ok(value)
 }
 
 #[tauri::command]
-pub fn audio_open_guide() -> Result<String, AppError> {
+pub async fn audio_open_guide() -> Result<String, AppError> {
     audio::open_guide()
 }
 
 #[tauri::command]
-pub fn audio_bindings() -> Result<Value, AppError> {
-    Ok(serde_json::to_value(audio::load_bindings()?)?)
+pub async fn open_data_dir() -> Result<(), AppError> {
+    // Data-recovery affordance: quarantined sessions/records and .bak files
+    // live under the data root, so the user needs a way to reach it.
+    let root = paths::data_root()?;
+    open::that_detached(&root).map_err(|e| AppError::from(format!("无法打开数据目录：{e}")))?;
+    Ok(())
 }
 
 #[cfg(test)]
 mod tests {
-    use super::{days_from_civil, iso_epoch_day};
-
-    #[test]
-    fn epoch_day_anchors() {
-        assert_eq!(days_from_civil(1970, 1, 1), 0);
-        assert_eq!(days_from_civil(2026, 8, 24), 20_689);
-        assert_eq!(iso_epoch_day("2026-08-24T10:12:00Z"), Some(20_689));
-        assert_eq!(
-            iso_epoch_day("2026-08-25T00:00:00Z").unwrap() - iso_epoch_day("2026-08-24T23:59:00Z").unwrap(),
-            1
-        );
-    }
-
-    #[test]
-    fn epoch_day_rejects_junk() {
-        assert_eq!(iso_epoch_day(""), None);
-        assert_eq!(iso_epoch_day("not-a-date"), None);
-        assert_eq!(iso_epoch_day("2026-13-01T00:00:00Z"), None);
-    }
-
     #[test]
     fn ymd_gate() {
         assert!(super::valid_ymd("2026-08-26"));
@@ -509,4 +656,3 @@ mod tests {
         assert!(!super::valid_ymd("2026-02-30"));
     }
 }
-

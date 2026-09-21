@@ -8,9 +8,8 @@ use std::fs;
 use std::path::{Component, Path, PathBuf};
 
 const RESERVED: &[&str] = &[
-    "CON", "PRN", "AUX", "NUL", "CLOCK$",
-    "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9",
-    "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9",
+    "CON", "PRN", "AUX", "NUL", "CLOCK$", "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7",
+    "COM8", "COM9", "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9",
 ];
 
 pub fn valid_id(id: &str) -> bool {
@@ -35,10 +34,33 @@ pub fn looks_drive(raw: &str) -> bool {
     b.len() >= 2 && b[0].is_ascii_alphabetic() && b[1] == b':'
 }
 
-fn is_reserved_component(name: &str) -> bool {
+pub(crate) fn is_reserved_component(name: &str) -> bool {
     let trimmed = name.trim_end_matches(|c| c == '.' || c == ' ');
     let stem = trimmed.split('.').next().unwrap_or(trimmed);
     RESERVED.iter().any(|r| stem.eq_ignore_ascii_case(r))
+}
+
+/// True for anything backed by a reparse point (symlink, junction, mount
+/// point). Recursive walkers must never descend into these: they can point
+/// outside the tree or back at an ancestor and loop forever. Junctions report
+/// `is_symlink()` on recent toolchains only, so Windows checks the raw
+/// attribute instead of relying on `FileType` alone.
+pub(crate) fn is_reparse_point(entry: &fs::DirEntry) -> bool {
+    let Ok(kind) = entry.file_type() else {
+        return true;
+    };
+    if kind.is_symlink() {
+        return true;
+    }
+    #[cfg(windows)]
+    {
+        use std::os::windows::fs::MetadataExt;
+        const FILE_ATTRIBUTE_REPARSE_POINT: u32 = 0x400;
+        if let Ok(meta) = entry.metadata() {
+            return meta.file_attributes() & FILE_ATTRIBUTE_REPARSE_POINT != 0;
+        }
+    }
+    false
 }
 
 /// Parse a user-supplied relative path. Never returns an absolute PathBuf.
@@ -79,13 +101,30 @@ pub fn sanitize_rel(raw: &str) -> Result<PathBuf, AppError> {
         return Err(AppError::from("资源路径为空"));
     }
     if out.is_absolute()
-        || out
-            .components()
-            .any(|c| matches!(c, Component::Prefix(_) | Component::RootDir | Component::ParentDir))
+        || out.components().any(|c| {
+            matches!(
+                c,
+                Component::Prefix(_) | Component::RootDir | Component::ParentDir
+            )
+        })
     {
         return Err(AppError::from("拒绝绝对或越界路径"));
     }
     Ok(out)
+}
+
+/// JSON payloads crossing IPC share one ceiling. Arguments arrive as fully
+/// materialized strings, so an oversized blob is memory and disk amplification
+/// even when every field later validates. Sessions carrying highlights and
+/// notes stay far below this; `import_exam` keeps its own tighter cap in
+/// `library.rs`.
+pub const MAX_JSON_ARG_BYTES: usize = 8 * 1024 * 1024;
+
+pub fn check_json_arg(raw: &str, what: &str) -> Result<(), AppError> {
+    if raw.len() > MAX_JSON_ARG_BYTES {
+        return Err(AppError::from(format!("{what}超过 8 MB 上限，已拒绝写入")));
+    }
+    Ok(())
 }
 
 /// True when `child` exists and, after resolving reparse points, stays under `root`.

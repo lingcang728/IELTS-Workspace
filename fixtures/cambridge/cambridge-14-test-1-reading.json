@@ -3,7 +3,7 @@
   "id": "cambridge-14-test-1-reading",
   "title": "Cambridge IELTS 14 Academic Test 1 Reading",
   "module": "reading",
-  "contentRevision": "repair-0013-c50234c9",
+  "contentRevision": "repair-0003-139794de",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -847,14 +847,14 @@
         {
           "id": "c14t1r-g19",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t1r-q19",
               "number": 19,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A-E.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which TWO of the following statements are made in the text about the Amsterdam bike-sharing scheme of 1999?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -890,34 +890,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:40:58.064287+00:00"
               }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              20
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 19 and 20 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c14t1r-g20",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
-          "questions": [
+            },
             {
               "id": "c14t1r-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Which TWO of the following statements are made in the text about the Amsterdam bike-sharing scheme of 1999?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "Second selected letter: Which TWO of the following statements are made in the text about the Amsterdam bike-sharing scheme of 1999?",
               "options": [
                 {
                   "id": "A",
@@ -949,7 +927,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "repairSource": {
@@ -961,23 +942,50 @@
             "canonicalOf": [
               "Write the correct letters in boxes 19 and 20 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "It was initially opposed by a government department."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It failed when a partner in the scheme withdrew support."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "It aimed to be more successful than the Copenhagen scheme."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "It was made possible by a change in people's attitudes."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "It attracted interest from a range of bike designers."
+            }
+          ]
         },
         {
           "id": "c14t1r-g21",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c14t1r-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "Question 21: Which TWO of the following statements are made in the text about Amsterdam today?",
-              "acceptedAnswers": [
-                "D",
-                "E"
-              ],
+              "prompt": "First selected letter: Which TWO of the following statements are made in the text about Amsterdam today?",
               "options": [
                 {
                   "id": "A",
@@ -1009,35 +1017,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              22
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 21 and 22 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c14t1r-g22",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "true_false_ng",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
+            },
             {
               "id": "c14t1r-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Question 22: Which TWO of the following statements are made in the text about Amsterdam today?",
-              "acceptedAnswers": [
-                "D",
-                "E"
-              ],
+              "prompt": "Second selected letter: Which TWO of the following statements are made in the text about Amsterdam today?",
               "options": [
                 {
                   "id": "A",
@@ -1069,7 +1058,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "repairSource": {
@@ -1081,7 +1073,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 21 and 22 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "The majority of residents would like to prevent all cars from entering the city."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "There is little likelihood of the city having another bike-sharing scheme."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "More trips in the city are made by bike than by any other form of transport."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "A bike-sharing scheme would benefit residents who use public transport."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "The city has a reputation as a place that welcomes cyclists."
+            }
+          ]
         },
         {
           "id": "c14t1r-g23",
@@ -1790,14 +1813,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              36,
-              40
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 36–40 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:09.800063+00:00",
+            "note": "原书印刷页28上Questions 36-40为摘要填空题（Choose ONE WORD ONLY from the passage for each answer），页面并无A-H选项列表，原题库错误挂载了8个空白选项，按规范予以flagged。"
           }
         }
       ]

@@ -3,7 +3,7 @@
   "id": "cambridge-12-test-2-reading",
   "title": "Cambridge IELTS 12 Academic Test 2 Reading",
   "module": "reading",
-  "contentRevision": "repair-0023-4f116e54",
+  "contentRevision": "repair-0004-ecb1857c",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -1000,18 +1000,14 @@
         {
           "id": "c12t2r-g10",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c12t2r-q10",
               "number": 10,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO problems are mentioned which affect farmers with small farms in developing countries?",
-              "acceptedAnswers": [
-                "D",
-                "E"
-              ],
+              "prompt": "First selected letter: Which TWO problems are mentioned which affect farmers with small farms in developing countries?",
               "options": [
                 {
                   "id": "A",
@@ -1043,47 +1039,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              10,
-              11
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 10 and 11 on your answer sheet"
-            ]
-          }
-        },
-        {
-          "id": "c12t2r-g11",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c12t2r-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO problems are mentioned which affect farmers with small farms in developing countries?",
-              "acceptedAnswers": [
-                "D",
-                "E"
-              ],
+              "prompt": "Second selected letter: Which TWO problems are mentioned which affect farmers with small farms in developing countries?",
               "options": [
                 {
                   "id": "A",
@@ -1115,19 +1080,37 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "sharedOptions": [
             {
               "id": "A",
               "label": "A",
-              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+              "text": "lack of demand for locally produced food"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
+              "text": "lack of irrigation programmes"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "being unable to get insurance"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the effects of changing weather patterns"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "having to sell their goods to intermediary buyers"
             }
           ],
           "repairSource": {
@@ -1139,23 +1122,23 @@
             "canonicalOf": [
               "Write the correct letters in boxes 10 and 11 on your answer sheet"
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ]
         },
         {
           "id": "c12t2r-g12",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c12t2r-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO actions are recommended for improving conditions for farmers?",
-              "acceptedAnswers": [
-                "C",
-                "D"
-              ],
+              "prompt": "First selected letter: Which TWO actions are recommended for improving conditions for farmers?",
               "options": [
                 {
                   "id": "A",
@@ -1187,47 +1170,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              12,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 12 and 13 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c12t2r-g13",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c12t2r-q13",
               "number": 13,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO actions are recommended for improving conditions for farmers?",
-              "acceptedAnswers": [
-                "C",
-                "D"
-              ],
+              "prompt": "Second selected letter: Which TWO actions are recommended for improving conditions for farmers?",
               "options": [
                 {
                   "id": "A",
@@ -1259,19 +1211,37 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "sharedOptions": [
             {
               "id": "A",
               "label": "A",
-              "text": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature. These two unique aspects, o"
+              "text": "reducing the size of food stocks"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "Farmers everywhere face major risks, including extreme weather, long-term climate change, and price volatility in input and product markets. However, smallholder farmers in developing countries must in addition deal with"
+              "text": "attempting to ensure that prices rise at certain times of the year"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "organising co-operation between a wide range of interested parties"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "encouraging consumers to take a financial stake in farming"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "making customers aware of the reasons for changing food prices"
             }
           ],
           "repairSource": {
@@ -1283,7 +1253,11 @@
             "canonicalOf": [
               "Write the correct letters in boxes 12 and 13 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "D"
+          ]
         }
       ]
     },
@@ -2305,12 +2279,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:17.852529+00:00",
+            "note": "页面只有段落字母 A-G 和题目，没有可抄录的选项/词库文字；属于段落信息配对题，页面无独立选项框。"
           }
         },
         {
@@ -2409,12 +2381,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:17.852529+00:00",
+            "note": "页面只有段落字母 A-G 和题目，没有可抄录的选项/词库文字；属于段落信息配对题，页面无独立选项框。"
           }
         },
         {
@@ -2513,12 +2483,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:17.852529+00:00",
+            "note": "页面只有段落字母 A-G 和题目，没有可抄录的选项/词库文字；属于段落信息配对题，页面无独立选项框。"
           }
         },
         {
@@ -2617,12 +2585,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              37,
-              40
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:17.852529+00:00",
+            "note": "页面只有段落字母 A-G 和题目，没有可抄录的选项/词库文字；属于段落信息配对题，页面无独立选项框。"
           }
         }
       ]

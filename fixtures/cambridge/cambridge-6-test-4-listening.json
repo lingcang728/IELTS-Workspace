@@ -3,7 +3,7 @@
   "id": "cambridge-6-test-4-listening",
   "title": "Cambridge IELTS 6 Academic Test 4 Listening",
   "module": "listening",
-  "contentRevision": "repair-0012-a17f5f5d",
+  "contentRevision": "repair-0002-9b878427",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -939,7 +939,7 @@
         },
         {
           "id": "c6t4l-g26",
-          "instruction": "Answer the questions below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Choose THREE letters, A-G.",
+          "instruction": "Answer the questions below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -971,7 +971,7 @@
         },
         {
           "id": "c6t4l-g27",
-          "instruction": "Answer the questions below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Choose THREE letters, A-G.",
+          "instruction": "Answer the questions below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -997,15 +997,15 @@
         },
         {
           "id": "c6t4l-g28",
-          "instruction": "Choose THREE letters, A-G，选项也只有 A-G；工单却要求 A-H，且第 28 题题面被抽成答案标",
+          "instruction": "Choose THREE letters, A-G.",
           "questionType": "multi_choice",
-          "scoringPolicy": "per_question",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c6t4l-q28",
               "number": 28,
               "type": "multi_choice",
-              "prompt": "-30 IN ANY ORDER CEF",
+              "prompt": "First selected letter: Which THREE topics do this term's study skills workshops cover?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1051,62 +1051,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-25T11:41:04.761409+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": ""
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": ""
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": ""
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": ""
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": ""
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": ""
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "id": "c6t4l-g29",
-          "instruction": "Write the answer from the source question.",
-          "questionType": "multi_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c6t4l-q29",
               "number": 29,
               "type": "multi_choice",
-              "prompt": "Which THREE topics do this term's study skills workshops cover? (Question 29)",
-              "acceptedAnswers": [
-                "C",
-                "E",
-                "F"
-              ],
+              "prompt": "Second selected letter: Which THREE topics do this term's study skills workshops cover?",
               "options": [
                 {
                   "id": "A",
@@ -1148,63 +1098,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:36:11+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "An introduction to the Internet"
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "How to carry out research for a dissertation"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Making good use of the whole range of library services"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "Planning a dissertation"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "Standard requirements when writing a dissertation"
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "Using the Internet when doing research"
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "What books and technical resources are available in the library"
-            }
-          ]
-        },
-        {
-          "id": "c6t4l-g30",
-          "instruction": "Write the answer from the source question.",
-          "questionType": "multi_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c6t4l-q30",
               "number": 30,
               "type": "multi_choice",
-              "prompt": "Which THREE topics do this term's study skills workshops cover? (Question 30)",
-              "acceptedAnswers": [
-                "C",
-                "E",
-                "F"
-              ],
+              "prompt": "Third selected letter: Which THREE topics do this term's study skills workshops cover?",
               "options": [
                 {
                   "id": "A",
@@ -1246,7 +1149,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:36:11+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "F"
+              ]
             }
           ],
           "sharedOptions": [
@@ -1285,7 +1191,18 @@
               "label": "G",
               "text": "What books and technical resources are available in the library"
             }
-          ]
+          ],
+          "acceptedAnswers": [
+            "C",
+            "E",
+            "F"
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:01:46.614722+00:00",
+            "note": "印刷页 82 的说明是 Choose THREE letters, A-G，选项也只有 A-G；工单却要求 A-H，且第 28 题题面被抽成答案标记，不能伪造 H，需修复题目结构。"
+          }
         }
       ],
       "audioStartMs": 729335,
@@ -1479,12 +1396,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              31,
-              34
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:44:13.773845+00:00",
+            "note": "印刷页 83 的第 33 题只有 A–C 三个选项，工单却要求 A–H；不能伪造页面上不存在的 D–H，需修复题目结构。"
           }
         },
         {

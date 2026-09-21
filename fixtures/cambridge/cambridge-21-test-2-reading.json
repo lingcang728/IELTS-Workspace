@@ -3,7 +3,7 @@
   "id": "cambridge-21-test-2-reading",
   "title": "Cambridge IELTS 21 Academic Test 2 Reading",
   "module": "reading",
-  "contentRevision": "repair-0019-06a7ac17",
+  "contentRevision": "repair-0002-ad11cb23",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -839,18 +839,14 @@
         {
           "id": "c21t2r-g20",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c21t2r-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Question 20: Which TWO pieces of information about gold and the kingdom of Mapungubwe are mentioned by the writer?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "First selected letter: Which TWO pieces of information about gold and the kingdom of Mapungubwe are mentioned by the writer?",
               "gapText": "____",
               "options": [
                 {
@@ -883,35 +879,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              20,
-              21
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 20 and 21 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c21t2r-g21",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c21t2r-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "Question 21: Which TWO pieces of information about gold and the kingdom of Mapungubwe are mentioned by the writer?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "Second selected letter: Which TWO pieces of information about gold and the kingdom of Mapungubwe are mentioned by the writer?",
               "gapText": "____",
               "options": [
                 {
@@ -944,7 +921,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "repairSource": {
@@ -956,7 +936,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 20 and 21 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Not everyone in Mapungubwe used gold as a form of payment."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Items of gold were placed close to where Mapungubwe kings were buried."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The most valuable item discovered in Mapungubwe was a sceptre made of gold."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "The way gold was decorated in Mapungubwe was also practised in another kingdom."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Working with gold was a respected occupation in the Mapungubwe community."
+            }
+          ]
         },
         {
           "id": "c21t2r-g22",

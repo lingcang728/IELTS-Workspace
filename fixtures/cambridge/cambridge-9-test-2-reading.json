@@ -3,7 +3,7 @@
   "id": "cambridge-9-test-2-reading",
   "title": "Cambridge IELTS 9 Academic Test 2 Reading",
   "module": "reading",
-  "contentRevision": "repair-0012-511eded7",
+  "contentRevision": "repair-0001-985302a5",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -176,12 +176,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              6
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:23.527442+00:00",
+            "note": "题 1 是按 Reading Passage 1 九个 section（A-I）匹配信息的题；页面没有独立的 A-H 选项文字列表，只有文章段落字母。工单选项结构与页面不符，不能猜测选项。"
           }
         },
         {
@@ -300,12 +298,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              6
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:23.527442+00:00",
+            "note": "题 2 是按 Reading Passage 1 九个 section（A-I）匹配信息的题；页面没有独立的 A-H 选项文字列表，只有文章段落字母。工单选项结构与页面不符，不能猜测选项。"
           }
         },
         {
@@ -424,12 +420,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              6
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:23.527442+00:00",
+            "note": "题 3 是按 Reading Passage 1 九个 section（A-I）匹配信息的题；页面没有独立的 A-H 选项文字列表，只有文章段落字母。工单选项结构与页面不符，不能猜测选项。"
           }
         },
         {
@@ -548,12 +542,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              6
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:23.527442+00:00",
+            "note": "题 4 是按 Reading Passage 1 九个 section（A-I）匹配信息的题；页面没有独立的 A-H 选项文字列表，只有文章段落字母。工单选项结构与页面不符，不能猜测选项。"
           }
         },
         {
@@ -672,12 +664,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              6
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:23.527442+00:00",
+            "note": "题 5 是按 Reading Passage 1 九个 section（A-I）匹配信息的题；页面没有独立的 A-H 选项文字列表，只有文章段落字母。工单选项结构与页面不符，不能猜测选项。"
           }
         },
         {
@@ -796,12 +786,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              6
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:23.527442+00:00",
+            "note": "题 6 是按 Reading Passage 1 九个 section（A-I）匹配信息的题；页面没有独立的 A-H 选项文字列表，只有文章段落字母。工单选项结构与页面不符，不能猜测选项。"
           }
         },
         {
@@ -925,14 +913,14 @@
         {
           "id": "c9t2r-g11",
           "instruction": "Choose TWO letters, A-F.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c9t2r-q11",
               "number": 11,
-              "type": "single_choice",
-              "prompt": "Choose TWO letters, A—F.",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which TWO are mentioned by the writer of the passage?",
               "acceptedAnswers": [
                 "A"
               ],
@@ -940,54 +928,40 @@
                 {
                   "id": "A",
                   "label": "A",
-                  "text": "Hearing impairment or other auditory function deficit in young children can have a major impact on their development of speech and communication, resulting in a detrimental effect on their ability to learn at school. Thi"
+                  "text": "current teaching methods"
                 },
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "A preliminary study in New Zealand has shown that classroom noise presents a major concern for teachers and pupils. Modern teaching practices, the organizations of desks in the classroom, poor classroom acoustics, and me"
+                  "text": "echoing corridors"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "cooling systems"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "large class sizes"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "loud-voiced teachers"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "playground games"
                 }
               ]
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Hearing impairment or other auditory function deficit in young children can have a major impact on their development of speech and communication, resulting in a detrimental effect on their ability to learn at school. Thi"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "A preliminary study in New Zealand has shown that classroom noise presents a major concern for teachers and pupils. Modern teaching practices, the organizations of desks in the classroom, poor classroom acoustics, and me"
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              12
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 11 and 12 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c9t2r-g12",
-          "instruction": "Choose TWO letters, A-F.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c9t2r-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Which TWO are mentioned by the writer of the passage?",
-              "acceptedAnswers": [
-                "A",
-                "C"
-              ],
+              "prompt": "Second selected letter: Which TWO are mentioned by the writer of the passage?",
               "options": [
                 {
                   "id": "A",
@@ -1024,19 +998,42 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:05+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
             }
           ],
           "sharedOptions": [
             {
               "id": "A",
               "label": "A",
-              "text": "Hearing impairment or other auditory function deficit in young children can have a major impact on their development of speech and communication, resulting in a detrimental effect on their ability to learn at school. Thi"
+              "text": "current teaching methods"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "A preliminary study in New Zealand has shown that classroom noise presents a major concern for teachers and pupils. Modern teaching practices, the organizations of desks in the classroom, poor classroom acoustics, and me"
+              "text": "echoing corridors"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "cooling systems"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "large class sizes"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "loud-voiced teachers"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "playground games"
             }
           ],
           "repairSource": {
@@ -1048,7 +1045,11 @@
             "canonicalOf": [
               "Write the correct letters in boxes 11 and 12 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ]
         },
         {
           "id": "c9t2r-g13",
@@ -1218,12 +1219,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:58.308047+00:00",
+            "note": "题 14 属于 Reading Passage 2 七个段落（A-G）匹配题；页面没有独立的 A-H 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -1322,12 +1321,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:58.308047+00:00",
+            "note": "题 15 属于 Reading Passage 2 七个段落（A-G）匹配题；页面没有独立的 A-H 选项文字列表，且工单题干混入段落正文，结构不符，不能猜测选项。"
           }
         },
         {
@@ -1426,12 +1423,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:58.308047+00:00",
+            "note": "题 16 属于 Reading Passage 2 七个段落（A-G）匹配题；页面没有独立的 A-H 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {
@@ -1530,12 +1525,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:58.308047+00:00",
+            "note": "题 17 属于 Reading Passage 2 七个段落（A-G）匹配题；页面没有独立的 A-H 选项文字列表，只有文章段落字母，不能猜测选项。"
           }
         },
         {

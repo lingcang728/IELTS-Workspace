@@ -3,7 +3,7 @@
   "id": "cambridge-19-test-1-reading",
   "title": "Cambridge IELTS 19 Academic Test 1 Reading",
   "module": "reading",
-  "contentRevision": "repair-0027-09240193",
+  "contentRevision": "repair-0002-f75c8640",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -993,14 +993,14 @@
         {
           "id": "c19t1r-g20",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t1r-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world? (Question 20)",
+              "prompt": "First selected letter: Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1036,52 +1036,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "They often used stolen vessels to carry out pirate attacks."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "They managed to escape capture by the authorities because they knew the area so well."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "They paid for information about the routes merchant ships would take."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "They depended more on the sea for their livelihood than on farming."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "They stored many of the goods taken in pirate attacks in coves along the coastline."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:51:12.943347+00:00"
-          }
-        },
-        {
-          "id": "c19t1r-g21",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c19t1r-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world? (Question 21)",
+              "prompt": "Second selected letter: Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -1150,19 +1110,23 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:51:12.943347+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ]
         },
         {
           "id": "c19t1r-g22",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t1r-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO of the following statements does the writer make about piracy and ancient Greece?",
+              "prompt": "First selected letter: Which TWO of the following statements does the writer make about piracy and ancient Greece?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1175,7 +1139,48 @@
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written"
+                  "text": "Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "Important officials were known to occasionally take part in piracy."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "Every citizen regarded pirate attacks on cities as unacceptable."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "A favourable view of piracy is evident in certain ancient Greek texts."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:04+00:00"
+              }
+            },
+            {
+              "id": "c19t1r-q23",
+              "number": 23,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO of the following statements does the writer make about piracy and ancient Greece?",
+              "acceptedAnswers": [
+                "E"
+              ],
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "The state estimated that very few people were involved in piracy."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written."
                 },
                 {
                   "id": "C",
@@ -1231,88 +1236,11 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:51:34.205814+00:00"
-          }
-        },
-        {
-          "id": "c19t1r-g23",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c19t1r-q23",
-              "number": 23,
-              "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of the following statements does the writer make about piracy and ancient Greece?",
-              "acceptedAnswers": [
-                "E"
-              ],
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "The state estimated that very few people were involved in piracy."
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written"
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "Important officials were known to occasionally take part in piracy."
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "Every citizen regarded pirate attacks on cities as unacceptable."
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "A favourable view of piracy is evident in certain ancient Greek texts."
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "The state estimated that very few people were involved in piracy."
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Important officials were known to occasionally take part in piracy."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "Every citizen regarded pirate attacks on cities as unacceptable."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "A favourable view of piracy is evident in certain ancient Greek texts."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:51:34.206364+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ]
         },
         {
           "id": "c19t1r-g24",
@@ -1490,14 +1418,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              30
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes27-30 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:38.808626+00:00",
+            "note": "逐图核对原书印刷页 27：Questions 27-30 的选择题实际只有 A、B、C、D 四个选项；工单 optionLabels 错列为 A-H，E-H 页面不存在，不能凭空补写，需题库结构级修复。"
           }
         },
         {
@@ -1621,14 +1545,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              30
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes27-30 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:38.808626+00:00",
+            "note": "逐图核对原书印刷页 27：Questions 27-30 的选择题实际只有 A、B、C、D 四个选项；工单 optionLabels 错列为 A-H，E-H 页面不存在，不能凭空补写，需题库结构级修复。"
           }
         },
         {
@@ -1697,14 +1617,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              30
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes27-30 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:38.808626+00:00",
+            "note": "逐图核对原书印刷页 27：Questions 27-30 的选择题实际只有 A、B、C、D 四个选项；工单 optionLabels 错列为 A-H，E-H 页面不存在，不能凭空补写，需题库结构级修复。"
           }
         },
         {

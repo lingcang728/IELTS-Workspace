@@ -42,7 +42,12 @@ export function statusLabel(status: SessionSummary["status"]) {
 }
 
 export function formatDate(value: string) {
-  return value.replace("T", " ").slice(0, 16);
+  // Stored timestamps are UTC ISO strings; display them in local time.
+  const t = Date.parse(value);
+  if (!Number.isFinite(t)) return value.replace("T", " ").slice(0, 16);
+  const d = new Date(t);
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
 
 export function formatAns(value: unknown): string {

@@ -157,7 +157,7 @@ function FlatCatalogGroup({
 }
 
 export function SessionRow({ session, action, onClick }: { session: SessionSummary; action: string; onClick: () => void }) {
-  return <article className="exam-row session-row"><span className="session-icon"><Icon name={session.status === "submitted" ? "check" : "clock"} size={22} /></span><div className="exam-row-copy"><h3>{session.title || session.examId}</h3><p>{session.mode === "mock" ? "模考" : "练习"} · {formatDate(session.updatedAt)}</p><ProgressBar session={session} /></div><button type="button" className="secondary-button" onClick={onClick}>{action}</button></article>;
+  return <article className="exam-row"><span className="session-icon"><Icon name={session.status === "submitted" ? "check" : "clock"} size={22} /></span><div className="exam-row-copy"><h3>{session.title || session.examId}</h3><p>{session.mode === "mock" ? "模考" : "练习"} · {formatDate(session.updatedAt)}</p><ProgressBar session={session} /></div><button type="button" className="secondary-button" onClick={onClick}>{action}</button></article>;
 }
 
 /**

@@ -50,12 +50,25 @@ fn collect_exam_files() -> Result<Vec<PathBuf>, AppError> {
     Ok(files)
 }
 
+const WALK_MAX_DEPTH: usize = 32;
+
 fn walk_json(dir: &Path, files: &mut Vec<PathBuf>) -> Result<(), AppError> {
+    walk_json_at(dir, 0, files)
+}
+
+fn walk_json_at(dir: &Path, depth: usize, files: &mut Vec<PathBuf>) -> Result<(), AppError> {
+    if depth > WALK_MAX_DEPTH {
+        return Ok(());
+    }
     for entry in fs::read_dir(dir)? {
         let entry = entry?;
+        // 不下钻 junction/symlink：用户目录里可能存在回指祖先的 reparse 环。
+        if safe_path::is_reparse_point(&entry) {
+            continue;
+        }
         let path = entry.path();
         if path.is_dir() {
-            walk_json(&path, files)?;
+            walk_json_at(&path, depth + 1, files)?;
         } else if path.extension().and_then(|s| s.to_str()) == Some("json") {
             files.push(path);
         }
@@ -78,14 +91,24 @@ fn transcript_roots() -> Vec<PathBuf> {
 
 fn build_index() -> Result<LibraryIndex, AppError> {
     let mut index = LibraryIndex::default();
+    // id → slot in `summaries`. The exams map is last-writer-wins; without this
+    // the list would show one row per *file* while load_exam serves the last
+    // one, so a duplicate id in two roots rendered a row that did not match
+    // what opened.
+    let mut summary_slots: BTreeMap<String, usize> = BTreeMap::new();
     let transcripts = transcript_roots();
-    let audio_bindings = crate::audio::load_bindings().unwrap_or_else(|_| crate::audio::BindingsFile {
-        schema_version: 1,
-        bindings: std::collections::BTreeMap::new(),
-    });
+    let audio_bindings =
+        crate::audio::load_bindings().unwrap_or_else(|_| crate::audio::BindingsFile {
+            schema_version: 1,
+            bindings: std::collections::BTreeMap::new(),
+        });
     for path in collect_exam_files()? {
-        let Ok(text) = fs::read_to_string(&path) else { continue };
-        let Ok(v) = serde_json::from_str::<Value>(&text) else { continue };
+        let Ok(text) = fs::read_to_string(&path) else {
+            continue;
+        };
+        let Ok(v) = serde_json::from_str::<Value>(&text) else {
+            continue;
+        };
         if v.get("schemaVersion").and_then(Value::as_u64) != Some(1) {
             continue;
         }
@@ -96,6 +119,8 @@ fn build_index() -> Result<LibraryIndex, AppError> {
         if v.pointer("/source/kind").and_then(Value::as_str) == Some("generated_practice") {
             continue;
         }
+        // 剑 21 的 Academic 册没有 Listening 卷子（audio.rs 导入侧同样跳过
+        // book 21）——题库里若出现对应的 JSON 也是残件，不进索引。
         if v.get("module").and_then(Value::as_str) == Some("listening")
             && id.starts_with("cambridge-21-test-")
         {
@@ -114,7 +139,7 @@ fn build_index() -> Result<LibraryIndex, AppError> {
         } else {
             "ready"
         };
-        index.summaries.push(serde_json::json!({
+        let summary = serde_json::json!({
             "id": v.get("id"),
             "title": v.get("title"),
             "module": v.get("module"),
@@ -124,7 +149,14 @@ fn build_index() -> Result<LibraryIndex, AppError> {
             "questionCount": count_questions(&v),
             "hasTranscript": has_transcript,
             "audioStatus": audio_status,
-        }));
+        });
+        match summary_slots.get(id) {
+            Some(&slot) => index.summaries[slot] = summary,
+            None => {
+                summary_slots.insert(id.to_string(), index.summaries.len());
+                index.summaries.push(summary);
+            }
+        }
         index.exams.insert(id.to_string(), path);
     }
     index.summaries.sort_by(|a, b| {
@@ -216,6 +248,29 @@ pub fn list_exams() -> Result<Vec<Value>, AppError> {
     with_index(|index| index.summaries.clone())
 }
 
+/// Stat-only fingerprint of the exam tree, the library-side counterpart of
+/// `sessions_fingerprint` in commands.rs: an added, removed or rewritten paper
+/// changes the (path, len, mtime) rows and forces analytics to rescore instead
+/// of serving a report cached against older answer keys.
+pub fn exam_tree_fingerprint() -> String {
+    let mut rows = Vec::new();
+    if let Ok(files) = collect_exam_files() {
+        for path in files {
+            let Ok(meta) = fs::metadata(&path) else {
+                continue;
+            };
+            let mtime = meta
+                .modified()
+                .ok()
+                .and_then(|t| t.duration_since(std::time::UNIX_EPOCH).ok())
+                .map(|d| d.as_millis() as u64)
+                .unwrap_or(0);
+            rows.push(format!("{}:{}:{mtime}", path.display(), meta.len()));
+        }
+    }
+    crate::ziputil::sha256_bytes(rows.join("\n").as_bytes())
+}
+
 fn count_questions(exam: &Value) -> u32 {
     let mut n = 0u32;
     if let Some(sections) = exam.get("sections").and_then(Value::as_array) {
@@ -273,11 +328,102 @@ pub fn import_exam_json(raw: &str) -> Result<Value, AppError> {
         .and_then(Value::as_str)
         .ok_or_else(|| AppError::from("导入失败：缺少 id"))?;
     if !safe_path::valid_id(id) {
-        return Err(AppError::from("导入失败：id 只能含字母、数字、连字符和下划线"));
+        return Err(AppError::from(
+            "导入失败：id 只能含字母、数字、连字符和下划线",
+        ));
     }
     let module = v.get("module").and_then(Value::as_str).unwrap_or("");
     if !matches!(module, "reading" | "listening" | "writing") {
-        return Err(AppError::from("导入失败：module 必须是 reading、listening 或 writing"));
+        return Err(AppError::from(
+            "导入失败：module 必须是 reading、listening 或 writing",
+        ));
+    }
+    if module == "listening" {
+        // Audio binding only ever produces cambridge-{b}-test-{t}-listening
+        // ids, so an imported listening paper can never leave the wizard —
+        // reject it instead of shelving an unstartable exam.
+        return Err(AppError::from(
+            "导入失败：暂不支持导入听力试卷——音频绑定仅面向内置剑桥卷，导入的听力卷无法开考",
+        ));
+    }
+    // Fields the runtime dereferences or silently misreads. Passing them here
+    // keeps a structurally broken paper from entering the library at all.
+    let end_type = v
+        .pointer("/policy/endCondition/type")
+        .and_then(Value::as_str);
+    if !matches!(end_type, Some("fixed_duration") | Some("media_driven")) {
+        return Err(AppError::from(
+            "导入失败：policy.endCondition.type 必须是 fixed_duration 或 media_driven",
+        ));
+    }
+    if end_type == Some("fixed_duration") {
+        let duration = v
+            .pointer("/policy/endCondition/durationMs")
+            .and_then(Value::as_u64)
+            .unwrap_or(0);
+        if duration == 0 {
+            return Err(AppError::from(
+                "导入失败：fixed_duration 试卷缺少 policy.endCondition.durationMs",
+            ));
+        }
+    }
+    let mut qids = std::collections::BTreeSet::new();
+    let mut unscorable = 0usize;
+    for section in v
+        .get("sections")
+        .and_then(Value::as_array)
+        .into_iter()
+        .flatten()
+    {
+        for group in section
+            .get("questionGroups")
+            .and_then(Value::as_array)
+            .into_iter()
+            .flatten()
+        {
+            if let Some(policy) = group.get("scoringPolicy").and_then(Value::as_str) {
+                if !matches!(policy, "per_question" | "in_either_order") {
+                    return Err(AppError::from(format!(
+                        "导入失败：scoringPolicy 只能是 per_question 或 in_either_order，收到 {policy:?}"
+                    )));
+                }
+            }
+            let group_has_answers = group
+                .get("acceptedAnswers")
+                .and_then(Value::as_array)
+                .is_some_and(|list| !list.is_empty());
+            for question in group
+                .get("questions")
+                .and_then(Value::as_array)
+                .into_iter()
+                .flatten()
+            {
+                let qid = question.get("id").and_then(Value::as_str).unwrap_or("");
+                // Mistake records key on `{examId}__{questionId}` and must
+                // survive store::valid_id — anything else fails silently later.
+                if !safe_path::valid_id(qid) {
+                    return Err(AppError::from(format!(
+                        "导入失败：题目 id 非法（{qid}），只能含字母、数字、连字符和下划线"
+                    )));
+                }
+                if !qids.insert(qid.to_string()) {
+                    return Err(AppError::from(format!("导入失败：题目 id 重复（{qid}）")));
+                }
+                let has_answers = question
+                    .get("acceptedAnswers")
+                    .and_then(Value::as_array)
+                    .is_some_and(|list| !list.is_empty())
+                    || group_has_answers;
+                if !has_answers {
+                    unscorable += 1;
+                }
+            }
+        }
+    }
+    if module == "reading" && unscorable > 0 {
+        return Err(AppError::from(format!(
+            "导入失败：{unscorable} 道题缺少 acceptedAnswers，判分时会全部判错"
+        )));
     }
     let questions = count_questions(&v) as usize;
     if questions == 0 {
@@ -291,21 +437,36 @@ pub fn import_exam_json(raw: &str) -> Result<Value, AppError> {
     let mut assets = Vec::new();
     collect_asset_fields(&v, &mut assets);
     for rel in &assets {
-        safe_path::sanitize_rel(rel).map_err(|e| {
-            AppError::from(format!("导入失败：资源路径非法（{rel}）：{e}"))
-        })?;
+        safe_path::sanitize_rel(rel)
+            .map_err(|e| AppError::from(format!("导入失败：资源路径非法（{rel}）：{e}")))?;
     }
     if exam_exists(id) {
         return Err(AppError::from("导入失败：试卷 ID 已存在，拒绝覆盖"));
     }
     let dest = paths::library_dir()?.join(format!("{id}.json"));
-    crate::session::atomic_write(&dest, serde_json::to_vec_pretty(&v)?.as_slice())?;
+    let bytes = serde_json::to_vec_pretty(&v)?;
+    // Two overlapping imports of the same id can both pass the index check —
+    // the index was built before either wrote. Serialise the writes and
+    // re-check the real target file under the guard so the second import is
+    // still rejected instead of silently winning the tmp scratch file.
+    // (`exam_exists` must stay *outside* the guard: it rebuilds the index,
+    // which reads bindings and can take this same lock on its restore path.)
+    {
+        let _guard = crate::session::write_guard()?;
+        if dest.exists() {
+            return Err(AppError::from("导入失败：试卷 ID 已存在，拒绝覆盖"));
+        }
+        crate::session::atomic_write(&dest, &bytes)?;
+    }
     invalidate_index();
     Ok(v)
 }
 
 fn exam_exists(id: &str) -> bool {
-    with_index(|index| index.exams.contains_key(id)).unwrap_or(false)
+    // Fail closed: a broken index must not let an import overwrite a paper
+    // that may already exist — the .bak chain can still recover, but refusing
+    // is cheaper than explaining a clobbered exam.
+    with_index(|index| index.exams.contains_key(id)).unwrap_or(true)
 }
 
 fn asset_roots() -> Result<Vec<PathBuf>, AppError> {
@@ -405,7 +566,12 @@ mod tests {
             texts.iter().all(|d| !d.ends_with("/fixtures")),
             "must not scan whole fixtures root: {texts:?}"
         );
-        for banned in ["/overlays", "/answer-keys", "/question-types", "/transcripts"] {
+        for banned in [
+            "/overlays",
+            "/answer-keys",
+            "/question-types",
+            "/transcripts",
+        ] {
             assert!(
                 texts.iter().all(|d| !d.contains(banned)),
                 "scan dirs must not include {banned}: {texts:?}"
@@ -417,8 +583,16 @@ mod tests {
     fn collect_exam_files_does_not_walk_overlays_or_answer_keys() {
         let files = super::collect_exam_files().expect("scan exam files");
         for path in &files {
-            let text = path.to_string_lossy().replace('\\', "/").to_ascii_lowercase();
-            for banned in ["/overlays/", "/answer-keys/", "/question-types/", "/transcripts/"] {
+            let text = path
+                .to_string_lossy()
+                .replace('\\', "/")
+                .to_ascii_lowercase();
+            for banned in [
+                "/overlays/",
+                "/answer-keys/",
+                "/question-types/",
+                "/transcripts/",
+            ] {
                 assert!(
                     !text.contains(banned),
                     "exam scan should not include {banned}: {text}"
@@ -430,7 +604,10 @@ mod tests {
     #[test]
     fn import_rejects_bad_ids_and_absolute_assets() {
         use super::import_exam_json;
-        assert!(import_exam_json(r#"{"schemaVersion":1,"id":"../x","module":"reading","sections":[]}"#).is_err());
+        assert!(import_exam_json(
+            r#"{"schemaVersion":1,"id":"../x","module":"reading","sections":[]}"#
+        )
+        .is_err());
         assert!(import_exam_json(r#"{"schemaVersion":1,"id":"ok-id","module":"reading","sections":[{"questionGroups":[{"questions":[{"id":"q1","number":1,"type":"completion","prompt":"x"}],"instruction":"i","questionType":"completion","scoringPolicy":"per_question"}],"imageAsset":"C:\\Windows\\x.png"}]}"#).is_err());
     }
 

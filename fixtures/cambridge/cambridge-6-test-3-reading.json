@@ -184,7 +184,13 @@
               "label": "J",
               "text": "Paragraph J"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 1-5 段落信息匹配题（Reading Passage 1 has ten paragraphs, A-J），选项为段落 A-J（共10段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 2 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t3r-g2",
@@ -310,7 +316,13 @@
               "label": "J",
               "text": "Paragraph J"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 1-5 段落信息匹配题（Reading Passage 1 has ten paragraphs, A-J），选项为段落 A-J（共10段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 2 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t3r-g3",
@@ -516,7 +528,13 @@
               "label": "J",
               "text": "Paragraph J"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 1-5 段落信息匹配题（Reading Passage 1 has ten paragraphs, A-J），选项为段落 A-J（共10段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 2 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t3r-g5",
@@ -642,7 +660,13 @@
               "label": "J",
               "text": "Paragraph J"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 1-5 段落信息匹配题（Reading Passage 1 has ten paragraphs, A-J），选项为段落 A-J（共10段），无独立选项文本列表；题库错误声明了 single_choice 且 optionLabels 仅有 A-H，第 2 题答案包含 I，需结构修复。"
+          }
         },
         {
           "id": "c6t3r-g6",
@@ -828,7 +852,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 10-13 四选一单选题，每题选项仅有 A、B、C、D 四项；题库错误声明了 A-H 八个选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t3r-g11",
@@ -894,7 +924,13 @@
               "label": "D",
               "text": "describes familiar events."
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 10-13 四选一单选题，每题选项仅有 A、B、C、D 四项；题库错误声明了 A-H 八个选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t3r-g12",
@@ -960,7 +996,13 @@
               "label": "D",
               "text": "its future was uncertain."
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 10-13 四选一单选题，每题选项仅有 A、B、C、D 四项；题库错误声明了 A-H 八个选项标签，需结构修复。"
+          }
         },
         {
           "id": "c6t3r-g13",
@@ -1026,7 +1068,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.762146+00:00",
+            "note": "页面实际为 Questions 10-13 四选一单选题，每题选项仅有 A、B、C、D 四项；题库错误声明了 A-H 八个选项标签，需结构修复。"
+          }
         }
       ]
     },
@@ -2028,14 +2076,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 33–37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:40.078687+00:00",
+            "note": "印刷页 73 的分类题只有 A-C 三项：caloric-restricted monkeys、control monkeys、neither caloric-restricted monkeys nor control monkeys；工单题库错误声明了 A-H 八个选项标签，不能伪造 D-H，需结构修复。"
           }
         },
         {
@@ -2094,14 +2138,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 33–37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:40.078687+00:00",
+            "note": "印刷页 73 的分类题只有 A-C 三项：caloric-restricted monkeys、control monkeys、neither caloric-restricted monkeys nor control monkeys；工单题库错误声明了 A-H 八个选项标签，不能伪造 D-H，需结构修复。"
           }
         },
         {
@@ -2160,14 +2200,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 33–37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:40.078687+00:00",
+            "note": "印刷页 73 的分类题只有 A-C 三项：caloric-restricted monkeys、control monkeys、neither caloric-restricted monkeys nor control monkeys；工单题库错误声明了 A-H 八个选项标签，不能伪造 D-H，需结构修复。"
           }
         },
         {
@@ -2226,14 +2262,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 33–37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:40.078687+00:00",
+            "note": "印刷页 73 的分类题只有 A-C 三项：caloric-restricted monkeys、control monkeys、neither caloric-restricted monkeys nor control monkeys；工单题库错误声明了 A-H 八个选项标签，不能伪造 D-H，需结构修复。"
           }
         },
         {
@@ -2292,14 +2324,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              33,
-              37
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 33–37 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:40.078687+00:00",
+            "note": "印刷页 73 的分类题只有 A-C 三项：caloric-restricted monkeys、control monkeys、neither caloric-restricted monkeys nor control monkeys；工单题库错误声明了 A-H 八个选项标签，不能伪造 D-H，需结构修复。"
           }
         },
         {

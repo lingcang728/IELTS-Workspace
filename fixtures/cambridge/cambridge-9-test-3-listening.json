@@ -286,12 +286,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              6,
-              10
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:43.078808+00:00",
+            "note": "印刷页 66-67 的 SECTION 1 为 table 填空题（Questions 6-10），题 8 无选项列表；工单中声明 A-H 选项标签为提取错误。"
           }
         },
         {

@@ -2284,7 +2284,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:36.972720+00:00",
+            "note": "页面实际印刷为 Questions 37-40 的 YES/NO/NOT GIVEN 判断题，第 40 题为陈述句判断，页面无 A-H 选项列表或词库，题库结构与原书不符。"
+          }
         }
       ]
     }

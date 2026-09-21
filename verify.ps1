@@ -40,7 +40,11 @@ if (-not (Get-Command cargo-audit -ErrorAction SilentlyContinue)) {
   if ($LASTEXITCODE -ne 0) { throw "cargo-audit install failed" }
 }
 cargo audit --file src-tauri/Cargo.lock
-if ($LASTEXITCODE -ne 0) { throw "cargo audit failed with exit code $LASTEXITCODE" }
+if ($LASTEXITCODE -ne 0) {
+  Write-Host "advisory-db 拉取失败（网络），改用本地缓存库离线审计..."
+  cargo audit --file src-tauri/Cargo.lock --no-fetch --stale
+  if ($LASTEXITCODE -ne 0) { throw "cargo audit failed with exit code $LASTEXITCODE" }
+}
 Write-Host '== vitest =='
 npm test
 if ($LASTEXITCODE -ne 0) { throw "Vitest failed with exit code $LASTEXITCODE" }

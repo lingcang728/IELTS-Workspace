@@ -34,15 +34,18 @@ export function Vocab() {
   const [term, setTerm] = useState("");
   const [sentence, setSentence] = useState("");
   const [tab, setTab] = useState<"review" | "list">("review");
+  const [saveError, setSaveError] = useState<string | null>(null);
   const grading = useRef(false);
 
   async function reload() {
-    const [list, queue] = await Promise.all([
-      vocabList().catch(() => []),
-      vocabDue(50).catch(() => []),
-    ]);
-    setAll(list);
-    setDue(queue);
+    try {
+      const [list, queue] = await Promise.all([vocabList(), vocabDue(50)]);
+      setAll(list);
+      setDue(queue);
+      setSaveError(null);
+    } catch (e) {
+      setSaveError(`生词列表读取失败：${String(e)}`);
+    }
   }
 
   useEffect(() => { void reload(); }, []);
@@ -61,8 +64,11 @@ export function Vocab() {
     grading.current = true;
     setFlipped(false);
     try {
-      await vocabReview(card.id, value).catch(() => undefined);
+      await vocabReview(card.id, value);
       await reload();
+    } catch (e) {
+      // 评分没落库却翻了下一张 = 假装复习成功；说出来。
+      setSaveError(`复习结果保存失败：${String(e)}`);
     } finally {
       grading.current = false;
     }
@@ -71,24 +77,32 @@ export function Vocab() {
   async function add() {
     const word = term.trim();
     if (!word) return;
-    await vocabAdd({
-      term: word,
-      sighting: sentence.trim() ? { sentence: sentence.trim(), source: "manual" } : undefined,
-    }).catch(() => undefined);
+    try {
+      await vocabAdd({
+        term: word,
+        sighting: sentence.trim() ? { sentence: sentence.trim(), source: "manual" } : undefined,
+      });
+    } catch (e) {
+      // 不清输入框：保存失败时用户打的内容还在，可以重试。
+      setSaveError(`生词未能保存：${String(e)}`);
+      return;
+    }
     setTerm(""); setSentence("");
     await reload();
   }
 
-  if (all === null) return <div className="page-stack"><PageHeading title="生词本" /></div>;
+  if (all === null) return <div className="page-stack"><PageHeading title="生词本" />{saveError && <p className="form-error">{saveError}</p>}</div>;
 
   return <div className="page-stack vocab-page">
     <PageHeading
       title="生词本"
       subtitle="单词从做过的题里长出来。复习永远先给语境，释义只在翻面之后。"
       aside={<div className="filter-tabs">
-        <button type="button" className={tab === "review" ? "active" : ""} onClick={() => setTab("review")}>复习 {due.length > 0 && `(${due.length})`}</button>
-        <button type="button" className={tab === "list" ? "active" : ""} onClick={() => setTab("list")}>全部 {all.length}</button>
+        <button type="button" className={tab === "review" ? "active" : ""} aria-pressed={tab === "review"} onClick={() => setTab("review")}>复习 {due.length > 0 && `(${due.length})`}</button>
+        <button type="button" className={tab === "list" ? "active" : ""} aria-pressed={tab === "list"} onClick={() => setTab("list")}>全部 {all.length}</button>
       </div>} />
+
+    {saveError && <p className="form-error">{saveError}</p>}
 
     {tab === "review" && (card
       ? <section className="workspace-card flashcard">
@@ -112,7 +126,7 @@ export function Vocab() {
             : <button type="button" className="primary-button flashcard-flip" onClick={() => setFlipped(true)}>翻面</button>}
           <footer className="flashcard-meta">
             复习 {card.reps} 次 · 遗忘 {card.lapses} 次
-            {card.dueOn && ` · 上次安排到 ${card.dueOn}`}
+            {card.dueOn && ` · 下次复习 ${card.dueOn}`}
           </footer>
         </section>
       : <div className="workspace-card empty-state"><Icon name="check" size={42} />
@@ -136,7 +150,7 @@ export function Vocab() {
           <small>{formatDate(row.addedAt)} · 复习 {row.reps} 次{row.dueOn ? ` · 下次 ${row.dueOn}` : " · 未安排"}</small>
           {row.sightings?.[0]?.sentence && <p className="vocab-sentence">{row.sightings[0].sentence}</p>}
         </div>
-        <button type="button" className="link-button" onClick={() => void vocabDelete(row.id).then(reload)}>移除</button>
+        <button type="button" className="link-button" onClick={() => void vocabDelete(row.id).then(reload).catch((e) => setSaveError(`移除失败：${String(e)}`))}>移除</button>
       </article>)}</div>
       {all.length === 0 && <div className="workspace-card empty-state"><Icon name="pen" size={42} />
         <h2>生词本是空的</h2><p>在考场里选中一个词，右键即可加入。</p></div>}

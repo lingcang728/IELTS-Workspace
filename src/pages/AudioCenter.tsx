@@ -16,11 +16,13 @@ export function AudioCenter({
   onAdd,
   onOpenGuide,
   onRemove,
+  onRepair,
 }: {
   exams: ExamSummary[];
   onAdd: (examId?: string) => void;
   onOpenGuide: () => void;
   onRemove: (examId: string) => void;
+  onRepair: () => void;
 }) {
   const byId = useMemo(() => {
     const map = new Map<string, ExamSummary>();
@@ -42,6 +44,9 @@ export function AudioCenter({
 
   const total = BOOKS.length * TESTS.length;
   const bound = books.reduce((n, row) => n + row.tests.filter((t) => t.ready).length, 0);
+  // Bindings whose managed files are gone ("需重导"). repair_bindings drops
+  // them so the state resets to a clean "未添加" instead of a dead pointer.
+  const reviewCount = books.reduce((n, row) => n + row.tests.filter((t) => t.review).length, 0);
 
   return (
     <div className="page-stack audio-page">
@@ -49,6 +54,7 @@ export function AudioCenter({
         title="添加听力音频"
         subtitle="剑 4 到剑 20，每套四个 Part。绿色打勾是已经加上的，灰色还没加。"
         aside={<div className="button-row">
+          {reviewCount > 0 && <button type="button" className="secondary-button" onClick={onRepair}>清理 {reviewCount} 条失效绑定</button>}
           <button type="button" className="secondary-button" onClick={onOpenGuide}>打开下载指南</button>
           <button type="button" className="primary-button" onClick={() => onAdd()}>添加音频</button>
         </div>}

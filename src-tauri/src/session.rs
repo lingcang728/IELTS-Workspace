@@ -5,12 +5,35 @@ use serde_json::Value;
 use std::fs::{self, File};
 use std::io::Write;
 use std::path::{Path, PathBuf};
+use std::sync::{Mutex, MutexGuard};
+
+/// Session file mutations are serialised process-wide: `save_session_json`
+/// reads the existing file to reject a submitted→in_progress downgrade before
+/// writing, and without a lock an in-flight autosave can land between that
+/// check and `atomic_write` and revert a submitted session. `discard` and
+/// `archive` share the lock so a concurrent save cannot recreate a file that
+/// was just removed. The critical sections are a few small file ops, so one
+/// global lock is cheaper than a per-id map.
+static WRITE_LOCK: Mutex<()> = Mutex::new(());
+
+/// Also taken by other small JSON writes that share the `{name}.json.tmp`
+/// scratch file convention (`save_profile`, exam import) — `atomic_write`
+/// itself is deliberately lock-free so callers serialise at the operation
+/// level and keep their check-then-write critical sections atomic.
+pub(crate) fn write_guard() -> Result<MutexGuard<'static, ()>, AppError> {
+    WRITE_LOCK
+        .lock()
+        .map_err(|_| AppError::from("会话写入锁已损坏"))
+}
 
 #[cfg(windows)]
 fn replace_file(from: &Path, to: &Path) -> std::io::Result<()> {
     use std::os::windows::ffi::OsStrExt;
     fn wide(p: &Path) -> Vec<u16> {
-        p.as_os_str().encode_wide().chain(std::iter::once(0)).collect()
+        p.as_os_str()
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
     const MOVEFILE_REPLACE_EXISTING: u32 = 0x1;
     const MOVEFILE_WRITE_THROUGH: u32 = 0x8;
@@ -24,7 +47,13 @@ fn replace_file(from: &Path, to: &Path) -> std::io::Result<()> {
     }
     let f = wide(from);
     let t = wide(to);
-    let ok = unsafe { MoveFileExW(f.as_ptr(), t.as_ptr(), MOVEFILE_REPLACE_EXISTING | MOVEFILE_WRITE_THROUGH) };
+    let ok = unsafe {
+        MoveFileExW(
+            f.as_ptr(),
+            t.as_ptr(),
+            MOVEFILE_REPLACE_EXISTING | MOVEFILE_WRITE_THROUGH,
+        )
+    };
     if ok == 0 {
         Err(std::io::Error::last_os_error())
     } else {
@@ -55,6 +84,24 @@ pub fn atomic_write(path: &Path, bytes: &[u8]) -> Result<(), AppError> {
     Ok(())
 }
 
+/// Restore `path` from recovered content: still tmp + fsync + atomic rename,
+/// but deliberately without the `.bak` step — the corrupt main file must not
+/// be copied over the good backup it is being recovered from.
+pub(crate) fn restore_write(path: &Path, bytes: &[u8]) {
+    let tmp = path.with_extension("json.tmp");
+    let result = (|| -> std::io::Result<()> {
+        {
+            let mut f = File::create(&tmp)?;
+            f.write_all(bytes)?;
+            f.sync_all()?;
+        }
+        replace_file(&tmp, path)
+    })();
+    if result.is_err() {
+        let _ = fs::write(path, bytes);
+    }
+}
+
 pub fn session_path(id: &str) -> Result<PathBuf, AppError> {
     if !crate::safe_path::valid_id(id) {
         return Err(AppError::from("非法 session id"));
@@ -64,15 +111,38 @@ pub fn session_path(id: &str) -> Result<PathBuf, AppError> {
 
 fn valid_iso_datetime(s: &str) -> bool {
     let b = s.as_bytes();
-    if b.len() < 19 {
+    if b.len() < 19 || !s.is_ascii() {
         return false;
     }
-    b[4] == b'-'
+    if !(b[4] == b'-'
         && b[7] == b'-'
         && (b[10] == b'T' || b[10] == b' ')
         && b[13] == b':'
-        && b[16] == b':'
-        && b[0].is_ascii_digit()
+        && b[16] == b':')
+    {
+        return false;
+    }
+    // 只查分隔符会让 9999-99-99T99:99:99 也过关；逐段验范围。
+    let Ok(month) = s[5..7].parse::<u32>() else {
+        return false;
+    };
+    let Ok(day) = s[8..10].parse::<u32>() else {
+        return false;
+    };
+    let Ok(hour) = s[11..13].parse::<u32>() else {
+        return false;
+    };
+    let Ok(minute) = s[14..16].parse::<u32>() else {
+        return false;
+    };
+    let Ok(second) = s[17..19].parse::<u32>() else {
+        return false;
+    };
+    (1..=12).contains(&month)
+        && (1..=31).contains(&day)
+        && hour <= 23
+        && minute <= 59
+        && second <= 60
 }
 
 fn validate_session(value: &Value) -> Result<(), AppError> {
@@ -81,7 +151,9 @@ fn validate_session(value: &Value) -> Result<(), AppError> {
         .and_then(Value::as_u64)
         .ok_or_else(|| AppError::from("Session 缺少 schemaVersion"))?;
     if version != 1 {
-        return Err(AppError::from(format!("不支持的 Session schemaVersion: {version}")));
+        return Err(AppError::from(format!(
+            "不支持的 Session schemaVersion: {version}"
+        )));
     }
     let id = value
         .get("id")
@@ -90,10 +162,7 @@ fn validate_session(value: &Value) -> Result<(), AppError> {
     if !safe_path::valid_id(id) {
         return Err(AppError::from("非法 session id"));
     }
-    let exam_id = value
-        .get("examId")
-        .and_then(Value::as_str)
-        .unwrap_or("");
+    let exam_id = value.get("examId").and_then(Value::as_str).unwrap_or("");
     if exam_id.is_empty() || !safe_path::valid_id(exam_id) {
         return Err(AppError::from("Session 缺少合法 examId"));
     }
@@ -135,6 +204,7 @@ fn validate_session(value: &Value) -> Result<(), AppError> {
 }
 
 pub fn save_session_json(raw: &str) -> Result<String, AppError> {
+    safe_path::check_json_arg(raw, "Session 数据")?;
     let value: Value = serde_json::from_str(raw)?;
     validate_session(&value)?;
     let id = value
@@ -142,6 +212,7 @@ pub fn save_session_json(raw: &str) -> Result<String, AppError> {
         .and_then(Value::as_str)
         .ok_or_else(|| AppError::from("Session 缺少 id"))?;
     let path = session_path(id)?;
+    let _guard = write_guard()?;
     if path.exists() {
         if let Ok(text) = fs::read_to_string(&path) {
             if let Ok(existing) = serde_json::from_str::<Value>(&text) {
@@ -180,23 +251,41 @@ pub fn quarantine_file_to(path: &Path, dir: &Path, why: &str) -> Result<PathBuf,
         .map(|d| d.as_millis())
         .unwrap_or_default();
     let dest = dir.join(format!("{stamp}-{name}"));
-    let _ = fs::rename(path, &dest).or_else(|_| fs::copy(path, &dest).map(|_| {
-        let _ = fs::remove_file(path);
-    }));
+    let _ = fs::rename(path, &dest).or_else(|_| {
+        fs::copy(path, &dest).map(|_| {
+            // Copy succeeded but the source could not be removed (lock, AV
+            // scan): drop the duplicate or every quarantine pass accumulates
+            // another `{ms}-name` copy of the same stuck file.
+            if fs::remove_file(path).is_err() {
+                let _ = fs::remove_file(&dest);
+            }
+        })
+    });
+    if !dest.exists() {
+        return Ok(dest);
+    }
     let note = dest.with_extension("reason.txt");
     let _ = fs::write(&note, format!("{why}\n原文件：{}\n", path.display()));
     Ok(dest)
 }
 
-fn try_parse_session(path: &Path) -> Result<String, String> {
-    let text = fs::read_to_string(path).map_err(|e| e.to_string())?;
-    serde_json::from_str::<Value>(&text).map_err(|e| e.to_string())?;
+/// Transient IO failures (OneDrive/杀软锁文件) are not corruption: they must
+/// never move the file to quarantine. Only a real JSON parse failure does.
+enum ReadFail {
+    Io(String),
+    Corrupt(String),
+}
+
+fn try_parse_session(path: &Path) -> Result<String, ReadFail> {
+    let text = fs::read_to_string(path).map_err(|e| ReadFail::Io(e.to_string()))?;
+    serde_json::from_str::<Value>(&text).map_err(|e| ReadFail::Corrupt(e.to_string()))?;
     Ok(text)
 }
 
 fn read_with_fallback(path: &Path) -> Result<String, AppError> {
     let bak = path.with_extension("json.bak");
     let tmp = path.with_extension("json.tmp");
+    let mut last_io: Option<String> = None;
     for candidate in [path, bak.as_path(), tmp.as_path()] {
         if !candidate.exists() {
             continue;
@@ -204,16 +293,33 @@ fn read_with_fallback(path: &Path) -> Result<String, AppError> {
         match try_parse_session(candidate) {
             Ok(text) => {
                 if candidate != path {
-                    let _ = fs::write(path, &text);
+                    // Serialise against an in-flight save and re-check the
+                    // main file under the lock: a save that landed while we
+                    // were reading the fallback must not be overwritten by
+                    // the older backup bytes.
+                    if let Ok(_guard) = write_guard() {
+                        match try_parse_session(path) {
+                            Ok(fresh) => return Ok(fresh),
+                            Err(_) => restore_write(path, text.as_bytes()),
+                        }
+                    }
                 }
                 return Ok(text);
             }
-            Err(why) => {
+            Err(ReadFail::Io(why)) => {
+                last_io = Some(why);
+            }
+            Err(ReadFail::Corrupt(why)) => {
                 let _ = quarantine_file(candidate, &format!("JSON 损坏：{why}"));
             }
         }
     }
-    Err(AppError::from("找不到有效的 Session 文件（损坏文件已隔离）"))
+    if let Some(why) = last_io {
+        return Err(AppError::from(format!("Session 暂时无法读取：{why}")));
+    }
+    Err(AppError::from(
+        "找不到有效的 Session 文件（损坏文件已隔离）",
+    ))
 }
 
 /// How much of a paper was actually attempted: (answered, total).
@@ -309,13 +415,21 @@ pub fn list_sessions_with_diagnostics() -> Result<SessionList, AppError> {
                     "total": total,
                 }));
             }
-            Err(why) => {
+            Err(ReadFail::Io(_)) => {
+                // 瞬时锁文件不是损坏：跳过且不隔离，下次列表再读。
+                continue;
+            }
+            Err(ReadFail::Corrupt(why)) => {
                 let bak = path.with_extension("json.bak");
                 let mut recovered = false;
                 if bak.exists() {
                     if let Ok(bak_text) = try_parse_session(&bak) {
                         if let Ok(v) = serde_json::from_str::<Value>(&bak_text) {
-                            let _ = fs::write(&path, &bak_text);
+                            // The restore races an in-flight save on the same
+                            // tmp scratch file — serialise it.
+                            if let Ok(_guard) = write_guard() {
+                                restore_write(&path, bak_text.as_bytes());
+                            }
                             let (answered, total) = answered_counts(&v);
                             out.summaries.push(serde_json::json!({
                                 "id": v.get("id"),
@@ -350,6 +464,7 @@ pub fn list_sessions_with_diagnostics() -> Result<SessionList, AppError> {
 
 pub fn discard_session(id: &str) -> Result<(), AppError> {
     let path = session_path(id)?;
+    let _guard = write_guard()?;
     if path.exists() {
         fs::remove_file(&path)?;
     }
@@ -357,11 +472,18 @@ pub fn discard_session(id: &str) -> Result<(), AppError> {
     if bak.exists() {
         let _ = fs::remove_file(bak);
     }
+    // An orphaned .tmp would let read_with_fallback resurrect a discarded
+    // session, so it goes with the rest.
+    let tmp = path.with_extension("json.tmp");
+    if tmp.exists() {
+        let _ = fs::remove_file(tmp);
+    }
     Ok(())
 }
 
 pub fn archive_session(id: &str) -> Result<(), AppError> {
     let path = session_path(id)?;
+    let _guard = write_guard()?;
     let archive = paths::sessions_dir()?.join("archive");
     fs::create_dir_all(&archive)?;
     if path.exists() {

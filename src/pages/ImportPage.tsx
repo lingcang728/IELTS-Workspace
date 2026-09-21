@@ -56,7 +56,16 @@ export function ImportPage({
         />
         <div
           className={`import-drop${over ? " over" : ""}`}
+          role="button"
+          tabIndex={0}
+          aria-label="选择 JSON 文件导入"
           onClick={() => inputRef.current?.click()}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              inputRef.current?.click();
+            }
+          }}
           onDragOver={(event) => {
             event.preventDefault();
             setOver(true);
@@ -69,7 +78,7 @@ export function ImportPage({
             if (file) readFile(file);
           }}
         >
-          <strong>选择或拖入 JSON 文件</strong>
+          <strong>点击选择 JSON 文件</strong>
           <small>也可以直接把内容粘贴到下方</small>
         </div>
         <textarea

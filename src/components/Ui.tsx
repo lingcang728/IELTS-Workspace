@@ -70,8 +70,13 @@ export async function runWindowAction(action: "minimize" | "maximize" | "fullscr
   if (action === "close") await win.close();
 }
 
-export function WindowControls({ beforeClose }: { beforeClose?: () => void | Promise<void> }) {
+export function WindowControls({ beforeClose, locale = "zh" }: { beforeClose?: () => void | Promise<void>; locale?: "zh" | "en" }) {
   const [maximized, setMaximized] = useState(false);
+  // The exam runtime is English chrome (docs/ui-reference.md); the shell is
+  // Simplified Chinese.
+  const labels = locale === "en"
+    ? { min: "Minimize", max: "Maximize", restore: "Restore", close: "Close" }
+    : { min: "最小化", max: "最大化", restore: "还原", close: "关闭" };
   useEffect(() => {
     if (!("__TAURI_INTERNALS__" in window)) return;
     const win = getCurrentWindow();
@@ -95,8 +100,8 @@ export function WindowControls({ beforeClose }: { beforeClose?: () => void | Pro
     }
   }
   return <div className="window-actions">
-    <button type="button" aria-label="最小化" title="最小化" onClick={() => void act("minimize")}><Icon name="minus" size={16} /></button>
-    <button type="button" aria-label={maximized ? "还原" : "最大化"} title={maximized ? "还原" : "最大化"} onClick={() => void act("maximize")}><Icon name={maximized ? "restore" : "maximize"} size={16} className={`maximize-glyph${maximized ? " restore" : ""}`} /></button>
-    <button type="button" aria-label="关闭" title="关闭" onClick={() => void act("close")}><Icon name="close" size={17} /></button>
+    <button type="button" aria-label={labels.min} title={labels.min} onClick={() => void act("minimize")}><Icon name="minus" size={16} /></button>
+    <button type="button" aria-label={maximized ? labels.restore : labels.max} title={maximized ? labels.restore : labels.max} onClick={() => void act("maximize")}><Icon name={maximized ? "restore" : "maximize"} size={16} className={`maximize-glyph${maximized ? " restore" : ""}`} /></button>
+    <button type="button" aria-label={labels.close} title={labels.close} onClick={() => void act("close")}><Icon name="close" size={17} /></button>
   </div>;
 }

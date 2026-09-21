@@ -19,7 +19,9 @@ pub fn sniff(path: &Path) -> Result<Sniff, AppError> {
     use std::io::Read;
     let mut f = File::open(path).map_err(|e| AppError::from(format!("无法打开音频：{e}")))?;
     let mut buf = vec![0u8; 64 * 1024];
-    let n = f.read(&mut buf).map_err(|e| AppError::from(format!("无法读取音频头部：{e}")))?;
+    let n = f
+        .read(&mut buf)
+        .map_err(|e| AppError::from(format!("无法读取音频头部：{e}")))?;
     buf.truncate(n);
     sniff_bytes(&buf, path)
 }
@@ -110,12 +112,19 @@ pub fn extract_mpeg_from_wav(src: &Path, dest_dir: &Path) -> Result<PathBuf, App
             data_len,
         } => {
             fs::create_dir_all(dest_dir)?;
-            let dest = dest_dir.join(format!(
-                "{}.mp3",
-                src.file_stem()
-                    .and_then(|s| s.to_str())
-                    .unwrap_or("extracted")
-            ));
+            // Different source dirs can hold same-stem WAVs; a plain
+            // `{stem}.mp3` would make them overwrite each other in staging
+            // and the confirm pass would then report a bogus mid-scan change.
+            let stem = src
+                .file_stem()
+                .and_then(|s| s.to_str())
+                .unwrap_or("extracted");
+            let mut dest = dest_dir.join(format!("{stem}.mp3"));
+            let mut n = 1u32;
+            while dest.exists() {
+                dest = dest_dir.join(format!("{stem}-{n}.mp3"));
+                n += 1;
+            }
             let mut src_file = File::open(src)?;
             src_file.seek(SeekFrom::Start(data_offset as u64))?;
             let mut dest_file = File::create(&dest)?;
@@ -154,24 +163,55 @@ pub fn duration_ms(path: &Path) -> Result<u64, AppError> {
         hint.with_extension(ext);
     }
     let probed = symphonia::default::get_probe()
-        .format(&hint, mss, &FormatOptions::default(), &MetadataOptions::default())
+        .format(
+            &hint,
+            mss,
+            &FormatOptions::default(),
+            &MetadataOptions::default(),
+        )
         .map_err(|e| AppError::from(format!("无法识别音频格式：{e}")))?;
-    let format = probed.format;
-    let track = format
-        .tracks()
-        .iter()
-        .find(|t| t.codec_params.codec != CODEC_TYPE_NULL)
-        .ok_or_else(|| AppError::from("音频文件没有可解码轨道"))?;
-    let params = &track.codec_params;
-    if let (Some(frames), Some(rate)) = (params.n_frames, params.sample_rate) {
+    let mut format = probed.format;
+    let (track_id, n_frames, sample_rate, time_base) = {
+        let track = format
+            .tracks()
+            .iter()
+            .find(|t| t.codec_params.codec != CODEC_TYPE_NULL)
+            .ok_or_else(|| AppError::from("音频文件没有可解码轨道"))?;
+        let params = &track.codec_params;
+        (
+            track.id,
+            params.n_frames,
+            params.sample_rate,
+            params.time_base,
+        )
+    };
+    if let (Some(frames), Some(rate)) = (n_frames, sample_rate) {
         if rate > 0 {
             return Ok((frames as u128 * 1000 / rate as u128) as u64);
         }
     }
-    if let Some(tb) = params.time_base {
-        if let Some(frames) = params.n_frames {
-            let time = tb.calc_time(frames);
+    if let (Some(tb), Some(frames)) = (time_base, n_frames) {
+        let time = tb.calc_time(frames);
+        return Ok(time.seconds * 1000 + (time.frac * 1000.0) as u64);
+    }
+    // MP3s without a Xing/VBRI header (rough transcodes, some VBR files)
+    // carry no n_frames. Walk the packets and sum their durations instead of
+    // rejecting a playable file.
+    let mut total = 0u64;
+    while let Ok(packet) = format.next_packet() {
+        if packet.track_id() == track_id {
+            total = total.saturating_add(packet.dur());
+        }
+    }
+    if total > 0 {
+        if let Some(tb) = time_base {
+            let time = tb.calc_time(total);
             return Ok(time.seconds * 1000 + (time.frac * 1000.0) as u64);
+        }
+        if let Some(rate) = sample_rate {
+            if rate > 0 {
+                return Ok((total as u128 * 1000 / rate as u128) as u64);
+            }
         }
     }
     Err(AppError::from("无法读取音频时长"))

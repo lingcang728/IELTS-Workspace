@@ -91,11 +91,7 @@ pub fn score_exam(exam: &Value, answers: &Value) -> Result<ScoreReport, String> 
     })
 }
 
-fn score_group(
-    group: &Value,
-    answers: &Value,
-    out: &mut Vec<QuestionScore>,
-) -> Result<(), String> {
+fn score_group(group: &Value, answers: &Value, out: &mut Vec<QuestionScore>) -> Result<(), String> {
     let questions = group
         .get("questions")
         .and_then(Value::as_array)
@@ -213,7 +209,11 @@ fn value_to_compare(value: Option<&Value>) -> Option<String> {
             // Multi-select stored as array: compare as sorted joined tokens only
             // for per-question multi_choice of a single slot. Group either-order
             // handles arrays at group level instead.
-            let mut parts: Vec<String> = arr.iter().filter_map(Value::as_str).map(str::to_string).collect();
+            let mut parts: Vec<String> = arr
+                .iter()
+                .filter_map(Value::as_str)
+                .map(str::to_string)
+                .collect();
             parts.sort();
             if parts.is_empty() {
                 None
@@ -279,7 +279,11 @@ fn score_in_either_order(
     }
 
     for q in questions {
-        let id = q.get("id").and_then(Value::as_str).unwrap_or("").to_string();
+        let id = q
+            .get("id")
+            .and_then(Value::as_str)
+            .unwrap_or("")
+            .to_string();
         let number = q.get("number").and_then(Value::as_u64).unwrap_or(0) as u32;
         let qtype = q
             .get("type")
@@ -380,8 +384,14 @@ mod tests {
                 { "id": "q1", "number": 1, "type": "single_choice", "acceptedAnswers": ["B"] }
             ]
         }));
-        assert_eq!(score_exam(&exam, &json!({"q1":"B"})).unwrap().raw_correct, 1);
-        assert_eq!(score_exam(&exam, &json!({"q1":"C"})).unwrap().raw_correct, 0);
+        assert_eq!(
+            score_exam(&exam, &json!({"q1":"B"})).unwrap().raw_correct,
+            1
+        );
+        assert_eq!(
+            score_exam(&exam, &json!({"q1":"C"})).unwrap().raw_correct,
+            0
+        );
     }
 
     #[test]
@@ -394,7 +404,9 @@ mod tests {
             ]
         }));
         assert_eq!(
-            score_exam(&exam, &json!({"q1":"  Library "})).unwrap().raw_correct,
+            score_exam(&exam, &json!({"q1":"  Library "}))
+                .unwrap()
+                .raw_correct,
             1
         );
     }

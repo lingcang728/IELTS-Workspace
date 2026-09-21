@@ -3,7 +3,7 @@
   "id": "cambridge-6-test-2-listening",
   "title": "Cambridge IELTS 6 Academic Test 2 Listening",
   "module": "listening",
-  "contentRevision": "repair-0003-cf6946bd",
+  "contentRevision": "repair-0002-5c4f47ac",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -450,7 +450,7 @@
         },
         {
           "id": "c6t2l-g15",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -476,7 +476,7 @@
         },
         {
           "id": "c6t2l-g16",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -507,7 +507,7 @@
         },
         {
           "id": "c6t2l-g17",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -539,19 +539,14 @@
         {
           "id": "c6t2l-g18",
           "instruction": "Choose THREE letters, A–G. Which THREE attractions can you visit at present by train from Trebirch?",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c6t2l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Which THREE attractions can you visit at present by train from Trebirch? (Question 18)",
-              "acceptedAnswers": [
-                "C",
-                "D",
-                "G"
-              ],
+              "prompt": "First selected letter: Which THREE attractions can you visit at present by train from Trebirch?",
               "options": [
                 {
                   "id": "A",
@@ -593,53 +588,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:36:10+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "the blue team"
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "the yellow team"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "the green team"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "the red team"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T16:09:03.016579+00:00"
-          }
-        },
-        {
-          "id": "c6t2l-g19",
-          "instruction": "Choose THREE letters, A–G. Which THREE attractions can you visit at present by train from Trebirch?",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c6t2l-q19",
               "number": 19,
               "type": "multi_choice",
-              "prompt": "Which THREE attractions can you visit at present by train from Trebirch? (Question 19)",
-              "acceptedAnswers": [
-                "C",
-                "D",
-                "G"
-              ],
+              "prompt": "Second selected letter: Which THREE attractions can you visit at present by train from Trebirch?",
               "options": [
                 {
                   "id": "A",
@@ -681,48 +639,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:36:10+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "the blue team"
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "the yellow team"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "the green team"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "the red team"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T16:09:03.016579+00:00"
-          }
-        },
-        {
-          "id": "c6t2l-g20",
-          "instruction": "Choose THREE letters, A–G.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c6t2l-q20",
               "number": 20,
-              "type": "single_choice",
-              "prompt": "Meet the",
+              "type": "multi_choice",
+              "prompt": "Third selected letter: Which THREE attractions can you visit at present by train from Trebirch?",
               "acceptedAnswers": [
                 "G"
               ],
@@ -730,22 +656,37 @@
                 {
                   "id": "A",
                   "label": "A",
-                  "text": "the blue team"
+                  "text": "a science museum"
                 },
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "the yellow team"
+                  "text": "a theme park"
                 },
                 {
                   "id": "C",
                   "label": "C",
-                  "text": "the green team"
+                  "text": "a climbing wall"
                 },
                 {
                   "id": "D",
                   "label": "D",
-                  "text": "the red team"
+                  "text": "a mining museum"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "an aquarium"
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "a castle"
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "a zoo"
                 }
               ]
             }
@@ -754,29 +695,49 @@
             {
               "id": "A",
               "label": "A",
-              "text": "the blue team"
+              "text": "a science museum"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "the yellow team"
+              "text": "a theme park"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "the green team"
+              "text": "a climbing wall"
             },
             {
               "id": "D",
               "label": "D",
-              "text": "the red team"
+              "text": "a mining museum"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "an aquarium"
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "a castle"
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "a zoo"
             }
           ],
           "repairSource": {
             "kind": "overlay",
             "status": "corrected",
-            "reviewedAt": "2026-08-24T12:13:52.084273+00:00"
-          }
+            "reviewedAt": "2026-08-24T16:09:03.016579+00:00"
+          },
+          "acceptedAnswers": [
+            "C",
+            "D",
+            "G"
+          ]
         }
       ],
       "audioStartMs": 405884,

@@ -502,14 +502,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              5
-            ],
-            "canonicalOf": [
-              "Reading Passage 1 has five marked paragraphs, A-E."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:34.218309+00:00",
+            "note": "题库错误：记录为 single_choice 且 optionLabels 为 A-H（8 个字母），但页面上实际是 Matching Headings 题，选项为罗马数字 i-viii（8 项）。题型和标签都不符，属于题库结构级别的问题。"
           }
         },
         {
@@ -2540,7 +2536,13 @@
               "label": "G",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:04.949452+00:00",
+            "note": "印刷页 50 的题目说明与选项框只有 A-G 七项（Complete each sentence with the correct ending, A-G, below.）；工单题库错误声明了 A-H 八个选项标签，不能伪造页面上不存在的 H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t2r-g28",
@@ -2636,7 +2638,13 @@
               "label": "G",
               "text": "was a characteristic of early numeration systems."
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:04.949452+00:00",
+            "note": "印刷页 50 的题目说明与选项框只有 A-G 七项（Complete each sentence with the correct ending, A-G, below.）；工单题库错误声明了 A-H 八个选项标签，不能伪造页面上不存在的 H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t2r-g29",
@@ -2732,7 +2740,13 @@
               "label": "G",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:04.949452+00:00",
+            "note": "印刷页 50 的题目说明与选项框只有 A-G 七项（Complete each sentence with the correct ending, A-G, below.）；工单题库错误声明了 A-H 八个选项标签，不能伪造页面上不存在的 H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t2r-g30",
@@ -2828,7 +2842,13 @@
               "label": "G",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:04.949452+00:00",
+            "note": "印刷页 50 的题目说明与选项框只有 A-G 七项（Complete each sentence with the correct ending, A-G, below.）；工单题库错误声明了 A-H 八个选项标签，不能伪造页面上不存在的 H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t2r-g31",
@@ -2924,7 +2944,13 @@
               "label": "G",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:04.949452+00:00",
+            "note": "印刷页 50 的题目说明与选项框只有 A-G 七项（Complete each sentence with the correct ending, A-G, below.）；工单题库错误声明了 A-H 八个选项标签，不能伪造页面上不存在的 H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t2r-g32",

@@ -3,7 +3,7 @@
   "id": "cambridge-5-test-2-reading",
   "title": "Cambridge IELTS 5 Academic Test 2 Reading",
   "module": "reading",
-  "contentRevision": "repair-0005-9e110a90",
+  "contentRevision": "repair-0001-00040181",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -322,14 +322,14 @@
         {
           "id": "c5t2r-g9",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c5t2r-q9",
               "number": 9,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO of the following factors influencing the design of Bakelite objects are mentioned in the text?",
+              "prompt": "First selected letter: Which TWO of the following factors influencing the design of Bakelite objects are mentioned in the text?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -365,52 +365,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T03:02:28+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "the function which the object would serve"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "the ease with which the resin could fill the mould"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "the facility with which the object could be removed from the mould"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "the limitations of the materials used to manufacture the mould"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "the fashionable styles of the period"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "approved",
-            "reviewedAt": "2026-08-25T01:51:30.326148+00:00"
-          }
-        },
-        {
-          "id": "c5t2r-g10",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c5t2r-q10",
               "number": 10,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of the following factors influencing the design of Bakelite objects are mentioned in the text?",
+              "prompt": "Second selected letter: Which TWO of the following factors influencing the design of Bakelite objects are mentioned in the text?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -479,7 +439,11 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:51:30.326148+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ]
         },
         {
           "id": "c5t2r-g11",

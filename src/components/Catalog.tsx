@@ -9,7 +9,7 @@ const TAB_LABEL: Record<CatalogModule, string> = {
 };
 
 export function CatalogToolbar({ module, setModule, query, setQuery }: { module: CatalogModule; setModule: (m: CatalogModule) => void; query: string; setQuery: (q: string) => void }) {
-  return <div className="catalog-toolbar"><div className="filter-tabs">{(["all", "reading", "listening", "writing"] as const).map((m) => <button key={m} type="button" className={module === m ? "active" : ""} onClick={() => setModule(m)}>{TAB_LABEL[m]}</button>)}</div><label className="catalog-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="搜索题目" /></label></div>;
+  return <div className="catalog-toolbar"><div className="filter-tabs">{(["all", "reading", "listening", "writing"] as const).map((m) => <button key={m} type="button" className={module === m ? "active" : ""} aria-pressed={module === m} onClick={() => setModule(m)}>{TAB_LABEL[m]}</button>)}</div><label className="catalog-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="搜索题目" /></label></div>;
 }
 
 export function Pagination({ page, pageCount, setPage }: { page: number; pageCount: number; setPage: (p: number) => void }) {

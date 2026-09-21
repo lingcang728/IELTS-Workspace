@@ -4,8 +4,22 @@ use std::fs;
 use std::path::{Path, PathBuf};
 
 const DATA_SUBDIRS: &[&str] = &[
-    "sources", "library", "assets", "sessions", "profile", "notes", "cache", "temp",
-    "mistakes", "vocab", "plans", "feedback", "audio", "content",
+    "sources",
+    "library",
+    "assets",
+    "sessions",
+    "profile",
+    "notes",
+    "cache",
+    "temp",
+    "mistakes",
+    "vocab",
+    "plans",
+    "feedback",
+    "audio",
+    "content",
+    "transcripts",
+    "official-samples",
 ];
 
 pub const CONTENT_VERSION: &str = env!("CARGO_PKG_VERSION");
@@ -24,14 +38,22 @@ pub fn app_root() -> Result<PathBuf, AppError> {
             .ok_or_else(|| AppError::from("无法定位项目根目录"))?
             .to_path_buf())
     } else {
-        let exe = std::env::current_exe().map_err(|e| {
-            AppError::Message(format!("无法读取程序路径 (current_exe): {e}"))
-        })?;
+        let exe = std::env::current_exe()
+            .map_err(|e| AppError::Message(format!("无法读取程序路径 (current_exe): {e}")))?;
         Ok(exe
             .parent()
             .ok_or_else(|| AppError::from("无法定位程序所在目录"))?
             .to_path_buf())
     }
+}
+
+/// Installed layout is "exe next to a real uninstaller". A stray empty or
+/// placeholder `uninstall.exe` dropped next to a portable exe must not flip
+/// the data root to `%LOCALAPPDATA%` — the user's data would seem to vanish.
+pub(crate) fn exe_dir_looks_installed(dir: &Path) -> bool {
+    fs::metadata(dir.join("uninstall.exe"))
+        .map(|m| m.is_file() && m.len() > 1024)
+        .unwrap_or(false)
 }
 
 /// Installed layout is "exe next to uninstall.exe". Portable has no uninstaller.
@@ -40,15 +62,22 @@ pub fn is_portable_layout() -> bool {
         return false;
     }
     match app_root() {
-        Ok(root) => !root.join("uninstall.exe").is_file(),
+        Ok(root) => !exe_dir_looks_installed(&root),
         Err(_) => true,
     }
 }
 
+/// Installed data root lives OUTSIDE $INSTDIR: NSIS `currentUser` installs to
+/// `%LOCALAPPDATA%\IELTS Workspace` and the uninstaller removes that directory
+/// recursively. A data root inside it would wipe every session, recording and
+/// imported audio file on uninstall. `migrate::run` copies the legacy
+/// `$INSTDIR\data` tree here on first launch of a fixed build.
 pub fn installed_data_root() -> Result<PathBuf, AppError> {
     let local = std::env::var_os("LOCALAPPDATA")
         .ok_or_else(|| AppError::from("Windows LOCALAPPDATA 路径不可用"))?;
-    Ok(PathBuf::from(local).join("IELTS Workspace").join("data"))
+    Ok(PathBuf::from(local)
+        .join("IELTS Workspace User Data")
+        .join("data"))
 }
 
 pub fn sidecar_data_root() -> Result<PathBuf, AppError> {
@@ -75,12 +104,27 @@ pub fn fixtures_root() -> Result<PathBuf, AppError> {
     }
 }
 
+/// A `CURRENT` marker must name one directory, never a path. The marker lives
+/// in the writable data dir, so an absolute or `..` value would redirect the
+/// content root anywhere on disk.
+pub(crate) fn valid_version_dir(ver: &str) -> bool {
+    !ver.is_empty()
+        && ver.len() <= 64
+        && !ver.starts_with('.')
+        && !ver.ends_with('.')
+        && !ver.contains("..")
+        && ver
+            .bytes()
+            .all(|b| b.is_ascii_alphanumeric() || matches!(b, b'.' | b'-' | b'_'))
+        && !crate::safe_path::is_reserved_component(ver)
+}
+
 pub fn content_dir() -> Result<PathBuf, AppError> {
     let root = data_root()?.join("content");
     let marker = root.join("CURRENT");
     if let Ok(ver) = fs::read_to_string(&marker) {
         let ver = ver.trim();
-        if !ver.is_empty() {
+        if valid_version_dir(ver) {
             let current = root.join(ver);
             if current.is_dir() {
                 return Ok(current);
@@ -181,7 +225,10 @@ fn probe_writable_inner() -> Result<ProbeResult, AppError> {
 fn onedrive_warning(path: &Path) -> Option<String> {
     let text = path.to_string_lossy();
     if text.contains("OneDrive") || text.contains("onedrive") {
-        Some("当前数据目录位于 OneDrive 同步路径。同步软件可能锁文件，考试过程中请留意保存警告。".into())
+        Some(
+            "当前数据目录位于 OneDrive 同步路径。同步软件可能锁文件，考试过程中请留意保存警告。"
+                .into(),
+        )
     } else {
         None
     }

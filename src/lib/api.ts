@@ -115,3 +115,7 @@ export async function feedbackDelete(id: string): Promise<void> {
 export async function loadTranscript(examId: string): Promise<Transcript | null> {
   return invoke("load_transcript", { examId });
 }
+
+export async function openDataDir(): Promise<void> {
+  return invoke("open_data_dir");
+}

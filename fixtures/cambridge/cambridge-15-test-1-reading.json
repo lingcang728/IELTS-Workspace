@@ -3,7 +3,7 @@
   "id": "cambridge-15-test-1-reading",
   "title": "Cambridge IELTS 15 Academic Test 1 Reading",
   "module": "reading",
-  "contentRevision": "repair-0020-81d8694b",
+  "contentRevision": "repair-0004-0355da4f",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -949,18 +949,14 @@
         {
           "id": "c15t1r-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t1r-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO benefits of automated vehicles does the writer mention?",
-              "acceptedAnswers": [
-                "C",
-                "D"
-              ],
+              "prompt": "First selected letter: Which TWO benefits of automated vehicles does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -993,35 +989,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 23 and 24 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c15t1r-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
+            },
             {
               "id": "c15t1r-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO benefits of automated vehicles does the writer mention?",
-              "acceptedAnswers": [
-                "C",
-                "D"
-              ],
+              "prompt": "Second selected letter: Which TWO benefits of automated vehicles does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -1054,7 +1031,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "repairSource": {
@@ -1066,23 +1046,50 @@
             "canonicalOf": [
               "Write the correct letters in boxes 23 and 24 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Car travellers could enjoy considerable cost savings."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "It would be easier to find parking spaces in urban areas."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Travellers could spend journeys doing something other than driving."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "People who find driving physically difficult could travel independently."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "A reduction in the number of cars would mean a reduction in pollution."
+            }
+          ]
         },
         {
           "id": "c15t1r-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c15t1r-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO challenges to automated vehicle development does the writer mention?",
-              "acceptedAnswers": [
-                "A",
-                "E"
-              ],
+              "prompt": "First selected letter: Which TWO challenges to automated vehicle development does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -1115,35 +1122,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 25 and 26 on your answer sheet"
-            ]
-          }
-        },
-        {
-          "id": "c15t1r-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "A"
+              ]
+            },
             {
               "id": "c15t1r-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO challenges to automated vehicle development does the writer mention?",
-              "acceptedAnswers": [
-                "A",
-                "E"
-              ],
+              "prompt": "Second selected letter: Which TWO challenges to automated vehicle development does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -1176,7 +1164,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "repairSource": {
@@ -1188,7 +1179,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 25 and 26 on your answer sheet"
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "making sure the general public has confidence in automated vehicles"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "managing the pace of transition from conventional to automated vehicles"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "deciding how to compensate professional drivers who become redundant"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "setting up the infrastructure to make roads suitable for automated vehicles"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "getting automated vehicles to adapt to various different driving conditions"
+            }
+          ]
         }
       ]
     },
@@ -2018,14 +2040,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              38,
-              40
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 38–40 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:25.090822+00:00",
+            "note": "页面实际印刷为 Questions 38-40 的 summary 填空题，说明为 Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.，页面无 A-H 选项或词库，题库结构与原书不符。"
           }
         }
       ]

@@ -3,7 +3,7 @@
   "id": "cambridge-16-test-3-reading",
   "title": "Cambridge IELTS 16 Academic Test 3 Reading",
   "module": "reading",
-  "contentRevision": "repair-0017-b9092439",
+  "contentRevision": "repair-0004-02fd3922",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -1062,18 +1062,14 @@
         {
           "id": "c16t3r-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t3r-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO of the following statements does the writer make about the discoveries of Barrett's team?",
-              "acceptedAnswers": [
-                "B",
-                "C"
-              ],
+              "prompt": "First selected letter: Which TWO of the following statements does the writer make about the discoveries of Barrett's team?",
               "gapText": "____",
               "options": [
                 {
@@ -1106,35 +1102,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 23 and 24 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c16t3r-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c16t3r-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of the following statements does the writer make about the discoveries of Barrett's team?",
-              "acceptedAnswers": [
-                "B",
-                "C"
-              ],
+              "prompt": "Second selected letter: Which TWO of the following statements does the writer make about the discoveries of Barrett's team?",
               "gapText": "____",
               "options": [
                 {
@@ -1167,7 +1144,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
             }
           ],
           "repairSource": {
@@ -1179,23 +1159,50 @@
             "canonicalOf": [
               "Write the correct letters in boxes 23 and 24 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Artefacts found in the higher mountain passes were limited to skiing equipment."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Hunters went into the mountains even during periods of extreme cold."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "The number of artefacts from certain time periods was relatively low."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Radiocarbon dating of artefacts produced some unreliable results."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "More artefacts were found in Oppland than at any other mountain site."
+            }
+          ]
         },
         {
           "id": "c16t3r-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c16t3r-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO of the following statements does the writer make about the Viking Age?",
-              "acceptedAnswers": [
-                "A",
-                "C"
-              ],
+              "prompt": "First selected letter: Which TWO of the following statements does the writer make about the Viking Age?",
               "gapText": "____",
               "options": [
                 {
@@ -1228,35 +1235,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 25 and 26 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c16t3r-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "A"
+              ]
+            },
             {
               "id": "c16t3r-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO of the following statements does the writer make about the Viking Age?",
-              "acceptedAnswers": [
-                "A",
-                "C"
-              ],
+              "prompt": "Second selected letter: Which TWO of the following statements does the writer make about the Viking Age?",
               "gapText": "____",
               "options": [
                 {
@@ -1289,7 +1277,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:07+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
             }
           ],
           "repairSource": {
@@ -1301,7 +1292,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 25 and 26 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Hunters at this time benefited from an increased demand for goods."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The beginning of the period saw the greatest growth in the wealth of Vikings."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Vikings did not rely on ships alone to transport goods."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "Norwegian towns at this time attracted traders from around the world."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Vikings were primarily interested in their trading links with the Middle East."
+            }
+          ]
         }
       ]
     },

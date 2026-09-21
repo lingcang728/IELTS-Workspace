@@ -312,14 +312,14 @@
       "questionGroups": [
         {
           "id": "c5t3l-g11",
-          "instruction": "Write NO MORE THAN TWO WORDS for each answer.",
-          "questionType": "completion",
+          "instruction": "Choose TWO letters, A-E.",
+          "questionType": "multi_choice",
           "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c5t3l-q11",
               "number": 11,
-              "type": "matching",
+              "type": "multi_choice",
               "prompt": "The next meeting of the soccer club will be in the ........... in King's Park on 2 July",
               "acceptedAnswers": [
                 "C"
@@ -361,7 +361,7 @@
             {
               "id": "c5t3l-q12",
               "number": 12,
-              "type": "matching",
+              "type": "multi_choice",
               "prompt": "The irst event is a",
               "acceptedAnswers": [
                 "E"
@@ -403,7 +403,34 @@
           ],
           "acceptedAnswers": [
             "C",
-            "E ()"
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "higher than average results in examinations"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "good transport links with central London"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "near London Airport"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "special government funding"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "good links with local industry"
+            }
           ]
         },
         {

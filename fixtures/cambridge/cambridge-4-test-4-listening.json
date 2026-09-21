@@ -393,7 +393,13 @@
               "label": "C",
               "text": "three"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:53:42.156010+00:00",
+            "note": "原页 Questions 11-15 的选项只有 A、B、C；工单错误声明 A-H 八个选项，结构不符，不能安全转写。"
+          }
         },
         {
           "id": "c4t4l-g12",
@@ -444,7 +450,13 @@
               "label": "C",
               "text": "outside Europe"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:53:42.156010+00:00",
+            "note": "原页 Questions 11-15 的选项只有 A、B、C；工单错误声明 A-H 八个选项，结构不符，不能安全转写。"
+          }
         },
         {
           "id": "c4t4l-g13",
@@ -495,7 +507,13 @@
               "label": "C",
               "text": "are for people with good fitness levels"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:53:42.156010+00:00",
+            "note": "原页 Questions 11-15 的选项只有 A、B、C；工单错误声明 A-H 八个选项，结构不符，不能安全转写。"
+          }
         },
         {
           "id": "c4t4l-g14",
@@ -548,12 +566,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              15
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:53:42.156010+00:00",
+            "note": "原页 Questions 11-15 的选项只有 A、B、C；工单错误声明 A-H 八个选项，结构不符，不能安全转写。"
           }
         },
         {
@@ -605,7 +621,13 @@
               "label": "C",
               "text": "every night"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:53:42.156010+00:00",
+            "note": "原页 Questions 11-15 的选项只有 A、B、C；工单错误声明 A-H 八个选项，结构不符，不能安全转写。"
+          }
         },
         {
           "id": "c4t4l-g16",
@@ -1880,7 +1902,7 @@
               "id": "c4t4l-q39",
               "number": 39,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO factors reduce the benefits of shark nets?",
+              "prompt": "First selected letter: Which TWO factors reduce the benefits of shark nets?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1931,7 +1953,7 @@
               "id": "c4t4l-q40",
               "number": 40,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO factors reduce the benefits of shark nets?",
+              "prompt": "Second selected letter: Which TWO factors reduce the benefits of shark nets?",
               "acceptedAnswers": [
                 "E"
               ],

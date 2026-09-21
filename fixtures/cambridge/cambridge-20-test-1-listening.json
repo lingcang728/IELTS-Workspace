@@ -460,7 +460,13 @@
               "label": "C",
               "text": "the basic shape of it"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:54:43.312850+00:00",
+            "note": "印刷页12的Question 12实际是三选一，页面只印A the clay it was made with、B the marks that are on it、C the basic shape of it；工单却声明A–H并要求覆盖答案B，不能伪造D–H，需修复题目结构。"
+          }
         },
         {
           "id": "c20t1l-g13",
@@ -760,7 +766,7 @@
               "id": "c20t1l-q17",
               "number": 17,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO things does Heather explain about kilns?",
+              "prompt": "First selected letter: Which TWO things does Heather explain about kilns?",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -802,7 +808,7 @@
               "id": "c20t1l-q18",
               "number": 18,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO things does Heather explain about kilns?",
+              "prompt": "Second selected letter: Which TWO things does Heather explain about kilns?",
               "acceptedAnswers": [
                 "A",
                 "E"

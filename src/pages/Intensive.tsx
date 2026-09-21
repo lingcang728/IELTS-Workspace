@@ -3,7 +3,7 @@ import { Icon } from "../components/Ui";
 import { PageHeading } from "../components/Shell";
 import { loadExam, loadTranscript } from "../lib/api";
 import { audioPlaybackSource, listeningReady, localMediaSrc, type PlaybackSource } from "../lib/audio";
-import { accuracy, diffWords } from "../lib/dictation";
+import { diffWords, words } from "../lib/dictation";
 import type { Exam, ExamSummary, Transcript, TranscriptLine } from "../lib/types";
 
 /** Answer numbers on a transcript line; the field is a list or a stringified list. */
@@ -30,6 +30,8 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
   );
   const [examId, setExamId] = useState<string>(listening[0]?.id ?? "");
   const [exam, setExam] = useState<Exam | null>(null);
+  const [loadFailed, setLoadFailed] = useState(false);
+  const [reloadKey, setReloadKey] = useState(0);
   const [transcript, setTranscript] = useState<Transcript | null>(null);
   const [src, setSrc] = useState<string>("");
   const [part, setPart] = useState(0);
@@ -55,21 +57,29 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
     audio.current?.pause();
     let live = true;
     setExam(null); setTranscript(null); setSrc(""); setPlay(null); setPart(0); setTyped(""); setChecked(false);
+    setLoadFailed(false);
     void (async () => {
       const next = await loadExam(examId).catch(() => null);
       if (!live) return;
       setExam(next);
+      setLoadFailed(next == null);
+      if (!next) return;
       try {
         const nextPlay = await audioPlaybackSource(examId);
+        // Every await above re-opens the race: a stale paper's results must
+        // not land after the user already picked another one.
+        if (!live) return;
         setPlay(nextPlay);
         if (nextPlay.tracks[0]) setSrc(localMediaSrc(nextPlay.tracks[0].path));
       } catch {
-        setSrc("");
+        if (live) setSrc("");
       }
-      setTranscript(await loadTranscript(examId).catch(() => null));
+      const nextTranscript = await loadTranscript(examId).catch(() => null);
+      if (!live) return;
+      setTranscript(nextTranscript);
     })();
     return () => { live = false; };
-  }, [examId]);
+  }, [examId, reloadKey]);
 
   const section = exam?.sections[part];
   // Part boundaries come from the concatenated MP3's per-part durations, which
@@ -88,7 +98,35 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
 
   const expected = useMemo(() => lines.map((l) => l.text).join(" "), [lines]);
   const runs = useMemo(() => (checked ? diffWords(expected, typed) : []), [checked, expected, typed]);
-  const score = checked ? accuracy(expected, typed) : 0;
+  // Derive the score from the memoised diff: calling `accuracy` here would
+  // rebuild the whole LCS table a second time on every render — including the
+  // ~4Hz position ticks while audio plays.
+  const score = useMemo(() => {
+    if (!checked) return 0;
+    const total = words(expected).length;
+    if (!total) return 0;
+    const same = runs
+      .filter((run) => run.kind === "same")
+      .reduce((sum, run) => sum + run.words.length, 0);
+    return same / total;
+  }, [checked, expected, runs]);
+
+  // The transcript is ~50–300 <p> nodes; holding the element list stable lets
+  // React bail out of diffing it on every playback position tick.
+  const transcriptLines = useMemo(() => lines.map((line, index) => {
+    const answers = lineAnswers(line);
+    return (
+      <p key={index} className={answers.length ? "carries-answer" : ""}>
+        {line.speaker && <b>{line.speaker}: </b>}
+        {line.text}
+        {answers.length > 0 && (
+          <span className="answer-flag">
+            <Icon name="target" size={11} /> 考点 Q{answers.join(" / Q")}
+          </span>
+        )}
+      </p>
+    );
+  }), [lines]);
 
   function seekToPart(index: number) {
     setPart(index); setTyped(""); setChecked(false); setShowText(false);
@@ -130,6 +168,17 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
 
     {listening.length === 0 && <div className="workspace-card empty-state">
       <Icon name="headphones" size={42} /><h2>没有可用的听力试卷</h2></div>}
+
+    {listening.length > 0 && !exam && <div className="workspace-card empty-state">
+      {loadFailed
+        ? <>
+            <Icon name="info" size={42} />
+            <h2>试卷加载失败</h2>
+            <p className="meta">题库文件可能缺失或已损坏。请重新导入这套听力卷后再试。</p>
+            <button type="button" className="secondary-button" onClick={() => setReloadKey((k) => k + 1)}>重试</button>
+          </>
+        : <p className="meta">正在加载试卷…</p>}
+    </div>}
 
     {exam && <>
       <section className="workspace-card intensive-player">
@@ -250,20 +299,7 @@ export function Intensive({ exams }: { exams: ExamSummary[] }) {
 
           {transcript && showText && (
             <div className="transcript-lines">
-              {lines.map((line, index) => {
-                const answers = lineAnswers(line);
-                return (
-                  <p key={index} className={answers.length ? "carries-answer" : ""}>
-                    {line.speaker && <b>{line.speaker}: </b>}
-                    {line.text}
-                    {answers.length > 0 && (
-                      <span className="answer-flag">
-                        <Icon name="target" size={11} /> 考点 Q{answers.join(" / Q")}
-                      </span>
-                    )}
-                  </p>
-                );
-              })}
+              {transcriptLines}
               {lines.length === 0 && <p className="meta">这一 Part 的原文缺失。</p>}
             </div>
           )}

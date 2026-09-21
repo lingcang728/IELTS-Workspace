@@ -747,12 +747,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:18.894392+00:00",
+            "note": "印刷页 70 的 Questions 14-18 是按文章段落 A-I 的信息匹配题，页面没有独立的 A-H 选项文字列表；题库声明的选项结构与页面不符，不能猜写。"
           }
         },
         {
@@ -871,12 +869,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:18.894392+00:00",
+            "note": "印刷页 70 的 Questions 14-18 是按文章段落 A-I 的信息匹配题，页面没有独立的 A-H 选项文字列表；题库声明的选项结构与页面不符，不能猜写。"
           }
         },
         {
@@ -995,12 +991,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:18.894392+00:00",
+            "note": "印刷页 70 的 Questions 14-18 是按文章段落 A-I 的信息匹配题，页面没有独立的 A-H 选项文字列表；题库声明的选项结构与页面不符，不能猜写。"
           }
         },
         {
@@ -1119,12 +1113,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:18.894392+00:00",
+            "note": "印刷页 70 的 Questions 14-18 是按文章段落 A-I 的信息匹配题，页面没有独立的 A-H 选项文字列表；题库声明的选项结构与页面不符，不能猜写。"
           }
         },
         {
@@ -1243,12 +1235,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:18.894392+00:00",
+            "note": "印刷页 70 的 Questions 14-18 是按文章段落 A-I 的信息匹配题，页面没有独立的 A-H 选项文字列表；题库声明的选项结构与页面不符，不能猜写。"
           }
         },
         {
@@ -1523,7 +1513,13 @@
               "label": "D",
               "text": "why anthocyanins are restricted to certain trees"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:18.894392+00:00",
+            "note": "印刷页 71 的 Question 26 实际只有 A-D 四个选项，题库却声明 A-H；选项结构不符，不能猜补 E-H。"
+          }
         }
       ]
     },

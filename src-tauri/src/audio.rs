@@ -15,9 +15,27 @@ const WHOLE_TRACK_MS: u64 = 15 * 60 * 1000;
 
 static CANCEL: AtomicBool = AtomicBool::new(false);
 
+/// Serializes the load→mutate→save cycle of `bindings.json`. Import commands
+/// now run off the main thread, so a concurrent `remove_binding` must not
+/// interleave with a `confirm_import` write.
+fn bindings_lock() -> &'static Mutex<()> {
+    static L: OnceLock<Mutex<()>> = OnceLock::new();
+    L.get_or_init(|| Mutex::new(()))
+}
+
 fn last_plan() -> &'static Mutex<Option<AudioImportPlan>> {
     static P: OnceLock<Mutex<Option<AudioImportPlan>>> = OnceLock::new();
     P.get_or_init(|| Mutex::new(None))
+}
+
+/// Scans share `data/temp/audio-import` staging and the single `last_plan`
+/// slot; now that commands run off the main thread, two overlapping scans
+/// would wipe each other's extracted files mid-flight. `bootstrap` also takes
+/// this lock before sweeping the staging directory so its cleanup cannot
+/// delete files a running scan just extracted.
+pub(crate) fn scan_lock() -> &'static Mutex<()> {
+    static L: OnceLock<Mutex<()>> = OnceLock::new();
+    L.get_or_init(|| Mutex::new(()))
 }
 
 pub fn request_cancel() {
@@ -110,6 +128,10 @@ pub struct ScannedPart {
     pub sha256: String,
     pub duration_ms: u64,
     pub format: String,
+    /// Size + mtime captured at scan time. `confirm_import` trusts the scanned
+    /// hash when both still match — one stat replaces a full-file re-hash.
+    pub bytes: u64,
+    pub modified_ms: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -119,6 +141,9 @@ pub struct ExamImportRow {
     pub book: u32,
     pub test: u32,
     pub parts: Vec<Option<ScannedPart>>,
+    /// Set when the scanned file's SHA-256 matches the embedded catalog entry —
+    /// an official whole-track recording. `parts` stays empty for these rows.
+    pub whole_track: Option<ScannedPart>,
     pub status: String,
     pub missing_parts: Vec<u32>,
     pub reason: String,
@@ -185,6 +210,8 @@ struct Inspected {
     sha256: String,
     duration_ms: u64,
     format: String,
+    bytes: u64,
+    modified_ms: u64,
     book: Option<u32>,
     test: Option<u32>,
     part: Option<u32>,
@@ -200,43 +227,96 @@ pub fn catalog() -> Result<&'static CatalogFile, AppError> {
 
 pub fn load_bindings() -> Result<BindingsFile, AppError> {
     let path = paths::audio_bindings_path()?;
-    if !path.exists() {
-        return Ok(BindingsFile {
-            schema_version: 1,
-            bindings: BTreeMap::new(),
-        });
+    let bak = path.with_extension("json.bak");
+    let tmp = path.with_extension("json.tmp");
+    // atomic_write always leaves a .bak next to bindings.json, and an
+    // interrupted write can leave a complete .tmp: a truncated main file must
+    // not take every listening paper down to "missing audio".
+    let mut last_err = String::new();
+    for candidate in [path.as_path(), bak.as_path(), tmp.as_path()] {
+        if !candidate.exists() {
+            continue;
+        }
+        let parsed = fs::read_to_string(candidate)
+            .map_err(|e| e.to_string())
+            .and_then(|text| {
+                serde_json::from_str::<BindingsFile>(&text)
+                    .map(|file| (text, file))
+                    .map_err(|e| e.to_string())
+            });
+        match parsed {
+            Ok((text, mut file)) => {
+                // `managed_name` is joined onto `audio_files_dir` at every
+                // play/delete site. bindings.json is user-editable local state,
+                // so a hand-crafted `../` or device name must die at the load
+                // boundary rather than escape the directory later.
+                for binding in file.bindings.values_mut() {
+                    binding.files.retain(|f| managed_name_ok(&f.managed_name));
+                }
+                if candidate != path {
+                    // load_bindings is read without `bindings_lock`, so this
+                    // restore can race a save_bindings tmp write — take the
+                    // shared write guard for the duration of the restore.
+                    if let Ok(_guard) = crate::session::write_guard() {
+                        crate::session::restore_write(&path, text.as_bytes());
+                    }
+                }
+                return Ok(file);
+            }
+            Err(why) => last_err = why,
+        }
     }
-    let text = fs::read_to_string(&path)?;
-    Ok(serde_json::from_str(&text)?)
+    if path.exists() {
+        return Err(AppError::from(format!("音频绑定文件损坏：{last_err}")));
+    }
+    Ok(BindingsFile {
+        schema_version: 1,
+        bindings: BTreeMap::new(),
+    })
 }
 
 fn save_bindings(file: &BindingsFile) -> Result<(), AppError> {
     let path = paths::audio_bindings_path()?;
     let bytes = serde_json::to_vec_pretty(file)?;
+    // `bindings_lock` serialises mutations against each other, but a
+    // lock-free `load_bindings` restore can still write the same tmp scratch
+    // file concurrently — take the shared write guard for the write itself.
+    let _guard = session::write_guard()?;
     session::atomic_write(&path, &bytes)
+}
+
+/// Managed file names are always `{sha256}.{ext}`, generated on import and
+/// never free-form. Anything else means bindings.json was hand-edited.
+fn managed_name_ok(name: &str) -> bool {
+    let Some((stem, ext)) = name.split_once('.') else {
+        return false;
+    };
+    stem.len() == 64
+        && stem
+            .bytes()
+            .all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
+        && matches!(ext, "mp3" | "m4a" | "wav")
+}
+
+fn binding_ready(b: &AudioBinding) -> bool {
+    let expected = match b.mode {
+        BindingMode::Parts => 4,
+        BindingMode::FullTrack => 1,
+    };
+    b.files.len() == expected
+        && b.files.iter().all(|f| {
+            paths::audio_files_dir()
+                .map(|d| d.join(&f.managed_name).is_file())
+                .unwrap_or(false)
+        })
 }
 
 pub fn status_for_with_bindings(file: &BindingsFile, exam_id: &str) -> &'static str {
     match file.bindings.get(exam_id) {
         None => "missing",
-        Some(b) if b.mode != BindingMode::Parts || b.files.len() != 4 => "needsReview",
-        Some(b) if b.files.iter().any(|f| {
-            paths::audio_files_dir()
-                .map(|d| !d.join(&f.managed_name).is_file())
-                .unwrap_or(true)
-        }) => {
-            "needsReview"
-        }
-        Some(_) => "ready",
+        Some(b) if binding_ready(b) => "ready",
+        Some(_) => "needsReview",
     }
-}
-
-#[allow(dead_code)]
-pub fn status_for(exam_id: &str) -> &'static str {
-    let Ok(file) = load_bindings() else {
-        return "missing";
-    };
-    status_for_with_bindings(&file, exam_id)
 }
 
 pub fn library_status() -> Result<AudioLibraryStatus, AppError> {
@@ -264,11 +344,12 @@ pub fn library_status() -> Result<AudioLibraryStatus, AppError> {
     })
 }
 
-pub fn pick_files() -> Result<Vec<String>, AppError> {
+pub fn pick_files(window: &tauri::Window) -> Result<Vec<String>, AppError> {
     let files = rfd::FileDialog::new()
         .add_filter("音频与 ZIP", &["mp3", "m4a", "wav", "zip"])
         .add_filter("音频", &["mp3", "m4a", "wav"])
         .set_title("选择听力音频（每套四个 Part）")
+        .set_parent(window)
         .pick_files();
     Ok(files
         .unwrap_or_default()
@@ -277,9 +358,10 @@ pub fn pick_files() -> Result<Vec<String>, AppError> {
         .collect())
 }
 
-pub fn pick_folders() -> Result<Vec<String>, AppError> {
+pub fn pick_folders(window: &tauri::Window) -> Result<Vec<String>, AppError> {
     Ok(rfd::FileDialog::new()
         .set_title("选择包含听力音频的文件夹（可多选）")
+        .set_parent(window)
         .pick_folders()
         .unwrap_or_default()
         .into_iter()
@@ -293,68 +375,100 @@ pub fn open_guide() -> Result<String, AppError> {
     Ok(url)
 }
 
+/// `paths_in` is expected to come from the rfd pickers (`pick_files` /
+/// `pick_folders`). The IPC boundary cannot prove that origin, so treat every
+/// entry as untrusted input: the scan returns only metadata (name, SHA-256,
+/// duration) and never exposes file contents.
 pub fn scan_paths(
     paths_in: Vec<String>,
     target_exam_id: Option<String>,
     mut progress: impl FnMut(ImportProgress),
 ) -> Result<AudioImportPlan, AppError> {
     CANCEL.store(false, Ordering::SeqCst);
-    let mut files = Vec::new();
-    let mut skipped = Vec::new();
-    let staging = paths::ensure_data_layout()?.join("temp").join("audio-import");
+    let _scan_guard = scan_lock()
+        .lock()
+        .map_err(|_| AppError::from("音频扫描锁已损坏"))?;
+    let staging = paths::ensure_data_layout()?
+        .join("temp")
+        .join("audio-import");
     let _ = fs::remove_dir_all(&staging);
     fs::create_dir_all(&staging)?;
-    for raw in paths_in {
-        check_cancel()?;
-        let path = PathBuf::from(&raw);
-        if !path.exists() {
-            bump_skip(&mut skipped, "missing", &format!("找不到文件：{raw}"), &raw);
-            continue;
-        }
-        if path.is_dir() {
-            collect_audio(&path, &mut files);
-        } else if is_zip(&path) {
-            match ziputil::safe_extract(&path, &staging.join(unique_stem(&path))) {
-                Ok(extracted) => {
-                    for p in extracted {
-                        if is_audio(&p) {
-                            files.push(p);
+    let staging_in = staging.clone();
+    let work = move || -> Result<AudioImportPlan, AppError> {
+        let mut files = Vec::new();
+        let mut skipped = Vec::new();
+        for raw in paths_in {
+            check_cancel()?;
+            let path = PathBuf::from(&raw);
+            if !path.exists() {
+                bump_skip(&mut skipped, "missing", &format!("找不到文件：{raw}"), &raw);
+                continue;
+            }
+            if path.is_dir() {
+                collect_audio(&path, &mut files);
+            } else if is_zip(&path) {
+                match ziputil::safe_extract(&path, &staging_in.join(unique_stem(&path))) {
+                    Ok(extracted) => {
+                        for p in extracted {
+                            if is_audio(&p) {
+                                files.push(p);
+                            }
                         }
                     }
+                    Err(e) => bump_skip(&mut skipped, "zip", &e.to_string(), &raw),
                 }
-                Err(e) => bump_skip(&mut skipped, "zip", &e.to_string(), &raw),
+            } else if is_audio(&path) {
+                files.push(path);
+            } else {
+                bump_skip(
+                    &mut skipped,
+                    "type",
+                    "不支持的文件类型，仅接受 MP3 / M4A / WAV / ZIP",
+                    &raw,
+                );
             }
-        } else if is_audio(&path) {
-            files.push(path);
-        } else {
-            bump_skip(&mut skipped, "type", "不支持的文件类型，仅接受 MP3 / M4A / WAV / ZIP", &raw);
         }
-    }
-    files.sort();
-    files.dedup();
-    let total = files.len() as u32;
-    let mut inspected = Vec::new();
-    for (i, path) in files.iter().enumerate() {
-        check_cancel()?;
-        progress(ImportProgress {
-            phase: "scan".into(),
-            current: i as u32 + 1,
-            total,
-            message: path
-                .file_name()
-                .map(|s| s.to_string_lossy().into_owned())
-                .unwrap_or_default(),
-        });
-        match inspect(path, &staging) {
-            Ok(row) => inspected.push(row),
-            Err(e) => bump_skip(&mut skipped, "inspect", &e.to_string(), &path.display().to_string()),
+        files.sort();
+        files.dedup();
+        let total = files.len() as u32;
+        let mut inspected = Vec::new();
+        for (i, path) in files.iter().enumerate() {
+            check_cancel()?;
+            progress(ImportProgress {
+                phase: "scan".into(),
+                current: i as u32 + 1,
+                total,
+                message: path
+                    .file_name()
+                    .map(|s| s.to_string_lossy().into_owned())
+                    .unwrap_or_default(),
+            });
+            match inspect(path, &staging_in) {
+                Ok(row) => inspected.push(row),
+                Err(e) => bump_skip(
+                    &mut skipped,
+                    "inspect",
+                    &e.to_string(),
+                    &path.display().to_string(),
+                ),
+            }
         }
+        Ok(group_inspected(
+            inspected,
+            target_exam_id.as_deref(),
+            skipped,
+        ))
+    };
+    let plan = work();
+    if let Ok(plan) = &plan {
+        if let Ok(mut guard) = last_plan().lock() {
+            *guard = Some(plan.clone());
+        }
+    } else {
+        // 取消或中途失败的扫描不留下解压/抽取产物。
+        let _ = fs::remove_dir_all(&staging);
     }
-    let plan = group_inspected(inspected, target_exam_id.as_deref(), skipped);
-    if let Ok(mut guard) = last_plan().lock() {
-        *guard = Some(plan.clone());
-    }
-    Ok(plan)
+    plan
 }
 
 fn inspect(path: &Path, staging: &Path) -> Result<Inspected, AppError> {
@@ -371,6 +485,7 @@ fn inspect(path: &Path, staging: &Path) -> Result<Inspected, AppError> {
     };
     let sha = ziputil::sha256_file(&work)?;
     let duration = audio_meta::duration_ms(&work)?;
+    let (bytes, modified_ms) = file_stamp(&work);
     let text = path.to_string_lossy();
     let stem = file_stem(path);
     let (book, test) = parse_book_test_any(&text);
@@ -384,10 +499,45 @@ fn inspect(path: &Path, staging: &Path) -> Result<Inspected, AppError> {
         sha256: sha,
         duration_ms: duration,
         format: audio_meta::format_label(&sniff).to_string(),
+        bytes,
+        modified_ms,
         book,
         test,
         part,
     })
+}
+
+/// `(len, mtime-ms)` used to detect a file swap between scan and confirm —
+/// matching metadata trusts the scanned hash without re-reading the file.
+fn file_stamp(path: &Path) -> (u64, u64) {
+    let Ok(meta) = fs::metadata(path) else {
+        return (0, 0);
+    };
+    let modified = meta
+        .modified()
+        .ok()
+        .and_then(|t| t.duration_since(std::time::UNIX_EPOCH).ok())
+        .map(|d| d.as_millis() as u64)
+        .unwrap_or(0);
+    (meta.len(), modified)
+}
+
+/// Scan-time (len, mtime) still matching means the bytes — and therefore the
+/// recorded sha256/duration — are unchanged, so confirm skips the full re-read.
+/// Any drift forces a re-hash; content that no longer matches is rejected.
+fn confirmed_meta(path: &Path, part: &ScannedPart) -> Result<(String, u64), AppError> {
+    let (bytes, modified_ms) = file_stamp(path);
+    if part.bytes > 0 && bytes == part.bytes && modified_ms == part.modified_ms {
+        return Ok((part.sha256.clone(), part.duration_ms));
+    }
+    let recomputed = ziputil::sha256_file(path)?;
+    if recomputed != part.sha256 {
+        return Err(AppError::from(format!(
+            "{} 在确认前被改动，已拒绝导入",
+            part.file_name
+        )));
+    }
+    Ok((recomputed, part.duration_ms))
 }
 
 fn group_inspected(
@@ -396,10 +546,43 @@ fn group_inspected(
     mut skipped: Vec<SkipBucket>,
 ) -> AudioImportPlan {
     let target = target_exam_id.and_then(parse_exam_id);
+    // sha256 → catalog entry. A hash match is authoritative: it accepts an
+    // official whole-track even when the file was renamed to something the
+    // filename parser cannot read.
+    let catalog_index: BTreeMap<&str, &CatalogEntry> = catalog()
+        .map(|c| c.entries.iter().map(|e| (e.sha256.as_str(), e)).collect())
+        .unwrap_or_default();
     let mut slots: BTreeMap<(u32, u32), [Vec<Inspected>; 4]> = BTreeMap::new();
+    let mut whole: BTreeMap<(u32, u32), Inspected> = BTreeMap::new();
     let mut seen_hash: BTreeMap<String, (u32, u32, u32)> = BTreeMap::new();
 
     for row in rows {
+        if let Some(entry) = catalog_index.get(row.sha256.as_str()) {
+            let (book, test) = (entry.book, entry.test);
+            if let Some((tb, tt)) = target {
+                if (book, test) != (tb, tt) {
+                    bump_skip(
+                        &mut skipped,
+                        "other_exam",
+                        &format!("不属于当前试卷 cambridge-{tb}-test-{tt}-listening"),
+                        &row.original_name,
+                    );
+                    continue;
+                }
+            }
+            if seen_hash.contains_key(&row.sha256) {
+                bump_skip(
+                    &mut skipped,
+                    "duplicate",
+                    "重复文件（相同哈希）已忽略",
+                    &row.original_name,
+                );
+                continue;
+            }
+            seen_hash.insert(row.sha256.clone(), (book, test, 0));
+            whole.insert((book, test), row);
+            continue;
+        }
         if let Some(book) = row.book {
             if (1..=3).contains(&book) {
                 bump_skip(
@@ -428,12 +611,26 @@ fn group_inspected(
                 );
                 continue;
             }
+            // 文件名已声明册次且与目标试卷册次矛盾（如目标 C7T1 时遇到
+            // cambridge-5-part1.mp3）——这是错书而不是"半匹配"，跳过而不是
+            // 让后面的 target 兜底把它悄悄绑到目标试卷上。
+            if let Some((tb, tt)) = target {
+                if book != tb {
+                    bump_skip(
+                        &mut skipped,
+                        "other_exam",
+                        &format!("不属于当前试卷 cambridge-{tb}-test-{tt}-listening"),
+                        &row.original_name,
+                    );
+                    continue;
+                }
+            }
         }
         if row.part.is_none() && row.duration_ms >= WHOLE_TRACK_MS {
             bump_skip(
                 &mut skipped,
                 "whole_track",
-                "整轨已不再支持，请导入 Part/Section 1–4 四个文件",
+                "整轨仅在 SHA-256 与官方目录一致时才接受；请改用 Part/Section 1–4 四个文件",
                 &row.original_name,
             );
             continue;
@@ -499,15 +696,46 @@ fn group_inspected(
             continue;
         }
         seen_hash.insert(row.sha256.clone(), (book, test, part));
-        let entry = slots.entry((book, test)).or_insert_with(|| {
-            [Vec::new(), Vec::new(), Vec::new(), Vec::new()]
-        });
+        let entry = slots
+            .entry((book, test))
+            .or_insert_with(|| [Vec::new(), Vec::new(), Vec::new(), Vec::new()]);
         entry[(part - 1) as usize].push(row);
     }
 
     let mut exams = Vec::new();
-    for ((book, test), parts) in slots {
+    let mut keys: Vec<(u32, u32)> = slots.keys().chain(whole.keys()).copied().collect();
+    keys.sort_unstable();
+    keys.dedup();
+    for (book, test) in keys {
         let exam_id = format!("cambridge-{book}-test-{test}-listening");
+        if let Some(whole_row) = whole.remove(&(book, test)) {
+            if slots
+                .get(&(book, test))
+                .map(|parts| parts.iter().any(|v| !v.is_empty()))
+                .unwrap_or(false)
+            {
+                bump_skip(
+                    &mut skipped,
+                    "conflict",
+                    &format!("{exam_id} 同时有整轨与分 Part 候选，已采用校验通过的整轨"),
+                    &whole_row.original_name,
+                );
+            }
+            exams.push(ExamImportRow {
+                exam_id,
+                book,
+                test,
+                parts: vec![None, None, None, None],
+                whole_track: Some(to_scanned(&whole_row)),
+                status: "ready".into(),
+                missing_parts: Vec::new(),
+                reason: "官方整轨音频，SHA-256 与内置目录一致".into(),
+            });
+            continue;
+        }
+        let Some(parts) = slots.remove(&(book, test)) else {
+            continue;
+        };
         let mut chosen: Vec<Option<ScannedPart>> = vec![None, None, None, None];
         let mut missing = Vec::new();
         let mut conflict = false;
@@ -530,7 +758,17 @@ fn group_inspected(
         let (status, reason) = if conflict {
             ("conflict".into(), "同一 Part 出现多个不同文件".into())
         } else if missing.is_empty() {
-            ("ready".into(), "四个 Part 已齐".into())
+            let durations: Vec<u64> = chosen
+                .iter()
+                .filter_map(|p| p.as_ref().map(|p| p.duration_ms))
+                .collect();
+            match parts_match_catalog(&exam_id, &durations) {
+                Some(false) => (
+                    "ready".into(),
+                    "四个 Part 已齐；但时长与官方目录不一致，请确认音频来源正确".into(),
+                ),
+                _ => ("ready".into(), "四个 Part 已齐".into()),
+            }
         } else {
             (
                 "missing_parts".into(),
@@ -549,6 +787,7 @@ fn group_inspected(
             book,
             test,
             parts: chosen,
+            whole_track: None,
             status,
             missing_parts: missing,
             reason,
@@ -564,6 +803,29 @@ fn group_inspected(
     }
 }
 
+/// A part is accepted as the official recording when its duration is within
+/// 15 s or 10 % of the catalog's `partDurationsMs` — transcodes and trimmed
+/// rips land inside that window, a wrong book/test usually does not.
+const PART_DURATION_TOLERANCE_MS: u64 = 15_000;
+
+/// `Some(true)` when every part duration matches the catalog entry,
+/// `Some(false)` when an entry exists but the durations disagree, `None` when
+/// the exam is not in the catalog.
+fn parts_match_catalog(exam_id: &str, durations_ms: &[u64]) -> Option<bool> {
+    let cat = catalog().ok()?;
+    let entry = cat.entries.iter().find(|e| e.exam_id == exam_id)?;
+    if durations_ms.len() != 4 || entry.part_durations_ms.len() != 4 {
+        return None;
+    }
+    Some(
+        entry
+            .part_durations_ms
+            .iter()
+            .zip(durations_ms.iter())
+            .all(|(want, got)| want.abs_diff(*got) <= PART_DURATION_TOLERANCE_MS.max(want / 10)),
+    )
+}
+
 fn to_scanned(row: &Inspected) -> ScannedPart {
     ScannedPart {
         path: row.path.display().to_string(),
@@ -571,6 +833,8 @@ fn to_scanned(row: &Inspected) -> ScannedPart {
         sha256: row.sha256.clone(),
         duration_ms: row.duration_ms,
         format: row.format.clone(),
+        bytes: row.bytes,
+        modified_ms: row.modified_ms,
     }
 }
 
@@ -595,14 +859,26 @@ pub fn confirm_import(
     mut progress: impl FnMut(ImportProgress),
 ) -> Result<Vec<AudioBinding>, AppError> {
     CANCEL.store(false, Ordering::SeqCst);
+    // Confirm reads staged extracts and wipes the shared staging dir at the
+    // end; serialize against a concurrent scan for the same reason.
+    let _scan_guard = scan_lock()
+        .lock()
+        .map_err(|_| AppError::from("音频扫描锁已损坏"))?;
     let plan = last_plan()
         .lock()
         .map_err(|_| AppError::from("导入计划锁已损坏"))?
         .clone()
         .ok_or_else(|| AppError::from("没有可确认的扫描结果，请重新选择文件"))?;
+    let _bindings_guard = bindings_lock()
+        .lock()
+        .map_err(|_| AppError::from("音频绑定锁已损坏"))?;
     let mut bindings = load_bindings()?;
     let mut written = Vec::new();
     let mut newly: Vec<PathBuf> = Vec::new();
+    // Managed files orphaned by rebinding are deleted only after the new
+    // bindings are on disk: deleting them first would leave bindings.json
+    // pointing at files a mid-import failure just rolled back.
+    let mut stale: Vec<PathBuf> = Vec::new();
     let total = exam_ids.len() as u32;
     let result = (|| {
         for (i, exam_id) in exam_ids.iter().enumerate() {
@@ -624,6 +900,58 @@ pub fn confirm_import(
                     row.reason
                 )));
             }
+            // 整轨行：scan 阶段已按 SHA-256 命中官方目录，确认时再复核一次目录哈希，
+            // 绑定为 FullTrack，part 切点直接取目录的 part_starts_ms。
+            if let Some(whole) = &row.whole_track {
+                let path = PathBuf::from(&whole.path);
+                let (sha, duration) = confirmed_meta(&path, whole)?;
+                let entry = catalog()?
+                    .entries
+                    .iter()
+                    .find(|e| e.exam_id == *exam_id)
+                    .ok_or_else(|| {
+                        AppError::from(format!("{exam_id} 不在官方目录中，拒绝整轨导入"))
+                    })?;
+                if sha != entry.sha256 {
+                    return Err(AppError::from(format!(
+                        "{} 的哈希与官方目录不符，已拒绝导入",
+                        whole.file_name
+                    )));
+                }
+                let sniff = audio_meta::sniff(&path)?;
+                if matches!(sniff, Sniff::Unsupported(_)) {
+                    return Err(AppError::from(format!("{} 格式不受支持", whole.file_name)));
+                }
+                let dest = paths::audio_files_dir()?.join(format!(
+                    "{}.{}",
+                    sha,
+                    path.extension()
+                        .and_then(|s| s.to_str())
+                        .unwrap_or("mp3")
+                        .to_ascii_lowercase()
+                ));
+                let existed_before = dest.is_file();
+                let bound = ingest_file(&path, &whole.file_name, &sha, duration)?;
+                if !existed_before {
+                    newly.push(paths::audio_files_dir()?.join(&bound.managed_name));
+                }
+                stale.extend(unreferenced_files(
+                    &bindings,
+                    exam_id,
+                    std::slice::from_ref(&bound),
+                )?);
+                let binding = AudioBinding {
+                    exam_id: exam_id.clone(),
+                    mode: BindingMode::FullTrack,
+                    files: vec![bound],
+                    part_starts_ms: entry.part_starts_ms.clone(),
+                    match_kind: MatchKind::CatalogHash,
+                    updated_at: now_ms(),
+                };
+                bindings.bindings.insert(exam_id.clone(), binding.clone());
+                written.push(binding);
+                continue;
+            }
             let mut files = Vec::new();
             for (idx, part) in row.parts.iter().enumerate() {
                 check_cancel()?;
@@ -631,14 +959,7 @@ pub fn confirm_import(
                     .as_ref()
                     .ok_or_else(|| AppError::from(format!("{exam_id} 缺少 Part {}", idx + 1)))?;
                 let path = PathBuf::from(&part.path);
-                let recomputed = ziputil::sha256_file(&path)?;
-                if recomputed != part.sha256 {
-                    return Err(AppError::from(format!(
-                        "{} 在确认前被改动，已拒绝导入",
-                        part.file_name
-                    )));
-                }
-                let duration = audio_meta::duration_ms(&path)?;
+                let (recomputed, duration) = confirmed_meta(&path, part)?;
                 let sniff = audio_meta::sniff(&path)?;
                 if matches!(sniff, Sniff::Unsupported(_)) {
                     return Err(AppError::from(format!("{} 格式不受支持", part.file_name)));
@@ -649,6 +970,15 @@ pub fn confirm_import(
                     if expected != *exam_id {
                         return Err(AppError::from(format!(
                             "{} 解析为 {expected}，与目标 {exam_id} 不符",
+                            part.file_name
+                        )));
+                    }
+                } else if let Some(b) = parsed.0 {
+                    // 文件名只声明了册次（cambridge-5-part1.mp3）：册次仍须与
+                    // 目标一致，否则扫描期的 target 兜底已经把它绑错了书。
+                    if !exam_id.starts_with(&format!("cambridge-{b}-test-")) {
+                        return Err(AppError::from(format!(
+                            "{} 解析为剑{b}，与目标 {exam_id} 不符",
                             part.file_name
                         )));
                     }
@@ -677,23 +1007,41 @@ pub fn confirm_import(
                 starts.push(acc);
                 acc += f.duration_ms;
             }
-            drop_unref(&bindings, exam_id, &files)?;
+            stale.extend(unreferenced_files(&bindings, exam_id, &files)?);
+            let match_kind = match parts_match_catalog(
+                exam_id,
+                &files.iter().map(|f| f.duration_ms).collect::<Vec<_>>(),
+            ) {
+                Some(true) => MatchKind::FilenameDuration,
+                _ => MatchKind::FolderLayout,
+            };
             let binding = AudioBinding {
                 exam_id: exam_id.clone(),
                 mode: BindingMode::Parts,
                 files,
                 part_starts_ms: starts,
-                match_kind: MatchKind::FolderLayout,
-                updated_at: now_iso(),
+                match_kind,
+                updated_at: now_ms(),
             };
             bindings.bindings.insert(exam_id.clone(), binding.clone());
             written.push(binding);
         }
         save_bindings(&bindings)?;
+        for path in stale {
+            let _ = fs::remove_file(path);
+        }
         Ok(written)
     })();
     if result.is_err() {
         rollback_new_files(&newly);
+    }
+    // 确认是一次性动作：无论成败，解压/抽取产物与已消费的计划都不再保留，
+    // 避免 data/temp/audio-import 残留（上限 2GiB）长期占盘。
+    if let Ok(root) = paths::ensure_data_layout() {
+        let _ = fs::remove_dir_all(root.join("temp").join("audio-import"));
+    }
+    if let Ok(mut guard) = last_plan().lock() {
+        *guard = None;
     }
     result
 }
@@ -739,29 +1087,44 @@ fn ingest_file(
     })
 }
 
-fn drop_unref(bindings: &BindingsFile, exam_id: &str, new_files: &[BoundFile]) -> Result<(), AppError> {
+/// Files an old binding stops referencing once `new_files` replaces it. The
+/// caller deletes them after the updated bindings are persisted, never before.
+fn unreferenced_files(
+    bindings: &BindingsFile,
+    exam_id: &str,
+    new_files: &[BoundFile],
+) -> Result<Vec<PathBuf>, AppError> {
     let Some(old) = bindings.bindings.get(exam_id) else {
-        return Ok(());
+        return Ok(Vec::new());
     };
     let new_hashes: Vec<&str> = new_files.iter().map(|f| f.sha256.as_str()).collect();
+    let mut stale = Vec::new();
     for file in &old.files {
         if new_hashes.contains(&file.sha256.as_str()) {
             continue;
         }
-        let still = bindings.bindings.iter().any(|(id, b)| {
-            id != exam_id && b.files.iter().any(|f| f.sha256 == file.sha256)
-        });
+        let still = bindings
+            .bindings
+            .iter()
+            .any(|(id, b)| id != exam_id && b.files.iter().any(|f| f.sha256 == file.sha256));
         if !still {
-            let path = paths::audio_files_dir()?.join(&file.managed_name);
-            let _ = fs::remove_file(path);
+            stale.push(paths::audio_files_dir()?.join(&file.managed_name));
         }
     }
-    Ok(())
+    Ok(stale)
 }
 
 pub fn remove_binding(exam_id: &str) -> Result<(), AppError> {
+    let _guard = bindings_lock()
+        .lock()
+        .map_err(|_| AppError::from("音频绑定锁已损坏"))?;
     let mut file = load_bindings()?;
     let some = file.bindings.remove(exam_id);
+    // Persist the removal before touching managed files: if the save fails the
+    // binding on disk must still point at files that exist (deleting first
+    // would leave it dangling, the same failure confirm_import avoids). A
+    // delete that fails after the save is only an orphan, never a dangling ref.
+    save_bindings(&file)?;
     if let Some(old) = some {
         for f in old.files {
             let still = file
@@ -773,7 +1136,7 @@ pub fn remove_binding(exam_id: &str) -> Result<(), AppError> {
             }
         }
     }
-    save_bindings(&file)
+    Ok(())
 }
 
 pub fn playback_source(exam_id: &str) -> Result<PlaybackSource, AppError> {
@@ -782,10 +1145,53 @@ pub fn playback_source(exam_id: &str) -> Result<PlaybackSource, AppError> {
         .bindings
         .get(exam_id)
         .ok_or_else(|| AppError::from("这套听力还没有绑定音频"))?;
-    if binding.mode != BindingMode::Parts || binding.files.len() != 4 {
-        return Err(AppError::from("这套听力仍是旧的整轨绑定，请重新导入四个 Part"));
-    }
     let dir = paths::audio_files_dir()?;
+    if binding.mode == BindingMode::FullTrack {
+        // Whole-track bindings carry one file plus catalog part offsets; the
+        // exam player streams it once, intensive mode seeks via part_starts_ms.
+        let Some(f) = binding.files.first() else {
+            return Err(AppError::from("整轨绑定缺少音频文件，请重新导入"));
+        };
+        let path = dir.join(&f.managed_name);
+        if !path.is_file() {
+            return Err(AppError::from("绑定的音频文件丢失，请重新导入"));
+        }
+        let display = path.display().to_string();
+        let tracks = if binding.part_starts_ms.is_empty() {
+            vec![PlaybackTrack {
+                path: display,
+                start_ms: 0,
+                duration_ms: f.duration_ms,
+            }]
+        } else {
+            binding
+                .part_starts_ms
+                .iter()
+                .enumerate()
+                .map(|(i, &start)| {
+                    let end = binding
+                        .part_starts_ms
+                        .get(i + 1)
+                        .copied()
+                        .unwrap_or(f.duration_ms);
+                    PlaybackTrack {
+                        path: display.clone(),
+                        start_ms: start,
+                        duration_ms: end.saturating_sub(start),
+                    }
+                })
+                .collect()
+        };
+        return Ok(PlaybackSource {
+            exam_id: exam_id.to_string(),
+            mode: BindingMode::FullTrack,
+            tracks,
+            part_starts_ms: binding.part_starts_ms.clone(),
+        });
+    }
+    if binding.files.len() != 4 {
+        return Err(AppError::from("这套听力绑定不完整，请重新导入四个 Part"));
+    }
     let mut tracks = Vec::new();
     for f in &binding.files {
         let path = dir.join(&f.managed_name);
@@ -807,6 +1213,9 @@ pub fn playback_source(exam_id: &str) -> Result<PlaybackSource, AppError> {
 }
 
 pub fn repair_bindings() -> Result<AudioLibraryStatus, AppError> {
+    let _guard = bindings_lock()
+        .lock()
+        .map_err(|_| AppError::from("音频绑定锁已损坏"))?;
     let mut file = load_bindings()?;
     let dir = paths::audio_files_dir()?;
     let mut changed = false;
@@ -827,14 +1236,35 @@ pub fn repair_bindings() -> Result<AudioLibraryStatus, AppError> {
     library_status()
 }
 
+/// Recursion guard for user-picked folders. Windows profile directories
+/// contain self-referencing junctions (`Application Data` → its parent), and
+/// `path.is_dir()` follows them — descending into a reparse loop overflows the
+/// stack and kills the whole process mid-exam.
+const COLLECT_MAX_DEPTH: usize = 32;
+
 fn collect_audio(dir: &Path, out: &mut Vec<PathBuf>) {
+    collect_audio_at(dir, 0, out);
+}
+
+fn collect_audio_at(dir: &Path, depth: usize, out: &mut Vec<PathBuf>) {
+    if depth > COLLECT_MAX_DEPTH {
+        return;
+    }
     let Ok(entries) = fs::read_dir(dir) else {
         return;
     };
     for entry in entries.flatten() {
         let path = entry.path();
+        if crate::safe_path::is_reparse_point(&entry) {
+            // A link to a file is harmless — it is hashed and copied like any
+            // other source. A link to a directory can loop, so never descend.
+            if path.is_file() && is_audio(&path) {
+                out.push(path);
+            }
+            continue;
+        }
         if path.is_dir() {
-            collect_audio(&path, out);
+            collect_audio_at(&path, depth + 1, out);
         } else if is_audio(&path) {
             out.push(path);
         }
@@ -899,14 +1329,17 @@ pub fn parse_book_test(stem: &str) -> Option<(u32, u32)> {
 }
 
 fn parse_book_test_any(stem: &str) -> (Option<u32>, Option<u32>) {
-    (capture_book(stem), capture_test(stem).map(|mut test| {
-        if let Some(book) = capture_book(stem) {
-            if book == 12 && (5..=8).contains(&test) {
-                test -= 4;
+    (
+        capture_book(stem),
+        capture_test(stem).map(|mut test| {
+            if let Some(book) = capture_book(stem) {
+                if book == 12 && (5..=8).contains(&test) {
+                    test -= 4;
+                }
             }
-        }
-        test
-    }))
+            test
+        }),
+    )
 }
 
 fn parse_exam_id(id: &str) -> Option<(u32, u32)> {
@@ -991,7 +1424,8 @@ fn parse_part(stem: &str) -> Option<u32> {
     None
 }
 
-fn now_iso() -> String {
+/// Epoch milliseconds, not ISO — bindings carry this value as-is.
+fn now_ms() -> String {
     use std::time::{SystemTime, UNIX_EPOCH};
     let ms = SystemTime::now()
         .duration_since(UNIX_EPOCH)
@@ -1011,6 +1445,8 @@ mod tests {
             sha256: format!("{book}-{test}-{part}-{name}"),
             duration_ms: duration,
             format: "mp3".into(),
+            bytes: 0,
+            modified_ms: 0,
             book: Some(book),
             test: Some(test),
             part: Some(part),
@@ -1056,6 +1492,8 @@ mod tests {
             sha256: "aa".into(),
             duration_ms: 1_574_000,
             format: "mp3".into(),
+            bytes: 0,
+            modified_ms: 0,
             book: Some(4),
             test: Some(1),
             part: None,
@@ -1074,6 +1512,8 @@ mod tests {
                 sha256: format!("h{p}"),
                 duration_ms: 400_000,
                 format: "mp3".into(),
+                bytes: 0,
+                modified_ms: 0,
                 book: None,
                 test: None,
                 part: Some(p),

@@ -362,7 +362,7 @@
               "id": "c19t4l-q11",
               "number": 11,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO problems with some training programmes for new runners does Liz mention?",
+              "prompt": "First selected letter: Which TWO problems with some training programmes for new runners does Liz mention?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -404,7 +404,7 @@
               "id": "c19t4l-q12",
               "number": 12,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO problems with some training programmes for new runners does Liz mention?",
+              "prompt": "Second selected letter: Which TWO problems with some training programmes for new runners does Liz mention?",
               "acceptedAnswers": [
                 "C",
                 "E"
@@ -501,12 +501,27 @@
                 {
                   "id": "A",
                   "label": "A",
-                  "text": "There is a risk of serious injury"
+                  "text": "doing two runs a week"
                 },
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "They are unsui"
+                  "text": "running in the evening"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "going on runs with a friend"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "listening to music during runs"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "running very slowly"
                 }
               ]
             },
@@ -557,12 +572,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "There is a risk of serious injury"
+              "text": "doing two runs a week"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "They are unsui"
+              "text": "running in the evening"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "going on runs with a friend"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "listening to music during runs"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "running very slowly"
             }
           ],
           "repairSource": {

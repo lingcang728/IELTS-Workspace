@@ -1737,7 +1737,13 @@
               "label": "C",
               "text": "retail centres"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:54:43.848975+00:00",
+            "note": "印刷页 36 的 Questions 26–30 每题实际只有 A、B、C 三个选项；工单错误声明该组有 A–H，页面不存在 D–H，不能猜写，需修复题组结构。"
+          }
         },
         {
           "id": "c20t2l-g28",

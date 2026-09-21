@@ -329,12 +329,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              10
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:50.128779+00:00",
+            "note": "Page 81 shows Questions 1-10 is note completion (Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer). There are no options A-H printed on the page."
           }
         },
         {
@@ -362,12 +360,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              10
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:50.128779+00:00",
+            "note": "Page 81 shows Questions 1-10 is note completion (Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer). There are no options A-H printed on the page."
           }
         }
       ],
@@ -433,7 +429,13 @@
               "label": "C",
               "text": "increased pollution"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:39:13.551814+00:00",
+            "note": "页面实际为三选一题，选项只有 A pedestrian safety、B traffic jams、C increased pollution；工单误宣称有 A–H 八个选项，无法凭页面补齐 D–H，需题干/选项结构级修复。"
+          }
         },
         {
           "id": "c8t4l-g12",
@@ -484,7 +486,13 @@
               "label": "C",
               "text": "repaired"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:39:13.551814+00:00",
+            "note": "页面实际为三选一题，选项只有 A extended、B buried、C repaired；工单误宣称有 A–H 八个选项，无法凭页面补齐 D–H，需题干/选项结构级修复。"
+          }
         },
         {
           "id": "c8t4l-g13",
@@ -535,7 +543,13 @@
               "label": "C",
               "text": "local businesses"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:39:13.551814+00:00",
+            "note": "页面实际为三选一题，选项只有 A the council、B the power company、C local businesses；工单误宣称有 A–H 八个选项，无法凭页面补齐 D–H，需题干/选项结构级修复。"
+          }
         },
         {
           "id": "c8t4l-g14",
@@ -642,7 +656,13 @@
               "text": "H"
             }
           ],
-          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg"
+          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg",
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:04.576749+00:00",
+            "note": "Page 83 shows Questions 14-20 is map labelling (Red Hill Improvement Plan). Letters A-H are spatial markers on the map diagram without textual option descriptions."
+          }
         },
         {
           "id": "c8t4l-g15",
@@ -749,7 +769,13 @@
               "text": "H"
             }
           ],
-          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg"
+          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg",
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:04.576749+00:00",
+            "note": "Page 83 shows Questions 14-20 is map labelling (Red Hill Improvement Plan). Letters A-H are spatial markers on the map diagram without textual option descriptions."
+          }
         },
         {
           "id": "c8t4l-g16",
@@ -856,7 +882,13 @@
               "text": "H"
             }
           ],
-          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg"
+          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg",
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:04.576749+00:00",
+            "note": "Page 83 shows Questions 14-20 is map labelling (Red Hill Improvement Plan). Letters A-H are spatial markers on the map diagram without textual option descriptions."
+          }
         },
         {
           "id": "c8t4l-g17",
@@ -963,7 +995,13 @@
               "text": "H"
             }
           ],
-          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg"
+          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg",
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:04.576749+00:00",
+            "note": "Page 83 shows Questions 14-20 is map labelling (Red Hill Improvement Plan). Letters A-H are spatial markers on the map diagram without textual option descriptions."
+          }
         },
         {
           "id": "c8t4l-g18",
@@ -1070,7 +1108,13 @@
               "text": "H"
             }
           ],
-          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg"
+          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg",
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:04.576749+00:00",
+            "note": "Page 83 shows Questions 14-20 is map labelling (Red Hill Improvement Plan). Letters A-H are spatial markers on the map diagram without textual option descriptions."
+          }
         },
         {
           "id": "c8t4l-g19",
@@ -1177,7 +1221,13 @@
               "text": "H"
             }
           ],
-          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg"
+          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg",
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:04.576749+00:00",
+            "note": "Page 83 shows Questions 14-20 is map labelling (Red Hill Improvement Plan). Letters A-H are spatial markers on the map diagram without textual option descriptions."
+          }
         },
         {
           "id": "c8t4l-g20",
@@ -1284,7 +1334,13 @@
               "text": "H"
             }
           ],
-          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg"
+          "imageAsset": "assets/cambridge/c08-t4-listening-p0081.jpg",
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:59:04.576749+00:00",
+            "note": "Page 83 shows Questions 14-20 is map labelling (Red Hill Improvement Plan). Letters A-H are spatial markers on the map diagram without textual option descriptions."
+          }
         }
       ],
       "audioStartMs": 394039,
@@ -1310,7 +1366,7 @@
               "id": "c8t4l-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: In which TWO ways is Dan financing his course?",
+              "prompt": "First selected letter: In which TWO ways is Dan financing his course?",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -1353,7 +1409,7 @@
               "id": "c8t4l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: In which TWO ways is Dan financing his course?",
+              "prompt": "Second selected letter: In which TWO ways is Dan financing his course?",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -1443,7 +1499,7 @@
               "id": "c8t4l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO reasons does Jeannie give for deciding to leave some college clubs?",
+              "prompt": "First selected letter: Which TWO reasons does Jeannie give for deciding to leave some college clubs?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1486,7 +1542,7 @@
               "id": "c8t4l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO reasons does Jeannie give for deciding to leave some college clubs?",
+              "prompt": "Second selected letter: Which TWO reasons does Jeannie give for deciding to leave some college clubs?",
               "acceptedAnswers": [
                 "A",
                 "C"

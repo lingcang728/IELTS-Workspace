@@ -236,14 +236,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              10
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 5–10 on your answer sheet"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:29.183638+00:00",
+            "note": "Printed page 42 shows classification with options A-C only; fixture declared optionLabels A-H."
           }
         },
         {
@@ -302,14 +298,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              10
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 5–10 on your answer sheet"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:29.183638+00:00",
+            "note": "Printed page 42 shows classification with options A-C only; fixture declared optionLabels A-H."
           }
         },
         {
@@ -368,14 +360,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              10
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 5–10 on your answer sheet"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:29.183638+00:00",
+            "note": "Printed page 42 shows classification with options A-C only; fixture declared optionLabels A-H."
           }
         },
         {
@@ -434,14 +422,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              10
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 5–10 on your answer sheet"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:29.183638+00:00",
+            "note": "Printed page 42 shows classification with options A-C only; fixture declared optionLabels A-H."
           }
         },
         {
@@ -500,14 +484,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              10
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 5–10 on your answer sheet"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:29.183638+00:00",
+            "note": "Printed page 42 shows classification with options A-C only; fixture declared optionLabels A-H."
           }
         },
         {
@@ -566,14 +546,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              5,
-              10
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B or C, in boxes 5–10 on your answer sheet"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:29.183638+00:00",
+            "note": "Printed page 42 shows classification with options A-C only; fixture declared optionLabels A-H."
           }
         },
         {
@@ -642,14 +618,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 11–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:44.914938+00:00",
+            "note": "Printed page 43 shows 4-choice questions (A-D) for Questions 11-13; fixture declared optionLabels A-H."
           }
         },
         {
@@ -718,14 +690,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 11–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:44.914938+00:00",
+            "note": "Printed page 43 shows 4-choice questions (A-D) for Questions 11-13; fixture declared optionLabels A-H."
           }
         },
         {
@@ -794,14 +762,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 11–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:52:44.914938+00:00",
+            "note": "Printed page 43 shows 4-choice questions (A-D) for Questions 11-13; fixture declared optionLabels A-H."
           }
         }
       ]
@@ -2714,7 +2678,13 @@
               "label": "D",
               "text": "to warn that projects such as MIRTP are likely to have serious problems"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:28.544301+00:00",
+            "note": "Printed page 52 shows Question 40 is a 4-choice question (A-D); fixture erroneously declared optionLabels A-H."
+          }
         }
       ]
     }

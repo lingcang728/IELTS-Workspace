@@ -14,7 +14,7 @@ npx vitest run -t "recovers by context"         # single test by name
 cargo test --manifest-path src-tauri/Cargo.toml # Rust tests
 npm run verify           # vitest + cargo test (the minimal gate)
 .\verify.ps1             # full gate: cambridge corpus + vitest + cargo + tsc + build
-npm run package:release  # signed NSIS + portable + latest.json → release/
+npm run package:release  # minisign-signed NSIS + portable + latest.json + SHA256SUMS.txt → release/
 ```
 
 `.\verify.ps1` is the gate `package-release.ps1` runs before every release build; run it before claiming a change is done. It skips `verify_cambridge.py` when `fixtures/cambridge/` is absent (CI, fresh clone). 维护步骤、发布、题库 ratchet 见 `docs/维护与发布指南.md`。
@@ -30,7 +30,7 @@ Every capability is a `#[tauri::command]`. Adding one means touching three place
 `src-tauri/src/commands.rs` (impl) → `src-tauri/src/lib.rs` (`generate_handler!` list) → `src/lib/api.ts` (typed wrapper). `src/lib/types.ts` is the single source of truth for the shapes crossing that boundary; Rust returns `serde_json::Value` for most payloads, so type drift is silent — keep them in sync by hand.
 
 ### Path resolution (`src-tauri/src/paths.rs`)
-Never uses the process cwd. In debug builds the app root is the repo root and data lives in `data-dev/`; in release it is the directory next to the executable and data lives in `data/`. `bootstrap()` write-probes that directory and returns a `ProbeResult` — if `ok` is false the frontend shows an error instead of a library, so a read-only install degrades safely rather than losing sessions.
+Never uses the process cwd. In debug builds the app root is the repo root and data lives in `data-dev/`. In release, a portable exe keeps data in `data/` beside itself, while an installed copy (a real `uninstall.exe` sibling, size-checked so a stray stub does not count) uses `%LOCALAPPDATA%\IELTS Workspace User Data\data` — deliberately outside `$INSTDIR` so an NSIS uninstall cannot take user data with it. `bootstrap()` write-probes that directory and returns a `ProbeResult` — if `ok` is false the frontend shows an error instead of a library, so a read-only install degrades safely rather than losing sessions.
 
 ### Exam library (`library.rs`)
 Exams are JSON files discovered by walking `data/library`, `fixtures/`, and `official-samples/`, cached in a process-wide `OnceLock<Mutex<..>>` index that `import_exam_json` invalidates. Files without `schemaVersion == 1`, without an `id`, or with `source.kind == "generated_practice"` are skipped silently. `resolve_asset` only resolves sanitized relative paths under `data/assets` and the content/fixtures root.
@@ -59,9 +59,9 @@ Most of that corpus and several of those build scripts are gitignored (licensed 
 
 ## Release and updater
 
-The version appears in `package.json`, `src-tauri/Cargo.toml`, and `src-tauri/tauri.conf.json`, and the git tag must be exactly `v<version>` — CI and `package-release.ps1` both fail loudly on a mismatch. `package-release.ps1` runs `npm run verify`, loads the minisign key (env vars in CI, DPAPI-protected offline backup locally), builds, refuses stale artifacts by timestamp, verifies copies by hash, and emits `latest.json` pointing at the GitHub release URL. The tag push job in `.github/workflows/windows-ci.yml` publishes it.
+The version appears in `package.json`, `src-tauri/Cargo.toml`, and `src-tauri/tauri.conf.json`, and the git tag must be exactly `v<version>` — CI and `package-release.ps1` both fail loudly on a mismatch. `package-release.ps1` runs the full `verify.ps1` gate, loads the minisign key (env vars in CI, DPAPI-protected offline backup locally), builds, refuses stale artifacts by timestamp, verifies copies by hash, and emits `latest.json` plus `SHA256SUMS.txt` (the installer is minisign-signed for the updater; there is no Authenticode signature, so the published checksums are the user-facing verification path). The tag push job in `.github/workflows/windows-ci.yml` publishes it.
 
-The updater endpoint and pubkey live in `tauri.conf.json`. A portable single-file build detects itself via `is_portable_update` (no sibling `uninstall.exe`) and, after the NSIS update installs, calls `launch_migrated_install` to hand off to the installed copy under `%LOCALAPPDATA%` instead of relaunching itself.
+The updater endpoint and pubkey live in `tauri.conf.json`. A portable single-file build detects itself via `is_portable_update` (no real uninstaller beside the exe) and, after the NSIS update installs, calls `launch_migrated_install` to hand off to the installed copy under `%LOCALAPPDATA%` instead of relaunching itself.
 
 ## Conventions
 

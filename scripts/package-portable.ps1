@@ -27,6 +27,32 @@ $exe = Join-Path $root "release\IELTS_Workspace_${version}_x64.exe"
 if (-not (Test-Path -LiteralPath $exe)) {
   throw "release/ 里没有当前版本便携包：$exe"
 }
+
+# 本机若已装同版本的 NSIS 安装版，快捷方式改指安装版而不是 release/ 里的便携
+# exe：便携版把数据写在 exe 旁的 data\，安装版写在 %LOCALAPPDATA%\IELTS
+# Workspace User Data\data，两个入口并存=两个数据根，便携版一旦应用内更新
+# 迁到安装版后旧快捷方式还会继续拉起便携 exe（数据看起来"丢了"）。
+# 安装版版本不同（比如还没装上刚打的这版）时保持指便携，保证快捷方式总是
+# 打开刚构建的这版。与 paths.rs 同规则：uninstall.exe 必须是 >1KB 的真卸载器，
+# 同名空文件不算安装版。
+$installCandidates = @(
+  (Join-Path $env:LOCALAPPDATA 'IELTS Workspace\IELTS Workspace.exe'),
+  (Join-Path $env:LOCALAPPDATA 'Programs\IELTS Workspace\IELTS Workspace.exe')
+)
+foreach ($candidate in $installCandidates) {
+  $uninstaller = Join-Path (Split-Path $candidate -Parent) 'uninstall.exe'
+  $looksInstalled = (Test-Path -LiteralPath $candidate) -and
+    (Test-Path -LiteralPath $uninstaller) -and
+    ((Get-Item -LiteralPath $uninstaller).Length -gt 1024)
+  if (-not $looksInstalled) { continue }
+  $installedVersion = [string](Get-Item -LiteralPath $candidate).VersionInfo.ProductVersion
+  $installedVersion = ($installedVersion -split '-')[0] -replace '(\d+\.\d+\.\d+).*', '$1'
+  if ($installedVersion -eq $version) {
+    Write-Host "检测到同版本安装版，快捷方式指向安装版：$candidate"
+    $exe = $candidate
+    break
+  }
+}
 $workDir = Split-Path $exe -Parent
 
 function Set-IeltsShortcut([string]$Path, [string]$Target, [string]$WorkDir) {

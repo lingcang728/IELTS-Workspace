@@ -857,7 +857,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:50:46.580735+00:00",
+            "note": "页面实际为 Question 21 单选题，说明为 Choose the correct letter, A, B or C.，选项仅有 A attend a class, B write a report, C read a book；原题库错误声明了 A-H，需结构修复。"
+          }
         },
         {
           "id": "c6t1l-g22",
@@ -1171,7 +1177,7 @@
       "questionGroups": [
         {
           "id": "c6t1l-g31",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -1197,7 +1203,7 @@
         },
         {
           "id": "c6t1l-g32",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -1224,7 +1230,7 @@
         },
         {
           "id": "c6t1l-g33",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -1250,7 +1256,7 @@
         },
         {
           "id": "c6t1l-g34",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -1276,7 +1282,7 @@
         },
         {
           "id": "c6t1l-g35",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -1302,7 +1308,7 @@
         },
         {
           "id": "c6t1l-g36",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [
@@ -1328,7 +1334,7 @@
         },
         {
           "id": "c6t1l-g37",
-          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer. Choose THREE letters, A-G.",
+          "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
           "questionType": "completion",
           "scoringPolicy": "per_question",
           "questions": [

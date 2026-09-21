@@ -3,7 +3,7 @@
   "id": "cambridge-17-test-1-reading",
   "title": "Cambridge IELTS 17 Academic Test 1 Reading",
   "module": "reading",
-  "contentRevision": "repair-0022-c2f0ee5d",
+  "contentRevision": "repair-0004-73e7c456",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -547,12 +547,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:32.591715+00:00",
+            "note": "Page 22 contains a Which section contains the following information? matching task (Questions 14-17) matching to sections A-G of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -651,12 +649,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:32.591715+00:00",
+            "note": "Page 22 contains a Which section contains the following information? matching task (Questions 14-17) matching to sections A-G of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -755,12 +751,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:32.591715+00:00",
+            "note": "Page 22 contains a Which section contains the following information? matching task (Questions 14-17) matching to sections A-G of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -859,12 +853,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:32.591715+00:00",
+            "note": "Page 22 contains a Which section contains the following information? matching task (Questions 14-17) matching to sections A-G of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -1030,18 +1022,14 @@
         {
           "id": "c17t1r-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t1r-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "Question 23: When comparing twentieth-century stadiums to ancient amphitheatres in Section D, which TWO negative features does the writer mention?",
-              "acceptedAnswers": [
-                "B",
-                "E"
-              ],
+              "prompt": "First selected letter: When comparing twentieth-century stadiums to ancient amphitheatres in Section D, which TWO negative features does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -1074,35 +1062,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 23 and24 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c17t1r-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c17t1r-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Question 24: When comparing twentieth-century stadiums to ancient amphitheatres in Section D, which TWO negative features does the writer mention?",
-              "acceptedAnswers": [
-                "B",
-                "E"
-              ],
+              "prompt": "Second selected letter: When comparing twentieth-century stadiums to ancient amphitheatres in Section D, which TWO negative features does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -1135,7 +1104,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "repairSource": {
@@ -1147,23 +1119,50 @@
             "canonicalOf": [
               "Write the correct letters in boxes 23 and24 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They are less imaginatively designed."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They are less spacious."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They are in less convenient locations."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They are less versatile."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They are made of less durable materials."
+            }
+          ]
         },
         {
           "id": "c17t1r-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t1r-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "Question 25: Which TWO advantages of modern stadium design does the writer mention?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "First selected letter: Which TWO advantages of modern stadium design does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -1196,35 +1195,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 25 and 26 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c17t1r-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c17t1r-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Question 26: Which TWO advantages of modern stadium design does the writer mention?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "Second selected letter: Which TWO advantages of modern stadium design does the writer mention?",
               "gapText": "____",
               "options": [
                 {
@@ -1257,7 +1237,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:04+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "repairSource": {
@@ -1269,7 +1252,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 25 and 26 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "offering improved amenities for the enjoyment of sports events"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "bringing community life back into the city environment"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "facilitating research into solar and wind energy solutions"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "enabling local residents to reduce their consumption of electricity"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "providing a suitable site for the installation of renewable power generators"
+            }
+          ]
         }
       ]
     },

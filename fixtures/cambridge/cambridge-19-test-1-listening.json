@@ -585,7 +585,13 @@
               "label": "C",
               "text": "have a meal at home"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:54:29.999195+00:00",
+            "note": "Questions 14–15 页面实际是三选一，印有 A、B、C 三个选项；工单却声明 A–H 八个选项，题库结构与页面不符，不能猜补 D–H。"
+          }
         },
         {
           "id": "c19t1l-g15",
@@ -636,7 +642,13 @@
               "label": "C",
               "text": "take part in a competition"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:54:29.999195+00:00",
+            "note": "Questions 14–15 页面实际是三选一，印有 A、B、C 三个选项；工单却声明 A–H 八个选项，题库结构与页面不符，不能猜补 D–H。"
+          }
         },
         {
           "id": "c19t1l-g16",
@@ -1062,7 +1074,7 @@
               "id": "c19t1l-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO things did Colin find most satisfying about his bread reuse project?",
+              "prompt": "First selected letter: Which TWO things did Colin find most satisfying about his bread reuse project?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1105,7 +1117,7 @@
               "id": "c19t1l-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO things did Colin find most satisfying about his bread reuse project?",
+              "prompt": "Second selected letter: Which TWO things did Colin find most satisfying about his bread reuse project?",
               "acceptedAnswers": [
                 "B",
                 "D"
@@ -1195,7 +1207,7 @@
               "id": "c19t1l-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
+              "prompt": "First selected letter: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
               "acceptedAnswers": [
                 "A",
                 "E"
@@ -1238,7 +1250,7 @@
               "id": "c19t1l-q24",
               "number": 24,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
+              "prompt": "Second selected letter: Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
               "acceptedAnswers": [
                 "A",
                 "E"

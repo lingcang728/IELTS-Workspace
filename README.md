@@ -18,15 +18,15 @@ Windows 上的雅思 Academic 机考练习软件。试卷和作答都在本机�
 
 | 包 | 文件 | 数据放哪 |
 | --- | --- | --- |
-| 安装版（推荐） | `IELTS_Workspace_*_x64-setup.exe` | `%LOCALAPPDATA%\IELTS Workspace\data` |
+| 安装版（推荐） | `IELTS_Workspace_*_x64-setup.exe` | `%LOCALAPPDATA%\IELTS Workspace User Data\data` |
 | 便携版 | `IELTS_Workspace_*_x64.exe` | exe 同目录的 `data\` |
 
-安装版支持应用内检查更新。便携版更新时会迁到安装版。
+安装版支持应用内检查更新。便携版更新时会迁到安装版。每个 Release 附 `SHA256SUMS.txt`，可用 `certutil -hashfile 文件名 SHA256` 核对下载完整性。
 
 ## 怎么用
 
 1. 打开软件。Reading / Writing 直接开始。
-2. Listening 若按钮是「添加音频」：导入本机 `mp3` / `m4a` / `wav`。每套必须是四个 Part/Section，也可以是文件夹或按册 ZIP。不再支持整轨校准。分册包在网站 [听力音频](https://ielts-workspace.pages.dev/#listening)。软件不会自己下载音频。
+2. Listening 若按钮是「添加音频」：导入本机 `mp3` / `m4a` / `wav`。每套是四个 Part/Section 文件，也可以选文件夹或按册 ZIP；ZIP 里的官方整轨按内置目录 SHA-256 自动识别，不支持手动整轨校准。分册包在网站 [听力音频](https://ielts-workspace.pages.dev/#listening)。软件不会自己下载音频。
 3. **练习**：可暂停、重听。**模考**：按机考纪律，听力只放一遍，不能拖进度条；听完后有 2 分钟检查。
 4. 交卷后看对错。Listening / Reading 的 Band 是按公开换算表估算的，不是官方成绩。写作没有客观 Band。
 

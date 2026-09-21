@@ -416,14 +416,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              7,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:53.494141+00:00",
+            "note": "Page 68 contains summary completion with word bank A-O; fixture declared optionLabels A-H."
           }
         },
         {
@@ -712,14 +708,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              7,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:53.494141+00:00",
+            "note": "Page 68 contains summary completion with word bank A-O; fixture declared optionLabels A-H."
           }
         },
         {
@@ -898,14 +890,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              7,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:53.494141+00:00",
+            "note": "Page 68 contains summary completion with word bank A-O; fixture declared optionLabels A-H."
           }
         },
         {
@@ -1304,14 +1292,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              7,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A-O, in boxes 7–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:53.494141+00:00",
+            "note": "Page 68 contains summary completion with word bank A-O; fixture declared optionLabels A-H."
           }
         }
       ]
@@ -1847,14 +1831,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              19
-            ],
-            "canonicalOf": [
-              "Choose the correct headings for sections A-F from the list of headings below"
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:53.494141+00:00",
+            "note": "Page 69 contains List of Headings with options i-x; fixture declared optionLabels A-H."
           }
         },
         {
@@ -2357,7 +2337,13 @@
               "label": "C",
               "text": "the third wave"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:16.770079+00:00",
+            "note": "Printed page 73 shows classification with options A-C only; fixture declared optionLabels A-H."
+          }
         },
         {
           "id": "c7t3r-g23",
@@ -2413,7 +2399,13 @@
               "label": "C",
               "text": "the third wave"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:16.770079+00:00",
+            "note": "Printed page 73 shows classification with options A-C only; fixture declared optionLabels A-H."
+          }
         },
         {
           "id": "c7t3r-g24",
@@ -2469,7 +2461,13 @@
               "label": "C",
               "text": "the third wave"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:16.770079+00:00",
+            "note": "Printed page 73 shows classification with options A-C only; fixture declared optionLabels A-H."
+          }
         },
         {
           "id": "c7t3r-g25",
@@ -2525,7 +2523,13 @@
               "label": "C",
               "text": "the third wave"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:16.770079+00:00",
+            "note": "Printed page 73 shows classification with options A-C only; fixture declared optionLabels A-H."
+          }
         },
         {
           "id": "c7t3r-g26",
@@ -2591,7 +2595,13 @@
               "label": "D",
               "text": "the eating habits of American and Asian populations."
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:53.494141+00:00",
+            "note": "Page 73 shows Question 26 is a 4-choice question (A-D); fixture declared optionLabels A-H."
+          }
         }
       ]
     },
@@ -3636,7 +3646,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:57:39.549621+00:00",
+            "note": "Printed page 77 shows Question 40 is a 4-choice question (A-D); fixture declared optionLabels A-H."
+          }
         }
       ]
     }

@@ -287,14 +287,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              9,
-              13
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 9–13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:00:01.134823+00:00",
+            "note": "印刷页84题型为sentence completion（从原文选词填空），原书页面无A-H文字选项列表。"
           }
         },
         {
@@ -526,14 +522,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              17
-            ],
-            "canonicalOf": [
-              "Write ONE WORD ONLY from the passage for each answer. Write your answers in boxes 14–17 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:00:55.652338+00:00",
+            "note": "印刷页87题型为summary completion（从原文选词填空），原书页面无A-H文字选项列表。"
           }
         },
         {
@@ -2122,7 +2114,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:01:37.692559+00:00",
+            "note": "印刷页93题型为YES/NO/NOT GIVEN判断题，原书页面无A-H文字选项列表。"
+          }
         },
         {
           "id": "c13t4r-g40",

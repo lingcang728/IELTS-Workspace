@@ -469,12 +469,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              14
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:50:54.557558+00:00",
+            "note": "页面为单选题（Questions 11-14），每题独立印有 A-C 三个选项；工单声明共享 A-H 空选项，无法为 D-H 提供文字，需题目结构修复。"
           }
         },
         {

@@ -296,12 +296,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              10
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:50:52.201732+00:00",
+            "note": "印刷页 10 的 SECTION 1 为 notes 填空题，题 8 无选项框或词库；工单中声明 A-H 选项标签为提取错误。"
           }
         },
         {
@@ -1530,12 +1528,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              31,
-              40
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:07.855840+00:00",
+            "note": "印刷页 15 的 SECTION 4 为 notes 填空题（Questions 31-40），题 40 无选项列表；工单中声明 A-H 选项标签为提取错误。"
           }
         }
       ],

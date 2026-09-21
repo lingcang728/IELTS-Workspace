@@ -45,13 +45,34 @@ pub fn ensure() -> Result<ContentStatus, AppError> {
     fs::create_dir_all(&content_root)?;
     let dest = content_root.join(CONTENT_VERSION);
     let marker = content_root.join("CURRENT");
-    if dest.is_dir() && marker_is(&marker, CONTENT_VERSION) && verify_extracted(&dest).is_ok() {
-        return Ok(ContentStatus {
-            version: CONTENT_VERSION.into(),
-            extracted: true,
-            file_count: count_files(&dest),
-            warning: None,
-        });
+    if dest.is_dir() && marker_is(&marker, CONTENT_VERSION) && dest.join("manifest.json").is_file()
+    {
+        // Extraction already hashes every file against the manifest once; the
+        // `.verified` stamp lets later boots trust that pass instead of
+        // re-hashing the whole tree on every launch. A missing stamp (tree
+        // written by an older build) triggers one full verify, then stamps.
+        let stamped = fs::read_to_string(dest.join(".verified"))
+            .ok()
+            .and_then(|s| s.trim().parse::<usize>().ok());
+        let verified = match stamped {
+            // A stale stamp (files added/removed after it was written) must not
+            // skip verification — recounting is cheap next to the hash pass.
+            Some(count) if count_files(&dest) == count => Some(count),
+            _ if verify_extracted(&dest).is_ok() => {
+                let count = count_files(&dest);
+                let _ = fs::write(dest.join(".verified"), count.to_string());
+                Some(count)
+            }
+            _ => None,
+        };
+        if let Some(count) = verified {
+            return Ok(ContentStatus {
+                version: CONTENT_VERSION.into(),
+                extracted: true,
+                file_count: count,
+                warning: None,
+            });
+        }
     }
     let staging = content_root.join(format!(".staging-{CONTENT_VERSION}"));
     let _ = fs::remove_dir_all(&staging);
@@ -61,10 +82,12 @@ pub fn ensure() -> Result<ContentStatus, AppError> {
             if dest.exists() {
                 let _ = fs::remove_dir_all(&dest);
             }
-            fs::rename(&staging, &dest).map_err(|e| {
-                AppError::from(format!("无法启用新题库内容包：{e}"))
-            })?;
+            fs::rename(&staging, &dest)
+                .map_err(|e| AppError::from(format!("无法启用新题库内容包：{e}")))?;
             fs::write(&marker, CONTENT_VERSION.as_bytes())?;
+            // The extraction above verified every file; stamp it so later
+            // boots skip the full hash pass.
+            let _ = fs::write(dest.join(".verified"), count.to_string());
             prune_old(&content_root, CONTENT_VERSION);
             Ok(ContentStatus {
                 version: CONTENT_VERSION.into(),
@@ -76,16 +99,18 @@ pub fn ensure() -> Result<ContentStatus, AppError> {
         Err(err) => {
             let _ = fs::remove_dir_all(&staging);
             if let Ok(current) = fs::read_to_string(&marker) {
-                let keep = content_root.join(current.trim());
-                if keep.is_dir() {
-                    return Ok(ContentStatus {
-                        version: current.trim().into(),
-                        extracted: true,
-                        file_count: count_files(&keep),
-                        warning: Some(format!(
-                            "新题库内容包解压失败，已继续使用上一份有效版本。原因：{err}"
-                        )),
-                    });
+                let ver = current.trim();
+                if let Some(keep) = paths::valid_version_dir(ver).then(|| content_root.join(ver)) {
+                    if keep.is_dir() {
+                        return Ok(ContentStatus {
+                            version: ver.into(),
+                            extracted: true,
+                            file_count: count_files(&keep),
+                            warning: Some(format!(
+                                "新题库内容包解压失败，已继续使用上一份有效版本。原因：{err}"
+                            )),
+                        });
+                    }
                 }
             }
             Err(AppError::from(format!(
@@ -117,10 +142,13 @@ fn extract_pack(bytes: &[u8], dest: &Path) -> Result<usize, AppError> {
         std::io::Read::read_to_end(&mut entry, &mut buf)?;
         files.push((rel, buf));
     }
-    let manifest = files
+    let by_path: std::collections::HashMap<&Path, &[u8]> = files
         .iter()
-        .find(|(p, _)| p == Path::new("manifest.json"))
-        .map(|(_, b)| b.as_slice())
+        .map(|(p, b)| (p.as_path(), b.as_slice()))
+        .collect();
+    let manifest = by_path
+        .get(Path::new("manifest.json"))
+        .copied()
         .ok_or_else(|| AppError::from("内容包缺少 manifest.json"))?;
     let spec: Value = serde_json::from_slice(manifest)?;
     let expected = spec
@@ -137,8 +165,7 @@ fn extract_pack(bytes: &[u8], dest: &Path) -> Result<usize, AppError> {
             .get("sha256")
             .and_then(Value::as_str)
             .ok_or_else(|| AppError::from("内容包清单缺少 sha256"))?;
-        let found = files.iter().find(|(p, _)| p == Path::new(rel));
-        let Some((_, bytes)) = found else {
+        let Some(bytes) = by_path.get(Path::new(rel)).copied() else {
             return Err(AppError::from(format!("内容包缺少文件 {rel}")));
         };
         let got = sha256_bytes(bytes);
@@ -157,10 +184,9 @@ fn extract_pack(bytes: &[u8], dest: &Path) -> Result<usize, AppError> {
         if let Some(parent) = out.parent() {
             fs::create_dir_all(parent)?;
         }
+        // The in-memory bytes were just verified against the manifest hashes;
+        // a post-write hash pass would only re-read page cache.
         fs::write(&out, bytes)?;
-        if sha256_file(&out)? != sha256_bytes(bytes) {
-            return Err(AppError::from(format!("写出后校验失败：{}", rel.display())));
-        }
     }
     Ok(expected.len())
 }
@@ -187,15 +213,27 @@ fn verify_extracted(dir: &Path) -> Result<(), AppError> {
 }
 
 fn count_files(dir: &Path) -> usize {
+    count_files_at(dir, 0)
+}
+
+fn count_files_at(dir: &Path, depth: usize) -> usize {
+    if depth > 32 {
+        return 0;
+    }
     let mut n = 0usize;
     let Ok(entries) = fs::read_dir(dir) else {
         return 0;
     };
     for entry in entries.flatten() {
+        if crate::safe_path::is_reparse_point(&entry) {
+            continue;
+        }
         let path = entry.path();
         if path.is_dir() {
-            n += count_files(&path);
-        } else {
+            n += count_files_at(&path, depth + 1);
+        } else if !(depth == 0 && entry.file_name() == ".verified") {
+            // The stamp file is bookkeeping, not content — counting it would
+            // make the `.verified` check above never match.
             n += 1;
         }
     }

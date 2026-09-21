@@ -3,7 +3,7 @@
   "id": "cambridge-5-test-1-reading",
   "title": "Cambridge IELTS 5 Academic Test 1 Reading",
   "module": "reading",
-  "contentRevision": "repair-0018-33fb89f3",
+  "contentRevision": "repair-0002-5d4ed4c5",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -63,14 +63,14 @@
         {
           "id": "c5t1r-g1",
           "instruction": "Choose THREE letters A-H.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c5t1r-q1",
               "number": 1,
-              "type": "single_choice",
-              "prompt": "Here we have two radically different explanations for why so many teacher-subjects were willing to forgo their sense of personal responsibility for the sake of an institutional authority figure. The problem for biologists, psychologists and anthropologists is to sort out which of these two polar explanations is more plausible. This, in essence, is the problem of modern sociobiology – to discover the degree to which hard-wired genetic programming dictates, or at least strongly biases, the interaction of animais and humans with their environment, that is, their behaviour. Put another way. sociob",
+              "type": "multi_choice",
+              "prompt": "First selected letter: Which THREE of the following statements are true of Johnson's Dictionary?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -115,6 +115,118 @@
                   "label": "H",
                   "text": "Its definitions were famous for their originality."
                 }
+              ]
+            },
+            {
+              "id": "c5t1r-q2",
+              "number": 2,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which THREE of the following statements are true of Johnson's Dictionary?",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It avoided all scholarly words."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was the only English dictionary in general use for 200 years."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was famous because of the large number of people involved."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It focused mainly on language from contemporary texts."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "There was a time limit for its completion."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It ignored work done by previous dictionary writers."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It took into account subtleties of meaning."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Its definitions were famous for their originality."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
+            },
+            {
+              "id": "c5t1r-q3",
+              "number": 3,
+              "type": "multi_choice",
+              "prompt": "Third selected letter: Which THREE of the following statements are true of Johnson's Dictionary?",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "It avoided all scholarly words."
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "It was the only English dictionary in general use for 200 years."
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "It was famous because of the large number of people involved."
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "It focused mainly on language from contemporary texts."
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "There was a time limit for its completion."
+                },
+                {
+                  "id": "F",
+                  "label": "F",
+                  "text": "It ignored work done by previous dictionary writers."
+                },
+                {
+                  "id": "G",
+                  "label": "G",
+                  "text": "It took into account subtleties of meaning."
+                },
+                {
+                  "id": "H",
+                  "label": "H",
+                  "text": "Its definitions were famous for their originality."
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T03:02:27+00:00"
+              },
+              "acceptedAnswers": [
+                "G"
               ]
             }
           ],
@@ -164,233 +276,12 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-24T16:05:44.533860+00:00"
-          }
-        },
-        {
-          "id": "c5t1r-g2",
-          "instruction": "Choose THREE letters A-H.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c5t1r-q2",
-              "number": 2,
-              "type": "multi_choice",
-              "prompt": "Second selected letter: Which THREE of the following statements are true of Johnson's Dictionary?",
-              "acceptedAnswers": [
-                "D",
-                "E",
-                "G"
-              ],
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "It avoided all scholarly words."
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "It was the only English dictionary in general use for 200 years."
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "It was famous because of the large number of people involved."
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "It focused mainly on language from contemporary texts."
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "There was a time limit for its completion."
-                },
-                {
-                  "id": "F",
-                  "label": "F",
-                  "text": "It ignored work done by previous dictionary writers."
-                },
-                {
-                  "id": "G",
-                  "label": "G",
-                  "text": "It took into account subtleties of meaning."
-                },
-                {
-                  "id": "H",
-                  "label": "H",
-                  "text": "Its definitions were famous for their originality."
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T03:02:27+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It avoided all scholarly words."
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "It was the only English dictionary in general use for 200 years."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It was famous because of the large number of people involved."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It focused mainly on language from contemporary texts."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "There was a time limit for its completion."
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "It ignored work done by previous dictionary writers."
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "It took into account subtleties of meaning."
-            },
-            {
-              "id": "H",
-              "label": "H",
-              "text": "Its definitions were famous for their originality."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T16:05:44.533860+00:00"
-          }
-        },
-        {
-          "id": "c5t1r-g3",
-          "instruction": "Choose THREE letters A-H.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c5t1r-q3",
-              "number": 3,
-              "type": "multi_choice",
-              "prompt": "Third selected letter: Which THREE of the following statements are true of Johnson's Dictionary?",
-              "acceptedAnswers": [
-                "D",
-                "E",
-                "G"
-              ],
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "It avoided all scholarly words."
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "It was the only English dictionary in general use for 200 years."
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "It was famous because of the large number of people involved."
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "It focused mainly on language from contemporary texts."
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "There was a time limit for its completion."
-                },
-                {
-                  "id": "F",
-                  "label": "F",
-                  "text": "It ignored work done by previous dictionary writers."
-                },
-                {
-                  "id": "G",
-                  "label": "G",
-                  "text": "It took into account subtleties of meaning."
-                },
-                {
-                  "id": "H",
-                  "label": "H",
-                  "text": "Its definitions were famous for their originality."
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T03:02:27+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It avoided all scholarly words."
-            },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "It was the only English dictionary in general use for 200 years."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It was famous because of the large number of people involved."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It focused mainly on language from contemporary texts."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "There was a time limit for its completion."
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "It ignored work done by previous dictionary writers."
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "It took into account subtleties of meaning."
-            },
-            {
-              "id": "H",
-              "label": "H",
-              "text": "Its definitions were famous for their originality."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T16:05:44.533860+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "D",
+            "E",
+            "G"
+          ]
         },
         {
           "id": "c5t1r-g4",
@@ -1296,7 +1187,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:01.481686+00:00",
+            "note": "页面实际印的是4选1（A-D），四项分别为 A a 450-volt shock was dangerous. B punishment helps learning. C the pupils were honest. D they were suited to teaching. fixture 错误声明了 A-H 共 8 个空选项，且选项文字被混入题干，需要结构级修复。"
+          }
         },
         {
           "id": "c5t1r-g21",

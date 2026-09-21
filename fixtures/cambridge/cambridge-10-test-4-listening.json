@@ -770,17 +770,27 @@
                 {
                   "id": "A",
                   "label": "A",
-                  "text": "It was safe from enemy attack"
+                  "text": "communication"
                 },
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "It was convenient for river transport"
+                  "text": "design"
                 },
                 {
                   "id": "C",
                   "label": "C",
-                  "text": "It had a good position on the sea coast"
+                  "text": "IT"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "marketing"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "organisation"
                 }
               ]
             },
@@ -831,17 +841,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "It was safe from enemy attack"
+              "text": "communication"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "It was convenient for river transport"
+              "text": "design"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "It had a good position on the sea coast"
+              "text": "IT"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "marketing"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "organisation"
             }
           ],
           "repairSource": {
@@ -1766,7 +1786,13 @@
               }
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:42.543011+00:00",
+            "note": "印刷页 87 的 Questions 34-40 为笔记填空题，要求 ONE WORD ONLY；题库将其误标为带有 A-H 选项，页面无选项列表，需题型级修复。"
+          }
         },
         {
           "id": "c10t4l-g38",

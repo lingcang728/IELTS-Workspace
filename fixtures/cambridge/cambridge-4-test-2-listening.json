@@ -248,7 +248,13 @@
               "label": "C",
               "text": "the train system"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:53:40.814073+00:00",
+            "note": "页面第4题实际只印有 A、B、C 三个选项；工单元数据要求 A-H，页面没有对应的八项列表，不能凭空补写。"
+          }
         },
         {
           "id": "c4t2l-g5",
@@ -299,7 +305,13 @@
               "label": "C",
               "text": "just drinks"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:53:40.814073+00:00",
+            "note": "页面第5题实际只印有 A、B、C 三个选项；工单元数据要求 A-H，页面没有对应的八项列表，不能凭空补写。"
+          }
         },
         {
           "id": "c4t2l-g6",
@@ -1176,7 +1188,7 @@
               "id": "c4t2l-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
+              "prompt": "First selected letter: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -1217,7 +1229,7 @@
               "id": "c4t2l-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
+              "prompt": "Second selected letter: What TWO disadvantages of the questionnaire form of data collection do the students discuss?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1693,7 +1705,7 @@
               "id": "c4t2l-q39",
               "number": 39,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: The oil tanker explosion was an example of a crime which",
+              "prompt": "First selected letter: The oil tanker explosion was an example of a crime which",
               "acceptedAnswers": [
                 "D"
               ],
@@ -1739,7 +1751,7 @@
               "id": "c4t2l-q40",
               "number": 40,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: The oil tanker explosion was an example of a crime which",
+              "prompt": "Second selected letter: The oil tanker explosion was an example of a crime which",
               "acceptedAnswers": [
                 "E"
               ],

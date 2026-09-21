@@ -564,7 +564,7 @@
               "id": "c18t1l-q14",
               "number": 14,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
+              "prompt": "First selected letter: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -606,7 +606,7 @@
               "id": "c18t1l-q15",
               "number": 15,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
+              "prompt": "Second selected letter: Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
               "acceptedAnswers": [
                 "B",
                 "E"
@@ -1484,17 +1484,27 @@
                 {
                   "id": "A",
                   "label": "A",
-                  "text": "They are too small"
+                  "text": "being dishonest to her employer"
                 },
                 {
                   "id": "B",
                   "label": "B",
-                  "text": "There are not enough of them"
+                  "text": "paying too much attention to how she looked"
                 },
                 {
                   "id": "C",
                   "label": "C",
-                  "text": "Some of them are very close together"
+                  "text": "expecting to become well known"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "trying to earn a lot of money"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "openly disliking her client"
                 }
               ]
             },
@@ -1545,17 +1555,27 @@
             {
               "id": "A",
               "label": "A",
-              "text": "They are too small"
+              "text": "being dishonest to her employer"
             },
             {
               "id": "B",
               "label": "B",
-              "text": "There are not enough of them"
+              "text": "paying too much attention to how she looked"
             },
             {
               "id": "C",
               "label": "C",
-              "text": "Some of them are very close together"
+              "text": "expecting to become well known"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "trying to earn a lot of money"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "openly disliking her client"
             }
           ],
           "repairSource": {
@@ -1581,7 +1601,7 @@
               "id": "c18t1l-q29",
               "number": 29,
               "type": "multi_choice",
-              "prompt": "First selected letter: First answer: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+              "prompt": "First selected letter: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
               "acceptedAnswers": [
                 "A",
                 "C"
@@ -1624,7 +1644,7 @@
               "id": "c18t1l-q30",
               "number": 30,
               "type": "multi_choice",
-              "prompt": "Second selected letter: First answer: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+              "prompt": "Second selected letter: Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
               "acceptedAnswers": [
                 "A",
                 "C"

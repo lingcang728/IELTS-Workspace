@@ -292,7 +292,8 @@
               "type": "multi_choice",
               "prompt": "First selected letter: Choose TWO letters, A-E.",
               "acceptedAnswers": [
-                "['B', 'E']"
+                "B",
+                "E"
               ],
               "options": [
                 {
@@ -446,12 +447,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              16
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:52.306512+00:00",
+            "note": "Page 59 shows Questions 11-16 is note completion (Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer). There are no options A-H printed on the page."
           }
         },
         {
@@ -474,12 +473,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              16
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:52.306512+00:00",
+            "note": "Page 59 shows Questions 11-16 is note completion (Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer). There are no options A-H printed on the page."
           }
         },
         {
@@ -507,12 +504,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              16
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:52.306512+00:00",
+            "note": "Page 59 shows Questions 11-16 is note completion (Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer). There are no options A-H printed on the page."
           }
         },
         {
@@ -541,12 +536,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              16
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:52.306512+00:00",
+            "note": "Page 59 shows Questions 11-16 is note completion (Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer). There are no options A-H printed on the page."
           }
         },
         {

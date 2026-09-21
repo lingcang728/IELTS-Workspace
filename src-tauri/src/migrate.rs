@@ -2,13 +2,29 @@ use crate::error::AppError;
 use crate::paths;
 use crate::ziputil::sha256_file;
 use serde::Serialize;
-use serde_json::Value;
-use std::fs;
+use sha2::{Digest, Sha256};
+use std::fs::{self, File};
+use std::io::{Read, Write};
 use std::path::{Path, PathBuf};
 
+// Every directory that holds user-visible data. Missing one here silently
+// strands it in the retired `data.migrated.bak` tree: imported papers lose the
+// `assets/` they reference, `transcripts/` dictation text disappears, and
+// `official-samples/` exams drop out of the library.
 const USER_DIRS: &[&str] = &[
-    "sessions", "profile", "notes", "mistakes", "vocab", "plans", "feedback", "library", "audio",
+    "sessions",
+    "profile",
+    "notes",
+    "mistakes",
+    "vocab",
+    "plans",
+    "feedback",
+    "library",
+    "audio",
     "sources",
+    "assets",
+    "transcripts",
+    "official-samples",
 ];
 
 #[derive(Debug, Default, Serialize, Clone)]
@@ -17,24 +33,40 @@ pub struct MigrationReport {
     pub migrated: bool,
     pub from: Option<String>,
     pub to: Option<String>,
+    /// Files where the destination already had a copy and won. Nothing is lost
+    /// — the source tree is renamed, not deleted — but the user could never
+    /// tell which side of a conflict survived without this count.
+    pub conflicts: usize,
     pub error: Option<String>,
+}
+
+/// Progress snapshot emitted on `bootstrap-progress` while a migration copy
+/// runs — first-boot migration of a large profile otherwise looks like a hang
+/// on the splash screen.
+#[derive(Debug, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MigrateProgress {
+    pub dir: String,
+    pub done: usize,
+    pub total: usize,
 }
 
 /// Copy v1.2.0 sidecar data (next to the exe) into the 1.3.0 data root.
 /// Failure keeps the source intact and returns a Chinese error.
-pub fn run() -> MigrationReport {
-    match run_inner() {
+pub fn run(progress: impl FnMut(&MigrateProgress)) -> MigrationReport {
+    match run_inner(progress) {
         Ok(report) => report,
         Err(err) => MigrationReport {
             migrated: false,
             from: None,
             to: paths::data_root().ok().map(|p| p.display().to_string()),
+            conflicts: 0,
             error: Some(err.to_string()),
         },
     }
 }
 
-fn run_inner() -> Result<MigrationReport, AppError> {
+fn run_inner(mut progress: impl FnMut(&MigrateProgress)) -> Result<MigrationReport, AppError> {
     if paths::is_dev() {
         return Ok(MigrationReport::default());
     }
@@ -51,7 +83,7 @@ fn run_inner() -> Result<MigrationReport, AppError> {
         }
     }
     for src in candidates {
-        copy_verify_merge(&src, &dest)?;
+        report.conflicts += copy_verify_merge_progress(&src, &dest, &mut progress)?;
         // Never delete the old tree. Rename it to a cold backup so non-whitelist
         // files (exports, extra folders) survive, and dest-wins conflicts stay
         // recoverable. The next launch no longer sees sidecar `data/`.
@@ -64,103 +96,173 @@ fn run_inner() -> Result<MigrationReport, AppError> {
 
 /// Used by the portable updater hand-off as well as first-run migration.
 pub fn copy_verify_merge(src: &Path, dest: &Path) -> Result<(), AppError> {
+    copy_verify_merge_progress(src, dest, &mut |_| {}).map(|_| ())
+}
+
+/// Returns how many files were skipped because the destination already had a
+/// copy (dest-wins conflicts), so callers can surface the count.
+fn copy_verify_merge_progress(
+    src: &Path,
+    dest: &Path,
+    progress: &mut dyn FnMut(&MigrateProgress),
+) -> Result<usize, AppError> {
     if !src.exists() {
-        return Ok(());
+        return Ok(0);
     }
     if src == dest {
-        return Ok(());
+        return Ok(0);
     }
     let staging = dest.parent().unwrap_or(dest).join(".migrate-staging");
     let _ = fs::remove_dir_all(&staging);
     fs::create_dir_all(&staging)?;
-    copy_user_tree(src, &staging)?;
-    verify_tree(src, &staging)?;
-    merge_into(&staging, dest)?;
+    let mut prog = TreeProgress {
+        cb: progress,
+        dir: String::new(),
+        done: 0,
+        total: count_user_files(src),
+    };
+    copy_user_tree(src, &staging, &mut prog)?;
+    let mut conflicts = 0usize;
+    merge_into(&staging, dest, &mut conflicts)?;
     let _ = fs::remove_dir_all(&staging);
-    Ok(())
+    Ok(conflicts)
 }
 
-fn copy_user_tree(src: &Path, dest: &Path) -> Result<(), AppError> {
+struct TreeProgress<'a> {
+    cb: &'a mut dyn FnMut(&MigrateProgress),
+    dir: String,
+    done: usize,
+    total: usize,
+}
+
+impl TreeProgress<'_> {
+    fn emit(&mut self) {
+        (self.cb)(&MigrateProgress {
+            dir: self.dir.clone(),
+            done: self.done,
+            total: self.total,
+        });
+    }
+
+    fn enter_dir(&mut self, dir: &str) {
+        self.dir = dir.to_string();
+        self.emit();
+    }
+
+    fn tick(&mut self) {
+        self.done += 1;
+        // Per-file events would flood IPC on trees of small files.
+        if self.done % 16 == 0 || self.done == self.total {
+            self.emit();
+        }
+    }
+}
+
+/// File count under the migrated dirs — the progress denominator. Uses the
+/// same walk rules as `copy_dir` (no reparse descent, depth-capped) so the
+/// two agree.
+fn count_user_files(src: &Path) -> usize {
+    let mut total = 0usize;
+    for name in USER_DIRS {
+        count_tree(&src.join(name), &mut total, 0);
+    }
+    total
+}
+
+fn count_tree(dir: &Path, total: &mut usize, depth: usize) {
+    if depth > WALK_MAX_DEPTH {
+        return;
+    }
+    let Ok(entries) = fs::read_dir(dir) else {
+        return;
+    };
+    for entry in entries.flatten() {
+        if crate::safe_path::is_reparse_point(&entry) {
+            continue;
+        }
+        let path = entry.path();
+        if path.is_dir() {
+            count_tree(&path, total, depth + 1);
+        } else {
+            *total += 1;
+        }
+    }
+}
+
+fn copy_user_tree(src: &Path, dest: &Path, prog: &mut TreeProgress) -> Result<(), AppError> {
     for name in USER_DIRS {
         let from = src.join(name);
         if !from.exists() {
             continue;
         }
-        copy_dir(&from, &dest.join(name))?;
+        prog.enter_dir(name);
+        copy_dir(&from, &dest.join(name), prog, 0)?;
     }
     Ok(())
 }
 
-fn copy_dir(from: &Path, to: &Path) -> Result<(), AppError> {
+/// Reparse points (junctions/symlinks) are skipped rather than followed, and
+/// recursion is capped: a user-placed junction that points back at an ancestor
+/// would otherwise recurse until the process aborts.
+const WALK_MAX_DEPTH: usize = 32;
+
+fn copy_dir(from: &Path, to: &Path, prog: &mut TreeProgress, depth: usize) -> Result<(), AppError> {
+    if depth > WALK_MAX_DEPTH {
+        return Ok(());
+    }
     fs::create_dir_all(to)?;
     for entry in fs::read_dir(from)? {
         let entry = entry?;
+        if crate::safe_path::is_reparse_point(&entry) {
+            continue;
+        }
         let src = entry.path();
         let dest = to.join(entry.file_name());
         if src.is_dir() {
-            copy_dir(&src, &dest)?;
+            copy_dir(&src, &dest, prog, depth + 1)?;
         } else {
-            fs::copy(&src, &dest)?;
+            copy_verified_file(&src, &dest)?;
+            prog.tick();
         }
     }
     Ok(())
 }
 
-fn verify_tree(src: &Path, copy: &Path) -> Result<(), AppError> {
-    for name in USER_DIRS {
-        let from = src.join(name);
-        if !from.exists() {
-            continue;
+/// Streams `src` into `dest` while hashing the bytes in flight, then reads the
+/// copy back once to confirm the write. The old copy→verify→merge sequence
+/// hashed every file twice and copied it twice; JSON sanity no longer needs a
+/// separate pass because identical hashes already imply identical bytes.
+fn copy_verified_file(src: &Path, dest: &Path) -> Result<(), AppError> {
+    let mut input = File::open(src)?;
+    let mut out = File::create(dest)?;
+    let mut hasher = Sha256::new();
+    let mut buf = [0u8; 64 * 1024];
+    loop {
+        let n = input.read(&mut buf)?;
+        if n == 0 {
+            break;
         }
-        verify_dir(&from, &copy.join(name))?;
+        out.write_all(&buf[..n])?;
+        hasher.update(&buf[..n]);
+    }
+    drop(out);
+    if sha256_file(dest)? != hex::encode(hasher.finalize()) {
+        return Err(AppError::from(format!(
+            "迁移副本校验失败：{}",
+            dest.display()
+        )));
     }
     Ok(())
 }
 
-fn verify_dir(src: &Path, copy: &Path) -> Result<(), AppError> {
-    for entry in fs::read_dir(src)? {
-        let entry = entry?;
-        let s = entry.path();
-        let d = copy.join(entry.file_name());
-        if s.is_dir() {
-            verify_dir(&s, &d)?;
-            continue;
-        }
-        if !d.is_file() {
-            return Err(AppError::from(format!("迁移副本缺失：{}", d.display())));
-        }
-        if sha256_file(&s)? != sha256_file(&d)? {
-            return Err(AppError::from(format!("迁移副本校验失败：{}", d.display())));
-        }
-        if d.extension().and_then(|e| e.to_str()) == Some("json") {
-            let in_quarantine = s
-                .parent()
-                .and_then(|p| p.file_name())
-                .and_then(|n| n.to_str())
-                == Some("quarantine");
-            if !in_quarantine {
-                if let Ok(src_text) = fs::read_to_string(&s) {
-                    if serde_json::from_str::<Value>(&src_text).is_ok() {
-                        let text = fs::read_to_string(&d)?;
-                        serde_json::from_str::<Value>(&text).map_err(|e| {
-                            AppError::from(format!("迁移副本 JSON 无效（{}）：{e}", d.display()))
-                        })?;
-                    }
-                }
-            }
-        }
-    }
-    Ok(())
-}
-
-fn merge_into(staging: &Path, dest: &Path) -> Result<(), AppError> {
+fn merge_into(staging: &Path, dest: &Path, conflicts: &mut usize) -> Result<(), AppError> {
     fs::create_dir_all(dest)?;
     for name in USER_DIRS {
         let from = staging.join(name);
         if !from.exists() {
             continue;
         }
-        merge_dir(&from, &dest.join(name))?;
+        merge_dir(&from, &dest.join(name), 0, conflicts)?;
     }
     Ok(())
 }
@@ -189,18 +291,27 @@ fn retire_source(src: &Path) -> Result<PathBuf, AppError> {
     Ok(bak)
 }
 
-fn merge_dir(from: &Path, to: &Path) -> Result<(), AppError> {
+fn merge_dir(from: &Path, to: &Path, depth: usize, conflicts: &mut usize) -> Result<(), AppError> {
+    if depth > WALK_MAX_DEPTH {
+        return Ok(());
+    }
     fs::create_dir_all(to)?;
     for entry in fs::read_dir(from)? {
         let entry = entry?;
+        if crate::safe_path::is_reparse_point(&entry) {
+            continue;
+        }
         let src = entry.path();
         let dest = to.join(entry.file_name());
         if src.is_dir() {
-            merge_dir(&src, &dest)?;
+            merge_dir(&src, &dest, depth + 1, conflicts)?;
         } else if dest.exists() {
             // Destination already has this file (new install started writing). Keep dest.
+            *conflicts += 1;
             continue;
-        } else {
+        } else if fs::rename(&src, &dest).is_err() {
+            // Staging sits next to dest on the same volume, so rename is a
+            // metadata move; copy only as a cross-device fallback.
             fs::copy(&src, &dest)?;
         }
     }

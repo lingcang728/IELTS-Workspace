@@ -3,7 +3,7 @@
   "id": "cambridge-19-test-2-reading",
   "title": "Cambridge IELTS 19 Academic Test 2 Reading",
   "module": "reading",
-  "contentRevision": "repair-0019-b76550e1",
+  "contentRevision": "repair-0004-36bb0b45",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -470,12 +470,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 14-18 页面说明 Reading Passage 2 有六段 A-F，题型是段落匹配，没有可抄录的选项文字列表；工单声明 optionLabels 需题库结构修复。"
           }
         },
         {
@@ -564,12 +562,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 14-18 页面说明 Reading Passage 2 有六段 A-F，题型是段落匹配，没有可抄录的选项文字列表；工单声明 optionLabels 需题库结构修复。"
           }
         },
         {
@@ -658,12 +654,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 14-18 页面说明 Reading Passage 2 有六段 A-F，题型是段落匹配，没有可抄录的选项文字列表；工单声明 optionLabels 需题库结构修复。"
           }
         },
         {
@@ -752,12 +746,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 14-18 页面说明 Reading Passage 2 有六段 A-F，题型是段落匹配，没有可抄录的选项文字列表；工单声明 optionLabels 需题库结构修复。"
           }
         },
         {
@@ -846,12 +838,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 14-18 页面说明 Reading Passage 2 有六段 A-F，题型是段落匹配，没有可抄录的选项文字列表；工单声明 optionLabels 需题库结构修复。"
           }
         },
         {
@@ -901,14 +891,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              22
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 19–22 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 19-22 页面实际是 Complete the sentences below / Choose ONE WORD ONLY 的填空题，没有选项列表；工单误声明 A-H 需题库结构修复。"
           }
         },
         {
@@ -930,14 +916,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              22
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 19–22 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 19-22 页面实际是 Complete the sentences below / Choose ONE WORD ONLY 的填空题，没有选项列表；工单误声明 A-H 需题库结构修复。"
           }
         },
         {
@@ -966,31 +948,23 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              19,
-              22
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 19–22 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:54:46.709627+00:00",
+            "note": "Questions 19-22 页面实际是 Complete the sentences below / Choose ONE WORD ONLY 的填空题，没有选项列表；工单误声明 A-H 需题库结构修复。"
           }
         },
         {
           "id": "c19t2r-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t2r-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO facts about Emma Raducanu’s withdrawal from the Wimbledon tournament are mentioned in the text?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
+              "prompt": "First selected letter: Which TWO facts about Emma Raducanu’s withdrawal from the Wimbledon tournament are mentioned in the text?",
               "options": [
                 {
                   "id": "A",
@@ -1022,7 +996,52 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
+            {
+              "id": "c19t2r-q24",
+              "number": 24,
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which TWO facts about Emma Raducanu’s withdrawal from the Wimbledon tournament are mentioned in the text?",
+              "gapText": "____",
+              "options": [
+                {
+                  "id": "A",
+                  "label": "A",
+                  "text": "the stage at which she dropped out of the tournament"
+                },
+                {
+                  "id": "B",
+                  "label": "B",
+                  "text": "symptoms of her performance stress at the tournament"
+                },
+                {
+                  "id": "C",
+                  "label": "C",
+                  "text": "measures which she had taken to manage her stress levels"
+                },
+                {
+                  "id": "D",
+                  "label": "D",
+                  "text": "aspects of the Wimbledon tournament which increased her stress levels"
+                },
+                {
+                  "id": "E",
+                  "label": "E",
+                  "text": "reactions to her social media posts about her experience at Wimbledon"
+                }
+              ],
+              "repairSource": {
+                "kind": "overlay",
+                "status": "corrected",
+                "reviewedAt": "2026-08-24T05:43:06+00:00"
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "sharedOptions": [
@@ -1056,84 +1075,23 @@
             "kind": "overlay",
             "status": "approved",
             "reviewedAt": "2026-08-25T01:55:16.381143+00:00"
-          }
-        },
-        {
-          "id": "c19t2r-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
-            {
-              "id": "c19t2r-q24",
-              "number": 24,
-              "type": "multi_choice",
-              "prompt": "Second answer: Which TWO facts about Emma Raducanu’s withdrawal from the Wimbledon tournament are mentioned in the text?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
-              "gapText": "____",
-              "options": [
-                {
-                  "id": "A",
-                  "label": "A",
-                  "text": "the stage at which she dropped out of the tournament"
-                },
-                {
-                  "id": "B",
-                  "label": "B",
-                  "text": "symptoms of her performance stress at the tournament"
-                },
-                {
-                  "id": "C",
-                  "label": "C",
-                  "text": "measures which she had taken to manage her stress levels"
-                },
-                {
-                  "id": "D",
-                  "label": "D",
-                  "text": "aspects of the Wimbledon tournament which increased her stress levels"
-                },
-                {
-                  "id": "E",
-                  "label": "E",
-                  "text": "reactions to her social media posts about her experience at Wimbledon"
-                }
-              ],
-              "repairSource": {
-                "kind": "overlay",
-                "status": "corrected",
-                "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 23 and 24 on your answer sheet."
-            ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ]
         },
         {
           "id": "c19t2r-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c19t2r-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
-              "acceptedAnswers": [
-                "A",
-                "E"
-              ],
+              "prompt": "First selected letter: Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
               "gapText": "____",
               "options": [
                 {
@@ -1166,35 +1124,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": [
-              "Writethe correct letters in boxes 25 and 26 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c19t2r-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "A"
+              ]
+            },
             {
               "id": "c19t2r-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
-              "acceptedAnswers": [
-                "A",
-                "E"
-              ],
+              "prompt": "Second selected letter: Which TWO facts about anxiety are mentioned in Paragraph E of the text?",
               "gapText": "____",
               "options": [
                 {
@@ -1227,7 +1166,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:06+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "repairSource": {
@@ -1239,7 +1181,38 @@
             "canonicalOf": [
               "Writethe correct letters in boxes 25 and 26 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "the factors which determine how severe it may be"
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "how long it takes for its effects to become apparent"
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "which of its symptoms is most frequently encountered"
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "the types of athletes who are most likely to suffer from it"
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "the harm that can result if athletes experience it too often"
+            }
+          ]
         }
       ]
     },
@@ -1389,12 +1362,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:56:01.322110+00:00",
+            "note": "原书印刷页50的 Questions 27-32 选项为 A-K（含 K intent）；工单声明 A-H 与原书不符，需题库结构修复。"
           }
         },
         {
@@ -1622,12 +1593,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:56:01.322110+00:00",
+            "note": "原书印刷页50的 Questions 27-32 选项为 A-K（含 K intent）；工单声明 A-H 与原书不符，需题库结构修复。"
           }
         },
         {
@@ -1767,12 +1736,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              27,
-              32
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:56:01.322110+00:00",
+            "note": "原书印刷页50的 Questions 27-32 选项为 A-K（含 K intent）；工单声明 A-H 与原书不符，需题库结构修复。"
           }
         },
         {

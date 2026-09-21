@@ -17,7 +17,10 @@ export function clampPlaybackTime(
   lockSec: number,
   seekAllowed: boolean,
   rewindSlack = 0.4,
-  forwardSlack = 0.5,
+  // Forward slack must absorb main-thread stalls — timeupdate arriving late
+  // reads an advanced currentTime that is not a seek. 1s keeps real seek
+  // jumps (typically many seconds) snapping while sparing audible glitches.
+  forwardSlack = 1.0,
 ): { time: number; lock: number; snapped: boolean } {
   if (seekAllowed) return { time: currentSec, lock: currentSec, snapped: false };
   if (currentSec + rewindSlack < lockSec || currentSec > lockSec + forwardSlack) {

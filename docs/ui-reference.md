@@ -100,6 +100,7 @@ Older 2017–2018 tutorials were **not** used as the visual source of truth when
 
 ## Display
 
+- Language: the exam chrome is **English**, mirroring the official runtime; the app shell stays Simplified Chinese (AGENTS.md §9). Mixing languages inside one control group (e.g. one Chinese item in an English menu) is a bug.
 - Mock runtime is always the official light exam chrome (`data-theme="exam"` + `default` / `high_contrast` / `cream`). It does not follow the workspace theme.
 - Practice runtime reads `Profile.practiceScheme`:
   - `follow_shell` — light exam tokens when the workspace is light, `practice_dark` tokens when the workspace is dark

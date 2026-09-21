@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { memo, useEffect, useMemo, useState, type ReactNode } from "react";
 import { assetSrc } from "../lib/api";
 import { selectedLetters, toggleSharedLetter } from "../lib/choice";
 import type { ExamMode, ExamSection, Question, QuestionGroup } from "../lib/types";
@@ -20,7 +20,12 @@ interface Props {
   showImage?: boolean;
 }
 
-export function QuestionGroupView({ group, values, onChange, disabled, skin = "mock", showInstruction = true, showImage = true }: Props) {
+/**
+ * Memoised per group: `values` is rebuilt on every keystroke, so a plain memo
+ * on props would never hit. The comparator only checks the questions this
+ * group actually renders — one keystroke re-renders one group, not the sheet.
+ */
+export const QuestionGroupView = memo(function QuestionGroupView({ group, values, onChange, disabled, skin = "mock", showInstruction = true, showImage = true }: Props) {
   const practice = skin === "practice";
   const layoutQuestionIds = group.layoutHtml
     ? new Set(
@@ -81,7 +86,21 @@ export function QuestionGroupView({ group, values, onChange, disabled, skin = "m
       )}
     </section>
   );
-}
+}, (prev, next) => {
+  if (
+    prev.group !== next.group ||
+    prev.section !== next.section ||
+    prev.onChange !== next.onChange ||
+    prev.disabled !== next.disabled ||
+    prev.skin !== next.skin ||
+    prev.showInstruction !== next.showInstruction ||
+    prev.showImage !== next.showImage
+  ) return false;
+  for (const q of next.group.questions) {
+    if (prev.values[q.id] !== next.values[q.id]) return false;
+  }
+  return true;
+});
 
 function GroupFigure({ rel }: { rel: string }) {
   const [src, setSrc] = useState<string | null>(null);
@@ -124,9 +143,14 @@ function QuestionLayout({
   onChange: (questionId: string, value: string | string[] | null) => void;
   disabled?: boolean;
 }) {
-  const source = sanitizeLayoutHtml(html);
-  if (!source) return null;
-  const nodes = typeof document === "undefined" ? [] : Array.from(new DOMParser().parseFromString(source, "text/html").body.childNodes);
+  // Sanitise + parse once per layout string — without this every keystroke
+  // re-runs DOMParser on the whole table/flow layout.
+  const nodes = useMemo(() => {
+    const source = sanitizeLayoutHtml(html);
+    if (!source || typeof document === "undefined") return null;
+    return Array.from(new DOMParser().parseFromString(source, "text/html").body.childNodes);
+  }, [html]);
+  if (!nodes) return null;
   return (
     <div className="q-layout" aria-label="Question layout">
       {nodes.map((node, index) => renderLayoutNode(node, `${group.id}-${index}`, group, values, onChange, disabled))}
@@ -296,7 +320,7 @@ function QuestionInlineInput({
 }) {
   const type = question.type || group.questionType;
   const str = typeof value === "string" ? value : "";
-  if (type === "true_false_ng" || type === "yes_no_ng" || type === "single_choice" || type === "matching") {
+  if (type === "true_false_ng" || type === "yes_no_ng" || type === "single_choice" || type === "matching" || type === "labelling") {
     const labels = type === "true_false_ng" ? ["TRUE", "FALSE", "NOT GIVEN"] : type === "yes_no_ng" ? ["YES", "NO", "NOT GIVEN"] : [];
     const options = labels.length
       ? labels.map((label) => ({ id: label, label, text: "" }))
@@ -314,7 +338,7 @@ function QuestionInlineInput({
         <option value="">Q{question.number}</option>
         {options.map((option) => (
           <option key={option.id} value={option.id}>
-            {option.label} {option.text}
+            {option.text && option.text !== option.label ? `${option.label} ${option.text}` : option.label}
           </option>
         ))}
       </select>
@@ -326,7 +350,7 @@ function QuestionInlineInput({
       aria-label={`Question ${question.number}`}
       disabled={disabled}
       value={str}
-      maxLength={40}
+      maxLength={60}
       onChange={(event) => onChange(event.target.value)}
       placeholder={`Q${question.number}`}
     />
@@ -407,7 +431,7 @@ function SharedMultiSelect({
         ))}
         {stem}
       </div>
-      {practice ? <p className="choice-limit">已选 {picked.length} / {limit}</p> : null}
+      {practice ? <p className="choice-limit">{picked.length} of {limit} selected</p> : null}
       {practice ? (
         <div className="choice-cards" role="group" aria-label={rangeLabel}>
           {options.map((opt) => {
@@ -534,7 +558,7 @@ function QuestionView({
             <span className="q-num">{question.number}</span>
             {question.prompt}
           </div>
-          <p className="choice-limit">已选 {picked.length}</p>
+          <p className="choice-limit">{picked.length} selected</p>
           <div className="choice-cards" role="group">
             {options.map((opt) => {
               const on = picked.includes(opt.id);
@@ -545,7 +569,7 @@ function QuestionView({
                   type="button"
                   className={`choice-card ${on ? "on" : ""} ${blocked ? "taken" : ""}`}
                   aria-pressed={on}
-                  title={blocked ? "已用于其他题" : undefined}
+                  title={blocked ? "Already used for another question" : undefined}
                   disabled={disabled || blocked}
                   onClick={() => toggle(opt.id)}
                 >
@@ -569,7 +593,7 @@ function QuestionView({
             const on = picked.includes(opt.id);
             const blocked = taken.has(opt.id) && !on;
             return (
-              <label key={opt.id} className={`${on ? "on" : ""} ${blocked ? "taken" : ""}`} title={blocked ? "已用于其他题" : undefined}>
+              <label key={opt.id} className={`${on ? "on" : ""} ${blocked ? "taken" : ""}`} title={blocked ? "Already used for another question" : undefined}>
                 <input type="checkbox" checked={on} disabled={disabled || blocked} onChange={() => toggle(opt.id)} />
                 <span>
                   <strong className="choice-letter">{opt.label}</strong> {opt.text}
@@ -601,7 +625,7 @@ function QuestionView({
                   role="radio"
                   className={`choice-card ${on ? "on" : ""} ${blocked ? "taken" : ""}`}
                   aria-checked={on}
-                  title={blocked ? "已用于其他题" : undefined}
+                  title={blocked ? "Already used for another question" : undefined}
                   disabled={disabled || blocked}
                   onClick={() => onChange(question.id, on ? null : opt.id)}
                 >
@@ -625,7 +649,7 @@ function QuestionView({
             const on = str === opt.id;
             const blocked = taken.has(opt.id) && !on;
             return (
-              <label key={opt.id} className={`${on ? "on" : ""} ${blocked ? "taken" : ""}`} title={blocked ? "已用于其他题" : undefined}>
+              <label key={opt.id} className={`${on ? "on" : ""} ${blocked ? "taken" : ""}`} title={blocked ? "Already used for another question" : undefined}>
                 <input
                   type="radio"
                   name={question.id}
@@ -672,18 +696,28 @@ function QuestionView({
   }
 
   if (type === "labelling") {
+    // Official runtime answers map/plan labels by picking a letter; fixtures
+    // carry no on-image coordinates, so a letter select is the closest form —
+    // and it constrains the answer to a valid option instead of free text.
+    const letters = question.options?.length ? question.options : group.sharedOptions || [];
     return (
       <div className="q-block" data-qid={question.id}>
         <label>
           <span className="q-num">{question.number}</span>
           {question.prompt}{" "}
-          <input
-            className="gap"
+          <select
+            className="match"
             disabled={disabled}
             value={str}
-            maxLength={40}
-            onChange={(e) => onChange(question.id, e.target.value)}
-          />
+            onChange={(e) => onChange(question.id, e.target.value || null)}
+          >
+            <option value=""> </option>
+            {letters.map((opt) => (
+              <option key={opt.id} value={opt.id}>
+                {opt.text && opt.text !== opt.label ? `${opt.label} ${opt.text}` : opt.label}
+              </option>
+            ))}
+          </select>
         </label>
       </div>
     );
@@ -730,7 +764,7 @@ function MatchingBoard({
       {showInstruction && (
         <div className="instr" dangerouslySetInnerHTML={{ __html: escapeKeepBreaks(group.instruction) }} />
       )}
-      <p className="match-hint">把右侧标签拖到题目上，或先点标签再点空位。键盘可用下拉。</p>
+      <p className="match-hint">Drag a label onto a question, or click a label then a slot. Keyboard users: each question also has a drop-down below it.</p>
       <div className="match-pool" role="list">
         {options.map((opt) => (
           <button
@@ -781,12 +815,12 @@ function MatchingBoard({
                   <strong>{picked.label}</strong> {picked.text}
                   {!disabled && (
                     <button type="button" className="clear-slot" onClick={(e) => { e.stopPropagation(); assign(q.id, null); }}>
-                      清除
+                      Clear
                     </button>
                   )}
                 </>
               ) : (
-                <span className="drop-ph">{armed ? "点这里放下" : "拖到这里"}</span>
+                <span className="drop-ph">{armed ? "Click here to place it" : "Drag a label here"}</span>
               )}
             </div>
             <label className="sr-only" htmlFor={`match-${q.id}`}>
@@ -824,7 +858,7 @@ function renderGap(
     return (
       <>
         {text}{" "}
-        <input className="gap" disabled={disabled} value={value} onChange={(e) => onChange(e.target.value)} />
+        <input className="gap" disabled={disabled} value={value} maxLength={60} onChange={(e) => onChange(e.target.value)} />
       </>
     );
   }
@@ -833,7 +867,7 @@ function renderGap(
   return (
     <>
       {before}
-      <input className="gap" disabled={disabled} value={value} onChange={(e) => onChange(e.target.value)} />
+      <input className="gap" disabled={disabled} value={value} maxLength={60} onChange={(e) => onChange(e.target.value)} />
       {after}
     </>
   );

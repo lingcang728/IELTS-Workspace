@@ -31,7 +31,8 @@ pub fn sha256_bytes(bytes: &[u8]) -> String {
 pub fn safe_extract(src: &Path, dest: &Path) -> Result<Vec<PathBuf>, AppError> {
     fs::create_dir_all(dest)?;
     let file = File::open(src)?;
-    let mut archive = ZipArchive::new(file).map_err(|e| AppError::from(format!("ZIP 无法打开：{e}")))?;
+    let mut archive =
+        ZipArchive::new(file).map_err(|e| AppError::from(format!("ZIP 无法打开：{e}")))?;
     if archive.len() > MAX_ZIP_FILES {
         return Err(AppError::from(format!(
             "ZIP 内文件过多（{}），拒绝解压",
@@ -41,7 +42,7 @@ pub fn safe_extract(src: &Path, dest: &Path) -> Result<Vec<PathBuf>, AppError> {
     let mut written = Vec::new();
     let mut total = 0u64;
     for i in 0..archive.len() {
-        let mut entry = archive
+        let entry = archive
             .by_index(i)
             .map_err(|e| AppError::from(format!("ZIP 条目损坏：{e}")))?;
         let name = entry.name().replace('\\', "/");
@@ -57,16 +58,30 @@ pub fn safe_extract(src: &Path, dest: &Path) -> Result<Vec<PathBuf>, AppError> {
         if size > MAX_ONE_FILE {
             return Err(AppError::from(format!("ZIP 内文件过大：{}", rel.display())));
         }
-        total = total.saturating_add(size);
-        if total > MAX_UNCOMPRESSED {
+        if total.saturating_add(size) > MAX_UNCOMPRESSED {
             return Err(AppError::from("ZIP 解压后体积超过限制"));
         }
         if let Some(parent) = out.parent() {
             fs::create_dir_all(parent)?;
         }
         let mut dest_file = File::create(&out)?;
-        io::copy(&mut entry, &mut dest_file)?;
+        // entry.size() is the header's *claimed* size — a forged archive can
+        // declare 1 KB and decompress to gigabytes. Count what actually lands:
+        // `take` caps the read and the copy result carries the truth.
+        let actual = io::copy(
+            &mut entry.take(MAX_ONE_FILE.saturating_add(1)),
+            &mut dest_file,
+        )?;
         dest_file.flush()?;
+        if actual > MAX_ONE_FILE {
+            let _ = fs::remove_file(&out);
+            return Err(AppError::from(format!("ZIP 内文件过大：{}", rel.display())));
+        }
+        total = total.saturating_add(actual);
+        if total > MAX_UNCOMPRESSED {
+            let _ = fs::remove_file(&out);
+            return Err(AppError::from("ZIP 解压后体积超过限制"));
+        }
         written.push(out);
     }
     Ok(written)
@@ -87,18 +102,23 @@ pub fn sanitize_zip_path(name: &str) -> Result<PathBuf, AppError> {
         if part.contains(':') {
             return Err(AppError::from("ZIP 含有盘符路径，已拒绝"));
         }
+        if crate::safe_path::is_reserved_component(part) {
+            return Err(AppError::from("ZIP 含有保留设备名路径，已拒绝"));
+        }
         out.push(part);
     }
     if out.as_os_str().is_empty() {
         return Err(AppError::from("ZIP 路径为空"));
     }
-    if out.is_absolute() || out.components().any(|c| matches!(c, Component::Prefix(_) | Component::RootDir)) {
+    if out.is_absolute()
+        || out
+            .components()
+            .any(|c| matches!(c, Component::Prefix(_) | Component::RootDir))
+    {
         return Err(AppError::from("ZIP 含有绝对路径，已拒绝"));
     }
     Ok(out)
 }
-
-
 
 #[cfg(test)]
 mod tests {
@@ -115,5 +135,15 @@ mod tests {
     fn accepts_nested_relative() {
         let p = sanitize_zip_path("C04/c04-t1.mp3").unwrap();
         assert_eq!(p, std::path::Path::new("C04").join("c04-t1.mp3"));
+    }
+
+    #[test]
+    fn rejects_device_names() {
+        // Windows 把 CON/NUL/COM1.. 解析到设备而不是磁盘文件，后缀也挡不住。
+        assert!(sanitize_zip_path("nul.mp3").is_err());
+        assert!(sanitize_zip_path("a/CON.mp3").is_err());
+        assert!(sanitize_zip_path("com1/b.mp3").is_err());
+        assert!(sanitize_zip_path("NUL..mp3").is_err());
+        assert!(sanitize_zip_path("ok/cambridge-9.mp3").is_ok());
     }
 }

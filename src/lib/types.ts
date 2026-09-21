@@ -182,8 +182,6 @@ export interface Session {
   updatedAt: string;
   remainingMs: number;
   answers: Record<string, AnswerEntry>;
-  /** Optional group-level answers for Choose TWO/THREE; old sessions omit this. */
-  groupAnswers?: Record<string, string[]>;
   highlights: HighlightRecord[];
   notes: NoteRecord[];
   events: SessionEvent[];
@@ -312,6 +310,8 @@ export interface MigrationReport {
   migrated: boolean;
   from?: string | null;
   to?: string | null;
+  /** Files skipped because the destination already had a copy (dest-wins). */
+  conflicts?: number;
   error?: string | null;
 }
 

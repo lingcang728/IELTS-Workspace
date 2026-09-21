@@ -3,7 +3,7 @@
   "id": "cambridge-4-test-4-reading",
   "title": "Cambridge IELTS 4 Academic Test 4 Reading",
   "module": "reading",
-  "contentRevision": "repair-0017-3777284f",
+  "contentRevision": "repair-0002-0df4b20d",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -552,14 +552,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              11,
-              13
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 11 —13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:04:40.860840+00:00",
+            "note": "Printed page 112 has single-choice question 13 with 4 options (A-D), but fixture declares 8 empty options (A-H)."
           }
         }
       ]
@@ -678,14 +674,14 @@
         {
           "id": "c4t4r-g20",
           "instruction": "Choose TWO letters A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c4t4r-q20",
               "number": 20,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO statements about anthropology are mentioned by the writer of the text?",
+              "prompt": "First selected letter: Which TWO statements about anthropology are mentioned by the writer of the text?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -721,52 +717,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:51:30+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It is important for government planners."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "It is a continually growing field of study."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "It often involves long periods of fieldwork."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "It is subdivided for study purposes."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "It studies human evolutionary patterns."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T01:59:52.234630+00:00"
-          }
-        },
-        {
-          "id": "c4t4r-g21",
-          "instruction": "Choose TWO letters A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c4t4r-q21",
               "number": 21,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO statements about anthropology are mentioned by the writer of the text?",
+              "prompt": "Second selected letter: Which TWO statements about anthropology are mentioned by the writer of the text?",
               "acceptedAnswers": [
                 "E"
               ],
@@ -834,20 +790,24 @@
           "repairSource": {
             "kind": "overlay",
             "status": "corrected",
-            "reviewedAt": "2026-08-25T01:59:52.235138+00:00"
-          }
+            "reviewedAt": "2026-08-25T01:59:52.234630+00:00"
+          },
+          "acceptedAnswers": [
+            "D",
+            "E"
+          ]
         },
         {
           "id": "c4t4r-g22",
           "instruction": "Choose TWO letters A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c4t4r-q22",
               "number": 22,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO tasks of an archaeologist are mentioned by the writer of the text?",
+              "prompt": "First selected letter: Which TWO tasks of an archaeologist are mentioned by the writer of the text?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -883,52 +843,12 @@
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:51:30+00:00"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "examining ancient waste sites to investigate diet"
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "studying cave art to determine its significance"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "deducing reasons for the shape of domestic buildings"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "investigating the way different cultures make and use objects."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "examining evidence for past climate changes"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T02:00:31.683362+00:00"
-          }
-        },
-        {
-          "id": "c4t4r-g23",
-          "instruction": "Choose TWO letters A-E.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c4t4r-q23",
               "number": 23,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO tasks of an archaeologist are mentioned by the writer of the text?",
+              "prompt": "Second selected letter: Which TWO tasks of an archaeologist are mentioned by the writer of the text?",
               "acceptedAnswers": [
                 "D"
               ],
@@ -997,7 +917,11 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-25T02:00:31.683362+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "D"
+          ]
         },
         {
           "id": "c4t4r-g24",
@@ -1744,14 +1668,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              32,
-              35
-            ],
-            "canonicalOf": [
-              "Write the correct letter A, B or C in boxes 32 —35 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:05:33.288034+00:00",
+            "note": "Printed page 123 has classification question with 3 options (A-C), but fixture declares 8 empty options (A-H)."
           }
         },
         {

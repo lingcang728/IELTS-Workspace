@@ -626,14 +626,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              9,
-              13
-            ],
-            "canonicalOf": [
-              "Write the correct letter, A, B, C or D, in boxes 9-13 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:28.031953+00:00",
+            "note": "原书印刷页 64 的 Questions 9-13 人名匹配题（List of People）仅包含 A-D 四个人名选项，而工单声明了 A-H 8个选项标签，选项结构不匹配，无法补全 E-H。"
           }
         },
         {
@@ -1752,14 +1748,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              23
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 21-23 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:41.300243+00:00",
+            "note": "原书印刷页 68 的 Questions 21-23 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -1828,14 +1820,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              21,
-              23
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 21-23 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:41.300243+00:00",
+            "note": "原书印刷页 68 的 Questions 21-23 是单选题（Choose the correct letter, A, B, C or D.），各题自带独立 A-D 选项，不存在组级 A-H 选项列表。工单声明的组级 A-H 选项与原书不符。"
           }
         },
         {
@@ -1863,14 +1851,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              24,
-              26
-            ],
-            "canonicalOf": [
-              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:45.213193+00:00",
+            "note": "原书印刷页 69 的 Questions 24-26 是摘要填空题（Complete the summary below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
           }
         },
         {
@@ -1899,14 +1883,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              24,
-              26
-            ],
-            "canonicalOf": [
-              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:45.213193+00:00",
+            "note": "原书印刷页 69 的 Questions 24-26 是摘要填空题（Complete the summary below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
           }
         },
         {
@@ -1934,14 +1914,10 @@
           ],
           "sharedOptions": [],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              24,
-              26
-            ],
-            "canonicalOf": [
-              "Choose ONE WORD and/or A NUMBER from the passage for each answer."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:45.213193+00:00",
+            "note": "原书印刷页 69 的 Questions 24-26 是摘要填空题（Complete the summary below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
           }
         }
       ]
@@ -2751,7 +2727,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:57.324460+00:00",
+            "note": "原书印刷页 74 的 Questions 36-40 是判断题（YES/NO/NOT GIVEN），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
+          }
         },
         {
           "id": "c18t3r-g37",
@@ -2770,7 +2752,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:57.324460+00:00",
+            "note": "原书印刷页 74 的 Questions 36-40 是判断题（YES/NO/NOT GIVEN），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
+          }
         },
         {
           "id": "c18t3r-g38",
@@ -2789,7 +2777,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:57.324460+00:00",
+            "note": "原书印刷页 74 的 Questions 36-40 是判断题（YES/NO/NOT GIVEN），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
+          }
         },
         {
           "id": "c18t3r-g39",
@@ -2808,7 +2802,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:57.324460+00:00",
+            "note": "原书印刷页 74 的 Questions 36-40 是判断题（YES/NO/NOT GIVEN），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
+          }
         },
         {
           "id": "c18t3r-g40",
@@ -2827,7 +2827,13 @@
               "options": []
             }
           ],
-          "sharedOptions": []
+          "sharedOptions": [],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:57.324460+00:00",
+            "note": "原书印刷页 74 的 Questions 36-40 是判断题（YES/NO/NOT GIVEN），页面没有 A-H 选项列表。工单声明 single_choice 及 A-H 选项与原书题型不符。"
+          }
         }
       ]
     }

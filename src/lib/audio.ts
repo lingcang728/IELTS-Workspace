@@ -4,33 +4,14 @@ import type { AudioLibraryStatus } from "./types";
 export type MatchKind = "catalogHash" | "knownHash" | "filenameDuration" | "manual" | "confirmed" | "folderLayout";
 export type BindingMode = "fullTrack" | "parts";
 
-export interface CatalogEntry {
-  examId: string;
-  book: number;
-  test: number;
-  standardName: string;
-  sha256: string;
-  bytes: number;
-  durationMs: number;
-  partStartsMs: number[];
-  partDurationsMs: number[];
-}
-
-export interface AudioCatalog {
-  schemaVersion: number;
-  contentVersion: string;
-  releaseTag: string;
-  guideUrl: string;
-  expected: number;
-  entries: CatalogEntry[];
-}
-
 export interface ScannedPart {
   path: string;
   fileName: string;
   sha256: string;
   durationMs: number;
   format: string;
+  bytes: number;
+  modifiedMs: number;
 }
 
 export interface ExamImportRow {
@@ -38,6 +19,9 @@ export interface ExamImportRow {
   book: number;
   test: number;
   parts: Array<ScannedPart | null>;
+  /** Official whole-track file whose SHA-256 matched the built-in catalog;
+   *  `parts` stays empty for these rows. */
+  wholeTrack?: ScannedPart | null;
   status: "ready" | "missing_parts" | "conflict" | string;
   missingParts: number[];
   reason: string;
@@ -79,14 +63,6 @@ export interface PlaybackSource {
 
 export function listeningReady(status?: string) {
   return status !== "missing" && status !== "needsReview";
-}
-
-export async function audioLibraryStatus(): Promise<AudioLibraryStatus> {
-  return invoke("audio_library_status");
-}
-
-export async function audioCatalog(): Promise<AudioCatalog> {
-  return invoke("audio_catalog");
 }
 
 export async function audioPickFiles(): Promise<string[]> {

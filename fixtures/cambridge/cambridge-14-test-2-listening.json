@@ -879,12 +879,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              16,
-              20
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:51:22.167888+00:00",
+            "note": "原书印刷页34上Questions 16-20为Branley Castle平面图标注题（Label the plan below），A-H均为图中的位置标记，无独立文字选项列表，按规范予以flagged。"
           },
           "imageAsset": "assets/cambridge/c14-t2-listening-p0033.jpg"
         },

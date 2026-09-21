@@ -98,6 +98,13 @@ WATERMARKS = (
     "www.", "更多资料", "版权所有", "未经许可",
 )
 CHOICE_TYPES = {"single_choice", "multi_choice", "matching", "labelling"}
+# Scoring-encoding invariants (the "Choose N letters" defect class): the scorer
+# joins a multi-select array into one "B|C" token and compares whole-string,
+# while `per_question` scores every slot against its own acceptedAnswers. A
+# Choose-N item spread over several per_question boxes — or a multi_select
+# keyed as separate letters — can therefore never score a correct answer.
+# These are structural failures, not content damage, so they land in `errors`.
+CHOOSE_N_RE = re.compile(r"^\s*choose\s+(?:two|three|four|five)\s+letters?", re.I)
 MIN_AUDIO_SECONDS = 900
 # One legacy Cambridge recording (C14 Test 2) contains the long transfer
 # pauses between parts and is just over 40 minutes.  Keep the gate broad
@@ -282,6 +289,69 @@ def validate_exam(path: Path, root: Path, errors: list[str], damage: list[str], 
                 gap(f"group {gid}", "is a map/plan/diagram labelling group but no image is "
                                     "referenced — the letters live on a picture that was never "
                                     "extracted, so the question cannot be answered")
+            group_questions = group.get("questions") or []
+            policy = str(group.get("scoringPolicy") or "per_question")
+            if policy not in ("per_question", "in_either_order"):
+                add(errors, path, f"group {gid} has unknown scoringPolicy {policy!r}")
+            elif policy == "per_question":
+                # A Choose-N pool ("Choose TWO letters, A-E") must be one
+                # `in_either_order` group: the scorer consumes the group's
+                # shared answer set one slot per question. Under per_question
+                # every member instead compares against the *whole* set — the
+                # same letter in two slots scores twice, and two letters in
+                # one slot never match. That encoding silently corrupts
+                # scores, so it is an error.
+                if len(group_questions) > 1 and CHOOSE_N_RE.match(instruction):
+                    add(errors, path, f"group {gid} is a 'Choose N letters' item spread over "
+                                      f"{len(group_questions)} per_question slots — the boxes share "
+                                      f"one letter pool and must be a single in_either_order group")
+                multi = [q for q in group_questions
+                         if str(q.get("type") or group.get("questionType") or "") == "multi_choice"]
+                if len(multi) > 1:
+                    keys = {tuple(str(a) for a in (q.get("acceptedAnswers") or []))
+                            for q in multi}
+                    if len(keys) == 1:
+                        add(errors, path,
+                            f"group {gid} holds {len(multi)} multi_choice questions sharing one "
+                            f"acceptedAnswers set under per_question — a Choose-N pool must be "
+                            f"in_either_order")
+                for member in group_questions:
+                    mtype = str(member.get("type") or group.get("questionType") or "")
+                    keyed = [str(a).strip() for a in (member.get("acceptedAnswers") or [])
+                             if str(a).strip()]
+                    if mtype == "multi_choice" and len(keyed) > 1 and \
+                            all(SINGLE_LETTER_RE.fullmatch(a) for a in keyed):
+                        add(errors, path, f"question {member.get('number')} is a per_question "
+                                          f"multi_choice keyed {keyed} — the scorer expects one "
+                                          f"joined token like \"{'|'.join(sorted(keyed))}\"")
+            else:
+                if len(group_questions) < 2:
+                    gap(f"group {gid}", "is in_either_order with a single question slot")
+                elif not (group.get("sharedOptions") or []):
+                    # Scoring still works (answers are matched to the group
+                    # pool), but the runtime falls back to per-question
+                    # checkboxes instead of the shared letter picker.
+                    gap(f"group {gid}", "is in_either_order without a sharedOptions pool")
+                pool = [str(a).strip() for a in (group.get("acceptedAnswers") or [])
+                        if str(a).strip()]
+                if not pool:
+                    for member in group_questions:
+                        for a in member.get("acceptedAnswers") or []:
+                            s = str(a).strip()
+                            if s and s.lower() not in {p.lower() for p in pool}:
+                                pool.append(s)
+                if not pool:
+                    add(errors, path, f"group {gid} is in_either_order but carries no answer "
+                                      f"pool — every slot would silently score 0")
+                else:
+                    pool_lower = {p.lower() for p in pool}
+                    for member in group_questions:
+                        stray = [str(a).strip() for a in (member.get("acceptedAnswers") or [])
+                                 if str(a).strip() and str(a).strip().lower() not in pool_lower]
+                        if stray:
+                            add(errors, path, f"question {member.get('number')} in group {gid} "
+                                              f"keys {stray} outside the in_either_order pool "
+                                              f"{sorted(pool)}")
 
         def broken(message: str) -> None:
             add(damage, path, f"question {number} {message}")

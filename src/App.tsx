@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { listen } from "@tauri-apps/api/event";
 import {
-  analyticsReport, bootstrap, discardSession, importExam, loadExam, loadSession, mistakeAdd, mistakeList,
+  analyticsReport, archiveSession, bootstrap, discardSession, importExam, loadExam, loadSession, mistakeAdd, mistakeList,
   planGet, planSave, saveProfile, saveSession, scoreExam, vocabDue, vocabList,
 } from "./lib/api";
 import { buildReviewPrompt } from "./lib/reviewPrompt";
@@ -28,13 +29,18 @@ import { Intensive } from "./pages/Intensive";
 import { PromptStudio } from "./pages/PromptStudio";
 import { AudioCenter } from "./pages/AudioCenter";
 import { AudioWizard } from "./components/AudioWizard";
-import { listeningReady, audioOpenGuide, audioRemoveBinding } from "./lib/audio";
+import { listeningReady, audioOpenGuide, audioRemoveBinding, audioRepairBindings } from "./lib/audio";
 import { mistakesFromReport } from "./lib/mistakes";
 import { generatePlan } from "./lib/plan";
 import { checkForDesktopUpdate } from "./lib/updateService";
 
 function applyUi(theme: UiTheme) {
   document.documentElement.dataset.ui = theme;
+  // Cache the choice so the next launch can restore it before bootstrap
+  // resolves — otherwise light-mode users get a frame of the dark default.
+  try {
+    window.localStorage.setItem("ielts.ui.theme", theme);
+  } catch { /* storage may be unavailable; theme still applies live */ }
 }
 
 /**
@@ -54,7 +60,10 @@ export function App() {
   const [busy, setBusy] = useState(false);
   const [importText, setImportText] = useState("");
   const [recovery, setRecovery] = useState<SessionSummary[]>([]);
-  const [toast, setToast] = useState<string | null>(null);
+  const [toast, setToast] = useState<{ text: string; error?: boolean } | null>(null);
+  // First-launch migration of a large sidecar data tree takes minutes; without
+  // this the splash looks identical to a hang while bootstrap blocks on it.
+  const [migrateProgress, setMigrateProgress] = useState<{ dir: string; done: number; total: number } | null>(null);
   const [plan, setPlan] = useState<StudyPlan | null>(null);
   const [vocab, setVocab] = useState<VocabCard[]>([]);
   const [openMistakes, setOpenMistakes] = useState(0);
@@ -65,11 +74,28 @@ export function App() {
     mode: "mock" | "practice";
     open: SessionSummary;
   } | null>(null);
+  const [busyLabel, setBusyLabel] = useState("正在处理…");
+  // Latest in-exam session snapshot, for a final save if the runtime crashes.
+  const sessionLiveRef = useRef<Session | null>(null);
+  const toastTimer = useRef<number | null>(null);
+  const analyticsSeq = useRef(0);
 
-  function flash(message: string) {
-    setToast(message);
-    window.setTimeout(() => setToast(null), 2200);
+  const handleSession = useCallback((s: Session) => {
+    sessionLiveRef.current = s;
+    setSession(s);
+  }, []);
+
+  function flash(message: string, error = false) {
+    setToast({ text: message, error });
+    if (toastTimer.current) window.clearTimeout(toastTimer.current);
+    toastTimer.current = window.setTimeout(() => setToast(null), 2200);
   }
+
+  useEffect(() => {
+    return () => {
+      if (toastTimer.current) window.clearTimeout(toastTimer.current);
+    };
+  }, []);
 
   async function reload() {
     const raw = await bootstrap();
@@ -82,16 +108,32 @@ export function App() {
   }
 
   useEffect(() => {
-    applyUi("dark");
+    let active = true;
+    let unlisten: (() => void) | undefined;
+    listen<{ dir: string; done: number; total: number }>("bootstrap-progress", (event) => {
+      if (active) setMigrateProgress(event.payload);
+    }).then((fn) => {
+      if (!active) fn();
+      else unlisten = fn;
+    });
     void reload().catch((e) => setError(String(e)));
     void checkForDesktopUpdate(false);
+    return () => {
+      active = false;
+      unlisten?.();
+    };
   }, []);
 
   // The range filter is a real filter: analytics_report re-reads the sessions
   // for the requested window rather than the frontend hiding rows.
   useEffect(() => {
     if (!boot) return;
-    void analyticsReport(rangeDays).then(setAnalytics).catch(() => setAnalytics(null));
+    // Out-of-order guard: a slow report for an older range must not overwrite
+    // a newer one that already came back.
+    const seq = ++analyticsSeq.current;
+    void analyticsReport(rangeDays)
+      .then((report) => { if (seq === analyticsSeq.current) setAnalytics(report); })
+      .catch(() => { if (seq === analyticsSeq.current) setAnalytics(null); });
   }, [boot, rangeDays]);
 
   // The study-tool counters feed the workbench's "what to do today" panel, so
@@ -125,8 +167,15 @@ export function App() {
   async function updateProfile(patch: Partial<Profile>) {
     const next: Profile = { ...(boot?.profile ?? {}), ...patch };
     if (next.theme) applyUi(next.theme);
-    await saveProfile(next);
-    await reload();
+    try {
+      await saveProfile(next);
+    } catch (e) {
+      flash(`设置保存失败：${String(e)}`, true);
+      return;
+    }
+    // Everything that reads the profile reads boot.profile, so a full
+    // bootstrap reload is unnecessary — and it stalls the UI ~1s per change.
+    setBoot((prev) => (prev ? { ...prev, profile: next } : prev));
   }
 
   function addAudio(examId?: string) {
@@ -171,12 +220,13 @@ export function App() {
   }
 
   async function abandonAndStart(summary: ExamSummary, mode: "mock" | "practice", openId: string) {
+    setBusyLabel("正在放弃旧记录…");
     setBusy(true);
     try {
       await discardSession(openId);
       await reload();
     } catch (e) {
-      setError(String(e));
+      flash(`放弃旧记录失败：${String(e)}`, true);
       setBusy(false);
       return;
     }
@@ -190,6 +240,7 @@ export function App() {
       addAudio(summary.id);
       return;
     }
+    setBusyLabel("正在准备试卷…");
     setBusy(true);
     try {
       const ex = await loadExam(summary.id);
@@ -208,9 +259,12 @@ export function App() {
       await saveSession(sess);
       setExam(ex);
       setSession(sess);
+      sessionLiveRef.current = sess;
       setView("exam");
     } catch (e) {
-      setError(String(e));
+      // A broken paper or a failed first save is a per-exam failure, not a
+      // boot failure — keep it in-page instead of the startup error screen.
+      flash(`无法开考：${String(e)}`, true);
     } finally {
       setBusy(false);
     }
@@ -218,6 +272,7 @@ export function App() {
 
   async function continueSession(id: string) {
     if (busy) return;
+    setBusyLabel("正在恢复会话…");
     setBusy(true);
     try {
       const sess = await loadSession(id);
@@ -229,24 +284,43 @@ export function App() {
         await reload();
         return;
       }
-      const next = { ...sess, integrity: "interrupted" as const, status: "in_progress" as const, examRevision: ex.contentRevision ?? sess.examRevision };
+      // A deliberate Save-and-exit / window close writes a trailing "pause"
+      // event; anything else means the session was cut off mid-write and keeps
+      // (or earns) the interrupted flag instead of marking every resume.
+      const cleanExit = sess.events?.at(-1)?.type === "pause";
+      const next = {
+        ...sess,
+        integrity: (sess.integrity === "interrupted" || !cleanExit ? "interrupted" : "clean") as Session["integrity"],
+        status: "in_progress" as const,
+        examRevision: ex.contentRevision ?? sess.examRevision,
+      };
       await saveSession(next);
       setExam(ex);
       setSession(next);
+      sessionLiveRef.current = next;
       setView("exam");
       setRecovery([]);
     } catch (e) {
-      setError(String(e));
+      flash(`无法恢复会话：${String(e)}`, true);
     } finally {
       setBusy(false);
     }
   }
 
   async function openHistory(id: string) {
-    const sess = await loadSession(id);
-    const ex = await loadExam(sess.examId);
+    let sess: Session;
+    let ex: Exam;
+    try {
+      sess = await loadSession(id);
+      ex = await loadExam(sess.examId);
+    } catch (e) {
+      // A corrupt session JSON or a deleted exam used to fail silently here.
+      flash(`无法打开这条记录：${String(e)}`, true);
+      return;
+    }
     setExam(ex);
     setSession(sess);
+    sessionLiveRef.current = sess;
     if (sess.status === "submitted" && ex.module !== "writing") {
       const answers: Record<string, unknown> = {};
       for (const [qid, answer] of Object.entries(sess.answers)) answers[qid] = answer.value;
@@ -276,11 +350,11 @@ export function App() {
     try {
       await navigator.clipboard.writeText(buildReviewPrompt(exam, session, report));
       flash("批改 Prompt 已复制");
-    } catch { flash("复制失败，请手动选中文本"); }
+    } catch { flash("复制失败，请手动选中文本", true); }
   }
 
   if (error) return <div className="boot-screen"><div className="error-panel"><BrandMark size={52} /><h1>启动遇到问题</h1><p>{error}</p><button type="button" onClick={() => location.reload()}>重新加载</button></div></div>;
-  if (!boot) return <div className="boot-screen"><BrandMark size={64} /><div className="loading-line"><i /></div><span>正在打开本地工作区…</span></div>;
+  if (!boot) return <div className="boot-screen"><BrandMark size={64} /><div className="loading-line"><i /></div><span>{migrateProgress ? `正在迁移旧版数据 ${migrateProgress.dir}（${migrateProgress.done}/${migrateProgress.total}）…` : "正在打开本地工作区…"}</span></div>;
   if (!boot.probe.ok) return <div className="boot-screen"><div className="error-panel"><h1>无法安全启动</h1><p>{boot.probe.error || "当前目录不可写，无法安全保存考试数据。"}</p><small>程序：{boot.probe.appRoot}<br />数据：{boot.probe.dataRoot}</small></div></div>;
   const theme: UiTheme = boot.profile?.theme === "light" ? "light" : "dark";
 
@@ -298,7 +372,18 @@ export function App() {
       );
     }
     return (
-      <ErrorBoundary fallbackTitle="考场运行遇到异常" onReset={() => setView("home")}>
+      <ErrorBoundary
+        fallbackTitle="考场运行遇到异常"
+        onReset={() => {
+          // Last-ditch save: the debounced writer may hold a few hundred ms of
+          // unsaved answers when the runtime crashes.
+          const latest = sessionLiveRef.current;
+          if (latest && latest.status !== "submitted") {
+            void saveSession(latest).catch(() => undefined);
+          }
+          setView("home");
+        }}
+      >
         <ExamApp
           key={session.id}
           exam={exam}
@@ -306,8 +391,9 @@ export function App() {
           shellTheme={theme}
           practiceScheme={(boot.profile?.practiceScheme ?? "follow_shell") as PracticeScheme}
           onPracticeScheme={(scheme) => void updateProfile({ practiceScheme: scheme })}
-          onSession={setSession}
+          onSession={handleSession}
           onExit={(s, r) => {
+            sessionLiveRef.current = s;
             setSession(s);
             setReport(r ?? null);
             setView("results");
@@ -317,10 +403,11 @@ export function App() {
             // exam+question so a re-do updates the row instead of adding a second.
             if (r) {
               const entries = mistakesFromReport(exam, r);
-              if (entries.length) void mistakeAdd(entries).catch(() => undefined);
+              if (entries.length) void mistakeAdd(entries).catch((e) => flash(`错题收录失败：${String(e)}`, true));
             }
           }}
           onLeave={(s) => {
+            sessionLiveRef.current = s;
             setSession(s);
             setReport(null);
             setView(s.mode === "practice" ? "practice" : "mock");
@@ -340,37 +427,62 @@ export function App() {
           <Sidebar view={view} setView={setView} />
           <main className="workspace-main">
             {boot.probe.warning && <div className="notice-strip"><Icon name="info" size={16} />{boot.probe.warning}</div>}
-            {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} onDismissGuide={() => void updateProfile({ audioGuideDismissed: true })} onAddAudio={() => addAudio()} />}
+            {view === "home" && <Workbench boot={boot} analytics={analytics} busy={busy} onStart={startExam} onView={setView} rangeDays={rangeDays} plan={plan} openMistakes={openMistakes} dueVocab={dueVocab} onRebuildPlan={() => void rebuildPlan()} onDismissGuide={() => void updateProfile({ audioGuideDismissed: true })} onAddAudio={() => addAudio()} onContinue={(id) => void continueSession(id)} />}
             {view === "practice" && <PracticeCenter exams={boot.exams} sessions={boot.sessions} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
             {view === "mock" && <MockCenter exams={boot.exams} sessions={boot.sessions} recovery={recovery} busy={busy} onStart={startExam} onRetake={retakeExam} onContinue={continueSession} onView={setView} />}
             {view === "analytics" && <AnalyticsPage report={analytics} rangeDays={rangeDays} onRangeDays={setRangeDays} />}
-            {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else flash("找不到这套试卷，无法重考"); }} />}
+            {view === "history" && <History sessions={boot.sessions} onOpen={(id) => void openHistory(id)} onRetake={(row) => { const found = boot.exams.find((exam) => exam.id === row.examId); if (found) void retakeExam(found, row.mode); else flash("找不到这套试卷，无法重考", true); }} onArchive={(id) => void archiveSession(id).then(reload).then(() => flash("已归档：文件移到数据目录 sessions/archive/，需要时可从那里恢复")).catch((e) => flash(`归档失败：${String(e)}`, true))} />}
             {view === "import" && <ImportPage value={importText} onChange={setImportText} busy={busy} onImport={async () => {
-              await importExam(importText);
-              await reload();
-              flash("试卷已导入");
-              setImportText("");
-              setView("practice");
+              if (busy) return;
+              setBusyLabel("正在导入试卷…");
+              setBusy(true);
+              try {
+                await importExam(importText);
+                await reload();
+                flash("试卷已导入");
+                setImportText("");
+                setView("practice");
+              } finally {
+                setBusy(false);
+              }
             }} />}
             {view === "settings" && <Settings profile={boot.profile} theme={theme} probe={boot.probe} onProfile={(patch) => void updateProfile(patch)} onImport={() => setView("import")} />}
-            {view === "mistakes" && <Mistakes onPractise={() => setView("practice")} />}
+            {view === "mistakes" && <Mistakes onPractise={(row) => {
+              // "Practice that type" means the paper the mistake came from —
+              // there is no per-type question pool, so landing on the bare
+              // practice centre would just drop the parameter.
+              const found = boot.exams.find((e) => e.id === row.examId);
+              if (found) void retakeExam(found, "practice");
+              else flash("找不到这套试卷，无法练习", true);
+            }} />}
             {view === "vocab" && <Vocab />}
             {view === "intensive" && <Intensive exams={boot.exams} />}
             {view === "studio" && <PromptStudio vocab={vocab} />}
-            {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => flash(String(e)))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => flash(String(e)))} />}
+            {view === "audio" && <AudioCenter exams={boot.exams} onAdd={addAudio} onOpenGuide={() => void audioOpenGuide().catch((e) => flash(String(e), true))} onRemove={(id) => void audioRemoveBinding(id).then(reload).catch((e) => flash(String(e), true))} onRepair={() => void audioRepairBindings().then(reload).then(() => flash("已清理失效的音频绑定")).catch((e) => flash(String(e), true))} />}
             {view === "results" && (session ? (
-              <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} onRetake={() => { const found = boot.exams.find((row) => row.id === session.examId); if (found) void retakeExam(found, session.mode); else flash("找不到这套试卷，无法重考"); }} />
+              <Results session={session} report={report} exam={exam} profile={boot.profile} onCopy={() => void copyPrompt()} onHome={() => { setView("home"); setReport(null); }} onRetake={() => { const found = boot.exams.find((row) => row.id === session.examId); if (found) void retakeExam(found, session.mode); else flash("找不到这套试卷，无法重考", true); }} />
             ) : (
-              <div className="empty-wrap"><p className="meta">未选择考卷会话</p><button type="button" onClick={() => setView("home")}>返回工作台</button></div>
+              <div className="empty-state compact"><p className="meta">未选择考卷会话</p><button type="button" className="secondary-button" onClick={() => setView("home")}>返回工作台</button></div>
             ))}
           </main>
         </div>
-        <div className="toast-region">{toast && <div className="toast"><Icon name="check" size={17} />{toast}</div>}</div>
-        {busy && <div className="busy-indicator" role="status"><i /><span>正在准备试卷…</span></div>}
+        <div className="toast-region" role="status">{toast && <div className={`toast${toast.error ? " error" : ""}`}><Icon name={toast.error ? "info" : "check"} size={17} />{toast.text}</div>}</div>
+        {busy && <div className="busy-indicator" role="status"><i /><span>{busyLabel}</span></div>}
         {audioWizard !== undefined && <AudioWizard targetExamId={audioWizard} onClose={() => setAudioWizard(undefined)} onDone={() => { setAudioWizard(undefined); void reload(); flash("听力音频已添加"); }} />}
         {pendingStart && (
-          <div className="audio-wizard-backdrop" role="dialog" aria-modal="true" aria-labelledby="pending-start-title">
-            <div className="audio-wizard">
+          <div
+            className="audio-wizard-backdrop"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="pending-start-title"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) setPendingStart(null);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Escape") setPendingStart(null);
+            }}
+          >
+            <div className="audio-wizard compact">
               <h2 id="pending-start-title">这套题还有未完成记录</h2>
               <p className="meta">已提交的历史不会被删除。未完成的会话只能继续，或明确放弃后再新开。</p>
               <div className="button-row">

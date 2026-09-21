@@ -31,7 +31,7 @@
 | `src-tauri/tauri.conf.json` | `version` |
 | git tag | `v<version>`，例如 `v1.1.0` |
 
-改版本号时四个一起改，不要只改一个然后指望别人发现。
+`check_release_hygiene.py` 额外强制 `site/package.json` 和 `package-lock.json`（顶层与 `packages[""]` 两处）同版——改版本号时这两处也要一起改，lock 漂移不会让 npm 自己跟上。
 
 ---
 
@@ -123,7 +123,7 @@ GitHub Free/Pro 的 LFS 配额是 10 GiB 存储 + 10 GiB/月流量；当前媒�
 
 | 域 | 范围 | 规则 |
 |---|---|---|
-| **App 外壳** | 工作台 / 练习 / 模考 / 分析 / 历史 / 设置 | kami 纸感暖色，深浅双模式 |
+| **App 外壳** | 工作台 / 练习 / 模考 / 分析 / 历史 / 设置 | 蓝色系（v1.3.5 已撤回纸感暖色），深浅双模式 |
 | **考场 Runtime** | 答题界面 | **固定浅色官方风**，不跟随主题 |
 
 `src/styles/exam.css` **只准**读 `--exam-*` token。里面出现一个 `var(--blue)` 或 `var(--ink)`，考场就会跟着外壳变深色——这正是它之前跑偏的方式。

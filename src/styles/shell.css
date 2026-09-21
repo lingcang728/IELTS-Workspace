@@ -41,10 +41,6 @@
 .page-heading p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
 .page-heading p em { color: var(--ink); font-style: normal; font-weight: 600; }
 .eyebrow { display: block; margin-bottom: 5px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .16em; }
-.page-heading blockquote { margin: 1px 9px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
-.page-heading blockquote cite { display: block; margin-top: 4px; color: var(--muted-2); font-style: normal; text-align: right; }
-.wave-mark { display: inline-block; margin-left: 3px; font-size: .9em; transform: translateY(-1px); }
-
 .workspace-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
 .card-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .card-heading h2, .workspace-card h2 { margin: 0; font-size: 16px; font-weight: 650; }
@@ -105,6 +101,8 @@
 
 .toast-region { position: fixed; right: 24px; bottom: 24px; z-index: 90; }
 .toast { display: flex; align-items: center; gap: 9px; padding: 11px 14px; border: 1px solid var(--positive); border-radius: 6px; background: var(--positive-soft); color: var(--ink); box-shadow: var(--shadow); font-size: 13px; }
+.toast.error { border-color: var(--danger); background: var(--danger-soft); }
+.toast.error .ui-icon { color: var(--danger); }
 .busy-indicator { position: fixed; top: 48px; right: 18px; z-index: 100; display: flex; align-items: center; gap: 9px; padding: 9px 13px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--panel); color: var(--ink-soft); box-shadow: var(--shadow); font-size: 12px; }
 .busy-indicator i { width: 13px; height: 13px; border: 2px solid var(--line-strong); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }

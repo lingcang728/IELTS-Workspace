@@ -3,7 +3,7 @@
   "id": "cambridge-4-test-2-reading",
   "title": "Cambridge IELTS 4 Academic Test 2 Reading",
   "module": "reading",
-  "contentRevision": "repair-0013-84ca1a7b",
+  "contentRevision": "repair-0003-f1134cdd",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -905,14 +905,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              15
-            ],
-            "canonicalOf": [
-              "Write your answers in boxes 14 and 15 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:03:28.283207+00:00",
+            "note": "Printed page 51 has single-choice question 15 with 4 options (A-D), but fixture declares 8 empty options (A-H)."
           }
         },
         {
@@ -1813,19 +1809,14 @@
         {
           "id": "c4t2r-g33",
           "instruction": "Choose THREE letters A-F.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c4t2r-q33",
               "number": 33,
               "type": "multi_choice",
-              "prompt": "First answer: Which THREE ways are mentioned by the writer of the text?",
-              "acceptedAnswers": [
-                "A",
-                "C",
-                "F"
-              ],
+              "prompt": "First selected letter: Which THREE ways are mentioned by the writer of the text?",
               "options": [
                 {
                   "id": "A",
@@ -1862,63 +1853,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:49:21+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "a rehearsal for later adult activities"
+              },
+              "acceptedAnswers": [
+                "A"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "a method animals use to prove themselves to their peer group"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "an activity intended to build up strength for adulthood"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "a means of communicating feelings"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "a defensive strategy"
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "an activity assisting organ growth"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T01:53:52.795842+00:00"
-          }
-        },
-        {
-          "id": "c4t2r-g34",
-          "instruction": "Choose THREE letters A-F.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c4t2r-q34",
               "number": 34,
               "type": "multi_choice",
-              "prompt": "Second answer: Which THREE ways are mentioned by the writer of the text?",
-              "acceptedAnswers": [
-                "A",
-                "C",
-                "F"
-              ],
+              "prompt": "Second selected letter: Which THREE ways are mentioned by the writer of the text?",
               "options": [
                 {
                   "id": "A",
@@ -1955,63 +1899,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:49:21+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "a rehearsal for later adult activities"
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "a method animals use to prove themselves to their peer group"
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "an activity intended to build up strength for adulthood"
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "a means of communicating feelings"
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "a defensive strategy"
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "an activity assisting organ growth"
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T01:53:52.795842+00:00"
-          }
-        },
-        {
-          "id": "c4t2r-g35",
-          "instruction": "Choose THREE letters A-F.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c4t2r-q35",
               "number": 35,
               "type": "multi_choice",
-              "prompt": "Third answer: Which THREE ways are mentioned by the writer of the text?",
-              "acceptedAnswers": [
-                "A",
-                "C",
-                "F"
-              ],
+              "prompt": "Third selected letter: Which THREE ways are mentioned by the writer of the text?",
               "options": [
                 {
                   "id": "A",
@@ -2048,7 +1945,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:49:21+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "F"
+              ]
             }
           ],
           "sharedOptions": [
@@ -2087,7 +1987,12 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-25T01:53:52.795842+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "A",
+            "C",
+            "F"
+          ]
         },
         {
           "id": "c4t2r-g36",

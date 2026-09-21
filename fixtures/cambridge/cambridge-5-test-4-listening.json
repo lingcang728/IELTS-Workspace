@@ -814,7 +814,13 @@
               "label": "C",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:40.055244+00:00",
+            "note": "页面 printed page 81 印的是 Questions 25-27（3选1 A-C）。fixture 错误声明了 A-H 共 8 个空选项且说明为占位符，属于选项结构缺陷，需要结构修复。"
+          }
         },
         {
           "id": "c5t4l-g26",
@@ -870,7 +876,13 @@
               "label": "C",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:40.055244+00:00",
+            "note": "页面 printed page 81 印的是 Questions 25-27（3选1 A-C）。fixture 错误声明了 A-H 共 8 个空选项且说明为占位符，属于选项结构缺陷，需要结构修复。"
+          }
         },
         {
           "id": "c5t4l-g27",
@@ -926,7 +938,13 @@
               "label": "C",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:40.055244+00:00",
+            "note": "页面 printed page 81 印的是 Questions 25-27（3选1 A-C）。fixture 错误声明了 A-H 共 8 个空选项且说明为占位符，属于选项结构缺陷，需要结构修复。"
+          }
         },
         {
           "id": "c5t4l-g28",
@@ -1012,7 +1030,13 @@
               "label": "F",
               "text": "it has strong managers"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:40.055244+00:00",
+            "note": "页面 printed page 82 印的是 Questions 28-30（从 A-F 6个选项框匹配）。fixture 错误声明了 A-H 共 8 个空选项且说明为占位符，属于选项结构缺陷，需要结构修复。"
+          }
         },
         {
           "id": "c5t4l-g29",
@@ -1098,7 +1122,13 @@
               "label": "F",
               "text": "it has strong managers"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:40.055244+00:00",
+            "note": "页面 printed page 82 印的是 Questions 28-30（从 A-F 6个选项框匹配）。fixture 错误声明了 A-H 共 8 个空选项且说明为占位符，属于选项结构缺陷，需要结构修复。"
+          }
         },
         {
           "id": "c5t4l-g30",
@@ -1184,7 +1214,13 @@
               "label": "F",
               "text": "it has strong managers"
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:53:40.055244+00:00",
+            "note": "页面 printed page 82 印的是 Questions 28-30（从 A-F 6个选项框匹配）。fixture 错误声明了 A-H 共 8 个空选项且说明为占位符，属于选项结构缺陷，需要结构修复。"
+          }
         }
       ],
       "audioStartMs": 763275,
@@ -1317,12 +1353,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              31,
-              36
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:40:48.688407+00:00",
+            "note": "页面 Questions 31-36 的选项实际只有 A-C；工单 optionLabels 错列为 A-H，结构不符，无法按 A-H 转写。"
           }
         },
         {
@@ -1442,12 +1476,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              31,
-              36
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:40:48.688407+00:00",
+            "note": "页面 Questions 31-36 的选项实际只有 A-C；工单 optionLabels 错列为 A-H，结构不符，无法按 A-H 转写。"
           }
         },
         {
@@ -1506,12 +1538,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              31,
-              36
-            ],
-            "canonicalOf": null
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T15:40:48.688407+00:00",
+            "note": "页面 Questions 31-36 的选项实际只有 A-C；工单 optionLabels 错列为 A-H，结构不符，无法按 A-H 转写。"
           }
         },
         {

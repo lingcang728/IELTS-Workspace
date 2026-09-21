@@ -3,7 +3,7 @@
   "id": "cambridge-17-test-4-reading",
   "title": "Cambridge IELTS 17 Academic Test 4 Reading",
   "module": "reading",
-  "contentRevision": "repair-0020-1de9ef10",
+  "contentRevision": "repair-0004-c39b2441",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -491,14 +491,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Reading Passage2has six sections, A-F."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:32.906584+00:00",
+            "note": "Page 87 contains a Which section contains the following information? matching task (Questions 14-18) matching to sections A-F of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -587,14 +583,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Reading Passage2has six sections, A-F."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:32.906584+00:00",
+            "note": "Page 87 contains a Which section contains the following information? matching task (Questions 14-18) matching to sections A-F of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -683,14 +675,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Reading Passage2has six sections, A-F."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:32.906584+00:00",
+            "note": "Page 87 contains a Which section contains the following information? matching task (Questions 14-18) matching to sections A-F of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -779,14 +767,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Reading Passage2has six sections, A-F."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:32.906584+00:00",
+            "note": "Page 87 contains a Which section contains the following information? matching task (Questions 14-18) matching to sections A-F of the passage; there is no standalone option list with text."
           }
         },
         {
@@ -989,18 +973,14 @@
         {
           "id": "c17t4r-g23",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t4r-q23",
               "number": 23,
               "type": "multi_choice",
               "prompt": "First selected letter: Which TWO of the following statements does the writer make about literacy rates in Section B?",
-              "acceptedAnswers": [
-                "B",
-                "E"
-              ],
               "gapText": "____",
               "options": [
                 {
@@ -1033,35 +1013,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:08+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              23,
-              24
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 23 and24 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c17t4r-g24",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c17t4r-q24",
               "number": 24,
               "type": "multi_choice",
               "prompt": "Second selected letter: Which TWO of the following statements does the writer make about literacy rates in Section B?",
-              "acceptedAnswers": [
-                "B",
-                "E"
-              ],
               "gapText": "____",
               "options": [
                 {
@@ -1094,7 +1055,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:08+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "repairSource": {
@@ -1106,23 +1070,50 @@
             "canonicalOf": [
               "Write the correct letters in boxes 23 and24 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "E"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Very little research has been done into the link between high literacy rates and improved earnings."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "Literacy rates in Germany between 1600 and 1900 were very good."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "There is strong evidence that high literacy rates in the modern world result in economic growth."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "England is a good example of how high literacy rates helped a country industrialise."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Economic growth can help to improve literacy rates."
+            }
+          ]
         },
         {
           "id": "c17t4r-g25",
           "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c17t4r-q25",
               "number": 25,
               "type": "multi_choice",
               "prompt": "First selected letter: Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
               "gapText": "____",
               "options": [
                 {
@@ -1155,35 +1146,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:08+00:00"
-              }
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              25,
-              26
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 25 and 26 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c17t4r-g26",
-          "instruction": "Choose TWO letters, A-E.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
+              },
+              "acceptedAnswers": [
+                "B"
+              ]
+            },
             {
               "id": "c17t4r-q26",
               "number": 26,
               "type": "multi_choice",
               "prompt": "Second selected letter: Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?",
-              "acceptedAnswers": [
-                "B",
-                "D"
-              ],
               "gapText": "____",
               "options": [
                 {
@@ -1216,7 +1188,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T05:43:08+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "D"
+              ]
             }
           ],
           "repairSource": {
@@ -1228,7 +1203,38 @@
             "canonicalOf": [
               "Write the correct letters in boxes 25 and 26 on your answer sheet."
             ]
-          }
+          },
+          "acceptedAnswers": [
+            "B",
+            "D"
+          ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "They helped young people to learn a skill."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "They were opposed to people moving to an area for work."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "They kept better records than guilds in other parts of the world."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "They opposed practices that threatened their control over a trade."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "They predominantly consisted of wealthy merchants."
+            }
+          ]
         }
       ]
     },

@@ -3,6 +3,7 @@ import { assetSrc, saveSession, scoreExam, vocabAdd } from "../lib/api";
 import { audioPlaybackSource, localMediaSrc, type PlaybackSource } from "../lib/audio";
 import { BrandMark, Icon, WindowControls } from "../components/Ui";
 import { applyMarks, makeHighlight, rangeToUtf16, recoverHighlight } from "../lib/highlight";
+import { clearCloseFlush, registerCloseFlush } from "../lib/closeFlush";
 import { toNfc } from "../lib/unicode";
 import type {
   Exam,
@@ -14,6 +15,7 @@ import type {
 } from "../lib/types";
 import type { UiTheme } from "../lib/view";
 import { allQuestions, sectionForQuestion } from "../lib/types";
+import { unansweredCount } from "../lib/reviewPrompt";
 import { clampPlaybackTime, timerWarningState } from "../lib/examRuntime";
 import { QuestionGroupView } from "./questions";
 
@@ -76,6 +78,7 @@ function ExamClock({
   mediaCheckMs,
   laterTracksMs,
   timeWarningsMs,
+  audioFailed = false,
 }: {
   variant: "timer" | "writing";
   wordCount?: number;
@@ -85,6 +88,7 @@ function ExamClock({
   mediaCheckMs: number;
   laterTracksMs: number;
   timeWarningsMs: number[];
+  audioFailed?: boolean;
 }) {
   const compute = useCallback(() => {
     const vis = readVisibleRemainingMs(sessionRef, audioRef, listeningMediaClock, mediaCheckMs, laterTracksMs);
@@ -95,12 +99,20 @@ function ExamClock({
   }, [sessionRef, audioRef, listeningMediaClock, mediaCheckMs, laterTracksMs, timeWarningsMs]);
 
   const [view, setView] = useState(compute);
+  // Screen readers get a one-shot announcement when a warning threshold is
+  // crossed — a live region on the 250ms ticker would narrate non-stop.
+  const [warnAnnounce, setWarnAnnounce] = useState("");
 
   useEffect(() => {
     setView(compute());
     const id = window.setInterval(() => setView(compute()), 250);
     return () => window.clearInterval(id);
   }, [compute]);
+
+  useEffect(() => {
+    if (view.warn) setWarnAnnounce(`Warning: ${fmt(view.ms)} remaining`);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [view.warn]);
 
   if (variant === "writing") {
     return (
@@ -114,9 +126,10 @@ function ExamClock({
   return (
     <div className="timer-stack">
       <span>Time remaining</span>
-      <div className={`timer${view.warn ? " warn" : ""}${view.flash ? " flash" : ""}`} aria-live="polite">
-        {view.loading ? "Loading…" : fmt(view.ms)}
+      <div className={`timer${view.warn ? " warn" : ""}${view.flash ? " flash" : ""}`} aria-live="off">
+        {view.loading ? (audioFailed ? "No audio" : "Loading…") : fmt(view.ms)}
       </div>
+      <span className="sr-only" role="status">{warnAnnounce}</span>
     </div>
   );
 }
@@ -211,7 +224,18 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   const persistTimer = useRef<number | null>(null);
   const lastWarn = useRef<number>(0);
   const submittingRef = useRef(false);
-  const [splitPercent, setSplitPercent] = useState<number>(50);
+  // Autosave merge: the debounce, the 5s tick, blur/visibilitychange and the
+  // failure retry can all fire inside one write's flight time. Rather than
+  // letting them queue up as separate fsync storms, a trigger that arrives
+  // mid-write just marks dirty and the landing write re-saves once.
+  const saveInFlight = useRef(false);
+  const saveDirty = useRef(false);
+  // Bounds the failure retry: one fast retry per failure streak (the 5s tick
+  // remains the standing retry), reset when a write lands. Without it a
+  // persistently unwritable file would retry every 1.5s forever.
+  const saveRetried = useRef(false);
+  // Writing starts at the designed 38/62 prompt/answer split; reading at 50/50.
+  const [splitPercent, setSplitPercent] = useState<number>(exam.module === "writing" ? 38 : 50);
   const isDraggingGutter = useRef(false);
   const gutterCleanup = useRef<(() => void) | null>(null);
   const audioLockSec = useRef(0);
@@ -221,6 +245,27 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     sessionRef.current = mergeLiveSession(sessionRef.current, session);
     parentSessionRef.current = session;
   }
+  // Parent callbacks are inline lambdas in App.tsx — keeping them on refs
+  // stops `submit`/`leave` from changing identity on every answer patch, which
+  // would rebuild the countdown interval on every keystroke.
+  const onExitRef = useRef(onExit);
+  onExitRef.current = onExit;
+  const onLeaveRef = useRef(onLeave);
+  onLeaveRef.current = onLeave;
+  const ctxMenuRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const dialogPrevFocus = useRef<HTMLElement | null>(null);
+  const examToastTimer = useRef<number | null>(null);
+  const [examToast, setExamToast] = useState<string | null>(null);
+  const [audioError, setAudioError] = useState<string | null>(null);
+  const [volume, setVolume] = useState(() => {
+    try {
+      const stored = Number(window.localStorage.getItem("ielts.exam.volume"));
+      return Number.isFinite(stored) && stored >= 0 && stored <= 1 ? stored : 1;
+    } catch {
+      return 1;
+    }
+  });
 
   // Cleanup audio decoders and media buffers when leaving exam runtime.
   // Read refs inside cleanup so a later-assigned preload element is released.
@@ -230,6 +275,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       if (persistTimer.current) {
         window.clearTimeout(persistTimer.current);
         persistTimer.current = null;
+      }
+      if (examToastTimer.current) {
+        window.clearTimeout(examToastTimer.current);
+        examToastTimer.current = null;
       }
       const a1 = audioRef.current;
       const a2 = nextAudioRef.current;
@@ -250,7 +299,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     const p = { ...exam.policy };
     if (session.mode === "practice") {
       p.pauseAllowed = true;
-      p.audioSeekAllowed = exam.module !== "listening" ? true : true;
+      p.audioSeekAllowed = true;
       p.forceSubmit = false;
     } else {
       p.pauseAllowed = false;
@@ -279,9 +328,88 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       if (optionsButtonRef.current?.contains(target) || optionsPanelRef.current?.contains(target)) return;
       setOptionsOpen(false);
     };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOptionsOpen(false);
+    };
     window.addEventListener("pointerdown", closeOnOutsidePress);
-    return () => window.removeEventListener("pointerdown", closeOnOutsidePress);
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      window.removeEventListener("pointerdown", closeOnOutsidePress);
+      window.removeEventListener("keydown", closeOnEscape);
+    };
   }, [optionsOpen]);
+
+  // Context menu: closes on outside press, Escape or a scroll — it used to
+  // only close via its own (mutating) buttons, and a fixed-position menu left
+  // behind by a pane scroll ends up pointing at the wrong text.
+  useEffect(() => {
+    if (!menu) return;
+    const onPress = (event: PointerEvent) => {
+      if (ctxMenuRef.current?.contains(event.target as Node)) return;
+      setMenu(null);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenu(null);
+    };
+    const onScroll = () => setMenu(null);
+    window.addEventListener("pointerdown", onPress);
+    window.addEventListener("keydown", onKey);
+    // Capture: scroll events do not bubble up from inner panes.
+    window.addEventListener("scroll", onScroll, true);
+    return () => {
+      window.removeEventListener("pointerdown", onPress);
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("scroll", onScroll, true);
+    };
+  }, [menu]);
+
+  // Confirm dialogs: focus moves into the box on open (so Enter no longer
+  // re-triggers the opener), Escape cancels, Tab wraps inside, and closing
+  // returns focus to whatever opened it.
+  useEffect(() => {
+    if (!dialog) return;
+    dialogPrevFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    dialogRef.current?.querySelector<HTMLElement>(".primary")?.focus();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setDialog(null);
+        return;
+      }
+      if (event.key !== "Tab" || !dialogRef.current) return;
+      const items = Array.from(
+        dialogRef.current.querySelectorAll<HTMLElement>("button, input, select, textarea, [tabindex]:not([tabindex='-1'])"),
+      ).filter((el) => !el.hasAttribute("disabled"));
+      if (!items.length) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        last.focus();
+        event.preventDefault();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        first.focus();
+        event.preventDefault();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      const prev = dialogPrevFocus.current;
+      dialogPrevFocus.current = null;
+      prev?.focus();
+    };
+  }, [dialog]);
+
+  // Keyboard selections (caret browsing, Shift+arrows) never fire mouseup —
+  // track selectionchange so Highlight / Note / Save word stay reachable
+  // without a mouse. A selection outside the passage clears the pending range.
+  useEffect(() => {
+    if (exam.module !== "reading") return;
+    const onSelect = () => {
+      setSel(passageRef.current ? rangeToUtf16(passageRef.current) : null);
+    };
+    document.addEventListener("selectionchange", onSelect);
+    return () => document.removeEventListener("selectionchange", onSelect);
+  }, [exam.module]);
 
   useEffect(() => {
     const sec = currentSection;
@@ -294,6 +422,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     if (exam.module !== "listening") return;
     let live = true;
     restoredRef.current = false;
+    setAudioError(null);
     void audioPlaybackSource(exam.id)
       .then((src) => {
         if (!live) return;
@@ -304,6 +433,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         if (!live) return;
         setPlayback(null);
         setAudioSrc(null);
+        setAudioError("No playable audio is bound to this test. Use Leave test to save your answers, then re-import the audio in the Audio centre.");
       });
     return () => {
       live = false;
@@ -315,13 +445,24 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     const track = playback.tracks[trackIndex];
     if (!track) return;
     audioLockSec.current = 0;
+    setAudioError(null);
     setAudioSrc(localMediaSrc(track.path));
     const next = playback.mode === "parts" ? playback.tracks[trackIndex + 1] : undefined;
     if (nextAudioRef.current) {
-      nextAudioRef.current.src = next ? localMediaSrc(next.path) : "";
-      if (next) nextAudioRef.current.load();
+      if (next) {
+        nextAudioRef.current.src = localMediaSrc(next.path);
+        nextAudioRef.current.load();
+      } else {
+        // An empty src attribute points at the document itself — drop it.
+        nextAudioRef.current.removeAttribute("src");
+      }
     }
   }, [playback, trackIndex]);
+
+  // The volume slider survives leaving and re-entering the exam runtime.
+  useEffect(() => {
+    if (audioRef.current) audioRef.current.volume = volume;
+  }, [audioSrc, volume]);
 
   useEffect(() => {
     let cancelled = false;
@@ -342,6 +483,52 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [exam.id]);
 
+  const flushSave = useCallback(() => {
+    if (submittingRef.current || sessionRef.current.status === "submitted") return;
+    if (saveInFlight.current) {
+      // A write is already in flight — it will land, see the dirty flag and
+      // re-save the newest snapshot. No second IPC, no second fsync.
+      saveDirty.current = true;
+      return;
+    }
+    saveInFlight.current = true;
+    saveSession(sessionRef.current)
+      .then(() => {
+        saveRetried.current = false;
+        if (sessionRef.current.saveError) {
+          // Write through to the ref, not just the parent snapshot —
+          // otherwise the next patch resurrects the stale saveError and
+          // the banner flickers on every keystroke.
+          const cleared = { ...sessionRef.current, saveError: null };
+          sessionRef.current = cleared;
+          onSession(cleared);
+        }
+      })
+      .catch((err) => {
+        if (submittingRef.current || sessionRef.current.status === "submitted") return;
+        const failed = {
+          ...sessionRef.current,
+          saveError: String(err),
+        };
+        sessionRef.current = failed;
+        onSession(failed);
+        if (!saveRetried.current) {
+          saveRetried.current = true;
+          window.setTimeout(() => {
+            if (submittingRef.current || sessionRef.current.status === "submitted") return;
+            flushSave();
+          }, 1500);
+        }
+      })
+      .finally(() => {
+        saveInFlight.current = false;
+        if (saveDirty.current) {
+          saveDirty.current = false;
+          flushSave();
+        }
+      });
+  }, [onSession]);
+
   const patch = useCallback(
     (partial: Partial<Session>, persist = true) => {
       const next: Session = {
@@ -355,29 +542,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       if (submittingRef.current || next.status === "submitted") return;
       if (persistTimer.current) window.clearTimeout(persistTimer.current);
       persistTimer.current = window.setTimeout(() => {
-        if (submittingRef.current) return;
-        const snap = sessionRef.current;
-        if (snap.status === "submitted") return;
-        saveSession(snap)
-          .then(() => {
-            if (sessionRef.current.saveError) {
-              onSession({ ...sessionRef.current, saveError: null });
-            }
-          })
-          .catch((err) => {
-            if (submittingRef.current || sessionRef.current.status === "submitted") return;
-            onSession({
-              ...sessionRef.current,
-              saveError: String(err),
-            });
-            window.setTimeout(() => {
-              if (submittingRef.current || sessionRef.current.status === "submitted") return;
-              saveSession(sessionRef.current).catch(() => undefined);
-            }, 1500);
-          });
+        flushSave();
       }, 180);
     },
-    [onSession],
+    [onSession, flushSave],
   );
 
   const submit = useCallback(
@@ -397,7 +565,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         report = exam.module === "writing" ? undefined : await scoreExam(exam.id, answers);
       } catch (err) {
         submittingRef.current = false;
-        patch({ saveError: `评分失败：${String(err)}` }, false);
+        patch({ saveError: `Scoring failed: ${String(err)}` }, false);
         setDialog(null);
         return;
       }
@@ -420,21 +588,27 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         sessionRef.current = next;
       } catch (err) {
         submittingRef.current = false;
-        onSession({
+        const failed = {
           ...sessionRef.current,
           remainingMs: next.remainingMs,
-          saveError: `提交保存失败，尚未离开考场。${String(err)}`,
-        });
+          saveError: `The submission could not be saved — you are still in the exam. ${String(err)}`,
+        };
+        sessionRef.current = failed;
+        onSession(failed);
         setDialog(null);
         return;
       }
-      onExit(next, report);
+      onExitRef.current(next, report);
     },
-    [exam.id, exam.module, onExit, onSession, patch],
+    [exam.id, exam.module, onSession, patch],
   );
 
   const leave = useCallback(async () => {
+    // submittingRef also guards leave: in practice the Save-and-exit button
+    // fires without a dialog, so a fast click on Finish during the save IPC
+    // would otherwise run submit and leave concurrently.
     if (submittingRef.current) return;
+    submittingRef.current = true;
     if (persistTimer.current) {
       window.clearTimeout(persistTimer.current);
       persistTimer.current = null;
@@ -452,91 +626,86 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     try {
       await saveSession(next);
     } catch (err) {
-      onSession({
+      submittingRef.current = false;
+      const failed = {
         ...sessionRef.current,
-        saveError: `退出保存失败，尚未离开考场。${String(err)}`,
-      });
+        saveError: `Leaving could not be saved — you are still in the exam. ${String(err)}`,
+      };
+      sessionRef.current = failed;
+      onSession(failed);
       setDialog(null);
       return;
     }
-    onLeave(next);
-  }, [onLeave, onSession]);
+    onLeaveRef.current(next);
+  }, [onSession]);
 
+  // Wall-clock deadline: `setInterval` only ever fires late, so counting down
+  // a fixed 250ms per tick systematically overgrants exam time (and freezes
+  // entirely across sleep/suspend). The deadline is taken once per effect run;
+  // the ref's remainingMs stays the mutable truth between runs.
   useEffect(() => {
     if (session.status !== "in_progress") return;
     if (pausedLocal && policy.pauseAllowed) return;
+    const deadline = Date.now() + sessionRef.current.remainingMs;
     const tickQuiet = (left: number) => {
       sessionRef.current = {
         ...sessionRef.current,
-        remainingMs: left,
+        remainingMs: Math.max(0, left),
         updatedAt: new Date().toISOString(),
       };
     };
-    if (exam.module === "listening" && exam.policy.endCondition.type === "media_driven") {
-      if (session.audio?.ended) {
-        const id = window.setInterval(() => {
-          const left = sessionRef.current.remainingMs - 250;
-          if (left <= 0) {
-            window.clearInterval(id);
-            patch({ remainingMs: 0 }, false);
-            if (policy.forceSubmit) {
-              void submit("force");
+    const persistNow = () => {
+      flushSave();
+    };
+    // Persistence is installed even while listening audio is still playing —
+    // audio.positionMs only lives on the ref, so without this a crash mid-part
+    // rolls playback back to the last answer patch.
+    const persistId = window.setInterval(persistNow, 5000);
+    window.addEventListener("blur", persistNow);
+    document.addEventListener("visibilitychange", persistNow);
+    const mediaDriven =
+      exam.module === "listening" && exam.policy.endCondition.type === "media_driven";
+    // While the audio is playing the media clock (element position) drives the
+    // countdown; the wall clock owns fixed-duration papers and the post-audio
+    // check window.
+    let id: number | undefined;
+    if (!mediaDriven || session.audio?.ended) {
+      id = window.setInterval(() => {
+        const left = deadline - Date.now();
+        if (!mediaDriven) {
+          const warnings = exam.policy.timeWarningsMs ?? [];
+          for (const w of warnings) {
+            if (left <= w && sessionRef.current.remainingMs > w && lastWarn.current !== w) {
+              lastWarn.current = w;
+              patch({
+                remainingMs: left,
+                events: [
+                  ...sessionRef.current.events,
+                  { t: new Date().toISOString(), type: "warn", extra: String(w) },
+                ],
+              });
+              return;
             }
-          } else {
-            tickQuiet(left);
           }
-        }, 250);
-        return () => window.clearInterval(id);
-      }
-      return;
-    }
-    const id = window.setInterval(() => {
-      const left = sessionRef.current.remainingMs - 250;
-      const warnings = exam.policy.timeWarningsMs ?? [];
-      for (const w of warnings) {
-        if (left <= w && sessionRef.current.remainingMs > w && lastWarn.current !== w) {
-          lastWarn.current = w;
-          patch({
-            remainingMs: left,
-            events: [
-              ...sessionRef.current.events,
-              { t: new Date().toISOString(), type: "warn", extra: String(w) },
-            ],
-          });
+        }
+        if (left <= 0) {
+          if (id !== undefined) window.clearInterval(id);
+          patch({ remainingMs: 0 }, false);
+          if (policy.forceSubmit) {
+            void submit("force");
+          }
           return;
         }
-      }
-      if (left <= 0) {
-        window.clearInterval(id);
-        patch({ remainingMs: 0 }, false);
-        if (policy.forceSubmit) {
-          void submit("force");
-        }
-        return;
-      }
-      tickQuiet(left);
-    }, 250);
-    const persistId = window.setInterval(() => {
-      if (submittingRef.current || sessionRef.current.status === "submitted") return;
-      saveSession(sessionRef.current).catch((err) =>
-        patch({ saveError: String(err) }, false),
-      );
-    }, 5000);
-    const onHide = () => {
-      if (submittingRef.current || sessionRef.current.status === "submitted") return;
-      saveSession(sessionRef.current).catch((err) =>
-        patch({ saveError: String(err) }, false),
-      );
-    };
-    window.addEventListener("blur", onHide);
-    document.addEventListener("visibilitychange", onHide);
+        tickQuiet(left);
+      }, 250);
+    }
     return () => {
-      window.clearInterval(id);
+      if (id !== undefined) window.clearInterval(id);
       window.clearInterval(persistId);
-      window.removeEventListener("blur", onHide);
-      document.removeEventListener("visibilitychange", onHide);
+      window.removeEventListener("blur", persistNow);
+      document.removeEventListener("visibilitychange", persistNow);
     };
-  }, [exam.module, exam.policy.endCondition, exam.policy.timeWarningsMs, patch, pausedLocal, policy.pauseAllowed, policy.forceSubmit, session.audio?.ended, session.status, submit]);
+  }, [exam.module, exam.policy.endCondition, exam.policy.timeWarningsMs, patch, pausedLocal, policy.pauseAllowed, policy.forceSubmit, session.audio?.ended, session.status, submit, flushSave]);
 
   const setAnswer = useCallback((questionId: string, value: string | string[] | null) => {
     const q = questions.find((x) => x.id === questionId);
@@ -571,6 +740,14 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     });
   }
 
+  // Small in-exam confirmation line — the vocabulary book is not visible from
+  // here, so "Save word" without feedback leaves the user guessing.
+  function flashExam(message: string) {
+    setExamToast(message);
+    if (examToastTimer.current) window.clearTimeout(examToastTimer.current);
+    examToastTimer.current = window.setTimeout(() => setExamToast(null), 2600);
+  }
+
   async function addHighlight() {
     const root = passageRef.current;
     if (!root || !currentSection?.content) return;
@@ -582,7 +759,9 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       startUtf16: r.start,
       endUtf16: r.end,
     });
-    patch({ highlights: [...session.highlights, hl] });
+    // Read the ref, not the `session` prop — a patch issued earlier in the
+    // same event (e.g. an answer keystroke) may not have flushed to props yet.
+    patch({ highlights: [...sessionRef.current.highlights, hl] });
     setMenu(null);
     setSel(null);
     window.getSelection()?.removeAllRanges();
@@ -624,19 +803,30 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       endUtf16: r.end,
     });
     const term = hl.excerpt.trim();
-    if (!term || term.length > 40) { setMenu(null); return; }
+    if (!term || term.length > 40) {
+      setMenu(null);
+      flashExam(term ? "That selection is too long for a vocabulary card (40 characters max)." : "Select a word or phrase first.");
+      return;
+    }
     const sentence = `${hl.contextBefore}${hl.excerpt}${hl.contextAfter}`.replace(/\s+/g, " ").trim();
+    // Offsets must index into the trimmed/collapsed sentence — measuring the
+    // untrimmed contextBefore shifts the cloze blank when it carries leading
+    // whitespace. Locate the term in the final string instead.
+    const termAt = sentence.indexOf(term);
     await vocabAdd({
       term,
       sighting: {
         examId: exam.id,
         examTitle: exam.title,
         sentence,
-        start: hl.contextBefore.replace(/\s+/g, " ").length,
-        end: hl.contextBefore.replace(/\s+/g, " ").length + term.length,
+        start: termAt >= 0 ? termAt : undefined,
+        end: termAt >= 0 ? termAt + term.length : undefined,
         source: "exam",
       },
-    }).catch(() => undefined);
+    }).then(
+      () => flashExam(`Saved "${term}" to the vocabulary book`),
+      (err) => flashExam(`Could not save the word: ${String(err)}`),
+    );
     setMenu(null);
     setSel(null);
     window.getSelection()?.removeAllRanges();
@@ -645,11 +835,16 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   function deleteHighlight() {
     let targetHlId: string | null = null;
     if (menu) {
-      const mark = (document.elementFromPoint(menu.x, menu.y) as HTMLElement | null)?.closest("mark");
+      // The just-opened context menu is on top at that point, so
+      // elementFromPoint would always hit the menu itself — walk the stack.
+      const mark = document
+        .elementsFromPoint(menu.x, menu.y)
+        .map((el) => el.closest("mark"))
+        .find(Boolean);
       targetHlId = mark?.getAttribute("data-hl") ?? null;
     }
     if (!targetHlId && sel && currentSection) {
-      const overlapped = session.highlights.find(
+      const overlapped = sessionRef.current.highlights.find(
         (h) =>
           h.targetId === currentSection.id &&
           !h.invalid &&
@@ -658,14 +853,19 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       if (overlapped) targetHlId = overlapped.id;
     }
     if (!targetHlId) {
-      const activeMark = window.getSelection()?.anchorNode?.parentElement?.closest("mark");
+      const activeMark =
+        window.getSelection()?.anchorNode?.parentElement?.closest("mark")
+        ?? (document.activeElement instanceof HTMLElement ? document.activeElement.closest("mark") : null);
       targetHlId = activeMark?.getAttribute("data-hl") ?? null;
     }
     if (!targetHlId) return;
+    const nextNotes = sessionRef.current.notes.filter((n) => n.highlightId !== targetHlId);
     patch({
-      highlights: session.highlights.filter((h) => h.id !== targetHlId),
-      notes: session.notes.filter((n) => n.highlightId !== targetHlId),
+      highlights: sessionRef.current.highlights.filter((h) => h.id !== targetHlId),
+      notes: nextNotes,
     });
+    // Close the editor if it was showing a note attached to the deleted mark.
+    setNoteOpen((cur) => (cur && nextNotes.every((n) => n.id !== cur) ? null : cur));
     setMenu(null);
   }
 
@@ -703,11 +903,22 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     return session.highlights.filter((h) => h.targetId === currentSection?.id);
   }, [session.highlights, currentSection?.id]);
 
+  const notedIds = useMemo(() => {
+    return new Set(
+      session.notes.map((n) => n.highlightId).filter((id): id is string => Boolean(id)),
+    );
+  }, [session.notes]);
+
+  // Recovery marks what it cannot place instead of guessing a span — but the
+  // user still needs to hear about it, otherwise their highlights vanish
+  // without a trace.
+  const lostHighlights = sectionHighlights.filter((h) => h.invalid).length;
+
   const passageHtml = useMemo(() => {
     return currentSection?.content
-      ? applyMarks(toNfc(currentSection.content.text), sectionHighlights)
+      ? applyMarks(toNfc(currentSection.content.text), sectionHighlights, notedIds)
       : "";
-  }, [currentSection?.content, sectionHighlights]);
+  }, [currentSection?.content, sectionHighlights, notedIds]);
 
   const values = useMemo(() => {
     const res: Record<string, string | string[] | null> = {};
@@ -718,9 +929,19 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   function go(id: string) {
     setCurrentId(id);
     const sec = sectionForQuestion(exam, id);
+    if (sec?.id !== currentSection?.id) {
+      // Selection, context menu and the open note are all anchored to the old
+      // passage's offsets — keep them and a Highlight click would silently
+      // mark the new passage at stale offsets.
+      setSel(null);
+      setMenu(null);
+      setNoteOpen(null);
+    }
     patch({
+      // Nav events dominate the log; cap the tail so rapid navigation cannot
+      // grow the session file without bound.
       events: [
-        ...sessionRef.current.events,
+        ...sessionRef.current.events.slice(-999),
         {
           t: new Date().toISOString(),
           type: "nav",
@@ -736,7 +957,27 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
   const fontScale = session.fontScale ?? 1;
   const moduleLabel = exam.module === "reading" ? "Reading" : exam.module === "listening" ? "Listening" : "Writing";
+  // Final save shared by the custom X button and the OS-level close path
+  // (app-close-requested → closeFlush). Registers globally so Alt+F4 /
+  // taskbar close / logoff get the same flush before the window is destroyed.
+  const closeFlush = useCallback(async () => {
+    try {
+      const snap = sessionRef.current;
+      // Record the deliberate exit so a later resume is not misread as
+      // a crash interruption (integrity is derived from the last event).
+      const closing = snap.status === "in_progress"
+        ? { ...snap, events: [...snap.events, { t: new Date().toISOString(), type: "pause" as const, extra: "close" }] }
+        : snap;
+      await saveSession(closing);
+    } catch { /* close remains available after a failed final save */ }
+  }, []);
+  useEffect(() => {
+    registerCloseFlush(closeFlush);
+    return clearCloseFlush;
+  }, [closeFlush]);
+
   const writingWordCount = (session.writing?.[currentSection?.id ?? ""] ?? "").trim().split(/\s+/).filter(Boolean).length;
+  const unanswered = unansweredCount(exam, session);
   const examScheme = practice
     ? (practiceScheme === "dark" || (practiceScheme === "follow_shell" && shellTheme === "dark") ? "practice_dark" : "default")
     : (session.colorScheme ?? "default");
@@ -750,14 +991,17 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     >
       <div className="exam-windowbar" data-tauri-drag-region>
         <span data-tauri-drag-region><BrandMark size={17} />IELTS Workspace</span>
-        <WindowControls beforeClose={async () => { try { await saveSession(sessionRef.current); } catch { /* close remains available after a failed final save */ } }} />
+        <WindowControls beforeClose={closeFlush} locale="en" />
       </div>
       {session.saveError && (
-        <div className="banner-save">
-          答案可能尚未安全保存：{session.saveError}
-          <button type="button" onClick={() => void saveSession(sessionRef.current).then(() => patch({ saveError: null }, false)).catch((err) => patch({ saveError: String(err) }, false))}>重试保存</button>
-          {session.status === "in_progress" && <button type="button" onClick={() => void submit("manual")}>重试提交</button>}
+        <div className="banner-save" role="alert">
+          Your answers may not be saved yet: {session.saveError}
+          <button type="button" onClick={() => flushSave()}>Retry save</button>
+          {session.status === "in_progress" && <button type="button" onClick={() => void submit("manual")}>Retry submit</button>}
         </div>
+      )}
+      {audioError && (
+        <div className="banner-save" role="alert">{audioError}</div>
       )}
       <header className="exam-header">
         <div className="left">
@@ -788,6 +1032,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
             mediaCheckMs={mediaCheckMs}
             laterTracksMs={laterTracksMs}
             timeWarningsMs={exam.policy.timeWarningsMs ?? []}
+            audioFailed={Boolean(audioError)}
           />
         )}
         <div className="right toolbar">
@@ -800,9 +1045,14 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                 min={0}
                 max={1}
                 step={0.01}
-                defaultValue={1}
+                value={volume}
                 onChange={(e) => {
-                  if (audioRef.current) audioRef.current.volume = Number(e.target.value);
+                  const v = Number(e.target.value);
+                  setVolume(v);
+                  if (audioRef.current) audioRef.current.volume = v;
+                  try {
+                    window.localStorage.setItem("ielts.exam.volume", String(v));
+                  } catch { /* volume persistence is best-effort */ }
                 }}
                 aria-label="Volume"
               />
@@ -838,13 +1088,13 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         {optionsOpen && (
           <div ref={optionsPanelRef} className="options-pop">
             <div className="text-size-heading"><p>Text size</p><output>{Math.round(fontScale * 100)}%</output></div>
-            <label className="text-size-slider"><span>A</span><input type="range" min={0.85} max={1.4} step={0.05} value={fontScale} aria-label="Text size" onChange={(event) => patch({ fontScale: Number(event.target.value) })} /><strong>A</strong></label>
+            <label className="text-size-slider"><span>A</span><input type="range" min={1} max={1.4} step={0.05} value={fontScale} aria-label="Text size" onChange={(event) => patch({ fontScale: Number(event.target.value) })} /><strong>A</strong></label>
             {practice ? (
               <>
                 <p className="text-size-heading">Practice appearance</p>
                 <div className="row">
                   {([["follow_shell", "Follow workspace"], ["light", "Light"], ["dark", "Dark"]] as const).map(([value, label]) => (
-                    <button key={value} type="button" onClick={() => onPracticeScheme(value)}>
+                    <button key={value} type="button" className={practiceScheme === value ? "on" : ""} aria-pressed={practiceScheme === value} onClick={() => onPracticeScheme(value)}>
                       {label}
                     </button>
                   ))}
@@ -855,7 +1105,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                 <p className="text-size-heading">Colour settings</p>
                 <div className="row">
                   {(["default", "high_contrast", "cream"] as const).map((s) => (
-                    <button key={s} type="button" onClick={() => patch({ colorScheme: s })}>
+                    <button key={s} type="button" className={(session.colorScheme ?? "default") === s ? "on" : ""} aria-pressed={(session.colorScheme ?? "default") === s} onClick={() => patch({ colorScheme: s })}>
                       {s === "default" ? "Default" : s === "high_contrast" ? "Yellow on black" : "Black on cream"}
                     </button>
                   ))}
@@ -870,7 +1120,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         {exam.sections.map((section) => {
           const firstQuestion = section.questionGroups.flatMap((g) => g.questions)[0];
           const active = currentSection?.id === section.id;
-          return <button key={section.id} type="button" className={active ? "active" : ""} onClick={() => firstQuestion ? go(firstQuestion.id) : setWritingSectionId(section.id)}>{section.title}</button>;
+          return <button key={section.id} type="button" className={active ? "active" : ""} aria-current={active ? "true" : undefined} onClick={() => firstQuestion ? go(firstQuestion.id) : setWritingSectionId(section.id)}>{section.title}</button>;
         })}
       </div>
 
@@ -898,7 +1148,11 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
       <div
         className={`exam-body ${exam.module}`}
-        style={exam.module !== "listening" ? { gridTemplateColumns: `${splitPercent}% 6px 1fr` } : undefined}
+        style={exam.module !== "listening"
+          // minmax() keeps the CSS pane floor that a bare percent would drop;
+          // the 7px gutter column matches .exam-body in exam.css.
+          ? { gridTemplateColumns: `minmax(${exam.module === "writing" ? 320 : 300}px, ${splitPercent}%) 7px minmax(300px, 1fr)` }
+          : undefined}
       >
         {exam.module !== "listening" && (
           <>
@@ -922,9 +1176,53 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
               ) : (
                 <div
                   className="passage"
+                  tabIndex={0}
+                  aria-label="Passage text — select to highlight or take a note"
+                  onClick={(e) => {
+                    // Clicking marked text reopens its note (official
+                    // behaviour); marks without a note stay inert.
+                    const mark = (e.target as HTMLElement).closest?.("mark[data-hl]");
+                    const hlId = mark?.getAttribute("data-hl");
+                    const note = hlId
+                      ? sessionRef.current.notes.find((n) => n.highlightId === hlId)
+                      : undefined;
+                    if (note) setNoteOpen(note.id);
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key !== "Enter" && e.key !== " ") return;
+                    const mark = (e.target as HTMLElement).closest?.("mark[data-hl]");
+                    const hlId = mark?.getAttribute("data-hl");
+                    const note = hlId
+                      ? sessionRef.current.notes.find((n) => n.highlightId === hlId)
+                      : undefined;
+                    if (!note) return;
+                    e.preventDefault();
+                    setNoteOpen(note.id);
+                  }}
                   onContextMenu={(e) => {
                     e.preventDefault();
-                    setMenu({ x: e.clientX, y: e.clientY });
+                    // A keyboard-invoked context menu (Menu key / Shift+F10 on
+                    // the focused passage) has no pointer coordinates — anchor
+                    // at the selection, falling back to the passage corner.
+                    let x = e.clientX;
+                    let y = e.clientY;
+                    if (!x && !y) {
+                      const sel0 = window.getSelection();
+                      const rangeRect = sel0 && sel0.rangeCount
+                        ? sel0.getRangeAt(0).getBoundingClientRect()
+                        : null;
+                      const box = rangeRect && (rangeRect.width || rangeRect.height)
+                        ? rangeRect
+                        : (e.currentTarget as HTMLElement).getBoundingClientRect();
+                      x = box.left + 8;
+                      y = box.top + 8;
+                    }
+                    // Clamp inside the viewport so right-clicking near the
+                    // right/bottom edge does not push the menu off-screen.
+                    setMenu({
+                      x: Math.max(8, Math.min(x, window.innerWidth - 170)),
+                      y: Math.max(8, Math.min(y, window.innerHeight - 170)),
+                    });
                   }}
                 >
                   {/*
@@ -940,19 +1238,44 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
               )}
               {exam.module === "reading" && (
                 <div className="toolbar" style={{ marginTop: 12 }}>
-                  <button type="button" disabled={!sel} onClick={() => void addHighlight()}>
+                  <button type="button" disabled={!sel} title={sel ? undefined : "Select text in the passage first"} onClick={() => void addHighlight()}>
                     Highlight
                   </button>
-                  <button type="button" disabled={!sel} onClick={() => void addNote()}>
+                  <button type="button" disabled={!sel} title={sel ? undefined : "Select text in the passage first"} onClick={() => void addNote()}>
                     Note
                   </button>
-                  <button type="button" onClick={deleteHighlight}>
+                  <button type="button" disabled={!sel} title={sel ? "Save the selected word or phrase to the vocabulary book" : "Select text in the passage first"} onClick={() => void addToVocab()}>
+                    Save word
+                  </button>
+                  <button type="button" onClick={deleteHighlight} title="Right-click a highlight, or select it first">
                     Delete Highlight
                   </button>
+                  {lostHighlights > 0 && (
+                    <span className="meta" role="status" style={{ alignSelf: "center" }}>
+                      {lostHighlights} highlight{lostHighlights === 1 ? "" : "s"} could not be restored after the text changed
+                    </span>
+                  )}
                 </div>
               )}
             </div>
-            <div className="gutter" onMouseDown={onGutterMouseDown} />
+            <div
+              className="gutter"
+              role="separator"
+              aria-orientation="vertical"
+              aria-label="Resize panels"
+              aria-valuemin={25}
+              aria-valuemax={75}
+              aria-valuenow={Math.round(splitPercent)}
+              aria-valuetext={`${Math.round(splitPercent)} percent passage width`}
+              tabIndex={0}
+              onMouseDown={onGutterMouseDown}
+              onKeyDown={(e) => {
+                const step = e.key === "ArrowLeft" ? -3 : e.key === "ArrowRight" ? 3 : 0;
+                if (!step) return;
+                e.preventDefault();
+                setSplitPercent((p) => Math.min(75, Math.max(25, p + step)));
+              }}
+            />
           </>
         )}
         <div className="pane">
@@ -961,10 +1284,14 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
             <audio
               ref={audioRef}
               src={audioSrc ?? undefined}
-              autoPlay={!practice}
+              autoPlay={!practice && !session.audio?.ended}
               onPlay={() => setPausedLocal(false)}
               onPause={() => {
                 if (practice) setPausedLocal(true);
+              }}
+              onError={() => {
+                if (!audioSrc) return;
+                setAudioError("The audio file could not be loaded or decoded. Use Leave test to save your answers, then re-import the audio in the Audio centre.");
               }}
               onEnded={() => {
                 if (playback?.mode === "parts" && trackIndex + 1 < playback.tracks.length) {
@@ -977,19 +1304,31 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                   window.setTimeout(() => { void audioRef.current?.play(); }, 30);
                   return;
                 }
-                const check =
-                  exam.policy.endCondition.type === "media_driven"
-                    ? exam.policy.endCondition.checkMsAfterEnd
-                    : 120000;
-                patch({
-                  remainingMs: check,
+                // Only a media_driven paper converts the remaining time into
+                // the check window; a fixed_duration listening paper keeps its
+                // own clock running to the original deadline.
+                const endPatch: Partial<Session> = {
                   audio: { ...(sessionRef.current.audio ?? { positionMs: 0, partIndex: trackIndex }), ended: true, positionMs: (audioRef.current?.duration ?? 0) * 1000, partIndex: trackIndex },
                   events: [...sessionRef.current.events, { t: new Date().toISOString(), type: "audio_end" }],
-                });
+                };
+                if (exam.policy.endCondition.type === "media_driven") {
+                  endPatch.remainingMs = exam.policy.endCondition.checkMsAfterEnd;
+                }
+                patch(endPatch);
               }}
               onLoadedMetadata={(e) => {
                 const el = e.currentTarget;
                 if (restoredRef.current) return;
+                if (sessionRef.current.audio?.ended) {
+                  // Single-play rule: a session resumed after the audio already
+                  // finished parks at the end — it must not replay from 0.
+                  el.currentTime = Number.isFinite(el.duration) ? el.duration : 0;
+                  el.pause();
+                  setPausedLocal(true);
+                  audioLockSec.current = el.currentTime;
+                  restoredRef.current = true;
+                  return;
+                }
                 const pos = (sessionRef.current.audio?.positionMs ?? 0) / 1000;
                 if (pos > 0.4 && pos < el.duration) {
                   el.currentTime = pos;
@@ -1061,7 +1400,6 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                 })}
               </div>
             ) : <span />}
-            <div className="nav-legend"><span className="current-dot" />Current <span className="answered-dot" />Answered <span className="review-dot" />Review</div>
           </div>
         )}
         <div className="exam-nav-row">
@@ -1074,14 +1412,12 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         <div className="nav-arrows">
           <button type="button" className="previous-button" disabled={exam.module === "writing" ? exam.sections.findIndex((section) => section.id === currentSection?.id) <= 0 : navIndex <= 0} onClick={() => exam.module === "writing" ? setWritingSectionId(exam.sections[Math.max(0, exam.sections.findIndex((section) => section.id === currentSection?.id) - 1)]?.id ?? writingSectionId) : go(questions[Math.max(0, navIndex - 1)]?.id)}><Icon name="chevron" className="flip" size={16} />Previous</button>
           <button type="button" className="next-button" disabled={exam.module === "writing" ? exam.sections.findIndex((section) => section.id === currentSection?.id) >= exam.sections.length - 1 : navIndex >= questions.length - 1} onClick={() => exam.module === "writing" ? setWritingSectionId(exam.sections[Math.min(exam.sections.length - 1, exam.sections.findIndex((section) => section.id === currentSection?.id) + 1)]?.id ?? writingSectionId) : go(questions[Math.min(questions.length - 1, navIndex + 1)]?.id)}>Next<Icon name="chevron" size={16} /></button>
-          <button type="button" className="leave-button" onClick={() => practice ? void leave() : setDialog("leave")}>{practice ? "Save and exit" : "Leave test"}</button>
-          <button type="button" className={practice ? "finish-button" : "submit-button"} onClick={() => setDialog("submit")}>{practice ? "Finish practice" : "Submit test"}</button>
         </div>
         </div>
       </nav>
 
       {menu && exam.module === "reading" && (
-        <div className="ctx-menu" style={{ left: menu.x, top: menu.y }}>
+        <div ref={ctxMenuRef} className="ctx-menu" role="menu" style={{ left: menu.x, top: menu.y }}>
           <button type="button" onClick={() => void addHighlight()}>
             Highlight
           </button>
@@ -1089,7 +1425,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
             Note
           </button>
           <button type="button" onClick={() => void addToVocab()}>
-            加入生词本
+            Add to vocabulary
           </button>
           <button type="button" onClick={deleteHighlight}>
             Delete Highlight
@@ -1097,24 +1433,36 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         </div>
       )}
 
+      {examToast && <div className="exam-toast" role="status">{examToast}</div>}
+
       {noteOpen && (
         <NoteEditor
           note={session.notes.find((n) => n.id === noteOpen)}
           onClose={() => setNoteOpen(null)}
           onChange={(body) =>
             patch({
-              notes: session.notes.map((n) => (n.id === noteOpen ? { ...n, body, updatedAt: new Date().toISOString() } : n)),
+              notes: sessionRef.current.notes.map((n) => (n.id === noteOpen ? { ...n, body, updatedAt: new Date().toISOString() } : n)),
             })
           }
         />
       )}
 
       {dialog === "submit" && (
-        <div className="confirm">
+        <div
+          ref={dialogRef}
+          className="confirm"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="confirm-submit-title"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setDialog(null);
+          }}
+        >
           <div className="box">
             <span className={`confirm-icon ${practice ? "practice" : "mock"}`}><Icon name={practice ? "check" : "lock"} size={24} /></span>
-            <h2>{practice ? "Finish this practice?" : "Submit this mock test?"}</h2>
-            <p>{practice ? "Your answers will be saved and the review page will show accepted answers." : "The timer will stop and your answers will be final. You cannot return to this test."}</p>
+            <h2 id="confirm-submit-title">{practice ? "Finish this practice?" : "Submit this mock test?"}</h2>
+            <p>{practice ? "Your answers will be saved and the review page will show accepted answers." : "The timer will stop and your answers will be final. You cannot return to this test."}
+              {unanswered > 0 ? ` ${unanswered} question${unanswered === 1 ? " is" : "s are"} still unanswered.` : ""}</p>
             <div className="row">
               <button type="button" className="primary" onClick={() => void submit("manual")}>
                 {practice ? "Finish and review" : "Yes, submit test"}
@@ -1127,10 +1475,19 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         </div>
       )}
       {dialog === "leave" && (
-        <div className="confirm">
+        <div
+          ref={dialogRef}
+          className="confirm"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="confirm-leave-title"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setDialog(null);
+          }}
+        >
           <div className="box">
             <span className="confirm-icon mock"><Icon name="info" size={24} /></span>
-            <h2>Leave this mock test?</h2>
+            <h2 id="confirm-leave-title">Leave this mock test?</h2>
             <p>This is not a submission. Your answers and remaining time will be saved, and you can continue later from Mock.</p>
             <div className="row">
               <button type="button" className="primary" onClick={() => void leave()}>
@@ -1160,10 +1517,9 @@ function WritingPane({
 }) {
   const sec = exam.sections.find((s) => s.id === sectionId) ?? exam.sections[0];
   if (!sec) {
-    return <div className="instr">暂无写作任务内容</div>;
+    return <div className="instr">No writing task is available for this section.</div>;
   }
   const text = session.writing?.[sec.id] ?? "";
-  const words = text.trim() ? text.trim().split(/\s+/).length : 0;
   const min = sec.id.includes("task2") || /task 2/i.test(sec.title) ? 250 : 150;
   return (
     <div>
@@ -1178,7 +1534,6 @@ function WritingPane({
           patch({ writing: { ...(session.writing ?? {}), [sec.id]: e.target.value } })
         }
       />
-      <div className="wordcount">Word count: {words}</div>
     </div>
   );
 }
@@ -1192,13 +1547,31 @@ function NoteEditor({
   onClose: () => void;
   onChange: (body: string) => void;
 }) {
-  if (!note) return null;
+  // The pad opens next to its marked text (official behaviour), clamped to
+  // the viewport and below the header so it can never cover the toolbar.
+  const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
+  useEffect(() => {
+    const mark = note?.highlightId
+      ? document.querySelector(`mark[data-hl="${note.highlightId}"]`)
+      : null;
+    const rect = mark?.getBoundingClientRect();
+    const width = 260;
+    setPos(
+      rect
+        ? {
+            left: Math.max(8, Math.min(rect.left, window.innerWidth - width - 8)),
+            top: Math.max(110, Math.min(rect.bottom + 8, window.innerHeight - 190)),
+          }
+        : { left: Math.max(8, window.innerWidth - width - 24), top: 110 },
+    );
+  }, [note?.highlightId]);
+  if (!note || !pos) return null;
   return (
-    <div className="note-pad" style={{ right: 24, top: 64, position: "fixed" }}>
-      <button type="button" onClick={onClose} style={{ float: "right", border: 0, background: "transparent" }}>
+    <div className="note-pad" style={{ left: pos.left, top: pos.top }}>
+      <button type="button" onClick={onClose} aria-label="Close note" style={{ float: "right", border: 0, background: "transparent" }}>
         ×
       </button>
-      <textarea value={note.body} onChange={(e) => onChange(e.target.value)} placeholder="Notes" />
+      <textarea autoFocus value={note.body} onChange={(e) => onChange(e.target.value)} placeholder="Notes" />
     </div>
   );
 }

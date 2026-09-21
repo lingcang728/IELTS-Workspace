@@ -3,7 +3,7 @@
   "id": "cambridge-6-test-4-reading",
   "title": "Cambridge IELTS 6 Academic Test 4 Reading",
   "module": "reading",
-  "contentRevision": "repair-0023-515bf3ee",
+  "contentRevision": "repair-0002-b0c1dc1b",
   "source": {
     "kind": "cambridge_book",
     "publisher": "Cambridge University Press",
@@ -1634,18 +1634,14 @@
         {
           "id": "c6t4r-g25",
           "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 25 and 26 on your answer sheet.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
+          "questionType": "multi_choice",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c6t4r-q25",
               "number": 25,
               "type": "multi_choice",
-              "prompt": "First answer: Which TWO important implications drawn from the Nicaraguan study are mentioned by the writer of the passage?",
-              "acceptedAnswers": [
-                "C",
-                "E"
-              ],
+              "prompt": "First selected letter: Which TWO important implications drawn from the Nicaraguan study are mentioned by the writer of the passage?",
               "options": [
                 {
                   "id": "A",
@@ -1677,57 +1673,16 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:36:11+00:00"
-              }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "It is better to educate mature women than young girls."
+              },
+              "acceptedAnswers": [
+                "C"
+              ]
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "Similar campaigns in other countries would be equally successful."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "The effects of maternal literacy programmes can be seen very quickly."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "Improving child health can quickly affect a country's economy."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "Money spent on female education will improve child health."
-            }
-          ],
-          "repairSource": {
-            "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-25T02:04:52.245542+00:00"
-          }
-        },
-        {
-          "id": "c6t4r-g26",
-          "instruction": "Choose TWO letters, A-E. Write the correct letters in boxes 25 and 26 on your answer sheet.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c6t4r-q26",
               "number": 26,
               "type": "multi_choice",
-              "prompt": "Second answer: Which TWO important implications drawn from the Nicaraguan study are mentioned by the writer of the passage?",
-              "acceptedAnswers": [
-                "C",
-                "E"
-              ],
+              "prompt": "Second selected letter: Which TWO important implications drawn from the Nicaraguan study are mentioned by the writer of the passage?",
               "options": [
                 {
                   "id": "A",
@@ -1759,7 +1714,10 @@
                 "kind": "overlay",
                 "status": "corrected",
                 "reviewedAt": "2026-08-24T02:36:11+00:00"
-              }
+              },
+              "acceptedAnswers": [
+                "E"
+              ]
             }
           ],
           "sharedOptions": [
@@ -1793,7 +1751,11 @@
             "kind": "overlay",
             "status": "corrected",
             "reviewedAt": "2026-08-25T02:04:52.245542+00:00"
-          }
+          },
+          "acceptedAnswers": [
+            "C",
+            "E"
+          ]
         }
       ]
     },
@@ -1992,7 +1954,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:04:52.245542+00:00",
+            "note": "印刷页 96 的第 31-34 题只有 A-D 四个选项，工单却要求 A-H；不能伪造页面上不存在的 E-H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t4r-g32",
@@ -2058,7 +2026,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:04:52.245542+00:00",
+            "note": "印刷页 96 的第 31-34 题只有 A-D 四个选项，工单却要求 A-H；不能伪造页面上不存在的 E-H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t4r-g33",
@@ -2124,7 +2098,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:04:52.245542+00:00",
+            "note": "印刷页 96 的第 31-34 题只有 A-D 四个选项，工单却要求 A-H；不能伪造页面上不存在的 E-H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t4r-g34",
@@ -2190,7 +2170,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:04:52.245542+00:00",
+            "note": "印刷页 96 的第 31-34 题只有 A-D 四个选项，工单却要求 A-H；不能伪造页面上不存在的 E-H，需修复题目结构。"
+          }
         },
         {
           "id": "c6t4r-g35",
@@ -2386,7 +2372,13 @@
               "label": "D",
               "text": ""
             }
-          ]
+          ],
+          "repairSource": {
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T02:04:52.245542+00:00",
+            "note": "印刷页 97 的 Question 40 只有 A-D 四个选项，工单却要求 A-H，且题面被版权页内容污染；不能伪造页面上不存在的 E-H，需修复题目结构。页面实际问 Which of the following is the most suitable title for Reading Passage 3?"
+          }
         }
       ]
     }

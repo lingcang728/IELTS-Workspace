@@ -984,8 +984,9 @@
           ],
           "repairSource": {
             "kind": "overlay",
-            "status": "corrected",
-            "reviewedAt": "2026-08-24T13:12:58.697499+00:00"
+            "status": "flagged",
+            "reviewedAt": "2026-08-24T16:13:52.088136+00:00",
+            "note": "这是地图标注题（Label the map below），页面上为地图标注点 A-I，没有文字选项列表。"
           },
           "imageAsset": "assets/cambridge/c12-t4-listening-p0075.jpg"
         }

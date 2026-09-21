@@ -197,14 +197,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              3
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 1–3 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:24.404964+00:00",
+            "note": "Page 67 shows Questions 1-3 are individual 4-option multiple-choice questions (A-D) per question, not a shared word bank or 8-option list (A-H)."
           }
         },
         {
@@ -273,14 +269,10 @@
             }
           ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              1,
-              3
-            ],
-            "canonicalOf": [
-              "Write the correct letter in boxes 1–3 on your answer sheet."
-            ]
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:55:24.404964+00:00",
+            "note": "Page 67 shows Questions 1-3 are individual 4-option multiple-choice questions (A-D) per question, not a shared word bank or 8-option list (A-H)."
           }
         },
         {
@@ -922,13 +914,13 @@
           "id": "c8t3r-g14",
           "instruction": "Choose FIVE letters, A-K.",
           "questionType": "multi_choice",
-          "scoringPolicy": "per_question",
+          "scoringPolicy": "in_either_order",
           "questions": [
             {
               "id": "c8t3r-q14",
               "number": 14,
               "type": "multi_choice",
-              "prompt": "Choose FIVE letters, A-K.",
+              "prompt": "First selected letter: Which belief is reported by the writer?",
               "acceptedAnswers": [
                 "B"
               ],
@@ -990,91 +982,17 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-25T11:41:05.879650+00:00"
+                "reviewedAt": "2026-08-25T11:41:05.879650+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": ""
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": ""
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": ""
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": ""
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": ""
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": ""
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": ""
-            },
-            {
-              "id": "H",
-              "label": "H",
-              "text": ""
-            },
-            {
-              "id": "I",
-              "label": "I",
-              "text": ""
-            },
-            {
-              "id": "J",
-              "label": "J",
-              "text": ""
-            },
-            {
-              "id": "K",
-              "label": "K",
-              "text": ""
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 14–18 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c8t3r-g15",
-          "instruction": "Choose FIVE letters, A-K.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c8t3r-q15",
               "number": 15,
-              "type": "single_choice",
-              "prompt": "Which belief is reported by the writer? Gifted people should use their gifts.",
+              "type": "multi_choice",
+              "prompt": "Second selected letter: Which belief is reported by the writer?",
               "acceptedAnswers": [
                 "C"
               ],
@@ -1136,91 +1054,17 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T02:20:21+00:00"
+                "reviewedAt": "2026-08-24T02:20:21+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Truly gifted people are talented in all areas."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "The talents of geniuses are soon exhausted."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Gifted people should use their gifts."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "A genius appears once in every generation."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "Genius can be easily destroyed by discouragement."
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "Genius is inherited."
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "Gifted people are very hard to live with."
-            },
-            {
-              "id": "H",
-              "label": "H",
-              "text": "People never appreciate true genius."
-            },
-            {
-              "id": "I",
-              "label": "I",
-              "text": "Geniuses are natural leaders."
-            },
-            {
-              "id": "J",
-              "label": "J",
-              "text": "Gifted people develop their greatness through difficulties."
-            },
-            {
-              "id": "K",
-              "label": "K",
-              "text": "Genius will always reveal itself."
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 14–18 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c8t3r-g16",
-          "instruction": "Choose FIVE letters, A-K.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c8t3r-q16",
               "number": 16,
-              "type": "single_choice",
-              "prompt": "Which belief is reported by the writer? Genius is inherited.",
+              "type": "multi_choice",
+              "prompt": "Third selected letter: Which belief is reported by the writer?",
               "acceptedAnswers": [
                 "F"
               ],
@@ -1282,91 +1126,17 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T02:20:21+00:00"
+                "reviewedAt": "2026-08-24T02:20:21+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Truly gifted people are talented in all areas."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "The talents of geniuses are soon exhausted."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Gifted people should use their gifts."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "A genius appears once in every generation."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "Genius can be easily destroyed by discouragement."
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "Genius is inherited."
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "Gifted people are very hard to live with."
-            },
-            {
-              "id": "H",
-              "label": "H",
-              "text": "People never appreciate true genius."
-            },
-            {
-              "id": "I",
-              "label": "I",
-              "text": "Geniuses are natural leaders."
-            },
-            {
-              "id": "J",
-              "label": "J",
-              "text": "Gifted people develop their greatness through difficulties."
-            },
-            {
-              "id": "K",
-              "label": "K",
-              "text": "Genius will always reveal itself."
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 14–18 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c8t3r-g17",
-          "instruction": "Choose FIVE letters, A-K.",
-          "questionType": "single_choice",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c8t3r-q17",
               "number": 17,
-              "type": "single_choice",
-              "prompt": "Which belief is reported by the writer? People never appreciate true genius.",
+              "type": "multi_choice",
+              "prompt": "Fourth selected letter: Which belief is reported by the writer?",
               "acceptedAnswers": [
                 "H"
               ],
@@ -1428,91 +1198,17 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T02:20:21+00:00"
+                "reviewedAt": "2026-08-24T02:20:21+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
-            }
-          ],
-          "sharedOptions": [
-            {
-              "id": "A",
-              "label": "A",
-              "text": "Truly gifted people are talented in all areas."
             },
-            {
-              "id": "B",
-              "label": "B",
-              "text": "The talents of geniuses are soon exhausted."
-            },
-            {
-              "id": "C",
-              "label": "C",
-              "text": "Gifted people should use their gifts."
-            },
-            {
-              "id": "D",
-              "label": "D",
-              "text": "A genius appears once in every generation."
-            },
-            {
-              "id": "E",
-              "label": "E",
-              "text": "Genius can be easily destroyed by discouragement."
-            },
-            {
-              "id": "F",
-              "label": "F",
-              "text": "Genius is inherited."
-            },
-            {
-              "id": "G",
-              "label": "G",
-              "text": "Gifted people are very hard to live with."
-            },
-            {
-              "id": "H",
-              "label": "H",
-              "text": "People never appreciate true genius."
-            },
-            {
-              "id": "I",
-              "label": "I",
-              "text": "Geniuses are natural leaders."
-            },
-            {
-              "id": "J",
-              "label": "J",
-              "text": "Gifted people develop their greatness through difficulties."
-            },
-            {
-              "id": "K",
-              "label": "K",
-              "text": "Genius will always reveal itself."
-            }
-          ],
-          "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 14–18 on your answer sheet."
-            ]
-          }
-        },
-        {
-          "id": "c8t3r-g18",
-          "instruction": "Choose FIVE letters, A-K.",
-          "questionType": "completion",
-          "scoringPolicy": "per_question",
-          "questions": [
             {
               "id": "c8t3r-q18",
               "number": 18,
-              "type": "single_choice",
-              "prompt": "Which belief is reported by the writer? Gifted people develop their greatness through difficulties.",
+              "type": "multi_choice",
+              "prompt": "Fifth selected letter: Which belief is reported by the writer?",
               "acceptedAnswers": [
                 "J"
               ],
@@ -1575,22 +1271,83 @@
                 }
               ],
               "repairSource": {
-                "kind": "overlay",
+                "kind": "script",
                 "status": "corrected",
-                "reviewedAt": "2026-08-24T02:20:21+00:00"
+                "reviewedAt": "2026-08-24T02:20:21+00:00",
+                "note": "83_fix_choose_n_groups: stem rebuilt from the shared either-order stem"
               }
             }
           ],
+          "sharedOptions": [
+            {
+              "id": "A",
+              "label": "A",
+              "text": "Truly gifted people are talented in all areas."
+            },
+            {
+              "id": "B",
+              "label": "B",
+              "text": "The talents of geniuses are soon exhausted."
+            },
+            {
+              "id": "C",
+              "label": "C",
+              "text": "Gifted people should use their gifts."
+            },
+            {
+              "id": "D",
+              "label": "D",
+              "text": "A genius appears once in every generation."
+            },
+            {
+              "id": "E",
+              "label": "E",
+              "text": "Genius can be easily destroyed by discouragement."
+            },
+            {
+              "id": "F",
+              "label": "F",
+              "text": "Genius is inherited."
+            },
+            {
+              "id": "G",
+              "label": "G",
+              "text": "Gifted people are very hard to live with."
+            },
+            {
+              "id": "H",
+              "label": "H",
+              "text": "People never appreciate true genius."
+            },
+            {
+              "id": "I",
+              "label": "I",
+              "text": "Geniuses are natural leaders."
+            },
+            {
+              "id": "J",
+              "label": "J",
+              "text": "Gifted people develop their greatness through difficulties."
+            },
+            {
+              "id": "K",
+              "label": "K",
+              "text": "Genius will always reveal itself."
+            }
+          ],
           "repairSource": {
-            "kind": "rubric-recovery",
-            "headingRange": [
-              14,
-              18
-            ],
-            "canonicalOf": [
-              "Write the correct letters in boxes 14–18 on your answer sheet."
-            ]
-          }
+            "kind": "overlay",
+            "status": "flagged",
+            "reviewedAt": "2026-08-25T01:56:16.548884+00:00",
+            "note": "Page 72 shows Questions 14-18 has 11 options (A-K: Choose FIVE letters, A-K). Group overlay schema only allows options A-J and fixture declared only A-H."
+          },
+          "acceptedAnswers": [
+            "B",
+            "C",
+            "F",
+            "H",
+            "J"
+          ]
         },
         {
           "id": "c8t3r-g19",

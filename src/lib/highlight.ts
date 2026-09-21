@@ -26,7 +26,9 @@ export async function makeHighlight(opts: {
   const contextAfter = sliceCodePoints(nfc, b, Math.min(codePointLength(nfc), b + CONTEXT));
   const textHash = await sha256HexUtf8(nfc);
   return {
-    id: `hl-${Date.now()}-${a}-${b}`,
+    // Two highlights on the same range in the same millisecond must not share
+    // an id — delete-by-id would remove both.
+    id: `hl-${Date.now().toString(36)}-${a}-${b}-${Math.random().toString(36).slice(2, 8)}`,
     targetId: opts.targetId,
     startOffset: a,
     endOffset: b,
@@ -88,7 +90,11 @@ export async function recoverHighlight(
   return { ...hl, invalid: true };
 }
 
-export function applyMarks(nfcText: string, highlights: HighlightRecord[]): string {
+export function applyMarks(
+  nfcText: string,
+  highlights: HighlightRecord[],
+  noted?: ReadonlySet<string>,
+): string {
   const chars = [...nfcText];
   const valid = highlights
     .filter((h) => !h.invalid && h.startOffset < h.endOffset && h.endOffset <= chars.length)
@@ -98,12 +104,19 @@ export function applyMarks(nfcText: string, highlights: HighlightRecord[]): stri
   let html = "";
   let cursor = 0;
   for (const h of valid) {
-    if (h.startOffset < cursor) continue;
-    html += escapeHtml(chars.slice(cursor, h.startOffset).join(""));
-    const cls = h.invalid ? "hl-invalid" : "hl-mark";
-    html += `<mark class="${cls}" data-hl="${escapeAttr(h.id)}">${escapeHtml(
-      chars.slice(h.startOffset, h.endOffset).join(""),
-    )}</mark>`;
+    // Overlapping marks render only their unclaimed tail rather than
+    // vanishing entirely — a saved highlight the user cannot see is a bug
+    // they cannot report.
+    const start = Math.max(h.startOffset, cursor);
+    if (h.endOffset <= start) continue;
+    html += escapeHtml(chars.slice(cursor, start).join(""));
+    const body = escapeHtml(chars.slice(start, h.endOffset).join(""));
+    // A highlight carrying a note is interactive (docs/ui-reference.md:
+    // "clicking the marked text reopens it"), so it needs a focus stop and a
+    // button role for keyboard/AT users.
+    html += noted?.has(h.id)
+      ? `<mark class="hl-mark has-note" tabindex="0" role="button" title="Open note" data-hl="${escapeAttr(h.id)}">${body}</mark>`
+      : `<mark class="hl-mark" data-hl="${escapeAttr(h.id)}">${body}</mark>`;
     cursor = h.endOffset;
   }
   html += escapeHtml(chars.slice(cursor).join(""));

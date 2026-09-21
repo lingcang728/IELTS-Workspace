@@ -17,9 +17,14 @@ export function normaliseAnswer(value: string) {
 }
 
 /**
- * Redo matching for the mistakes book. A single token still hits any
- * alternative (`library` vs `the library` / `library`). A comma-separated
- * multi-select (`A, C`) is compared as a set against the accepted list.
+ * Redo matching for the mistakes book, mirroring the real scorer
+ * (scoring.rs `value_to_compare` + `answers_match`): a single token hits any
+ * accepted alternative (`library` vs `the library` / `library`), and a
+ * typed multi-select is tokenised, sorted and pipe-joined the same way a
+ * stored array answer is — "B, C" encodes like `["B","C"]` and only matches
+ * a `B|C` key. When the accepted list is a shared letter pool (an
+ * `in_either_order` group's report rows carry the pool), any attempt letter
+ * inside the pool counts, matching how the scorer consumes the pool per slot.
  */
 export function attemptMatches(attempt: string, accepted: string[]): boolean {
   const mine = normaliseAnswer(attempt);
@@ -30,11 +35,11 @@ export function attemptMatches(attempt: string, accepted: string[]): boolean {
     .split(/[,;|/]+|\s+/)
     .map(normaliseAnswer)
     .filter(Boolean);
-  if (parts.length < 2 || acceptedNorm.length < 2) return false;
-  if (new Set(parts).size !== parts.length) return false;
-  if (parts.length !== acceptedNorm.length) return false;
-  const pool = new Set(acceptedNorm);
-  return parts.every((part) => pool.has(part));
+  if (parts.length < 2) return false;
+  const joined = parts.slice().sort().join("|");
+  if (acceptedNorm.some((answer) => answer === joined)) return true;
+  const letterPool = acceptedNorm.every((answer) => /^[a-z]$/.test(answer));
+  return letterPool && parts.some((part) => acceptedNorm.includes(part));
 }
 
 export function sentenceContaining(text: string, needle: string): string | undefined {

@@ -37,7 +37,7 @@ export class ErrorBoundary extends Component<Props, State> {
           <div className="error-panel">
             <h1>{this.props.fallbackTitle ?? "界面渲染异常"}</h1>
             <p>
-              当前视图加载时遇到非预期错误，所有本地作答数据均已安全保留。您可以尝试重试或刷新应用。
+              当前视图加载时遇到非预期错误。作答数据会随自动保存尽量保留到本地，您可以尝试重试或刷新应用。
             </p>
             <small>{this.state.error?.message ?? "未知错误"}</small>
             <div>
