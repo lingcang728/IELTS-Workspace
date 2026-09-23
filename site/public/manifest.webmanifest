@@ -1,0 +1,19 @@
+{
+  "name": "IELTS Workspace",
+  "short_name": "IELTS Workspace",
+  "description": "浏览器内的雅思机考工作台：在线练习、本地记录、可安装为应用。",
+  "lang": "zh-CN",
+  "start_url": "/#/app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4efe6",
+  "theme_color": "#f4efe6",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

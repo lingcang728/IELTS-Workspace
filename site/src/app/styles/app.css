@@ -1,0 +1,204 @@
+/* Web 工作台外壳 —— 顶部条 + 侧栏导航（Shell.tsx 专用）。
+ *
+ * 配色只读 tokens.css 变量（--bg/--panel/--ink/--accent …），
+ * 浅色/深色由 <html data-ui="light|dark"> 切换，与桌面端同一套 token。
+ * 考场域（exam.css / --exam-*）不在这里出现，考场路由也不渲染外壳。
+ */
+
+/* ---------- 顶部条 ---------- */
+
+.ws-topbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 20px;
+  min-height: 46px;
+  padding: 5px 14px;
+  border-bottom: 1px solid var(--line-strong);
+  background: var(--bg-deep);
+}
+
+.ws-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.ws-brand:hover {
+  color: var(--ink);
+}
+
+.ws-brand img {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+}
+
+.ws-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.ws-home-link {
+  color: var(--muted);
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ws-home-link:hover {
+  color: var(--ink);
+}
+
+/* 主题三段开关：浅色 / 深色 / 跟随系统 */
+.ws-theme {
+  display: flex;
+  flex: 0 0 auto;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.ws-theme button {
+  padding: 4px 11px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.ws-theme button + button {
+  border-left: 1px solid var(--line);
+}
+
+.ws-theme button:hover {
+  color: var(--ink);
+}
+
+.ws-theme button[aria-pressed="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* ---------- 布局 ---------- */
+
+/* .app-frame 原有三边边框是给无边框桌面窗口描边的；
+   网页占满整个视口，不需要这道内描边。 */
+.ws-frame {
+  border: 0;
+}
+
+.ws-sidebar {
+  padding-top: 6px;
+}
+
+/* 侧栏导航用 <a href="#/app/...">（可中键新开），
+   视觉对齐 shell.css 里 .side-nav button 的规格。 */
+.ws-side-nav a {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.ws-side-nav a:hover {
+  background: var(--panel-hover);
+  color: var(--ink);
+}
+
+/* 选中态：与桌面一致，accent-soft 底 + accent 字 */
+.ws-side-nav a.selected {
+  border-color: var(--line);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.ws-icon {
+  flex: 0 0 auto;
+}
+
+.ws-nav-rule {
+  height: 1px;
+  margin: 5px 18px;
+  background: var(--line);
+}
+
+/* ---------- 窄屏：侧栏收成顶部横向滚动条 ---------- */
+
+@media (max-width: 860px) {
+  .ws-frame {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .ws-sidebar {
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    min-height: 0;
+    padding: 4px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 0;
+    border-bottom: 1px solid var(--line-strong);
+    scrollbar-width: thin;
+  }
+
+  .ws-sidebar .side-nav {
+    display: flex;
+    gap: 4px;
+    padding: 0;
+  }
+
+  .ws-side-nav a {
+    width: auto;
+    height: 34px;
+    gap: 8px;
+    padding: 0 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .ws-nav-rule,
+  .ws-sidebar .sidebar-spacer {
+    display: none;
+  }
+
+  .ws-main {
+    padding: 14px 14px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .ws-topbar {
+    padding-inline: 10px;
+  }
+
+  .ws-topbar-right {
+    gap: 10px;
+  }
+
+  .ws-theme button {
+    padding-inline: 8px;
+  }
+}

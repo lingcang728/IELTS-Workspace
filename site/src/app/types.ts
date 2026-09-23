@@ -1,0 +1,465 @@
+export type ModuleKind = "reading" | "listening" | "writing" | "speaking";
+export type ExamMode = "mock" | "practice";
+export type SessionStatus =
+  | "created"
+  | "in_progress"
+  | "submitted"
+  | "aborted"
+  | "interrupted";
+export type Integrity = "clean" | "interrupted";
+
+export type QuestionType =
+  | "single_choice"
+  | "multi_choice"
+  | "true_false_ng"
+  | "yes_no_ng"
+  | "completion"
+  | "matching"
+  | "labelling";
+
+export type ScoringPolicy = "per_question" | "in_either_order";
+
+export type EndCondition =
+  | { type: "fixed_duration"; durationMs: number }
+  | { type: "media_driven"; checkMsAfterEnd: number };
+
+export interface ExamPolicy {
+  modeDefault?: ExamMode;
+  pauseAllowed: boolean;
+  answerVisible: boolean;
+  aiAllowed: boolean;
+  forceSubmit: boolean;
+  audioSeekAllowed: boolean;
+  strictNavigation: boolean;
+  endCondition: EndCondition;
+  timeWarningsMs: number[];
+}
+
+export interface SourceMeta {
+  kind: "official_sample" | "cambridge_book" | "imported_document" | "generated_practice";
+  publisher?: string;
+  title?: string;
+  url?: string;
+  accessed?: string;
+  note?: string;
+  /** Evidence trail for local PDFs, MinerU runs, and answer-key cross-checks. */
+  provenance?: SourceProvenance[];
+}
+
+export interface SourceProvenance {
+  kind: "pdf" | "mineru" | "answer_key" | "audio" | "external";
+  source: string;
+  url?: string;
+  sha256?: string;
+  accessed?: string;
+  note?: string;
+}
+
+export interface ChoiceOption {
+  id: string;
+  label: string;
+  text: string;
+}
+
+export interface Question {
+  id: string;
+  number: number;
+  type: QuestionType;
+  prompt: string;
+  gapText?: string;
+  options?: ChoiceOption[];
+  acceptedAnswers?: string[];
+  wordLimit?: number;
+  imageAsset?: string;
+}
+
+export interface QuestionGroup {
+  id: string;
+  instruction: string;
+  questionType: QuestionType;
+  scoringPolicy: ScoringPolicy;
+  sharedOptions?: ChoiceOption[];
+  wordBank?: string[];
+  acceptedAnswers?: string[];
+  wordLimit?: number;
+  imageAsset?: string;
+  /** Sanitized table/list/flow layout with {{q:question-id}} placeholders. */
+  layoutHtml?: string;
+  questions: Question[];
+}
+
+export interface ExamSection {
+  id: string;
+  title: string;
+  kind: "passage" | "listening_part" | "writing_task";
+  content?: { format: "plain" | "html"; text: string };
+  audioAsset?: string;
+  imageAsset?: string;
+  /**
+   * Where this part starts inside the concatenated per-test MP3, and how long
+   * it runs. Measured with ffprobe from the original per-part files by
+   * `scripts/repair/30_part_offsets.py`; this is what makes Part-level seeking
+   * possible without any audio alignment.
+   */
+  audioStartMs?: number;
+  audioDurationMs?: number;
+  questionGroups: QuestionGroup[];
+}
+
+export interface Exam {
+  schemaVersion: 1;
+  id: string;
+  title: string;
+  module: ModuleKind;
+  source: SourceMeta;
+  policy: ExamPolicy;
+  sections: ExamSection[];
+  /** Changes when MinerU correction or an answer-key repair invalidates resume. */
+  contentRevision?: string;
+}
+
+export interface AnswerEntry {
+  questionId: string;
+  questionType: QuestionType;
+  value: string | string[] | null;
+  flagged: boolean;
+  updatedAt: string;
+}
+
+export interface HighlightRecord {
+  id: string;
+  targetId: string;
+  startOffset: number;
+  endOffset: number;
+  offsetUnit: "unicode_code_point";
+  textHash: string;
+  contextBefore: string;
+  contextAfter: string;
+  excerpt: string;
+  invalid?: boolean;
+}
+
+export interface NoteRecord {
+  id: string;
+  attach: "highlight" | "passage" | "question";
+  targetId: string;
+  highlightId?: string;
+  body: string;
+  updatedAt: string;
+}
+
+export interface SessionEvent {
+  t: string;
+  type:
+    | "nav"
+    | "submit"
+    | "start"
+    | "pause"
+    | "resume"
+    | "warn"
+    | "audio_end"
+    | "force_submit"
+    | "autosave"
+    | "highlight"
+    | "note";
+  questionId?: string;
+  sectionId?: string;
+  extra?: string;
+}
+
+export interface Session {
+  schemaVersion: 1;
+  id: string;
+  examId: string;
+  /** Optional for legacy sessions; mismatches are interrupted on resume. */
+  examRevision?: string;
+  examTitle: string;
+  module: ModuleKind;
+  mode: ExamMode;
+  status: SessionStatus;
+  integrity: Integrity;
+  startedAt: string;
+  updatedAt: string;
+  remainingMs: number;
+  answers: Record<string, AnswerEntry>;
+  highlights: HighlightRecord[];
+  notes: NoteRecord[];
+  events: SessionEvent[];
+  audio?: { positionMs: number; partIndex: number; ended?: boolean };
+  writing?: Record<string, string>;
+  fontScale?: number;
+  colorScheme?: "default" | "high_contrast" | "cream";
+  saveError?: string | null;
+}
+
+export interface ScoreReport {
+  schemaVersion: number;
+  examId: string;
+  rawCorrect: number;
+  rawTotal: number;
+  questions: {
+    questionId: string;
+    number: number;
+    questionType: string;
+    correct: boolean;
+    userAnswer: unknown;
+    acceptedAnswers: string[];
+  }[];
+}
+
+export interface AnalyticsPoint {
+  date: string;
+  module?: ModuleKind;
+  /** Estimated band from schema/band-conversion.json; null below the table. */
+  band?: number | null;
+  rawCorrect?: number;
+  rawTotal?: number;
+  durationMs?: number;
+}
+
+export interface AnalyticsReport {
+  schemaVersion: 1;
+  generatedAt: string;
+  rangeDays: number;
+  overallAverage?: number;
+  moduleAverages: Partial<Record<ModuleKind, number>>;
+  moduleCounts: Partial<Record<ModuleKind, number>>;
+  /** Submitted sessions whose raw score falls below the band table. */
+  unbandedCounts: Partial<Record<ModuleKind, number>>;
+  scoreTrend: Partial<Record<ModuleKind, AnalyticsPoint[]>>;
+  questionTypeAccuracy: { module: "reading" | "listening"; questionType: string; correct: number; total: number; accuracy: number }[];
+  timeTrend: AnalyticsPoint[];
+  speakingEnabled: false;
+}
+
+export type AudioStatus = "ready" | "missing" | "needsReview";
+
+export interface ExamSummary {
+  id: string;
+  title: string;
+  module: ModuleKind;
+  source: SourceMeta;
+  path: string;
+  durationMs?: number;
+  questionCount: number;
+  /**
+   * Listening only: whether a transcript exists for this paper. Cambridge 4 has
+   * audio and questions but no extracted transcript, so 精听 would open blank.
+   */
+  hasTranscript?: boolean;
+  /** Listening: whether a local audio binding exists. Other modules are always ready. */
+  audioStatus?: AudioStatus;
+}
+
+export interface SessionSummary {
+  id: string;
+  examId: string;
+  module: ModuleKind;
+  mode: ExamMode;
+  status: SessionStatus;
+  integrity: Integrity;
+  startedAt: string;
+  updatedAt: string;
+  title?: string;
+  /**
+   * How much of the paper was actually attempted. Computed by
+   * `session::answered_counts`, because "submitted" is not "finished": a paper
+   * abandoned after two questions is still a submission.
+   */
+  answered?: number;
+  total?: number;
+}
+
+export interface ProbeResult {
+  ok: boolean;
+  dataRoot: string;
+  appRoot: string;
+  dev: boolean;
+  portable?: boolean;
+  warning?: string | null;
+  error?: string | null;
+}
+
+export type PracticeScheme = "follow_shell" | "light" | "dark";
+
+export interface Profile {
+  theme?: "light" | "dark";
+  /**
+   * Practice-mode exam chrome. Mock stays official light.
+   * Missing field is treated as follow_shell on load.
+   */
+  practiceScheme?: PracticeScheme;
+  /** Target overall band, 4.0-9.0 in 0.5 steps. Drives "距目标还差 N 题". */
+  targetBand?: number;
+  /** Exam date as YYYY-MM-DD. Drives the countdown on the workbench. */
+  examDate?: string;
+  /** First-run listening guide; once dismissed it stays dismissed. */
+  audioGuideDismissed?: boolean;
+}
+
+export interface AudioLibraryStatus {
+  catalogCount: number;
+  boundCount: number;
+  missingCount: number;
+  needsReviewCount: number;
+  guideUrl: string;
+  releaseTag: string;
+}
+
+export interface MigrationReport {
+  migrated: boolean;
+  from?: string | null;
+  to?: string | null;
+  /** Files skipped because the destination already had a copy (dest-wins). */
+  conflicts?: number;
+  error?: string | null;
+}
+
+export interface Bootstrap {
+  probe: ProbeResult;
+  exams: ExamSummary[];
+  sessions: SessionSummary[];
+  profile: Profile | null;
+  audio?: AudioLibraryStatus | null;
+  migration?: MigrationReport | null;
+  diagnostics?: { warnings: string[]; sessionsQuarantined: string[] };
+}
+
+export function allQuestions(exam: Exam): Question[] {
+  return exam.sections.flatMap((s) => s.questionGroups.flatMap((g) => g.questions));
+}
+
+export function groupForQuestion(exam: Exam, questionId: string): QuestionGroup | undefined {
+  for (const s of exam.sections) {
+    for (const g of s.questionGroups) {
+      if (g.questions.some((q) => q.id === questionId)) return g;
+    }
+  }
+  return undefined;
+}
+
+export function sectionForQuestion(exam: Exam, questionId: string): ExamSection | undefined {
+  for (const s of exam.sections) {
+    if (s.questionGroups.some((g) => g.questions.some((q) => q.id === questionId))) return s;
+  }
+  return undefined;
+}
+
+/* ------------------------------------------------------------------ Phase 3
+ * Study features. These shapes are the contract with `src-tauri/src/study.rs`,
+ * which returns opaque `serde_json::Value` — nothing checks them at the border,
+ * so the two must be edited together.
+ */
+
+/** One question missed in a submitted session, kept for re-doing later. */
+export interface Mistake {
+  id: string;
+  examId: string;
+  examTitle?: string;
+  questionId: string;
+  number: number;
+  module: ModuleKind;
+  questionType: string;
+  prompt: string;
+  /** The passage or transcript line the answer comes from, when known. */
+  sourceExcerpt?: string;
+  userAnswer: string | string[] | null;
+  acceptedAnswers: string[];
+  addedAt: string;
+  updatedAt: string;
+  /** Consecutive correct re-dos; 3 archives the entry. */
+  streak: number;
+  timesWrong: number;
+  status: "open" | "mastered";
+}
+
+/** Where a word was met. A card always carries its context, never a bare gloss. */
+export interface VocabSighting {
+  examId?: string;
+  examTitle?: string;
+  /** The sentence the word appeared in — the front of the card. */
+  sentence: string;
+  /** Character offsets of the term inside `sentence`, for the cloze. */
+  start?: number;
+  end?: number;
+  /** For an imported subtitle line. */
+  subtitleAt?: string;
+  source?: "exam" | "subtitle" | "manual";
+}
+
+export interface VocabCard {
+  id: string;
+  term: string;
+  note?: string;
+  sightings: VocabSighting[];
+  addedAt: string;
+  updatedAt: string;
+  reps: number;
+  lapses: number;
+  /** FSRS state; absent until the first review. */
+  stability?: number;
+  difficulty?: number;
+  intervalDays?: number;
+  lastReviewOn?: string;
+  dueOn?: string;
+}
+
+export type VocabGrade = 1 | 2 | 3 | 4;
+
+export interface PlanDay {
+  /** YYYY-MM-DD. */
+  date: string;
+  mock?: { examId: string; title: string; module: ModuleKind } | null;
+  intensive?: { examId: string; title: string; part: number } | null;
+  vocabTarget: number;
+  mistakeTarget: number;
+  done?: boolean;
+}
+
+export interface StudyPlan {
+  id: "current";
+  updatedAt: string;
+  targetBand?: number;
+  examDate?: string;
+  /** Days per week the learner intends to study. */
+  daysPerWeek: number;
+  days: PlanDay[];
+}
+
+export type PromptTemplate = "writing" | "explain" | "speaking" | "listening";
+
+export interface SavedFeedback {
+  id: string;
+  template: PromptTemplate;
+  title: string;
+  examId?: string;
+  /** The prompt that was copied out. */
+  prompt: string;
+  /** What the external model replied, pasted back by hand. */
+  reply: string;
+  savedAt: string;
+}
+
+export interface TranscriptLine {
+  speaker?: string;
+  text: string;
+  /** Question numbers whose answer is carried by this line. */
+  answers?: number[] | string;
+}
+
+export interface TranscriptSection {
+  index: number;
+  sectionId: string;
+  lines: TranscriptLine[];
+  charCount?: number;
+  missing?: boolean;
+}
+
+export interface Transcript {
+  schemaVersion: number;
+  examId: string;
+  note?: string;
+  answerMarkers?: number[];
+  missingMarkers?: number[];
+  sections: TranscriptSection[];
+}

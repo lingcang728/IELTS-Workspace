@@ -1,16 +1,24 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-ui="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="darkreader-lock" />
-    <meta name="color-scheme" content="light only" />
-    <meta name="theme-color" content="#f4efe6" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4efe6" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#07111a" />
     <meta
       name="description"
-      content="IELTS Workspace 是本地优先的雅思机考工作台。Reading 与 Writing 开箱即用，Listening 由你自行添加音频。不内置 AI，无遥测。"
+      content="IELTS Workspace 网页版雅思机考工作台：浏览器内练习与模考，记录保存在本机 IndexedDB，可安装为应用；另有 Windows 桌面版下载。"
     />
+    <meta name="application-name" content="IELTS Workspace" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="IELTS Workspace" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
     <title>IELTS Workspace</title>
   </head>
   <body>

@@ -1,4 +1,12 @@
-:root {
+/* Landing page (米白 + 朱砂 editorial 风)。
+ *
+ * 工作台样式（app/styles/tokens.css 等）现在与工作区一起全局加载，
+ * 因此本文件的每一条规则都限定在 `html[data-page="landing"]` 下 ——
+ * App.tsx 按路由在 <html> 上切换 data-page（landing / app / exam），
+ * 保证落地页的米白朱砂与工作台的蓝系深浅色互不污染。
+ */
+
+html[data-page="landing"] {
   --paper: #f4efe6;
   --paper-2: #efe8dc;
   --ink: #1c1712;
@@ -11,23 +19,19 @@
   --font-display: Georgia, "Iowan Old Style", Palatino, "Palatino Linotype", serif;
   --font-body: "Microsoft YaHei", "Segoe UI", "PingFang SC", sans-serif;
   --font-mono: "Cascadia Mono", "Cascadia Code", Consolas, monospace;
-  color-scheme: light only;
-}
+  color-scheme: light;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
   background: var(--paper);
   color: var(--ink);
   scroll-padding-top: 72px;
 }
 
-body {
+/* tokens.css 给 body 的是工作台样式（overflow:hidden 填满窗口）；
+   落地页要回到普通文档流，让页面按内容滚动。 */
+html[data-page="landing"] body {
   margin: 0;
+  height: auto;
+  overflow: visible;
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.65;
@@ -35,43 +39,47 @@ body {
   color: var(--ink);
 }
 
-body::before {
+html[data-page="landing"] #root {
+  height: auto;
+}
+
+html[data-page="landing"] body::before {
   content: "";
   display: block;
   height: 3px;
   background: var(--cinnabar);
 }
 
-img {
+html[data-page="landing"] img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-a {
+html[data-page="landing"] a {
   color: var(--cinnabar);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
 
-a:visited {
+html[data-page="landing"] a:visited {
   color: var(--cinnabar);
 }
 
-a:hover {
+html[data-page="landing"] a:hover {
   color: var(--cinnabar-hover);
 }
 
-:focus {
+html[data-page="landing"] :focus {
   outline: none;
 }
 
-:focus-visible {
+html[data-page="landing"] :focus-visible {
   outline: 2px solid var(--cinnabar);
   outline-offset: 3px;
 }
 
-.skip {
+html[data-page="landing"] .skip {
   position: absolute;
   left: 12px;
   top: -48px;
@@ -82,20 +90,20 @@ a:hover {
   text-decoration: none;
 }
 
-.skip:focus,
-.skip:focus-visible {
+html[data-page="landing"] .skip:focus,
+html[data-page="landing"] .skip:focus-visible {
   top: 12px;
   color: var(--paper);
 }
 
-.wrap {
+html[data-page="landing"] .wrap {
   width: min(960px, 100%);
   margin-inline: auto;
   padding-inline: 24px;
   min-width: 0;
 }
 
-.site-header {
+html[data-page="landing"] .site-header {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -103,7 +111,7 @@ a:hover {
   border-bottom: 1px solid var(--line);
 }
 
-.bar {
+html[data-page="landing"] .bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -113,7 +121,7 @@ a:hover {
   padding-block: 8px;
 }
 
-.brand {
+html[data-page="landing"] .brand {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -124,49 +132,49 @@ a:hover {
   letter-spacing: 0.01em;
 }
 
-.brand:visited,
-.brand:hover {
+html[data-page="landing"] .brand:visited,
+html[data-page="landing"] .brand:hover {
   color: var(--ink);
 }
 
-.brand img {
+html[data-page="landing"] .brand img {
   width: 32px;
   height: 32px;
   flex: 0 0 auto;
 }
 
-nav {
+html[data-page="landing"] nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 18px;
   min-width: 0;
 }
 
-nav a {
+html[data-page="landing"] nav a {
   color: var(--ink-soft);
   text-decoration: none;
 }
 
-nav a:visited {
+html[data-page="landing"] nav a:visited {
   color: var(--ink-soft);
 }
 
-nav a:hover {
+html[data-page="landing"] nav a:hover {
   color: var(--ink);
   text-decoration: underline;
 }
 
-section {
+html[data-page="landing"] section {
   padding-block: 56px;
   border-top: 1px solid var(--line);
 }
 
-.hero {
+html[data-page="landing"] .hero {
   padding-block: 64px 56px;
   border-top: 0;
 }
 
-.kicker {
+html[data-page="landing"] .kicker {
   margin: 0 0 8px;
   font-family: var(--font-display);
   font-size: 0.85rem;
@@ -175,55 +183,55 @@ section {
   color: var(--ink-soft);
 }
 
-h1,
-h2,
-h3 {
+html[data-page="landing"] h1,
+html[data-page="landing"] h2,
+html[data-page="landing"] h3 {
   font-weight: 400;
   line-height: 1.25;
   color: var(--ink);
 }
 
-h1 {
+html[data-page="landing"] h1 {
   margin: 0 0 12px;
   font-family: var(--font-display);
   font-size: 2.75rem;
 }
 
-h2 {
+html[data-page="landing"] h2 {
   margin: 0 0 14px;
   font-family: var(--font-body);
   font-size: 1.45rem;
 }
 
-h3 {
+html[data-page="landing"] h3 {
   margin: 0 0 6px;
   font-size: 1.02rem;
 }
 
-.lede {
+html[data-page="landing"] .lede {
   margin: 0 0 10px;
   font-size: 1.22rem;
   color: var(--ink);
 }
 
-.sub,
-section p {
+html[data-page="landing"] .sub,
+html[data-page="landing"] section p {
   max-width: 42rem;
   color: var(--ink-soft);
 }
 
-.sub {
+html[data-page="landing"] .sub {
   margin: 0 0 28px;
 }
 
-.cta-row {
+html[data-page="landing"] .cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin: 0;
 }
 
-.btn {
+html[data-page="landing"] .btn {
   display: inline-block;
   min-width: 0;
   padding: 10px 18px;
@@ -235,41 +243,56 @@ section p {
   text-align: center;
 }
 
-.btn:focus-visible {
+html[data-page="landing"] .btn:focus-visible {
   outline-offset: 3px;
 }
 
-.btn-primary {
+html[data-page="landing"] .btn-primary {
   background: var(--cinnabar);
   color: var(--on-cinnabar);
 }
 
-.btn-primary:visited,
-.btn-primary:hover {
+html[data-page="landing"] .btn-primary:visited,
+html[data-page="landing"] .btn-primary:hover {
   color: var(--on-cinnabar);
 }
 
-.btn-primary:hover {
+html[data-page="landing"] .btn-primary:hover {
   background: var(--cinnabar-hover);
   border-color: var(--cinnabar-hover);
 }
 
-.btn-secondary {
+html[data-page="landing"] .btn-secondary {
   background: transparent;
   color: var(--ink);
   border-color: var(--line);
 }
 
-.btn-secondary:visited,
-.btn-secondary:hover {
+html[data-page="landing"] .btn-secondary:visited,
+html[data-page="landing"] .btn-secondary:hover {
   color: var(--ink);
 }
 
-.btn-secondary:hover {
+html[data-page="landing"] .btn-secondary:hover {
   background: var(--paper-2);
 }
 
-.facts {
+/* 网页版入口提示条：仍用米白纸感，只用朱砂左边线点一下 */
+html[data-page="landing"] .web-note {
+  margin: 20px 0 0;
+  padding: 10px 14px;
+  max-width: 42rem;
+  border-left: 2px solid var(--cinnabar);
+  background: var(--paper-2);
+  color: var(--ink-soft);
+}
+
+html[data-page="landing"] .web-note strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+html[data-page="landing"] .facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px 24px;
@@ -279,17 +302,17 @@ section p {
   list-style: none;
 }
 
-.facts li {
+html[data-page="landing"] .facts li {
   min-width: 0;
   padding: 0 0 0 14px;
   border-left: 2px solid var(--line);
 }
 
-.facts p {
+html[data-page="landing"] .facts p {
   margin: 0;
 }
 
-.shot {
+html[data-page="landing"] .shot {
   margin: 0;
   min-width: 0;
   padding: 8px;
@@ -297,19 +320,19 @@ section p {
   border: 1px solid var(--line);
 }
 
-.shot img {
+html[data-page="landing"] .shot img {
   width: 100%;
   background: #0d1a22;
 }
 
-.shot figcaption {
+html[data-page="landing"] .shot figcaption {
   margin-top: 10px;
   padding: 0 4px 4px;
   font-size: 0.9rem;
   color: var(--ink-soft);
 }
 
-.dl-grid {
+html[data-page="landing"] .dl-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
@@ -317,25 +340,25 @@ section p {
   margin-top: 24px;
 }
 
-.dl-card {
+html[data-page="landing"] .dl-card {
   min-width: 0;
   padding: 20px;
   background: var(--paper-2);
   border: 1px solid var(--line);
 }
 
-.dl-card p {
+html[data-page="landing"] .dl-card p {
   margin: 0 0 14px;
 }
 
-.dl-card .file {
+html[data-page="landing"] .dl-card .file {
   font-family: var(--font-mono);
   font-size: 0.82rem;
   color: var(--ink);
   overflow-wrap: anywhere;
 }
 
-.badge {
+html[data-page="landing"] .badge {
   display: inline-block;
   margin: 0 0 10px;
   font-size: 0.75rem;
@@ -343,17 +366,17 @@ section p {
   color: var(--positive);
 }
 
-.badge-quiet {
+html[data-page="landing"] .badge-quiet {
   color: var(--ink-soft);
 }
 
-.data-list {
+html[data-page="landing"] .data-list {
   display: grid;
   gap: 12px;
   margin: 20px 0 0;
 }
 
-.data-list > div {
+html[data-page="landing"] .data-list > div {
   display: grid;
   grid-template-columns: minmax(0, 7rem) minmax(0, 1fr);
   gap: 8px 16px;
@@ -363,17 +386,17 @@ section p {
   border-top: 1px solid var(--line);
 }
 
-.data-list dt {
+html[data-page="landing"] .data-list dt {
   font-weight: 400;
   color: var(--ink);
 }
 
-.data-list dd {
+html[data-page="landing"] .data-list dd {
   margin: 0;
   min-width: 0;
 }
 
-code.path {
+html[data-page="landing"] code.path {
   font-family: var(--font-mono);
   font-size: 0.86em;
   padding: 0.08em 0.35em;
@@ -383,25 +406,25 @@ code.path {
   word-break: break-word;
 }
 
-.steps {
+html[data-page="landing"] .steps {
   margin: 0 0 20px;
   padding-left: 1.25rem;
   max-width: 42rem;
   color: var(--ink-soft);
 }
 
-.steps li + li {
+html[data-page="landing"] .steps li + li {
   margin-top: 8px;
 }
 
-.books {
+html[data-page="landing"] .books {
   margin: 20px 0 0;
   padding: 0;
   list-style: none;
   border-top: 1px solid var(--line);
 }
 
-.books li {
+html[data-page="landing"] .books li {
   display: grid;
   grid-template-columns: minmax(0, 9rem) minmax(0, 1fr) auto;
   gap: 8px 16px;
@@ -411,72 +434,72 @@ code.path {
   border-bottom: 1px solid var(--line);
 }
 
-.book-name {
+html[data-page="landing"] .book-name {
   color: var(--ink);
 }
 
-.books a {
+html[data-page="landing"] .books a {
   text-decoration: none;
   white-space: nowrap;
 }
 
-.books a:hover {
+html[data-page="landing"] .books a:hover {
   text-decoration: underline;
 }
 
-.site-footer {
+html[data-page="landing"] .site-footer {
   padding-block: 28px 40px;
   border-top: 1px solid var(--line);
   color: var(--ink-soft);
   font-size: 0.92rem;
 }
 
-.site-footer p {
+html[data-page="landing"] .site-footer p {
   margin: 0 0 8px;
   max-width: none;
 }
 
 @media (max-width: 860px) {
-  .facts,
-  .dl-grid {
+  html[data-page="landing"] .facts,
+  html[data-page="landing"] .dl-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  h1 {
+  html[data-page="landing"] h1 {
     font-size: 2.2rem;
   }
 
-  section {
+  html[data-page="landing"] section {
     padding-block: 44px;
   }
 
-  .hero {
+  html[data-page="landing"] .hero {
     padding-block: 48px 40px;
   }
 }
 
 @media (max-width: 520px) {
-  .wrap {
+  html[data-page="landing"] .wrap {
     padding-inline: 16px;
   }
 
-  h1 {
+  html[data-page="landing"] h1 {
     font-size: 1.85rem;
   }
 
-  .data-list > div,
-  .books li {
+  html[data-page="landing"] .data-list > div,
+  html[data-page="landing"] .books li {
     grid-template-columns: minmax(0, 1fr);
     gap: 4px;
   }
 
-  .books a {
+  html[data-page="landing"] .books a {
     justify-self: start;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
+  html[data-page="landing"] {
     scroll-behavior: auto;
   }
 }

@@ -1,4 +1,8 @@
+import { useLayoutEffect } from "react";
 import sitePkg from "../package.json";
+import { useRoute } from "./app/nav";
+import { WorkspaceRoutes, isExamRoute } from "./app/routes";
+import Shell from "./app/Shell";
 
 const VERSION = sitePkg.version;
 const INSTALLER =
@@ -21,7 +25,35 @@ const BOOKS = Array.from({ length: 17 }, (_, i) => {
   };
 });
 
+/**
+ * 双区入口：
+ *   #/            —— 官网落地页（editorial 米白 + 朱砂，data-page="landing"）
+ *   #/app/**      —— 工作台，套 Shell（data-page="app"）
+ *   #/app/exam    —— 考场全屏，不套 Shell（data-page="exam"）
+ *
+ * data-page 写在 <html> 上，落地页样式（styles.css）全部以它限定作用域，
+ * 与工作台 tokens 互不污染。useLayoutEffect 保证首帧前生效，不会闪深色。
+ */
 export default function App() {
+  const route = useRoute();
+  const page = !route.isApp ? "landing" : isExamRoute(route) ? "exam" : "app";
+
+  useLayoutEffect(() => {
+    document.documentElement.dataset.page = page;
+  }, [page]);
+
+  if (route.isApp) {
+    if (isExamRoute(route)) return <WorkspaceRoutes route={route} />;
+    return (
+      <Shell>
+        <WorkspaceRoutes route={route} />
+      </Shell>
+    );
+  }
+  return <Landing />;
+}
+
+function Landing() {
   return (
     <>
       <a className="skip" href="#main">
@@ -35,6 +67,7 @@ export default function App() {
             <span>IELTS Workspace</span>
           </a>
           <nav aria-label="页面栏目">
+            <a href="#/app">在线练习</a>
             <a href="#intro">介绍</a>
             <a href="#download">下载</a>
             <a href="#listening">听力音频</a>
@@ -46,15 +79,18 @@ export default function App() {
       <main id="main">
         <section className="hero" id="top" aria-labelledby="hero-title">
           <div className="wrap">
-            <p className="kicker">Windows · 本地优先</p>
+            <p className="kicker">Windows · 网页版 · 本地优先</p>
             <h1 id="hero-title">IELTS Workspace</h1>
             <p className="lede">本地优先的雅思机考工作台。</p>
             <p className="sub">
-              Reading 与 Writing 开箱即用。Listening 试卷可见，音频由你自行添加。不内置
-              AI，无遥测，除更新检查外不联网。
+              网页版浏览器内直接做题，桌面版 Reading 与 Writing 开箱即用。Listening
+              试卷可见，音频由你自行添加。不内置 AI，无遥测。
             </p>
             <p className="cta-row">
-              <a className="btn btn-primary" href={INSTALLER}>
+              <a className="btn btn-primary" href="#/app">
+                进入在线练习（免安装）
+              </a>
+              <a className="btn btn-secondary" href={INSTALLER}>
                 下载安装版
               </a>
               <a className="btn btn-secondary" href={PORTABLE}>
@@ -69,8 +105,13 @@ export default function App() {
             <p className="kicker">About</p>
             <h2 id="intro-title">介绍</h2>
             <p>
-              IELTS Workspace 是跑在本机上的雅思 Academic 机考工作台。练习、Mock
-              模考、划线笔记和交卷复盘都写在本地，不为刷题平台做账号或广告。
+              IELTS Workspace 是雅思 Academic 机考工作台。练习、Mock
+              模考、划线笔记和交卷复盘都在本地，不为刷题平台做账号或广告。
+            </p>
+            <p className="web-note">
+              <strong>网页版现已可用：</strong>
+              浏览器内做题、记录保存在本地 IndexedDB、可安装为应用。
+              <a href="#/app">进入在线练习</a>。
             </p>
             <ul className="facts">
               <li>
@@ -178,6 +219,12 @@ export default function App() {
             <h2 id="data-title">数据目录</h2>
             <p>会话、笔记和高亮都在本机。换电脑时拷走对应目录即可。</p>
             <dl className="data-list">
+              <div>
+                <dt>网页版</dt>
+                <dd>
+                  <code className="path">浏览器 IndexedDB（ielts-workspace 库）</code>
+                </dd>
+              </div>
               <div>
                 <dt>安装版</dt>
                 <dd>

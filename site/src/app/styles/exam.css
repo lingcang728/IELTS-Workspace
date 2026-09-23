@@ -1,0 +1,312 @@
+/* Exam Runtime — a visual domain of its own.
+ *
+ * Everything here reads only `--exam-*` tokens (defined in tokens.css under
+ * `[data-theme="exam"]`). It must never fall back to the App shell's palette:
+ * the exam is a fixed light official-style chrome regardless of `data-ui`, and
+ * a stray `var(--blue)` here is exactly how it drifted dark before.
+ *
+ * Navigator lives along the BOTTOM (docs/ui-reference.md → Navigation).
+ */
+
+.exam { height: 100%; display: flex; flex-direction: column; overflow: hidden; background: var(--exam-bg); color: var(--exam-ink); font: calc(14px * var(--font-scale, 1))/1.55 var(--exam-font); }
+.exam .meta { color: var(--exam-muted); font-size: 11px; }
+
+/* ---------------------------------------------------------------- chrome */
+.exam-windowbar { flex: 0 0 36px; display: flex; align-items: center; justify-content: space-between; padding-left: 14px; background: var(--exam-chrome); color: var(--exam-chrome-ink); font-size: 12px; user-select: none; }
+.exam-windowbar > span { display: flex; align-items: center; gap: 7px; font-weight: 600; }
+.exam-windowbar .window-actions { height: 100%; }
+.exam-windowbar .brand-image { filter: none; }
+.banner-save { flex: 0 0 auto; padding: 7px 14px; border-bottom: 1px solid var(--exam-warn); background: var(--exam-warn-soft); color: var(--exam-warn); font-size: 11px; text-align: center; display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; }
+.banner-save button { border: 1px solid var(--exam-warn); background: var(--exam-panel); color: var(--exam-warn); border-radius: 4px; padding: 2px 8px; }
+
+.exam-header { position: relative; flex: 0 0 66px; min-width: 0; display: grid; grid-template-columns: minmax(360px, 1fr) auto minmax(360px, 1fr); align-items: center; gap: 18px; padding: 0 18px; border-bottom: 1px solid var(--exam-line); background: var(--exam-panel); }
+.exam.practice .exam-header { border-top: 2px solid var(--exam-answered); }
+.exam.mock .exam-header { border-top: 2px solid var(--exam-accent); }
+.exam-header .left, .exam-header .right { min-width: 0; display: flex; align-items: center; gap: 10px; }
+.exam-header .right { justify-content: flex-end; }
+.exam-header .left strong { font-size: 18px; font-weight: 640; }
+.exam-title { max-width: 280px; overflow: hidden; color: var(--exam-muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.section-title { padding-left: 10px; border-left: 1px solid var(--exam-line); color: var(--exam-muted); font-size: 11px; }
+.exam-mode-chip { padding: 4px 7px; border: 1px solid var(--exam-accent); border-radius: 3px; background: var(--exam-accent-soft); color: var(--exam-accent); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.exam-mode-chip.practice { border-color: var(--exam-answered); background: var(--exam-answered-soft); color: var(--exam-answered); }
+
+.timer-stack, .practice-clock { min-width: 145px; display: grid; justify-items: center; }
+.timer-stack > span, .practice-clock > span { color: var(--exam-muted); font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
+.timer { min-width: 96px; color: var(--exam-ink); font: 600 23px/1.2 var(--exam-mono); letter-spacing: .04em; text-align: center; font-variant-numeric: tabular-nums; }
+.timer.warn { margin-top: 3px; padding: 3px 9px; border-radius: 3px; background: var(--exam-warn); color: var(--exam-warn-ink); }
+.timer.warn.flash { animation: pulse 1s steps(2) infinite; }
+.practice-clock strong { margin-top: 3px; color: var(--exam-answered); font-size: 12px; font-weight: 560; }
+.writing-header-metrics strong.warn { padding: 2px 7px; border-radius: 3px; background: var(--exam-warn); color: var(--exam-warn-ink); }
+.writing-header-metrics strong.warn.flash { animation: pulse 1s steps(2) infinite; }
+@keyframes pulse { 50% { opacity: .6; } }
+
+.writing-header-metrics { display: flex; align-items: center; justify-content: center; gap: 24px; }
+.writing-header-metrics > span { min-width: 112px; display: grid; grid-template-columns: 28px auto; grid-template-rows: auto auto; align-items: center; column-gap: 7px; padding-left: 18px; border-left: 1px solid var(--exam-line); }
+.writing-header-metrics > span:first-child { border-left: 0; }
+.writing-header-metrics .ui-icon { grid-row: 1 / 3; color: var(--exam-muted); }
+.writing-header-metrics small { color: var(--exam-muted); font-size: 10px; }
+.writing-header-metrics strong { color: var(--exam-ink); font: 500 17px/1.2 var(--exam-mono); }
+
+.toolbar { display: flex; gap: 7px; }
+.toolbar button { min-height: 30px; display: inline-flex; align-items: center; gap: 6px; padding: 0 10px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-ink); font-size: 12px; }
+.toolbar button:hover { border-color: var(--exam-accent); background: var(--exam-accent-soft); }
+.toolbar button.finish-action { border-color: var(--exam-accent); background: var(--exam-accent); color: var(--exam-accent-ink); }
+.exam.practice .toolbar button.finish-action { border-color: var(--exam-answered); background: var(--exam-answered); }
+.toolbar button.leave-button { border-color: var(--exam-line); background: var(--exam-panel-2); color: var(--exam-ink); }
+.toolbar button:disabled { opacity: .4; }
+.vol-wrap { display: flex; align-items: center; gap: 6px; color: var(--exam-muted); font-size: 11px; }
+.vol { width: 78px; accent-color: var(--exam-accent); }
+
+.exam-section-tabs { flex: 0 0 46px; display: flex; align-items: stretch; gap: 24px; padding: 0 22px; overflow-x: auto; border-bottom: 1px solid var(--exam-line); background: var(--exam-panel-2); color: var(--exam-muted); }
+.exam-section-tabs button { position: relative; flex: 0 0 auto; padding: 0 9px; border: 0; background: transparent; color: inherit; font-size: 12px; }
+.exam-section-tabs button.active { color: var(--exam-ink); font-weight: 600; }
+.exam-section-tabs button.active::after { position: absolute; right: 9px; bottom: 0; left: 9px; height: 2px; border-radius: 2px 2px 0 0; background: var(--exam-accent); content: ""; }
+.exam.practice .exam-section-tabs button.active::after { background: var(--exam-answered); }
+
+/* ------------------------------------------------------------ work area */
+.exam-mid { position: relative; min-height: 0; flex: 1; display: flex; flex-direction: column; background: var(--exam-bg); }
+.exam-body { min-height: 0; flex: 1; display: grid; }
+/* Reading/writing column tracks are set inline from splitPercent in
+   ExamApp.tsx — minmax(300/320px, pct%) 7px minmax(300px, 1fr). The drag
+   writes the same shape, so this is the single source of truth. */
+.exam-body.listening { grid-template-columns: 1fr; }
+.pane { min-width: 0; overflow: auto; margin: 10px 10px 10px 10px; padding: 18px 20px 38px; border: 1px solid var(--exam-line); border-radius: 6px; background: var(--exam-panel); scrollbar-color: var(--exam-line) transparent; }
+.exam-body.reading .pane:nth-of-type(2), .exam-body.writing .pane:nth-of-type(2) { margin-left: 0; }
+.exam-body.reading .pane:nth-of-type(1), .exam-body.writing .pane:nth-of-type(1) { margin-right: 0; }
+.exam-body.listening .pane { margin-top: 0; }
+.gutter { background: transparent; cursor: col-resize; }
+.passage { max-width: 78ch; color: var(--exam-ink); white-space: pre-wrap; line-height: 1.72; }
+.passage h4 { margin: 0 0 16px; color: var(--exam-ink); font-size: 17px; font-weight: 620; }
+.passage p { margin: 0 0 14px; }
+.instr { margin: 0 0 14px; padding: 12px 14px; border: 1px solid var(--exam-line); border-radius: 5px; background: var(--exam-instr); color: var(--exam-ink); line-height: 1.55; }
+.instr strong, .instr b { font-weight: 650; }
+.group-figure { margin: 0 0 14px; padding: 10px 12px; border: 1px solid var(--exam-line); border-radius: 5px; background: var(--exam-panel); }
+.group-figure img { display: block; width: 100%; max-width: 720px; height: auto; }
+
+.q-group { max-width: 920px; }
+.q-block { margin: 0; padding: 13px 5px; border-bottom: 1px solid var(--exam-line-soft); color: var(--exam-ink); }
+.q-block:last-child { border-bottom: 0; }
+.q-num { display: inline-grid; min-width: 26px; height: 26px; place-items: center; margin-right: 7px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-ink); font: 600 calc(12px * var(--font-scale, 1))/1 var(--exam-mono); vertical-align: middle; }
+.q-stem { line-height: 1.6; }
+.choices { display: grid; gap: 7px; margin: 10px 0 0 34px; }
+.choices label { display: flex; align-items: flex-start; gap: 9px; padding: 8px 10px; border: 1px solid transparent; border-radius: 4px; color: var(--exam-ink); line-height: 1.45; }
+.choices label:hover { border-color: var(--exam-line); background: var(--exam-panel-2); }
+.choices label:has(input:checked) { border-color: var(--exam-accent); background: var(--exam-accent-soft); }
+.choices label:focus-within { border-color: var(--exam-accent); }
+.choices label.taken { opacity: .7; }
+.choices input { margin-top: 3px; accent-color: var(--exam-accent); }
+.choice-letter { flex: 0 0 1.5rem; color: var(--exam-muted); font-variant-numeric: tabular-nums; }
+.choice-limit { margin: 8px 0 0 34px; color: var(--exam-muted); font-size: 12px; }
+.gap, .match, .layout-answer { min-width: 120px; min-height: 2.2em; height: auto; margin: 0 4px; padding: 2px 8px; border: 1px solid var(--exam-line); border-radius: 3px; background: var(--exam-panel); color: var(--exam-ink); }
+.match { display: block; width: min(100%, 36rem); min-width: min(100%, 18rem); height: auto; min-height: 32px; margin: 8px 0 0; }
+.gap { text-align: center; }
+.gap:focus, .match:focus, .layout-answer:focus { border-color: var(--exam-accent); outline: 0; background: var(--exam-accent-soft); }
+.q-layout { overflow-x: auto; margin: 10px 0 18px; }
+.q-layout table { width: 100%; border-collapse: collapse; }
+.q-layout th, .q-layout td { padding: 10px; border: 1px solid var(--exam-line); text-align: left; vertical-align: top; }
+.q-layout th { background: var(--exam-panel-2); }
+.q-layout ul, .q-layout ol { padding-left: 23px; }
+.bank { padding: 9px 12px; border: 1px dashed var(--exam-line); border-radius: 4px; color: var(--exam-muted); }
+
+.q-group-practice .q-card-block { margin-bottom: 10px; padding: 13px; border: 1px solid var(--exam-line-soft); border-radius: 6px; background: var(--exam-panel-2); }
+.choice-cards { display: grid; gap: 7px; margin: 11px 0 0 33px; }
+.choice-cards.tfng { grid-template-columns: repeat(3, minmax(90px, 1fr)); }
+.choice-card { display: flex; align-items: center; gap: 9px; min-height: 38px; padding: 8px 11px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel); color: var(--exam-ink); text-align: left; }
+.choice-card strong, .choice-card .choice-letter { min-width: 20px; color: var(--exam-muted); font-variant-numeric: tabular-nums; }
+.choice-card:hover { border-color: var(--exam-answered); }
+.choice-card.on { border-color: var(--exam-answered); background: var(--exam-answered-soft); box-shadow: inset 3px 0 var(--exam-answered); }
+.choice-card.taken { opacity: .7; }
+
+.matching-board { max-width: 900px; }
+.match-hint { margin: -4px 0 12px; color: var(--exam-muted); font-size: 11px; }
+.match-pool { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
+.match-chip { display: inline-flex; gap: 7px; padding: 7px 9px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-accent-soft); color: var(--exam-ink); }
+.match-chip.used { opacity: .5; }
+.match-chip.armed { border-color: var(--exam-answered); box-shadow: 0 0 0 2px var(--exam-answered-soft); }
+.match-drop { display: grid; grid-template-columns: minmax(200px, 1fr) minmax(180px, .7fr); align-items: center; gap: 12px; margin-top: 7px; padding: 10px; border: 1px solid var(--exam-line); border-radius: 4px; }
+.match-drop.awaiting { border-style: dashed; }
+.drop-slot { min-height: 34px; display: flex; align-items: center; gap: 7px; padding: 6px 9px; border: 1px dashed var(--exam-line); border-radius: 3px; color: var(--exam-muted); }
+.match-drop.filled .drop-slot { border-style: solid; border-color: var(--exam-answered); color: var(--exam-ink); }
+/* The select fallback is visually hidden; draw focus on the row it serves. */
+.match-drop:has(.sr-fallback:focus-visible) { outline: 2px solid var(--exam-accent); outline-offset: 2px; }
+.clear-slot { margin-left: auto; border: 0; background: transparent; color: var(--exam-muted); font-size: 11px; }
+
+.hl-mark { padding: 0; background: var(--exam-hl); color: var(--exam-hl-ink, inherit); }
+/* A highlight carrying a note shows the small orange marker the official
+   runtime reveals on hover — persistent here so it is discoverable without a
+   mouse. Clicking or pressing Enter on it reopens the note. */
+.hl-mark.has-note { box-shadow: inset 0 -2px 0 var(--exam-note); cursor: pointer; }
+.hl-mark.has-note:hover, .hl-mark.has-note:focus-visible { background: var(--exam-note-bg); }
+.pane > .toolbar button { min-height: 30px; padding: 0 10px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-ink); }
+
+.writing-box { width: 100%; min-height: calc(100% - 72px); padding: 16px; border: 0; outline: 0; resize: none; background: transparent; color: var(--exam-ink); font: inherit; line-height: 1.72; }
+.writing-box::placeholder { color: var(--exam-muted); }
+
+.listening-player { flex: 0 0 70px; display: grid; grid-template-columns: 145px minmax(0, 1fr) 100px; align-items: center; gap: 16px; margin: 10px; padding: 10px 16px; border: 1px solid var(--exam-line); border-radius: 6px; background: var(--exam-panel); color: var(--exam-muted); }
+.listening-player > button { display: flex; align-items: center; gap: 9px; border: 0; background: transparent; color: var(--exam-answered); font-size: 12px; font-weight: 600; }
+.listening-player > button:disabled { color: var(--exam-muted); }
+.listening-player > button:disabled .player-state { background: var(--exam-line); color: var(--exam-panel); }
+.player-state { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--exam-answered); color: var(--exam-panel); }
+.listening-player input[type="range"] { width: 100%; accent-color: var(--exam-answered); }
+.player-time { font: 11px var(--exam-mono); text-align: right; font-variant-numeric: tabular-nums; }
+.exam-body.listening audio { display: none; }
+
+/* ---------------------------------------------- bottom question navigator */
+.exam-nav { flex: 0 0 auto; display: flex; flex-direction: column; border-top: 1px solid var(--exam-line); background: var(--exam-nav); }
+.nav-strip { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 8px 14px 0; }
+.nav-strip.collapsed { padding-bottom: 4px; }
+.nav-collapse { display: inline-flex; align-items: center; gap: 6px; padding: 5px 9px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-muted); font-size: 11px; white-space: nowrap; }
+.nav-collapse:hover { border-color: var(--exam-accent); color: var(--exam-ink); }
+/* A horizontal scrollbar appears when the 40 numbers do not fit — the official
+ * runtime does the same rather than dropping the navigator on narrow screens. */
+.question-strip { display: flex; gap: 6px; padding: 2px 1px 8px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--exam-line) transparent; }
+.question-strip button { position: relative; overflow: hidden; flex: 0 0 auto; width: 34px; height: 34px; padding-top: 3px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-nav-btn); color: var(--exam-ink); font: 12px var(--exam-mono); }
+.question-strip button:hover { border-color: var(--exam-accent); }
+/* Answered → a bar ABOVE the number (2025 official Quick Guide). Neutral ink, not green. */
+.question-strip button.answered::before { position: absolute; top: 2px; right: 5px; left: 5px; height: 3px; border-radius: 2px; background: var(--exam-ink); content: ""; }
+.question-strip button.flagged.answered::before { right: 9px; left: 9px; }
+.question-strip button.current { border-color: var(--exam-accent); background: var(--exam-accent-soft); box-shadow: 0 0 0 1px var(--exam-accent); font-weight: 700; }
+/* Flagged for review → the number is shown as a circle. */
+.question-strip button.flagged { border-color: var(--exam-flag); border-radius: 50%; color: var(--exam-flag); }
+
+.exam-nav-row { flex: 0 0 56px; display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 18px; padding: 0 14px; border-top: 1px solid var(--exam-line-soft); }
+.exam-nav-tools { min-width: 0; display: flex; align-items: center; gap: 18px; }
+.review-toggle { display: flex; align-items: center; gap: 7px; color: var(--exam-ink); font-size: 11px; }
+.review-toggle input { position: absolute; opacity: 0; pointer-events: none; }
+.review-toggle:has(input:checked) { color: var(--exam-flag); }
+/* The hidden checkbox still takes keyboard focus — outline the label so a
+   Tab user can see where focus landed. */
+.review-toggle:has(input:focus-visible) { outline: 2px solid var(--exam-accent); outline-offset: 3px; border-radius: 3px; }
+.tool-hint, .practice-hint { display: flex; align-items: center; gap: 6px; overflow: hidden; color: var(--exam-muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.practice-hint { color: var(--exam-answered); }
+.exam-progress-copy { color: var(--exam-muted); font: 11px var(--exam-mono); }
+.exam-progress-copy strong { color: var(--exam-ink); }
+.nav-arrows { display: flex; gap: 7px; }
+.nav-arrows button { min-width: 86px; height: 34px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; padding: 0 12px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-ink); font-size: 12px; }
+.nav-arrows button:disabled { opacity: .35; }
+.nav-arrows .next-button { border-color: var(--exam-accent); background: var(--exam-accent); color: var(--exam-accent-ink); }
+.flip { transform: rotate(180deg); }
+
+/* ------------------------------------------------------------- overlays */
+.options-pop { position: absolute; top: calc(100% - 6px); right: 10px; z-index: 25; width: 290px; padding: 16px; border: 1px solid var(--exam-line); border-radius: 5px; background: var(--exam-panel); color: var(--exam-ink); box-shadow: var(--exam-shadow); }
+.options-pop p { margin: 0 0 8px; font-size: 11px; font-weight: 600; }
+.options-pop .row { display: flex; flex-wrap: wrap; gap: 6px; }
+.options-pop button { min-height: 28px; padding: 0 8px; border: 1px solid var(--exam-line); border-radius: 3px; background: var(--exam-panel-2); color: var(--exam-ink); font-size: 11px; }
+.options-pop .row button.on { border-color: var(--exam-accent); background: var(--exam-accent-soft); font-weight: 600; }
+.text-size-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 13px; }
+.text-size-heading p { margin: 0; font-size: 13px; }
+.text-size-heading output { color: var(--exam-accent); font: 600 11px var(--exam-mono); }
+.text-size-slider { display: grid; grid-template-columns: 18px minmax(0, 1fr) 23px; align-items: center; gap: 10px; color: var(--exam-muted); font-size: 11px; }
+.text-size-slider strong { color: var(--exam-ink); font-size: 16px; font-weight: 600; }
+.text-size-slider input { width: 100%; height: 4px; accent-color: var(--exam-accent); cursor: pointer; }
+.text-size-slider + p { margin-top: 17px; }
+
+.ctx-menu { position: fixed; z-index: 30; min-width: 150px; padding: 5px; border: 1px solid var(--exam-line); border-radius: 5px; background: var(--exam-panel); box-shadow: var(--exam-shadow); }
+.ctx-menu button { width: 100%; display: block; padding: 7px 9px; border: 0; border-radius: 3px; background: transparent; color: var(--exam-ink); text-align: left; }
+.ctx-menu button:hover { background: var(--exam-accent-soft); }
+.note-pad { position: fixed; z-index: 28; width: 260px; min-height: 150px; padding: 10px; border: 1px solid var(--exam-note); border-radius: 4px; background: var(--exam-note-bg); color: var(--exam-ink); box-shadow: var(--exam-shadow); }
+.note-pad textarea { width: 100%; min-height: 115px; border: 0; outline: 0; resize: vertical; background: transparent; color: inherit; }
+.exam-toast { position: fixed; right: 24px; bottom: 76px; z-index: 40; padding: 9px 14px; border: 1px solid var(--exam-line); border-radius: 5px; background: var(--exam-panel); color: var(--exam-ink); box-shadow: var(--exam-shadow); font-size: 11px; }
+
+.confirm { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; background: var(--exam-scrim); backdrop-filter: blur(3px); }
+.confirm .box { width: min(430px, 90vw); padding: 25px; border: 1px solid var(--exam-line); border-radius: 8px; background: var(--exam-panel); color: var(--exam-ink); box-shadow: var(--exam-shadow); }
+.confirm-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--exam-flag-soft); color: var(--exam-flag); }
+.confirm-icon.practice { background: var(--exam-answered-soft); color: var(--exam-answered); }
+.confirm h2 { margin: 14px 0 7px; font-size: 18px; }
+.confirm p { color: var(--exam-muted); font-size: 12px; line-height: 1.6; }
+.confirm .row { display: flex; justify-content: flex-end; gap: 8px; margin-top: 19px; }
+.confirm button { min-height: 34px; padding: 0 13px; border-radius: 4px; }
+.confirm .primary { border: 1px solid var(--exam-accent); background: var(--exam-accent); color: var(--exam-accent-ink); }
+.confirm .ghost { border: 1px solid var(--exam-line); background: transparent; color: var(--exam-ink); }
+
+.sr-only, .sr-fallback { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important; }
+/* The practice matching board keeps a real <select> as its keyboard path —
+   reveal it while it holds focus instead of leaving a 1px invisible control
+   (WCAG 2.4.7). */
+.sr-fallback:focus {
+  position: static !important;
+  width: min(100%, 36rem) !important;
+  height: auto !important;
+  min-height: 32px !important;
+  margin: 8px 0 0 !important;
+  padding: 2px 8px !important;
+  overflow: visible !important;
+  clip: auto !important;
+  border: 1px solid var(--exam-accent) !important;
+}
+
+@media (max-width: 1200px) {
+  /* Header wraps its toolbar at this width — the fixed 66px flex-basis would
+     clip the second row, so let it grow instead. */
+  .exam-header { flex-basis: auto; min-height: 66px; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; padding: 6px 10px; }
+  .exam-title, .section-title { max-width: 140px; }
+  .exam-header .right { flex-wrap: wrap; justify-content: flex-end; }
+  .tool-hint, .practice-hint { display: none; }
+}
+
+/* 考场文本划选与键盘焦点专属 Token，隔绝外壳 tokens.css 污染 */
+.exam ::selection {
+  background: var(--exam-accent-soft);
+  color: inherit;
+}
+.exam :focus-visible {
+  outline: 2px solid var(--exam-accent);
+  outline-offset: 2px;
+}
+
+/* 考场窗口控制按钮专属样式，屏蔽 shell.css 的 --ink 与 --panel-hover */
+.exam-windowbar .window-actions button {
+  width: 46px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--exam-chrome-ink);
+  opacity: .85;
+}
+.exam-windowbar .window-actions button:hover {
+  background: var(--exam-accent-soft);
+  color: var(--exam-chrome-ink);
+  opacity: 1;
+}
+.exam-windowbar .window-actions button:last-child:hover {
+  background: var(--exam-warn);
+  color: var(--exam-warn-ink);
+  opacity: 1;
+}
+
+/* 考场标题栏 Logo 显色上色 */
+.exam-windowbar .brand-image .brand-face-left { fill: var(--exam-chrome-ink); opacity: .7; }
+.exam-windowbar .brand-image .brand-face-right { fill: var(--exam-chrome-ink); opacity: .9; }
+.exam-windowbar .brand-image .brand-ridge { stroke: var(--exam-chrome); stroke-width: 2.3; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------------------------------------------------------------- web port
+ * 网页版没有 OS 窗口可控制：原 .window-actions 的最小化/最大化/关闭被换成
+ * 普通顶部栏——左侧「返回」（走与 Leave 相同的保存流程）+ 品牌，右侧提示
+ * 自动保存已开启。仍然只读 --exam-* token。 */
+.exam-page { height: 100%; display: flex; flex-direction: column; }
+.exam-page > .exam { flex: 1 1 auto; min-height: 0; height: auto; }
+.exam-screen-note { flex: 0 0 auto; padding: 6px 14px; background: var(--exam-flag-soft); color: var(--exam-flag); font-size: 11px; text-align: center; }
+.exam-windowbar .windowbar-back { display: inline-flex; align-items: center; gap: 2px; margin-right: 10px; padding: 2px 8px; border: 1px solid transparent; border-radius: 4px; background: transparent; color: var(--exam-chrome-ink); font-size: 11px; opacity: .9; }
+.exam-windowbar .windowbar-back:hover { border-color: var(--exam-chrome-ink); opacity: 1; }
+.exam-windowbar .windowbar-hint { padding-right: 14px; font-weight: 400; font-size: 11px; opacity: .75; }
+
+/* 浏览器可能拦截带声音的 autoplay：给一条真实的「开始播放」入口，而不是
+   让播放器永远停在“播放中”。 */
+.audio-start-strip { flex: 0 0 auto; display: flex; align-items: center; justify-content: center; gap: 10px; margin: 10px 10px 0; padding: 8px 14px; border: 1px solid var(--exam-warn); border-radius: 5px; background: var(--exam-warn-soft); color: var(--exam-warn); font-size: 12px; }
+.audio-start-strip button { padding: 3px 10px; border: 1px solid var(--exam-warn); border-radius: 4px; background: var(--exam-panel); color: var(--exam-warn); }
+
+/* 开考前的加载/出错/中断门页（沿用考场视觉域，避免依赖外壳样式表）。 */
+.exam-gate { flex: 1; display: grid; place-items: center; padding: 24px; }
+.exam-gate .gate-box { width: min(460px, 92vw); padding: 28px; border: 1px solid var(--exam-line); border-radius: 8px; background: var(--exam-panel); color: var(--exam-ink); text-align: center; box-shadow: var(--exam-shadow); }
+.exam-gate h1 { margin: 14px 0 8px; font-size: 19px; }
+.exam-gate p { margin: 0 0 18px; color: var(--exam-muted); font-size: 12px; line-height: 1.7; }
+.exam-gate .button-row { display: flex; gap: 8px; justify-content: center; }
+.exam-gate button { min-height: 34px; padding: 0 14px; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel-2); color: var(--exam-ink); }
+.exam-gate button.primary { border-color: var(--exam-accent); background: var(--exam-accent); color: var(--exam-accent-ink); }
+.exam-gate .brand-image .brand-face-left { fill: var(--exam-ink); opacity: .7; }
+.exam-gate .brand-image .brand-face-right { fill: var(--exam-ink); opacity: .9; }
+.exam-gate .brand-image .brand-ridge { stroke: var(--exam-panel); stroke-width: 2.3; stroke-linecap: round; stroke-linejoin: round; }
+

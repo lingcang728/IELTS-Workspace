@@ -5,14 +5,19 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - "scripts/build-site-content.mjs"
+      - "fixtures/cambridge/**"
+      - "fixtures/official-samples/**"
+      - "fixtures/transcripts/**"
+      - "fixtures/assets/cambridge/**"
+      - "schema/band-conversion.json"
       - "docs/assets/logo.png"
       - "docs/assets/preview.png"
       - ".github/workflows/pages.yml"
   pull_request:
     paths:
       - "site/**"
-      - "docs/assets/logo.png"
-      - "docs/assets/preview.png"
+      - "scripts/build-site-content.mjs"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 

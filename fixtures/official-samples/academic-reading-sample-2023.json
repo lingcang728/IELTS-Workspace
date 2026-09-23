@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "official-academic-reading-sample-2023",
+  "title": "Official Academic Reading Sample (IELTS.org 2023 tasks)",
+  "module": "reading",
+  "source": {
+    "kind": "official_sample",
+    "publisher": "IELTS",
+    "url": "https://ielts.org/cdn/Sample-tests/ielts-academic-reading-sample-tasks-2023.pdf",
+    "accessed": "2026-08-22",
+    "note": "Public official sample tasks converted locally. Not a full 40-question live paper; numbering is sequential for the runtime."
+  },
+  "policy": {
+    "pauseAllowed": false,
+    "answerVisible": false,
+    "aiAllowed": false,
+    "forceSubmit": true,
+    "audioSeekAllowed": false,
+    "strictNavigation": false,
+    "endCondition": {
+      "type": "fixed_duration",
+      "durationMs": 3600000
+    },
+    "timeWarningsMs": [
+      600000,
+      300000
+    ]
+  },
+  "sections": [
+    {
+      "id": "official-curie",
+      "title": "Reading Passage 1 — Marie Curie (official extract)",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "The life and work of Marie Curie\n\nMarie Curie is probably the most famous woman scientist who has ever lived. Born Maria Sklodowska in Poland in 1867, she is famous for her work on radioactivity, and was twice a winner of the Nobel Prize. With her husband, Pierre Curie, and Henri Becquerel, she was awarded the 1903 Nobel Prize for Physics, and was then sole winner of the 1911 Nobel Prize for Chemistry. She was the first woman to win a Nobel Prize.\n\nFrom childhood, Marie was remarkable for her prodigious memory, and at the age of 16 won a gold medal on completion of her secondary education. Because her father lost his savings through bad investment, she then had to take work as a teacher. From her earnings she was able to finance her sister Bronia’s medical studies in Paris, on the understanding that Bronia would, in turn, later help her to get an education.\n\nIn 1891 this promise was fulfilled and Marie went to Paris and began to study at the Sorbonne (the University of Paris). She often worked far into the night and lived on little more than bread and butter and tea. She came first in the examination in the physical sciences in 1893, and in 1894 was placed second in the examination in mathematical sciences. It was not until the spring of that year that she was introduced to Pierre Curie."
+      },
+      "questionGroups": [
+        {
+          "id": "oc-tf",
+          "instruction": "Do the following statements agree with the information given in the passage?\nTRUE / FALSE / NOT GIVEN",
+          "questionType": "true_false_ng",
+          "scoringPolicy": "per_question",
+          "questions": [
+            {
+              "id": "oq1",
+              "number": 1,
+              "type": "true_false_ng",
+              "prompt": "Marie Curie’s husband was a joint winner of both Marie’s Nobel Prizes.",
+              "acceptedAnswers": [
+                "FALSE"
+              ]
+            },
+            {
+              "id": "oq2",
+              "number": 2,
+              "type": "true_false_ng",
+              "prompt": "Marie became interested in science when she was a child.",
+              "acceptedAnswers": [
+                "NOT GIVEN"
+              ]
+            },
+            {
+              "id": "oq3",
+              "number": 3,
+              "type": "true_false_ng",
+              "prompt": "Marie was able to attend the Sorbonne because of her sister’s financial contribution.",
+              "acceptedAnswers": [
+                "TRUE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-traffic",
+      "title": "Reading Passage 2 — The Physics of Traffic Behavior (official extract)",
+      "kind": "passage",
+      "content": {
+        "format": "plain",
+        "text": "The Physics of Traffic Behavior\nA  Some years ago, when several theoretical physicists, principally Dirk Helbing and Boris Kerner of Stuttgart, Germany, began publishing papers on traffic flow in publications normally read by traffic engineers, they were clearly working outside their usual sphere of investigation. They had noticed that if they simulated the movement of vehicles on a highway, using the equations that describe how the molecules of a gas move, some very strange results emerged. Of course, vehicles do not behave exactly like gas molecules: for example, drivers try to avoid collisions by slowing down when they get too near another vehicle, whereas gas molecules have no such concern. However, the physicists modified the equations to take the differences into account and the overall description of traffic as a flowing gas has proved to be a very good one; the moving-gas model of traffic reproduces many phenomena seen in real-world traffic.\n\nThe strangest thing that came out of these equations, however, was the implication that congestion can arise completely spontaneously; no external causes are necessary. Vehicles can be flowing freely along, at a density still well below what the road can handle, and then suddenly gel into a slow-moving ooze. Under the right conditions a brief and local fluctuation in the speed or the distance between vehicles is all it takes to trigger a system-wide breakdown that persists for hours. In fact, the physicists’ analysis suggested such spontaneous breakdowns in traffic flow probably occur quite frequently on highways.\n\nB  Though a decidedly unsettling discovery, this showed striking similarities to the phenomena popularized as ‘chaos theory’. This theory has arisen from the understanding that in any complex interacting system which is made of many parts, each part affects the others. Consequently, tiny variations in one part of a complex system can grow in huge but unpredictable ways. This type of dramatic change from one state to another is similar to what happens when a chemical substance changes from a vapor to a liquid. It often happens that water in a cloud remains as a gas even after its temperature and density have reached the point where it could condense into water droplets. However, if the vapor encounters a solid surface, even something as small as a speck of dust, condensation can take place and the transition from vapor to liquid finally occurs. Helbing and Kerner see traffic as a complex interacting system. They found that a small fluctuation in traffic density can act as the ‘speck of dust’ causing a sudden change from freely moving traffic to synchronized traffic, when vehicles in all lanes abruptly slow down and start moving at the same speed, making passing impossible.\n\nC  The physicists have challenged proposals to set a maximum capacity for vehicles on highways. They argue that it may not be enough simply to limit the rate at which vehicles are allowed to enter a highway, rather, it may be necessary to time each vehicle’s entry onto a highway precisely to coincide with a temporary drop in the density of vehicles along the road. The aim of doing this would be to smooth out any possible fluctuations in the road conditions that can trigger a change in traffic behavior and result in congestion. They further suggest that preventing breakdowns in the flow of traffic could ultimately require implementing the radical idea that has been suggested from time to time: directly regulating the speed and spacing of individual cars along a highway with central computers and sensors that communicate with each car’s engine and brake controls.\n\nD  However, research into traffic control is generally centered in civil engineering departments and here the theories of the physicists have been greeted with some skepticism. Civil engineers favor a practical approach to problems and believe traffic congestion is the result of poor road construction (two lanes becoming one lane or dangerous curves), which constricts the flow of traffic. Engineers questioned how well the physicists’ theoretical results relate to traffic in the real world. Indeed, some engineering researchers questioned whether elaborate chaos-theory interpretations are needed at all, since at least some of the traffic phenomena the physicists’ theories predicted seemed to be similar to observations that had been appearing in traffic engineering literature under other names for years; observations which had straightforward cause-and-effect explanations.\n\nE  James Banks, a professor of civil and environmental engineering at San Diego State University in the US, suggested that a sudden slowdown in traffic may have less to do with chaos theory than with driver psychology. As traffic gets heavier and the passing lane gets more crowded, aggressive drivers move to other lanes to try to pass, which also tends to even out the speed between lanes. He also felt that another leveling force is that when a driver in a fast lane brakes a little to maintain a safe distance between vehicles, the shock wave travels back much more rapidly than it would in the other slower lanes, because each following driver has to react more quickly. Consequently, as a road becomes congested, the faster moving traffic is the first to slow down."
+      },
+      "questionGroups": [
+        {
+          "id": "ot-head",
+          "instruction": "The passage has five sections, A-E.\nChoose the correct heading for sections A, C, D and E from the list of headings. (Section B is the official example and is not scored.)",
+          "questionType": "matching",
+          "scoringPolicy": "per_question",
+          "sharedOptions": [
+            {
+              "id": "i",
+              "label": "i",
+              "text": "Dramatic effects can result from small changes in traffic just as in nature"
+            },
+            {
+              "id": "ii",
+              "label": "ii",
+              "text": "How a maths experiment actually reduced traffic congestion"
+            },
+            {
+              "id": "iii",
+              "label": "iii",
+              "text": "How a concept from one field of study was applied in another"
+            },
+            {
+              "id": "iv",
+              "label": "iv",
+              "text": "A lack of investment in driver training"
+            },
+            {
+              "id": "v",
+              "label": "v",
+              "text": "Areas of doubt and disagreement between experts"
+            },
+            {
+              "id": "vi",
+              "label": "vi",
+              "text": "How different countries have dealt with traffic congestion"
+            },
+            {
+              "id": "vii",
+              "label": "vii",
+              "text": "The impact of driver behaviour on traffic speed"
+            },
+            {
+              "id": "viii",
+              "label": "viii",
+              "text": "A proposal to take control away from the driver"
+            }
+          ],
+          "questions": [
+            {
+              "id": "oq4",
+              "number": 4,
+              "type": "matching",
+              "prompt": "Section A",
+              "acceptedAnswers": [
+                "iii"
+              ]
+            },
+            {
+              "id": "oq5",
+              "number": 5,
+              "type": "matching",
+              "prompt": "Section C",
+              "acceptedAnswers": [
+                "viii"
+              ]
+            },
+            {
+              "id": "oq6",
+              "number": 6,
+              "type": "matching",
+              "prompt": "Section D",
+              "acceptedAnswers": [
+                "v"
+              ]
+            },
+            {
+              "id": "oq7",
+              "number": 7,
+              "type": "matching",
+              "prompt": "Section E",
+              "acceptedAnswers": [
+                "vii"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
