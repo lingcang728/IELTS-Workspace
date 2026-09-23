@@ -138,7 +138,7 @@ export function LibraryCompose({
 
         {module === "listening" && (
           <div className="notice-strip" style={{ marginTop: 12, marginBottom: 0 }}>
-            各部分来自不同试卷时，会把所选卷已导入的音频拼成一条音轨；任一来源未导入音频，合成卷就没有音频。
+            各部分来自不同试卷时，会自动把各源卷的听力音频拼成一条音轨；任一来源的音频暂时取不到，合成卷就没有音频。
           </div>
         )}
 

@@ -8,12 +8,13 @@
  *
  * 听力音频：网页播放模型是「一条整轨 + 各 part 时间偏移」
  * （playbackSourceFor 只取第一个 audioAsset）。四个 part 若恰好来自同一条
- * 原卷音轨就沿用原偏移；来自不同试卷时，把各源卷已导入的 mp3 按 part 切片
+ * 原卷音轨就沿用原偏移；来自不同试卷时，把各源卷的 mp3 按 part 切片
  * 解码、混单声道后拼成一条 16-bit WAV 存进 blobs（assets/custom/<id>.wav），
- * sections 的 audioAsset 全部指向它。源音频没导入就不拼——试卷照常生成，
- * audioStatus 如实显示「未导入」，绝不会拿别的卷的音频顶替。
+ * sections 的 audioAsset 全部指向它。源音频按播放同款解析链获取
+ * （IndexedDB → /content 打包 → release 远端），取不到就不拼——试卷照常
+ * 生成，audioStatus 如实显示「未导入」，绝不会拿别的卷的音频顶替。
  */
-import { loadExam, saveBlob } from "../content";
+import { loadExam, remoteAudioSrc, saveBlob } from "../content";
 import type { IndexedExam } from "../content";
 import { idbGet } from "../idb";
 import { cambridgeParts } from "./catalog";
@@ -189,8 +190,8 @@ export async function composeExam(
         at += s.audioDurationMs ?? 0;
       });
       audioMerged = merged != null;
-      // merged == null → audioAsset points at a file that does not exist, so
-      // the index reports "音频未导入" instead of playing the wrong track.
+      // merged == null → audioAsset points at a blob that was never written,
+      // so audioStatusFor reports "音频未导入" instead of playing a wrong track.
     }
   }
 
@@ -227,10 +228,31 @@ interface AudioJob {
   durationMs: number;
 }
 
+/** Fetch source audio bytes for slicing: imported blob → bundled /content
+ * asset → GitHub release fallback (same order as playbackSourceFor). */
+async function sourceAudioBytes(rel: string): Promise<ArrayBuffer | null> {
+  const blob = await idbGet<Blob>("blobs", rel);
+  if (blob && blob.size) return blob.arrayBuffer();
+  try {
+    const r = await fetch(`/content/${rel}`);
+    if (r.ok) return await r.arrayBuffer();
+  } catch {
+    // fall through to the release fallback
+  }
+  const remote = remoteAudioSrc(rel);
+  if (!remote) return null;
+  try {
+    const r = await fetch(remote);
+    return r.ok ? await r.arrayBuffer() : null;
+  } catch {
+    return null;
+  }
+}
+
 /**
  * Slice each picked part out of its source whole-test MP3 and concatenate the
  * slices into one mono 16-bit WAV under `assets/custom/<examId>.wav`.
- * Returns null when any source blob is missing or fails to decode — the
+ * Returns null when any source is unreachable or fails to decode — the
  * caller then ships the paper without audio rather than a wrong track.
  */
 async function mergeListeningAudio(
@@ -239,8 +261,11 @@ async function mergeListeningAudio(
 ): Promise<{ rel: string; durationsMs: number[] } | null> {
   try {
     if (jobs.some((j) => !j.rel)) return null;
-    const blobs = await Promise.all(jobs.map((j) => idbGet<Blob>("blobs", j.rel)));
-    if (blobs.some((b) => !b || b.size === 0)) return null;
+    // 源音频字节走与播放一致的解析链：IndexedDB 导入 → /content 打包 →
+    // release 远端兜底。音频内置后源卷 mp3 并不进 IndexedDB，只查 blobs
+    // 会让所有跨卷组卷都拼不出音频。
+    const bufs = await Promise.all(jobs.map((j) => sourceAudioBytes(j.rel)));
+    if (bufs.some((b) => !b || b.byteLength === 0)) return null;
     // OfflineAudioContext resamples decoded audio to its own rate; 22050 Hz
     // mono keeps a ~32-minute track around 85 MB instead of stereo 44.1 kHz.
     const ctx = new OfflineAudioContext(2, 1, 22050);
@@ -248,7 +273,7 @@ async function mergeListeningAudio(
     const durationsMs: number[] = [];
     let rate = 0;
     for (let i = 0; i < jobs.length; i++) {
-      const decoded = await ctx.decodeAudioData(await blobs[i]!.arrayBuffer());
+      const decoded = await ctx.decodeAudioData(bufs[i]!);
       if (rate === 0) rate = decoded.sampleRate;
       if (decoded.sampleRate !== rate || decoded.length === 0) return null;
       const from = Math.max(0, Math.floor((jobs[i].startMs / 1000) * rate));
