@@ -263,10 +263,11 @@
   .tool-hint, .practice-hint { display: none; }
 }
 
-/* ≤1000px — roughly a 1440px screen at 150% zoom. The side-by-side panes no
- * longer fit: collapse to one scrollable column (passage above, questions
- * below), move the toolbar to its own header row, and tighten the chrome. */
-@media (max-width: 1000px) {
+/* ≤1100px — roughly a 1650px screen at 150% zoom (1440@150% = 960px is also
+ * covered). The side-by-side panes no longer fit: collapse to one scrollable
+ * column (passage above, questions below), move the toolbar to its own header
+ * row, and tighten the chrome. */
+@media (max-width: 1100px) {
   .exam-windowbar { flex-basis: 32px; }
   .exam-windowbar .windowbar-hint { display: none; }
 

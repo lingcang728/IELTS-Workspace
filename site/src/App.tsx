@@ -88,8 +88,8 @@ function Landing() {
             <h1 id="hero-title">IELTS Workspace</h1>
             <p className="lede">本地优先的雅思机考工作台。</p>
             <p className="sub">
-              网页版浏览器内直接做题，桌面版 Reading 与 Writing 开箱即用。Listening
-              试卷可见，音频由你自行添加。不内置 AI，无遥测。
+              网页版浏览器内直接做题，听力音频已内置、点开即听；桌面版 Reading 与
+              Writing 开箱即用。不内置 AI，无遥测。
             </p>
             <p className="cta-row">
               <a className="btn btn-primary" href="#/app">
@@ -129,7 +129,7 @@ function Landing() {
               <li>
                 <h3>Listening</h3>
                 <p>
-                  试卷在练习中心可见，音频需自行添加。应用不会在内部下载音频。点「打开下载指南」只会打开本页。
+                  网页版音频已随站点内置，点开即练。桌面版音频包见下方「听力音频」一节。
                 </p>
               </li>
               <li>
@@ -210,14 +210,18 @@ function Landing() {
           <div className="wrap">
             <p className="kicker">Listening</p>
             <h2 id="listening-title">听力音频</h2>
+            <p className="web-note">
+              <strong>网页版无需本节：</strong>
+              音频已随站点内置，进<a href="#/app">在线练习</a>直接听。以下是桌面版的音频包下载。
+            </p>
             <ol className="steps">
-              <li>打开应用，进入听力资源中心，或在试卷行点「添加音频」。</li>
+              <li>打开桌面应用，进入听力资源中心，或在试卷行点「添加音频」。</li>
               <li>
                 支持四个 Part/Section 文件（剑4–20）、文件夹与每册 ZIP；ZIP
                 内的官方整轨按 SHA-256 自动识别。
               </li>
               <li>
-                应用不会在内部下载音频。点「打开下载指南」只会打开本页的这一节。
+                桌面应用不会在内部下载音频。点「打开下载指南」只会打开本页的这一节。
               </li>
             </ol>
             <p>

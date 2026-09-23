@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import sitePkg from "../../../package.json";
 import type { Route } from "../nav";
-import { idbSet, loadProfile, planGet, planSave, saveProfile } from "../api";
+import { idbGet, idbSet, loadProfile, planGet, planSave, saveProfile } from "../api";
 import { clearAllData } from "../lib/dataOps";
 import StorageMeter from "../components/StorageMeter";
 import type { PracticeScheme, Profile, StudyPlan } from "../types";
@@ -23,35 +23,48 @@ export default function SettingsPage(_props: { route: Route }) {
   const [loaded, setLoaded] = useState(false);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [plan, setPlan] = useState<StudyPlan | null>(null);
+  // 三档选择以 kv["ui-theme"] 为准（"light"|"dark"|"follow"）——Shell 读它、
+  // 顶栏开关显示它；profile.theme 只是镜像，首次访问时可能还没被回填。
+  const [uiTheme, setUiTheme] = useState<"light" | "dark" | "follow" | null>(null);
   const [saveMsg, setSaveMsg] = useState<string | null>(null);
   const [confirmClear, setConfirmClear] = useState(false);
   const [clearing, setClearing] = useState(false);
 
   useEffect(() => {
     let alive = true;
-    void Promise.all([loadProfile(), planGet()]).then(([p, pl]) => {
-      if (!alive) return;
-      setProfile(p);
-      setPlan(pl);
-      setLoaded(true);
-    });
+    void Promise.all([loadProfile(), planGet(), idbGet<"light" | "dark" | "follow">("kv", THEME_KEY)]).then(
+      ([p, pl, kv]) => {
+        if (!alive) return;
+        setProfile(p);
+        setPlan(pl);
+        // 空值回落与 Shell 保持一致（kv/profile 都没有 = 新用户默认深色），
+        // 避免 Shell 还没把默认深色写回 kv 时这里先显示成「跟随系统」。
+        setUiTheme(kv ?? p?.theme ?? "dark");
+        setLoaded(true);
+      },
+    );
     return () => {
       alive = false;
     };
   }, []);
 
-  // 主题立即生效：写入 profile 的同时直接拨外壳的 data-ui。未设置 = 跟随系统。
+  // 主题由 Shell 统一拨 data-ui（挂载时读 kv["ui-theme"]）。这里只补一个
+  // 「跟随系统」的监听：用户在设置页选了跟随后，系统翻转时外壳也要跟上 —
+  // Shell 只在它自己的 choice==="follow" 时监听，profile.theme===undefined
+  // 同样是跟随语义。注意绝不能在挂载时主动 applyShellTheme：profile 尚未
+  // 加载时是 undefined，会把 Shell 已生效的深色错刷成系统浅色。
   useEffect(() => {
-    applyShellTheme(profile?.theme);
-    if (profile?.theme) return;
+    if (uiTheme !== "follow") return;
     const mq = window.matchMedia("(prefers-color-scheme: light)");
     const onChange = () => applyShellTheme(undefined);
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);
-  }, [profile?.theme]);
+  }, [uiTheme]);
 
   /** 工作台主题三档：profile.theme 存具体值（undefined=跟随），kv 存原始选择。 */
   async function applyThemeChoice(value: Profile["theme"]) {
+    applyShellTheme(value);
+    setUiTheme(value ?? "follow");
     try {
       await idbSet("kv", THEME_KEY, value ?? "follow");
     } catch {
@@ -92,7 +105,7 @@ export default function SettingsPage(_props: { route: Route }) {
     }
   }
 
-  const theme = profile?.theme;
+  const theme: Profile["theme"] = uiTheme === "follow" ? undefined : (uiTheme ?? undefined);
   const practice = profile?.practiceScheme ?? "follow_shell";
 
   return (

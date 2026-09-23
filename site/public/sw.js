@@ -1,16 +1,16 @@
 /* IELTS Workspace service worker。
  *
- * 策略：
- *   - install 预缓存应用壳（/、index.html、manifest、logo）；
- *   - /content/** 题库 JSON 与图片按发布版本不可变 → 缓存优先；
- *   - 其余同源 GET → stale-while-revalidate（先回缓存，后台刷新）；
- *   - blob: / data: / 跨域 / Range 请求一律不接管（听力音频在 IndexedDB，
- *     走 objectURL，本就不经过这里）；
- *   - 导航请求离线兜底回缓存的 index.html。
- *
- * 发新版时把 CACHE_NAME 里的版本号 +1，activate 会清掉旧缓存。
+ * 策略（v2）：
+ *   - 导航请求与 /content/index.json → 网络优先，离线回缓存。
+ *     （这两类是"版本入口"：若缓存优先，老用户会一直停留在旧壳/旧索引上，
+ *       新版部署后永远看不到——v1 的 stale-while-revalidate + 预缓存
+ *       index.html 就踩了这个坑。）
+ *   - /content/** 试卷/转录/音频/图片 → 缓存优先（内容按路径不可变）。
+ *   - 其余同源 GET → stale-while-revalidate。
+ *   - blob: / data: / 跨域 / Range 请求一律不接管（听力音频的远端兜底
+ *     在 github.com，本来也不经过这里）。
  */
-const CACHE_NAME = "ielts-workspace-v1";
+const CACHE_NAME = "ielts-workspace-v2";
 const PRECACHE = ["/", "/index.html", "/manifest.webmanifest", "/logo.png"];
 
 self.addEventListener("install", (event) => {
@@ -43,12 +43,36 @@ self.addEventListener("fetch", (event) => {
   // 大文件分段请求不进缓存
   if (req.headers.has("range")) return;
 
+  if (req.mode === "navigate" || url.pathname === "/content/index.json") {
+    event.respondWith(networkFirst(req));
+    return;
+  }
   if (url.pathname.startsWith("/content/")) {
     event.respondWith(cacheFirst(req));
     return;
   }
   event.respondWith(staleWhileRevalidate(req));
 });
+
+async function networkFirst(req) {
+  const cache = await caches.open(CACHE_NAME);
+  try {
+    const res = await fetch(req);
+    if (res.ok) {
+      await cache.put(req, res.clone());
+      return res;
+    }
+  } catch {
+    /* 离线，走缓存 */
+  }
+  const hit = await cache.match(req);
+  if (hit) return hit;
+  if (req.mode === "navigate") {
+    const fallback = await cache.match("/index.html");
+    if (fallback) return fallback;
+  }
+  return Response.error();
+}
 
 async function cacheFirst(req) {
   const cache = await caches.open(CACHE_NAME);

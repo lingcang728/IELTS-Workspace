@@ -154,6 +154,7 @@ function ListeningPlayer({
   pauseAllowed,
   seekAllowed,
   paused,
+  loading,
   onToggle,
 }: {
   audioRef: RefObject<HTMLAudioElement | null>;
@@ -161,6 +162,7 @@ function ListeningPlayer({
   pauseAllowed: boolean;
   seekAllowed: boolean;
   paused: boolean;
+  loading: boolean;
   onToggle: () => void;
 }) {
   const [audioTime, setAudioTime] = useState(0);
@@ -194,7 +196,7 @@ function ListeningPlayer({
         aria-label={pauseAllowed ? "切换播放状态" : "听力播放已锁定"}
         onClick={onToggle}
       >
-        <span className="player-state"><Icon name={paused ? "play" : "pause"} size={18} /></span>{paused ? "已暂停" : "播放中"}
+        <span className="player-state"><Icon name={paused ? "play" : "pause"} size={18} /></span>{loading ? "加载中…" : paused ? "已暂停" : "播放中"}
       </button>
       <input
         type="range"
@@ -1198,6 +1200,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
           pauseAllowed={policy.pauseAllowed}
           seekAllowed={policy.audioSeekAllowed}
           paused={pausedLocal || audioBlocked || audioState !== "ready"}
+          loading={audioState === "loading"}
           onToggle={() => {
             const el = audioRef.current;
             if (!el) return;

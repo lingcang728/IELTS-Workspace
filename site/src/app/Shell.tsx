@@ -125,7 +125,7 @@ function ShellIcon({ name, size = 19 }: { name: IconName; size?: number }) {
 /* ------------------------------------------------------------------ theme */
 
 function useShellTheme(): { choice: ThemeChoice; choose: (t: ThemeChoice) => void } {
-  const [choice, setChoice] = useState<ThemeChoice>("light");
+  const [choice, setChoice] = useState<ThemeChoice>("dark");
   const [systemDark, setSystemDark] = useState<boolean>(
     () => window.matchMedia("(prefers-color-scheme: dark)").matches,
   );
@@ -138,7 +138,8 @@ function useShellTheme(): { choice: ThemeChoice; choose: (t: ThemeChoice) => voi
     return () => mq.removeEventListener("change", onChange);
   }, []);
 
-  // 首次加载：kv["ui-theme"] 优先，其次 profile.theme，默认浅色
+  // 首次加载：kv["ui-theme"] 优先，其次 profile.theme，默认深色
+  // （落地页固定深色，新用户进工作台保持一致，避免明暗跳变）
   useEffect(() => {
     let cancelled = false;
     void (async () => {
@@ -147,7 +148,15 @@ function useShellTheme(): { choice: ThemeChoice; choose: (t: ThemeChoice) => voi
         loadProfile(),
       ]);
       if (cancelled) return;
-      setChoice(stored ?? profile?.theme ?? "light");
+      if (stored == null && !profile?.theme) {
+        // 全新用户：把默认深色固化进 kv+profile，否则设置页会亮「跟随系统」
+        // 而实际显示深色，两个主题入口口径不一致。
+        setChoice("dark");
+        void idbSet("kv", THEME_KEY, "dark").catch(() => undefined);
+        void saveProfile({ ...(profile ?? {}), theme: "dark" }).catch(() => undefined);
+      } else {
+        setChoice(stored ?? profile?.theme ?? "dark");
+      }
     })();
     return () => {
       cancelled = true;
