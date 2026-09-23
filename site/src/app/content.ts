@@ -38,12 +38,15 @@ async function fetchIndex(): Promise<ContentIndex> {
   const res = await fetch("/content/index.json");
   if (!res.ok) throw new Error(`题库索引加载失败 (${res.status})`);
   const bundled = (await res.json()) as ContentIndex;
-  // Index rows are built offline, so listening audioStatus is always "missing"
-  // there — recompute it against the blobs the user actually imported.
+  // Index rows already reflect what the build bundled; still upgrade any
+  // "missing" row when the audio exists as an imported blob or on the release.
   const blobSet = new Set(await idbKeys("blobs"));
   const exams = bundled.exams.map((e) => {
     if (e.module !== "listening" || e.audioStatus === "ready") return e;
-    const ready = (e.audioAssets ?? []).some((rel) => blobSet.has(rel.replace(/^\/+/, "")));
+    const ready = (e.audioAssets ?? []).some((rel) => {
+      const clean = rel.replace(/^\/+/, "");
+      return blobSet.has(clean) || remoteAudioSrc(clean) !== null;
+    });
     return { ...e, audioStatus: (ready ? "ready" : "missing") as AudioStatus };
   });
   const imported = await importedExamSummaries();
@@ -121,6 +124,25 @@ const SAFE_REL = /^[A-Za-z0-9_\-./]+$/;
 const blobUrls = new Map<string, string>();
 
 /**
+ * Cambridge per-test MP3s are also published as individual assets on the
+ * `listening-audio-v1` GitHub release. `github.com` release downloads do not
+ * need CORS for `<audio>` playback, so this is a free remote fallback whenever
+ * a /content asset is not bundled (e.g. local dev without the audio pack).
+ */
+export const REMOTE_AUDIO_BASE =
+  "https://github.com/lingcang728/IELTS-Workspace/releases/download/listening-audio-v1/";
+
+const CAMBRIDGE_AUDIO_RE = /^assets\/cambridge\/c\d+-t\d+\.mp3$/i;
+
+/** Remote release URL for a bundled-asset path, or null when none exists. */
+export function remoteAudioSrc(rel: string): string | null {
+  const clean = rel.replace(/^\/+/, "");
+  return CAMBRIDGE_AUDIO_RE.test(clean)
+    ? REMOTE_AUDIO_BASE + clean.slice(clean.lastIndexOf("/") + 1)
+    : null;
+}
+
+/**
  * Resolve an asset path like `assets/cambridge/c10-t1.mp3`.
  * User-imported blobs (IndexedDB) win; otherwise fall back to the bundled
  * /content directory. Returns null when nothing exists — callers render the
@@ -163,7 +185,7 @@ export async function audioStatusFor(exam: Exam): Promise<AudioStatus> {
   const assets = exam.sections.map((s) => s.audioAsset).filter(Boolean) as string[];
   if (assets.length === 0) return "missing";
   for (const rel of new Set(assets)) {
-    if (await blobExists(rel)) return "ready";
+    if ((await blobExists(rel)) || remoteAudioSrc(rel) !== null) return "ready";
   }
   return "missing";
 }
@@ -185,16 +207,23 @@ export async function playbackSourceFor(exam: Exam): Promise<WebPlaybackSource |
   const rel = exam.sections.find((s) => s.audioAsset)?.audioAsset;
   if (!rel) return null;
   const clean = rel.replace(/^\/+/, "");
+  let src: string;
   const blob = await idbGet<Blob>("blobs", clean);
-  if (!blob) return null;
-  let url = blobUrls.get(clean);
-  if (!url) {
-    url = URL.createObjectURL(blob);
-    blobUrls.set(clean, url);
+  if (blob) {
+    let url = blobUrls.get(clean);
+    if (!url) {
+      url = URL.createObjectURL(blob);
+      blobUrls.set(clean, url);
+    }
+    src = url;
+  } else {
+    // No imported blob: stream the bundled /content asset. If it is absent
+    // (fresh clone, partial deploy) the caller retries with remoteAudioSrc().
+    src = `/content/${clean}`;
   }
   return {
     examId: exam.id,
-    src: url,
+    src,
     partStartsMs: exam.sections.map((s) => s.audioStartMs ?? 0),
   };
 }

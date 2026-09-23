@@ -75,7 +75,7 @@ export function groupCatalog(exams: ExamSummary[]): CatalogGroup[] {
     });
   }
   if (other.length) groups.push(flatGroup("other", "其他", "other", other));
-  if (imported.length) groups.push(flatGroup("imported", "本地导入", "imported", imported));
+  if (imported.length) groups.push(flatGroup("imported", "自组卷", "imported", imported));
   return groups;
 }
 

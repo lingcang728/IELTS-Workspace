@@ -179,7 +179,6 @@ export function LibraryRow({
   weakMatches,
   onStart,
   onContinue,
-  onImportAudio,
 }: {
   exam: IndexedExam;
   activity: ExamActivity | undefined;
@@ -189,7 +188,6 @@ export function LibraryRow({
   weakMatches: string[];
   onStart: (mode: "practice" | "mock") => void;
   onContinue: (session: Session) => void;
-  onImportAudio: () => void;
 }) {
   const status = activityStatus(activity);
   const parts = partRangeLabel(exam);
@@ -229,15 +227,13 @@ export function LibraryRow({
             </span>
           )}
           {exam.module === "listening" && exam.audioStatus === "missing" && (
-            <button
-              type="button"
+            <span
               className="catalog-mod locked"
               style={{ marginLeft: 8, verticalAlign: "1px" }}
-              title="该卷音频尚未导入，点击前往导入页"
-              onClick={onImportAudio}
+              title="该卷音频暂不可用"
             >
-              音频未导入
-            </button>
+              音频未就绪
+            </span>
           )}
         </h3>
         <small>

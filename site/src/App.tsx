@@ -40,7 +40,12 @@ export default function App() {
 
   useLayoutEffect(() => {
     document.documentElement.dataset.page = page;
-  }, [page]);
+    // 从工作台跳到落地页栏目锚点（如 #listening）时，hashchange 触发渲染，
+    // 但浏览器原生锚点滚动在元素挂载前已经落空，这里补一次。
+    if (page === "landing" && route.segments.length === 1) {
+      document.getElementById(route.segments[0])?.scrollIntoView();
+    }
+  }, [page, route]);
 
   if (route.isApp) {
     if (isExamRoute(route)) return <WorkspaceRoutes route={route} />;
@@ -89,6 +94,9 @@ function Landing() {
             <p className="cta-row">
               <a className="btn btn-primary" href="#/app">
                 进入在线练习（免安装）
+              </a>
+              <a className="btn btn-secondary" href={REPO} rel="noreferrer" target="_blank">
+                ⭐ 去 GitHub 点 Star
               </a>
               <a className="btn btn-secondary" href={INSTALLER}>
                 下载安装版
@@ -180,6 +188,21 @@ function Landing() {
                 </a>
               </article>
             </div>
+            <article className="star-card">
+              <div>
+                <h3>开源项目</h3>
+                <p>
+                  IELTS Workspace 的源码公开在{" "}
+                  <a href={REPO} rel="noreferrer" target="_blank">
+                    GitHub
+                  </a>
+                  。如果这个项目对你有用，点个 Star 是对作者最大的支持，也方便你跟踪新版本。
+                </p>
+              </div>
+              <a className="btn btn-primary" href={REPO} rel="noreferrer" target="_blank">
+                ⭐ 去 GitHub 点 Star
+              </a>
+            </article>
           </div>
         </section>
 

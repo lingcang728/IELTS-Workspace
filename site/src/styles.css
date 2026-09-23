@@ -358,6 +358,34 @@ html[data-page="landing"] .dl-card .file {
   overflow-wrap: anywhere;
 }
 
+/* Star 引导卡：沿用 dl-card 纸面 + web-note 的朱砂左边线 */
+html[data-page="landing"] .star-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-top: 16px;
+  padding: 20px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--cinnabar);
+}
+
+html[data-page="landing"] .star-card > div {
+  min-width: 0;
+  flex: 1 1 24rem;
+}
+
+html[data-page="landing"] .star-card p {
+  margin: 0;
+}
+
+html[data-page="landing"] .star-card .btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 html[data-page="landing"] .badge {
   display: inline-block;
   margin: 0 0 10px;

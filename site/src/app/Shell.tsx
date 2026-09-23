@@ -29,7 +29,6 @@ type IconName =
   | "mistakes"
   | "vocab"
   | "history"
-  | "import"
   | "settings";
 
 const THEME_KEY = "ui-theme";
@@ -54,7 +53,6 @@ const NAV_STUDY: NavItem[] = [
 
 const NAV_MISC: NavItem[] = [
   { seg: "history", label: "历史", icon: "history" },
-  { seg: "import", label: "导入", icon: "import" },
   { seg: "settings", label: "设置", icon: "settings" },
 ];
 
@@ -95,12 +93,6 @@ const ICONS: Record<IconName, ReactNode> = {
       <path d="M4.2 10a5.8 5.8 0 1 1 1.7 4.1" />
       <path d="M3.7 14.8v-3.3h3.3" />
       <path d="M10 6.6V10l2.6 1.8" />
-    </>
-  ),
-  import: (
-    <>
-      <path d="M10 3.2v7.6M6.8 7.6 10 10.8l3.2-3.2" />
-      <path d="M4 12.8v2.7A1.5 1.5 0 0 0 5.5 17h9a1.5 1.5 0 0 0 1.5-1.5v-2.7" />
     </>
   ),
   settings: (

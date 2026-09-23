@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import sitePkg from "../../../package.json";
 import type { Route } from "../nav";
-import { loadProfile, planGet, planSave, saveProfile } from "../api";
-import { clearAllData } from "../lib/importer";
+import { idbSet, loadProfile, planGet, planSave, saveProfile } from "../api";
+import { clearAllData } from "../lib/dataOps";
 import StorageMeter from "../components/StorageMeter";
 import type { PracticeScheme, Profile, StudyPlan } from "../types";
 
 const BAND_TARGETS = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9];
 const REPO = "https://github.com/lingcang728/IELTS-Workspace";
+/** 顶栏主题开关读的是 kv["ui-theme"]（"light"|"dark"|"follow"），
+    设置页这里必须同步写它，否则刷新后顶栏选择会覆盖这里的设置。 */
+const THEME_KEY = "ui-theme";
 
 /** 跟随系统时按 prefers-color-scheme 解析；[data-ui="light"] 是外壳浅色的开关。 */
 function applyShellTheme(theme: Profile["theme"]) {
@@ -46,6 +49,16 @@ export default function SettingsPage(_props: { route: Route }) {
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);
   }, [profile?.theme]);
+
+  /** 工作台主题三档：profile.theme 存具体值（undefined=跟随），kv 存原始选择。 */
+  async function applyThemeChoice(value: Profile["theme"]) {
+    try {
+      await idbSet("kv", THEME_KEY, value ?? "follow");
+    } catch {
+      // kv 写失败不挡 profile 写入——下次启动只是回不到「跟随」这一档
+    }
+    await patchProfile({ theme: value });
+  }
 
   async function patchProfile(patch: Partial<Profile>) {
     const next = { ...(profile ?? {}), ...patch };
@@ -134,7 +147,14 @@ export default function SettingsPage(_props: { route: Route }) {
                 ))}
               </select>
             </label>
-            {saveMsg && <p className="meta">{saveMsg}</p>}
+            {saveMsg && (
+              <p
+                className="settings-saved"
+                style={{ color: saveMsg === "已保存" ? "var(--positive)" : "var(--danger)" }}
+              >
+                {saveMsg}
+              </p>
+            )}
           </div>
 
           <div className="workspace-card">
@@ -142,43 +162,47 @@ export default function SettingsPage(_props: { route: Route }) {
             <p className="meta">
               工作台外壳可深可浅。模考考场固定官方浅色；练习考场可跟随工作台，或单独固定浅色 / 深色。
             </p>
-            <p className="meta">工作台</p>
-            <div className="button-row">
-              {(
-                [
-                  [undefined, "跟随系统"],
-                  ["light", "浅色"],
-                  ["dark", "深色"],
-                ] as [Profile["theme"], string][]
-              ).map(([value, label]) => (
-                <button
-                  key={label}
-                  type="button"
-                  className={theme === value ? "primary-button" : "secondary-button"}
-                  onClick={() => void patchProfile({ theme: value })}
-                >
-                  {label}
-                </button>
-              ))}
+            <div className="settings-group">
+              <span className="settings-group-label">工作台</span>
+              <div className="button-row">
+                {(
+                  [
+                    [undefined, "跟随系统"],
+                    ["light", "浅色"],
+                    ["dark", "深色"],
+                  ] as [Profile["theme"], string][]
+                ).map(([value, label]) => (
+                  <button
+                    key={label}
+                    type="button"
+                    className={theme === value ? "primary-button" : "secondary-button"}
+                    onClick={() => void applyThemeChoice(value)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
             </div>
-            <p className="meta">练习考场</p>
-            <div className="button-row">
-              {(
-                [
-                  ["follow_shell", "跟随工作台"],
-                  ["light", "固定浅色"],
-                  ["dark", "固定深色"],
-                ] as [PracticeScheme, string][]
-              ).map(([value, label]) => (
-                <button
-                  key={value}
-                  type="button"
-                  className={practice === value ? "primary-button" : "secondary-button"}
-                  onClick={() => void patchProfile({ practiceScheme: value })}
-                >
-                  {label}
-                </button>
-              ))}
+            <div className="settings-group">
+              <span className="settings-group-label">练习考场</span>
+              <div className="button-row">
+                {(
+                  [
+                    ["follow_shell", "跟随工作台"],
+                    ["light", "固定浅色"],
+                    ["dark", "固定深色"],
+                  ] as [PracticeScheme, string][]
+                ).map(([value, label]) => (
+                  <button
+                    key={value}
+                    type="button"
+                    className={practice === value ? "primary-button" : "secondary-button"}
+                    onClick={() => void patchProfile({ practiceScheme: value })}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -190,13 +214,13 @@ export default function SettingsPage(_props: { route: Route }) {
           <div className="workspace-card">
             <h2>数据管理</h2>
             <p className="meta">
-              全部数据都在浏览器 IndexedDB 里。清空会删除所有会话、错题、生词、导入的试卷与音频，不可恢复。
+              全部数据都在浏览器 IndexedDB 里。清空会删除所有会话、错题、生词与音频缓存，不可恢复。
             </p>
             {confirmClear ? (
               <div>
                 <p className="notice-strip warning">确认清空？此操作不可撤销。</p>
                 <div className="button-row">
-                  <button type="button" className="primary-button" disabled={clearing} onClick={() => void wipeAll()}>
+                  <button type="button" className="danger-button" disabled={clearing} onClick={() => void wipeAll()}>
                     {clearing ? "正在清空…" : "确认清空"}
                   </button>
                   <button type="button" className="secondary-button" disabled={clearing} onClick={() => setConfirmClear(false)}>

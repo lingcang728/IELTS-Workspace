@@ -36,15 +36,16 @@
 | `#/app/exam?exam=<id>&mode=mock|practice&session=<id>` | 考场（全屏无壳） | agent4 ExamPage.tsx + exam/ |
 | `#/app/results?session=<id>` | 成绩复盘 | agent5 ResultsPage.tsx |
 | `#/app/analytics` `#/app/history` `#/app/mistakes` `#/app/vocab` | 分析/历史/错题/生词 | agent5 |
-| `#/app/import` `#/app/settings` | 导入/设置 | agent5? 不——agent1（import-data） |
+| `#/app/settings` | 设置 | agent5 |
 
 页面组件签名：`export default function Xxx({ route }: { route: Route })`（Today 可无参）。已在 `routes.tsx` 接好。
 
 ## 音频模型
 
 - 听力试卷 `section.audioAsset` 指向 `assets/cambridge/cNN-tM.mp3`（整轨），各 part 用 `audioStartMs/audioDurationMs` 定位——与桌面一致。
-- 网页不自带 mp3：用户通过导入页把 mp3 存进 IndexedDB `blobs`（key = 试卷里写的相对路径）。`playbackSourceFor(exam)` 返回 `{src(objectURL), partStartsMs}` 或 null；null 时试卷仍可做题但显示「音频未导入」。
-- `assetSrc(rel)`：IDB blob 优先，其次 `/content/<rel>`（jpg 有内置，mp3 没有 → 听力用 playbackSourceFor 判断，不要用 assetSrc 猜存在性）。
+- mp3 直接打包进 `site/public/content/assets/cambridge/`（CI 在构建前从 `listening-audio-v1` release zip 还原，见 `.github/workflows/pages.yml`）；本地开发用 `python scripts/restore_site_audio.py` 复原。
+- 播放源优先级：IndexedDB `blobs`（自组卷/覆盖）→ `/content/<rel>`（打包）→ GitHub release 单文件 URL（`remoteAudioSrc`，仅在打包路径 404 时由 ExamApp 的 onError 重试）。`<audio>` 跨域播放不需要 CORS。
+- 索引的 `audioStatus` 由构建期文件存在性决定；运行时 `content.ts` 仍会把「缺失但远端/IDB 有」的卷升级为 ready。
 
 ## 视觉
 

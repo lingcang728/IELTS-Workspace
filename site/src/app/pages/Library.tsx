@@ -356,7 +356,7 @@ export default function Library({ route }: { route: Route }) {
                 </option>
               ))}
               {bookOptions.official && <option value="official">官方样题</option>}
-              {bookOptions.imported && <option value="imported">本地导入</option>}
+              {bookOptions.imported && <option value="imported">自组卷</option>}
               {bookOptions.other && <option value="other">其他</option>}
             </select>
           </label>
@@ -445,13 +445,7 @@ export default function Library({ route }: { route: Route }) {
         ) : moduleExams.length === 0 ? (
           <div className="empty-state compact">
             <h2>还没有{moduleText(module)}卷</h2>
-            <p>
-              题库索引里暂时没有{moduleText(module)}试卷。可以到
-              <button type="button" className="link-button" onClick={() => navigate("/app/import")}>
-                导入页
-              </button>
-              导入自己的试卷 JSON。
-            </p>
+            <p>题库索引里暂时没有{moduleText(module)}试卷。</p>
           </div>
         ) : visible.length === 0 ? (
           <div className="empty-state compact">
@@ -477,7 +471,6 @@ export default function Library({ route }: { route: Route }) {
                   weakMatches={weak.map(questionTypeLabel)}
                   onStart={(mode) => goExam(exam.id, mode)}
                   onContinue={(s) => goExam(exam.id, s.mode, s.id)}
-                  onImportAudio={() => navigate("/app/import")}
                 />
               );
             })}

@@ -202,3 +202,476 @@
     padding-inline: 8px;
   }
 }
+
+/* ====================================================================
+ * 工作台表单控件 —— 统一自定义样式
+ *
+ * 全部规则限定 html[data-page="app"]：落地页（landing）有自己的朱砂体系，
+ * 考场（data-page="exam"）是独立视觉域，两处的原生控件都不能被这里污染。
+ * 本文件在 Shell.tsx 的样式表中最后加载，同优先级时覆盖 shell.css /
+ * practice.css 里的旧控件规格。
+ * ================================================================== */
+
+/* 下拉箭头是一张 data-uri SVG，按外壳主题各配一色（颜色即 --muted）。
+   背景图里的 SVG 读不到 var()/currentColor，只能把颜色写进图里。 */
+:root {
+  --ws-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.75 4.5 6 7.75 9.25 4.5' fill='none' stroke='%239aa7b3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+[data-ui="light"] {
+  --ws-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.75 4.5 6 7.75 9.25 4.5' fill='none' stroke='%234f5d69' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* ---------- 文本类输入框 / 下拉 / 多行 ---------- */
+
+html[data-page="app"] input:is(
+    :not([type]),
+    [type="text"],
+    [type="search"],
+    [type="email"],
+    [type="password"],
+    [type="url"],
+    [type="tel"],
+    [type="number"],
+    [type="date"],
+    [type="time"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="week"]
+  ),
+html[data-page="app"] select,
+html[data-page="app"] textarea {
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-2);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.45;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+/* appearance:none 只给非日期控件：Chrome 里它会连带隐藏 date 的日历小图标。 */
+html[data-page="app"] input:is(
+    :not([type]),
+    [type="text"],
+    [type="search"],
+    [type="email"],
+    [type="password"],
+    [type="url"],
+    [type="tel"],
+    [type="number"]
+  ),
+html[data-page="app"] select,
+html[data-page="app"] textarea {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+html[data-page="app"] input:hover:not(:disabled):not(:focus),
+html[data-page="app"] select:hover:not(:disabled):not(:focus),
+html[data-page="app"] textarea:hover:not(:disabled):not(:focus) {
+  border-color: var(--line-strong);
+}
+
+html[data-page="app"] input:focus,
+html[data-page="app"] select:focus,
+html[data-page="app"] textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+html[data-page="app"] input:disabled,
+html[data-page="app"] select:disabled,
+html[data-page="app"] textarea:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+html[data-page="app"] input::placeholder,
+html[data-page="app"] textarea::placeholder {
+  color: var(--muted-2);
+  opacity: 1;
+}
+
+html[data-page="app"] select {
+  padding-right: 32px;
+  background-image: var(--ws-chevron);
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  background-size: 12px;
+  cursor: pointer;
+}
+
+html[data-page="app"] select:disabled {
+  cursor: default;
+}
+
+/* 日期/时间控件：盒子归我们，日历小图标归浏览器（跟随 color-scheme 自动变色）。 */
+html[data-page="app"] ::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.72;
+}
+
+html[data-page="app"] input:disabled::-webkit-calendar-picker-indicator {
+  cursor: default;
+}
+
+/* .catalog-search 本身是带边框的复合框，里面的 input 必须保持赤裸，
+   否则会套出一个双层框。 */
+html[data-page="app"] .catalog-search input {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html[data-page="app"] .catalog-search input:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* .catalog-search 焦点环画在外框上，比在裸 input 上画更像一个控件。 */
+html[data-page="app"] .catalog-search:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+/* ---------- 单选 / 复选（纯 CSS 定制） ---------- */
+
+html[data-page="app"] input[type="radio"],
+html[data-page="app"] input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  display: inline-grid;
+  place-content: center;
+  border: 1.5px solid var(--line-strong);
+  background: var(--panel-2);
+  cursor: pointer;
+  vertical-align: -3px;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+html[data-page="app"] input[type="radio"] {
+  border-radius: 50%;
+}
+
+html[data-page="app"] input[type="checkbox"] {
+  border-radius: 4px;
+}
+
+html[data-page="app"] input[type="radio"]::before,
+html[data-page="app"] input[type="checkbox"]::before {
+  content: "";
+  transform: scale(0);
+  transition: transform 0.14s ease;
+}
+
+html[data-page="app"] input[type="radio"]::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* 对勾用两条边画，accent-ink 压在 accent 底上。 */
+html[data-page="app"] input[type="checkbox"]::before {
+  width: 4px;
+  height: 8px;
+  margin-top: -1.5px;
+  border: solid var(--accent-ink);
+  border-width: 0 1.8px 1.8px 0;
+  transform: rotate(45deg) scale(0);
+}
+
+html[data-page="app"] input[type="radio"]:hover:not(:disabled),
+html[data-page="app"] input[type="checkbox"]:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+html[data-page="app"] input[type="radio"]:checked {
+  border-color: var(--accent);
+}
+
+html[data-page="app"] input[type="checkbox"]:checked {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+html[data-page="app"] input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+html[data-page="app"] input[type="checkbox"]:checked::before {
+  transform: rotate(45deg) scale(1);
+}
+
+html[data-page="app"] input[type="radio"]:focus-visible,
+html[data-page="app"] input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+html[data-page="app"] input[type="radio"]:disabled,
+html[data-page="app"] input[type="checkbox"]:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+html[data-page="app"] input[type="range"],
+html[data-page="app"] progress {
+  accent-color: var(--accent);
+}
+
+/* ---------- 表单标签与间距 ---------- */
+
+/* .field 是「标签在上、控件在下」的纵向组；标签字重提一点，与正文分开层。 */
+html[data-page="app"] .field {
+  gap: 7px;
+  margin-top: 16px;
+}
+
+html[data-page="app"] .field > span {
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 550;
+}
+
+html[data-page="app"] .field > small.meta {
+  margin: 0;
+}
+
+/* ---------- 按钮：补齐 hover/focus/disabled/active ---------- */
+
+html[data-page="app"] .primary-button,
+html[data-page="app"] .secondary-button,
+html[data-page="app"] .danger-button,
+html[data-page="app"] .strict-button,
+html[data-page="app"] .module-button,
+html[data-page="app"] .filter-tabs button,
+html[data-page="app"] .catalog-mod,
+html[data-page="app"] .pagination button,
+html[data-page="app"] .link-button {
+  transition: transform 0.12s ease, border-color 0.15s ease, background-color 0.15s ease,
+    color 0.15s ease, filter 0.15s ease, opacity 0.15s ease;
+}
+
+html[data-page="app"] .primary-button:active:not(:disabled),
+html[data-page="app"] .secondary-button:active:not(:disabled),
+html[data-page="app"] .danger-button:active:not(:disabled),
+html[data-page="app"] .strict-button:active:not(:disabled),
+html[data-page="app"] .module-button:active:not(:disabled),
+html[data-page="app"] .filter-tabs button:active:not(:disabled),
+html[data-page="app"] .catalog-mod:active:not(:disabled),
+html[data-page="app"] .pagination button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+html[data-page="app"] .primary-button:disabled,
+html[data-page="app"] .secondary-button:disabled,
+html[data-page="app"] .danger-button:disabled,
+html[data-page="app"] .strict-button:disabled,
+html[data-page="app"] .module-button:disabled {
+  opacity: 0.5;
+}
+
+/* 危险确认键：实心 --danger，只出现在「确认清空」这类二段确认上。 */
+html[data-page="app"] .danger-button {
+  min-height: 34px;
+  padding: 0 16px;
+  border: 1px solid var(--danger);
+  border-radius: 4px;
+  background: var(--danger);
+  color: var(--accent-ink);
+  font-size: 12px;
+}
+
+html[data-page="app"] .danger-button:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+/* ---------- 设置页 ---------- */
+
+/* 卡片首行就是分区标题，旧规格的 h2 上间距会把标题推离卡片顶边。 */
+html[data-page="app"] .settings-grid .workspace-card {
+  display: flex;
+  flex-direction: column;
+}
+
+html[data-page="app"] .settings-grid .workspace-card > h2:first-child,
+html[data-page="app"] .settings-grid .card-heading h2 {
+  margin-top: 0;
+}
+
+html[data-page="app"] .settings-grid .workspace-card > .meta {
+  margin: 6px 0 0;
+  line-height: 1.6;
+}
+
+/* 卡内再分组的组标签（如「工作台」「练习考场」）：不再是裸 meta 段落。 */
+html[data-page="app"] .settings-group {
+  margin-top: 18px;
+}
+
+html[data-page="app"] .settings-group:first-of-type {
+  margin-top: 14px;
+}
+
+html[data-page="app"] .settings-group-label {
+  display: block;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+html[data-page="app"] .settings-group .button-row {
+  margin-top: 9px;
+}
+
+html[data-page="app"] .settings-saved {
+  margin: 14px 0 0;
+  color: var(--positive);
+  font-size: 12px;
+}
+
+/* ---------- 存储面板 ---------- */
+
+html[data-page="app"] .storage-meter {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+html[data-page="app"] .storage-meter-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+html[data-page="app"] .storage-meter-head strong {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+html[data-page="app"] .storage-meter-head span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+html[data-page="app"] .storage-meter-bar {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--panel-2);
+}
+
+html[data-page="app"] .storage-meter-bar > i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+html[data-page="app"] .storage-meter-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+html[data-page="app"] .storage-meter-rows li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+html[data-page="app"] .storage-meter-rows li:last-child {
+  border-bottom: 0;
+}
+
+html[data-page="app"] .storage-meter-rows li b {
+  color: var(--ink-soft);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 学习热力图 ---------- */
+
+html[data-page="app"] .heatmap-scroll {
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+
+/* 空态格只描一道 --line 细边：深色下隐约可见，又不至于亮成色块。 */
+html[data-page="app"] .heatmap-cell.empty {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+html[data-page="app"] .heatmap-cell:hover {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+}
+
+html[data-page="app"] .heatmap-tip {
+  position: absolute;
+  z-index: 5;
+  padding: 5px 9px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--bg-2);
+  color: var(--ink);
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  transform: translate(-50%, -100%);
+}
+
+html[data-page="app"] .heatmap-tip.below {
+  transform: translate(-50%, 0);
+}
+
+html[data-page="app"] .heatmap-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 14px;
+  margin-top: 8px;
+}
+
+html[data-page="app"] .heatmap-stats {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+html[data-page="app"] .heatmap-legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 11px;
+}

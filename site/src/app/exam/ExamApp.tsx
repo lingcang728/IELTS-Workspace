@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type MutableRefObject, type RefObject } from "react";
 import { saveSession, scoreExam, vocabAdd } from "../api";
-import { assetSrc, playbackSourceFor } from "../content";
+import { assetSrc, playbackSourceFor, REMOTE_AUDIO_BASE } from "../content";
 import { BrandMark, Icon } from "./icons";
 import { applyMarks, makeHighlight, rangeToUtf16, recoverHighlight } from "../lib/highlight";
 import { clearCloseFlush, registerCloseFlush } from "../lib/closeFlush";
@@ -29,7 +29,20 @@ interface Props {
   onExit: (s: Session, report?: ScoreReport) => void;
   /** Save progress and return to the shell without scoring. */
   onLeave: (s: Session) => void;
+  /** Delete this session's saved record and leave without saving. */
+  onDiscard: (s: Session) => void | Promise<void>;
 }
+
+/** Schemes the mock-mode 显示 panel offers. The shared `Session` type still
+ *  lists "high_contrast" (owned by the desktop runtime); the web runtime
+ *  writes "dark" and normalises legacy "high_contrast" reads to it. */
+type ExamScheme = NonNullable<Session["colorScheme"]> | "dark";
+
+const MOCK_SCHEMES: { value: ExamScheme; label: string }[] = [
+  { value: "default", label: "默认" },
+  { value: "cream", label: "米底黑字" },
+  { value: "dark", label: "深色" },
+];
 
 /** Audio pipeline states: the bundled site carries no MP3 — a listening paper
  *  is playable only after the user imports the file into IndexedDB. */
@@ -202,7 +215,7 @@ function ListeningPlayer({
   );
 }
 
-export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeScheme, onSession, onExit, onLeave }: Props) {
+export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeScheme, onSession, onExit, onLeave, onDiscard }: Props) {
   const questions = useMemo(() => allQuestions(exam), [exam]);
   const [currentId, setCurrentId] = useState(questions[0]?.id ?? "");
   const [writingSectionId, setWritingSectionId] = useState(exam.sections[0]?.id ?? "");
@@ -219,6 +232,10 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   const passageRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const restoredRef = useRef(false);
+  // One-shot remote retry: a /content MP3 that 404s (the site ships without
+  // the audio pack) gets retried once against the GitHub release before the
+  // error banner shows. Reset whenever the paper's source is re-resolved.
+  const audioRetriedRef = useRef(false);
   const optionsButtonRef = useRef<HTMLButtonElement>(null);
   const optionsPanelRef = useRef<HTMLDivElement>(null);
   const persistTimer = useRef<number | null>(null);
@@ -251,6 +268,8 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
   onExitRef.current = onExit;
   const onLeaveRef = useRef(onLeave);
   onLeaveRef.current = onLeave;
+  const onDiscardRef = useRef(onDiscard);
+  onDiscardRef.current = onDiscard;
   const ctxMenuRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const dialogPrevFocus = useRef<HTMLElement | null>(null);
@@ -419,6 +438,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
     if (exam.module !== "listening") return;
     let live = true;
     restoredRef.current = false;
+    audioRetriedRef.current = false;
     setAudioError(null);
     setAudioBlocked(false);
     setAudioState("loading");
@@ -616,6 +636,31 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
       return;
     }
     onLeaveRef.current(next);
+  }, [onSession]);
+
+  // Leave WITHOUT saving: the session row is deleted outright. The
+  // submittingRef flag does double duty — it also stops the unmount flush and
+  // the registered close flush from resurrecting the record afterwards.
+  const discard = useCallback(async () => {
+    if (submittingRef.current) return;
+    submittingRef.current = true;
+    if (persistTimer.current) {
+      window.clearTimeout(persistTimer.current);
+      persistTimer.current = null;
+    }
+    audioRef.current?.pause();
+    try {
+      await onDiscardRef.current(sessionRef.current);
+    } catch (err) {
+      submittingRef.current = false;
+      const failed = {
+        ...sessionRef.current,
+        saveError: `退出失败——你仍在考试中。${String(err)}`,
+      };
+      sessionRef.current = failed;
+      onSession(failed);
+      setDialog(null);
+    }
   }, [onSession]);
 
   // Wall-clock deadline: `setInterval` only ever fires late, so counting down
@@ -966,9 +1011,13 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
 
   const writingWordCount = (session.writing?.[currentSection?.id ?? ""] ?? "").trim().split(/\s+/).filter(Boolean).length;
   const unanswered = unansweredCount(exam, session);
+  // Legacy sessions may carry the retired "high_contrast" — render it as the
+  // new dark scheme rather than resurrecting black/yellow.
+  const mockScheme: ExamScheme =
+    (session.colorScheme ?? "default") === "high_contrast" ? "dark" : ((session.colorScheme ?? "default") as ExamScheme);
   const examScheme = practice
     ? (practiceScheme === "dark" || (practiceScheme === "follow_shell" && shellTheme === "dark") ? "practice_dark" : "default")
-    : (session.colorScheme ?? "default");
+    : mockScheme;
 
   return (
     <div
@@ -999,7 +1048,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         </div>
       )}
       {audioState === "missing" && (
-        <div className="banner-save" role="alert">音频未导入，可到「导入」页添加；试卷仍可正常作答。</div>
+        <div className="banner-save" role="alert">音频加载中或暂不可用；试卷仍可正常作答。</div>
       )}
       {audioError && (
         <div className="banner-save" role="alert">{audioError}</div>
@@ -1037,7 +1086,7 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
         <div className="right toolbar">
           {exam.module === "listening" && (
             <label className="vol-wrap">
-              <Icon name="volume" size={16} /> 音量
+              <Icon name="volume" size={16} /><span className="vol-label">音量</span>
               <input
                 className="vol"
                 type="range"
@@ -1080,6 +1129,18 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
           <button type="button" className="leave-button" onClick={() => practice ? void leave() : setDialog("leave")}>
             {practice ? "保存并退出" : "离开考试"}
           </button>
+          {practice && (
+            <button
+              type="button"
+              className="leave-more"
+              title="更多退出方式"
+              aria-label="更多退出方式"
+              aria-expanded={dialog === "leave"}
+              onClick={() => setDialog("leave")}
+            >
+              <Icon name="chevron" size={11} className="point-down" />
+            </button>
+          )}
           <button type="button" className="finish-action" onClick={() => setDialog("submit")}>
             {practice ? "完成练习" : "交卷"}
           </button>
@@ -1103,9 +1164,9 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
               <>
                 <p className="text-size-heading">配色方案</p>
                 <div className="row">
-                  {(["default", "high_contrast", "cream"] as const).map((s) => (
-                    <button key={s} type="button" className={(session.colorScheme ?? "default") === s ? "on" : ""} aria-pressed={(session.colorScheme ?? "default") === s} onClick={() => patch({ colorScheme: s })}>
-                      {s === "default" ? "默认" : s === "high_contrast" ? "黑底黄字" : "米底黑字"}
+                  {MOCK_SCHEMES.map(({ value, label }) => (
+                    <button key={value} type="button" className={mockScheme === value ? "on" : ""} aria-pressed={mockScheme === value} onClick={() => patch({ colorScheme: value as Session["colorScheme"] })}>
+                      {label}
                     </button>
                   ))}
                 </div>
@@ -1297,8 +1358,22 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
                 if (practice) setPausedLocal(true);
               }}
               onError={() => {
-                if (!audioSrc) return;
-                setAudioError("音频文件无法加载或解码。可先通过「离开考试」保存答案，再到「导入」页重新添加音频。");
+                const el = audioRef.current;
+                if (!audioSrc || !el) return;
+                // A bundled /content MP3 that fails (the site ships without
+                // the audio pack) gets one retry against the published
+                // GitHub release before the error banner shows.
+                if (!audioRetriedRef.current && audioSrc.startsWith("/content/")) {
+                  audioRetriedRef.current = true;
+                  const file = audioSrc.slice(audioSrc.lastIndexOf("/") + 1);
+                  el.src = REMOTE_AUDIO_BASE + file;
+                  el.load();
+                  if (!practice && !session.audio?.ended) {
+                    void el.play().catch(() => setAudioBlocked(true));
+                  }
+                  return;
+                }
+                setAudioError("音频文件无法加载或解码。可先保存退出后重试；试卷仍可正常作答。");
               }}
               onEnded={() => {
                 // Only a media_driven paper converts the remaining time into
@@ -1489,15 +1564,20 @@ export function ExamApp({ exam, session, shellTheme, practiceScheme, onPracticeS
           }}
         >
           <div className="box">
-            <span className="confirm-icon mock"><Icon name="info" size={24} /></span>
-            <h2 id="confirm-leave-title">离开本次模考？</h2>
-            <p>这不是交卷。答案和剩余时间都会保存，之后可以继续作答。</p>
+            <span className={`confirm-icon ${practice ? "practice" : "mock"}`}><Icon name="info" size={24} /></span>
+            <h2 id="confirm-leave-title">{practice ? "退出本次练习？" : "离开本次模考？"}</h2>
+            <p>{practice
+              ? "这不是交卷。保存进度后可随时继续；不保存则放弃本次作答记录。"
+              : "这不是交卷。保存进度可稍后继续作答；不保存则放弃本次作答记录。"}</p>
             <div className="row">
               <button type="button" className="primary" onClick={() => void leave()}>
-                保存并离开
+                {practice ? "保存并退出" : "保存进度退出"}
+              </button>
+              <button type="button" className="ghost danger" onClick={() => void discard()}>
+                不保存退出
               </button>
               <button type="button" className="ghost" onClick={() => setDialog(null)}>
-                继续作答
+                {practice ? "继续练习" : "继续作答"}
               </button>
             </div>
           </div>

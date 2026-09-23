@@ -53,6 +53,13 @@
 .toolbar button.finish-action { border-color: var(--exam-accent); background: var(--exam-accent); color: var(--exam-accent-ink); }
 .exam.practice .toolbar button.finish-action { border-color: var(--exam-answered); background: var(--exam-answered); }
 .toolbar button.leave-button { border-color: var(--exam-line); background: var(--exam-panel-2); color: var(--exam-ink); }
+/* Split-button caret next to 保存并退出 — opens the exit-options dialog
+   (save / discard / stay). Shares the leave button's left border look. */
+.toolbar button.leave-more { min-width: 24px; margin-left: -5px; padding: 0 5px; border: 1px solid var(--exam-line); border-left-color: var(--exam-line-soft); border-radius: 0 4px 4px 0; background: var(--exam-panel-2); color: var(--exam-muted); }
+.toolbar button.leave-more:hover { border-color: var(--exam-accent); background: var(--exam-accent-soft); color: var(--exam-ink); }
+.toolbar button.leave-button { border-radius: 4px; }
+.toolbar:has(.leave-more) button.leave-button { border-radius: 4px 0 0 4px; }
+.point-down { transform: rotate(90deg); }
 .toolbar button:disabled { opacity: .4; }
 .vol-wrap { display: flex; align-items: center; gap: 6px; color: var(--exam-muted); font-size: 11px; }
 .vol { width: 78px; accent-color: var(--exam-accent); }
@@ -101,6 +108,16 @@
 .match { display: block; width: min(100%, 36rem); min-width: min(100%, 18rem); height: auto; min-height: 32px; margin: 8px 0 0; }
 .gap { text-align: center; }
 .gap:focus, .match:focus, .layout-answer:focus { border-color: var(--exam-accent); outline: 0; background: var(--exam-accent-soft); }
+/* Pipe-delimited gapText ("a | b | 6 ___") renders as the printed paper's
+   table row — one bordered strip of cells, the numbered cell holding the
+   input. */
+.gap-table-line { display: flex; align-items: stretch; gap: 9px; overflow-x: auto; padding-bottom: 3px; scrollbar-width: thin; scrollbar-color: var(--exam-line) transparent; }
+.gap-table-line .q-num { flex: 0 0 auto; align-self: center; }
+.gap-table { display: inline-flex; align-items: stretch; flex: 0 0 auto; border: 1px solid var(--exam-line); border-radius: 4px; background: var(--exam-panel); }
+.gap-cell { display: inline-flex; align-items: center; gap: 5px; min-width: 64px; padding: 7px 12px; border-right: 1px solid var(--exam-line-soft); line-height: 1.5; }
+.gap-cell:last-child { border-right: 0; }
+.gap-cell .gap { flex: 0 1 auto; min-width: 76px; margin: 0; }
+.gap-table-line .meta { align-self: center; white-space: nowrap; }
 .q-layout { overflow-x: auto; margin: 10px 0 18px; }
 .q-layout table { width: 100%; border-collapse: collapse; }
 .q-layout th, .q-layout td { padding: 10px; border: 1px solid var(--exam-line); text-align: left; vertical-align: top; }
@@ -214,10 +231,12 @@
 .confirm-icon.practice { background: var(--exam-answered-soft); color: var(--exam-answered); }
 .confirm h2 { margin: 14px 0 7px; font-size: 18px; }
 .confirm p { color: var(--exam-muted); font-size: 12px; line-height: 1.6; }
-.confirm .row { display: flex; justify-content: flex-end; gap: 8px; margin-top: 19px; }
-.confirm button { min-height: 34px; padding: 0 13px; border-radius: 4px; }
+.confirm .row { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 19px; }
+.confirm button { min-height: 34px; padding: 0 13px; border-radius: 4px; white-space: nowrap; }
 .confirm .primary { border: 1px solid var(--exam-accent); background: var(--exam-accent); color: var(--exam-accent-ink); }
 .confirm .ghost { border: 1px solid var(--exam-line); background: transparent; color: var(--exam-ink); }
+.confirm .ghost.danger { color: var(--exam-warn); }
+.confirm .ghost.danger:hover { border-color: var(--exam-warn); background: var(--exam-warn-soft); }
 
 .sr-only, .sr-fallback { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important; }
 /* The practice matching board keeps a real <select> as its keyboard path —
@@ -242,6 +261,60 @@
   .exam-title, .section-title { max-width: 140px; }
   .exam-header .right { flex-wrap: wrap; justify-content: flex-end; }
   .tool-hint, .practice-hint { display: none; }
+}
+
+/* ≤1000px — roughly a 1440px screen at 150% zoom. The side-by-side panes no
+ * longer fit: collapse to one scrollable column (passage above, questions
+ * below), move the toolbar to its own header row, and tighten the chrome. */
+@media (max-width: 1000px) {
+  .exam-windowbar { flex-basis: 32px; }
+  .exam-windowbar .windowbar-hint { display: none; }
+
+  /* Two-row header: title+module left, clock right; toolbar spans row two. */
+  .exam-header { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "left clock" "tools tools"; gap: 4px 10px; padding: 5px 10px 7px; }
+  .exam-header .left { grid-area: left; gap: 7px; }
+  .exam-header .timer-stack, .exam-header .practice-clock, .exam-header .writing-header-metrics { grid-area: clock; justify-self: end; }
+  .exam-header .right { grid-area: tools; gap: 5px; }
+  .exam-header .left strong { font-size: 15px; }
+  .exam-title { max-width: 150px; }
+  .section-title { display: none; }
+  .timer { min-width: 80px; font-size: 19px; }
+  .timer-stack, .practice-clock { min-width: 110px; }
+  .writing-header-metrics { gap: 14px; }
+  .writing-header-metrics > span { min-width: 96px; padding-left: 12px; }
+  .toolbar { gap: 5px; }
+  .toolbar button { min-height: 28px; padding: 0 8px; font-size: 11px; }
+  .vol-label { display: none; }
+  .vol { width: 60px; }
+  .options-pop { right: 8px; width: min(290px, calc(100vw - 16px)); }
+
+  .exam-section-tabs { flex-basis: 40px; gap: 14px; padding: 0 12px; scrollbar-width: thin; }
+  .exam-section-tabs button { font-size: 11px; }
+
+  /* One scrolling column. The inline gridTemplateColumns ExamApp writes is a
+     no-op on a block element, so the gutter drag simply has no effect here. */
+  .exam-body { display: block; overflow-y: auto; }
+  .exam-body .pane { margin: 8px; padding: 14px 14px 30px; overflow: visible; }
+  .exam-body.reading .pane:nth-of-type(1), .exam-body.writing .pane:nth-of-type(1) { margin-right: 8px; }
+  .exam-body.reading .pane:nth-of-type(2), .exam-body.writing .pane:nth-of-type(2) { margin-left: 8px; }
+  .exam-body.listening .pane { margin: 0 8px 8px; }
+  .exam-body .gutter { display: none; }
+  /* The writing textarea sized itself off a fixed-height pane; with the pane
+     now content-sized it needs an explicit floor. */
+  .writing-box { min-height: 260px; }
+
+  .listening-player { flex-basis: auto; grid-template-columns: auto minmax(0, 1fr) auto; gap: 9px; margin: 8px; padding: 7px 10px; }
+  .player-state { width: 28px; height: 28px; }
+  .player-time { font-size: 10px; }
+
+  .nav-strip { gap: 8px; padding: 6px 8px 0; }
+  .nav-collapse { padding: 4px 7px; }
+  .question-strip { gap: 5px; padding-bottom: 6px; }
+  .question-strip button { width: 30px; height: 30px; font-size: 11px; }
+  .exam-nav-row { flex-basis: 48px; gap: 8px; padding: 0 8px; }
+  .exam-nav-tools { gap: 10px; }
+  .exam-progress-copy { font-size: 10px; white-space: nowrap; }
+  .nav-arrows button { min-width: 60px; height: 30px; padding: 0 8px; font-size: 11px; }
 }
 
 /* 考场文本划选与键盘焦点专属 Token，隔绝外壳 tokens.css 污染 */

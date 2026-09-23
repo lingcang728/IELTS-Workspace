@@ -6,7 +6,7 @@
  * to the session count so it still registers; a day with nothing stays empty.
  * Pure render — the parent feeds `listSessions()` in, no fetching here.
  */
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { SessionSummary } from "../types";
 import { localDayKey, localDayOf } from "../lib/today";
 
@@ -17,10 +17,28 @@ const LEFT = 16; // room for the weekday labels
 const TOP = 14; // room for the month labels
 /** fillOpacity of var(--accent) per level; level 0 is the empty cell. */
 const LEVEL_OPACITY = [0, 0.3, 0.55, 0.8, 1];
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 interface DayStat {
   answered: number;
   sessions: number;
+}
+
+interface Cell {
+  key: string;
+  x: number;
+  y: number;
+  /** Grid row 0–6 (Mon–Sun); top rows flip the tooltip below the cell. */
+  row: number;
+  level: number;
+  title: string;
+}
+
+interface Tip {
+  left: number;
+  top: number;
+  below: boolean;
+  text: string;
 }
 
 /** Fixed buckets, not quartiles: level 4 means a full 40-question paper's worth. */
@@ -35,7 +53,9 @@ function intensity(stat: DayStat | undefined): number {
 }
 
 export default function Heatmap({ sessions }: { sessions: SessionSummary[] }) {
-  const { cells, months } = useMemo(() => {
+  const [tip, setTip] = useState<Tip | null>(null);
+
+  const { cells, months, summary, width, height } = useMemo(() => {
     const byDay = new Map<string, DayStat>();
     for (const s of sessions) {
       const key = localDayKey(s.updatedAt ?? s.startedAt);
@@ -52,23 +72,39 @@ export default function Heatmap({ sessions }: { sessions: SessionSummary[] }) {
     const mondayOffset = (today.getDay() + 6) % 7;
     const start = new Date(today);
     start.setDate(start.getDate() - mondayOffset - (WEEKS - 1) * 7);
+    const startKey = localDayOf(start);
+    const todayKey = localDayOf(today);
 
-    const cells: { key: string; x: number; y: number; level: number; title: string }[] = [];
+    const cells: Cell[] = [];
     const months: { x: number; label: string }[] = [];
-    let lastMonth = -1;
+    let lastLabelWeek = -2; // the first column is always allowed a label
+    let activeDays = 0;
+    let totalAnswered = 0;
+
     for (let w = 0; w < WEEKS; w += 1) {
-      const column = new Date(start);
-      column.setDate(column.getDate() + w * 7);
-      if (column.getMonth() !== lastMonth) {
-        lastMonth = column.getMonth();
-        months.push({ x: LEFT + w * (CELL + GAP), label: `${lastMonth + 1}月` });
+      const monday = new Date(start);
+      monday.setDate(monday.getDate() + w * 7);
+      /* 月份标签落在「包含该月 1 号」的那一列（GitHub 同款规则）；相邻标签
+         至少隔一列，防止「11月」「12月」贴在一起。 */
+      for (let r = 0; r < 7; r += 1) {
+        const day = new Date(monday);
+        day.setDate(day.getDate() + r);
+        if (day.getTime() > today.getTime()) break;
+        if (day.getDate() === 1 && w - lastLabelWeek >= 2) {
+          months.push({ x: LEFT + w * (CELL + GAP), label: `${day.getMonth() + 1}月` });
+          lastLabelWeek = w;
+          break;
+        }
       }
       for (let r = 0; r < 7; r += 1) {
-        const day = new Date(column);
+        const day = new Date(monday);
         day.setDate(day.getDate() + r);
         if (day.getTime() > today.getTime()) continue; // future cells stay blank
         const key = localDayOf(day);
         const stat = byDay.get(key);
+        const level = intensity(stat);
+        if (level > 0) activeDays += 1;
+        if (stat) totalAnswered += stat.answered;
         const dateLabel = `${day.getMonth() + 1}月${day.getDate()}日`;
         const title = !stat
           ? `${dateLabel} · 无记录`
@@ -79,20 +115,59 @@ export default function Heatmap({ sessions }: { sessions: SessionSummary[] }) {
           key,
           x: LEFT + w * (CELL + GAP),
           y: TOP + r * (CELL + GAP),
-          level: intensity(stat),
+          row: r,
+          level,
           title,
         });
       }
     }
-    return { cells, months };
+
+    /* 窗口若从月中开始，第一个标签列之前的日子属于上一段月份 —— 在第 0 列
+       补一个起始月标签，前提是离首个标签还有至少两列空位，否则会叠字。 */
+    if (
+      months.length === 0 ||
+      (months[0].x - LEFT >= (CELL + GAP) * 2 && months[0].label !== `${start.getMonth() + 1}月`)
+    ) {
+      months.unshift({ x: LEFT, label: `${start.getMonth() + 1}月` });
+    }
+
+    /* 底部统计只数窗口内的日子：有记录天数、累计答题数、最长连续天数。
+       连续按日历日判定（排序后的 key 差一天），不是连续有会话。 */
+    const activeKeys = [...byDay.keys()].filter((k) => k >= startKey && k <= todayKey).sort();
+    let longest = 0;
+    let run = 0;
+    let prev = -1;
+    for (const k of activeKeys) {
+      const [y, m, d] = k.split("-").map(Number);
+      const t = new Date(y, m - 1, d).getTime();
+      run = t - prev === DAY_MS ? run + 1 : 1;
+      if (run > longest) longest = run;
+      prev = t;
+    }
+
+    return {
+      cells,
+      months,
+      summary: { activeDays, totalAnswered, longest },
+      width: LEFT + WEEKS * (CELL + GAP) - GAP,
+      height: TOP + 7 * (CELL + GAP) - GAP,
+    };
   }, [sessions]);
 
-  const width = LEFT + WEEKS * (CELL + GAP) - GAP;
-  const height = TOP + 7 * (CELL + GAP) - GAP;
   const weekdayLabels = ["一", "三", "五"]; // Mon / Wed / Fri rows
 
+  const showTip = (c: Cell) => {
+    const below = c.row < 2; // 顶部两行反过来往 cell 下方挂，避免被滚动容器裁掉
+    setTip({
+      left: Math.min(Math.max(c.x + CELL / 2, 72), width - 72),
+      top: below ? c.y + CELL + 7 : c.y - 7,
+      below,
+      text: c.title,
+    });
+  };
+
   return (
-    <div style={{ overflowX: "auto", marginTop: 10 }}>
+    <div className="heatmap-scroll">
       <svg
         width={width}
         height={height}
@@ -102,7 +177,7 @@ export default function Heatmap({ sessions }: { sessions: SessionSummary[] }) {
         style={{ display: "block", maxWidth: "none" }}
       >
         {months.map((m) => (
-          <text key={`${m.x}-${m.label}`} x={m.x} y={9} fontSize={9} fill="var(--muted)">
+          <text key={`${m.x}-${m.label}`} x={m.x} y={9.5} fontSize={9.5} fill="var(--muted)">
             {m.label}
           </text>
         ))}
@@ -111,7 +186,7 @@ export default function Heatmap({ sessions }: { sessions: SessionSummary[] }) {
             key={label}
             x={0}
             y={TOP + i * 2 * (CELL + GAP) + CELL - 2}
-            fontSize={8.5}
+            fontSize={9}
             fill="var(--muted)"
           >
             {label}
@@ -120,38 +195,54 @@ export default function Heatmap({ sessions }: { sessions: SessionSummary[] }) {
         {cells.map((c) => (
           <rect
             key={c.key}
+            className={`heatmap-cell${c.level === 0 ? " empty" : ""}`}
             x={c.x}
             y={c.y}
             width={CELL}
             height={CELL}
-            rx={2}
+            rx={2.5}
             fill={c.level === 0 ? "var(--panel-2)" : "var(--accent)"}
             fillOpacity={c.level === 0 ? 1 : LEVEL_OPACITY[c.level]}
+            onMouseEnter={() => showTip(c)}
+            onMouseLeave={() => setTip(null)}
           >
             <title>{c.title}</title>
           </rect>
         ))}
       </svg>
-      <div
-        className="meta"
-        style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 4, marginTop: 6 }}
-      >
-        <span>少</span>
-        {LEVEL_OPACITY.map((opacity, i) => (
-          <span
-            key={i}
-            aria-hidden="true"
-            style={{
-              width: 10,
-              height: 10,
-              borderRadius: 2,
-              display: "inline-block",
-              background: i === 0 ? "var(--panel-2)" : "var(--accent)",
-              opacity: i === 0 ? 1 : opacity,
-            }}
-          />
-        ))}
-        <span>多</span>
+      {tip && (
+        <div
+          className={`heatmap-tip${tip.below ? " below" : ""}`}
+          role="tooltip"
+          style={{ left: tip.left, top: tip.top }}
+        >
+          {tip.text}
+        </div>
+      )}
+      <div className="heatmap-foot">
+        <span className="heatmap-stats">
+          {summary.activeDays === 0
+            ? "近 20 周还没有学习记录"
+            : `近 20 周 · ${summary.activeDays} 天有记录 · 答题 ${summary.totalAnswered} 题 · 最长连续 ${summary.longest} 天`}
+        </span>
+        <span className="heatmap-legend" aria-hidden="true">
+          <span>少</span>
+          {LEVEL_OPACITY.map((opacity, i) => (
+            <span
+              key={i}
+              style={{
+                width: 10,
+                height: 10,
+                borderRadius: 2.5,
+                display: "inline-block",
+                background: i === 0 ? "var(--panel-2)" : "var(--accent)",
+                opacity: i === 0 ? 1 : opacity,
+                boxShadow: i === 0 ? "inset 0 0 0 1px var(--line)" : undefined,
+              }}
+            />
+          ))}
+          <span>多</span>
+        </span>
       </div>
     </div>
   );

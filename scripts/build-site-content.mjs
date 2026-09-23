@@ -6,11 +6,15 @@
  *   fixtures/cambridge/*.json          -> content/exams/<exam.id>.json
  *   fixtures/transcripts/*.json        -> content/transcripts/<examId>.json
  *   fixtures/assets/cambridge/*.jpg    -> content/assets/cambridge/*.jpg
+ *   fixtures/assets/cambridge/*.mp3    -> content/assets/cambridge/*.mp3
  *   data-dev/official-samples/*.json   -> content/exams/<exam.id>.json (if present)
  *   site/content-meta.json             -> curated frequency/difficulty tags
  *
- * Audio MP3s are NEVER copied — same rule as the desktop app: the user adds
- * them locally (web: IndexedDB via the import page).
+ * Listening MP3s are bundled when fixtures/assets/cambridge/*.mp3 exists
+ * locally. In CI the pages workflow restores them from the listening-audio-v1
+ * GitHub release zips first; a fresh clone without audio just marks those
+ * exams audioStatus "missing" (honest) and the web runtime falls back to the
+ * release URL. IndexedDB user blobs still take priority at runtime.
  *
  * Output index.json carries ExamSummary rows plus book/test/questionTypes so
  * the library page can filter without opening every exam file.
@@ -49,7 +53,12 @@ function summarize(exam, relPath) {
       0,
     ),
     hasTranscript: transcripts.has(exam.id),
-    audioStatus: exam.module === "listening" ? "missing" : "ready",
+    audioStatus:
+      exam.module !== "listening"
+        ? "ready"
+        : audioReady(exam)
+          ? "ready"
+          : "missing",
     audioAssets:
       exam.module === "listening"
         ? [
@@ -70,6 +79,14 @@ function summarize(exam, relPath) {
     ],
     meta: meta.exams?.[exam.id],
   };
+}
+
+/** Listening audio is ready when the MP3 was actually copied into content/. */
+function audioReady(exam) {
+  return (exam.sections ?? [])
+    .map((s) => s.audioAsset)
+    .filter(Boolean)
+    .every((rel) => existsSync(join(out, String(rel).replace(/^\/+/, ""))));
 }
 
 const exams = [];
@@ -103,10 +120,10 @@ if (existsSync(transcriptDir)) {
   }
 }
 
-const jpgDir = join(root, "fixtures/assets/cambridge");
-if (existsSync(jpgDir)) {
-  for (const file of readdirSync(jpgDir)) {
-    if (file.endsWith(".jpg")) cpSync(join(jpgDir, file), join(out, "assets/cambridge", file));
+const assetDir = join(root, "fixtures/assets/cambridge");
+if (existsSync(assetDir)) {
+  for (const file of readdirSync(assetDir)) {
+    if (/\.(jpg|mp3)$/i.test(file)) cpSync(join(assetDir, file), join(out, "assets/cambridge", file));
   }
 }
 

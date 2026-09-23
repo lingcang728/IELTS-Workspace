@@ -724,11 +724,66 @@ function QuestionView({
   }
 
   const limit = question.wordLimit || group.wordLimit;
+  const gapSource = question.gapText || question.prompt;
+  const pipeCells = gapSource.split("|").map((cell) => cell.trim());
+  if (pipeCells.length >= 3) {
+    // Cambridge 4-era papers store a printed table row as
+    // "London | 16th February | 45 | 6 ___". Rendered as one text line it is
+    // unreadable — split on the pipes into bordered cells like the paper, the
+    // numbered cell carrying the gap input. Single-pipe text stays inline.
+    const hasGapCell = pipeCells.some((cell) => GAP_MARKER_RE.test(cell));
+    return (
+      <div className="q-block" data-qid={question.id}>
+        <div className="q-stem gap-table-line">
+          <span className="q-num">{question.number}</span>
+          <span className="gap-table" role="group" aria-label={`第 ${question.number} 题`}>
+            {pipeCells.map((cell, i) => {
+              const gap = cell.match(GAP_MARKER_RE);
+              const tailInput = !hasGapCell && i === pipeCells.length - 1;
+              return (
+                <span className={`gap-cell${gap || tailInput ? " has-gap" : ""}`} key={i}>
+                  {gap && gap.index != null ? (
+                    <>
+                      {cell.slice(0, gap.index)}
+                      <input
+                        className="gap"
+                        aria-label={`第 ${question.number} 题`}
+                        disabled={disabled}
+                        value={str}
+                        maxLength={60}
+                        onChange={(e) => onChange(question.id, e.target.value)}
+                      />
+                      {cell.slice(gap.index + gap[0].length)}
+                    </>
+                  ) : (
+                    <>
+                      {cell}
+                      {tailInput && (
+                        <input
+                          className="gap"
+                          aria-label={`第 ${question.number} 题`}
+                          disabled={disabled}
+                          value={str}
+                          maxLength={60}
+                          onChange={(e) => onChange(question.id, e.target.value)}
+                        />
+                      )}
+                    </>
+                  )}
+                </span>
+              );
+            })}
+          </span>
+          {limit ? <span className="meta">（不超过 {limit} 词）</span> : null}
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="q-block" data-qid={question.id}>
       <label>
         <span className="q-num">{question.number}</span>
-        {renderGap(question.gapText || question.prompt, str, (v) => onChange(question.id, v), disabled)}
+        {renderGap(gapSource, str, (v) => onChange(question.id, v), disabled)}
         {limit ? <span className="meta">（不超过 {limit} 词）</span> : null}
       </label>
     </div>
@@ -847,13 +902,15 @@ function MatchingBoard({
   );
 }
 
+const GAP_MARKER_RE = /_{2,}|\[gap\]|<gap>/;
+
 function renderGap(
   text: string,
   value: string,
   onChange: (v: string) => void,
   disabled?: boolean,
 ) {
-  const gapMatch = text.match(/_{2,}|\[gap\]|<gap>/);
+  const gapMatch = text.match(GAP_MARKER_RE);
   if (!gapMatch || gapMatch.index == null) {
     return (
       <>

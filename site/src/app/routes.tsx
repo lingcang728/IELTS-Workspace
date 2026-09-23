@@ -7,7 +7,6 @@ import AnalyticsPage from "./pages/AnalyticsPage";
 import HistoryPage from "./pages/HistoryPage";
 import MistakesPage from "./pages/MistakesPage";
 import VocabPage from "./pages/VocabPage";
-import ImportPage from "./pages/ImportPage";
 import SettingsPage from "./pages/SettingsPage";
 
 /**
@@ -34,8 +33,6 @@ export function WorkspaceRoutes({ route }: { route: Route }) {
       return <MistakesPage route={route} />;
     case "vocab":
       return <VocabPage route={route} />;
-    case "import":
-      return <ImportPage route={route} />;
     case "settings":
       return <SettingsPage route={route} />;
     default:

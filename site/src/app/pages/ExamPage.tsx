@@ -7,6 +7,7 @@
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
+  discardSession,
   loadExam,
   loadProfile,
   loadSession,
@@ -85,10 +86,10 @@ function buildSession(exam: Exam, mode: ExamMode): Session {
 
 function useNarrowScreen(): boolean {
   const [narrow, setNarrow] = useState(
-    () => typeof window !== "undefined" && window.innerWidth < 1024,
+    () => typeof window !== "undefined" && window.innerWidth < 760,
   );
   useEffect(() => {
-    const mq = window.matchMedia("(max-width: 1023px)");
+    const mq = window.matchMedia("(max-width: 759px)");
     const onChange = () => setNarrow(mq.matches);
     onChange();
     mq.addEventListener("change", onChange);
@@ -119,7 +120,15 @@ export default function ExamPage({ route }: { route: Route }) {
       setProfile(prof);
       try {
         if (sessionIdQ) {
-          const sess = await loadSession(sessionIdQ);
+          const loaded = await loadSession(sessionIdQ);
+          // Legacy sessions may carry the retired "high_contrast" scheme —
+          // normalise to "dark" so the runtime never renders black/yellow.
+          // (The shared Session type still names the old union; the widened
+          // ternary is asserted back through it.)
+          const sess: Session = {
+            ...loaded,
+            colorScheme: (loaded.colorScheme === "high_contrast" ? "dark" : loaded.colorScheme) as Session["colorScheme"],
+          };
           const ex = await loadExam(sess.examId);
           if (sess.status === "submitted") {
             navigate("/app/results", { session: sess.id });
@@ -279,6 +288,12 @@ export default function ExamPage({ route }: { route: Route }) {
         }}
         onLeave={() => {
           // ExamApp.leave() already awaited saveSession before this fires.
+          navigate("/app");
+        }}
+        onDiscard={async (s) => {
+          // ExamApp.discard() sets its submitting guard before this fires, so
+          // the unmount flush cannot resurrect the deleted record.
+          await discardSession(s.id);
           navigate("/app");
         }}
       />

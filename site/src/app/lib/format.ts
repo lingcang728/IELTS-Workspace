@@ -9,7 +9,7 @@ export function sourceLabel(exam: ExamSummary) {
     const book = fromId?.[1] || fromTitle?.[1];
     return book ? `剑桥雅思 ${book} · 本项目整理` : "剑桥雅思 · 本项目整理";
   }
-  if (exam.source?.kind === "imported_document") return exam.source.title || "本地导入";
+  if (exam.source?.kind === "imported_document") return exam.source.title || "自组卷";
   return exam.source?.title || "本地题库";
 }
 

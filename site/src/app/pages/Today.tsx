@@ -290,7 +290,7 @@ export default function Today() {
             >
               <span className="today-kind">摸底</span>
               <strong>{starterExam ? starterLabel : "去题库挑一套卷"}</strong>
-              <small>{starterExam ? starterExam.title : "题库暂空，先去导入试卷"}</small>
+              <small>{starterExam ? starterExam.title : "题库暂空，暂无可用试卷"}</small>
             </button>
             <div className="today-task muted">
               <span className="today-kind">说明</span>

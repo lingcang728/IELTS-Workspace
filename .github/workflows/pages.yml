@@ -36,6 +36,20 @@ jobs:
           cache: npm
           cache-dependency-path: site/package-lock.json
       - run: npm --prefix site ci
+      - name: Restore listening audio from GitHub release
+        # MP3s are not in git (LFS policy); the listening-audio-v1 release hosts
+        # per-book zips. Unzipping them gives fixtures/assets/cambridge/cNN-tM.mp3
+        # which build-site-content.mjs then copies into site/public/content/.
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/listening-zips fixtures/assets/cambridge
+          for i in $(seq -w 4 20); do
+            f="C${i}-listening.zip"
+            curl -fsSL --retry 3 -o "/tmp/listening-zips/$f" \
+              "https://github.com/lingcang728/IELTS-Workspace/releases/download/listening-audio-v1/$f"
+            unzip -o -j "/tmp/listening-zips/$f" "*.mp3" -d fixtures/assets/cambridge/
+          done
+          ls fixtures/assets/cambridge/*.mp3 | wc -l
       - run: npm --prefix site run build
       - name: Ensure Cloudflare Pages project
         if: github.event_name != 'pull_request'
