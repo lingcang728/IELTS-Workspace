@@ -49,6 +49,14 @@ jobs:
               "https://github.com/lingcang728/IELTS-Workspace/releases/download/listening-audio-v1/$f"
             unzip -o -j "/tmp/listening-zips/$f" "*.mp3" -d fixtures/assets/cambridge/
           done
+          # Cloudflare Pages caps assets at 25 MiB — re-encode oversized MP3s
+          # to 72k mono (speech audio, plenty for IELTS listening).
+          for f in fixtures/assets/cambridge/*.mp3; do
+            if [ "$(stat -c%s "$f")" -gt 25000000 ]; then
+              ffmpeg -y -i "$f" -b:a 72k -ac 1 "${f%.mp3}.sm.mp3" -loglevel error
+              mv "${f%.mp3}.sm.mp3" "$f"
+            fi
+          done
           ls fixtures/assets/cambridge/*.mp3 | wc -l
       - run: npm --prefix site run build
       - name: Ensure Cloudflare Pages project
